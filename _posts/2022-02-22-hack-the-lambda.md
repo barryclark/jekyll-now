@@ -111,7 +111,8 @@ With this knowledge we captured, we have some very valuable information. If we p
 <img width="600" src="/images/lambda-architecture.png">
 </p>
 
-Based on this, we can meditate about the [attack surface]( https://en.wikipedia.org/wiki/Attack_surface). Based on the Anatomy of a Lambda Function from above, we can only strike by injection Code or hook into the execution of the Lambda. From here we can derive an attack strategy. Like the Deathstar, we have only the chance to hit a tiny thermal exhaust port to get in. The good news, after a perfect hit the attack surface is like the Tardis: It’s bigger on the inside. 
+Based on this, we can meditate about the [attack surface]( https://en.wikipedia.org/wiki/Attack_surface). Based on the Anatomy of a Lambda Function from above, we can only strike by injection Code or hook into the execution of the Lambda. From here we can derive an attack strategy. Like the Deathstar, we have only the chance to hit a tiny thermal exhaust port to get in. The good news, after a perfect hit the attack surface is like the [Tardis](![image](https://user-images.githubusercontent.com/8672357/155614528-509a4c12-4bad-4232-af8e-66b5bada8f29.png):vIt’s bigger on the inside. 
+
 
 Let’s check our options and strategies:
 * Keep the initial Payload as small as possible (don't try to push an elephant through a keyhole, a fly might fit better)
@@ -131,7 +132,7 @@ Based on our attack strategy we have a too complex blob, to manage this blob bet
 2.	Inner Attack Surface -> If we made it inside, there are plenty of things we can use to leverage further attacks
 3.	IAM -> The Quote of Jeff Bryner ([@0x7eff](https://twitter.com/0x7eff) says it all: `IAM is the “killer feature” and the “killer feature”`
 
-Here's what we can do - based on the three sections identified in our attack strategy:
+Here's what we can do, based on the three sections identified in our attack strategy:
 * Compromise data 
 * Abuse business logic
 * Bypass authentication
@@ -263,3 +264,11 @@ Now it's time to stop the kids who are playing around and check the options we h
 * The AWS Lambda has a default limit on the number of concurrent executions per account per region. And if your functions exceed this limit, additional user requests will be throttled by AWS with 429 status. But the concurrency level can be set on per-function bases. Besides AWS Lambda, the API Gateway supports throttling as well. The defaults are reasonable - but you can alter them however you like. For example: Five calls/scond can be allowed, if it makes sense for your application. Afte hitting the Limit the API Gateway will block all additional requests.
 * Use AWS Cloudfront: HTTP and HTTPS requests sent to CloudFront can be monitored, and access to application resources can be controlled at the edge locations using AWS WAF. Based on the conditions you specify in the AWS WAF, such as the IP addresses from which the requests originate or the values of query strings, traffic can be allowed, blocked, or allowed and counted for further investigation
 * Stay serverless and use a tool like [aws-lambda-ddos-hangman](https://github.com/moznion/aws-lambda-ddos-hangman). This tool runs serverless and creates a FIFO queue for the incoming requests and rotates them. This is actually a very clever and cheap solution if you don't want the exta costs for running an API Gateway, Cloudfront and/or AWS WAF/Shield. 
+
+#### Happy fire fighting 🔥🚒
+
+<p align="center">
+<img width="600" src="/images/firefighter.png">
+</p>
+
+
