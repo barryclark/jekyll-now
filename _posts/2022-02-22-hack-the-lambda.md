@@ -121,13 +121,12 @@ Let’s check our options and strategies:
 Identify 
 * Perform„lateral movement“ options as soon as possible
 * Exfiltrate results via other ways/services (push to S3, SQS, SNS Topic etc.)
- 
-Based on our attack strategy we have a too complex blob, to manage this blob better we can split it up into three sections:
 
 <p align="center">
 <img width="600" src="/images/lambda-architecture-busted.png">
 </p>
 
+Based on our attack strategy we have a too complex blob, to manage this blob better we can split it up into three sections:
 1.	Outer Attack Surface -> The way/flaw inside
 2.	Inner Attack Surface -> If we made it inside, there are plenty of things we can use to leverage further attacks
 3.	IAM -> The Quote of Jeff Bryner ([@0x7eff](https://twitter.com/0x7eff) says it all: `IAM is the “killer feature” and the “killer feature”`
@@ -261,6 +260,6 @@ Now it's time to stop the kids who are playing around and check the options we h
 * The no-brainer - Increase the [Concurrency Limit](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html)
 * Check your code - Make sure your code does not "hang" on unexpected input. You should carefully check all edge cases and think about possible inputs that may cause function timeouts, [ReDoS](https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS) attacks, or long payloads. An attacker may take advantage of this weakness.
 * If you don't want to get a huge bill at some point — set up the billing alerts. It's very easy and fast to set up (it's better to do it through AWS Budgets than through AWS SNS and AWS Cloudwatch), but it's very useful — you will be informed in case of a problem.
-* The AWS Lambda has a default limit on the number of concurrent executions per account per region. And if your functions exceed this limit, additional user requests will be throttled by AWS with 429 status as it was described earlier. But the concurrency level can be set on per-function bases. Besides AWS Lambda, th e API Gateway supports throttling as well. The defaults are reasonable, but you can alter them however you like. For example, you can allow 5 calls per second if it makes sense for your application, after which the API Gateway will block additional requests.
+* The AWS Lambda has a default limit on the number of concurrent executions per account per region. And if your functions exceed this limit, additional user requests will be throttled by AWS with 429 status. But the concurrency level can be set on per-function bases. Besides AWS Lambda, the API Gateway supports throttling as well. The defaults are reasonable - but you can alter them however you like. For example: Five calls/scond can be allowed, if it makes sense for your application. Afte hitting the Limit the API Gateway will block all additional requests.
 * Use AWS Cloudfront: HTTP and HTTPS requests sent to CloudFront can be monitored, and access to application resources can be controlled at the edge locations using AWS WAF. Based on the conditions you specify in the AWS WAF, such as the IP addresses from which the requests originate or the values of query strings, traffic can be allowed, blocked, or allowed and counted for further investigation
 * Stay serverless and use a tool like [aws-lambda-ddos-hangman](https://github.com/moznion/aws-lambda-ddos-hangman). This tool runs serverless and creates a FIFO queue for the incoming requests and rotates them. This is actually a very clever and cheap solution if you don't want the exta costs for running an API Gateway, Cloudfront and/or AWS WAF/Shield. 
