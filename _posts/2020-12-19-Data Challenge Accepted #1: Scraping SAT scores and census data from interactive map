@@ -141,7 +141,7 @@ Once the corresponding neighborhood is found, the additional properties can be j
 #Exploration
 The question I am interested in is whether we can predict SAT scores with a given postal code or census tract.
 
-Note: You are not a test score. I believe we should measure what we value, not arbitrarily value what we measure. However, this is a data challenge accepted. So even though SAT scores may be narrow metrics, they still make pretty graphs. Onward!
+Note: You are not a test score. I believe we should measure what we value, not arbitrarily value what we measure. However, even though SAT scores may be narrow metrics, they still make pretty graphs and much policy still relies on them. Onward!
 
 pretty graph 1
 
@@ -159,6 +159,12 @@ Result 2
 Result 3
 
 __ % of the variation in SAT scores is explained by median household income of the census tract the school is in. Correlation is not causation, but it does give one pause to consider why this might be true.
+
+the data is old. SAT 2016 and Census 2010. We can get new shapefiles, https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html
+
+newer census data? https://data.census.gov/cedsci/
+
+https://www.census.gov/library/stories/2018/10/opportunity-atlas.html looks interesting with opportunity bargains.
 
 kop _crushton
  
