@@ -4,10 +4,10 @@ title: "Resume"
 Permalink: /resume/
 ---
 
-
-{% highlight Work Profile%}
+##Profile
+{% raw %}
 Cybersecurity specialist with a background in IT and work experience in cloud safety, automation, and offensive security. A resourceful and analytical person with superior conflict resolution skills. Excellent communication and effective collaboration with others to ensure goals are achieved. Pursuing OSCP.
-{% highlight Work %}
+{% endraw %}
 
 {% highlight Work Experience %}
 Secure Ops ▪ Montreal ▪ Canada
