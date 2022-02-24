@@ -172,7 +172,7 @@ Beside the IAM credentials a Lambda function also has event data present. These 
 <img width="500" src="/images/postels-law.png">
 </p>
 
-Postel‘s Law is to be honest, actually a pretty awesome academic concept for the development of Internet standards. His Law affected RFC 761 regarding the TCP Protocol and had the intention of a freethinking pioneer. Since bad or stupid people are also using the internet today, he laid the baseline for DDoS. To understand the options to mitigate, we need to understand possible attacks. Therefore let's create a playground for this ([GitHub-Repo is here](https://github.com/BenjiTrapp/smashing-aws-lambda))
+Postel‘s Law is to be honest, actually a pretty awesome academic concept for the development of Internet standards. His Law affected RFC 761 regarding the TCP Protocol. This is better known as the [robustness principle](https://en.wikipedia.org/wiki/Robustness_principle) and had the intention of a freethinking pioneer in an ideal academic world. Since bad or stupid people are also using the internet today, he laid the baseline for DDoS. To understand the options to mitigate, we need to understand possible attacks. Therefore let's create a playground for this ([GitHub-Repo is here](https://github.com/BenjiTrapp/smashing-aws-lambda))
 
 Let's start with our Victim Function:
 ```python
