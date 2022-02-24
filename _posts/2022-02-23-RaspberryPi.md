@@ -40,5 +40,8 @@ Here is the link to the [Imager](https://www.raspberrypi.com/software/)
  In this tutorial, we will be installing docker on Raspbian and run hello-world docker. We are going to ssh into Raspi and deploy the docker.
  
  1. From your terminal ssh into Raspberry pi
-  
+
+       ssh pi@<IPAdderessOfThePi> 
+ 
+ 
  
