@@ -163,6 +163,14 @@ Bildunterschrift "Bildlegende".
 Ein Abbildungsverzeichnis kann erstellt werden, indem man an der
 gewünschten Stelle den Befehl `\listoffigures` einfügt.
 
+Falls statt Bilder Grafiken eingefügt werden sollen, ist es möglich,
+diese mit [TikZ](https://ctan.org/pkg/pgf) zu erstellen. Dazu muss im
+YAML-Header das entsprechende Packet eingebunden werden.
+
+```yaml
+\usepackage{tikz}
+```
+
 ### Tabellen und Tabellenverzeichnis
 
 Tabellen in Markdown sind auf den ersten Blick nicht so leicht
