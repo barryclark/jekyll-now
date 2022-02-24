@@ -165,11 +165,31 @@ gewünschten Stelle den Befehl `\listoffigures` einfügt.
 
 Falls statt Bilder Grafiken eingefügt werden sollen, ist es möglich,
 diese mit [TikZ](https://ctan.org/pkg/pgf) zu erstellen. Dazu muss im
-YAML-Header das entsprechende Packet eingebunden werden.
+YAML-Header das entsprechende Packet eingebunden werden. Damit die
+Grafik mit einer Bildlegende versehen werden kann, muss zusätzlich noch
+das Packet `caption` geladen werden.
 
 ```yaml
 \usepackage{tikz}
+\usepackage{caption}
 ```
+
+Die Grafik wird dann beispielsweise folgendermassen in den Text
+integriert:
+
+```markdown
+\begin{figure}
+  \centering
+    \begin{tikzpicture}
+      \node[draw] (0) {Test Node};
+    \end{tikzpicture}
+  \caption{Eine Beispielgrafik}
+\end{figure}
+```
+
+Falls jedoch umfangreichere Datensätze visualisiert werden sollen,
+empfiehlt es sich, den Text in [RStudio](https://www.rstudio.com/) zu
+erstellen.
 
 ### Tabellen und Tabellenverzeichnis
 
