@@ -1,6 +1,6 @@
 Ever wanted to scrape the data from an interactive map to run some analyses of your own on it? Only to find that the map didn't have easy access to the data?
 
-I did. Over at Edgap. While doing a lesson [To Explore, Understand, and Respond to Social Injustice] (https://evanrushton.blogspot.com/2020/12/book-club-high-school-mathematics.html)
+I did. Over at Edgap. While doing a lesson [To Explore, Understand, and Respond to Social Injustice](https://evanrushton.blogspot.com/2020/12/book-club-high-school-mathematics.html)
 
 I could probably find a data store with the US SAT/ACT scores for a large number of schools from 2016 and then grab the census tract data and wrangle it until I could do the following analysis. However, I felt that I would learn something useful by trying to scrape the data from the interactive map.
 
@@ -59,7 +59,7 @@ Credit to [Inian response to Satish](https://unix.stackexchange.com/questions/61
 jq -nc '{ features: [ inputs.features ] | add }' *.json > merged.json
 ```
 
-#Checking
+##Checking
 To check that the csv merged properly I checked for one header row and counted all of the rows to be equal to the toal of the individual csvs and checked that the head and tail are correct. 
 
 ```bash
@@ -118,9 +118,9 @@ The last file in the directory has 3356 'features:' values which is the sum of t
 To more completely check we can look at the distribution of some values in the data later when we are exploring.
 
 #Cleaning
-Next I wanted to get all of the data into a dataframe or datatable in R, and prepare it for exploration and analysis.
+Next I loaded the data in R to prepare it for exploration and analysis.
 
-So now I need to load all of these into an R session and wrangle it.
+So I loaded the two merged files into an R session and wrangled it.
 
 I did this
 
@@ -149,6 +149,12 @@ Result 1
 Result 2
 
 Result 3
+
+the data is old. SAT 2016 and Census 2010. We can get new shapefiles, https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html
+
+newer census data? https://data.census.gov/cedsci/
+
+https://www.census.gov/library/stories/2018/10/opportunity-atlas.html looks interesting with opportunity bargains.
 
 kop _crushton
  
