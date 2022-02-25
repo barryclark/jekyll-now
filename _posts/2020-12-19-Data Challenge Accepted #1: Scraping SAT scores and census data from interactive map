@@ -1,10 +1,6 @@
 Ever wanted to scrape the data from an interactive map to run some analyses of your own on it? Only to find that the map didn't have easy access to the data?
 
-<<<<<<< HEAD
 I did. Over at Edgap. While doing a lesson [To Explore, Understand, and Respond to Social Injustice](https://evanrushton.blogspot.com/2020/12/book-club-high-school-mathematics.html)
-=======
-I did. Over at [Edgap](https://www.edgap.org/). While doing a lesson [To Explore, Understand, and Respond to Social Injustice](https://evanrushton.blogspot.com/2020/12/book-club-high-school-mathematics.html).
->>>>>>> b5ee2d84d5dd98190942c46537c89c308cbb7485
 
 I could probably find a data store with the US SAT/ACT scores for a large number of schools from 2016 and then grab the census tract data and wrangle it until I could do the following analysis. However, I felt that I would learn something useful by trying to scrape the data from the interactive map.
 
@@ -62,13 +58,8 @@ Credit to [Inian response to Satish](https://unix.stackexchange.com/questions/61
 $ jq -nc '{ features: [ inputs.features ] | add }' *.json > merged.json
 ```
 
-<<<<<<< HEAD
-##Checking
+## Checking
 To check that the csv merged properly I checked for one header row and counted all of the rows to be equal to the toal of the individual csvs and checked that the head and tail are correct. 
-=======
-## Checking Merged Files
-To check that the csv merged properly I checked for one header row and counted all of the rows to be equal to the toal of the individual csvs and checked that the head and tail were correct. 
->>>>>>> b5ee2d84d5dd98190942c46537c89c308cbb7485
 
 ```bash
 $ wc *.csv
