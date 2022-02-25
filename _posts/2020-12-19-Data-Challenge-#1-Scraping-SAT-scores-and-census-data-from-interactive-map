@@ -59,7 +59,7 @@ $ jq -nc '{ features: [ inputs.features ] | add }' *.json > merged.json
 ```
 
 ## Checking
-To check that the csv merged properly I checked for one header row and counted all of the rows to be equal to the toal of the individual csvs and checked that the head and tail are correct. 
+To check that the csv merged properly I checked for one header row and counted all of the rows to be equal to the total of the individual csvs.
 
 ```bash
 $ wc *.csv
@@ -74,7 +74,7 @@ $ wc *.csv
      436    4210   60656 merged.csv
      879    8427  122166 total
 ```
-There are 4210 lines in merged.csv and the total lines are 8427. This makes sense because we removed 7 lines which were repeat header rows in the n-1 files that weren't the first file, leaving 8420, which is double the length of the merged file.
+There are 4210 lines in merged.csv and the total lines are 8427. This makes sense because we removed 7 lines which were repeat header rows in the n-1 files that weren't the first file, leaving 8420, which is double the length of the merged file. I checked that the head and tail were correct directly.
 
 To check that the json merged I counted how many values the 'features' key had with `jq length`.
  
@@ -120,17 +120,50 @@ As another check I plotted a map of the data during exploration and checked that
 Next I loaded these merged files in R to join the csv and json data into a dataframe for exploration and analysis.
 
 ## Loading Data
-The csv and json files can be quickly loaded in R.
+The csv and geojson files can be quickly loaded in R. Note that I had to add `"type": "FeatureCollection"` to the start of my json file to make it proper geojson.
 
 ```R
-schSAT <- read.csv("./Data/csv/merged.csv", header=TRUE) 
-nhIncome <- fromJSON(file="./Data/json/merged.json")
+SAT <- read_csv("./Data/merged.csv")
+census <- geojson_sf("./Data/merged.geojson")
 ```
 
 ## Joining Data
 Each school row contains (lat, lon) that can be used to find the corresponding neighborhood from the polygons in the json file.
-```R
 
+Credit to [Michael Gordon](https://gis.stackexchange.com/questions/282750/identify-polygon-containing-point-with-r-sf-package/343477#343477)
+```R
+# Join schools from SAT with correct census tract with (lat, lon)
+# Create a points collection
+pnts <- SAT[c(3:4)]
+pnts_sf <- st_as_sf(pnts, coords = c('lon', 'lat'), crs = st_crs(census))
+
+# Find intersection of points with polygons
+pnts <- pnts_sf %>% mutate(
+  intersection = as.integer(st_intersects(geometry, census))
+  , tract = if_else(is.na(intersection), '', census$NAMELSAD10[intersection])
+)
+```
+```
+> pnts
+Simple feature collection with 435 features and 2 fields
+Geometry type: POINT
+Dimension:     XY
+Bounding box:  xmin: -119.5166 ymin: 33.33855 xmax: -117.4267 ymax: 34.86562
+Geodetic CRS:  WGS 84
+# A tibble: 435 x 3
+               geometry intersection tract               
+ *          <POINT [°]>        <int> <chr>               
+ 1 (-118.8916 34.79951)           53 Census Tract 33.05  
+ 2 (-119.2666 34.44208)          193 Census Tract 10.02  
+ 3 (-119.5166 34.41036)          185 Census Tract 17.06  
+ 4 (-118.9148 34.40365)           61 Census Tract 3.02   
+ 5 (-119.0705 34.35633)           58 Census Tract 8      
+ 6 (-117.9371 34.57364)          176 Census Tract 9100.01
+ 7 (-118.0686 34.57938)          168 Census Tract 9106.02
+ 8  (-117.574 34.41247)          182 Census Tract 91.09  
+ 9   (-117.44 34.53141)           51 Census Tract 91.17  
+10 (-118.0702 34.68021)           45 Census Tract 9005.08
+# … with 425 more rows
 ```
 
 Once the corresponding neighborhood is found, the additional properties can be joined for each school row.
