@@ -105,14 +105,18 @@ After running the code and using some of the known facts regarding AWS Lambda, w
 * Sandbox is thrown away at the end of execution and have a maximum execution time
 * Cold start penalty at initial start for ~600ms 
 
-With this knowledge we captured, we have some very valuable information. If we put all the pieces together the result might look like this treasure map:
+With the knowledge we captured, we have some very valuable information. If we put all the pieces together the result might look like this treasure map:
 
 <p align="center">
 <img width="600" src="/images/lambda-architecture.png">
 </p>
 
-Based on this, we can meditate about the [attack surface]( https://en.wikipedia.org/wiki/Attack_surface). Based on the Anatomy of a Lambda Function from above, we can only strike by injection Code or hook into the execution of the Lambda. From here we can derive an attack strategy. Like the Deathstar, we have only the chance to hit a tiny thermal exhaust port to get in. The good news, after a perfect hit the attack surface is like the [Tardis](![image](https://user-images.githubusercontent.com/8672357/155614528-509a4c12-4bad-4232-af8e-66b5bada8f29.png):vIt’s bigger on the inside. 
+Based on this, we can meditate about the [attack surface]( https://en.wikipedia.org/wiki/Attack_surface). Based on the Anatomy of a Lambda Function from above, we can only strike by injection Code or hook into the execution of the Lambda. From here we can derive an attack strategy. Like the Deathstar, we have only the chance to hit a tiny thermal exhaust port to get in. The good news, after a perfect hit the attack surface is like the Tardis: `It’s bigger on the inside!`
 
+
+<p align="center">
+<img width="600" src="/images/DNb.gif">
+</p>
 
 Let’s check our options and strategies:
 * Keep the initial Payload as small as possible (don't try to push an elephant through a keyhole, a fly might fit better)
