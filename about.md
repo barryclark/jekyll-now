@@ -9,4 +9,4 @@ I am a software engineering manager at Maxcess.
 ### Contact me
 
 I'm best reached on Twitter: [y0mbo](https://twitter.com/y0mbo)
-[email@domain.com](mailto:email@domain.com)
+
