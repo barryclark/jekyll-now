@@ -1,7 +1,7 @@
-----
+---
 layout: post
 title: Career Documentation
-----
+---
 
 The longer your career goes on, the more difficult it can be to remember the things you've accomplished. Sometimes it can be a challenge to remember what you've done in the last week.
 
