@@ -131,12 +131,12 @@ Identify
 <img width="600" src="/images/lambda-architecture-busted.png">
 </p>
 
-Based on our attack strategy we have a too complex blob, to manage this blob better we can split it up into three sections:
-1.	Outer Attack Surface -> The way/flaw inside
-2.	Inner Attack Surface -> If we made it inside, there are plenty of things we can use to leverage further attacks
-3.	IAM -> The Quote of Jeff Bryner ([@0x7eff](https://twitter.com/0x7eff) says it all: `IAM is the “killer feature” and the “killer feature”`
+Based on our attack strategy, we have a big and complex blob. To manage this blob we try to abstract it and split it into three sections:
+1.	`Outer Attack Surface` -> The way/flaw inside
+2.	`Inner Attack Surface` -> If we made it inside, there are plenty of things we can use to leverage further attacks
+3.	`IAM/Privilege Escalation` -> The Quote of Jeff Bryner ([@0x7eff](https://twitter.com/0x7eff) says it all: `IAM is the “killer feature” and the “killer feature”`
 
-Here's what we can do, based on the three sections identified in our attack strategy:
+Here's what we can do based on the three sections:
 * Compromise data 
 * Abuse business logic
 * Bypass authentication
@@ -145,6 +145,8 @@ Here's what we can do, based on the three sections identified in our attack stra
 * Financial exhaustion/ Denial of Wallet
 * Execute malicious code
 * ...surely much more nasty things
+
+Now we can start planning our attacks and think about different ways to stop an adversary.
 
 <p align="center">
 <img width="700" src="/images/lambda-iam.png">
@@ -261,7 +263,7 @@ Use this runner on your local machine to invoke the tsunami and test if the vict
 <img width="250" src="/images/mitigation.png">
 </p>
 
-Now it's time to stop the kids who are playing around and check the options we have to mitigate this attack:
+Time to stop the kids from playing around and check the options we have to mitigate the (D)DoS attack:
 * The no-brainer - Increase the [Concurrency Limit](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html)
 * Check your code - Make sure your code does not "hang" on unexpected input. You should carefully check all edge cases and think about possible inputs that may cause function timeouts, [ReDoS](https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS) attacks, or long payloads. An attacker may take advantage of this weakness.
 * If you don't want to get a huge bill at some point — set up the billing alerts. It's very easy and fast to set up (it's better to do it through AWS Budgets than through AWS SNS and AWS Cloudwatch), but it's very useful — you will be informed in case of a problem.
