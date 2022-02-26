@@ -111,7 +111,7 @@ With the knowledge we captured, we have some very valuable information. If we pu
 <img width="600" src="/images/lambda-architecture.png">
 </p>
 
-Based on this, we can meditate about the [attack surface]( https://en.wikipedia.org/wiki/Attack_surface). Based on the Anatomy of a Lambda Function from above, we can only strike by injection Code or hook into the execution of the Lambda. From here we can derive an attack strategy. Like the Deathstar, we have only the chance to hit a tiny thermal exhaust port to get in. The good news, after a perfect hit the attack surface is like the Tardis: `It’s bigger on the inside!`
+Based on this, we can meditate about the [attack surface]( https://en.wikipedia.org/wiki/Attack_surface). Based on the Anatomy of a Lambda Function from above, we can only strike by inject some Code or hook into the execution of the Lambda. From here we can derive an attack strategy. Like the Deathstar, we have only the chance to hit a tiny thermal exhaust port to get in. The good news, after a perfect hit the attack surface is like the Tardis: `It’s bigger on the inside!`
 
 
 <p align="center">
