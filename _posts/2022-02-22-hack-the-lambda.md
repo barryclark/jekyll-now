@@ -77,9 +77,9 @@ def lambda_handler(event, context):
     #   -=     //
     #          \)
     for command in commands:
-        print("[+] Processing command: {}".format(command))
+        print(f"[+] Processing command: {command}")
         print(os.system(command))
-        print("[+] Done\n".format(command))
+        print("[+] Done\n")
     
     
     ### Save our treasures in the backpack  
