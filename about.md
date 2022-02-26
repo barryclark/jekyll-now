@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I am a software engineering manager at Maxcess.
 
 ### Contact me
 
+I'm best reached on Twitter: [y0mbo](https://twitter.com/y0mbo)
 [email@domain.com](mailto:email@domain.com)
