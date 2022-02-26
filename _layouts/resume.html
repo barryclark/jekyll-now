@@ -11,20 +11,11 @@
           <!-- Your title is also defined in the _config.yml file -->
           <h2 class="header-title">Profile</h2>
 
-          <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
-          {% include icon-links.html %}
         </div>
 
         <div class="executive-summary no-print" itemprop="description">
           {{ site.resume_profile_description }}
         </div>
-
-        {% if site.resume_looking_for_work == 'yes' %}
-        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
-        {% elsif site.resume_looking_for_work == 'no' %}
-        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
-        {% else %}
-        {% endif %}
 
       </header>
 
