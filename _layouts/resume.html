@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html>
  
-{% if site.resume_section_skills %}
-<!-- begin Profile -->
-<sectionclass="content-section">
-<headerclass="section-header">
-<h2>Skills</h2>
-</header>
-{% for skill in site.data.skills %}
-<divclass="resume-item">
-<h4class="resume-item-details">{{ skill.skill }}</h4>
-<pclass="resume-item-copy">{{ skill.description }}</p>
-</div>
-{% endfor %}
-</section>
-<!-- end Skills -->
-{% endif %}
+      <header class="page-header">
+
+        <!-- Your name is defined in the _config.yml file -->
+        <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
+
+        <div class="title-bar no-print">
+
+          <!-- Your title is also defined in the _config.yml file -->
+          <h2 class="header-title">Profile</h2>
+
+          <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
+          {% include icon-links.html %}
+        </div>
+
+        <div class="executive-summary no-print" itemprop="description">
+          {{ site.resume_profile_description }}
+        </div>
+
+        {% if site.resume_looking_for_work == 'yes' %}
+        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
+        {% elsif site.resume_looking_for_work == 'no' %}
+        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
+        {% else %}
+        {% endif %}
+
+      </header>
+
+</html>
