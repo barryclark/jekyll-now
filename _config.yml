@@ -33,7 +33,9 @@ footer-links:
 
 
 #Resume Section Control
-resume_profile_description: Cybersecurity specialist with a background in IT and work experience in cloud safety, automation, and offensive security. A resourceful and analytical person with superior conflict resolution skills. Excellent communication and effective collaboration with others to ensure goals are achieved. Pursuing OSCP.
+resume_profile_description: <p>Cybersecurity specialist with a background in IT and work experience in cloud safety, automation, and offensive security. A resourceful and analytical person with superior conflict resolution skills. Excellent communication and effective collaboration with others to ensure goals are achieved. Pursuing OSCP.curity specialist with a background in IT and work experience in cloud safety, automation, and offensive security. A resourceful and analytical person with superior conflict resolution skills. Excellent communication and effective collaboration with others to ensure goals are achieved. Pursuing OSCP.</p>
+
+resume_section_profile:      true
 resume_section_profile:      true
 
 
