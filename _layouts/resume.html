@@ -1,3 +1,18 @@
 <!DOCTYPE html>
 <html>
  
+{% if site.resume_section_skills %}
+<!-- begin Profile -->
+<sectionclass="content-section">
+<headerclass="section-header">
+<h2>Skills</h2>
+</header>
+{% for skill in site.data.skills %}
+<divclass="resume-item">
+<h4class="resume-item-details">{{ skill.skill }}</h4>
+<pclass="resume-item-copy">{{ skill.description }}</p>
+</div>
+{% endfor %}
+</section>
+<!-- end Skills -->
+{% endif %}
