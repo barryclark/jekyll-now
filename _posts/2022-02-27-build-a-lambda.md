@@ -20,7 +20,7 @@ To make some faster progresses this work will have a heavy use of GitHub Actions
 => **The Code can be found [here](https://github.com/BenjiTrapp/asimov-lambda)**
 
 
-### <p align="center">
+<p align="center">
 <img width="600" src="/images/reassamble.png">
 </p>
 
@@ -80,7 +80,7 @@ WORKDIR /var/task
 ```
 
 
-### <p align="center">
+<p align="center">
 <img width="600" src="/images/pythonic-flavour.png">
 </p>
 
