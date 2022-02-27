@@ -7,7 +7,8 @@ title:
 <img width="600" src="/images/asimov-lambda.png">
 </p>
 
-Based on my previous work in reverse engineer AWS Lambda (take a look [here](https://benjitrapp.github.io/hack-the-lambda/)) it's time for a reassambling of the AWS Lambda into a Dockerized version. This Version will be founded on the dockerized [Amazon Linux image](https://hub.docker.com/_/amazonlinux?tab=tags). Docker rocks, but AWS Lambda still tells from itself that it's just an EC2 instance. In my oppinion it still must be some sort of a container system (Firecracker and Bottlerocket) but with a difference. This drill here helps me hopefully to understand in which way such a container system could work and look like.
+Based on my previous reverse engineering Wirk of AWS Lambda (take a look [here](https://benjitrapp.github.io/hack-the-lambda/)) it's time for a reassambling. We will craft an socialized version of AWS Lambda. This foundation will be based on the [Amazon Linux Dockerimage](https://hub.docker.com/_/amazonlinux?tab=tags). Docker rocks - the real AWS Lambda tells from itself, that it's an EC2 instance. In my oppinion it still must be some sort of a container system (yes I know that [Firecracker](https://aws.amazon.com/de/blogs/opensource/firecracker-open-source-secure-fast-microvm-serverless/) and [Bottlerocket](https://aws.amazon.com/de/bottlerocket/)  exist) but there must also be a difference for the real one. This drill here helps me to understand and learn in which way such a container system could work and look like.
+
 
 To make some faster progresses this work will have a heavy use of GitHub Actions and Docker flow including GitHubs own Image Registry. Just take a look at the Actions part of the repisitory. 
 
@@ -117,5 +118,5 @@ USER sbx_user1051
 ENTRYPOINT ["/var/rapid/init", "--bootstrap", "/var/runtime/bootstrap", "--enable-msg-logs"]
 ```
 
-... to be continued :)
+... to be continued -> Reverse engineering of the original [AWS Python Lambda Dockerfile](https://hub.docker.com/r/amazon/aws-lambda-python) and look how close I came by diffing both :)
 
