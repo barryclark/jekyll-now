@@ -24,7 +24,7 @@ To make some faster progresses this work will have a heavy use of GitHub Actions
 <img width="600" src="/images/reassamble.png">
 </p>
 
-To have a multipurpose Image I try to craft an own AWS Lambda Base Image 
+To have a multipurpose Image let's try to craft a genuine AWS Lambda Base Image. We use the amazonlinux Dockerimage to install the required dependencies and move the dependencies into an empty fresh image. From there we can build it up from scratch and reuse some files that were streamed from an AWS Lambda function into a S3 Bucket. The files were cleaned up by every runtime specific belongings. There are also a lot of interresting files and also it seems a cooperation between RedHat and Amazon
 
 ```docker
 ######
