@@ -1,0 +1,26 @@
+---
+layout: post
+title: Attempting to clean the dust
+---
+
+[//]: # (Post 12)
+
+Hey there folks. It's been a long long time since I updated anything on this blog. I thought there was no real reason to not update this more frequently, but now that I think about it: There's been a side project, from which I cannot disclose anything, I've also spent more time with physical conditioning and with learning music, and most probably because I've spent most of 2021 dedicated to do online courses. This post is my attempt to break the cycle, however, the problem is that I have dedicated less time to studying new papers or anything interesting related to engineering, hence I have no topic on Antennas or RF to put up. Still, I realized that the purpose to start this blog was to get me to write more, because it is something that I like to do, and since it is my personal space, I can use to write about anything I deem interesting and it doesn't necessarily need to be about antennas anyway.
+
+So I decided to write a new blog post and talk about some of the online courses I did last year, and what I learned from them. This is also a great practice by reasons you'll see further ahead.
+
+One of the online courses, from Coursera, that I successfully concluded last year was [Successful Negotiation: Essential Strategies and Skills](https://www.coursera.org/learn/negotiation-skills). This course is rather light, but really well made. The instructor, Prof. George Siedel, has a very clear and well paced discourse, with several examples, there's also a simple practicing exercise and some videos on types of arbitration, which are used frequently on business negotiations. I ended up buying his book [Negotiating for Success](https://www.amazon.com/Negotiating-Success-Essential-Strategies-Skills-ebook/dp/B00OE85SDS/ref=sr_1_1?keywords=negotiating+for+success&qid=1645963273&sprefix=negotiating+for+s%2Caps%2C143&sr=8-1), which I got for a little more than 10€. Now, I'm no business man and I certainly don't pretend to shift my career to sales or anything like that, but truth is we all need to negotiate at some point in our life, this already helped me last year when I bought my new house and had to deal with banks, calling several banks, discussing proposals and negotiating terms for the Home loan, therefore making sure I was getting the best possible deal from each bank.
+
+The course breakdown into three major sections:
+- Preparing the negotiation
+- Using key strategies and tactics
+- Closing the negotiation and establishing contract
+
+In the first stage, while 'Preparing the negotiation' one of the first assessments is to actually decide if its wise/worth it to negotiate or not. In many situations we don't negotiate at all, such as a trip to the supermarket, even though, apparently (at least in the USA) it's possible to haggle in these establishments as well. We usually think about negotiations when we think about buying a used item from some listing on the internet, like a used car, bicycle or a kitchen robot. But even on new items, like buying a new TV for instance, where it's more plausible to negotiate than a supermarket, particularly if you go to a specialized store and not a big retail, we often just pay the price tag because we think there's no negotiation margin in these stores, while that's most of the times false, be it USA or Europe. But here enters the other side of the question: Is it worth it? It's a matter of time! Let's suppose you're on the hunt for a new vacuum robot (I am), you must spend time, preparing the negotiation such as getting well informed about the specs of these robots, you also need some time to evaluate the prices on several stores (even though there are websites these days that make it easier for you), take note of those, and then actually go to the store and bargain, maybe even move to another store. So this all takes time. Let's say you spend 2 hours browsing info on those robots, then 1 hour collecting prices and making notes, then you go to two stores, spend 1 hour in each for negotiations to get a 50€ discount on that vacuum robot. This means you spent 5 hours to obtain 50€ discount, 10€/h is not a bad rating, but was it absolutely worth it? Or would you much rather simply pay the highest price and use those 5 hours doing something else? Well that's the kind of exercise one should do in this stage.
+
+The second step on 'Preparing the negotiation' is to determine the type of negotiation. There are two types of negotiation: Position-based negotiation and interest based negotiation, with two possible goals, either to do a deal or resolve a dispute. In a position-based negotiation, both parties set out with the goal to achieve an equality result out, while in interest-based negotiation, both parties explore how to get a more equitable result. These two types are also commonly referred to as "distributive" and "integrative" negotiations, in a sense that the former is the search for dividing a fixed sized cake towards all intervenient, while the later is a search to increase the cake by looking at each party's interests in particular. In the course and book a pizza example is used, but I'll use a cake to illustrate.
+
+{:refdef: style="text-align: center;"}
+![the-cake](/images/post12/the-cake-is-a-lie.gif)
+{: refdef}
+
