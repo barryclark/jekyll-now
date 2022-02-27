@@ -1,4 +1,3 @@
-
 ---
 layout: memory
 title: Aweseome list of awesome lists
