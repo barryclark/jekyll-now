@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Create 
+title: 
 ---
 
 <p align="center">
 <img width="600" src="/images/asimov-lambda.png">
 </p>
 
-Based on my previous work in reverse engineer AWS Lambda (take a look [here](https://benjitrapp.github.io/hack-the-lambda/) it's time for a reassambling of the AWS Lambda into a Dockerized version. This Version will be founded on the dockerized [Amazon Linux image](https://hub.docker.com/_/amazonlinux?tab=tags). Docker rocks, but AWS Lambda still tells from itself that it's just an EC2 instance. In my oppinion it still must be some sort of a container system (Firecracker and Bottlerocket) but with a difference. This drill here helps me hopefully to understand in which way such a container system could work and look like.
+Based on my previous work in reverse engineer AWS Lambda (take a look [here](https://benjitrapp.github.io/hack-the-lambda/)) it's time for a reassambling of the AWS Lambda into a Dockerized version. This Version will be founded on the dockerized [Amazon Linux image](https://hub.docker.com/_/amazonlinux?tab=tags). Docker rocks, but AWS Lambda still tells from itself that it's just an EC2 instance. In my oppinion it still must be some sort of a container system (Firecracker and Bottlerocket) but with a difference. This drill here helps me hopefully to understand in which way such a container system could work and look like.
 
 To make some faster progresses this work will have a heavy use of GitHub Actions and Docker flow including GitHubs own Image Registry. Just take a look at the Actions part of the repisitory. 
 
