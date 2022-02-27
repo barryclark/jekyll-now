@@ -1,7 +1,7 @@
 
 ---
 layout: memory
-title: Benjis aweseome list of awesome lists
+title: Aweseome list of awesome lists
 ---
 
 Still work in progress but here comes the baseline:
