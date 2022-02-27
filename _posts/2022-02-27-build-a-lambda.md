@@ -84,6 +84,11 @@ WORKDIR /var/task
 <img width="600" src="/images/pythonic-flavour.png">
 </p>
 
+<p align="center">
+<img width="600" src="/images/select-turtle.gif">
+</p>
+
+
 Time to reuse the crafted Base Image and give it a pythonic flavour based on the real extracted python 3.8 runtime. The Image looks like this:
 
 ```docker
