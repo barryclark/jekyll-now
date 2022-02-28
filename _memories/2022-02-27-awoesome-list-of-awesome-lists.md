@@ -77,3 +77,4 @@ Still work in progress and probably this list will never end to be updated. But 
 * [alebcay/awesome-shell](https://github.com/alebcay/awesome-shell)
 * [viatsko/awesome-vscode](https://github.com/viatsko/awesome-vscode)
 * [gamontal/awesome-katas](https://github.com/gamontal/awesome-katas)
+* [trimstray/the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge)
