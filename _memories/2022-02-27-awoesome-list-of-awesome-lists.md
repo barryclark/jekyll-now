@@ -1,6 +1,6 @@
 ---
 layout: memory
-title: 
+title: ""
 ---
 
 <p align="center">
