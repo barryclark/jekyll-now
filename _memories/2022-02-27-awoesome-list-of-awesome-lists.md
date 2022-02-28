@@ -7,7 +7,7 @@ title: ""
 <img width="600" src="/images/listoflists.png">
 </p>
 
-Still work in progress and probably this list will never end to be updated. But here it is - the ...
+Still work in progress and probably this list will never end to be updated. Now have fun and discover some new things:
 
 ## CloudSec Lists
 * [myoung34/awesome-cloudcustodian](https://github.com/myoung34/awesome-cloudcustodian)
@@ -77,3 +77,5 @@ Still work in progress and probably this list will never end to be updated. But 
 * [viatsko/awesome-vscode](https://github.com/viatsko/awesome-vscode)
 * [gamontal/awesome-katas](https://github.com/gamontal/awesome-katas)
 * [trimstray/the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge)
+
+If you have an awesome list that ia missing here - send me a Pull Request or open an issue. Thank you :)
