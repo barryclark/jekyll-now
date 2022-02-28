@@ -1,14 +1,13 @@
 ---
 layout: memory
-title: Aweseome list of awesome lists
+title: 
 ---
-
-
-Still work in progress and probably this list will never end to be updated. But here it is - the ...
 
 <p align="center">
 <img width="600" src="/images/listoflists.png">
 </p>
+
+Still work in progress and probably this list will never end to be updated. But here it is - the ...
 
 ## CloudSec Lists
 * [myoung34/awesome-cloudcustodian](https://github.com/myoung34/awesome-cloudcustodian)
