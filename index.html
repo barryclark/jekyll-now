@@ -1,18 +1,156 @@
 ---
 layout: default
 ---
+<section id="about" class="home-section">
+    <div style="width: 100%; overflow: hidden;">
+        <div style="width: 70%; float: left;"> 
+          {% capture p1 %}{% include about.md %}{% endcapture %}
+          {{ p1 | markdownify }}
+          <br>
+        </div>
+        <div style="margin-left: 30%;font-size:85%"> 
+            <br>
+            <span id="badgeCont571"><script type="text/javascript" src="https://publons.com/mashlets?el=badgeCont571&rid=V-5597-2019"></script></span>
+            <br>
+            <a class="twitter-timeline" data-width="250" data-height="300" href="https://twitter.com/danhdtruong?ref_src=twsrc%5Etfw">
+                Tweets by danhdtruong</a> 
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <br>
+            <h2>Recent Posts</h2>
+            {% for post in site.posts limit:3 %}
+                <article class="post">
+                  <b><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></b>
+                  <div class="entry">
+                    {{ post.excerpt }}
+                  </div> 
+                  <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a><br>
+                </article>
+            {% endfor %}
+            <h2>Tags</h2>
+            {% include archive.html %}
+         </div>
+    </div>
+</section>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<section id="publications" class="home-section">
+  <h1> Selected Publications </h1>   
+  
+   <div class="pub-list-item" style="margin-bottom: 1rem">
+    <span itemprop="author">
+    <strong>Truong, D. D.</strong> et.al</span>.
+      <a href="https://www.biorxiv.org/content/10.1101/2022.01.21.476982v1" itemprop="name" target="_blank">
+        Dissociation protocols used for sarcoma tissues bias the transcriptome observed in single-cell and single-nucleus RNA sequencing</a>.
+      In <em>bioRxiv</em>,  2022.
+   </div>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+   <div class="pub-list-item" style="margin-bottom: 1rem">
+    <span itemprop="author">
+    <strong>Truong, D. D.</strong>, Kratz, A., Park, J. G., Barrientos, E. S. et.al</span>.
+      <a href="https://doi.org/10.1158/0008-5472.CAN-18-2293" itemprop="name" target="_blank">
+        A human organotypic microfluidic tumor model permits investigation of the interplay between patient-derived fibroblasts and breast cancer cells</a>.
+      In <em>Cancer Research</em>,  2019.
+   </div>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+   <div class="pub-list-item" style="margin-bottom: 1rem">
+    <span itemprop="author">
+    <strong>Truong, D. D.</strong>, Fiorelli, R.,  Barrientos, E. S. et.al</span>.
+      <a href="https://doi.org/10.1016/j.biomaterials.2018.07.048" itemprop="name" target="_blank">
+        A three-dimensional (3D) organotypic microfluidic model for glioma stem cells–Vascular interactions</a>.
+      In <em>Biomaterials</em>,  2019.
+   </div>
+  
+   <div class="pub-list-item" style="margin-bottom: 1rem">
+    <span itemprop="author">
+    Nagaraju, S.*, <strong>Truong, D.D.</strong>* et.al</span>.
+      <a href="https://doi.org/10.1002/adhm.201701257" itemprop="name" target="_blank">
+        Microfluidic tumor–vascular model to study breast cancer cell invasion and intravasation</a>.
+      In <em>Advanced healthcare materials</em>,  2018.
+   </div>
+  
+   <div class="pub-list-item" style="margin-bottom: 1rem">
+    <span itemprop="author">
+    Peela, N.* ,<strong>Truong, D. D.</strong>*, Saini, H.* et.al</span>.
+      <a href="https://doi.org/10.1016/j.biomaterials.2017.04.017" itemprop="name" target="_blank">
+        Advanced biomaterials and microengineering technologies to recapitulate the stepwise process of cancer metastasis</a>.
+      In <em>Biomaterials</em>,  2017.
+   </div>
+  
+   <div class="pub-list-item" style="margin-bottom: 1rem">
+    <span itemprop="author">
+    <strong>Truong, D. D.</strong>, Puleo, J. et.al</span>.
+      <a href="https://www.nature.com/articles/srep34094" itemprop="name" target="_blank">
+        A Breast cancer cell invasion into a three dimensional tumor-stroma microenvironment</a>.
+      In <em>Scientific Reports</em>,  2016.
+   </div>
+  
+  
+</section>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+<section id="Projects" class="home-section">
+  <h1> Current Projects </h1> 
+    <ul>
+      <li>Single-cell analysis of mesenchymal tissue development using an in vitro MSC differentiation model</li>
+      <li>Scoring cell fate in liposarcoma and revealing the underlying gene regulatory networks controlling plasticity</li>
+      <li>Understanding EMT in osteosarcoma fate and plasticity</li>
+      <li>Effect of targeting EWS-FLI1 in Ewing's sarcoma on ES fate and plasticity</li>
+    </ul> 
+</section>
+
+<section id="protocols" class="home-section">
+  <h1> Protocols </h1> 
+    <ul>
+      <li><a href="https://www.protocols.io/view/nuclei-isolation-for-single-nuclei-rna-sequencing-bkacksaw" itemprop="name" target="_blank">
+            Nuclei Isolation for Single-nuclei RNA sequencing</a></li>
+      <li><a href="https://www.protocols.io/private/b386d9dce64c11eaaa160a58a9feac2a" itemprop="name" target="_blank">
+            Cold Tissue Dissociation for Single-Cell sequencing</a></li>
+      <li><a href="https://www.protocols.io/private/ddbfd343f3d211ea96130a58a9feac2a" itemprop="name" target="_blank">
+            Isolation of Osteoblasts for Single-Cell Analysis</a></li>
+      <li><a href="https://www.protocols.io/private/25b53299016d11ea83d70242ac110004" itemprop="name" target="_blank">
+            Liposarcoma Tumor Dissociation for Single-Cell RNA-seq</a></li>
+    </ul> 
+</section>
+
+<section id="teaching" class="home-section">
+  <h1>Teaching</h1>
+      <table class="alternate_color">
+        <tr>
+          <td>Lecturer </td>
+          <td> MD Anderson Postdoctoral Association <br> Teaching Subcommittee 2021 </td>
+        </tr>
+        <tr>
+          <td>Lecturer </td>
+          <td> Biochemistry of Cancer (Guest Lecturer) 2018 <br> Principles of Stem Cell Technology (Lab) 2017 <br> The ASU Experience (Guest Lecturer) 2017  <br> Biomedical Microdevices (Lab) 2016-2017 </td>
+        </tr>
+        <tr>
+          <td>Teaching assistant</td>
+          <td>Biochemistry of Cancer 2018 <br> Principles of Stem Cell Technology 2017 <br>  Biomedical Product Design 2016-2017 </td>
+        </tr>
+      </table>
+</section>
+
+<section id="other" class="home-section">
+  <h1>Other Activities</h1>
+      <table class="alternate_color">
+        <tr>
+            <td><a href="https://github.com/danhtruong/Get-started-with-R-for-Biologists" target="_blank">Get-started-with-R-for-Biologists</a></td>
+            <td>This repository contains resources on getting started with R for biologists. R is a language and environment for statistical computing and graphics. It is widely used for a variety of statistical analysis (i.e., linear and nonlinear modeling, classical statistical tests, clustering, etc.). R is freely available and has a large collection of developed packages of different tools.</td>
+        </tr>
+        <tr>
+            <td><a href="https://canvas.mdanderson.org/courses/1585" target="_blank"> 11th Annual Postdoctoral Science Symposium</a></td>
+            <td>The Annual Postdoctoral Science Symposium provides a platform for postdoctoral fellows in the Texas Medical Center to present their current research in the areas of basic and translational research and features presentations and hosts interactive sessions facilitated by experts in a variety of fields.</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.project-short.com" target="_blank">Project SHORT</a></td>
+            <td>Comprised of volunteer professional health and graduate students, residents, faculty, and post-docs, Project SHORT (Students for Higher-Ed Opportunities and Representation in Training) is the first organization to offer pro-bono mentoring for both professional health and graduate school admissions.</td>
+        </tr>
+        <tr>
+            <td><a href="https://whova.com/web/apcs_202010" target="_blank"> 2021 Annual Postdoctoral Career Symposium</a></td>
+            <td>The Annual Postdoctoral Career Symposium (APCS) is designed and run by postdocs to help postdocs and those finishing grad school to seek out the career options that appeal to them most, and in some cases open up doors that we might not have known existed.</td>
+        </tr>
+      </table>
+</section>
+    
+<section id="CV" class="home-section">
+  <h1> CV </h1>   
+  Download CV <a href="{{ site.baseurl }}/files/CV.pdf" target="_blank">here</a>. 
+</section>

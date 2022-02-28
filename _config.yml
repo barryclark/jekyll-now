@@ -3,45 +3,49 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Danh Truong, PhD
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Works by Danh!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://danhtruong.github.io/images/170510-Danh-Truong-SL-0004.jpg
 
-#
+# 
 # Flags below are optional
 #
 
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: dtruong4@mdanderson.org
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: danhtruong
   instagram:
-  linkedin:
+  linkedin: ddtruong
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: danhdtruong
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
+  googlescholar: https://scholar.google.com/citations?user=S5vgiuYAAAAJ&hl=en
+  protocols: https://www.protocols.io/researchers/danh-truong
+  publons: https://publons.com/researcher/3059386/danh-truong/
+  semantic-scholar: https://www.semanticscholar.org/author/Danh-Truong/33685809
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: 
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-9434668-3
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: https://danhtruong.github.io/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -52,6 +56,7 @@ baseurl: ""
 #
 # !! You don't need to change any of the configuration flags below !!
 #
+future: true
 
 permalink: /:title/
 
@@ -76,6 +81,7 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-gist
 
 # Exclude these files from your production _site
 exclude:

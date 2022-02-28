@@ -25,7 +25,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 1600px;
   padding: 0 10px;
   width: 100%;
 }
@@ -157,6 +157,16 @@ img {
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
+  position: relative;
+  -webkit-animation: $intro-transition;
+  animation: $intro-transition;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+  z-index: 20;
+  top: 0;
+  width: 100%;
+  background: white;  // set a color to hide content that may appear below masthead
+  height: 85px; // need a magic number here which may break in different viewports
 
   @include mobile {
     text-align: center;
@@ -281,6 +291,17 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+table.alternate_color tr:nth-child(odd){
+   background-color: #f6f8fa;
+}
+
+td {
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
