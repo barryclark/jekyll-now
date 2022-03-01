@@ -1,6 +1,6 @@
 ---
 layout: page
-title: now
+title: Now
 ---
 
 February 2022

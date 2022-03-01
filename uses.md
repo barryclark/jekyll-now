@@ -2,7 +2,6 @@
 layout: page
 title: Uses
 ---
-# Uses
 
 This is a living document outlining the things I use. Please note I will use affiliate links when available.
 
@@ -55,6 +54,8 @@ This is a living document outlining the things I use. Please note I will use aff
 
 
 ## Software
+
+In no particular order
 
 * Visual Studio Code
 * Vim
