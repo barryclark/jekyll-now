@@ -9,7 +9,7 @@ name: John Uhri
 description: Software Engineering Manager
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: ./images/logo.svg
+avatar: https://johnuhri.com/images/logo.svg
 
 #
 # Flags below are optional
