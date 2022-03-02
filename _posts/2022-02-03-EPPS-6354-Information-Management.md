@@ -10,3 +10,5 @@ title: Data Science - Information Management
 [EPPS 6354 Information Management Assignment 3](https://minshimia.github.io/Information-Management/EPPS-6354-Assignment-3.-Min_Shi.html)
 
 [EPPS 6354 Information Management Assignment 4](https://minshimia.github.io/Information-Management/EPPS-6354-Assignment-4.-Min_Shi.html)
+
+[EPPS 6354 Information Management Assignment 5](https://minshimia.github.io/Information-Management/EPPS-6354-Assignment-5.-Min_Shi.html)
