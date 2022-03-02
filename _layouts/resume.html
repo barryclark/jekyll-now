@@ -23,4 +23,81 @@ layout: default
 
       </header>
 
+    {% if site.resume_section_skills %}
+      <!-- begin Skills -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Skills</h2>
+        </header>
+        {% for skill in site.data.skills %}
+        <div class="resume-item">
+          <h4 class="resume-item-details">{{ skill.skill }}</h4>
+          <p class="resume-item-copy">{{ skill.description }}</p>
+        </div>
+        {% endfor %}
+       
+      </section>
+       <!-- end Skills -->
+      {% endif %}
+ 
+     {% if site.resume_section_experience %}
+      <!-- begin Experience -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Experience</h2>
+        </header>
+
+        {% for job in site.data.experience %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
+          <h4 class="resume-item-details" itemprop="description"><span style="display: block; float:left;">{{ job.position }}</span><span style="display: block; float:right;">{{ job.duration }}</span></h4><br/>
+          <p class="resume-item-copy" style="clear: both;">{{ job.summary }}</p>
+        </div><!-- end of resume-item -->
+        {% endfor %}
+
+      </section>
+      <!-- end Experience -->
+      {% endif %}
+
+
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Projects</h2>
+        </header>
+
+        {% for project in site.data.projects %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">{{ project.project }}</h3>
+          <h4 class="resume-item-details" itemprop="description"><span style="display: block; float:left;">{{ project.role }}</span><span style="display: block; float:right;">{{ project.duration }}</span></h4><br/>
+          <p class="resume-item-copy" style="clear: both;">{{ project.description }}</p>
+        </div>
+        {% endfor %}
+
+      </section>
+      <!-- end Projects -->
+      {% endif %}
+     {% if site.resume_section_recognition %}
+      <!-- begin Recognition -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Recognition</h2>
+        </header>
+
+        {% for recognition in site.data.recognitions %}
+        <div class="resume-item">
+          <h3 class="resume-item-title" itemprop="award">{{ recognition.award }}</h3>
+          <h4 class="resume-item-details">{{ recognition.organisation }} &bull; {{ recognition.year }}</h4>
+          <p class="resume-item-copy">{{ recognition.summary }}</p>
+        </div>
+        {% endfor %}
+
+      </section>
+      <!-- end Recognition -->
+      {% endif %}
+
 </html>
