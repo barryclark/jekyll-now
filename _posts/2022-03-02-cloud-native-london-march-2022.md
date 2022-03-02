@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2022"
-published: false
 ---
 
 Joining us at our March Cloud Native London virtual meetup tonight are three great speakers from Form3, Ermetic, and WSO2, from 6:45pm GMT on Rambly and YouTube!.
