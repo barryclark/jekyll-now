@@ -7,11 +7,12 @@ This is a living document outlining the things I use. Please note I will use aff
 
 ## Hardware
 
-* Laptop
+* Work
     * Work - Dell running Windows 10
-    * Home - ROG running Windows 11
-* 2 Asus 27" monitors
-* Vivo dual monitor arms
+* Personal
+    * ROG running Windows 11
+    * 2 Asus 27" monitors
+    * Vivo dual monitor arms
 * Logitech G915 TKL keyboard (1 at home and one at work) Kind of wish I had the full numeric keypad, though.
 * Logitech M705 Mouse (1 at home and 1 at work)
 * Logitech Webcam
@@ -32,7 +33,7 @@ This is a living document outlining the things I use. Please note I will use aff
 
 * Fezibo standing desk with a crappy lamitated top.
 * Aeron chair
-* Ember mug
+* Ember mug - White 12oz at work; black 16oz at home
 * Amazon Alexa
 * Menard's arcticect Lamps with Govee Smart Bulbs
 * EPN Laptop Stand

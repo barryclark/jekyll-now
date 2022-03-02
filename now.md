@@ -3,15 +3,15 @@ layout: page
 title: Now
 ---
 
-February 2022
+March 2022
 
-South Elgin, IL
+Living in the far west Chicago suburbs.
 
-I am a software engineering manager at Maxcess.
+Software engineering manager at Maxcess.
 
 Learning React.
 
-I rebuilt this site using Gatsby and Github pages.
+Recently rebuilt this site using Gatsby and Github pages.
 
 Currently interested in:
 
