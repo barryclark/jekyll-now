@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-Benjis [Denkarium](https://harrypotter.fandom.com/wiki/Pensieve) helps to persist some of my chaotic memories. The Pensieve (Denkarium on german) itself, is a magical device used to review these memories.
+Benjis [Pensieve](https://harrypotter.fandom.com/wiki/Pensieve) helps to persist some of my chaotic memories. The Pensieve (Denkarium on german) itself, is a magical device used to review these memories.
 
 ![_config.yml]({{ site.baseurl }}/images/pensieve.png)
 
