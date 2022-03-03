@@ -95,10 +95,10 @@ def lambda_handler(event, context):
 ```
 After running the code and using some of the known facts regarding AWS Lambda, we can wrap it up to the following list:
 * Runs on an Amazon Linux (RHEL derivative).
-* According to environment variables, it runs in - EC2 but must be some kind of container system
-* Read-only file system - this tackles persistance
+* According to environment variables, it runs in an EC2 imstande - but must be some kind of container system
+* Read-only file system - this tackles persistance but there are options we will research later
 * NON-root user 
-* Single AWS IAM role required for access to sandbox
+* Single AWS IAM role required for access to the sandbox
 * Reverse sell not possible since it runs airgapped
 * Code is copied to `/var/run/task`
 * Bootstrap under `/var/runtime/awslambda` <- entry point and backbone of AWS Lambda
@@ -132,7 +132,7 @@ Identify
 </p>
 
 Based on our attack strategy, we have a big and complex blob. To manage this blob we try to abstract it and split it into three sections:
-1.	`Outer Attack Surface` -> The way/flaw inside
+1.	`Outer Attack Surface` -> The way inside, derived from another flaw
 2.	`Inner Attack Surface` -> If we made it inside, there are plenty of things we can use to leverage further attacks
 3.	`IAM/Privilege Escalation` -> The Quote of Jeff Bryner ([@0x7eff](https://twitter.com/0x7eff) says it all: `IAM is the “killer feature” and the “killer feature”`
 
