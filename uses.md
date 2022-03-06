@@ -25,7 +25,7 @@ This is a living document outlining the things I use. Please note I will use aff
 
 ## Music
 
-* iPods Pro
+* AirPods Pro
 * JBL Flip
 * Sony WH-1000XM3
 
