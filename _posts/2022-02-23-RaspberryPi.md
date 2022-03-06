@@ -35,7 +35,7 @@ Here is the link to the [Imager](https://www.raspberrypi.com/software/)
  
  
  
- # How to install Docker on Raspberry pi?
+# How to install Docker on Raspberry pi?
  
  In this tutorial, we will be installing docker on Raspbian and run hello-world docker. We are going to ssh into Raspi and deploy the docker.
  
