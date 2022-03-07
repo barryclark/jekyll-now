@@ -41,8 +41,8 @@ Here is the link to the [Imager](https://www.raspberrypi.com/software/)
  
  1. From your terminal ssh into Raspberry pi
 
-       ssh pi@<IPAdderessOfThePi> 
+        ssh pi@<IPAdderessOfThePi> 
  2. Pi's ssh default password 
  
-       raspberry
+        raspberry
  
