@@ -95,7 +95,7 @@ def lambda_handler(event, context):
 ```
 After running the code and using some of the known facts regarding AWS Lambda, we can wrap it up to the following list:
 * Runs on an Amazon Linux (RHEL derivative).
-* According to environment variables, it runs in an EC2 imstande - but must be some kind of container system
+* According to environment variables, it runs in an EC2 instance - but must be some kind of a container system
 * Read-only file system - this tackles persistance but there are options we will research later
 * NON-root user 
 * Single AWS IAM role required for access to the sandbox
