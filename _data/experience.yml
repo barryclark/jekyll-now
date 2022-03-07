@@ -3,7 +3,7 @@
 - company: SecureOps
   position: Security Analyst
   duration: Oct 2021, Present
-  summary: I work as security analyst, where I investigate alerts related to Phish, Scam, Spam related emails and network based alerts like suspicious malware at one of the end devices on cloud.<ul><li>Investigate alerts on azure sentinel and Microsoft Defender 365 for any suspicious activity</l><l>Scan emails for phish related url which redrects user to webpage to harveest user login info</li><li>Use wireshark to investigate network packets and look for suscpected suspicious url in nazomi devices</li></ul>
+  summary: I work as security analyst, where I investigate alerts related to Phish, Scam, Spam related emails and network based alerts like suspicious malware at one of the end devices on cloud.<ul><li>Investigate alerts on azure sentinel and Microsoft Defender 365 for any suspicious activity</li><li>Scan emails for phish related url which redrects user to webpage to harveest user login info</li><li>Use wireshark to investigate network packets and look for suscpected suspicious url in nazomi devices</li></ul>
   
 # IT Specialist
 - company: Telecom metrics Inc
