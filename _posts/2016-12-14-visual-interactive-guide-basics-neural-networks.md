@@ -208,7 +208,7 @@ So our current model calculates predictions by plugging in the area of house as 
 </div>
 
 
-## Train Your Dragon
+## Train Your Dragon <a name="train_your_dragon" href="#train_your_dragon">#</a>
 How about you take a crack at training our toy neural network? Minimize the loss function by tweaking the weight and bias dials. Can you get an error value below 799?
 
 
@@ -257,7 +257,7 @@ How about you take a crack at training our toy neural network? Minimize the loss
 
 
 
-## Automation
+## Automation <a name="automation" href="#automation">#</a>
 Congratulations on manually training your first neural network! Let's look at how to automate this training process. Below is another example with an additional autopilot-like functionality. These are the GD Step buttons. They use an algorithm called "Gradient Descent" to try to step towards the correct weight and bias values that minimize the loss function.
 
 
@@ -336,7 +336,7 @@ How does gradient descent know where its next step should be? Calculus. You see,
 
 Learn more about gradient descent and how to use it to calculate the new weights & bias in the first lectures of Coursera's [Machine Learning](https://www.coursera.org/learn/machine-learning) course.
 
-## And Then There Were Two
+## And Then There Were Two <a name="two" href="#two">#</a>
 
 Is the size of the house the only variable that goes into how much it costs? Obviously there are many other factors. Let's add another variable and see how we can adjust our neural network to it.
 
