@@ -8,7 +8,7 @@ A little less than a year ago, I joined the awesome <a href="https://cohere.ai">
 
 I love that I get to share some of the intuitions developers need to start problem-solving with these models. Even though I've been working very closely on pretrained Transformers for the past several years (for this blog and in developing <a href="https://github.com/jalammar/ecco">Ecco</a>), I'm enjoying the convenience of problem-solving with managed language models as it frees up the restrictions of model loading/deployment and memory/GPU management.  
 
-These are some of the articles I wrote and collaborated with colleagues on the last few months: 
+These are some of the articles I wrote and collaborated on with colleagues over the last few months: 
 
 ### <a href="https://docs.cohere.ai/intro-to-llms/">Intro to Large Language Models with Cohere</a>
 <div class="row two-column-text">
