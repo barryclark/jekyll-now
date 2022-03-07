@@ -3,11 +3,11 @@
 - company: SecureOps
   position: Security Analyst
   duration: Oct 2021, Present
-  summary: I work as security analyst, where I investigate alerts related to Phish, Scam, Spam related emails and network based alerts like suspicious malware at one of the end devices on cloud.<ul><l>Investigate alerts on azure sentinel and Microsoft Defender 365 for any suspicious activity</l><l>Scan emails for phish related url which redrects user to webpage to harveest user login info</l><l>Use wireshark to investigate network packets and look for suscpected suspicious url in nazomi devices</l>
+  summary: I work as security analyst, where I investigate alerts related to Phish, Scam, Spam related emails and network based alerts like suspicious malware at one of the end devices on cloud.<ul><l>Investigate alerts on azure sentinel and Microsoft Defender 365 for any suspicious activity</l><l>Scan emails for phish related url which redrects user to webpage to harveest user login info</l><l>Use wireshark to investigate network packets and look for suscpected suspicious url in nazomi devices</l></ul>
   
 # IT Specialist
 - company: Telecom metrics Inc
   position: IT Specialist
   duration: Jan 2021, Oct 2021
-  summary: I worked as an IT specialist, responsible for configuring IP phones and auditing servers. <ul><l>Configure IP phones to connect with 3CX voip system by using phones webpage</l><l>Created pyton script to automate legacy ziptel servers via using selenium library</>
+  summary: I worked as an IT specialist, responsible for configuring IP phones and auditing servers. <ul><l>Configure IP phones to connect with 3CX voip system by using phones webpage</l><l>Created pyton script to automate legacy ziptel servers via using selenium library</l></ul>
   
