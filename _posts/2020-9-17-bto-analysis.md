@@ -346,7 +346,7 @@ which produces this:
 
 ![Ratios have been particularly high in 2019 and 2020](/2020-09-webscraping-bto/first_timer_ratio_small.png)
 
-For reference, I have included a dashed line to indicate where the first-timer application rate = 1, so points above the dashed line indicate the presence of excess demand (and vice versa).
+For reference, I have included a dashed line to indicate where the first-timer application rate = 1, so points above the dashed line indicate the presence of excess demand (and vice versa). To be clear, I am not saying that it is necessarily better from a policy perspective for the rate to be below 1 (i.e. no excess demand). But certainly from an applicant perspective, I would be happy to see lower application rates.
 
 It actually looks a bit messy, but here's what I see:
 * Most launches since 2015 have first-timer application rates which exceeds one, so there's almost always greater demand than supply. Prior to 2019, some launches actually had first-timer ratios below one, and it looks like most of them happened between late 2017 to end-2018. 
