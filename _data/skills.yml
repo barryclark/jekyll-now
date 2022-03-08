@@ -1,7 +1,7 @@
 # Skills
 # Persistant
 - skill: Persistant
-  description: I have proven to complete multiple goals by being persistence to learn new skills each time, for example redeploying home automation server from ground up multiple times.
+  description: I have proven to complete multiple goals by being persistence to learn new skills each time. For example, while I was trying to configure a home automation application on Raspberry Pi, I would lock my self out due to forgetting some steps on securing ssh port. But I kept at it, wrote a blog about it to make sure I remember it.
   
 # Optimistic
 - skill: Optimism
