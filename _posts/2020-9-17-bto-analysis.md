@@ -4,7 +4,7 @@ title: Webscraping BTO application rates in R
 ---
 
 ### Update (Mar 2022)
-HDB seems to have updated their website such that the historical application rates are only available from Nov 2020. I also seem to have some issues with scraping Feb 2021 application rates which I have frankly not bothered to fix. Hence, the code which I used will need some updates to work properly. The csv file with my scraped data as of Sep 2020 can be found [here](https://github.com/clemwgk/clemwgk.github.io/blob/master/2020-09-webscraping-bto/scraped_data.csv)
+HDB seems to have updated their website such that the historical application rates are only available from Nov 2020. I also seem to have some issues with scraping Feb 2021 application rates which I have frankly not bothered to fix. Hence, the code which I used will need some updates to work properly. The csv file with my scraped data as of Sep 2020 can be found [here](https://github.com/clemwgk/clemwgk.github.io/blob/master/2020-09-webscraping-bto/scraped_data.csv).
 
 Finally, for the curious reader, I ended up buying a resale property.
 
