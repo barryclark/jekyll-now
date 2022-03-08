@@ -3,9 +3,7 @@ layout: memory
 title: Dirty way of IAM enumartion
 ---
 
-# Enumerate IAM
-
-The following code will attempt to enumerate operations that a given set of AWS AccessKeys can perform. A more mature Version of this script can be found [here](https://github.com/andresriancho/enumerate-iam)
+The following code will attempt to enumerate operations that a given set of AWS AccessKeys can perform. A more mature Version of this script can be found [here](https://github.com/andresriancho/enumerate-iam) anyway let's dive in:
 
 ## Usage
 ```
