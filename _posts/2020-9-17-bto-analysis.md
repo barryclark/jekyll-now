@@ -302,9 +302,9 @@ which produces this:
 
 ![Total supply of 4R/5R BTO flats have increased from 2015-2017, but decreased since. 2020 might signal another reversal.](/2020-09-webscraping-bto/45r_supply_small.png)
 
-It looks like the total supply of 4R/5R BTO flats increased from 2015-2017, but have fallen since. The bars for 2020 are set to translucent to indicate that the number is not directly comparable because there is still the Nov 2020 ballot which is not part of this data yet. However, it does look very possible that after the Nov 2020 supply is in, the total for 2020 will surpass that of 2019. What is less clear is whether this is a sustained change or not, as there have been speculations that the higher supply in 2020 is because it was widely expected to be an election year.
+It looks like the total supply of 4R/5R BTO flats increased from 2015-2017, but have fallen since. The bars for 2020 are set to translucent to indicate that the number is not directly comparable because there is still the Nov 2020 ballot which is not part of this data yet. However, it does look very possible that after the Nov 2020 supply is in, the total for 2020 will surpass that of 2019. What is less clear is whether this is a sustained change or not.
 
-Okay, what about the demand side? The steps to do this are very similar to the earlier lines for the supply, so I won't repeat them here. Just replace all the `num_units` with `num_applicants`, change the plot title, and we're set to go.
+What about the demand side? The steps to do this are very similar to the earlier lines for the supply, so I won't repeat them here. Just replace all the `num_units` with `num_applicants`, change the plot title, and we're set to go.
 
 ![Total applicants for 4R/5R BTO flats have generally been increasing over time.](/2020-09-webscraping-bto/45r_applicants_small.png)
 
