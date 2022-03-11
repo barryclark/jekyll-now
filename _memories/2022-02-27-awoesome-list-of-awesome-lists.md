@@ -62,6 +62,7 @@ Still work in progress and probably this list will never end to be updated. Now 
 
 
 ## DevSecOps
+* [6mile/DevSecOps-Playbook](https://github.com/6mile/DevSecOps-Playbook)
 * [devsecops/awesome-devsecops](https://github.com/devsecops/awesome-devsecops)
 * [sottlmarek/DevSecOps](https://github.com/sottlmarek/DevSecOps)
 * [krol3/container-security-checklist](https://github.com/krol3/container-security-checklist)
