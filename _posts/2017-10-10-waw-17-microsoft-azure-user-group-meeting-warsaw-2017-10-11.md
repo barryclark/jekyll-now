@@ -94,11 +94,12 @@ format: image
     <p style="margin:10px 0 0;">
       <a href="https://www.meetup.com/Microsoft-Azure-Users-Group-Poland/events/243942157/" target="_blank" class="mu_button"><strong>Check out this Meetup &rarr;</strong></a>
     </p>
+
   </div>
 </div>
 
 &nbsp;
 
-Azure Day is comming 😉
+Azure Day is coming 😉
 
 <img class="wp-image-142 alignnone" src="/wp-content/uploads/2017/10/WAW-17-Microsoft-Azure-User-Group-meeting-in-Warsaw-2017-10-11-300x192.png" alt="" width="594" height="380" srcset="/wp-content/uploads/2017/10/WAW-17-Microsoft-Azure-User-Group-meeting-in-Warsaw-2017-10-11-300x192.png 300w, /wp-content/uploads/2017/10/WAW-17-Microsoft-Azure-User-Group-meeting-in-Warsaw-2017-10-11-768x491.png 768w, /wp-content/uploads/2017/10/WAW-17-Microsoft-Azure-User-Group-meeting-in-Warsaw-2017-10-11-1024x654.png 1024w, /wp-content/uploads/2017/10/WAW-17-Microsoft-Azure-User-Group-meeting-in-Warsaw-2017-10-11.png 1316w" sizes="(max-width: 594px) 100vw, 594px" />

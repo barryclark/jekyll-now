@@ -41,6 +41,6 @@ Many thanks for [organizers](https://twitter.com/sharecon365) for making this ev
 Links:
 
 - [Link to conference http://www.sharecon365.pl](http://www.sharecon365.pl)
-- [Link to source code, exmaples and pipelines on Azure DevOps public project](https://dev.azure.com/janono-pub/_git/Janono.Functions.OpenAPI)
+- [Link to source code, examples and pipelines on Azure DevOps public project](https://dev.azure.com/janono-pub/_git/Janono.Functions.OpenAPI)
 - [Link to source code, examples on github](https://github.com/janusznowak/Janono.Functions.OpenAPI)
 - [Link to nuget package](https://www.nuget.org/packages/Janono.Functions.OpenAPI)

@@ -28,3 +28,8 @@ repos:
   - id: check-github-workflows
   - id: check-github-actions
   - id: check-azure-pipelines
+
+- repo: https://github.com/codespell-project/codespell
+  rev: v2.1.0
+  hooks:
+  - id: codespell
