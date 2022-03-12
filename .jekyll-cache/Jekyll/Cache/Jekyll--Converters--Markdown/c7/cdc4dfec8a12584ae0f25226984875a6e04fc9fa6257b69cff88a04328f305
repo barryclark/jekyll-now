@@ -1,0 +1,94 @@
+I"�<h1 id="how-to-install-raspbian-on-raspberry-pi">How to install Raspbian on Raspberry Pi</h1>
+<p>Simple tutorial to install Raspbian OS on Raspberry Pi by using Raspberry Pi imager.
+Here is the link to the <a href="https://www.raspberrypi.com/software/">Imager</a></p>
+
+<h2 id="instructions">Instructions</h2>
+
+<p>1: Make sure your computer can recognize the SD card</p>
+
+<p>2: Open Raspberry pi Imager</p>
+
+<p>3: Click on Choose OS</p>
+
+<p>4: Click on Raspberry Pi OS(32-bit)</p>
+
+<p>5: Click on Choose Storage</p>
+
+<p>5: Click on your SD Card</p>
+
+<h2 id="instructions-for-headless-os">Instructions for Headless OS</h2>
+
+<p>4: Click on Raspberry Pi OS (Other)</p>
+
+<p>5: Click on Raspberry Pi OS Lite (32-bit)</p>
+
+<p>6: Reinsert the SD Card</p>
+
+<p>7: Open the Boot folder aka SD Card’s folder</p>
+
+<p>8: Create an ssh file in boot folder. Make sure the file doesn’t have any extensions, should be only ‘ssh’</p>
+
+<h1 id="how-to-install-docker-on-raspberry-pi">How to install Docker on Raspberry pi?</h1>
+
+<p>In this tutorial, we will be installing docker on Raspbian and run hello-world docker. We are going to ssh into Raspi and deploy the docker.</p>
+
+<ol>
+  <li>
+    <p>From your terminal ssh into Raspberry pi</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh pi@&lt;IPAdderessOfThePi&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Pi’s ssh default password</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>raspberry
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Update Raspbian</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update &amp;&amp; upgrade -y
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Install Docker</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -sSL https://get.docker.com | sh
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Add permissions</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo usermod -aG docker ${USER}
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>(Optional) Check if python3 and pip3 is installed</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install libffi-dev libssl-dev
+sudo apt install python3-dev
+sudo apt-get install -y python3 python3-pip
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Install docker-compose</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo pip3 install docker-compose
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Enable Docker system services</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo systemctl enable docker
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Run Hello World Container</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run hello-World
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+:ET
