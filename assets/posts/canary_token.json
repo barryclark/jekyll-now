@@ -1,0 +1,612 @@
+{
+    "1646988626.342688": {
+        "src_ip": "18.236.73.93",
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "45.8399,-119.7006",
+            "city": "Boardman",
+            "country": "US",
+            "region": "Oregon",
+            "hostname": "ec2-18-236-73-93.us-west-2.compute.amazonaws.com",
+            "timezone": "America/Los_Angeles",
+            "ip": "18.236.73.93",
+            "org": "AS16509 Amazon.com, Inc.",
+            "postal": "97818",
+            "asn": {
+                "route": "18.236.0.0/15",
+                "type": "hosting",
+                "asn": "AS16509",
+                "domain": "amazon.com",
+                "name": "Amazon.com, Inc."
+            }
+        },
+        "is_tor_relay": false,
+        "useragent": "python-requests/2.27.1",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "GetCallerIdentity"
+                ]
+            }
+        }
+    },
+    "1647002659.171466": {
+        "is_tor_relay": false,
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "45.8399,-119.7006",
+            "org": "AS16509 Amazon.com, Inc.",
+            "city": "Boardman",
+            "country": "US",
+            "region": "Oregon",
+            "hostname": "ec2-18-236-73-93.us-west-2.compute.amazonaws.com",
+            "ip": "18.236.73.93",
+            "timezone": "America/Los_Angeles",
+            "postal": "97818",
+            "asn": {
+                "route": "18.236.0.0/15",
+                "type": "hosting",
+                "asn": "AS16509",
+                "domain": "amazon.com",
+                "name": "Amazon.com, Inc."
+            }
+        },
+        "src_ip": "18.236.73.93",
+        "useragent": "python-requests/2.27.1",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "GetCallerIdentity"
+                ]
+            }
+        }
+    },
+    "1646988548.230947": {
+        "is_tor_relay": false,
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "45.5088,-73.5878",
+            "org": "AS16276 OVH SAS",
+            "city": "Montr\u00e9al",
+            "country": "CA",
+            "region": "Quebec",
+            "hostname": "ip-54-39-187.eu",
+            "ip": "54.39.187.211",
+            "timezone": "America/Toronto",
+            "postal": "H3H",
+            "asn": {
+                "route": "54.39.0.0/16",
+                "type": "hosting",
+                "asn": "AS16276",
+                "domain": "ovh.net",
+                "name": "OVH SAS"
+            }
+        },
+        "src_ip": "54.39.187.211",
+        "useragent": "python-requests/2.27.1",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "GetCallerIdentity"
+                ]
+            }
+        }
+    },
+    "1646988627.324180": {
+        "is_tor_relay": false,
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "45.8399,-119.7006",
+            "org": "AS16509 Amazon.com, Inc.",
+            "city": "Boardman",
+            "country": "US",
+            "region": "Oregon",
+            "hostname": "ec2-18-236-73-93.us-west-2.compute.amazonaws.com",
+            "ip": "18.236.73.93",
+            "timezone": "America/Los_Angeles",
+            "postal": "97818",
+            "asn": {
+                "route": "18.236.0.0/15",
+                "type": "hosting",
+                "asn": "AS16509",
+                "domain": "amazon.com",
+                "name": "Amazon.com, Inc."
+            }
+        },
+        "src_ip": "18.236.73.93",
+        "useragent": "python-requests/2.27.1",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "GetCallerIdentity"
+                ]
+            }
+        }
+    },
+    "1646988631.428833": {
+        "src_ip": "37.120.131.157",
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "55.6759,12.5655",
+            "org": "AS9009 M247 Ltd",
+            "city": "Copenhagen",
+            "ip": "37.120.131.157",
+            "region": "Capital Region",
+            "country": "DK",
+            "timezone": "Europe/Copenhagen",
+            "postal": "1716",
+            "asn": {
+                "route": "37.120.131.0/24",
+                "type": "isp",
+                "asn": "AS9009",
+                "domain": "m247.com",
+                "name": "M247 Ltd"
+            }
+        },
+        "is_tor_relay": false,
+        "useragent": "AWSPowerShell.Common/4.1.20.0 .NET_Core/6.0.0-rtm.21522.10 OS/Microsoft_Windows_10.0.17763 PowerShellCore/7.-1 ClientAsync",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "DescribeRegions"
+                ]
+            }
+        }
+    },
+    "1647045857.132878": {
+        "src_ip": "18.236.73.93",
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "45.8399,-119.7006",
+            "org": "AS16509 Amazon.com, Inc.",
+            "city": "Boardman",
+            "country": "US",
+            "region": "Oregon",
+            "hostname": "ec2-18-236-73-93.us-west-2.compute.amazonaws.com",
+            "ip": "18.236.73.93",
+            "timezone": "America/Los_Angeles",
+            "postal": "97818",
+            "asn": {
+                "route": "18.236.0.0/15",
+                "type": "hosting",
+                "domain": "amazon.com",
+                "name": "Amazon.com, Inc.",
+                "asn": "AS16509"
+            }
+        },
+        "is_tor_relay": false,
+        "useragent": "python-requests/2.27.1",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "GetCallerIdentity"
+                ]
+            }
+        }
+    },
+    "1646988848.806171": {
+        "src_ip": "18.236.73.93",
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "45.8399,-119.7006",
+            "city": "Boardman",
+            "country": "US",
+            "region": "Oregon",
+            "hostname": "ec2-18-236-73-93.us-west-2.compute.amazonaws.com",
+            "timezone": "America/Los_Angeles",
+            "ip": "18.236.73.93",
+            "org": "AS16509 Amazon.com, Inc.",
+            "postal": "97818",
+            "asn": {
+                "route": "18.236.0.0/15",
+                "type": "hosting",
+                "asn": "AS16509",
+                "domain": "amazon.com",
+                "name": "Amazon.com, Inc."
+            }
+        },
+        "is_tor_relay": false,
+        "useragent": "python-requests/2.27.1",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "GetCallerIdentity"
+                ]
+            }
+        }
+    },
+    "1647004448.294056": {
+        "src_ip": "158.140.162.181",
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "-6.2146,106.8451",
+            "org": "AS63859 PT. Eka Mas Republik",
+            "city": "Jakarta",
+            "country": "ID",
+            "region": "Jakarta",
+            "hostname": "host-158.140.162-181.myrepublic.co.id",
+            "ip": "158.140.162.181",
+            "timezone": "Asia/Jakarta",
+            "asn": {
+                "route": "158.140.162.0/24",
+                "type": "isp",
+                "asn": "AS63859",
+                "domain": "myrepublic.co.id",
+                "name": "PT. Eka Mas Republik"
+            }
+        },
+        "is_tor_relay": false,
+        "useragent": "aws-cli/2.4.21 Python/3.8.8 Linux/5.10.16.3-microsoft-standard-WSL2 exe/x86_64.ubuntu.20 prompt/off command/iam.list-users",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "ListUsers"
+                ]
+            }
+        }
+    },
+    "1646999993.927725": {
+        "is_tor_relay": false,
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "-7.3274,108.2207",
+            "city": "Tasikmalaya",
+            "ip": "36.74.44.225",
+            "region": "West Java",
+            "timezone": "Asia/Jakarta",
+            "country": "ID",
+            "org": "AS7713 PT Telekomunikasi Indonesia",
+            "asn": {
+                "route": "36.74.40.0/21",
+                "type": "isp",
+                "asn": "AS7713",
+                "domain": "telkom.co.id",
+                "name": "PT Telekomunikasi Indonesia"
+            }
+        },
+        "src_ip": "36.74.44.225",
+        "useragent": "aws-cli/1.22.25 Python/3.8.10 Linux/5.13.0-35-generic botocore/1.23.25",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "ListUsers"
+                ]
+            }
+        }
+    },
+    "1646991865.856453": {
+        "is_tor_relay": false,
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "45.8399,-119.7006",
+            "org": "AS16509 Amazon.com, Inc.",
+            "city": "Boardman",
+            "country": "US",
+            "region": "Oregon",
+            "hostname": "ec2-18-236-73-93.us-west-2.compute.amazonaws.com",
+            "ip": "18.236.73.93",
+            "timezone": "America/Los_Angeles",
+            "postal": "97818",
+            "asn": {
+                "route": "18.236.0.0/15",
+                "type": "hosting",
+                "asn": "AS16509",
+                "domain": "amazon.com",
+                "name": "Amazon.com, Inc."
+            }
+        },
+        "src_ip": "18.236.73.93",
+        "useragent": "python-requests/2.27.1",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "GetCallerIdentity"
+                ]
+            }
+        }
+    },
+    "1647017056.029124": {
+        "src_ip": "18.236.73.93",
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "45.8399,-119.7006",
+            "city": "Boardman",
+            "country": "US",
+            "region": "Oregon",
+            "hostname": "ec2-18-236-73-93.us-west-2.compute.amazonaws.com",
+            "timezone": "America/Los_Angeles",
+            "ip": "18.236.73.93",
+            "org": "AS16509 Amazon.com, Inc.",
+            "postal": "97818",
+            "asn": {
+                "route": "18.236.0.0/15",
+                "type": "hosting",
+                "asn": "AS16509",
+                "domain": "amazon.com",
+                "name": "Amazon.com, Inc."
+            }
+        },
+        "is_tor_relay": false,
+        "useragent": "python-requests/2.27.1",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "GetCallerIdentity"
+                ]
+            }
+        }
+    },
+    "1646989449.778046": {
+        "is_tor_relay": false,
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "45.8399,-119.7006",
+            "org": "AS16509 Amazon.com, Inc.",
+            "city": "Boardman",
+            "country": "US",
+            "region": "Oregon",
+            "hostname": "ec2-18-236-73-93.us-west-2.compute.amazonaws.com",
+            "ip": "18.236.73.93",
+            "timezone": "America/Los_Angeles",
+            "postal": "97818",
+            "asn": {
+                "route": "18.236.0.0/15",
+                "type": "hosting",
+                "asn": "AS16509",
+                "domain": "amazon.com",
+                "name": "Amazon.com, Inc."
+            }
+        },
+        "src_ip": "18.236.73.93",
+        "useragent": "python-requests/2.27.1",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "GetCallerIdentity"
+                ]
+            }
+        }
+    },
+    "1646995656.258487": {
+        "src_ip": "18.236.73.93",
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "45.8399,-119.7006",
+            "city": "Boardman",
+            "country": "US",
+            "region": "Oregon",
+            "hostname": "ec2-18-236-73-93.us-west-2.compute.amazonaws.com",
+            "timezone": "America/Los_Angeles",
+            "ip": "18.236.73.93",
+            "org": "AS16509 Amazon.com, Inc.",
+            "postal": "97818",
+            "asn": {
+                "route": "18.236.0.0/15",
+                "type": "hosting",
+                "asn": "AS16509",
+                "domain": "amazon.com",
+                "name": "Amazon.com, Inc."
+            }
+        },
+        "is_tor_relay": false,
+        "useragent": "python-requests/2.27.1",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "GetCallerIdentity"
+                ]
+            }
+        }
+    },
+    "1646988631.804901": {
+        "is_tor_relay": false,
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "55.6759,12.5655",
+            "org": "AS9009 M247 Ltd",
+            "city": "Copenhagen",
+            "ip": "37.120.131.157",
+            "region": "Capital Region",
+            "country": "DK",
+            "timezone": "Europe/Copenhagen",
+            "postal": "1716",
+            "asn": {
+                "route": "37.120.131.0/24",
+                "type": "isp",
+                "asn": "AS9009",
+                "domain": "m247.com",
+                "name": "M247 Ltd"
+            }
+        },
+        "src_ip": "37.120.131.157",
+        "useragent": "AWSPowerShell.Common/4.1.20.0 .NET_Core/6.0.0-rtm.21522.10 OS/Microsoft_Windows_10.0.17763 PowerShellCore/7.-1 ClientAsync",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "DescribeRegions"
+                ]
+            }
+        }
+    },
+    "1646990650.262353": {
+        "src_ip": "18.236.73.93",
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "45.8399,-119.7006",
+            "city": "Boardman",
+            "country": "US",
+            "region": "Oregon",
+            "hostname": "ec2-18-236-73-93.us-west-2.compute.amazonaws.com",
+            "timezone": "America/Los_Angeles",
+            "ip": "18.236.73.93",
+            "org": "AS16509 Amazon.com, Inc.",
+            "postal": "97818",
+            "asn": {
+                "route": "18.236.0.0/15",
+                "type": "hosting",
+                "asn": "AS16509",
+                "domain": "amazon.com",
+                "name": "Amazon.com, Inc."
+            }
+        },
+        "is_tor_relay": false,
+        "useragent": "python-requests/2.27.1",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "GetCallerIdentity"
+                ]
+            }
+        }
+    },
+    "1647009265.688565": {
+        "is_tor_relay": false,
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "-6.2146,106.8451",
+            "city": "Jakarta",
+            "ip": "112.215.151.218",
+            "region": "Jakarta",
+            "timezone": "Asia/Jakarta",
+            "country": "ID",
+            "org": "AS24203 PT XL Axiata",
+            "asn": {
+                "route": "112.215.151.0/24",
+                "type": "isp",
+                "asn": "AS24203",
+                "domain": "xl.co.id",
+                "name": "PT XL Axiata"
+            }
+        },
+        "src_ip": "112.215.151.218",
+        "useragent": "aws-cli/2.4.23 Python/3.8.8 Windows/10 exe/AMD64 prompt/off command/iam.list-users",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "ListUsers"
+                ]
+            }
+        }
+    },
+    "1646988540.443156": {
+        "src_ip": "54.39.190.134",
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "45.5088,-73.5878",
+            "city": "Montr\u00e9al",
+            "country": "CA",
+            "region": "Quebec",
+            "hostname": "ip-54-39-190.eu",
+            "timezone": "America/Toronto",
+            "ip": "54.39.190.134",
+            "org": "AS16276 OVH SAS",
+            "postal": "H3H",
+            "asn": {
+                "route": "54.39.0.0/16",
+                "type": "hosting",
+                "asn": "AS16276",
+                "domain": "ovh.net",
+                "name": "OVH SAS"
+            }
+        },
+        "is_tor_relay": false,
+        "useragent": "python-requests/2.27.1",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "GetCallerIdentity"
+                ]
+            }
+        }
+    },
+    "1647021974.965876": {
+        "is_tor_relay": false,
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "-6.2146,106.8451",
+            "org": "AS63859 PT. Eka Mas Republik",
+            "city": "Jakarta",
+            "country": "ID",
+            "region": "Jakarta",
+            "hostname": "host-158.140.162-181.myrepublic.co.id",
+            "ip": "158.140.162.181",
+            "timezone": "Asia/Jakarta",
+            "asn": {
+                "route": "158.140.162.0/24",
+                "type": "isp",
+                "asn": "AS63859",
+                "domain": "myrepublic.co.id",
+                "name": "PT. Eka Mas Republik"
+            }
+        },
+        "src_ip": "158.140.162.181",
+        "useragent": "aws-cli/2.3.3 Python/3.8.8 Windows/10 exe/AMD64 prompt/off command/iam.list-users",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "ListUsers"
+                ]
+            }
+        }
+    },
+    "1646988539.170309": {
+        "is_tor_relay": false,
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "45.5088,-73.5878",
+            "org": "AS16276 OVH SAS",
+            "city": "Montr\u00e9al",
+            "country": "CA",
+            "region": "Quebec",
+            "hostname": "ip-54-39-190.eu",
+            "ip": "54.39.190.134",
+            "timezone": "America/Toronto",
+            "postal": "H3H",
+            "asn": {
+                "route": "54.39.0.0/16",
+                "type": "hosting",
+                "asn": "AS16276",
+                "domain": "ovh.net",
+                "name": "OVH SAS"
+            }
+        },
+        "src_ip": "54.39.190.134",
+        "useragent": "python-requests/2.27.1",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "GetCallerIdentity"
+                ]
+            }
+        }
+    },
+    "1647000017.486907": {
+        "src_ip": "36.74.44.225",
+        "input_channel": "HTTP",
+        "geo_info": {
+            "loc": "-7.3274,108.2207",
+            "city": "Tasikmalaya",
+            "ip": "36.74.44.225",
+            "region": "West Java",
+            "timezone": "Asia/Jakarta",
+            "country": "ID",
+            "org": "AS7713 PT Telekomunikasi Indonesia",
+            "asn": {
+                "route": "36.74.40.0/21",
+                "type": "isp",
+                "asn": "AS7713",
+                "domain": "telkom.co.id",
+                "name": "PT Telekomunikasi Indonesia"
+            }
+        },
+        "is_tor_relay": false,
+        "useragent": "aws-cli/1.22.25 Python/3.8.10 Linux/5.13.0-35-generic botocore/1.23.25",
+        "additional_info": {
+            "AWS Key Log Data": {
+                "eventName": [
+                    "GetSendQuota"
+                ]
+            }
+        }
+    }
+}
