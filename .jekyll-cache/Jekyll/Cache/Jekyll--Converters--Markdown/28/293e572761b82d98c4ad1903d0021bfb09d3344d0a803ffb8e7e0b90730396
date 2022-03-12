@@ -1,0 +1,16 @@
+I"�<h1 id="what-is-azure-">What is Azure ?</h1>
+<p>It’s a Microsoft  cloud like google cloud, AWS, many more!. I am still trying to figure out how azure works.
+Great place to launch your cloud platform!, well for me, it has been.
+I have been using azure for over a year now, learned how to deploy VM, WordPress, with jump box that would increase security.
+So here is some collection of things I learned</p>
+
+<h1 id="github-pages-to-azure">Github pages to Azure</h1>
+
+<p>Now this project went perfect, took me around 2 days to figure out how to get static web app on azure. A lot of googling and reading azure documentation.</p>
+
+<p>So here is little summary of what I did then I will explain it in details below.</p>
+
+<h2 id="summary">Summary</h2>
+<p>Github pages is hosted at github.io. By using azure static web app, I was able to deploy my GitHub webpage Jekyll pages on azure.
+….Loading</p>
+:ET
