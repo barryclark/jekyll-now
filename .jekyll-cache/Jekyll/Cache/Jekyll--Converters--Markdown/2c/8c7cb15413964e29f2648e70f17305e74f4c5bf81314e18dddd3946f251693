@@ -1,0 +1,49 @@
+I"
+<h1 id="welcome">Welcome</h1>
+<p>Quick how-to secure your ssh on linux server.</p>
+
+<h2 id="instructions">Instructions</h2>
+<ol>
+  <li>
+    <p>First add user</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo adduser &lt;UserName&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Add user to sudoer group</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo usermod -aG sudo &lt;UserName&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Edit ssh configuration file</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo nano /etc/ssh/sshd_config
+</code></pre></div>    </div>
+
+    <p>Add these to end of the file:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ClientAliveInterval 360
+ClientAliveCountMax 0
+PermitEmptyPasswords no
+AllowUsers &lt;UserName&gt;
+Protocol 2
+Port 222
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Coppy your ssh key to the server via</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-copy-id &lt;UserName&gt;@10.0.0.1 -p 222
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Restart ssh services</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo service sshd restart
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+:ET
