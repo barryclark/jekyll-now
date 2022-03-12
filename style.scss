@@ -8,7 +8,9 @@
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
-
+:root {
+	--background: #fff;
+}
 /**************/
 /* BASE RULES */
 /**************/
@@ -18,9 +20,10 @@ html {
 }
 
 body {
-	background: $white;
+	background: var(--background);
   font: 18px/1.4 $helvetica;
   color: $darkerGray;
+	transition:0.5s background ease;
 }
 
 .container {
@@ -28,6 +31,41 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
+}
+
+.theme-switch {
+	--background: #000;
+	color: $darkerGray;
+	width: 70px;
+	height: 30px;
+	background: #000;
+	border-radius: 50px;
+	position: relative;
+.switch {
+    background: white;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    transition: 0.5s all ease;
+	}
+}
+
+.light-theme {
+	--background: #FFF;
+	 background: #FFF;
+.theme-switch {
+   	background: #000;
+.switch {
+      transform: translateX(37px);
+	}
+	}
+a {
+	color: #000;
+	}
 }
 
 h1, h2, h3, h4, h5, h6 {
