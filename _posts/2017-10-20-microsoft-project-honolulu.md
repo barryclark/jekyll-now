@@ -24,4 +24,4 @@ tags:
   Honolulu is a locally deployed, browser-based, management tool set that enables on-premises administration of Windows Servers with no Azure or cloud dependency. Honolulu gives IT Admins full control over all aspects of their Server infrastructure, and is particularly useful for management on private networks that are not connected to the Internet.
 </p>
 
-https://docs.microsoft.com/en-us/windows-server/manage/honolulu/honolulu
+<https://docs.microsoft.com/en-us/windows-server/manage/honolulu/honolulu>

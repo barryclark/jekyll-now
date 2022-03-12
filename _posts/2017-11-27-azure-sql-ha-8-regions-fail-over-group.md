@@ -55,7 +55,7 @@ We will see that now we can see free version of azure sql database.
 
 <img class="alignnone size-full wp-image-297" src="/wp-content/uploads/2017/11/2017-11-27-20_05_17-Configure-performance-Microsoft-Azure.png" alt="" width="1009" height="279" srcset="/wp-content/uploads/2017/11/2017-11-27-20_05_17-Configure-performance-Microsoft-Azure.png 1009w, /wp-content/uploads/2017/11/2017-11-27-20_05_17-Configure-performance-Microsoft-Azure-300x83.png 300w, /wp-content/uploads/2017/11/2017-11-27-20_05_17-Configure-performance-Microsoft-Azure-768x212.png 768w" sizes="(max-width: 1009px) 100vw, 1009px" />
 
-If we go now to our arm template and and will repeat sql resources multiple times or use arm template function copy-index and pass the list or regions as array we can create multiple azure sql databases for free. But this is not all because we what to have multiple read localization so we, go to azure portal create linked servers and check how it looks https://resources.azure.com, we repeat the same step to see how the fail over group are created.
+If we go now to our arm template and and will repeat sql resources multiple times or use arm template function copy-index and pass the list or regions as array we can create multiple azure sql databases for free. But this is not all because we what to have multiple read localization so we, go to azure portal create linked servers and check how it looks <https://resources.azure.com>, we repeat the same step to see how the fail over group are created.
 
 Going all this steps we are able to create arm template that will create free High Availability Azure Sql Db in 8 regions with fail-over group.
 
