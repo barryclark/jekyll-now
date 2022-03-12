@@ -8,9 +8,6 @@
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
-:root {
-	--background: #fff;
-}
 /**************/
 /* BASE RULES */
 /**************/
@@ -33,41 +30,6 @@ body {
   width: 100%;
 }
 
-.theme-switch {
-	--background: #000;
-	color: $darkerGray;
-	width: 70px;
-	height: 30px;
-	background: #000;
-	border-radius: 50px;
-	float: right;
-.switch {
-    background: white;
-    width: 24px;
-    height: 24px;
-    background: #fff;
-    border-radius: 100%;
-    position: relative;
-    top: 3px;
-    left: 4px;
-    transition: 0.5s all ease;
-	float: left;
-	}
-}
-
-.light-theme {
-	--background: #FFF;
-	 background: #FFF;
-.theme-switch {
-   	background: #000;
-.switch {
-      transform: translateX(37px);
-	}
-	}
-a {
-	color: #000;
-	}
-}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
