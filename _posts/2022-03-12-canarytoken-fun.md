@@ -3,7 +3,7 @@ layout: post
 title: 
 ---
 
-While crafting a new lab to learn more about sniffing through docker images, I had the idea to make things more realistic. Therefore I used some [canarytokens](https://canarytokens.org/generate) to spice it a little up. Since these tokens causes no real harm but look als behave realistic, I commited these tokens into the GitHub repository. Less then 5min the first token was scanned and automatically tried to validate. This was somehow mindblowing (but also really expected - since I build a similar token scan service years ago for my ex-employer). Well now let me show some of the things I learned and discuss it.
+While crafting a new lab to learn more about sniffing through docker images, I had the idea to make things more realistic. Therefore I used some [canarytokens](https://canarytokens.org/generate) to spice it a little up. Since these tokens causes no real harm but look and behave realistic, I commited these tokens into the public GitHub repository. In less then 5min, the first token was scanned and automatically tried to validate. This was somehow mindblowing (but also really expected - since I build a similar token scan service years ago for my ex-employer). Well now let me show some of the things I learned and discuss it.
 
 ## Tokens meet incidents
 The AWS credentials gone wild - the k8s config, WireGuardVPN, M$ SQL Database and MySQL dump were ignored completely so far. In total the AWS Token got triggered 20 times in less then 24 hours by some scripts. 
