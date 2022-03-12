@@ -3,7 +3,7 @@ layout: post
 title: 
 ---
 
-While working on a lab to learn more about sniffing through docker image to find some truffles I had the idea to make things more interresting and realistic. Therefore I used some [canarytokens](https://canarytokens.org/generate) to spice the lab a little up. Since this token causes no real harm but looks realistic I commited these tokens into the GitHub repository. Less then 5min the first token was scanned and automatically tried to validate. This was somehow mindblowing (but also really expected - since I build a similar token scan service years ago for my ex-employer). Well now let me show some of the things I learned:
+While crafting a new lab to learn more about sniffing through docker images, I had the idea to make things more interresting and realistic. Therefore I used some [canarytokens](https://canarytokens.org/generate) to spice it up a little up. Since this token causes no real harm but looks realistic I commited these tokens into the GitHub repository. Less then 5min the first token was scanned and automatically tried to validate. This was somehow mindblowing (but also really expected - since I build a similar token scan service years ago for my ex-employer). Well now let me show some of the things I learned:
 
 ## Tokens meet incidents
 The AWS credentials gone wild - the k8s config, WireGuardVPN, M$ SQL Database and MySQL dump were ignored completely. In total the AWS Token got triggered 20 times in less then 24 hours. 
@@ -24,7 +24,7 @@ ENV AWS_SECRET_ACCESS_KEY=mk30783jZKr8zVp8M6HtYG9rs85r8XTVo2FkfHe0
 The incidents presented above, also have a nice presentation as [JSON](/assets/posts/canary_token.json) that helps to drill down for some more interessting things. To work with the JSON-data I'll relay on jq:
 
 ### Useragents
-It seems that Python and mostly python 2.27.1 were the favorite languague to create an automated token validation tool (well this language kicks ass). To avoid dublicates we will represent them as unique data:
+It seems that Python and mostly python 2.27.1 were the favorite languague to create an automated token validation tool (well this language kicks ass). To avoid duplicates we will represent them as unique data:
 
 ```bash
 jq '.[] | .useragent' canary_token.json | sort --unique
