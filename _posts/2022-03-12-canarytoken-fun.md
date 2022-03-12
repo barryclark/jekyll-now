@@ -3,12 +3,12 @@ layout: post
 title: 
 ---
 
-While crafting a new lab to learn more about sniffing through docker images, I had the idea to make things more interresting and realistic. Therefore I used some [canarytokens](https://canarytokens.org/generate) to spice it up a little up. Since this token causes no real harm but looks realistic I commited these tokens into the GitHub repository. Less then 5min the first token was scanned and automatically tried to validate. This was somehow mindblowing (but also really expected - since I build a similar token scan service years ago for my ex-employer). Well now let me show some of the things I learned:
+While crafting a new lab to learn more about sniffing through docker images, I had the idea to make things more realistic. Therefore I used some [canarytokens](https://canarytokens.org/generate) to spice it a little up. Since these tokens causes no real harm but look als behave realistic, I commited these tokens into the GitHub repository. Less then 5min the first token was scanned and automatically tried to validate. This was somehow mindblowing (but also really expected - since I build a similar token scan service years ago for my ex-employer). Well now let me show some of the things I learned and discuss it.
 
 ## Tokens meet incidents
-The AWS credentials gone wild - the k8s config, WireGuardVPN, M$ SQL Database and MySQL dump were ignored completely. In total the AWS Token got triggered 20 times in less then 24 hours. 
+The AWS credentials gone wild - the k8s config, WireGuardVPN, M$ SQL Database and MySQL dump were ignored completely so far. In total the AWS Token got triggered 20 times in less then 24 hours by some scripts. 
 
-To increase the fun here I'll post the credentials again:
+To increase the fun - I'll post the credentials again:
 
 ```dockerfile
 FROM registry.access.redhat.com/ubi8/ubi-minimal
@@ -16,18 +16,19 @@ FROM registry.access.redhat.com/ubi8/ubi-minimal
 ENV AWS_ACCESS_KEY=AKIAYVP4CIPPOWONZTGT
 ENV AWS_SECRET_ACCESS_KEY=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
 ```
+Now let us summarize and take a look at the data and incidents
 
 <p align="center">
 <img width="600" src="/images/cynary_token_list.png">
 </p>
 
-The incidents presented above, also have a nice presentation as [JSON](/assets/posts/canary_token.json) that helps to drill down for some more interessting things. To work with the JSON-data I'll relay on jq:
+The incidents presented above, also have a nice presentation as [JSON](/assets/posts/canary_token.json). That will help to drill down and learn from the incidents. To work with the JSON-data I'll relay on jq.
 
 ### Useragents
 It seems that Python and mostly python 2.27.1 were the favorite languague to create an automated token validation tool (well this language kicks ass). To avoid duplicates we will represent them as unique data:
 
 ```bash
-jq '.[] | .useragent' canary_token.json | sort --unique
+$ jq '.[] | .useragent' canary_token.json | sort --unique
 "aws-cli/1.22.25 Python/3.8.10 Linux/5.13.0-35-generic botocore/1.23.25"
 "aws-cli/2.3.3 Python/3.8.8 Windows/10 exe/AMD64 prompt/off command/iam.list-users"
 "aws-cli/2.4.21 Python/3.8.8 Linux/5.10.16.3-microsoft-standard-WSL2 exe/x86_64.ubuntu.20 prompt/off command/iam.list-users"
@@ -39,10 +40,10 @@ jq '.[] | .useragent' canary_token.json | sort --unique
 The AWSPowerShell Windows-Fanboy was a little wired in that list - but used a very interresting way to validate the tokens (more info below)
 
 ### Top IPs of the token validators
-As shown on the world map above the caller came from the US, Denmark and Indonesia. You can use the GeoIP Package (Python) to drill down on the IP addresses or use the provided geo data from the JSON.
+As shown on the world map above, the callers came from the US, Denmark and Indonesia. You can use the GeoIP Package (Python) to drill down on the IP addresses or use the provided geo data from the JSON.
 
 ```bash
-jq '.[] | .geo_info.ip ' canary_token.json | sort --unique
+$ jq '.[] | .geo_info.ip ' canary_token.json | sort --unique
 "112.215.151.218"
 "158.140.162.181"
 "18.236.73.93"
