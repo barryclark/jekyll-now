@@ -58,7 +58,7 @@ The setup is pre compiled Azure Function running .Net 4.7
 <img class="alignnone size-full wp-image-246" src="/wp-content/uploads/2017/10/fun-runtime.jpg" alt="" width="205" height="72" />
 
 <pre class="EnlighterJSRAW" data-enlighter-language="csharp">public static class Function1
-{        
+{
     private const int MaxPage = 101;
 
     private static Dictionary&lt;int, string&gt; Values { get; set; } = new Dictionary&lt;int, string&gt;();
@@ -119,7 +119,7 @@ using Microsoft.Extensions.Primitives;
 using Newtonsoft.Json;
 
 
-   private const int MaxPage = 101;
+  private const int MaxPage = 101;
 
         private static Dictionary&lt;int, string&gt; Values { get; set; } = new Dictionary&lt;int, string&gt;();
 
@@ -136,9 +136,9 @@ using Newtonsoft.Json;
 
         public static IActionResult Run(HttpRequest req, TraceWriter log)
         {
-             var s = req.Query["s"];
+            var s = req.Query["s"];
           if (string.IsNullOrEmpty(s))
-            {                
+            {
                 var now = DateTime.UtcNow;
                 return  (ActionResult)new OkObjectResult($"Hello World, from ASP.NET Core and Net Core 2.0! {now.ToString("yyyy-MM-dd HH:mm:ss.FFF")}");
             }
@@ -157,7 +157,7 @@ using Newtonsoft.Json;
             }
             else
             {
-                 return  (ActionResult)new OkObjectResult( $"Size must be an integer between 1 and {MaxPage}");
+                return  (ActionResult)new OkObjectResult( $"Size must be an integer between 1 and {MaxPage}");
             }
 }
 </pre>
@@ -171,231 +171,231 @@ ab results :
     <td style="min-width: 50px;">
       Host
     </td>
-    
+
     <td style="min-width: 50px;">
       Scenario
     </td>
-    
+
     <td style="min-width: 50px;">
       RPS (mean)
     </td>
-    
+
     <td style="min-width: 50px;">
       95% within ms
     </td>
   </tr>
-  
+
   <tr>
     <td style="min-width: 50px;">
       azure function .net 4.7
     </td>
-    
+
     <td style="min-width: 50px;">
       Hello World
     </td>
-    
+
     <td style="min-width: 50px;">
       229
     </td>
-    
+
     <td style="min-width: 50px;">
       999
     </td>
   </tr>
-  
+
   <tr>
     <td style="min-width: 50px;">
       azure function .net 4.7
     </td>
-    
+
     <td style="min-width: 50px;">
       1KB
     </td>
-    
+
     <td style="min-width: 50px;">
       227
     </td>
-    
+
     <td style="min-width: 50px;">
       999
     </td>
   </tr>
-  
+
   <tr>
     <td style="min-width: 50px;">
       azure function .net 4.7
     </td>
-    
+
     <td style="min-width: 50px;">
       10KB
     </td>
-    
+
     <td style="min-width: 50px;">
       206
     </td>
-    
+
     <td style="min-width: 50px;">
       1106
     </td>
   </tr>
-  
+
   <tr>
     <td style="min-width: 50px;">
       azure function .net 4.7
     </td>
-    
+
     <td style="min-width: 50px;">
       100KB
     </td>
-    
+
     <td style="min-width: 50px;">
       127
     </td>
-    
+
     <td style="min-width: 50px;">
       3798
     </td>
   </tr>
-  
+
   <tr>
     <td style="min-width: 50px;">
       azure function .net core beta
     </td>
-    
+
     <td style="min-width: 50px;">
       Hello World
     </td>
-    
+
     <td style="min-width: 50px;">
       72
     </td>
-    
+
     <td style="min-width: 50px;">
       2696
     </td>
   </tr>
-  
+
   <tr>
     <td style="min-width: 50px;">
       azure function .net core beta
     </td>
-    
+
     <td style="min-width: 50px;">
       1KB
     </td>
-    
+
     <td style="min-width: 50px;">
       70
     </td>
-    
+
     <td style="min-width: 50px;">
       3500
     </td>
   </tr>
-  
+
   <tr>
     <td style="min-width: 50px;">
       azure function .net core beta
     </td>
-    
+
     <td style="min-width: 50px;">
       10KB
     </td>
-    
+
     <td style="min-width: 50px;">
       67
     </td>
-    
+
     <td style="min-width: 50px;">
       3656
     </td>
   </tr>
-  
+
   <tr>
     <td style="min-width: 50px;">
       azure function .net core beta
     </td>
-    
+
     <td style="min-width: 50px;">
       100KB
     </td>
-    
+
     <td style="min-width: 50px;">
       51
     </td>
-    
+
     <td style="min-width: 50px;">
       5691
     </td>
   </tr>
-  
+
   <tr>
     <td style="min-width: 50px;">
       azure function .net 4.7 (csx) not precompiled
     </td>
-    
+
     <td style="min-width: 50px;">
       Hello World
     </td>
-    
+
     <td style="min-width: 50px;">
       226
     </td>
-    
+
     <td style="min-width: 50px;">
       1094
     </td>
   </tr>
-  
+
   <tr>
     <td style="min-width: 50px;">
       azure function .net 4.7 (csx) not precompiled
     </td>
-    
+
     <td style="min-width: 50px;">
       1KB
     </td>
-    
+
     <td style="min-width: 50px;">
       242
     </td>
-    
+
     <td style="min-width: 50px;">
       922
     </td>
   </tr>
-  
+
   <tr>
     <td style="min-width: 50px;">
       azure function .net 4.7 (csx) not precompiled
     </td>
-    
+
     <td style="min-width: 50px;">
       10KB
     </td>
-    
+
     <td style="min-width: 50px;">
       200
     </td>
-    
+
     <td style="min-width: 50px;">
       1268
     </td>
   </tr>
-  
+
   <tr>
     <td style="min-width: 50px;">
       azure function .net 4.7 (csx) not precompiled
     </td>
-    
+
     <td style="min-width: 50px;">
       100KB
     </td>
-    
+
     <td style="min-width: 50px;">
       126
     </td>
-    
+
     <td style="min-width: 50px;">
       3128
     </td>

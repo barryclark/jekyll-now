@@ -35,7 +35,7 @@ catch (Exception)
 }
 ```
 
-Also let create application insight alert with metric exception rate:  
+Also let create application insight alert with metric exception rate:
 <img class="alignnone wp-image-274" src="/wp-content/uploads/2017/11/application-inisight-alert-create-exception-rate.png" alt="" width="380" height="390" srcset="/wp-content/uploads/2017/11/application-inisight-alert-create-exception-rate.png 557w, /wp-content/uploads/2017/11/application-inisight-alert-create-exception-rate-293x300.png 293w" sizes="(max-width: 380px) 100vw, 380px" />
 
 And now we will start to receive emails about alert fire up.

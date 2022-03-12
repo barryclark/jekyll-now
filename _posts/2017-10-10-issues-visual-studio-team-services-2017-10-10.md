@@ -23,6 +23,6 @@ tags:
       <a href="https://blogs.msdn.microsoft.com/vsoservice/?p=15176">Issues with Visual Studio Team Services &#8211; 10/10 &#8211; Mitigated</a>
     </p>
   </blockquote>
-  
+
   <p>
     </div>
