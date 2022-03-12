@@ -22,7 +22,7 @@ Now let us summarize and take a look at the data and incidents
 <img width="600" src="/images/cynary_token_list.png">
 </p>
 
-The incidents presented above, also have a nice presentation as [JSON](/assets/posts/canary_token.json). That will help to drill down and learn from the incidents. To work with the JSON-data I'll relay on jq.
+The incidents presented above, also have a nice presentation as [JSON](/assets/posts/canary_token.json). That will help to drill down and learn from the incidents. To work with the JSON-data I'll rely on jq.
 
 ### Useragents
 It seems that Python and mostly python 2.27.1 were the favorite languague to create an automated token validation tool (well this language kicks ass). To avoid duplicates we will represent them as unique data:
@@ -88,7 +88,7 @@ If you look a little more careful you might recognize some of the IP ranges are 
     }
 }
 ```
-The validatore resides on an ec2 Instance in us-west-1 and is using the most simple variant as an event `GetCallerIdentity` => take a look a [previous post](https://benjitrapp.github.io/AWS-AccountId-enumeration/) I wrote and my thoughts about this method. Also the script is using ython 2.27.1 which is really olf fashioned and looks like it was written many years ago or the author is just lazy to upgrade to Python 3.X :)
+The validator resides in an EC2 instance in us-west-1 and is using the most simple variant to validate. The script uses `sts:GetCallerIdentity` => take a look at one of my [previous posts](https://benjitrapp.github.io/AWS-AccountId-enumeration/). There you can find some of my thoughts about this method. Also the script is using Python 2.27.1 - which is really old fashioned and looks like it was written some years ago or the author is just lazy to upgrade to Python 3.X :)
 
 ### Learn from the events
 Let's check if there are more fancy ways to validate the AWS credentials than using a simple `GetCallerIdentity` that might trigger an alarm:
@@ -100,9 +100,9 @@ jq '.[].additional_info."AWS Key Log Data"| .eventName[]' canary_token.json | so
 "GetSendQuota"
 "ListUsers"
 ```
-That list quite rocks and hey here's the Windows Fanboy back again. This guy used `DescribeRegions` to validate the tokens which is quite tricky. Also the GetSendQuota attems looks pretty sneaky to me. The guy from Jakarta Indionesia used `ListUsers` - all or nothing right? 
+That list quite rocks and hey, here's the M$ Windows Fanboy back again. This guy used `DescribeRegions` to validate the tokens which is quite tricky. Also the `GetSendQuota` attempts looks pretty sneaky to me. Since it either is a email spammer who salvaged other accounts or another funky method to trick the AWS API like `sns:publish`. Will check this another day. The guy from Jakarta (Indionesia) used `ListUsers` - all or nothing right? 
 
-I'll let the canarytoken be scanned for some days and implement a monitoring alert for my [AWS LoginGuard](https://benjitrapp.github.io/AWS-LoginGuard/) to raise the bar on my alerting capabilities. Also I hope that one day someone will trigger one of the other credentials like the k8s config to let me learn fancy ways to validate k8s credentials :godmode:
+I'll let the canarytoken be scanned for some more days and implement a monitoring alert for my [AWS LoginGuard](https://benjitrapp.github.io/AWS-LoginGuard/) to raise the bar on my alerting capabilities. Also I hope that one day someone will trigger one of the other credentials like the k8s config to let me learn fancy ways to validate k8s credentials :godmode:
 
 
 
