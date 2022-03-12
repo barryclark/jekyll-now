@@ -94,7 +94,7 @@ The validator resides in an EC2 instance in us-west-1 and is using the most simp
 Let's check if there are more fancy ways to validate the AWS credentials than using a simple `GetCallerIdentity` that might trigger an alarm:
 
 ```bash
-jq '.[].additional_info."AWS Key Log Data"| .eventName[]' canary_token.json | sort --unique
+$ jq '.[].additional_info."AWS Key Log Data"| .eventName[]' canary_token.json | sort --unique
 "DescribeRegions"
 "GetCallerIdentity"
 "GetSendQuota"
