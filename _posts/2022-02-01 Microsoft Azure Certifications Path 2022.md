@@ -2,7 +2,7 @@
 title: Microsoft Azure Certifications Path 2022
 author: Janusz Nowak
 header:
-permalink: /2022-02-01 Microsoft Azure Certifications Path 2022
+permalink: /2022-02-01_Microsoft_Azure_Certifications_Path_2022
 categories:
   - Azure
   - Certification
