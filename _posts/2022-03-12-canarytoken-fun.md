@@ -242,7 +242,7 @@ The interresting thing is, that the manual ElasticWolf guy used Tor to stay anon
 ## Conclusion - Let's Wrap it up
 
 Based on the incidents from above my key takeaways are: 
-* Create a Pre-Receive-Hook for you Git Repositories to prevent that a token get'S commited! Use something mature like [Talisman](https://github.com/thoughtworks/talisman)
+* Create a Pre-Receive-Hook for you Git Repositories to prevent that a token get's commited! Use something mature like [Talisman](https://github.com/thoughtworks/talisman) or [Trufflehog GitHub Action](https://github.com/marketplace/actions/trufflehog-actions-scan)
 * Watch your GuardDuty Events and push crucial Alerts directly to your Smartphone/Slack- or Teams etc.
 * If `GetCallerIdentiy` get's triggered by f.e. my LoginGuard your Tokens are leaked with a high confidence. Since this Event was used in less then 5mins after my intended "leakage" this is a great baseline
 * Create a Incident Response Plan and rotate your Tokens regularly. Store them securely f.e. in a Password Manager
