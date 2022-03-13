@@ -1,112 +1,89 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: Janusz Nowak
 email: janono@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: '' # the subpath of your site, e.g. /blog
+url: '' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jnowwwak
 github_username: janusznowak
-minimal_mistakes_skin: air
-search: true 
-locale: "en"
+search: true
+locale: en
 
-
-# Build settings
 markdown: kramdown
-#theme: mmistakes/minimal-mistakes
 remote_theme: mmistakes/minimal-mistakes
-# Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: PL
 breadcrumbs: true
 
-
-minimal_mistakes_skin    : "dirt"
+minimal_mistakes_skin: dirt
 
 include:
-  - _pages
+- _pages
 plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist  
-  - jemoji
-  - jekyll-include-cache
+- jekyll-feed
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-gist
+- jemoji
+- jekyll-include-cache
 
 author:
-  name: "Janusz Nowak"
-  avatar: "https://avatars1.githubusercontent.com/u/5168275"
-  bio: "bio."
-  location: "Warszawa, PL"
+  name: Janusz Nowak
+  avatar: https://avatars1.githubusercontent.com/u/5168275
+  bio: bio.
+  location: Warszawa, PL
   links:
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/janono/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/jnowwwak"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/janusznowak"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook"
-      url: "https://www.facebook.com/jnowwwak" 
+  - label: LinkedIn
+    icon: fab fa-fw fa-linkedin
+    url: https://www.linkedin.com/in/janono/
+  - label: Twitter
+    icon: fab fa-fw fa-twitter-square
+    url: https://twitter.com/jnowwwak
+  - label: GitHub
+    icon: fab fa-fw fa-github
+    url: https://github.com/janusznowak
+  - label: Facebook
+    icon: fab fa-fw fa-facebook
+    url: https://www.facebook.com/jnowwwak
 
 footer:
   links:
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/janono/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/jnowwwak"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/janusznowak"   
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook"
-      url: "https://www.facebook.com/jnowwwak"   
+  - label: LinkedIn
+    icon: fab fa-fw fa-linkedin
+    url: https://www.linkedin.com/in/janono/
+  - label: Twitter
+    icon: fab fa-fw fa-twitter-square
+    url: https://twitter.com/jnowwwak
+  - label: GitHub
+    icon: fab fa-fw fa-github
+    url: https://github.com/janusznowak
+  - label: Facebook
+    icon: fab fa-fw fa-facebook
+    url: https://www.facebook.com/jnowwwak
 
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      classes: wide
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-      classes: wide
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: single
+    classes: wide
+    author_profile: true
+    read_time: true
+    comments: true
+    share: true
+    related: true
+- scope:
+    path: _pages
+    type: pages
+  values:
+    layout: single
+    author_profile: true
+    classes: wide
 
 category_archive:
   type: liquid
@@ -114,26 +91,14 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-  
-comments:
-  provider: "disqus"
-  disqus:
-    shortname: "janono"
- 
-analytics:
-  provider: "google"
-  google:
-    tracking_id: "UA-141219604-1"
-    anonymize_ip: false      
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+comments:
+  provider: disqus
+  disqus:
+    shortname: janono
+
+analytics:
+  provider: google
+  google:
+    tracking_id: UA-141219604-1
+    anonymize_ip: false

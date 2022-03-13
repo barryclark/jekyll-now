@@ -1,0 +1,41 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.1.0
+  hooks:
+  - id: check-json
+  - id: pretty-format-json
+    args: [--autofix, --no-sort-keys]
+  - id: check-yaml
+  - id: check-xml
+  - id: check-executables-have-shebangs
+  - id: check-merge-conflict
+  - id: trailing-whitespace
+    args: [--markdown-linebreak-ext=md]
+
+- repo: https://github.com/editorconfig-checker/editorconfig-checker.python
+  rev: 2.4.0
+  hooks:
+  - id: editorconfig-checker
+- repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+  rev: v2.3.0
+  hooks:
+  - id: pretty-format-yaml
+    args: [--autofix, --indent, '2']
+
+- repo: https://github.com/sirosen/check-jsonschema
+  rev: 0.14.0
+  hooks:
+  - id: check-github-workflows
+  - id: check-github-actions
+  - id: check-azure-pipelines
+
+- repo: https://github.com/codespell-project/codespell
+  rev: v2.1.0
+  hooks:
+  - id: codespell
+
+- repo: https://github.com/igorshubovych/markdownlint-cli
+  rev: v0.31.1
+  hooks:
+  - id: markdownlint
+  - id: markdownlint-fix

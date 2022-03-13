@@ -31,34 +31,15 @@ That inspired me for some other approach to run the same code sample but on azur
 
 The size of machine for app service plan is S1, testing approach is ab benchmark tool running under windows hosted in azure, do not hit network limits or CPU the machine size is DS5_V2
 
-<img class="size-full wp-image-239 alignleft" src="/wp-content/uploads/2017/10/s1.png" alt="" width="183" height="327" srcset="/wp-content/uploads/2017/10/s1.png 183w, /wp-content/uploads/2017/10/s1-168x300.png 168w" sizes="(max-width: 183px) 100vw, 183px" /><img class="size-full wp-image-240 alignleft" src="/wp-content/uploads/2017/10/DS5_V2.jpg" alt="" width="188" height="327" srcset="/wp-content/uploads/2017/10/DS5_V2.jpg 188w, /wp-content/uploads/2017/10/DS5_V2-172x300.jpg 172w" sizes="(max-width: 188px) 100vw, 188px" />
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
+![Vm size](/wp-content/uploads/2017/10/s1.png)![Vm size](/wp-content/uploads/2017/10/DS5_V2.jpg)
 
 The setup is pre compiled Azure Function running .Net 4.7
 
-<img class="alignnone size-full wp-image-246" src="/wp-content/uploads/2017/10/fun-runtime.jpg" alt="" width="205" height="72" />
+![runtime](/wp-content/uploads/2017/10/fun-runtime.jpg)
 
-<pre class="EnlighterJSRAW" data-enlighter-language="csharp">public static class Function1
-{        
+```csharp
+public static class Function1
+{
     private const int MaxPage = 101;
 
     private static Dictionary&lt;int, string&gt; Values { get; set; } = new Dictionary&lt;int, string&gt;();
@@ -105,21 +86,22 @@ The setup is pre compiled Azure Function running .Net 4.7
             return req.CreateResponse(HttpStatusCode.BadRequest, $"Size must be an integer between 1 and {MaxPage}");
         }
     }
-}</pre>
+}
+```
 
 vs Azure Function .Net Core having kestrel under hood in beta version
 
-<img class="alignnone size-full wp-image-243" src="/wp-content/uploads/2017/10/functionbeta.png" alt="" width="235" height="89" />
+![function beta](/wp-content/uploads/2017/10/functionbeta.png)
 
-<pre class="EnlighterJSRAW" data-enlighter-language="csharp">#r "Newtonsoft.Json"
+```csharp
+#r "Newtonsoft.Json"
 
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
 using Newtonsoft.Json;
 
-
-   private const int MaxPage = 101;
+  private const int MaxPage = 101;
 
         private static Dictionary&lt;int, string&gt; Values { get; set; } = new Dictionary&lt;int, string&gt;();
 
@@ -136,9 +118,9 @@ using Newtonsoft.Json;
 
         public static IActionResult Run(HttpRequest req, TraceWriter log)
         {
-             var s = req.Query["s"];
+            var s = req.Query["s"];
           if (string.IsNullOrEmpty(s))
-            {                
+            {
                 var now = DateTime.UtcNow;
                 return  (ActionResult)new OkObjectResult($"Hello World, from ASP.NET Core and Net Core 2.0! {now.ToString("yyyy-MM-dd HH:mm:ss.FFF")}");
             }
@@ -157,257 +139,34 @@ using Newtonsoft.Json;
             }
             else
             {
-                 return  (ActionResult)new OkObjectResult( $"Size must be an integer between 1 and {MaxPage}");
+                return  (ActionResult)new OkObjectResult( $"Size must be an integer between 1 and {MaxPage}");
             }
 }
-</pre>
+```
 
 Cmd for testing ab -n 5000 -c 150 -l http://&#8230;&#8230; ?s=&#8221;&#8221; s=1, s=10 , s=100
 
 ab results :
 
-<table border="1" cellspacing="0">
-  <tr>
-    <td style="min-width: 50px;">
-      Host
-    </td>
-    
-    <td style="min-width: 50px;">
-      Scenario
-    </td>
-    
-    <td style="min-width: 50px;">
-      RPS (mean)
-    </td>
-    
-    <td style="min-width: 50px;">
-      95% within ms
-    </td>
-  </tr>
-  
-  <tr>
-    <td style="min-width: 50px;">
-      azure function .net 4.7
-    </td>
-    
-    <td style="min-width: 50px;">
-      Hello World
-    </td>
-    
-    <td style="min-width: 50px;">
-      229
-    </td>
-    
-    <td style="min-width: 50px;">
-      999
-    </td>
-  </tr>
-  
-  <tr>
-    <td style="min-width: 50px;">
-      azure function .net 4.7
-    </td>
-    
-    <td style="min-width: 50px;">
-      1KB
-    </td>
-    
-    <td style="min-width: 50px;">
-      227
-    </td>
-    
-    <td style="min-width: 50px;">
-      999
-    </td>
-  </tr>
-  
-  <tr>
-    <td style="min-width: 50px;">
-      azure function .net 4.7
-    </td>
-    
-    <td style="min-width: 50px;">
-      10KB
-    </td>
-    
-    <td style="min-width: 50px;">
-      206
-    </td>
-    
-    <td style="min-width: 50px;">
-      1106
-    </td>
-  </tr>
-  
-  <tr>
-    <td style="min-width: 50px;">
-      azure function .net 4.7
-    </td>
-    
-    <td style="min-width: 50px;">
-      100KB
-    </td>
-    
-    <td style="min-width: 50px;">
-      127
-    </td>
-    
-    <td style="min-width: 50px;">
-      3798
-    </td>
-  </tr>
-  
-  <tr>
-    <td style="min-width: 50px;">
-      azure function .net core beta
-    </td>
-    
-    <td style="min-width: 50px;">
-      Hello World
-    </td>
-    
-    <td style="min-width: 50px;">
-      72
-    </td>
-    
-    <td style="min-width: 50px;">
-      2696
-    </td>
-  </tr>
-  
-  <tr>
-    <td style="min-width: 50px;">
-      azure function .net core beta
-    </td>
-    
-    <td style="min-width: 50px;">
-      1KB
-    </td>
-    
-    <td style="min-width: 50px;">
-      70
-    </td>
-    
-    <td style="min-width: 50px;">
-      3500
-    </td>
-  </tr>
-  
-  <tr>
-    <td style="min-width: 50px;">
-      azure function .net core beta
-    </td>
-    
-    <td style="min-width: 50px;">
-      10KB
-    </td>
-    
-    <td style="min-width: 50px;">
-      67
-    </td>
-    
-    <td style="min-width: 50px;">
-      3656
-    </td>
-  </tr>
-  
-  <tr>
-    <td style="min-width: 50px;">
-      azure function .net core beta
-    </td>
-    
-    <td style="min-width: 50px;">
-      100KB
-    </td>
-    
-    <td style="min-width: 50px;">
-      51
-    </td>
-    
-    <td style="min-width: 50px;">
-      5691
-    </td>
-  </tr>
-  
-  <tr>
-    <td style="min-width: 50px;">
-      azure function .net 4.7 (csx) not precompiled
-    </td>
-    
-    <td style="min-width: 50px;">
-      Hello World
-    </td>
-    
-    <td style="min-width: 50px;">
-      226
-    </td>
-    
-    <td style="min-width: 50px;">
-      1094
-    </td>
-  </tr>
-  
-  <tr>
-    <td style="min-width: 50px;">
-      azure function .net 4.7 (csx) not precompiled
-    </td>
-    
-    <td style="min-width: 50px;">
-      1KB
-    </td>
-    
-    <td style="min-width: 50px;">
-      242
-    </td>
-    
-    <td style="min-width: 50px;">
-      922
-    </td>
-  </tr>
-  
-  <tr>
-    <td style="min-width: 50px;">
-      azure function .net 4.7 (csx) not precompiled
-    </td>
-    
-    <td style="min-width: 50px;">
-      10KB
-    </td>
-    
-    <td style="min-width: 50px;">
-      200
-    </td>
-    
-    <td style="min-width: 50px;">
-      1268
-    </td>
-  </tr>
-  
-  <tr>
-    <td style="min-width: 50px;">
-      azure function .net 4.7 (csx) not precompiled
-    </td>
-    
-    <td style="min-width: 50px;">
-      100KB
-    </td>
-    
-    <td style="min-width: 50px;">
-      126
-    </td>
-    
-    <td style="min-width: 50px;">
-      3128
-    </td>
-  </tr>
-</table>
-
-&nbsp;
+| **Host**                                      | **Scenario** | **RPS (mean)** | **95% within ms** |
+| --------------------------------------------- | ------------ | -------------- | ----------------- |
+| azure function .net 4.7                       | Hello World  | 229            | 999               |
+| azure function .net 4.7                       | 1KB          | 227            | 999               |
+| azure function .net 4.7                       | 10KB         | 206            | 1106              |
+| azure function .net 4.7                       | 100KB        | 127            | 3798              |
+| azure function .net core beta                 | Hello World  | 72             | 2696              |
+| azure function .net core beta                 | 1KB          | 70             | 3500              |
+| azure function .net core beta                 | 10KB         | 67             | 3656              |
+| azure function .net core beta                 | 100KB        | 51             | 5691              |
+| azure function .net 4.7 (csx) not precompiled | Hello World  | 226            | 1094              |
+| azure function .net 4.7 (csx) not precompiled | 1KB          | 242            | 922               |
+| azure function .net 4.7 (csx) not precompiled | 10KB         | 200            | 1268              |
+| azure function .net 4.7 (csx) not precompiled | 100KB        | 126            | 3128              |
 
 From results we can see that .net core on azure functions is still in beta and the performance is not amazing but if we compare azure function ruining pre compiled azure function on .net 4.7
 
 the performance look even nice.
 
-When comparing .net 4.7 precompiled vs .net 4.7 not precompiled (csx) the result is very similar but the first call are slower.
+When comparing .net 4.7 pre-compiled vs .net 4.7 not precompiled (csx) the result is very similar but the first call are slower.
 
 When we look on .net core beta on Azure function it do not look good but this is just beta, so for final version I assume it can be much better.
