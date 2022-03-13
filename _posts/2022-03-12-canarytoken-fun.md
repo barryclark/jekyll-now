@@ -3,7 +3,7 @@ layout: post
 title: Canarytokens fun
 ---
 
-While crafting a new lab to learn more about sniffing through docker images, I had the idea to make things more realistic. Therefore the useage of [canarytokens](https://canarytokens.org/generate) helps to spice it a little up. Since these tokens causes no real harm - but look and behave realistic, they want straight into the public GitHub repository. In less then 5min, the first token was scanned and automatically tried to validate. This was somehow mindblowing (but also really expected - since I build a similar token scan service years ago for my ex-employer to protect secrets from unintended leakage). Well now let me show some of the things I learned and discuss it a little.
+While crafting a new lab to learn more about sniffing through docker images, I had the idea to make things more realistic. Therefore the useage of [canarytokens](https://canarytokens.org/generate) might be nice to spice it a little up. Since these tokens can't cause no real harm - but look and behave realistic, they went straight into the public GitHub repository. In less then 5min, the first token was scanned and automatically tried to validate. This was somehow mindblowing (but also really expected - since I build a similar token scan service years ago for my ex-employer to protect secrets from unintended leakage). Well now let me show some of the things I learned and discuss it a little.
 
 ## Tokens meet incidents
 <img height="200" align="left" src="/images/smurf.png" >
@@ -247,7 +247,7 @@ Based on the incidents from above my key takeaways are:
 * If `GetCallerIdentiy` get's triggered by f.e. my LoginGuard your Tokens are leaked with a high confidence. Since this Event was used in less then 5mins after my intended "leakage" this is a great baseline
 * Create a Incident Response Plan and rotate your Tokens regularly. Store them securely f.e. in a Password Manager
 * If you have some real workloads running on AWS - better enable GuardDuty to protect yourself. Think of it as a condom - better have one and don't need it then vice versa
-* No automation or Service like GuardDuty can beat the creativity of a human mind. As long as APIs and Software are made by humans - it will fail for sure! APIs are talking too much and even Amazon isn't free from such mistakes
+* No automation or Service like GuardDuty can beat the creativity of a human mind. As long as APIs and Software are made by humans - it will fail for sure! APIs are talking too much and even Amazon isn't free from such mistakes. The idea to defend is to be prepared, use managed services and custom tools but be aware that every defense can be tricked or bypassed. Raising the bar and clever monitoring will help to find the gaps or at least that something malicious is going on
 
 
 <p align="center">
