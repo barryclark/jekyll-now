@@ -5,7 +5,7 @@ layout: posts
 author_profile: true
 ---
 
-Gradueded 2008 University of Warsaw, Faculty of Mathematics, Informatics and Mechanics [MIMUW][https://www.mimuw.edu.pl/]
+Gradueded 2008 University of Warsaw, Faculty of Mathematics, Informatics and Mechanics ![MIMUW][https://www.mimuw.edu.pl/]
 
 Software Developer/Architect with over 15 years of experience, flustered with aproch "It works on my computer"
 use DevOps pratice for over 11 years, natural path going Cloud 7 years.
