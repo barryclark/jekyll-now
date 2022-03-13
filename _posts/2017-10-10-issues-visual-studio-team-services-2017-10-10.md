@@ -17,12 +17,4 @@ tags:
   - vsts
 ---
 
-<div class="llorix-one-lite-video-container">
-  <blockquote class="wp-embedded-content" data-secret="7sObZCekbs">
-    <p>
-      <a href="https://blogs.msdn.microsoft.com/vsoservice/?p=15176">Issues with Visual Studio Team Services &#8211; 10/10 &#8211; Mitigated</a>
-    </p>
-  </blockquote>
-  
-  <p>
-    </div>
+> [Issues with Visual Studio Team Services – 10/10 – Mitigated](https://blogs.msdn.microsoft.com/vsoservice/?p=15176)
