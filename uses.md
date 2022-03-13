@@ -9,13 +9,17 @@ This is a living document outlining the things I use. Please note I will use aff
 
 * Work
     * Work - Dell running Windows 10
+    * 2 Dell 27" monitors
+
 * Personal
-    * ROG running Windows 11
+    * [ROG Zephyrus 14" Gaming Laptop - AMD Ryzen 9 - 16GB Memory](https://www.amazon.com/dp/B093TX6BLC/ref=cm_sw_r_tw_dp_QMPVWK4CJF5WY9TRC0AG)
+    * Windows 11
     * 2 Asus 27" monitors
     * Vivo dual monitor arms
-* Logitech G915 TKL keyboard (1 at home and one at work) Kind of wish I had the full numeric keypad, though.
-* Logitech M705 Mouse (1 at home and 1 at work)
-* Logitech Webcam
+* Both
+    * [Logitech G915 TKL keyboard](https://www.amazon.com/dp/B08L8BP9KK/ref=cm_sw_r_tw_dp_WDVRS47WTZXA40TMFV13)&#8212;I love, love, love the low profile switches on this mechanical keyboard. Turns out I should have bought the full keyboard because I do just enough numerical entry that it would be helpful.
+    * [Logitech M705 Mouse](https://www.amazon.com/dp/B087Z733CM/ref=cm_sw_r_tw_dp_HCRMNWZ03T2QA8F45Z1T)&#8212;I've owned at least five of these mice over the years. They are lightweight and have an excellent battery life.
+    * [Logitech C920 Webcam](https://www.amazon.com/dp/B085TFF7M1/ref=cm_sw_r_tw_dp_9JDPZB4F2CGW9JTQKYTH?_encoding=UTF8&psc=1)
 
 ## Other Devices 
 
