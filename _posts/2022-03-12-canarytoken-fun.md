@@ -192,23 +192,8 @@ This command will lead to the JSON output below:
 }
 {
   "src_ip": "23.129.64.132",
-  "input_channel": "HTTP",
   "geo_info": {
-    "loc": "47.3223,-122.3126",
-    "city": "Federal Way",
-    "ip": "23.129.64.132",
-    "region": "Washington",
-    "timezone": "America/Los_Angeles",
-    "country": "US",
-    "org": "AS396507 Emerald Onion",
-    "postal": "98003",
-    "asn": {
-      "route": "23.129.64.0/24",
-      "type": "business",
-      "asn": "AS396507",
-      "domain": "emeraldonion.org",
-      "name": "Emerald Onion"
-    }
+    ... same ...
   },
   "is_tor_relay": true,
   "useragent": "ElasticWolf/5.1.6",
@@ -222,23 +207,8 @@ This command will lead to the JSON output below:
 }
 {
   "is_tor_relay": true,
-  "input_channel": "HTTP",
   "geo_info": {
-    "loc": "47.3223,-122.3126",
-    "org": "AS396507 Emerald Onion",
-    "city": "Federal Way",
-    "ip": "23.129.64.132",
-    "region": "Washington",
-    "country": "US",
-    "timezone": "America/Los_Angeles",
-    "postal": "98003",
-    "asn": {
-      "route": "23.129.64.0/24",
-      "type": "business",
-      "asn": "AS396507",
-      "domain": "emeraldonion.org",
-      "name": "Emerald Onion"
-    }
+   ... same ...
   },
   "src_ip": "23.129.64.132",
   "useragent": "ElasticWolf/5.1.6",
@@ -252,23 +222,8 @@ This command will lead to the JSON output below:
 }
 {
   "src_ip": "23.129.64.132",
-  "input_channel": "HTTP",
   "geo_info": {
-    "loc": "47.3223,-122.3126",
-    "city": "Federal Way",
-    "ip": "23.129.64.132",
-    "region": "Washington",
-    "timezone": "America/Los_Angeles",
-    "country": "US",
-    "org": "AS396507 Emerald Onion",
-    "postal": "98003",
-    "asn": {
-      "route": "23.129.64.0/24",
-      "type": "business",
-      "asn": "AS396507",
-      "domain": "emeraldonion.org",
-      "name": "Emerald Onion"
-    }
+   ... same ...
   },
   "is_tor_relay": true,
   "useragent": "ElasticWolf/5.1.6",
@@ -281,7 +236,7 @@ This command will lead to the JSON output below:
   }
 }
 ```
-The interresting thing is, that the manual ElasticWolf checker used Tor to stay anonymous but didn't changed the Useragent and didn't care about the leakage of valuable info by [WebRTC](https://browserleaks.com/webrtc). Since ElasticWolf is a GUI - and the attacker didn't disgused completely I would assume that he's not a real pro hacker. The action this guy performed are still interresting - the good news are if we assume that we were using [GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-active.html) this Poltergeist would have triggered an alarm. 
+The interresting thing is, that the manual ElasticWolf guy used Tor to stay anonymous (https://emeraldonion.org/ is a non profit organization for internet privacy) but didn't changed the Useragent. Based on this fact this adversary might not care about the leakage of valuable info by [WebRTC](https://browserleaks.com/webrtc). This might help in create a fingerprint and track this guy. Since ElasticWolf is a GUI - and the attacker didn't disgused completely I would assume that this guy is not a real pro. But better than the mediocre script kiddy who got triggered by its scripts and checked what's going on with the tokens manually. The action this guy performed are still interresting - though the good news are, if we assume that we were using [GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-active.html) this Poltergeist would have triggered an alarm. 
 
 
 ## Conclusion - Let's Wrap it up
