@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Canarytokens fun
 ---
 
 While crafting a new lab to learn more about sniffing through docker images, I had the idea to make things more realistic. Therefore the useage of [canarytokens](https://canarytokens.org/generate) helps to spice it a little up. Since these tokens causes no real harm - but look and behave realistic, they want straight into the public GitHub repository. In less then 5min, the first token was scanned and automatically tried to validate. This was somehow mindblowing (but also really expected - since I build a similar token scan service years ago for my ex-employer to protect secrets from unintended leakage). Well now let me show some of the things I learned and discuss it a little.
@@ -102,13 +102,13 @@ $ jq '.[].additional_info."AWS Key Log Data"| .eventName[]' canary_token.json | 
 "GetSendQuota"
 "ListUsers"
 ```
-That list quite rocks and hey, here's the M$ Windows Fanboy back again. This guy used `DescribeRegions` to validate the tokens which is quite tricky. Also the `GetSendQuota` attempts looks pretty sneaky to me. Since it either is a email spammer who salvaged other accounts or another funky method to trick the AWS API like `sns:publish`. Will check this another day. The guy from Jakarta (Indionesia) used `ListUsers` - all or nothing right? 
+That list quite rocks and hey, here's the M$ Windows Fanboy back again. This guy used `DescribeRegions` to validate the tokens which is quite tricky. Also the `GetSendQuota` attempts looks pretty sneaky to me. Since it either is a email spammer who salvages other accounts or another funky method to trick the AWS API like `sns:publish`. Will check this another day. The guy from Jakarta (Indionesia) used `ListUsers` - all or nothing right? 
 
 I'll let the canarytoken be scanned for some more days and implement a monitoring alert for my [AWS LoginGuard](https://benjitrapp.github.io/AWS-LoginGuard/) to raise the bar on my alerting capabilities. Also I hope that one day someone will trigger one of the other credentials like the k8s config to let me learn fancy ways to validate k8s credentials.
 
 ### Upgrade 
 
-After running the token for more then 24h in the meantime the Token was Triggered 33 times and some guys from Canada joined the Party. The data wasn't cleaned up from the previous requests to make it more comparable. Let's dive into the data, and watch out for inline comments. If you want to take a look at the data on your own: [Here's the JSON](/assets/posts/canary_token2.json)
+After running the token for more then 24h, the Token was Triggered 33 times and some guys from Canada joined the Party. The data wasn't cleaned up from the previous requests to make it more comparable. Creating a diff felt wrong at the moment. Let's dive into the data, and watch out for inline comments. If you want to take a look at the data on your own: [Here's the JSON](/assets/posts/canary_token2.json)
 
 ```bash
 $ jq '.[] | .useragent' canary_token2.json | sort --unique
@@ -143,13 +143,144 @@ $ jq '.[] | .geo_info.ip ' canary_token2.json | sort --unique
 "18.236.73.93"
 "23.129.64.132"
 "36.74.44.225"
-"37.120.131.157"
+"37.120.131.157" 
 "54.245.37.156"
 "54.39.187.211"
 "54.39.190.134"
 
 # 12 IPs => 33 times triggered the Canarytoken
 ```
+After a lot of "trash" scripts that hunt for low hanging fruits (yes - I mean the `GetCalerIdentity` ones), it seems like some more mature folks are joining the party. The Indonesian guy runs a script that checks for SES and tries different things to validate. After some checks it seems this is guy is really searching for new machines to create a botnet for spamming emails. 
+
+This time also we can watch the usage of Tor. There were four times a usage recognized
+
+```json
+$ jq '.[] | select(.is_tor_relay == true)' canary_token2.json
+
+{
+  "is_tor_relay": true,
+  "input_channel": "HTTP",
+  "geo_info": {
+    "loc": "47.3223,-122.3126",
+    "org": "AS396507 Emerald Onion",
+    "city": "Federal Way",
+    "ip": "23.129.64.132",
+    "region": "Washington",
+    "country": "US",
+    "timezone": "America/Los_Angeles",
+    "postal": "98003",
+    "asn": {
+      "route": "23.129.64.0/24",
+      "type": "business",
+      "asn": "AS396507",
+      "domain": "emeraldonion.org",
+      "name": "Emerald Onion"
+    }
+  },
+  "src_ip": "23.129.64.132",
+  "useragent": "ElasticWolf/5.1.6",
+  "additional_info": {
+    "AWS Key Log Data": {
+      "eventName": [
+        "DescribeAccountAttributes"
+      ]
+    }
+  }
+}
+{
+  "src_ip": "23.129.64.132",
+  "input_channel": "HTTP",
+  "geo_info": {
+    "loc": "47.3223,-122.3126",
+    "city": "Federal Way",
+    "ip": "23.129.64.132",
+    "region": "Washington",
+    "timezone": "America/Los_Angeles",
+    "country": "US",
+    "org": "AS396507 Emerald Onion",
+    "postal": "98003",
+    "asn": {
+      "route": "23.129.64.0/24",
+      "type": "business",
+      "asn": "AS396507",
+      "domain": "emeraldonion.org",
+      "name": "Emerald Onion"
+    }
+  },
+  "is_tor_relay": true,
+  "useragent": "ElasticWolf/5.1.6",
+  "additional_info": {
+    "AWS Key Log Data": {
+      "eventName": [
+        "GetUser"
+      ]
+    }
+  }
+}
+{
+  "is_tor_relay": true,
+  "input_channel": "HTTP",
+  "geo_info": {
+    "loc": "47.3223,-122.3126",
+    "org": "AS396507 Emerald Onion",
+    "city": "Federal Way",
+    "ip": "23.129.64.132",
+    "region": "Washington",
+    "country": "US",
+    "timezone": "America/Los_Angeles",
+    "postal": "98003",
+    "asn": {
+      "route": "23.129.64.0/24",
+      "type": "business",
+      "asn": "AS396507",
+      "domain": "emeraldonion.org",
+      "name": "Emerald Onion"
+    }
+  },
+  "src_ip": "23.129.64.132",
+  "useragent": "ElasticWolf/5.1.6",
+  "additional_info": {
+    "AWS Key Log Data": {
+      "eventName": [
+        "DescribeAccountAttributes"
+      ]
+    }
+  }
+}
+{
+  "src_ip": "23.129.64.132",
+  "input_channel": "HTTP",
+  "geo_info": {
+    "loc": "47.3223,-122.3126",
+    "city": "Federal Way",
+    "ip": "23.129.64.132",
+    "region": "Washington",
+    "timezone": "America/Los_Angeles",
+    "country": "US",
+    "org": "AS396507 Emerald Onion",
+    "postal": "98003",
+    "asn": {
+      "route": "23.129.64.0/24",
+      "type": "business",
+      "asn": "AS396507",
+      "domain": "emeraldonion.org",
+      "name": "Emerald Onion"
+    }
+  },
+  "is_tor_relay": true,
+  "useragent": "ElasticWolf/5.1.6",
+  "additional_info": {
+    "AWS Key Log Data": {
+      "eventName": [
+        "GetUser"
+      ]
+    }
+  }
+}
+```
+The interresting thing is, that the manual ElasticWolf checker used Tor to stay anonymous but didn't changed the Useragent and didn't care about the leakage of valuable info by [WebRTC](https://browserleaks.com/webrtc). Since ElasticWolf is a GUI - and the attacker didn't disgused completely I would assume that he's not a real pro hacker. The action this guy performed are still interresting - the good news are if we assume that we were using [GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-active.html) this Poltergeist would have triggered an alarm. 
+
+
 ## Conclusion - Let's Wrap it up
 
 Based on the incidents from above my key takeaways are: 
@@ -157,6 +288,7 @@ Based on the incidents from above my key takeaways are:
 * Watch your GuardDuty Events and push crucial Alerts directly to your Smartphone/Slack- or Teams etc.
 * If `GetCallerIdentiy` get's triggered by f.e. my LoginGuard your Tokens are leaked with a high confidence. Since this Event was used in less then 5mins after my intended "leakage" this is a great baseline
 * Create a Incident Response Plan and rotate your Tokens regularly. Store them securely f.e. in a Password Manager
+* If you have some real workloads running on AWS - better enable GuardDuty to protect yourself. Think of it as a condom - better have one and don't need it then vice versa
 * No automation or Service like GuardDuty can beat the creativity of a human mind. As long as APIs and Software are made by humans - it will fail for sure! APIs are talking too much and even Amazon isn't free from such mistakes
 
 
