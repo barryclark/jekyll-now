@@ -4,5 +4,12 @@
             "path": "."
         }
     ],
-    "settings": {}
+    "settings": {
+        "cSpell.words": [
+            "janono",
+            "Janusz",
+            "Uncategorized",
+            "vsts"
+        ]
+    }
 }

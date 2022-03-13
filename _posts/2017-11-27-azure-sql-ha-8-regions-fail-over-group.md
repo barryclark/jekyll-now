@@ -12,26 +12,28 @@ categories:
   - Azure Sql
 tags:
   - ARM
-  - armtemplate
+  - arm template
   - Azure
   - azure-sql
   - db
-  - paas
+  - PaaS
   - sql
 format: image
 ---
 
-<img class="alignnone size-full wp-image-298" src="/wp-content/uploads/2017/11/2017-11-27-20_05_52-Configure-performance-Microsoft-Azure.png" alt="" width="1015" height="318" srcset="/wp-content/uploads/2017/11/2017-11-27-20_05_52-Configure-performance-Microsoft-Azure.png 1015w, /wp-content/uploads/2017/11/2017-11-27-20_05_52-Configure-performance-Microsoft-Azure-300x94.png 300w, /wp-content/uploads/2017/11/2017-11-27-20_05_52-Configure-performance-Microsoft-Azure-768x241.png 768w" sizes="(max-width: 1015px) 100vw, 1015px" />
-## How to create free High Availability Azure Sql Db with fail-over group in 8 regions with Arm template for free.
+![Configure-performance-Microsoft-Azure](/wp-content/uploads/2017/11/2017-11-27-20_05_52-Configure-performance-Microsoft-Azure.png)
 
-Let&#8217;s go to <https://portal.azure.com> and lets try to create it we will see that option is not available to create free tire.
+# How to create free High Availability Azure Sql Db with fail-over group in 8 regions with Arm template for free
+
+Let's go to <https://portal.azure.com> and lets try to create it we will see that option is not available to create free tire.
 
 But if go and check here [https://resources.azure.com](https://resources.azure.com/) other deployment template for other azure sql database we can see with what parameters it was created so we can play with it.
 
 And the important are this 3 properties values on bottom edition, maxSizeBytes and requestedServiceObjectiveName.
 
-<pre class="EnlighterJSRAW" data-enlighter-language="json">{
-  "name": "[variables('sqlDatabaseName')]",
+```json
+{
+  "name": "[variables('SqlDatabaseName')]",
   "type": "databases",
   "location": "[resourceGroup().location]",
   "tags": {
@@ -39,7 +41,7 @@ And the important are this 3 properties values on bottom edition, maxSizeBytes a
   },
   "apiVersion": "2014-04-01-preview",
   "dependsOn": [
-    "[resourceId('Microsoft.Sql/servers/', variables('sqlserverName'))]"
+    "[resourceId('Microsoft.Sql/servers/', variables('SqlServerName'))]"
   ],
   "properties": {
     "edition": "Free",
@@ -47,18 +49,16 @@ And the important are this 3 properties values on bottom edition, maxSizeBytes a
     "maxSizeBytes": "33554432",
     "requestedServiceObjectiveName": "Free"
   }
-}</pre>
+}
+```
 
 If we will create azure sql database with this parameters values using arm template deployment.
 
 We will see that now we can see free version of azure sql database.
-
-<img class="alignnone size-full wp-image-297" src="/wp-content/uploads/2017/11/2017-11-27-20_05_17-Configure-performance-Microsoft-Azure.png" alt="" width="1009" height="279" srcset="/wp-content/uploads/2017/11/2017-11-27-20_05_17-Configure-performance-Microsoft-Azure.png 1009w, /wp-content/uploads/2017/11/2017-11-27-20_05_17-Configure-performance-Microsoft-Azure-300x83.png 300w, /wp-content/uploads/2017/11/2017-11-27-20_05_17-Configure-performance-Microsoft-Azure-768x212.png 768w" sizes="(max-width: 1009px) 100vw, 1009px" />
+![Configure-performance-Microsoft-Azure](/wp-content/uploads/2017/11/2017-11-27-20_05_17-Configure-performance-Microsoft-Azure.png)
 
 If we go now to our arm template and and will repeat sql resources multiple times or use arm template function copy-index and pass the list or regions as array we can create multiple azure sql databases for free. But this is not all because we what to have multiple read localization so we, go to azure portal create linked servers and check how it looks <https://resources.azure.com>, we repeat the same step to see how the fail over group are created.
 
 Going all this steps we are able to create arm template that will create free High Availability Azure Sql Db in 8 regions with fail-over group.
 
-<img class="alignnone size-full wp-image-296" src="/wp-content/uploads/2017/11/2017-11-27-20_04_09-Geo-Replication-Microsoft-Azure.png" alt="" width="818" height="718" srcset="/wp-content/uploads/2017/11/2017-11-27-20_04_09-Geo-Replication-Microsoft-Azure.png 818w, /wp-content/uploads/2017/11/2017-11-27-20_04_09-Geo-Replication-Microsoft-Azure-300x263.png 300w, /wp-content/uploads/2017/11/2017-11-27-20_04_09-Geo-Replication-Microsoft-Azure-768x674.png 768w" sizes="(max-width: 818px) 100vw, 818px" />
-
-&nbsp;
+![Geo-Replication-Microsoft-Azure](/wp-content/uploads/2017/11/2017-11-27-20_04_09-Geo-Replication-Microsoft-Azure.png)
