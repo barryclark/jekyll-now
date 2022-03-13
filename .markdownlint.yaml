@@ -4,7 +4,7 @@
 default: true
 
 # Path to configuration file to extend
-extends: null
+extends:
 
 # MD001/heading-increment/header-increment - Heading levels should only increment by one level at a time
 MD001: true
@@ -17,12 +17,12 @@ MD002:
 # MD003/heading-style/header-style - Heading style
 MD003:
   # Heading style
-  style: "consistent"
+  style: consistent
 
 # MD004/ul-style - Unordered list style
 MD004:
   # List style
-  style: "consistent"
+  style: consistent
 
 # MD005/list-indent - Inconsistent indentation for list items at the same level
 MD005: true
@@ -121,12 +121,12 @@ MD025:
   # Heading level
   level: 1
   # RegExp for matching title in front matter
-  front_matter_title: "^\\s*title\\s*[:=]"
+  front_matter_title: ^\s*title\s*[:=]
 
 # MD026/no-trailing-punctuation - Trailing punctuation in heading
 MD026:
   # Punctuation characters
-  punctuation: ".,;:!。，；：！"
+  punctuation: .,;:!。，；：！
 
 # MD027/no-multiple-space-blockquote - Multiple spaces after blockquote symbol
 MD027: true
@@ -137,7 +137,7 @@ MD028: true
 # MD029/ol-prefix - Ordered list item prefix
 MD029:
   # List style
-  style: "one_or_ordered"
+  style: one_or_ordered
 
 # MD030/list-marker-space - Spaces after list markers
 MD030:
@@ -169,12 +169,12 @@ MD034: true
 # MD035/hr-style - Horizontal rule style
 MD035:
   # Horizontal rule style
-  style: "consistent"
+  style: consistent
 
 # MD036/no-emphasis-as-heading/no-emphasis-as-header - Emphasis used instead of a heading
 MD036:
   # Punctuation characters
-  punctuation: ".,;:!?。，；：！？"
+  punctuation: .,;:!?。，；：！？
 
 # MD037/no-space-in-emphasis - Spaces inside emphasis markers
 MD037: true
@@ -193,7 +193,7 @@ MD041:
   # Heading level
   level: 1
   # RegExp for matching title in front matter
-  front_matter_title: "^\\s*title\\s*[:=]"
+  front_matter_title: ^\s*title\s*[:=]
 
 # MD042/no-empty-links - No empty links
 MD042: true
@@ -201,8 +201,7 @@ MD042: true
 # MD043/required-headings/required-headers - Required heading structure
 MD043:
   # List of headings
-  headings: [
-  ]
+  headings: []
   # List of headings
   headers: []
 
@@ -219,7 +218,7 @@ MD045: true
 # MD046/code-block-style - Code block style
 MD046:
   # Block style
-  style: "consistent"
+  style: consistent
 
 # MD047/single-trailing-newline - Files should end with a single newline character
 MD047: true
@@ -227,14 +226,14 @@ MD047: true
 # MD048/code-fence-style - Code fence style
 MD048:
   # Code fence style
-  style: "consistent"
+  style: consistent
 
 # MD049/emphasis-style - Emphasis style should be consistent
 MD049:
   # Emphasis style should be consistent
-  style: "consistent"
+  style: consistent
 
 # MD050/strong-style - Strong style should be consistent
 MD050:
   # Strong style should be consistent
-  style: "consistent"
+  style: consistent
