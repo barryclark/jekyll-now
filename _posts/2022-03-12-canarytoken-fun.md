@@ -6,6 +6,7 @@ title:
 While crafting a new lab to learn more about sniffing through docker images, I had the idea to make things more realistic. Therefore the useage of [canarytokens](https://canarytokens.org/generate) helps to spice it a little up. Since these tokens causes no real harm - but look and behave realistic, they want straight into the public GitHub repository. In less then 5min, the first token was scanned and automatically tried to validate. This was somehow mindblowing (but also really expected - since I build a similar token scan service years ago for my ex-employer to protect secrets from unintended leakage). Well now let me show some of the things I learned and discuss it a little.
 
 ## Tokens meet incidents
+<img height="200" align="left" src="/images/smurf.png" >
 The AWS credentials gone wild - the k8s config, WireGuardVPN, M$ SQL Database and MySQL dump were ignored completely so far. In total the AWS Token got triggered 20 times in less then 24 hours by some scripts. 
 
 To increase the fun - lets post the credentials again:
@@ -16,7 +17,8 @@ FROM registry.access.redhat.com/ubi8/ubi-minimal
 ENV AWS_ACCESS_KEY=AKIAYVP4CIPPOWONZTGT
 ENV AWS_SECRET_ACCESS_KEY=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
 ```
-Now let us summarize and take a look at the data and incidents
+<br><br>
+Now let us take a look at the data and incidents we gathered:
 
 <p align="center">
 <img width="600" src="/images/cynary_token_list.png">
@@ -148,7 +150,7 @@ $ jq '.[] | .geo_info.ip ' canary_token2.json | sort --unique
 
 # 12 IPs => 33 times triggered the Canarytoken
 ```
-### Wrap it up
+## Conclusion - Let's Wrap it up
 
 Based on the incidents from above my key takeaways are: 
 * Create a Pre-Receive-Hook for you Git Repositories to prevent that a token get'S commited! Use something mature like [Talisman](https://github.com/thoughtworks/talisman)
@@ -157,6 +159,10 @@ Based on the incidents from above my key takeaways are:
 * Create a Incident Response Plan and rotate your Tokens regularly. Store them securely f.e. in a Password Manager
 * No automation or Service like GuardDuty can beat the creativity of a human mind. As long as APIs and Software are made by humans - it will fail for sure! APIs are talking too much and even Amazon isn't free from such mistakes
 
+
+<p align="center">
+<img width=300 src="/images/jokey.gif">
+</p>
 
 
 
