@@ -102,7 +102,60 @@ $ jq '.[].additional_info."AWS Key Log Data"| .eventName[]' canary_token.json | 
 ```
 That list quite rocks and hey, here's the M$ Windows Fanboy back again. This guy used `DescribeRegions` to validate the tokens which is quite tricky. Also the `GetSendQuota` attempts looks pretty sneaky to me. Since it either is a email spammer who salvaged other accounts or another funky method to trick the AWS API like `sns:publish`. Will check this another day. The guy from Jakarta (Indionesia) used `ListUsers` - all or nothing right? 
 
-I'll let the canarytoken be scanned for some more days and implement a monitoring alert for my [AWS LoginGuard](https://benjitrapp.github.io/AWS-LoginGuard/) to raise the bar on my alerting capabilities. Also I hope that one day someone will trigger one of the other credentials like the k8s config to let me learn fancy ways to validate k8s credentials :godmode:
+I'll let the canarytoken be scanned for some more days and implement a monitoring alert for my [AWS LoginGuard](https://benjitrapp.github.io/AWS-LoginGuard/) to raise the bar on my alerting capabilities. Also I hope that one day someone will trigger one of the other credentials like the k8s config to let me learn fancy ways to validate k8s credentials.
+
+### Upgrade 
+
+After running the token for more then 24h in the meantime the Token was Triggered 33 times and some guys from Canada joined the Party. The data wasn't cleaned up from the previous requests to make it more comparable. Let's dive into the data, and watch out for inline comments. If you want to take a look at the data on your own: [Here's the JSON](/assets/posts/canary_token2.json)
+
+```bash
+$ jq '.[] | .useragent' canary_token2.json | sort --unique
+"aws-cli/1.22.25 Python/3.8.10 Linux/5.13.0-35-generic botocore/1.23.25"
+"aws-cli/2.3.3 Python/3.8.8 Windows/10 exe/AMD64 prompt/off command/iam.list-users"
+"aws-cli/2.4.21 Python/3.8.8 Linux/5.10.16.3-microsoft-standard-WSL2 exe/x86_64.ubuntu.20 prompt/off command/iam.list-users"
+"aws-cli/2.4.23 Python/3.8.8 Windows/10 exe/AMD64 prompt/off command/iam.list-users"
+"[aws-cli/2.4.23 Python/3.8.8 Windows/10 exe/AMD64 prompt/off command/s3.ls]"   # <- Looks like the change of the user agent is broken [
+"aws-cli/2.4.23 Python/3.8.8 Windows/10 exe/AMD64 prompt/off command/sesv2.get-account"
+"AWSPowerShell.Common/4.1.20.0 .NET_Core/6.0.0-rtm.21522.10 OS/Microsoft_Windows_10.0.17763 PowerShellCore/7.-1 ClientAsync"
+"ElasticWolf/5.1.6" # <- Nice - a manual test with a GUI. Never heard of this AWS Service before :) 
+"python-requests/2.27.1"
+
+
+$ jq '.[].additional_info."AWS Key Log Data"| .eventName[]' canary_token2.json | sort --unique
+"DescribeAccountAttributes" # Nice way - didn't see this one coming! This one was triggered by the ElasticWolf guy
+"DescribeRegions"
+"GetAccount" # command/sesv2.get-account <- caused by the guy from Jakarta. He's searching for accounts to SPAM
+"GetCallerIdentity"
+"GetSendQuota"
+"GetUser"
+"ListBuckets" # S3 Buckets - why not use grayhat warfare dude? 
+"ListUsers"
+
+
+$ jq '.[] | .geo_info.ip ' canary_token2.json | sort --unique
+"112.215.151.218"
+"112.215.170.96"
+"112.215.171.137"
+"140.213.11.159"
+"158.140.162.181"
+"18.236.73.93"
+"23.129.64.132"
+"36.74.44.225"
+"37.120.131.157"
+"54.245.37.156"
+"54.39.187.211"
+"54.39.190.134"
+
+# 12 IPs => 33 times triggered the Canarytoken
+```
+### Wrap it up
+
+Based on the incidents from above my key takeaways are: 
+* Create a Pre-Receive-Hook for you Git Repositories to prevent that a token get'S commited! Use something mature like [Talisman](https://github.com/thoughtworks/talisman)
+* Watch your GuardDuty Events and push crucial Alerts directly to your Smartphone/Slack- or Teams etc.
+* If `GetCallerIdentiy` get's triggered by f.e. my LoginGuard your Tokens are leaked with a high confidence. Since this Event was used in less then 5mins after my intended "leakage" this is a great baseline
+* Create a Incident Response Plan and rotate your Tokens regularly. Store them securely f.e. in a Password Manager
+* No automation or Service like GuardDuty can beat the creativity of a human mind. As long as APIs and Software are made by humans - it will fail for sure! APIs are talking too much and even Amazon isn't free from such mistakes
 
 
 
