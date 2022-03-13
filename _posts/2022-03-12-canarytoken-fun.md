@@ -152,11 +152,14 @@ $ jq '.[] | .geo_info.ip ' canary_token2.json | sort --unique
 ```
 After a lot of "trash" scripts that hunt for low hanging fruits (yes - I mean the `GetCalerIdentity` ones), it seems like some more mature folks are joining the party. The Indonesian guy runs a script that checks for SES and tries different things to validate. After some checks it seems this is guy is really searching for new machines to create a botnet for spamming emails. 
 
-This time also we can watch the usage of Tor. There were four times a usage recognized
+This time also we can watch the usage of Tor. There were four times a usage recognized. To filter the data we can use jq again:
+
+```bash
+$ jq '.[] | select(.is_tor_relay == true)' canary_token2.json
+```
+This command will lead to the JSON output below:
 
 ```json
-$ jq '.[] | select(.is_tor_relay == true)' canary_token2.json
-
 {
   "is_tor_relay": true,
   "input_channel": "HTTP",
