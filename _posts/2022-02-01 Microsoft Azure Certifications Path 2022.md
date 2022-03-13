@@ -14,7 +14,7 @@ tags:
 
 With new 2022 year there was also introduced new certification path
 
-https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PjDI
+<https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PjDI>
 
 <object width="400" height="500" type="application/pdf" data="https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PjDI">
     <p>Insert your error message here, if the PDF cannot be displayed.</p>
