@@ -15,3 +15,5 @@ To train the CloudSec skills there are some very nice challenges out there in th
 <img src="/images/scorpion-might.gif">
 <br>Test your MIGHT!
 </p>
+
+<!-- https://www.fightersgeneration.com/characters3/scorpion-a.html -->
