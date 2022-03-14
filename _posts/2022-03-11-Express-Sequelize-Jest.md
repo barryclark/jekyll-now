@@ -30,10 +30,65 @@ I will include the versions of the installed software as I write, you should be 
 * Docker - [Installation](https://docs.docker.com/get-docker/) (Docker 20.10.11)
 * docker-compose - [Installation](https://docs.docker.com/compose/install/) (docker-compose version 1.29.2)
 * I recommend an IDE of some sort to help write the code, I am using VSCode - [Installation](https://code.visualstudio.com/download) (1.65.2)
+* A terminal, I will be using BASH. A terminal will be included on Linux and OSX. I'd recommend WSL on Windows [Installation](https://pureinfotech.com/install-windows-subsystem-linux-2-windows-10/)
 
 ## Steps
 
-## Outcome
+### Install Express and set up the scaffolding
+
+1. Download Express generator
+
+    ```bash
+    npm install express-generator -g
+    ```
+
+2. Navigate to your projects folder
+
+3. Scaffold an Express project
+
+    ```bash
+    express node-sequelize-postgres-jest-supertest --view=ejs
+    ```
+
+4. Move into the newly created project
+
+    ```bash
+    cd node-sequelize-postgres-jest-supertest
+    ```
+
+5. Install pre-packaged node packages
+
+    ```bash
+    npm install
+    ```
+
+### Add and configure Sequelize
+
+1. Install sequelize-cli globally
+
+    ```bash
+    npm install -g --save-dev sequelize-cli # Check this command
+    ```
+
+2. Install sequelize in the project
+
+    ```bash
+    npm install sequelize
+    ```
+
+3. Install the Postgres modules
+
+    ```bash
+    npm install pg pg-hstore
+    ```
+
+4. Create sequelize config file
+
+    ```bash
+    touch .sequelizerc
+    ```
+
+## Outcome 
 
 ## Conclusion, what weve learned etc
 
