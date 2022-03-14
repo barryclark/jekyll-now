@@ -1,0 +1,66 @@
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #000000;
+  background-color: #ffffff;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  font-style: italic;
+}
+.highlight .cp {
+}
+.highlight .k, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kr, .highlight .kv {
+  font-weight: bold;
+}
+.highlight .kp {
+}
+.highlight .kt {
+}
+.highlight .o, .highlight .ow {
+  font-weight: bold;
+}
+.highlight .nc {
+  font-weight: bold;
+}
+.highlight .nn {
+  font-weight: bold;
+}
+.highlight .ne {
+  font-weight: bold;
+}
+.highlight .ni {
+  font-weight: bold;
+}
+.highlight .nt {
+  font-weight: bold;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss {
+  font-style: italic;
+}
+.highlight .sa {
+  font-weight: bold;
+}
+.highlight .si {
+  font-weight: bold;
+}
+.highlight .se {
+  font-weight: bold;
+}
+.highlight .gh {
+  font-weight: bold;
+}
+.highlight .gu {
+  font-weight: bold;
+}
+.highlight .ge {
+  font-style: italic;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .gp {
+  font-weight: bold;
+}
+.highlight .err {
+  color: #FF0000;
+}
