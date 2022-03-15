@@ -78,7 +78,7 @@ RUN chown sbx_user1051:495 /tmp && \
 WORKDIR /var/task
 
 ```
-
+... to be continued -> Reverse engineering of the original [AWS Python Lambda Dockerfile](https://hub.docker.com/r/amazon/aws-lambda-python) and look how close I came by diffing both :)
 
 <p align="center">
 <img width="600" src="/images/pythonic-flavour.png">
@@ -163,18 +163,26 @@ As shown above it would look a bit like this:
 Incoming invocation requests are passed from a Load Balancer to a selected Frontend Worker. This Frontend Worker validates the requests and asks the Worker Manager for a Sandboxed function that can handle the function invocation. The Worker Manager either finds a pre-existing Worker or it creates a fresh one -> this can be watched as cold start penalty. After copying the Function code, the Code gets executed by a Worker.
 
 <p align="center">
-<img width="600" src="/images/firecracker.png">
+<img width="400" src="/images/firecracker.png">
 </p>
 
-If we take a look at Firecracker - the Workers are typically EC2 instances that have multiple functions being executed on them. These functions are owned by multiple users, not just a single user. To keep this method of execution secure - each function runs in its own secure Sandbox. Each Sandbox is airgaped (totally isolated from other Sandboxes) by using things such as cgroups, namespaces, iptables, etc.
+<p align="center">
+<img width="600" src="/images/firecracker_overview.png">
+</p>
+
+If we take a look at [Firecracker](https://firecracker-microvm.github.io/) - the Workers are typically EC2 instances that have multiple functions being executed on them. These functions are owned by multiple users, not just a single user. To keep this method of execution secure - each function runs in its own secure Sandbox. Each Sandbox is airgaped (totally isolated from other Sandboxes) by using things such as cgroups, namespaces, iptables, etc.
 
 Sandboxes can be re-used for another invocation of the same function (what typically is called “warm”). As an interresting aspect a Sandbox will never be shared across different Lambda functions. These Sandboxes have a lifetime of the duration of the function execution and wont be destroyed after elapsing of some retention time.
 
-This mighty technology provided by Firecracker, is an open-source project that is developed by Amazon. Firecracker allows for thousands of lightweight sandboxes to be executed in a single Worker environment and got in my oppinion a lot of similarity to k8s on a very highlevel perspective.
+This mighty technology provided by Firecracker, is an open-source project that is developed by Amazon. Firecracker allows for thousands of lightweight sandboxes to be executed in a single Worker environment and got in my oppinion a lot of similarity to k8s on a very highlevel perspective. 
+
+If we think back at the early beginning of container technology we have some interresting dates:
+* 20 March 2013 first release of Docker
+* June 2014 first release of Kubernetes 
+* November 2014 AWS Lambda was launched
+
+The dates are too close to each other - so I think there wasn't anything copied. But I think based on the bottlerocket-os initiative that AWS Lambda Backend was surely refactored in the meantime to some sort of a container system. A lot of this "legacy system" surely went into the [Firecracker Architecture](https://github.com/firecracker-microvm/firecracker/blob/main/docs/design.md) and could be easily refactored from a microVM to a container. Reading this Code is nearly same entertaining as reading the k8s code though. Let's see how this journey continuous 
 
 <p align="center">
 <img width="300" src="/images/turrtle_fire.gif">
 </p>
-
-... to be continued -> Reverse engineering of the original [AWS Python Lambda Dockerfile](https://hub.docker.com/r/amazon/aws-lambda-python) and look how close I came by diffing both :)
-
