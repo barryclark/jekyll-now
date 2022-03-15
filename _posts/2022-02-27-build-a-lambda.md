@@ -129,5 +129,47 @@ USER sbx_user1051
 ENTRYPOINT ["/var/rapid/init", "--bootstrap", "/var/runtime/bootstrap", "--enable-msg-logs"]
 ```
 
+<p align="center">
+<img width="600" src="/images/turtles.gif">
+</p>
+
+<p align="center">
+<img width="600" src="/images/reverse-aws-lambda.png">
+</p>
+
+So far I could recognize that the Lambda service is divided into a control plane and a data plane. Let's discuss both on a very high level perspective:
+
+1. **Control Plane**: Like in k8s the control plane is responsible for the function management API (all the actions like CreateFunction, DeleteFunction, UpdateFunctionCode, ...) 
+2. **Data Plane**: Responsible for the invocation API that how the name already tells invokes Lambda functions.The Lambda invocation flow is a whole set of services working together to provide the complete range of functionality that Lambda provides. These services are:
+
+* **Worker**  — A secure environment where your code will be copied to and executed. 
+* **Worker Manager** — As you might have guessed by the name, this  Service manages the workers. It tracks the usage of resources, execution environments and handles the assignments of requests.
+* **Frontend Worker** — This worker receives function invocation requests, validates them and dispatches the requests to the Worker Manager.
+* **Load Balancer** — Distributes invocation requests to multiple frontend invokers across multiple availability zones (AZ). When an AZ failures is detected, requests are routed to another AZ automatically as failover.
+* **Placement Service** - Manages the packing density of sandboxes on Workers and a Counter Service that’s responsible for tracking usage as well as concurrency limits.
+
+Now let us put the above services into some sort of flow. Thais flow helps to understand how they interact with one another:
+
+<p align="center">
+<img width="600" src="/images/aws_lambda_flow.png">
+</p>
+
+As shown above it would look a bit like this:
+Incoming invocation requests are passed from a Load Balancer to a selected Frontend Worker. This Frontend Worker validates the quests and asks the Worker Manager for a Sandboxed function that can handle the function invocation. The Worker Manager either finds a pre-existing Worker or it creates a fresh one -> this can be watched as cold start penalty. After copying the Function code it gets executed by a Worker.
+
+<p align="center">
+<img width="600" src="/images/firecracker.png">
+</p>
+
+If we take a look at Firecracker - the Workers are typically EC2 instances that have multiple functions being executed on them. These functions are owned by multiple users, not just a single user. To keep this method of execution secure - each function runs in its own secure Sandbox. Each Sandbox is airgaped (totally isolated from other Sandboxes) by using things such as cgroups, namespaces, iptables, etc.
+
+Sandboxes can be re-used for another invocation of the same function (what typically is called “warm”). As an interresting aspect a Sandbox will never be shared across different Lambda functions. These Sandboxes have a lifetime of the duration of the function execution and wont be destroyed after elapsing of some retention time.
+
+This mighty technology provided by Firecracker, is an open-source project that is developed by Amazon. Firecracker allows for thousands of lightweight sandboxes to be executed in a single Worker environment and got in my oppinion a lot of similarity to k8s on a very highlevel perspective.
+
+<p align="center">
+<img width="300" src="/images/turrtle_fire.gif">
+</p>
+
 ... to be continued -> Reverse engineering of the original [AWS Python Lambda Dockerfile](https://hub.docker.com/r/amazon/aws-lambda-python) and look how close I came by diffing both :)
 
