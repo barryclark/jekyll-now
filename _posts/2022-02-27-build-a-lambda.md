@@ -181,7 +181,7 @@ If we think back at the early beginning of container technology we have some int
 * June 2014 first release of Kubernetes 
 * November 2014 AWS Lambda was launched
 
-The dates are too close to each other - so I think there wasn't anything copied. But I think based on the bottlerocket-os initiative that AWS Lambda Backend was surely refactored in the meantime to some sort of a container system. A lot of this "legacy system" surely went into the [Firecracker Architecture](https://github.com/firecracker-microvm/firecracker/blob/main/docs/design.md) and could be easily refactored from a microVM to a container. Reading this Code is nearly same entertaining as reading the k8s code though. Let's see how this journey continuous 
+The dates are too close to each other - so I think there wasn't anything copied. Based on the [Firecracker Architecture](https://github.com/firecracker-microvm/firecracker/blob/main/docs/design.md) and the progresses regarding bottlerocket-os, the AWS Lambda Worker could be easily refactored/enhanced from a microVM to a container. Even though the microCM approach is pretty cool. Let's see how this journey continuous. 
 
 <p align="center">
 <img width="300" src="/images/turrtle_fire.gif">
