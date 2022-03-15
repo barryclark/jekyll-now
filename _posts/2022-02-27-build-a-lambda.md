@@ -130,11 +130,12 @@ ENTRYPOINT ["/var/rapid/init", "--bootstrap", "/var/runtime/bootstrap", "--enabl
 ```
 
 <p align="center">
-<img width="600" src="/images/turtles.gif">
+<img width="600" src="/images/reverse-aws-lambda.png">
 </p>
 
+<br>
 <p align="center">
-<img width="600" src="/images/reverse-aws-lambda.png">
+<img src="/images/turtles.gif">
 </p>
 
 So far I could recognize that the Lambda service is divided into a control plane and a data plane. Let's discuss both on a very high level perspective:
