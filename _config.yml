@@ -1,7 +1,7 @@
 # Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
-author:           MinGGo
+title:            Min Gitbook
+longtitle:        Min Gitbook
+author:           Min
 email:            nameismini@gmail.com
 description: >
   Build Jekyll site with the GitBook style.
