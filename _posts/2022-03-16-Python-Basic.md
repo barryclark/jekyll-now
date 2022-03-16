@@ -16,7 +16,7 @@ colab 설치 하기
 -------------
 파이참, VS Code, 아나콘다 등등이 있으나. 간편하게 colab 기준으로 작성
 
-1. Google Drive로 이동 1 - branch
+1. Google Drive로 이동 1 - branch_b1
 2. +새로만들기 (New) 클릭
 3. 더보기 - 연결할 앱 더보기 클릭
 4. Colaboratory 검색
