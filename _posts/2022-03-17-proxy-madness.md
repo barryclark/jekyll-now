@@ -9,16 +9,16 @@ After readingg the cheatsheet about [weird proxies](https://github.com/GrrrDog/w
 <img src="/images/seven_proxies.jpg">
 </p>
 
-The things I'll show here in this post aren't meant to run in production or have the intention to give 100% protection. Based on the proxy stuff we could create a poor man's WAF and interate to a more k8s-isch solution. As a baseline we try to do something against SQL injection - the list in there could be enhanced by other stuff like XSS, XXE and more.
+The things I'll show here in this post aren't meant to run in production or have the intention to give 100% protection. Based on the proxy stuff we could create a poor man's k8s WAF and iterate to a more k8s-isch solution. As a baseline we try to do something against SQL injection (SQLi) - but the list of patterns could be enhanced by other stuff like XSS, XXE and more.
 
-In the first iteration we start with building a nginx-proxy as a [sidecar container](https://learnk8s.io/sidecar-containers-patterns) and will look like this:
+In the first iteration we start with building a NGINX-proxy as a [sidecar container](https://learnk8s.io/sidecar-containers-patterns) and will look like this:
 
 <p align="center">
 <img width="600" src="/images/encrypted_traffic.svg">
 </p>
 
 
-In casual scenarios this helps to send encrypted traffic from "outside" and across the cluster to a [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) and terminate it there. Inside the Pod we can create multiple Containers that can talk unencrypted. The setup of a sidecar container is pretty trivial (got an example [here](https://github.com/BenjiTrapp/CTFd-helm-chart/blob/main/templates/deployment-ctfd.yaml#L26)) but the magic resides in the nginx-config:
+In casual scenarios this helps to send encrypted traffic from "outside" and across the cluster to a [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) and terminate it there. Inside the Pod we can create multiple Containers, that can talk unencrypted to each other. The setup of a sidecar container is pretty trivial (got an example [here](https://github.com/BenjiTrapp/CTFd-helm-chart/blob/main/templates/deployment-ctfd.yaml#L26)) but the magic resides in the nginx-config:
 
 ```yaml
 kind: ConfigMap
@@ -84,13 +84,13 @@ data:
 
 The magic to defeat SQLi can be found here in these tiny lines below:
 
-```
+```bash
 location ~* "(\'|\")(.*)(drop|insert|md5|select|union)" {
     deny all;
 }
 ```
 
-With this configuration we can stop some common SQLi attacks or at least slow an attacker out. To make it more flexible we can create a helm chart and inject statements dynamically from a wordlis. Since this solution is based on the Sidecar pattern which is okish but not perfect. To improve this we can upgrade the Ingress object and make it secure for every app without the usage of a Sidecar:
+With this configuration file we can stop some common SQLi attacks or at least slow an attacker out. To make it more flexible we can create a helm chart and inject statements dynamically from a wordlis. Since this solution is based on the Sidecar pattern which is okish but not perfect. To improve this we can upgrade the Ingress object and make it secure for every app without the usage of a Sidecar:
 
 ```yaml
 apiVersion: networking.k8s.io/v1
