@@ -1,10 +1,24 @@
-
+---
+layout: post
+title: Proxy madness - Defeat SQLi and more
+---
 
 After readingg the cheatsheet about [weird proxies](https://github.com/GrrrDog/weird_proxies) I had the idea mess around with some default proxy setups in my k8s cluster. 
 
+<p align="center">
+<img src="/images/seven_proxies.jpg">
+</p>
+
 The things I'll show here in this post aren't meant to run in production or have the intention to give 100% protection. Based on the proxy stuff we could create a poor man's WAF and interate to a more k8s-isch solution. As a baseline we try to do something against SQL injection - the list in there could be enhanced by other stuff like XSS, XXE and more.
 
-In the first iteration we start with building a nginx-proxy as a [sidecar container](https://learnk8s.io/sidecar-containers-patterns). In casual scenarios this helps to lead encrypted traffic from "outside" and across the cluster into a [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) and terminate it there. Inside the Pod we can create multiple Containers that can talk unencrypted. The setup of a sidecar container is pretty trivial (got an example [here](https://github.com/BenjiTrapp/CTFd-helm-chart/blob/main/templates/deployment-ctfd.yaml#L26)) but the magic resides in the nginx-config:
+In the first iteration we start with building a nginx-proxy as a [sidecar container](https://learnk8s.io/sidecar-containers-patterns) and will look like this:
+
+<p align="center">
+<img width="600" src="/images/encrypted_traffic.svg">
+</p>
+
+
+In casual scenarios this helps to send encrypted traffic from "outside" and across the cluster to a [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) and terminate it there. Inside the Pod we can create multiple Containers that can talk unencrypted. The setup of a sidecar container is pretty trivial (got an example [here](https://github.com/BenjiTrapp/CTFd-helm-chart/blob/main/templates/deployment-ctfd.yaml#L26)) but the magic resides in the nginx-config:
 
 ```yaml
 kind: ConfigMap
@@ -68,7 +82,7 @@ data:
     }
 ```
 
-The magic to defeat SQLi can be found here in these tiny lines:
+The magic to defeat SQLi can be found here in these tiny lines below:
 
 ```
 location ~* "(\'|\")(.*)(drop|insert|md5|select|union)" {
@@ -76,4 +90,35 @@ location ~* "(\'|\")(.*)(drop|insert|md5|select|union)" {
 }
 ```
 
-With this configuration we can stop most of the common SQLi attacks
+With this configuration we can stop some common SQLi attacks or at least slow an attacker out. To make it more flexible we can create a helm chart and inject statements dynamically from a wordlis. Since this solution is based on the Sidecar pattern which is okish but not perfect. To improve this we can upgrade the Ingress object and make it secure for every app without the usage of a Sidecar:
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: awesome-ingress
+  annotations:
+  nginx.org/server-snippets: |
+    location ~* "(\'|\")(.*)(drop|insert|md5|select|union)" {
+        deny all;
+    }
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: "example.com"
+      http:
+        paths:
+          - backend
+              service:
+                name: your-fancy-app-without-sidecar
+                port:
+                  number: 80
+            path: /
+            pathType: Prefix
+```
+
+### What else can we do?
+
+* Mitigate [XSS](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
+* Mitigate [DDoS-Attacks](https://www.nginx.com/blog/mitigating-ddos-attacks-with-nginx-and-nginx-plus/)
+* ...many more things :) ...
