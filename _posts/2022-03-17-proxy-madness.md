@@ -122,3 +122,5 @@ spec:
 * Mitigate [XSS](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 * Mitigate [DDoS-Attacks](https://www.nginx.com/blog/mitigating-ddos-attacks-with-nginx-and-nginx-plus/)
 * ...many more things :) ...
+
+To be continued ... Stop the Slowloris 
