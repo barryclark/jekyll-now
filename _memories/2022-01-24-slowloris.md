@@ -5,6 +5,10 @@ title: Slowloris enjoy the rush of slowness
 
 Yet another [Slowloris](https://en.wikipedia.org/wiki/Slowloris_(computer_security)) implementation as a tiny script. Maybe a rewrite in GO could be interresting in the near future. 
 
+<p align="center">
+<img src="/images/slowloris.png">
+</p>
+
 Anyways some words and disclaimer: If you're using it to cause any harm out there in the wild -> you're a dick and responsible for your own actions and now here we go:
 
 ```python

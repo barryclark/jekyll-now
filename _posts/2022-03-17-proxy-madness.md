@@ -117,6 +117,25 @@ spec:
             pathType: Prefix
 ```
 
+With this Ingress configuration all traffic is cleansed and will be answered with [HTTP 403](https://http.cat/403). Since this simple filter is build quite trivial a professional Hacker might find a way to bypass it - so don't relay on it as a single layer of defense. This approach can help though to craft an extra hurdle that needs to be taken as a quick win for you as a defender. 
+
+### Speed up the rush of slowness and roast a Slowloris
+If you've read my other blog posts and memories, you might have found my Pythonic version of the [Slowloris](https://benjitrapp.github.io/memories/2022-01-24-slowloris/). This attacks is based on creating slow connections. The `client_body_timeout`and `client_header_timeout` are set for both directives to 60 seconds as default value. If you use my nginx.conf from above, it will starve to death.
+
+<p align="center">
+<img src="/images/slowloris.png">
+</p>
+
+Therefor we can enhance either the nginx.conf or enhance the nginx annotation for the Ingress object by setting a more suiteable value to close slow connections:
+
+```bash
+server {
+    client_body_timeout 5s;
+    client_header_timeout 5s;
+    # ...
+}
+```
+
 ### What else can we do?
 
 * Mitigate [XSS](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
@@ -124,4 +143,8 @@ spec:
 * Use 42.zip to create a tarpit for crawlers. Simply stream 42.zip if strange requests are sent
 * ...many more things :) ...
 
-To be continued ... Stop the Slowloris 
+Will implement more when I got some freetime for this :)
+
+<p align="center">
+<img src="/images/c3po-madness.gif">
+</p>
