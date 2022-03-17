@@ -82,7 +82,7 @@ data:
     }
 ```
 
-The magic to defeat SQLi can be found here in these tiny lines below:
+The magic to defeat SQLi can be found in the tiny lines below:
 
 ```bash
 location ~* "(\'|\")(.*)(drop|insert|md5|select|union)" {
@@ -90,7 +90,7 @@ location ~* "(\'|\")(.*)(drop|insert|md5|select|union)" {
 }
 ```
 
-With this configuration file we can stop some common SQLi attacks or at least slow an attacker out. To make it more flexible we can create a helm chart and inject statements dynamically from a wordlis. Since this solution is based on the Sidecar pattern which is okish but not perfect. To improve this we can upgrade the Ingress object and make it secure for every app without the usage of a Sidecar:
+With this configuration file we can stop some common SQLi attacks or at least slow an adversary out. To make it more flexible we can create a helm chart and inject statements dynamically from a list. Since this solution is based on the Sidecar pattern which is okish but not perfect, we need to make another iteration. To improve this we can upgrade the Ingress object and make it secure for every app without the usage of a Sidecar:
 
 ```yaml
 apiVersion: networking.k8s.io/v1
@@ -121,6 +121,7 @@ spec:
 
 * Mitigate [XSS](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 * Mitigate [DDoS-Attacks](https://www.nginx.com/blog/mitigating-ddos-attacks-with-nginx-and-nginx-plus/)
+* Use 42.zip to create a tarpit for crawlers. Simply stream 42.zip if strange requests are sent
 * ...many more things :) ...
 
 To be continued ... Stop the Slowloris 
