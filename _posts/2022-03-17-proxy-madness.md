@@ -6,7 +6,7 @@ title: Proxy madness - Defeat SQLi and more
 After reading the cheatsheet about [weird proxies](https://github.com/GrrrDog/weird_proxies) I had the idea mess around with some default proxy setups in my k8s cluster. 
 
 <p align="center">
-<img src="/images/seven_proxies.jpg">
+<img width=300 src="/images/seven_proxies.jpg">
 </p>
 
 The things I'll show here in this post aren't meant to run in production or have the intention to give 100% protection. Based on the proxy stuff we could create a poor man's k8s WAF and iterate to a more k8s-isch solution. As a baseline we try to do something against SQL injection (SQLi) - but the list of patterns could be enhanced by other stuff like XSS, XXE and more.
