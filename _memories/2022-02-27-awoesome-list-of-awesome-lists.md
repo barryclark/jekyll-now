@@ -85,10 +85,10 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [viatsko/awesome-vscode](https://github.com/viatsko/awesome-vscode)
 * [gamontal/awesome-katas](https://github.com/gamontal/awesome-katas)
 * [trimstray/the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge)
-* [GrrrDog/weird_proxies](https://github.com/GrrrDog/weird_proxies)
 * [avelino/awesome-go](https://github.com/avelino/awesome-go)
 
 ## Cheatsheets
 * [LeCoupa/awesome-cheatsheets](https://github.com/LeCoupa/awesome-cheatsheets)
+* [GrrrDog/weird_proxies](https://github.com/GrrrDog/weird_proxies)
 
 If you have an awesome list that ia missing here - send me a Pull Request or open an issue. Thank you :)
