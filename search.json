@@ -39,4 +39,4 @@ layout: none
       {% endif %}
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
-]cd
+]
