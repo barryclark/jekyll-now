@@ -4,7 +4,7 @@ title: How to buy, sell, spend and accept Bitcoin in Greece
 ---
 
 <center>
-<video class="center" controls>
+<video class="center" controls autoplay>
   <source src="arnie.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
