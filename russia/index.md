@@ -3,15 +3,12 @@ layout: default_en
 title: How to buy, sell, spend and accept Bitcoin in Greece
 ---
 
-video.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+<center>
 <video class="center" controls>
   <source src="arnie.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
+</center>
 
 ![](/images/Bitcoin_4_year_cycle.jpeg)
 
