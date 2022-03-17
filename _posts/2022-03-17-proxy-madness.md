@@ -3,7 +3,7 @@ layout: post
 title: Proxy madness - Defeat SQLi and more
 ---
 
-After reading the cheatsheet about [weird proxies](https://github.com/GrrrDog/weird_proxies) I had the idea mess around with some default proxy setups in my k8s cluster. 
+After reading the cheatsheet about [weird proxies](https://github.com/GrrrDog/weird_proxies) I had the epiphany to mess around with some default proxy setups in my Kubernetes cluster. 
 
 <p align="center">
 <img width=300 src="/images/seven_proxies.jpg">
