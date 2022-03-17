@@ -21,7 +21,7 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [shogunlab/awesome-hyper-v-exploitation](https://github.com/shogunlab/awesome-hyper-v-exploitation)
 
 
-## AppSec and genuine Security Lists
+## AppSec stuff
 * [analysis-tools-dev/static-analysis](https://github.com/analysis-tools-dev/static-analysis)
 * [jivoi/awesome-osint](https://github.com/jivoi/awesome-osint)
 * [qazbnm456/awesome-web-security](https://github.com/qazbnm456/awesome-web-security)
@@ -29,21 +29,28 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [wtsxDev/reverse-engineering](https://github.com/wtsxDev/reverse-engineering)
 * [paragonie/awesome-appsec](https://github.com/paragonie/awesome-appsec)
 * [yeyintminthuhtut/Awesome-Red-Teaming](https://github.com/yeyintminthuhtut/Awesome-Red-Teaming)
-* [payloadbox/xss-payload-list](https://github.com/payloadbox/xss-payload-list)
 * [zer0yu/Awesome-CobaltStrike](https://github.com/zer0yu/Awesome-CobaltStrike)
 * [snoopysecurity/awesome-burp-extensions](https://github.com/snoopysecurity/awesome-burp-extensions)
 * [InQuest/awesome-yara](https://github.com/InQuest/awesome-yara)
 * [Escapingbug/awesome-browser-exploit](https://github.com/Escapingbug/awesome-browser-exploit)
 * [FabioBaroni/awesome-exploit-development](https://github.com/FabioBaroni/awesome-exploit-development)
 * [0x4D31/awesome-oscp](https://github.com/0x4D31/awesome-oscp)
-* [payloadbox/command-injection-payload-list](https://github.com/payloadbox/command-injection-payload-list)
-* [BullsEye0/google_dork_list](https://github.com/BullsEye0/google_dork_list)
-* [danielmiessler/SecLists](https://github.com/danielmiessler/SecLists)
-* [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
 * [m0nad/awesome-privilege-escalation](https://github.com/m0nad/awesome-privilege-escalation)
 * [Puliczek/awesome-list-of-secrets-in-environment-variables](https://github.com/Puliczek/awesome-list-of-secrets-in-environment-variables)
 * [six2dez/OneListForAll](https://github.com/six2dez/OneListForAll)
 * [assetnote/blind-ssrf-chains](https://github.com/assetnote/blind-ssrf-chains)
+
+## Pentesting
+* [awesome-pentest](https://github.com/enaqx/awesome-pentest)
+* [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
+* [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources)
+
+## Wordlists & Payload Lists
+* [six2dez/OneListForAll](https://github.com/six2dez/OneListForAll)
+* [BullsEye0/google_dork_list](https://github.com/BullsEye0/google_dork_list)
+* [danielmiessler/SecLists](https://github.com/danielmiessler/SecLists)
+* [payloadbox/command-injection-payload-list](https://github.com/payloadbox/command-injection-payload-list)
+* [payloadbox/xss-payload-list](https://github.com/payloadbox/xss-payload-list)
 
 
 ## OSINT / Threat intelligence and Incident Respone
@@ -78,5 +85,10 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [viatsko/awesome-vscode](https://github.com/viatsko/awesome-vscode)
 * [gamontal/awesome-katas](https://github.com/gamontal/awesome-katas)
 * [trimstray/the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge)
+* [GrrrDog/weird_proxies](https://github.com/GrrrDog/weird_proxies)
+* [avelino/awesome-go](https://github.com/avelino/awesome-go)
+
+## Cheatsheets
+* [LeCoupa/awesome-cheatsheets](https://github.com/LeCoupa/awesome-cheatsheets)
 
 If you have an awesome list that ia missing here - send me a Pull Request or open an issue. Thank you :)
