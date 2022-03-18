@@ -7,8 +7,8 @@ author_profile: true
 
 Gradueded 2008 University of Warsaw, Faculty of Mathematics, Informatics and Mechanics ![MIMUW][https://www.mimuw.edu.pl/]
 
-Software Developer/Architect with over 15 years of experience, flustered with aproch "It works on my computer"
-use DevOps pratice for over 11 years, natural path going Cloud 7 years.
+Software Developer/Architect with over 15 years of experience, flustered with approach "It works on my computer"
+use DevOps practice for over 11 years, natural path going Cloud 7 years.
 
 Passionate about ALM, Cloud, Server less, Infrastructure as Code :)
 
@@ -67,9 +67,9 @@ Passionate about ALM, Cloud, Server less, Infrastructure as Code :)
 <a href="https://www.microsoft.com/skills/azureheroes" title="Azure Hero - Kudos"><img src="https://www.microsoft.com/Skills/Content/images/azureHeroes/newBadgers/kudos.jpg" width="200" alt="Azure Hero - Kudos"/></a>
 -->
 
-<a href="https://www.microsoft.com/skills/azureheroes" title="Azure Heros - Content Hero"><img src="https://github.com/JanuszNowak/janusznowak/raw/master/img/Azure%20Heroes%20-%20Content%20Hero.png" width="140" alt="Azure Hero - Maker"/></a>
-<a href="https://www.microsoft.com/skills/azureheroes" title="Azure Heros - Maker"><img src="https://github.com/JanuszNowak/janusznowak/raw/master/img/Azure%20Heroes%20-%20Maker.png" width="140" alt="Azure Hero - Maker"/></a>
-<a href="https://www.microsoft.com/skills/azureheroes" title="Azure Heros - Builder"><img src="https://github.com/JanuszNowak/janusznowak/raw/master/img/Azure%20Heroes%20-%20Builder.jpg" width="140" alt="Azure Hero - Builder"/></a>
-<a href="https://www.microsoft.com/skills/azureheroes" title="Azure Heros - Kudos"><img src="https://github.com/JanuszNowak/janusznowak/raw/master/img/Azure%20Heroes%20-%20Kudos.jpg" width="140" alt="Azure Hero - Kudos"/></a>
+<a href="https://www.microsoft.com/skills/azureheroes" title="Azure Heroes - Content Hero"><img src="https://github.com/JanuszNowak/janusznowak/raw/master/img/Azure%20Heroes%20-%20Content%20Hero.png" width="140" alt="Azure Hero - Maker"/></a>
+<a href="https://www.microsoft.com/skills/azureheroes" title="Azure Heroes - Maker"><img src="https://github.com/JanuszNowak/janusznowak/raw/master/img/Azure%20Heroes%20-%20Maker.png" width="140" alt="Azure Hero - Maker"/></a>
+<a href="https://www.microsoft.com/skills/azureheroes" title="Azure Heroes - Builder"><img src="https://github.com/JanuszNowak/janusznowak/raw/master/img/Azure%20Heroes%20-%20Builder.jpg" width="140" alt="Azure Hero - Builder"/></a>
+<a href="https://www.microsoft.com/skills/azureheroes" title="Azure Heroes - Kudos"><img src="https://github.com/JanuszNowak/janusznowak/raw/master/img/Azure%20Heroes%20-%20Kudos.jpg" width="140" alt="Azure Hero - Kudos"/></a>
 
 </div>
