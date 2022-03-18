@@ -136,6 +136,18 @@ server {
 }
 ```
 
+### HTTP Request Smuggling
+
+The madness with the nginx proxy can be upgraded. Based on my [http-request-smuggling-lab](https://github.com/BenjiTrapp/http-request-smuggling-lab) you can mess with the proxies a little bit more around. Especially Lab 2 can be used for training your skills to attack intranets. 
+
+<p align="center">
+<img width="600" src="https://portswigger.net/web-security/images/http-request-smuggling.svg">
+</p>
+
+To learn more about this kind of attack take a look here at [Portswigger](https://portswigger.net/web-security/request-smuggling) 
+
+<br>
+
 ### What else can we do?
 
 * Mitigate [XSS](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
