@@ -131,6 +131,7 @@ if args.https:
     setattr(ssl.SSLSocket, "send_line", send_line)
     setattr(ssl.SSLSocket, "send_header", send_header)
 
+# Generate Useragents on the fly in the next iteration
 list_of_sockets = []
 user_agents = [
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
@@ -233,4 +234,8 @@ if __name__ == "__main__":
     main()
 ```
 
-Still here? well stuff this script in a docker container/DO Droplet and spin it up in a big army of old man seaching for coins at the cash desk
+Still here? Good - we could stuff this script in a docker container/Digital Ocean Droplet/Lambda and spin it up in a big army of old men, seaching for coins at the cash desk 
+
+<p align="center">
+<img src="/images/burns-coin.png">
+</p>
