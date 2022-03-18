@@ -99,7 +99,7 @@ After running the code and using some of the known facts regarding AWS Lambda, w
 * Read-only file system - this tackles persistance but there are options we will research later
 * NON-root user 
 * Single AWS IAM role required for access to the sandbox
-* Reverse sell not possible since it runs airgapped
+* Dropping a reverse shell is not possible, since the Lambda Function runs airgapped
 * Code is copied to `/var/run/task`
 * Bootstrap under `/var/runtime/awslambda` <- entry point and backbone of AWS Lambda
 * Sandbox is thrown away at the end of execution and have a maximum execution time
