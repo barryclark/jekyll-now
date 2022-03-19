@@ -155,7 +155,7 @@ To learn more about this kind of attack take a look here at [Portswigger](https:
 
 * Mitigate [XSS](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 * Mitigate [DDoS-Attacks](https://www.nginx.com/blog/mitigating-ddos-attacks-with-nginx-and-nginx-plus/)
-* Use 42.zip to create a tarpit for crawlers. Simply stream 42.zip if strange requests are sent
+* Use [42.zip](https://research.swtch.com/zip) to create a tarpit for crawlers. Simply stream 42.zip if strange requests are sent
 * ...many more things :) ...
 
 Will implement more when I got some freetime for this :)
