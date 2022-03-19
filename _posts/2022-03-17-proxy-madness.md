@@ -138,13 +138,15 @@ server {
 
 ### HTTP Request Smuggling
 
-The madness with the nginx proxy can be upgraded. Based on my [http-request-smuggling-lab](https://github.com/BenjiTrapp/http-request-smuggling-lab) you can mess with the proxies a little bit more around. Especially Lab 2 can be used for training your skills to attack intranets. 
+To continue wirh some proxy madness, you can try my [http-request-smuggling-lab](https://github.com/BenjiTrapp/http-request-smuggling-lab). In this lab you have the chance to mess around with another NGINX proxy. The Lab 2 is a little tricky but helps to training your skills for attacking hidden internal traffic like intranets and bypass security controls. 
+
+This kind of attack is based on a weakness in the HTTP protocol that uses inconsistency between the interpretation of `Transfer-Encoding` and/or `Content-Length` headers between different kind of implementations in HTTP servers accross a proxy server cain. To visualize it take a look here:
 
 <p align="center">
 <img src="/images/http-request-smuggling.svg">
 </p>
 
-To learn more about this kind of attack take a look here at [Portswigger](https://portswigger.net/web-security/request-smuggling) 
+To learn more about this kind of attack take a look here at [Portswigger](https://portswigger.net/web-security/request-smuggling) and try out the labs.
 
 <br>
 
