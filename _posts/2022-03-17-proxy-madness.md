@@ -117,7 +117,8 @@ spec:
             pathType: Prefix
 ```
 
-With this Ingress configuration all traffic is cleansed and will be answered with [HTTP 403](https://http.cat/403). Since this simple filter is build quite trivial a professional Hacker might find a way to bypass it - so don't relay on it as a single layer of defense. This approach can help though to craft an extra hurdle that needs to be taken as a quick win for you as a defender. 
+With this Ingress configuration all traffic is cleansed and will be answered with [HTTP 403](https://http.cat/403). Since this simple filter is build quite trivial, a professional Hacker might find a way to bypass it - so don't rely on it as a single layer of defense. This approach can help though to craft an extra hurdle that needs to be taken as a quick win for you as a defender. Defense in depth is a key factor to stop kids from playing with your stuff
+
 
 ### Speed up the rush of slowness and roast a Slowloris
 If you've read my other blog posts and memories, you might have found my Pythonic version of the [Slowloris](https://benjitrapp.github.io/memories/2022-01-24-slowloris/). This kind of attack is based on creating slow connections and occupy the open connections to the server. The `client_body_timeout`and `client_header_timeout` are set for both directives to 60 seconds as default value. If you use my nginx.conf from above or a plain one, it will starve to death with ease.
@@ -126,7 +127,7 @@ If you've read my other blog posts and memories, you might have found my Pythoni
 <img src="/images/slowloris.png">
 </p>
 
-Therefore we can enhance either the nginx.conf or enhance the nginx annotation for the Ingress object by setting a more suiteable value to close slow connections:
+Therefore we can enhance either the `nginx.conf` or enhance the `nginx annotation` for the Ingress object by setting a more suiteable value to close slow connections:
 
 ```bash
 server {
@@ -138,9 +139,9 @@ server {
 
 ### HTTP Request Smuggling
 
-To continue wirh some proxy madness, you can try my [http-request-smuggling-lab](https://github.com/BenjiTrapp/http-request-smuggling-lab). In this lab you have the chance to mess around with another NGINX proxy. The Lab 2 is a little tricky but helps to training your skills for attacking hidden internal traffic like intranets and bypass security controls. 
+To continue wirh some proxy madness, you can try my [http-request-smuggling-lab](https://github.com/BenjiTrapp/http-request-smuggling-lab). In this lab you have the chance to mess around with another NGINX proxy. The Lab 2 is a little tricky, but helps to train your skills for attacking hidden internal traffic like intranets and bypass security controls. 
 
-This kind of attack is based on a weakness in the HTTP protocol that uses inconsistency between the interpretation of `Transfer-Encoding` and/or `Content-Length` headers between different kind of implementations in HTTP servers accross a proxy server cain. To visualize it take a look here:
+This kind of attack is based on a weakness in the HTTP protocol ([postel's law](https://en.m.wikipedia.org/wiki/Robustness_principle) strikes again) that uses inconsistency between the interpretation of `Transfer-Encoding` and/or `Content-Length` headers due to different kind of implementations in HTTP servers accross a proxy server cain. To visualize it take a look here:
 
 <p align="center">
 <img src="/images/http-request-smuggling.svg">
