@@ -56,7 +56,7 @@ data:
           index index.html;
           error_log /dev/stdout info;
 
-          location ~* "(\'|\")(.*)(drop|insert|md5|select|union)" {
+          location ~* "(\'|\")(.*)(drop|insert|md5|select|union|update|truncate|delete)" {
               deny all;
           }
           
@@ -85,7 +85,7 @@ data:
 The magic to defeat SQLi can be found in the tiny lines below:
 
 ```bash
-location ~* "(\'|\")(.*)(drop|insert|md5|select|union)" {
+location ~* "(\'|\")(.*)(drop|insert|md5|select|union|update|truncate|delete)" {
     deny all;
 }
 ```
@@ -99,7 +99,7 @@ metadata:
   name: awesome-ingress
   annotations:
   nginx.org/server-snippets: |
-    location ~* "(\'|\")(.*)(drop|insert|md5|select|union)" {
+    location ~* "(\'|\")(.*)(drop|insert|md5|select|union|update|truncate|delete)" {
         deny all;
     }
 spec:
