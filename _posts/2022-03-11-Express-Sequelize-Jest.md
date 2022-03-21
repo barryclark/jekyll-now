@@ -17,14 +17,14 @@ Now onto the details, in this series we will be going through every step require
 
 ## Thank you's and Sources
 
-At the beginning of this walkthrough I wanted to state my sources and how this article has been put together. As always in the open source world nothing is brand new and everything is iteritive, in this case this walkthrough is an amalgamation of tutorials and articles I found online that helped me build this code from scratch. So thanks to these guys and definitely check their work out if you can.
+At the beginning of this walkthrough I wanted to state my sources and how this article has been put together. As always in the open source world nothing is brand new and everything is iterative, in this case this walkthrough is an amalgamation of tutorials and articles I found online that helped me build this code from scratch. So thanks to these guys and definitely check their work out if you can.
 
 * [Djamware RESTful API video](https://www.youtube.com/watch?v=oWSN9AQK1RM&t=852s)
 * [Muhammad Lufty's article on Jest and Supertest](https://dev.to/mhmdlotfy96/testing-nodejs-express-api-with-jest-and-supertest-1bk0)
 
 ## Pre-requisites
 
-I will include the versions of the installed software as I write, you should be able to complete the steps on newer versions but be aware that commands/syntax and compatability may change
+I will include the versions of the installed software as I write, you should be able to complete the steps on newer versions but be aware that commands/syntax and compatibility may change
 
 * Installed Node.JS and NPM - [Installation](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (Node v16.14.0 & npm 8.3.1)
 * Docker - [Installation](https://docs.docker.com/get-docker/) (Docker 20.10.11)
@@ -44,7 +44,7 @@ I will include the versions of the installed software as I write, you should be 
 
 2. Navigate to your projects folder
 
-3. Scaffold an Express project
+3. Scaffold an [Express](https://expressjs.com/) project
 
     ```bash
     express node-sequelize-postgres-jest-supertest --view=ejs
@@ -64,19 +64,20 @@ I will include the versions of the installed software as I write, you should be 
 
 ### Add and configure Sequelize
 
-1. Install sequelize-cli globally
+1. Install [sequelize-cli](https://sequelize.org/master/manual/migrations.html) globally
 
     ```bash
-    npm install -g --save-dev sequelize-cli # Check this command
+    npm install -g sequelize-cli 
+    npm install sequelize-cli 
     ```
 
-2. Install sequelize in the project
+2. Install [sequelize](https://sequelize.org/master/index.html) in the project
 
     ```bash
     npm install sequelize
     ```
 
-3. Install the Postgres modules
+3. Install the [Postgres](https://sequelize.org/master/manual/migrations.html) modules
 
     ```bash
     npm install pg pg-hstore
@@ -88,10 +89,65 @@ I will include the versions of the installed software as I write, you should be 
     touch .sequelizerc
     ```
 
-## Outcome 
+5. Open the project in your IDE
 
-## Conclusion, what weve learned etc
+6. Edit the newly made .sequelizerc file and enter this text. For more info on what this config file does see [here](https://sequelize.org/master/manual/migrations.html)
+
+    ```
+    const path = require('path');
+
+    module.exports = {
+    "config": path.resolve('./config', 'config.json'),
+    "models-path": path.resolve('./models'),
+    "seeders-path": path.resolve('./seeders'),
+    "migrations-path": path.resolve('./migrations')
+    };
+    ```
+
+7. Initialize sequelize
+
+    ```bash
+    sequelize init
+    ```
+
+8. Edit the file in config/config.js so it looks like below
+
+    ```
+    {
+    "development": {
+        "username": "postgres",
+        "password": "postgres",
+        "database": "remakingeden",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    },
+    "test": {
+        "username": "postgres",
+        "password": "postgres",
+        "database": "remakingeden_test",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    },
+    "production": {
+        "username": "postgres",
+        "password": "postgres",
+        "database": "remakingeden_production",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    }
+    }
+    ``` 
+
+Well done! You now have the scaffolding of a basic express project with sequelize installed and configured.
+
+## Wrap up
+
+So far we have looked at creating a generic express project and adding modules for sequelize and postgres. We have edited the config to make it ready to be used in the next stage of the walkthrough. This is a brilliant foundation on which to build the remaining API and tests.
+
+If you have got lost at all, or would just like to learn more about what we have done please click on the links throughout the steps and read the extra documentation.
 
 ## What is next?
 
-# [Part 2](https://google.com)
+Next up we will look at creating a docker-compose file that will start a postgres container on our local machine with just one command. This will then be ready to fill with data using sequelize.
+
+# Part 2 - Coming soon
