@@ -10,7 +10,7 @@ jq is useful to slice, filter, map and transform structured json data. It can al
 When running jq, the following arguments may become handy:
 
 | Argument        |  Description  |
-| ----------------| :-------------------------------------------------------------:|
+| ----------------| :--------------------------------------------------------------|
 | `--version`     | Output the jq version and exit with zero.                      |
 | `--sort-keys`   | Output the fields of each object with the keys in sorted order.|
 
@@ -19,7 +19,7 @@ When running jq, the following arguments may become handy:
 The syntax for jq is pretty coherent:
 
 | Syntax  |  Description                                                          |
-| --------| :--------------------------------------------------------------------:|
+|:-------:| :---------------------------------------------------------------------|
 | ,       | Filters separated by a comma will produce multiple independent outputs|
 | ?       | Will ignores error if the type is unexpected                          |
 | []      | Array construction                                                    |
@@ -33,7 +33,7 @@ The syntax for jq is pretty coherent:
 ## Dealing with json objects
 
 | Description                | Command                                 |
-| ---------------------------| :-------------------------------------: |
+| ---------------------------| :---------------------------------------|
 | Display all keys           | `jq 'keys'`                             |
 | Adds + 1 to all items      | `jq 'map_values(.+1)'`                  |
 | Delete a key               | `jq 'del(.foo)'`                        |
@@ -42,7 +42,7 @@ The syntax for jq is pretty coherent:
 ## Dealing with fields
 
 | Description           | Command                        |
-| ----------------------| :----------------------------: |
+| ----------------------| :----------------------------- |
 | Concatenate two fields| `fieldNew=.field1+' '+.field2` |
 
 
@@ -51,9 +51,9 @@ The syntax for jq is pretty coherent:
 ### Slicing and Filtering
 
 | Description                     | Command |
-| --------------------------------| :------------------------------------------------: |
+| :------------------------------:| :------------------------------------------------- |
 | All                             | `jq .[]`                                           |
-| First                           |	`jq '.[0]'`                                        |
+| First                           |	`jq '.[0]'`                                    |
 | Range                           | `jq '.[2:4]'`                                      |
 | First 3                         | `jq '.[:3]'`                                       |
 | Last 2                          | `jq '.[-2:]'`                                      |
@@ -65,7 +65,7 @@ The syntax for jq is pretty coherent:
 ### Mapping and Transforming
 
 | Description                            | Command                                                             |
-| ---------------------------------------| :-----------------------------------------------------------------: |
+| ---------------------------------------| :------------------------------------------------------------------ |
 | Add + 1 to all items                   | `jq 'map(.+1)'`                                                     |
 | Delete 2 items                         | `jq 'del(.[1, 2])'`                                                 |
 | Concatenate arrays                     | `jq 'add'`                                                          |
