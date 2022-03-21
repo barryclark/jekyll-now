@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Basic Javascript REST API with DB and integration tests Part 1 - Express/Sequelize
