@@ -3,8 +3,6 @@ layout: post
 title: Basic Javascript REST API with DB and integration tests Part 1 - Express/Sequelize
 ---
 
-## Overview
-
 Through this series I intend to explain every step fully, if you follow these steps exactly you will get a working project. However I will also be placing links throughout where you can read up on concepts and programs in more detail. If you are reading this to learn I recommend taking the time to read a little further on each step where you can.
 
 Now onto the details, in this series we will be going through every step required to create a very basic RESTful API that uses:
