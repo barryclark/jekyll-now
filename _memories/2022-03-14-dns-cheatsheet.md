@@ -3,10 +3,10 @@ layout: memory
 title: DNS cheatsheet
 ---
 
-> It's not DNS
-  There'S no way it's DNS 
-  It was DNS
-     -SSBroski
+> It's not DNS <br>
+  There'S no way it's DNS <br>
+  It was DNS<br>
+     -SSBroski<br>
 
 DNS Record types: A, AAAA, CNAME, ALIAS, ANAME, TXT, MX 
 
