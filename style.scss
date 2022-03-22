@@ -162,6 +162,33 @@ img {
 /*********************/
 
 //
+// table stuff 
+// https://www.digitalocean.com/community/tutorials/how-to-style-a-table-with-css
+//
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+tr, td,th {
+  border: 1px solid grey;
+  padding: 5px;
+}
+
+thead {
+  background-color: #333 color: white;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #0d0c0c;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #222;
+}
+
+//
 // .masthead
 //
 
