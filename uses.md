@@ -34,7 +34,7 @@ This is a living document outlining the things I use. Check out what other peopl
 
 ## Other desk stuff
 
-* Fezibo standing desk with a crappy lamitated top.
+* [Fezibo standing desk](https://www.amazon.com/dp/B08DVGJSTN/ref=cm_sw_r_tw_dp_4QX2BGD886NSNA995DVK?_encoding=UTF8&psc=1) with a crappy lamitated top. I planned on making a custom top, but as of yet, I have not gotten around to it.
 * [CubeFit TerraMat](https://www.amazon.com/dp/B01N0DGA00/ref=cm_sw_r_as_gl_api_gl_i_V3YXXG50DCZ8NRJT36C1?linkCode=ml1&tag=uhricom-20)&#8212;standing desk mat
 * [Aeron chair, size B](https://www.amazon.com/dp/B093X7TXS2/ref=cm_sw_r_tw_dp_G5HGCSMJWJ0PP01P8HY2?_encoding=UTF8&psc=1)&#8212;we have a size C that's supposed to be the right size for me, but I like the B better.
 * [Ember mug](https://www.amazon.com/dp/B07Z5H4TF5/ref=cm_sw_r_tw_dp_JBHTF1KSGQQTV7HHYRKD?_encoding=UTF8&psc=1)&#8212;I hava the 16oz black version 2 at home and an older white 10oz mug at work
@@ -55,7 +55,6 @@ This is a living document outlining the things I use. Check out what other peopl
 
 ## Software
 
-In no particular order
 * Dvorak keyboard layout
 * Visual Studio Code
 * Vim
