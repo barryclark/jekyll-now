@@ -7,10 +7,6 @@ Benjis [Pensieve](https://harrypotter.fandom.com/wiki/Pensieve) helps to persist
 <img width="600" src="/images/pensieve-cite.png">
 </p>
   
-<p align="center">
-<img src="/images/pensieve.png">
-</p>  
-
 ---
 <!-- TODO: Styling https://www.mikedane.com/web-development/css/styling-search-bar/ -->
 <!-- Html Elements for Search -->
@@ -32,6 +28,10 @@ SimpleJekyllSearch({
 </script>
 
 ---
+
+<p align="center">
+<img src="/images/pensieve.png">
+</p>  
 
 <br>
 <br>
