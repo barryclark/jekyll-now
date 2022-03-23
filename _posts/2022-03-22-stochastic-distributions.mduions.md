@@ -1,0 +1,14 @@
+---
+layout: post
+title: Stochastic processes and distributions
+---
+We can derive probability distributions from a single random process: tossing a coin. And se the behaviour 
+for different limits: small probability and large number of tosses.
+
+We can also use it as a more general explanation for rate equations or chemical reactions dynamics. Where
+the event of getting a head y equivalent to the creation of a protein.
+
+$\gamma$ is the rate, that is defined as the average events per unit of time. Like getting heads or protein creation.
+For a coin with probability $p$ of heads, we know that the average number of heads after $N$ tosses is $Np$.
+The time between tosses is $\delta\tao$, and the total time $t$ after a large number of tosses is $t=N\delta\tao$
+$\left\langle n \right\rangle = Np = \frac{t}{\delta\tao}p = t\gamma$
