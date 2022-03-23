@@ -7,7 +7,9 @@ Benjis [Pensieve](https://harrypotter.fandom.com/wiki/Pensieve) helps to persist
 <img width="600" src="/images/pensieve-cite.png">
 </p>
   
-![_config.yml]({{ site.baseurl }}/images/pensieve.png)
+<p align="center">
+<img src="/images/pensieve.png">
+</p>  
 
 ---
 <!-- TODO: Styling https://www.mikedane.com/web-development/css/styling-search-bar/ -->
