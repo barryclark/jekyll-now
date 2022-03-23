@@ -3,7 +3,7 @@ title: Inżynierskie Targi Pracy 2022
 author: Janusz Nowak
 header:
   teaser: /wp-content/uploads/2022/28.Inżynierskie Targi Pracy 2022.png
-permalink: /28.Inżynierskie Targi Pracy 2022/
+permalink: /28.InżynierskieTargiPracy2022/
 categories:
   - Azure
   - Certification
