@@ -4,9 +4,9 @@ layout: default
 Benjis [Pensieve](https://harrypotter.fandom.com/wiki/Pensieve) helps to persist some of my chaotic memories. The Pensieve (Denkarium on german) itself, is a magical device used to review these memories.
 
 <blockquote>
-  <p>"&ldquo;I use the Pensieve. One simply siphons the excess thoughts from one's mind, pours them into the basin, and examines them at one's leisure. It   becomes easier to spot patterns and links, you understand, when they are in this form.&rdquo;"
-    <br>
-  "— Albus Dumbledore explaining his Pensieve to Harry Potter"
+  <p>&ldquo;I use the Pensieve. One simply siphons the excess thoughts from one's mind, pours them into the basin, and examines them at one's leisure. It   becomes easier to spot patterns and links, you understand, when they are in this form.&rdquo;
+  <br>
+        — Albus Dumbledore explaining his Pensieve to Harry Potter
   </p>
 </blockquote>
   
