@@ -8,6 +8,7 @@ Benjis [Pensieve](https://harrypotter.fandom.com/wiki/Pensieve) helps to persist
 </p>
   
 ---
+<p align="center">
 <!-- TODO: Styling https://www.mikedane.com/web-development/css/styling-search-bar/ -->
 <!-- Html Elements for Search -->
 <div id="search-container">
@@ -26,7 +27,7 @@ SimpleJekyllSearch({
   json: '/search.json'
 })
 </script>
-
+</p>
 ---
 
 <p align="center">
