@@ -13,8 +13,8 @@ This is a living document outlining the things I use. Check out what other peopl
 * Personal/home office
     * [ROG Zephyrus 14" Gaming Laptop - AMD Ryzen 9 - 16GB Memory](https://www.amazon.com/dp/B093TX6BLC/ref=cm_sw_r_tw_dp_QMPVWK4CJF5WY9TRC0AG)
     * Windows 11
-    * 2 Asus 27" monitors
-    * Vivo dual monitor arms
+    * 2 [Asus 27"](https://www.amazon.com/ASUS-VE278H-1920x1080-Back-lit-Monitor/dp/B0099XBO5E/ref=sr_1_3?crid=Q69HBNS71XZC&keywords=asus+ve278h+27%22+full+hd+1920x1080+2ms+hdmi+vga+back-lit+led+monitor&qid=1647997157&sprefix=ASUS+VE278H%2Caps%2C112&sr=8-3) monitors, no longer available.
+    * [Vivo dual monitor arm](https://www.amazon.com/dp/B07K6X7YY1/ref=cm_sw_r_tw_dp_5ZN483FWH74WFTGF8NQN?_encoding=UTF8&psc=1)
 * Both locations
     * [Logitech G915 TKL keyboard](https://www.amazon.com/dp/B08L8BP9KK/ref=cm_sw_r_tw_dp_WDVRS47WTZXA40TMFV13)&#8212;I love, love, love the low profile switches on this mechanical keyboard. Turns out I should have bought the full keyboard because I do just enough numerical entry that it would be helpful.
     * [Logitech M705 Mouse](https://www.amazon.com/dp/B087Z733CM/ref=cm_sw_r_tw_dp_HCRMNWZ03T2QA8F45Z1T)&#8212;I've owned at least five of these mice over the years. They are lightweight and have an excellent battery life.
@@ -39,7 +39,7 @@ This is a living document outlining the things I use. Check out what other peopl
 * [Aeron chair, size B](https://www.amazon.com/dp/B093X7TXS2/ref=cm_sw_r_tw_dp_G5HGCSMJWJ0PP01P8HY2?_encoding=UTF8&psc=1)&#8212;we have a size C that's supposed to be the right size for me, but I like the B better.
 * [Ember mug](https://www.amazon.com/dp/B07Z5H4TF5/ref=cm_sw_r_tw_dp_JBHTF1KSGQQTV7HHYRKD?_encoding=UTF8&psc=1)&#8212;I hava the 16oz black version 2 at home and an older white 10oz mug at work
 * Amazon Alexa
-* Menard's arcticect Lamps with Govee Smart Bulbs
+* Menard's architect Lamps with Govee Smart Bulbs
 * EPN Laptop Stand
 * [Yootech wireless phone charger](https://www.amazon.com/dp/B07P999H4J/ref=cm_sw_r_tw_dp_VM8Z81TANWT6FRCE0SMV?_encoding=UTF8&psc=1)
 * [SteelSeries Mouse Pad](https://www.amazon.com/gp/product/B000UEZ37G/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&th=1)
