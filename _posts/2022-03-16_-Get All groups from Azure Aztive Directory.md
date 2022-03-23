@@ -24,7 +24,7 @@ How to get all
 ```csharp
 $moduleName  = "AzureAD"
 if (Get-Module -ListAvailable -Name $moduleName) {
-    Write-Output "Module $moduleName allready exists"
+    Write-Output "Module $moduleName all ready exists"
 }
 else
 {
@@ -50,7 +50,6 @@ $ado=$Allgroups|where DisplayName -Like "GROUPNAME*"
 
 foreach($g in $ado)
 {
-
   $a=$g|Get-AzureADGroupMember |measure|select Count
   Write-Output  "$($g.DisplayName),$($a.Count)"
 }
