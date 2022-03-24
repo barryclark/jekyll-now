@@ -15,8 +15,74 @@ The easiest way to make your first post is to edit this one. Go into /_posts/ an
 파일 업로드
 -------------
 
-1. Google Drive로 이동 1 - branch_b1 issue02
-2. +새로만들기 (New) 클릭
-3. 더보기 - 연결할 앱 더보기 클릭
-4. Colaboratory 검색
-5. "추가" 버튼 클릭하기
+- 직접 업로드
+
+```python
+from google.colab import files
+myfile = files.upload()
+
+import io
+import pandas as pd
+data = pd.read_csv(io.BytesIO(myfile['house_price.csv']))
+```
+
+- 구글 드라이브에서 가져오기
+
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+
+filename = '/content/drive/XXXXX.csv'
+data = pd.read_csv(filename)
+```
+
+- 동영상 로딩하기
+
+```python
+from IPython.display import Image
+Image('https://XXXXXXXXXXXXXXXX.jpg')
+from IPython.display import YouTubeVideo
+YouTubeVideo('0FswLjHeMUk', 600, 380)
+from IPython.display import HTML
+HTML('https://www.xxxxxxxx.co.kr/')
+```
+
+
+Python 자료구조
+-------------
+
+- list(순서O, 집합) []
+
+```python
+mylist = []
+mylist = ['1','2','3','4','5']
+mylist = [[1,2,3],[4,5,6]]
+mylist.append('')
+mylist.remove('4')
+mylist[2:]
+len(mylist)
+```
+- tuple(순서O, 읽기 전용) ('','',','')
+
+```python
+mytuple = ()
+mytuple = (1,2,3)
+mytuple = (1,2,(3,4,5))
+mytuple[1:]
+```
+- set(순서X, 중복X, 집합) 
+
+```python
+myset = set()
+myset.add('1')
+```
+- dict(key, value로 이루어진 사전형 집합) {'aaa':'a', 'bbb':'b'} or mydict = dict()
+
+```python
+mydict = dict()
+mydict['apple'] = 123
+mydict['apple']
+
+mydict = {'aaa':'a', 'bbb':'b'}
+type(mydict)
+```
