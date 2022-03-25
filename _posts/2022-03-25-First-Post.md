@@ -8,7 +8,7 @@ Welcome to my blog! This is the first post that I have created for my blog, so e
 
 The first thing that I want to check is my ability to add a formula:
 
-$$E = mc^2$$
+$E = mc^2$
 
 Awesome it appears that that worked correctly.
 
