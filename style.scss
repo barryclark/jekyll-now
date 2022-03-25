@@ -20,6 +20,7 @@ html {
 body {
 	background: $white;
   font: 18px/1.4 $helvetica;
+  font-family: 'Roboto', sans-serif;
   color: $darkGray;
 }
 
@@ -30,7 +31,7 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .read-more {
   font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
