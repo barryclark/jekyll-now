@@ -1,0 +1,23 @@
+I"�<h1 id="what-is-azure-">What is Azure ?</h1>
+<p>It’s a Microsoft  cloud like google cloud, AWS, many more!. I am still trying to figure out how azure works.
+Great place to launch your cloud platform!, well for me, it has been.
+I have been using azure for over a year now, learned how to deploy VM, WordPress, with jump box that would increase security.
+So here is some collection of things I learned.</p>
+
+<h1 id="github-pages-to-azure">Github pages to Azure</h1>
+
+<p>Now, I have been using GitHub pages for 1 years and more. I was looking for a free blog making site for my projects that I work on.
+It’s a great idea, by the way!
+So first I forked the Jekyll repository from <a href="https://github.com/barryclark/jekyll-now">Barry Clark</a>. Here is the tutorial to set up <a href="https://pages.github.com/">GitHub pages</a>
+Once I had <a href="https://pkharsimran.github.io/">my site</a> working on GitHub, started to work on azure. To understand azure I jumped into free docs available by Microsoft, practised a lot.
+Azure web apps is able to deploy your site on azure, where you can also add your own custom domains.
+Where you can also use analytics services to get in depth data on how many, how long the users visit your site!</p>
+
+<p>Some benefits of using azure static web apps ——&gt;</p>
+
+<ul>
+  <li>Global hosting (you have option to deploy your site closer to your targeted customers for faster speed and more!)</li>
+  <li>Any <a href="https://docs.microsoft.com/en-us/azure/static-web-apps/front-end-frameworks">front-end language</a> works!</li>
+  <li>Pay as you grow. So my domain cost me $20 and I pay $1 monthly to host it on azure ;)</li>
+</ul>
+:ET
