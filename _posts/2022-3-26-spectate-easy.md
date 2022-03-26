@@ -27,3 +27,5 @@ And Right-click on any packet and Follow UDP Stream
 
 Go Back Again and Apply Filter For TCP data 
 i Followed The TCP Stream 
+
+[ ![wireshark-data-tcp]]({{ site.baseurl }}/zAinCTF/images/swr.png)
