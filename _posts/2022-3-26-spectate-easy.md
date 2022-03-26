@@ -15,7 +15,7 @@ Open spectate.pcap File With Wireshark
 i like to start with protocol Heirarchy for better vision of Network
 statistics -> Protocol Heirarchy 
 
-[ ![wireshark-protocol-Heirarchy]]({{ site.baseurl }}/zAinCTF/images/swe.png)
+[ ![wireshark-protocol-Heirarchy]({{ site.baseurl }}/zAinCTF/images/swe.png)]({{ site.baseurl }}/zAinCTF/images/swe.png)
 
 There is a lot of data in UDP then Right-click And Apply it as Filter 
 And Right-click on any packet and Follow UDP Stream 
