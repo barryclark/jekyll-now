@@ -27,7 +27,7 @@ And Right-click on any packet and Follow UDP Stream
 
 ### Go Back Again and Apply Filter For TCP data 
 i Followed The TCP Stream 
-And Got That Message Sent From Source 10.0.0.21 To 10.0.0.24 Through TCP Ports (60596,6000) :smile:
+And Got That Message Sent From Source 10.0.0.21 To 10.0.0.24 Through TCP Ports (60596,6000) 
 
 ---
 Hello, Agent; 
