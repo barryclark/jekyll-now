@@ -2,7 +2,7 @@
 layout: post
 title: spectate Zain CTF Network-Security (Easy)
 ---
-[![]](https://website-cybertalents.s3.us-west-2.amazonaws.com/Competitions/Zain+CTF+2022+Cover+(1).jpg)
+![](https://website-cybertalents.s3.us-west-2.amazonaws.com/Competitions/Zain+CTF+2022+Cover+(1).jpg)
 .pcap File Analysiz 
 
 [Challenge Link](https://github.com/hithmast/hithmast.github.io/raw/master/zAinCTF/spectate.pcap)
