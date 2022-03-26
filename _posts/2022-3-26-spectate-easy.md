@@ -8,7 +8,7 @@ Alsalam Alikom
 [Challenge Link](https://github.com/hithmast/hithmast.github.io/raw/master/zAinCTF/spectate.pcap)
 # At First
 ## Open spectate.pcap File With Wireshark 
-![wireshark]({{ site.baseurl }}/zAinCTF/images/sws.pnh)
+![wireshark]({{ site.baseurl }}/zAinCTF/images/sws.png)
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
