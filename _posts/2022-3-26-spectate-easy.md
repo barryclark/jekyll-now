@@ -5,10 +5,10 @@ title: spectate Zain CTF Network-Security (easy)
 
 Alsalam Alikom 
 
-[Challenge Link](https://github.com/hithmast/hithmast.github.io/blob/master/zAinCTF/spectate.pcap)
+[Challenge Link](https://github.com/hithmast/hithmast.github.io/raw/master/zAinCTF/spectate.pcap)
 # At First
 ## Open spectate.pcap File With Wireshark 
-![wireshark]({{site.baseurl}}/zAinCTF/images/sws.pnh)
+![wireshark]({{ site.baseurl }}/zAinCTF/images/sws.pnh)
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
