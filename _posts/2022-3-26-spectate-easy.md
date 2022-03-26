@@ -18,6 +18,7 @@ statistics -> Protocol Heirarchy
 ![wireshark-protocol-Heirarchy]({{ site.baseurl }}/zAinCTF/images/swe.png)
 
 There is a lot of data in UDP then Right-click And Apply it as Filter 
+And Right-click on any packet and Follow UDP Stream 
 
 ![wireshark-UDP-Stream]({{ site.baseurl }}/zAinCTF/images/6a3u47.gif)
 
