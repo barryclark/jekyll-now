@@ -3,13 +3,10 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-Some information about you!
+Hi i'm Ali,I Have Graduated From Tanta University,Studied Business Information System. i'm looking forward to be skilled in IT Field
 
 ### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
+Cyber Security Enthuasiast 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[Email](mailto:ali.emara62@gmail.com)
