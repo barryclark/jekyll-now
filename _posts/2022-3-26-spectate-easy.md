@@ -19,8 +19,7 @@ statistics -> Protocol Heirarchy
 
 There is a lot of data in UDP then Right-click And Apply it as Filter 
 
-![wireshark-UDP-Stream]({{ site.baseurl }}/zAin/images/6a3u47.gif)
+![wireshark-UDP-Stream]({{ site.baseurl }}/zAinCTF/images/6a3u47.gif)
 
 ### But All is Encrypted Data and Not Usefull
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
