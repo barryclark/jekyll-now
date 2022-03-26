@@ -8,7 +8,7 @@ title: spectate Zain CTF Network-Security (easy)
 [Challenge Link](https://github.com/hithmast/hithmast.github.io/raw/master/zAinCTF/spectate.pcap)
 # At First
 ## Open spectate.pcap File With Wireshark 
-![wireshark]({{ site.baseurl }}/zAinCTF/images/sws.png)
+[ ![wireshark]({{ site.baseurl }}/zAinCTF/images/sws.png)]
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
