@@ -38,6 +38,12 @@ use password: d0L1x65900Q
 
 ---
 set filter to "tcp.port == 7754" and Follow The TCP Stream  
-in Stream 5 i Recognized The Mnemonic Of Zip Archive PK 
+in Stream 5 i Recognized The Mnemonic Of Zip Archive "PK"
 
 [ ![wireshark-data-zip]({{ site.baseurl }}/zAinCTF/images/swl.png)]({{ site.baseurl }}/zAinCTF/images/swl.png)
+
+Save As flag.zip File 
+The File Has Password i used "d0L1x65900Q" 
+
+The End 
+[ ![](https://i.pinimg.com/originals/b1/1d/58/b11d588e49effe612aeb1e614f273843.jpg)](https://i.pinimg.com/originals/b1/1d/58/b11d588e49effe612aeb1e614f273843.jpg)
