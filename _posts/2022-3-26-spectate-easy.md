@@ -39,3 +39,5 @@ use password: d0L1x65900Q
 ---
 set filter to "tcp.port == 7754" and Follow The TCP Stream  
 in Stream 5 i Recognized The Mnemonic Of Zip Archive PK 
+
+[ ![wireshark-data-zip]({{ site.baseurl }}/zAinCTF/images/swl.png)]({{ site.baseurl }}/zAinCTF/images/swl.png)
