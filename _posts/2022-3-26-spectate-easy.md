@@ -3,7 +3,11 @@ layout: post
 title: spectate Zain CTF Network-Security (easy)
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Alsalam Alikom 
+
+[Challenge Link](https://github.com/hithmast/hithmast.github.io/blob/master/zAinCTF/spectate.pcap)
+# At First
+## Analyze .pcap File With Wireshark 
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
