@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: memory
 title: Messing around with EC2 Instance Metadata Service
 ---
 
@@ -32,7 +32,7 @@ TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-meta
 curl -H "X-aws-ec2-metadata-token: ${TOKEN}" -v http://169.254.169.254/latest/meta-data/
 ```
 
-## Let'S discuss the Security Benefits of IMDSv2
+## Let's discuss the Security Benefits of IMDSv2
 
 The [IMDSv2](https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/) offers plenty security improvements compared to IMDSv1. If possible IMDSv2 should be enforced and prefered over the original metadata service. These improvements take the following form:
 
@@ -50,7 +50,7 @@ The [IMDSv2](https://aws.amazon.com/blogs/security/defense-in-depth-open-firewal
 The following table is salvaged from this [UserGuide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-categories.html).
 
 | Endpoint | Description |
-| ----------------- | ----------- |
+| :-----------------: | ----------- |
 | ami-id            | The AMI ID used to launch the instance. |
 | ami-launch-index  | If you started more than one instance at the same time, this value indicates the order in which the instance was launched. The value of the first instance launched is 0. |
 | ami-manifest-path | The path to the AMI manifest file in Amazon S3. If you used an Amazon EBS-backed AMI to launch the instance, the returned result is unknown. |
