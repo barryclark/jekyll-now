@@ -3,7 +3,7 @@ layout: post
 title: spectate Zain CTF Network-Security (easy)
 ---
 
-Alsalam Alikom 
+.pcap File Analysiz 
 
 [Challenge Link](https://github.com/hithmast/hithmast.github.io/raw/master/zAinCTF/spectate.pcap)
 # At First
