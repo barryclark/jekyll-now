@@ -4,9 +4,12 @@ layout: default
 
 <p align="center">
 <img width="600" src="/images/devops8.png">
+<br>
 <h3>Agile is our Mindset - DevOps is our Culture</h3>
 </p>
-
+<br>
+<br>
+---
 
 <div class="cultures">
   {% for culture in site.cultures %}
