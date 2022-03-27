@@ -88,6 +88,15 @@ article.memory {
   overflow: auto;
 }
 
+article.culture {
+  background-color: #1b0e27;
+  padding: 5px 5px 5px 20px;
+  -moz-box-shadow: 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+  margin: 10px 0px 40px 0px;
+  overflow: auto;
+}
+
 p {
   margin: 15px 0;
 }
@@ -323,7 +332,7 @@ nav {
   }
 }
 
-//
+// Styling for memories in the pensieve
 
 .memories > .memory {
   padding-bottom: 2em;
@@ -335,6 +344,37 @@ nav {
 }
 
 .memory {
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $light-lime;
+    padding: 0.1em 1em;
+    color: $lightGray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
+// Styling for culurual stuff
+
+.cultures > .culture {
+  padding-bottom: 2em;
+}
+
+.cultures > .culture:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.culture {
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $light-lime;

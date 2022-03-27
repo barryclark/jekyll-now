@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<article class="culture">
+  <h1>{{ page.title }}</h1>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>
+  <br>
+  <br>
+  <a href="{{ site.baseurl }}/culture">◀ Back to the Culture related posts</a>
+</article>
