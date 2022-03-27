@@ -80,6 +80,9 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [onmyway133/awesome-machine-learning](https://github.com/onmyway133/awesome-machine-learning)
 * [SKTBrain/awesome-starcraftAI](https://github.com/SKTBrain/awesome-starcraftAI)
 
+## API Security
+* [Cyber-Guy1/API-SecurityEmpire](https://github.com/Cyber-Guy1/API-SecurityEmpire)
+
 ## Misc
 * [alebcay/awesome-shell](https://github.com/alebcay/awesome-shell)
 * [viatsko/awesome-vscode](https://github.com/viatsko/awesome-vscode)
