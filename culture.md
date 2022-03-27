@@ -9,7 +9,7 @@ layout: default
 
 
 <div class="cultures">
-  {% for memory in site.memories %}
+  {% for culture in site.cultures %}
     <article class="culture">
 
       <h1><a href="{{ site.baseurl }}{{ culture.url }}">{{ culture.title }}</a></h1>
