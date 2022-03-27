@@ -27,4 +27,4 @@ For 5+ years???
 * OS: TrueNas Scale `TrueNAS-SCALE-22.02-RC.2`
 
 ## Periphery
-* Bluewalker USV Powerwalker VI 650 SB LI ([link](https://bluewalker.de/?page=product&item=10121096&lang=de)) with a USB connector. See [this blob post]({% post_url 2022-01-18-truenas-ups %}) on how I set it up.
+* Bluewalker USV Powerwalker VI 650 SB LI ([link](https://bluewalker.de/?page=product&item=10121096&lang=de)) with a USB connector. See [this blog post]({% post_url 2022-01-18-truenas-ups %}) on how I set it up.
