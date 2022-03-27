@@ -82,6 +82,9 @@ Still work in progress and probably this list will never end to be updated. Now 
 
 ## API Security
 * [Cyber-Guy1/API-SecurityEmpire](https://github.com/Cyber-Guy1/API-SecurityEmpire)
+* [OWASP/API-Security](https://github.com/OWASP/API-Security)
+* [arainho/awesome-api-security](https://github.com/arainho/awesome-api-security)
+* [shieldfy/API-Security-Checklist](https://github.com/shieldfy/API-Security-Checklist)
 
 ## Misc
 * [alebcay/awesome-shell](https://github.com/alebcay/awesome-shell)
