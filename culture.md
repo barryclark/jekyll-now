@@ -9,7 +9,6 @@ layout: default
 </p>
 <br>
 <br>
----
 
 <div class="cultures">
   {% for culture in site.cultures %}
