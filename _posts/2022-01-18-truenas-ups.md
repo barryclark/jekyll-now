@@ -11,7 +11,7 @@ It should just last long enough to give the server time to shut down properly.
 ## Hardware setup
 * Bluewalker USV Powerwalker VI 650 SB LI ([link](https://bluewalker.de/?page=product&item=10121096&lang=de)) with a USB connector
 * OS: TrueNas Scale `TrueNAS-SCALE-22.02-RC.2`
-* 🖥 Server: 32GB DDR4-ECC RAM, 8-core Intel(R) Xeon(R) CPU E5-2620 v4 @ 2.10GHz
+* 🖥 Server: 32GB DDR4-ECC RAM, 8-core Intel(R) Xeon(R) CPU E5-2620 v4 @ 2.10GHz. See more details in [this post]({% post_url 2022-03-27-truenas-hardware %}).
 
 I connected the power cable of the server to the rear plug on the UPS.
 Then I connected the USB cable to the rear of the UPS and hooked it into the server.
