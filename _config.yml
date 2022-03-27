@@ -61,12 +61,14 @@ version: v1.2.0
 collections:
   memories:
     output: true
+  cultures:
+    output: true
 
 # Tipue search settings
 tipue_search:
   include:
     pages: true
-    collections: [memories]
+    collections: [memories, cultures]
   exclude:
     files: [search.html, about.md]
 

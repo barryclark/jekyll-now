@@ -4,7 +4,7 @@ layout: default
 
 <p align="center">
 <img width="600" src="/images/devops8.png">
-<br>Agile is our Mindset - DevOps is our Culture</h3>
+<br>Agile is our Mindset - DevOps is our Culture
 </p>
 <br>
 <br>
