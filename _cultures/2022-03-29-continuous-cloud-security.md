@@ -5,17 +5,17 @@ title: Continuous Cloud Security
 
 ## At the beginning ...
 
-There was the Waterfall and classical (Micro)Management approaches to deal with complexitiy. Visualized it looks like this:
+there was the Waterfall and classical (Micro)Management approaches to deal with complexitiy. Visualized it looks like this:
 
 <p align="center">
 <img width="600" src="/images/WaterFallSecurity.png">
 </p>
 
-The problem in this flow is similar to the issues in the Quality Assurance - at the end the budget is nearly gone and the test phases need to be cut down to a bare minimum. Also it's nearly impossible to "test in" quality at the very end of the cycle.
+The problem in this flow, is similar to the issues in the Quality Assurance - at the end the budget is nearly gone and the test phases need to be cut down to a bare minimum. Also it's nearly impossible to "test in" quality at the very end of the cycle.
 
-In my time as a Testmanager I used the metaphor of a Blueberry Muffin. If the dough of the Muffin is our piece of Software and the Blueberries is the Qualty. It's better to mix the Blueberries into the dough instead of just place a few on the top. In that way you can enjoy a Blueberry with every bite. 
+In my time as a Testmanager I often used the metaphor of baking a tasty Blueberry Muffin. In this metaphor the dough of the Muffin can be abstracted as our piece of Software. The Blueberries can be symbolized as Quality. Isn't it more tasty to mix the Blueberries into the dough, instead of just place a few of them on the top? In that way with each bite can a Blueberry can be enjoyed. 
 
-Based on this metaphor we need to think of Security and DevOps Culture in a more holistic way. Instead of testing in "Security" and "Quality" in the end we have to include a tiny bit in each step of the lifecycle process of our software. With this in mind we'll end with something like this:
+Based on this metaphor we need to think of Security and DevOps Culture in a more holistic way. Instead of "testing in" some Security and Quality in the end, we have to include a tiny bit in each step of the lifecycle process of our Software. With this in mind we'll end with something like this:
 
 <p align="center">
 <img width="600" src="/images/DevOpsContinuousSecurity.png">
