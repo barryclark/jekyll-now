@@ -50,7 +50,7 @@ As a DevOps we like our loop and if we take this [Tweet](https://twitter.com/LMa
 
 
 ## But where's the Cloud ?
-As a DevOps we're cloud natives and breath cloud technology like air - it's still different to classical approaches that we used on premise. Let's take a look on how the Cloud looks from the perspective of AWS:
+Since we're cloud natives and breath cloud technology like air - we know that it's a very different approach to classical ones that we used in the past on premise. Let's take a look on how the Cloud looks from the perspective of AWS:
 
 <p align="center">
 <img width="600" src="/images/AWSAccountFlow.png">
