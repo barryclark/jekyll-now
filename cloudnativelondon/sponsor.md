@@ -30,7 +30,7 @@ Each sponsor contributes £600 (no VAT) per event.
 
 #### Can we host an event at our office?
 
-Our events are at the same venue each month, so we aren't looking for venue hosts for now.
+We are looking for a new venue host who can host 50-100 people on a regular basis (first Wednesday of every month). Email organisers@cloudnativelon.com to discuss!
 
 #### Can we run an event on a specific day?
 
@@ -40,21 +40,13 @@ We plan events 6-12 months ahead, so unfortunately we can't add extra events to 
 
 As pizza and beer are more than any individual contribution, we order catering ourselves and thank all sponsors equally.
 
-#### Can we bring swag and a banner? (N/A for virtual events)
+#### Can we bring swag and a banner?
 
-You can display a banner inside the room, just bring it on the evening. Please ship swag to this address a week in advance and let us know when to expect arrival:
-
-> Sainsbury's Courier Desk  
-> c/o Simon Perry, Cloud Native London  
-> 60 Fetter Lane  
-> Holborn  
-> London EC4A 1AA  
-
-If you need a table on the evening, email Simon.Perry2@sainsburys.co.uk.
+You can display a banner inside the room, just bring it on the evening. For the address for shipping swag or requesting a table, email organisers@cloudnativelon.com.
 
 #### Can we sponsor as a recruitment agency?
 
-We work with one recruitment agency at a time, so we won't add more until further notice.
+Yes! We work with one recruitment agency at a time and currently are open.
 
 #### Can we share our event with your group?
 
