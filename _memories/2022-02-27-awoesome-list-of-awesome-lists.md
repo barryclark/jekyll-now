@@ -45,6 +45,8 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
 * [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources)
 
+
+
 ## Wordlists & Payload Lists
 * [six2dez/OneListForAll](https://github.com/six2dez/OneListForAll)
 * [BullsEye0/google_dork_list](https://github.com/BullsEye0/google_dork_list)
@@ -52,6 +54,8 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [payloadbox/command-injection-payload-list](https://github.com/payloadbox/command-injection-payload-list)
 * [payloadbox/xss-payload-list](https://github.com/payloadbox/xss-payload-list)
 
+## Threat Modeling
+* [https://github.com/hysnsec/awesome-threat-modelling](https://github.com/hysnsec/awesome-threat-modelling)
 
 ## OSINT / Threat intelligence and Incident Respone
 * [hslatman/awesome-threat-intelligence](https://github.com/hslatman/awesome-threat-intelligence)
