@@ -1,15 +1,15 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /resources/
 ---
 
-Some information about you!
-
+Resources page
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
-
+why c/c++ 
+courses to start
+tips from HK (Buzz word, fomo and projects)
 ### Contact me
 
 [email@domain.com](mailto:email@domain.com)
