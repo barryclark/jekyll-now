@@ -86,6 +86,7 @@ As you can see - the Cloud is confusing and the goals that need to be secured di
 * [Treacherous 12 - Cloud Computing](https://downloads.cloudsecurityalliance.org/assets/research/top-threats/Treacherous-12_Cloud-Computing_Top-Threats.pdf)
 * [OWASP Proactive Controls](https://owasp.org/www-project-proactive-controls/)
 * [MITRE Cloud Matrix](https://attack.mitre.org/matrices/enterprise/cloud/)
+* [AWS Security Maturity Roadmap by Scott Piper](https://summitroute.com/downloads/aws_security_maturity_roadmap-Summit_Route.pdf)
 * ...
 
 But this is only one side of the Truth - to master this challenge we have to go beyond that. 
