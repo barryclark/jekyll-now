@@ -3,15 +3,17 @@ layout: culture
 title: Continuous Cloud Security 
 ---
 
-## At the beginning ...
+In this article you can follow me on my journey on how to master my way to something I call "Continuous Cloud Security". 
 
-there was the Waterfall and classical (Micro)Management approaches to deal with complexitiy. Visualized it looks like this:
+## At the very beginning ...
+
+there was the Waterfall and classical (Micro)Management approaches to deal with complexitiy. We tried to manage complexity by creating checklist and observed the state in Excel. The process itself was mostly plugged into the casual Watterfall approaches like regular Quality Assurance aspects. Visualized it looks like this:
 
 <p align="center">
 <img width="600" src="/images/WaterFallSecurity.png">
 </p>
 
-The problem in this flow, is similar to the issues in the Quality Assurance - at the end the budget is nearly gone and the test phases need to be cut down to a bare minimum. Also it's nearly impossible to "test in" quality at the very end of the cycle.
+The problem in this flow is similar to the issues in the Quality Assurance - at the end the budget is nearly gone and the test phases need to be cut down to a bare minimum. Also it's nearly impossible to "test in" quality at the very end of the cycle.
 
 In my time as a Testmanager I often used the metaphor of baking a tasty Blueberry Muffin. In this metaphor the dough of the Muffin can be abstracted as our piece of Software. The Blueberries can be symbolized as Quality. Isn't it more tasty to mix the Blueberries into the dough, instead of just place a few of them on the top? In that way with each bite can a Blueberry can be enjoyed. 
 
@@ -35,7 +37,8 @@ Suprise it's a Mindset:
 > DevOpsTeams seek for continuous self improvement<br>
   Everyone is doing Security<br>
   Everyone is doing Architecture<br>
-  Everyone is responsible for the Quality
+  Everyone is responsible for the Quality (functional and non-functional)<br>
+  Everyone is needs to operate the systems or at least monitor them
   
 With this mindset we can narrow it down to:
 
