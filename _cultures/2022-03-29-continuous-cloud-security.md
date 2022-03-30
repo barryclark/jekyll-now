@@ -66,13 +66,20 @@ But ....
 
 **So as a conclution**: `The responsibilitiy is not shared, it's split!`
 
-For a better understanding of what we need to secure we need to understand more what's an AWS Account and bring some clearance to the highly confusing terminology "AWS account” ≠ “user account":
+Even if AWS is doing a lot to secure the Control Plane we still have some homeweork left. The main work we need to tacke is the Data Plane. If we look on the options at a very high flight-level our targets to secure the Data Plane will look like this:
+
+* Don’t expose any part of your infrastructure to the Internet. Isolation is king!
+* Ensure services are configured to disallow public access
+* Secure authentication
+* Encryption (in transit and at rest)
+
+The cool kids still tell you all day long that you require to secure your AWS account. For a better understanding of what we need to secure, we need to understand more what an AWS Account actually is. To bring some clearance to this highly confusing terminology "AWS account” ≠ “user account". Visualized it looks more like this:
 
 <p align="center">
 <img width="600" src="/images/AWSAccount.png">
 </p>
 
-It's more: “AWS account” ~= “AWS tenant” / “AWS subscription”
+So an AWS account can be abstracted more like this: “AWS account” ~= “AWS tenant” / “AWS subscription”. To secure the Account we can stick at the AWS Well Architected Framework ([pdf](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwigu9r4ou72AhXM8bsIHbbrAagQFnoECAkQAQ&url=https%3A%2F%2Fdocs.aws.amazon.com%2Fwellarchitected%2Flatest%2Fframework%2Fwellarchitected-framework.pdf&usg=AOvVaw351ntBckF2uCUrI4k41wra)) or multiple other frameworks like the [Knowledge base](https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/) from Trend Micro. 
 
 As you can see - the Cloud is confusing and the goals that need to be secured differ from time to time to our classical approaches. Therefore it's more helpful to stick to common things that help ous out:
 
@@ -80,4 +87,12 @@ As you can see - the Cloud is confusing and the goals that need to be secured di
 * [OWASP Proactive Controls](https://owasp.org/www-project-proactive-controls/)
 * [MITRE Cloud Matrix](https://attack.mitre.org/matrices/enterprise/cloud/)
 * ...
+
+But this is only one side of the Truth - to master this challenge we have to go beyond that. 
+
+* Cloud Security DevOps Framewkork (still work in Progress)
+* Use a Policy as Code tool like [Cloud Custodian](https://github.com/cloud-custodian/cloud-custodian) 
+* ...
+
+(Sorry still Work in Progress ...)
 
