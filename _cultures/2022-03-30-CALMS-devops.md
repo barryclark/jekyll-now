@@ -9,13 +9,6 @@ CALMS is an acronym for Culture-Automation-Lean-Measurement-Sharing and a founda
 
 John Willis and Damon Edwards developed the acronym [CAMS](https://itrevolution.com/devops-culture-part-1/) in the year 2010. This acronym was later expanded to CALMS by Jez Humble. ​
 
-The long version of this acronym:
-* **C**ulture
-​* **A**utomation​
-* **L**ean​
-* **M**easurement​
-* **S**haring​
-
 ## **C**ulture
 At it’s heart, DevOps culture can be summarized as: embracing change, constantly seeking feedback in order to improve, and seeking to take accountability and responsibility, not shirk it or pass it onto other people.
 
