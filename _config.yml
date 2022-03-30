@@ -9,7 +9,7 @@ name: TSEC Geeks
 description: Tech enthusiasts community open-to-all!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://github.com/ak-magnificent/ak-magnificent.github.io/blob/cf73ed0fd93af7a64c0c3fcb42c011a02ed7aa49/assets/Logo.png
+avatar: https://github.com/ak-magnificent/ak-magnificent.github.io/raw/master/assets/Logo.png
 
 #
 # Flags below are optional
@@ -21,7 +21,7 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: 
   instagram:
   linkedin:
   pinterest:
