@@ -27,6 +27,19 @@ layout: none
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
   ,
+  {% for culture in site.cultures %}
+    {
+      {% if culture.title != nil %}
+        "title"    : "{{ culture.title | escape }}",
+        "category" : "{{ culture.category }}",
+        "tags"     : "{{ culture.tags | join: ', ' }}",
+        "url"      : "{{ site.baseurl }}{{ culture.url }}",
+        "date"     : "{{ culture.date }}",
+        "content"  : {{ culture.excerpt | jsonify }}
+      {% endif %}
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ,
   {% for page in site.pages %}
     {
       {% if page.title != nil %}
