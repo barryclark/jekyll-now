@@ -33,7 +33,7 @@ Whilst it is a truism “what gets measured gets done” (see management guru [T
 * **Mean Time to Repair** – how long does it take you to restore service in the case of an incident?
 
 ## **S**haring​
-Sharing – a focus on breaking down silos between departments and sharing knowledge and best practice. Sharing needs to be encouraged and rewarded. In opposit hoarding of knowledge in silos must be discouraged. A great way to get started is by setting up our own internal “communities of practice” around DevOps, or even hosting your own “DevOpsDays” summit within your organisation. But more than that, it is the day-to-day knowledge sharing that’s important, whether it’s writing an [awesome git commit message](https://fatbusinessman.com/2019/my-favourite-git-commit), a helpful Github README, or writing up an entire knowledgebase article. Sharing *IS* caring.
+Sharing – a focus on breaking down silos between departments and sharing knowledge and best practice. Sharing needs to be encouraged and rewarded. In opposit hoarding of knowledge in silos must be discouraged. A great way to get started is by setting up our own internal “communities of practice” around DevOps, or even hosting your own “DevOpsDays” summit within your organisation. But more than that, it is the day-to-day knowledge sharing that’s important, whether it’s writing an [awesome git commit message](https://fatbusinessman.com/2019/my-favourite-git-commit), a helpful [Github README](https://github.com/matiassingers/awesome-readme) , or writing up an entire knowledgebase article. Sharing *IS* caring.
 
 <p align="center">
 <img width="600" src="/images/calms_devops.jpeg">
