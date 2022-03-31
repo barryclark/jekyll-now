@@ -96,6 +96,7 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [gamontal/awesome-katas](https://github.com/gamontal/awesome-katas)
 * [trimstray/the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge)
 * [avelino/awesome-go](https://github.com/avelino/awesome-go)
+* [leogdion/AWESOME-AWESOME-README](https://github.com/leogdion/AWESOME-AWESOME-README)
 
 ## Cheatsheets
 * [LeCoupa/awesome-cheatsheets](https://github.com/LeCoupa/awesome-cheatsheets)
