@@ -102,5 +102,6 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [LeCoupa/awesome-cheatsheets](https://github.com/LeCoupa/awesome-cheatsheets)
 * [GrrrDog/weird_proxies](https://github.com/GrrrDog/weird_proxies)
 * [0xn3va/appsec-cheat-sheets](https://github.com/0xn3va/cheat-sheets)
+* [attackercan/regexp-security-cheatsheet](https://github.com/attackercan/regexp-security-cheatsheet)
 
 If you have an awesome list that ia missing here - send me a Pull Request or open an issue. Thank you :)
