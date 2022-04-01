@@ -15,7 +15,7 @@ there was the Waterfall and classical (Micro)Management approaches to deal with 
 
 The problem in this flow is similar to the issues in the Quality Assurance - at the end the budget is nearly gone and the test phases need to be cut down to a bare minimum. Also it's nearly impossible to "test in" quality at the very end of the cycle.
 
-In my time as a Testmanager I often used the metaphor of baking a tasty Blueberry Muffin. In this metaphor the dough of the Muffin can be abstracted as our piece of Software. The Blueberries can be symbolized as Quality. Isn't it more tasty to mix the Blueberries into the dough, instead of just place a few of them on the top? In that way with each bite can a Blueberry can be enjoyed. 
+In my time as a Testmanager, I often used the metaphor of baking a tasty Blueberry Muffin. In this metaphor the dough of the Muffin can be abstracted as our (piece of) Software. The Blueberries can be symbolized as Quality. Isn't it more tasty to mix the Blueberries into the dough, instead of just place a few of them on the top? In that way with each bite a Blueberry can be enjoyed. 
 
 Based on this metaphor we need to think of Security and DevOps Culture in a more holistic way. Instead of "testing in" some Security and Quality in the end, we have to include a tiny bit in each step of the lifecycle process of our Software. With this in mind we'll end with something like this:
 
