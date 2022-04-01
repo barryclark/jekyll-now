@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS Guard-OffDuty - Tricking the Guard
+title: AWS Guard-OffDuty
 ---
 
 Let's assume that we have found and  successfullyvalidated some AWS credenhas during an engagement, it might be a good idea to modify threat detection services like GuardDuty. To reduce the likelihood of triggering an alert we therefore need to modify the GuardDuty configuration to stay cloaked. Modifying, deleting or modifying key attributes of GuardDuty might have a less likely chance to raise alerts. The actions we can do depend on the compromised permissions available, the GuardDuty architecture and the presence of higher level controls like [Service Control Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html). 
