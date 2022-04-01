@@ -69,7 +69,7 @@ But ....
 
 **So as a conclution**: `The responsibilitiy is not shared, it's split!`
 
-Even if AWS is doing a lot to secure the Control Plane we still have some homeweork left. The main work we need to tacke is the Data Plane. If we look on the options at a very high flight-level our targets to secure the Data Plane will look like this:
+Even if AWS is doing a lot to secure the Control Plane we still have some homeweork left. The main work we need to tackle is the Data Plane. If we look on the options at a very high flight-level our targets to secure the Data Plane will look like this:
 
 * Don’t expose any part of your infrastructure to the Internet. Isolation is king!
 * Ensure services are configured to disallow public access
