@@ -91,16 +91,17 @@ Tiny cheat sheet of the CLI commands:
 ```bash
 # Disable GuardDuty Cloudwatch Event
 aws events put-rule --name guardduty-event \
---event-pattern "{\"source\":[\"aws.guardduty\"]}" \
---state DISABLED
+    --event-pattern "{\"source\":[\"aws.guardduty\"]}" \
+    --state DISABLED
 
 # Modify Event Pattern
 aws events put-rule --name guardduty-event \
---event-pattern '{"source": ["aws.somethingthatdoesntexist"]}'
+    --event-pattern '{"source": ["aws.somethingthatdoesntexist"]}'
 
 # Remove Event Targets
-aws events remove-targets --name guardduty-event \
---ids "GuardDutyTarget"
+aws events remove-targets \ 
+    --name guardduty-event \
+    --ids "GuardDutyTarget"
 ```
 
 ---
@@ -114,9 +115,9 @@ Tiny cheat sheet of the CLI commands:
 
 ```bash
 aws  guardduty create-filter --action ARCHIVE \
-                             --detector-id 123456 \
-                             --name fancyfiltername \
-                             --finding-criteria file://criteria.json
+--detector-id 123456 \
+--name fancyfiltername \
+--finding-criteria file://criteria.json
 ```
 
 Filters can be created using the [CreateFilter API](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateFilter.html).
@@ -132,5 +133,7 @@ We could disable alerting simply by [deleting the destination](https://docs.aws.
 Tiny cheat sheet of the CLI commands:
 
 ```bash
-aws guardduty delete-publishing-destination --detector-id abc123 --destination-id def456
+aws guardduty delete-publishing-destination \
+    --detector-id abc123 \
+    --destination-id def456
 ```
