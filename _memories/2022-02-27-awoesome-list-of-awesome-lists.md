@@ -39,13 +39,12 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [Puliczek/awesome-list-of-secrets-in-environment-variables](https://github.com/Puliczek/awesome-list-of-secrets-in-environment-variables)
 * [six2dez/OneListForAll](https://github.com/six2dez/OneListForAll)
 * [assetnote/blind-ssrf-chains](https://github.com/assetnote/blind-ssrf-chains)
+* [bkimminich/it-security-lecture](https://github.com/bkimminich/it-security-lecture)
 
 ## Pentesting
 * [awesome-pentest](https://github.com/enaqx/awesome-pentest)
 * [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
 * [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources)
-
-
 
 ## Wordlists & Payload Lists
 * [six2dez/OneListForAll](https://github.com/six2dez/OneListForAll)
