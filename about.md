@@ -5,6 +5,7 @@ permalink: /about/
 ---
 
 PLACEHOLDER TEXTS
+
 COMING SOON!
 
 ### More Information
