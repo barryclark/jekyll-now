@@ -10,7 +10,7 @@ Let's assume that we have found and  successfully validated some AWS credentials
 </p>
 
 
-GuardDuty itself uses a delegated admin or invite model but features like detector configurations and IP Trust lists are usually centrally managed. That pivot point can be used, but usually can only be modified in the GuardDuty administrator account. If this pattern isn't used, these features can be modified in the account that GuardDuty is running in. 
+GuardDuty itself uses a delegated admin or invite model which are hard to bypass. But features like detector configurations and IP-Trust-Lists are usually centrally managed. That pivot point can be used as a bypass, but usually they can only be modified in the GuardDuty administrator account itself. If this pattern isn't used, these features can be modified in the account that GuardDuty is running in and help us to trick the Guards. 
 
 Let's check our options:
 
