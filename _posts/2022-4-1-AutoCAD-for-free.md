@@ -54,9 +54,11 @@ Hover over the _blue INSTALL_ button and click on **DOWNLOAD** from the drop dow
 
 ![Download Page]({{ site.baseurl }}/images/AutoCad3.png "Download Page")
 
-Download should start, do note the download size is 2GB make sure you have appropriate bandwidth for the same.
+Download should start anytime now. Install it.
 
-If you are on data crunch, feel free to reach out to us on our [WhatsApp Group](https://chat.whatsapp.com/K3NrW5tPwrsHhfbdYstjLl) 
++ Do note the download size is 2GB make sure you have appropriate bandwidth for the same.
+  - If you are on data crunch, feel free to reach out to us on our [WhatsApp Group](https://chat.whatsapp.com/K3NrW5tPwrsHhfbdYstjLl) 
+
 
 
 ----
