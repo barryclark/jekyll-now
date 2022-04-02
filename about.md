@@ -12,7 +12,7 @@ Cheryl founded the 6000+ strong [Cloud Native London meetup](http://cloudnativel
 
 # Contact
 
-I partner with companies in a personal capacity, [get in touch](/about) if you are looking for any of the following, or you have another proposal.
+I partner with companies in a personal capacity, for example:
 
 1. Keynote speaker, panelist, host for tech events
 2. Advisor on developer marketing, open source and community strategy
