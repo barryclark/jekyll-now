@@ -5,10 +5,10 @@ description: "Partnering with Cheryl Hung as a speaker, advisor, consultant..."
 title: Partner with Cheryl
 ---
 
-I partner with companies in a personal capacity in these areas among others.
+I partner with companies in a personal capacity, for example:
 
 1. Keynote speaker, panelist, host for tech events
-2. Advisor on open source strategy and developer-led growth (typically 1 hour / month, compensated as cash or shares)
+2. Advisor on open source strategy and developer-led growth
 3. Connecting VCs (venture capital) and startups, particularly deep tech in Europe
 4. Consultant on technical community building and developer advocacy
 
