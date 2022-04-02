@@ -50,7 +50,7 @@ You should be greeted with the following message.
 CLose the popup, navigate to your desired product.
 _Alternatively try this link_ <https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual#card-acdist>
 
-Hover over the _blue INSTALL_ button and click on **DOWNLOAD**
+Hover over the _blue INSTALL_ button and click on **DOWNLOAD** from the drop down menu.
 
 ![Download Page]({{ site.baseurl }}/images/AutoCad3.png "Download Page")
 
