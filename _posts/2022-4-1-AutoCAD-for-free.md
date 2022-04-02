@@ -7,7 +7,7 @@ Hello Geeks,
 
 This short post is to help you get AutoCAD software on your system at no costs.
 
-Firstly you need to visit [Autodesk educational products website.](https://www.autodesk.com/education/edu-software). 
+Firstly you need to visit [Autodesk educational products website.](https://www.autodesk.com/education/edu-software)
 
 ![Site Landing Page]({{ site.baseurl }}/images/AutoCad2.png "Site Landing Page")
 
@@ -29,4 +29,4 @@ Once entered, you will be greeted with the following screen.
 
 ![Confirmation]({{ site.baseurl }}/images/AutoCad7.png "Confirmation Message")
 
-You can press *continute* or proceed to [this link.] (https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual#card-acdist)
+You can press *continute* or proceed to [this link.](https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual#card-acdist)
