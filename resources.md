@@ -7,9 +7,8 @@ permalink: /resources/
 Resources page
 ### More Information
 
-why c/c++ 
-courses to start
-tips from HK (Buzz word, fomo and projects)
+[How to get AutoCAD for free.](https://tsecgeeks.in/AutoCAD-for-free/)
+
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[hello@tsecgeeks.in](mailto:hello@tsecgeeks.in)
