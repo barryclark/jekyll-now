@@ -4,8 +4,9 @@ title: F.A.Q
 permalink: /faq/
 ---
 
-TODO;
-Basic Queries
+PLACEHOLDER TEXTS
+COMING SOON!
+
 ### More Information
 
 SKSKSKSKSKSKKSKSKSKS
