@@ -5,7 +5,7 @@ description: "Partnering with Cheryl Hung as a speaker, advisor, consultant..."
 title: Partner with Cheryl
 ---
 
-I partner with companies in a personal capacity, get in touch if you are looking for any of the following, or you have another proposal.
+I partner with companies in a personal capacity in these areas among others.
 
 1. Keynote speaker, panelist, host for tech events
 2. Advisor on open source strategy and developer-led growth (typically 1 hour / month, compensated as cash or shares)
@@ -14,7 +14,7 @@ I partner with companies in a personal capacity, get in touch if you are looking
 
 <script type="text/javascript" src="https://form.jotformeu.com/jsform/92682794245368"></script>
 
-
+<p><p><p>
 
 <img src="/partner/christoph-buchli.jpg" alt="Christoph Buchli, Founder and CTO of Helio" class="about-image"/>
 
