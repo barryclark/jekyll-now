@@ -65,9 +65,9 @@ Download should start anytime now. Install it.
 
 
 
-#### This post was brought to you by Anas Khan.
+This post was brought to you by Anas Khan.
 
-#### If you have any suggestions, drop an email - [anas@tsecgeeks.in](mailto:anas@tsecgeeks.in) 
+If you have any suggestions, drop an email - [anas@tsecgeeks.in](mailto:anas@tsecgeeks.in) 
 
 
 
