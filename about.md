@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+PLACEHOLDER TEXTS
+COMING SOON!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Tech enthusiasts community open-to-all!
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[hello@tsecgeeks.in](mailto:hello@tsecgeeks.in)
