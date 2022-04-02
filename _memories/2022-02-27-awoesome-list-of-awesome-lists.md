@@ -77,6 +77,7 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [sottlmarek/DevSecOps](https://github.com/sottlmarek/DevSecOps)
 * [krol3/container-security-checklist](https://github.com/krol3/container-security-checklist)
 * [hahwul/DevSecOps](https://github.com/hahwul/DevSecOps)
+* [TaptuIT/awesome-devsecops](https://github.com/TaptuIT/awesome-devsecops)
 
 ## AI/ML/MLOps
 * [visenger/awesome-mlops](https://github.com/visenger/awesome-mlops)
