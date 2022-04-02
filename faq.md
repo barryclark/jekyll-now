@@ -12,4 +12,4 @@ COMING SOON!
 SKSKSKSKSKSKKSKSKSKS
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[hello@tsecgeeks.in](mailto:hello@tsecgeeks.in)
