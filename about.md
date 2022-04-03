@@ -8,7 +8,7 @@ description: "Cheryl Hung's biography, photo and contact details"
 
 Cheryl Hung ([@oicheryl](http://oicheryl.com/)) is a thought leader in cloud native ecosystems and open source infrastructure. She leads an engineering team at [Apple](https://apple.com/) and advises startups ([Helio](https://helio.exchange/), [Ondat](https://ondat.io/) and [Permit.io](https://www.permit.io/)) on developer-led growth and ecosystem strategy.
 
-Cheryl founded the 6000+ strong [Cloud Native London meetup](http://cloudnativelon.com/), was the first VP Ecosystem at the [Cloud Native Computing Foundation](https://www.cncf.io/), and has deep technical expertise on distributed systems at Google. She graduated from the University of Cambridge with a Masters degree in Computer Science.
+Cheryl founded the 6000+ strong [Cloud Native London meetup](http://cloudnativelon.com/), was the first VP Ecosystem at the [Cloud Native Computing Foundation](https://www.cncf.io/), and has deep technical expertise building distributed systems at Google. She graduated from the University of Cambridge with a Masters degree in Computer Science.
 
 # Contact
 
