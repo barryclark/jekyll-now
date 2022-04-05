@@ -142,6 +142,24 @@ img {
     clear: both;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border:1px dotted lightgray;
+}
+
+th {
+  border:1px dotted lightgrey;
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+td {
+  border:1px dotted lightgrey;
+  background-color: whitesmoke;
+  text-align: center;
+}
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
