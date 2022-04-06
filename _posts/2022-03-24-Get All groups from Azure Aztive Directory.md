@@ -10,13 +10,11 @@ categories:
   - Code
   - PowerShell
   - Code
-  - Event
 tags:
   - Azure
   - AAD
   - Code
   - PowerShell
-  - Code
 ---
 
 How to get all group from [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory) using [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.2) module [AzureAD](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0) [AzureAD](https://www.powershellgallery.com/packages/AzureAD) and count members.
