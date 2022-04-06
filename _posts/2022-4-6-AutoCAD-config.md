@@ -52,3 +52,10 @@ We need to create layers to get different styles of lines.
     3. Text alignment: ISO standard
 4. **Primary Units**
     1. Precision: 0
+
+As of now, these are the settings we need to apply before starting our project in AutoCAD.
+If you have anything to add here, you can email me on the address given below.
+
+---
+
+Posted by Ninad Naik ([ninad@tsecgeeks.in](mailto:ninad@tsecgeeks.in))
