@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2022"
-published: false
 ---
 
 We have four great speakers from RVU, Nirmata, Bloomberg, and Red Kubes joining us at our April Cloud Native London virtual meetup tonight, from 6:45pm BST on Rambly and YouTube!
