@@ -14,7 +14,7 @@ locale: en
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 6 # amount of posts to show
 paginate_path: /page:num/
 timezone: PL
 breadcrumbs: true
@@ -34,8 +34,11 @@ plugins:
 author:
   name: Janusz Nowak
   avatar: https://avatars1.githubusercontent.com/u/5168275
-  bio: bio.
-  location: Warszawa, PL
+  bio:
+    Developer, DevOps, Cloud, Lean Geek
+    Azure Heroes
+    Microsoft Certified Trainer.
+  location: Poland - Warsaw
   links:
   - label: LinkedIn
     icon: fab fa-fw fa-linkedin
@@ -49,6 +52,12 @@ author:
   - label: Facebook
     icon: fab fa-fw fa-facebook
     url: https://www.facebook.com/jnowwwak
+  - label: "YouTube"
+    icon: "fab fa-fw fa-youtube"
+    url: "https://www.youtube.com/c/JanuszNowakjanono"
+  - label: "StackOverflow"
+    icon: "fab fa-fw fa-stack-overflow"
+    url: "https://stackoverflow.com/users/1878728/janusz-nowak"
 
 footer:
   links:
@@ -64,6 +73,12 @@ footer:
   - label: Facebook
     icon: fab fa-fw fa-facebook
     url: https://www.facebook.com/jnowwwak
+  - label: "YouTube"
+    icon: "fab fa-fw fa-youtube"
+    url: "https://www.youtube.com/c/JanuszNowakjanono"
+  - label: "StackOverflow"
+    icon: "fab fa-fw fa-stack-overflow"
+    url: "https://stackoverflow.com/users/1878728/janusz-nowak"
 
 defaults:
 - scope:
@@ -93,9 +108,9 @@ tag_archive:
   path: /tags/
 
 comments:
-  provider: disqus
+  provider: "disqus"
   disqus:
-    shortname: janono
+    shortname: "janono"
 
 analytics:
   provider: google
