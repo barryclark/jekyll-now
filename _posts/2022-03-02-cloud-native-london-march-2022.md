@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London March 2022: Form3, Ermetic, and WSO2"
 description: "speakers from Form3, Ermetic, and WSO2 join us at the Cloud Native London meetup March 2022, hosted by Cheryl Hung, Engineering Manager at Apple"
 location: London, UK
-image: /images/CNL_April_Rambly.jpg
+image: /images/2022-03-02-cloud-native-london-March-2022.png
 video: https://www.youtube.com/embed/-hcHhQKJF3U
 tags:
   - Photos
