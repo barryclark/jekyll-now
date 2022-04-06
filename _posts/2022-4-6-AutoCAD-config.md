@@ -43,7 +43,7 @@ We need to create layers to get different styles of lines.
     3. Offset from origin: 1
 2. **Symbol and Arrows**
     1. Arrow size: 3
-    2. Center marks -> Mark: 1
+    2. Center marks &rarr; Mark: 1
     3. Break size: 1
     4. Jog height factor: 1  
 3. **Text**
