@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AutoCAD Configuration
+title: Configure your AutoCAD with these settings.
 ---
 
 Hello geeks,
@@ -15,7 +15,7 @@ The first thing we need to do is to specify our work area and create a rectangle
 
 > **LIMITS** &rarr; 0, 0 &#8626; Enter; 600, 400 &#8626; Enter
 
-> RECTANGLE &rarr; 0, 0 &#8626; Enter; 600, 400 &#8626; Enter
+> **RECTANGLE** &rarr; 0, 0 &#8626; Enter; 600, 400 &#8626; Enter
 
 ## Configuration
 
