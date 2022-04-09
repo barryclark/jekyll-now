@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### About me
 
-### More Information
+I am a front-end developer who is serious about create beautiful interfaces and animations.
 
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[byungminkim12@gmail.com](mailto:byungminkim12@gmail.com)
