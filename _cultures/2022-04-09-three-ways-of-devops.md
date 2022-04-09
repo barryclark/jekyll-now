@@ -3,7 +3,7 @@ layout: culture
 title: The three ways of DevOps
 ---
 
-If we think of DevOps there are plenty definitions, theories and more around. Also the [5 ideals of DevOps](https://itrevolution.com/five-ideals-of-devops/) are also a good baseline. But in my oppinion, the best baseline to get in touch with DevOps are these books or the DORA reports from awesome authors like Gene Kim, Kevin Behr, Jez Humble and Nicole Forsgren:
+If we think of DevOps there are plenty definitions, theories and more around. Also the [5 ideals of DevOps](https://itrevolution.com/five-ideals-of-devops/) are an amazing piece of culture. But in my oppinion, the best baseline to get in touch with DevOps are these books and the DORA State of DevOps reports from awesome authors like Gene Kim, Kevin Behr, Jez Humble and Nicole Forsgren:
 
 <p align="center">
 <img width="600" src="/images/devops-books.png">
