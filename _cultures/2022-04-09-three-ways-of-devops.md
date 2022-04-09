@@ -25,13 +25,13 @@ Those 24 capabilities are forming a great northstar that can be used as an orien
 
 ## The three ways of DevOps
 
-<img height="200" align="left" src="/images/mando.png" >  As a DevOps rookie the 24 capabilites can feel overwhelming. Therefore we should talk about the three ways of devops to get more in touch with the mindset and culture of DevOps. This is the way ...
+<img height="200" align="left" src="/images/mando.png" >   <br><br> As a DevOps rookie the 24 capabilites can feel overwhelming. Therefore we should talk about the three ways of devops to get more in touch with the mindset and culture of DevOps. This is the way ...
 
-<br>
+<br><br><br><br>
 
-#### The first Way - Systems thinking
+### The first Way - Systems thinking
 
-<p align="center">
+<p align="left">
 <img src="/images/way1.png">
 </p>
 
@@ -44,10 +44,10 @@ In other words, Work should only flow into one direction, and that is downstream
 > The performance of a system increases proportionally to the throughput
 
 
-#### The Second Way – Amplify Feedback
+### The Second Way – Amplify Feedback
 
 
-<p align="center">
+<p align="left">
 <img src="/images/way2.png">
 </p>
 
@@ -56,9 +56,9 @@ In other words, Work should only flow into one direction, and that is downstream
 Establish an upstream feedback loop to optimize the value stream. To achive this - a fast feedback from Production is required to plan the next steps in the "Plan" Phase. Based on the feedback from production strategies can be crafted to move forword or make a pirouette to rethink the plans and find new ways to build and ship your software.
 
 
-#### The Third Way – Continued experimentation
+### The Third Way – Continued experimentation
 
-<p align="center">
+<p align="left">
 <img src="/images/way3.png">
 </p>
 
@@ -77,13 +77,13 @@ To achieve mastery:
 Theory is nice but to really get the spirit of the DevOps culture we need to get the hands dirty. Therefore I'll try to make a metaphor based on something we all know from our daily experiences > Washing dirty clothes. Time to ...
 
 <p align="center">
-<img src="/images/setting_the_stage.png">
+<img width=600  src="/images/setting_the_stage.png">
 </p>
 
 With the stage and all actos in place we can now start iterating:
 
 <p align="center">
-<img src="/images/iteration1.png">
+<img width=600 src="/images/iteration1.png">
 </p>
 
 * Big laundry day once a week -> “Big bang release”
@@ -94,7 +94,7 @@ With the stage and all actos in place we can now start iterating:
 Let's perform another and improve a little...
 
 <p align="center">
-<img src="/images/iteration2.png">
+<img width=600  src="/images/iteration2.png">
 </p>
 
 * Now we're washing on a more regular base (every 3-4 days)
@@ -104,7 +104,7 @@ Let's perform another and improve a little...
 Things are working better now, but still not perfect. Time for another iteraton ...
 
 <p align="center">
-<img src="/images/iteration3.png">
+<img width=600  src="/images/iteration3.png">
 </p>
 
 * Washing in smaller loads on a daily base
@@ -115,7 +115,7 @@ Things are working better now, but still not perfect. Time for another iteraton 
 Everything is flowing now more perfectly and all of the feedback from the production is now integrated within the flow. But we're no DevOps if we wouldn't drive it beyond the edge. Time for a final iteration ...
 
 <p align="center">
-<img src="/images/iteration4.png">
+<img width=600  src="/images/iteration4.png">
 </p>
 
 * Automate the boring tasks. If it takes more than 60 secs of your time doing it manually, simply automate it
