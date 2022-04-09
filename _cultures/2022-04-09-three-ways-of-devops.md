@@ -53,7 +53,7 @@ In other words, Work should only flow into one direction, and that is downstream
 
 > Shorten & Amplify the feedback loop
 
-Establish an upstream feedback loop to optimize the value stream. To achive this - a fast feedback from Production is required to plan the next steps in the "Plan" Phase. Based on the feedback from production strategies can be crafted to move forword or make a pirouette to rethink the plans and find new ways to build and ship your software.
+Establish an upstream feedback loop to optimize the value stream. To achive this - a fast feedback from Production is required to plan the next steps in the "Plan" Phase. Based on the feedback from production, strategies can be crafted to move forword or make a pirouette to rethink the plans and find new ways to build and ship your software.
 
 
 ### The Third Way – Continued experimentation
