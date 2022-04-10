@@ -9,13 +9,13 @@ If we think of DevOps there are plenty definitions, theories and more around. Al
 <img width="600" src="/images/devops-books.png">
 </p>
 
-The `Phoenix-` and `Unicorn Project` are awesome novels that are really worth to read. The next thing to summarize the books is pretty high level but ...
+The `Phoenix-` and `Unicorn Project` are awesome novels that are really worth to read. To summarize the books on a pretty high level  ...
 
 <p align="center">
 <img width="600" src="/images/unicorn-waiting.png">
 </p>
 
-... didn't we all encounter something like this? The most of the time we're wainting for stuff and waste our time in meetings or in manual tasks. To create value for a customer we need rethink a lot. The book `Accelerate` provides awesome capabilities to drive improvement:
+... didn't we all encounter something like this? The most of the time we're waiting for stuff and waste our time in meetings or in manual tasks. To create value for a customer we need rethink a lot. The book `Accelerate` provides awesome capabilities to drive improvement:
 
 <p align="center">
 <img width="600" src="/images/24-capabilities.png">
