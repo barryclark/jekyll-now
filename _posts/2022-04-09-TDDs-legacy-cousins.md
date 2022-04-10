@@ -10,6 +10,8 @@ You are ready to preceed every behavior change with a test, and to refactor merc
 You try to apply your new TDD skills to real work and you run in to trouble.
 Why is that?
 
+By [Jacqueline Bilston](https://twitter.com/jmasonlee) and Jay Bazuzi
+
 # What is TDD?
 
 Like many terms in our field, "TDD" means different things to different people.
@@ -94,7 +96,3 @@ Just about any refactoring can make gnarly code more testable, but a few approac
 With clean module and ownership boundaries, a team can be more aggressive about cleaning up code within those boundaries, and will reap the rewards of their investment.
 - [Refactor for extensibility](https://jay.bazuzi.com/LOSOCS/) then add your new feature in a new module, where you are free to use TDD.
 - Many of the refactorings in [Deep Roots' Legacy Code Book](http://learn.digdeeproots.com/cookbook/), especially [Enable Unit Testing](https://learn.digdeeproots.com/cookbook/enable-unit-tests/).
-
-By [Jacqueline Bilston](https://twitter.com/jmasonlee) and Jay Bazuzi
-
-
