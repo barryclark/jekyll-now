@@ -15,13 +15,13 @@ The `Phoenix-` and `Unicorn Project` are awesome novels that are really worth to
 <img width="600" src="/images/unicorn-waiting.png">
 </p>
 
-... didn't we all encounter something like this? The most of the time we're waiting for stuff and waste our time in meetings or in manual tasks. To create value for a customer we need rethink a lot. The book `Accelerate` provides awesome capabilities to drive improvement:
+... didn't we all encounter something like this? The most of the time we're waiting for stuff and waste our time in meetings or in manual tasks. To create value for a customer we need to rethink a lot. The book `Accelerate` provides awesome capabilities to drive improvement:
 
 <p align="center">
 <img width="600" src="/images/24-capabilities.png">
 </p>
 
-Those 24 capabilities are forming a great northstar that can be used as an orientation. 
+Those 24 capabilities are a great northstar, that can be used as an orientation in your way to master DevOps. 
 
 ## The three ways of DevOps
 
@@ -40,7 +40,7 @@ Enhance the performance of the whole System, by increasing the flow from ...
 
 > left to Right
 
-In other words, Work should only flow into one direction, and that is downstream from Dev to Ops. While orchestrating the flow, always seek to increase the flow like Kanban teaches us. One thing to keep in mind is:
+In other words, work should only flow into one direction, and that is downstream from Dev to Ops. While orchestrating the flow, always seek to increase the flow like Kanban teaches us. One thing to keep in mind is:
 
 > The performance of a system increases proportionally to the throughput
 
