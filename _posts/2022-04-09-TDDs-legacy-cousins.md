@@ -24,6 +24,13 @@ For the sake of this article, we'll use the widely understood and documented red
 
 **Refactor**: Clean up the code, using the tests to ensure that behavior is preserved.
 
+We'll also add:
+- Each new test should be a tiny increment
+- Tests should be easily readable by a human
+- Tests should be very fast
+- Tests should give design feedback about the system under test
+- If refactoring breaks something important, that is very bad
+
 # Hyrum's Law and Test Incompleteness
 
 Part of the power of TDD comes from the idea that it gives you comprehensive tests.
