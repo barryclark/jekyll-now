@@ -1,11 +1,10 @@
 title: Janusz Nowak
 email: janono@gmail.com
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Software Developer/Architect with over 15 years of experience, flustered with approach “It works on my computer” use DevOps practice for over 11 years, natural path going Cloud 7 years.
+  Passionate about ALM, Cloud, Server less, Infrastructure as Code :) Azure, Cloud, DevOps, Lean.
 baseurl: '' # the subpath of your site, e.g. /blog
-url: '' # the base hostname & protocol for your site, e.g. http://example.com
+url: 'https://blog.janono.pl' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jnowwwak
 github_username: janusznowak
 search: true
@@ -117,3 +116,8 @@ analytics:
   google:
     tracking_id: UA-141219604-1
     anonymize_ip: false
+
+analytics2:
+  provider: azure
+  azure:
+    instrumentation_key: 03a77086-412d-4d25-b919-57631fd6c939
