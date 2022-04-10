@@ -25,7 +25,7 @@ Those 24 capabilities are forming a great northstar that can be used as an orien
 
 ## The three ways of DevOps
 
-<img height="200" align="left" src="/images/mando.png" >   <br><br> As a DevOps rookie the 24 capabilites can feel overwhelming. Therefore we should talk about the three ways of devops to get more in touch with the mindset and culture of DevOps. This is the way ...
+<img height="200" align="left" src="/images/mando.png" >   <br> As a DevOps rookie the 24 capabilites can feel overwhelming. Therefore we should talk about the three ways of devops to get more in touch with the mindset and culture of DevOps. This is the way ...
 
 <br><br><br><br>
 
