@@ -1,6 +1,6 @@
 ---
 title: Python Basic
-author: MIn
+author: Min
 date: 2022-03-16
 category: Jekyll
 layout: post
@@ -8,9 +8,6 @@ layout: post
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
 
 파일 업로드
 -------------
@@ -48,7 +45,7 @@ HTML('https://www.xxxxxxxx.co.kr/')
 ```
 
 
-Python 자료구조
+자료구조
 -------------
 
 - list(순서O, 집합) []
@@ -85,4 +82,21 @@ mydict['apple']
 
 mydict = {'aaa':'a', 'bbb':'b'}
 type(mydict)
+```
+
+
+주요함수
+-------------
+
+- pandas / api : [https://pandas.pydata.org/docs/reference/index.html](https://pandas.pydata.org/docs/reference/index.html)
+
+```python
+# csv 파일일기 
+df = pd.read_csv('https://bit.ly/ds-house-price')
+# Data Type확인
+df.info()
+#통계값 확인
+df.describe()
+#컬럼 재정의
+df = df.rename(columns={'컬럼명1': '컬럼명'})
 ```
