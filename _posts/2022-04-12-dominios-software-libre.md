@@ -18,7 +18,7 @@ tags:
 Si has llegado a este post es probablemente porque estas buscando un sitio web relacionado con alguno de mis antiguos proyectos, lamentablemente el proyecto que buscas ya no se encuentra activo, y este dominio ahora esta disponible para ser usado en proyectos relacionados con Software Libre.
 
 
-Si buscas usar el dominio temporalmente, por favor escríbeme un email a mí dirección en gmail (sera redireccionado automáticamente a mi correo real), describiendo en detalle el proyecto, el tiempo que necesitas el dominio, y como te aseguraras que no sea mal utilizado.
+Si buscas usar el dominio temporalmente, por favor escríbeme un email a mí dirección alkamod@ en gmail (sera redireccionado automáticamente a mi correo real), describiendo en detalle el proyecto, el tiempo que necesitas el dominio, y como te aseguraras que no sea mal utilizado.
 
 
 Ten en cuenta que no puedo ofrecer hosting o asignar la titularidad del dominio. Solo puedo ofrecer redireccionamiento del dominio, subdominio o alias.
