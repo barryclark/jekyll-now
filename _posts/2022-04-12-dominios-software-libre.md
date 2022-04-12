@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 id: 120422
 title: Dominios para proyectos de Software Libre
 date: 2022-04-12T00:00:00.000Z
@@ -15,8 +15,9 @@ tags:
   - gnu
 ---
 
-Probablemente muchos coleccionistas estarán de acuerdo conmigo que uno de los primeros relojes en ser agregados a su colección son de marca Omega, especialmente alguno de calibre 354 o más conocido como "bumper". Son baratos, sencillos, fácil de conseguir y lo mejor de todo es que existe una amplia variedad de diseños y colores.
+Ha pasado mucho tiempo
 
+Ha pasado mucho tiempo desde que fui parte de la comunidad de Software Libre en Chile, y micon el tiempo fui adquiriendo dominios para diferentes proyectos. Lamentablemente con el pasar del tiempo estos proyectos han ido quedando en el olvido o muriendo por falta de soporte, principalmente porque la vida nos lleva en otras direcciones que involucran usar nuestro tiempo en otras cosas. Hoy mi tiempo esta dedicado principalmente a mi familia.
 ![Omega Seamaster 550](http://ovalenzuela.com/images/2020/2020-02-10-omega-seamaster-550.jpg)
 
 Creo que el Seamaster 550 fue uno de los primeros relojes que agregue a mí colección. Con un precio al alcance de la mano, conseguí un Royal Blue 550 calibre 354 circa 1952, el cual fue repintado. El reloj venia en buena condición mecánica, y aunque el repintado no fue del todo muy profesional, creo que sus detalles le dan "un toque" único que lo convierte en uno de mis favoritos.
