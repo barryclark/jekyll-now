@@ -9,7 +9,7 @@ However, Tech Twitter covers the latest technologies, startups, and young fresh 
 
 I find working for a business unit extremely rewarding. There's nothing better than rolling out a system and solving problems for our business partners.
 
-Here are six things a developer needs to be okay with to succeed in corporate IT.
+Here are six things a developer needs to understand for success in corporate IT.
 
 ## You have to be okay working with legacy code
 
