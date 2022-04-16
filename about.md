@@ -6,7 +6,7 @@ permalink: /about/
 
 ### More Information
 
-흐음... 이걸로 뭘 할 수 있을까요?
+왜 안올라 가는 걸까요.
 
 ### Contact me
 
