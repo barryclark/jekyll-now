@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London February 2022: Ondat"
+title: "Cloud Native London February 2022: Ondat, hosted by Hubert Bosiacki"
 description: "a speaker from Ondat joins us at the Cloud Native London meetup February 2022, hosted by Hubert Bosiacki, CISO and Head Of Infrastructure at Suade Labs"
 location: London, UK
 image: /images/CNL_April_Rambly.jpg
@@ -12,7 +12,7 @@ tags:
   - "2022"
 ---
 
-This month, we were showcasing a single fantastic speaker from Ondat at our February Cloud Native London virtual meetup, with attendees via Zoom, Rambly, and the YouTube/Twitch livestreams. 
+This month, we were showcasing a single fantastic speaker from Ondat at our February Cloud Native London virtual meetup, with attendees via Zoom, Rambly, and the YouTube/Twitch livestreams.
 
 We are immensely grateful to [Sysdig](https://sysdig.com/), [Palo Alto Networks](https://www.paloaltonetworks.com/), and [CircleCI](https://circleci.com/), for your generous support and sponsorship.
 
@@ -24,13 +24,13 @@ This month we had Nic Vermandé from Ondat telling us about DevOps Gone Wild! Im
 * GitOps helps reduce manual interactions with the cluster, hence increasing security and improving compliance
 * Policy-as-Code enforces best practices and compliance rules before workloads are deployed in the cluster at every stage of the application lifecycle
 
-And of course, a group photo from Rambly! 
+And of course, a group photo from Rambly!
 ![](/images/2022-02-02-cloud-native-london-february-2022.png)
 
-## Cloud Native London March 
+## Cloud Native London March
 
 Our next meetup will be on Wednesday 2nd March, when we'll be joined by speakers from Form3, Ermetic, and WSO2. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/283605953/)
 
 Stay safe, stay healthy, and I’ll see you next month!
 
-Cheryl (@oicheryl) 
+Cheryl (@oicheryl)
