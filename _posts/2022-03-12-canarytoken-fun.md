@@ -3,11 +3,11 @@ layout: post
 title: Canarytokens fun
 ---
 
-While crafting a new lab to learn more about sniffing through docker images, I had the idea to make things more realistic. Therefore the useage of [canarytokens](https://canarytokens.org/generate) might be nice to spice it a little up. Since these tokens can't cause no real harm - but look and behave realistic, they went straight into the public GitHub repository. In less then 5min, the first token was scanned and automatically tried to validate. This was somehow mindblowing (but also really expected - since I build a similar token scan service years ago for my ex-employer to protect secrets from unintended leakage). Well now let me show some of the things I learned and discuss it a little.
+While crafting a new lab to learn more about sniffing through docker images, I had the idea to make things more realistic. Therefore the usage of [canarytokens](https://canarytokens.org/generate) might be nice to spice it a little up. Since these tokens can't cause no real harm - but look and behave realistic, they went straight into the public GitHub repository. In less then 5min, the first token was scanned and automatically tried to validate. This was somehow mind blowing (but also really expected - since I build a similar token scan service years ago for my ex-employer to protect secrets from unintended leakage). Well now let me show some of the things I learned and discuss it a little.
 
 ## Tokens meet incidents
 <img height="200" align="left" src="/images/smurf.png" >
-The AWS credentials gone wild - the k8s config, WireGuardVPN, M$ SQL Database and MySQL dump were ignored completely so far. In total the AWS Token got triggered 20 times in less then 24 hours by some scripts. 
+The AWS credentials gone wild - the k8s config, WireGuardVPN, M$ SQL Database and MySQL dump were ignored completely so far. In total the AWS Token got triggered 20 times in less then 24 hours by some scripts.
 
 To increase the fun - lets post the credentials again:
 
@@ -27,7 +27,7 @@ Now let us take a look at the data and incidents we gathered:
 The incidents presented above, also have a nice presentation as [JSON](/assets/posts/canary_token.json). That will help to drill down and learn from the incidents. To work with the JSON-data I'll rely on jq.
 
 ### Useragents
-It seems that Python and mostly python 2.27.1 were the favorite languague to create an automated token validation tool (well this language kicks ass). To avoid duplicates we will represent them as unique data:
+It seems that Python and mostly python 2.27.1 were the favorite language to create an automated token validation tool (well this language kicks ass). To avoid duplicates we will represent them as unique data:
 
 ```bash
 $ jq '.[] | .useragent' canary_token.json | sort --unique
@@ -39,7 +39,7 @@ $ jq '.[] | .useragent' canary_token.json | sort --unique
 "python-requests/2.27.1"
 ```
 
-The AWSPowerShell Windows-Fanboy was a little wired in that list - but used a very interresting way to validate the tokens (more info below)
+The AWSPowerShell Windows-Fanboy was a little wired in that list - but used a very interesting way to validate the tokens (more info below)
 
 ### Top IPs of the token validators
 As shown on the world map above, the callers came from the US, Denmark and Indonesia. You can use the GeoIP Package (Python) to drill down on the IP addresses or use the provided geo data from the JSON.
@@ -102,9 +102,10 @@ $ jq '.[].additional_info."AWS Key Log Data"| .eventName[]' canary_token.json | 
 "GetSendQuota"
 "ListUsers"
 ```
-That list quite rocks and hey, here's the M$ Windows Fanboy back again. This guy used `DescribeRegions` to validate the tokens which is quite tricky. Also the `GetSendQuota` attempts looks pretty sneaky to me. Since it either is a email spammer who salvages other accounts or another funky method to trick the AWS API like `sns:publish`. Will check this another day. The guy from Jakarta (Indionesia) used `ListUsers` - all or nothing right? 
 
-I'll let the canarytoken be scanned for some more days and implement a monitoring alert for my [AWS LoginGuard](https://benjitrapp.github.io/AWS-LoginGuard/) to raise the bar on my alerting capabilities. Also I hope that one day someone will trigger one of the other credentials like the k8s config to let me learn fancy ways to validate k8s credentials.
+That list quite rocks and hey, here's the M$ Windows Fanboy back again. This guy used `DescribeRegions` to validate the tokens which is quite tricky. Also the `GetSendQuota` attempts looks pretty sneaky to me. Since it either is a email spammer who salvages other accounts or another funky method to trick the AWS API like `sns:publish`. Will check this another day. The guy from Jakarta (Indonesia) used `ListUsers` - all or nothing right? 
+
+I'll let the Canarytoken be scanned for some more days and implement a monitoring alert for my [AWS LoginGuard](https://benjitrapp.github.io/AWS-LoginGuard/) to raise the bar on my alerting capabilities. Also I hope that one day someone will trigger one of the other credentials like the k8s config to let me learn fancy ways to validate k8s credentials.
 
 ### Upgrade 
 
@@ -150,7 +151,7 @@ $ jq '.[] | .geo_info.ip ' canary_token2.json | sort --unique
 
 # 12 IPs => 33 times triggered the Canarytoken
 ```
-After a lot of "trash" scripts that hunt for low hanging fruits (yes - I mean the `GetCalerIdentity` ones), it seems like some more mature folks are joining the party. The Indonesian guy runs a script that checks for SES and tries different things to validate. After some checks it seems this is guy is really searching for new machines to create a botnet for spamming emails. 
+After a lot of "trash" scripts that hunt for low hanging fruits (yes - I mean the `GetCallerIdentity` ones), it seems like some more mature folks are joining the party. The Indonesian guy runs a script that checks for SES and tries different things to validate. After some checks it seems this is guy is really searching for new machines to create a botnet for spamming emails. 
 
 This time also we can watch the usage of Tor. There were four times a usage recognized. To filter the data we can use jq again:
 
@@ -236,15 +237,16 @@ This command will lead to the JSON output below:
   }
 }
 ```
-The interresting thing is, that the manual ElasticWolf guy used Tor to stay anonymous ([Emerald Onion.org](https://emeraldonion.org/) is a non profit organization for internet privacy) but didn't changed the Useragent. Based on this fact this adversary might not care about the leakage of valuable info by [WebRTC](https://browserleaks.com/webrtc). This might help in create a fingerprint and track this guy. Since ElasticWolf is a GUI - and the attacker didn't disgused completely I would assume that this guy is not a real pro. But better than the mediocre script kiddy who got triggered by its scripts and checked what's going on with the tokens manually. The action this guy performed are still interresting - though the good news are, if we assume that we were using [GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-active.html) this Poltergeist would have triggered an alarm. 
+The interesting thing is, that the manual ElasticWolf guy used Tor to stay anonymous ([Emerald Onion.org](https://emeraldonion.org/) is a non profit organization for internet privacy) but didn't changed the Useragent. Based on this fact this adversary might not care about the leakage of valuable info by [WebRTC](https://browserleaks.com/webrtc). This might help in create a fingerprint and track this guy. Since ElasticWolf is a GUI - and the attacker didn't disguised completely I would assume that this guy is not a real pro. But better than the mediocre script kiddy who got triggered by its scripts and checked what's going on with the tokens manually. The action this guy performed are still interesting - though the good news are, if we assume that we were using [GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-active.html) this Poltergeist would have triggered an alarm. 
 
 
 ## Conclusion - Let's Wrap it up
 
 Based on the incidents from above my key takeaways are: 
+
 * Create a Pre-Receive-Hook for you Git Repositories to prevent that a token get's commited! Use something mature like [Talisman](https://github.com/thoughtworks/talisman) or [Trufflehog GitHub Action](https://github.com/marketplace/actions/trufflehog-actions-scan)
 * Watch your GuardDuty Events and push crucial Alerts directly to your Smartphone/Slack- or Teams etc.
-* If `GetCallerIdentiy` get's triggered by f.e. my LoginGuard your Tokens are leaked with a high confidence. Since this Event was used in less then 5mins after my intended "leakage" this is a great baseline
+* If `GetCallerIdentity` get's triggered by f.e. my LoginGuard your Tokens are leaked with a high confidence. Since this Event was used in less then 5mins after my intended "leakage" this is a great baseline
 * Create a Incident Response Plan and rotate your Tokens regularly. Store them securely f.e. in a Password Manager
 * If you have some real workloads running on AWS - better enable GuardDuty to protect yourself. Think of it as a condom - better have one and don't need it then vice versa
 * No automation or Service like GuardDuty can beat the creativity of a human mind. As long as APIs and Software are made by humans - it will fail for sure! APIs are talking too much and even Amazon isn't free from such mistakes. The idea to defend is to be prepared, use managed services and custom tools but be aware that every defense can be tricked or bypassed. Raising the bar and clever monitoring will help to find the gaps or at least that something malicious is going on
@@ -253,8 +255,3 @@ Based on the incidents from above my key takeaways are:
 <p align="center">
 <img width=300 src="/images/jokey.gif">
 </p>
-
-
-
-
-

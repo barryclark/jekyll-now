@@ -57,7 +57,7 @@ def lambda_handler(event, context):
         ### ADDITIONAL THINGS (Optional)               ###
         ### ATTEMPTS TO DESTRUCT AND ESCAPE THE TEMPLE ###
         ##################################################
-        # Reconing
+        # Reckoning
         #'ulimit -a', # Find out the current maximum processes a 
         'cat /proc/cpuinfo > /tmp/cpu_info.txt', # Infos about the CPU
         
@@ -99,7 +99,7 @@ After running the code and using some of the known facts regarding AWS Lambda, w
 * Read-only file system - this tackles persistance but there are options we will research later
 * NON-root user 
 * Single AWS IAM role required for access to the sandbox
-* Dropping a reverse shell is not possible, since the Lambda Function runs airgapped
+* Dropping a reverse shell is not possible, since the Lambda Function runs air gapped
 * Code is copied to `/var/run/task`
 * Bootstrap under `/var/runtime/awslambda` <- entry point and backbone of AWS Lambda
 * Sandbox is thrown away at the end of execution and have a maximum execution time
@@ -119,11 +119,12 @@ Based on this, we can meditate about the [attack surface]( https://en.wikipedia.
 </p>
 
 Let’s check our options and strategies:
+
 * Keep the initial Payload as small as possible (don't try to push an elephant through a keyhole, a fly might fit better)
 * Use Command Injection, XXE, SSRF or trick the API Gateway to find a way in (the thermal exhaust port)
-* Since a Sandbox gets recycled after each execution and have a limited execution time (often only a few miliseconds to seconds). Therefore we have to move fast
-* Persistence is possible in `/tmp` => To avoid the coldstart penalty, people tend to keep their Lambda function warm (for the sake of performance). This can be used to get some sort of persistance
-Identify 
+* Since a Sandbox gets recycled after each execution and have a limited execution time (often only a few milliseconds to seconds). Therefore we have to move fast
+* Persistence is possible in `/tmp` => To avoid the cold start penalty, people tend to keep their Lambda function warm (for the sake of performance). This can be used to get some sort of persistance
+Identify
 * Perform„lateral movement“ options as soon as possible
 * Exfiltrate results via other ways/services (push to S3, SQS, SNS Topic etc.)
 
@@ -132,11 +133,12 @@ Identify
 </p>
 
 Based on our attack strategy, we have a big and complex blob. To manage this blob we try to abstract it and split it into three sections:
-1.	`Outer Attack Surface` -> The way inside, derived from another flaw
-2.	`Inner Attack Surface` -> If we made it inside, there are plenty of things we can use to leverage further attacks
-3.	`IAM/Privilege Escalation` -> The Quote of Jeff Bryner ([@0x7eff](https://twitter.com/0x7eff) says it all: `IAM is the “killer feature” and the “killer feature”`
+1. `Outer Attack Surface` -> The way inside, derived from another flaw
+2. `Inner Attack Surface` -> If we made it inside, there are plenty of things we can use to leverage further attacks
+3. `IAM/Privilege Escalation` -> The Quote of Jeff Bryner ([@0x7eff](https://twitter.com/0x7eff) says it all: `IAM is the “killer feature” and the “killer feature”`
 
 Here's what we can do based on the three sections:
+
 * Compromise data 
 * Abuse business logic
 * Bypass authentication
@@ -152,10 +154,10 @@ Now we can start planning our attacks and think about different ways to stop an 
 <img width="700" src="/images/lambda-iam.png">
 </p>
 
-In the reverse engineering part above we already learned that IAM credentials are passed into the Lamda function via environment variables. Let’s go one step back, and rethink our attack vectors. As an adversary it can be hard to read environment variables, so we need to abuse another weakness to achieve this. Those weaknesses could be:
+In the reverse engineering part above we already learned that IAM credentials are passed into the Lambda function via environment variables. Let’s go one step back, and rethink our attack vectors. As an adversary it can be hard to read environment variables, so we need to abuse another weakness to achieve this. Those weaknesses could be:
 
-1. [XML External Entities (XXE)](https://cwe.mitre.org/data/definitions/1030.html) to achive the ability to read files
-2. [Server Side Ressource Forgery (SSRF)]( CWE - CWE-918: Server-Side Request Forgery (SSRF) (4.6) (mitre.org)) which is the most likely variant of both. Since [everything is a file](https://en.wikipedia.org/wiki/Everything_is_a_file) it`s easy to get your hand on files from outside and even bypass firewalls, because it allows the file protocol 
+1. [XML External Entities (XXE)](https://cwe.mitre.org/data/definitions/1030.html) to achieve the ability to read files
+2. [Server Side Resource Forgery (SSRF)]( CWE - CWE-918: Server-Side Request Forgery (SSRF) (4.6) (mitre.org)) which is the most likely variant of both. Since [everything is a file](https://en.wikipedia.org/wiki/Everything_is_a_file) it`s easy to get your hand on files from outside and even bypass firewalls, because it allows the file protocol 
 
 <br>
 <p align="center">
@@ -182,7 +184,7 @@ Postel‘s Law is to be honest, a pretty awesome academic concept for the develo
 
 Let's start with our Victim Function:
 ```python
-mport time
+import time
 from random import seed
 from random import randint
 
@@ -207,7 +209,7 @@ def lambda_handler(event, context):
     }
 ```
 
-This function wastes some time and prints as a result of it's pseudo calculation a quote from my favorite Sci-Fi book author Isaac Asimov. I kept the settings of the Lambda like they were shipped from AWS. To make it a little more interresting - and reusable as a "load testing" Tool we create a Lambda function that performs a DDoS attack. Very crazy to use a Lambda to DDoS a Lambda function, right? Anyway - let's move on and crate a Lambda named lambda_spammer and add the content from below:
+This function wastes some time and prints as a result of it's pseudo calculation a quote from my favorite Sci-Fi book author Isaac Asimov. I kept the settings of the Lambda like they were shipped from AWS. To make it a little more interesting - and reusable as a "load testing" Tool we create a Lambda function that performs a DDoS attack. Very crazy to use a Lambda to DDoS a Lambda function, right? Anyway - let's move on and crate a Lambda named lambda_spammer and add the content from below:
 
 ```python
 import json
@@ -238,7 +240,7 @@ def send_request(url):
 if __name__ == "__main__":
     lambda_handler({"url": <Enter your Website here>, "num_requests": 1000}, None)
  ```
- The lambda function from above, will send a predefined number of asynchronous requests to your website. To multiply this we can multiply the SPAM by creating  a runner, that will call the lambda for another big predefined number of times asynchronously. This multiplication will resulting intp tons of requests which get fired in a very short amount of time and summon up a tsunami that will hit your website:
+ The lambda function from above, will send a predefined number of asynchronous requests to your website. To multiply this we can multiply the SPAM by creating  a runner, that will call the lambda for another big predefined number of times asynchronously. This multiplication will resulting into tons of requests which get fired in a very short amount of time and summon up a tsunami that will hit your website:
  
  ```python
 import boto3
@@ -256,6 +258,7 @@ for x in range(1000):
 
 print(response)
  ```
+
 Use this runner on your local machine to invoke the tsunami and test if the victim function can survive 🌊🌊🌊
 
 <br><br>
@@ -267,14 +270,12 @@ Time to stop the kids from playing around and check the options we have to mitig
 * The no-brainer - Increase the [Concurrency Limit](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html)
 * Check your code - Make sure your code does not "hang" on unexpected input. You should carefully check all edge cases and think about possible inputs that may cause function timeouts, [ReDoS](https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS) attacks, or long payloads. An attacker may take advantage of this weakness.
 * If you don't want to get a huge bill at some point — set up the billing alerts. It's very easy and fast to set up (it's better to do it through AWS Budgets than through AWS SNS and AWS Cloudwatch), but it's very useful — you will be informed in case of a problem.
-* The AWS Lambda has a default limit on the number of concurrent executions per account per region. And if your functions exceed this limit, additional user requests will be throttled by AWS with 429 status. But the concurrency level can be set on per-function bases. Besides AWS Lambda, the API Gateway supports throttling as well. The defaults are reasonable - but you can alter them however you like. For example: Five calls/scond can be allowed, if it makes sense for your application. Afte hitting the Limit the API Gateway will block all additional requests.
+* The AWS Lambda has a default limit on the number of concurrent executions per account per region. And if your functions exceed this limit, additional user requests will be throttled by AWS with 429 status. But the concurrency level can be set on per-function bases. Besides AWS Lambda, the API Gateway supports throttling as well. The defaults are reasonable - but you can alter them however you like. For example: Five calls/second can be allowed, if it makes sense for your application. After hitting the Limit the API Gateway will block all additional requests.
 * Use AWS Cloudfront: HTTP and HTTPS requests sent to CloudFront can be monitored, and access to application resources can be controlled at the edge locations using AWS WAF. Based on the conditions you specify in the AWS WAF, such as the IP addresses from which the requests originate or the values of query strings, traffic can be allowed, blocked, or allowed and counted for further investigation
-* Stay serverless and use a tool like [aws-lambda-ddos-hangman](https://github.com/moznion/aws-lambda-ddos-hangman). This tool runs serverless and creates a FIFO queue for the incoming requests and rotates them. This is actually a very clever and cheap solution if you don't want the exta costs for running an API Gateway, Cloudfront and/or AWS WAF/Shield. 
+* Stay serverless and use a tool like [aws-lambda-ddos-hangman](https://github.com/moznion/aws-lambda-ddos-hangman). This tool runs serverless and creates a FIFO queue for the incoming requests and rotates them. This is actually a very clever and cheap solution if you don't want the extra costs for running an API Gateway, Cloudfront and/or AWS WAF/Shield. 
 
 #### Happy fire fighting 🔥🚒
 
 <p align="center">
 <img width="600" src="/images/firefighter.png">
 </p>
-
-

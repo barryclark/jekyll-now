@@ -3,7 +3,7 @@ layout: post
 title: Benji's custom CTF challenges
 ---
 
-To better understand different kinds of attacks, I've created some custom CTF challenges that might be fun for you too. If you want to host a CTF event you can use my helm charts to spin up a CTFd plattform to host the challenges. 
+To better understand different kinds of attacks, I've created some custom CTF challenges that might be fun for you too. If you want to host a CTF event you can use my helm charts to spin up a CTFd platform to host the challenges. 
 
 <br>
 <p align="center">

@@ -3,7 +3,7 @@ layout: culture
 title: The three ways of DevOps
 ---
 
-If we think of DevOps there are plenty definitions, theories and more around. Also the [5 ideals of DevOps](https://itrevolution.com/five-ideals-of-devops/) are an amazing piece of culture. But in my oppinion, the best baseline to get in touch with DevOps are these books and the DORA State of DevOps reports from awesome authors like Gene Kim, Kevin Behr, Jez Humble and Nicole Forsgren:
+If we think of DevOps there are plenty definitions, theories and more around. Also the [5 ideals of DevOps](https://itrevolution.com/five-ideals-of-devops/) are an amazing piece of culture. But in my opinion, the best baseline to get in touch with DevOps are these books and the DORA State of DevOps reports from awesome authors like Gene Kim, Kevin Behr, Jez Humble and Nicole Forsgren:
 
 <p align="center">
 <img width="600" src="/images/devops-books.png">
@@ -21,11 +21,11 @@ The `Phoenix-` and `Unicorn Project` are awesome novels that are really worth to
 <img width="600" src="/images/24-capabilities.png">
 </p>
 
-Those 24 capabilities are a great northstar, that can be used as an orientation in your way to master DevOps. 
+Those 24 capabilities are a great north star, that can be used as an orientation in your way to master DevOps. 
 
 ## The three ways of DevOps
 
-<img height="200" align="left" src="/images/mando.png" >  As a DevOps rookie the 24 capabilites can feel overwhelming. Therefore we should talk about the three ways of devops to get more in touch with the mindset and culture of DevOps. 
+<img height="200" align="left" src="/images/mando.png" >  As a DevOps rookie the 24 capabilities can feel overwhelming. Therefore we should talk about the three ways of devops to get more in touch with the mindset and culture of DevOps.
 <br><br>
 This is the way ...
 <br><br>

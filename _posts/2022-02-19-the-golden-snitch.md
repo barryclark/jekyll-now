@@ -19,7 +19,7 @@ To understand the magic, let's take a look inside the spell book:
 <img width="600" src="/images/snitch-architecture.png">
 </p>
 
-On OpenShift there is a fancy [feature](https://docs.openshift.com/container-platform/4.9/security/certificates/service-serving-certificate.html) that allows you to serve a certificate as a secret as long as a service is defined. This certificate is trusted and created by your cluster. This helps us to break up the HTTPS connection between the Route and the vicitims application. Either the application nor the muggels who are calling the application will know that you're watching their traffic.
+On OpenShift there is a fancy [feature](https://docs.openshift.com/container-platform/4.9/security/certificates/service-serving-certificate.html) that allows you to serve a certificate as a secret as long as a service is defined. This certificate is trusted and created by your cluster. This helps us to break up the HTTPS connection between the Route and the victims application. Either the application nor the muggel who are calling the application will know that you're watching their traffic.
 
 Additional the golden snitch is a proxy we can capture the incoming traffic and redirect it to the victim application. In that way the golden snitch will be less invasive and can be opted in and out with ease.
 

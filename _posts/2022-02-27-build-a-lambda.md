@@ -8,10 +8,10 @@ title: Build an
 <img width="600" src="/images/asimov-lambda.png">
 </p>
 
-Based on my previous reverse engineering work of AWS Lambda (take a look [here](https://benjitrapp.github.io/hack-the-lambda/)) it's time for a reassambling of the [captured parts](https://github.com/BenjiTrapp/smashing-aws-lambda/tree/main/data). We will craft an dockerized version of AWS Lambda. This foundation will be based on the [Amazon Linux Dockerimage](https://hub.docker.com/_/amazonlinux?tab=tags). Docker rocks - but the real AWS Lambda tells from itself, that it's an EC2 instance. In my oppinion it still must be some sort of a container system (yes I know that [Firecracker](https://aws.amazon.com/de/blogs/opensource/firecracker-open-source-secure-fast-microvm-serverless/) and [Bottlerocket](https://aws.amazon.com/de/bottlerocket/)  exist) but there must also be a difference for the real one. This drill here helps me to understand and learn in which way such a container system could work and look like.
+Based on my previous reverse engineering work of AWS Lambda (take a look [here](https://benjitrapp.github.io/hack-the-lambda/)) it's time for a reassembling of the [captured parts](https://github.com/BenjiTrapp/smashing-aws-lambda/tree/main/data). We will craft an dockerized version of AWS Lambda. This foundation will be based on the [Amazon Linux Dockerimage](https://hub.docker.com/_/amazonlinux?tab=tags). Docker rocks - but the real AWS Lambda tells from itself, that it's an EC2 instance. In my opinion it still must be some sort of a container system (yes I know that [Firecracker](https://aws.amazon.com/de/blogs/opensource/firecracker-open-source-secure-fast-microvm-serverless/) and [Bottlerocket](https://aws.amazon.com/de/bottlerocket/)  exist) but there must also be a difference for the real one. This drill here helps me to understand and learn in which way such a container system could work and look like.
 
 
-To make some faster progresses this work will have a heavy use of GitHub Actions and Docker flow including GitHubs own Image Registry. Just take a look at the Actions part of the repisitory. 
+To make some faster progresses this work will have a heavy use of GitHub Actions and Docker flow including GitHubs own Image Registry. Just take a look at the Actions part of the repository. 
 
 <p align="center">
 <img width="600" src="/images/tmnt-michelangelo.gif">
@@ -25,11 +25,11 @@ To make some faster progresses this work will have a heavy use of GitHub Actions
 <img width="600" src="/images/reassamble.png">
 </p>
 
-To have a multipurpose Image let's try to craft a genuine AWS Lambda Base Image. We use the amazonlinux Dockerimage to install the required dependencies and move the dependencies into an empty fresh image. From there we can build it up from scratch and reuse some files that were streamed from an AWS Lambda function into a S3 Bucket. The files were cleaned up by every runtime specific belongings. There are also a lot of interresting files and also it seems a cooperation between RedHat and Amazon
+To have a multipurpose Image let's try to craft a genuine AWS Lambda Base Image. We use the amazonlinux Dockerimage to install the required dependencies and move the dependencies into an empty fresh image. From there we can build it up from scratch and reuse some files that were streamed from an AWS Lambda function into a S3 Bucket. The files were cleaned up by every runtime specific belongings. There are also a lot of interesting files and also it seems a cooperation between RedHat and Amazon
 
 ```docker
 ######
-## Stage 1: Build an Amazonlinux flavoured Image and inject the captured files
+## Stage 1: Build an amazonlinux flavoured Image and inject the captured files
 ######
 FROM amazonlinux:2 as builder
 
@@ -144,10 +144,11 @@ ENTRYPOINT ["/var/rapid/init", "--bootstrap", "/var/runtime/bootstrap", "--enabl
 
 So far I could recognize that the Lambda service is divided into a control- and a data plane. Let's discuss both on a very high level perspective:
 
-1. **Control Plane**: Like in k8s the control plane is responsible for the function management API (all the actions like CreateFunction, DeleteFunction, UpdateFunctionCode, ...) 
-2. **Data Plane**: Responsible for the invocation API that how the name already tells invokes Lambda functions.The Lambda invocation flow is a whole set of services working together to provide the complete range of functionality that Lambda provides. 
+1. **Control Plane**: Like in k8s the control plane is responsible for the function management API (all the actions like CreateFunction, DeleteFunction, UpdateFunctionCode, ...)
+2. **Data Plane**: Responsible for the invocation API that how the name already tells invokes Lambda functions.The Lambda invocation flow is a whole set of services working together to provide the complete range of functionality that Lambda provides.
 
 These services are:
+
 * **Worker**  — A secure environment where your code will be copied to and executed. 
 * **Worker Manager** — As you might have guessed by the name, this  Service manages the workers. It tracks the usage of resources, execution environments and handles the assignments of requests.
 * **Frontend Worker** — This worker receives function invocation requests, validates them and dispatches the requests to the Worker Manager.
@@ -171,13 +172,14 @@ Incoming invocation requests are passed from a Load Balancer to a selected Front
 <img width="600" src="/images/firecracker_overview.png">
 </p>
 
-If we take a look at [Firecracker](https://firecracker-microvm.github.io/) - the Workers are typically EC2 instances that have multiple functions being executed on them. These functions are owned by multiple users, not just a single user. To keep this method of execution secure - each function runs in its own secure Sandbox. Each Sandbox is airgaped (totally isolated from other Sandboxes) by using things such as cgroups, namespaces, iptables, etc.
+If we take a look at [Firecracker](https://firecracker-microvm.github.io/) - the Workers are typically EC2 instances that have multiple functions being executed on them. These functions are owned by multiple users, not just a single user. To keep this method of execution secure - each function runs in its own secure Sandbox. Each Sandbox is air gapped (totally isolated from other Sandboxes) by using things such as cgroups, namespaces, iptables, etc.
 
-Sandboxes can be re-used for another invocation of the same function (what typically is called “warm”). As an interresting aspect a Sandbox will never be shared across different Lambda functions. These Sandboxes have a lifetime of the duration of the function execution and wont be destroyed after elapsing of some retention time.
+Sandboxes can be re-used for another invocation of the same function (what typically is called “warm”). As an interesting aspect a Sandbox will never be shared across different Lambda functions. These Sandboxes have a lifetime of the duration of the function execution and wont be destroyed after elapsing of some retention time.
 
-This mighty technology provided by Firecracker, is an open-source project that is developed by Amazon. Firecracker allows for thousands of lightweight sandboxes to be executed in a single Worker environment and got in my oppinion a lot of similarity to k8s on a very highlevel perspective. 
+This mighty technology provided by Firecracker, is an open-source project that is developed by Amazon. Firecracker allows for thousands of lightweight sandboxes to be executed in a single Worker environment and got in my opinion a lot of similarity to k8s on a very high level perspective. 
 
-If we think back at the early beginning of container technology we have some interresting dates:
+If we think back at the early beginning of container technology we have some interesting dates:
+
 * 20 March 2013 first release of Docker
 * June 2014 first release of Kubernetes 
 * November 2014 AWS Lambda was launched

@@ -9,7 +9,7 @@ AWS provides the [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReferenc
 <img width=300 src="/images/dj_role.gif">
 </p>
 
-Beside useful practices the Assume Role functionallity can be an excellent vector to escalate privileges or move to other AWS accounts in the organization. The logic and prerequisites to perform Assume Role behaves different either if you are assuming a role in the same account or assuming a role in a different account. So let's discuss both variants
+Beside useful practices the Assume Role functionality can be an excellent vector to escalate privileges or move to other AWS accounts in the organization. The logic and prerequisites to perform Assume Role behaves different either if you are assuming a role in the same account or assuming a role in a different account. So let's discuss both variants
 
 ## Variant 1 - Assume Role in the Same Account
 
@@ -56,12 +56,13 @@ As you can see, when attempting to assume a role in the same account things are 
 ```
 
 **Wrap it up**:
+
 * When looking for privilege escalation vectors in an AWS account - first watch for roles that explicitly define a role ARN in their Trust Relationship and paths to get there.
 * The relaxed requirement around having AssumeRole privileges are useful because in that case the are only reliant on the trust relationship but not on additional privileges.
 * Be aware of the different requirements between same and cross account role assumption. Some administrators have the impression that the base role requires AssumeRole privileges. In such a case they may not be aware of the security considerations around this option.
 
 ## Variant 2 - Cross Account Access
-By assuming a role across multiple accounts the base role is forced to have AssumeRole privileges. It dosen't care if the Trust Relationship specifies an account or a specific role.
+By assuming a role across multiple accounts the base role is forced to have AssumeRole privileges. It doesn't care if the Trust Relationship specifies an account or a specific role.
 
 ### Let's write some Code 
 
@@ -73,10 +74,10 @@ With the theory above in mind, let's write some code to assume a role in a diffe
 
 | File                 | Semantics                                              | 
 | -------------------- | -------------------------------------------------------|
-| awsaccountlister.py  | Highlevel function that creates a Session in you Payer Account (hopefully you have one), get's all account back and required info to assume a role. After that it loops over each account and performs the function that you pass to the super loop |
-| shield_ddos_attack_lister.py | Function that gatheres info from AWS Shield about the occurance of detected DDoS attacks in the past |
+| awsaccountlister.py  | High-level function that creates a Session in you Payer Account (hopefully you have one), get's all account back and required info to assume a role. After that it loops over each account and performs the function that you pass to the super loop |
+| shield_ddos_attack_lister.py | Function that gatherers info from AWS Shield about the occurrence of detected DDoS attacks in the past |
 
-Now to the Code and maybe to some Terraform modules to get this beast installed with ease. As you might already have figured out you require AWS Shield as a prerequiste :) 
+Now to the Code and maybe to some Terraform modules to get this beast installed with ease. As you might already have figured out you require AWS Shield as a prerequisite :) 
  
 awsaccountlister.py:
 ```python
@@ -126,7 +127,7 @@ def check_response(response):
 
     if (http_code < 200 or http_code > 399):
         raise AssertionError(
-            "Invoke not successfull, recieved http_code {0}".format(http_code))
+            "Invoke not successfully, received http_code {0}".format(http_code))
 ```
 
 shield_ddos_attack_lister.py:

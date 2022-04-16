@@ -9,7 +9,7 @@ After reading the cheatsheet about [weird proxies](https://github.com/GrrrDog/we
 <img width=300 src="/images/seven_proxies.jpg">
 </p>
 
-The things I'll show here in this post aren't meant to run in production or have the intention to give 100% protection. Based on the proxy stuff we could create a poor man's k8s WAF and iterate to a more k8s-isch solution. As a baseline we try to do something against SQL injection (SQLi) - but the list of patterns could be enhanced by other stuff like XSS, XXE and more.
+The things I'll show here in this post aren't meant to run in production or have the intention to give 100% protection. Based on the proxy stuff we could create a poor man's k8s WAF and iterate to a more k8s native solution. As a baseline we try to do something against SQL injection (SQLi) - but the list of patterns could be enhanced by other stuff like XSS, XXE and more.
 
 In the first iteration we start with building a NGINX-proxy as a [sidecar container](https://learnk8s.io/sidecar-containers-patterns) and will look like this:
 
@@ -18,7 +18,7 @@ In the first iteration we start with building a NGINX-proxy as a [sidecar contai
 </p>
 
 
-In casual scenarios this helps to send encrypted traffic from "outside" and across the cluster to a [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) and terminate it there. Inside the Pod we can create multiple Containers, that can talk unencrypted to each other. The setup of a sidecar container is pretty trivial (got an example [here](https://github.com/BenjiTrapp/CTFd-helm-chart/blob/main/templates/deployment-ctfd.yaml#L26)) but the magic resides in the nginx-config:
+In casual scenarios this helps to send encrypted traffic from "outside" and across the cluster to a [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) and terminate it there. Inside the Pod we can create multiple Containers, that can talk not encrypted to each other. The setup of a sidecar container is pretty trivial (got an example [here](https://github.com/BenjiTrapp/CTFd-helm-chart/blob/main/templates/deployment-ctfd.yaml#L26)) but the magic resides in the nginx-config:
 
 ```yaml
 kind: ConfigMap
@@ -69,7 +69,7 @@ data:
               if ($request_method ~* "(GET|POST|PUT|DELETE)") {
                 add_header "Access-Control-Allow-Origin"  "*";
               }
-              # Preflighted requests
+              # Preflight requests
               if ($request_method = OPTIONS ) {
                 add_header "Access-Control-Allow-Origin"  "*";
                 add_header "Access-Control-Allow-Methods" "GET, POST, OPTIONS, HEAD";
@@ -127,7 +127,7 @@ If you've read my other blog posts and memories, you might have found my Pythoni
 <img src="/images/slowloris.png">
 </p>
 
-Therefore we can enhance either the `nginx.conf` or enhance the `nginx annotation` for the Ingress object by setting a more suiteable value to close slow connections:
+Therefore we can enhance either the `nginx.conf` or enhance the `nginx annotation` for the Ingress object by setting a more suitable value to close slow connections:
 
 ```bash
 server {
@@ -139,9 +139,9 @@ server {
 
 ### HTTP Request Smuggling
 
-To continue wirh some proxy madness, you can try my [http-request-smuggling-lab](https://github.com/BenjiTrapp/http-request-smuggling-lab). In this lab you have the chance to mess around with another NGINX proxy. The Lab 2 is a little tricky, but helps to train your skills for attacking hidden internal traffic like intranets and bypass security controls. 
+To continue with some proxy madness, you can try my [http-request-smuggling-lab](https://github.com/BenjiTrapp/http-request-smuggling-lab). In this lab you have the chance to mess around with another NGINX proxy. The Lab 2 is a little tricky, but helps to train your skills for attacking hidden internal traffic like intranets and bypass security controls.
 
-This kind of attack is based on a weakness in the HTTP protocol ([postel's law](https://en.m.wikipedia.org/wiki/Robustness_principle) strikes again) that uses inconsistency between the interpretation of `Transfer-Encoding` and/or `Content-Length` headers due to different kind of implementations in HTTP servers accross a proxy server cain. To visualize it take a look here:
+This kind of attack is based on a weakness in the HTTP protocol ([postel's law](https://en.m.wikipedia.org/wiki/Robustness_principle) strikes again) that uses inconsistency between the interpretation of `Transfer-Encoding` and/or `Content-Length` headers due to different kind of implementations in HTTP servers across a proxy server cain. To visualize it take a look here:
 
 <p align="center">
 <img src="/images/http-request-smuggling.svg">
@@ -155,10 +155,10 @@ To learn more about this kind of attack take a look here at [Portswigger](https:
 
 * Mitigate [XSS](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 * Mitigate [DDoS-Attacks](https://www.nginx.com/blog/mitigating-ddos-attacks-with-nginx-and-nginx-plus/)
-* Use [42.zip](https://research.swtch.com/zip) to create a tarpit for crawlers. Simply stream 42.zip if strange requests are sent
+* Use [42.zip](https://research.swtch.com/zip) to create a tar pit for crawlers. Simply stream 42.zip if strange requests are sent
 * ...many more things :) ...
 
-Will implement more when I got some freetime for this :)
+Will implement more when I got some free time for this :)
 
 <p align="center">
 <img src="/images/c3po-madness.gif">

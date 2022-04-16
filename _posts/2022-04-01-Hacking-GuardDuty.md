@@ -10,7 +10,7 @@ Let's assume that we have found and  successfully validated some AWS credentials
 </p>
 
 
-GuardDuty itself uses a delegated admin or invite model which are hard to bypass. But features like detector configurations and IP-Trust-Lists are usually centrally managed. This pivot point can be used as a bypass, but usually they can only be modified in the GuardDuty administrator account itself. If this pattern isn't used, these features can be modified in the account that GuardDuty is running in and help us to trick the Guards. 
+GuardDuty itself uses a delegated admin or invite model which are hard to bypass. But features like detector configurations and IP-Trust-Lists are usually centrally managed. This pivot point can be used as a bypass, but usually they can only be modified in the GuardDuty administrator account itself. If this pattern isn't used, these features can be modified in the account that GuardDuty is running in and help us to trick the Guards.
 
 Let's check our options:
 
@@ -123,6 +123,7 @@ aws  guardduty create-filter --action ARCHIVE \
 Filters can be created using the [CreateFilter API](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateFilter.html).
 
 ---
+
 ## Option 5 - Delete Publishing Destination
 We could disable alerting simply by [deleting the destination](https://docs.aws.amazon.com/cli/latest/reference/guardduty/delete-publishing-destination.html) of alerts.
 
@@ -141,11 +142,11 @@ aws guardduty delete-publishing-destination \
 ## How to keep the Guards On-Duty
 Now we learned how bad things can turn out or the work as a defender can be slowed out. Too keep up with the cool kids we have multiple things to fortify our AWS accounts:
 
-1. The best way - Keep all the GuardDuty configurations, Policies and other things safe in a dedicated GuardDuty account to manage the rest. Make sure that you respect the principle of least privilege. 
-2. AWS Config can be used for making sure that your configuration is auto remediated to a sane configuration. In case that an auto remidation occured - you have to enter a SIRT (Security Incident Response Team) Mode as soon as possible and investigate your fortress
+1. The best way - Keep all the GuardDuty configurations, Policies and other things safe in a dedicated GuardDuty account to manage the rest. Make sure that you respect the principle of least privilege.
+2. AWS Config can be used for making sure that your configuration is auto remediated to a sane configuration. In case that an auto remediation occurred - you have to enter a SIRT (Security Incident Response Team) Mode as soon as possible and investigate your fortress
 3. Keep an eye on changes of crucial events in CloudWatch or use a WatchDog based on AWS Lambda to get notified if something strange happens. 
-4. Train and use a simulation tool to check regularly if GuardDuty, Monitoring and SIEM are still alive. The [awslabs/amazon-guardduty-tester](https://github.com/awslabs/amazon-guardduty-tester) might be polished a little for this purpose. 
-5. Dont rely on GuardDuty as your only line of defense - defense in depth is king and create as much hurdles as possible and be aware that even the strongest fortess will fall, it's just a matter of effort an attacker is ready to invest. Let's make it as hard as possible :)
+4. Train and use a simulation tool to check regularly if GuardDuty, Monitoring and SIEM are still alive. The [awslabs/amazon-guardduty-tester](https://github.com/awslabs/amazon-guardduty-tester) might be polished a little for this purpose.
+5. Do not rely on GuardDuty as your only line of defense - defense in depth is king and create as much hurdles as possible and be aware that even the strongest fortress will fall, it's just a matter of effort an attacker is ready to invest. Let's make it as hard as possible :)
 
 
 
