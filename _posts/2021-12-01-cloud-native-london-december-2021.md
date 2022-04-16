@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London December 2021: Ondat and VMWare"
+title: "Cloud Native London December 2021: Ondat and VMWare, hosted by Hubert Bosiacki"
 description: "speakers from Ondat and VMWare join us at the Cloud Native London meetup December 2021, hosted by Hubert Bosiacki, CISO and Head Of Infrastructure at Suade Labs"
 location: London, UK
 image: /images/2021-12-01-cloud-native-london-december-2021.png
