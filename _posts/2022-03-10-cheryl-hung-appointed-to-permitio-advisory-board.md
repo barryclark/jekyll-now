@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I am delighted to join the advisory board of Permit.io"
+title: "News: Joining the advisory board of Permit.io, offering Full Stack Permissions as a Service"
 description: "Cheryl Hung appointed to Permit.io advisory board"
 location: Tel Aviv, Israel
 image: https://mms.businesswire.com/media/20220215005485/en/1359623/22/Permit_Logo_%281%29.jpg
