@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Growth of State in Kubernetes"
+title: "The Growth of State in Kubernetes, The New Stack"
 description: "Article by Cheryl Hung on The Growth of State in Kubernetes"
 image: https://www.ondat.io/hubfs/Copy%20of%20Blog%20Banner%20-%20HubSpot%20%281920%20x%20960%20px%29-1.jpg
 tags:
