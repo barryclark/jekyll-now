@@ -36,22 +36,29 @@ Merge : 다른 Branch의 내용을 현재 Branch로 가져와 합치는 작업�
 "git remote"커맨드는 변경사항을 동기화 하는 시스템의 한 부분입니다. 
 git fetch, git push, git pull과 함께 사용됩니다. 이러한 명령에는 모두 해당 링크에서 탐색할 수 있는 자체 동기화 책임이 있습니다.
 
+* SVN은 단일 중앙 저장소를 사용하여 개발자를 위한 커뮤니케이션 허브 역활을 합니다. 개발자들의 복사본과 중앙 레포지터리의 변경 집합을 조합하여 작업이 이루어 집니다.   
+
+https://www.atlassian.com/git/tutorials/syncing
+
 ## git bash ##
 
-& git init
-& git remote add origion "https://github.com/kbmhansungb/kbmhansungb.github.io"
-& git pull origion master
+& git init   
+& git remote add origion "https://github.com/kbmhansungb/kbmhansungb.github.io"   
+& git pull origion master   
 
 origin 레포지터리의 내용을 master브런치로 pull한다.
 
-& git remote rename origion test
-& git remote -v
+& git remote rename origion test   
+& git remote -v   
 
-origion 레포지터리를 test로 바꾼 후 확인한다.
+origion 레포지터리를 test로 바꾼 후 확인한다.   
+리포지터리들의 버전과 상태를 보여준다.   
 
-& git add .
-& git commit -m "message"
-& git status
-& git push origin master
+& git add .   
+& git commit -m "message"   
+& git status   
+& git push origin master   
 
-* SVN은 단일 중앙 저장소를 사용하여 개발자를 위한 커뮤니케이션 허브 역활을 합니다. 개발자들의 복사본과 중앙 레포지터리의 변경 집합을 조합하여 작업이 이루어 집니다.   
+
+& git help   
+& git help remote   
