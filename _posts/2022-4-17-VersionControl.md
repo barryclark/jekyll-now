@@ -88,12 +88,19 @@ BranchTest 브런치를 만들고, BranchTest로 이동한다.
 
 & git branch test
 & git checkout test
-& git merge master
+... work ...
+& git checkout master
+& git merge test
 
-Master branch
-
-Integration branch   
-
-Topic branch   
+Master branch   
+제품으로 출시될 수 있는 브랜치입니다.   
+Develop branch   
+기능 개발을 위한 브랜치들을 병합하기 위해 사용하는 브랜치 입니다.     
+Feature branch   
+기능을 개발하는 브랜치 입니다.
+Release branch   
+이번 출시 버전을 준비하는 브랜치 입니다.   
+Htfix branch   
+출시 버전에서 발생한 버그를 수정하는 브랜치입니다.
 
 https://academy.realm.io/kr/posts/360andev-savvas-dalkitsis-using-git-like-a-pro/ 
