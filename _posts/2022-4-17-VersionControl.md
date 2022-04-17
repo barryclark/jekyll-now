@@ -75,10 +75,20 @@ Merge
 
 # git bash #
 
-& git branch
 & git branch BranchTest
+& git branch
 & git checkout BranchTest
 
+BranchTest 브런치를 만들고, BranchTest로 이동한다.
+
+& git checkout master
+& git branch --delete BranchTest
+
+마스터 브런치로 돌아간 후, BranchTest를 삭제한다.
+
+& git branch test
+& git checkout test
+& git merge master
 
 Master branch
 
