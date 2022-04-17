@@ -75,7 +75,9 @@ Merge
 
 # git bash #
 
-& git log --oneline
+& git branch
+& git branch newBranch
+& git checkout newBranch
 
 
 Master branch
