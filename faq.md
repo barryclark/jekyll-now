@@ -5,11 +5,14 @@ permalink: /faq/
 ---
 
 PLACEHOLDER TEXTS
+
 COMING SOON!
 
 ### More Information
 
 SKSKSKSKSKSKKSKSKSKS
-### Contact me
+
+
+### Contact us
 
 [hello@tsecgeeks.in](mailto:hello@tsecgeeks.in)
