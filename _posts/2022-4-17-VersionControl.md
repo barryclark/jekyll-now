@@ -103,6 +103,6 @@ Release branch
 Htfix branch   
 출시 버전에서 발생한 버그를 수정하는 브랜치입니다.
 
-issue3
+issue3 is added
 
 https://academy.realm.io/kr/posts/360andev-savvas-dalkitsis-using-git-like-a-pro/ 
