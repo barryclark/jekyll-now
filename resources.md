@@ -15,7 +15,7 @@ Resources page
 ### Academic Resources
 
 [Infomaina](https://roshni-sarda.github.io/INFOMANIA/about.html)
-
+[FE TSEC Resources doc](https://docs.google.com/document/d/1sU2QGSZ2bvsSytDvS51Gyw53NLL1g7pulpRpuodPEIM/edit?usp=sharing)
 
 ### Contact us
 [WhatsApp Invite](https://chat.whatsapp.com/K3NrW5tPwrsHhfbdYstjLl)
