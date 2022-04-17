@@ -56,7 +56,7 @@ Hover over the _blue INSTALL_ button and click on **DOWNLOAD** from the drop dow
 
 Download should start anytime now. Install it.
 
-+ Do note the download size is almost 4GB (2+2) make sure you have appropriate bandwidth for the same.
++ Do note the download size is almost 2.4GB (2GB+400MB) make sure you have appropriate bandwidth for the same.
   - If you are on data crunch, feel free to reach out to us on our [WhatsApp Group](https://chat.whatsapp.com/K3NrW5tPwrsHhfbdYstjLl) 
 
 
