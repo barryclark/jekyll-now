@@ -50,6 +50,7 @@ origin 레포지터리의 내용을 master브런치로 pull한다.
 
 & git remote rename origion test   
 & git remote -v   
+& git remote rename test origion
 
 origion 레포지터리를 test로 바꾼 후 확인한다.   
 리포지터리들의 버전과 상태를 보여준다.   
@@ -57,7 +58,7 @@ origion 레포지터리를 test로 바꾼 후 확인한다.
 & git add .   
 & git commit -m "message"   
 & git status   
-& git push origin master   
+& git push origion   
 
 
 & git help   
