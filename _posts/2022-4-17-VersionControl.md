@@ -76,8 +76,8 @@ Merge
 # git bash #
 
 & git branch
-& git branch newBranch
-& git checkout newBranch
+& git branch BranchTest
+& git checkout BranchTest
 
 
 Master branch
