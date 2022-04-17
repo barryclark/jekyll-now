@@ -10,7 +10,6 @@ title: The
 Still work in progress and probably this list will never end to be updated. Now have fun and discover some new things:
 
 ## CloudSec Lists
-* [myoung34/awesome-cloudcustodian](https://github.com/myoung34/awesome-cloudcustodian)
 * [Funkmyster/awesome-cloud-security](https://github.com/Funkmyster/awesome-cloud-security)
 * [ramitsurana/awesome-kubernetes](https://github.com/ramitsurana/awesome-kubernetes)
 * [donnemartin/awesome-aws](https://github.com/donnemartin/awesome-aws)
@@ -20,8 +19,11 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [anderseknert/awesome-opa](https://github.com/anderseknert/awesome-opa)
 * [shogunlab/awesome-hyper-v-exploitation](https://github.com/shogunlab/awesome-hyper-v-exploitation)
 
+## Policy as Code
+* [hysnsec/awesome-policy-as-code](https://github.com/hysnsec/awesome-policy-as-code)
+* [myoung34/awesome-cloudcustodian](https://github.com/myoung34/awesome-cloudcustodian)
 
-## AppSec stuff
+## AppSec 
 * [analysis-tools-dev/static-analysis](https://github.com/analysis-tools-dev/static-analysis)
 * [jivoi/awesome-osint](https://github.com/jivoi/awesome-osint)
 * [qazbnm456/awesome-web-security](https://github.com/qazbnm456/awesome-web-security)
