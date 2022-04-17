@@ -3,7 +3,7 @@ layout: post
 title: VERSION CONTROL
 ---
 
-버전 컬트롤(version control)이란?
+### 버전 컬트롤(version control)이란? ###
 
 * 프로젝트의 코드와 데이터의 백업입니다.
 * 팀 맴버와 프로젝트내 파일 공유를 위한 도구입니다.
@@ -19,7 +19,7 @@ title: VERSION CONTROL
 * Git과 Perforce 등 Unreal Engine을 위한 많은 좋은 버전컨트롤이 존재합니다.   
 
 
-Git
+### Git overview ###
 
 Repository : 저장소를 의미하며, 저장소는 히스토리, 태그, 소스의 가지치기 혹은 branch에 따라 버전을 저장합니다. 저장소를 통해 작업자가 변경한 모든 히스토리를 확인 할 수 있습니다.   
 Working Tree : 저장소를 어느 한 시점을 바라보는 작업자의 현재 시점입니다.   
@@ -29,13 +29,13 @@ Head : 현재 작업중인 Branch를 가리키는 것입니다.
 Branch : 가지 또는 분기점을 의미하며, 작업을 할때에 현재 상태를 복사하여 Branch에서 작업을 한 후에 완전하다 싶을때 Merge를 하여 작업을 합니다.   
 Merge : 다른 Branch의 내용을 현재 Branch로 가져와 합치는 작업을 의미합니다.   
 
+### Git ###
+
 깃은 모든 개발자들이 복사된 레포지터리를 가지고, 자신의 로컬 히스토리와 브런치 구조에서 작업합니다. 사용자는 작은 변경집합이 아닌 커밋을 공유해야 합니다. 깃은 레포지터리간의 전체 브런치를 공유할 수 있게 해줍니다.
 
 "git remote"커맨드는 변경사항을 동기화 하는 시스템의 한 부분입니다. 
 git fetch, git push, git pull과 함께 사용됩니다. 이러한 명령에는 모두 해당 링크에서 탐색할 수 있는 자체 동기화 책임이 있습니다.
 
-test tt;
 
-(1) https://www.atlassian.com/git/tutorials/syncing
 
 * SVN은 단일 중앙 저장소를 사용하여 개발자를 위한 커뮤니케이션 허브 역활을 합니다. 개발자들의 복사본과 중앙 레포지터리의 변경 집합을 조합하여 작업이 이루어 집니다.   
