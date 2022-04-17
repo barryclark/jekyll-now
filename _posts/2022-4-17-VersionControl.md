@@ -92,6 +92,16 @@ BranchTest 브런치를 만들고, BranchTest로 이동한다.
 & git checkout master
 & git merge test
 
+
+& git branch -d test
+
+test 브런치를 삭제합니다.
+
+& git branch issue2
+& git branch issue3
+& git checkout issue2
+... work ...
+
 Master branch   
 제품으로 출시될 수 있는 브랜치입니다.   
 Develop branch   
