@@ -19,6 +19,8 @@ Oh, and this isn't your coding group—though we do talk about it— but it's mo
 
 ### Contact us
 
-Free free to connect with us on [WhatsApp](https://chat.whatsapp.com/K3NrW5tPwrsHhfbdYstjLl)
+Free free to connect with us on 
 
-[hello@tsecgeeks.in](mailto:hello@tsecgeeks.in)
+WhatsApp : [Invite](https://chat.whatsapp.com/K3NrW5tPwrsHhfbdYstjLl)
+
+Email : [hello@tsecgeeks.in](mailto:hello@tsecgeeks.in)
