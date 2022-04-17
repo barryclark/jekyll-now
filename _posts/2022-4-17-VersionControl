@@ -5,6 +5,8 @@ title: VERSION CONTROL
 
 버전 컬트롤(version control)이란?
 
+목표 : 버전컨트롤 방법만
+
 * 프로젝트의 코드와 데이터의 백업입니다.
 * 팀 맴버와 프로젝트내 파일 공유를 위한 도구입니다.
 * 시간이 지남에 따라 어떻게 진화했는지 확인할 수 있는 타임 머신입니다.
@@ -18,3 +20,4 @@ title: VERSION CONTROL
 
 * 버전 컨트롤을 위한 소프트웨어는 많습니다.
 * Git과 Perforce 등 Unreal Engine을 위한 많은 좋은 버전컨트롤이 존재합니다.
+
