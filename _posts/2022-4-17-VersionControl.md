@@ -77,32 +77,32 @@ Merge
 
 # git bash #
 
-& git branch BranchTest
-& git branch
-& git checkout BranchTest
+& git branch BranchTest   
+& git branch   
+& git checkout BranchTest   
 
-BranchTest 브런치를 만들고, BranchTest로 이동한다.
+BranchTest 브런치를 만들고, BranchTest로 이동한다.   
 
-& git checkout master
-& git branch --delete BranchTest
+& git checkout master   
+& git branch --delete BranchTest   
 
-마스터 브런치로 돌아간 후, BranchTest를 삭제한다.
+마스터 브런치로 돌아간 후, BranchTest를 삭제한다.   
 
-& git branch test
-& git checkout test
-... work ...
-& git checkout master
-& git merge test
+& git branch test   
+& git checkout test   
+... work ...   
+& git checkout master   
+& git merge test   
 
 
-& git branch -d test
+& git branch -d test   
 
-test 브런치를 삭제합니다.
+test 브런치를 삭제합니다.   
 
-& git branch issue2
-& git branch issue3
-& git checkout issue2
-... work ...
+& git branch issue2   
+& git branch issue3   
+& git checkout issue2   
+... work ...   
 
 Master branch   
 제품으로 출시될 수 있는 브랜치입니다.   
@@ -113,27 +113,27 @@ Feature branch
 Release branch   
 이번 출시 버전을 준비하는 브랜치 입니다.   
 Htfix branch   
-출시 버전에서 발생한 버그를 수정하는 브랜치입니다.
+출시 버전에서 발생한 버그를 수정하는 브랜치입니다.   
 
-& git log
-! type q exit it.
-& git log --graph --decorate --oneline
+& git log   
+! type q exit it.   
+& git log --graph --decorate --oneline   
 
-& git branch issue2
-& git branch issue3
-... work ...
-& git merge issue2
-& git checkout issue3
-& git rebase master
-& git rebase --continue
+& git branch issue2   
+& git branch issue3   
+... work ...   
+& git merge issue2   
+& git checkout issue3   
+& git rebase master   
+& git rebase --continue   
 
 ## 추가적으로 ##
-locally와 remotely에서 branch를 지우는 방법입니다.
-& git branch -d branch_name
-& git push remote_name --delete branch_name
+locally와 remotely에서 branch를 지우는 방법입니다.   
+& git branch -d branch_name   
+& git push remote_name --delete branch_name   
 
-로컬에서 브런치를 지웁니다.
-원격에서 브런치를 지웁니다. (Git v.1.7.0 이상부터)
+로컬에서 브런치를 지웁니다.   
+원격에서 브런치를 지웁니다. (Git v.1.7.0 이상부터)   
 
 
 ## tag ##   
