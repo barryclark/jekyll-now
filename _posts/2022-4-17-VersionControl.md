@@ -3,7 +3,8 @@ layout: post
 title: GIT for UE5
 ---
 
-### 버전 컬트롤(version control)이란? ###
+### 버전 컬트롤(version control)이란? ###   
+목표 : UE5에 git을 이용한 버전 컨트롤을 한다.   
 
 * 프로젝트의 코드와 데이터의 백업입니다.
 * 팀 맴버와 프로젝트내 파일 공유를 위한 도구입니다.
@@ -20,7 +21,8 @@ title: GIT for UE5
 
 https://backlog.com/git-tutorial/kr/intro/intro1_2.html  
 
-### Git ###
+### Git overview ###   
+목표 : git을 이용하여 UE5 버전 컨트롤을 한다.
 
 깃은 모든 개발자들이 복사된 레포지터리를 가지고, 자신의 로컬 히스토리와 브런치 구조에서 작업합니다. 사용자는 작은 변경집합이 아닌 커밋을 공유해야 합니다. 깃은 레포지터리간의 전체 브런치를 공유할 수 있게 해줍니다.
 
@@ -113,6 +115,11 @@ Release branch
 Htfix branch   
 출시 버전에서 발생한 버그를 수정하는 브랜치입니다.
 
-머리아파요.
+& git log
+! type q exit it.
+& git log --graph --decorate --oneline
+
+now setting
+
 
 https://academy.realm.io/kr/posts/360andev-savvas-dalkitsis-using-git-like-a-pro/ 
