@@ -4,14 +4,21 @@ title: About
 permalink: /about/
 ---
 
-PLACEHOLDER TEXTS
+👋 Good day, everyone! 
+*TSEC Geeks* is pleased to welcome you.
 
-COMING SOON!
+This community is for people who are passionate about technology as well as those who want to learn about the newest developments in the field 👨🏻‍💻 
 
-### More Information
+We usually talk about technology, exchange memes, and provide feedback on tech keynotes - everything worth talking about is shared here. 
 
-Tech enthusiasts community open-to-all!
+The nicest thing about the individuals here is their extensive background knowledge 🙇🏻‍♂️, whether it's setting up Linux 🖥️ or flash AOSP Custom Roms 📱 or even assisting you in buying new laptop 💻.  Everything to do with technology is covered here🦾
 
-### Contact me
+You're encouraged to share your questions, and everyone here is incredibly helpful; someone will undoubtedly assist you 🤗
+ 
+Oh, and this isn't your coding group—though we do talk about it— but it's more of a hangout place for techies. 👾
+
+### Contact us
+
+Free free to connect with us on [WhatsApp](https://chat.whatsapp.com/K3NrW5tPwrsHhfbdYstjLl)
 
 [hello@tsecgeeks.in](mailto:hello@tsecgeeks.in)
