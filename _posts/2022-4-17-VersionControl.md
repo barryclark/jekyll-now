@@ -18,16 +18,7 @@ title: GIT for UE5
 * 버전 컨트롤을 위한 소프트웨어는 많습니다.   
 * Git과 Perforce 등 Unreal Engine을 위한 많은 좋은 버전컨트롤이 존재합니다.   
 
-
-### Git overview ###
-
-Repository : 저장소를 의미하며, 저장소는 히스토리, 태그, 소스의 가지치기 혹은 branch에 따라 버전을 저장합니다. 저장소를 통해 작업자가 변경한 모든 히스토리를 확인 할 수 있습니다.   
-Working Tree : 저장소를 어느 한 시점을 바라보는 작업자의 현재 시점입니다.   
-Staging Area : 저장소에 커밋하기 전에 커밋을 준비하는 위치이다.
-Commit : 현재 변경된 작업 상태를 점검을 마치면 확정하고 저장소에 저장하는 작업입니다.   
-Head : 현재 작업중인 Branch를 가리키는 것입니다.   
-Branch : 가지 또는 분기점을 의미하며, 작업을 할때에 현재 상태를 복사하여 Branch에서 작업을 한 후에 완전하다 싶을때 Merge를 하여 작업을 합니다.   
-Merge : 다른 Branch의 내용을 현재 Branch로 가져와 합치는 작업을 의미합니다.   
+https://backlog.com/git-tutorial/kr/intro/intro1_2.html  
 
 ### Git ###
 
@@ -36,11 +27,20 @@ Merge : 다른 Branch의 내용을 현재 Branch로 가져와 합치는 작업�
 "git remote"커맨드는 변경사항을 동기화 하는 시스템의 한 부분입니다. 
 git fetch, git push, git pull과 함께 사용됩니다. 이러한 명령에는 모두 해당 링크에서 탐색할 수 있는 자체 동기화 책임이 있습니다.
 
-* SVN은 단일 중앙 저장소를 사용하여 개발자를 위한 커뮤니케이션 허브 역활을 합니다. 개발자들의 복사본과 중앙 레포지터리의 변경 집합을 조합하여 작업이 이루어 집니다.   
+* SVN은 단일 중앙 저장소를 사용하여 개발자를 위한 커뮤니케이션 허브 역활을 합니다. 개발자들의 복사본과 중앙 레포지터리의 변경 집합을 조합하여 작업이 이루어 집니다. 
+
+Repository   
+저장소를 의미하며, 저장소는 히스토리, 태그, 소스의 가지치기 혹은 branch에 따라 버전을 저장합니다. 저장소를 통해 작업자가 변경한 모든 히스토리를 확인 할 수 있습니다.   
+Working Tree   
+저장소를 어느 한 시점을 바라보는 작업자의 현재 시점입니다.   
+Staging Area   
+저장소에 커밋하기 전에 커밋을 준비하는 위치이다.   
+Commit   
+현재 변경된 작업 상태를 점검을 마치면 확정하고 저장소에 저장하는 작업입니다.   
 
 https://www.atlassian.com/git/tutorials/syncing
 
-## git bash ##
+# git bash #
 
 & git init   
 & git remote add origion "https://github.com/kbmhansungb/kbmhansungb.github.io"   
@@ -63,3 +63,25 @@ origion 레포지터리를 test로 바꾼 후 확인한다.
 
 & git help   
 & git help remote   
+
+## branch ##
+
+Head   
+현재 작업중인 Branch를 가리키는 것입니다.   
+Branch   
+독립적으로 어떤 작업을 진행하기 위한 개념입니다. 작업을 할때에 현재 상태를 복사하여 Branch에서 작업을 한 후에 완전하다 싶을때 Merge를 하여 작업을 합니다.  
+Merge   
+다른 Branch의 내용을 현재 Branch로 가져와 합치는 작업을 의미합니다.   
+
+# git bash #
+
+& git log --oneline
+
+
+Master branch
+
+Integration branch   
+
+Topic branch   
+
+https://academy.realm.io/kr/posts/360andev-savvas-dalkitsis-using-git-like-a-pro/ 
