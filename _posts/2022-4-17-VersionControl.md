@@ -119,7 +119,12 @@ Htfix branch
 ! type q exit it.
 & git log --graph --decorate --oneline
 
-
-it is issue2.
+& git branch issue2
+& git branch issue3
+... work ...
+& git merge issue2
+& git checkout issue3
+& git rebase master
+& git rebase --continue
 
 https://academy.realm.io/kr/posts/360andev-savvas-dalkitsis-using-git-like-a-pro/ 
