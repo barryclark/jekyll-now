@@ -6,7 +6,7 @@ title: Get GitHub Student Developer Pack
 Hello Geeks,
 
 In this article, I am going to show you how you can avail GitHub Student Developer Pack.
-It is a bundle worth over $200K of tools and training provided by various tech companies.
+It is a bundle **worth over $200K** of tools and training provided by various tech companies.
 
 #### Prerequisites
 
@@ -46,30 +46,30 @@ If you don't have any email client, you can use Outlook for [Android](https://pl
 
 ![Github Email Verificaton]({{ site.baseurl }}/images/AutoCad2.png "Github Verification")
 
-Click the link and verify the account.
+Click the link and **verify the account.**
 
 Next you'll have to head over to - [Github Student Develooer Pack Landing Page](https://education.github.com/discount_requests/student_application).
 
 ![Github Email Verificaton]({{ site.baseurl }}/images/AutoCad2.png "Github Verification")
 
-Choose the college/university provided email ID
+**Choose the college/university provided email ID**
 
 Your institute name would automatically be selected.
 If not, enter manually.
 
-Finally, Answer how to plan to use Github.
+Finally, **Answer how to plan to use Github.**
 
 Answer to this can be short, it hardly matters.
 
-Click Continue
+Click **Continue**
 
 Now it is the time to upload your proof of academic status.
 
 ![proof of academic status.]({{ site.baseurl }}/images/AutoCad2.png "proof of academic status.")
 
-Upload the document and proceed further, 
+**Upload the document** and proceed further, 
 
-You might be prompted with addional steps to continue, so preceed with the same.
+You might be prompted with addional steps to continue, so proceed with the same.
 
 Wait for sometime, _it took me two tries and 5 minutes waiting time._ 
 
@@ -77,9 +77,9 @@ Wait for sometime, _it took me two tries and 5 minutes waiting time._
 
 After sucessful submittion, all you have to do is wait for it get approved.
 
-For me it was approved instantly and I could redeem any services I like.
+_For me it was approved instantly and I could redeem any services I like._
 
-You will also get Github Pro Badge on your profile.
+You will also **get Github Pro Badge** on your profile.
 
 <https://education.github.com/globalcampus/student> Checkout this link to verify your status.
 
