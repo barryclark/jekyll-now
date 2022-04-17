@@ -119,7 +119,7 @@ Htfix branch
 ! type q exit it.
 & git log --graph --decorate --oneline
 
-now setting
 
+it is issue2.
 
 https://academy.realm.io/kr/posts/360andev-savvas-dalkitsis-using-git-like-a-pro/ 
