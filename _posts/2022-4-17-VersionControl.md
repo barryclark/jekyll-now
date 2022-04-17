@@ -39,13 +39,19 @@ git fetch, git push, git pull과 함께 사용됩니다. 이러한 명령에는 
 ## git bash ##
 
 & git init
-& git remote add origin "https://github.com/kbmhansungb/kbmhansungb.github.io"
+& git remote add origion "https://github.com/kbmhansungb/kbmhansungb.github.io"
 & git pull origion master
 
-origin레포지터리의 내용을 master브런치로 pull한다.
+origin 레포지터리의 내용을 master브런치로 pull한다.
+
+& git remote rename origion test
+& git remote -v
+
+origion 레포지터리를 test로 바꾼 후 확인한다.
 
 & git add .
 & git commit -m "message"
+& git status
 & git push origin master
 
 * SVN은 단일 중앙 저장소를 사용하여 개발자를 위한 커뮤니케이션 허브 역활을 합니다. 개발자들의 복사본과 중앙 레포지터리의 변경 집합을 조합하여 작업이 이루어 집니다.   
