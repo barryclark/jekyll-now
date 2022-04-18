@@ -3,7 +3,7 @@ layout: memory
 title: Slowloris enjoy the rush of slowness
 ---
 
-Yet another [Slowloris](https://en.wikipedia.org/wiki/Slowloris_(computer_security)) implementation as a tiny script. Maybe a rewrite in GO could be interresting in the near future. 
+Yet another [Slowloris](https://en.wikipedia.org/wiki/Slowloris_(computer_security)) implementation as a tiny script. Maybe a rewrite in GO could be interesting in the near future. 
 
 <p align="center">
 <img src="/images/slowloris.png">
@@ -234,7 +234,7 @@ if __name__ == "__main__":
     main()
 ```
 
-Still here? Good - we could stuff this script in a docker container/Digital Ocean Droplet/Lambda and spin it up in a big army of old men, seaching for coins at the cash desk 
+Still here? Good - we could stuff this script in a docker container/Digital Ocean Droplet/Lambda and spin it up in a big army of old men, searching for coins at the cash desk 
 
 <p align="center">
 <img src="/images/burns-coin.png">

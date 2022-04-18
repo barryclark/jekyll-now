@@ -21,7 +21,7 @@ ENV AWS_SECRET_ACCESS_KEY=mk30783jZKr8zVp8M6HtYG9rs85r8XTVo2FkfHe0
 Now let us take a look at the data and incidents we gathered:
 
 <p align="center">
-<img width="600" src="/images/cynary_token_list.png">
+<img width="600" src="/images/canary_token_list.png">
 </p>
 
 The incidents presented above, also have a nice presentation as [JSON](/assets/posts/canary_token.json). That will help to drill down and learn from the incidents. To work with the JSON-data I'll rely on jq.
@@ -244,7 +244,7 @@ The interesting thing is, that the manual ElasticWolf guy used Tor to stay anony
 
 Based on the incidents from above my key takeaways are: 
 
-* Create a Pre-Receive-Hook for you Git Repositories to prevent that a token get's commited! Use something mature like [Talisman](https://github.com/thoughtworks/talisman) or [Trufflehog GitHub Action](https://github.com/marketplace/actions/trufflehog-actions-scan)
+* Create a Pre-Receive-Hook for you Git Repositories to prevent that a token get's committed! Use something mature like [Talisman](https://github.com/thoughtworks/talisman) or [Trufflehog GitHub Action](https://github.com/marketplace/actions/trufflehog-actions-scan)
 * Watch your GuardDuty Events and push crucial Alerts directly to your Smartphone/Slack- or Teams etc.
 * If `GetCallerIdentity` get's triggered by f.e. my LoginGuard your Tokens are leaked with a high confidence. Since this Event was used in less then 5mins after my intended "leakage" this is a great baseline
 * Create a Incident Response Plan and rotate your Tokens regularly. Store them securely f.e. in a Password Manager

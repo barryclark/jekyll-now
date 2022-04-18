@@ -126,4 +126,3 @@ Everything is flowing now more perfectly and all of the feedback from the produc
 Now we reached a state where it's worth to come back to the 24 capabilities and start optimizing to master DevOps. To become superior you've to iterate even more and keep raising the bar. Hopefully, this more practical approach helped to dive more into the mindset of a DevOps. Happy to hear some of your stories, really would love to hear them :)
 
 To be continued ...
-

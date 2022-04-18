@@ -22,7 +22,7 @@ To make some faster progresses this work will have a heavy use of GitHub Actions
 
 
 <p align="center">
-<img width="600" src="/images/reassamble.png">
+<img width="600" src="/images/reassemble.png">
 </p>
 
 To have a multipurpose Image let's try to craft a genuine AWS Lambda Base Image. We use the amazonlinux Dockerimage to install the required dependencies and move the dependencies into an empty fresh image. From there we can build it up from scratch and reuse some files that were streamed from an AWS Lambda function into a S3 Bucket. The files were cleaned up by every runtime specific belongings. There are also a lot of interesting files and also it seems a cooperation between RedHat and Amazon
@@ -187,5 +187,5 @@ If we think back at the early beginning of container technology we have some int
 The dates are too close to each other - so I think there wasn't anything copied. Based on the [Firecracker Architecture](https://github.com/firecracker-microvm/firecracker/blob/main/docs/design.md) and the progresses regarding bottlerocket-os, the AWS Lambda Worker could be easily refactored/enhanced from a microVM to a container. Even though the microCM approach is pretty cool. Let's see how this journey continuous. 
 
 <p align="center">
-<img width="300" src="/images/turrtle_fire.gif">
+<img width="300" src="/images/turtle_fire.gif">
 </p>
