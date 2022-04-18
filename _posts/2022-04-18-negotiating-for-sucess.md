@@ -3,8 +3,6 @@ layout: post
 title: Attempting to clean the dust
 ---
 
-[//]: # (Post 12)
-
 Hey there folks. It's been a long long time since I updated anything on this blog. I thought there was no real reason to not update this more frequently, but now that I think about it: There's been a side project, from which I cannot disclose anything, I've also spent more time with physical conditioning and with learning music, and most probably because I've spent most of 2021 dedicated to do online courses. This post is my attempt to break the cycle, however, the problem is that I have dedicated less time to studying new papers or anything interesting related to engineering, hence I have no topic on Antennas or RF to put up. Still, I realized that the purpose to start this blog was to get me to write more, because it is something that I like to do, and since it is my personal space, I can use to write about anything I deem interesting and it doesn't necessarily need to be about antennas anyway.
 
 So I decided to write a new blog post and talk about some of the online courses I did last year, and what I learned from them. This is also a great practice to refresh the material and make sure I keep this knowledge for the future.
