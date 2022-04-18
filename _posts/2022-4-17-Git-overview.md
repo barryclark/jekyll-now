@@ -119,8 +119,6 @@ locally와 remotely에서 branch를 지우는 방법입니다.
 원격에서 브런치를 지웁니다. (Git v.1.7.0 이상부터)   
 
 
-## tag ##   
-내일 할 것.
 
 https://academy.realm.io/kr/posts/360andev-savvas-dalkitsis-using-git-like-a-pro/
 
