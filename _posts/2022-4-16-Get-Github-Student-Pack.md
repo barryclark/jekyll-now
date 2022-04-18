@@ -21,9 +21,9 @@ To add the email ID, [Click here.](https://github.com/email)
 
 You will be greated with similar interface,
 
-all you have to do is add a secondary email ID.
+Alll you have to do is add a secondary email ID.
 
-However there is a **catch** ; in order to recieve the verification you will have to change the domain.
+However there is a **catch** ; in order to recieve the verification email you will have to change the domain.
 
 You will have to change it to something like this -
 
