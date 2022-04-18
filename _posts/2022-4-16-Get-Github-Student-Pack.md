@@ -6,7 +6,7 @@ title: How to get GitHub Student Pack
 Hello Geeks,
 
 In this article, I am going to show you how you can avail GitHub Student Developer Pack.
-It is a bundle **worth over $200K** of tools and training provided by various tech companies.
+It is a bundle **worth over ₹3 Lakh** of tools and training provided by various tech companies.
 
 #### Prerequisites
 
