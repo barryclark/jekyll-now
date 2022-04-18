@@ -28,6 +28,9 @@ However there is a **catch** ; in order to recieve the verification you will hav
 You will have to change it to something like this -
 
 > username@tsecedu.org 
+
+Change it to this ⤵️
+
 > username@tsecol.onmicrosoft.com
 
 **This step is essential to recieve email from Github.**
