@@ -54,7 +54,7 @@ In other words, work should only flow into one direction, and that is downstream
 
 > Shorten & Amplify the feedback loop
 
-Establish an upstream feedback loop to optimize the value stream. To achive this - a fast feedback from Production is required to plan the next steps in the "Plan" Phase. Based on the feedback from production, strategies can be crafted to move forword or make a pirouette to rethink the plans and find new ways to build and ship your software.
+Establish an upstream feedback loop to optimize the value stream. To achieve this - a fast feedback from Production is required to plan the next steps in the "Plan" Phase. Based on the feedback from production, strategies can be crafted to move forward or make a pirouette to rethink the plans and find new ways to build and ship your software.
 
 
 ### The Third Way – Continued experimentation
@@ -65,13 +65,13 @@ Establish an upstream feedback loop to optimize the value stream. To achive this
 
 > Promote experiments
 
-The Culture & Environment are  as important as the work being done. 
+The Culture & Environment are  as important as the work being done.
 
 To achieve mastery:
-* Learn from success and mistakes 
+
+* Learn from success and mistakes
 * Strive for constant improvement
 * Practice! Get your hands dirty
-
 
 ## From Theory to a more practical approach
 
@@ -81,7 +81,7 @@ Theory is nice but to really get the spirit of the DevOps culture we need to get
 <img width=600  src="/images/setting_the_stage.png">
 </p>
 
-With the stage and all actos in place we can now start iterating:
+With the stage and all actors in place we can now start iterating:
 
 <p align="center">
 <img width=600 src="/images/iteration1.png">
@@ -89,7 +89,7 @@ With the stage and all actos in place we can now start iterating:
 
 * Big laundry day once a week -> “Big bang release”
 * Washing all in one shot. A lot of clothes needs to get done by the Devs
-* Multiple changes are performed in Production with high risks. Red socks and white T-Shirts might get washed together and ruining the T-Shirt with sideffects
+* Multiple changes are performed in Production with high risks. Red socks and white T-Shirts might get washed together and ruining the T-Shirt with side effects
 * Ops is overwhelmed with drying so much laundry. The laundry will stay moist for at least 2-3 days
 
 Let's perform another and improve a little...
@@ -102,7 +102,7 @@ Let's perform another and improve a little...
 * Less changes than before in Production. This will reduce the risks of failures
 * One problem still remains -> `Washing black and white cloths together still is a bad idea`. This problem is symbolic for clashing of resource requirements.
 
-Things are working better now, but still not perfect. Time for another iteraton ...
+Things are working better now, but still not perfect. Time for another iteration ...
 
 <p align="center">
 <img width=600  src="/images/iteration3.png">

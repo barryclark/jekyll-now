@@ -15,7 +15,7 @@ Like shown in [this memory](https://benjitrapp.github.io/memories/2022-01-11-Clo
 * IPv6 - `http://[fd00:ec2::254]/latest/meta-data/` (as long as it is a [Nitro EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#ec2-nitro-instances))
 
 
-As mentioned above- to get credentials, have to make two call against the IMDS. The response of the first call returnes the name of the IAM role associated with the credentials which is required to retrieve the IAM credentia:
+As mentioned above- to get credentials, have to make two call against the IMDS. The response of the first call returns the name of the IAM role associated with the credentials which is required to retrieve the IAM credentials:
 
 ```bash
 ROLE=$(curl http://169.254.169.254/latest/meta-data/iam/security-credentials/)
@@ -24,8 +24,8 @@ curl http://169.254.169.254/latest/meta-data/iam/security-credentials/${ROLE}/
 
 ## IMDSv2
 
-After big hacks like the Capital One breach occured the IMDS was upgraded with a more secure version. In
-Version [IMDSv2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html) various protections against SSRF attacks were added and requires the user to create and use a token. So acccessing the service will now look like this
+After big hacks like the Capital One breach occurred the IMDS was upgraded with a more secure version. In
+Version [IMDSv2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html) various protections against SSRF attacks were added and requires the user to create and use a token. So accessing the service will now look like this
 
 ```bash
 TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
@@ -34,7 +34,7 @@ curl -H "X-aws-ec2-metadata-token: ${TOKEN}" -v http://169.254.169.254/latest/me
 
 ## Let's discuss the Security Benefits of IMDSv2
 
-The [IMDSv2](https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/) offers plenty security improvements compared to IMDSv1. If possible IMDSv2 should be enforced and prefered over the original metadata service. These improvements take the following form:
+The [IMDSv2](https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/) offers plenty security improvements compared to IMDSv1. If possible IMDSv2 should be enforced and preferred over the original metadata service. These improvements take the following form:
 
 **Session Authentication**: In order to retrieve information from the metadata service a session must be created by sending a HTTP PUT request to retrieve a token value. After this, the token must be used for all subsequent requests. This mechanism effectively mitigates traditional Server Side Request Forgery [attacks](https://hackingthe.cloud/aws/exploitation/ec2-metadata-ssrf/), as an attacker is unlikely to be able to send a PUT request.
 

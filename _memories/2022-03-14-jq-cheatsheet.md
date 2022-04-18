@@ -75,6 +75,6 @@ The syntax for jq is pretty coherent:
 | Sort an array of basic type            | `jq 'sort'`                                                         |
 | Sort an array of objects               | `jq 'sort_by(.foo)'`                                                |
 | Group by a key - opposite to flatten   | `jq 'group_by(.foo)'`                                               |
-| Minimun value of an array              | `jq 'min'` .See also  min, max, min_by(path_exp), max_by(path_exp)  |
+| Minimum value of an array              | `jq 'min'` .See also  min, max, min_by(path_exp), max_by(path_exp)  |
 | Remove duplicates                      | `jq 'unique'` or `jq 'unique_by(.foo)'` or `jq 'unique_by(length)'` |
 | Reverse an array                       | `jq 'reverse'`                                                      |

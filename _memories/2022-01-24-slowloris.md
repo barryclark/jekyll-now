@@ -131,7 +131,7 @@ if args.https:
     setattr(ssl.SSLSocket, "send_line", send_line)
     setattr(ssl.SSLSocket, "send_header", send_header)
 
-# Generate Useragents on the fly in the next iteration
+# Generate Useragent on the fly in the next iteration
 list_of_sockets = []
 user_agents = [
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",

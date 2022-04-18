@@ -440,7 +440,7 @@ def brute(access_key, secret_key, session_token):
     except botocore.exceptions.ClientError:
         logger.error('-- list_pipelines() failed')
 
-    # DynomoDB
+    # DynamoDB
     dynamodb = boto3.client(
         'dynamodb',
         aws_access_key_id=access_key,

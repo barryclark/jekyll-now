@@ -7,7 +7,7 @@ In this article you can follow me on my journey on how to master my way to somet
 
 ## At the very beginning ...
 
-there was the Waterfall and classical (Micro)Management approaches to deal with complexitiy. We tried to manage complexity by creating checklist and observed the state in Excel. The process itself was mostly plugged into the casual Watterfall approaches like regular Quality Assurance aspects. Visualized it looks like this:
+there was the Waterfall and classical (Micro)Management approaches to deal with complexity. We tried to manage complexity by creating checklist and observed the state in Excel. The process itself was mostly plugged into the casual Waterfall approaches like regular Quality Assurance aspects. Visualized it looks like this:
 
 <p align="center">
 <img width="600" src="/images/WaterFallSecurity.png">
@@ -24,15 +24,16 @@ Based on this metaphor we need to think of Security and DevOps Culture in a more
 </p>
 
 ## Now we have DevOps - but what is it all about?
+
 DevOps is about performing the **wonder** of releasing a piece of software, not once every 6 month but as often as we like. This is achieved by
 **automating** and standardizing whatever possible, from the design over the code and it's tests till the point of deployment.
 
 Therefore, we bring together the world of Dev and Ops, by treating
-everything in Ops the same way we treat our code artefacts. 
+everything in Ops the same way we treat our code artefact.
 
 ## But where's the Security part coming in? 
 
-Suprise it's a Mindset:
+Surprise it's a Mindset:
 
 > DevOpsTeams seek for continuous self improvement<br>
   Everyone is doing Security<br>
@@ -53,6 +54,7 @@ As a DevOps we like our loop and if we take this [Tweet](https://twitter.com/LMa
 
 
 ## But where's the Cloud ?
+
 Since we're cloud natives and breath cloud technology like air - we know that it's a very different approach to classical ones that we used in the past on premise. Let's take a look on how the Cloud looks from the perspective of AWS:
 
 <p align="center">
@@ -67,9 +69,9 @@ But ....
 
 > "AWS is never going to say "Hey, one of our people couldn’t make the shift to be a security guard at our data center, would you mind showing up and keeping an eye on things?"
 
-**So as a conclution**: `The responsibilitiy is not shared, it's split!`
+**So as a conclusion**: `The responsibility is not shared, it's split!`
 
-Even if AWS is doing a lot to secure the Control Plane we still have some homeweork left. The main work we need to tackle is the Data Plane. If we look on the options at a very high flight-level our targets to secure the Data Plane will look like this:
+Even if AWS is doing a lot to secure the Control Plane we still have some homework left. The main work we need to tackle is the Data Plane. If we look on the options at a very high flight-level our targets to secure the Data Plane will look like this:
 
 * Don’t expose any part of your infrastructure to the Internet. Isolation is king!
 * Ensure services are configured to disallow public access
@@ -94,8 +96,8 @@ As you can see - the Cloud is confusing and the goals that need to be secured di
 
 But this is only one side of the Truth - to master this challenge we have to go beyond that. 
 
-* Cloud Security DevOps Framewkork (still work in Progress)
-* Use a Policy as Code tool like [Cloud Custodian](https://github.com/cloud-custodian/cloud-custodian) 
+* Cloud Security DevOps Framework (still work in Progress)
+* Use a Policy as Code tool like [Cloud Custodian](https://github.com/cloud-custodian/cloud-custodian)
 * ...
 
 (Sorry still Work in Progress ...)

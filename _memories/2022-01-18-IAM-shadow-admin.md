@@ -3,7 +3,7 @@ layout: memory
 title: AWS Shadow Admin & IAM Policy Magic  
 ---
 
-Prevent Creation of AWS Schadow Admins by giving attention on the following IAM permissions that can lead to shadow admin privileges in different ways:
+Prevent Creation of AWS Shadow Admins by giving attention on the following IAM permissions that can lead to shadow admin privileges in different ways:
 
 ### 1. CreateAccessKey
 An attacker with just `CreateAccessKey` IAM API permission could abuse it to create a new access key to another IAM admin account. An entity (user/group/role) with this permission in it’s policy is as powerful as other full admin users with the `AdministratorAccess` permissions. Compromising an account with this policy alone will allow the attacker to gain a new privileged access key and continue to execute malicious actions in the environment on behalf of the target user he has just created a new access key for.
