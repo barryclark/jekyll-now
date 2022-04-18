@@ -1,6 +1,6 @@
 ---
 layout: post
-title: This is a sample post.
+title: How to get GitHub Student Pack
 ---
 
 Hello Geeks,
