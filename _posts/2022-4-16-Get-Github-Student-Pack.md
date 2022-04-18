@@ -28,7 +28,7 @@ However there is a **catch** ; in order to recieve the verification you will hav
 You will have to change it to something like this -
 
 > username@tsecedu.org 
->> username@tsecol.onmicrosoft.com
+> username@tsecol.onmicrosoft.com
 
 **This step is essential to recieve email from Github.**
 
@@ -46,7 +46,7 @@ If you don't have any email client, you can use Outlook for [Android](https://pl
 
 Click the link and **verify the account.**
 
-Next you'll have to head over to - [Github Student Develooer Pack Landing Page](https://education.github.com/discount_requests/student_application).
+Next you'll have to head over to - [Github Student Developer Pack Landing Page](https://education.github.com/discount_requests/student_application).
 
 ![Github Email Verificaton]({{ site.baseurl }}/images/github2.png "Github Verification")
 
