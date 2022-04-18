@@ -25,7 +25,7 @@ Alll you have to do is add a secondary email ID.
 
 However there is a **catch** ; in order to recieve the verification email you will have to change the domain.
 
-You will have to change it to something like this -
+You will be having an email address something like this -
 
 > username@tsecedu.org 
 
