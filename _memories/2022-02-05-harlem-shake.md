@@ -72,7 +72,7 @@ javascript: (function () {
         e.setAttribute("class", l);
         e.src = i;
         e.loop = false;
-        e.addEventListener("canplay", function () {
+        e.addEventListener("can play", function () {
             setTimeout(function () {
                 x(k)
             }, 500);

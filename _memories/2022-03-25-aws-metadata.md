@@ -7,7 +7,7 @@ To not increase the bill all stuff regarding the EC2 Instance Metadata Service c
 
 Now back to the real storey. Each EC2 instance can access the instance metadata service (also known as IMDS). This service contains besides metadata also information about that specific EC2 instance. But that's not the whole truth - if an [IAM Role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) is associated with that EC2 instance, you can get credentials for that role by asking that metadata service. This is also the reason why the IMDS is a prime target for attackers after they gained access to an EC2 instance.
 
-### Accesing the IMDSv1
+### Accessing the IMDSv1
 
 Like shown in [this memory](https://benjitrapp.github.io/memories/2022-01-11-Cloudmetadata/), the IMDS can be accessed:
 

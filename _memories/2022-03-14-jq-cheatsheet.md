@@ -25,7 +25,7 @@ The syntax for jq is pretty coherent:
 | []      | Array construction                                                    |
 | {}      | Object construction                                                   |
 | +       | Concatenate or Add                                                    |
-| -       | Difference of sets or Substract                                       |
+| -       | Difference of sets or Subtract                                       |
 | length  | Size of selected element                                              |
 | &#124;  | Pipes are used to chain commands in a similar fashion than bash       |
 
