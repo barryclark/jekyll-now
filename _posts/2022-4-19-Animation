@@ -1,0 +1,41 @@
+---
+layout: post
+title: UE5 character
+---
+
+### 목표 ###
+
+인터넷이 안되는 관계로, 러프하게 적는다.
+
+tutorial 종료
+
+2 - Implementing your character
+
+? 매크로(각 UFUNCTION함수 위에 위치)는 엔진이 이러한 함수를 인식하도록 하여 직렬화 및 기타 엔진 기능에 포함될 수 있도록 합니다.
+
+? PlayerInputComponent는 무엇인가요?
+
+? 프로젝트에서 GameMode설정하지 않고, Level마다 Character bind하는 방법이 있나요?
+
+? cpp로 메시 설정하는 방법
+
+? visual studio 따움표와 화살표 include 차이.
+
+? CastChecked는 무엇인가요?
+
+? 인텔리센스를 끄면 어떤 결과를 가져오나요?
+
+? PlayerController의 AddPitchInput을 하면 같이 움직이는 이유.
+
+? bool값을 저장할 때 bool, uint8, uint32로 설정한 이유는 무엇인가?
+
+? TObjectPtr???
+
+? cook-time dependency tracking???
+
+? TDelegate??
+
+? TDelegate::TMethodPtr??
+
+? UProperty의 category와 meta는 무엇인가?
+
