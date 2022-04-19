@@ -84,19 +84,3 @@ mydict = {'aaa':'a', 'bbb':'b'}
 type(mydict)
 ```
 
-
-주요함수
--------------
-
-- pandas / api : [https://pandas.pydata.org/docs/reference/index.html](https://pandas.pydata.org/docs/reference/index.html)
-
-```python
-# csv 파일일기 
-df = pd.read_csv('https://bit.ly/ds-house-price')
-# Data Type확인
-df.info()
-#통계값 확인
-df.describe()
-#컬럼 재정의
-df = df.rename(columns={'컬럼명1': '컬럼명'})
-```

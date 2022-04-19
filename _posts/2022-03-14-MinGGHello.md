@@ -92,3 +92,25 @@ ___bold___                                                ▶  bold
 ~~~
 ---
 ~~~
+
+코랩에서 한글 깨질때
+-------------
+
+  - 아래코드 실행하고 메뉴 > 런타임 다시시작 > 코드 다시실행
+
+~~~python
+!apt -qq -y install fonts-nanum > /dev/null
+
+import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+
+fontpath = '/usr/share/fonts/truetype/nanum/NanumBarunGothic.ttf'
+font = fm.FontProperties(fname=fontpath, size=10)
+fm._rebuild()
+
+# 그래프에 retina display 적용
+%config InlineBackend.figure_format = 'retina'
+
+# Colab 의 한글 폰트 설정
+plt.rc('font', family='NanumBarunGothic') 
+~~~
