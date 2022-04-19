@@ -1,0 +1,87 @@
+---
+layout: post
+title: complexity
+---
+
+버블 정렬 알고리즘(Bubble sort)   
+   
+반복적으로 단계별로 살펴보고 인접 요소를 비교하고 교체 하는 간단한 정렬 알고리즘 입니다.
+순서가 잘못된 경우, 목록을 통한 전달은 목록이 정렬될 때까지 반복됩니다.
+이 알고리즘은 실제 사용 시 성능이 좋지 않으며 주로 교육 도구로 사용됩니다.
+
+* 박스들이 연속적으로 놓여있는 상황에서 박스들을 순서에 따라 정리할려고 합니다.
+정리가 끝날 때 까지 바로 순서대로 옆에있는 두 박스들의 순서를 보고 바꾸는 방법입니다.
+이떄 정리는 못해도 박스의 갯수 안에 끝나게 됩니다.
+
+? Computer의 입장에서 설명
+
+배경   
+? 언제 어떻게 만들어진건지 모르겠네요.
+
+요약   
+서로 인접한 두 원소를 검사하여 순서에 맞지 않는 경우 위치를 바꾼다.   
+
+코드   
+시간복잡도 : O(n*n)
+void bubbleSort(int array[], int arraySize)   
+{   
+    for(int endIndex = arraySize-1; endIndex > 0; --endIndex)   
+        for(int nowIndex = 0; nowIndex < endIndex; ++nowIndex)   
+        {   
+            std::swap(array[nowIndex], array[nowIndex+1]);
+        }   
+}   
+
+증명   
+? 그림을 수식으로 설명 하기 어려움..
+언젠가는 가능하지 않을까요?
+
+활용
+사다리 타기
+메모리가 극단적으로 작은 경우(ex) RAM 1KB, 어떤 경우인지 모르겠음)
+
+-----------------------------------
+
+선택 정렬 알고리즘(Selection Sort)   
+
+선택 정렬은 제자리 정렬 알고리즘중 하나입니다.
+단순하며 사용할 수 있는 메모리가 제한적인 경우에 사용시 이점이 있습니다.
+한번의 탐색에서 최솟값과 최댓값을 같이 찾는 이중 선택 정렬,
+한번의 탐색 때 동일한 값이 있다면 함께 정렬하는 방법으로 
+개선할 수 있습니다.
+
+* 박스들이 보관되어 있는 창고가 있고 창고에 순서대로 정리할려고 합니다.
+이때 박스들의 번호가 가장 작은 것을 찾아서 
+첫번째 부터 차례대로 정리하는 방법입니다. 
+
+? Computer의 입장에서 설명
+
+배경   
+? 언제 어떻게 만들어진건가요.
+
+요약   
+주어진 리스트 중에 최소값을 찾고,
+그 값을 맨 앞에 위치한 값과 교체합니다.
+맨 처음 위치를 뺀 나머지 리스트를 같은 방법으로 교체합니다.
+
+코드   
+시간복잡도 : O(n*n)
+void selectionSort(int array[], int arraySize)   
+{   
+    for(int nowIndex = 0; nowIndex < arraySize-1; ++nowIndex)   
+    {   
+        int minIndex = nowIndex;   
+        for(int searchIndex = nowIndex + 1; searchIndex < arraySize; ++searchIndex)   
+        {   
+            if(array[searchIndex] > array[nowIndex])   
+               minIndex = searchIndex;   
+        }   
+        array[nowIndex] = array[nowIndex];   
+    }   
+}   
+
+증명   
+?   
+
+활용
+
