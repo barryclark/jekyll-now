@@ -12,22 +12,29 @@ git fetch, git push, git pull과 함께 사용됩니다. 이러한 명령에는 
 
 * SVN은 단일 중앙 저장소를 사용하여 개발자를 위한 커뮤니케이션 허브 역활을 합니다. 개발자들의 복사본과 중앙 레포지터리의 변경 집합을 조합하여 작업이 이루어 집니다. 
 
+(1) https://www.atlassian.com/git/tutorials/syncing
+
+
+다음의 개념들을 가지고 읽으면 조금더 편합니다.
+
 Repository   
 저장소를 의미하며, 저장소는 히스토리, 태그, 소스의 가지치기 혹은 branch에 따라 버전을 저장합니다. 저장소를 통해 작업자가 변경한 모든 히스토리를 확인 할 수 있습니다.   
+
 Working Tree   
 저장소를 어느 한 시점을 바라보는 작업자의 현재 시점입니다.   
+
 Staging Area   
 저장소에 커밋하기 전에 커밋을 준비하는 위치이다.   
+
 Commit   
 현재 변경된 작업 상태를 점검을 마치면 확정하고 저장소에 저장하는 작업입니다.   
 
-https://backlog.com/git-tutorial/kr/intro/intro1_2.html 
-https://www.atlassian.com/git/tutorials/syncing
-
 # git bash #
 
+git bash를 
+
 & git init   
-& git remote add origion "https://github.com/kbmhansungb/kbmhansungb.github.io"   
+& git remote add origion "https://github.com/id/id.github.io"   
 & git pull origion master   
 
 
@@ -49,6 +56,9 @@ origion 레포지터리를 test로 바꾼 후 확인한다.
 & git help   
 & git help remote   
 
+(1) 목차부분
+    https://backlog.com/git-tutorial/kr/intro/intro1_2.html 
+
 ## 좋은 커밋 메세지 작성하기 위한 약속 ##
 
 1. 제목과 본문을 빈 행으로 구분합니다.
@@ -58,6 +68,9 @@ origion 레포지터리를 test로 바꾼 후 확인한다.
 5. 제목은 명령문으로 사용하며 과거형을 사용하지 않습니다.
 6. 본문의 각 행은 72글자 내로 제한합니다.
 7. 어떻게 보다는 무엇과 왜를 설명합니다.
+
+다음의 링크에서 잘 설명되어 있습니다.    
+https://meetup.toast.com/posts/106 
 
 ## 좋은 커밋 시점 ##
 
