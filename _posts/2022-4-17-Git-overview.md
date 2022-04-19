@@ -12,7 +12,7 @@ git fetch, git push, git pull과 함께 사용됩니다. 이러한 명령에는 
 
 * SVN은 단일 중앙 저장소를 사용하여 개발자를 위한 커뮤니케이션 허브 역활을 합니다. 개발자들의 복사본과 중앙 레포지터리의 변경 집합을 조합하여 작업이 이루어 집니다. 
 
-(1) https://www.atlassian.com/git/tutorials/syncing
+https://www.atlassian.com/git/tutorials/syncing
 
 
 다음의 개념들을 가지고 읽으면 조금더 편합니다.
@@ -29,35 +29,27 @@ Staging Area
 Commit   
 현재 변경된 작업 상태를 점검을 마치면 확정하고 저장소에 저장하는 작업입니다.   
 
-# git bash #
-
-git bash를 
+# git bash 연습 #
 
 & git init   
-& git remote add origion "https://github.com/id/id.github.io"   
-& git pull origion master   
+& git remote add origin "https://github.com/id/id.github.io"   
+& git pull origin master   
 
-
-origin 레포지터리의 내용을 master브런치로 pull한다.
-
-& git remote rename origion test   
+& git remote rename origin test   
 & git remote -v   
-& git remote rename test origion
-
-origion 레포지터리를 test로 바꾼 후 확인한다.   
-리포지터리들의 버전과 상태를 보여준다.   
+& git remote rename test origin
 
 & git add .   
 & git commit -m "message"   
 & git status   
-& git push origion   
-
+& git push origin   
 
 & git help   
 & git help remote   
 
-(1) 목차부분
-    https://backlog.com/git-tutorial/kr/intro/intro1_2.html 
+https://backlog.com/git-tutorial/kr/intro/intro1_2.html 
+
+# 커밋하는 시점 #
 
 ## 좋은 커밋 메세지 작성하기 위한 약속 ##
 
@@ -69,8 +61,8 @@ origion 레포지터리를 test로 바꾼 후 확인한다.
 6. 본문의 각 행은 72글자 내로 제한합니다.
 7. 어떻게 보다는 무엇과 왜를 설명합니다.
 
-다음의 링크에서 잘 설명되어 있습니다.    
-https://meetup.toast.com/posts/106 
+다음 약속들의 이유는 아래의 링크에서 잘 설명되어 있습니다.     
+https://meetup.toast.com/posts/106   
 
 ## 좋은 커밋 시점 ##
 
@@ -84,8 +76,10 @@ https://meetup.toast.com/posts/106
 
 Head   
 현재 작업중인 Branch를 가리키는 것입니다.   
+
 Branch   
 독립적으로 어떤 작업을 진행하기 위한 개념입니다. 작업을 할때에 현재 상태를 복사하여 Branch에서 작업을 한 후에 완전하다 싶을때 Merge를 하여 작업을 합니다.  
+
 Merge   
 다른 Branch의 내용을 현재 Branch로 가져와 합치는 작업을 의미합니다.   
 
