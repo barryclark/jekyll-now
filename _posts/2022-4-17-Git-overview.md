@@ -31,6 +31,7 @@ https://www.atlassian.com/git/tutorials/syncing
 & git remote add origion "https://github.com/kbmhansungb/kbmhansungb.github.io"   
 & git pull origion master   
 
+
 origin 레포지터리의 내용을 master브런치로 pull한다.
 
 & git remote rename origion test   
@@ -58,7 +59,7 @@ Branch
 Merge   
 다른 Branch의 내용을 현재 Branch로 가져와 합치는 작업을 의미합니다.   
 
-# git bash #
+# git bash 연습 #
 
 & git branch BranchTest   
 & git branch   
@@ -118,8 +119,31 @@ locally와 remotely에서 branch를 지우는 방법입니다.
 로컬에서 브런치를 지웁니다.   
 원격에서 브런치를 지웁니다. (Git v.1.7.0 이상부터)   
 
+## git remote 연습 ##
 
+& git pull   
+
+
+## 다른 것 ##
 
 https://academy.realm.io/kr/posts/360andev-savvas-dalkitsis-using-git-like-a-pro/
 
 https://dev.to/lydiahallie/cs-visualized-useful-git-commands-37p1
+
+
+## .gitignore ##
+프로젝트 작업시 로컬 환경의 정보나 빌드 정보등 원격 저장소에 관리하지 말아야되는 파일들에 대해서 지정하여 원격 저장소에 실수로 올라가지 않도록 관리하는 파일입니다. .gitignore는 프로젝트 파일의 최상단에 위치합니다. 다양한 황경에서의 샘플 .gitignore은 https://github.com/github/gitignore에서 확인할 수 있습니다.   
+
+
+https://velog.io/@psk84/.gitignore-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0 
+
+## .
+
+## Git LFS ##
+
+깃허브 저장소에는 용량 제한이 없지만, 100Mb가 넘는 파일을 push하려고 error메세지를 출력하고 Git lfs를 사용하라고 알려줍니다. (50Mb 이상은 warning이 나온다고 합니다.)
+
+```
+?
+```
+

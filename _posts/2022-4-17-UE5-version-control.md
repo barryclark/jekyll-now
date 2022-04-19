@@ -21,3 +21,6 @@ title: Git for UE5
 * 버전 컨트롤을 위한 소프트웨어는 많습니다.   
 * Git과 Perforce 등 Unreal Engine을 위한 많은 좋은 버전컨트롤이 존재합니다.   
 
+## Git LFS 설정 ##   
+Git LFS의 내용은 Git-overview에 있습니다.
+
