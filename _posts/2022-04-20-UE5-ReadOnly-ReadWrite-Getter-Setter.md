@@ -3,7 +3,9 @@ layout: post
 title: UE5 ReadOnly ReadWrite Getter Setter
 ---
 
-https://benui.ca/unreal/uproperty/#blueprint
+프로퍼티에 관해서 : https://docs.unrealengine.com/4.27/en-US/   ProgrammingAndScripting/GameplayArchitecture/Properties/   
+프로퍼티에 관해서 : https://benui.ca/unreal/uproperty/#blueprint   
+함수에 관해서 : https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/Blueprints/UserGuide/Functions/   
 
 BlueprintReadOnly   
 public, protected에서 가능합니다.
