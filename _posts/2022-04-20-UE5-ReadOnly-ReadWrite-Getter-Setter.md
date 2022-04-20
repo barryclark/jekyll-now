@@ -48,7 +48,6 @@ private:
 public:   
 	UFUNCTION(BlueprintCallable)   
 	int GetGetterCount() const;   
-   
 	UPROPERTY(BlueprintCallable)   
 	void SetSetterCount();   
 
