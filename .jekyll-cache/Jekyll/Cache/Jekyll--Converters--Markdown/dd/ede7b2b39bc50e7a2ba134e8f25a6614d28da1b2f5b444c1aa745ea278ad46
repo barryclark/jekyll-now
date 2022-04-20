@@ -1,0 +1,101 @@
+I"�<p>Hello Geeks,</p>
+
+<p>In this article, I am going to show you how you can avail GitHub Student Developer Pack.
+It is a bundle full of tools and services provided by various tech companies.</p>
+
+<h4 id="prerequisites">Prerequisites</h4>
+
+<ul>
+  <li>Access to college/university Email ID</li>
+  <li>College Admission Docs/ Valid ID Card</li>
+</ul>
+
+<h4 id="procedure">Procedure</h4>
+
+<p>First, you will be needed to add the institute’s email ID to you github account and verify.</p>
+
+<p>To add the email ID, <a href="https://github.com/email">Click here.</a></p>
+
+<p>You will be greated with similar interface,</p>
+
+<p>Alll you have to do is add a secondary email ID.</p>
+
+<p>However there is a <strong>catch</strong> ; in order to recieve the verification email you will have to change the domain.</p>
+
+<p>You will be having an email address something like this -</p>
+
+<blockquote>
+  <p>username@tsecedu.org</p>
+</blockquote>
+
+<p>Change it to this ⤵️</p>
+
+<blockquote>
+  <p>username@tsecol.onmicrosoft.com</p>
+</blockquote>
+
+<p><strong>This step is essential to recieve email from Github.</strong></p>
+
+<p><em>This domain may vary based on your university/college and/or education suite provider.</em></p>
+
+<p>Enter the email address with the changed domain and request verification.</p>
+
+<p><img src="/images/github1.png" alt="Github Add Email" title="Github Add Email" /></p>
+
+<p>You will recieve the verification email on your account.</p>
+
+<p>If you don’t have any email client, you can use Outlook for <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.outlook">Android</a> and <a href="https://apps.apple.com/us/app/microsoft-outlook/id951937596">iOS</a> for easier login. Web users may go to <a href="http://outlook.com/">http://outlook.com/</a> and use the same password to login.</p>
+
+<p><img src="/images/github6.png" alt="Github Email Verificaton" title="Github Verification" /></p>
+
+<p>Click the link and <strong>verify the account.</strong></p>
+
+<p>Next you’ll have to head over to - <a href="https://education.github.com/discount_requests/student_application">Github Student Developer Pack Landing Page</a>.</p>
+
+<p><img src="/images/github2.png" alt="Github Email Verificaton" title="Github Verification" /></p>
+
+<p><strong>Choose the college/university provided email ID</strong></p>
+
+<p>Your institute name would automatically be selected.
+If not, enter manually.</p>
+
+<p>Finally, <strong>Answer how to plan to use Github.</strong></p>
+
+<p>Answer to this can be short, it hardly matters.</p>
+
+<p>Click <strong>Continue</strong></p>
+
+<p>Now it is the time to upload your proof of academic status.</p>
+
+<p><img src="/images/github3.png" alt="proof of academic status." title="proof of academic status." /></p>
+
+<p><strong>Upload the document</strong> and proceed further,</p>
+
+<p>You might be prompted with addional steps to continue, so proceed with the same.</p>
+
+<p>Wait for sometime, <em>it took me two tries and 5 minutes waiting time.</em></p>
+
+<p><img src="/images/github4.png" alt="proof of academic status." title="proof of academic status." /></p>
+
+<p>After sucessful submittion, all you have to do is wait for it get approved.</p>
+
+<p><em>For me it was approved instantly and I could redeem any services I like.</em></p>
+
+<p>You will also <strong>get Github Pro Badge</strong> on your profile.</p>
+
+<p><a href="https://education.github.com/globalcampus/student">https://education.github.com/globalcampus/student</a> Checkout this link to verify your status.</p>
+
+<p><img src="/images/github5.png" alt="Success" title="Success." /></p>
+
+<p>That’s it, you are all set to for the hands-on learning experience.</p>
+
+<p>Feel free to reach out to us on our <a href="https://chat.whatsapp.com/K3NrW5tPwrsHhfbdYstjLl">WhatsApp Group</a></p>
+
+<hr />
+
+<p>This post was brought to you by Anas Khan.</p>
+
+<p>If you have any suggestions, drop an email - <a href="mailto:anas@tsecgeeks.in">anas@tsecgeeks.in</a></p>
+
+<hr />
+:ET

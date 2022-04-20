@@ -1,0 +1,107 @@
+I"�	<p>Hello geeks,</p>
+
+<p>In this article, I am providing all the configuration of AutoCAD as suggested by our professors.</p>
+
+<h2 id="commands">Commands</h2>
+
+<p>The first thing we need to do is to specify our work area and create a rectangle.</p>
+
+<blockquote>
+  <p><strong>UNITS</strong> → set Precision = 0; Units = Millimeter</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>LIMITS</strong> → 0, 0 ↲ Enter; 600, 400 ↲ Enter</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>RECTANGLE</strong> → 0, 0 ↲ Enter; 600, 400 ↲ Enter</p>
+</blockquote>
+
+<h2 id="configuration">Configuration</h2>
+
+<h3 id="layer-properties-manager">Layer Properties Manager</h3>
+
+<p>We need to create layers to get different styles of lines.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Layer</strong></th>
+      <th><strong>Color</strong></th>
+      <th><strong>Linetype</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Construction</td>
+      <td>254</td>
+      <td>Continuous</td>
+    </tr>
+    <tr>
+      <td>Center</td>
+      <td>Yellow</td>
+      <td>CENTER2</td>
+    </tr>
+    <tr>
+      <td>Dimension</td>
+      <td>Cyan</td>
+      <td>Continuous</td>
+    </tr>
+    <tr>
+      <td>Hidden</td>
+      <td>252</td>
+      <td>HIDDEN2</td>
+    </tr>
+    <tr>
+      <td>Hatch</td>
+      <td>Magenta</td>
+      <td>Continuous</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="dimension-style-manager">Dimension Style Manager</h3>
+
+<blockquote>
+  <p><strong>DIMSTYLE</strong> → Modify</p>
+</blockquote>
+
+<ol>
+  <li><strong>Lines</strong>
+    <ol>
+      <li>Baseline Spacing: 1</li>
+      <li>Extend beyond dim lines: 1</li>
+      <li>Offset from origin: 1</li>
+    </ol>
+  </li>
+  <li><strong>Symbol and Arrows</strong>
+    <ol>
+      <li>Arrow size: 3</li>
+      <li>Center marks → Mark: 1</li>
+      <li>Break size: 1</li>
+      <li>Jog height factor: 1</li>
+    </ol>
+  </li>
+  <li><strong>Text</strong>
+    <ol>
+      <li>Vertical: Above</li>
+      <li>Offset from dim line: 1</li>
+      <li>Text alignment: ISO standard</li>
+    </ol>
+  </li>
+  <li><strong>Primary Units</strong>
+    <ol>
+      <li>Precision: 0</li>
+    </ol>
+  </li>
+</ol>
+
+<p>As of now, these are the settings we need to apply before starting our project in AutoCAD.
+If you have anything to add here, you can email me on the address given below.
+Join our <a href="https://chat.whatsapp.com/K3NrW5tPwrsHhfbdYstjLl">WhatsApp Group</a></p>
+
+<hr />
+
+<p>Posted by Ninad Naik (<a href="mailto:ninad@tsecgeeks.in">ninad@tsecgeeks.in</a>)</p>
+:ET
