@@ -7,13 +7,13 @@ title: UE5 ReadOnly ReadWrite Getter Setter
 프로퍼티에 관해서 : https://benui.ca/unreal/uproperty/#blueprint   
 함수에 관해서 : https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/Blueprints/UserGuide/Functions/   
 
-BlueprintReadOnly   
+# BlueprintReadOnly #   
 블루프린트에서 읽는 것만 가능합니다. 
 
-BlueprintReadWrite
+# BlueprintReadWrite #
 블루프린트에서 읽는 것만 가능합니다.
 
-BlueprintGetter=GetterFunctionName
+# BlueprintGetter=GetterFunctionName #
 이 프로퍼티는 커스텀 엑세서 함수를 지정합니다.
 또한 BlueprintSetter 또는 BlueprintReadWrite지정자가 지정되지 않으면,
 BlueprintReadOnly로 간주합니다. 
@@ -24,7 +24,7 @@ BlueprintReadOnly로 간주합니다.
 https://forums.unrealengine.com/t/whats-the-point-of-blueprintgetter-if-it-didnt-hide-the-direct-access-to-that-variable-in-bp/459697   
 https://en.wikipedia.org/wiki/Mutator_method   
 
-BlueprintSetter=SetterFunctionName
+# BlueprintSetter=SetterFunctionName #
 이 프로퍼티에는 커스텀 뮤테이터 함수가 있으며, 
 묵시적으로 BlueprintReadWrite지정자가 붙습니다.
 참고로 뮤테이터 함수는 같은 클래스 이름으로 그 일부를 따서 지어야 합니다.
@@ -38,19 +38,19 @@ BlueprintSetter=SetterFunctionName
 대표적인 예는 값을 입력받아 멤버 변수의 값을 수정하는 입력 함수를 들 수 있습니다.
 일반 함수라도 멤버 변수의 값을 바꾸면 mutator함수가 됩니다.
 
-UPROPERTY(BlueprintReadOnly)
-bool IsReadOnly;
+UPROPERTY(BlueprintReadOnly)   
+bool IsReadOnly;   
 
-private:
-	UPROPERTY(EditAnywhere, BlueprintGetter=GetGetterCount, BlueprintSetter=SetSetterCount)
-	int GetterCount;
+private:   
+	UPROPERTY(EditAnywhere, BlueprintGetter=GetGetterCount, BlueprintSetter=SetSetterCount)   
+	int GetterCount;   
 
-public:
-	UFUNCTION(BlueprintCallable)
-	int GetGetterCount() const;
-
-	UPROPERTY(BlueprintCallable)
-	void SetSetterCount();
+public:   
+	UFUNCTION(BlueprintCallable)   
+	int GetGetterCount() const;   
+   
+	UPROPERTY(BlueprintCallable)   
+	void SetSetterCount();   
 
 ? GetGetterCount에서 const 붙이지 않으면 오류가 납니다.   
 ... must be pure.   
