@@ -11,7 +11,7 @@ title: UE5 ReadOnly ReadWrite Getter Setter
 블루프린트에서 읽는 것만 가능합니다. 
 
 # BlueprintReadWrite #
-블루프린트에서 읽는 것만 가능합니다.
+블루프린트에서 읽고 쓰는 것이 가능합니다.
 
 # BlueprintGetter=GetterFunctionName #
 이 프로퍼티는 커스텀 엑세서 함수를 지정합니다.
