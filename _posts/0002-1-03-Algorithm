@@ -1,6 +1,6 @@
 ---
 layout: post
-title: complexity
+title: Bublble, selection, insert sort
 ---
 
 버블 정렬 알고리즘(Bubble sort)   
@@ -15,13 +15,6 @@ title: complexity
 
 ? Computer의 입장에서 설명
 
-배경   
-? 언제 어떻게 만들어진건지 모르겠네요.
-
-요약   
-서로 인접한 두 원소를 검사하여 순서에 맞지 않는 경우 위치를 바꾼다.   
-
-코드   
 시간복잡도 : O(n*n)
 void bubbleSort(int array[], int arraySize)   
 {   
@@ -36,8 +29,8 @@ void bubbleSort(int array[], int arraySize)
 ? 그림을 수식으로 설명 하기 어려움..
 언젠가는 가능하지 않을까요?
 
-활용
-사다리 타기
+활용   
+사다리 타기   
 메모리가 극단적으로 작은 경우(ex) RAM 1KB, 어떤 경우인지 모르겠음)
 
 -----------------------------------
@@ -48,23 +41,15 @@ void bubbleSort(int array[], int arraySize)
 단순하며 사용할 수 있는 메모리가 제한적인 경우에 사용시 이점이 있습니다.
 한번의 탐색에서 최솟값과 최댓값을 같이 찾는 이중 선택 정렬,
 한번의 탐색 때 동일한 값이 있다면 함께 정렬하는 방법으로 
-개선할 수 있습니다.
+개선할 수 있습니다.   
+선택 정렬 알고리즘은 주어진 리스트 중에 최소값을 찾고,
+그 값을 맨 앞에 위치한 값과 교체합니다.
+맨 처음 위치를 뺀 나머지 리스트를 같은 방법으로 교체합니다.
 
 * 박스들이 보관되어 있는 창고가 있고 창고에 순서대로 정리할려고 합니다.
 이때 박스들의 번호가 가장 작은 것을 찾아서 
 첫번째 부터 차례대로 정리하는 방법입니다. 
 
-? Computer의 입장에서 설명
-
-배경   
-? 언제 어떻게 만들어진건가요.
-
-요약   
-주어진 리스트 중에 최소값을 찾고,
-그 값을 맨 앞에 위치한 값과 교체합니다.
-맨 처음 위치를 뺀 나머지 리스트를 같은 방법으로 교체합니다.
-
-코드   
 시간복잡도 : O(n*n)
 void selectionSort(int array[], int arraySize)   
 {   
@@ -83,5 +68,163 @@ void selectionSort(int array[], int arraySize)
 증명   
 ?   
 
-활용
+활용   
 
+
+-----------------------------------
+
+삽입 정렬 알고리즘(Insertion Sort)
+삽입 정렬은 한 번에 한 항목씩 최종 정렬된 배열을 작성하는 간단한 정렬 알고리즘 입니다.
+이는 quicksort, heapsort 또는 merge sort와 같은 고급 알고리즘 보다 큰 목록에서 훨씬 덜 효율적입니다.
+* 그러나 삽입 정렬은 구현이 간단하며, 매우 작은 데이터 세트에 효율적입니다.
+* 선택 정렬 또는 거품 정렬과 같은 대부분의 다른 간단한 2차 알고리즘 보다 실제로 더 효율적입니다.
+
+* 책장에 책을 높이순대로 정리할 때 정리할 책을 꺼낸 후
+오른쪽에서 부터 차례대로 한칸씩 밀어낸다음 
+알맞은 위치에 책을 집어넣는 방법입니다.
+
+j <- i   
+while i < length(A)   
+    j <- i   
+    while j > 0 and A[j-1] > A[j]   
+        swap A[j] and A[j-1]   
+        j <- j - 1   
+    end while   
+    i <- i + 1   
+end while   
+
+시간복잡도 : O(n*n)   
+void insertSort(int array[], int arraySize)   
+{   
+    for(int nowIndex = 0; nowIndex < arraySize; ++nowIndex)   
+    {   
+        for(int searchIndex = nowIndex; searchIndex > 0 && array[searchIndex-1] > array[searchIndex]; --searchIndex)   
+        {      
+            std::swap(array[searchIndex-1] > array[searchIndex]);
+        }   
+    }   
+}   
+
+증명   
+?
+
+활용   
+
+-----------------------------------
+
+분할 정복 알고리즘(Divide and conquer)
+
+그대로 해결할 수 없는 커다란 문제를 작은 문제로 분할하여 문제를 해결해 나가는 방법론으로,
+재귀호출을 사용합니다.
+
+합병 정렬 알고리즘 (Merge sort)   
+정렬할 배열을 더 이상 나눠질 수 없는 배열로 나누어(Divide) 
+배열 단위별로 정렬(Conquer)해 나가는 알고리즘 입니다.
+존 폰 노이만에 의해 1945년에 개발되었습니다.
+
+#define MAX ...
+int tempArray[MAX];
+
+void merge(int array[], int left, int mid, int right)
+{   
+    // compare and insert 
+    int leftIndex = left;   
+    int rightIndex = mid + 1;
+    int tempIndex = left;     
+    while (leftIndex <= mid && rightIndex <= right)   
+    {   
+        if (array[leftIndex] <= array[rightIndex])   
+            tempArray[tempIndex++] = array[leftIndex++];   
+        else   
+           tempArray[tempIndex++] = array[rightIndex++];   
+    }   
+
+    // insert the rest   
+    if (leftIndex > mid)   
+    {   
+        while(rightIndex <= right)   
+            tempArray[tempIndex++] += list[rightIndex++];    
+    }   
+    else    
+    {   
+        while(leftIndex <= mid)   
+            tempArray[tempIndex++] += list[leftIndex++];     
+    }   
+
+    // copy tempArray to array   
+    for (int i = left; i <= right; i++)   
+    {   
+       array[i] = tempArray[i];   
+    }   
+}   
+
+void merge_sort(int array[], int left, int right)   
+{   
+    if (left < right)   
+    {   
+        int mid = (left + right) / 2;   
+
+        // partition   
+        merge_sort(list, left, mid);   
+        merge_sort(list, mid + 1, right);   
+
+        // merge   
+        merge(list, left, mid, right);   
+    }            
+}   
+
+int main()   
+{   
+   int array[MAX] = {...}   
+   merge_sort(array, 0, MAX - 1);   
+}   
+
+이거 시간복잡도 어떻게 구해야 해요????...
+이걸 어떻게 활용한데요.
+
+퀵 정렬 알고리즘(Quick sort)
+기준값 (pivod)을 두어 작으면 왼쪽, 크면 오른쪽에 배치하는 행위를 반복하는 
+Divide and conquer 방식의 정렬 알고리즘입니다.
+
+1. Pivot을 기준으로 왼쪽은 left partition, 오른쪽은 right partition으로 잡습니다.
+2. Partition의 맨 왼쪽 인덱스를 L, 오른쪽 인덱스를 R로 둡니다.
+3. L는 정방향으로 이동하면서 원소를 차례대로 순회하되 Pivot보다 큰 수를 발견하면 멈춥니다.
+4. R은 역방향으로 이동하면서 원소를 차례대로 순회하되 Pivot보다 작은 수를 발견하면 멈춥니다.
+5. L과 R이 가리키는 원소들을 서로 바꿉니다.
+6. L >= R이면 순회를 멈추고 Pivot과 L(혹은 R)을 서로 바꿉니다.
+7. Partition이 더 이상 나뉘어지지 않을 때까지 Divide and conquer 방식으로 재귀호출을 실행하면서 1~7를 반복한다.
+
+순서에 대한 정보가 없을 때 단일 요소를 선택하는 것보다 중앙값이 최적의 피벗을 더 잘 추정합니다.
+음... 이유는 몰루.
+
+void quickSort(int array[], const int& min, const int& max)   
+{   
+    int pivotIndex = right;
+    int left = min;   
+    int right = pivotIndex - 1;   
+
+    while(left < right)   
+    {   
+        while (array[left] < array[pivotIndex])   
+            ++left;   
+
+        while (array[right] > array[pivotIndex])   
+            --right;   
+
+        if (left < right)   
+            swap(array[left], array[right]);   
+    }   
+
+    // 이부분 논리가 부족함.   
+    if (left < pivotIndex)   
+    {   
+        swap(array[pivotIndex], array[right]);   
+        pivotIndex = right;   
+    }   
+
+    if (pivotIndex - min > 1)   
+        quickSort(array, min, pivotIndex - 1);      
+
+    if (max - pivotIndex > 1)   
+        quickSort(array, pivotIndex + 1; max);   
+}   
