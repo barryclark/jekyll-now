@@ -38,18 +38,23 @@ https://en.wikipedia.org/wiki/Mutator_method
 대표적인 예는 값을 입력받아 멤버 변수의 값을 수정하는 입력 함수를 들 수 있습니다.
 일반 함수라도 멤버 변수의 값을 바꾸면 mutator함수가 됩니다.
 
-UPROPERTY(BlueprintReadOnly)   
+
+UPROPERTY(... BlueprintReadOnly)   
 bool IsReadOnly;   
 
+UPROPERTY(... BlueprintReadWrite)
+bool IsReadWrite;
+
 private:   
-	UPROPERTY(EditAnywhere, BlueprintGetter=GetGetterCount, BlueprintSetter=SetSetterCount)   
+	UPROPERTY(... BlueprintGetter=GetGetterCount, BlueprintSetter=SetSetterCount)   
 	int GetterCount;   
 
 public:   
-	UFUNCTION(BlueprintCallable)   
+	UFUNCTION(... BlueprintCallable)   
 	int GetGetterCount() const;   
-	UPROPERTY(BlueprintCallable)   
+	UPROPERTY(... BlueprintCallable)   
 	void SetSetterCount();   
+
 
 ? GetGetterCount에서 const 붙이지 않으면 오류가 납니다.   
 ... must be pure.   
