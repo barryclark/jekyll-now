@@ -1,0 +1,31 @@
+---
+layout: post
+title: UE EditAnywhere VisibleAnywhere
+---
+
+https://docs.unrealengine.com/5.0/ko/unreal-engine-uproperties/
+
+## Edit* Visible* ##
+
+UPROPERTY(EditAnywhere)
+UObject* exampleComponent;
+
+UPROPERTY(VisibleAnywhere)
+UObject* exampleComponent;
+
+* VisibleAnywhere 프로퍼티는 에디터의 프로퍼티 창에서 보여지나, 편집이 불가능함을 나타냅니다. 반대로 EditAnywhere은 에디터의 프로퍼티 창에서 편집이 가능합니다.
+
+Edit*은 EditAnywhere, EditDefaultsOnly, EditInstanceOnly가 있고,
+Visible*은 VisibleAnywhere, VisibleDefaultsOnly, VisibleInstanceonly가 있습니다.
+
+## Visible* Edit* ##
+
+*Anywhere은 블루프린트 프로퍼티 창에서 편집이 가능함을 나타냅니다.   
+*DefaultsOnly는 블루프린트 클래스 편집일 경우에만 프로퍼티 창에서 편집 가능함을 나타냅니다.   
+*InstanceOnly는 블루프린트 액터로써 레벨에 추가된 경우에만 프로퍼티 창에서 편집 가능함을 나타냅니다.   
+
+일반적으로 Visible*는 BlueprintReadOnly로,
+Edit*는 BlueprintReadWrite를 가지는 것이 보통입니다.
+
+
+## ? 어떻게 써야 하는 걸까요? ##
