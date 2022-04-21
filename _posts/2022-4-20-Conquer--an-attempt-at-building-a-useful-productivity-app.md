@@ -55,6 +55,6 @@ Nudger is the feature which lets you blacklist apps and websites and notifies yo
 
 As I said before, I have used React to build the web app and Firebase’s services for authentication and database. The web app is hosted on Netlify. The android app is primarily built using React Native. The code which detects which app is running in background and alerts user is written in Java(unfortunately). What the java code does is, triggers an [accessibility service](https://developer.android.com/guide/topics/ui/accessibility/service) whenever window changes, checks if the new app is blacklisted and starts an alarm using [Alarm Manager](https://developer.android.com/reference/android/app/AlarmManager) if it is, then pushes a notification and takes user home when the alarm goes off.
 
-Thats all for today, hopefully I haven't bored you, thank you for patiently sticking with me if I have. If you have any questions, thoughts etc. feel free to hit me up on any of my socials([Twitter](https://twitter.com/devout_coder), [Insta](https://instagram.com/devout_coder), [Email](mailto:awessssomepro@gmail.com)).
+Thats all for today, hopefully I haven't bored you, thank you for patiently sticking with me. If you have any questions, thoughts etc. feel free to hit me up on any of my socials ([Twitter](https://twitter.com/devout_coder), [Insta](https://instagram.com/devout_coder), [Email](mailto:awessssomepro@gmail.com)).
 
 Feel free to reach out to any of us geeks on our [WhatsApp Group](https://chat.whatsapp.com/K3NrW5tPwrsHhfbdYstjLl)
