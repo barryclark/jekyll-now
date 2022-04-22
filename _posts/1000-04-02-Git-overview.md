@@ -3,6 +3,10 @@ layout: post
 title: GIT overview
 ---  
 
+# 실수하지 않기 위해 기억해둬야 할 것들 #
+
+* Git은 파일및 폭더의 대무자 소문자를 구분하지 않습니다.
+
 ### Git overview ###   
 
 깃은 모든 개발자들이 복사된 레포지터리를 가지고, 자신의 로컬 히스토리와 브런치 구조에서 작업합니다. 사용자는 작은 변경집합이 아닌 커밋을 공유해야 합니다. 깃은 레포지터리간의 전체 브런치를 공유할 수 있게 해줍니다.
@@ -72,7 +76,20 @@ https://meetup.toast.com/posts/106
 * 기능에 기반해서 커밋을 해야지 시간을 정해서 커밋을 하면 안됩니다. 새로운 기능을 추가했을 때 기능이 커밋할 만 하거나, 작동하는 메소드를 추가했거나, 글씨를 수정했거나, 잘못된 파일 들여쓰기를 수정했거나 등등일 때 커밋해야 합니다. 커밋이 의미가 있다면 작은 것을 커밋하는 것은 전혀 잘못된점이 아닙니다. 의미 없는 커밋은 히스토리로 이슈를 추적하는데 있어서 읽기 어렵게 합니다.   
 * 새로운 테스트 케이스를 추가할 때, 테스트가 통과됐을 때, 변수 이름을 변경했을 때, 메소드를 삭제했을 때, 상태를 변경했을 때 등... 사실 커밋한 대상의 중요성은 중요하지 않습니다.   
 
-## branch ##
+# 특정 파일의 add #
+
+& add file_name.xxx
+
+커밋에 단일 파일의 변경사항을 포함합니다.
+
+# commit의 삭제 #
+
+& git reset HEAD(16진수 숫자)~삭제갯수
+& git log 
+
+HEAD부터 삭제갯수만큼 commit을 삭제합니다.
+
+## Branch ##
 
 Head   
 현재 작업중인 Branch를 가리키는 것입니다.   
@@ -102,10 +119,11 @@ BranchTest 브런치를 만들고, BranchTest로 이동한다.
 & git checkout master   
 & git merge test   
 
-
 & git branch -d test   
 
 test 브런치를 삭제합니다.   
+
+## Branch merge ##
 
 & git branch issue2   
 & git branch issue3   
@@ -163,7 +181,4 @@ https://velog.io/@psk84/.gitignore-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0
 Git Large File Storage로 
 깃허브 저장소에는 용량 제한이 없지만, 100Mb가 넘는 파일을 push하려고 error메세지를 출력하고 Git lfs를 사용하라고 알려줍니다. (50Mb 이상은 warning이 나온다고 합니다.)
 
-```
-?
-```
 

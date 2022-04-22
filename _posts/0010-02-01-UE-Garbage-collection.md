@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Garbage collection
+title: UE Garbage collection
 ---
 
 https://www.unrealengine.com/ko/blog/unreal-property-system-reflection
