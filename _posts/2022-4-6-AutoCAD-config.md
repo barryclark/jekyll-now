@@ -25,10 +25,10 @@ We need to create layers to get different styles of lines.
 
 | **Layer**  | **Color** | **Linetype**  |
 |---|---|---|
-| Construction  | 254  | Continuous  |
+| Construction  | 252  | Continuous  |
 | Center  | Yellow  | CENTER2  |
 | Dimension  | Cyan  | Continuous  |
-| Hidden  | 252  | HIDDEN2  |
+| Hidden  | 254  | HIDDEN2  |
 | Hatch  | Magenta  | Continuous  |
 
 ### Dimension Style Manager
