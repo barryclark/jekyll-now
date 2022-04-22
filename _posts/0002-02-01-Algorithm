@@ -214,8 +214,7 @@ void quickSort(int array[], const int& min, const int& max)
         if (left < right)   
             swap(array[left], array[right]);   
     }   
-
-    // 이부분 논리가 부족함.   
+ 
     if (left < pivotIndex)   
     {   
         swap(array[pivotIndex], array[right]);   
