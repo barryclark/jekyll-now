@@ -30,14 +30,14 @@ This is a living document outlining the things I use. Check out what other peopl
 
 * [AirPods Pro](https://www.amazon.com/dp/B09JQMJHXY/ref=cm_sw_r_tw_dp_4AAPA17YR935FEF5DVXB)
 * [JBL Flip](https://www.amazon.com/dp/B07QK2SPP7/ref=cm_sw_r_tw_dp_RM04TSGTFP9NVSBFGQJX?_encoding=UTF8&psc=1)&#8212;a great little bluetooth speaker.
-* [Sony WH1000XM3](https://www.amazon.com/dp/B07G4MNFS1/ref=cm_sw_r_tw_dp_AB2ZPTKNC9E4FQDWKH6G?_encoding=UTF8&psc=1) noise cancelling headphones&#8212;I don't use this as often as I used to while working from home.
+* [Sony WH1000XM3](https://www.amazon.com/dp/B07G4MNFS1/ref=cm_sw_r_tw_dp_AB2ZPTKNC9E4FQDWKH6G?_encoding=UTF8&psc=1) noise-cancelling headphones&#8212;I don't use this as often as I used to while working from home.
 
 ## Other desk stuff
 
 * [Fezibo standing desk](https://www.amazon.com/dp/B08DVGJSTN/ref=cm_sw_r_tw_dp_4QX2BGD886NSNA995DVK?_encoding=UTF8&psc=1) with a crappy lamitated top. I planned on making a custom top, but as of yet, I have not gotten around to it.
 * [CubeFit TerraMat](https://www.amazon.com/dp/B01N0DGA00/ref=cm_sw_r_as_gl_api_gl_i_V3YXXG50DCZ8NRJT36C1?linkCode=ml1&tag=uhricom-20)&#8212;standing desk mat
 * [Aeron chair, size B](https://www.amazon.com/dp/B093X7TXS2/ref=cm_sw_r_tw_dp_G5HGCSMJWJ0PP01P8HY2?_encoding=UTF8&psc=1)&#8212;we have a size C that's supposed to be the right size for me, but I like the B better.
-* [Ember mug](https://www.amazon.com/dp/B07Z5H4TF5/ref=cm_sw_r_tw_dp_JBHTF1KSGQQTV7HHYRKD?_encoding=UTF8&psc=1)&#8212;I hava the 16oz black version 2 at home and an older white 10oz mug at work
+* [Ember mug](https://www.amazon.com/dp/B07Z5H4TF5/ref=cm_sw_r_tw_dp_JBHTF1KSGQQTV7HHYRKD?_encoding=UTF8&psc=1)&#8212;I have the 16oz black version 2 at home and an older white 10oz mug at work
 * Amazon Alexa
 * Menard's architect Lamps with Govee Smart Bulbs
 * EPN Laptop Stand
