@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Why of Arlo's Commit NOtation
+title: The Why of Arlo's Commit Notation
 ---
 
 Arlo's Commit Notation (ACN) is a way to tag each commit with a compact code that indicates two things: the intent of this change, e.g. bugfix or refactoring, and the level of risk of this change. Read the full description here: https://github.com/RefactoringCombos/ArlosCommitNotation. Arlo's Commit Notation is a tool which can be wielded to solve certain problems, but at the outset it can be really head to see those problems and how ACN addresses them. The risk attestation part is especially difficult to understand if you haven't already experienced these different risk levels. Let's see what happens if I try to describe it all in great detail in article format…
@@ -33,15 +33,23 @@ The Why of ACN will not make complete sense until you have had the chance to ful
 
 # Scan for Risk
 
-The use of spaces in the lower-risk tags (x  / X  ) makes the higher-risk tags (X!! / X**) stand out in a "oneline" history:
+The use of spaces in the lower-risk tags (`x - ` / `X - `) makes the higher-risk tags (X!! / X**) stand out in a "oneline"-type history:
 
 ```
-<example here>
-``'
+> git log --oneline
+d8f708d F!! Send email on success
+9934d95 r - extract variable
+4658ae2 r - extract method.
+6b19aaa R!! replace algorithm
+b865312 r - introduce parameter.
+ab5b785 r - make method static
+203a1ad r - move method
+af1a232 r - inline variable
+e8aa838 r - inline variable
+fe967d9 r - remove unused code
+```
 
-When scanning a commit history with a mix of risks the higher-risk items jump out. Looking for a bug? Start with the !! and ** entries.
-
-This is only possible if most changes are lower risk (x/X). 
+When scanning a commit history with a mix of risks the higher-risk items jump out. Trying to track down where a bug was introduced? Start with the `!!` and `**` entries. This is only possible if most changes are lower risk (`x`/`X`).
 
 # Speed review
 
