@@ -3,55 +3,69 @@ layout: post
 title: The Why of Arlo's Commit Notation
 ---
 
-[Arlo's Commit Notation](https://github.com/RefactoringCombos/ArlosCommitNotation) (ACN) is a tool which can be wielded to solve certain problems, but at the outset it can be really hard to see those problems and how ACN addresses them.
-Structurally, it's a mechanism to tag each commit with intention (e.g. bugfix or refactoring) and risk, but what are the potential implications of doing that?
-Let's see what happens if I try to describe it all in great detail in article format…
+[Arlo's Commit Notation](https://github.com/RefactoringCombos/ArlosCommitNotation) (ACN) is a tool which can be wielded to solve certain problems, but at the outset it can be really hard to see those problems and how ACN addresses them. Let's see what happens if I try to describe it all in great detail in article format.
+
+But first, a summary of ACN. Prefix each commit message with a 3-character code. The first character is a letter indicating the intent for example:
+
+| Prefix | Intention   |
+|--------|-------------|
+| F      | Feature     |
+| B      | Bugfix      |
+| R      | Refactoring |
+
+And the risk levels (where `x` is one of the intention prefixes):
+
+| Code   | Example                                    | Meaning                                      |
+|--------|--------------------------------------------|----------------------------------------------|
+| `x - ` | `r   Extract method Applesauce`            | Addresses all known and unknown risks.       |
+| `x - ` | `R   Extract method Applesauce`            | Addresses all known risks.                   |
+| `X!!`  | `R!! Extract method Applesauce`            | Reduced risk, incomplete verification.       |
+| `X**`  | `R** Start extracting method with no name` | No risk attestation (normal way of working). |
+
 
 # The Why of the Why of ACN
 
-This document is not a great idea.
+This document is maybe not a great idea.
 When I've tried to explain this topic before, people are often overwhelmed and unconvinced.
-It's too much at once while also being insufficient.
+It's too much detail at once while also being insufficient.
 
 Ideally we'd be working together shoulder-to-shoulder in a pair or ensemble.
 I could introduce bits and pieces of these ideas incrementally as needed by the work.
-But since we can't do that, maybe this document is a good enough idea.
+But if we can't do that (yet), maybe this document is a good enough idea.
 
-Adult humans tend to learn with a mix of abstract concepts and concrete details.
+<!-- Adult humans tend to learn with a mix of abstract concepts and concrete details.
 Which one would we begin with? Our mature brains want to understand theory and context which are hard to absorb without concrete experience; concrete hands-on experience is frustrating and confusing without a rich understanding of the bigger picture.
 Whichever one we start with, we quickly find ourselves longing for the other.
 
 I usually start with little bit of concrete detail, then a bit of the abstract concept, cycling back and forth between them.
-Give yourself the chance to do the same.
-
-Adopt a little bit of ACN in your work, try it out, see what feels good and what feels bad, then come back here and learn a little more.
+Give yourself the chance to do the same. -->
 
 When you are just starting out on an ACN [Learning Path](https://github.com/RefactoringCombos/ArlosCommitNotation/blob/main/Learning%20Path.md) you won't be able to get all the values that I assert can come from ACN.
 Don't be too quick to dismiss ACN based on that initial experience - it will take time to understand deeply and wield effectively.
-For now I ask that you trust that this is real while you develop the skills.
+For now I ask that you trust that this is real while you develop the skills. Adopt a little bit of ACN in your work, try it out, see what feels good and what feels bad, then come back here and learn a little more.
 
-Here's how to use this document:
+Here are some ways to use this document:
 
-	- If someone suggests your team adopt ACN, this document describes reasons you should consider doing so.
+- If someone suggests your team adopt ACN, this document describes some benefits that you could gain from that adoption.
 
-	- If you notice some aspect of the notation that isn't ideal for your context, you should modify the system to suit you better, without interfering with its ability to deliver value that you may not have experienced yet.
-	ACN isn't the only way to solve these problems.
-	My goal here is to give you a more complete list of those problems so that when you modify the system you don't inadvertently leave some points unaddressed.
+- If you notice some aspect of the notation that isn't ideal for your context, you should modify the system to suit you better, without interfering with its ability to deliver value that you may not have experienced yet.
+ACN surely isn't the only way to solve these problems.
+My goal here is to give you a more complete list of those problems so that when you modify the system you don't inadvertently leave some points unaddressed.
 
-	- When you first start using ACN you may not yet be able to effectively wield it for all of these problems.
-	There are skills that take time to learn.
-	That's fine.
-	Over time you can look for opportunities to grow those skills and make ACN more useful to you.
+- When you first start using ACN you may not yet be able to effectively wield it for all of these problems.
+There are skills that take time to learn.
+That's fine.
+Over time you can look for opportunities to grow those skills and make ACN more useful to you.
 
-	- If you want to check your progress adopting ACN, ask if you are getting all the value described here.
-	When you see a gap that's an opportunity for a retrospective - what are we missing?
+- If you want to check your progress adopting ACN, ask if you are getting all the value described here.
+When you see a gap that's an opportunity for a retrospective - what are we missing?
 
-The Why of ACN will not make complete sense until you have had the chance to fully explore, learn, and apply those skills.
+The Why of ACN will not make complete sense until you have had the chance to fully explore, learn, and apply all these skills.
 Give it time.
 
 # Scan for Risk
 
-The use of spaces in the lower-risk tags (`x - ` / `X - `) makes the higher-risk tags (X!! / X**) stand out in a "oneline"-type history. Consider this example:
+The format of the lower-risk tags (`x - ` / `X - `) makes the higher-risk tags (`X!!` / `X**`) stand out in a "oneline"-type history. Consider this example:
 
 ```
 > git log --oneline
@@ -78,9 +92,9 @@ This approach only as helpful as the extent to which lower risk (`x`/`X`) commit
 
 You can get your code reviews / pull requests completed faster if you work in small increments, separate changes by category (feature, bugfix, refactoring), and indicate risks.
 
-If I split a 2-day feature into one day of refactoring and one day of behavior change, you can review my refactoring first.
+If I split a 2-day feature into one day of preparatory refactoring and one day of behavior change, you can review my refactoring first.
 Obviously 1 day of changes is easier to review than 2 days of changes, just because of size.
-Feedback on the smaller change will be less disruptive if I receive the feedback it before implementing the whole shebang.
+Feedback on the smaller change will be less disruptive if I receive the feedback for it before implementing the whole shebang.
 
 It's possible for refactorings to have much lower risk than features and bugfixes.
 By definition, refactorings should *not* change behavior but features and bugfixes *must* change behavior.
