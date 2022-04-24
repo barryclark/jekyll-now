@@ -17,31 +17,110 @@ FABRIK의 절차는 다음과 같습니다.
 3. 라인의 테일을 길이에 맞게 슬라이드 합니다.   
 
 ```
+/*
+*    If Tail and Target are the same, it occur zero divide.
+*/
 FVector GetNewTailPosition(float Length, const FVector& Tail, const FVector& Target)
 {
     const FVector TailDirection = Tail - Target;
 
     const float StretchedLength = TailDirection.Length();
     const float Scale = Length / StretchedLength;
-    
     return Target + TailDirection * Scale;
 }
 ```
 
-getTailPosition의 리턴값을 부모라인의 target으로 두어 위의 과정을 반복할 수 있습니다.
+이제 GetNewTailPosition을 연결된 라인들에 순차적으로 적용시킬 수 있습니다.
+이를 통해 항상 Target에 도달하는 FABRIK을 구현할 수 있습니다.
 
+* Array에 대해서 다음을 수행할 수 있지만, Iterator를 이용하면
+Forward와 Backward로직을 분리할 필요가 없습니다.
+
+```
+/*
+*    If StartHead and EndTail are Iterators of different arrays,
+*   an error will occur.
+*    EndTail is the actual iterator.
+*/
+void UpdateFromHeadToLast(Iterator<Segment> Head, const Iterator<Segment>& EndTail, FVector Target)
+{
+    Iterator Tail = Head.Next();
+
+    while(Tail != EndTail)
+    {
+        Head.Position = Target;
+        Tail.Position = GetNewTailPosition(Head.Length, Tail.Position, Target);
+
+        Target = Tail.Position;
+        Head++;
+        Tail++;
+    }
+}
+```
+
+또는 
+
+```
+/*
+*    If StartHead and EndTail are Iterators of different arrays,
+*   an error will occur.
+*    EndTail is the actual iterator.
+*/
+void UpdateFromHeadToLast(Iterator<Segment> Head, const Iterator<Segment>& EndTail, FVector Target)
+{
+    while(Head != EndTail)
+    {
+        Head.Position = Target;
+        float Length = Head.Length();
+        Head++;
+
+        // Now the head to the tail.
+        Head.Position = GetNewTailPosition(Length, Head.Position, Target);
+    }
+}
+```
+
+# FORWARD and BACKWARD #
+
+움직이지 않고 고정되어 있어야 하는 부분이 있을 때 사용하는 방법을 설명합니다.
+FABRIK은 체인의 헤드가 항상 목표에 도달할 것을 보장합니다.
+이를 역으로 수행함으로써 베이스가 항상 고정된 상태를 유지하도록 할 수 있습니다.
+
+```
+void ApplyFABRIK(Array<Segment>& Segments, const FVector& Target)
+{
+    const FVector FixedPosition = Segments[0].Position;
+
+    UpdateFromHeadToLast(Segments.RFirst(), Segments.RLast(), Target);
+    UpdateFromHeadToLast(Segments.First(), Segments.Last(), FixedPosition);
+}
+```
+
+# 결론 #
+
+* 관절에 제약조건을 추가할 수 있습니다.
+
+* 선 이외의 개체를 이동하는 것도 가능합니다. (ex. 단단한 삼각형)
+
+* 핵심 아이디어를 이해하면, 다양하게 적용할 수 있습니다.
 
 
 ? normalize안하고 계산하는게 훨씬 빠르다. 여억시 알고리즘 인가?
 
 ? 구현 했다 오류가 있다. 부동소수점 오류 때문인가?
+! Target으로 해야될 것을 TailPosition으로 했더니 오류가 있는 거였다. 당연히 작동되지 않았던 것이었다.
+머리로 생각해서 작성하느니 그림으로 그리는게 훨씬 빠르겠다.
 
 ? IK문제에 대한 수치적 솔루션?? 야코비안 역 기법? 발견적 방법?
 
 ? 6개의 회전 관절에 대해서는 답이 있지만, 7개의 회전 관절에 대해서는 무한히 많고 분석 솔루션이 존재하지 않는다?
+
+? 모르는게 너무 많다아.
 
 https://en.wikipedia.org/wiki/Inverse_kinematics 
    
 https://morm.tistory.com/81 
 
 https://sean.cm/a/fabrik-algorithm-2d 
+
+https://docs.unrealengine.com/4.27/en-US/BlueprintAPI/Math/Float/SafeDivide/ 
