@@ -74,15 +74,15 @@ void ApplyFABRIK(Array<Segment>& Segments, const FVector& Target)
 
 # 활용 #
 
+* UnrealEngine에서 Engine/Source/Runtime/AnimationCore/public/FABRIK.h에서 사용할 수 있습니다.    
+
 * 관절에 제약조건을 추가할 수 있습니다.   
 * 선 이외의 개체를 이동하는 것도 가능합니다. (ex. 단단한 삼각형)   
 * 핵심 아이디어를 이해하면, 다양하게 적용할 수 있습니다.   
 
 
-https://en.wikipedia.org/wiki/Inverse_kinematics 
-   
-https://morm.tistory.com/81 
+https://en.wikipedia.org/wiki/Inverse_kinematics   
 
-https://sean.cm/a/fabrik-algorithm-2d 
+https://sean.cm/a/fabrik-algorithm-2d   
 
-https://docs.unrealengine.com/4.27/en-US/BlueprintAPI/Math/Float/SafeDivide/ 
+https://docs.unrealengine.com/4.27/en-US/BlueprintAPI/Math/Float/SafeDivide/   
