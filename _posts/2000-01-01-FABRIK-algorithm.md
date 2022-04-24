@@ -44,30 +44,6 @@ Forward와 Backward로직을 분리할 필요가 없습니다.
 */
 void UpdateFromHeadToLast(Iterator<Segment> Head, const Iterator<Segment>& EndTail, FVector Target)
 {
-    Iterator Tail = Head.Next();
-
-    while(Tail != EndTail)
-    {
-        Head.Position = Target;
-        Tail.Position = GetNewTailPosition(Head.Length, Tail.Position, Target);
-
-        Target = Tail.Position;
-        Head++;
-        Tail++;
-    }
-}
-```
-
-또는 
-
-```
-/*
-*    If StartHead and EndTail are Iterators of different arrays,
-*   an error will occur.
-*    EndTail is the actual iterator.
-*/
-void UpdateFromHeadToLast(Iterator<Segment> Head, const Iterator<Segment>& EndTail, FVector Target)
-{
     while(Head != EndTail)
     {
         Head.Position = Target;
