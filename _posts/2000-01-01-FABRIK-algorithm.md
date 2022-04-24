@@ -105,18 +105,6 @@ void ApplyFABRIK(Array<Segment>& Segments, const FVector& Target)
 * 핵심 아이디어를 이해하면, 다양하게 적용할 수 있습니다.
 
 
-? normalize안하고 계산하는게 훨씬 빠르다. 여억시 알고리즘 인가?
-
-? 구현 했다 오류가 있다. 부동소수점 오류 때문인가?
-! Target으로 해야될 것을 TailPosition으로 했더니 오류가 있는 거였다. 당연히 작동되지 않았던 것이었다.
-머리로 생각해서 작성하느니 그림으로 그리는게 훨씬 빠르겠다.
-
-? IK문제에 대한 수치적 솔루션?? 야코비안 역 기법? 발견적 방법?
-
-? 6개의 회전 관절에 대해서는 답이 있지만, 7개의 회전 관절에 대해서는 무한히 많고 분석 솔루션이 존재하지 않는다?
-
-? 모르는게 너무 많다아.
-
 https://en.wikipedia.org/wiki/Inverse_kinematics 
    
 https://morm.tistory.com/81 
