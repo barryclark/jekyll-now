@@ -74,15 +74,19 @@ void ApplyFABRIK(Array<Segment>& Segments, const FVector& Target)
 
 # 활용 #
 
-* UnrealEngine에서 Engine/Source/Runtime/AnimationCore/public/FABRIK.h에서 사용할 수 있습니다.    
+* UnrealEngine에서 Engine/Source/Runtime/AnimationCore/public/FABRIK.h에서 사용할 수 있습니다.   
+
+? 뭐지. Unreal은 Normal을 이용해서 Tail을 슬라이드 하네요? 약간의 연산정도는 더 해도 된다는 걸까요?   
+! 정신건강에 안 좋네.
+
+? FABRIK에는 제약조건이 없네요. IK를 봐야 할까요?
+
+? 작성한거 제대로 작동하는지 확인해봐야함.
 
 * 관절에 제약조건을 추가할 수 있습니다.   
 * 선 이외의 개체를 이동하는 것도 가능합니다. (ex. 단단한 삼각형)   
 * 핵심 아이디어를 이해하면, 다양하게 적용할 수 있습니다.   
 
-
 https://en.wikipedia.org/wiki/Inverse_kinematics   
 
 https://sean.cm/a/fabrik-algorithm-2d   
-
-https://docs.unrealengine.com/4.27/en-US/BlueprintAPI/Math/Float/SafeDivide/   
