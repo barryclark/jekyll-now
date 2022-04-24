@@ -81,6 +81,7 @@ https://meetup.toast.com/posts/106
 & add file_name.xxx
 
 커밋에 단일 파일의 변경사항을 포함합니다.
+상관 없는 여러개의 파일을 변경한 다음 commit할 경우, 직접 변경한 파일을 지정하여 커밋할 수 있습니다.
 
 # commit의 삭제 #
 
