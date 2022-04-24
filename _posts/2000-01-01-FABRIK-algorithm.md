@@ -17,14 +17,14 @@ FABRIK의 절차는 다음과 같습니다.
 3. 라인의 테일을 길이에 맞게 슬라이드 합니다.   
 
 ```
-Vector GetNewTailPosition(float length, const Vector& tail, const Vector& target)
+FVector GetNewTailPosition(float Length, const FVector& Tail, const FVector& Target)
 {
-    const Vector tailDirection = tail - target;
+    const FVector TailDirection = Tail - Target;
 
-    const float stretchedLength = tailDirection.Length();
-    const float scale = length / stretchedLength;
+    const float StretchedLength = TailDirection.Length();
+    const float Scale = Length / StretchedLength;
     
-    return target + tailDirection * scale;
+    return Target + TailDirection * Scale;
 }
 ```
 
