@@ -13,6 +13,9 @@ title: Bublble, selection, insert sort
 정리가 끝날 때 까지 바로 순서대로 옆에있는 두 박스들의 순서를 보고 바꾸는 방법입니다.
 이떄 정리는 못해도 박스의 갯수 안에 끝나게 됩니다.
 
+* 탄산음료가 있을 때 무거운 액체와 기체는 서로 위치를 교체하며
+가벼운 기체는 위로 올라가고, 무거운 액체는 아래로 내려갑니다.
+
 ? Computer의 입장에서 설명
 
 시간복잡도 : O(n*n)
@@ -50,6 +53,8 @@ void bubbleSort(int array[], int arraySize)
 이때 박스들의 번호가 가장 작은 것을 찾아서 
 첫번째 부터 차례대로 정리하는 방법입니다. 
 
+* 
+
 시간복잡도 : O(n*n)
 void selectionSort(int array[], int arraySize)   
 {   
@@ -58,10 +63,10 @@ void selectionSort(int array[], int arraySize)
         int minIndex = nowIndex;   
         for(int searchIndex = nowIndex + 1; searchIndex < arraySize; ++searchIndex)   
         {   
-            if(array[searchIndex] > array[nowIndex])   
+            if(array[searchIndex] < array[minIndex])   
                minIndex = searchIndex;   
         }   
-        array[nowIndex] = array[nowIndex];   
+        swap(array[minIndex], array[nowIndex]);
     }   
 }   
 
