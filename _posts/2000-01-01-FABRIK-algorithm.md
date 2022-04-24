@@ -19,6 +19,15 @@ FABRIK의 절차는 다음과 같습니다.
 ```
 FVector URobotArmController::GetNewTailPosition(float Length, const FVector& Tail, const FVector& Target)
 {
+#ifdef WITH_EDITOR
+
+	if (FVector::Distance(Tail, Target) < FLT_EPSILON)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("The distance between the target and the tail is too small."));
+	}
+
+#endif // WITH_EDITOR
+
 	const FVector TargetToTailVector = (Tail - Target).GetUnsafeNormal();
 	return Target + TargetToTailVector * Length;
 }
@@ -32,17 +41,59 @@ FABRIK은 체인의 헤드가 항상 목표에 도달할 것을 보장합니다.
 이를 역으로 수행함으로써 베이스가 항상 고정된 상태를 유지하도록 할 수 있습니다.
 
 ```
-void ApplyFABRIK(Array<Segment>& Segments, const FVector& Target)
+void URobotArmController::ApplyFABRIK(TArray<FSegment>& Segments, FVector Target)
 {
-    const FVector FixedPosition = Segments[0].Position;
+#ifdef WITH_EDITOR
 
-    
+	if (Segments.Num() < 2)
+	{
+		UE_LOG(LogTemp, Error, TEXT("Invalid segment length."));
+		return;
+	}
+
+#endif // WITH_EDITOR
+
+	const FVector FixedPosition = Segments[Segments.Num() - 1].Position;
+
+	// Forward
+	int TailIndex = 1;
+	while (TailIndex < Segments.Num())
+	{
+		Segments[TailIndex - 1].Position = Target;
+		Segments[TailIndex].Position = GetNewTailPosition(
+			Segments[TailIndex - 1].Length,
+			Segments[TailIndex].Position,
+			Target
+		);
+
+		Target = Segments[TailIndex].Position;
+		++TailIndex;
+	}
+
+	// Backward
+	TailIndex = Segments.Num() - 1;
+	Target = FixedPosition;
+	while (TailIndex >= 0)
+	{
+		Segments[TailIndex + 1].Position = Target;
+		Segments[TailIndex].Position = GetNewTailPosition(
+			Segments[TailIndex + 1].Length,
+			Segments[TailIndex].Position,
+			Target
+		);
+
+		--TailIndex;
+	}
 }
 ```
 
 # 활용 #
 
 * UnrealEngine에서 Engine/Source/Runtime/AnimationCore/public/FABRIK.h에서 사용할 수 있습니다.   
+
+? 머리로 생각하는데 한계가 있으니, 적으면서 하자.
+
+? 로직을 하나로 합치는 것은, Iterator에 대해서 깊게 이해하지 못했기 때문에, 잘못된 결론에 도달했다고 볼 수 있나?
 
 ? 뭐지. Unreal은 Normal을 이용해서 Tail을 슬라이드 하네요? 약간의 연산정도는 더 해도 된다는 걸까요?   
 ! 정신건강에 안 좋네.
@@ -52,8 +103,6 @@ void ApplyFABRIK(Array<Segment>& Segments, const FVector& Target)
 ! 실제 구현된 결과물을 보고 코드를 작성해야 삽질하는 시간을 줄일 수 있다.
 
 ? FABRIK에는 제약조건이 없네요. IK를 봐야 할까요?
-
-? 작성한거 제대로 작동하는지 확인해봐야함.
 
 ? 로직을 나눌 수 있을 줄 알았지만, 나누지 못하네, 그냥 반복하는게 더 단순한가?
 
@@ -82,8 +131,10 @@ void ApplyFABRIK(Array<Segment>& Segments, const FVector& Target)
 
 ! 코드는 적정선만큼 작성하는 것이 좋다.
 ! 일단 구현된 결과물을 보고 다음 단계로 넘어가는 것이 좋다?
-! 어렵네. 한번에 오류 안나게 작성하면서, 재사용이 용이한 코드를 작성하면서, 주석이 필요없는 깔끔한 코드를 작성하면서, 효율적인 코드를 작성하기란.
+! 어렵네. 빠르게 생각없이 구현하고, 내제된 오류 를 찾은다음, 재사용이 용이한 코드를 작성하면서, 주석이 필요없는 깔끔한 코드를 작성하면서, 효율적인 코드를 작성하기란.
 ! 요구사항을 정했으면, 나눠서 하나씩 연습하면 되는 것 아닌가? 
+
+? 코드퀄리티를 높이기 위해서, https://just-do-it-unyong.tistory.com/entry/%EC%A0%95%EB%8B%B5%EC%9D%84-%EA%B3%A0%EC%B9%98%EB%A9%B4-%ED%8B%80%EB%A6%AC%EB%8A%94-%EC%9D%B4%EC%9C%A0-%EC%9D%B4-%EA%B8%80-%ED%95%98%EB%82%98%EB%A1%9C-%EC%A0%95%EB%A6%AC%ED%95%A9%EB%8B%88%EB%8B%A4-feat-%ED%95%B4%EA%B2%B0%EC%B1%85-%EC%A0%9C%EC%8B%9C 를 참고해야 할까? 클린코드 읽어봐야지.
 
 https://en.wikipedia.org/wiki/Inverse_kinematics   
 
