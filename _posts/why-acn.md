@@ -3,7 +3,7 @@ layout: post
 title: The Why of Arlo's Commit Notation
 ---
 
-[Arlo's Commit Notation](https://github.com/RefactoringCombos/ArlosCommitNotation) (ACN) is a tool which can be wielded to solve certain problems, but at the outset it can be really hard to see those problems and how ACN addresses them. Let's see what happens if I try to describe it all in great detail in article format.
+[Arlo's Commit Notation](https://github.com/RefactoringCombos/ArlosCommitNotation) (ACN) is a tool which can be wielded to solve certain problems: I use it to scan for risk, speed up code review, remind myself to take smaller, safe steps, ship faster and more safely, and make rollback easier. At the outset it can be really hard to see those problems and how ACN addresses them. Let's see what happens if I try to describe it all in great detail in article format.
 
 But first, a summary of ACN. Prefix each commit message with a 3-character code. The first character is a letter indicating the intent for example:
 
