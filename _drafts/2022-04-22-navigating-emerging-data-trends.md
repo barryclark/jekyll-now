@@ -25,4 +25,4 @@ Although it wasn't easy, I believe, we now offer the ideal platform to accomplis
 
 ## Wrap Up
 
-Maxwell understands that there isn’t enough time in our busy lives for career growth and personal development to be completely separated. If solving the mortgage industry’s toughest data related questions and working with our new data stack interests you - feel free to check out [Maxwell’s career page](https://ats.comparably.com/api/v1/lvr/himaxwell) or reach out to me directly, michael.shaw@himaxwell.com. 
+Maxwell understands there isn’t enough time in our busy lives for career growth and personal development to be worked on separetly. If solving the mortgage industry’s toughest data related questions and working with our new data stack interests you - feel free to check out [Maxwell’s career page](https://ats.comparably.com/api/v1/lvr/himaxwell) or reach out to me directly, michael.shaw@himaxwell.com. 
