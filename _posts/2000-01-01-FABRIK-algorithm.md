@@ -47,7 +47,7 @@ void URobotArmController::ApplyFABRIK(TArray<FSegment>& Segments, FVector Target
 
 	if (Segments.Num() < 2)
 	{
-		UE_LOG(LogTemp, Error, TEXT("Invalid segment length."));
+		UE_LOG(LogTemp, Error, TEXT("Invalid segment num."));
 		return;
 	}
 
