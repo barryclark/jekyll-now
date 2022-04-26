@@ -1,5 +1,5 @@
 ---
-title: Python Basic
+title: 02. Python Basic
 author: Min
 date: 2022-03-16
 category: Jekyll
