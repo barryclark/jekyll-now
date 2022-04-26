@@ -45,6 +45,7 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [six2dez/OneListForAll](https://github.com/six2dez/OneListForAll)
 * [assetnote/blind-ssrf-chains](https://github.com/assetnote/blind-ssrf-chains)
 * [bkimminich/it-security-lecture](https://github.com/bkimminich/it-security-lecture)
+* [Awesome-HTTPRequestSmuggling](https://github.com/chenjj/Awesome-HTTPRequestSmuggling)
 
 ## Pentesting
 
