@@ -12,6 +12,8 @@ https://jekyllrb.com/docs/
 # Markdown API #   
 https://docs.gitlab.com/ee/api/markdown.html
 
+# MDN #
+https://developer.mozilla.org/ko/
 
 ## Blog 주소 ##
 Post의 주소는 _posts폴더의 .md파일의 이름에서 YYYY-MM-DD-를 제외하면 주소를 알 수 있습니다.
@@ -20,19 +22,17 @@ ex)
 2022-4-16-New-post >>> https:://kbmhansungb.github.io/New-post/
 
 ## Blog About 옆에 Github링크 추가하기 ##
+_default.html에서 nav를 찾습니다.
 
+* nav는 
 
-&#42; GitHub link를 추가하고자 한다.
-? 도대체 뭐라는 거냐...
-! 일단 doc github에서 열심히 찾아보자.
-
----
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-            <a href="https://github.com/kbmhansungb">GitHub</a>
-          </nav>
----
+```
+<nav>
+  <a href="{{ site.baseurl }}/">Blog</a>
+  <a href="{{ site.baseurl }}/about">About</a>
+  <a href="https://github.com/kbmhansungb">GitHub</a>
+</nav>
+```
 
     
 ? GitHub 페이지를 추가하였다. 왜 About을 누르면 GitHub페이지가 나오지 않는가?
