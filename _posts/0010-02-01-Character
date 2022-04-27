@@ -1,6 +1,4 @@
 
-이야 어떻게 이걸 머리에 다 집어넣을까.
-프레임워크 토나오네.
 
 ## 클래스를 가져옴 ##
 
@@ -13,12 +11,14 @@ if (classAsset != nullptr)
 
 # 사용 예시 #
 
+```
 // set default pawn class to our Blueprinted character
 static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(TEXT("/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter"));
 if (PlayerPawnBPClass.Class != NULL)
 {
 	DefaultPawnClass = PlayerPawnBPClass.Class;
 }
+```
 
 ## 블루프린트 클래스 변경 ##
 
