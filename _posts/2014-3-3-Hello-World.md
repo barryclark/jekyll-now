@@ -1,8 +1,7 @@
 ---
 layout: post
-title: You're up and running!
+title: My Awesome start that you shouldn't do
 published: true
 ---
 
-> # This is a note!
-> a quote from me
+
