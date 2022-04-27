@@ -6,7 +6,7 @@ title: Evil User Stories
 User Stories are an awesome part of XP (eXtreme Programming) and a really big achievement in leverage user centric thinking.
 If you think of regular user story template you surely have found one like this:
 
-> As a <role>, I can <capability>, so that receive <benefit>
+**As a <role>, I can <capability>, so that receive <benefit>**
 
 This is probably the most common template. Be aware that the “so that” clause is optional. Next to the template a good user story requires acceptance criteria to satisfy the persona which is associated with the`<role>`.
 
@@ -34,7 +34,7 @@ An Evil User Story can have two points of view: Misuse and Abuse.You should alwa
 
 On a high flight level it can be abstracted like written [here](https://security.stackexchange.com/a/57072)
 
-“Running while carrying a powered chainsaw is misuse doing so on
+> “Running while carrying a powered chainsaw is misuse doing so on
 purpose in a crowded mall is abuse"
 
 **Misuse**
