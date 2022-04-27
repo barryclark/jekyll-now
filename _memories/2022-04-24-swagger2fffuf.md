@@ -56,7 +56,7 @@ $ cat test.json | pasw -mm post
 curl -X POST -d "email=''&password=''" -u https://test.com/v1/company/auth
 ```
 
-pasw tries to give you hints about type of parameters by emiting empty values like '', [], false.
+pasw tries to give you hints about type of parameters by emitting empty values like '', [], false.
 
 **flag forwarding**:
 
