@@ -1,14 +1,26 @@
 ---
 layout: post
-title: Blog 기록
+title: jekyll 기록
 ---
 
-// 2022 04 16
+## 시작 ##
+일단 모르겠으면 DOC을 보도록 합시다.
 
-&#42; GitHub blog를 tutorial대로 따라 만들었다.
+# Jekyll DOC #
+https://jekyllrb.com/docs/
 
-! _posts의 파일 이름에서 YYYY-MM-DD-를 제외하면 주소를 알 수 있다.
-! 2022-4-16-New-post -> https://kbmhansungb.github.io/New-post/
+# Markdown API #   
+https://docs.gitlab.com/ee/api/markdown.html
+
+
+## Blog 주소 ##
+Post의 주소는 _posts폴더의 .md파일의 이름에서 YYYY-MM-DD-를 제외하면 주소를 알 수 있습니다.
+
+ex)
+2022-4-16-New-post >>> https:://kbmhansungb.github.io/New-post/
+
+## Blog About 옆에 Github링크 추가하기 ##
+
 
 &#42; GitHub link를 추가하고자 한다.
 ? 도대체 뭐라는 거냐...
