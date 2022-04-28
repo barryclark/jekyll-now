@@ -3,27 +3,48 @@ layout: post
 title: jekyll 기록
 ---
 
-## 시작 ##
-일단 모르겠으면 DOC을 보도록 합시다.
+## 시작
 
-# Jekyll DOC #
-https://jekyllrb.com/docs/
+<https://commonmark.org/help/tutorial/05-blockquotes.html>
 
+처음 마크다운 포스트를 시작하기 좋은 튜토리얼 입니다.
 
+# Jekyll DOC
+<https://jekyllrb.com/docs/>
 
-# Markdown API #   
-https://docs.gitlab.com/ee/api/markdown.html
+지킬은 정적 사이트 생성기입니다. 좋아하는 마크업 언어로 작성된 텍스트를 사용하고 레이아웃을 사용하여 정적 웹사이트를 만듭니다. 사이트의 모양과 느낌, URL, 페이지에 표시되는 데이터 등을 조정할 수 있습니다.
 
-# MDN #
-https://developer.mozilla.org/ko/
+# Markdown API   
+<https://docs.gitlab.com/ee/api/markdown.html>
 
-## Blog 주소 ##
+마크다운은 일반 텍스트 기반의 경량 마크업 언어입니다. 일반 텍스트로 서식이 있는 문서를 작성하는 데 사용되며, 일반 마크업 언어에 비해 문법이 쉽고 간단한 것이 특징입니다. HTML과 리치 텍스트(RTF)등 서식 문서로 쉽게 변환되기 때문에 응용 소프트웨어와 함께 배포되는 README파일이나 온라인 게시물 등에 많이 사용됩니다. 
+
+[마크다운 위키피디아](https://ko.wikipedia.org/wiki/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)
+
+# MDN
+<https://developer.mozilla.org/ko/>
+
+## 링크 달기
+
+이를 이용하여 링크를 달 수 있습니다.
+```
+<URL>
+```
+
+## 링크 텍스트 달기
+
+텍스트에 링크를 다는 것은 다음과 같이 구현할 수 있습니다.
+```
+[Link text Here](https://link-url-here.org)
+```
+
+## Blog 주소
 Post의 주소는 _posts폴더의 .md파일의 이름에서 YYYY-MM-DD-를 제외하면 주소를 알 수 있습니다.
 
 ex)
 2022-4-16-New-post >>> https:://kbmhansungb.github.io/New-post/
 
-## Blog About 옆에 Github링크 추가하기 ##
+## Blog About 옆에 Github링크 추가하기
 _default.html에서 nav를 찾습니다.
 
 * nav는 
@@ -36,7 +57,7 @@ _default.html에서 nav를 찾습니다.
 </nav>
 ```
 
-## 코드 블럭이 더블 프레임으로 표시되는 경우 ##
+## 코드 블럭이 더블 프레임으로 표시되는 경우
 
 https://stackoverflow.com/questions/55308142/why-do-i-get-a-double-frame-around-markdown-code-block-on-jekyll-site
 
@@ -48,7 +69,7 @@ https://talk.jekyllrb.com/t/different-syntax-highlighting-on-github-pages-and-lo
 
 ? 이를 이해하기 위해서는 GitHub Pages가 무엇인지 이해할 필요가 있는 것 같습니다.
 
-## 강조(Emphasis) ##
+## 강조(Emphasis)
 
 https://docs.gitlab.com/ee/development/documentation/styleguide/#emphasis
 
@@ -62,7 +83,7 @@ https://docs.gitlab.com/ee/development/documentation/styleguide/#emphasis
 
 > 인용구
 
-## 미정리 ##
+## 미정리
     
 ? GitHub 페이지를 추가하였다. 왜 About을 누르면 GitHub페이지가 나오지 않는가?
 ! 업데이트 하는데 시간이 걸리는 것 같다. 
