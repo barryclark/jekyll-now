@@ -50,6 +50,12 @@ MDN(모질라 개발자 네트워크)은 웹 표준과 모질라 프로젝트에
 
 ## 해야할 목록들
 
+* 어떻게 쓰는 거라냐.
+
+<nav>
+  <a href="https://kbmhansungb.github.io/jekyll-blog/">Jekyll</a>
+</nav>
+
 * 커스텀 페이지 추가하기
 
 * 모질라가 어떤건가요?
