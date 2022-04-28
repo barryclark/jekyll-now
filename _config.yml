@@ -86,3 +86,7 @@ exclude:
   - CNAME
 
 theme: jekyll-theme-slate
+
+collections:
+  projects:
+    output: true
