@@ -5,6 +5,8 @@ title: code block
 
 # 코드 블럭 달기
 
+[GitHub Docs - Creating and highlighting code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks)
+
 코드블럭은 다음과 같이 달 수 있다고 합니다.
 ```
 

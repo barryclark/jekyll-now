@@ -47,19 +47,19 @@ MDN(모질라 개발자 네트워크)은 웹 표준과 모질라 프로젝트에
 
 ## 해야할 목록들
 
-[ ] 커스텀 페이지 추가하기
+* 커스텀 페이지 추가하기
 
-[ ] 모질라가 어떤건가요?
+* 모질라가 어떤건가요?
 
-[ ] [Extended Syntax]<https://www.markdownguide.org/extended-syntax/>, 자동으로 해당 링크의 목차를 가져오고 싶어요.
+* [Extended Syntax]<https://www.markdownguide.org/extended-syntax/>, 자동으로 해당 링크의 목차를 가져오고 싶어요.
 
-[ ] 미분류 정리하기
+* 미분류 정리하기
 
-[ ] 코드 블럭이 더블 프레임으로 추가되는 경우 해결하는 방법이 나와있는데 왜 그렇게 되는 건지 전혀 모르겠네요.   
+* 코드 블럭이 더블 프레임으로 추가되는 경우 해결하는 방법이 나와있는데 왜 그렇게 되는 건지 전혀 모르겠네요.   
 <https://talk.jekyllrb.com/t/different-syntax-highlighting-on-github-pages-and-locaklly/1084>   
 이를 이해하기 위해서 GitHub페이지가 무엇인지 부터 알아야 할까요?
 
-[ ] [가로바 그리기](https://inasie.github.io/it%EC%9D%BC%EB%B0%98/jekyll-%EA%B0%80%EB%A1%9C-bar-chart/)
+* [가로바 그리기](https://inasie.github.io/it%EC%9D%BC%EB%B0%98/jekyll-%EA%B0%80%EB%A1%9C-bar-chart/)
 
 ## Blog 주소
 Post의 주소는 _posts폴더의 .md파일의 이름에서 YYYY-MM-DD-를 제외하면 주소를 알 수 있습니다.
