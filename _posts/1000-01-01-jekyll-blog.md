@@ -61,6 +61,8 @@ MDN(모질라 개발자 네트워크)은 웹 표준과 모질라 프로젝트에
 
 * [가로바 그리기](https://inasie.github.io/it%EC%9D%BC%EB%B0%98/jekyll-%EA%B0%80%EB%A1%9C-bar-chart/)
 
+* 자바스크립트가 뭐래요?
+
 ## Blog 주소
 Post의 주소는 _posts폴더의 .md파일의 이름에서 YYYY-MM-DD-를 제외하면 주소를 알 수 있습니다.
 
