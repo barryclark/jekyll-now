@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Post
+title: LIBIGL library
 ---
 
 # LIBIGL #
