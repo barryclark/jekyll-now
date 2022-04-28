@@ -26,8 +26,8 @@ title: Unreal engine
 * Animation
     * [Anim-notify](UE-Anim-notify.md)
         - Animation notify
-* Automation
-    * [UnrealEngine](_unreal/UE-TDD.md)
+<!-- * Automation
+    * [UnrealEngine](_unreal/UE-TDD.md) -->
 
 # 활용
 
