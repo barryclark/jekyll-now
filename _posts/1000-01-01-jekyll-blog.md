@@ -23,7 +23,7 @@ MDN(모질라 개발자 네트워크)은 웹 표준과 모질라 프로젝트에
 
 [MDN 위키피디아](https://ko.wikipedia.org/wiki/MDN_%EC%9B%B9_%EB%AC%B8%EC%84%9C)
 
-## 정리
+## 활용
 
 * [링크](link.md)
   - 링크 달기
