@@ -25,20 +25,23 @@ MDN(모질라 개발자 네트워크)은 웹 표준과 모질라 프로젝트에
 
 ## 정리
 
-* [링크](1000-01-02-link.md)
+* [링크](link.md)
   * 링크 달기
   * 텍스트 링크를 달기
   * 문서 링크 만들기
   * 마크다운 링크 달기
-* [강조](1000-01-02-emphasis.md)
+* [강조](emphasis.md)
   * 강조하기
   * 인용구 추가하기
-* [코드블럭](1000-01-02-code-block.md)
+* [코드블럭](code-block.md)
   * 코드 블럭 달기
   * 코드 블럭이 더블 프레임으로 표시되는 경우
-* [테이블](1000-01-02-table.md)
+* [테이블](table.md)
   * 일반적인 표 구성
   * 정렬하기
+* [HTML5](html5.md)
+  * 접기 펼치기
+  * 접기 펼치기 화살표 달기
 
 
 
@@ -55,6 +58,8 @@ MDN(모질라 개발자 네트워크)은 웹 표준과 모질라 프로젝트에
 [ ] 코드 블럭이 더블 프레임으로 추가되는 경우 해결하는 방법이 나와있는데 왜 그렇게 되는 건지 전혀 모르겠네요.   
 <https://talk.jekyllrb.com/t/different-syntax-highlighting-on-github-pages-and-locaklly/1084>   
 이를 이해하기 위해서 GitHub페이지가 무엇인지 부터 알아야 할까요?
+
+[ ] [가로바 그리기](https://inasie.github.io/it%EC%9D%BC%EB%B0%98/jekyll-%EA%B0%80%EB%A1%9C-bar-chart/)
 
 ## Blog 주소
 Post의 주소는 _posts폴더의 .md파일의 이름에서 YYYY-MM-DD-를 제외하면 주소를 알 수 있습니다.
@@ -98,3 +103,4 @@ https://blog.jaeyoon.io/2017/12/jekyll-image.html
 ? HTML 이미지 가운데 정렬   
 https://m.blog.naver.com/mathesis_time/221807095356
 
+? 
