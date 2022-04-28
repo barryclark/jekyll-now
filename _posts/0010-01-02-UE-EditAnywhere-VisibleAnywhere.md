@@ -29,3 +29,5 @@ Edit*는 BlueprintReadWrite를 가지는 것이 보통입니다.
 
 
 ## ? 어떻게 써야 하는 걸까요? ##
+
+private접근 지정자에 있을 때 블루프린트에서 읽을 수 있게 하기 위해서는 meta = (AllowPrivateAccess = true)를 설정해 줘야 합니다.
