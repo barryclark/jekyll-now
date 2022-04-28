@@ -5,38 +5,39 @@ title: jekyll 기록
 
 ## 시작
 
-<https://commonmark.org/help/tutorial/05-blockquotes.html>
+[처음 재미를 붙이기 위한 튜토리얼](https://commonmark.org/help/tutorial/05-blockquotes.html)
 
-처음 마크다운 포스트를 시작하기 좋은 튜토리얼 입니다.
-
-# Jekyll DOC
-<https://jekyllrb.com/docs/>
+# [Jekyll DOC](https://jekyllrb.com/docs/)
 
 지킬은 정적 사이트 생성기입니다. 좋아하는 마크업 언어로 작성된 텍스트를 사용하고 레이아웃을 사용하여 정적 웹사이트를 만듭니다. 사이트의 모양과 느낌, URL, 페이지에 표시되는 데이터 등을 조정할 수 있습니다.
 
-# Markdown API   
-<https://docs.gitlab.com/ee/api/markdown.html>
+# [Markdown API](https://docs.gitlab.com/ee/api/markdown.html)
 
 마크다운은 일반 텍스트 기반의 경량 마크업 언어입니다. 일반 텍스트로 서식이 있는 문서를 작성하는 데 사용되며, 일반 마크업 언어에 비해 문법이 쉽고 간단한 것이 특징입니다. HTML과 리치 텍스트(RTF)등 서식 문서로 쉽게 변환되기 때문에 응용 소프트웨어와 함께 배포되는 README파일이나 온라인 게시물 등에 많이 사용됩니다. 
 
 [마크다운 위키피디아](https://ko.wikipedia.org/wiki/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)
 
-# MDN
-<https://developer.mozilla.org/ko/>
+# [MDN](https://developer.mozilla.org/ko/)
 
-## 링크 달기
+MDN(모질라 개발자 네트워크)은 웹 표준과 모질라 프로젝트에 대한 개발 문서들이 담긴 모질라의 공식 웹사이트 입니다.
 
-이를 이용하여 링크를 달 수 있습니다.
-```
-<URL>
-```
+[MDN 위키피디아](https://ko.wikipedia.org/wiki/MDN_%EC%9B%B9_%EB%AC%B8%EC%84%9C)
 
-## 링크 텍스트 달기
+## 해야할 목록들
 
-텍스트에 링크를 다는 것은 다음과 같이 구현할 수 있습니다.
-```
-[Link text Here](https://link-url-here.org)
-```
+? 커스텀 페이지 추가하기
+
+? 모질라가 어떤건가요?
+
+? [Extended Syntax]<https://www.markdownguide.org/extended-syntax/>, 자동으로 해당 링크의 목차를 가져오고 싶어요.
+
+## 정리
+
+* [링크]<1000-01-02-link.md>
+  * 링크 달기
+  * 텍스트 링크를 달기
+  * 문서 링크 만들기
+  * 마크다운 링크 달기
 
 ## Blog 주소
 Post의 주소는 _posts폴더의 .md파일의 이름에서 YYYY-MM-DD-를 제외하면 주소를 알 수 있습니다.
