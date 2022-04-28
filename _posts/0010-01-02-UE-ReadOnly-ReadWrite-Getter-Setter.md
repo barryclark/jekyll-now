@@ -3,17 +3,17 @@ layout: post
 title: UE5 ReadOnly ReadWrite Getter Setter
 ---
 
-프로퍼티에 관해서 : https://docs.unrealengine.com/4.27/en-US/   ProgrammingAndScripting/GameplayArchitecture/Properties/   
-프로퍼티에 관해서 : https://benui.ca/unreal/uproperty/#blueprint   
-함수에 관해서 : https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/Blueprints/UserGuide/Functions/   
+[프로퍼티에 관해서](https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Properties/)
+[프로퍼티 이쁘게 정리된 곳](https://benui.ca/unreal/uproperty/#blueprint)
+[함수에 관해서](https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/Blueprints/UserGuide/Functions/)
 
-# BlueprintReadOnly #   
+# BlueprintReadOnly
 블루프린트에서 읽는 것만 가능합니다. 
 
-# BlueprintReadWrite #
+# BlueprintReadWrite
 블루프린트에서 읽고 쓰는 것이 가능합니다.
 
-# BlueprintGetter=GetterFunctionName #
+# BlueprintGetter=GetterFunctionName
 이 프로퍼티는 커스텀 엑세서 함수를 지정합니다.
 또한 BlueprintSetter 또는 BlueprintReadWrite지정자가 지정되지 않으면,
 BlueprintReadOnly로 간주합니다. 
@@ -21,10 +21,11 @@ BlueprintReadOnly로 간주합니다.
 * BlueprintGetter는 c++에서 private member access로 변수를 설정하지만,
 블루프린트에 나타내고 싶을 때 이용합니다.
 
+
 https://forums.unrealengine.com/t/whats-the-point-of-blueprintgetter-if-it-didnt-hide-the-direct-access-to-that-variable-in-bp/459697   
 https://en.wikipedia.org/wiki/Mutator_method   
 
-# BlueprintSetter=SetterFunctionName #
+# BlueprintSetter=SetterFunctionName
 이 프로퍼티에는 커스텀 뮤테이터 함수가 있으며, 
 묵시적으로 BlueprintReadWrite지정자가 붙습니다.
 참고로 뮤테이터 함수는 같은 클래스 이름으로 그 일부를 따서 지어야 합니다.

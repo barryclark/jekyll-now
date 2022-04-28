@@ -3,14 +3,14 @@ layout: post
 title: UE BlueprintCallable BlueprintImplementableEvent BlueprintNativeEvent
 ---
 
-# BlueprintCallable #
+# BlueprintCallable
 
 UFUNCTION(BlueprintCallable)   
 void CallCallable();
 
 블루프린트에서 호출이 가능하지만 C++ 코드 편집 없이는 변경이나 덮어쓰기가 불가능합니다.
 
-# BlueprintImplementableEvent #
+# BlueprintImplementableEvent
 
 UFUNCTION(BlueprintImplementableEvent)   
 void CallImplement();
@@ -19,7 +19,8 @@ Implementation event는 함수의 몸체 없이 호출을 할 수 있습니다.
 블루프린트 이벤트 그래프에서 오버라이드 하여 함수의 몸체를 만들어 줄 수 있습니다.
 블루프린트에서 몸체를 만들게 되면 C++ 에서 호출을 할 때 블루프린트 상의 오버라이드한 몸체가 실행됩니다.
 
-# BlueprintNativeEvent #
+
+# BlueprintNativeEvent
 
 UFUNCTION(BlueprintNativeEvent)   
 void CallNative();

@@ -3,7 +3,9 @@ layout: post
 title: UE Garbage collection
 ---
 
-https://www.unrealengine.com/ko/blog/unreal-property-system-reflection
+# 가비지 컬렉션의 작동방식
+
+[가비지 컬랙션을 위해서는 리플랙션이 필요합니다.](https://www.unrealengine.com/ko/blog/unreal-property-system-reflection)
 
 게임 엔진에서 가장 중요한 작업 중 하나는 메모리 관리입니다.
 언리얼 엔진접근 방식은 Garbage collection을 수행하는 것입니다.
