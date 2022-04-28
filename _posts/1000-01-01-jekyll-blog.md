@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jekyll 기록
+title: jekyll(지킬)
 ---
 
 ## 시작
@@ -114,4 +114,4 @@ https://blog.jaeyoon.io/2017/12/jekyll-image.html
 ? HTML 이미지 가운데 정렬   
 https://m.blog.naver.com/mathesis_time/221807095356
 
-? 
+? 지킬 구조의 이해 https://polyglotm.github.io/2016-08-21-ready-for-creating-buautiful-jekyll.html
