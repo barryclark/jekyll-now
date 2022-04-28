@@ -88,5 +88,5 @@ exclude:
 theme: jekyll-theme-slate
 
 collections:
-  projects:
-    output: true
+  unreal-engine:
+    permalink: /_unreal_engine/:title.html
