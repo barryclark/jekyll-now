@@ -34,6 +34,27 @@ _default.html에서 nav를 찾습니다.
 </nav>
 ```
 
+## 코드 블럭이 더블 프레임으로 표시되는 경우 ##
+
+https://stackoverflow.com/questions/55308142/why-do-i-get-a-double-frame-around-markdown-code-block-on-jekyll-site
+
+stackoverflow의 해결방법은 _sass/_higlights.scss파일에서 .highlight를 pre.highlight로 대체하면 된다고 합니다.
+
+이것을 지정하지 않으면 일부 스타일링이 두 번 적용될 수 있다고 합니다.
+
+https://talk.jekyllrb.com/t/different-syntax-highlighting-on-github-pages-and-locaklly/1084
+
+? 이를 이해하기 위해서는 GitHub Pages가 무엇인지 이해할 필요가 있는 것 같습니다.
+
+## 강조(Emphasis) ##
+
+https://docs.gitlab.com/ee/development/documentation/styleguide/#emphasis
+
+* ```*```를 asterisks라 합니다. ```**Bold**```와 같이 사용할 수 있습니다.   
+* ```_```를 underscore라 합니다. ```_italic_와 같이 사용할 수 있습니다.   
+* greater```>```를 이용하여 인용구(blockquotes)를 할 수 있습니다.   
+
+## 미정리 ##
     
 ? GitHub 페이지를 추가하였다. 왜 About을 누르면 GitHub페이지가 나오지 않는가?
 ! 업데이트 하는데 시간이 걸리는 것 같다. 
