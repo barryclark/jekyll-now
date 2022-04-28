@@ -52,10 +52,6 @@ MDN(모질라 개발자 네트워크)은 웹 표준과 모질라 프로젝트에
 
 * 어떻게 쓰는 거라냐.
 
-<nav>
-  <a href="https://kbmhansungb.github.io/jekyll-blog/">Jekyll</a>
-</nav>
-
 * 커스텀 페이지 추가하기
 
 * 모질라가 어떤건가요?
@@ -87,7 +83,12 @@ ex)
 ## Blog About 옆에 Github링크 추가하기
 _default.html에서 nav를 찾습니다.
 
-* nav는 
+* HTML을 공부해야 만들 수 있겠는데...
+```
+<nav>
+  <a href="https://kbmhansungb.github.io/jekyll-blog/">Jekyll</a>
+</nav>
+```
 
 ```
 <nav>
