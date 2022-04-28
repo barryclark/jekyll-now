@@ -30,7 +30,7 @@ title: Unreal engine
     * [Anim-notify](UE-Anim-notify)
         - Animation notify
 * Automation
-    * [UnrealEngine](_unreal/UE-TDD)
+    * [UnrealEngine](UE-TDD)
 
 
 # 적용
