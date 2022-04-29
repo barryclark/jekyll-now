@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TDD
+title: Automation test
 ---
 
 ## Automation test

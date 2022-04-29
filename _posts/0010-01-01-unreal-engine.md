@@ -17,7 +17,7 @@ title: Unreal engine
         - BlueprintGetter
         - BlueprintSetter
         - GetterSetter를 쓰는 이유 
-    * [```UFUNCTION : Blueprint*```](UE-BlueprintCallable-ImplementationEvent-NativeEvent)
+    * [```UFUNCTION : Blueprint*```](_posts_unreal_engine/UE-TDD.md)
         - BlueprintCallable
         - ImplementationEvent
         - NativeEvent
