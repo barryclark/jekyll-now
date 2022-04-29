@@ -22,7 +22,12 @@ title: Unreal engine
         - ImplementationEvent
         - NativeEvent
 * [Project struct](/posts_unreal_engine/Conept-Project-struct)
+    - 프로젝트 폴더 구성
 * [Mobility](/posts_unreal_engine/Concept-Mobility)
+    - 스태틱 모빌리티
+    - 스태틱메시의 모빌리티 설정
+    - 코드에서 설정하는 방법
+    - 모빌리티와 Lumen에서
 
 # 활용
 * Module
@@ -35,8 +40,18 @@ title: Unreal engine
         - Animation notify
 * Automation
     * [Test](/posts_unreal_engine/Useage-Automation_test)
+        - Automation test
+* [Version control](/posts_unreal_engine/Concept-Version-control)
+    - 버전 컬트롤이란?
 
 
 # 적용
 * [FABRIK](/posts_unreal_engine/Implement-FABRIKComponent)
-    - FABRIKComponent
+    - 1차 구현
+    - 디버그
+    - 코드와 설명
+    - 코드 리뷰
+    - 테스트 코드
+
+
+# 해야할 것들

@@ -196,7 +196,7 @@ private:
 
 ```
 
-## Code review
+## 코드 리뷰
 [Component to apply FABRIK in Unreal Engine](https://codereview.stackexchange.com/questions/276144/components-with-fabrik-in-unreal-engine)   
 
-## Test code
+## 테스트 코드

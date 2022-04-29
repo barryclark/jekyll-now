@@ -32,7 +32,7 @@ Movable은 게임플레이 도중 추가, 제거, 이동해야 하는 액터에 
 Component->SetMobility(EComponentMobility::Movable);
 ```
 
-## 모빌리티와 Luman에서
+## 모빌리티와 Lumen에서
 [루멘 글로벌 일루미네이션 및 리플렉션](https://docs.unrealengine.com/5.0/ko/lumen-global-illumination-and-reflections-in-unreal-engine/)
 
 모빌리티가 스태틱으로 설정된 라이트는 지원하지 않습니다. 스태틱 라이트는 라이트맵에 완전히 저장되어 루멘의 기여가 비활성화 되기 때문입니다.

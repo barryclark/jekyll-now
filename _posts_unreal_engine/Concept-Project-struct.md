@@ -3,6 +3,8 @@ layout: post
 title: Project struct
 ---
 
+# 프로젝트 폴더 구성
+
 프로젝트를 구성하는 폴더는 다음과 같습니다.
 
 * Project struct
@@ -50,6 +52,3 @@ title: Project struct
             - Development은 중간 수준의 최적화와 디버깅도 가능한 결과물을 생성하는 구성입니다. exe파일을 생성합니다.
             - Development Editor은 Development와 동일한 수준의 에디터용 DLL파일을 생성합니다. 설정의 기본값입니다. 
             - Shipping은 게임의 최종 배포를 위해 최적화된 코드를 만들어내는 구성입니다. exe파일을 생성합니다.
-        
-
->이득우의 언리얼 C++ 게임 개발의 정석
