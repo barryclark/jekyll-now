@@ -88,6 +88,6 @@ exclude:
 theme: jekyll-theme-slate
 
 collections:
-  _unreal_engine:
+  _posts_unreal_engine:
     output: true
-    permalink: /_unreal_engine/:title.html
+    permalink: /_posts_unreal_engine/:path/
