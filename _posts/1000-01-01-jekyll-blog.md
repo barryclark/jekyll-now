@@ -124,3 +124,7 @@ https://blog.jaeyoon.io/2017/12/jekyll-image.html
 https://m.blog.naver.com/mathesis_time/221807095356
 
 ? 지킬 구조의 이해 https://polyglotm.github.io/2016-08-21-ready-for-creating-buautiful-jekyll.html
+
+http://daplus.net/markdown-markdown-%ED%8C%8C%EC%9D%BC%EC%97%90-gif%EB%A5%BC-%EC%B6%94%EA%B0%80%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95%EC%9D%B4-%EC%9E%88%EC%8A%B5%EB%8B%88%EA%B9%8C/
+
+Collection추가하는 것도 함.

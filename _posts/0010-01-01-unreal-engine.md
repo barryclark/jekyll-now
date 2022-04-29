@@ -4,41 +4,37 @@ title: Unreal engine
 ---
 
 # 개념
-* [Garbage-collection](UE-Garbage-collection)
+* [Garbage-collection](/_posts_unreal_engine/Concept-Garbage-collection.md_)
     - 가비지 컬렉션의 작동방식
 * Replaction
-    * [```UPROPERTY : *Anywhere```](UE-EditAnywhere-VisibleAnywhere)
+    * [```UPROPERTY : *Anywhere```](/_posts_unreal_engine/Concept-EditAnywhere-VisibleAnywhere.md)
         - EditAnywhere
         - VisibleAnywhere
         - private접근 지정자인 경우에
-    * [```UPROPERTY : Blueprint*```](UE-ReadOnly-ReadWrite-Getter-Setter)
+    * [```UPROPERTY : Blueprint*```](/_posts_unreal_engine/Concept-ReadOnly-ReadWrite-Getter-Setter.md)
         - BlueprintReadOnly
         - BlueprintReadWrite
         - BlueprintGetter
         - BlueprintSetter
         - GetterSetter를 쓰는 이유 
-    * [```UFUNCTION : Blueprint*```](UE-BlueprintCallable-ImplementationEvent-NativeEvent)
+    * [```UFUNCTION : Blueprint*```](/_posts_unreal_engine/Concept-BlueprintCallable-ImplementationEvent-NativeEvent.md)
         - BlueprintCallable
         - ImplementationEvent
         - NativeEvent
 
-[Test](/_posts_unreal_engine/UE-TDD.md)
-
 # 활용
-* [Module](UE-Module)
-    - Module
+* Module
+    * [Module](/_posts_unreal_engine/Useage-Module.md)
+        - Module
+    * [Increase-compile-speed](UE-increate-compile-speed)
+        - 유니티 빌드 비활성화 하기
 * Animation
-    * [Anim-notify](UE-Anim-notify)
+    * [Anim-notify](/_posts_unreal_engine/Useage-Anim-notify.md)
         - Animation notify
 * Automation
-    * [UnrealEngine](UE-TDD)
+    * [Test](/_posts_unreal_engine/Useage-Automation_test.md)
 
 
 # 적용
-* [FABRIK](UE_FABRIKComponent)
+* [FABRIK](/_posts_unreal_engine/Implement-FABRIKComponent.md)
     - FABRIKComponent
-
-
-# 좋은
-* [Increase-compile-speed](UE-increate-compile-speed)
-    - 유니티 빌드 비활성화 하기
