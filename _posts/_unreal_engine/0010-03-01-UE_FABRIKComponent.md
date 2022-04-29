@@ -9,6 +9,11 @@ title: FABRIKComponent
 * 목표   
 FABRIKComponent를 이용하여, Actor에서 FABRIK을 Forward, Backward, Fixed(Forward and Backward), WithIndex(Backward -> Index <- Forward)로 활용할 수 있도록 만들기   
 
+* Forward : 첫번째 헤드를 원하는 위치에 도달하도록 합니다.   
+* Backward : 마지막 테일을 원하는 위치에 도달하도록 합니다.   
+* Fixed : 테일을 위치를 고정한 FABRIK알고리즘을 적용합니다.
+* WithIndex : 특정 인덱스의 Segment가 원하는 위치에 도달하도록 합니다.   
+
 # 디버그
 
 ? 어디서 오류가 발생한건지는 모르겠지만, Insert에서부터 오류가 나기 시작합니다. 엄청 오래걸리는 빌드시간을 기다리고 있습니다.    
@@ -72,10 +77,6 @@ public:
 	float Length;
 };
 
-```
-
-```cpp
-
 UCLASS(meta = (BlueprintSpawnableComponent))
 class CHARACTERANIMATION_API UFABRIKComponent final : public UActorComponent
 {
@@ -87,10 +88,6 @@ public:
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FVector DefaultTailVector;
-
-```
-
-```cpp
 
 public:
 	UFUNCTION(BlueprintCallable)
@@ -119,10 +116,6 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void Recalculated();
-
-```
-
-```cpp
 
 private:
 	FORCEINLINE bool IsVaildIndex(int Start, int End)
@@ -202,6 +195,8 @@ private:
 };
 
 ```
+
 ## Code review
+[Component to apply FABRIK in Unreal Engine](https://codereview.stackexchange.com/questions/276144/components-with-fabrik-in-unreal-engine)   
 
 ## Test code
