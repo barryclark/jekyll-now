@@ -90,8 +90,8 @@ theme: jekyll-theme-slate
 # add collections
 
 collections:
-  - _posts_unreal_engine
+- posts_unreal_engine
 
 collections:
-  _posts_unreal_engine:
+  posts_unreal_engine:
     output: true
