@@ -86,13 +86,13 @@ ex)
 _default.html에서 nav를 찾습니다.
 
 * HTML을 공부해야 만들 수 있겠는데...
-```
+```html
 <nav>
   <a href="https://kbmhansungb.github.io/jekyll-blog/">Jekyll</a>
 </nav>
 ```
 
-```
+```html
 <nav>
   <a href="{{ site.baseurl }}/">Blog</a>
   <a href="{{ site.baseurl }}/about">About</a>
