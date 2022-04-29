@@ -87,7 +87,11 @@ exclude:
 
 theme: jekyll-theme-slate
 
+# add collections
+
+collections:
+  - _posts_unreal_engine
+
 collections:
   _posts_unreal_engine:
     output: true
-    permalink: /_posts_unreal_engine/:path/
