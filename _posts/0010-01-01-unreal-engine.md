@@ -11,6 +11,10 @@ title: Unreal engine
 |[언리얼 엔진 공식 카페](https://cafe.naver.com/unrealenginekr)|
 |[언리얼 유튜브](https://www.youtube.com/channel/UCBobmJyzsJ6Ll7UbfhI4iwQ)|
 
+세상에 똑똑한 사람들이 너무 많아
+: [IT 개발 노트](https://scahp.tistory.com/11)
+, [언리얼엔진4 렌더링 프로그래밍(중국어)](https://zhuanlan.zhihu.com/p/36695496)
+
 ## 개념
 * [Garbage-collection](/posts_unreal_engine/Concept-Garbage-collection)
     - 가비지 컬렉션의 작동방식

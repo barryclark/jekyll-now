@@ -12,7 +12,7 @@ title: UE compute shader
 
 # C++에서 ComputeShader 생성 #
 
-```
+```cpp
 class FGlobalComputeTestShader : public FGlobalShader
 {
 	DECLARE_SHADER_TYPE(FGlobalComputeTestShader, Global);
@@ -85,7 +85,7 @@ IMPLEMENT_SHADER_TYPE(, FGlobalComputeTestShader, TEXT("/Plugin/globalShaderTest
 
 # Compute Shader .usf 작성 #
 
-```
+```cpp
 // GlobalShaderTest.usf
 
 #include "/Engine/Public/Platform.ush"
@@ -156,7 +156,7 @@ void MainCS(uint3 ThreadID : SV_DispatchThreadID)
 
 # StructuredBuffer에 사용할 멤버를 관리할 구조체 정의 #
 
-```
+```cpp
 struct FStructuredDataTest
 {
 	struct TestStruct
@@ -205,7 +205,7 @@ struct FStructuredDataTest
 
 # Compute Shader를 Dispatch 해주는 함수 작성 #
 
-```
+```cpp
 static void UseComputeShader_RenderThread(FRHICommandListImmediate& RHICmdList, FTextureRenderTargetResource* OutputRenderTargetResource
 	, FGlobalShaderStructData ShaderStructData, ERHIFeatureLevel::Type FeatureLevel, FName TextureRenderTargetName)
 {
@@ -294,9 +294,5 @@ void UGlobalTestShaderBlueprintLibrary::UseComputeShader(class UTextureRenderTar
 	);
 }
 ```
-
-* https://scahp.tistory.com/11 에서 참고한 링크를 보았습니다. 중국어로 되어있네요. 좋은 자료를 찾기 위해서는 중국어도 결국엔 알아야 하는 걸까요. 슬프네요. 왜 한국어 쓰는 사람이 적을까요.   
-해당 중국어 사이트는 https://zhuanlan.zhihu.com/p/36695496 입니다.   
-이 블로그를 왜 이제야 알았을까요.
 
 * 일단 어떤건지 알아두고 어떻게 써먹을 수 있을지 고민해 봅시다.
