@@ -19,6 +19,7 @@ title: 코드리뷰 이용
 * 소프트웨어 엔지니어링에 관련된 질문인 경우 [softwareengineering](https://softwareengineering.stackexchange.com/)에 올리도록 합시다.
 
 # 코드 질문 템플릿
+모든 질문에 적합하지는 않지만, 코드리뷰를 올릴 떄 참고하기 위해서 정리한 내용입니다.
 
 ## 제목: 코드의 목표를 요약합니다. ex) 스윙 UI가 있는 인생 게임, 금연 iOS 앱용 뷰 컨트롤러
 

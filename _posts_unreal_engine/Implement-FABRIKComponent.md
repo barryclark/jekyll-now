@@ -294,10 +294,6 @@ void UFABRIKComponent::Recalculated()
 
 > 'c++', 'game', 'beginner'
 
-* Comments
-	- Please add any #includes you have in the code.   
-	-> 다시 작성해서 올림.
-
 </details>
 
 ## 테스트 코드
