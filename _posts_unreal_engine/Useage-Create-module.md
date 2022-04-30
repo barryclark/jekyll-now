@@ -17,7 +17,7 @@ title: Module
 는 좋은 예시가 될 수 있습니다.
 
 # 보조 모듈 만들기
-1. SubModule폴더를 만듭니다.
+1. SubModule폴더를 만듭니다. (한곳에 몰아넣어도 됩니다.)
 2. SubModule.Build.cs를 추가합니다.
     ```c#
     using UnrealBuildTool;
@@ -49,6 +49,10 @@ title: Module
 # 모듈 빌드에 추가하기
 1. 빌드 Target과 EditorTarget에 다음을 추가해 줍니다.
 	```c#
+		ExtraModuleNames.Add("..", "SubModule");
+	```
+	또는
+	```c#
 		ExtraModuleNames.Add("SubModule");
     ```
 # 에디터에 모듈 추가하기
@@ -67,7 +71,6 @@ title: Module
 
 이제 에디터에서 c++파일을 추가할 때 SubModule에 추가할 수 있습니다. 
 
-보다 자세한 내용은
 [ModuleRules](https://docs.unrealengine.com/4.26/en-US/ProductionPipelines/BuildTools/UnrealBuildTool/ModuleFiles/)
 , [Targets](https://docs.unrealengine.com/4.26/en-US/ProductionPipelines/BuildTools/UnrealBuildTool/TargetFiles/)
 , .uproject는 [plugins](https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/Plugins/)와 \Engine\Source\Runtime\Projects\Public\ProjectDescriptor.h 그리고 \Engine\Source\Runtime\Projects\Public\ModuleDescriptor.h을 참고할 수 있습니다.
