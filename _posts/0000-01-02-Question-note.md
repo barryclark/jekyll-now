@@ -3,12 +3,11 @@ layout: post
 title: Question note
 ---
 
-? >''
+? overflow가 텍스트가 넘어갔을 때 작동하는 것 같은데. 어떻게 사용하는지 모르겠네.
+
+? '' 태그같은 상자 어떻게 하는 것인가?
 
 ? Microsoft.MakeFile.target
-
-? 어떻게 하면 CodeReview를 받을 수 있을까요. 언리얼 엔진으로 올리면 안달아 주나요. 뭐 언젠가는 달아주겠지.
-설명이 너무 부실했나. 설명을 달아야 하나.
 
 ? Implementing your character
 
