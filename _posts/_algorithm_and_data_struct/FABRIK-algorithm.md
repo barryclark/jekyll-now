@@ -3,7 +3,7 @@ layout: post
 title: FABRIK algorithm
 ---
 
-## Inverse Iknematics(IK)란?
+## Inverse knematics(IK)란?
 
 [위키피디아](https://en.wikipedia.org/wiki/Inverse_kinematics)   
 

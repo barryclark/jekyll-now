@@ -3,7 +3,7 @@ layout: post
 title: Complexity
 ---
 
-## 자료구조와 알고리즘을 평가하는 기준 ##
+# 자료구조와 알고리즘을 평가하는 기준
 
 * 공간 복잡도(Space complexity) : 알고리즘에 사용되는 메모리 총량   
 * 시간 복잡도(Time complexity) : 알고리즘에 수행되는 연산 횟수 총량   
@@ -16,7 +16,7 @@ title: Complexity
 시간복잡도를 계산할 때는 중요한 요소와 규칙이 있습니다.
 중요한 요소는 반복문(for, while), 조건문(if), 재귀호출 입니다. 규칙은 시간복잡도에서 상수값은 무시되는 것과, 실제 개발자가 짜 놓은 코드를 수행하는 것은 상수 시간으로 간주합니다.
 
-```
+```cpp
 int get_sub(int arr[], int n)   
 {   
     int sum = 0;   
@@ -32,7 +32,7 @@ int get_sub(int arr[], int n)
 공간 복잡도 = n + 3 = [] + (n, sum, i)   
 시간 복잡도 = n   
 
-```
+```cpp
 int get_sum(int n)   
 {   
     int sum = 0;   
@@ -51,7 +51,7 @@ n이 1일때 1회(1) 실행되고, n이 2일때는 2회(1, 2), ... n이 9일때�
 다음은 직접 대입하여 계산하기 귀찮을 때를 위해서 생각한 방법입니다.
 적용해보고 안된다 싶으면 시행횟수를 직접 구하는 것이 더 빠릅니다.
 
-# For문의 시간복잡도 (개인적인) # 
+## For문의 시간복잡도 (개인적인) 구하기
 
 for문은 초기화, 조건, 증강의 loop를 가지고 있습니다.
 매 반복마다 조건을 검사하고 조건을 충족하는 경우 반복하고자 하는 문장을 실행하고 증강후 다시 조건을 검사합니다.   
@@ -69,7 +69,7 @@ max(i) = log_2(n)입니다.
 
 기록 1. 이 생각이 맞는지 어떻게 확인하나?   
 
-# 이중 For문의 시간복잡도 #
+## 이중 For문의 시간복잡도 구하기 
 
 이중 for문에서 다른 종속성이 없을 때 다음과 같이 생각할 수 있습니다.   
 O(Full cycle) = O(Outer cycle) * O(Inner cycle)
@@ -103,10 +103,12 @@ int get_sum(int n)
 
 시간 복잡도 = n * log_2(n)
 
-## 빅-오 표기법(Big-O Notation) ##   
+## 재귀함수의 시간복잡도구하기 
+
+## 빅-오 표기법(Big-O Notation)   
 빅오 표기법은 알고리즘의 효율성을 상한성을 기준으로 표기합니다. 일상의 대화에서 친구가 법정이자율을 물었을 때 빅세타 표기법으로는 0% 이상이라고 말하지만 빅오 표기법으로 말하면 30%이하라고 말하는 것과 같습니다.   시간복잡도와 공간복잡도의 최고차항만을 표기하여 간략하게 나타내는 표기법입니다.   
 
-# 연습 문제 #
+## 연습 문제
 
 ```
 int a = 0, b = 0;
@@ -145,10 +147,6 @@ for (int i = N; i > 0; i /= 2)
 ```
 정답 : O(N)
 
-? 빅오표기법에 대한 정리한 표를 볼 수 있습니다.    
-https://www.bigocheatsheet.com/
-
-? 시간복잡도에 대한 더 많은 문제는 여기서 볼 수 있습니다.   
-https://www.geeksforgeeks.org/algorithms-analysis-of-algorithms-question-3/
-
-? 재귀함수의 시간복잡도를 구하는 방법은 어떻게 될까요?
+추가적으로 공부할 수 있는 것들 : 
+[빅오표기법에 대해 정리한 표](https://www.bigocheatsheet.com/)
+, [시간복잡도에 대한 더 많은 문제](https://www.geeksforgeeks.org/algorithms-analysis-of-algorithms-question-3/)
