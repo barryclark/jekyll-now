@@ -3,7 +3,7 @@ layout: post
 title: 코드리뷰 이용
 ---
 
-## 좋은 질문 하기
+# 좋은 질문 하기
 [How do I ask a good question?](https://codereview.stackexchange.com/help/how-to-ask)
 
 먼저, 질문의 의도대로 작동하지 않는 코드 또는 실제 코드가 아닌 경우 off-topic으로 질문이 닫히게 됩니다. 프로그래밍에 관련된 다른 질문이라면 [meta](https://codereview.stackexchange.com/help/how-to-ask)에 질문하는 것이 좋습니다.
@@ -18,9 +18,9 @@ title: 코드리뷰 이용
 
 * 소프트웨어 엔지니어링에 관련된 질문인 경우 [softwareengineering](https://softwareengineering.stackexchange.com/)에 올리도록 합시다.
 
-## 코드 질문 템플릿
+# 코드 질문 템플릿
 
-# 제목: 코드의 목표를 요약합니다. ex) 스윙 UI가 있는 인생 게임, 금연 iOS 앱용 뷰 컨트롤러
+## 제목: 코드의 목표를 요약합니다. ex) 스윙 UI가 있는 인생 게임, 금연 iOS 앱용 뷰 컨트롤러
 
 세부 정보: 누구나 알아 들을 수 있도록 명확하게 명시되어야 합니다. 즉 세부 정보가 구체적으로 제시되어야 합니다.
 
@@ -31,4 +31,4 @@ title: 코드리뷰 이용
 
 테스트 및 동작: 이부분은 아직 잘 모르므로 생략합시다.
 
-`태그: 코드의 배경을 제시할 필요가 있습니다. 챌린지의 경우는 (programming-challenge), 새로운 프로그래밍 언어를 배우고 있을때는 (beginner), 공용 라이브러리 기능을 연습용으로 의도적으로 다시 구현하는 경우(reinventing-the-wheel)과 같이 제공해야 합니다.`
+> `태그: 코드의 배경을 제시할 필요가 있습니다. 챌린지의 경우는 (programming-challenge), 새로운 프로그래밍 언어를 배우고 있을때는 (beginner), 공용 라이브러리 기능을 연습용으로 의도적으로 다시 구현하는 경우(reinventing-the-wheel)과 같이 제공해야 합니다.`
