@@ -91,7 +91,10 @@ theme: jekyll-theme-slate
 
 collections:
 - posts_unreal_engine
+- posts_jekyll_blog
 
 collections:
   posts_unreal_engine:
+    output: true
+  posts_jekyll_blog:
     output: true

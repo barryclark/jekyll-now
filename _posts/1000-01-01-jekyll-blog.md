@@ -25,27 +25,27 @@ MDN(모질라 개발자 네트워크)은 웹 표준과 모질라 프로젝트에
 
 ## 활용
 
-* [링크](link.md)
+* [링크](/posts_jekyll_blog/link)
   - 링크 달기
   - 텍스트 링크를 달기
   - 문서 링크 만들기
   - 마크다운 링크 달기
-* [강조](emphasis.md)
+* [강조](/posts_jekyll_blog/emphasis)
   - 강조하기
   - 인용구 추가하기
-* [코드블럭](code-block.md)
+* [코드블럭](/posts_jekyll_blog/code-block)
   - 코드 블럭 달기
   - 코드 블럭이 더블 프레임으로 표시되는 경우
-* [테이블](table.md)
+* [테이블](/posts_jekyll_blog/table)
   - 일반적인 표 구성
   - 정렬하기
 * HTML
-  * [HTML](html.md)
+  * [HTML](/posts_jekyll_blog/html)
     - 가운데 정렬
-  * [HTML5](html5.md)
+  * [HTML5](/posts_jekyll_blog/html5)
     - 접기 펼치기
     - 접기 펼치기 화살표 달기
-  * [Formula expression](formula-expression.md)
+  * [Formula expression](/posts_jekyll_blog/formula-expression)
     - 수식 표현하기
     - CodeCogs이용하기
 
