@@ -49,7 +49,7 @@ title: Module
 # 모듈 빌드에 추가하기
 1. 빌드 Target과 EditorTarget에 다음을 추가해 줍니다.
 	```c#
-		ExtraModuleNames.Add("..", "SubModule");
+		ExtraModuleNames.Add("..", "SubModule"); //현재 작동안함. 찾아봐야 할지 고민중.
 	```
 	또는
 	```c#
