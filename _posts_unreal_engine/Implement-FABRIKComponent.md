@@ -199,4 +199,223 @@ private:
 ## 코드 리뷰
 [Component to apply FABRIK in Unreal Engine](https://codereview.stackexchange.com/questions/276144/components-with-fabrik-in-unreal-engine)   
 
+```cpp
+#pragma once
+
+#include "CoreMinimal.h"
+#include "UnsortedFunctionLibrary.generated.h"
+
+USTRUCT(BlueprintType)
+struct CHARACTERANIMATION_API FFABRIKSegment
+{
+	GENERATED_BODY()
+
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FVector Position;
+
+	UPROPERTY(EditANywhere, BlueprintReadWrite)
+	float Length;
+};
+
+UCLASS(meta = (BlueprintSpawnableComponent))
+class CHARACTERANIMATION_API UFABRIKComponent final : public UActorComponent
+{
+	GENERATED_BODY()
+
+public:
+	UFABRIKComponent();
+
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FVector DefaultTailVector;
+
+public:
+	UFUNCTION(BlueprintCallable)
+	void AddSegment(const FFABRIKSegment& Segment);
+
+	UFUNCTION(BlueprintCallable)
+	void InsertSegment(int32 Index, const FFABRIKSegment& Segment);
+
+	UFUNCTION(BlueprintCallable)
+	float GetLength(int32 Index);
+
+	UFUNCTION(BlueprintCallable)
+	FVector GetPosition(int32 Index);
+
+	UFUNCTION(BlueprintCallable)
+	void ApplyForward(const FVector& Target);
+
+	UFUNCTION(BlueprintCallable)
+	void ApplyBackward(const FVector& Target);
+
+	UFUNCTION(BlueprintCallable)
+	void ApplyFixed(const FVector& Target);
+
+	UFUNCTION(BlueprintCallable)
+	void ApplyWithIndex(int32 Index, const FVector& Target);
+
+	UFUNCTION(BlueprintCallable)
+	void Recalculated();
+	
+private:
+	/*
+	*	The first index means the first head.
+	*/
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = true))
+	TArray<FFABRIKSegment> Segments;
+
+private:
+	FORCEINLINE bool IsVaildIndex(int Start, int End)
+	{
+		bool IsVaild = true;
+		if (Segments.IsValidIndex(Start) == false)
+		{
+			IsVaild = false;
+		}
+
+		if (Segments.IsValidIndex(End) == false)
+		{
+			IsVaild = false;
+		}
+
+		if (IsVaild == false)
+		{
+			UE_LOG(LogTemp, Error,
+				TEXT("Invalid index use. Start : %d, End : %d, SegmentsNum : %d"),
+				Start, End, Segments.Num());
+		}
+		return IsVaild;
+	}
+
+	FORCEINLINE FVector GetNewTailPosition(float Length, const FVector& Tail, const FVector& Target)
+	{
+		FVector TargetToTailVector = Tail - Target;
+		const float SquareSum = TargetToTailVector.SquaredLength();
+
+		if (SquareSum < FLT_EPSILON)
+		{
+			return Target + DefaultTailVector * Length;
+		}
+		else
+		{
+			TargetToTailVector *= FMath::InvSqrt(SquareSum);
+			return Target + TargetToTailVector * Length;
+		}
+	}
+
+	FORCEINLINE void UpdateTailPosition(float Length, FVector& Tail, const FVector& Target)
+	{
+		Tail = GetNewTailPosition(Length, Tail, Target);
+	}
+
+	FORCEINLINE void ApplyForwardFABRIK(int Start, int End, FVector Target)
+	{
+		if (IsVaildIndex(Start, End) == false)
+		{
+			return;
+		}
+
+		while (Start < End)
+		{
+			Segments[Start].Position = Target;
+			UpdateTailPosition(Segments[Start].Length, Segments[Start + 1].Position, Target);
+			Target = Segments[Start + 1].Position;
+			Start++;
+		}
+	}
+
+	FORCEINLINE void ApplyBackwardFABRIK(int Start, int End, FVector Target)
+	{
+		if (IsVaildIndex(Start, End) == false)
+		{
+			return;
+		}
+
+		while (Start < End)
+		{
+			Segments[End].Position = Target;
+			UpdateTailPosition(Segments[End - 1].Length, Segments[End - 1].Position, Target);
+			Target = Segments[End - 1].Position;
+			End--;
+		}
+	}
+};
+```
+
+```cpp
+#include "UnsortedFunctionLibrary.h"
+
+UFABRIKComponent::UFABRIKComponent() : DefaultTailVector(FVector::UnitX())
+{
+}
+
+void UFABRIKComponent::AddSegment(const FFABRIKSegment& Segment)
+{
+	Segments.Add(Segment);
+
+	Recalculated();
+}
+
+void UFABRIKComponent::InsertSegment(int32 Index, const FFABRIKSegment& Segment)
+{
+	if (Segments.IsValidIndex(Index) == false)
+	{
+		UE_LOG(LogTemp, Error, TEXT("Inserting a segment out of bounds."));
+		return;
+	}
+
+	Segments.Insert(Segment, Index);
+
+	Recalculated();
+}
+
+float UFABRIKComponent::GetLength(int32 Index)
+{
+	return Segments[Index].Length;
+}
+
+FVector UFABRIKComponent::GetPosition(int32 Index)
+{
+	return Segments[Index].Position;
+}
+
+void UFABRIKComponent::ApplyForward(const FVector& Target)
+{
+	ApplyForwardFABRIK(0, Segments.Num() - 1, Target);
+}
+
+void UFABRIKComponent::ApplyBackward(const FVector& Target)
+{
+	ApplyBackwardFABRIK(0, Segments.Num() - 1, Target);
+}
+
+void UFABRIKComponent::ApplyFixed(const FVector& Target)
+{
+	if (Segments.Num() == 0)
+	{
+		return;
+	}
+
+	const FVector FixedPosition = Segments.Last().Position;
+	ApplyForwardFABRIK(0, Segments.Num() - 1, Target);
+	ApplyBackwardFABRIK(0, Segments.Num() - 1, FixedPosition);
+}
+
+void UFABRIKComponent::ApplyWithIndex(int32 Index, const FVector& Target)
+{
+	ApplyForwardFABRIK(Index, Segments.Num() - 1, Target);
+	ApplyBackwardFABRIK(0, Index, Target);
+}
+
+void UFABRIKComponent::Recalculated()
+{
+	ApplyForwardFABRIK(0, Segments.Num() - 1, Segments[0].Position);
+}
+```
+
+* Comments
+	- Please add any #includes you have in the code.   
+	-> 다시 작성해서 올림.
+
 ## 테스트 코드
