@@ -3,9 +3,10 @@ layout: memory
 title: SCP to prevent creating open Lambda URLs
 ---
 
-Prevent people from creating open Lambda URLs and stop possible Data Leakgage or other nasty things 
+Prevent people from creating open Lambda URLs and stop possible Data Leakage or other nasty things.
 
-Source: 
+Source:
+
 * [here](https://twitter.com/ben11kehoe/status/1511857782298882050/photo/1)
 * [AWS Docs](https://docs.aws.amazon.com/lambda/latest/dg/urls-auth.html)
 
@@ -31,7 +32,7 @@ Source:
 }
 ```
 
-SCP that allowerd an admin to tag functions in a way that would unlock AuthType NONE:
+SCP that allowed an admin to tag functions in a way that would unlock AuthType NONE:
 
 ```json
 {
