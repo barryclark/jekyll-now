@@ -40,6 +40,14 @@ title: Algorithm and data struct
         - 분할 정복 알고리즘(Divide and conquer)
         - 합병 정렬 알고리즘(Merge sort)
         - 퀵 정렬 알고리즘(Quick sort)
+* Greedy
+    [Minimum spanning tree](/algorithm_and_data_struct/Minimum-spanning-tree)
+        - 최소 신장 트리란
+        - 길이가 최소가 되는 것이 좋다
+        - 귀류법을 이용한 증명
+        - 그리디로 선택
+        - <span style="color:red">수학적 증명</span>
+        - <span style="color:red">추가적으로</span>
 * ETC
     * [FABRIK-algorithm](/algorithm_and_data_struct/FABRIK-algorithm)
         - Inverse knematics(IK)란?

@@ -3,8 +3,7 @@ layout: post
 title: Question note
 ---
 
-? GlobalShader를 만들때 uplugin에서 PostConfigInit을 하는 이유에 대해 개인적인 생각으론 랜더링에 글로벌 쉐이더를 적용하기 위해서 엔진이 초기화 되기 전에 먼저 플러그인을 로드해야 하기 때문으로 생각하고 있습니다.
-확인하기 위해서는 언리얼엔진의 main부터 랜더링 스레드가 도는 코드까지 봐야합니다.
+> c++ : { rvo, nrvo }, { Call-by-value, Call-by-reference }, { translation unit }, { lambda and [lambda overhead](https://stackoverflow.com/questions/18619035/understanding-the-overhead-of-lambda-functions-in-c11) }, { call stack }
 
 ? GIT : Git 서브모듈을쓰는법과 어떻게 써야 효율적인지 모르겠네요.
 
