@@ -10,10 +10,14 @@ title: Unreal engine
 |[궁금한게 있을때는 배우로](https://www.unrealengine.com/ko/onlinelearning-courses?tags=%EA%B2%8C%EC%9E%84)|
 |[언리얼 엔진 공식 카페](https://cafe.naver.com/unrealenginekr)|
 |[언리얼 유튜브](https://www.youtube.com/channel/UCBobmJyzsJ6Ll7UbfhI4iwQ)|
+|Engine에서 찾기 어려울때는 공식 문서를 보도록 합시다.|
 
 세상에 똑똑한 사람들이 너무 많아
-: [IT 개발 노트](https://scahp.tistory.com/11)
-, [언리얼엔진4 렌더링 프로그래밍(중국어)](https://zhuanlan.zhihu.com/p/36695496)
+: [Unreal 4 렌더링 프로그래밍 주제 개요 및 목차](https://zhuanlan.zhihu.com/p/36675543)
+, [건강한 남자??](https://blog.csdn.net/qq_16756235)
+, [Realities.io](https://medium.com/realities-io/creating-a-custom-mesh-component-in-ue4-part-1-an-in-depth-explanation-of-vertex-factories-4a6fd9fd58f2)
+, [IT개발 노트](https://scahp.tistory.com/10?category=848072)
+, [Space Panda](https://spacepanda.tistory.com/4?category=704623)
 
 ## 개념
 * [Garbage-collection](/posts_unreal_engine/Concept-Garbage-collection)
@@ -45,6 +49,13 @@ title: Unreal engine
     - 모듈 사용의 이점
     - 고려사항
     - 참고사항
+* [Create shader](/posts_unreal_engine/Concept-Create-shader)
+    - 읽을 수 있게 되는 것들
+    - 셰이더 컴파일 작업
+    - 패스
+    - 머티리얼
+    - 언리얼 셰이더 파일
+    - 셰이더 및 머티리얼
 
 ## 활용
 * Module

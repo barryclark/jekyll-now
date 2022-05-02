@@ -91,3 +91,6 @@ void ApplyFABRIK(TArray<FSegment>& Segments, FVector Target)
 
 * UnrealEngine에서 Engine/Source/Runtime/AnimationCore/public/FABRIK.h에서 사용할 수 있습니다.   
 
+다음 단계 
+: [FABRIK: A fast, iterative solver for the Inverse Kinematics problem](https://www.researchgate.net/publication/220632147_FABRIK_A_fast_iterative_solver_for_the_Inverse_Kinematics_problem)
+, [Other link](http://andreasaristidou.com/publications/papers/FABRIK.pdf)
