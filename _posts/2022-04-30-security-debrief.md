@@ -54,6 +54,8 @@ User.find_by(id: params[:id])
 User.find_by("id = ?", params[:id])
 ```
 
+Check out [https://rails-sqli.org](https://rails-sqli.org/) for gotchas for specific Rails versions.
+
 [1] [https://rails-sqli.org/rails6](https://rails-sqli.org/rails6)
 
 ## Sources & Resources
