@@ -37,7 +37,9 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: 
+# meta tag <meta name="google-site-verification" content="SuXWPr9ZjlYVoCcZDWBBGiepc_oYfdu8qkapoOYAhf8" />
+google_site_verification: SuXWPr9ZjlYVoCcZDWBBGiepc_oYfdu8qkapoOYAhf8
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
@@ -98,3 +100,4 @@ collections:
     output: true
   posts_jekyll_blog:
     output: true
+
