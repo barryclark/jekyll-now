@@ -115,7 +115,8 @@ IMPLEMENT_SHADER_TYPE(, FMyTestVS, TEXT("/ShaderAutogen/MyTest.usf"), TEXT("Main
 IMPLEMENT_SHADER_TYPE(, FMyTestPS, TEXT("/ShaderAutogen/MyTest.usf"), TEXT("MainPS"), SF_Pixel);
 ```
 
-6. 이제 렌더타겟에 그리는 블루프린트 함수를 추가합니다.
+6. 이제 렌더타겟에 그리는 블루프린트 함수를 추가합니다. 
+    - 관련 내용을 이해하기 위해서는 Unreal engine의 랜더링 파이프라인에 대한 지식을 필요로 합니다.
 
 * .Build.cs
 ```c#
@@ -129,13 +130,13 @@ IMPLEMENT_SHADER_TYPE(, FMyTestPS, TEXT("/ShaderAutogen/MyTest.usf"), TEXT("Main
     );
 ```
 
-* MyTest.h
+* MyTestFunctionLibrary.h
 ```cpp
-...
-#include "Kismet/BlueprintFunctionLibrary.h"
-#include "MyTest.generated.h"
+#pragma once
 
-... FMyTestVS, FMyTestPS ...
+#include "CoreMinimal.h"
+#include "Kismet/BlueprintFunctionLibrary.h"
+#include "MyTestFunctionLibrary.generated.h"
 
 UCLASS(MinimalAPI, meta = (ScriptName = "MyTestShaderLibrary"))
 class UGlobalTestShaderBlueprintLibrary : public UBlueprintFunctionLibrary
@@ -152,13 +153,82 @@ public:
 };
 ```
 
-* MyTest.cpp
+* MyTestFunctionLibrary.cpp
 ```cpp
+#include "MyTestFunctionLibrary.h"
+#include "MyTest.h"
 
+#include "TextureResource.h"
+#include "Engine/TextureRenderTarget2D.h"
+#include "Engine/World.h"
+#include "GlobalShader.h"
+#include "PipelineStateCache.h"
+#include "RHIStaticStates.h"
+#include "SceneUtils.h"
+#include "SceneInterface.h"
+#include "ShaderParameterUtils.h"
+#include "Logging/MessageLog.h"
+#include "Internationalization/Internationalization.h"
+#include "StaticBoundShaderState.h"
+
+void UGlobalTestShaderBlueprintLibrary::DrawGlobalTestShaderRenderTarget(
+	UTextureRenderTarget2D* OutputRenderTarget,
+	AActor* Actor,
+	UTexture* MyTexture
+)
+{
+	check(IsInGameThread());
+
+	if (!OutputRenderTarget)
+		return;
+	if (!Actor)
+		return;
+
+	FTextureRenderTargetResource* TextureRenderTargetResource = OutputRenderTarget->GameThread_GetRenderTargetResource();
+	FTextureReferenceRHIRef MyTextureRHI = MyTexture->TextureReference.TextureReferenceRHI;
+
+	UWorld* World = Actor->GetWorld();
+	ERHIFeatureLevel::Type FeatureLevel = World->Scene->GetFeatureLevel();
+
+	FRHIRenderPassInfo RPInfo(TextureRenderTargetResource->GetRenderTargetTexture(), ERenderTargetActions::Clear_Store, TextureRenderTargetResource->TextureRHI, FExclusiveDepthStencil::DepthNop_StencilNop);
+
+	FName TextureRenderTargetName = OutputRenderTarget->GetFName();
+	ENQUEUE_RENDER_COMMAND(CaptureCommand)(
+			[RPInfo, TextureRenderTargetResource, FeatureLevel, TextureRenderTargetName, MyTextureRHI]
+			(FRHICommandListImmediate& RHICmdList)
+			{
+				check(IsInRenderingThread());
+
+				RHICmdList.BeginRenderPass(RPInfo, TEXT("DrawGlobalTest"));
+				{
+					auto GlobalShaderMap = GetGlobalShaderMap(FeatureLevel);
+					TShaderMapRef<FMyTestVS> VertexShader(GlobalShaderMap);
+					TShaderMapRef<FMyTestPS> PixelShader(GlobalShaderMap);
+
+					FGraphicsPipelineStateInitializer GraphicsPSOInit;
+					RHICmdList.ApplyCachedRenderTargets(GraphicsPSOInit);
+
+					GraphicsPSOInit.DepthStencilState = TStaticDepthStencilState<false, CF_Always>::GetRHI();
+					GraphicsPSOInit.BlendState = TStaticBlendState<>::GetRHI();
+					GraphicsPSOInit.RasterizerState = TStaticRasterizerState<>::GetRHI();
+					GraphicsPSOInit.PrimitiveType = PT_TriangleStrip;
+
+					GraphicsPSOInit.BoundShaderState.VertexDeclarationRHI = {};
+					GraphicsPSOInit.BoundShaderState.VertexShaderRHI = VertexShader.GetVertexShader();
+					GraphicsPSOInit.BoundShaderState.PixelShaderRHI = PixelShader.GetPixelShader();
+
+					SetGraphicsPipelineState(RHICmdList, GraphicsPSOInit);
+
+					RHICmdList.DrawPrimitive(0, 3, 0);
+				}
+				RHICmdList.EndRenderPass();
+			}
+		);
+}
 ```
 
 <detail>
-<summary>UE 4.xx를 위한 정리되지 않은 자료</summary>
+<summary>UE 4.xx를 위해 시도하다가 안되는 것들</summary>
 
 1. 플러그인 폴더의 .uplugin에서 [Modules](https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/BuildTools/UnrealBuildTool/ModuleFiles/)에 "LoadingPhase" : ["PostConfigInit"](https://docs.unrealengine.com/5.0/en-US/API/Runtime/Projects/ELoadingPhase__Type/)를 추가해 줍니다.   
 FGlobalShader를 추가하는 모듈은 엔진이 시작되기 전에 로드 되어야 합니다. 게임이나 Editor가 시작된 후에는 동적 모듈이 자체 셰이더 유형을 추가할 수 없습니다.
