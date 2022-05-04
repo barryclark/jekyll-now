@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2022"
-published: 
 ---
 
 We have a great speaker from OpsCruise joining us at our May Cloud Native London virtual meetup tonight, from 6:45pm BST on Rambly and YouTube!
