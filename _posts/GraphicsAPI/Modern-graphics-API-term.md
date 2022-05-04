@@ -76,3 +76,6 @@ title: Moden graphics API term
 * Semaphore는 예를 들어 명령 버퍼가 장치 대기열에 제출되기 전과 같이 교환 체인의 다음 이미지를 얻기 전과 같이 작업 간에 종속성을 도입하기 위한 개체입니다. Vulkan의 고유성은 세마포의 양이 API의 일부인 반면 DirectX 및 Metal은 이를 OS 호출에 위임한다는 것입니다.
 
 * Event는 명령 버퍼 내에서 작업을 동기화하는 데 사용되는 장벽과 유사합니다. UE 내부에서 Fervent는 스레드 간의 신호를 동기화하는 데 사용됩니다.
+
+## Graphics API
+Graphics API에 대한 내용은 [DirectX 12](https://docs.microsoft.com/ko-kr/windows/win32/direct3d12/directx-12-programming-guide), [OpenGL](https://www.opengl.org/sdk/docs/tutorials/), [Vulkan](https://vulkan.lunarg.com/doc/view/latest/windows/apispec.html), [Metal](https://developer.apple.com/documentation/metal)를 볼 수 있습니다.
