@@ -29,6 +29,7 @@ title: Global shader
 ```
 
 2. Global Shader는 RenderCore 모듈을 필요로 합니다. 따라서 디펜던시를 추가해야 합니다.
+
 ```c#
     publicDependencyModuleNames.AddRange(
         new string[]
@@ -60,7 +61,7 @@ void MainVS(
 
 float4 MainPS() : SV_Target0
 {
-    return 0.0f;
+    return float4(1.0f, 1.0f, 1.0f, 1.0f);
 }
 ```
 
@@ -104,8 +105,7 @@ class FMyTestPS : public FGlobalShader
 ```
 
 5. GlobalShaderMap에 만든 클래스를 등록해야 합니다.
-    - 참고로 TEXT("/ShaderAutogen/MyTest.usf")에 잘못된 경로를 추가하면 어떤 경로를 지원해주는지 친절히 알려줍니다.   
-    Engine에 있는 Shader가 많아 개인적으로 Path를 불러오는 함수를 디버깅할려다 많은 시간을 낭비했습니다.
+    - 참고로 TEXT("/ShaderAutogen/MyTest.usf")에 잘못된 경로를 추가하면 어떤 경로를 지원해주는지 친절히 알려줍니다.
 
 * MyTest.cpp
 ```cpp
@@ -115,8 +115,7 @@ IMPLEMENT_SHADER_TYPE(, FMyTestVS, TEXT("/ShaderAutogen/MyTest.usf"), TEXT("Main
 IMPLEMENT_SHADER_TYPE(, FMyTestPS, TEXT("/ShaderAutogen/MyTest.usf"), TEXT("MainPS"), SF_Pixel);
 ```
 
-6. 이제 렌더타겟에 그리는 블루프린트 함수를 추가합니다. 
-    - 관련 내용을 이해하기 위해서는 Unreal engine의 랜더링 파이프라인에 대한 지식을 필요로 합니다.
+6. 이제 렌더타겟에 그리는 블루프린트 함수를 추가하기위해 RHI 종속성을 추가합니다.
 
 * .Build.cs
 ```c#
@@ -130,7 +129,87 @@ IMPLEMENT_SHADER_TYPE(, FMyTestPS, TEXT("/ShaderAutogen/MyTest.usf"), TEXT("Main
     );
 ```
 
-* MyTestFunctionLibrary.h
+7. 먼저 그리는데 사용할 버퍼를 생성해야 합니다. 인덱스 버퍼와 버텍스 버퍼를 생성할 수 있습니다.
+
+* MyTestFunctionLibrary.cpp
+```cpp
+... includes ...
+
+struct FMyBufferStruct
+{
+	FVector4f Position;
+};
+
+class FMyVertexDeclaration : public FRenderResource
+{
+public:
+	FVertexDeclarationRHIRef VertexDeclarationRHI;
+
+	virtual void InitRHI() override
+	{
+		FVertexDeclarationElementList Elements;
+		uint32 Stride = sizeof(FMyBufferStruct);
+		Elements.Add(FVertexElement(0, STRUCT_OFFSET(FMyBufferStruct, Position), VET_Float4, 0, Stride));
+		VertexDeclarationRHI = RHICreateVertexDeclaration(Elements);
+	}
+
+	virtual void ReleaseRHI() override
+	{
+		VertexDeclarationRHI->Release();
+	}
+};
+
+class FMyVertexBuffer : public FVertexBuffer
+{
+public:
+	virtual void InitRHI() override
+	{
+		FRHIResourceCreateInfo CreateInfo(L"MyTest");
+		VertexBufferRHI = RHICreateVertexBuffer(sizeof(FMyBufferStruct) * 4, BUF_Static, CreateInfo);
+		void* VoidPtr = RHILockBuffer(VertexBufferRHI, 0, sizeof(FMyBufferStruct) * 4, RLM_WriteOnly);
+
+		FMyBufferStruct* Vertices = reinterpret_cast<FMyBufferStruct*>(VoidPtr);
+		Vertices[0].Position = FVector4f(-1.0f, 1.0f, 0.0f, 1.0f);
+		Vertices[1].Position = FVector4f(1.0f, 1.0f, 0.0f, 1.0f);
+		Vertices[2].Position = FVector4f(-1.0f, -1.0f, 0.0f, 1.0f);
+		Vertices[3].Position = FVector4f(1.0f, -1.0f, 0.0f, 1.0f);
+
+		RHIUnlockBuffer(VertexBufferRHI);
+	}
+};
+
+class FMyIndexBuffer : public FIndexBuffer
+{
+public:
+	virtual void InitRHI() override
+	{
+		FRHIResourceCreateInfo CreateInfo(L"MyTest");
+		using TYPE = uint16;
+		const uint32 Stride = sizeof(TYPE);
+		const uint32 Size = Stride * 6;
+
+		IndexBufferRHI = RHICreateIndexBuffer(Stride, Size, BUF_Static, CreateInfo);
+		void* VoidPtr = RHILockBuffer(IndexBufferRHI, 0, Size, RLM_WriteOnly);
+
+		TYPE* Indices = reinterpret_cast<TYPE*>(VoidPtr);
+		Indices[0] = 0;
+		Indices[1] = 1;
+		Indices[2] = 2;
+		Indices[3] = 2;
+		Indices[4] = 1;
+		Indices[5] = 3;
+
+		RHIUnlockBuffer(IndexBufferRHI);
+	}
+};
+
+TGlobalResource<FMyVertexBuffer> VertexBuffer;
+TGlobalResource<FMyIndexBuffer> IndexBuffer;
+```
+
+8. 랜더링을 시행할 BlueprintFunctionLibrary리를 추가하고 RenderingThread에서 실행할 메서드를 정의해야합니다.
+
+* MyFunctionLibrary.h
 ```cpp
 #pragma once
 
@@ -144,16 +223,16 @@ class UGlobalTestShaderBlueprintLibrary : public UBlueprintFunctionLibrary
     GENERATED_BODY()
 
 public:
-    UFUNCTION(BlueprintCallable, Category = "GlobalShaderTest", meta = (WorlContext = "WorldContextObject"))
+
+    UFUNCTION(BlueprintCallable, Category = "GlobalShaderTest", meta = (WorldContext = "WorldContextObject"))
     static void DrawGlobalTestShaderRenderTarget(
         class UTextureRenderTarget2D* OutputRenderTarget,
-        AActor* Actor,
-        UTexture* MyTexture
+        AActor* Actor
     );
 };
 ```
 
-* MyTestFunctionLibrary.cpp
+* MyFunctionLibrary.cpp
 ```cpp
 #include "MyTestFunctionLibrary.h"
 #include "MyTest.h"
@@ -162,19 +241,58 @@ public:
 #include "Engine/TextureRenderTarget2D.h"
 #include "Engine/World.h"
 #include "GlobalShader.h"
-#include "PipelineStateCache.h"
-#include "RHIStaticStates.h"
-#include "SceneUtils.h"
-#include "SceneInterface.h"
-#include "ShaderParameterUtils.h"
-#include "Logging/MessageLog.h"
-#include "Internationalization/Internationalization.h"
-#include "StaticBoundShaderState.h"
+
+... Buffer ...
+
+static void DrawMyShader_RenderThread (
+	FRHICommandListImmediate& RHICmdList,
+	ERHIFeatureLevel::Type FeatureLevel,
+	FTextureRenderTargetResource* OutputRenderTargetResource
+)
+{
+	check(IsInRenderingThread());
+
+	
+
+	FRHIRenderPassInfo RPInfo(
+		OutputRenderTargetResource->GetRenderTargetTexture(),
+		ERenderTargetActions::DontLoad_Store
+	);
+	RHICmdList.BeginRenderPass(RPInfo, TEXT("DrawGlobalTest"));
+	
+	auto GlobalShaderMap = GetGlobalShaderMap(FeatureLevel);
+	TShaderMapRef<FMyTestVS> VertexShader(GlobalShaderMap);
+	TShaderMapRef<FMyTestPS> PixelShader(GlobalShaderMap);
+
+	FMyVertexDeclaration VertexDec;
+	VertexDec.InitRHI();
+
+	FGraphicsPipelineStateInitializer GraphicsPSOInit;
+	RHICmdList.ApplyCachedRenderTargets(GraphicsPSOInit);
+
+	GraphicsPSOInit.RasterizerState = TStaticRasterizerState<>::GetRHI();
+	GraphicsPSOInit.BlendState = TStaticBlendState<>::GetRHI();
+	GraphicsPSOInit.DepthStencilState = TStaticDepthStencilState<false, CF_Always>::GetRHI();
+
+	GraphicsPSOInit.BoundShaderState.VertexDeclarationRHI = VertexDec.VertexDeclarationRHI;
+	GraphicsPSOInit.BoundShaderState.VertexShaderRHI = VertexShader.GetVertexShader();
+	GraphicsPSOInit.BoundShaderState.PixelShaderRHI = PixelShader.GetPixelShader();
+	GraphicsPSOInit.PrimitiveType = PT_TriangleList;
+
+	SetGraphicsPipelineState(RHICmdList, GraphicsPSOInit, EApplyRendertargetOption::ForceApply);
+
+	RHICmdList.SetStreamSource(0, VertexBuffer.VertexBufferRHI, 0);
+
+	const uint32 VerticiesNum = 4;
+	const uint32 TriangleNum = 2;
+	RHICmdList.DrawIndexedPrimitive(IndexBuffer.IndexBufferRHI, 0, 0, VerticiesNum, 0, TriangleNum, 1);
+
+	RHICmdList.EndRenderPass();
+}
 
 void UGlobalTestShaderBlueprintLibrary::DrawGlobalTestShaderRenderTarget(
 	UTextureRenderTarget2D* OutputRenderTarget,
-	AActor* Actor,
-	UTexture* MyTexture
+	AActor* Actor
 )
 {
 	check(IsInGameThread());
@@ -185,199 +303,21 @@ void UGlobalTestShaderBlueprintLibrary::DrawGlobalTestShaderRenderTarget(
 		return;
 
 	FTextureRenderTargetResource* TextureRenderTargetResource = OutputRenderTarget->GameThread_GetRenderTargetResource();
-	FTextureReferenceRHIRef MyTextureRHI = MyTexture->TextureReference.TextureReferenceRHI;
 
 	UWorld* World = Actor->GetWorld();
 	ERHIFeatureLevel::Type FeatureLevel = World->Scene->GetFeatureLevel();
 
-	FRHIRenderPassInfo RPInfo(TextureRenderTargetResource->GetRenderTargetTexture(), ERenderTargetActions::Clear_Store, TextureRenderTargetResource->TextureRHI, FExclusiveDepthStencil::DepthNop_StencilNop);
-
-	FName TextureRenderTargetName = OutputRenderTarget->GetFName();
 	ENQUEUE_RENDER_COMMAND(CaptureCommand)(
-			[RPInfo, TextureRenderTargetResource, FeatureLevel, TextureRenderTargetName, MyTextureRHI]
+			[FeatureLevel, TextureRenderTargetResource]
 			(FRHICommandListImmediate& RHICmdList)
 			{
-				check(IsInRenderingThread());
-
-				RHICmdList.BeginRenderPass(RPInfo, TEXT("DrawGlobalTest"));
-				{
-					auto GlobalShaderMap = GetGlobalShaderMap(FeatureLevel);
-					TShaderMapRef<FMyTestVS> VertexShader(GlobalShaderMap);
-					TShaderMapRef<FMyTestPS> PixelShader(GlobalShaderMap);
-
-					FGraphicsPipelineStateInitializer GraphicsPSOInit;
-					RHICmdList.ApplyCachedRenderTargets(GraphicsPSOInit);
-
-					GraphicsPSOInit.DepthStencilState = TStaticDepthStencilState<false, CF_Always>::GetRHI();
-					GraphicsPSOInit.BlendState = TStaticBlendState<>::GetRHI();
-					GraphicsPSOInit.RasterizerState = TStaticRasterizerState<>::GetRHI();
-					GraphicsPSOInit.PrimitiveType = PT_TriangleStrip;
-
-					GraphicsPSOInit.BoundShaderState.VertexDeclarationRHI = {};
-					GraphicsPSOInit.BoundShaderState.VertexShaderRHI = VertexShader.GetVertexShader();
-					GraphicsPSOInit.BoundShaderState.PixelShaderRHI = PixelShader.GetPixelShader();
-
-					SetGraphicsPipelineState(RHICmdList, GraphicsPSOInit);
-
-					RHICmdList.DrawPrimitive(0, 3, 0);
-				}
-				RHICmdList.EndRenderPass();
+				DrawMyShader_RenderThread(RHICmdList, FeatureLevel, TextureRenderTargetResource);
 			}
 		);
 }
 ```
 
-<detail>
-<summary>UE 4.xx를 위해 시도하다가 안되는 것들</summary>
+## 다음
+이제 블루프린트 함수를 호출하면 렌더타겟텍스쳐를 하얀색으로 색칠하는 메서드를 생성했습니다.
 
-1. 플러그인 폴더의 .uplugin에서 [Modules](https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/BuildTools/UnrealBuildTool/ModuleFiles/)에 "LoadingPhase" : ["PostConfigInit"](https://docs.unrealengine.com/5.0/en-US/API/Runtime/Projects/ELoadingPhase__Type/)를 추가해 줍니다.   
-FGlobalShader를 추가하는 모듈은 엔진이 시작되기 전에 로드 되어야 합니다. 게임이나 Editor가 시작된 후에는 동적 모듈이 자체 셰이더 유형을 추가할 수 없습니다.
-```json
-"Modules": [
-    {
-        ...
-        "LoadingPhase": "PostConfigInit"
-    }
-]
-```
-
-2. PublicDependencyModuleNames에 RenderCore와 Projects를 추가합니다.
-```c#
-...
-    publicDependencyModuleNames.AddRange(
-        new string[]
-        {
-            "Core",
-            // ...
-
-            "CoreUObject",
-            "Engine",
-            "RHI",
-            "RenderCore",
-            "Projects"
-        }
-    );
-...
-```
-
-3. Plugin/Shaders/에 .usf파일을 추가합니다.   
-    - Visual studio에서 syntax highlight가 적용되지 않는다면 옵션>텍스트 편집기>파일 확장명에서 usf : HLSL Editor, ush : HLSL Editor를 추가해 줍니다.
-```
-// Simple pass-through vertex shader
-
-void MainVS(
-    in float4 InPosition : ATTRIBUTE0,
-    out float4 Output : SV_POSITION
-)
-{
-    Output = InPosition;
-}
-
-// Simple solid color pixel shader
-float4 MyColor;
-float4 MainPS() : SV_Target0
-{
-    return MyColor;
-}
-```
-
-4. Unreal Engine이 셰이더를 인식하고 컴파일을 시작하도록 C++클래스를 선언합니다.
-```cpp
-#include "GlobalShader.h"
-#include "ScreenRendering.h"
-
-// FGlobalShader의 하위클래스입니다. 이로인해 글로벌 쎄이더 맵에 나타나게 됩니다.
-// 이는 머티리얼을 찾을 필요 없음을 의미합니다.
-class FMyTestVS : public FGlobalShader
-{
-    // 셰이더 유형의 직렬화에 필요한 내보내기가 생성됩니다.
-    // 세 번째 매개변수는 필요한 경우 셰이더 모듈이 위치할 코드 모듈의 외부 연결 유형입니다.
-    // 예를 들어, 렌더러 모듈에 없는 모든 C++코드를 들 수 있습니다.
-    DECLARE_EXPORTED_SHADER_TYPE(FMyTestVS, Global, /*MYMODULE_API*/);
-
-    FMyTestVS() { }
-    FMyTestVS(const ShaderMetaType::CompiledShaderInitializerType& Initializer)
-        : FGlobalShader(Initializer)
-    {
-    }
-
-    // 특정 상황에서 이 셰이더를 컴파일해야 하는지 결정하는 데 필요합니다.
-    // 예를 들어, 비께산 셰이더 지원 RHI에서 계산 셰이더를 컴파일하고 싶지 않을 수 있습니다.
-    static bool ShouldCache(EShaderPlatform Platform)
-    {
-        return true;
-    }
-};
-```
-
-5. 다음은 픽셀 셰이더를 선언합니다.
-```cpp
-... FMyTestVS ...
-
-class FMyTestPS : public FGlobalShader
-{
-    DECLARE_EXPORTED_SHADER_TYPE(FMyTestPS, Global, /*MYMODULE_API*/);
-
-    // MyColorParameter맴버는 바인딩을 찾을 수 있도록 런타임에 대한 정보를 보유하는 클래스에 추가됩니다.
-    // 그러면 런타임에 매개변수 값을 설정할 수 있습니다.
-    FShaderParameter MyColorParameter;
-
-    FMyTestPS() { }
-    FMyTestPS(const ShaderMetaType::CompiledShaderInitializerType& Initializer)
-        : FGlobalShader(Initializer)
-    {
-        // 직렬화 생성자에서 함수는 매개변수를 파라메터맵에 바인딩합니다.
-        // 파라메터의 .usf파일의 이름과 일치해야 합니다.
-        MyColorParameter.Bind(Initializer.ParameterMap, TEXT("MyColor"), SPF_Mandatory);
-    }
-
-    // 이 함수는 동일한 C++클래스가 다른 동적에 대해 정의하고
-    // 셰이더에서 #define값을 설정할 수 있을 때 사용됩니다.
-    static void ModifyCompilationEnvironment(EShaderPlatform Platform, FShaderCompilerEnvironment& OutEnvironment)
-    {
-        FGlobalShader::ModifyCompilationEnvironment(Platform, OutEnvironment);
-        // Add your own defines for the shader code
-        OutEnvironment.SetDefine(TEXT("MY_DEFINE"), 1);
-    }
-
-    static bool ShouldCache(EShaderPlatform Platform)
-    {
-        // Could skip compiling for Platform == SP_METAL for example
-        return true;
-    }
-
-    // 셰이더 바인딩의 컴파일과 cook time 정보가 런타임에 로드되고 저장되는 곳입니다.
-    // FShader interface.
-    virtual bool Serialize(FArchive& Ar) override
-    {
-        bool bShaderHasOutdatedParameters = FGlobalShader::Serialize(Ar);
-        Ar << MyColorParameter;
-        return bShaderHasOutdatedParameters;
-    }
-
-    // MyColor파라메터를 런타임에 특정한 값으로 바꾸는 메서드를 보여줍니다.
-    void SetColor(FRHICommandList& RHICmdList, const FLinearColor& Color)
-    {
-        SetShaderValue(RHICmdList, GetPixelShader(), MyColorParameter, Color);
-    }
-};
-```
-
-5. cpp파일에 다음의 매크로를 등록합니다.
-```cpp
-
-// #define IMPLEMENT_SHADER_TYPE(TemplatePrefix,ShaderClass,SourceFilename,FunctionName,Frequency)
-
-// 실제 C++클래스에 매핑되는 셰이더 코드로 지정되는 템플릿 또는 클래스입니다.
-// 다음 코드를 사용하여 셰이더 유형을 Unreal Engine의 유형 목록에 등록할 수 있습니다.
-// 이 매크로는 유형(FMyTestVS)을 .usf파일(MyTest.usf). 셰이더 진입점 (MainVS)및 주파수/쎄이더 단계(SF_Vertex)에 매핑합니다. 또한 ShouldCache()메서드가 true를 반환하는 한 셰이더가 컴파일 목록에 추가되도록 합니다.
-IMPLEMENT_SHADER_TYPE(, FMyTestVS, TEXT("MyTest"), TEXT("MainVS"), SF_Vertex);
-
-IMPLEMENT_SHADER_TYPE(, FMyTestPS, TEXT("MyTest"), TEXT("MainPS"), SF_Pixel);
-```
-</details>
-
-## 수정하고 디버깅하기
-.usf의 디버깅에 관한 정보는 [셰이더 컴파일 프로세스 디버깅](https://docs.unrealengine.com/5.0/en-US/debugging-the-shader-compile-process-in-unreal-engine)보라고 합니다.   
-
-에디터가 실행되는 동안 Ctrl + Shift + .을 사용하거나 recompileshaders changed명령을 입력하여 셰이더를 다시 빌드할 수 있다고 합니다.
+이제 ImagePlateComponent, BasePassRendering, ClearQuad를 보고 참고할 수 있습니다.
