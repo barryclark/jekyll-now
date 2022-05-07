@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+# 愚千一
+## 佛教居士，人间佛教，汉传佛教。
 
-### More Information
+欢迎关注我的微信公众号，名字【愚千一】ID： Yuqianyi1001
 
-A place to include any other types of information that you'd like to include about yourself.
+## 联系我
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[xianyin.shi@gmail.com](mailto:xianyin.shi@gmail.com)
