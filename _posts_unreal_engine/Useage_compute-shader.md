@@ -3,14 +3,7 @@ layout: post
 title: UE compute shader
 ---
 
-## 연습 ##
-
-* 목표   
-1. Compute Shader로 Texture에 이미지를 그립니다.
-2. 이미지를 그린 Texture를 렌더타겟에다 그려서 사용합니다.
-3. StructuredBuffer를 사용해 봅니다.
-
-# C++에서 ComputeShader 생성 #
+## C++에서 ComputeShader 생성
 
 ```cpp
 class FGlobalComputeTestShader : public FGlobalShader
@@ -83,7 +76,7 @@ private:
 IMPLEMENT_SHADER_TYPE(, FGlobalComputeTestShader, TEXT("/Plugin/globalShaderTest/Private/GlobalShaderTest.usf"), TEXT("MainCS"), SF_Compute);
 ```
 
-# Compute Shader .usf 작성 #
+## Compute Shader .usf 작성
 
 ```cpp
 // GlobalShaderTest.usf
@@ -154,7 +147,7 @@ void MainCS(uint3 ThreadID : SV_DispatchThreadID)
 }
 ```
 
-# StructuredBuffer에 사용할 멤버를 관리할 구조체 정의 #
+## StructuredBuffer에 사용할 멤버를 관리할 구조체 정의
 
 ```cpp
 struct FStructuredDataTest
@@ -203,7 +196,7 @@ struct FStructuredDataTest
 };
 ```
 
-# Compute Shader를 Dispatch 해주는 함수 작성 #
+## Compute Shader를 Dispatch 해주는 함수 작성
 
 ```cpp
 static void UseComputeShader_RenderThread(FRHICommandListImmediate& RHICmdList, FTextureRenderTargetResource* OutputRenderTargetResource
@@ -237,9 +230,9 @@ static void UseComputeShader_RenderThread(FRHICommandListImmediate& RHICmdList, 
 }
 ```
 
-# Comopute Shader를 블루프린트로 호출할 수 있도록 함수 제공 #
+## Comopute Shader를 블루프린트로 호출할 수 있도록 함수 제공
 
-```
+```cpp
 // GlobalShaderTestCode.h
 USTRUCT(BlueprintType)
 struct FGlobalShaderStructData
@@ -294,5 +287,3 @@ void UGlobalTestShaderBlueprintLibrary::UseComputeShader(class UTextureRenderTar
 	);
 }
 ```
-
-* 일단 어떤건지 알아두고 어떻게 써먹을 수 있을지 고민해 봅시다.
