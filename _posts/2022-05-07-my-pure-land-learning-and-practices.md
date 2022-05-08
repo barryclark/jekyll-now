@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 我的坎坷净土学习历程
+title: 十年净土坎坷路
 ---
 
 ![a curve road](../images/2022-05-07-16-34-29.png)
