@@ -13,12 +13,15 @@ title: Unreal engine
 |Engine에서 찾기 어려울때는 공식 문서를 보도록 합시다.|
 |[시간이 오래걸릴 것 같다 싶을때는 programmer all로](https://www.programmerall.com/article/60142006637/)|
 
+도저히 답이 없다 싶을때는 코드를 분석해야 한다.
+
 세상에 똑똑한 사람들이 너무 많아
 : [Unreal 4 렌더링 프로그래밍 주제 개요 및 목차](https://zhuanlan.zhihu.com/p/36675543)
 , [건강한 남자??](https://blog.csdn.net/qq_16756235)
 , [Realities.io](https://medium.com/realities-io/creating-a-custom-mesh-component-in-ue4-part-1-an-in-depth-explanation-of-vertex-factories-4a6fd9fd58f2)
 , [IT개발 노트](https://scahp.tistory.com/10?category=848072)
 , [Space Panda](https://spacepanda.tistory.com/4?category=704623)
+, [보트내에 물 뺴기](https://forums.unrealengine.com/t/take-out-water-from-inside-of-the-boat-with-custom-stencil-logic-puzzle/365545/6)
 
 ## 개념
 * [Garbage-collection](/posts_unreal_engine/Concept-Garbage-collection)
