@@ -36,3 +36,9 @@ Normalize는 내부에 length를 구한 후, Vector의 X, Y, Z에 대해서 / �
 * 이를 코드를 작성할 때 어떻게 편하게 생각하고 작성할 수 있는 방법이 있을 까요?
 
 ? #pragma optimize가 on으로 되어있고, 다음의 연산이 inline일 경우, 위의 가정은 의미가 없어지는 걸까요?
+
+## 위의 내용의 부정
+Forceinline으로 되어있다고 생각해보자, optimize에서 자동으로 최적화 하므로 위의 최적화를 위한 쓸데없는 생각이 의미가 없어진다.
+
+[내 질문에 대한 리플라이](https://forums.unrealengine.com/t/unable-to-find-pvs-studio/550089/3)
+앞으로 질문에 올리기 전에 이슈 목록도 보도록 하자.
