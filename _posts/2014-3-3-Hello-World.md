@@ -2,5 +2,13 @@
 layout: post
 title: spring基础知识
 ---
-[2022-05-08-spring基础](../html/spring基础.html)
+[spring基础](../html/spring/spring基础.html)
+
+[01丨Spring Bean定义错误](../html/spring/01丨Spring Bean定义错误.html)
+
+[02丨Spring Bean注入常见错误-上](../html/spring/02丨Spring Bean注入常见错误-上.html)
+
+[03丨Spring Bean注入常见错误-下](../html/spring/03丨Spring Bean注入常见错误-下.html)
+
+[05丨Spring AOP常见错误（上）](../html/spring/05丨Spring AOP常见错误（上）.html)
 
