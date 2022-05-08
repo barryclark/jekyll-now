@@ -11,4 +11,6 @@ permalink: /about/
 
 ## 联系我
 
-[xianyin.shi@gmail.com](mailto:xianyin.shi@gmail.com)
+Email： [xianyin.shi@gmail.com](mailto:xianyin.shi@gmail.com)
+
+微信号：Yuqianyi1002
