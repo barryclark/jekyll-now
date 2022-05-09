@@ -5,6 +5,8 @@ title: Week1-1
 93model.github.io
 
 1. 본인이 본 강의를 수강하는 목적에 대해서 자유롭게 적어보세요.
+
+
 가장 관심있어하는 NLP 분야 였지만, 동시에 가장 어려워한 분야도 NLP였다. 강의를 통해 새로 배우는 마음가짐을 다잡고 싶다
 
 2. Paperswithcode([https://paperswithcode.com/area/natural-language-processing](https://paperswithcode.com/area/natural-language-processing))에서 NLP sub task 중에 2개를 선택하여 본인 블로그에 정리해보세요. task 별로 아래 3가지 항목에 대해서 정리하세요. (각 항목 고려 사항 참고)
