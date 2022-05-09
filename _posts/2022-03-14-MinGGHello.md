@@ -93,6 +93,47 @@ ___bold___                                                ▶  bold
 ---
 ~~~
 
+- 마크다운(Markdown) 코드 블록(code block) 
+
+```
+언어	 Markdown	
+Bash	   bash	  
+C#	     cs		 
+C++	     cpp	    
+CSS	     css	    
+Diff     diff	  
+HTML,XML html
+HTTP	   http	  
+Ini	     ini	    
+JSON	   json
+java     java
+JavaScript	javascript
+PHP	     php
+Perl	   perl
+Python	 python
+Ruby	   ruby
+SQL	     sql
+```
+
+- 표(Table)
+
+```
+값 | 의미 | 기본값
+---|:---:|---:
+`static` | 유형(기준) 없음 / 배치 불가능 | `static`
+`relative` | 요소 **자신**을 기준으로 배치 |
+`absolute` | 위치 상 **_부모_(조상)요소**를 기준으로 배치 |
+`fixed` | **브라우저 창**을 기준으로 배치 |
+```
+
+값 | 의미 | 기본값
+---|:---:|---:
+`static` | 유형(기준) 없음 / 배치 불가능 | `static`
+`relative` | 요소 **자신**을 기준으로 배치 |
+`absolute` | 위치 상 **_부모_(조상)요소**를 기준으로 배치 |
+`fixed` | **브라우저 창**을 기준으로 배치 |
+
+
 코랩에서 한글 깨질때
 -------------
 

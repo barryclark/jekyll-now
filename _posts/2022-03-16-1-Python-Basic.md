@@ -33,6 +33,20 @@ filename = '/content/drive/XXXXX.csv'
 data = pd.read_csv(filename)
 ```
 
+- 코랩 pip
+
+```python
+#설치
+!pip install pandas-profiling mplstyle
+#삭제 
+!pip uninstall pandas-profiling
+#upgrade > 런타임 다시시작
+!pip install --upgrade pandas_profiling
+#설치정보
+!pip show pandas-profiling
+pd.__version__
+```
+
 - 동영상 로딩하기
 
 ```python
