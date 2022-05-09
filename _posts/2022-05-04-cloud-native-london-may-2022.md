@@ -12,22 +12,26 @@ tags:
   - "2022"
 ---
 
-We have a great speaker from OpsCruise joining us at our May Cloud Native London virtual meetup tonight, from 6:45pm BST on Rambly and YouTube!
-
-[Join us on Rambly](https://rambly.app/#/rooms/twitch:cloudnativelon) or catch the Youtube livestream.
-
-### Our agenda for 4 May 2022 is (times in BST):
-
-* 6:45 Kick off
-* 7:15 Next Gen Observability using Open Source Monitoring (Aloke Guha, OpsCruise)
-* 7:45 Wrap up
+We had a great speaker from OpsCruise joining our May Cloud Native London virtual meetup, with attendees via Zoom, Rambly, and the YouTube/Twitch livestreams. 
 
 We are immensely grateful to [Palo Alto Networks](https://www.paloaltonetworks.com/),  [CircleCI](https://circleci.com/), [Sysdig](https://sysdig.com/), and [ControlPlane](https://control-plane.io/) for your generous support and sponsorship.
 
+### Overview
+
+Aloke Guha from OpsCruise gave us a talk on Next Gen Observability using Open Source Monitoring (starting at [18:16](https://youtu.be/Nl2YK8sA2u8?t=1096)). His takeaways mentioned: 
+
+* Modern cloud native applications running in Kubernetes creates some vexing challenges in production
+* We can leverage open-source and CNCF monitoring such Open Telemetry effectively to extract deep insights into your application
+* Using contextual knowledge and AI/Ops can enable proactive detection, isolation and resolution of problems - reducing Ops manual efforts and MTTR
+
+And of course, a group photo from Rambly! 
+![](/images/2022-05-04-cloud-native-london-may-2022.png)
+
 ## Cloud Native London June
 
-Our next meetup will be on Wednesday 1st June, when we'll be joined by speakers from eSynergy, ControlPlane, and Sysdig. [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/284029111/). 
+Our next meetup will be on Wednesday 1st June, when we'll be joined by speakers from eSynergy, ControlPlane, and Sysdig. Even more excitingly, we’ll be back in the flesh! So [RSVP and save the date now!](https://www.meetup.com/Cloud-Native-London/events/284029111/). 
 
-Stay safe and see you soon!
+Stay safe, stay healthy, and I’ll see you next month - hopefully in person!
 
 Cheryl (@oicheryl) 
+
