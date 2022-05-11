@@ -1,0 +1,87 @@
+---
+layout: post
+title: Creando ruido blanco
+---
+
+<p align = justify>Este artículo es la primera parte de una serie de entregas que, a medida que tenga tiempo, 
+iré subiendo aquí sobre cómo trabajar con señales ruidosas. Todo esto lo concibo como como un <it>crash course</it>,
+con pocas definiciones y teoremas, apelando sobre todo a la analogía y la ilustración más que al rigor.
+El objetivo final es más técnico que teórico.<\p>
+
+<em>Recomendación médica: conocimiento no apto para puristas. Bourbakistas, abstenerse. 
+Acá las cosas SI se resuelven, y si no, se aproximan numéricamente. Cualquier solución es mejor que ninguna.</em>
+
+Programa:
+
+i) Cómo generar ruido blanco.
+ii) Cómo generar ruido blanco - avanzado. [forthcoming]
+iii) Simulando sistemas I : incorporando ruido. [forthcoming]
+iv) Simulando sistemas II: un atajo lineal. [forthcoming]
+v) Simulando sistemas: el puente browniano. [forthcoming]
+vi) Relleno ruidoso. [forthcoming]
+vii) Limpiando el ruido. [forthcoming]
+
+La mayor parte de estas entregas están basadas en el excelente libro "An Introduction to Stochastic Differential Equations" de Lawrence C. Evans, aunque también recurriré esporádicamente a otras obras.
+
+
+Ahora sí: Let's go to the ramble!!!
+
+--- Ruido Blanco---
+
+Spoiler alert: no te asustes con la primera definición. Hay que darla si o si, lo jugoso y programable viene después.
+
+Def: Llamaremos ruido blanco a toda serie temporal psi(t) para la cual existe un movimiento browniano o proceso de Weiner W(t) tal que
+dot(W(t)) = psi(t).
+
+Aquí pueden ver lo que es un proceso de Weiner. Para nosotros, en este curso, un proceso de Weiner (o un movimiento Browniano) será una serie W(t) tal que se cumple
+i) W(0) = 0
+ii) W(t)-W(s) ~ N(0,t-s)
+
+Para los quisquillosos, lo anterior no es una correcta definición de proceso de Weiner, si no que define apenas una "realización" del proceso.
+
+
+No profundizaremos más acerca de estos procesos de Weiner, pero señalemos que entre sus propiedades se encuentra la de no ser diferenciables. Por lo que su derivada no existe, y por ello FORMALMENTE el ruido blanco no existe.
+
+¿Entonces que haremos? Supondremos que SI existe ese objeto que hemos llamado ruido blanco, y una de las propiedades que este objeto deberá cumplir es
+$E\left(\psi(t)\psi(s)\right) = \delta(t-s)$.
+
+Obviamente, lo anterior es una fórmula que vale en un sentido informal.
+
+--Todo arte está en la ejecución--
+
+¿Cómo simulamos entonces ese ruido blanco que no existe?
+
+Hay dos enfoques. La vía rápida y la sofisticada, pero ambos coinciden en lo escencial: se genera un proceso de Weiner (que si existe) y le aplicamos un algoritmo que genere numericamente su derivada, y vualá! tendremos ruido blanco aunque a los bourbakistas le pese.
+
+i) Método sencillo:
+Usaremos escencialmente la propiedad ii) del proceso de Weiner. Supongamos que queremos simular una señal de ruido blanco de 100 segundos de duración, a una tasa de una muestra por segundo (es decir, una sampling frequency de 1/s = 1 Hz).
+
+N = 100         #tamaño de la muestra
+dt = 1          #tasa de muestreo
+W = np.empty(N) #creamos el vector que rellenaremos
+W[0] = 0        #hacemos que nuestra muestra verifique la condición i
+for i in range(N-1):
+    W[i+1] = W[i] + np.random.normal(0,dt)   #generamos iterativamente la serie
+
+Nota: recordemos que N(0,dt) = sqrt(dt) N(0,1). Por ello muchas veces pondremos np.sqrt(dt)*np.random.randn()
+
+Y la serie de W será nuestro proceso de Weiner! Muchos lo denominan "camino browniano discretizado".
+
+¿Y el ruido blanco? Para construirlo, consideraremos solamente los incrementos dW[i] = psi[i] = W[i+1]-W[i].
+
+¿Tanto para eso? Si.
+
+Una forma más sencilla de generar la señal psi es
+
+dW = np.random.normal(0,dt,size = N)
+
+y luego, si queremos generamos el camino browniano
+
+W = []
+for i in range(len(dW)-1):
+   W = W.append(dW[i+1]-W[i])
+
+
+La idea que queremos que quede clara, es que simular una señal de ruido blanco y un proceso de Weiener (o movimiento browniano) son dos caras de la misma moneda.
+
+En la próxima entrega veremos un método más sofisticado.
