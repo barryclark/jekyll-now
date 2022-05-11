@@ -13,4 +13,4 @@ title: Data Science - Information Management
 
 [EPPS 6354 Information Management Assignment 5](https://minshimia.github.io/Information-Management/EPPS-6354-Assignment-5.-Min_Shi.html)
 
-[EPPS 6354 Information Management Shiny App](https://minshimia.shinyapps.io/Shiny/?_ga=2.197861478.890102784.1652257861-1346453525.1649978871)
+[EPPS 6354 Information Management Shiny App](https://minshimia.shinyapps.io/Shiny/?_ga=2.43713004.890102784.1652257861-1346453525.1649978871)
