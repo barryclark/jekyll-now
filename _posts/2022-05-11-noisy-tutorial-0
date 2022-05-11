@@ -1,0 +1,29 @@
+---
+layout: post
+title: Introduciéndonos al ruido.
+---
+
+<p align = "justify">Este artículo es la primera parte de una serie de entregas que, a medida que tenga tiempo, 
+iré subiendo aquí sobre cómo trabajar con señales ruidosas. Todo esto lo concibo como como un <it>crash course</it>,
+con pocas definiciones y teoremas, apelando sobre todo a la analogía y la ilustración más que al rigor.
+El objetivo final es más técnico que teórico: en este curso vas a aprender, escencialmente, a generar una señal
+ruidosa y limpiarla para su análsis.<\p>
+
+<em>Recomendación médica: conocimiento no apto para puristas. Bourbakistas, abstenerse. 
+Acá las cosas SI se resuelven, y si no, se aproximan numéricamente. Cualquier solución es mejor que ninguna.</em>
+
+Programa:
+
+<ol>
+  <li>Cómo generar ruido blanco. [forthcoming]</li>
+  <li>Cómo generar ruido blanco - avanzado. [forthcoming]</li>
+  <li>Simulando sistemas ruidosos I : incorporando ruido. [forthcoming]</li>
+  <li>Simulando sistemas ruidosos II: un atajo lineal. [forthcoming]</li>
+  <li>El puente browniano. [forthcoming</li>
+  <li>Relleno ruidoso. [forthcoming]</li>
+  <li>Limpiando el ruido. [forthcoming]</li>
+</ol>
+
+<p align = "justify">La mayor parte de estas entregas estarán basadas en el excelente libro 
+"An Introduction to Stochastic Differential Equations" de Lawrence C. Evans, 
+aunque también recurriré esporádicamente a otras obras.</p>
