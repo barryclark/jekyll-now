@@ -6,13 +6,13 @@ title: Introduciéndonos al ruido.
 
 <p align = "justify">Este artículo es la primera parte de una serie de entregas que, a medida que tenga tiempo, 
 iré subiendo aquí sobre cómo trabajar con señales ruidosas. Todo esto lo concibo como como un <it>crash course</it>,
-con pocas definiciones y teoremas, apelando sobre todo a la analogía y la ilustración más que al rigor.
-El objetivo final es más técnico que teórico: en este curso vas a aprender, escencialmente, a generar una señal
-ruidosa y limpiarla para su análisis.</p>
+con pocas definiciones y teoremas, apelando sobre todo a la analogía la ilustración y los conceptos heurísticos 
+que al rigor. El objetivo, finalmente, es más técnico que teórico.</p>
 
 <p align = "justify">
-<em>Recomendación médica: conocimiento no apto para puristas. Bourbakistas, abstenerse. 
-Acá las cosas SI se resuelven, y si no, se aproximan numéricamente. Cualquier solución es mejor que ninguna.</em></p>
+<em>Recomendación médica: conocimiento no apto para puristas.</em></p>
+
+Ahora sí: Let's get ready to rumble!
 
 <b>Programa:</b>
 
