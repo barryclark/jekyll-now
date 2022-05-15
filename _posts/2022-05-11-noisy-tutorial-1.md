@@ -3,7 +3,8 @@ layout: post
 title: Creando ruido blanco
 ---
 
-<code>
-N = 100                           #número de muestras
-psi = np.random.randn(size = N)   #generamos la señal de ruido blanco
-<\code>
+{% highlight ruby %}
+for i in range(N):   #number of iterations
+  index = np.arange(5); #do something
+  i = i+12;
+{% endhighlight %}
