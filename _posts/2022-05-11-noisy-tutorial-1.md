@@ -7,13 +7,13 @@ title: Creando ruido blanco
 
 <p align = "justify">SPOILER ALERT: no asustarse con la primera definición. Hay que darla si o si, lo jugoso y programable viene después.</p>
 
-<p align = "justify"><b>Definición:</b> <em>Llamaremos ruido blanco a toda serie temporal $$\psi(t)$$ para la cual existe un movimiento browniano o proceso de Wiener $$W(t)$$ tal que $$\dot{W}(t) = \psi(t)$$.</em></p>
+<p align = "justify"><b>Definición:</b> <em>Llamaremos ruido blanco a toda serie temporal $\psi(t)$ para la cual existe un movimiento browniano o proceso de Wiener $W(t)$ tal que $\dot{W}(t) = \psi(t)$.</em></p>
 
 <p align = "justify">Aquí pueden ver lo que es un <a href = "https://es.wikipedia.org/wiki/Proceso_de_Wiener">proceso de Wiener</a>. Para nosotros, en este curso, cada vez que mencionemos un proceso de Wiener (o movimiento Browniano), tendremos en mente una serie $$W(t)$$ que cumple
 <ol type = "i">
-<li> $$W(0) = 0$$
-<li> $$W(t)-W(s) ~ \sqrt(t-s)\mathcal{N}(0,1)$$
-<li> Los incrementos $$W(t)-W(s)$$ y $$W(u)-W(v)$$ son independientes.
+<li> $W(0) = 0$,
+<li> $W(t)-W(s) ~ \sqrt(t-s)\mathcal{N}(0,1)$
+<li> Los incrementos $W(t)-W(s)$ y $W(u)-W(v)$ son independientes.
 </p>
 
 <p align = "justify">Para los quisquillosos, lo anterior no es una correcta definición de proceso de Wiener, si no que define una "realización" del proceso.</p>
@@ -76,7 +76,7 @@ plt.plot(autocorr)                 #ploteamos para chequear.
 
 <p align = "justify">$$f_s$$ no es otra cosa que la cantidad de muestras por unidad de tiempo, es decir f_s = N/T (donde N es la cantidad de muestras).
 
-Luego, la longitud de nuestra muestra de ruido blanco será $$N = T f_s$$, y la distancia entre dos muestras será delta $$t = T/N = 1/fs$$.</p>
+Luego, la longitud de nuestra muestra de ruido blanco será $N = T f_s$, y la distancia entre dos muestras será delta $t = T/N = 1/fs$.</p>
 
 <p align = "justify"><b>Ejemplo</b>: Supongamos por ejemplo que queremos simular un proceso de Wiener de 100 segundos de duración, y tamaño 400.</p>
 
