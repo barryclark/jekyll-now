@@ -123,7 +123,7 @@ for i in range(M):
 
 for i in range(M):
   plt.plot(t,W_matrix[i])
-{% highlight python %}
+{% endhighlight %}
 
 FIGURA 3
 
