@@ -47,12 +47,18 @@ Generarmos una señal que satisfaga las ecuaciones \eqref{eq1} y \eqref{eq2}:
 {% highlight python %}
 import numpy as np
 N = 100;                          #número de muestras
-psi = np.random.randn(size = N);  #generamos la señal de ruido blanco
+psi = np.random.randn(N);         #generamos la señal de ruido blanco
 {% endhighlight %}
 
 <p align = "justify">Observacion: si psi es una señal de ruido blanco, también lo será $a*\eta$ para cualquier número $$a\neq 0$$.</p>
 
 <p>Y ahora grafiquemos lo obtenido</p>
+
+{% highlight python %}
+import matplotlib.pyplot as plt
+plt.plot(psi,'b')
+plt.show()
+{% endhighlight %}
 
 FIGURA1
 
@@ -62,12 +68,14 @@ FIGURA1
 E = np.mean(psi);
 print(E)
 {% endhighlight %}
-y el resultado da 0000
+y el resultado da 0.02133
 
 {% highlight python %}
 from scipy import signal
-autocorr = correlate(psi, psi);    #hacemos la autocorrelación
-plt.plot(autocorr)                 #ploteamos para chequear.
+autocorr = signal.correlate(psi, psi);    #hacemos la autocorrelación
+lags = np.arange(-N+1,N,1)                #calculamos los lags
+plt.plot(lags,autocorr)                 #ploteamos para chequear.
+plt.show()
 {% endhighlight %}
 
 <b> Ahora toca simular un proceso de Wiener</b>
@@ -76,15 +84,15 @@ plt.plot(autocorr)                 #ploteamos para chequear.
 
 <p align = "justify">$f_s$ no es otra cosa que la cantidad de muestras por unidad de tiempo, es decir $f_s = N/T$ (donde N es la cantidad de muestras).
 
-Luego, la longitud de nuestra muestra de ruido blanco será $N = T f_s$, y la distancia entre dos muestras será delta $t = T/N = 1/f_s$.</p>
+Luego, la longitud de nuestra muestra de ruido blanco será $N = T\times f_s$, y la distancia entre dos muestras será $\Delta t = T/N = 1/f_s$.</p>
 
 <p align = "justify"><b>Ejemplo</b>: Supongamos por ejemplo que queremos simular un proceso de Wiener de 100 segundos de duración, y tamaño 400.</p>
 
 {% highlight python %}
 T = 100;                      #duración de la muestra [s]
 fs = 4;                       #sampling frequency [Hz] 
-N = T/fs;                     #tamaño de la muestra (= 400)  
-dt = T/N;               #distancia entre muestras
+N = round(T*fs);              #tamaño de la muestra (= 400)  
+dt = T/N;                     #distancia entre muestras
 t = np.arange(0,T,dt);        #creamos el vector de muestras
 
 W = np.empty(N);              #creamos el vector de nuestro futuro proceso
@@ -99,13 +107,16 @@ for i in range(N-1):
 
 {% highlight python %}
 W[0] = 0;
-W[1::N-1] = np.cumsum(np.random.randn(size = N-1))
+index = range(1,N)
+W[index] = np.cumsum(np.random.randn(N-1))
 {% endhighlight %}
 
 <p align = "justify">Si queremos graficar el proceso anteriormente simulado, usamos el siguiente código</p>
 
 {% highlight python %}
 plt.plot(t,W,label = 'Wiener process')
+plt.xlabel('Time [s]')
+plt.show()
 {% endhighlight %}
 
 FIGURA 2
@@ -118,11 +129,14 @@ W_matrix = np.empty((M,N));  #creamos la matrix
 
 for i in range(M):
   W = np.zeros(N)
-  W[1::N-1] = np.cumsum(np.random.randn(size = N-1))
+  index = range(1,N)
+  W[index] = np.cumsum(np.random.randn(N-1))
   W_matrix[i] = W
 
 for i in range(M):
   plt.plot(t,W_matrix[i])
+plt.xlabel('Time [s]')  
+plt.show()
 {% endhighlight %}
 
 FIGURA 3
