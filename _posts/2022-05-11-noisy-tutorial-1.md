@@ -46,8 +46,8 @@ Obviamente, las anteriores son dos fórmulas que valen en un sentido informal.
 Generarmos una señal que satisfaga las ecuaciones \eqref{eq1} y \eqref{eq2}:
 {% highlight python %}
 import numpy as np
-N = 100                           #número de muestras
-psi = np.random.randn(size = N)   #generamos la señal de ruido blanco
+N = 100;                          #número de muestras
+psi = np.random.randn(size = N);  #generamos la señal de ruido blanco
 {% endhighlight %}
 
 <p align = "justify">Observacion: si psi es una señal de ruido blanco, también lo será $a*psi$ para cualquier número $$a\neq 0$$.</p>
@@ -59,15 +59,15 @@ FIGURA1
 <p>Chequeemos que lo simulado funciona, viendo si se cumplen las condiciones \eqref{eq1} y \eqref{eq2},</p>
 
 {% highlight python %}
-E = np.mean(psi)
+E = np.mean(psi);
 print(E)
 {% endhighlight %}
 y el resultado da 0000
 
 {% highlight python %}
 from scipy import signal
-autocorr = correlate(psi, psi)    #hacemos la autocorrelación
-plt.plot(autocorr)                #ploteamos para chequear.
+autocorr = correlate(psi, psi);    #hacemos la autocorrelación
+plt.plot(autocorr)                 #ploteamos para chequear.
 {% endhighlight %}
 
 <b> Ahora toca simular un proceso de Wiener</b>
