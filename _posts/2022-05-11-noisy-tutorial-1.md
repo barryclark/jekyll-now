@@ -7,9 +7,9 @@ title: Creando ruido blanco
 
 <p align = "justify">SPOILER ALERT: no asustarse con la primera definición. Hay que darla si o si, lo jugoso y programable viene después.</p>
 
-<p align = "justify"><b>Definición:</b> <em>Llamaremos ruido blanco a toda serie temporal $\psi(t)$ para la cual existe un movimiento browniano o proceso de Wiener $W(t)$ tal que $\dot{W}(t) = \psi(t)$.</em></p>
+<p align = "justify"><b>Definición:</b> <em>Llamaremos ruido blanco a toda serie temporal $\eta(t)$ para la cual existe un movimiento browniano o proceso de Wiener $W(t)$ tal que $\dot{W}(t) = \eta(t)$.</em></p>
 
-<p align = "justify">Aquí pueden ver lo que es un <a href = "https://es.wikipedia.org/wiki/Proceso_de_Wiener">proceso de Wiener</a>. Para nosotros, en este curso, cada vez que mencionemos un proceso de Wiener (o movimiento Browniano), tendremos en mente una serie $$W(t)$$ que cumple
+<p align = "justify">Aquí pueden ver lo que es un <a href = "https://es.wikipedia.org/wiki/Proceso_de_Wiener">proceso de Wiener</a>. Para nosotros, en este curso, cada vez que mencionemos un proceso de Wiener (o movimiento Browniano), tendremos en mente una serie $W(t)$ que cumple
 <ol type = "i">
 <li> $W(0) = 0$,
 <li> $W(t)-W(s) ~ \sqrt(t-s)\mathcal{N}(0,1)$
@@ -22,12 +22,12 @@ title: Creando ruido blanco
 
 <p align = "justify">¿Entonces que haremos? Supondremos que SI existe ese objeto que hemos llamado ruido blanco, y este objeto deberá cumplir con dos propiedades:
 \begin{equation}
-E(\psi(t)) = 0
+E(\eta(t)) = 0
 \label{eq1}
 \end{equation}
 y
 \begin{equation}
-E\left(\psi(t)\psi(s)\right) = \delta(t-s),
+E\left(\eta(t)\eta(s)\right) = \delta(t-s),
 \label{eq2}
 \end{equation}
 donde $\delta$ es la función <a href = "https://es.wikipedia.org/wiki/Delta_de_Dirac"> delta de Dirac</a>.
@@ -50,7 +50,7 @@ N = 100;                          #número de muestras
 psi = np.random.randn(size = N);  #generamos la señal de ruido blanco
 {% endhighlight %}
 
-<p align = "justify">Observacion: si psi es una señal de ruido blanco, también lo será $a*psi$ para cualquier número $$a\neq 0$$.</p>
+<p align = "justify">Observacion: si psi es una señal de ruido blanco, también lo será $a*\eta$ para cualquier número $$a\neq 0$$.</p>
 
 <p>Y ahora grafiquemos lo obtenido</p>
 
@@ -72,11 +72,11 @@ plt.plot(autocorr)                 #ploteamos para chequear.
 
 <b> Ahora toca simular un proceso de Wiener</b>
 
-<p align = "justify">Usaremos escencialmente la propiedad ii) del proceso de Wiener para simular una señal de ruido blanco de T segundos de duración, a una tasa de muestreo de $$f_s = 4$$Hz (fs también se denomina frecuencia de muestreo o sampling frequency).</p>
+<p align = "justify">Usaremos escencialmente la propiedad ii) del proceso de Wiener para simular una señal de ruido blanco de T segundos de duración, a una tasa de muestreo de $f_s = 4$Hz (fs también se denomina frecuencia de muestreo o sampling frequency).</p>
 
-<p align = "justify">$$f_s$$ no es otra cosa que la cantidad de muestras por unidad de tiempo, es decir f_s = N/T (donde N es la cantidad de muestras).
+<p align = "justify">$f_s$ no es otra cosa que la cantidad de muestras por unidad de tiempo, es decir $f_s = N/T$ (donde N es la cantidad de muestras).
 
-Luego, la longitud de nuestra muestra de ruido blanco será $N = T f_s$, y la distancia entre dos muestras será delta $t = T/N = 1/fs$.</p>
+Luego, la longitud de nuestra muestra de ruido blanco será $N = T f_s$, y la distancia entre dos muestras será delta $t = T/N = 1/f_s$.</p>
 
 <p align = "justify"><b>Ejemplo</b>: Supongamos por ejemplo que queremos simular un proceso de Wiener de 100 segundos de duración, y tamaño 400.</p>
 
