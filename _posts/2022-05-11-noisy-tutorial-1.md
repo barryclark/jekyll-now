@@ -84,7 +84,7 @@ Luego, la longitud de nuestra muestra de ruido blanco será $$N = T f_s$$, y la 
 T = 100;                      #duración de la muestra [s]
 fs = 4;                       #sampling frequency [Hz] 
 N = T/fs;                     #tamaño de la muestra (= 400)  
-\delta t = T/N;               #distancia entre muestras
+dt = T/N;               #distancia entre muestras
 t = np.arange(0,T,dt);        #creamos el vector de muestras
 
 W = np.empty(N);              #creamos el vector de nuestro futuro proceso
