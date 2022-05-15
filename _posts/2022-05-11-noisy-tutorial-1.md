@@ -3,7 +3,7 @@ layout: post
 title: Creando ruido blanco
 ---
 
-{% highlight ruby %}
+{% highlight python linenos %}
 for i in range(N):   #number of iterations
   index = np.arange(5); #do something
   i = i+12;
