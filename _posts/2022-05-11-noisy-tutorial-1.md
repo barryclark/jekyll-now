@@ -60,7 +60,9 @@ plt.plot(psi,'b')
 plt.show()
 {% endhighlight %}
 
-FIGURA1
+<figure>
+  <img src="/_2022-05-11-noisy-tutorial-1/figure1.png" alt="Trulli" style="width:100%">
+</figure>
 
 <p>Chequeemos que lo simulado funciona, viendo si se cumplen las condiciones \eqref{eq1} y \eqref{eq2},</p>
 
