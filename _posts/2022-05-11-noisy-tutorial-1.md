@@ -61,7 +61,7 @@ plt.show()
 {% endhighlight %}
 
 <figure>
-  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-05-11-noisy-tutorial-1/figure1.png?raw=true" alt="Trulli" style="width:40%">
+  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-05-11-noisy-tutorial-1/figure1.png?raw=true" alt="Trulli" style="width:70%">
 </figure>
 
 <p>Chequeemos que lo simulado funciona, viendo si se cumplen las condiciones \eqref{eq1} y \eqref{eq2},</p>
@@ -76,12 +76,12 @@ y el resultado da 0.02133
 from scipy import signal
 autocorr = signal.correlate(psi, psi);    #hacemos la autocorrelación
 lags = np.arange(-N+1,N,1)                #calculamos los lags
-plt.plot(lags,autocorr)                 #ploteamos para chequear.
+plt.plot(lags,autocorr)                   #ploteamos para chequear.
 plt.show()
 {% endhighlight %}
 
 <figure>
-  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-05-11-noisy-tutorial-1/figure_1b.png?raw=true" style="width:40%">
+  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-05-11-noisy-tutorial-1/figure_1b.png?raw=true" style="width:70%">
 </figure>
 
 <b> Ahora toca simular un proceso de Wiener</b>
@@ -126,7 +126,7 @@ plt.show()
 {% endhighlight %}
 
 <figure>
-  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-05-11-noisy-tutorial-1/figure2.png?raw=true" style="width:40%">
+  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-05-11-noisy-tutorial-1/figure2.png?raw=true" style="width:70%">
 </figure>
 
 <p align = "justify">Ahora generamos y ploteamos distintas realizaciones del proceso.</p>
@@ -148,7 +148,7 @@ plt.show()
 {% endhighlight %}
 
 <figure>
-  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-05-11-noisy-tutorial-1/figure3.png?raw=true" style="width:40%">
+  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-05-11-noisy-tutorial-1/figure3.png?raw=true" style="width:70%">
 </figure>
 
 En la próxima entrega veremos un método más sofisticado.
