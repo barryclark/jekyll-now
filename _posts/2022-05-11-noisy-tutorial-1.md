@@ -14,6 +14,7 @@ title: Creando ruido blanco
 <li> $W(0) = 0$,
 <li> $W(t)-W(s) \sim \sqrt(t-s)\mathcal{N}(0,1)$
 <li> Los incrementos $W(t)-W(s)$ y $W(u)-W(v)$ son independientes.
+</ol>
 </p>
 
 <p align = "justify">Para los quisquillosos, lo anterior no es una correcta definición de proceso de Wiener, si no que define una "realización" del proceso.</p>
