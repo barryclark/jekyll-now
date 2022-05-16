@@ -17,7 +17,7 @@ Ahora sí: Let's get ready to rumble!
 <b>Programa:</b>
 
 <ol>
-  <li>Cómo generar ruido blanco. [forthcoming]</li>
+  <li><a href = "https://uliseschialva.github.io/noisy-tutorial-1/">Cómo generar ruido blanco.</a></li>
   <li>Cómo generar ruido blanco - avanzado. [forthcoming]</li>
   <li>Simulando sistemas ruidosos I : incorporando ruido. [forthcoming]</li>
   <li>Simulando sistemas ruidosos II: un atajo lineal. [forthcoming]</li>
