@@ -11,9 +11,9 @@ title: Creando ruido blanco
 
 <p align = "justify">Aquí pueden ver lo que es un <a href = "https://es.wikipedia.org/wiki/Proceso_de_Wiener">proceso de Wiener</a>. Para nosotros, en este curso, cada vez que mencionemos un proceso de Wiener (o movimiento Browniano), tendremos en mente una serie $W(t)$ que cumple
 <ol type = "i">
-<li> $W(0) = 0$,
-<li> $W(t)-W(s) \sim \sqrt(t-s)\mathcal{N}(0,1)$
-<li> Los incrementos $W(t)-W(s)$ y $W(u)-W(v)$ son independientes.
+<li> $W(0) = 0$,</li>
+<li> $W(t)-W(s) \sim \sqrt(t-s)\mathcal{N}(0,1)$</li>
+<li> Los incrementos $W(t)-W(s)$ y $W(u)-W(v)$ son independientes.</li>
 </ol>
 </p>
 
