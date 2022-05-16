@@ -5,7 +5,7 @@ title: Creando ruido blanco
 
 <p align = "justify">En esta entrada introduciremos el ruido blanco y los procesos de Wiener (o movimientos brownianos), y veremos como simularlos. Los objetivos de este minicurso pueden <a href = "https://uliseschialva.github.io/noisy-tutorial-0/">encontralos aquí</a> .</p>
 
-<p align = "justify">SPOILER ALERT: no asustarse con la primera definición. Hay que darla si o si, lo jugoso y programable viene después.</p>
+<p align = "justify">SPOILER ALERT: no asustarse con la primera definición. Hay que darla sí o sí, lo jugoso y programable viene después.</p>
 
 <p align = "justify"><b>Definición:</b> <em>Llamaremos ruido blanco a toda serie temporal $\eta(t)$ para la cual existe un movimiento browniano o proceso de Wiener $W(t)$ tal que $\dot{W}(t) = \eta(t)$.</em></p>
 
@@ -19,9 +19,9 @@ title: Creando ruido blanco
 
 <p align = "justify">Para los quisquillosos, lo anterior no es una correcta definición de proceso de Wiener, si no que define una "realización" del proceso.</p>
 
-<p align = "justify">No profundizaremos más acerca de estos procesos de Wiener, pero señalemos que entre sus propiedades se encuentra la de no ser diferenciables. Por lo que su derivada no existe, y por ello FORMALMENTE el ruido blanco no existe.</p>
+<p align = "justify">No profundizaremos más acerca de estos procesos, pero señalemos que entre sus propiedades se encuentra la de no ser diferenciables. Por lo que su derivada no existe, y por ello FORMALMENTE el ruido blanco no existe.</p>
 
-<p align = "justify">¿Entonces que haremos? Supondremos que SI existe ese objeto que hemos llamado ruido blanco, y este objeto deberá cumplir con dos propiedades:
+<p align = "justify">¿Entonces que haremos? Supondremos que SI existe ese objeto que hemos llamado "ruido blanco", y (haciendo algunas cuentas que omitimos) este objeto deberá cumplir con dos propiedades:
 \begin{equation}
 E(\eta(t)) = 0
 \label{eq1}
@@ -48,16 +48,16 @@ Generarmos una señal que satisfaga las ecuaciones \eqref{eq1} y \eqref{eq2}:
 {% highlight python %}
 import numpy as np
 N = 100;                          #número de muestras
-psi = np.random.randn(N);         #generamos la señal de ruido blanco
+eta = np.random.randn(N);         #generamos la señal de ruido blanco
 {% endhighlight %}
 
-<p align = "justify">Observacion: si psi es una señal de ruido blanco, también lo será $a*\eta$ para cualquier número $a\neq 0$.</p>
+<p align = "justify">Observacion: si $\eta$ es una señal de ruido blanco, también lo será $a*\eta$ para cualquier número $a\neq 0$.</p>
 
 <p>Y ahora grafiquemos lo obtenido</p>
 
 {% highlight python %}
 import matplotlib.pyplot as plt
-plt.plot(psi,'b')
+plt.plot(eta,'b')
 plt.show()
 {% endhighlight %}
 
@@ -70,14 +70,14 @@ plt.show()
 <p>Chequeemos que lo simulado funciona, viendo si se cumplen las condiciones \eqref{eq1} y \eqref{eq2},</p>
 
 {% highlight python %}
-E = np.mean(psi);
+E = np.mean(eta);
 print(E)
 {% endhighlight %}
 y el resultado da 0.02133
 
 {% highlight python %}
 from scipy import signal
-autocorr = signal.correlate(psi, psi);    #hacemos la autocorrelación
+autocorr = signal.correlate(eta, eta);    #hacemos la autocorrelación
 lags = np.arange(-N+1,N,1)                #calculamos los lags
 plt.plot(lags,autocorr)                   #ploteamos para chequear.
 plt.show()
@@ -91,20 +91,20 @@ plt.show()
 
 <b> Ahora toca simular un proceso de Wiener</b>
 
-<p align = "justify">Usaremos escencialmente la propiedad ii) del proceso de Wiener para simular una señal de ruido blanco de T segundos de duración, a una tasa de muestreo de $f_s = 4$Hz (fs también se denomina frecuencia de muestreo o sampling frequency).</p>
+<p align = "justify">Usaremos escencialmente la propiedad ii) del proceso de Wiener para simular una señal de ruido blanco de T segundos de duración, a una tasa de muestreo de $f_s$ determinada por nosotros ($f_s$ también se denomina frecuencia de muestreo o <em>sampling frequency</em>).</p>
 
 <p align = "justify">$f_s$ no es otra cosa que la cantidad de muestras por unidad de tiempo, es decir $f_s = N/T$ (donde N es la cantidad de muestras).
 
 Luego, la longitud de nuestra muestra de ruido blanco será $N = T\times f_s$, y la distancia entre dos muestras será $\Delta t = T/N = 1/f_s$.</p>
 
-<p align = "justify"><b>Ejemplo</b>: Supongamos por ejemplo que queremos simular un proceso de Wiener de 100 segundos de duración, y tamaño 400.</p>
+<p align = "justify"><b>Ejemplo</b>: Supongamos por ejemplo que queremos simular un proceso de Wiener de 100 segundos de duración, y con una frecuencia de muestreo de 4 Hz.</p>
 
 {% highlight python %}
 T = 100;                      #duración de la muestra [s]
 fs = 4;                       #sampling frequency [Hz] 
 N = round(T*fs);              #tamaño de la muestra (= 400)  
 dt = T/N;                     #distancia entre muestras
-t = np.arange(0,T,dt);        #creamos el vector de muestras
+t = np.arange(0,T,dt);        #creamos el vector de instantes de las muestras
 
 W = np.empty(N);              #creamos el vector de nuestro futuro proceso
 W[0] = 0;                     #hacemos que nuestra muestra verifique la condición i
