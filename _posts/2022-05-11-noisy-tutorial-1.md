@@ -61,7 +61,7 @@ plt.show()
 {% endhighlight %}
 
 <figure>
-  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-05-11-noisy-tutorial-1/figure1.png" alt="Trulli" style="width:100%">
+  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-05-11-noisy-tutorial-1/figure1.png" alt="Trulli" style="width:40%">
 </figure>
 
 <p>Chequeemos que lo simulado funciona, viendo si se cumplen las condiciones \eqref{eq1} y \eqref{eq2},</p>
@@ -79,6 +79,10 @@ lags = np.arange(-N+1,N,1)                #calculamos los lags
 plt.plot(lags,autocorr)                 #ploteamos para chequear.
 plt.show()
 {% endhighlight %}
+
+<figure>
+  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-05-11-noisy-tutorial-1/figure_1b.png" alt="Trulli" style="width:40%">
+</figure>
 
 <b> Ahora toca simular un proceso de Wiener</b>
 
@@ -121,7 +125,9 @@ plt.xlabel('Time [s]')
 plt.show()
 {% endhighlight %}
 
-FIGURA 2
+<figure>
+  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-05-11-noisy-tutorial-1/figure2.png" alt="Trulli" style="width:40%">
+</figure>
 
 <p align = "justify">Ahora generamos y ploteamos distintas realizaciones del proceso.</p>
 
@@ -141,7 +147,9 @@ plt.xlabel('Time [s]')
 plt.show()
 {% endhighlight %}
 
-FIGURA 3
+<figure>
+  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-05-11-noisy-tutorial-1/figure3.png" alt="Trulli" style="width:40%">
+</figure>
 
 En la próxima entrega veremos un método más sofisticado.
 
