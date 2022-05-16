@@ -60,9 +60,11 @@ plt.plot(psi,'b')
 plt.show()
 {% endhighlight %}
 
+<center>
 <figure>
   <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-05-11-noisy-tutorial-1/figure1.png?raw=true" alt="Trulli" style="width:70%">
 </figure>
+</center>
 
 <p>Chequeemos que lo simulado funciona, viendo si se cumplen las condiciones \eqref{eq1} y \eqref{eq2},</p>
 
@@ -80,9 +82,11 @@ plt.plot(lags,autocorr)                   #ploteamos para chequear.
 plt.show()
 {% endhighlight %}
 
+<center>
 <figure>
   <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-05-11-noisy-tutorial-1/figure_1b.png?raw=true" style="width:70%">
 </figure>
+</center>
 
 <b> Ahora toca simular un proceso de Wiener</b>
 
@@ -125,9 +129,11 @@ plt.xlabel('Time [s]')
 plt.show()
 {% endhighlight %}
 
+<center>
 <figure>
   <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-05-11-noisy-tutorial-1/figure2.png?raw=true" style="width:70%">
 </figure>
+</center>
 
 <p align = "justify">Ahora generamos y ploteamos distintas realizaciones del proceso.</p>
 
@@ -147,9 +153,10 @@ plt.xlabel('Time [s]')
 plt.show()
 {% endhighlight %}
 
+<center>
 <figure>
   <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-05-11-noisy-tutorial-1/figure3.png?raw=true" style="width:70%">
 </figure>
-
+<center>
 En la próxima entrega veremos un método más sofisticado.
 
