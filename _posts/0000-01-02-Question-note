@@ -1,9 +1,204 @@
----
-layout: post
-title: Question note
----
+
+######################################
+
+######################################
+
+아마존 웹서비스 정책과 역활.
+
+## Identity and Access Management
+[계정 루트 사용자](https://docs.aws.amazon.com/ko_kr/IAM/latest/UserGuide/id_root-user.html)
+
+계정을 처음 생성하는 경우에는 계정의 모든 AWS 서비스 및 리소스에 대한 전체 액세스 권한을 지닌 하나의 자격 증명으로 시작합니다.
+이 자격 증명을 AWS 계정 루트 사용자라고 합니다.
+
+* 계정을 생성할 때 사용한 이메일 주소와 암호를 입력하여 루트 사용자로 로그인할 수 있습니다.
+
+* 보안 토큰 서비스 (Security Token Service, STS)를 사용하면
+AWS 리소스에 대한 액세스를 제어할 수 있는 임시 보안 자격 증명을 생성하여 신뢰받는 사용자에게 제공할 수 있습니다.
+임시 보안 자격 증명은 다음과 같은 차이점을 제외하고는 IAM 사용자가 사용할 수 있는 장기 액세스 키 자격 증명과 거의 동일한 효력을 지닙니다.
+
+## Elastic Container Service
+컨테이너를 매우 안전하고, 안정적이고, 학장 가능한 방식으로 실행하는 방법
+
+ECS는 EC2 인스턴스 클러스터에서 Docker 컨테이너를 쉽게 실행, 중지 및 관리할 수 있는 확장성이 뛰어나고 빠른 컨테이너 관리 서비스입니다.
+
+* 클러스터는 서비스 또는 독립 실행형 작업의 논리적 그룹입니다.
+* 태스크 정의는 ECS에서 Docker 컨테이너를 실행하는 역활을 합니다.
+
+Cloud tail
+
+https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html
+
+Identity and Access Management(IAM)
+
+보안 토큰 서비스 리지언 설정
+
+
+######################################
+
+[C++] inline keyword와 inl file. (*.inl)
+https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=nawoo&logNo=220409027910
+
+inl file에는 inline 함수의 정의부를 적어 놓고, 선언부가 있는 header file의 끝에
+#include로 inl file을 포함하여 사용할 수 있습니다.
+
+* Header.h
+```cpp
+inline void Func();
+#include Inline.inl
+```
+* Inline.inl
+```cpp
+void Func()
+{
+
+}
+```
+
+항목형식은 C/C++ 헤더로 되어있어야 합니다.
+
+크기가 비대해지면 사용합니다.
+
+######################################
+
+
+단, 여기서 주의할 점은 선언과 동시에 정의를 했을 경우 inline keyword를 붙이지 않아도 되지만,
+그렇지 않으면 inline keyword를 붙여야 합니다.
+
+세상에 AWS 계정 해킹을 당해보네..
+
+Super, __super차이
+https://forums.unrealengine.com/t/calling-super/2491/3
+모르겠네잉.
+
+매번 기억안나는 것도 놀랍네.
+https://docs.unrealengine.com/4.27/ko/ProgrammingAndScripting/ProgrammingWithCPP/CPPTutorials/Components/1/
+컴포넌트 추가하고 붙이기, 정리하도록 합시다.
+https://forums.unrealengine.com/t/where-to-use-a-transient-variable/17494
+Transient property를 어따쓰는지에 대해서는봐도 모르겠지만,
+
+GetPlayerContext도 있네. 겁나 이름 직관적이네!!
+
+? https://forums.unrealengine.com/t/c-quit-game/39177/5
+	FGenericPlatformMisc::RequestExit(true);
+    를 이용하여 메인 루프를 종료시킬 수 있다고 하네. 흥미롭네.
+
+? SafeZone은 어디다 사용한다냐?
+
+커스텀 로그 카테고리(Custom Log Category)
+언리얼 엔진에서 제공하는 로그 카테고리 이외에 개발자가 필요한 카테고리를 직접 만들어서 사용할 수 있습니다.
+* .h
+```cpp
+DECLARE_LOG_CATEGORY_EXTERN(LogName, Log, ...);
+```
+
+* .cpp
+```cpp
+DEFINE_LOG_CATEGORY(LogName);
+```
+로 로그를 생성할 수 있습니다.
+
+https://wergia.tistory.com/122 더할 수 있는 내용.
+
+
+? 완전히 다른내용 같기는 한데 https://techblog.woowahan.com/6460/
+
+? WidgetTree는 뭘 하는 용도라냐
+
+NativeConstruct는 오버라이드 하지않은 Construct와 ...에서 사용됨.
+
+Slot을 캐스팅해서 사용하는데, 누가바도 아닌거 같은데.,, 흠.
+
+텍스트 로컬라이제이션을 보면
+https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/Localization/Formatting/
+아닌가? 잘못알고 있는 건가? 잘못알고 있는거 같네.
+
+Slot을 캐스팅해서 사용하는 것으로 기억하는데, 이를 어따쓰더라.
+
+C++로 위젯을 생성하기 위해서는 UserWidget을 상속한 클래스를 만들면 된다.
+또한 UserWidget을 사용하기 위해서는 UMG모듈의 종속성을 필요로 한다.
+
+계층구조를 C++코드에서 설정하지 않으므로
+Blueprint에서 설정합니다.
+
+? 어떻게 c++로 위젯을 생성해서 추가하는지 모르겠음.
+https://hombody.tistory.com/316
+그래도 모르겠다.
+	// 모르겠다.
+	//Overlay = WidgetTree->ConstructWidget<UOverlay>(UOverlay::StaticClass(), FName(L"Overlay"));
+	
+	//SizeBox = CreateWidget<USizeBox, UOverlay>(Overlay, USizeBox::StaticClass(), FName(L"SizeBox"));
+	//SizeBox->SetHeightOverride(33.0f);
+
+	//Button = CreateWidget<UButton, UOverlay>(Overlay, UButton::StaticClass(), FName(L"SizeBox"));
+	//TextBlock = CreateWidget<UTextBlock, UOverlay>(Overlay, UTextBlock::StaticClass(), FName(L"SizeBox"));
+
+그렇군, 새로운걸 할려고하며 아는게 없으니 작동되지 않는 거구만,
+얌전히 블루프린트로 만들자. 자료가 없다는건 그렇게 안쓰닌까 없는건가?
+뭐하기전에 일단 읽고하도록 하자,, ㅎㅎ,
+
+음.. WidgetTree를 이용한 오브젝트의 생성은, Initialize에서 호출되어야 합니다.
+? 왜요???
+
+! meta = (DisplayName = "MainMenu")
+
+? 안되네, ㅎ. 메서드로 카테고리화 하는건가.
+
+? PanelWidget을 이용해서 위젯을 만들어야 하나봅니다.
+
+? Object is not packaged: Overlay Overlay
+세상에 이거는 무슨오류래요?
+
+? UserWidget에 위젯을 추가하라면 WidgetTree를 이용하라는데 WidgetTree가 뭡니까?
+이름은 되게 직관적인거 같은데. 무슨 장점이 있답니까?
+
+이득우의 언리얼 c++게임개발의 정석으로 무엇을 만들 수 있는가?
+작은것 퀄리티 높게 만들다 보면, 큰 것도 퀄리티 높게 만들 수 있겠지이?
+
+우주정거장
+던전보스
+나무
+공포게임
+
+PVS, GIT, RENDERDOC, VisualAsset,
+
+Material Expression과 DependencyGraph까지는 배우고 싶은데, 토할거 같네. 추가적으로 랜더링 되는 순서도.
+
+MinimalAPI는 MODULENAME_API와 같이 사용될 수 없음. 
+
+? 특정 페서드가 의미가 없을때 의미 없는지 어떻게 파악하나?
+
+? 알파값을 가직 텍스쳐의 압축으로 인해서?? 알파값을 가진 텍스쳐가 저렇게 작동하는 것인가?
+
+? 디폴트 파라메터는 어떻게 구할 수 있을까?
+
+파라메터 설정 전부 안해주면 튕기나 보네,
+
+셰이더에 파라메터 추가하면 껏다 켜야하나?
+엔진 생성했을 떄 추가한다고 했으니...
+맞네 다시 시작해야하네...
+
+맨처음 배울때는 디버깅부터 배우는 것이 가장 중요한가.
+
+전체적인 그림은 뭐가있는지 파악하고,
+스토쿠 풀듯이 하나씩 푸는것이 가장 효율적이다.
+알고있는것은 여러개를 동시에 해도 되지만, 모르는 것은 한개씩 풀어야 한다.
+
+쉐이더를 컴파일 할 때에.
+Found unbound parameters being used in shadertype FMyTestPS(VertexFactory: ?)
+Parameter SrcTexture not bound!
+는 쉐이더의 파라메터를 바운드 하지 않았다는 것을 의미함.
+5.0.1기준으로 리소스에 바인드 해주면 알아서 생성됨.
+
+SHADER_USE_PARAMETER_STRUCT로 자동으로 해주면 편함.
+? 매크로를 어떻게 만들었는지 보는것이 궁금함.
+
+다만 Unbind texture에 대해서 알려주기는 함.
 
 이해하기 어렵네. 
+만약에 쉐이더 컴파일할때 오류를 출력하는 거면,
+내가 멍청해서 못한거니 앞으로 행동을 수정할 필요 있음.
+멍청해서인지 아닌지 아직은 모르겠지만, 일단은 안보임.
 픽셀 쉐이더의 시맨틱이 SV_POSITION 하나만 사용할 때는 생략가능함.
 하지만 하나 이상이 되면 명시해줘야함.
 명시하지 않으면 Fatal error를 발생시킴.

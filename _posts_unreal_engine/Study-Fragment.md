@@ -3,6 +3,11 @@ layout: post
 title: Fragment
 ---
 
+## UE5 Blueprint Widget
+
+이야,,, 희한한거 많이 추가되었네???
+세상 좋아졌구만,
+
 ## FSceneRenderer::ViewExtensionPreRender_RenderThread
 FSceneRenderer에서 RenderThread라는데.
 

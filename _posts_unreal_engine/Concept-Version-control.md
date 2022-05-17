@@ -1,12 +1,9 @@
 ---
 layout: post
-title: version control for UE5
+title: version control
 ---
 
-목표 : git을 이용하여 UE5 버전 컨트롤을 한다.
-
-## 버전 컬트롤(version control)이란?  
-목표 : UE5에 git을 이용한 버전 컨트롤을 한다.   
+## 버전 컬트롤(Version Control)이란?  
 
 * 프로젝트의 코드와 데이터의 백업입니다.   
 * 팀 맴버와 프로젝트내 파일 공유를 위한 도구입니다.   
