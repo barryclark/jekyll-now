@@ -1,5 +1,20 @@
 
+내일 해야할것은, 열어놓은 페이지 정리하고,
+
+
+http://egloos.zum.com/sweeper/v/3208657
+
+https://forums.unrealengine.com/t/how-can-i-get-bp-class-for-c/365618/2
+
+
+UE4 제대로 따라가기,
+베르베르의 프로그래밍 노트도 꾀나 유용하다고 생각된다.
+https://wergia.tistory.com/131
+
 ######################################
+
+UFUNCTION() 매크로는
+오버로딩을 허용하지 않는다.
 
 ######################################
 
@@ -33,6 +48,14 @@ Identity and Access Management(IAM)
 
 보안 토큰 서비스 리지언 설정
 
+## EC2
+[보안 그룹](https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/VPC_SecurityGroups.html)은 가상 방화벽의 기능을 수행하며 연결된 리소스에 도달하거나 이를 떠날 수 있는 트래픽을 제어합니다. 예를 들어 보안 그룹을 EC2 인스턴스와 연결하면 인스턴스에 대한 인바운드 및 아웃바운드 트래픽을 제어합니다.
+
+VPC를 생성할 경우 VPC는 기본 보안 그룹과 함께 제공됩니다. 각 VPC 대해 추가 보안 그룹을 생성할 수 있습니다. 보안 그룹은 해당 보안 그룹이 생성된 VPC의 리소스에만 연결할 수 있습니다.
+
+각 보안 그룹에 대해 프로토콜 및 포트 번호를 기반으로 트래픽을 제어하는 규칙을 추가합니다. 인바운드 트래픽과 아웃바운드 트래픽에 대한 규칙 집합은 별개입니다.
+
+보안 그룹과 비슷한 규칙으로 네트워크 ACL을 설정하여 VPC에 보안 계층을 더 추가할 수 있습니다. 보안 그룹과 네트워크 ACL의 차이에 대한 자세한 정보는 보안 그룹 및 네트워크 ACL 비교 단원을 참조하세요.
 
 ######################################
 
@@ -268,9 +291,6 @@ UAV, SRV 여전히 어려워요.
 
 게임 코드를 작성할 때는 IS a와 Has a관계, 상속에 대해서 생각해야 한다. 복잡하게 말하면 그렇고 게임 코드 작성 패턴은 오브젝트와 컴포넌트 패턴이다. 조립을 전제로 코드를 작성한다.
 
-추가적으로 마왕 블로그 봤었는데 꽤 유명한 TA인가 보다. TA뭐시기에 나올정도면.
-- 조회수 몇천 밖에 안되기는 하지만. 암튼
-
 GlobalShader를 추가하기 위해 시도한 것들.
 - 처음에 따라할려 했지만, 안됬다. 여기서 멘탄이 나갔다. 포럼, 사이트 등등 여러개를 찾았지만, 유용한 결론에 도달하지 못했다.
     - 버전을 생각하자. 버전이 다르니 코드도 많이 달랐다.
@@ -369,10 +389,6 @@ https://ballbot.tistory.com/17
 https://slowburn.dev/blog/headless-fun-unreal-engine/   
 https://github.com/EpicGames/UnrealEngine/commit/d0bff84f1390d7badd2280dff32cc8c5ba36809e   
 
-? FABRIK : 구현 했다 오류가 있다. 부동소수점 오류 때문인가?
-! Target으로 해야될 것을 TailPosition으로 했더니 오류가 있는 거였다. 당연히 작동되지 않았던 것이었다.
-머리로 생각해서 작성하느니 그림으로 그리는게 훨씬 빠르겠다.
-
 ? FABRIK : IK문제에 대한 수치적 솔루션?? 야코비안 역 기법? 발견적 방법?
 
 ? FABRIK : 6개의 회전 관절에 대해서는 답이 있지만, 7개의 회전 관절에 대해서는 무한히 많고 분석 솔루션이 존재하지 않는다?
@@ -380,8 +396,6 @@ https://github.com/EpicGames/UnrealEngine/commit/d0bff84f1390d7badd2280dff32cc8c
 ? 언리얼 엔진 인터페이스 사용법
 
 ? 코드 매트릭이 뭡니까? 복잡도라 하는 것 같은데요. 언리얼 프로젝트는 지원하지 않는다고 하네요.
-? 코드 분석은 다음의 링크에서 확인합시다.
-https://docs.microsoft.com/ko-kr/visualstudio/code-quality/?view=vs-2022
 
 ? 코드 정의창이 뭡니까?
 
@@ -390,8 +404,6 @@ https://docs.microsoft.com/ko-kr/visualstudio/code-quality/?view=vs-2022
 ? 언리얼 엔진 FeatureLevel이 뭡니까?
 
 ? Visual studio class diagram 보는법.
-
-? Play PIE 모드란 무엇인가?
 
 ? 프로그래머에게 논리력이란 무엇인가?   
 * 어떤 문제를 어떻게 접근해야 효율적일지 판단하는게 논리력인가?   
