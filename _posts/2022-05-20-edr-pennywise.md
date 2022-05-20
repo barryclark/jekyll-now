@@ -52,9 +52,10 @@ if not args.file:
 def transform(file, size):
     print("[!]\tInflating %s by %s MB" % (file, size))
     blank_bytes = struct.pack('B', 0)
-    transformer = open(file, 'ab')
-    transformer.write(blank_bytes * 1024 * 1024 * size)
-    transformer.close()
+    
+    with open(file, 'ab') as file:
+        file.write(blank_bytes * 1024 * 1024 * size)
+        
     print("[!]\tOperation Complete...\n")
 
 if __name__ == "__main__":
