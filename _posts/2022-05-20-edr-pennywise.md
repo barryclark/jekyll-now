@@ -4,8 +4,9 @@ layout: post
 title: Pennywise EDR evasion
 ---
 
-<img height="200" align="left" src="/images/pennywise.png">Wanna have a balloon? This Tiny script helps to hide your payload (like Mimikatz.exe) by inflating the Binary like a red ballon. Most EDR Tools only transfer the first 25 MB to the Server, so why not filling up the payload with some garbage and play some mind tricks?
+<img height="200" align="left" src="/images/pennywise.png"> <br><br>Wanna have a balloon? This Tiny script helps to hide your payload (like Mimikatz.exe) by inflating the Binary like a red ballon. Most EDR Tools only transfer the first 25 MB to the Server, so why not filling up the payload with some garbage and play some mind tricks? This change of the file size will keep the binary as it is but busts the file size. TIme to get evil ...
 
+<br><br><br><br><br><br>
 Tiny intro how this script works:
 
 ![](../images/pennywise_inflate.gif)
