@@ -20,6 +20,7 @@ UE의 RHI패키지는 DirectX가 지배적입니다.
 ## API features
 
 * Graphics API Applicable system Coloring language
+|:-:|:-:|:-:|
 |API|OS|language|
 |DirectX|Window, XBox|HLSL(Hight Level Shading Language)|
 |Vulkan|Cross-platform|SPIR-V|
@@ -28,6 +29,7 @@ UE의 RHI패키지는 DirectX가 지배적입니다.
 |OpenGL ES|Moving end|ES GLSL|
 
 * Compare
+|:-:|:-:|:-:|
 |DirectX|Vulkan|OpenGL(ES)|Metal|
 |texture|image|texture and render buffer|texture|
 |render target|color attachments|color attachments|color attachments or render target|

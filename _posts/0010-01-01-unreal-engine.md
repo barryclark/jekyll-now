@@ -11,16 +11,6 @@ title: Unreal engine
 |[언리얼 엔진 공식 카페](https://cafe.naver.com/unrealenginekr)|
 |[언리얼 유튜브](https://www.youtube.com/channel/UCBobmJyzsJ6Ll7UbfhI4iwQ)|
 |Engine에서 찾기 어려울때는 공식 문서를 보도록 합시다.|
-|[시간이 오래걸릴 것 같다 싶을때는 programmer all로](https://www.programmerall.com/article/60142006637/)|
-
-도저히 답이 없다 싶을때는 코드를 분석해야 한다.
-
-: [Unreal 4 렌더링 프로그래밍 주제 개요 및 목차](https://zhuanlan.zhihu.com/p/36675543)
-, [건강한 남자??](https://blog.csdn.net/qq_16756235)
-, [Realities.io](https://medium.com/realities-io/creating-a-custom-mesh-component-in-ue4-part-1-an-in-depth-explanation-of-vertex-factories-4a6fd9fd58f2)
-, [IT개발 노트](https://scahp.tistory.com/10?category=848072)
-, [Space Panda](https://spacepanda.tistory.com/4?category=704623)
-, [보트내에 물 뺴기](https://forums.unrealengine.com/t/take-out-water-from-inside-of-the-boat-with-custom-stencil-logic-puzzle/365545/6)
 
 ## 개념
 * [Garbage-collection](/posts_unreal_engine/Concept-Garbage-collection)
@@ -40,6 +30,10 @@ title: Unreal engine
         - BlueprintCallable
         - ImplementationEvent
         - NativeEvent
+    * [```UCLASS : Blueprint*```](/posts_unreal_engine/Concept-Blueprinttype-BlueprintAble)
+        - Blueprinttype
+        - BlueprintAble
+        - Blueprint class의 reparent
 * Project
     * [Project struct](/posts_unreal_engine/Conept-Project-struct)
         - 프로젝트 폴더 구성
@@ -64,17 +58,17 @@ title: Unreal engine
         - 렌더링 상태 기본값
 * [UMG and UI](/posts_unreal_engine/Concept-Actor)
     - HUD (Head Up Displays)란
-    - 위젯 클래스 생성하기
-    - NativePreConstruct 이용하기
-    - Asset 불러오기
-    - Widget C++에 Bind하기
     - 참고
 * [Mobility](/posts_unreal_engine/Concept-Mobility)
     - 스태틱 모빌리티
     - 스태틱메시의 모빌리티 설정
     - 코드에서 설정하는 방법
     - 모빌리티와 Lumen에서
-* [Concept Actor]()
+* [Actor](/posts_unreal_engine/Concept-Actor)
+    - 월드
+    - 액터
+    - 컴포넌트
+    - 레벨
 
 ## 활용
 * Module
@@ -92,7 +86,21 @@ title: Unreal engine
         - Automation test
 * [Version control](/posts_unreal_engine/Concept-Version-control)
     - 버전 컬트롤이란?
-
+* [Log and debug](/posts_unreal_engine/Useage-Log-And-Debug)
+    - 매크로의 선언
+    - 로그 상세(Verbosity) 수준의 종류
+    - 로그 출력하기
+    - 스크린에 메시지를 출력하기
+    - 디버그 드로잉
+* [Asset with cpp](/posts_unreal_engine/Useage-Asset-with-cpp)
+    - Asset의 경로
+    - LoadClass와 LoadObject
+    - 생성자(Constructor)에서의 ConstructorHelpers
+* [UUserWidet](/posts_unreal_engine/Useage-UUserWidget)
+    - 위젯 클래스 생성하기
+    - NativePreConstruct 이용하기
+    - Asset 불러오기
+    - Widget C++에 Bind하기
 
 ## 적용
 * [FABRIK](/posts_unreal_engine/Implement-FABRIKComponent)

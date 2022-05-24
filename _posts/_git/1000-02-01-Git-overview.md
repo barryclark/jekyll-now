@@ -7,6 +7,13 @@ title: GIT overview
 [깃에서 실수했을 때 어떻게 하면 개판내지 않을 수 있을까?](https://www.letmecompile.com/git-restore-lost-commits/)
 그렇다면 이러한 내용은 어떻게 배울 수 있는가?
 
+git을 사용할 때 branch를 만들어서 사용하자. 한번 실 수 하면 어떻게 고치는지 전혀 모르게엤다.
+1. Git의 LFS를 삭제해야 하는 상황이었다. Git lfs를 uninstall한 후 push를 했다. 그다음 github의 git lfs storage 사용량을 확인하였다. 결과 늘었다.
+    - git attribute 에서 uasset에 대해 lfs로 설정되어있다는 것을 알았다. attribute를 제거했다. 여기서부터 문제가 발생하기 시작했다.
+        - 이해할 수 있는 범주를 벗어났다.
+        - 추가적으로 git을 안전하게 되돌리는 방법도 궁금하다.
+    - 뭔가 중요한 것을 할 때는 시간이 더 걸리더라도 branch를 사용하도록 하자.
+
 ## 실수하지 않기 위해 기억해둬야 할 것들
 
 * Git은 파일 및 폴더의 대무자 소문자를 구분하지 않습니다.

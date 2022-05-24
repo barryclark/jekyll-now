@@ -8,7 +8,7 @@ title: UE Anim notify
 
 * 애니메이션에 노티파이 추가는 언리얼 엔진 애니메이션 노티파이 문서에
 
-'''
+```cpp
 UCLASS()
 class UNewAnimNotify : public UAnimNotify
 {
@@ -19,7 +19,9 @@ public:
 private:
     void Notify(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation) override;
 }
-'''
+```
+
+* /Engine/Source/Runtime/Engine/Classes/Animation/AnimNotifies/AnimNotify.h
 
 ? 애니메이션 노티파이를 어떻게 써야 하는가?
 
@@ -38,7 +40,6 @@ private:
 Anim dynamics가 뭡니까?
 
 ## Notify state
-
 
 
 언리얼 애니메이션 노티파이   
