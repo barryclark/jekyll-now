@@ -2,6 +2,7 @@
 layout: post
 title: UE5 ReadOnly ReadWrite Getter Setter
 ---
+BlueprintReadOnly, meta = (AllowPrivateAccess = true)
 
 [프로퍼티에 관해서](https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Properties/)
 [프로퍼티 이쁘게 정리된 곳](https://benui.ca/unreal/uproperty/#blueprint)
