@@ -6,19 +6,19 @@ tags: [investing, general knowledge, angel investing]
 categories: [General Knowledge, Investing, Angel Investing]
 featured: true
 description: "The third article in a series on angel investing. In this article I am discussing the business' 'defensible moat' and its delivery mechanisms."
-image: assets/images/angel-part2/leanna-cox-ukhn2gy9_CU-unsplash.jpg
+image: assets/images/angel-part3/leanna-cox-ukhn2gy9_CU-unsplash.jpg
 ---
 
 In the third instalment on angel investing, I am discussing the business' defensible moat and its distribution mechanisms.  
 
-You can find part 1 [here][1] and part 2 [here][2].
+You can find the previous 2 parts [here][1] and [here][2].
  
 # Letter I
 
 ![Letter I](../assets/images/angel-part3/thea-m-y3ZcWAgVphU-unsplash.jpg)
 > Photo by Thea M. on Unsplash
 
-I stands for Innovation.  
+I stands for **Innovation**.  
 In [part 1][1] (letter P) we discussed the "What" of the business. I.e. whether the business is  
 * solving a Problem, and  
 * creating a Product, improving a Process or creating a Platform.  
@@ -65,17 +65,17 @@ all of the above? Is it by any chance something that is already covered by an ex
 How long would it take someone else to figure things out, implement and successfully launch?
 
 You may have noticed that this section is full of questions and provides few answers. That is because there is no 
-prescription for innovation. Instead it is a slightly nebulous concept, sharing many similarities to the [economic moat][7] 
+prescription for innovation. Instead, it is a slightly nebulous concept, sharing many similarities to the [economic moat][7] 
 of mature companies.  
 I think it is no coincidence that a lot of startups are touting Artificial Intelligence (AI) or blockchain and smart 
 contracts as their innovation advantage in their pitch decks. These are equally powerful (when used correctly) as much 
-as they are opaque to scrutiny from other stakeholders (if used incorrectly). They are easier to initially claim as 
-innovative difference (and harder to actually apply in practice), 
+as they are opaque to scrutiny from other stakeholders (when used incorrectly). They are easier to initially claim as 
+innovative difference and harder to actually apply in practice. 
 
-What is truly innovative, purely depends on the particular circumstance and domain of the business. Just like with any 
+What is considered truly innovative purely depends on the particular circumstance and domain of the business. Just like with any 
 defense structure - speaking of moats - you cannot prescribe what good innovation is in advance, before it is practically 
 applied.  
-But, over time, you can kind-of guess a [good moat][8] when you see it.  
+But over time, you can kind-of guess a [good moat][8] when you see it.  
 
 ## And a word on invention
 
@@ -95,7 +95,7 @@ This is because of two key reasons:
 * **Creation of new processes**  
 We may not realise it, but almost every item around us requires a number of processes built and tailored around it. From 
 safety usage guidelines, to manufacturing processes and equipment to supply chains and economies of scale. All of these 
-"secondary things" are what makes products accessible and profitable.  
+"secondary things" are what make products accessible and profitable.  
 A true invention may lack some or all of these from the get-go. 
 
 * **Market recognition and adoption**  
@@ -125,49 +125,125 @@ solutions. Bitcoin now has firm and exponential traction with a growing part of 
 ![Letter D](../assets/images/angel-part3/arthur-mazi-6148mnVnY-s-unsplash.jpg)
 > Photo by Arthur Mazi on Unsplash
 
-The next aspect to consider is composed of 2 somewhat related aspects. 
+The next aspect to consider is composed of 2 somewhat related aspects: **Distribution** and **Delivery**. 
 
-## Distribution
+These are the "Where" and the "How" of the business, namely     
+* Where does the business "locate" its customers?
+* Where and How does the business "meet" its customers?  
+* How does the business "serve" its customers?
 
-Distribution is the "Where" of the business. I.e. where does the business "meet" its customers.  
-This is broken down in two interrelated concepts: customer service and customer acquisition.
-
-Let's give an example of a completely fictitious product to highlight and discuss these concepts. <sup>[6](#footnote_6)</sup>
+These are further broken down in a number of interrelated concepts. Let's give an example of a completely fictitious 
+product to highlight and discuss these concepts. <sup>[6](#footnote_6)</sup>
  
-> The business is using [OpenBanking][17] to allow one-click checkouts and payments in **physical retail stores**; the
-> intention is to replace cards.    
-> When paying, the customer is presented with a QR code to scan with her smartphone. This triggers an [OpenBanking 
+> The business in question is using [OpenBanking][17] to allow one-click checkouts and payments in **physical retail stores**; the
+> intention is to replace debit/credit cards.    
+> When paying, the customer sees a QR code to scan with her smartphone. This triggers an [OpenBanking 
 > authorisation][18] and completes the payment from customer to merchant. 
+
+### Customer acquisition
+
+![Waiting for customers](../assets/images/angel-part3/melanie-pongratz-SsBI9pweAeA-unsplash.jpg)
+> Photo by Melanie Pongratz on Unsplash
+
+The first thing to consider is "locating" the customers. We touched upon the economics of customer acquisition when 
+[discussing CAC in Part 2][21]. This section is about the mechanics and the rationale. 
+
+#### Identifying customers
+
+A business cannot realistically serve everyone from the get-go. At its first steps, it needs to focus on specific 
+customer cohorts.  
+In our payments business example above, the business would need to decide on the types of merchants it would go after 
+initially (hospitality, small retail, super-markets,...) and focus on them.
+
+Fundamentally, there are 2 ways of identifying and singling out the target customer cohorts (non-mutually exclusive).  
+* **Quantitative**  
+Using [cohort analysis][24] we can define the "depth and breadth" of the target market: behavioural aspects, income, age, 
+  percent of population. In our specific payments example (in the b2b space) we would be looking for business characteristics 
+  (size, revenue,...) to help us identify specific market segments to focus on.
+* **Qualitative**  
+In this approach, the business creates "abstract" [customer personas][25], which it is trying to serve.  
+  This is a more fine-grained approach, with the customer profiles based on observation, experience and intuition. This 
+  guides the thinking to perform a deep-dive on the potential customer's motivations, drivers, wants and needs. This 
+  approach helps not only the product offering (what features to include), but also the marketing strategy. For example 
+  in our fictitious payments business this would help us identify the customer [champions][26].
+
+#### Customer location
+
+Before a business can acquire its customers, the *target customers* need to *know* the business actually exists.
+The customer acquisition medium needs to be as close as possible to the point that the need for the 
+product or service materializes. The closer the "action" is to the "call to action", the most straight-forward the 
+and immediate the conversion.    
+
+* **Online**  
+  This is the most obvious medium, with an ever-growing importance. Online acquisition occurs through content and references.       
+  * **Push content**: These are advertisements in high-traffic websites and platforms (e.g. Facebook, TikTok, news sites), based on the 
+    user's profile. Under this category we can also put [affiliate networks][27] and [influencers][28]; trusted third 
+    parties generating content on behalf of the business.  
+  * **Pull content**: The business is attracting attention based on the content it produces, i.e. content that customers 
+    are actively searching for. E.g. blog posts that the business itself is creating, optimised for [organic SEO][29]. 
+  
+* **Offline**  
+  The importance of offline acquisition is thinning over time; people come to see the real world as a disruption to
+  their online reality. For specific non-digitally native customer segments (e.g. early [GenX'ers][30]), offline is still 
+  a valuable medium. A sample list of offline channels
+  * [PoS][34] "nudges": E.g. the salesperson asking if you would like to "install X to get points/discount" 
+  * Traditional marketing: TV, radio and print advertisements, outdoor signage,...
+  * Trade shows and conferences: This has traditionally been the most efficient way to get a lot of people's focused
+  attention. It remains to be seen what will happen post-COVID.
+  * In-person meetings and calls: From in-person [drug marketing][31] to pre-sales demos and "warming up" decision-makers 
+    in the enterprise space
+
+Another subtle (yet important) offline acquisition medium is "copy behaviour", especially in mass-market products and 
+services.  
+A stand-out product feature, making it easy for other customers to spot. Classic examples: [Apple headphones][32] and
+[brightly coloured bank cards][33].
+
+#### Conversion
+
+From locating the customers to actually acquiring them can be a long way. The business needs to incentivise and shorten 
+this path. 
+
+The incentives can be any combination of personal customer motivation (e.g. social acceptance, joining a compelling 
+brand story) to external nudges (like discounts and [freemium][35] offers). 
+The conversion process itself must be as simple as possible to avoid potential customers having second thoughts.  
+
+In either case, the whole conversion process needs to be closely monitored and measured. 
+Going back to the discussion about [CAC][36], acquiring customers costs money.  
+The 2 key important questions the business has to keep in mind are  
+* How much does each customer cost me? 
+* How do I know that I am not throwing money away?
+
+If the business does not have a tight customer conversion feedback loop, it is almost guaranteed to just bleed money. 
 
 ### Customer service
 
 ![Customer service](../assets/images/angel-part3/pexels-jopwell-1325735.jpg)
 > Photo by Jopwell from Pexels
 
-The first element of distribution is serving customers.  
-The key questions to answer here:   
+Once customers join they need to be served and served well.   
+The key concerns here are:   
 * What will be the channels or touch-points through which the business serves its customers?
 * How will the product/service be delivered and used by customers? Will the channel be a digital or a physical one? 
 * Can the business confidently implement the channel and easily scale it, once it gains traction? 
 
-In the example product above (OpenBanking checkout) the distribution channel almost stands out: mobile. The customer will 
-be using a mobile app (or a mobile site in an MVP) to scan the QR code and start the payment process. 
+Let's make these points concrete building on the example product above (OpenBanking physical payments).  
+The service delivery channel stands out: mobile. The customers will be using a mobile app to scan the QR code and start 
+the payment process. 
 
 This electronic channel requires some specific skills from the company. Namely    
-* Mobile development engineering: probably adding support for both iPhone and Android
+* Mobile development engineering: most likely adding support for both iPhone and Android
 * UX design: ensuring a seamless user experience across all platforms 
-* Backend systems engineering: secure communications end-to-end, data handling, connectivity to banks etc to support the 
+* Backend systems engineering: secure communications end-to-end, data handling, connectivity to banks etc to fulfill the 
 transaction.
 
-This also points to 2 different things:  
-
+We also need to consider the operational aspects of the system:  
 * **App installation**  
-(If the company chooses the mobile app route) The only way of getting an app on consumer's phones is via the major 
-[app stores][20]. This means establishing a relationship with Apple/Google and ensuring that the app conforms to their T&Cs.
+Creating a mobile app requires distribution via the major [app stores][20]. This means 
+  establishing a relationship with Apple/Google and ensuring that the app conforms to their T&Cs.
 
 * **Customer support**  
-The mobile app is the "way in" to the payments system for the consumer. It will also be the main channel for support in 
-case things go wrong. This means that the app must provide a straight-forward way for company support agents to 
+The mobile app is the entry-point to the payment system for the consumer. It will also be the main channel of support in 
+case things go wrong. The app must provide a straight-forward way for company support agents to 
 communicate with (and solve issues of) the payer.
 
 The payer mobile app is not the end of the story in this example. There is another distribution channel which is crucial 
@@ -176,143 +252,41 @@ This is a requirement for the generation of the QR code for the shopper.
 Generating the QR code could be done in a number of ways: a small tablet where the merchant types in the price, maybe 
 something connected to the existing [POS terminal][19] or something else.
 
-So our fictitious payments business must also be able to do the following:
+So the distribution "footprint" of our fictitious payments business is even larger.  
     
-* **Merchant partnership**  
-The business will need to establish a partnership with the merchant, by giving them incentives to join the network. For this, the  
-business may offer some initial discounts and promotions to joining merchants (see next section).  
-This example business is in money processing, so there are requirements to assess the merchants' legality. This means 
-that our business will need to have [KYC][22] and [AML][23] processes to ensure merchants are fit to join the network.   
-After joining, the business needs to make sure that the merchants stay partnered.  
-For this our business would need to have a merchant engagement strategy, with regular communications, gathering of NPS 
-scores etc.   
+* **Merchant partnerships**  
+The business will need to establish a partnership with the merchant, by giving them incentives to join the network. E.g. 
+  initial discounts and promotions to new-joiners.  
+This example business is in money processing, so there are legal requirements to assess the merchants' legality. This 
+  requires [KYC][22] and [AML][23] processes to ensure merchants are fit to join the network.   
+After they join, our business needs to make sure that the merchants stay partnered and connected.  
+For this we would need to have a merchant engagement strategy, with regular communications, gathering of [NPS scores][37] etc.   
 
 * **Device procurement and installation**  
-If the business chooses a physical device to generate the QR code
-it will need to create a supply chain to get it to the hands of the merchants
-design, produce, order and ship it, all in a timely manner so that there are no delays
+If our fictitious business chooses a physical device to generate the QR code, it will need to create a supply chain to 
+  get it to the hands of merchants. This device would need a well-designed process for design, production, ordering and 
+  shipping. Delayed shipping of merchant devices would result in onboarding and activation delays. 
 
 * **Merchant support**    
-After the merchant has joined 
-need to offer support
-from the moment they unpack and try to install the device 
-to many months later when the system is down 
-or they have questions about a payment
+After the merchant has joined, the business needs to offer support.  
+This support could come in a variety of forms: from FAQs and self-help guides, to dedicated account managers for large 
+  accounts.
 
-It becomes clear that our fictitious business has the characteristics of a [Platform][1], 
-as defined in [Part 1][1] 
-Therefore it needs to establish and maintain 2 separate customer service channels  
-
-### Customer acquisition 
-
-![Waiting for customers](../assets/images/angel-part3/adli-wahid-l5HwCfSXMt0-unsplash.jpg)
-> Photo by Adli Wahid on Unsplash
-
-We touched upon the economics of customer acquisition when [discussing CAC in Part 2][21] 
-This section is about the mechanics and the rationale
-
-To put it simply 
-for a business to acquire customers, the customers need to know the business exists 
-for this to happen 
-the business needs to 
-* know who the customers are 
-* know where they are, and 
-* draw their attention 
-
-#### Identifying customers
-
-Not serving everyone from the get-go
-At its first steps the business needs to focus on specific customer cohorts 
-
-2 ways of identifying and singling out 
-
-Quantitative 
-cohort analysis
-https://clevertap.com/blog/cohort-analysis/
-Helps define depth and breadth of the target market 
-aspects of their behaviour 
-income, age, percent of population
-or in the case of b2b characteristics of the business (size, revenue,...)  
-help identify specific market segments to focus on
-
-Qualitative 
-customer personas
-https://www.usertesting.com/blog/customer-personas
-More fine-grained 
-based on observation, experience, intuition 
-deep-dive on customer motivations, drivers, wants and needs
-habits, where to target them  
-In the case of b2b 
-roles in the customer organisation who would be champions and decision-makers (https://blog.close.com/b2b-sales-tips-internal-champions-decision-makers/) 
-
-#### Customer location
-
-As close as possible to the point that the need for the product or service materializes 
-
-* **Online**  
-Most obvious is online 
-push content: advertisements in high-traffic websites (e.g. Facebook, Google, news sites)
-pull content: The business is attracting attention based on the content it produces 
-i.e. content that customers are actively looking for 
-[Organic SEO][42] blog posts that the business itself is creating
-[Affiliate networks][41] and [Influencers][43] trusted third parties generating content on behalf of the business 
-  
-content vs references
-
-* **Offline**  
-The importance of offline advertising is thinning over time, as people come to see the real world as a disruption to 
-their online activity.  
-
-For specific non-digitally native customer segments (e.g. baby boomers and early GenX'ers)
-Offline maybe the only still has value to reach
-
-This is all types of old-school marketing. A non-exhaustive list of offline channels  
-  * Traditional marketing: TV, radio and print advertisements, outdoor signage,...
-  * Trade shows and conferences: This has traditionally been the most efficient way to get a lot of people's focused 
-  attention. It remains to be seen what will happen post-COVID.
-  * In-person meetings and calls: From in-person [drug marketing][44] to pre-sales demos and "warming up" decision-makers in the 
-  enterprise space 
-
-Finally another offline way of getting attention is "copy behaviour" 
-is a stand-out product feature 
-which make it easy for other consumers to spot 
-classic examples are [apple headphones][https://www.businessinsider.com/why-are-apple-headphones-white-2016-5]
-and [brightly coloured cards][https://www.wired.co.uk/article/monzo-card-design] for neobanks 
-
-#### Conversion
-
-incentives vs brand story 
-
-streamline acquisition 
-freemium 
-
-tracking and monitoring
-
-The third question to answer is "How do I know that I am not throwing money away?"
-
-
-The second question to answer is *How much will it cost?*.
-
-Online is almost always on a pay-as-you-go basis, which is friendlier to company cash flow. However due to large 
-competition for advertising space auctions, the business can easily have runaway marketing costs. It is important to 
-have realistic [projections and estimations][45] for online CAC.   
-
-Offline marketing tends to be upfront investment, in large chunks. For example printing leaflets, running a radio 
-campaign, setting up a kiosk and exhibiting at a conference. The important thing is to have realistic estimations as to  
-* how much offline marketing will cost (this implies some knowledge of the marketing space prices)
-* how much offline marketing *should* cost in order to be effective. <sup>[5](#footnote_5)</sup> 
-
+From this discussion it becomes clear that our fictitious business has all the characteristics of a Platform, as defined 
+in [Part 1][1]. It needs to establish and maintain 2 separate distribution and delivery channels: one for Payers, one 
+for Merchants.  
+Failure to maintain either means a failure of the business. 
 
 # In the next episode
 
 ![Coming soon](../assets/images/angel-part3/pexels-kaique-rocha-242140.jpg)
 > Photo by Kaique Rocha from Pexels
 
-Talk about 
-the letter T (Team, the "Who" of the business)
-and discuss your approach as an angel 
+In the next (and final) installment of this series, we will talk about the letter T  
+* **Team**, the "Who" of the business, and
+* **Thesis**, your fundamental world-view as an investor. 
 
-Keep safe!
+Take care!
 
 ## Footnotes
 
@@ -323,11 +297,10 @@ a visit to the local branch.
 complex thing internally, but on the outside it should be [as simple as possible][9].   
 4. <a name="footnote_4"></a>If this is indeed the case, it *might* become a problem once the business grows in size and 
 becomes successful. The existence (or not) of patents really does not matter in the early stages. Unless, of course, the 
-business model is built [around patents][1].  
+business model is being built [around patents][1].  
 5. <a name="footnote_5"></a>I am using the word market in the widest possible sense: from companies and government 
-institutions to the general public. 
-6. <a name="footnote_6"></a>In this context, let's disregard every other aspect which could make this particular 
-example venture unfeasible.
+institutions to the public. 
+6. <a name="footnote_6"></a>In this example and discussion, I am taking a naive view of things to keep it simple. 
 
 
   [1]: https://sgerogia.github.io/Angel-investing-Part-1/
@@ -353,3 +326,17 @@ example venture unfeasible.
   [21]: https://sgerogia.github.io/Angel-investing-Part-2/#:~:text=Customer%20Acquisition%20Cost
   [22]: https://complyadvantage.com/knowledgebase/kyc/
   [23]: https://www.investopedia.com/terms/a/aml.asp
+  [24]: https://clevertap.com/blog/cohort-analysis/
+  [25]: https://www.usertesting.com/blog/customer-personas
+  [26]: https://blog.close.com/b2b-sales-tips-internal-champions-decision-makers/
+  [27]: https://www.investopedia.com/terms/a/affiliate-network.asp
+  [28]: https://influencermarketinghub.com/what-is-an-influencer/
+  [29]: https://www.techopedia.com/definition/5184/organic-search-engine-optimization-organic-seo
+  [30]: https://en.wikipedia.org/wiki/Generation_X
+  [31]: https://www.nih.gov/news-events/nih-research-matters/how-drug-marketing-may-influence-prescriptions
+  [32]: https://www.businessinsider.com/why-are-apple-headphones-white-2016-5
+  [33]: https://www.wired.co.uk/article/monzo-card-design
+  [34]: https://www.investopedia.com/terms/p/point-of-sale.asp
+  [35]: https://www.investopedia.com/terms/f/freemium.asp
+  [36]: https://sgerogia.github.io/Angel-investing-Part-2/#:~:text=Customer%20Acquisition%20Cost
+  [37]: https://www.hotjar.com/net-promoter-score/
