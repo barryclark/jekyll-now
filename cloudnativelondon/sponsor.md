@@ -13,7 +13,7 @@ Each event has 200-300 attendees across physical events or YouTube + Twitch live
 
 * A 30 second introduction at the beginning of the event by your representative (or Cheryl or other host.)
 * Your logo and company information in emails to group members, blog posts and tweets
-* You are welcome to [send a speaker](/cloudnativelondon/speak), but please no sales pitches. Due to high demand, the next available speaking slot is mid-2021.
+* You are welcome to [send a speaker](/cloudnativelondon/speak), but please no sales pitches. There is a typical waiting time of 6 months. 
 * Sponsors who commit for at least twelve months are listed on [https://www.meetup.com/Cloud-Native-London​](https://www.meetup.com/Cloud-Native-London).
 
 Each sponsor contributes £600 (no VAT) per event.
