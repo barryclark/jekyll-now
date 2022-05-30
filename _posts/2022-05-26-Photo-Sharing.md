@@ -3,6 +3,7 @@ layout: post
 title: Photo Sharing - Cape D'Aguilar
 ---
 On 2022/5/26, a very hot day at Cape D'Aguilar
+
 ### Pic 1 The Lonely Board
 ![1The Lonely Board](https://user-images.githubusercontent.com/100028581/170957445-78943e83-5681-4742-986a-318b9464b772.jpg)
 ### Pic 2 At The End of The Sea
