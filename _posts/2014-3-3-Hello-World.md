@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: Hello World!
 ---
 
 I "built" this webiste following the instructions provided by this [Post](https://dev.to/alagrede/lean-how-to-build-your-personal-blog-with-github-pages-42ae).
