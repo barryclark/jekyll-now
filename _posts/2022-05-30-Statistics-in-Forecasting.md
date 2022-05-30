@@ -1,3 +1,7 @@
+---
+layout: post
+title: Statistics in Forecasting - A project summary
+---
 This is an abstract of my research project done during the brilliant Tianxia Research Mentorship. It revolves around forecasting and the potential usage of statistical model in this cause area(since I major in this). 
 
 # Introduction
