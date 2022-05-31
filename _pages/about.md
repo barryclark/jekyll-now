@@ -7,3 +7,5 @@ layout: post
 ---
 
 This is an about page.
+
+![page]({{ site.baseurl }}/images/update.png)

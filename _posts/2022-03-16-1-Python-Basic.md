@@ -33,6 +33,23 @@ filename = '/content/drive/XXXXX.csv'
 data = pd.read_csv(filename)
 ```
 
+- 구글 드라이드에 install 하고 가져오기(colab)
+
+```python 
+#구글 드라이브에 install 해두기
+import os, sys
+from google.colab import drive
+drive.mount('/content/drive')
+
+my_path = '/content/drive/MyDrive/MIN_AI/additional_package'
+
+!pip install --target=$my_path PyJWT
+
+# 패키지 이용시
+import sys
+sys.path.append('/content/drive/MyDrive/MIN_AI/additional_package')
+```
+
 - 코랩 pip
 
 ```python
@@ -98,3 +115,31 @@ mydict = {'aaa':'a', 'bbb':'b'}
 type(mydict)
 ```
 
+형변환
+-------------
+
+- str→datetime : strptime(문자열, 형식)
+
+```python
+from datetime import datetime
+
+str_datetime = '2021-07-18 12:15:33'
+format = '%Y-%m-%d %H:%M:%S'
+dt_datetime = datetime.strptime(datetime_str,format)
+```
+
+- 문자열로 변환
+
+```python
+now = datetime.now()
+
+format = '%Y-%m-%d'
+str_datetime = datetime.strftime(now,format)
+```
+
+- 응용
+
+```python
+#리스트 내포
+[리스트[i] for i in range(10)]
+```

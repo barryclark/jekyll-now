@@ -7,3 +7,5 @@ layout: post
 ---
 
 This is an draft page.
+
+![page]({{ site.baseurl }}/images/update.png)

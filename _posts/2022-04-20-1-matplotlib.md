@@ -9,7 +9,18 @@ layout: post
 
 - __Matplotlib / api__ : [https://matplotlib.org/3.5.1/api/index.html](https://matplotlib.org/3.5.1/api/index.html)
 
-Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.
+Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.  
+
+
+시각화 종류
+-------------
+- Matplotlib: 파이썬의 기본 시각화
+- Pandas Visualization: 사용하기 쉬운 인터페이스 ,  Matplotlib에 기반으로 구축하기  
+- Seaborn:  고급 인터페이스, 뛰어난 기본 스타일  
+- ggplot: R’s ggplot2를 기반으로  그래픽의 문법 사용  
+- Plotly: 대화형 플롯을 만들 수 있음  
+
+
 
 colab한글깨짐 
 -------------

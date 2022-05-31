@@ -7,3 +7,5 @@ layout: post
 ---
 
 This is an contact page.
+
+![page]({{ site.baseurl }}/images/update.png)
