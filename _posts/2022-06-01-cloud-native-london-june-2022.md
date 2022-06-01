@@ -10,7 +10,6 @@ tags:
   - Video
   - Meetup
   - "2022"
-published: false
 ---
 
 We have three fantastic speakers from  esynergy, ControlPlane, and Sysdig joining us tonight at our June Cloud Native London meetup tonight! Come along in person from 6:30pm BST or from 6:45pm BST on Rambly and YouTube!
