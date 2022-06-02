@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Each year, more than one million new software developers join our industry.
+
+But each one of us are unique. Time to let the world discover you.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Our mission is to level the playing field for all developers around the world. Help them build amazing career.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[hello@tublian.com](mailto:hello@tublian.com)
