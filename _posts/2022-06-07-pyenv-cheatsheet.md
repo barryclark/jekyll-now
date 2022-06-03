@@ -12,8 +12,7 @@ tags:
 published: false
 ---
 
-> One time I tried to explain Kubernetes to someone.
-Then we both didn't understand it. - https://twitter.com/SwiftOnSecurity/status/1158764816426840064?s=20
+> “The best things in life can not be experienced virtually.” ― Michael ONeill, Road Work: Images And Insights Of A Modern Day Explorer
 
 ## Deactivate pyenv shell
 > pyenv shell --unset
