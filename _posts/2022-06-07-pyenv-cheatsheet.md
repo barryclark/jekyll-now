@@ -9,7 +9,7 @@ categories:
 tags:
   - pyenv
   - mejora continua
-published: false
+published: true
 ---
 
 > “The best things in life can not be experienced virtually.” ― Michael ONeill, Road Work: Images And Insights Of A Modern Day Explorer
