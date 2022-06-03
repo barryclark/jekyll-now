@@ -18,16 +18,25 @@ html {
 }
 
 body {
-	background: #141414;
+	background: #13131A;
   font: 18px/1.4 $helvetica;
-  color: $white;
+  color: $black;
 }
 
 .container {
   margin: 0 auto;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.blog-container {
+  margin: 0 auto;
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
+  color: $white;
+  background: #13131A;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -149,9 +158,15 @@ img {
 //
 // .masthead
 //
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  background-color: #13131A;
 }
 
 .masthead {
@@ -181,7 +196,7 @@ img {
 }
 
 .site-info {
-  float: left;
+  margin-right: 50vw;
 
   @include mobile {
     float: none;
@@ -201,7 +216,7 @@ img {
 }
 
 .blog-link {
-  margin: 0;
+  margin-right: 2vw;
   color: #F59C0B;
   cursor: pointer;
   font-family: Poppins;
@@ -213,8 +228,9 @@ img {
 .site-description {
   margin: -5px 0 0 0;
   color: $white;
-  font-size: 18px;
+  font-size: 20px;
   font-family: Poppins;
+  width: 100%;
   @include mobile {
     margin: 3px 0;
   }
@@ -287,9 +303,7 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: #141414;
+  background-color: #13131A;
 }
 
 footer {
