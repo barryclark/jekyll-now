@@ -171,7 +171,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  // border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -228,7 +228,7 @@ img {
 .site-description {
   margin: -5px 0 0 0;
   color: $white;
-  font-size: 20px;
+  font-size: 1.5vw;
   font-family: Poppins;
   width: 100%;
   @include mobile {
@@ -304,9 +304,89 @@ nav {
 .wrapper-footer {
   margin-top: 50px;
   background-color: #13131A;
+  border-top: 1px solid #eee;
 }
 
-footer {
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  @include mobile {
+    width: 80vw;
+  }
+}
+
+
+.footer-item-boundary {
+  margin: 3vw 5vw 2vw 5vw;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-text {
+  color: $white;
+  font-family: Roboto;
+  font-size: 0.9vw;
+  margin-top: 0.7vw;
+
+  @include mobile {
+    font-size: 2vw;
+  }
+}
+
+.logo-name {
+  font-family: Source Code Pro;
+  font-weight: 700;
+  margin-left: 0.5vw;
+  font-size: 1.1vw;
+  color: $white;
+
+  @include mobile {
+    font-size: 3vw;
+  }
+}
+
+.footer-contact {
+  color: #D1D1D1;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 1vw;
+
+  @include mobile {
+    font-size: 3vw;
+    margin-top: 3vw;
+  }
+}
+
+.footer-email {
+  color: #D1D1D1;
+  font-size: 2vw;
+  margin-top: 1vw;
+
+  @include mobile {
+    font-size: 6vw;
+  }
+}
+
+.footer-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer {
   padding: 20px 0;
   text-align: center;
 }

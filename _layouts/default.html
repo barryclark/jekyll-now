@@ -39,11 +39,42 @@
     </div>
 
     <div class="wrapper-footer">
-      <div class="blog-container">
+      <div class="footer-container">
+        <div class="footer-item">
+          <div class="footer-item-boundary">
+            <div class="footer-logo">
+              <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+              <p class="logo-name">Tublian</p>
+            </div>
+            <p class="footer-text">
+              "People behind the code are more important. We are the new creator class and influencers. We might be working on the same languages and stack but each one of us is unique. Let the world discover us"
+            </p>
+            <p class="footer-text">
+              <a href="/privacy" className={classes.legal}>Privacy Policy</a> | <a href="/terms" className={classes.legal}>Terms of use</a>
+            </p>
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-item-boundary">
+            <p class="footer-contact">
+              Feel free to contact
+            </p>
+            <a class="footer-email" href="mailto:hello@tublian.com">
+              hello@tublian.com
+            </a>
+            <div class="footer-btns">
+              {% include svg-icons.html %}
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- <div class="blog-container">
         <footer class="footer">
           {% include svg-icons.html %}
         </footer>
-      </div>
+      </div> -->
     </div>
 
     {% include analytics.html %}
