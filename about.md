@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Marido, padre de 3 dragones y me relajo y descanso cada día desarrollando @habitaclia y @fotocasa en @AdevintaSpain 
+Marido, padre de 3 dragones y me relajo y descanso cada día desarrollando en @AdevintaSpain 
 
 ### Contacto
 
