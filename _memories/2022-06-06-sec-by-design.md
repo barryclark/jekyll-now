@@ -3,7 +3,7 @@ layout: memory
 title: Security by Design Principles
 ---
 
-Quick collection of usedul Security by design principles. 
+Quick collection of useful Security by design principles. 
 
 ## Least Privilege 
 
