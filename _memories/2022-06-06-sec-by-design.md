@@ -3,6 +3,8 @@ layout: memory
 title: Security by Design Principles
 ---
 
+Quick collection of usedul Security by design principles. 
+
 ## Least Privilege 
 
 The principle *least privilege* assigns only the minimum necessary rights to software components and individuals. They should only be able to perform their required functions. Its purpose is to minimize the risk by restricting the number of entities and individuals with access to critical systems.
