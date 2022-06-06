@@ -2,7 +2,7 @@
 title: Azure Key Vault fill, calculate missing Expiration and NotBefore Date Time
 author: Janusz Nowak
 header:
-  teaser: /wp-content/uploads/2022/2022-04_azure_keyvault_calculate_01.png
+  teaser: /wp-content/uploads/2022/2022-04_azure_keyvault_calculate_02.png
 permalink: /AzureKeyVaultCalculateExpirationAndNotBeforeTime/
 categories:
   - Azure
@@ -17,10 +17,13 @@ tags:
   - Azure Key Vault
 ---
 
-[Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/#product-overview)
-[Azure Key Vault](https://docs.microsoft.com/en-us/rest/api/storageservices/create-service-sas)
+Microsoft [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/#product-overview) is a cloud-hosted management service that allows users to encrypt keys and small secrets by using keys that are protected by hardware security modules (HSMs). Key Vault is central store to manage secrets, key and certificates. It is used also for storing shared access signatures [SAS](https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview) for grant limited access to Azure Storage resources. On of the case case witch I found is that, sometimes people are not including expiration data for secrets. One of the way how to resolve this is to calculate expiration date directly from SAS token with is stored as secret text. One note, not all SAS contains expiration.
+
+![AzureKeyVault](/wp-content/uploads/2022/2022-04_azure_keyvault_calculate_02.png)
 
 <!-- ![Azure Key Vault](/wp-content/uploads/2022/2022-04-ApplicationInsightsAvabilityMicrosoftAzure.webp) -->
+
+## Reverse calculation expiration date for SAS token
 
 ```powershell
 
