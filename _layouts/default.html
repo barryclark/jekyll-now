@@ -1,51 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
 
-    {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+{% seo %}
   </head>
 
   <body>
-    <div class="wrapper-masthead">
+
+    <header>
       <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+        <a id="a-title" href="{{ '/' | relative_url }}">
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        </a>
+        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+        <section id="downloads">
+          {% if site.show_downloads %}
+            <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
+            <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
+          {% endif %}
+          <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
+        {%- assign default_paths = site.pages | map: "path" -%}
+        {%- assign page_paths = site.header_pages | default: default_paths -%}
+        {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+        {%- if titles_size > 0 -%}
+        <nav class="site-nav">
+            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+            <label for="nav-trigger">
+            <span class="menu-icon">
+                <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+                </svg>
+            </span>
+            </label>
+
+            <div class="trigger">
+            {%- for path in page_paths -%}
+                {%- assign my_page = site.pages | where: "path", path | first -%}
+                {%- if my_page.title -%}
+                <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                {%- endif -%}
+            {%- endfor -%}
+            </div>
+        </nav>
+        {%- endif -%}
       </div>
-    </div>
+    </header>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
+    <div class="container">
+      <section id="main_content">
+        {{ content }}
+      </section>
     </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
   </body>
 </html>
