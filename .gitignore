@@ -1,12 +1,19 @@
-_site
 .DS_Store
+
+# jekyll
+_site
 .jekyll
 .jekyll-metadata
-.bundle
 .sass-cache
+
+# Ruby
+.bundle
+/vendor
 Gemfile.lock
+
+# JS
 node_modules
-package.json
+package-lock.json
 
 # dev
 .vscode
