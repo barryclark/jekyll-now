@@ -19,6 +19,7 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [puresec/awesome-serverless-security](https://github.com/puresec/awesome-serverless-security)
 * [anderseknert/awesome-opa](https://github.com/anderseknert/awesome-opa)
 * [shogunlab/awesome-hyper-v-exploitation](https://github.com/shogunlab/awesome-hyper-v-exploitation)
+* [jassics/awesome-aws-security](https://github.com/jassics/awesome-aws-security)
 
 ## Policy as Code
 
@@ -46,12 +47,16 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [assetnote/blind-ssrf-chains](https://github.com/assetnote/blind-ssrf-chains)
 * [bkimminich/it-security-lecture](https://github.com/bkimminich/it-security-lecture)
 * [Awesome-HTTPRequestSmuggling](https://github.com/chenjj/Awesome-HTTPRequestSmuggling)
+* [CaledoniaProject/awesome-opensource-security](https://github.com/CaledoniaProject/awesome-opensource-security)
 
 ## Pentesting
 
 * [awesome-pentest](https://github.com/enaqx/awesome-pentest)
 * [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
 * [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources)
+
+## Read Teaming
+* [RistBS/Awesome-RedTeam-Cheatsheet](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet)
 
 ## Wordlists & Payload Lists
 
