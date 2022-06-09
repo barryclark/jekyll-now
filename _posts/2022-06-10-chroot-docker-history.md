@@ -1,6 +1,6 @@
 ---
 layout: post
-title: chroot - Tiny history of containerization
+title: chroot a short history of containerization
 ---
 
 A short review on the history of Containers at a glance. If you take one step back from docker you'll probably read about `chroot` spelled as change root.
