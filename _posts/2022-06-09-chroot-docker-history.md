@@ -10,7 +10,7 @@ Let's try it by playing some Inception and build a container inside a container.
 
 ```bash
 # --privileges is just for the lulz
-docker run -it --name docker-host --rm --privileged ubuntu:latest` 
+docker run -it --name docker-host --rm --privileged ubuntu
 ```
 
 After spinning up the container, let's attempt to use chroot right now.
@@ -25,7 +25,7 @@ So let's fix that!
 
 Run:
 * `mkdir /my-new-root/bin`
-* `cp /bin/bash /bin/ls /my-new-root/bin/`
+* `cp /bin/bash /bin/cat /bin/ls /my-new-root/bin/`
 * `chroot /my-new-root bash`
 
 Damn - it's still not working! The problem is that the bash command rely on libraries to power it and we didn't bring those with us. So let's fix that with `ldd`. 
