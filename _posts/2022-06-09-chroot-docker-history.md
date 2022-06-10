@@ -71,3 +71,7 @@ Now -  finally, run `chroot /my-new-root bash` and you should successfully see e
 
 
 Nice! If you now try `pwd` to see your working directory. You should see a message like: `/. You can't get out of here!`. Based on this containers were called a jail for this reason. To leave this you can hit CTRL+D or run `exit` to get out of your chrooted environment.
+
+<p align="center">
+<img src="/images/chroot.png">
+</p>
