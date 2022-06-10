@@ -29,7 +29,7 @@ Run:
 * `chroot /my-new-root bash`
 
 Damn - it's still not working! The problem is that the bash command rely on libraries to power it and we didn't bring those with us. So let's fix that with `ldd`. 
-`ldd`itself is a powerful command-line tool that allows users to view an executable file's shared object dependencies.
+`ldd`itself is a powerful command-line tool that allows users to view an executable file's shared object dependencies. A library refers to one or more pre-compiled resources such as functions, subroutines, classes, or values. Each of these resources is combined to create libraries.
 
 Now run `ldd /bin/bash` - This print out something like this:
 
@@ -41,7 +41,7 @@ $ ldd /bin/bash
   libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f6fb8412000)
   /lib64/ld-linux-x86-64.so.2 (0x00007f6fb8f4b000)
 ```
-Gotcha - we now know the libraries that need for running bash. Let's go ahead and copy those into our new environment.
+Gotcha - we now know the libraries that are required for running bash. Let's go ahead and copy those into our new environment.
 
 ```bash 
 mkdir /my-new-root/lib /my-new-root/lib64
@@ -69,8 +69,9 @@ $ ldd /bin/cat
 
 Now -  finally, run `chroot /my-new-root bash` and you should successfully see everything in the directory. Time for revealing the secret by calling `cat secret.txt`. 
 
+Nice! If you now try `pwd` to see your working directory. You should see a message like: `/. You can't get out of here!`. 
 
-Nice! If you now try `pwd` to see your working directory. You should see a message like: `/. You can't get out of here!`. Based on this containers were called a jail for this reason. To leave this you can hit CTRL+D or run `exit` to get out of your chrooted environment.
+Based on this message, containers were used to be called a jail for this reason. To escape the jail - you can hit `CTRL+D` or run `exit`. This will help to get out of your chrooted environment. 
 
 <p align="center">
 <img src="/images/chroot.png">
