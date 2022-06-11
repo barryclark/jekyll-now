@@ -34,19 +34,18 @@ Source:  [threatmodelingmanifesto.org](https://www.threatmodelingmanifesto.org/)
 
 #### Values
 > We have come to value:
-  A culture of finding and fixing design issues over checkbox compliance. 
-  People and collaboration over processes, methodologies, and tools.
-  A journey of understanding over a security or privacy snapshot.
-  Doing threat modeling over talking about it.
-  Continuous refinement over a single delivery.
+  - A culture of finding and fixing design issues over checkbox compliance. 
+  - People and collaboration over processes, methodologies, and tools.
+  - A journey of understanding over a security or privacy snapshot.
+  - Doing threat modeling over talking about it.
+  - Continuous refinement over a single delivery.
   
 #### Principles
 > We follow these principles:
-
-  The best use of threat modeling is to improve the security and privacy of a system through early and frequent analysis.
-  Threat modeling must align with an organization’s development practices and follow design changes in iterations that are each scoped to manageable portions of the system.
-  The outcomes of threat modeling are meaningful when they are of value to stakeholders.
-  Dialog is key to establishing the common understandings that lead to value, while documents record those understandings, and enable measurement.
+  - The best use of threat modeling is to improve the security and privacy of a system through early and frequent analysis.
+  - Threat modeling must align with an organization’s development practices and follow design changes in iterations that are each scoped to manageable portions of the system.
+  - The outcomes of threat modeling are meaningful when they are of value to stakeholders.
+  - Dialog is key to establishing the common understandings that lead to value, while documents record those understandings, and enable measurement.
 
 
 ## How to create a Threat Model
