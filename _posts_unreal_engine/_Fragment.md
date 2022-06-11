@@ -3,6 +3,212 @@ layout: post
 title: Fragment
 ---
 
+## Replication
+
+1. RPC는 클라이언트가 UFUNCTION(Server, Reliable, WithValidation)함수 A를 호출하면, A함수가 서버에서 UFUNCTION(NetMulticast, Reliable) B함수를 호출한다. 그럼 각 서버와 클라이언트에서 B함수가 원하는 동작을 수행한다.
+
+2. 선언 할 때는 A, B라 선언하지만 정의 할 때는 A_Implementation, B_Implementation라 정의해야 합니다. 언리얼 코드 제너레이터가 뒤에 Implementation가 붙은 함수를 호출합니다.
+
+3. 추가로 bool A_Validate함수가 필요합니다.
+
+4. (몽타주 애니메이션)모든 동작마다 replicate를 따로 해줘야 합니다.
+
+5. 발사와 같이 특정 방향 캐릭터 기준이 필요한 경우에는 UFUNCTION(Server, Reliable, WithValidation)함수에 파라미터로 넘겨줘야 합니다.
+
+6. 몽타주 실행을 위한 AnimInstance는 5번을 생각해서 파라미터로 넘겨주면 문제가 생길 수 있습니다. AnimInstance는 Transient합니다. 
+
+* 컴퓨터 프로그래밍에서, transient는 일시적인 시스템의 모든 요소의 속성입니다.
+
+7. 몽타주의 전체 재생 시간보다 blend 시간을 압도적으로 짧게 잡아야 합니다. 그렇지 않으면 blend 하는 사이에 애니메이션이 끝나 결과적으로 애니메이션이 재생되지 않는  것처럼 보입니다.
+
+? WithValidation 
+
+```cpp
+UFUNCTION(Client, Reliable)
+void ClientRPCFunction();
+...
+```
+
+```cpp
+UFUNCTION(Server, Reliable)
+void ServerRPCFunction();
+...
+```
+
+```cpp
+UFUNCTION(NetMulticast, Reliable)
+void MulticastRPCFunction();
+...
+```
+
+Class 설정에서 Replication/Replicates 마킹을 선택해야 서버와 클라이언트 두 곳에서 스폰됩니다.
+
+[블루프린트 리플리케이션 특강](https://www.unrealengine.com/ko/blog/crash-course-in-blueprints-replication)
+
+## RPC(remote procedure call, 원격 프로시저 호출)
+
+* **함수 앞에 Client, Server, Multicast 키워드를 붙인 것은 프로그래머에게 각각 어디서 호출되는지 한눈에 파악하기 위해 합의된 규칙입니다.**
+
+* reliable은 게임플레이에 핵심에 관련된 모든것들 입니다. 입력을 기반으로 최대한 빨리 처리해야 하는 것에 사용합니다.
+* unrealiable은 파티클이나 사운드 같이 올바른 순서로 클라이언트에 제공할 필요가 없는 경우 사용합니다. 지연 처리됩니다. RepNotify를 통해 대신할 수 있습니다.
+
+
+* 원격 프로시저 호출은 별도의 원격 제어를 위한 코딩 없이 다른 주소 공간에서 함수나 프로시저를 실행할 수 있게하는 프로세스 간 통신 기술입니다.
+
+* 보안상의 이유로 클라이언트는 자신이 소유한 액터로부터만 RPC를 보낼 수 있습니다.
+    - PlayerController 또는 PlayerCharacter 액터에서 RPC를 보내거나 Component에 정의하여 사용할 수 있습니다.
+    - Owner가 Outer였는지는 확인필요.
+
+* 서버가 이벤트를 실행할 때 클라이언트가 이벤트를 보도록 하려면 NetMulticast RPC를 사용해야 합니다.
+
+##
+
+* 결과보다는 방법이 더 중요하다. 프로그램에 대한 노력이 없으면, 포트폴리오로부터 가치가 없다.
+
+* 애셋을 병합만 하고 저장하지 않고 이주하면, 머티리얼은 이주되지 않음. 흠. 이주하고 저장을 하면 꼬임?
+
+* 언리얼 리소스 이주. 폴더 명을 맞추고 이주해야함?
+
+* 3D에 관련된 용어는 외워야 할 것.
+Backspace culling. 뒷면을 고른다.
+뷰프로스턴 컬링. 이거는? Frustum culling(절두체 컬링)
+걸쳐져있는것을 잘라서 그리는 것을 클리핑이라 한다.
+
+렌더링에 컬링 반전이 있네?. 몰랐던게 나왔네.
+
+## 오늘하는거는 Asset을 가져와서 읽는 것.
+
+* 언리얼 설치하거나 할 때 200GB정도는 여유가 있어야 한다. 언리얼 설치한 폴더도 50 ~ 100GB는 여유가 있어야 한다. 왜냐하면, 언리얼 에셋을 다운받으면, 먼저 엔진에 캐시를 만든후, 에셋을 추가하면 그 다음 폴더에 추가된다.
+
+* 쓰지 말아야할 에셋은 무엇인지?
+
+왜 검증된 리소스냐면 아이폰 4였을때, 서비스를 끝낸, 모바일상에서 돌아갔다를 근거로 검증되었다고 말한다.
+
+프로젝트 생성하거나 추가하는 에셋이 있다. 생성한 프로젝트의 리소스를 사용하는 방법은 리소스 이주라고 한다.
+왜 리소스 이주를 하냐, 리소스가 너무 많아서 정리가 안되기 때문이다. 또한 컴퓨터가 못버틴다. 따라서 리소스 이주를 사용한다.
+
+어떻게 작업해야 하나, 새로운 프로젝트를 만들어서, 추가하고 독립적인 기능을 만들고, 가공이 끝나야, 애셋을 통합해서 관리해야 한다.
+음. 프로젝트 별 관리라 한다는 구만.
+
+모든 애셋은 아래에 구현설명이 있다. 안에 어떤게 들어있는지 등이 있다. 설명을 잘 읽으면 어떤식으로 해야하는지 잘 나와있다.
+
+Showcase또는 오버뷰를 먼저 열어봐야 한다. 오버뷰를 먼저 열어야 나중에 쉐이더 컴파일 하느라 지연되지 않으며 겸사겸사 볼 수 있다.
+
+셈플을 가져와서 쓰는건 문제가 없지만(프로그래밍 포트폴리오닌까) 그대로 쓰는건 안되고 최소한 재가공은 해야 한다.
+
+**맵을 만들 때 중요한건, 절대로 시야밖에 아무것도 없는 빈공간이 있으면 안된다. 절대로 안된다. 기본적인 성의에 관련된 거다.**
+이런 자잘한 작업에 생각보다 시간이 굉장히 많이 든다.
+
+**물건을 클릭하고 Cntl-b를 누르면 에셋 탐색한다.**
+뒤로 이동이라던가.
+
+## 
+
+정확하게 붙여야 할때는 역시 뷰옵션을 바꿔서 하는것.
+
+키보드 End키를 누르면 수직방향으로 다을때까지 물건을 놓아줌. 이것도 중요한 기능.
+
+그리드 스냅을 껐다 켰다하면서 물건 배치하면 됨.
+
+중요한 단축키, 마우스 우클릭 휠은 속도조절, 많이쓰게됨.!?
+f키를 누르면 바로 앞으로 이동.
+
+과제: 레벨 디자이너 퀵 스타트 끝까지 하는 것이 과제. 마지막 밥아저씨 같은거 까지는 안해도 된다.
+
+인스턴스에 직접 컴포넌트를 추가해서 만드는 경우, 그거는 영상물 만드는 사람들이다.
+
+작업하는 폴더가 어떻게 되든간에, 영문으로 폴더를 만들고 선택.
+최대퀄리티는? 레이트레이스는 이거는 게임에 쓰는게 아니라, 영상처리에 사용하는거
+
+본인 컴퓨터가 너무 성능이 안좋으면, 모바일로 해도 됨.
+시작용 콘텐츠는 있어야함.
+
+3인칭으로 만드는데, 3인칭이 제일 어려워서 3인칭으로 한다고 한다. 1인칭 3인칭 혼합해서 사용하기 때문에?
+
+프로젝트 만들때 진짜 조심해야할 주의사항. (언리얼 뿐만 아니라, 만에 하나라는게 있어서)
+모든 작업폴더와, 연관 폴더는 영문만 써야함.
+
+## 중요하게 생각하는거 2가지
+가장 중요한건 3D에 대한 이해
+어지간한 기능은 엔진이 다해줌. 프로그래밍 포트폴리오는 최소한의 여기에 어떤식으로 프로그래밍 요소를 넣어서 관리할 것인가 이게 반드시 있어야함.
+기능의 타협을 한다면 (어려워서 포기하면) 포트폴리오로서의 가치가 없을 수 있다.
+
+상속으로 할 거냐, 디스패치로 할거냐, 조립을 할 거냐, 어떤 걸 선택해도 일단은 돌아감. 중요한건 왜 이렇게 관리하도록 만들 었는가? 이래야 나중에 할 이야기가 있다.
+
+SCANS라 한다면, 게임용 리소스는 아님. 받아도 못사용하는 것.
+
+LOWPOLY의 문제는 LOWPOLY에 어울리는 리소스 찾기가 쉽지 않다.
+
+중요한건 어떤식으로 적용이되느냐, 적용할 것이냐 아니냐, 가 중요. 어떻게 돌아가는지는 별로 안중요하다.
+
+그래픽은 전부다 노가다. 예를 들어 수상작같은 것들 보면 전부 그래픽 작업. 프로그래밍적인 내용이 없음.
+
+언리얼 엔진 DOC의 문제는 이름을 몰라서 검색을 못하는게 문제이다. 이름을 알아야 검색을 할 수 있는데, 이름을 모르면 검색을 못한다. 따라서 기능적인 것은 까먹어도 되지만, 구성을 할 때 어떤 걸 먼저해야 하고, 어떤걸 어떻게 해서 어떻게 들어갈지는 절때 까먹으면 안된다?
+
+수업시간에는 C++을 다루지 않음. 블루프린트로 작업한다고함.
+
+UE4 시작하기 클릭, 레벨 디자이너 퀵스타트 가이드 보고 하기
+
+일단 본인이 노트북으로 언리얼 프로그래밍 하겠다는 마음가짐을 버린다. 데스크탑으로 해야 한다. 의외로 그래픽카드는 그렇게 부담이 되지 않는다. 근데 CPU와 RAM, 하드공간이 가장 중요하다.
+
+학원 강의 렘 16GB <- 작업하는데 어려움을 겪음. 원할하게 엔진작업을 하고 싶다. 32GB가 권장.
+
+###
+
+? UAnimSequenceBase를 상속받는 UAnimSequence와 UAnimStreamable 있음. 여기서 문제가 발생함. UAnimStreamable이 뭔지 모르겠음.
+
+해매지 않았다면 한번에 AnimNotify로 만들었을 거 같은데. 음... 근데 내부 코드를 모르니 그저 가정일 뿐인가?
+
+## FGuid
+전역 고유 식별자(全域固有識別子, 영어: Globally Unique Identifier, GUID)는 응용 소프트웨어에서 사용되는 유사난수이다.
+
+## 3D 탐색 플러그인
+설마 이렇게 만들었나 싶지만 실제로 이렇게 만들었다고 한다. unreal engine forum을 보면 [3D navigation](https://forums.unrealengine.com/t/3d-navigation-plugin/112703)에 대한 정보를 보여준다. 관련 내용을 찾기가 어렵다고 한다.
+
+[3D navigation system for virtual reality based on 3d game engine](https://www.semanticscholar.org/paper/3D-navigation-system-for-virtual-reality-based-on-SharkawiK.-Ujang/0f3fed63730ec4ded51ff0b78ca80356ca790263#citing-papers)에 관한 내용은 찾을 수 있다. 하지만 2008년에 작성된 내용이다. 2D에서 찾아서 3D에 적용하는 방법을 찾아야 하나?
+
+* 여러개의 NavMesh를 합치는 방법은 나중에 생각하도록 하자.
+
+## UPROPERTY 단위 표시
+CharacterMovementComponent를 보면 ForceUnits를 통해서 Editor에서 단위를 표시할 수 있음.
+```cpp
+	UPROPERTY(Category="Character Movement: Walking", EditAnywhere, BlueprintReadWrite, meta=(ClampMin="0", UIMin="0", ForceUnits="cm"))
+	float MaxStepHeight;
+```
+
+
+## UOject Class를 변수로
+
+* UCLASS 매크로에 BlueprintType, DefaultToInstanced, EditInlineNew을 추가합니다.
+    * 
+
+* UPROPERTY 매크로에 Instanced를 추가합니다.
+
+! 개발을 좀더 편하게, Editor는 디버그가 편하게 DebugGame, 그리고 BuildTarget에서 Non-Unity mode로 빌드되도록.
+! 자동으로 인클루드 하는게 엄청 많았나 보구나, 오래걸릴만 하네. PCH가 하는 역활인가? 가끔식 PCH바뀌면서 엄청 오래걸렸던거 같은데?
+! 엄청나게 직접 추가해야 하기는 하는데, 빠를 수만 있다면, 충분히 감수할만하다고 생각합니다. 실제로 엄청더 빠릅니다.
+그래 빌드 속도가 이정도는 되야 할만하지. ㅠㅠ
+! 내가 병신이였구나, 이렇게 빌드 속도가 빨랐는데, 시간을 낭비하다니.
+
+```c#
+        bUseUnityBuild = false;
+        bUsePCHFiles = false;
+```
+
+? PoseLink는 Local space(부모본과의 관계)
+? ComponentSpacePose는 Component와의 관계
+
+? 이름은 안바꾼다고 생각하고 만들도록 하자.
+
+? **ㅠㅠㅠㅠㅠㅠㅠㅠㅠ 쓸데없는데서 시간 오래 잡아먹혔네, 내일 정리하자.**
+Interface,
+
+? UnityBuild로 cpp자동으로 통합되니, 한 클래스안에 때려박지 말도록 하자.
+
+? 디퍼드 렌더링 모드, Static mesh component는 simulation 되어 있지 않으면 velocity를 그리지 않음.
+
+? 공부할 때는 25분 5분 타이머가 굉장히 효율적이다.
+
 ? 로딩 스크린 만드는 방법.
 https://www.youtube.com/watch?v=6CkR6KG2znM
 MainMenu만들고 시간을 들여서 이것을 공부하도록 하자.
@@ -63,8 +269,6 @@ https://rhyce.dev/2021/09/17/how-to-make-custom-unreal-engine-nodes-easily/?utm_
 하지만 하나 이상이 되면 명시해줘야함.
 명시하지 않으면 Fatal error를 발생시킴.
 
-
-UAV, SRV 여전히 어려워요.
 
 추가적으로 알게된 사실이지만, 언리얼 엔진 설치중에 해당 엔진을 이용하는 비쥬얼 스튜디오를 키면 응답오류를 발생합니다.
 엔진 커스터마이징 해보고 싶었지만 200GB 넘어가는 것, 컴파일 하는데 하루걸리는 것 보고 지금은 아닌 것 같습니다. 엔진 커스터마이징 하는 방법 기록을 남겨두고 정리합시다.
@@ -164,28 +368,3 @@ GlobalShader를 추가하기 위해 시도한 것들.
 
 이야,,, 희한한거 많이 추가되었네???
 세상 좋아졌구만,
-
-## FSceneRenderer::ViewExtensionPreRender_RenderThread
-FSceneRenderer에서 RenderThread라는데.
-
-FRHICommandListImmediate& RHICmdList파라메터에서
-FRDGBuilder GraphBuilder(RHICmdList)를 생성
-
-ViewArray에서 PreRenderViewFamily_RenderThread호출 후에
-
-GraphBuilder.Execute를 실행합니다.
-
-그 다음 FDeferredUpdateResource::UpdateResource(RHICmdList)에서 업데이트 한다.
-
-## RDG를 어떻게 작동시키는 것인지 모르겠다.
-
-## RenderingThread를 등록한다.
-
-## 이거 읽고 따라해볼까?
-https://forums.unrealengine.com/t/how-can-i-pass-multiple-render-targets-to-a-compute-shader/139770/2
-
-## 공식문서 이해안가면 영어로 보자.
-번역이 너무 이상해서 이해 안갈만 했다.!
-
-## Add Graph추가하기 전에 Compute Shader부터 추가해보자.
-

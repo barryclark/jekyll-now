@@ -19,6 +19,7 @@ Implementation event는 함수의 몸체 없이 호출을 할 수 있습니다.
 블루프린트 이벤트 그래프에서 오버라이드 하여 함수의 몸체를 만들어 줄 수 있습니다.
 블루프린트에서 몸체를 만들게 되면 C++ 에서 호출을 할 때 블루프린트 상의 오버라이드한 몸체가 실행됩니다.
 
+C++에서 구현이 불가능합니다.
 
 # BlueprintNativeEvent
 
@@ -27,7 +28,7 @@ void CallNative();
 
 ---------------------------------
 
-UFUNCTION(BlueprintNaitveEvent)
+UFUNCTION(BlueprintNativeEvent)
 void CallNative_Implementation() override;
 
 NativeEvent는 C++에서도 함수의 몸체를 만들어줄 수 있습니다.
