@@ -2,7 +2,6 @@
 layout: post
 title: 关于唐山金山事件的性别不平等反思
 ---
-
 ## 背景
 事件就不再赘述，总而言之，事件本身暴力血腥，而且相较于以往所谓受害者也有瑕疵，这次事件中出现了“完美”的无辜受害者，以下是有关报道的链接。
 凤凰网资讯([附有视频](https://news.ifeng.com/c/8GjZvshucmo)), 思想地图公众号([对事件有细节剖析](https://mp.weixin.qq.com/s/__9sFRLTH62UuOmOacFt-g))。
