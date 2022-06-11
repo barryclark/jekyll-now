@@ -217,7 +217,7 @@ Nem todas as interfaces funcionais apareceram no Java 8. Muitas interfaces de ve
     Thread thread = new Thread(() -> System.out.println("Hello From Another Thread"));
     thread.start();
 
-#12. Conclusão
+# 12. Conclusão
 
 Neste artigo, descrevemos diferentes interfaces funcionais presentes na API do Java 8 que podem ser usadas como expressões lambda. O código fonte do artigo está disponível no [GitHub](https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-lambdas)  .
 

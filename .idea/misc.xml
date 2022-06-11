@@ -3,4 +3,7 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_14" project-jdk-name="13 fx" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
 </project>

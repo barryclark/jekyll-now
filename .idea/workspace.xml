@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3593c2eb-96ae-4332-9a30-19c64dc766cd" name="Default Changelist" comment="" />
+    <list default="true" id="3593c2eb-96ae-4332-9a30-19c64dc766cd" name="Default Changelist" comment="Ajuste do post de spring batch">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ivanqueiroz.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ivanqueiroz.github.io.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +20,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1m6jJRfTzby9h5MttkHoxmrDwuX" />
   <component name="ProjectViewState">
@@ -18,10 +32,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="discord-application" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/2020" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -32,10 +57,106 @@
       <option name="presentableId" value="Default" />
       <updated>1608820863288</updated>
       <workItem from="1608820865555" duration="72000" />
+      <workItem from="1626039303079" duration="139000" />
+      <workItem from="1626092548161" duration="3216000" />
+      <workItem from="1626174927869" duration="2201000" />
+      <workItem from="1626225093392" duration="1454000" />
+      <workItem from="1626261956491" duration="1879000" />
+      <workItem from="1627260719624" duration="599000" />
+      <workItem from="1627299645042" duration="60000" />
+      <workItem from="1627333001888" duration="17000" />
+      <workItem from="1627347890291" duration="949000" />
+      <workItem from="1627386654178" duration="602000" />
+      <workItem from="1627407296829" duration="1735000" />
+      <workItem from="1627418575215" duration="2828000" />
+      <workItem from="1627471987933" duration="1279000" />
+      <workItem from="1627607097516" duration="296000" />
+      <workItem from="1627644636489" duration="3048000" />
+      <workItem from="1627837881931" duration="5105000" />
+      <workItem from="1627847411249" duration="1809000" />
+      <workItem from="1627849252056" duration="2579000" />
+      <workItem from="1627866998129" duration="1099000" />
+      <workItem from="1627910229039" duration="2336000" />
+      <workItem from="1628125454881" duration="2586000" />
+      <workItem from="1628162509063" duration="1237000" />
+      <workItem from="1628527686039" duration="6468000" />
+      <workItem from="1628556030447" duration="1056000" />
+      <workItem from="1628557102125" duration="701000" />
+      <workItem from="1628557818397" duration="94000" />
+      <workItem from="1628557937705" duration="18000" />
+      <workItem from="1628557968476" duration="502000" />
+      <workItem from="1628600901851" duration="238000" />
+      <workItem from="1637584171840" duration="752000" />
+      <workItem from="1643215600775" duration="328000" />
+      <workItem from="1643291676746" duration="1206000" />
+      <workItem from="1643376961361" duration="1203000" />
+      <workItem from="1643386831638" duration="1203000" />
+      <workItem from="1643635220514" duration="53000" />
+      <workItem from="1643663488899" duration="599000" />
+      <workItem from="1644112368524" duration="167000" />
+      <workItem from="1645532625943" duration="1826000" />
+      <workItem from="1645579038006" duration="1703000" />
+      <workItem from="1645794496559" duration="599000" />
+      <workItem from="1645924380149" duration="12000" />
     </task>
+    <task id="LOCAL-00001" summary="Ajuste do caminho das imagens.">
+      <created>1626096812851</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1626096812851</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ajuste do caminho das imagens do artigo do oauth2.">
+      <created>1626097707856</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626097707856</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Artigo sobre Spring Batch.">
+      <created>1628547856408</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1628547856408</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adição do código de exemplo.">
+      <created>1628556413928</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1628556413928</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Ajuste do post de spring batch">
+      <created>1643215903359</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1643215903359</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ajuste do caminho das imagens." />
+    <MESSAGE value="Ajuste do caminho das imagens do artigo do oauth2." />
+    <MESSAGE value="Artigo sobre Spring Batch." />
+    <MESSAGE value="Adição do código de exemplo." />
+    <MESSAGE value="Ajuste do post de spring batch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajuste do post de spring batch" />
   </component>
 </project>
