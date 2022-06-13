@@ -20,8 +20,8 @@ At the highest levels, when we Threat Model, we ask four key questions:
 * Did we do a good enough job?
 
 > A Threat Model is NOT an architectural model of the system!
-  • No complete architecture
-  • Focuses on data flow
+  -> No complete architecture
+  -> Focuses on data flow
 
 ## Why Threat Model?
 When you perform Threat Modeling, you begin to recognize what can go wrong in a system. It also allows you to pinpoint design and implementation issues that require mitigation, whether it is early in or throughout the lifetime of the system. The output of the Threat Model, which are known as threats, informs decisions that you might make in subsequent design, development, testing, and post-deployment phases.
