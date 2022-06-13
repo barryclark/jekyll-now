@@ -8,7 +8,7 @@ Threat Modeling works to identify, communicate, and understand threats and mitig
 A Threat Model is a structured representation of all the information that affects the security of an application. In essence, it is a view of the application and its environment through the lens of security.
 
 
-## Threat modeling at a glance
+## Threat Modeling at a glance
 
 Threat modeling is analyzing representations of a system to highlight concerns about security and privacy characteristics.
 
