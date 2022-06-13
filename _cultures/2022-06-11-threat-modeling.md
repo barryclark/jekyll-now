@@ -3,30 +3,30 @@ layout: culture
 title: Threat Modeling 
 ---
 
-Threat modeling works to identify, communicate, and understand threats and mitigations within the context of protecting something of value.
+Threat Modeling works to identify, communicate, and understand threats and mitigations within the context of protecting something of value.
 
-A threat model is a structured representation of all the information that affects the security of an application. In essence, it is a view of the application and its environment through the lens of security.
+A Threat Model is a structured representation of all the information that affects the security of an application. In essence, it is a view of the application and its environment through the lens of security.
 
 
-## Threat modeling ad a glance
+## Threat modeling at a glance
 
 Threat modeling is analyzing representations of a system to highlight concerns about security and privacy characteristics.
 
-At the highest levels, when we threat model, we ask four key questions:
+At the highest levels, when we Threat Model, we ask four key questions:
 
 * What are we working on?
 * What can go wrong?
 * What are we going to do about it?
 * Did we do a good enough job?
 
-> A threat model is NOT an architectural model of the system!
+> A Threat Model is NOT an architectural model of the system!
   • No complete architecture
   • Focuses on data flow
 
-## Why threat model?
-When you perform threat modeling, you begin to recognize what can go wrong in a system. It also allows you to pinpoint design and implementation issues that require mitigation, whether it is early in or throughout the lifetime of the system. The output of the threat model, which are known as threats, informs decisions that you might make in subsequent design, development, testing, and post-deployment phases.
+## Why Threat Model?
+When you perform Threat Modeling, you begin to recognize what can go wrong in a system. It also allows you to pinpoint design and implementation issues that require mitigation, whether it is early in or throughout the lifetime of the system. The output of the Threat Model, which are known as threats, informs decisions that you might make in subsequent design, development, testing, and post-deployment phases.
 
-## Who should threat model?
+## Who should Threat Model?
 You. Everyone. Anyone who is concerned about the privacy, safety, and security of their system.
 
 ## Threat Modeling Manifesto
@@ -37,14 +37,14 @@ Source:  [threatmodelingmanifesto.org](https://www.threatmodelingmanifesto.org/)
   - A culture of finding and fixing design issues over checkbox compliance. 
   - People and collaboration over processes, methodologies, and tools.
   - A journey of understanding over a security or privacy snapshot.
-  - Doing threat modeling over talking about it.
+  - Doing Threat Modeling over talking about it.
   - Continuous refinement over a single delivery.
   
 #### Principles
 > We follow these principles:
-  - The best use of threat modeling is to improve the security and privacy of a system through early and frequent analysis.
-  - Threat modeling must align with an organization’s development practices and follow design changes in iterations that are each scoped to manageable portions of the system.
-  - The outcomes of threat modeling are meaningful when they are of value to stakeholders.
+  - The best use of Threat Modeling is to improve the security and privacy of a system through early and frequent analysis.
+  - Threat Modeling must align with an organization’s development practices and follow design changes in iterations that are each scoped to manageable portions of the system.
+  - The outcomes of Threat Modeling are meaningful when they are of value to stakeholders.
   - Dialog is key to establishing the common understandings that lead to value, while documents record those understandings, and enable measurement.
 
 
