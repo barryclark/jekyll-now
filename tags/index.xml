@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Chris Clarkson</title>
@@ -6,82 +6,10 @@
     <description>Recent content in Tags on Chris Clarkson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 05 Jul 2019 09:32:37 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jul 2019 09:30:00 +0100</lastBuildDate>
     
 	<atom:link href="https://chrisclarkson.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Dad</title>
-      <link>https://chrisclarkson.org/tags/dad/</link>
-      <pubDate>Fri, 05 Jul 2019 09:32:37 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/dad/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Death</title>
-      <link>https://chrisclarkson.org/tags/death/</link>
-      <pubDate>Fri, 05 Jul 2019 09:32:37 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/death/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Delays</title>
-      <link>https://chrisclarkson.org/tags/delays/</link>
-      <pubDate>Fri, 05 Jul 2019 09:32:37 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/delays/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Goals</title>
-      <link>https://chrisclarkson.org/tags/goals/</link>
-      <pubDate>Fri, 05 Jul 2019 09:32:37 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/goals/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Beginner</title>
-      <link>https://chrisclarkson.org/tags/beginner/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/beginner/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Books</title>
-      <link>https://chrisclarkson.org/tags/books/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/books/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CEH</title>
-      <link>https://chrisclarkson.org/tags/ceh/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/ceh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CISSP</title>
-      <link>https://chrisclarkson.org/tags/cissp/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/cissp/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>CTFs</title>
@@ -89,60 +17,6 @@
       <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
       
       <guid>https://chrisclarkson.org/tags/ctfs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Courses</title>
-      <link>https://chrisclarkson.org/tags/courses/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/courses/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Disassembly</title>
-      <link>https://chrisclarkson.org/tags/disassembly/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/disassembly/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Drones</title>
-      <link>https://chrisclarkson.org/tags/drones/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/drones/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Exploit Development</title>
-      <link>https://chrisclarkson.org/tags/exploit-development/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/exploit-development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>FPV</title>
-      <link>https://chrisclarkson.org/tags/fpv/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/fpv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GRC</title>
-      <link>https://chrisclarkson.org/tags/grc/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/grc/</guid>
       <description></description>
     </item>
     
@@ -156,29 +30,11 @@
     </item>
     
     <item>
-      <title>ISC2</title>
-      <link>https://chrisclarkson.org/tags/isc2/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/isc2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Offensive Security</title>
       <link>https://chrisclarkson.org/tags/offensive-security/</link>
       <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
       
       <guid>https://chrisclarkson.org/tags/offensive-security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Standards</title>
-      <link>https://chrisclarkson.org/tags/standards/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/standards/</guid>
       <description></description>
     </item>
     
@@ -192,128 +48,11 @@
     </item>
     
     <item>
-      <title>AWS</title>
-      <link>https://chrisclarkson.org/tags/aws/</link>
-      <pubDate>Fri, 05 Jul 2019 09:25:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/aws/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Amazon</title>
-      <link>https://chrisclarkson.org/tags/amazon/</link>
-      <pubDate>Fri, 05 Jul 2019 09:25:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/amazon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cloud</title>
-      <link>https://chrisclarkson.org/tags/cloud/</link>
-      <pubDate>Fri, 05 Jul 2019 09:25:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/cloud/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DevOps</title>
-      <link>https://chrisclarkson.org/tags/devops/</link>
-      <pubDate>Fri, 05 Jul 2019 09:25:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/devops/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DevSecOps</title>
-      <link>https://chrisclarkson.org/tags/devsecops/</link>
-      <pubDate>Fri, 05 Jul 2019 09:25:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/devsecops/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Professional</title>
-      <link>https://chrisclarkson.org/tags/professional/</link>
-      <pubDate>Fri, 05 Jul 2019 09:25:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/professional/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reverse Engineering</title>
-      <link>https://chrisclarkson.org/tags/reverse-engineering/</link>
-      <pubDate>Fri, 05 Jul 2019 09:20:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/reverse-engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>EC-Council</title>
-      <link>https://chrisclarkson.org/tags/ec-council/</link>
-      <pubDate>Fri, 05 Jul 2019 09:15:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/ec-council/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hacker</title>
-      <link>https://chrisclarkson.org/tags/hacker/</link>
-      <pubDate>Fri, 05 Jul 2019 09:15:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/hacker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Security</title>
-      <link>https://chrisclarkson.org/tags/security/</link>
-      <pubDate>Fri, 05 Jul 2019 09:15:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CHFI</title>
-      <link>https://chrisclarkson.org/tags/chfi/</link>
-      <pubDate>Fri, 05 Jul 2019 09:10:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/chfi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Forensics</title>
-      <link>https://chrisclarkson.org/tags/forensics/</link>
-      <pubDate>Fri, 05 Jul 2019 09:10:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/forensics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Tutorials</title>
       <link>https://chrisclarkson.org/tags/tutorials/</link>
       <pubDate>Wed, 03 Jul 2019 16:22:49 +0100</pubDate>
       
       <guid>https://chrisclarkson.org/tags/tutorials/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Beginning</title>
-      <link>https://chrisclarkson.org/tags/beginning/</link>
-      <pubDate>Mon, 01 Oct 2018 16:52:09 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tags/beginning/</guid>
       <description></description>
     </item>
     
