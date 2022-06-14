@@ -132,3 +132,23 @@ A web application is not available to end users because of the cyber attacker at
 | Information Disclosure   | Leakage of sensitive information    | Confidentiality | Credit card information available on the internet                        |
 | Denial of Service        | Non-availability of service         | Availability    | Web application not responding to user requests                          |
 | Elevation of Privilege   | Able to perform unauthorized action | Authorization   | Normal user able to delete admin account                                 |
+
+## Apply STRIDE on the base Threat Model Elements
+
+To combine the STRIDE approach with the four base elements of a Data Flow we can achieve a good guideline on the possibilities and restrictions of each element. 
+
+| Threat Model Element | Example | S | T | R | I | D | E |
+| -------------------- | ------- | - | - | - | - | - | - |
+| External Entity      | Browser |✅ |  | ✅|✅ |✅|  |
+| Process              | Web Server| ✅ | ✅ | ✅| ✅ | ✅ | ✅|
+| Data Store           | SQL Database| | ✅ | 🗸 | ✅| ✅| |
+| Data Flow            | -           | | ✅ | ✅| ✅| |
+
+If you want to go beyond that - try this List based on interactions:
+
+<p align="center">
+<img width="600" src="/images/stride-per-interaction.png">
+</p>
+
+Source: [Shostack, A. (2014). Threat modeling : designing for security., Indianapolis, Ind. : Wiley.]
+
