@@ -3,17 +3,97 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://chrisclarkson.org/tags/beginning/</loc>
+    <lastmod>2022-06-14T20:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://chrisclarkson.org/categories/</loc>
-    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+    <lastmod>2022-06-14T20:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://chrisclarkson.org/</loc>
+    <lastmod>2022-06-14T20:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/categories/posts/</loc>
+    <lastmod>2022-06-14T20:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/posts/first/</loc>
+    <lastmod>2022-06-14T20:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/</loc>
+    <lastmod>2022-06-14T20:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/books/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/categories/books/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/ccsp/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/ccsp/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/ceh/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/cissp/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/cissp/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/courses/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/categories/courses/</loc>
     <lastmod>2019-07-05T09:30:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://chrisclarkson.org/tags/ctfs/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/disassembly/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/exploit-development/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/grc/</loc>
     <lastmod>2019-07-05T09:30:00+01:00</lastmod>
   </url>
   
@@ -24,6 +104,11 @@
   
   <url>
     <loc>https://chrisclarkson.org/tags/hacking/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/isc2/</loc>
     <lastmod>2019-07-05T09:30:00+01:00</lastmod>
   </url>
   
@@ -43,7 +128,12 @@
   </url>
   
   <url>
-    <loc>https://chrisclarkson.org/tags/</loc>
+    <loc>https://chrisclarkson.org/tags/standards/</loc>
+    <lastmod>2019-07-05T09:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/books/the_ida_pro_book/</loc>
     <lastmod>2019-07-05T09:30:00+01:00</lastmod>
   </url>
   
@@ -53,8 +143,58 @@
   </url>
   
   <url>
+    <loc>https://chrisclarkson.org/tags/amazon/</loc>
+    <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/aws/</loc>
+    <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/awssolpro/</loc>
+    <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/cloud/</loc>
+    <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/devops/</loc>
+    <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/devsecops/</loc>
+    <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/professional/</loc>
+    <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://chrisclarkson.org/others/root-me/</loc>
     <lastmod>2019-07-05T09:25:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/awssolassoc/</loc>
+    <lastmod>2019-07-05T09:20:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/reverse-engineering/</loc>
+    <lastmod>2019-07-05T09:20:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/books/reversing_secrets_of_re/</loc>
+    <lastmod>2019-07-05T09:20:00+01:00</lastmod>
   </url>
   
   <url>
@@ -63,8 +203,53 @@
   </url>
   
   <url>
+    <loc>https://chrisclarkson.org/courses/ceh/</loc>
+    <lastmod>2019-07-05T09:15:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/ec-council/</loc>
+    <lastmod>2019-07-05T09:15:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/hacker/</loc>
+    <lastmod>2019-07-05T09:15:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://chrisclarkson.org/others/overthewire/</loc>
     <lastmod>2019-07-05T09:15:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/security/</loc>
+    <lastmod>2019-07-05T09:15:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/chfi/</loc>
+    <lastmod>2019-07-05T09:10:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/chfi/</loc>
+    <lastmod>2019-07-05T09:10:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/tags/forensics/</loc>
+    <lastmod>2019-07-05T09:10:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/books/practical_reverse_engineering/</loc>
+    <lastmod>2019-07-05T09:10:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/books/attacking_network_protocols/</loc>
+    <lastmod>2019-07-05T09:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -85,6 +270,21 @@
   <url>
     <loc>https://chrisclarkson.org/tutorials/</loc>
     <lastmod>2019-07-03T16:22:49+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/books/</loc>
+    <lastmod>2018-10-01T16:52:02+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/courses/</loc>
+    <lastmod>2018-10-01T16:52:02+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisclarkson.org/posts/</loc>
+    <lastmod>2018-10-01T16:52:02+01:00</lastmod>
   </url>
   
   <url>

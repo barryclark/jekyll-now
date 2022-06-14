@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Books on Chris Clarkson</title>
@@ -18,7 +18,7 @@
       
       <guid>https://chrisclarkson.org/books/the_ida_pro_book/</guid>
       <description>The IDA Pro Book V2.
-The IDAPro Book</description>
+ The IDAPro Book</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@ The IDAPro Book</description>
       
       <guid>https://chrisclarkson.org/books/reversing_secrets_of_re/</guid>
       <description>Introductory Text on Reverse Engineering
-Reversing: Secrets of Reverse Engineering</description>
+ Reversing: Secrets of Reverse Engineering</description>
     </item>
     
     <item>
@@ -38,7 +38,7 @@ Reversing: Secrets of Reverse Engineering</description>
       
       <guid>https://chrisclarkson.org/books/practical_reverse_engineering/</guid>
       <description>Advanced reversed engineering topics.
-Practical Reverse Engineering: x86, x64, ARM, Windows Kernel, Reversing Tools, and Obfuscation</description>
+ Practical Reverse Engineering: x86, x64, ARM, Windows Kernel, Reversing Tools, and Obfuscation</description>
     </item>
     
     <item>
@@ -48,7 +48,16 @@ Practical Reverse Engineering: x86, x64, ARM, Windows Kernel, Reversing Tools, a
       
       <guid>https://chrisclarkson.org/books/attacking_network_protocols/</guid>
       <description>Deep Dive into the process of attacking a network communications protocol.
-Attacking Network Protocols: A Hacker&amp;rsquo;s Guide to Capture, Analysis, and Exploitation</description>
+ Attacking Network Protocols: A Hacker&amp;rsquo;s Guide to Capture, Analysis, and Exploitation</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://chrisclarkson.org/books/</link>
+      <pubDate>Mon, 01 Oct 2018 16:52:02 +0100</pubDate>
+      
+      <guid>https://chrisclarkson.org/books/</guid>
+      <description></description>
     </item>
     
   </channel>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Courses on Chris Clarkson</title>
@@ -10,6 +10,15 @@
     
 	<atom:link href="https://chrisclarkson.org/categories/courses/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CCSP</title>
+      <link>https://chrisclarkson.org/courses/ccsp/</link>
+      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
+      
+      <guid>https://chrisclarkson.org/courses/ccsp/</guid>
+      <description>The Gold standard for Cloud security professionals, I would advise anybody working in Cloud Security to do this course. Its benefit lies in understanding, as a techie I gained a deeper understanding and appreciation of how the Policy and process side of Cloud Security works.</description>
+    </item>
     
     <item>
       <title>CISSP</title>
@@ -54,6 +63,15 @@
       
       <guid>https://chrisclarkson.org/courses/chfi/</guid>
       <description>A very insightful course into art of computer forensics and the techniques that are used to catch hackers. Very interesting to take the knowledge gained here and work out ways to evade them, excellent course to take that stage further and develop the adversarial mindset.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://chrisclarkson.org/courses/</link>
+      <pubDate>Mon, 01 Oct 2018 16:52:02 +0100</pubDate>
+      
+      <guid>https://chrisclarkson.org/courses/</guid>
+      <description></description>
     </item>
     
   </channel>

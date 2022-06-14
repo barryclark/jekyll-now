@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Disassembly on Chris Clarkson</title>
@@ -18,7 +18,7 @@
       
       <guid>https://chrisclarkson.org/books/the_ida_pro_book/</guid>
       <description>The IDA Pro Book V2.
-The IDAPro Book</description>
+ The IDAPro Book</description>
     </item>
     
   </channel>
