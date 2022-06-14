@@ -3,24 +3,24 @@
 *,
 *:after,
 *:before {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-	box-sizing: border-box;
-	font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 body {
-  display:flex;
+  display: flex;
   color: @fg-color;
   background-color: @bg-color;
-	font-family: 'Fira Mono', monospace;
-	font-size: 1.6em;
-	font-weight: 400;
-	letter-spacing: 0.0625em;
+  font-family: 'Fira Mono', monospace;
+  font-size: 1.6em;
+  font-weight: 400;
+  letter-spacing: 0.0625em;
   line-height: 1.8em;
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     font-size: 1.4em;
     line-height: 1.6em;
   }
@@ -65,43 +65,48 @@ h6 {
 h1 {
   font-size: 3.2rem;
   line-height: 3.2rem;
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     font-size: 2.8rem;
     line-height: 2.8rem;
   }
 }
+
 h2 {
   font-size: 2.8rem;
   line-height: 2.8rem;
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     font-size: 2.4rem;
     line-height: 2.4rem;
   }
 }
+
 h3 {
   font-size: 2.4rem;
   line-height: 2.4rem;
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     font-size: 2.0rem;
     line-height: 2.0rem;
   }
 }
+
 h4 {
   font-size: 2.2rem;
   line-height: 2.2rem;
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     font-size: 1.8rem;
     line-height: 1.8rem;
   }
 }
+
 h5 {
   font-size: 2.0rem;
   line-height: 2.0rem;
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     font-size: 1.6rem;
     line-height: 1.6rem;
   }
 }
+
 h6 {
   font-size: 1.4rem;
   line-height: 1.4rem;
@@ -129,25 +134,31 @@ blockquote {
 th, td {
   padding: 1.6rem;
 }
+
 table {
   border-collapse: collapse;
 }
+
 table td, table th {
   border: 2px solid @darker-fg-color;
 }
+
 table tr:first-child th {
   border-top: 0;
 }
+
 table tr:last-child td {
   border-bottom: 0;
 }
+
 table tr td:first-child,
 table tr th:first-child {
   border-left: 0;
 }
+
 table tr td:last-child,
 table tr th:last-child {
-    border-right: 0;
+  border-right: 0;
 }
 
 img {
@@ -178,7 +189,7 @@ img {
     text-transform: uppercase;
     line-height: 6.0rem;
     letter-spacing: 0.1rem;
-    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
       font-size: 1.6rem;
     }
   }
@@ -194,11 +205,11 @@ img {
         margin-left: 1.0rem;
         margin-right: 1.0rem;
       }
-      @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
         float: none !important;
       }
     }
-    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
       visibility: hidden;
       opacity: 0;
       max-height: 0;
@@ -207,7 +218,7 @@ img {
       right: 0;
       width: 100%;
       position: absolute;
-      background-color: rgba(254,254,254 ,0.98);
+      background-color: rgba(254, 254, 254, 0.98);
       padding: 0;
       border-bottom: solid 2px #E2DFE1;
       transition: opacity 0.25s, max-height 0.15s linear;
@@ -223,7 +234,11 @@ img {
   display: none;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+.mobile-menu-lang-separator-centered {
+  display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   .btn-mobile {
     display: block;
     font-size: 2.0rem;
@@ -247,6 +262,7 @@ img {
   }
 
   .mobile-menu-lang-separator-centered {
+    display: block;
     padding-left: 7rem;
     padding-right: 7rem;
   }
@@ -291,7 +307,7 @@ img {
         margin-top: 1.0rem;
         font-size: 1.8rem;
         color: @fg-color;
-        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
           font-size: 1.6rem;
         }
       }
@@ -299,11 +315,11 @@ img {
   }
 }
 
-.avatar img{
+.avatar img {
   width: 20rem;
   height: auto;
   border-radius: 50%;
-  @media only screen and (max-device-width : 768px) {
+  @media only screen and (max-device-width: 768px) {
     width: 10rem;
   }
 }
@@ -315,7 +331,7 @@ img {
     padding: 0;
     li {
       font-size: 1.6rem;
-      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
         font-size: 1.4rem;
         margin: 1.6rem 0 1.6rem 0;
       }
@@ -324,7 +340,7 @@ img {
         text-align: right;
         width: 20.0rem;
         margin-right: 3.0rem;
-        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
           display: block;
           text-align: left;
         }
@@ -372,7 +388,7 @@ img {
       margin-top: 1.0rem;
       margin-bottom: 0.5rem;
       font-size: 2.4rem;
-      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
         font-size: 2.0rem;
       }
     }
@@ -388,7 +404,7 @@ img {
           margin-left: 1.0rem;
           margin-right: 1.0rem;
           font-size: 1.6rem;
-          @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+          @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
             font-size: 1.4rem;
           }
         }
@@ -402,7 +418,7 @@ img {
       margin-top: 2.0rem;
       margin-bottom: 0.5rem;
       font-size: 4.6rem;
-      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
         font-size: 3.2rem;
       }
     }
@@ -410,7 +426,7 @@ img {
       margin-top: 2.0rem;
       margin-bottom: 3.2rem;
       font-size: 3.2rem;
-      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
         font-size: 2.8rem;
       }
     }
@@ -421,7 +437,7 @@ img {
   width: 100%;
   text-align: center;
   line-height: 2.0rem;
-  margin-bottom:1.0rem;
+  margin-bottom: 1.0rem;
 }
 
 .float-right {
@@ -437,10 +453,12 @@ img {
 .title {
   font-weight: bold;
 }
+
 a {
   position: relative;
   transition: 0.5s;
 }
+
 a:before, a:after {
   position: absolute;
   bottom: -2px;
@@ -451,15 +469,19 @@ a:before, a:after {
   background: #F30034;
   transition: 0.5s;
 }
+
 a:before {
   left: 50%;
 }
+
 a:after {
   right: 50%;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 a:hover:before, a:hover:after {
   width: 50%;
 }
@@ -476,12 +498,14 @@ a:hover:before, a:hover:after {
   display: flex;
   align-items: stretch;
 }
+
 .portfolio .portfolio-inner .portfolio-image {
   display: flex;
   align-items: center;
   margin-right: 5%;
   width: 45%;
 }
+
 .portfolio .portfolio-inner .portfolio-content {
   flex: 1;
 }
@@ -489,6 +513,7 @@ a:hover:before, a:hover:after {
 #privateTrigger {
   cursor: pointer;
 }
+
 #privateTrigger:hover:before, #privateTrigger:hover:after {
   width: 0;
 }
@@ -508,6 +533,7 @@ a:hover:before, a:hover:after {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   background: #fefefe;
 }
+
 .fixed-bar .container {
   display: flex;
   justify-content: center;
@@ -520,6 +546,14 @@ code {
   background: #364549 !important;
 }
 
+.social-list {
+  .social-item {
+    i {
+      font-size: 30px;
+    }
+  }
+}
+
 .sns-shares {
   display: flex;
   align-items: center;
@@ -527,6 +561,7 @@ code {
   position: absolute;
   right: 0;
 }
+
 .sns-shares .sns-share {
   display: flex;
   align-items: center;
@@ -535,26 +570,34 @@ code {
   width: 56px;
   text-decoration: none;
 }
+
 .sns-shares .sns-share:hover:before, .sns-shares .sns-share:hover:after {
   width: 0;
 }
+
 .sns-shares .twitter-share .fa-twitter {
   font-size: 24px;
 }
+
 .sns-shares .fb-share .fa-facebook-f {
   font-size: 24px;
 }
+
 .sns-shares .hatena-share .fa-bookmark {
   font-size: 24px;
 }
+
 .sns-shares .line-share .fa-line {
+  font-size: 30px;
+}
+
+.sns-shares .linkedIn-share .fa-linkedin {
   font-size: 30px;
 }
 
 .sp-sns-shares {
   display: none;
 }
-
 
 @media (max-width: 920px) {
   .pc-sns-shares {
@@ -567,13 +610,16 @@ code {
     justify-content: space-around;
     width: 100%;
   }
+
   .portfolio .portfolio-inner {
     display: block;
   }
+
   .portfolio .portfolio-inner .portfolio-image {
     width: 100%;
   }
 }
+
 /* vBackground */
 .chroma {
   color: #e3e3e3;
