@@ -10,6 +10,7 @@ title: 关于唐山事件的性别不平等反思
 * [男性可以为支持女性主义做的35件实事](https://mp.weixin.qq.com/s/O3TwYF7hr02iZMrcZYwjFg)：隐约记得自己两年前就转发过，似乎历史又在重演，我们也在慢慢遗忘。这也是我写这篇Blog的初衷。
 
 * [为什么性别议题在唐山打人事件中如此重要](https://mp.weixin.qq.com/s/jq13KPTvtrl08VbRggf9ZA)：这并不是一次简单的酒后肇事，起因是**性骚扰**，过程中只有**女性**帮忙，社会环境是**歧视女性**，**弱化女性地位**，**厌女**的(例如关于丰县事件的报道被官方打压，共青团发表不公正妖魔化女权主义的言论)。
+* [随机波动Podcast女人，在真实的前线战斗，在虚拟的后方抢菜](https://www.xiaoyuzhoufm.com/episode/62564b90abacbeddc37c900a?s=eyJ1IjoiNjI0Njg4ZmVlZGNlNjcxMDRhNDJiMzQ0In0%3D): 二月底回上海隔离时听的一个podcast，在这个话题中翻出来是因为这个podcast讲了一些有关男女对战争，杀戮方面理解的差异。因为唐山打人事件暴露出了许多人非常“collectivism”的想法，比如生三胎是为国家好，颇有一种以天下为己任的“胸怀壮志”。和男女性别差异或许有些关系，不知道为什么男性群体确实有一种虚假的家国情怀，仿佛自己是当权者的心腹，一切考量都在为国家精打细算。但是说真的不如先为自己身边的女性考虑考虑。
 
 * [厌女](https://www.xiaoyuzhoufm.com/episode/611675d5cb0b82e1df0ad163?s=eyJ1IjoiNjI0Njg4ZmVlZGNlNjcxMDRhNDJiMzQ0In0%3D)：写的非常好的一本书，作为男性读的话必然会有一些反感，但是静下心来想其实很有道理。以下是前几章的随写：
 
