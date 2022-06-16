@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London May 2022: OpsCruise"
+title: "Cloud Native London May 2022: OpsCruise, and returning to in-person events"
 description: "speaker from OpsCruise joins us at the Cloud Native London meetup May 2022, hosted by Cheryl Hung, Engineering Manager at Apple"
 location: London, UK
 image: /images/CNL_April_Rambly.jpg
