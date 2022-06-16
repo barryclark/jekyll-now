@@ -3,7 +3,7 @@ layout: post
 title: CopyTextureCS
 ---
 
-UE5.0
+UE 5.0
 
 D:\Program Files\Epic Games\UE_5.0\Engine\Source\Runtime\RenderCore\Public\CopyTextureShader.h
 
