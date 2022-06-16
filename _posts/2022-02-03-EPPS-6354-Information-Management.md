@@ -15,4 +15,4 @@ title: Data Science - Information Management
 
 [EPPS 6354 Information Management Shiny App](https://minshimia.shinyapps.io/Shiny/?_ga=2.266600647.890102784.1652257861-1346453525.1649978871)
 
-[EPPS 6354 US-China Trade Database Project Report](https://minshimia.github.io/Information-Management/Database-Project/EPPS 6354 Database Final Report.html)
+[EPPS 6354 US-China Trade Database Project Report](https://minshimia.github.io/Information-Management/Database-Project/EPPS_6354_Database_Final_Report.html)
