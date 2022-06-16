@@ -3,9 +3,8 @@ layout: post
 title: "Cloud Native Trends and Predictions 2022 - Keynote, Cloud First"
 description: "Cheryl Hung, Engineering Manager at Apple, presents the drivers and challenges behind a cloud native transformation, and 10 trends and predictions for 2022 across Productivity, Control and Business"
 image: /images/2022-06-16-cloud-native-trends-and-predictions-2022.png
-slides:
+slides: //www.slideshare.net/slideshow/embed_code/key/ggsG7Fk1kWRC7J
 location: Edinburgh, UK
-published: false
 tags:
   - Slides
   - "2022"
