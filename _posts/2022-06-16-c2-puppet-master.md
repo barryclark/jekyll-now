@@ -3,7 +3,7 @@ layout: post
 title: C2 - Puppet Master
 ---
 
-<img height="200" align="left" src="https://github.com/BenjiTrapp/puppet-master/blob/main/docs/puppet-master.png"> Tighten the strings and have some fun with your puppets. This Docker image is build on top of a minimal base install of the latest version of the Kali Linux Rolling Distribution and enriched with additional capabilities to transform it into a [C2 Server](https://www.paloaltonetworks.com/cyberpedia/command-and-control-explained) to aid during Pentesting engagements, CTFs or for other sakes. The baseline was described by me in my [Pensieve](https://benjitrapp.github.io/memories/2022-06-06-c2-autoinstall/) before.
+<img height="200" align="left" src="https://raw.githubusercontent.com/BenjiTrapp/puppet-master/main/docs/puppet-master.png"> Tighten the strings and have some fun with your puppets. This Docker image is build on top of a minimal base install of the latest version of the Kali Linux Rolling Distribution and enriched with additional capabilities to transform it into a [C2 Server](https://www.paloaltonetworks.com/cyberpedia/command-and-control-explained) to aid during Pentesting engagements, CTFs or for other sakes. The baseline was described by me in my [Pensieve](https://benjitrapp.github.io/memories/2022-06-06-c2-autoinstall/) before.
 
 <br><br><br>
 ##### Disclamer:
