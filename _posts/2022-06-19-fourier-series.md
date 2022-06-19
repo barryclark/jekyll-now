@@ -175,3 +175,33 @@ for i in idx:
   ax.plot(ts,sig = '--',label = 'Original')
   ax.plot(ts,kk[i], label = 'Aproximacion')
 {% endhighlight %}
+
+
+<font size = "+2"><b>Ejemplo del caso 2</b></font>
+
+<p align = "justify"> Apliquemos el último código para el caso en que la función desconocida esté dada
+  por una función cuadrática mas un término ruidoso:</p>
+  
+<center>
+<figure>
+  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-06-19-fourier-serie/noisy_signal.png?raw=true" alt="Trulli" style="width:70%">
+</figure>
+</center>
+
+<p>Aplicando luego el algoritmo desarrollado para el caso de la señal anterior, obtendremos</p>
+<center>
+<figure>
+  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-06-19-fourier-serie/noisy_signal_fourier.png?raw=true" alt="Trulli" style="width:70%">
+</figure>
+</center>
+
+<p>Podemos observar cómo a medida que se incrementa el índice $n$ la aproximación a la señal original mejora rápidamente.</p>
+
+<p>Finalmente, si tomamos la diferencia entre la última aproximación y la señal original, vemos que el error tiende a ser mayor en los extremos del intervalo (no nos meteremos con eso, pero hay toda una teoría sobre cómo <a href = "https://es.wikipedia.org/wiki/Fen%C3%B3meno_de_Gibbs">acotar ese error</a>).</p>
+
+<center>
+<figure>
+  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-06-19-fourier-serie/error.png?raw=true" alt="Trulli" style="width:70%">
+</figure>
+</center>
+
