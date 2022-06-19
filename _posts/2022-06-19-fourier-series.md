@@ -19,7 +19,7 @@ con este método es <b>aproximar</b> una función $f(t)$ a través de una suma d
 $f(t)$ definida en el intervalo $\left[-T/2,T/2\right]$ como la suma:</p>
 
 \begin{equation}
-f(t) \~ \frac{a_0}/2+\sum_{n=0}^\infty a_n \cos\left(\frac{2n\pi t}{T}\right)+ b_n \sin\left(\frac{2n\pi t}{T}\right).
+f(t) \~ \frac{a_0}{2}+\sum_{n=0}^\infty a_n \cos\left(\frac{2n\pi t}{T}\right)+ b_n \sin\left(\frac{2n\pi t}{T}\right).
 \end{equation}
 
 <p align = "justify"> Cualquier función escrita de la manera anterior, se dice que "está desarrollada en serie de Fourier".
@@ -53,7 +53,7 @@ Como dijimos anteriormente, al aproximar numéricamente una función a través d
 infinitos coeficientes $a_n$ y $b_n$, simplemente los determinaremos hasta cierto índice $N$. Luego, podremos escribir
 
 \begin{equation}
-f(t)\approx\frac{a_0}/2+\sum_{n=0}^N a_n \cos\left(\frac{2n\pi t}{T}\right)+ b_n \sin\left(\frac{2n\pi t}{T}\right).
+f(t)\approx\frac{a_0}{2}+\sum_{n=0}^N a_n \cos\left(\frac{2n\pi t}{T}\right)+ b_n \sin\left(\frac{2n\pi t}{T}\right).
 \end{equation}
 
 <p align = "justify"><b>Consideraremos dos casos:</b> el primer caso será cuando conozcamos explícitamente la función $f(t)$ y tengamos una
