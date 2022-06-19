@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Crash class de Series de Fourier
+title: Crash class sobre Series de Fourier
 ---
 
 <p  align = "justify"> En esta breve, brevísima entrada introduciremos las <b>series de Fourier</b>. La idea
