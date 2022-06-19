@@ -79,7 +79,7 @@ podremos <i>aproximar</i> los valores que tomará nuestra $f(t)$ desconocida en 
 $a_n = \frac{2}{T}\int_{-T/2}^{T/2}f(t)\cos\left(\frac{2n\pi t}{T}\right)dt$ y
 $b_n = \frac{2}{T}\int_{-T/2}^{T/2}f(t)\sin\left(\frac{2n\pi t}{T}\right)dt$ </li>
 <li>Formamos la suma 
-$\frac{a_0}/2+\sum_{n=0}^N a_n \cos\left(\frac{2n\pi t}{T}\right)+ b_n \sin\left(\frac{2n\pi t}{T}\right)$</li>
+$\frac{a_0}{2}+\sum_{n=0}^N a_n \cos\left(\frac{2n\pi t}{T}\right)+ b_n \sin\left(\frac{2n\pi t}{T}\right)$</li>
 </ol>
 
 Ahora escribimos todo lo anterior en Python:
@@ -132,7 +132,7 @@ for i in idx:
 <li>Fijamos $N$, el índice de aproximaciones deseadas</li>
 <li>Para cada $n\leq N$ calculamos las integrales $a_n$ y $b_n$ con el algoritmo np.trapz de SciPy.</li>
 <li>Formamos la suma 
-$\frac{a_0}/2+\sum_{n=0}^N a_n \cos\left(\frac{2n\pi t}{T}\right)+ b_n \sin\left(\frac{2n\pi t}{T}\right)$</li>
+$\frac{a_0}{2}+\sum_{n=0}^N a_n \cos\left(\frac{2n\pi t}{T}\right)+ b_n \sin\left(\frac{2n\pi t}{T}\right)$</li>
 </ol>
 
 Ahora escribimos todo lo anterior en Python:
