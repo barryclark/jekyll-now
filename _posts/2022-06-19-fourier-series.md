@@ -3,11 +3,9 @@ layout: post
 title: Crash class sobre Series de Fourier
 ---
 
-<p  align = "justify"> En esta breve, brevísima entrada introduciremos las <b>series de Fourier</b>. La idea
-es mencionar brevemente qué son, cómo calcularlas, y mostrar un algoritmo en <i>Python</i> para calcularlo.</p>
+<p  align = "justify"> En esta breve, brevísima entrada introduciremos las <b>series de Fourier</b>. La idea es mencionar brevemente qué son, cómo calcularlas, y mostrar un algoritmo en <i>Python</i> para aproximarlas numéricamente.</p>
 
-<p align = "justify"><i>DISCLAIMER: el objetivo de estas "crash classes" es presentar diversos temas con lo mínimo
-indispensable. Claramente, no veremos teoría aquí</i></p>
+<p align = "justify"><i>DISCLAIMER: el objetivo de estas "crash classes" es presentar diversos temas con lo mínimo indispensable. Claramente, no veremos teoría aquí.</i></p>
 
 <font size = "+2"><b> Qué son las series de Fourier</b></font>
 
@@ -19,15 +17,13 @@ con este método es <b>aproximar</b> una función $f(t)$ a través de una suma d
 $f(t)$ definida en el intervalo $\left[-T/2,T/2\right]$ como la suma:</p>
 
 \begin{equation}
-f(t) \~ \frac{a_0}{2}+\sum_{n=0}^\infty a_n \cos\left(\frac{2n\pi t}{T}\right)+ b_n \sin\left(\frac{2n\pi t}{T}\right).
+f(t) \sim \frac{a_0}{2}+\sum_{n=0}^\infty a_n \cos\left(\frac{2n\pi t}{T}\right)+ b_n \sin\left(\frac{2n\pi t}{T}\right).
 \end{equation}
 
-<p align = "justify"> Cualquier función escrita de la manera anterior, se dice que "está desarrollada en serie de Fourier".
-En otras palabras, cuando algún profesor nos pida "desarrollar una función en serie de Fourier", nos está pidiendo
-básicamente que hallemos los coeficientes $a_n$ y $b_n$.</p>
+<p align = "justify"> Cualquier función escrita de la manera anterior, se dice que "se encuentra desarrollada en serie de Fourier".
+En otras palabras, cuando algún profesor nos pida "desarrollar una función en serie de Fourier", básicamente nos está pidiendo que hallemos los coeficientes $a_n$ y $b_n$.</p>
 
-<p align = "justify">En la práctica, puede llegar a ser muy difícil a menudo encontrar los infinitos $a_n$ y $b_n$. En tal caso, sólo los determinaremos
-hasta cierto índice $N$.</p>
+<p align = "justify">En la práctica puede llegar a ser muy difícil encontrar los infinitos $a_n$ y $b_n$. En tal caso, sólo determinaremos numéricamente esos coeficientes hasta cierto índice $N$.</p>
 
 <font size = "+2"><b> Fórmulas para los coeficientes</b></font>
 
@@ -56,16 +52,9 @@ infinitos coeficientes $a_n$ y $b_n$, simplemente los determinaremos hasta ciert
 f(t)\approx\frac{a_0}{2}+\sum_{n=0}^N a_n \cos\left(\frac{2n\pi t}{T}\right)+ b_n \sin\left(\frac{2n\pi t}{T}\right).
 \end{equation}
 
-<p align = "justify"><b>Consideraremos dos casos:</b> el primer caso será cuando conozcamos explícitamente la función $f(t)$ y tengamos una
-expresión explícita para calcularla (caso sencillo). El segundo caso (más interesante) será cuando desconozcamos cuál es la 
-función $f(t)$ y sólo tengamos acceso a serie temporal $s(t)$ de valores de $f$ en ciertos instantes.</p>
+<p align = "justify"><b>Consideraremos dos casos:</b> el primer caso será cuando conozcamos explícitamente la función $f(t)$ y tengamos una expresión explícita para calcularla (caso sencillo). El segundo caso (más interesante) tendrá lugar cuando desconozcamos cuál es la función $f(t)$ y sólo tengamos acceso a serie temporal $s(t)$ de valores de $f$ en ciertos instantes.</p>
 
-<p align = "justify">Para ser más claros, en el primer caso conoceremos que la función es, por ejemplo, $f(t) = t^2$. En este caso, tenemos
-una fórmula explícita para calcular las integrales y hallar la serie de Fourier. El segundo caso, será cuando desconozcamos
-dicha $f(t)$ pero sabemos que dicha función toma valores $\{f(0) = 0, f(1) = 1, f(2) = 4, f(3) = 9\}$. En este caso, lo único
-que conoceremos de la función será la serie temporal $s = \{0,1,4,9\}$ que corresponde a los valores de la función evaluada en los instantes
-$t = \{0,1,2,3\}$. Este último caso, sin duda es el más interesante, porque gracias al desarrollo de Fourier que obtendremos
-podremos <i>aproximar</i> los valores que tomará nuestra $f(t)$ desconocida en todos los valores que querramos dentro del intervalo $\left[-T/2,T/2\right]$.
+<p align = "justify">Para ser más claros, en el primer caso sabremos que la función es, por ejemplo, $f(t) = t^2$. En este caso, tenemos una fórmula explícita para calcular las integrales y hallar la serie de Fourier. El segundo caso tendrá lugar cuando desconozcamos dicha $f(t)$ pero sabiendo que dicha función toma valores $\{f(0) = 0, f(1) = 1, f(2) = 4, f(3) = 9\}$. En este caso, lo único que conoceremos de la función será la serie temporal $s = \{0,1,4,9\}$ que corresponde a los valores de la función evaluada en los instantes $t = \{0,1,2,3\}$. Este último caso sin duda es el más interesante y permite usar el desarollo de Fourier con todo su poder: gracias a la serie de Fourier que obtendremos podremos <i>aproximar</i> los valores que tomará nuestra $f(t)$ desconocida en todos los valores que querramos dentro del intervalo $\left[-T/2,T/2\right]$.
 </p>
 
 
@@ -184,14 +173,14 @@ for i in idx:
   
 <center>
 <figure>
-  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-06-19-fourier-serie/noisy_signal.png?raw=true" alt="Trulli" style="width:70%">
+  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-06-19-fourier-series/noisy_signal.png?raw=true" alt="Trulli" style="width:70%">
 </figure>
 </center>
 
 <p>Aplicando luego el algoritmo desarrollado para el caso de la señal anterior, obtendremos</p>
 <center>
 <figure>
-  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-06-19-fourier-serie/noisy_signal_fourier.png?raw=true" alt="Trulli" style="width:70%">
+  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-06-19-fourier-series/noisy_signal_fourier.png?raw=true" alt="Trulli" style="width:70%">
 </figure>
 </center>
 
@@ -201,7 +190,7 @@ for i in idx:
 
 <center>
 <figure>
-  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-06-19-fourier-serie/error.png?raw=true" alt="Trulli" style="width:70%">
+  <img src="https://github.com/uliseschialva/uliseschialva.github.io/blob/master/_posts/_2022-06-19-fourier-series/error.png?raw=true" alt="Trulli" style="width:70%">
 </figure>
 </center>
 
