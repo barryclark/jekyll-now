@@ -18,9 +18,9 @@ con este método es <b>aproximar</b> una función $f(t)$ a través de una suma d
 <p align = "justify"> En otras palabras, las series de Fourier nos permitirán expresar cualquier función continua
 $f(t)$ definida en el intervalo $\left[-T/2,T/2\right]$ como la suma:</p>
 
-\begin{equation*}
+\begin{equation}
 f(t) \~ \frac{a_0}/2+\sum_{n=0}^\infty a_n \cos\left(\frac{2n\pi t}{T}\right)+ b_n \sin\left(\frac{2n\pi t}{T}\right).
-\end{equation*}
+\end{equation}
 
 <p align = "justify"> Cualquier función escrita de la manera anterior, se dice que "está desarrollada en serie de Fourier".
 En otras palabras, cuando algún profesor nos pida "desarrollar una función en serie de Fourier", nos está pidiendo
@@ -52,9 +52,9 @@ b_n = \frac{2}{T}\int_{-T/2}^{T/2}f(t)\sin\left(\frac{2n\pi t}{T}\right)dt
 Como dijimos anteriormente, al aproximar numéricamente una función a través de su desarrollo de Fourier, no calcularemos
 infinitos coeficientes $a_n$ y $b_n$, simplemente los determinaremos hasta cierto índice $N$. Luego, podremos escribir
 
-\begin{equation*}
+\begin{equation}
 f(t)\approx\frac{a_0}/2+\sum_{n=0}^N a_n \cos\left(\frac{2n\pi t}{T}\right)+ b_n \sin\left(\frac{2n\pi t}{T}\right).
-\end{equation*}
+\end{equation}
 
 <p align = "justify"><b>Consideraremos dos casos:</b> el primer caso será cuando conozcamos explícitamente la función $f(t)$ y tengamos una
 expresión explícita para calcularla (caso sencillo). El segundo caso (más interesante) será cuando desconozcamos cuál es la 
