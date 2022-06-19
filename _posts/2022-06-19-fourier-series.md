@@ -3,7 +3,7 @@ layout: post
 title: Crash class sobre Series de Fourier
 ---
 
-<p  align = "justify"> En esta breve, brevísima entrada introduciremos las <b>series de Fourier</b>. La idea es mencionar brevemente qué son, cómo calcularlas, y mostrar un algoritmo en <i>Python</i> para aproximarlas numéricamente.</p>
+<p  align = "justify"> En esta breve, brevísima entrada introduciremos las <b>series de Fourier</b>. La idea es mencionar brevemente qué son, cómo calcularlas, y mostrar un algoritmo en <i>Python</i> para aproximarlas numéricamente. Todos los códigos que aquí presente, los pueden hallar implementados en este <a href = "https://colab.research.google.com/drive/1mTuM8GVtO_OLxWqiRtA06QTnrF45cLrM?usp=sharing">Colab de Google</a>.</p>
 
 <p align = "justify"><i>DISCLAIMER: el objetivo de estas "crash classes" es presentar diversos temas con lo mínimo indispensable. Claramente, no veremos teoría aquí.</i></p>
 
