@@ -3,7 +3,6 @@ layout: post
 title: "Leader Insights | Charting the Rise of Cloud Native"
 description: "Article by Cheryl Hung reflecting on the rise of Cloud Native"
 image: /images/2022-06-09-leader-insights-charting-the-rise-of-cloud-native.png
-published: false
 tags:
   - Article
   - "2022"
