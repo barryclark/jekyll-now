@@ -3,6 +3,21 @@ layout: post
 title: GIT overview
 ---  
 
+서브모듈 한 번 정리해야 합니다.
+https://guseowhtjs.tistory.com/entry/%EB%AA%A8%EB%93%A0-git-%ED%95%98%EC%9C%84-%EB%AA%A8%EB%93%88%EC%9D%98-%EC%B5%9C%EC%8B%A0-%EB%B2%84%EC%A0%84%EC%9D%84-%EA%B0%80%EC%A0%B8%EC%98%A4%EB%8A%94-%EC%89%AC%EC%9A%B4-%EB%B0%A9%EB%B2%95
+
+
+Git Submodule 삭제 방법
+먼저 git submodule deinit -f 명령어를 통해서 해당 모듈을 deinit 해줍니다.
+
+git submodule deinit -f test_app
+그 다음 .git/modules 폴더에 들어가서 해당 폴더를 삭제합니다.
+
+rm -rf .git/modules/test_app
+마지막으로 git에서 해당 폴더를 제거해주면 됩니다.
+
+git rm -f test_app
+
 ## 깃에서 실수했을때 어떻게 하면 개판내지 않을 수 있을까요?
 [깃에서 실수했을 때 어떻게 하면 개판내지 않을 수 있을까?](https://www.letmecompile.com/git-restore-lost-commits/)
 그렇다면 이러한 내용은 어떻게 배울 수 있는가?

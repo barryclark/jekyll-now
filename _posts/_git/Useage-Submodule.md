@@ -12,3 +12,7 @@ Git의 서브모듈은 이런 문제를 다루는 도구입니다. Git저장소 
 ## 서브모듈 시작하기
 ```& git submodule add <repository> [path]```를 이용해서 서브모듈을 추가할 수 있습니다. path는 생략 가능하며 생략 시 리파지터리 이름과 동일한 디렉토리를 사용합니다.
 
+```
+$ git submodule [--quiet] add [-b <branch>] [-f|--force] [--name <name>] [--reference <repository>] [--] <repository> [<path>]
+
+```
