@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Actor and component
+title: Basic concept
 ---
 
 # 주요 개념
@@ -117,3 +117,10 @@ Tick, 틱이란 액터나 컴포넌트에 일정 간격, 보통 한 프레임에
 * AddTickPrerequisiteActor, AddTickPrerequisiteComponent
 
 ? 액터가 병렬 업데이트일 수가 있다는 말이 먼 말이라냐?
+
+# Player controller
+[플레이어 컨트롤러](https://docs.unrealengine.com/4.27/ko/InteractiveExperiences/Framework/Controller/PlayerController/)
+
+PlayerController 셋업시 그 안에 어떠한 함수성이, 또 Pawn 에는 어떠한 함수성이 있어야 하는지를 고려해야 합니다. **덜 복잡한 입력의 경우 Pawn 에서 모두 처리하는 것이 가능은 합니다. 하지만 게임 클라이언트 하나에 멀티 플레이어라든가, 실행시간에 동적으로 캐릭터를 바꾸는 기능같은 경우, PlayerController 에서 입력 처리를 하는 것이 나을 수도 있습니다.** 이 경우 PlayerController 에서 무엇을 할 지 결정한 다음 ("웅크리기 시작", "점프" 같은) 명령을 Pawn 에 내립니다.
+
+또한 어떤 경우에는 입력 처리나 기타 함수성을 PlayerController 에 넣는 것이 필요할 수도 있습니다. PlayerController 는 게임 내도록 유지되는 반면, Pawn 은 휘발성이기 때문입니다. **예를 들어 데스매치 스타일 게임플레이에서 죽고 리스폰되면서 Pawn 은 달라지더라도 PlayerController 는 똑같을 수 있습니다. 이 경우 점수를 Pawn 에 유지했다면 리셋되겠지만, PlayerController 에 유지한 경우에는 리셋되지 않을 것입니다.**

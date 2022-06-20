@@ -1,10 +1,12 @@
 ---
 layout: post
-title: UMG and UI
+title: HUD and UI
 ---
 
 UE 5.01   
 2022 05 16   
+
+* UMG란 언리얼 모션 그래픽?
 
 ## HUD (Head Up Displays)란
 비디오 게임에서 HUD 또는 상태 표시줄은 정보가 게임 사용자 인터페이스의 일부로 플레이어에게 시각적으로 전달되는 방법입니다.
