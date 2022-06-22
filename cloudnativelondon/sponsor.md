@@ -30,7 +30,7 @@ Each sponsor contributes £600 (no VAT) per event.
 
 #### Can we host an event at our office?
 
-We are looking for a new venue host who can host 50-100 people on a regular basis (first Wednesday of every month). Email organisers@cloudnativelon.com to discuss!
+We aren't currently looking for a new venue, but if you have a venue and can commit to hosting 50-100 people on the first Wednesday of every month, email organisers@cloudnativelon.com to discuss!
 
 #### Can we run an event on a specific day?
 
