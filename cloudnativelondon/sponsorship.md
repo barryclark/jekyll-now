@@ -4,6 +4,6 @@ title:
 description: "Request to sponsor Cloud Native London"
 ---
 
-<iframe class="form" src="https://docs.google.com/forms/d/e/1FAIpQLSdirBvzk7gR6c4FM6BoKWlttTnXOWRNpUx4oTq5Nzfsg8UMDA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<script type="text/javascript" src="https://form.jotform.com/jsform/202446678850362"></script>
 
-Contact cheryl@cloudnativelon.com with any issues.
+Contact organisers@cloudnativelon.com with any issues.
