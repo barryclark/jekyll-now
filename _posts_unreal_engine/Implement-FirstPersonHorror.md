@@ -3,17 +3,8 @@ layout: post
 title: First Person Horror Character
 ---
 
-오늘 목표
-1. v PlayerController에서 인풋 처리 -> Character에서 RPC(remote procedure call)함
-    - 생각해보니 MovementComponent를 이용하기 때문에 RPC를 호출할 필요 없음. 알아서 리플리케이션 해줌.
-    - 기본적인 움직임은 캐릭터에 바인드 하고 그외의 입력은 PlayerController에서 처리하도록 구현해야함.
-2. v Character -> AnimInstance로 애니메이션
-3. v AnimSequence -(Notify)> AnimInstance로 발소리, CameraShake
-    - FootStep 거기에 오버라이드 겁나 잘되어 있음. MI 보고 만들도록 합시다.
-    - 이거는 소리를 들을 수 있어야 만들 수 있다. 사운드 머티리얼과 합치도록 하자. 
-    - 참고를 하자 약간 부족하다.
-
 UE 4.27
+2022 06 18
 
 # 캐릭터 컨트롤러와 캐릭터 플레이어
 스캘레톤은 언리얼의 기본 스켈레톤을 이용합니다.
@@ -27,6 +18,26 @@ UE 4.27
 ## 캐릭터의 무브먼트
 * 언리얼의 PawnCharacterMovement를 이용합니다.
 * 캐릭터의 애니메이션은 CharacterMovement의 상태를 반영합니다.
+
+캐릭터 무브먼트의 최근 지면이 다른 유형으로 업데이트 되었을 떄 태그를 검사하여, 지면과 상호작용을 결정합니다.
+
+// CharacterMovementComponent
+1. CurrentFloor가 없데이트 됨.
+2. Floor가 다르면 Character의 SetBase가 호출됨.
+// ACharacter
+3. SetBase가 호출됨
+4. bNotifyPawn==ture일 때 BaseChange가 호출됨.
+// 델리게이트를 못찾은 관계로 델리게이트를 업데이트함.
+5. BaseChange를 상속받아 추가 구현
+6. 매번 Tag를 찾기좀 그러므로, { ..., MovementTag, Stair }로 구현.
+    - 없거나, 다르면 오류
+
+* CharacterMovementComponent는 다음과 같이 호출됩니다.
+    1. CurrentFloor가 업데이트 됩니다.
+    2. Floor가 다르면 SetBase가 호출됩니다.
+    3. bNotifyPawn == true일 때 BaseChange를 호출합니다.
+    - HorrorPlayerCharacter는 BaseChange를 오버라이드 합니다.
+* Movement 태그의 인덱스를 구한 후, Movement태그 다음을 검사합니다.
 
 ## 활성화된 카메라와 스켈레탈 메시의 Opacity설정
 Material Expression의 Camera Position은 랜더하는 Camera의 월드스페이스를 반환합니다.
@@ -46,31 +57,13 @@ Material Expression의 Camera Position은 랜더하는 Camera의 월드스페이
 
 트레이스를 목적으로 애니메이션 노드를 만들어서, 애니메이션의 중간 본 결과를 이용해서 레이 트레이스 할 수 있습니다. 이를 이용해 Foot IK를 구현할 수 있습니다. 하지만, 다음 번 발의 Foot이 지면에 충돌하는 포지션을 예측 할 수 있다면, 보다 수준높은 애니메이션을 만들 수 있습니다. FootIK를 구현할 때는 힐과 토에 대해서 생각해야 합니다.
 
-## 걷는 경우
-### Foot IK
-Animation Node를 추가하여, IK를 결정.
-힐과 토에 대해서 지면에 고정시킬 수 있다.
-    - 적당히 만들어진 포즈를 자연스럽게 복구하는 패스를 만든다.
-    - 다른 스켈레탈의 본 콜리전 위에 현재 스켈레탈의 본 콜리젼이 적용되는 경우는 포기한다.
-        - 멀티 쓰레드로 애니메이션이 업데이트 되는 상황에서 이를 동기화할 실력이 안된다.
-    - 레이 케스트를 이용한 IK 포지션은 t-1초로 결정된다.
-        - 애니메이션으로 부터 발이 지면에 도달할 위치를 미리 계산하는 걸 만들 자신이 없다.
+AnimSequence에서 RightFoot, LeftFoot의 SKeletonNotify를 발생시킵니다. 이는 애님 인스턴스에서 Character의 FootStrikeDelegate를 호출하는 구조로 작성되어 있습니다.
 
-### Input Axis에 바인딩
+## 카메라 쉐이크
+FootStrikeDelegate에 카메라 쉐이크 메소드가 바인딩되어 있습니다.
 
-1. 카메라 쉐이크 추가
+## 발소리
+FootStrikeDelegate에 발소리를 출력하는 메소드가 바인딩되어 있습니다.
 
-2. 발소리 출력
-* 애니메이션 노티피 이벤트에 연결할 수 있음.
-
-## 뛰는 경우
-### On Landed 이벤트에 바인딩
-1. 땅에 떨어짐
-
-2. 낙하 데미지 추가
-
-3. 카메라 쉐이크 추가
-
-## 지형지물과 상호작용 하는 경우
-
-머리 아픕니다.
+## 공중에서 지면에 충돌할 떄
+지면에서 떨어질 때 OnLanded에 메서드를 바인딩 합니다.

@@ -3,6 +3,161 @@ layout: post
 title: Fragment
 ---
 
+## 뭔지 모르겠음.
+
+https://www.programcreek.com/cpp/?CodeExample=object+initializer 언리얼이 있는거 같은데, 무슨 용도의 사이트인지 모르겠음.
+
+# 컴포넌트
+
+* ActorComponent::RegisterComponent
+    - 액터 컴포넌트에 대한 렌더 프록시와 피직스 스테이트를 생성합니다.
+    - 액터가 스폰이 될때 엑터내에 기본 프로퍼티 내에 컴포넌트가 등록이 되어 있다면 자동으로 등록됩니다.
+    - RegisterComponent 를 직접 호출 할 수도 있지만, 오버헤드가 있는 작업이라 꼭 필요할 때만 해야 합니다.
+
+0. 이미 등록 되었나, 월드 확인 등을 합니다.
+1. OnRegister(), CreateRenderState(), CreatePhysicsState(), 호출을 위한 ExecuteRegisterEvents()를 호출합니다.
+    - 이 단계에서 OnRegister 이벤트의 경우, 각 컴포넌트마다 상황이 다르겠지만 SceneComponent 의 경우 AttachTo 가 실행이 되며 다른 여러 설정을 합니다.
+2. Tick 이벤트를 받기위한 RegisterAllComponentTickFunction을 호출합니다.
+3. Initialize가 안되어 있다면 InitializeComponent()를 호출합니다.
+4. 블루 프린트에 의해 컴포넌트가 생성이 되는 경우, 자식 컴포넌트가 있는 경우라면 자식들 또한 RegisterComponentWithWorld를 호출합니다.
+
+* ActorComponent::UnregisterComponent
+    - 업데이트, 시뮬레이션, 렌더링를 중지 할 수 있습니다.
+
+0. 이미 등록 되었나, 월드 확인 등을 합니다.
+1. 현재 컴포넌트가 UPrimitiveComponent 이라면 IStreamingManager 에 PrimitiveDetached합니다.
+2. Tick 이벤트 해제를 위한 RegisterAllComponentTickFunction를 호출합니다.
+3. OnUnRegister(), DestroyRenderState(), DestroyPhysicsState() 호출을 위한
+ExecuteUnregisterEvents() 호출합니다.
+
+## 생성
+
+* 생성자에서는 CreateDefaultSubobject를 이용하여 컴포넌트를 호출할 수 있습니다.
+    - 이때 컴포넌트는 자동으로 등록됩니다.
+* 런타임에서 컴포넌트를 추가할 경우 (NewObject를 사용할 때) 제대로 스폰되었는지 확인한 후 RegisterComponent를 호출해야 합니다.
+```cpp
+    UActorComponent* Component = NewObject<UActorComponent>(Outer, *Class);
+    if (Component != nullptr)
+    {
+    	Component->RegisterComponent();
+    }
+```
+
+## 오류모음
+
+* C++ missing “,” in Class declaration specifier
+    - UCLASS의 프로퍼티 설정이 잘못되었을 경우 발생할 수 있습니다.
+        1. ClassGroup을 Category로 적은 경우,,,
+        2. editinlinenew를 e-ditinlinenew적은 경우,,,
+
+
+**인터페이스로도 블루프린트 직접 통신이 가능하다.**
+
+
+1. 상자위에 버튼이 있어야 하다.
+2. 계단위에 바위로 길이 막혀 있어야 한다.
+3. 상자위에 버튼에 캐릭터가 닿으면 바위가 폭팔
+    - 바위는 디스트럭터블 메쉬
+    - 폭팔 사운드와 이펙트가 있어야 한다
+    - 적당한 힘으로 파편이 사방으로 날아가야 한다.
+
+포트폴리오를 만들게 되면, 당연히 많은 기능을 넣어서 작업해야함, 회사에서 들어온 이력서와 포트폴리오를 보면 느끼는 건데, 기능을 만들게 엄청 많다. 특정 기능을 많이 못 만들음. 6개 넘어가면 관리가 안됨? 기능별 분류가 안되서, 기능별 분류가 핵심이다.
+
+예를 들어 전구와 버튼을 한 곳에다 만들면, 관리가 안됨. 테스트를 위해서 기능을 임시의 액터에 하나로 하는건 모르겠는데, 아니면 좀 그럼.
+
+프로그램 포트폴리오라 기획적으로 부족한 포트폴리오는 봐줄 수 있음. 문제는 플레이를 시작해도, 뭘 해야할지 모름. 기본적인 게임성을 갖춰야함.
+* 조작가능한 액터는 반드시 알려줘야함.
+* 아니면 튜토리얼로 다 설명을 하고 진행해야함.
+
+지금 만든 것 중에 프로그램적으로 문제가 되는 것,
+Button -> Lamp->Light->Visibility->toggle()
+
+**램프의 동작이 이상하거나, 기능을 수정해야할 때, 램프를 보지, 버튼을 보지 않는다. 근데 기능이 램프에 구현되어 있다!. 이것이 이상하다.**
+
+모든 객체간의 관계는 자기 기능은 자기가 갖고, 그 기능을 어떤식으로 관계를 묶어서 호출할 것인가가 핵심.
+
+바인드 목적으로 사용하는 이벤트는, void에 void로 연결한다. 왜냐하면, 많아지면 너무 복잡해진다.
+
+이벤트에 헝가리안 표기법을 쓰기도 한다.
+
+nullptr일 때 오류처리는 기능적인 문제라 한다. 무조건 연결되어 있는 경우는, 에러를 남겨두는게 맞다.
+
+언리얼에서 전부 실시간 감시로 만드는건 인공지능 말고는 없다.
+
+## 블루프린트 통신은
+
+1. 충돌?
+2. 포인터로
+
+## 캐릭터 무브먼트 시스템 정리할 때 보도록 하자.
+
+[캐릭터 이동 시스템 가이드](https://lifeisforu.tistory.com/304) 음... 음? 정리할 때 참고해서 만들도록 하자.
+
+## 찾아보고 싶은 플러그인들
+
+Plugin-Niagara, Plugin-NiagaraFluid, Plugin-Spine, Plugin-Water, Plugin-TrueSky, Fluid Simulation
+
+## 월드포지션 구하기
+
+``` 
+Distortion = (CameraVector, CameraDirectionVector);
+RelativePosition = CameraVector * CustomDepth.r / Distortion;
+WorldPosition = CameraPosition + RelativePosition;
+```
+
+## 선과 떨어져 있는 거리
+http://www.gisdeveloper.co.kr/?p=697
+
+## 과제?
+
+램프를 두고, Light 컴포넌트를 추가한 다음, (Point Light)
+컨스트럭션에서 색깔이랑 조명 강도를 조절할 수 있도록 작업해라, 흠..
+
+블루프린트 직접 통신, 블루프린트 하우투
+
+## 이벤트 그래프
+이벤트 그래프는 모든 것이 잘 배치되고 플레이 될 떄 들어온다. 실제로 인게임일 때 플레이가 된다.
+
+비쥬얼 스크립팅을 통해서 바꿀 수 있는게 컨스트럭션이다. **왜 굳이 이것을 제공하느냐?** 예로 물건을 배치한 다음에 배치된 물건값에 속성값에 따라 변경될 때 사용된다.
+
+언리얼에서 BP변수는 올 퍼블릭이다. 개념이 조금 다른데, 프라이빗은 자식에서 바꿀 수 있는지에 대해서 의미한다.
+
+## Apex 활용하기
+
+세상에 존재하는 배경 메쉬는 월드 스태틱과 월드 다이나믹 뿐이다.
+
+게임상에서 레그돌 같이 물리는 무게를 0으로 두어 게임플레이에 지장을 안주는게 일반적이다.
+
+언리얼은 Apex 무게 세팅을 조절하는 법을 안보여 준다?
+잘못 터져서 경로를 맊을 까봐, 따라서 Destructible Component/Large Chunk Threshold의 이름이 애매한데 설정을 크게 잡는다. 일단 이거는 이 값보다 작은 것과의 충돌은 무시한다는 것이다.
+
+또한 추가적으로, Apex는 Kill Z가 적용되지 않는다.
+
+액터의 SetLifeSpan은 5초 뒤에 지워짐을 의미함. 문제는 게임상의 아이템이 이런식으로 사라지는 것은 없음. 일반적으로 게임상에서 사라지는 것은 2가지 밖에 없음.
+
+1. 서서히 반투명
+2. 충돌 갖다가 해결하는 방법(땅속으로 사라지는 방법)
+3. 화면에 나갔다가 들어오면 사라지는 방법도 있다?
+
+엔진상의 기능상의 차이점 때문에 의도했던 대로 잘 안되는 상황이 반드시 생김.
+
+예로 디스트럭터블 메쉬의 콜리전을 바꿔도 적용이 안됨. 왜? 디스트럭터블 콜리전은 레이어로 구성되어 있음. 0번 레이어의 콜리전을 바꾸게 됨.
+
+이를 딜레이로 해결할 수 있음. 단 절대 주의해야 할 것이, 연출용에만 쓰고, 로직에는 절대 쓰지말것.
+
+딜레이 이후로 다른 시간대의 변수를 절대 끌어다 쓰지마라,
+
+뭐.. 몬스터가 계속 스포되서 쌓이는 경우를 제외하고는 남겨놔도 뭐,, 상관없다.
+
+## 웹서비스 플러그인
+[Web Browser Widget](https://unrealcommunity.wiki/web-browser-widget-13f406)
+
+? 이때까지 뭐한거지? 언리얼 엔진에서 원하는 플러그인을 쉽게 찾는 방법 없나?
+
+할수있는 목록
+
+* 유튜브 재생하기
+
 ## 언리얼 직렬화에 대해서
 https://mm5-gnap.tistory.com/359
 
@@ -22,6 +177,12 @@ Apex Destruction을 사용하네. 원하는 물체를 부분적으로 부수는�
 자연스러운 물체의 디스트럭션을 보여줄려면, 물체의 모양대로 충돌을 해야한다?!?
 
 두 원스를 추가해서 ApplyDamage를 자연스럽게 할 수 있다?
+
+프렉처 세부 설정 건들이기 보다는, 기본설정으로 부수고, RootCompone
+
+이벤트 발생하는 것들은 일부로 구별하게 하기는 한다.
+
+허공에 명령내리는건 실질적으로 액터한테 명령 내리는 것과 같다.
 
 ## 네이밍
 
@@ -135,21 +296,7 @@ enum class ETestEnum : uint8
 };
 ```
 
-
-## ??
-액터 생성
-스테틱 메쉬 컴포넌트 추가
-모양을 바위 선택
-히트 이벤트 추가
-printstring를 이용 글자 출력
-
 어쨋든 지금 이대로 게임에 적용을 하지 못함. 이유가 뭘까? 충돌할 때 캐릭터가 끊김? 끊기면 안되는 경우, 이는 플레이에 지장을 준것이다.
-
-Hit는 물리적인 반발이 일어났을 때 
-
-모든 게임?은 오버랩으로 이벤트를 구현함
-
-**구글에 Unreal 충돌이라고 검색한다. 콜리전 개요를 읽는다? 숙지해야 한다. 재밌는게 설명하고 그림하고 틀린게 있음. (한군데 있음)**
 
 ## 모든게임의 90%이상의 이벤트는 충돌로 되어 있음.
 

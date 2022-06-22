@@ -3,6 +3,10 @@ layout: post
 title: Animation Fragment
 ---
 
+
+* 블렌딩 포즈를 메시 포즈랑 비슷하게 만들어야합니다.
+	- A Pose보다 T Pose가 더 맞추기 쉽다고 느껴지므로 언리얼의 리타겟팅 포즈를 Mixamo로 맞춥니다.
+
 ## Fook IK와 prediction Foot position
 * Foot은 서있거나 이동할 때 바닥을 지지해주는 부분. 기준은 허리 아래에 있는 것을 의미함. 트레이스를 이용하여 Heel과 Toe의 위치를 조정하는 것은 울퉁불퉁하거나 경사가 있는 지면, 서로 다른 위치에 있는 지형에 대해서 자연스러운 애니메이션을 제공함.
 	- Fullbody(Jacobian), LimbIK, FABRIK, CCDIK(실험적) 등의 IK가 있음.
