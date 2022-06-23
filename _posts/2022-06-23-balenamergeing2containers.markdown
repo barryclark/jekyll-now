@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Balena - mergeing 2 containers"
+title: "Balena - merging 2 containers"
 date: "2022-06-23 15:44:11 -0300"
 ---
 
