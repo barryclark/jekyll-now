@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Balena_mergeing_2_containers"
+title: "Balena - mergeing 2 containers"
 date: "2022-06-23 15:44:11 -0300"
 ---
 # Merge two docker project together! - PiHole and Nextcloud
@@ -16,5 +16,3 @@ Goal of this project is to merge two Docker projects and create a multi containe
 # project
 
 [Pihole and Nextcloud](https://github.com/PKHarsimran/balena-nextcloud-Pihole)
-
-  
