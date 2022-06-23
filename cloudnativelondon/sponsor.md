@@ -7,7 +7,7 @@ redirect_from: /cnl-sponsor
 
 You’re interested in sponsoring the ​Cloud Native London meetup​? Awesome! It’s a great way to support the Kubernetes and cloud native community, and increase awareness.
 
-Each event has 200-300 attendees across physical events or YouTube + Twitch livestreams.
+Each event has 200-300 attendees across in-person events, YouTube and Twitch.
 
 ### Benefits ([Download as PDF](/cloudnativelondon/sponsorshippdf))
 
