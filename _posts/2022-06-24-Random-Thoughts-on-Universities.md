@@ -5,7 +5,7 @@ title: What A Univeristy Should Do
 
 
 Here is a **copy** from the email I received from UC Berkeley Chancellor:
-
+```
 Dear campus community,
 
 Today’s decision by the U.S. Supreme Court to effectively overturn the landmark 1973 Roe v. Wade decision which legalized abortion, represents, for me, a devastating setback for American women, a turning back of the clock to a time when women were not at liberty to control their bodies or their lives. I write today to share my personal opinion and reaction. While our university, as an institution, must maintain neutrality I am compelled by the magnitude and meaning of today’s decision on American women and their families to share my own perspectives. 
@@ -26,6 +26,7 @@ Sincerely,
  
 Carol T. Christ
 Chancellor
+```
 
 
 I am always surprised at how the USA universties' teachers, staff are able to write such visceral words. They are very moving. This is how we should run our highest academic intitutions, setting the role model for future leaders with the becon of humanity.
