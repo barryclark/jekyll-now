@@ -1,4 +1,7 @@
-
+---
+layout: post
+title: What A Univeristy Should Do
+---
 
 
 Here is a **copy** from the email I received from UC Berkeley Chancellor:
