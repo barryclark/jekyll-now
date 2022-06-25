@@ -10,7 +10,15 @@ Entropy is primarily a made-up word and comes from the ancient Greek ἐντρο
 
 > The total entropy in an isolated system can never become smaller, i.e. it can only become larger or remain the same. A system can no longer change when the entropy has reached its maximum value, the system is then in equilibrium. 
 
-Mathematically, this can be described as a rule of thumb by `S = Q/T` - where Q represents the amount of heat in a reversible process and T stands for the temperature. In concrete terms, the formula can therefore be translated as "entropy is the amount of heat that is released to the environment as temperature".
+Mathematically, this can be described as a rule of thumb by `∆S = Q/T` - where Q represents the amount of heat in a reversible process and T stands for the temperature. In concrete terms, the equation indicates that, if a certain number of joules of heat energy (Q) is transferred into or out of a system at constant temperature (i.e. the transfer does not result in a temperature change to the system), then all of the heat exchanged must have gone to change the entropy of the system (S). The rationale for this assertion s as follows:
+
+1. Temperature is a measure of the average thermal energy of the atoms and molecules in a system - that is, the energy stored as kinetic and potential energy in molecular translational, rotational and vibrational motions.
+2. If adding energy to a system by applying heat does not cause an increase in temperature, then this energy cannot have gone to increase the energy stored in these molecular motions. (Vice versa for the case where heat energy is removed.)
+3. 
+So where did the added energy go, if not to increasing the dynamic motions of the atoms and molecules of the system? It has instead gone to increase the entropy of the system - that is, to increasing the number of configurational microstates occupied by the atoms of the system.
+
+A good example of this behavior is provided by a phase transition, such as the melting of ice. If a glass of ice-water is left in a warm room, it will gradually absorb heat from the room leading the ice to slowly melt. A thermometer measuring the temperature of the ice-water will not record an increase in temperature during this process; under standard conditions, the temperature will remain at 0 °C as long as there is at least some ice left. The heat that is absorbed from the room goes to achieve the release of water molecules from the ice crystal, allowing them to move more freely as liquid water. The average thermal energy of the water molecules in ice at 0 °C or in water at 0 °C is identical, but in the solid state this energy is manifested as vibrational motions of atoms, whereas in liquid water the energy is stored in a combination of bond vibrations and molecular translations, rotations and librations. The liquid water has much more entropy, however, and thus represents a higher energy state of the system. The process of melting has thus involved a transfer of heat from the surroundings (the room) to the system (the ice water) without changing the temperature of the system. All of the energy transferred to the system as heat has gone directly to increase the entropy of the system.
+
 
 <br><br>
 <p align="centre">
