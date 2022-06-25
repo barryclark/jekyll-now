@@ -35,7 +35,7 @@ Based on this thesis, an organization can be viewed as an isolated system. The s
 * History - from legacy system to historical roles and artifacts 
 * much more ...
 
-However, most of the points that affect the entropy of the system here have a different cause. Google expresses this on their SRE (Site Reliability Engineering) website) by the term toil:
+However, most of the points that affect the entropy of the system here have a different cause. Google expresses this on their SRE (Site Reliability Engineering) website by the term toil:
 
 > "So what is toil? Toil is the kind of work tied to running a production service that tends to be manual, repetitive, automatable, tactical, devoid of enduring value, and that scales linearly as a service grows. Not every task deemed toil has all these attributes, but the more closely work matches one or more of the following descriptions, the more likely it is to be toil:"
 - [Google](https://landing.google.com/sre/sre-book/chapters/eliminating-toil/)
