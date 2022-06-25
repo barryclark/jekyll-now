@@ -46,7 +46,7 @@ John Willis and Damon Edwards developed the acronym [CAMS](https://itrevolution.
 
 Jez Humble's extension here adds another success factor to the fight against entropy. Lean consists of the [five key principles of Lean](https://theleanway.net/The-Five-Principles-of-Lean). The Lean IT movement seeks to extend these concepts to the world of software development. The most important texts are [Lean Software Development by Tom & Mary Poppendieck](h[ttps://www.amazon.co.uk/Lean-Software-Development-Agile-Toolkit/dp/0321150783](https://www.oreilly.com/library/view/lean-software-development/0321150783/)) and [Lean Enterprise by Humble, Molesky and O'Reilly](https://www.oreilly.com/library/view/lean-enterprise/9781491946527/). Lean aims at FLOW - the smooth transition of work from one "work centre" to the next in the shortest possible time. Ideally with as few queues/buffers as possible - most of the organizations fail here. 
 
-## `M`for measuring toil to entropy
+## `M` for measuring toil to derive entropy
 
 Once you’ve identified the work being done, how do you determine if it’s too much? It’s pretty simple: Regularly (we find monthly or quarterly to be a good interval), Google computes an estimate of how much time is being spent on various types of work. Look for patterns or trends tickets, surveys, and on-call incident response, and prioritize based on the aggregate human time spent. The  Google SRE handbook aims to keep toil below 50% of each SRE’s time, to preserve the other 50% for engineering project work. If the estimates show the 50% toil threshold is exceeded, **Google plans work explicitly with the goal of reducing that number and getting the work balanced back into a healthy state**.
 
