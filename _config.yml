@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Steven's Blog
+name: Learning on Command
 
 # Short bio or description (displayed in the header)
-description: A developer from San Francisco
+description: The blog by Steven Au
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://avatars.githubusercontent.com/u/25945183?v=4
 
 #
 # Flags below are optional
