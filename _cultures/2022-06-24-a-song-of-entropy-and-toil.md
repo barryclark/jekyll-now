@@ -20,14 +20,14 @@ Mathematically, this can be described as a rule of thumb by `S = Q/T` - where Q 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Aha! There is no Agile Transformation. It is just a constant fight against entropy that keeps organizations away from functioning optimal. And a mean to do that most efficiently is the Improvement Kata. <a href="https://twitter.com/RealMikeRother?ref_src=twsrc%5Etfw">@RealMikeRother</a> <a href="https://twitter.com/jonsmart?ref_src=twsrc%5Etfw">@jonsmart</a></p>&mdash; Lars (@bob5ec) <a href="https://twitter.com/bob5ec/status/1537897257613217793?ref_src=twsrc%5Etfw">June 17, 2022</a></blockquote> 
 
 
-Basierend auf dieser These kann eine Organisation als isoliertes System angesehen werden. Das System als solches wird Verlangsamt durch diverse Faktoren wie: 
-* Konstanter Wandel (jeder möchte Veränderung - keiner sich selbst jedoch verändern)
-* Kommunikation - je mehr Abhängigkeiten zwischen den Komponenten bestehen, desto träger wird das System (Boards, Gremien, Teamübergreifende- und Teaminterne Kommunikation, ...)
-* Prozess Dschungel und starre Traditionen
-* Historie - Vom Altsystem bis zu historischen Rollen und Artefakte 
-* vieles mehr ...
+Based on this thesis, an organization can be viewed as an isolated system. The system as such is slowed down by various factors like: 
+* Constant change (everyone wants change - but no one wants to change themselves).
+* Communication - the more interdependencies there are between the components, the more sluggish the system becomes (boards, committees, inter-team and intra-team communication, ...)
+* Process jungle and rigid traditions
+* History - from legacy system to historical roles and artifacts 
+* much more ...
 
-Die meisten Punkte die hier auf die Entropie des Systems einwirken, haben jedoch eine andere Ursache. Google expresses this on their SRE (Site Reliability Engineering) website) by the term toil:
+However, most of the points that affect the entropy of the system here have a different cause. Google expresses this on their SRE (Site Reliability Engineering) website) by the term toil:
 
 > "So what is toil? Toil is the kind of work tied to running a production service that tends to be manual, repetitive, automatable, tactical, devoid of enduring value, and that scales linearly as a service grows. Not every task deemed toil has all these attributes, but the more closely work matches one or more of the following descriptions, the more likely it is to be toil:"
 - [Google](https://landing.google.com/sre/sre-book/chapters/eliminating-toil/)
@@ -43,4 +43,5 @@ Automation is the antidote to toil - automating low-value work leaves more time 
 John Willis and Damon Edwards developed the acronym [CAMS](https://itrevolution.com/devops-culture-part-1/) in 2010, where the `A` stands for automation and, as we have already learned, provides a good answer to Toil - but how do you defeat entropy? Jez Humble provides an idea with the extension of the acronym to [C.A.L.M.S](https://benjitrapp.github.io/cultures/2022-03-30-CALMS-devops/). What does the `L` mean? 
 
 ## `L` stands for Lean
-Jez Humble's extension here adds another success factor to the fight against entropy. Lean consists of the [five key principles of Lean](https://theleanway.net/The-Five-Principles-of-Lean). The Lean IT movement seeks to extend these concepts to the world of software development. The most important texts are [Lean Software Development by Tom & Mary Poppendieck](h[ttps://www.amazon.co.uk/Lean-Software-Development-Agile-Toolkit/dp/0321150783](https://www.oreilly.com/library/view/lean-software-development/0321150783/)) and [Lean Enterprise by Humble, Molesky and O'Reilly](https://www.oreilly.com/library/view/lean-enterprise/9781491946527/). Lean aims at FLOW - the smooth transition of work from one "work centre" to the next in the shortest possible time. Ideally with as few queues/buffers as possible. 
+
+Jez Humble's extension here adds another success factor to the fight against entropy. Lean consists of the [five key principles of Lean](https://theleanway.net/The-Five-Principles-of-Lean). The Lean IT movement seeks to extend these concepts to the world of software development. The most important texts are [Lean Software Development by Tom & Mary Poppendieck](h[ttps://www.amazon.co.uk/Lean-Software-Development-Agile-Toolkit/dp/0321150783](https://www.oreilly.com/library/view/lean-software-development/0321150783/)) and [Lean Enterprise by Humble, Molesky and O'Reilly](https://www.oreilly.com/library/view/lean-enterprise/9781491946527/). Lean aims at FLOW - the smooth transition of work from one "work centre" to the next in the shortest possible time. Ideally with as few queues/buffers as possible - most of the organizations fail here. 
