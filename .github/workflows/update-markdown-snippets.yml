@@ -1,0 +1,22 @@
+name: update-markdown-snippets
+on:
+  push:
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run MarkdownSnippets
+      run: |
+        dotnet tool install MarkdownSnippets.Tool --global
+        mdsnippets ${GITHUB_WORKSPACE}
+      shell: bash
+    - name: Push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        remote="https://${GITHUB_ACTOR}:${{secrets.GITHUB_TOKEN}}@github.com/${GITHUB_REPOSITORY}.git"
+        branch="${GITHUB_REF:11}"
+        git commit -m "d Run mdsnippets" -a  || echo "nothing to commit"
+        git push "${remote}" ${branch} || echo "nothing to push"
+      shell: bash

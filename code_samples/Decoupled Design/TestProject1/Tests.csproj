@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ApprovalTests" Version="5.7.3" />
+    <PackageReference Include="FluentAssertions" Version="6.7.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.8" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.8" />
+    <PackageReference Include="coverlet.collector" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\1. Direct Call\Direct Call.csproj" />
+    <ProjectReference Include="..\Dependency Injection\Dependency Injection.csproj" />
+    <ProjectReference Include="..\Dependency Inversion\Dependency Inversion.csproj" />
+    <ProjectReference Include="..\Event Based with Configure\Event Based with Configure.csproj" />
+    <ProjectReference Include="..\Event Based\Event Based.csproj" />
+  </ItemGroup>
+
+</Project>

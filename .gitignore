@@ -8,3 +8,8 @@ Gemfile
 Gemfile.lock
 node_modules
 package.json
+
+.vs/
+bin/
+obj/
+*.user
