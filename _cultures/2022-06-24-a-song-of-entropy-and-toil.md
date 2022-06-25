@@ -8,7 +8,7 @@ An unofficial appendix of the main laws of thermodynamics reads: `Thou shalt not
 
 Entropy is primarily a made-up word and comes from the ancient Greek ἐντροπία entropía. This can be roughly translated as "in turn". Entropy describes a fundamental thermodynamic state and is described by the second law of thermodynamics: 
 
-> The total entropy in an isolated system can never become smaller, i.e. it can only become larger or remain the same. A system can no longer change when the entropy has reached its maximum value, the system is then in equilibrium.
+> The total entropy in an isolated system can never become smaller, i.e. it can only become larger or remain the same. A system can no longer change when the entropy has reached its maximum value, the system is then in equilibrium. 
 
 Mathematically, this can be described as a rule of thumb by `S = Q/T` - where Q represents the amount of heat in a reversible process and T stands for the temperature. In concrete terms, the formula can therefore be translated as "entropy is the amount of heat that is released to the environment as temperature".
 
@@ -45,3 +45,9 @@ John Willis and Damon Edwards developed the acronym [CAMS](https://itrevolution.
 ## `L` stands for Lean
 
 Jez Humble's extension here adds another success factor to the fight against entropy. Lean consists of the [five key principles of Lean](https://theleanway.net/The-Five-Principles-of-Lean). The Lean IT movement seeks to extend these concepts to the world of software development. The most important texts are [Lean Software Development by Tom & Mary Poppendieck](h[ttps://www.amazon.co.uk/Lean-Software-Development-Agile-Toolkit/dp/0321150783](https://www.oreilly.com/library/view/lean-software-development/0321150783/)) and [Lean Enterprise by Humble, Molesky and O'Reilly](https://www.oreilly.com/library/view/lean-enterprise/9781491946527/). Lean aims at FLOW - the smooth transition of work from one "work centre" to the next in the shortest possible time. Ideally with as few queues/buffers as possible - most of the organizations fail here. 
+
+## `M`for measuring toil to entropy
+
+Once you’ve identified the work being done, how do you determine if it’s too much? It’s pretty simple: Regularly (we find monthly or quarterly to be a good interval), Google computes an estimate of how much time is being spent on various types of work. Look for patterns or trends tickets, surveys, and on-call incident response, and prioritize based on the aggregate human time spent. The  Google SRE handbook aims to keep toil below 50% of each SRE’s time, to preserve the other 50% for engineering project work. If the estimates show the 50% toil threshold is exceeded, **Google plans work explicitly with the goal of reducing that number and getting the work balanced back into a healthy state**.
+
+If we think back to the entropy definition - this exactly describes entropy and the attempt to reduce entropy to speed up the system. By making it measurable we have now an option to make entropy visible within a organization as a closed system. 
