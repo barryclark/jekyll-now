@@ -314,6 +314,10 @@ We can test each part in isolation. Everything that happens during Running is al
 
 The less-coupled options described in this article are much less useful if the components involved need to be changed together: if changing one means you (probably) need to change the other and (definitely) need to test them together to ensure that they cooperate correctly. One way of describing this is that the features of the system are "emergent phenomena". In that case, the so-called decoupling strategies described here make the system worse - it becomes *harder* to modify. Finding the correct "cleaving points" is really important, but outside of the scope of this article. We'll come back to that another time.
 
+# Next steps
+
+I'd like to see the same patterns compared side-by-side in other languages. Maybe there are elegant implementations in other languages that don't work in C#. And if you don't know C#, this would be easier to understand in a language you do know. I tried to do this in Java (which I don't know well) and the result was not good - I hope you can do better.
+
 # Footnote: events
 
 *I mean an "event" in the general sense (this code tells the ether that something has happened, but doesn't know who is listening, if anyone), not in the [C# sense](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/event).
