@@ -17,7 +17,7 @@ Mathematically, this can be described as a rule of thumb by `∆S = Q/T` - where
 
 So where did the added energy go, if not to increasing the dynamic motions of the atoms and molecules of the system? It has instead gone to increase the entropy of the system - that is, to increasing the number of configurational microstates occupied by the atoms of the system.
 
-A good example of this behavior is provided by a phase transition, such as the melting of ice. If a glass of ice-water is left in a warm room, it will gradually absorb heat from the room leading the ice to slowly melt. A thermometer measuring the temperature of the ice-water will not record an increase in temperature during this process; under standard conditions, the temperature will remain at 0 °C as long as there is at least some ice left. The heat that is absorbed from the room goes to achieve the release of water molecules from the ice crystal, allowing them to move more freely as liquid water. The average thermal energy of the water molecules in ice at 0 °C or in water at 0 °C is identical, but in the solid state this energy is manifested as vibrational motions of atoms, whereas in liquid water the energy is stored in a combination of bond vibrations and molecular translations, rotations and librations. The liquid water has much more entropy, however, and thus represents a higher energy state of the system. The process of melting has thus involved a transfer of heat from the surroundings (the room) to the system (the ice water) without changing the temperature of the system. All of the energy transferred to the system as heat has gone directly to increase the entropy of the system.
+A good example of this behavior is provided by a phase transition, such as the melting of ice. If a glass of ice-water is left in a warm room, it will gradually absorb heat from the room leading the ice to slowly melt. A thermometer measuring the temperature of the ice-water will not record an increase in temperature during this process; under standard conditions, the temperature will remain at 0 °C as long as there is at least some ice left. The heat that is absorbed from the room goes to achieve the release of water molecules from the ice crystal, allowing them to move more freely as liquid water. The average thermal energy of the water molecules in ice at 0 °C or in water at 0 °C is identical, but in the solid state this energy is manifested as vibrational motions of atoms, whereas in liquid water the energy is stored in a combination of bond vibrations and molecular translations, rotations and liberations. The liquid water has much more entropy, however, and thus represents a higher energy state of the system. The process of melting has thus involved a transfer of heat from the surroundings (the room) to the system (the ice water) without changing the temperature of the system. All of the energy transferred to the system as heat has gone directly to increase the entropy of the system.
 
 
 <br><br>
@@ -62,11 +62,37 @@ If we think back to the entropy definition - this exactly describes entropy and 
 
 ## The Duct Tape Engineers of Westeros
 
-Let's come back to the Automation aspect and the entropy connected to it. Most engineers are tending that they need to do their changes fast and don't have the time for testing or even refactoring. In the end they end up with a sloppy written mono-class that is very tight coupled and highly violates the `Seperation of Concerns` aspect of SOLID. If the the Product Owner once changes his mind again and one or multiple bugs got detected we are adding another layer of duct tape. But why is being a duct tape engineer so glorified? One big aspect is getting the burden and preasure away. Like in old 80es TV series a Duct Tape Engineer mutates to a mixture of MacGuyver and the A-Team - hastly rushing into mixing up Duct Tape with scrap metal parts and tinkering a post apocalytic looking armed vehicle to defeat the issue. Troubleshoot and fixing issues like a hero get's glorified by the manageent and forster this. 
+Let's come back to the Automation aspect and the entropy connected to it. Most engineers are tending that they need to do their changes fast and don't have the time for testing or even refactoring. In the end they end up with a sloppy written mono-class that is very tight coupled and highly violates the `Separation of Concerns` aspect of [SOLID](https://github.com/BenjiTrapp/SOLID-Coding-Dojo). If the the Product Owner once changes his mind again and one or multiple bugs got detected, we are adding another layer of duct tape on top of it.
+
+But why is being a duct tape engineer so glorified? One big aspect is getting the burden and pressure away. Like in old 80es TV series a Duct Tape Engineer mutates to a mixture of MacGuyver and the A-Team - hastily rushing into mixing up Duct Tape with scrap metal parts and tinkering a post apocalyptic looking armed vehicle to defeat the issue in his way. Troubleshoot and fixing issues like a hero get's glorified by the management and forster this behavior.
 
 <p align="centre">
-<img width=600 src="/images/safety-car.gif">
+<img width=400 src="/images/safety-car.gif">
 </p>
 
-But wait - what happens after the show ends? The glued together parts are falling apart, the scrap parts are getting rusty and the vehicle is suffering from corrosion. Our software will act the same and in total slow us out. What are valid ways to get out of this?
+But wait - what happens after the show ends? The glued together parts are falling apart, the scrap parts are getting rusty and the vehicle is suffering from corrosion. Our software will act the same and in total slow us out. Working like this will produce toil and entropy on a very large scale on multiple layers:
+
+* The software becomes unmaintainable
+* A high increase of KPIs like "Change-Failure-Rate" or outage related KPIs like "Mean-Time-Between-Failure" connected with a very low "Mean-Time-To-Repair" should be a warning signal
+* Crappy built software has also impact on the health of the development team - it literally makes them sick
+* The overall reliability can be hit even across the team boundaries and result in a non-resilient overall software product
+* Reduce the efficiency of your agility or even crash it
+* Today's bug is tomorrows security incident if things turn out very bad. Quality first, Security second!
+
+This will in total increase the entropy and toil hidden in the background. Who likes to talk about bad crafted things? Who constantly want to make technical dept visible - and get's the Ok to remove it?
+
+### What are valid ways to get out of this?
+
+First at all - you have to change aspects in your team setup. Reduce the workload, postpone other activities and spend some time to refactor it. Some slack-time to [train "Red-Green-Refactoring"](https://github.com/BenjiTrapp/TDD-Coding-Dojo) cycles will speed you even more up and is time spent for something good and valuable.
+
+So how we can achieve this?
+<p align="centre">
+<img width=400 src="/images/refactoring.png">
+</p>
+
+1. Practice the [Boyscout rule](https://biratkirat.medium.com/step-8-the-boy-scout-rule-robert-c-martin-uncle-bob-9ac839778385) - "Always leave the code you're editing a little better then you found it" - Robert C. Martin (Uncle Bob)
+2. Constant refactor your code and ask in Retrospectives if someone kept ignoring it and what were the reasons. Tackle this by transparency and in a collaborative manner
+3. Price in refactoring in your regular estimations for user stories. There is no excuse in not doing it!
+
+Is this enough? In short NO - we didn't even tackle the root cause of this: The glorification of Duct Tape Engineering by the Management. If we can't make this visible to the management and get a real buy in nothing will change and end up in the establishment of a cargo cult.
 
