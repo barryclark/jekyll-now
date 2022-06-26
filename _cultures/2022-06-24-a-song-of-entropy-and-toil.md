@@ -59,3 +59,14 @@ Jez Humble's extension here adds another success factor to the fight against ent
 Once you’ve identified the work being done, how do you determine if it’s too much? It’s pretty simple: Regularly (monthly or quarterly is a good interval), Google computes an estimate of how much time is being spent on various types of work. Look for patterns or trends tickets, surveys, and on-call incident response, and prioritize based on the aggregate human time spent. The  Google SRE handbook aims to keep toil below 50% of each SRE’s time, to preserve the other 50% for engineering project work. If the estimates show the 50% toil threshold is exceeded, **Google plans work explicitly with the goal of reducing that number and getting the work balanced back into a healthy state**.
 
 If we think back to the entropy definition - this exactly describes entropy and the attempt to reduce entropy to speed up the system. By making it measurable we have now an option to make entropy visible within a organization as an isolated system. 
+
+## The Duct Tape Engineers of Westeros
+
+Let's come back to the Automation aspect and the entropy connected to it. Most engineers are tending that they need to do their changes fast and don't have the time for testing or even refactoring. In the end they end up with a sloppy written mono-class that is very tight coupled and highly violates the `Seperation of Concerns` aspect of SOLID. If the the Product Owner once changes his mind again and one or multiple bugs got detected we are adding another layer of duct tape. But why is being a duct tape engineer so glorified? One big aspect is getting the burden and preasure away. Like in old 80es TV series a Duct Tape Engineer mutates to a mixture of MacGuyver and the A-Team - hastly rushing into mixing up Duct Tape with scrap metal parts and tinkering a post apocalytic looking armed vehicle to defeat the issue. Troubleshoot and fixing issues like a hero get's glorified by the manageent and forster this. 
+
+<p align="centre">
+<img width=600 src="/images/safety-car.gif">
+</p>
+
+But wait - what happens after the show ends? The glued together parts are falling apart, the scrap parts are getting rusty and the vehicle is suffering from corrosion. Our software will act the same and in total slow us out. What are valid ways to get out of this?
+
