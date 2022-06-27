@@ -15,10 +15,24 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Flags below are optional
 #
 
+pagination: 10
+# 작성한 모든 post를 하나의 페이지에 열거할 수 없으니
+# pagination이 필요하고 몇개의 post를 하나의 page에서 보여줄 건지를 설정.
+
+title: Slow-Starter
+
+description: 코딩공부장
+
+cover: ""
+
+# Social info
+navigation: True
+# Navigation bar link를 보여줄건지 여부
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: leejongho9803@gmail.com
   facebook:
   flickr:
   github: JH-TT
@@ -26,7 +40,7 @@ footer-links:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
