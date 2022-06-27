@@ -88,7 +88,7 @@ First at all - you have to change aspects in your team setup. Reduce the workloa
 
 So how we can achieve this?
 <p align="centre">
-<img width=400 src="/images/refactoring.png">
+<img src="/images/refactoring.png">
 </p>
 
 1. Practice the [Boyscout rule](https://biratkirat.medium.com/step-8-the-boy-scout-rule-robert-c-martin-uncle-bob-9ac839778385) - "Always leave the code you're editing a little better then you found it" - Robert C. Martin (Uncle Bob)
