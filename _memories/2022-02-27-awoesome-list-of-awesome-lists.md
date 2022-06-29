@@ -55,6 +55,7 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
 * [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources)
 
+
 ## Read Teaming
 * [RistBS/Awesome-RedTeam-Cheatsheet](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet)
 
@@ -65,6 +66,7 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [danielmiessler/SecLists](https://github.com/danielmiessler/SecLists)
 * [payloadbox/command-injection-payload-list](https://github.com/payloadbox/command-injection-payload-list)
 * [payloadbox/xss-payload-list](https://github.com/payloadbox/xss-payload-list)
+* [edoardottt/awesome-hacker-search-engines](https://github.com/edoardottt/awesome-hacker-search-engines)
 
 ## Threat Modeling
 
