@@ -1,0 +1,76 @@
+// Global styling for this template
+body {
+    font-size: 20px;
+    color: $gray-900;
+}
+
+p {
+    line-height: 1.5;
+    margin: 30px 0;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
+}
+
+a {
+    color: $gray-900;
+
+    &:focus,
+    &:hover {
+        color: $primary;
+    }
+}
+
+blockquote {
+    font-style: italic;
+    color: $gray-600;
+}
+
+.section-heading {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.caption {
+    font-size: 14px;
+    font-style: italic;
+    display: block;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+::-moz-selection {
+    color: $white;
+    background: $primary;
+    text-shadow: none;
+}
+
+::selection {
+    color: $white;
+    background: $primary;
+    text-shadow: none;
+}
+
+img::selection {
+    color: $white;
+    background: transparent;
+}
+
+img::-moz-selection {
+    color: $white;
+    background: transparent;
+}

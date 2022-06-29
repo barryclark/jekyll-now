@@ -1,0 +1,37 @@
+{
+    "title": "Clean Blog Jekyll",
+    "name": "startbootstrap-clean-blog-jekyll",
+    "version": "4.0.12",
+    "description": "Clean Blog is a Medium inspired blog theme for Bootstrap.",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://startbootstrap.com/themes/clean-blog-jekyll",
+    "bugs": {
+        "url": "https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll/issues",
+        "email": "feedback@startbootstrap.com"
+    },
+    "license": "MIT",
+    "author": "Start Bootstrap",
+    "contributors": [
+        "David Miller (http://davidmiller.io/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll.git"
+    },
+    "dependencies": {
+        "bootstrap": "4.6.0",
+        "font-awesome": "4.7.0",
+        "jquery": "3.6.0",
+        "startbootstrap-clean-blog": "5.1.0"
+    },
+    "devDependencies": {
+        "browser-sync": "2.26.14"
+    }
+}
