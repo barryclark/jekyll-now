@@ -9,4 +9,4 @@ last_modefied_at: 2022-06-29
 
 ![altㅋ]({{site.url}}.images.railroad.jpg)
 
-images upload test!
+이미지업로드~
