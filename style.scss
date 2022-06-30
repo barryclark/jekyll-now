@@ -7,6 +7,7 @@
 
 @import "reset";
 @import "variables";
+@import "mcds";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -69,11 +70,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $carnegie-red;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $carnegie-red;
   }
 }
 
@@ -166,11 +167,12 @@ img {
 }
 
 .site-avatar {
-  width: 120px;
+  width: 150px;
   margin-right: 15px;
 
   @include mobile {
     margin: 0 auto;
+    width: 120px;
   }
 
   img {
@@ -222,7 +224,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $carnegie-red;
     }
   }
 }
