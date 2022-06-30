@@ -1,10 +1,12 @@
 ---
-title: "이미지 업로드"
-excerpt: "테스트"
+title: "test 문서"
+excerpt: "디테일 사항"
 categories:
   - Blog
-date: 2022-06-30
-last_modefied_at: 2022-06-30
+date: 2022-06-29
+last_modefied_at: 2022-06-29
 ---
+
+![altㅋ]({{site.url}}.images.railroad.jpg)
 
 이미지 업로드 테스트
