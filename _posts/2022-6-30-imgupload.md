@@ -7,6 +7,6 @@ date: 2022-06-29
 last_modefied_at: 2022-06-29
 ---
 
-![altㅋ]({{site.url}}.images.railroad.jpg)
+![altㅋ]({{site.url}}/images/railroad.jpg)
 
 이미지업로드~
