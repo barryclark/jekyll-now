@@ -170,8 +170,6 @@ img {
   margin-right: 15px;
 
   @include mobile {
-    float: none;
-    display: block;
     margin: 0 auto;
   }
 
@@ -182,8 +180,6 @@ img {
 
 .site-info {
   @include mobile {
-    float: none;
-    display: block;
     margin: 0 auto;
   }
 }
@@ -214,9 +210,6 @@ nav {
   margin-left: auto;
 
   @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
     font-size: 16px;
   }
 
