@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London June 2022: esynergy, ControlPlane, and Sysdig"
 description: "speakers from esynergy, ControlPlane, and Sysdig join us at the Cloud Native London meetup June 2022, hosted by Cheryl Hung, Engineering Manager at Apple"
 location: London, UK
-image: /images/2022-06-01-cloud-native-london-june-2022.jpg
+image: /images/2022-06-01-cloud-native-london-june-2022.jpeg
 video: https://www.youtube.com/embed/kujkYxU8HoM
 tags:
   - Photos
