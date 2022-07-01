@@ -1,0 +1,29 @@
+---
+title: "windows cmd 가상 드라이브 생성 및 삭제"
+excerpt: "잦가튼 cmd창에 대하여―"
+categories:
+  - Blog
+date: 2022-07-01
+last_modefied_at: 2022-07-01
+---
+우선 windows + r로 실행창을 켠다.
+그리고 오지게 cmd를 입력해준다.
+
+![cmd]({{site.baseurl}}/images/잦같은 cmd창.PNG)
+
+짠!
+ㅈ같은 cmd 창이 등장했다.
+
+대충 C드라이브 아무데나 들어가서 vdrivetest란 폴더를 생성한다.
+아까 실행한 ㅈ같은 cmd 창에서 subst Z: "C\vdrivetest"를 입력한다.
+
+![가상드라이브Z]({{site.baseurl}}/images/아무쓸모없는 z 드라이브.PNG)
+
+짠!
+내콤퓨타에 들어가서 확인하면 아무 짝에도 쓸모없는 Z드라이브가 생성된 걸 볼 수 있다.
+
+반대로 개 아무짝에도 쓸모없는 Z드라이브를 없애고자 할 수 있다.
+
+그럴땐 cmd에서 subst Z: /d를 입력하면 그만이다.
+
+ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
