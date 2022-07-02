@@ -2,21 +2,25 @@
 layout: default
 permalink: /alchemist/
 ---
+<div id="searching_item">
+
+</div>
+<div id="searching_racipe">
+
+</div>
+연금식 검색하기
+
 <script>
   function isitem(datalist, item){
 		var str='';
-
 		for (var i=0; i < datalist.length;++i){
 			if(datalist[i]['name'] === item){
 				str = datalist[i];
         break;
 			}
 		}
-
 		return str;
 	}
-
-
 
   var searching_item = getParameterByName('item');
   if(searching_item){
@@ -30,14 +34,7 @@ permalink: /alchemist/
     console.log(find.name);
     console.log(find.racipe);
 
-    document.getElementById("#searching_item").innerHTML = find.name;
-    document.getElementById("#searching_racipe").innerHTML = find.racipe;
+    document.getElementById("searching_item").innerHTML = find.name;
+    document.getElementById("searching_racipe").innerHTML = find.racipe;
   }
 </script>
-<div id="searching_item">
-
-</div>
-<div id="searching_racipe">
-
-</div>
-연금식 검색하기
