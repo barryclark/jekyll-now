@@ -5,9 +5,7 @@ permalink: /alchemist/
 <script>
   var thisUrlStr = $(location).attr('search');
   if(thisUrlStr){
-    var searching_item = urlParams.get('item');
-    var words = searching_item.split('|');
-    console.log(words[1]);
+    console.log(thisUrlStr);
   }
 </script>
 <div id="searching_item">
