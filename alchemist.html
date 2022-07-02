@@ -3,9 +3,11 @@ layout: default
 permalink: /alchemist/
 ---
 <script>
-  readTextFile("/data/item.json", function(text){
-      var data = JSON.parse(text);
-      console.log(data);
+  var jsonLocation = 'data/item.json';
+  $.getJSON(jsonLocation, function(data){
+    $each(data, function(I, item){
+      console.log(item.name);
+    });
   });
 </script>
 연금식 검색하기
