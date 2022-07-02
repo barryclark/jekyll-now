@@ -153,6 +153,10 @@ img {
 .wrapper-masthead {
   display:flex;
 }
+.wrapper-masthead .container:first-child{
+  width:300px;
+  border-right:1px solid black;
+}
 
 .masthead {
   padding: 20px 0;
