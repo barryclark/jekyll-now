@@ -3,10 +3,26 @@ layout: default
 permalink: /alchemist/
 ---
 <script>
+  function isitem(element,finditem)  {
+    if(element.name === finditem)  {
+      return true;
+    }
+  }
+
+
+
   var searching_item = getParameterByName('item');
   if(searching_item){
-    var words = searching_item.split('|');
-    console.log(words[1]);
+    console.log(searching_item);
+
+    var item = localStorage.getItem('item');
+    item = JSON.parse(item);
+
+    var apple = searching_item.find(isitem(item, searching_item));
+
+    document.writeln(apple.name); // apple
+    document.writeln(apple.racipe); // 1000
+
     document.getElementById("searching_item").innerHTML = words[1];
     document.getElementById("searching_racipe").innerHTML = words[0];
   }
