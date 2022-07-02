@@ -86,11 +86,12 @@
     			});
     		});
 
-        for (var i=1; i < 23;++i){
+        for (var c=1; c < 23;++c){
           for (var b=1; b < 6;++b){
             $.getJSON("{{ site.baseurl }}/alchemist/"+i+"-"+b+".json", function(data) {
         			$.each(data, function(key, val) {
         				localStorage.setItem(""+i+"-"+b+"", JSON.stringify(data));
+                console.log(""+i+"-"+b+"-저장완료");
         			});
         		});
           }
