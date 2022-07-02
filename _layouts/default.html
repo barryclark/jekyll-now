@@ -79,7 +79,7 @@
       }
 
     	if(typeof item === 'undefined' || item === null){
-    		$.getJSON("alchemist/item.json", function(data) {
+    		$.getJSON("{{ site.baseurl }}/alchemist/item.json", function(data) {
     			$.each(data, function(key, val) {
     				localStorage.setItem('item', JSON.stringify(data));
             auto_come(item);
