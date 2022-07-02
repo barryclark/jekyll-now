@@ -160,8 +160,9 @@ img {
   overflow: auto;
 }
 .wrapper-masthead .container:first-child{
-  width:300px;
-  border-right:1px solid black;
+  width:250px;
+  background: #1a1c39;
+  color:white;
 }
 
 .masthead {
@@ -233,15 +234,13 @@ nav {
   border-bottom:1px solid black;
   padding:0.2em;
   cursor:pointer;
+  background: white;
+  color:black;
 }
 
 //
 // .main
 //
-.notice{
-  border:1px solid black;
-}
-
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
@@ -270,6 +269,14 @@ nav {
     text-transform: uppercase;
     font-size: 15px;
   }
+}
+
+.notice{
+  background: #282844;
+}
+.notice h1{
+  margin: 0.5em .5em;
+  color:white;
 }
 
 .wrapper-footer {
