@@ -176,9 +176,9 @@ img {
 
 .site-avatar {
   display: block;
+  margin : 0 auto;
   width: 70px;
   height: 70px;
-  margin: 0 auto;
   }
 
   img {
@@ -187,7 +187,7 @@ img {
 
 .site-info {
   display: block;
-  margin: 0 auto;
+  margin : 0 auto;
 }
 
 .site-name {
@@ -204,6 +204,27 @@ img {
   margin: -5px 0 0 0;
   color: white;
   font-size: 16px;
+}
+
+nav {
+  display:flex;
+  flex-direction: column;
+  margin-top: 23px; // @TODO: Vertically middle align
+  font-family: $helveticaNeue;
+  font-size: 18px;
+
+  a {
+    margin-left: 20px;
+    color: $darkGray;
+    text-align: right;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    @include mobile {
+      margin: 0 10px;
+      color: $blue;
+    }
+  }
 }
 #autoMaker{
   display:flex;
