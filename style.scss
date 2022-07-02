@@ -239,7 +239,13 @@ nav {
   color:black;
   font-size:0.8em;
 }
-
+.serach input[type="text"] {
+  width: 100%;
+  padding : 8px 12px;
+  margin: 10px 5px;
+  box-sizing: border-box;
+  font-size: 1.1em;
+}
 //
 // .main
 //
