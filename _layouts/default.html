@@ -87,7 +87,7 @@
     		});
 
         function get_racipe(racipe){
-          for (var i=1; i < 23;++i){
+          for (var i=1; i < 5;++i){
             $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-"+i+".json", function(data) {
               $.each(data, function(key, val) {
                 localStorage.setItem(""+racipe+"-"+i+"", JSON.stringify(data));
