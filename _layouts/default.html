@@ -62,7 +62,7 @@
                 $('#autoMaker').children().each(function(){
                     $(this).click(function(){
                         $('#search_area').val($(this).text());
-                        $('#insert_target').val(""+$(this).attr('racipe')+ "|" + $(this).text());
+                        $('#insert_target').val($(this).text());
                         $('#autoMaker').children().remove();
                         isComplete = true;
                     });
