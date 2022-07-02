@@ -153,7 +153,7 @@ img {
 .wrapper-masthead {
   display:flex;
 }
-.wrapper-masthead:first-child{
+.wrapper-masthead .container:first-child{
   width:300px;
   border-right:1px solid black;
 }
