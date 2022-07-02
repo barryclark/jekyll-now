@@ -3,7 +3,9 @@ layout: default
 permalink: /alchemist/
 ---
 <script>
-  const jsonData= require('./data/item.json');
-  console.log(jsonData);
+  readTextFile("/data/item.json", function(text){
+      var data = JSON.parse(text);
+      console.log(data);
+  });
 </script>
 연금식 검색하기
