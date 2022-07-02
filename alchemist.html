@@ -6,9 +6,7 @@ permalink: /alchemist/
   $(document).ready(function() {
     var jsonLocation = 'item.json';
     $.getJSON(jsonLocation, function(data){
-      $each(data, function(I, item){
-        console.log(item.name);
-      });
+      console.log(data);
     });
   });
 </script>
