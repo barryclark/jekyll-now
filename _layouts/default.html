@@ -86,42 +86,14 @@
     			});
     		});
 
-        function get_racipe(racipe){
-          $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-1.json", function(data) {
-            $.each(data, function(key, val) {
-              localStorage.setItem(""+racipe+"-1", JSON.stringify(data));
-
-              $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-2.json", function(data) {
-                $.each(data, function(key, val) {
-                  localStorage.setItem(""+racipe+"-2", JSON.stringify(data));
-
-                  $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-3.json", function(data) {
-                    $.each(data, function(key, val) {
-                      localStorage.setItem(""+racipe+"-3", JSON.stringify(data));
-
-                      $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-4.json", function(data) {
-                        $.each(data, function(key, val) {
-                          localStorage.setItem(""+racipe+"-4", JSON.stringify(data));
-
-                          $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-5.json", function(data) {
-                            $.each(data, function(key, val) {
-                              localStorage.setItem(""+racipe+"-5", JSON.stringify(data));
-
-
-                            });
-                          });
-                        });
-                      });
-                    });
-                  });
-                });
+        function get_racipe(racipe, step){
+            $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-"+step+".json", function(data) {
+              $.each(data, function(key, val) {
+                return data;
               });
             });
-          });
         }
-        for (var c=1; c < 23;++c){
-          get_racipe(c);
-        }
+      cosole.log(get_racipe(5, 1));
 
     	}else{
     		auto_come(item);
