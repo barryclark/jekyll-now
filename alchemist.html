@@ -3,7 +3,8 @@ layout: default
 permalink: /alchemist/
 ---
 <script>
-  if(urlParams.get('item')){
+  var thisUrlStr = $(location).attr('search').('item');
+  if(thisUrlStr){
     var searching_item = urlParams.get('item');
     var words = searching_item.split('|');
     console.log(words[1]);
