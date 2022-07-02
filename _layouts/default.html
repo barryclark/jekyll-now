@@ -29,7 +29,7 @@
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
-          
+
           <div class="serach">
             <input type="hidden" id='insert_target' readonly style='background: #cacaca'>
             <input type="text" id='search_area'  >
@@ -39,6 +39,13 @@
       </div>
 
       <div id="main" role="main" class="container">
+        <div class="notice">
+          {% for post in site.posts %}
+            <article class="post">
+              <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+            </article>
+          {% endfor %}
+        </div>
         {{ content }}
       </div>
 
