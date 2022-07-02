@@ -86,15 +86,18 @@
     			});
     		});
 
-        for (var c=1; c < 23;++c){
-          for (var b=1; b < 6;++b){
-            $.getJSON("{{ site.baseurl }}/alchemist/"+c+"-"+b+".json", function(data) {
-        			$.each(data, function(key, val) {
-        				localStorage.setItem(""+c+"-"+b+"", JSON.stringify(data));
-                console.log(""+c+"-"+b+"-저장완료");
-        			});
-        		});
+        function get_racipe(racipe){
+          for (var i=1; i < 23;++i){
+            $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-"+i+".json", function(data) {
+              $.each(data, function(key, val) {
+                localStorage.setItem(""+racipe+"-"+i+"", JSON.stringify(data));
+                console.log(""+racipe+"-"+i+"-저장완료");
+              });
+            });
           }
+        }
+        for (var c=1; c < 23;++c){
+          get_racipe(c);
         }
 
     	}else{
