@@ -31,7 +31,7 @@
     		var my_list=document.getElementById(target);
     		if (str) {
     			my_list.innerHTML = str;
-    		}        
+    		}
     	}
 
       function auto_come(data){
@@ -52,7 +52,7 @@
                 $('#autoMaker').children().each(function(){
                     $(this).click(function(){
                         $('#search_area').val($(this).text());
-                        $('#insert_target').val("key : "+$(this).attr('racipe')+ ", data : " + $(this).text());
+                        $('#insert_target').val(""+$(this).attr('racipe')+ "/" + $(this).text());
                         $('#autoMaker').children().remove();
                         isComplete = true;
                     });
@@ -101,8 +101,11 @@
           </div>
 
           <div class="serach">
-            <input type="hidden" id='insert_target' readonly style='background: #cacaca'>
-            <input type="text" id='search_area'  >
+            <form method="get" action="{{ site.baseurl }}/alchemist">
+              <input type="hidden" id='insert_target' readonly style='background: #cacaca'>
+              <input type="text" id='search_area'  >
+              <button>검색</button>
+            </form>
             <div id='autoMaker'></div>
           </div>
         </header>
