@@ -19,9 +19,23 @@
     	var item = localStorage.getItem('item');
     	item = JSON.parse(item);
 
-    	function datalist_add(datalist){
-        var ref = datalist;
-        console.log(ref);
+    	function datalist_add(datalist, target){
+    		var str='';
+    		for (var i=0; i < datalist.length;++i){
+    			if(datalist[i]['option'] != ""){
+    				str += "<option value=\""+datalist[i]['name']+"\" label=\""+datalist[i]['racipe']+"\" /></option>";
+    			}else{
+    				str += "<option value=\""+datalist[i]['name']+"\" /></option>";
+    			}
+    		}
+    		var my_list=document.getElementById(target);
+    		if (str) {
+    			my_list.innerHTML = str;
+    		}        
+    	}
+
+      function auto_come(data){
+        var ref = data;
         var isComplete = false;  //autoMaker 자식이 선택 되었는지 여부
         $('#search_area').keyup(function(){
             var txt = $(this).val();
@@ -51,8 +65,8 @@
             if(isComplete) {  //autoMaker 자식이 선택 되었으면 초기화
                 $('#insert_target').val('')
             }
-        })
-    	}
+        });
+      }
 
     	if(typeof item === 'undefined' || item === null){
     		$.getJSON("alchemist/item.json", function(data) {
@@ -60,16 +74,11 @@
     				localStorage.setItem('item', JSON.stringify(data));
     			});
     		});
-        datalist_add(item);
+        auto_come(item);
     	}else{
-    		datalist_add(item);
+    		auto_come(item);
     	}
     });
-
-
-
-
-
 
 
 
