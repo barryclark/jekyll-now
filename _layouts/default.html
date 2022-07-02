@@ -7,7 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
       $(document).ready(function() {
-        var jsonLocation = 'item.json';
+        var jsonLocation = './item.json';
         $.getJSON(jsonLocation, function(data){
           $each(data, function(I, item){
             console.log(item.name);
