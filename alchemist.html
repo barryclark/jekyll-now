@@ -3,10 +3,12 @@ layout: default
 permalink: /alchemist/
 ---
 <script>
-  var jsonLocation = 'item.json';
-  $.getJSON(jsonLocation, function(data){
-    $each(data, function(I, item){
-      console.log(item.name);
+  $(document).ready(function() {
+    var jsonLocation = 'item.json';
+    $.getJSON(jsonLocation, function(data){
+      $each(data, function(I, item){
+        console.log(item.name);
+      });
     });
   });
 </script>
