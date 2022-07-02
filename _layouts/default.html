@@ -87,14 +87,37 @@
     		});
 
         function get_racipe(racipe){
-          for (var i=1; i < 5;++i){
-            $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-"+i+".json", function(data) {
-              $.each(data, function(key, val) {
-                localStorage.setItem(""+racipe+"-"+i+"", JSON.stringify(data));
-                console.log(""+racipe+"-"+i+"-저장완료");
+          $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-1.json", function(data) {
+            $.each(data, function(key, val) {
+              localStorage.setItem(""+racipe+"-1", JSON.stringify(data));
+
+              $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-2.json", function(data) {
+                $.each(data, function(key, val) {
+                  localStorage.setItem(""+racipe+"-2", JSON.stringify(data));
+
+                  $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-3.json", function(data) {
+                    $.each(data, function(key, val) {
+                      localStorage.setItem(""+racipe+"-3", JSON.stringify(data));
+
+                      $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-4.json", function(data) {
+                        $.each(data, function(key, val) {
+                          localStorage.setItem(""+racipe+"-4", JSON.stringify(data));
+
+                          $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-5.json", function(data) {
+                            $.each(data, function(key, val) {
+                              localStorage.setItem(""+racipe+"-5", JSON.stringify(data));
+
+
+                            });
+                          });
+                        });
+                      });
+                    });
+                  });
+                });
               });
             });
-          }
+          });
         }
         for (var c=1; c < 23;++c){
           get_racipe(c);
