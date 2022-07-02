@@ -1,4 +1,4 @@
-# thesnowwight.github.io
+# blog.thesnowwight.com
 
 Head over to: https://blog.thesnowwight.com
 
