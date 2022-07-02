@@ -2,4 +2,14 @@
 layout: default
 permalink: /alchemist/
 ---
+<script>
+  if(urlParams.get('item')){
+    var searching_item = urlParams.get('item');
+    var words = searching_item.split('|');
+    console.log(words[1]);
+  }
+</script>
+<div id="searching_item">
+
+</div>
 연금식 검색하기
