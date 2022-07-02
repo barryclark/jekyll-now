@@ -3,11 +3,18 @@ layout: default
 permalink: /alchemist/
 ---
 <script>
-  function isitem(element,finditem)  {
-    if(element.name === finditem)  {
-      return true;
-    }
-  }
+  function isitem(datalist, item){
+		var str='';
+
+		for (var i=0; i < datalist.length;++i){
+			if(datalist[i]['name'] === item){
+				str = datalist[i];
+        break;
+			}
+		}
+
+		return str;
+	}
 
 
 
@@ -18,13 +25,13 @@ permalink: /alchemist/
     var item = localStorage.getItem('item');
     item = JSON.parse(item);
 
-    var apple = searching_item.find(isitem(item, searching_item));
+    var find = isitem(item, searching_item);
 
-    document.writeln(apple.name); // apple
-    document.writeln(apple.racipe); // 1000
+    console.log(find.name);
+    console.log(find.racipe);
 
-    document.getElementById("searching_item").innerHTML = words[1];
-    document.getElementById("searching_racipe").innerHTML = words[0];
+    document.getElementById("searching_item").innerHTML = find.name;
+    document.getElementById("searching_racipe").innerHTML = find.racipe;
   }
 </script>
 <div id="searching_item">
