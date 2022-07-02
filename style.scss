@@ -151,6 +151,11 @@ img {
 
 .wrapper-masthead {
   display:flex;
+  height:100%;
+}
+.wrapper-masthead .container{
+  height:100%;
+  overflow: auto;
 }
 .wrapper-masthead .container:first-child{
   width:300px;
@@ -216,6 +221,10 @@ nav {
       color: $blue;
     }
   }
+}
+#autoMaker{
+  display:flex;
+  flex-direction: column;
 }
 
 //
