@@ -85,6 +85,17 @@
             auto_come(item);
     			});
     		});
+
+        for (var i=0; i < 23;++i){
+          for (var b=0; b < 6;++b){
+            $.getJSON("{{ site.baseurl }}/alchemist/"+i+"-"+b+".json", function(data) {
+        			$.each(data, function(key, val) {
+        				localStorage.setItem(""+i+"-"+b+"", JSON.stringify(data));
+        			});
+        		});
+          }
+        }
+
     	}else{
     		auto_come(item);
     	}

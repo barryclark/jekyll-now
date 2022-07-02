@@ -23,6 +23,8 @@ permalink: /alchemist/
 	}
 
   var searching_item = getParameterByName('item');
+  var searching_racipe = getParameterByName('racipe');
+
   if(searching_item){
     console.log(searching_item);
 
@@ -36,5 +38,6 @@ permalink: /alchemist/
 
     document.getElementById("searching_item").innerHTML = find.name;
     document.getElementById("searching_racipe").innerHTML = find.racipe;
+
   }
 </script>
