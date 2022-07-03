@@ -88,9 +88,7 @@
 
         function get_racipe(racipe, step){
             $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-"+step+".json", function(data) {
-              $.each(data, function(key, val) {
-                return data;
-              });
+              return data;
             });
         }
       console.log(get_racipe(5, 1));
