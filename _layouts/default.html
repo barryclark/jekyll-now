@@ -25,6 +25,10 @@
         return decodeURIComponent(results[1].replace(/\+/g, " "));
     }
     $(document).ready(function() {
+      $('.pull-left').click(function(){
+        $('.container').children(":first").css("display","block");
+        $('.container').children(":last").css("display","hidden");
+      });
     	//저장
     	var item = localStorage.getItem('item');
     	item = JSON.parse(item);
@@ -122,7 +126,7 @@
       </div>
 
       <div id="main" role="main" class="container">
-        <a class="btn pull-left" href="#">+</a>
+        <a class="pull-left" href="#">+</a>
         <div class="notice">
           {% for post in site.posts %}
             <article class="post">

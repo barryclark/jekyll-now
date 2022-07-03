@@ -29,9 +29,6 @@ body {
   margin: 0;
   padding: 0 10px;
   width: 100%;
-  @include mobile {
-    display:none;
-  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -167,6 +164,10 @@ img {
   background: #1a1c39;
   color:white;
   overflow-x: hidden;
+  
+  @include mobile {
+    display:none;
+  }
 }
 
 .masthead {
