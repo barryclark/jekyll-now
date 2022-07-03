@@ -26,6 +26,7 @@ permalink: /alchemist/
 
   function get_recipe(recipe, item, target){
       $.getJSON("{{ site.baseurl }}/alchemist/"+recipe+".json", function(data) {
+        console.log(results);
         var results = data;
         var step = '';
         var step_1='';
