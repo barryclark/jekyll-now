@@ -48,13 +48,10 @@ permalink: /alchemist/
             step_5 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
           }
           if(item == data[i]['name']){
-            if( find ){
-              find += ", ";
-            } else {
-              find += "일반 연금"+step[0]+" ";
+            if(find = ''){
+              find += "<ul>";
             }
-            find += "슬롯"+step[1];
-            find += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
+            find += "<li>[슬롯"+step[1]+"] "+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
           }
         }
         step_1 += '</ul></div>';
@@ -69,7 +66,7 @@ permalink: /alchemist/
         print_end += step_4;
         print_end += step_5;
         if (find){
-          find += "에 존재합니다.";
+          find += "</ul>";
           var my_list2=document.getElementById("searching_find");
           my_list2.innerHTML = find;
         }
@@ -93,7 +90,7 @@ permalink: /alchemist/
     document.getElementById("searching_item").innerHTML = find.name;
 
     var find_recipe = find.recipe;
-    find_recipe = find.recipe.split(', ');
+    find_recipe = find_recipe.split(', ');
     var find_recipe_print = '';
     for (var i=0; i < find_recipe.length;++i){
       find_recipe_print += "<a href='{{ site.baseurl }}/alchemist/?item="+datalist[i]+"&recipe="+find_recipe[i]+"'>일반 연금"+find_recipe[i]+"</a>";
