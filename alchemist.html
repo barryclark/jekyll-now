@@ -30,10 +30,10 @@ permalink: /alchemist/
       });
   }
 
-  function datalist_add(datalist, target){
+  function datalist_add2(datalist, target){
     var str='';
     for (var i=0; i < datalist.length;++i){
-      str += "<option value=\""+datalist[i]['아이템명']+"\" /></option>";
+      str += ""+datalist[i]['아이템명']+"";
     }
     var my_list=document.getElementById(target);
     if (str) {
@@ -61,7 +61,7 @@ permalink: /alchemist/
     var racipe_4 = get_racipe(1, 4);
     var racipe_5 = get_racipe(1, 5);
 
-    datalist_add(racipe_1 , "racipe");
+    datalist_add2(racipe_1 , "racipe");
   }
 
 
