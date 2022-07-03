@@ -171,6 +171,7 @@ img {
 
   @include mobile {
     text-align: center;
+    display:none;
   }
 }
 
@@ -303,6 +304,9 @@ nav {
 }
 #recipe{
   display:flex;
+}
+#recipe div{
+  border:1
 }
 #recipe h3{
   background: #282844;
