@@ -9,7 +9,7 @@ permalink: /alchemist/
 
 </div>
 연금식 검색하기
-<div id="racipe">
+<div id="recipe">
 
 </div>
 <script>
@@ -26,7 +26,6 @@ permalink: /alchemist/
 
   function get_racipe(racipe, item, target){
       $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+".json", function(data) {
-        console.log(data);
         var step = '';
         var step_1='';
         var step_2='';
@@ -47,6 +46,8 @@ permalink: /alchemist/
             step_5 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
           }
         }
+        console.log(data.length);
+        console.log(step_1);
         var my_list=document.getElementById(target);
         if (step_1) {
           my_list.innerHTML = step_1;
