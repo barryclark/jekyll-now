@@ -24,27 +24,33 @@ permalink: /alchemist/
 		return str;
 	}
 
-  function get_racipe(racipe, item){
+  function get_racipe(racipe, item, traget){
       $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+".json", function(data) {
-        $.each(data, function(key, val) {
-          return data;
-        });
+        var step = '';
+        var step_1='';
+        var step_2='';
+        var step_3='';
+        var step_4='';
+        var step_5='';
+        for (var i=0; i < data.length;++i){
+          step = data[i]['recipe'].split(',');
+          if(step[1] == 1){
+            step_1 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
+          } else if(step[1] == 2){
+            step_2 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
+          } else if(step[1] == 3){
+            step_3 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
+          } else if(step[1] == 4){
+            step_4 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
+          } else if(step[1] == 5){
+            step_5 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
+          }
+        }
+        var my_list=document.getElementById(target);
+        if (step_1) {
+          my_list.innerHTML = step_1;
+        }
       });
-  }
-
-  function datalist_add2(datalist, target){
-    console.log(datalist);
-    var step = '';
-    var step_1='';
-    var step_2='';
-    var step_3='';
-    var step_4='';
-    var step_5='';
-
-    var my_list=document.getElementById(target);
-    if (step_1) {
-      my_list.innerHTML = step_1;
-    }
   }
 
   var searching_item = getParameterByName('item');
@@ -62,8 +68,7 @@ permalink: /alchemist/
 
 
   if(searching_racipe){
-    var racipe = get_racipe(1, 1);
-    datalist_add2(racipe, "racipe");
+    var racipe = get_racipe(1, 1, "racipe");
   }
 
 
