@@ -28,11 +28,11 @@ permalink: /alchemist/
   function get_recipe(recipe, item, target){
       $.getJSON("{{ site.baseurl }}/alchemist/"+recipe+".json", function(data) {
         var step = '';
-        var step_1='<div><h3>슬롯1 등장 아이템 리스트</h3><ul>';
-        var step_2='<div><h3>슬롯2 등장 아이템 리스트</h3><ul>';
-        var step_3='<div><h3>슬롯3 등장 아이템 리스트</h3><ul>';
-        var step_4='<div><h3>슬롯4 등장 아이템 리스트</h3><ul>';
-        var step_5='<div><h3>슬롯5 등장 아이템 리스트</h3><ul>';
+        var step_1='<div><h3>슬롯1</h3><ul>';
+        var step_2='<div><h3>슬롯2</h3><ul>';
+        var step_3='<div><h3>슬롯3</h3><ul>';
+        var step_4='<div><h3>슬롯4</h3><ul>';
+        var step_5='<div><h3>슬롯5</h3><ul>';
         var print_end = '';
         var find = '';
         for (var i=0; i < data.length;++i){
