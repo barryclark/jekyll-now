@@ -89,12 +89,7 @@ permalink: /alchemist/
 
     document.getElementById("searching_item").innerHTML = find.name;
 
-    var find_recipe = find.recipe;
-    find_recipe = find_recipe.split(', ');
-    var find_recipe_print = '';
-    for (var i=0; i < find_recipe.length;++i){
-      find_recipe_print += "<a href='{{ site.baseurl }}/alchemist/?item="+datalist[i]+"&recipe="+find_recipe[i]+"'>일반 연금"+find_recipe[i]+"</a>";
-    }
+
     document.getElementById("searching_recipe").innerHTML = find.recipe;
   }
 
