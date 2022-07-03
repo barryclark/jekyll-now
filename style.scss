@@ -301,7 +301,17 @@ nav {
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
 }
-
+#recipe{
+  display:flex;
+}
+#recipe h3{
+  background: #282844;
+  color:white;
+  font-size: 1.2em;
+}
+#recipe li{
+  list-style: none;
+}
 footer {
   padding: 20px 0;
   text-align: center;
