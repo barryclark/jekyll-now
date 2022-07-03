@@ -26,8 +26,8 @@
     }
     $(document).ready(function() {
       $('.pull-left').click(function(){
-        $('.wrapper-masthead').children(":first").show();
-        $('.wrapper-masthead').children(":last").hide();
+        $('.wrapper-masthead').children(":first").toggle();
+        $('.wrapper-masthead').children(":last").toggle();
       });
     	//저장
     	var item = localStorage.getItem('item');

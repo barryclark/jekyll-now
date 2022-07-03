@@ -164,9 +164,10 @@ img {
   background: #1a1c39;
   color:white;
   overflow-x: hidden;
-  
+
   @include mobile {
     display:none;
+    width:100%;
   }
 }
 
