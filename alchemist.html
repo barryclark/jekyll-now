@@ -8,6 +8,7 @@ permalink: /alchemist/
 <div id="searching_recipe">
 
 </div>
+<div id="searching_find"></div>
 연금식 검색하기
 <div id="recipe">
 
@@ -27,11 +28,12 @@ permalink: /alchemist/
   function get_recipe(recipe, item, target){
       $.getJSON("{{ site.baseurl }}/alchemist/"+recipe+".json", function(data) {
         var step = '';
-        var step_1='';
-        var step_2='';
-        var step_3='';
-        var step_4='';
-        var step_5='';
+        var step_1='<h3>슬롯1 등장 아이템 리스트</h3><ul>';
+        var step_2='<h3>슬롯2 등장 아이템 리스트</h3><ul>';
+        var step_3='<h3>슬롯3 등장 아이템 리스트</h3><ul>';
+        var step_4='<h3>슬롯4 등장 아이템 리스트</h3><ul>';
+        var step_5='<h3>슬롯5 등장 아이템 리스트</h3><ul>';
+        var print_end = '';
         var find = '';
         for (var i=0; i < data.length;++i){
           step = data[i]['recipe'].split('-');
@@ -55,13 +57,26 @@ permalink: /alchemist/
             find += "슬롯"+step[1];
           }
         }
+        step_1 += '</ul>';
+        step_2 += '</ul>';
+        step_3 += '</ul>';
+        step_4 += '</ul>';
+        step_5 += '</ul>';
+
+        print_end += step_1;
+        print_end += step_2;
+        print_end += step_3;
+        print_end += step_4;
+        print_end += step_5;
         if (find){
           find += "에 존재합니다.";
+          var my_list2=document.getElementById("searching_find");
+          my_list2.innerHTML = find;
         }
         console.log(find);
         var my_list=document.getElementById(target);
-        if (step_1) {
-          my_list.innerHTML = step_1;
+        if (print_end) {
+          my_list.innerHTML = print_end;
         }
       });
   }
