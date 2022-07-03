@@ -9,7 +9,9 @@ permalink: /alchemist/
 
 </div>
 연금식 검색하기
+<div id="racipe">
 
+</div>
 <script>
   function isitem(datalist, item){
 		var str='';
@@ -22,22 +24,46 @@ permalink: /alchemist/
 		return str;
 	}
 
+  function get_racipe(racipe, step){
+      $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-"+step+".json", function(data) {
+        return data;
+      });
+  }
+
+  function datalist_add(datalist, target){
+    var str='';
+    for (var i=0; i < datalist.length;++i){
+      str += "<option value=\""+datalist[i]['아이템명']+"\" /></option>";
+    }
+    var my_list=document.getElementById(target);
+    if (str) {
+      my_list.innerHTML = str;
+    }
+  }
+
   var searching_item = getParameterByName('item');
   var searching_racipe = getParameterByName('racipe');
 
   if(searching_item){
-    console.log(searching_item);
-
     var item = localStorage.getItem('item');
     item = JSON.parse(item);
 
     var find = isitem(item, searching_item);
 
-    console.log(find.name);
-    console.log(find.racipe);
-
     document.getElementById("searching_item").innerHTML = find.name;
     document.getElementById("searching_racipe").innerHTML = find.racipe;
-
   }
+
+  if(searching_racipe){
+    var racipe_1 = get_racipe(1, 1);
+    var racipe_2 = get_racipe(1, 2);
+    var racipe_3 = get_racipe(1, 3);
+    var racipe_4 = get_racipe(1, 4);
+    var racipe_5 = get_racipe(1, 5);
+
+    datalist_add(racipe_1 ,racipe);
+  }
+
+
+
 </script>

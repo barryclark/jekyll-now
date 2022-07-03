@@ -79,13 +79,6 @@
       }
 
 
-      function get_racipe(racipe, step){
-          $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-"+step+".json", function(data) {
-            console.log(data);
-          });
-      }
-    get_racipe(5, 1);
-
     	if(typeof item === 'undefined' || item === null){
     		$.getJSON("{{ site.baseurl }}/alchemist/item.json", function(data) {
     			$.each(data, function(key, val) {
