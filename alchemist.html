@@ -26,31 +26,33 @@ permalink: /alchemist/
 
   function get_racipe(racipe, item, target){
       $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+".json", function(data) {
-        console.log(data);
-        var step = '';
-        var step_1='';
-        var step_2='';
-        var step_3='';
-        var step_4='';
-        var step_5='';
-        for (var i=0; i < data.length;++i){
-          step = data[i]['recipe'].split(',');
-          if(step[1] == 1){
-            step_1 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
-          } else if(step[1] == 2){
-            step_2 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
-          } else if(step[1] == 3){
-            step_3 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
-          } else if(step[1] == 4){
-            step_4 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
-          } else if(step[1] == 5){
-            step_5 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
+        $.each(data, function(key, val) {
+          console.log(data);
+          var step = '';
+          var step_1='';
+          var step_2='';
+          var step_3='';
+          var step_4='';
+          var step_5='';
+          for (var i=0; i < data.length;++i){
+            step = data[i]['recipe'].split(',');
+            if(step[1] == 1){
+              step_1 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
+            } else if(step[1] == 2){
+              step_2 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
+            } else if(step[1] == 3){
+              step_3 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
+            } else if(step[1] == 4){
+              step_4 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
+            } else if(step[1] == 5){
+              step_5 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
+            }
           }
-        }
-        var my_list=document.getElementById(target);
-        if (step_1) {
-          my_list.innerHTML = step_1;
-        }
+          var my_list=document.getElementById(target);
+          if (step_1) {
+            my_list.innerHTML = step_1;
+          }
+    	   });
       });
   }
 
