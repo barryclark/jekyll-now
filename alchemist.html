@@ -24,8 +24,8 @@ permalink: /alchemist/
 		return str;
 	}
 
-  function get_racipe(racipe, step){
-      $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-"+step+".json", function(data) {
+  function get_racipe(racipe, item){
+      $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+".json", function(data) {
         console.log(data);
         return data;
       });
@@ -57,14 +57,7 @@ permalink: /alchemist/
   }
 
   if(searching_racipe){
-    var racipe_1 = get_racipe(1, 1);
-    var racipe_2 = get_racipe(1, 2);
-    var racipe_3 = get_racipe(1, 3);
-    var racipe_4 = get_racipe(1, 4);
-    var racipe_5 = get_racipe(1, 5);
-
-
-    datalist_add2(racipe_1 , "racipe");
+    var racipe = get_racipe(1, 1);
   }
 
 
