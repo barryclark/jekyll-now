@@ -26,27 +26,28 @@ permalink: /alchemist/
 
   function get_recipe(recipe, item, target){
       $.getJSON("{{ site.baseurl }}/alchemist/"+recipe+".json", function(data) {
+        var results = data;
         var step = '';
         var step_1='';
         var step_2='';
         var step_3='';
         var step_4='';
         var step_5='';
-        for (var i=0; i < data.length;++i){
-          step = data[i]['recipe'].split(',');
+        for (var i=0; i < results.length;++i){
+          step = results[i]['recipe'].split(',');
           if(step[1] == 1){
-            step_1 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
+            step_1 += "<li>+"+results[i]['up']+" "+results[i]['name']+" ("+results[i]['rand']+")";
           } else if(step[1] == 2){
-            step_2 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
+            step_2 += "<li>+"+results[i]['up']+" "+results[i]['name']+" ("+results[i]['rand']+")";
           } else if(step[1] == 3){
-            step_3 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
+            step_3 += "<li>+"+results[i]['up']+" "+resultsresults[i]['name']+" ("+results[i]['rand']+")";
           } else if(step[1] == 4){
-            step_4 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
+            step_4 += "<li>+"+results[i]['up']+" "+results[i]['name']+" ("+results[i]['rand']+")";
           } else if(step[1] == 5){
-            step_5 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")";
+            step_5 += "<li>+"+results[i]['up']+" "+results[i]['name']+" ("+results[i]['rand']+")";
           }
         }
-        console.log(data.length);
+        console.log(results.length);
         console.log(step_1);
         var my_list=document.getElementById(target);
         if (step_1) {
