@@ -33,26 +33,14 @@ permalink: /alchemist/
   }
 
   function datalist_add2(datalist, target){
+    console.log(datalist);
     var step = '';
     var step_1='';
     var step_2='';
     var step_3='';
     var step_4='';
     var step_5='';
-    for (var i=0; i < datalist.length;++i){
-      step = datalist[i]['recipe'].split(',');
-      if(step[1] == 1){
-        step_1 += "<li>+"+datalist[i]['up']+" "+datalist[i]['name']+" ("+datalist[i]['rand']+")";
-      } else if(step[1] == 2){
-        step_2 += "<li>+"+datalist[i]['up']+" "+datalist[i]['name']+" ("+datalist[i]['rand']+")";
-      } else if(step[1] == 3){
-        step_3 += "<li>+"+datalist[i]['up']+" "+datalist[i]['name']+" ("+datalist[i]['rand']+")";
-      } else if(step[1] == 4){
-        step_4 += "<li>+"+datalist[i]['up']+" "+datalist[i]['name']+" ("+datalist[i]['rand']+")";
-      } else if(step[1] == 5){
-        step_5 += "<li>+"+datalist[i]['up']+" "+datalist[i]['name']+" ("+datalist[i]['rand']+")";
-      }
-    }
+
     var my_list=document.getElementById(target);
     if (step_1) {
       my_list.innerHTML = step_1;
