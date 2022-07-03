@@ -26,8 +26,8 @@ permalink: /alchemist/
 
   function get_racipe(racipe, step){
       $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+"-"+step+".json", function(data) {
-        return data;
         console.log(data);
+        return data;
       });
   }
 
