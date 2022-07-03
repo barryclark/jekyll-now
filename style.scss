@@ -170,6 +170,13 @@ img {
     width:100%;
   }
 }
+.pull-left{
+  display:none;
+
+  @include mobile {
+    display:block;
+  }
+}
 
 .masthead {
   padding: 20px 0;
