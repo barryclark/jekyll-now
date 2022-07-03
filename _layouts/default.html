@@ -33,7 +33,7 @@
     		var str='';
     		for (var i=0; i < datalist.length;++i){
     			if(datalist[i]['option'] != ""){
-    				str += "<option value=\""+datalist[i]['name']+"\" label=\""+datalist[i]['racipe']+"\" /></option>";
+    				str += "<option value=\""+datalist[i]['name']+"\" label=\""+datalist[i]['recipe']+"\" /></option>";
     			}else{
     				str += "<option value=\""+datalist[i]['name']+"\" /></option>";
     			}
@@ -55,7 +55,7 @@
                 ref.forEach(function(arg){
                     if(arg.name.indexOf(txt) > -1 ){
                         $('#autoMaker').append(
-                            $('<div>').text(arg.name).attr({'racipe':arg.racipe})
+                            $('<div>').text(arg.name).attr({'recipe':arg.recipe})
                         );
                     }
                 });
