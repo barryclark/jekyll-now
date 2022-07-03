@@ -5,7 +5,7 @@ permalink: /alchemist/
 <div id="searching_item">
 
 </div>
-<div id="searching_racipe">
+<div id="searching_recipe">
 
 </div>
 연금식 검색하기
@@ -24,8 +24,8 @@ permalink: /alchemist/
 		return str;
 	}
 
-  function get_racipe(racipe, item, target){
-      $.getJSON("{{ site.baseurl }}/alchemist/"+racipe+".json", function(data) {
+  function get_recipe(recipe, item, target){
+      $.getJSON("{{ site.baseurl }}/alchemist/"+recipe+".json", function(data) {
         var step = '';
         var step_1='';
         var step_2='';
@@ -56,7 +56,7 @@ permalink: /alchemist/
   }
 
   var searching_item = getParameterByName('item');
-  var searching_racipe = getParameterByName('racipe');
+  var searching_recipe = getParameterByName('recipe');
 
   if(searching_item){
     var item = localStorage.getItem('item');
@@ -65,12 +65,12 @@ permalink: /alchemist/
     var find = isitem(item, searching_item);
 
     document.getElementById("searching_item").innerHTML = find.name;
-    document.getElementById("searching_racipe").innerHTML = find.racipe;
+    document.getElementById("searching_recipe").innerHTML = find.recipe;
   }
 
 
-  if(searching_racipe){
-    var racipe = get_racipe(1, 1, "racipe");
+  if(searching_recipe){
+    var recipe = get_recipe(1, 1, "recipe");
   }
 
 
