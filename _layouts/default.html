@@ -82,7 +82,7 @@
     	if(typeof item === 'undefined' || item === null){
     		$.getJSON("{{ site.baseurl }}/alchemist/item.json", function(data) {
   				localStorage.setItem('item', JSON.stringify(data));
-          auto_come(item);
+          auto_come(data);
     		});
 
     	}else{
