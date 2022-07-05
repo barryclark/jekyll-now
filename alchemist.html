@@ -109,10 +109,8 @@ permalink: /alchemist/
         console.log(data[i]);
         if(data[i]['no'] == searching_recipe){
           for (var j=0; j < data[i]['recipe'].length;++j){
-              for (var h=0; h < data[i]['recipe'][j].length;++h){
-                find_recipe = data[i]['recipe'][h].split(',');
-                recipe_material += "<li><span>"+find_recipe[0]+"</span><span>"+find_recipe[1]+"</span><span>"+find_recipe[2]+"</span><span>"+find_recipe[3]+"</span><span>"+find_recipe[4]+"</span></li>";
-              }
+              find_recipe = data[i]['recipe'][j].split(',');
+              recipe_material += "<li><span>"+find_recipe[0]+"</span><span>"+find_recipe[1]+"</span><span>"+find_recipe[2]+"</span><span>"+find_recipe[3]+"</span><span>"+find_recipe[4]+"</span></li>";
           }
           break;
         }
