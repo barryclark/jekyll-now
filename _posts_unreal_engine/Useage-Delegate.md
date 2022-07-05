@@ -26,6 +26,11 @@ UE 4.27
 ## 델리게이트 선언하기
 델리게이트의 선언은 제공되어 있는 선언 매크로중 하나를 사용하여 이루어집니다. 사용되는 매크로는 델리게이트에 바인딩되는 함수의 시그니처에 따라 결정됩니다. **시스템에서는 델리게이트 유형을 선언해 낼 수 있는 범용 함수 시그너처의 다양한 조합을 미리 정의, 이를 통해 반한값과 파라미터에 대한 유형 이름을 채웁니다.**
 
+```cpp
+// CoreMinimal에서 include되어 있습니다.
+//#include "Delegates/DelegateCombinations.h" 입니다.
+```
+
 델리게이트 선언 매크로는 [델리게이트 선언하기](https://docs.unrealengine.com/5.0/ko/delegates-and-lamba-functions-in-unreal-engine/)에서 읽을 수 있습니다.
 
 * ...\Engine\Source\Runtime\Core\Public\Delegates\DelegateCombinations.h 에서 선언을 확인 할 수 있습니다.

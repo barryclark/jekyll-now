@@ -106,8 +106,10 @@ FAutoConsoleCommand CCmd_HorrorEvent_PrintConsoleState(
 Getter함수를 사용해서 콘솔 변수를 받을 수 있지만, 다음의 방법으로도 가능합니다.
 
 ```cpp
+#if !NO_CVARS
 static const auto CVar = IConsoleManager::Get().FindConsoleVariable(TEXT("Name")); 
 int32 Value = CVar->GetInt();
+#endif
 ```
 
 이렇게 하면, 변수로의 포인터를 구해서 사용하게 됩니다. 이를 통해 처음 호출될 때만 콘솔 변수를 찾게 됩니다.
@@ -141,5 +143,10 @@ GEngine->AddONScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Test!"));
 #endif
     
 ```
+```cpp
+#include "Engine/GameEngine.h"
 
+GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, “debug msg”);
+
+```
 * \Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h에 있으며 "DrawDebugHelpers.h"로 인클루드 할 수 있습니다.
