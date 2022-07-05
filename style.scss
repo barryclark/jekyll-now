@@ -312,9 +312,12 @@ nav {
 }
 #recipe{
   display:flex;
+  flex-wrap: wrap;
 }
 #recipe div{
-  border:1
+  flex: 1;
+  font-size: 0.8em;
+  min-width: 230px;
 }
 #recipe h3{
   background: #282844;
