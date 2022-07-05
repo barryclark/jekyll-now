@@ -106,7 +106,6 @@ permalink: /alchemist/
     var recipe_material = "<ul class='recipe_list'>";
     $.getJSON("{{ site.baseurl }}/alchemist/recipe.json", function(data) {
       for (var i=0; i < data.length;++i){
-        console.log(data[i]);
         if(data[i]['no'] == searching_recipe){
           for (var j=0; j < data[i]['recipe'].length;++j){
             find_recipe = data[i]['recipe'][j].split(',');
