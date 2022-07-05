@@ -335,14 +335,12 @@ nav {
   flex-direction: column;
 }
 .recipe_list li{
-  padding: 0 0.5em 0;
-  white-space:nowrap;
-  background: #282844;
-  color:white;
+  padding: 0.1em;
 }
 .recipe_list span {
-  padding: 0.3em;
-  margin: 0 0.3em 0;
+  display: inline-block;
+  padding: 0.2em;
+  margin: 0 0.1em 0;
   border: 1px solid;
 }
 #searching_recipe a{
