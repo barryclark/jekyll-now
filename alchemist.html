@@ -2,7 +2,7 @@
 layout: default
 permalink: /alchemist/
 ---
-<div id="searching_item"></div>
+<h1 id="searching_item"></h1>
 <div id="searching_recipe"></div>
 <h1 id="find_recipe"></h1>
 <div id="searching_find"></div>
@@ -88,7 +88,7 @@ permalink: /alchemist/
 
     var find = isitem(item, searching_item);
 
-    document.getElementById("searching_item").innerHTML = find.name;
+    document.getElementById("searching_item").innerHTML = "\""+find.name+."\" 에 대한 검색 결과";
 
     var find_recipe = find.recipe;
     find_recipe = find_recipe.split(',');
