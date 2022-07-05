@@ -88,7 +88,7 @@ permalink: /alchemist/
 
     var find = isitem(item, searching_item);
 
-    document.getElementById("searching_item").innerHTML = "\""+find.name+."\" 에 대한 검색 결과";
+    document.getElementById("searching_item").innerHTML = "\""+find.name+"\" 에 대한 검색 결과";
 
     var find_recipe = find.recipe;
     find_recipe = find_recipe.split(',');
@@ -103,7 +103,7 @@ permalink: /alchemist/
   if(searching_recipe){
     document.getElementById("find_recipe").innerHTML = "일반 연금 "+searching_recipe+"의 각 슬롯별 등장 아이템 획득 확률";
     var recipe = get_recipe(searching_recipe, find.name, "recipe");
-    var recipe_material = "<ul class='recipe_list'>";
+    var recipe_material = "<h2>연금식 재료</h2><ul class='recipe_list'>";
     $.getJSON("{{ site.baseurl }}/alchemist/recipe.json", function(data) {
       for (var i=0; i < data.length;++i){
         if(data[i]['no'] == searching_recipe){
