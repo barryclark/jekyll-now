@@ -3,6 +3,685 @@ layout: post
 title: Fragment
 ---
 
+## 2022 07 04
+Level 정리         80,~    2   40,~     실제 6
+Audio 정리         120,~   5   24,~     실제 4
+UI 정리            120,~   5   24,~     실제 0.5
+
+HorrorGame 정리    60,~    4   15,~
+포트폴리오 정리     44,~    4   11,~
+강의 집중           160,~   2   80,~
+
+화면 효과 추가
+아이템 만들기
+인벤토리 UI 만들기
+
+이벤트의 추가는 Dispatch로 이루어진다.
+
+UI까지 추가하고 이제 만들면서 추가면 되나?
+
+## 잘하기 위해서는 해야할게 숨막히게 많네
+https://www.intel.co.kr/content/www/kr/ko/gaming/resources/game-design-principles-in-games.html
+
+https://www.korea.kr/news/policyNewsView.do?newsId=148820595
+
+## 소프트웨어 로컬라이즈
+https://www.lionbridge.com/ko/blog/translation-localization/how-to-localize-software-10-dos-and-donts-for-a-watertight-software-localization-process/ 
+
+## 펄린 노이즈 이해하기
+https://ko.khanacademy.org/computing/computer-programming/programming-natural-simulations/programming-noise/a/perlin-noise 
+
+## 오늘 할 것도 마찬가지로 애니메이션인데 블렌딩
+애니메이션하고 이벤트하고 역활이 분담되어 있는데 이게 섞이게 되면 골치아픔. 예로 발에 이펙트 들어간거, 
+
+물 효과도, 흙이 튀는 것도 전부다 콜리전 싸움이다.
+
+예가 여기 들어가서, 발에 이펙트가 있지만, 이벤트 발생타이밍은 노티파이고, 그러면 이 이펙트를 누가가지고 있어야 하냐? 이펙트는 콜리전에 있고, 충돌은 캐릭터에 있고,
+
+1. Bone에 Socket을 붙이고,
+
+실수하기 싫으면, 각각 소켓의 이름을 노티파이 이름으로 만들도록 하자.
+
+노티파이 만들기 정석은 노티파이 관리에 있는 걸 추가해 줘야함. 노티파이를 삭제해도, 노티파이 관리에 남아있음. 정리할려먼 관리탭을 봐야함.
+
+뭐,, notify가 10개다 그럼 이벤트가 10개가 있어야 한다.
+
+터트리는 작업을 하고 싶은데, 안타깝게도 이벤트 디스페쳐가 안됨. 이벤트 디스페쳐는 온전한 기능이 들어있어야함.
+
+본을 넘겨주면, 캐릭터가 지나갈 때만 이펙트가 나올것임.
+
+블루프린트 형변환이 과부화가 엄청 걸림. 변수로 빽업을 하는 방식도 있음.
+
+함수를 만들 때 return이 제일 어려움.
+
+래퍼런스는 존재하는 것을 가르킴. 존재하지 않는 것은 설계도가 있어야함. 그 이유가, 언리얼에 존재하는 그래픽 데이터는 래퍼런스임. 왜? 속도때문에 그럼.
+
+**SceneRoot가 없으면, 선을 아주아주 잘클릭해야 합니다. 어지간하면 SceneRoot를 사용하도록 합시다.**
+
+케스케이드 파티클은 레거시고 사라지고 있다.
+
+중요. 비긴오버랩이 있으면, 반드시 엔드 오버랩을 보장해준다. 매우 중요.
+
+컨테이너 쓸때 항상 특성을 알아둬야함. 몇개 안되면, Array가 유리하기는 함.
+
+이벤트 그래프를 하다보면 무지하게 많아질 것임. 정리를 해야하는데 이벤트 그래프를 늘리거나, 아니면 함수로 바꿔야함.
+
+## 
+Audio Volume을 사용하고 싶으면, ATT와 Reverb Effect를 설정해 줘야함.
+
+https://forums.unrealengine.com/t/tarray-with-instanced-uproperty-flag-problem/301294
+집가서 이론공부나 해야지
+
+https://wayhome25.github.io/git/2017/07/08/git-first-pull-request-story/
+이제는 이해할 수 있네. 집가서 정리하자.
+
+https://velog.io/@ssmin0606/%EA%B0%9C%EB%B0%9C%ED%88%B4-Please-enter-a-commit-message-to-explain-why-this-merge-is-necessary-especially-if-it-merges-an-updated-upstream-into-a-topic-branch-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0-git-bash
+메세지 보내기.
+
+시퀀스에서 블루프린트 어떻게 받냐!!
+
+## 커브 생성해서 추가하기
+	#include "Curves/CurveFloat.h"
+
+
+UFUNCTION은 Struct에 대한 전방선언을 허용하지 않는것 같은데 확인 필요하다.
+
+https://handhp1.tistory.com/11
+
+
+https://docs.unrealengine.com/4.27/en-US/API/Runtime/Engine/Engine/UCollisionProfile/ConvertToTraceType/
+
+#include "Engine/CollisionProfile.h"
+ETraceTypeQuery ConvertToTraceType(ECollisionChannel CollisionChannel) const
+
+이벤트가 실행되고 나중에 접속했을 때 이벤트 진행되지 않는 상태가 있음.
+
+
+## CallHorrorEvent호출 후 Server -> Delegate하면
+캐릭터의 포지션과 이벤트가 다를 경우 캐릭터 무브먼트 컴포넌트에 의해 캐릭터의 포지션이 추론되면서 이동하게 될 것이다.
+
+## Git branch후 MainBranch에서 cherrypick 테스트.
+
+HorrorEvent가 N개의 클래스와 N개의 클래스를 연결하므로 델리게이트로 연결
+
+```
+remote저장소와 연결해놓은 상태에서 진행하던 작업을 엎어버리고 다시 리모트 저장소의 내용을 덮어쓰고 싶을 때 
+git fetch -all
+git reset --hard origin/master
+```
+
+infrasound 의식하면 닭살 돋는 효과는 있는거 같네... 그러나 바로 까먹고 기억안남.
+
+
+## Get game state inside Editor Widget in Unreal Engine 4
+에디터 위젯이 있고 그 안에 버튼 클릭 이벤트에 대한 청사진을 만들었습니다.
+
+불행히도 "Get game state" 노드(또는 이와 유사한 노드)를 사용할 때 항상 null을 반환합니다.
+
+에디터에서 플레이를 누르지 않는 동안(게임 상태 인스턴스가 없음) 그것이 맞다는 것을 이해합니다. 하지만 재생을 누르면 Editor Widget의 버튼을 클릭해도 모두 동일합니다. null을 반환합니다. 동시에 게임 창 안의 일반 위젯은 게임 상태 참조를 반환합니다.
+
+그래서, 게임이 플레이 중이라고 가정하고(저는 플레이 버튼을 눌렀습니다), 에디터 위젯 내에서 게임 상태에 접근하는 방법(일반 위젯에서 가능한 것처럼)은 무엇입니까?
+
+ps 저는 간단한 싱글 플레이어 케이스를 작업 중입니다.
+
+## Answer
+유효한 World Context Object가 있어야 합니다.
+Get Game State 노드가 Editor Utility Widget 내 에서 사용되면 World Context Object 핀이 노출됩니다.
+
+위젯 블루프린트에서 게임 상태 노드 가져오기
+
+Actor Blueprints에서 World Context Object 는 여전히 존재하지만, 핀이 자동으로 결정될 수 있기 때문에 에디터는 핀을 숨깁니다.
+
+Actor Blueprint에서 Game State 노드 가져오기
+
+World Context ObjectUObject 는 객체 로 돌아갈 수 있는 모든 것 입니다 UWorld. 액터 블루프린트의 경우 블루프린트 에디터는 해당 액터 를 에 전달하여 해당 액터를 World Context ObjectGetWorldFromContextObject 로 사용할 수 있습니다 .
+
+반면에 에디터 위젯 블루프린트에는 World Context Object 로 사용할 수 있는 객체에 연결된 객체가 없으므로 어떻게든 제공해야 합니다.
+
+블루프린트에서 선택된 액터 사용하기
+다음은 선택한 액터를 World Context Object 로 사용하여 게임 상태를 가져오는 방법의 예입니다 . 이 예제를 사용하려면 버튼 하나로 에디터 유틸리티 블루프린트를 만들고 아래 블루프린트 그래프를 버튼 클릭 핸들러로 사용하세요. 그런 다음 위젯을 실행하고 Editor에서 Play를 시작한 다음 플레이어를 삭제하고(F8) 장면에서 액터를 선택하고 버튼을 클릭합니다. 기록된 현재 시간이 표시되어야 합니다.
+
+에디터 유틸리티 위젯 블루프린트에서 게임 상태 가져오기 사용하기
+
+C++ 사용
+또는 엔진의 세계를 직접 순환하고 가장 적절한 것을 Blueprints에 반환하는 Blueprint 호출 가능 C++ 함수를 만들 수 있습니다.
+
+.h 파일
+UCLASS()
+class MYPROJECT_API AMyProjectGameModeBase : public AGameModeBase
+{
+    GENERATED_BODY()
+
+public:
+
+    UFUNCTION(BlueprintCallable)
+    static UWorld* MyGetWorld();
+
+};
+
+.cpp 파일
+#include "Engine/Engine.h"
+
+UWorld* AMyProjectGameModeBase::MyGetWorld()
+{
+    // Prefer PIE Worlds.
+    // Fallback to Game Preview Worlds.
+    // Ignore all other types (e.g., other preview worlds).
+
+    UWorld* PIE = nullptr;
+    UWorld* GamePreview = nullptr;
+
+    for (FWorldContext const& Context : GEngine->GetWorldContexts())
+    {
+        switch (Context.WorldType)
+        {
+        case EWorldType::PIE:
+            PIE = Context.World();
+            break;
+        case EWorldType::GamePreview:
+            GamePreview = Context.World();
+            break;
+        }
+    }
+
+    if (PIE)
+    {
+        return PIE;
+    }
+    else if (GamePreview)
+    {
+        return GamePreview;
+    }
+
+    return nullptr;
+}
+
+이 예에서는 함수를 게임 모드에 넣었습니다. 게임 모드는 조직적으로 배치할 위치가 아닐 수 있지만 기본에서 새 C++ 프로젝트를 만들 때 게임 모드 C++ 파일이 자동으로 생성되기 때문에 데모용일 뿐입니다. 주형.
+
+또한 당신이하려고하는 것이 일종의 스케치라는 점에 유의하십시오. 에디터 유틸리티는 에디터 컨텍스트에서 실행하기 위한 것으로, 많은 월드의 로드를 견뎌낼 수 있습니다. 장면과 상호 작용하는 버튼을 누를 수 있도록 하려면 대신 다음 중 하나를 수행하는 것이 좋습니다.
+
+UMG 또는 Slate를 사용하여 게임 자체에 디버그 버튼 배치
+게임 자체에서 콘솔 명령 생성(C++이 필요할 수 있음, 청사진에서 시도한 적이 없음)
+특정 유형의 액터와만 작동하려는 경우 해당 액터에 대한 사용자 정의 세부 정보 패널을 만드십시오(C++ 필요).
+공유하다
+따르다
+
+
+## 클래스 변수로 받기
+ 클래스 레퍼런스를 인자로 받는 함수는 위의 사진과 같이 클래스를 지정하여 사용할 수 있습니다.
+
+void AddWeaponToInventory(class APCEWeaponBase* Weapon);
+ 평소에 포인터로 인자를 받는 오브젝트 레퍼런스를 사용하는 함수의 경우 위와 같이 작성하지만 클래스 레퍼런스의 경우 다음과 같이 작성합니다.
+
+void AddWeaponToInventory(TSubclassOf<class APCEWeaponBase> Weapon);
+ 그리고 클래스 레퍼런스를 받은 경우 이 클래스 안의 변수나 함수를 사용할때는 .GetDefaultObject() 함수를 사용해야 클래스 안의 변수나 함수를 사용할 수 있습니다.
+
+Weapon.GetDefaultObject()->OnAttackTrace();
+
+* FBX 데이터가 정상적이지 않은 게 맞구요. 그나마 덜 작업하시려면 데이터 스미스 사용하시면 됩니다. 현업에서는 네이밍 포뮬러를 통해서 머터리얼 자동 생성툴을 만들고 있습니다. 지원되는 파이썬 API 사용해서 만들 수 있습니다. 마야와 언리얼 간 파이썬 언어 사용해서 데이터 트랜스퍼를 만드는게 요즘 VFX 업체가 진행하는 주요 업무입니다
+
+* ControlRig만들때 속터지니 단순하게 하는 것도 좋다. 굳이 Items를 만들어서 할 필요는 없다.
+
+## MetaHuman ControlRig
+
+## 기본
+* 색의 배치 Pelvis는 주황색으로, 머리는 노란색, 왼쫀은 빨간색, 오른쪽은 파란색으로 표시함.
+* 이름규칙은 BoneName_L/R_IK/FK/-_ctrl로 되어있음.
+* global_ctrl과 root_ctrl, body_offset_ctrl이 되어있음. root_ctrl은 루트 본의 트렌스폼을, body_offset_ctrl은 바디 본의 트렌스폼을 설정함.
+* Ctrl타입으로 변수를 설정하기도 함.
+* ProjectToNewParent는 별로 복잡한건 아니고 상대 좌표 구해옴.
+* 반복되는 것은 Item 배열을 만들어서 루프돌릴 수 있음.
+
+## BackwardSolve
+* 특별한 본들을 제외하고 기본적으로 Backward는 Bone의 트렌스폼을 바탕으로 Ctrl의 트렌스폼을 결정함.
+
+## SetupSolve
+
+## ForwardSolve
+* 무릎의 Pin은 Calf를 나타냄. 핀의 선은 DrawLine노드를 이용함.
+* Leg는 BasicIK노드를 이용함.
+
+## 
+
+엔진 기능이 많고 엄청나게 복잡함 -> 뭔가 할려고 하는데 기능적으로 문제가 꼬임. 파악이 안됨. 그럴때는 어떻게 해야 하는가.
+
+## 본 소켓에 붙였다 때기 쉽게 하기
+소켓에 여러개의 어테치된 액터 또는 컴포넌트 쉽게 관리하는 방법은 SceneComponent를 붙인 후 관리하는 것 입니다.
+
+**아이템을 주워서 어테치하는 것은, 액터 2개 만들어서, 관리해라.** 아이템과 총을 분리해라.
+
+# Character movement
+
+[UE4 캐릭터 이동 시스템 가이드](https://lifeisforu.tistory.com/304)
+
+## 07 1
+
+총싸움은 만들기 쉽다? 모든 총은 누르자 마자 나간다. 누르자 마자 나간다는건 누르는 타이밍에 나간다. 화살 같은 경우에는 누르는 타이밍이 아니라 활 시위를 당기는(특정 애니메이션)이 있고, 그다음 나간다. 선행하는 애니메이션이 있다는 의미이다.
+
+이 말은 애니메이션의 선행 동작이 있을때 마우스를 누르고 때는 점을 생각해볼 수 있다.
+
+몬헌 대검을 생각하면 버그라고 생각할 수 있다.
+**게임이란걸 작업할 때 보장받는 다는 것이 굉장히 중요하다. 버그를 내지 않기 위해서.**
+객체가 죽으면 포인터는 어떻게 할 것인가?
+
+게임같은걸 만들면 대부분 다 애니메이션 중에 발생시킴.
+로아같은 경우, 애니메이션 발생과 취소와 틱타임이 꼬여서 생긴게 있음.  스킬을 쓰고 취소하면 1초 쿨, 스킬을 다쓰면 쿨이 돔. 누르고 있다가 나가자 마자 취소하면서, 스킬을 설정.... 일반 캔실로 취급.. **왜 안나갔을 까? 아마 블렌딩으로 섞여서 그런거 아닐까?**
+
+근데 이해할만 한게 로아는 3로 만들었음.
+
+이펙트란게 어려움. 왜? 이펙트 만드는 애들이 개념이 없음. 이펙트 만들줄만 알지, 게임에 어떻게 써야할지에 대한 개념이 없음.
+예를 들어 보자, 벼락마법을 쓰는데, 마법진은 따라다녀도 문제가 없는데, 벼락이 따라다니는건 이상하다. 만드는 놈들이 이런 구분이 없다. 이펙트를 열고 직접 분해해야 한다.
+꼭 붙여서 확인해보자. 연기가 삥글삥글돈다????
+
+이팩트 난 지점에서 따라다니면 안됨?
+
+본을 소켓이라 부르던 경우가 있음.
+
+## 영상처리 기법
+
+영상처리 기법을 찾아보면 좋은 방법들을 볼 수 있다.
+
+## 언리얼 Slow motion
+영상을 다소 느리게 플레이하여 긴박한 상황의 세세한 부분을 관객들이 놓치지 않고 감상할 수 있게 하여 긴장감을 배가시키는 효과를 위해 사용하는 영상 처리 기법 중 하나입니다.
+
+* Set Global Time Dilation 메서드를 이용해서 글로벌 타임을 설정하고, Custom Time Dilation을 이용해서 개별 액터의 속도를 조정할 수 있습니다.
+* 음수로 설정 시 Global의 경우 PlayerCharacter 이동을 시도할 경우 화면이 흔들리며, Custom의 경우 해당 Actor의 Global Location은 정지하지만 ANimation은 정지하지 않는 등 비정상적인 작동을 보입니다.
+# 포스트 프로세스 사용하기
+https://sonagi87174.tistory.com/5 포스트 프로세스 이용하기
+
+## 언리얼 엔진 스포트라이트
+
+GodRays라고도 하고, volumetric fog를 이용하고 light shaft라고도 한다.
+
+https://toramee2vr.tistory.com/344?category=955653
+
+# Depth of field
+## Improve DOF quality
+[언리얼 DOF](https://docs.unrealengine.com/4.27/ko/RenderingAndGraphics/PostProcessEffects/DepthOfField/)
+https://www.youtube.com/watch?v=osHpBZ47ZfU
+
+## 링크
+```cpp
+// Standard library header
+#include <filename>
+// User defined header
+#include "filename"  
+```
+
+## IP
+* Socket을 참조하여 내 컴퓨터 IP를 가져오는 법
+```cpp
+
+FString ATest_Network::GetIpAddress()
+{
+	FString IpAddr("NONE");
+	bool canBind = false;
+	TSharedRef<FInternetAddr> LocalIp = ISocketSubsystem::Get(PLATFORM_SOCKETSUBSYSTEM)->GetLocalHostAddr(*GLog, canBind);
+	if (LocalIp->IsValid())
+	{
+		IpAddr = LocalIp->ToString(false);
+	}
+	return IpAddr;
+}
+```
+
+* 파라메터는 한번더 보고 작성하도록 합니다.
+어떻게 된 건지는 모르겠으나, Clamp가 작동함??? 왜지?
+
+* FPS가 높을 경우 부동소수점(플로트)를 이용한 연산에서 매우 작은 수로 인해 오류가 날 수도 있음. 예를 들어 SmoothStep을 이용할 때 1까지 합에서 실제 반환은 0.08정도가 나올 수 있음.
+
+* 헤메는 것을 조금더 줄이기 위해,
+만들기 전에, 사용하는 변수들에 대한 정의를 불러온 후 작업하는 방식을 고려해보자.
+안그래도 생각해야 할 것이 엄청 많은데, 뭐 재미는 있네.
+
+* DOF 한번더 정리하도록 하자.
+
+* 현재 카메라의 로테이션 정보를 가지고 있는 것은, CameraManager의 Camera이다.
+
+* Rotator는 회전하는 것
+* Rotation는 회전이다.
+흥미롭게도 FRotator이다.
+
+[프로젝션 맵핑 가상화??, XR](https://drive.google.com/file/d/1jqk3yQ3EkkLNamsTUYOXda2xi_Ftno1J/view)
+
+* Property MinMax설정 최대값, 최소값
+```cpp
+UPROPERTY(EditAnywhere, Category = "Camera", meta = (ClampMin = "-89.0", ClampMax = "0.0", UIMin = "-89.0", UIMax = "0.0"))
+float CameraMinPitch;
+```
+## CameraShake
+
+Offset = Sin(DeletaTime * Frequency)
+Frequency가 2PI일 때 한번 진동이 완료됨.
+
+## water line
+https://forums.unrealengine.com/t/camera-at-water-level-post-processing-effects-on-part-of-screen/92219
+https://forums.unrealengine.com/t/under-water-above-water-split-view-is-this-possible/88081/61
+https://www.unrealengine.com/marketplace/en-US/product/waterline
+https://www.youtube.com/watch?v=ZdTcFRrYpg8
+
+## 2022 06 30
+
+Actor로 pannel을 하나 만듬.
+플랫폼을 검색?해서 접시로 쓸 생각인가? 콜리전을 추가?
+
+콜리전 추가에서 XYZ 단순화가 바라보는 시점에서, Y도 마찬가지고??
+
+InterpToMovement의 Control point는 패스로 되어있음.
+이를 스플라인으로 추가할 수 있음?
+다만 안타깝게도 스플라인의 끝에접이 절묘하게 겹쳐서 잘 안보임.
+
+일단은 프로그래머닌까, 배열의 사이즈를 확보하고, 배열을 하나씩 추가하도록 하자.
+
+내가 지금 뭘 하고 있는 명확하게 해야지 이해하기 쉽다.
+
+언리얼에서 애니메이션을 이야기하는건 스켈레탈 에니메이션을 말한다. 작업기준은 스켈레탈이다. 이 애니메이션을 어떻게 돌리는가는 스켈레탈이 기준이다. 모든 애니메이션의 기준은 스켈레톤이다.
+
+**이벤트 그래프에서 변수를 세팅하고, 이 변수 데이터를 토대로 애니메이션 그래프에서 애니메이션을 돌림**
+
+스켈레톤이 굉장히 많아지게 되면, 스켈레톤가지고 어떤 것을 작업해야 할지 모를 수 있음. 알 방법이 없음. 불가능에 가까움. 따라서 허공에 애니메이션 블루프린트를 만들기 어려움. 메쉬 폴더가서 스캘레톤 선택후 생성하도록 한다.
+
+**TryGetPawnOwner는 현재 돌아가고 있는 객체를 가져오는데 매우매우 중요함. 기본적으로 Owner는 Pawn이상 급만 있음.**
+
+기능은 어느정도까지 확장하고, 나머지는 리소스확장을 하는데, AnimInstance는 기능 확장한데 까지는 가져와야 한다.
+
+개념을 알고 있어야 하는데, Velocity(속도)와 Speed(속력)가 있음. **외워야함** 영어는 벨로시티랑 스피드가 정확하게 구분되어서 사용함. 무브먼트에서는 벨로시티밖에 못가져옴.
+
+https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=yk60park&logNo=221467809435
+
+Velocity는 관성을 포함한 물리 운동량을 의미함.
+Velocity는 방향을 가지고 있고, 방향에 상관없는 것이 Speed다.
+Speed = FVector::DotProduct(GetVelocity(), GetActorRotation().Vector());
+
+블루프린트는 변수를 따서 사용함. 정확하게, 매프레임마다 작업한지가 없는데, 애니메이션은 매 프레임마다 상태를 체크해야함.
+
+애니메이션 100개면 if문 100개써야되냐? 맞다.... 뭐. if문을 클래스화 한것도 사용한다. 전부다 if문이다.
+
+##
+
+* https://docs.unrealengine.com/5.0/ko/physical-materials-user-guide-for-unreal-engine/에 따르면 Complex시에 Phys Material Override를 이용할 수 있다고 하지만 어째선지 되지 않는다.
+
+* 레이케스트를 직접 호출할 떄 FCollisionQueryParams::bMustReturnPhysMaterial을 true로 설정해줘야 반환함.
+* 코드를 따라가다 보면 UE_4.27\Engine\Source\Runtime\Engine\Private\Collision에서 FHitResult를 세팅함.
+* ConvertQueryImpactHit여기서 SetHitResultFromShapeAndFaceIndex를 호출하고 여기서 PhysMaterial을 설정합니다. (여기서 Complex에 따라 Face인덱스가 다르다는 것을 알 수 있음)
+true(33, DefaultPhysMaterial), false(???, Carpet)
+
+https://bbagwang.com/unreal-engine/ue4-%EC%97%90%EC%84%9C%EC%9D%98-physical-material/
+보면 여기서도 맞다고 하는데, 여기서는 못찾았다고 하네 https://stackoverflow.com/questions/67870043/ue4-complex-collision-phys-material-override-not-working
+
+변수가 최적화 되어 검사가 불가능하므로, DebugEditor로 실행
+
+가정 1. FaceIndex가 다르게 나오는 이유, Mesh를 직접 읽으므로?
+
+PxShape에서 getMaterialFromInternalFaceIndex는 순수 가상함수로 되어있네, 그 말은 상속받아서 사용한다는 뜻인데, 예상할 수 있는건 심플 콜리전이랑 컴플렉스 콜리전인가?
+
+* Basic IK로 관절 수정하고 풀바디로 마무리. 애니메이션은 볼때마다 어렵네.
+
+
+* Backward와 Forward를 바꾼후 Ctrl의 Currunt To Offset 포지션으로 바꾸면 편하다.
+
+* InterpToMovement는 발판을 구현할려는 목적으로 만들어 졌구나. 다만 작업하는 방식이 편하지는 않다.
+    - 하지만 월드 좌표계로 강제로 고정이 되어있고, 심지어 만드는 것도, 노트장에다 좌표를 적은다음 옮겨야 한다. 불편하다.
+    - 레벨디자이너한테 이렇게 하자고 하면, 욕한다.
+
+* 블루프린트가 옆으로 선을 연결하다 보디 잘못하면 지저분해짐. 그래서 그중에 많이 쓰는것 설명, Once, DoOnce, Sequence ...
+
+게임의 구성, 애니메이션, 충돌, 좌표, 객체관리... 뭐. 게임업종에 있다가 다른쪽으로 이동하는 경우는 거의 없음. 다만 다른쪽으로 가게 된다면, 별거 없구나 생각하면 된다.
+
+## 블루프린트 컴파일 흐름제어
+* Sequence는 순차적으로 실행
+* DoOnce는 한번만 실행
+* 투클은 반전.
+* Gate는 열고 닫을 수 있음.
+    - MultiGate ... 로 깔끔하게 바뀔 수 있다.
+* While, For, ForLoop, ForWithBreak
+* SetTimerByEvent 잘 신뢰하지 않는??
+
+* 자료구조는 깔끔하게 쓰기 어렵다?
+
+* Unreal은 카운트가 1부터 시작한다...
+* 오류나면 정교하게 체크해줌 -> 속도가 좀 느리다...
+
+HorrorEvent 작업하기.
+
+* PhysicsMaterial에서 override를 반환하는게 일반 trace에서는 작동하지 않는다. 코드를 봐야지 언제 반환하는지 모르겟음.
+
+* RotatingMovement를 집어넣으면, 빙글빙글 돌음.. 엄청 간단한 것은 미리 구현해놨네.
+
+## 상속,
+
+프로그래밍적인 상속이 있고,
+언리얼의 상속
+
+언리얼은 옜날 방식처럼 엑셀로 만들어도 되고,
+상속시켜서 가지고 있어도 되고,
+
+인터페이스 당연히 안다는 가정하에 진행
+
+문법적으로 인터페이스는 퍼블릭 순수 가상함수, 반드시 자식 클래스가 구현해야 하는 함수 근데,, 뭐, 언리얼에서 인터페이스는 끄단거 없음. 개념을 그래도 지키기는 하자.
+
+이벤트일 경우 구현해야 하는지 아닌지 모르는데, 인터페이스의 경우는 무조건 강제구현이라고 하면 이해하기 쉬움?
+
+다양성에 관련된 부분들을 if문으로 해결할 경우, 설계가 이상한 것이다.
+
+기능을 구현후, 내부 변수를 설정하는 식으로 블루프린트 상속을 사용함?
+
+## What does “generate const class”?
+이 클래스의 모든 속성과 함수는 const이며 const로 내보내야 합니다. 이 플래그는 하위 클래스에서 상속됩니다.
+
+
+## 언리얼 폴더관리
+
+## 
+
+Git을 이용할 때 branch좀 따서 만들도록 하자. 두 작업이 동시에 들어올 때 개판되네,
+
+Actor는 Tick이 콜백이고, 컴포넌트의 경우 TickComponent이다.
+
+게임 사운드는 시퀀스를 이용해서 구현할 수 있음. 굳이 사운드 플레이를 만들 필요 없음.
+
+라디오에 쓸 수 있는, 소리
+[Harsh Static](https://freesound.org/people/RoganMcDougald/sounds/261242/)
+[Passage Way ambience](https://freesound.org/people/Dpoggioli/sounds/213605/)
+
+프로그래밍 대전재
+* 기능을 잘 쪼갤 수 있어야 한다.
+* 자기 기능은 자기한테 있어야 한다. 자꾸 기능을 엉뚱한 곳에 넣는 경우가 있다. 이 객체가 과연 어떠한 역활을 하는 녀석인지 명확하게 하지 않으면, 어렵다.
+* 오만가지 기능을 만드는데, 제일 판단하기 어려운건 이 기능을 어디에다 둬야 하는지가 제일 어렵다.
+* 프로그래머는 스스로 하는 행동이 옳다고 판단하고 행동하기 때문에 이를 객관적으로 판단할 수 있는지가 중요. 자신의 판단이 타당한지 등등 결정할 수 있어야함. 사람끼리 부디쳐 보면서 협업, 이런시긍로.
+* 가장 무서운건 A, B... 여러 군데 넘게 둬도 돌아가는데, 어디다 둬야하는지... 게임 코딩같은 경우 유지보수를 전제로 하고, 여러명이서 동시에 만드는, 따라서 최소한 분리하는 경우를 전제로 하는데... 생각보다 굉장히 어려움.
+* 아이템은 아이템에 있어야함. 점수는 점수를 관리하는 곳에 있어야함.
+* 대부분 게임 기능은 충돌로 만듬. 충돌이라고 하는 기능은 쌍방임.
+* 이벤트 기점(알려주는 타이밍), A가 B를 알아야 하느냐, B가 A를 알아야 하느냐? 어떻게 판단하냐? 객체를 늘려보면 알 수 있음. 아이템을 가져다가 폭탄, 버튼, 전등을 만든다. 화살표를 어떻게 그려야 할 까? 캐릭터가 폭탄, 버튼, 전등을 알려고 하면 전부 케이스를 구현해야 하지만, 캐릭터만 안다고 하면, 캐릭터만 구현하면 된다.
+* 최대한 자료형이 적게 나오는 쪽을 아는식으로 구현한다. 캐릭터도 3명, 아이템 5개 이때는? 이때 필요한게 상속이다.
+* 내가 내손으로 직접 관리하겠다. -> 자료구조,
+* 하나만 알면 된다. -> 직접 통신
+* 이게 이것이다. 상속. 포함한다. 조립.
+* 포트폴리오에서 나는 객체 관리를 이런 식으로 이렇게 했다라고 라고 설명해야 한다.
+* 문열고 만드는 기능을 가지고 했다라고 말할 수 없다. 엔진을 쓰는 이상 객체 관리 말고는 어필할 수 있는게 없다. 내가 3D에 관련된 이론을 기본적으로 알고있다. 엔진 기능을 충분히 숙지하고 있다. 음. 훌륭하군. 돈을 낼만했네.
+
+* 문작에 시퀀스 가가지고, 
+* 커브그래프 사용방법은, 원하는 값을 키프레임에서 찍어노호, 커브 에디터로 들어와서 작업하는 것이 편할 것이다.
+
+* 엘든링이 잘만든 것은, 래버를 당기는 애니메이션, 상자를 드는 애니메이션 하나가지고 여러곳에서 사용함.
+
+* 회사에서는 기획자가 필요한 리소스를 조합해서 만들어줌. 사서 쓰지 않음.
+
+* 내가 이기능을 써야겠다 판단할 수 있는 능력이 중요하다. 이때는 이렇게 써야 한다 판단하는 건 아무것도 만들지 못하는 상황이 발생한다.
+
+* 개슬프네, 삽질을 통해서 찾았는데, 겁나 쉽게 가르켜 주네. ActorSequence
+    - ActorSequence에서 오른쪽 위에 트랙을 클릭하는 것과 왼쪽에 있는 트랙을 선택하는 것은 기능이 다르다.
+    - SceneRoot을 두고 그 아래에 있는 스태틱 메시를 옮겨라 라고 한다. RootComponent를 옮기면 월드상의 좌표가 움직입니다.??
+    - 키를 추가하는데 엔터키를 눌려도 추가가 된다. 혹시 중복클릭 될지도 모르니 조심해서 하도록 하자.
+    - PlayPlop은 Toogle에 따라 다르게 실행되는 노드이다.
+    - PlayTime이 기억되기 때문에 PlayReverse가 호출되면, 실행된 지점에서 역으로 재생됩니다.
+
+* 비쥬얼 스튜디오 파일을 찾을 수 없을때, .uproject의 더 많은 옵션에서 비쥬얼 스튜디오 프로젝트 다시 생성
+
+한일
+Volume에 컴포넌트 이벤트를 바인드함.
+프롤로그 형태를 잡음
+3. 플러그인 세팅
+	- 프로젝트를 만들고, 서브모듈 다운로드 후, 커밋하는 식으로 프로젝트 폴더 분리,
+	- HorrorSource와 FirstPersonHorror작업하기,
+    
+	- 비쥬얼 스튜디오 git에서 서브모듈 업데이트 하는 방법 찾기
+        - 못찾겠음. 직접 서브모듈 커밋하는 수 밖에 없는 것 같음.
+        - 정확히는 비쥬얼 스튜디오 Git 하위 항목에서 하지말라, 프로젝트 옮긴다음에 커밋하라는 튜토리얼을 봐버림.
+
+2. HorrorFirstPerson무브먼트 세팅
+
+할일
+HorrorEvent
+HorrorEevent는 무조건 멀티캐스트 되도록 구현,
+Caller에서 서버로 호출
+- 이거 공부하고 만들도록 하자.
+
+2. 정리
+자연스러운 애니메이션 만들기
+서버 클라이언트 모델,
+메타휴먼 워크플로우 (메타휴먼 블렌더 파이프라인)
+구현한 플러그인 문서 작성하기...
+
+
+* 머티리얼이 깨지는 이유는 뭘까? 당연한 이유로 깨지는거 같은데, 모르겠네.
+    - 메타휴먼 파이프라인을 구축하도록 합시다.
+
+* 모르는 것을 찾아서 정리하자.
+    1. FBX convert를 왜 하는가?
+    2. 모프 타겟이 무엇인가?
+        * Morph target은 기본 형태에서 목표 형태로 메시를 변형(deform)시키는 수단입니다. 보통 애니메이션 시스템의 일부로써 스켈레탈 메시와 함께 사용되나, 스태틱 메시도 모프 타깃을 사용하여 변형시킬 수 있습니다.
+        - [스태틱 메시 모프 타깃](https://docs.unrealengine.com/4.27/ko/WorkingWithContent/Types/StaticMeshes/MorphTargets/)에서 머티리얼 셋업을 볼 수 있습니다.
+        * **Morph Target(모프 타겟)이란 일정한 방식으로 변형되어 버린 특정 메시의 버텍스 위치에 대한 스냅샷을 말합니다.** 예를 들어 캐릭터 모델을 선택하여, 그 얼굴 모양을 바꿔 얼굴 표정을 만든 다음, 그 수정된 버전을 모프 타깃으로 저장합니다. 언리얼에서 그 모프 타깃으로 블렌딩하여, 캐릭터의 얼굴이 그 표정을 짓도록 만들 수 있습니다. 모프 타깃은 FBX를 통해 언리얼로 임포트되며, 애니메이션 시퀀스 안에서 캡슐화됩니다.
+        - [FBX 모프 타깃 파이프라인](https://docs.unrealengine.com/4.27/ko/WorkingWithContent/Importing/FBX/MorphTargets/)
+    3. 망할 왜 얼굴 애니메이션이 안되냐?
+    4. 단순하게 리임포트 하는 것은 로테이션을 조정하는 것으로 가능할 것 같은데,
+
+* 메타휴먼을 리임포트하는 절차에서, 래퍼런스 대체는 래퍼런스 설정 깨지므로, 없다고 생각하고, 리임포트 하는 방향으로 만들자. 앞의 설정을 유지하여 리임포트 하는 것으로, 가능하지 않을까?
+
+* 플러그인 만들 떄 설정이 복잡하면, 없으니만 못함. 확실히 필요한 것만 추가하도록, 가능한 엔진과 거부감이 들지 않도록, 공포게임에 사용할 목적이므로, 공포 게임 이벤트를 효과적으로 연출할 수 있도록 지원해야함.
+
+* BeginPlay를 오버라이드 했을 떄 Super(부모 함수)를 호출 하지 않으면, 기본 세팅이 되지 않음. 오류남. HasBegunPlay오류를 뿜뿜함.
+
+* 호러 이벤트 서버에 멀티캐스트 시키기 너무 어려럽다. 표준 하나 구한다음에 따라해야하나?
+    - 적절한 사용 예시를 찾아서 공부하도록 하자.
+
+스크립트 액션 만들기
+
+# Texture 세팅
+
+Mip Gen Settings를 NoMipmap으로 설정하지 않는이상 texture LOD(Mipmap)는 무조건 자동생성되며, 자동적용된다. 화면 왼쪽 위의 Mip Level 체크박스는 밉맵을 미리보기하겠다는거지, 체크를 해야 밉맵이 가능해지는 것이 아니다.
+
+[언리얼 텍스쳐 세팅 주요 부분](https://mentum.tistory.com/101)
+
+
+# Texture 최적화
+
+NPOT 형태의 텍스쳐인 경우 압축할 수 없습니다. 압축이 되지 않은 텍스쳐의 경우 많게는 8배 정도 큰 이미지 용량을 차지하게 됩니다.
+[Unreal 4 로딩텍스쳐 최적화](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=jinwish&logNo=221576705990)
+
+# Material 최적화
+
+```
+Base pass shader : 169 instructions
+...
+Base pass Vertex shader : 46 instructions
+```
+위는 픽셀 쉐이더 수치를 나타내고, 아래는 버텍스 쉐이더 수치를 나타냅니다. 이 수치가 클 수록, 쉐이더가 무겁다는 것을 나타냅니다. 이는 쉐이더 복잡도에서 볼 수 있습니다.
+
+* 쉐이더 자체가 무겁거나, 이펙트 같은 반투명 쉐이더가 겹쳐서 오버드로우 현상이 날 때 무겁습니다.
+* 프로젝트 세팅 / 엔진 / 렌더링 에서 Shader Permutation Reduction, Mobile Shader Permutation Reduction에서 자동으로 지원하는 기능을 설정할 수 있습니다.
+    - 쉐이더의 갯수를 줄이면 Material 에셋 크기를 줄이고, 쉐이더 컴파일 속도를 높일 수 있습니다.
+* 프로젝트 세틍 / 프로젝트 / 패키징 / Share Material Shader Code를 통해 Material 하나하나 저장되어 있는 상태를 하나의 라이브러리에 쉐이더가 모두 저장되어 용량을 줄일 수 있습니다.
+    - 파라곤게임에서 1.8GB 쉐이더 용량을 400MB수준으로 줄였다고 합니다.
+
+* Material 설정
+    * Fully Rough는 강제로 러프니스를 1로 설정하는 것으로 쉐이더 계산량을 줄입니다.
+    * Use Lightmap Directionality는 라이트맵 방향성 사용옵션입니다. 이 옵션을 끄면 라이트맵을 구울 때 방향성 정보 없이 구워집니다. 
+    * Decal Response는 데칼 반응여부를 선택하는 옵션입니다. 기본적으로 켜져 있으며, 해당 Material을 가진 오브젝트가 데칼 영향이 가지 않을 때 None으로 끌 수 있습니다. Instruction값이 매우 낮아집니다.
+    * Tangent space normal을 끄는 옵션입니다.
+
+* Material 표현식
+    * 가벼운 것은 Add, Subtract, Multiply
+    * 무거운 것은 삼각함수 계을, if, Divide, Power, Noise
+    * 삼각함수 중에 Fast붙인 노드는 조금더 빠름
+
+* Customized UV를 사용하면 Vertex Shader에서 연산을 사용하여 조금더 빠르게 그릴 수 있습니다. 다만 퀄리티가 낮아질 수 있습니다.
+    - 퀄리티가 떨어질 수 있습니다.
+
+
+, [Unreal’s Rendering Passes](https://unrealartoptimization.github.io/book/profiling/passes/)
+, [UE4 Material 최적화](https://darkcatgame.tistory.com/37)
+, [UE4 텍스쳐 세팅](https://mentum.tistory.com/101)
+
+## Metahuman 최적화
+
+Metahuman character의 LODSync 컴포넌트의 NumLODs와 Forced LOD를 조절하여 원하는 퀄리티를 선택한다. 여기서 원하는 수준을 결정합니다.
+
+* 소스컨트롤러 Git을 사용하므로 100M가 넘어가는 에셋의 크기를 줄입니다.
+    1. 텍스쳐 리소스를 축소시킵니다.
+    2. 스켈레탈 메시 크기를 줄입니다.
+        - Face 스켈레탈 메시들이 100M를 넘어갑니다.
+        - 버텍스당 12개의 본 인플루언스를 사용한다고 이해했습니다.
+        - Mesh reduction tool을 이용하여 스켈레탈 메시의 크기를 줄입니다.
+        - reduction setting 후 익스포트 후 리임포트를 하면 적용할 수 있습니다.
+        - 이 때 root본의 x축 트렌스폼이 -90도 돌아가 얼굴 스켈레탈 메쉬가 드러눕게 됩니다...
+
+[사실적인 머리카락, 복숭아 솜털, 눈을 만드는 방법](https://marmoset.co/posts/how-to-create-realistic-hair-peach-fuzz-and-eyes/)
+
+2. 메시 버텍스 감소
+3. 본 감소
+
+4. 시퀀스에서만 사용한다.
+5. LOD를 없앤다.
+
+## 공포 게임 기획
+
+공포 게임을 제작하기에 앞서 공포 라는게 정확히 무엇인지, 우리는 왜 공포심을 느끼고 있는지, 어떻게 하면 그 분위기를 제공해 줄 수 있는지.
+
+정말 무서운 공포 게임을 개발하고 싶어서, 지금도 고민을 하고 있습니다.
+
+그리고 오늘 머릿 속에 있는 그대로 씬에 배치해보고 느낀점을 적어보자면,
+
+귀신의 얼굴을 노출시켜주는것보다 실체를 알 수 없는것에 한걸음 한걸음씩 다가갈때 공포를 더 느끼고 있다는것을 느꼈습니다.
+
+또 저 상황에서 쓰러져있는 여자가 갑자기 무서운 얼굴을 한채 앞으로 확 날아온다거나, 벽에 거꾸로 매달려 있는 여자가 갑자기 바닥에서 튀어나온다거나
+
+이처럼 한정된 장소에서도 "어떻게 하면?"을 고민하다보면 다양한 연출을 제공해줄수 있다는 것과
+
+인간이 느끼는 감정에 대해 분석적으로 다가가면 내가 원하는 것을 제대로 제공해 줄 수 있다는것을 알게 되었습니다.
+
+Marching Cube, Dual contouring
+
+## 
+
+데이터의 연결고리를 잘 찾아야 한다. 어떤걸 근거로, 어디에 어떻게 있고, 누구랑 어떻게 연결되어 있고.
+
+전등을 배치했다, 그러면 충돌이벤트는 (충돌 이벤트는 쌍방향) 전구를 껐다 켰다 하는 기능은 어디다 만들어야 하는가?
+
+캐릭터가 바뀌느니 것이니 캐릭터에다 만든다고 해보자, 그러면 if가 엄청나게 많아진다.
+
+기본적으로는 자기자신이 기본이다. 버튼으로 상호작용하는 건, 에시로 오버랩을 백업해두고, 버튼을 누르면 작동하도록 만든다고 하는데 이렇게 만들면 안된다. 확장의 문제가 있다.
+
+본인들이 고민을 많이 해야함. 스스로 꼬였다고 생각하면 풀어야함. 복잡한 상태를 안풀고, 복잡한 상태를 잘 만들면 안된다.
+
+블루프린트에서 변수를 가져오는 것 조차 부담이 되므로, 한번 Get으로 끌어온 것에서 보통 여러번 시킬려고 해야한다.
+
+블루프린트가 느리다고 주장하는 얘들 중에 어중간하게 아는 얘들이, for로 보여주는 얘들이 있는데, 왜 그러는지 모르겠고, 성능이랑, 편의성 등의 상황을 고려해서 만들어야 한다. Tick 이라면 충분히 고민해볼만 하지만, 그게 아니라면, 음. 
+블루프린트가 30배 정도 느리지 않을까 한다.
+
+블루프린트 Set, Get단축키 외워두자, 굉장히 많이 씀.
+
+**오버랩된 객체가 사라질 때, 엔드오버랩을 만드시 보장해줌.** 다만 최초의 상태는 무시한다, 시작시 오버랩된 거는 작동하지 않는다.
+
+게임 여러곳에 사용할 수 있을 듯 하므로, 지대한 관심을 가지고, 보도록 합시다.
+
+https://docs.unrealengine.com/4.27/ko/AnimatingObjects/Sequencer/
+
+**내가 이런 기능을 추가하기 위해서, 이런 고민을 했다. 핵심적인 알고리즘은 이것이다. 이런 식으로 설명해야 한다.**
+
+언리얼 이벤트 디스패치 공부하기.
+
 ## 뭔지 모르겠음.
 
 https://www.programcreek.com/cpp/?CodeExample=object+initializer 언리얼이 있는거 같은데, 무슨 용도의 사이트인지 모르겠음.
