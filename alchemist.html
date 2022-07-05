@@ -109,39 +109,43 @@ permalink: /alchemist/
         console.log(data[i]);
         if(data[i]['no'] == searching_recipe){
           for (var j=0; j < data[i]['recipe'].length;++j){
-              find_recipe = data[i]['recipe'][j].split(',');
+            find_recipe = data[i]['recipe'][j].split(',');
 
-              if(find_recipe[0] === undefined){
-                find_recipe[0] = '';
-              } else {
-                recipe_material += "<li>";
-                recipe_material += "<span>"+find_recipe[0]+"</span>";
-              }
+            if(find_recipe[0] === undefined){
+              find_recipe[0] = '';
+            } else {
+              recipe_material += "<li>";
+              recipe_material += "<span>"+find_recipe[0]+"</span>";
+            }
 
-              if(find_recipe[1] === undefined){
-                find_recipe[1] = '';
-              } else {
-                recipe_material += "<span>"+find_recipe[1]+"</span>";
+            if(find_recipe[1] === undefined){
+              find_recipe[1] = '';
+            } else {
+              recipe_material += "<span>"+find_recipe[1]+"</span>";
+            }
 
-              if(find_recipe[2] === undefined){
-                find_recipe[2] = '';
-              } else {
-                recipe_material += "<span>"+find_recipe[2]+"</span>";
+            if(find_recipe[2] === undefined){
+              find_recipe[2] = '';
+            } else {
+              recipe_material += "<span>"+find_recipe[2]+"</span>";
+            }
 
-              if(find_recipe[3] === undefined){
-                find_recipe[3] = '';
-              } else {
-                recipe_material += "<span>"+find_recipe[3]+"</span>";
+            if(find_recipe[3] === undefined){
+              find_recipe[3] = '';
+            } else {
+              recipe_material += "<span>"+find_recipe[3]+"</span>";
+            }
 
-              if(find_recipe[4] === undefined){
-                find_recipe[4] = '';
-              } else {
-                recipe_material += "<span>"+find_recipe[4]+"</span>";
-              }
-              if(find_recipe[0] === undefined){
-                recipe_material += "</li>";
-              }
+            if(find_recipe[4] === undefined){
+              find_recipe[4] = '';
+            } else {
+              recipe_material += "<span>"+find_recipe[4]+"</span>";
+            }
+            if(find_recipe[0] === undefined){
+              recipe_material += "</li>";
+            }
           }
+
           break;
         }
       }
