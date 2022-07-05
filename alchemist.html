@@ -102,7 +102,9 @@ permalink: /alchemist/
 
   if(searching_recipe){
     document.getElementById("find_recipe").innerHTML = "일반 연금 "+searching_recipe+"의 각 슬롯별 등장 아이템 획득 확률";
-    var recipe = get_recipe(searching_recipe, find.name, "recipe");
+    if ($('#recipe').is(':visible') == true) {
+      var recipe = get_recipe(searching_recipe, find.name, "recipe");
+    }
     var recipe_material = "<h2>연금식 재료</h2><ul class='recipe_list'>";
     $.getJSON("{{ site.baseurl }}/alchemist/recipe.json", function(data) {
       for (var i=0; i < data.length;++i){
