@@ -332,6 +332,7 @@ nav {
   margin: 0;
   display: flex;
   list-style: none;
+  flex-direction: column;
 }
 .recipe_list li{
   padding: 0 0.5em 0;
