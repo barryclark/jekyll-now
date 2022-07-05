@@ -3,6 +3,7 @@ layout: default
 permalink: /alchemist/
 ---
 <h1 id="find_recipe"></h1>
+<div id="recipe_material"></div>
 <div id="searching_item">
 
 </div>
@@ -103,6 +104,22 @@ permalink: /alchemist/
   if(searching_recipe){
     document.getElementById("find_recipe").innerHTML = "일반 연금 "+searching_recipe+"의 각 슬롯별 등장 아이템 획득 확률";
     var recipe = get_recipe(searching_recipe, find.name, "recipe");
+    var recipe_material = "<ul class='recipe_list'>";
+    $.getJSON("{{ site.baseurl }}/alchemist/recipe.json", function(data) {
+      for (var i=0; i < data.length;++i){
+        if(data[i]['no'] == searching_recipe){
+          for (var j=0; j < data[i]['recipe'].length;++i){
+              find_recipe = find_recipe.split(',');
+              recipe_material += "<li><span>"+find_recipe[0]+"</span><span>"+find_recipe[1]+"</span><span>"+find_recipe[2]+"</span><span>"+find_recipe[3]+"</span><span>"+find_recipe[4]+"</span></li>";
+          }
+          break;
+        }
+      }
+      if (recipe_material != "<ul>"){
+        recipe_material += "</ul>";
+        document.getElementById("recipe_material").innerHTML = recipe_material;
+      }
+    });
   }
 
 
