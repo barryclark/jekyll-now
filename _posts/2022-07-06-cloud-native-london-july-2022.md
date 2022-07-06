@@ -3,14 +3,13 @@ layout: post
 title: "Cloud Native London July 2022: ControlPlane, Microsoft, and Harness"
 description: "speakers from ControlPlane, Microsoft, and Harness join us at the Cloud Native London meetup July 2022, hosted by Cheryl Hung, Engineering Manager at Apple"
 location: London, UK
-image: /images/CNL_April_Rambly.jpg
+image: /images/2022-06-01-cloud-native-london-june-2022.jpeg
 video: https://www.youtube.com/embed/0jJHRLLNgpY
 tags:
   - Photos
   - Video
   - Meetup
   - "2022"
-published: false
 ---
 
 We have four fantastic speakers from ControlPlane, Microsoft, and Harness joining us tonight at our July Cloud Native London meetup tonight! Come along in person from 6:30pm BST or from 6:45pm BST on Rambly and YouTube!
@@ -32,7 +31,7 @@ We are immensely grateful to [Palo Alto Networks](https://www.paloaltonetworks.c
 
 Our next meetup will be on Wednesday 3rd August, when we'll be in person and joined by speakers from eSynergy, Amazon, and NVIDIA. [RSVP and save the date now!](https://www.meetup.com/cloud-native-london/events/285804159/). 
 
-Stay safe and see you soon!
+See you there!
 
 Cheryl (@oicheryl) 
 
