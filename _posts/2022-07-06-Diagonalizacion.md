@@ -4,10 +4,11 @@ layout: post
 title: Diagonalización de Matrices y Transformaciones
 ---
 
-Hace pocas semanas rendí un concurso para acceder a un cargo de docencia e investigación (concurso que felizmente gané).
+<p align = "justify"><em>Hace pocas semanas rendí un concurso para acceder a un nuevo cargo docente
 El área del concurso en cuestión era Algebra Lineal, y el tema concursado era Diagonalización de Matrices y Transformaciones.
 Este es un miniapunte teórico que escribí para apoyarme durante la defensa de mi proyecto. No tiene demostraciones,
-pero sí todos los resultados teóricos básicos del tema. También se encuentra accesible aquí.
+pero sí todos los resultados teóricos básicos del tema. También se encuentra accesible
+<a href = "https://drive.google.com/file/d/1H6pSNuRP2DENN5qDoUI5w9BcvtP-HDha/view?usp=sharing">aquí</a>.</em><p>
 
 
 <font size = "+2"><b> Algunas definiciones previas importantes</b></font>
@@ -40,10 +41,10 @@ El vector $\left[\alpha_1,...,\alpha_n\right]\in K^{n\times 1}$ es el
 $\left[ v\right]_\mathcal{B}$.
 
 
-Dadas dos bases de un mismo $K$-espacio vectorial $V$ de <b>dimensión finita</b>, cada elemento de $V$ 
+<p align = "justify">Dadas dos bases de un mismo $K$-espacio vectorial $V$ de <b>dimensión finita</b>, cada elemento de $V$ 
 tiene asociados dos vectores de coordenadas (generalmente distintos), uno en cada una de las bases. 
 Con la ayuda de cierta matriz, llamada de cambio de base, se pueden obtener las
-coordenadas de un vector con respecto a una base de $V$ a partir de las coordenadas del vector en la otra.
+coordenadas de un vector con respecto a una base de $V$ a partir de las coordenadas del vector en la otra.</p>
 
 <b>Definición:</b>
 Sea $V$ un $K$-espacio vectorial de dimensión $n$, y $\mathcal{B}_1 = \{v_1,...,v_n\}$ y
@@ -54,9 +55,9 @@ y se nota $C(\mathcal{B}_1,\mathcal{B}_2) = I_{\mathcal{B}_1\mathcal{B}_2}\in K^
 a la matriz definida por $C(\mathcal{B}_1,\mathcal{B}_2)_{ij} = \alpha_{ij}$.
 
 
-En otros términos, la matriz de cambio de base $C(\mathcal{B}_1,\mathcal{B}_2)$ es la matriz cuya j-ésima
+<p align = "justify">En otros términos, la matriz de cambio de base $C(\mathcal{B}_1,\mathcal{B}_2)$ es la matriz cuya j-ésima
 columna son las coordenadas en la base $\mathcal{B}_2$ del j-ésimo vector de la base $\mathcal{B}_1$,
-para cada $1\leq j\leq n$, es decir
+para cada $1\leq j\leq n$, es decir</p>
 \begin{equation*}
 C(\mathcal{B}_1,\mathcal{B}_2) = \left[\left[v_1\right]_{\mathcal{B}_2},...,\left[v_n\right]_{\mathcal{B}_2}\right].
 \end{equation*}
@@ -67,11 +68,11 @@ $K$-vectoriales, $V$ de dimensión finita, y sea $T:V\to W$ una transformación 
 \mathrm{dim}V = \mathrm{dim}(\mathrm{Ker}(T))+ \mathrm{dim}(\mathrm{Im}(T)).
 \end{equation*}
 
-Si $V$ y $W$ son $K$-espacios vectoriales de dimensión $n$ y $m$ respectivamente, 
+<p align = "justify">Si $V$ y $W$ son $K$-espacios vectoriales de dimensión $n$ y $m$ respectivamente, 
 una transformación lineal $T:V\to W$ queda unívocamente determinada por los $n$ vectores 
 de $W$ que son los valores de $T$ en una base cualquiera de $V$ . Además, fijada una base de $W$ ,
 estos $n$ vectores quedan determinados por medio de sus vectores de coordenadas en $K^m$ . Se define
-entonces una matriz asociada a $T$ que contiene toda esta información.
+entonces una matriz asociada a $T$ que contiene toda esta información.</p>
 
 <b>Definición:</b>
 {\bf Matriz de una transformación} Sea $T:V\to W$ una transformación lineal entre dos espacios vectoriales 
@@ -85,9 +86,9 @@ donde $\mathcal{B}= \{v_1,...,v_n\}$.
 
 <font size = "+2"><b> Diagonalización de transformaciones y matrices</b></font>
 
-Hay muchas formas de introducir este tema, particularmente a mí me gusta comenzar a través 
+<p align = "justify">Hay muchas formas de introducir este tema, particularmente a mí me gusta comenzar a través 
 de la definición de matrices semejantes (tema que cobra mayor relevancia cuando se estudie la 
-Forma Normal de Jordan).
+Forma Normal de Jordan).</p>
 
 <b>Definición:</b>
 Sean $A,B\in K^{n\times n}$. Se dice que $A$ y $B$ son \emph{semejantes},
@@ -107,21 +108,21 @@ donde $\{v_1,...,v_n\} = B_2$
 Una matriz $A\in K^{n\times n}$ se dice \emph{diagonalizable} si existe $C$ invertible 
 tal que $CAC^{-1}$ es diagonal, es decir, si es semejante a una matriz diagonal.
 
-Claramente, todo lo que puedo definir para matrices lo puedo extender a transformaciones lineales, 
-entonces de manera natural definimos:
+<p align = "justify">Claramente, todo lo que puedo definir para matrices lo puedo extender a transformaciones lineales, 
+entonces de manera natural definimos:</p>
 
 <b>Definición:</b>
 Sea $V$ un $K$-espacio vectorial de dimensión finita y $T:V\to V$ una transformación lineal. 
 Se dice que $T$ es \emph{diagonalizable} si existe una base $B$ de $V$ tal que $\left[T\right]_B$ 
 es diagonal.
 
-Algo que debemos observar, es que si $T$ es diagonal si y sólo si dada cualquier base $B$ tendremos
-que $\left[T\right]_B$ es diagonalizable.
+<p align = "justify">Algo que debemos observar, es que si $T$ es diagonal si y sólo si dada cualquier base $B$ tendremos
+que $\left[T\right]_B$ es diagonalizable.</p>
 
 <font size = "+2"><b> Autovalores y autovectores</b></font>
 
-Consideremos ahora un espacio vectorial $V$ de dimensión finita $n$, y un endomorfismo $T$ diagonalizable,
-entoncesexiste una base $\mathcal{B} = \{v_1,...,v_n\}$ de $V$ tal que la matriz es diagonal
+<p align = "justify">Consideremos ahora un espacio vectorial $V$ de dimensión finita $n$, y un endomorfismo $T$ diagonalizable,
+entoncesexiste una base $\mathcal{B} = \{v_1,...,v_n\}$ de $V$ tal que la matriz es diagonal</p>
 \begin{equation*}
 \begin{aligned}
 \left[T\right]_{\mathcal{B}} &= 
@@ -144,13 +145,13 @@ Sea $V$ un $K$-espacio vectorial y $T:V\to V$ una transformación lineal.
 Se dice que $v\in V$, $v\neq 0$ es un \emph{autovector} de $T$ si existe $\lambda\in K$ tal que
 $T(v) = \lambda v$. El elemento $\lambda\in K$ se llama \emph{autovalor} de $T$.
 
-Remarquemos que si bien la motivación inicial fueron las transformaciones lineales de un espacio vectorial
+<p align = "justify">Remarquemos que si bien la motivación inicial fueron las transformaciones lineales de un espacio vectorial
 de dimensión finital, la definición anterior no hace referencia a esa hipótesis. De hecho, 
 utiliza solamente la estructura vectorial de $V$, por lo que la definición de autovalores y autovectores 
-también tiene sentido en el contexto de espacios vectoriales de dimensión no finita.
+también tiene sentido en el contexto de espacios vectoriales de dimensión no finita.</p>
 
-Notemos también que de lo anterior tenemos que si $T$ es diagonalizable, entonces la
-base $\mathcal{B}$ en la cual su matriz es diagonal, está formada por autovectores. Luego
+<p align = "justify">Notemos también que de lo anterior tenemos que si $T$ es diagonalizable, entonces la
+base $\mathcal{B}$ en la cual su matriz es diagonal, está formada por autovectores. Luego</p>
 
 <b>Proposición:</b>
 Un endomorfismo $T$ de un espacio vectorial finito es diagonalizable sii hay una base de $V$ formada 
@@ -169,12 +170,12 @@ $K^{n\times n}$.
 Sea $A\in K^{n\times n}$. Se dice que $v\in K^n$, $v\neq 0$ es un autovector de $A$ si 
 existe $\lambda\in K$ tal que $Av = \lambda v$. El elemento $\lambda$ se denomina autovalor.
 
-Por las observaciones anteriores quedó claro que si $A$ es la matriz de $T$ en alguna
+<p align = "justify">Por las observaciones anteriores quedó claro que si $A$ es la matriz de $T$ en alguna
 base $B$ y $v$ es un autovalor, entonces $\left[v\right]_B$ es un autovector de $A$. 
-Y viceversa, si $A$ tiene un autovector $v$, entonces $v$ es un autovector de $T$ escrito en la base $B$.
+Y viceversa, si $A$ tiene un autovector $v$, entonces $v$ es un autovector de $T$ escrito en la base $B$.</p>
 
-Entonces ya tenemos un método para determinar los autovalores de una transformación:
-basta encontrar los de su matriz en alguna base $B$.
+<p align = "justify">Entonces ya tenemos un método para determinar los autovalores de una transformación:
+basta encontrar los de su matriz en alguna base $B$.</p>
 
 Veamos ahora cómo determinar los autovalores de $T$ a partir de los de la matriz $A = \left[T\right]_B$.
 
@@ -194,8 +195,8 @@ $\mathcal{X}_A(\lambda) =\mathrm{det}(\lambda I_n-A)$.
 Luego
 <b>Definición:</b> $\lambda$ es autovalor de $A$ sii es raíz de $\mathcal{X}_A$ en $K$.
 
-Para poder hacer extensiva esta definición a las transformaciones $T$, necesitamos demostrar que 
-este polinomio puede definirse sin importar la base $B$ que estemos usando para expresar a $T$ como matriz.
+<p align = "justify">Para poder hacer extensiva esta definición a las transformaciones $T$, necesitamos demostrar que 
+este polinomio puede definirse sin importar la base $B$ que estemos usando para expresar a $T$ como matriz.</p>
 
 <b>Definición:</b> Si $A\sim B$ entonces $\mathcal{X}_A = \mathcal{X}_B$.
 
@@ -241,7 +242,8 @@ Entonces son equivalentes:
 Lo anterior está planteado para una transformación $T$, pero vale <i>mutatis mutandi</i> para una 
 matriz $A\in K^{n\times n}$
 
-<b>Aplicación del Teorema anterior:</b> En general, todos los problemas consistirán en diagonalizar una determinada
+<p align = "justify"><b>Aplicación del Teorema anterior:</b> En general, todos los problemas consistirán en diagonalizar una determinada
 matriz o transformación, y señalar su base de autovectores y el conjunto de sus autovalores. Entonces lo que haremos
 será encontrar autovectores que cumplan la condición segunda o tercera, y por el teorema, tendremos garantizado
 que esos vectores diagonalizan nuestra transformación o matriz. Veremos cómo funciona esto en los ejercicios.
+</p>
