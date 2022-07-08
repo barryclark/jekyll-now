@@ -222,6 +222,8 @@ $\mathcal{X}_A(\lambda) =\mathrm{det}(\lambda I_n-A)$.
 </p>
 <p align = "justify">
 Luego
+</p>
+<p align = "justify">
 <b>Definición:</b> $\lambda$ es autovalor de $A$ sii es raíz de $\mathcal{X}_A$ en $K$.
 </p>
 <p align = "justify">Para poder hacer extensiva esta definición a las transformaciones $T$, necesitamos demostrar que 
