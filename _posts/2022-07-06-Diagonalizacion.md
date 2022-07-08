@@ -1,10 +1,7 @@
-
 ---
 layout: post
-
 title: Diagonalización de Matrices y Transformaciones
 ---
-
 <p align = "justify"><em>Hace pocas semanas rendí un concurso para acceder a un nuevo cargo docente
 El área del concurso en cuestión era Algebra Lineal, y el tema concursado era Diagonalización de Matrices y Transformaciones.
 Este es un miniapunte teórico que escribí para apoyarme durante la defensa de mi proyecto. No tiene demostraciones,
@@ -272,7 +269,7 @@ sean sus autovalores $\lambda_1,...,\lambda_r$ con $\lambda_i\neq\lambda_j$, $i\
 Entonces son equivalentes:
 <ol>
   <li> $T$ es diagonalizable.</li>
-  <li> $V=\bigoplus_{i=1}^rE_{\lambda_i}$.</li>
+  <li> $V=\oplus_{i=1}^r E_{\lambda_i}$.</li>
 <li> $\mathcal{X}_T(x) = (x-\lambda_1)^{a_1}...(x-\lambda_r)^{a_r}$ donde $a_i =\mathrm{dim}(E_{\lambda_i})$.</li>
 </ol>
 </p>
