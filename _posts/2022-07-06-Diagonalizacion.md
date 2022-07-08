@@ -2,7 +2,7 @@
 layout: post
 title: Diagonalización de Matrices y Transformaciones
 ---
-<p align = "justify"><em>Hace pocas semanas rendí un concurso para acceder a un nuevo cargo docente
+<p align = "justify"><em>Hace pocas semanas rendí un concurso para acceder a un nuevo cargo docente.
 El área del concurso en cuestión era Algebra Lineal, y el tema concursado era Diagonalización de Matrices y Transformaciones.
 Este es un miniapunte teórico que escribí para apoyarme durante la defensa de mi proyecto. No tiene demostraciones,
 pero sí todos los resultados teóricos básicos del tema. También se encuentra accesible
