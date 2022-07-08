@@ -142,16 +142,15 @@ que $\left[T\right]_B$ es diagonalizable.</p>
 <p align = "justify">Consideremos ahora un espacio vectorial $V$ de dimensión finita $n$, y un endomorfismo $T$ diagonalizable,
 entoncesexiste una base $\mathcal{B} = \{v_1,...,v_n\}$ de $V$ tal que la matriz es diagonal</p>
 \begin{equation*}
-\begin{aligned}
-\left[T\right]_{\mathcal{B}} &= 
+
+\left[T\right]_{\mathcal{B}} = 
 \begin{pmatrix}
 \lambda_1 & 0 & ... & 0\\
 0 & \lambda_2 & ... & 0\\
 ... & ... & ... & ...\\
 0 & 0 & ... & \lambda_n\\
-\end{pmatrix}\\
-&= \left(\left[T(v_1)\right]_{\mathcal{B}},...,\left[T(v_n)\right]_{\mathcal{B}}\right),
-\end{aligned}
+\end{pmatrix}
+= \left(\left[T(v_1)\right]_{\mathcal{B}},...,\left[T(v_n)\right]_{\mathcal{B}}\right),
 \end{equation*}
 </p>
 
