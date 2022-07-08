@@ -14,7 +14,7 @@ pero sí todos los resultados teóricos básicos del tema. También se encuentra
 <font size = "+2"><b> Algunas definiciones previas importantes</b></font>
 
 <b>Definición:</b>(Suma directa de subespacios) Sea $V$ un $K$-espacio vectorial,
-y sean $S$ y $T$ subespacios de $V$. Se dice que \emph{$V$ es suma directa de $S$ y $T$} ,
+  y sean $S$ y $T$ subespacios de $V$. Se dice que <em>$V$ es suma directa de $S$ y $T$</em> ,
 y se nota $V = S\oplus T$ si:
 \begin{itemize}
 \item $V = S+T$
@@ -25,10 +25,10 @@ y se nota $V = S\oplus T$ si:
 <b>Proposición:</b>Si $V$ es suma directa de subespacios $S$ y $T$ entonces, para cada $v\in V$ existen únicos $s\in S$ y $t\in T$ tales que $v = s+t$.
 
 <b>Definición:</b>(Suma directa de subespacios) Sea $V$ un $K$-espacio vectorial y sean $S_1,S_2,...,S_r$ 
-subespacios de $V$. Se dice que $S_1,S_2,...,S_r$ están en \emph{suma directa} si, 
+  subespacios de $V$. Se dice que $S_1,S_2,...,S_r$ están en <em>suma directa</em> si, 
 para cada $w\in W = S_1+S_2+...+S_r$ existen únicos $s_i\in S_i$, $1\leq i\leq r$, tales que
-$w = s_1+s_2+...+s_r$. En este caso se dice que $W$ es la \emph{suma directa de los subespacios 
-$S_1,...,S_r$}, y se nota
+$w = s_1+s_2+...+s_r$. En este caso se dice que $W$ es la <em>suma directa de los subespacios 
+  $S_1,...,S_r$</em>, y se nota
 \begin{equation*}
 W = S_1\oplus S_2\oplus ...\oplus S_r = \bigoplus_{i = 1}^r S_i.
 \end{equation*}
@@ -50,7 +50,7 @@ coordenadas de un vector con respecto a una base de $V$ a partir de las coordena
 Sea $V$ un $K$-espacio vectorial de dimensión $n$, y $\mathcal{B}_1 = \{v_1,...,v_n\}$ y
 $\mathcal{B}_2 = \{ w_1,...,w_n\}$ bases de $V$. Para cada $1\leq j\leq n$ sean 
 $\alpha_{ij}\in K$ $(1\leq j\leq n)$ tales que $v_j = \sum_{i = 1}^n \alpha_{ij}w_i$.
-Se llama \emph{matriz de cambio de base de $\mathcal{B}_1$ a $\mathcal{B}_2$},
+Se llama <em>matriz de cambio de base de $\mathcal{B}_1$ a $\mathcal{B}_2$</em>,
 y se nota $C(\mathcal{B}_1,\mathcal{B}_2) = I_{\mathcal{B}_1\mathcal{B}_2}\in K^{n\times n}$,
 a la matriz definida por $C(\mathcal{B}_1,\mathcal{B}_2)_{ij} = \alpha_{ij}$.
 
@@ -77,7 +77,7 @@ entonces una matriz asociada a $T$ que contiene toda esta información.</p>
 <b>Definición:</b>
 {\bf Matriz de una transformación} Sea $T:V\to W$ una transformación lineal entre dos espacios vectoriales 
 de dimensión finita. Sea $\mathcal{B}$ base de $V$ y $\mathcal{B}'$ base de $W$. 
-Se define la \emph{matriz de $T$ en las bases $\mathcal{B},\mathcal{B}'$}, como la matriz definida
+Se define la <em>matriz de $T$ en las bases $\mathcal{B},\mathcal{B}'$</em>, como la matriz definida
 \begin{equation*}
 \left[T\right]_{\mathcal{B}\mathcal{B}'} = \left[\left[T(v_1)\right]_{\mathcal{B}'},...,\left[T(v_n)\right]_{\mathcal{B}'}\right],
 \end{equation*}
@@ -91,7 +91,7 @@ de la definición de matrices semejantes (tema que cobra mayor relevancia cuando
 Forma Normal de Jordan).</p>
 
 <b>Definición:</b>
-Sean $A,B\in K^{n\times n}$. Se dice que $A$ y $B$ son \emph{semejantes},
+Sean $A,B\in K^{n\times n}$. Se dice que $A$ y $B$ son <em>semejantes</em>,
 y se nota $A\sim B$ si existe una matriz inversible $C$ tal que $A = CBC^{-1}$.
 
 
@@ -105,7 +105,7 @@ $B_2$ a $B_1$. Es decir, $C = \left(\left[v_1\right]_{B_1},...,\left[v_n\right]_
 donde $\{v_1,...,v_n\} = B_2$ 
 
 <b>Definición:</b>
-Una matriz $A\in K^{n\times n}$ se dice \emph{diagonalizable} si existe $C$ invertible 
+  Una matriz $A\in K^{n\times n}$ se dice <em>diagonalizable</em> si existe $C$ invertible 
 tal que $CAC^{-1}$ es diagonal, es decir, si es semejante a una matriz diagonal.
 
 <p align = "justify">Claramente, todo lo que puedo definir para matrices lo puedo extender a transformaciones lineales, 
@@ -113,7 +113,7 @@ entonces de manera natural definimos:</p>
 
 <b>Definición:</b>
 Sea $V$ un $K$-espacio vectorial de dimensión finita y $T:V\to V$ una transformación lineal. 
-Se dice que $T$ es \emph{diagonalizable} si existe una base $B$ de $V$ tal que $\left[T\right]_B$ 
+Se dice que $T$ es <em>diagonalizable</em> si existe una base $B$ de $V$ tal que $\left[T\right]_B$ 
 es diagonal.
 
 <p align = "justify">Algo que debemos observar, es que si $T$ es diagonal si y sólo si dada cualquier base $B$ tendremos
@@ -142,8 +142,8 @@ para cada $j$ vale $T(v_j) = \lambda_j v_j$.
 Esta observación nos lleva naturalmente a la siguiente definición:
 <b>Definición:</b>
 Sea $V$ un $K$-espacio vectorial y $T:V\to V$ una transformación lineal. 
-Se dice que $v\in V$, $v\neq 0$ es un \emph{autovector} de $T$ si existe $\lambda\in K$ tal que
-$T(v) = \lambda v$. El elemento $\lambda\in K$ se llama \emph{autovalor} de $T$.
+Se dice que $v\in V$, $v\neq 0$ es un <em>autovector</em> de $T$ si existe $\lambda\in K$ tal que
+$T(v) = \lambda v$. El elemento $\lambda\in K$ se llama <em>autovalor</em> de $T$.
 
 <p align = "justify">Remarquemos que si bien la motivación inicial fueron las transformaciones lineales de un espacio vectorial
 de dimensión finital, la definición anterior no hace referencia a esa hipótesis. De hecho, 
