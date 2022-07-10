@@ -1,0 +1,191 @@
+<head>
+  <meta charset="utf-8" />
+  <title>
+    {% if {page.title %}{{ page.title }} - {{site.title}}{% else %}{{ site.title }} - {{
+    site.subtitle }}{% endif %}
+  </title>
+  <meta http-equip="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {% if page.summary %}
+    <meta name="description" content="{{ page.summary | escape }}- {% if {page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}">
+  {% endif %}
+   <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %},{{ page.keywords | escape }}"/>
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="RSS"
+    href="/feed.xml"
+  />
+  <meta content="{{ site.share.fb_appid }}" property="fb:app_id" />
+  <meta content="{{ site.title }}" property="og:site_name" />
+  {% if page.noindex %}
+  <meta name="robots" content="noindex" />
+  {% endif %} {% if page.title %}
+  <meta content="{{ page.title }}" property="og:title" />
+  <meta content="article" property="og:type" />
+  {% else %}
+  <meta content="{{ site.title }}" property="og:title" />
+  <meta content="website" property="og:type" />
+  {% endif %} {% if page.summary %}
+  <meta content="{{ page.summary }}" property="og:description" />
+  {% else %}
+  <meta content="{{ site.description }}" property="og:description" />
+  {% endif %} {% if page.url %}
+  <meta content="{{ site.url }}{{ page.url }}" property="og:url" />
+  {% endif %} {% if page.date %}
+  <meta
+    content="{{ page.date | date_to_xmlschema }}"
+    property="article:published_time"
+  />
+  <meta content="{{ site.url }}/about/" property="article:author" />
+  {% endif %} {% if page.thumbnail %}
+  <meta content="{{ site.url }}{{ page.thumbnail }}" property="og:image" />
+  {% endif %} {% if page.categories %} {% for category in page.categories
+  limit:1 %}
+  <meta content="{{ category }}" property="article:section" />
+  {% endfor %} {% endif %} {% if page.tags %} {% for tag in page.tags %}
+  <meta content="{{ tag }}" property="article:tag" />
+  {% endfor %} {% endif %}
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@{{ site.share.twitter_username }}" />
+  <meta name="twitter:creator" content="@{{ site.share.twitter_username }}" />
+
+  {% if page.title %}
+  <meta name="twitter:title" content="{{ page.title }}" />
+  {% else %}
+  <meta name="twitter:title" content="{{ site.title }}" />
+  {% endif %}
+
+  {% if page.url %}
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+  {% endif %} {% if page.summary %}
+  <meta name="twitter:description" content="{{ page.summary }}" />
+  {% else %}
+  <meta name="twitter:description" content="{{ site.description }}" />
+  {% endif %} {% if page.header-img %}
+  <meta
+    name="twitter:image:src"
+    content="{{ site.url }}{{ page.thumbnail }}"
+  />
+  {% endif %}
+
+  <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/main.css" />
+  <!-- <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/custom-style.css" /> -->
+  <link
+    rel="stylesheet"
+    href="{{site.url}}{{site.baseurl}}/assets/bower_components/lightgallery/dist/css/lightgallery.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css"
+  />
+  <link
+    rel="stylesheet"
+    href="{{site.url}}{{site.baseurl}}/assets/bower_components/bootstrap/dist/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="{{site.url}}{{site.baseurl}}/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="{{site.url}}{{site.baseurl}}/assets/bower_components/icono/dist/icono.min.css"
+  />
+  <!-- Fonts-->
+  <link
+    href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    href="{{site.url}}{{site.baseurl}}/assets/img/favicon.ico"
+    type="image/gif"
+    sizes="16x16"
+  />
+  <script>
+      var base_url = '{{ site.url}}{{site.baseurl}}' ;
+   </script>
+
+  <!-- Jquery -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
+    crossorigin="anonymous"
+  ></script>
+  <!-- <script src="{{site.url}}{{site.baseurl}}/assets/bower_components/jquery/dist/jquery.min.js"></script> -->
+  <script src="{{site.url}}{{site.baseurl}}/assets/bower_components/jquery.easing/jquery.easing.min.js"></script>
+  <script src="{{site.url}}{{site.baseurl}}/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{{site.url}}{{site.baseurl}}/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+  <script src="{{site.url}}{{site.baseurl}}/assets/bower_components/ghosthunter/dist/jquery.ghostHunter.min.js"></script>
+  <script src="{{site.url}}{{site.baseurl}}/assets/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script>
+  <script src="{{site.url}}{{site.baseurl}}/assets/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="{{site.url}}{{site.baseurl}}/assets/bower_components/nanobar/nanobar.min.js"></script>
+  <script src="{{site.url}}{{site.baseurl}}/assets/bower_components/typewrite/dist/typewrite.min.js"></script>
+  <script src="{{site.url}}{{site.baseurl}}/assets/js/search.js"></script>
+  <script src="{{site.url}}{{site.baseurl}}/assets/js/on-scroll-progress.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+ <!-- for Mathjax support -->
+  {% if page.usemathjax %}
+   <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+   </script>
+   <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {% endif %}
+
+  <!-- Github Button -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+
+
+ <!-- (you can remove the below scripts but do buy me a coffee to show some support :) -->
+<!-- Maker widget  -->
+<!--  <script>-->
+<!--    (function(d, h, m) {-->
+<!--      var js,-->
+<!--        fjs = d.getElementsByTagName(h)[0];-->
+<!--      if (d.getElementById(m)) {-->
+<!--        return;-->
+<!--      }-->
+<!--      js = d.createElement(h);-->
+<!--      js.id = m;-->
+<!--      js.onload = function() {-->
+<!--        window.makerWidgetComInit({-->
+<!--          position: "left",-->
+<!--          widget: "ofeeof264otl2l5g-zspk40eq2gaomj2n-higi2qphmveubksi"-->
+<!--        });-->
+<!--      };-->
+<!--      js.src = "https://makerwidget.com/js/embed.js";-->
+<!--      fjs.parentNode.insertBefore(js, fjs);-->
+<!--    })(document, "script", "dhm");-->
+<!--  </script>-->
+  <!-- buy me a coffeee -->
+<!--  <script-->
+<!--    data-name="BMC-Widget"-->
+<!--    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"-->
+<!--    data-id="sujaykundu"-->
+<!--    data-description="Support me on Buy me a coffee!"-->
+<!--    data-message=""-->
+<!--    data-color="#FF813F"-->
+<!--    data-position="right"-->
+<!--    data-x_margin="10"-->
+<!--    data-y_margin="10"-->
+<!--  ></script>-->
+
+  <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+</head>

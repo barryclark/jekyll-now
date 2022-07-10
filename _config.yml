@@ -1,86 +1,249 @@
+title: 성장하는 개발자, JUHEE
+subtitle: Since 2021.12
+description: >- # this means to ignore newlines until "baseurl:"
+  devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
+
+url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
+baseurl: "" # the subpath of your site, e.g. /blog
+
+# Navigation
+urls:
+    - text: About ME
+      url: /about
+    - text: About
+      url: /about
+    - text: Blog
+      url: /blog
+    - text: Gallery
+      url: /gallery
+#    - text: Shop
+#      url : /shop
+    - text: Contact
+      url : /contact
+
+
+# Edit Author details (For multi authors check _data/authors.yml)
+
+author_logo: profile.png
+author: JUHEE PARK
+author_bio: 안녕하세요! 성장하는 백엔드 개발자 박주희 입니다.  :D
+author_email: "atig00328@naver.com"
+author_location: Korea(대한민국)
+author_website_url: "https://piaozhuzi.github.io/"
+typewrite-text: devlopr is a jekyll framework built for developers. You can edit this in _config.yml file
+hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
+
+# Experiences
+author_work_experiences:
+            - company_name: 유엔젤
+              company_logo: uangel_logo.jpg
+              company_url: http://www.uangel.com/kr/
+              designation: Back-end Engineer
+              description: IoT 서비스팀 / 사원
+              visibility: true
+            - company_name: 노스스타컨설팅
+              company_logo: Northstar_CI.png
+              company_url: http://www.northstar.co.kr/web/index.view
+              designation: Back-end Engineer
+              description: 솔루션사업부 / 사원 ~ 주임
+              visibility: true
+
+# Education
+author_education_details:
+              - college_logo: kumoh.jpeg
+                college_name: 금오공과대학교
+                college_url: https://www.kumoh.ac.kr/
+                college_degree: 컴퓨터공학과 학사
+                description: 4년제
+                visibility: true
+
+# Projects
+author_project_details:
+              - project_title: ADT_CAPS 2.0
+                project_description: A Platform built for
+                project_date: 2022.05.09 ~ ing
+                project_lang: JAVA, Scala
+                visibility: true
+                #project_thumbnail: gamershub.png
+              - project_title: 삼성 SDS 반도체 웹 페이지 시스템 개편
+                project_description: 기존 삼성 반도체 (SDS) 사이트 페이지 개편 및 개선 작업
+                project_date: 2021.08 ~ 2022.01
+                project_url: https://semiconductor.samsung.com/kr
+                project_lang: JAVA, AEM, JQuery
+                visibility: true
+              - project_title: 현대 오토에버 유럽 E커머스
+                project_description: 현대 오토에버  유럽 판매 사이트 페이지 개발 및 시스템 구축
+                project_date: 2020.10 ~ 2021.05
+                project_url: https://www.kia.com/it/
+                project_lang: JAVA, AEM, JQuery
+                visibility: true
+              - project_title: 감염병 크롤링 프로젝트
+                project_description: 감염병에 대한 정보를 수집 및 데이터화
+                project_date: 2020.06 ~ 2020.11
+                project_lang: JAVA, JQuery, Python, RDBMS
+                visibility: true
+              - project_title: 로레알회사 하이브리드 웹개발
+                project_description: 로레알 화장품 브랜드 통합 및 운영 시스템 개발
+                project_date: 2020.02 ~ 2020.05
+                project_lang: JAVA, RDBMS, JQuery
+                visibility: true
+  #- 담당 업무:  솔루션 사업부 개발 팀원 / 주임 , 웹 개발 담당, Java / Spring Framework, JSP, JQuery, AEM(솔루션), 젠킨스를 이용한 배포 및 운영, 사이트 운영
+
+# social links
+#twitter_username: johndoe
+github_username:  atig00328
+#facebook_username: johndoe
+#linkedin_username: johndoe
+#behance_username: johndoe
+#instagram_username: johndoe
+#medium_username: johndoe
+#telegram_username: johndoe
+#dribbble_username: johndoe
+#flickr_username: johndoe
+
+#for comments ( we got Disqus and Hyvor Commenting, uncomment the one you want to use )
+
+# disqus_shortname: sujay-kundu
+hyvor_talk_website_id: 476
+
+# wakatime username (coding activity)
+wakatime_username: sujaykundu777
+
+# mailchimp embedded form url (newsletter):
+mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
+
+# contact form - (choose formspress or getform)
+# getform_endpoint: 83b703c3-9e47-4df4-ac55-e24d7eb02abc
+formspree_email: johndoe@gmail.com
+
+# releases - widget can be (sidebar, modal or embed)
+olvy_organization: devlopr
+olvy_widget_type: sidebar
+
+# syntax highlighter
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Choose what to show ( can be true or false)
+show_author_work_experiences: true
+show_author_education_details: true
+show_author_project_details: true
+
+# pagination of posts
+paginate: 4
+per_page: 4
+paginate_path: "/blog/page/:num/"
+
+# minify
+# compress_html:
+#   clippings: all
+#   comments: ["<!-- ", " -->"]
+#   endings: all
+#   ignore:
+#     envs: ['development']
+
+# Archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#   layout: archive
+#   permalinks:
+#     category: '/category/:name/'
+
+collections:
+  products:
+    output: true
+  authors:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: "gallery"
+    values:
+      permalink: /:path/:basename:output_ext
+  -
+    scope:
+      path: ""
+      type: authors
+    values:
+      layout: author
+      permalink: /blog/authors/:slug
+  -
+    scope:
+      path: 'assets/**'
+    values:
+      sitemap: false
+
+# Build settings
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-admin
+
+# Jekyll Admin Config
+jekyll_admin:
+  # hidden_links:
+  #   - posts
+  #   - pages
+  #   - staticfiles
+  #   - datafiles
+  #   - configuration
+  homepage: "posts"
+
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
 #
-# This file contains configuration flags to customize your site
-#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
 
-# Name of your site (displayed in the header)
-name: PARK JUHEE
+### Switching Deployment Strategy (in DEPLOY_STRATEGY) file change the key accordingly:
+# none - For no default
+# gh-pages - For Github Pages
+# firebase - For Firebase Hosting
 
-# Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github: barryclark/jekyll-now
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url:
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
-permalink: /:title/
-
-# The release of Jekyll Now that you're using
-version: v1.2.0
-
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
-
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
-# Exclude these files from your production _site
 exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - assets/bower_components/isotope-layout/README.md
+  - assets/bower_components/icono/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-svg-core/README.md
+  - assets/bower_components/ghosthunter/README.md
+  - assets/bower_components/nanobar/README.md
+  - assets/bower_components/lightgallery/demo/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/free-brands-svg-icons/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/free-solid-svg-icons/README.md
+  - assets/bower_components/jquery-mousewheel/README.md
+  - assets/bower_components/get-size/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome/README.md
+  - assets/bower_components/jquery-mousewheel/ChangeLog/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-regular/README.md
+  - assets/bower_components/desandro-matches-selector/README.md
+  - assets/bower_components/ev-emitter/README.md
+  - assets/bower_components/font-awesome/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-solid/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-webfonts/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-brands/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-common-types/README.md
+  - assets/bower_components/ghosthunter/example/Index.html
+  - assets/bower_components/lightgallery/test/lightgallery.html
+  - assets/bower_components/masonry-layout/README.md
+  - assets/bower_components/imagesloaded/README.md
+
+
+destination: ./build
