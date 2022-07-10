@@ -31,4 +31,4 @@ published: true
 También me gusta la reflexión que hace [Carlos Blé](https://www.carlosble.com/) en este [post](https://leanmind.es/es/blog/descubre-como-puedes-innovar-dentro-de-tu-proyecto/):  
 - *Si el ambiente de trabajo es tóxico, si no hay respeto ni confianza, si no hay momentos de foco, si no parece que la situación pueda cambiarse, ahí es cuando me he planteado un cambio de proyecto o de empresa.*
 
-P.D. Si recives una oferta irrechazable de la empresa de tus sueños.... También es una señal para el cambio.... :stuck_out_tongue_winking_eye:
+P.D. Si recibes una oferta irrechazable de la empresa de tus sueños.... También es una señal para el cambio.... :stuck_out_tongue_winking_eye:
