@@ -1,9 +1,7 @@
 ---
 layout: post
-title: DPWT Reflection on Final Presentation
+title: Data Pipeline Wind Tunnel (DPWT)’s Reflection on Final Presentation
 ---
-
-# Data Pipeline Wind Tunnel (DPWT)’s Reflection on Final Presentation
 
 Our presentation was scheduled for April 27, 2022, and we were asked to reschedule the presentation by Professor Sakr to May 2, 2022, because we had not taken his (and the extended team’s) feedback on the presentation. We have taken the time to reflect on our experience in this final presentation, and here is our reflection when we look back at this experience. We had internally agreed to provide course deliverables to the team two days in advance of the official deadline to get feedback and incorporate it into the deliverable. Still, we did not do that for the final presentation. We had a discussion with Professor Sakr after the first presentation to discuss the mistakes made. **The mistakes we made** are listed here:
 
