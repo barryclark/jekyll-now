@@ -19,17 +19,17 @@ avatar: https://mcds.cs.cmu.edu/sites/all/themes/mcds2015/images/mcdslogo.png
 footer-links:
   dribbble:
   email:
-  facebook:
+  facebook: pages/Pittsburgh-PA/Carnegie-Mellon-School-of-Computer-Science/170657132947108
   flickr:
-  github: barryclark/jekyll-now
+  github:
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: LTIatCMU
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  googleplus:
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
