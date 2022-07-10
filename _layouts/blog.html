@@ -1,0 +1,90 @@
+---
+layout: page
+---
+<div id="blog">
+  <!-- Responsive Header -->
+  <section id="header-content">
+    <h1>{{ page.title }}</h1>
+  </section>
+  <section class="bg"></section>
+  <div class="row">
+    <!-- Aside Navigation  -->
+    <aside id="aside" class="col-md-4">
+      {% include aside.html %}
+    </aside>
+    <!-- Post List -->
+    <section id="posts" class="col-md-8">
+      {% for post in paginator.posts %}
+      <div class="post">
+        <a href="{{ post.url | relative_url }}">
+          <div class="post-wrap">
+            <div class="text-warp">
+              <h3 class="title">{{ post.title }}</h3>
+              <p class="excerpt">
+                {% if post.excerpt.size > 50 %}
+                {{ post.excerpt | strip_html | strip_newlines | truncatewords: 25, '...' }}
+                {% else %}
+                {{ post.subtitle }}
+                {% endif %}
+              </p>
+              <div>
+                <span class="meta">
+                  {{ post.date | date: "%B %-d, %Y" }}
+                </span>
+                <ul class="tag-wrap">
+                  {% for tag in post.tags %}
+                  <a href="{{site.baseurl}}/tags#{{ tag | cgi_escape }}">
+                    <li class="tag-sm">{{ tag }}</li>
+                  </a>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+            {% if post.image %}
+            <div class="img-wrap">
+              <img src="{{ post.image }}" alt="">
+            </div>
+            {% endif %}
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+      <!-- Pagination -->
+      {% if paginator.total_pages > 1 %}
+      <div id="pagination">
+        <ul>
+          {% assign q = paginator.page | divided_by: 5 %}
+          {% assign min = q | times: 5  %}
+          {% assign max = q | plus: 1 | times: 5 | minus: 1 %}
+          {% if min == 0 %}
+          {% assign min = 1 %}
+          {% endif %}
+          {% if max > paginator.total_pages %}
+          {% assign max = paginator.total_pages %}
+          {% endif %}
+          {% if min != 1 %}
+          <a href="/blog/page{{ min | minus: 1 }}">
+            <li class="btn-rounded prev">
+              <i class="fas fa-angle-double-left"></i>
+            </li>
+          </a>
+          {% endif %}
+          {% for page in (min..max) %}
+          <a href="{% if page == 1 %}/{% else %}/blog/page{{ page }}{% endif %}"
+            class="{% if page == paginator.page %}selected{% endif %}">
+            <li class="btn-rounded">{{ page }}</li>
+          </a>
+          {% endfor %}
+          {% if max != paginator.total_pages %}
+          <a href="/blog/page{{ max | plus: 1 }}">
+            <li class="btn-rounded next">
+              <i class="fas fa-angle-double-right"></i>
+            </li>
+          </a>
+          {% endif %}
+        </ul>
+      </div>
+      {% endif %}
+    </section>
+  </div>
+</div>
