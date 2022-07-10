@@ -7,7 +7,6 @@ Threat Modeling works to identify, communicate, and understand threats and mitig
 
 A Threat Model is a structured representation of all the information that affects the security of an application. In essence, it is a view of the application and its environment through the lens of security.
 
-
 ## Threat Modeling at a glance
 
 Threat modeling is analyzing representations of a system to highlight concerns about security and privacy characteristics.
@@ -24,29 +23,35 @@ At the highest levels, when we Threat Model, we ask four key questions:
   -> Focuses on data flow
 
 ## Why Threat Model?
+
 When you perform Threat Modeling, you begin to recognize what can go wrong in a system. It also allows you to pinpoint design and implementation issues that require mitigation, whether it is early in or throughout the lifetime of the system. The output of the Threat Model, which are known as threats, informs decisions that you might make in subsequent design, development, testing, and post-deployment phases.
 
 ## Who should Threat Model?
+
 You. Everyone. Anyone who is concerned about the privacy, safety, and security of their system.
 
 ## Threat Modeling Manifesto
+
 Source:  [threatmodelingmanifesto.org](https://www.threatmodelingmanifesto.org/)
 
 #### Values
+
 > We have come to value:
-  - A culture of finding and fixing design issues over checkbox compliance. 
-  - People and collaboration over processes, methodologies, and tools.
-  - A journey of understanding over a security or privacy snapshot.
-  - Doing Threat Modeling over talking about it.
-  - Continuous refinement over a single delivery.
+
+* A culture of finding and fixing design issues over checkbox compliance.
+* People and collaboration over processes, methodologies, and tools.
+* A journey of understanding over a security or privacy snapshot.
+* Doing Threat Modeling over talking about it.
+* Continuous refinement over a single delivery.
   
 #### Principles
-> We follow these principles:
-  - The best use of Threat Modeling is to improve the security and privacy of a system through early and frequent analysis.
-  - Threat Modeling must align with an organization’s development practices and follow design changes in iterations that are each scoped to manageable portions of the system.
-  - The outcomes of Threat Modeling are meaningful when they are of value to stakeholders.
-  - Dialog is key to establishing the common understandings that lead to value, while documents record those understandings, and enable measurement.
 
+> We follow these principles:
+
+* The best use of Threat Modeling is to improve the security and privacy of a system through early and frequent analysis.
+* Threat Modeling must align with an organization’s development practices and follow design changes in iterations that are each scoped to manageable portions of the system.
+* The outcomes of Threat Modeling are meaningful when they are of value to stakeholders.
+* Dialog is key to establishing the common understandings that lead to value, while documents record those understandings, and enable measurement.
 
 ## How to create a Threat Model
 
@@ -73,17 +78,17 @@ Time to bring some Security aspects in and optimize the Dataflow Model to secure
 <img width="600" src="/images/trustboundary.png">
 </p>
 
-
 Like shown in the picture above - draw a trust boundary when data from one party to another is not trusted
 
 **Untrusted examples:**
-  * Data from a web browser (e.g., external entity)
-  * Data from one machine to another
+
+* Data from a web browser (e.g., external entity)
+* Data from one machine to another
 
 **Trusted examples:**
-  * Data from another process within the same runtime environment
-  * Data from your own database
 
+* Data from another process within the same runtime environment
+* Data from your own database
 
 ## STRIDE: Acronym of Threat Modeling System
 
@@ -97,7 +102,6 @@ In simple terms, any cyber attack can be classified among STRIDE. It is defined 
 * Information Disclosure
 * Denial of Service
 * Elevation of Privilege
-
 
 ### What is Spoofing?
 
@@ -123,19 +127,18 @@ A web application is not available to end users because of the cyber attacker at
 
 "A normal user able to delete the account of an administrator" is a perfect example of elevation of privilege. It comes under security attribute authorization. It can be mitigated by using the principle of run users with least privilege.
 
-
 | Threat                   | Definition                          | Property        | Example                                                                  |
 | -------------------------| ----------------------------------- | --------------- | ------------------------------------------------------------------------ |
-| Spoofing                 | Pretend to be someone else          | Authentication  | Hack victim's emal and use it to send messages in the name of the victim |
+| Spoofing                 | Pretend to be someone else          | Authentication  | Hack victim's email and use it to send messages in the name of the victim |
 | Tampering                | Change data or code                 | Integrity       | Software executive file is tampered by hackers                           |
-| Repudiation              | Clain not to do a particular action | Non-repudiation | "I have not sent an email to Alice"                                      |
+| Repudiation              | Claim not to do a particular action | Non-repudiation | "I have not sent an email to Alice"                                      |
 | Information Disclosure   | Leakage of sensitive information    | Confidentiality | Credit card information available on the internet                        |
 | Denial of Service        | Non-availability of service         | Availability    | Web application not responding to user requests                          |
 | Elevation of Privilege   | Able to perform unauthorized action | Authorization   | Normal user able to delete admin account                                 |
 
 ## Apply STRIDE on the base Threat Model Elements
 
-To combine the STRIDE approach with the four base elements of a Data Flow we can achieve a good guideline on the possibilities and restrictions of each element. 
+To combine the STRIDE approach with the four base elements of a Data Flow we can achieve a good guideline on the possibilities and restrictions of each element.
 
 | Threat Model Element | Example | S | T | R | I | D | E |
 | -------------------- | ------- | - | - | - | - | - | - |
@@ -151,4 +154,3 @@ If you want to go beyond that - try this List based on interactions:
 </p>
 
 Source: [Shostack, A. (2014). Threat modeling : designing for security., Indianapolis, Ind. : Wiley.]
-

@@ -16,6 +16,7 @@ Note that some services that claim to not accept SVG as an input format actually
 * I haven't seen it but Mime sniffing confusion is probably also possibleMime sniffing confusion as SVG is difficult to sniff because it can start with extra XML garbage. In fact, AFAICT the standard `file` command doesn't include any SVG magic, so it's likely up to the individual implementations.
 
 # Images
+
 SVG can include external images directly via the `<image>` tag.
 
 ``` xml
@@ -32,6 +33,7 @@ Note that you can use this to include *other SVG* images too.
 SVG can include external SVG content via the `<use>` tag.
 
 file1.svg:
+
 ``` xml
 <svg width="200" height="200"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -40,6 +42,7 @@ file1.svg:
 ```
 
 file2.svg:
+
 ```
 <svg width="200" height="200"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -57,7 +60,7 @@ SVG can include external stylesheets via the `<link>` tag, just like html.
 ``` xml
 <svg width="100%" height="100%" viewBox="0 0 100 100"
      xmlns="http://www.w3.org/2000/svg">
-	<link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="http://example.com/style.css" type="text/css"/>
+ <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="http://example.com/style.css" type="text/css"/>
   <circle cx="50" cy="50" r="45" fill="green"
           id="foo"/>
 </svg>
@@ -123,7 +126,7 @@ SVGs can include XSLT stylesheets via `<?xml-stylesheet?>`. Surprisingly, this d
 </xsl:stylesheet>
 ```
 
-Note: due to the nature of XSLT, the input doesn't actually *have* to be a valid SVG file if the xml-stylesheet is ignored, but it's useful to bypass filters. 
+Note: due to the nature of XSLT, the input doesn't actually *have* to be a valid SVG file if the xml-stylesheet is ignored, but it's useful to bypass filters.
 
 Also, Because I have no interest in learning XSLT, this template just wholesale replaces the entire "old" image with the new one.
 
@@ -261,4 +264,3 @@ This example from the SVG spec shows using a tref node to reference text by URI,
         fill="none" stroke="blue" stroke-width="2" />
 </svg>
 ```
-

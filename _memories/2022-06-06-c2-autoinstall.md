@@ -4,17 +4,18 @@ title: C2 Auto-Install Bash Script
 ---
 
 This is a script helps to install nice candy onto a C2 server:
+
 * Metasploit
 * Covenant
 * SilentTrinity
 * Empire
 * StarKiller
-* PoshC2 
-* Merlin 
+* PoshC2
+* Merlin
 
 **Prerequisite**: A debian flavoured Distro since this script uses `apt`. Maybe I'll post a `yum` variant later.
 
-**Usage**: Copy and run the bash scrippt bwlow. Wait for the server to reboot and then initiate your C2 and have some fun. Works best on stolen hardware or as a simple Docker Container :)
+**Usage**: Copy and run the bash script below. Wait for the server to reboot and then initiate your C2 and have some fun. Works best on stolen hardware or as a simple Docker Container :)
 
 ```shell
 #!/bin/bash
@@ -26,7 +27,7 @@ sleep 3
 apt-get update -y && apt-get upgrade -y
 apt --fix-broken install -y
 
-#Install System Sofware Essentials
+#Install System Software Essentials
 echo "$Green Installing Additional System Software Essentials"
 sleep 3
 apt install python3.9 python3-pip git openssh-server open-vm-tools -y
@@ -66,7 +67,7 @@ cd pwncat
 python3 setup.py install
 apt --fix-broken install -y
 
-#Install Worlists & Rule Sets
+#Install Wordlists & Rule Sets
 echo "Installing Wordlists & Rule Sets"
 sleep 3
 cd /opt
@@ -91,7 +92,7 @@ echo "Enter A Random Word!"
 read Random1
 echo ""
 echo "Enter A Different Random Word!"
-read Random2	
+read Random2 
 echo ""
 echo "Enter A Different Random Word!"
 read Random3
@@ -125,14 +126,10 @@ find ./ -type f -print0 | xargs -0 sed -i "s/Grunt/${Random2^}/g"
 find ./ -type f -print0 | xargs -0 sed -i "s/GRUNT/${Random2^^}/g"
 find ./ -type f -print0 | xargs -0 sed -i "s/grunt/${Random2,,}/g"
 
-#find ./ -type f -print0 | xargs -0 sed -i "s/covenant/${Random1,,}/g"
 find ./ -type f -print0 | xargs -0 sed -i "s/Covenant/${Random1^}/g"
 find ./ -type f -print0 | xargs -0 sed -i "s/COVENANT/${Random1^^}/g"
 
 find ./ -type f -print0 | xargs -0 sed -i "s/ExecuteStager/ExecLevel/g"
-#find ./ -type f -print0 | xargs -0 sed -i "s/REPLACE_PROFILE/REP_PROF/g"
-#find ./ -type f -print0 | xargs -0 sed -i "s/REPLACE_PIPE/REP_PIP/g"
-#find ./ -type f -print0 | xargs -0 sed -i "s/GUID/ANGID/g"
 find ./ -type f -print0 | xargs -0 sed -i "s/SetupAES/Install"${custom1}"AES/g"
 find ./ -type f -print0 | xargs -0 sed -i "s/SessionKey/Sess"${custom1}"KEy/g"
 find ./ -type f -print0 | xargs -0 sed -i "s/EncryptedChallenge/Enc"${custom1}"ChallEnge/g"
@@ -151,8 +148,6 @@ find ./ -type f -print0 | xargs -0 sed -i "s/message64str/messAgE"${custom1}"64s
 find ./ -type f -print0 | xargs -0 sed -i "s/messageBytes/messAgE"${custom1}"bytes/g"
 
 find ./ -type f -print0 | xargs -0 sed -i "s/totalReadBytes/ToTal"${custom1}"ReaDBytes/g"
-#find ./ -type f -print0 | xargs -0 sed -i "s/inputStream/instream/g"
-#find ./ -type f -print0 | xargs -0 sed -i "s/outputStream/outstream/g"
 find ./ -type f -print0 | xargs -0 sed -i "s/deflateStream/deFlatE"${custom1}"stream/g"
 find ./ -type f -print0 | xargs -0 sed -i "s/memoryStream/memOrYstream/g" #don't change
 find ./ -type f -print0 | xargs -0 sed -i "s/compressedBytes/packed"${custom1}"bytes/g"
@@ -172,12 +167,10 @@ find ./ -type f -print0 | xargs -0 sed -i "s/ProfileHttp/Prof"${custom1}"HTTP/g"
 find ./ -type f -print0 | xargs -0 sed -i "s/baseMessenger/bAse"${custom1}"mEsSenger/g"
 
 find ./ -type f -print0 | xargs -0 sed -i "s/PartiallyDecrypted/Part"${custom1}"decrypted/g"
-find ./ -type f -print0 | xargs -0 sed -i "s/FullyDecrypted/Fulld"${custom1}"ecrypted/g"
+find ./ -type f -print0 | xargs -0 sed -i "s/FullyDecrypted/Fulld"${custom1}"encrypted/g"
 find ./ -type f -print0 | xargs -0 sed -i "s/compressedBytes/packed"${custom1}"bytes/g"
 
 find ./ -type f -print0 | xargs -0 sed -i "s/CookieWebClient/Ottos"${custom1}"WebClient/g"
-#find ./ -type f -print0 | xargs -0 sed -i "s/CookieContainer/KekseContains/g"
-#find ./ -type f -print0 | xargs -0 sed -i "s/GetWebRequest/DoAnWebReq/g"
 find ./ -type f -print0 | xargs -0 sed -i "s/Jitter/JIt"${custom1}"ter/g"
 find ./ -type f -print0 | xargs -0 sed -i "s/ConnectAttempts/ConneCT"${custom1}"AttEmpts/g"
 find ./ -type f -print0 | xargs -0 sed -i "s/RegisterBody/Reg"${custom1}"Body/g"
@@ -214,33 +207,28 @@ find ./ -type f -name "*.cs" -print0 | xargs -0 sed -i "s/group8/gr"${custom1}"p
 
 
 find ./ -type f -name "*Grunt*" | while read FILE ; do
-	newfile="$(echo ${FILE} |sed -e "s/Grunt/${Random2^}/g")";
-	mv "${FILE}" "${newfile}";
+ newfile="$(echo ${FILE} |sed -e "s/Grunt/${Random2^}/g")";
+ mv "${FILE}" "${newfile}";
 done
 find ./ -type f -name "*GRUNT*" | while read FILE ; do
-	newfile="$(echo ${FILE} |sed -e "s/GRUNT/${Random2^^}/g")";
-	mv "${FILE}" "${newfile}";
+ newfile="$(echo ${FILE} |sed -e "s/GRUNT/${Random2^^}/g")";
+ mv "${FILE}" "${newfile}";
 done
 
 find ./ -type f -name "*grunt*" | while read FILE ; do
-	newfile="$(echo ${FILE} |sed -e "s/grunt/${Random2,,}/g")";
-	mv "${FILE}" "${newfile}";
+ newfile="$(echo ${FILE} |sed -e "s/grunt/${Random2,,}/g")";
+ mv "${FILE}" "${newfile}";
 done
 
 find ./ -type f -name "*Covenant*" | while read FILE ; do
-	newfile="$(echo ${FILE} |sed -e "s/Covenant/${Random1^}/g")";
-	mv "${FILE}" "${newfile}";
+ newfile="$(echo ${FILE} |sed -e "s/Covenant/${Random1^}/g")";
+ mv "${FILE}" "${newfile}";
 done
 
 find ./ -type f -name "*COVENANT*" | while read FILE ; do
-	newfile="$(echo ${FILE} |sed -e "s/COVENANT/${Random2^^}/g")";
-	mv "${FILE}" "${newfile}";
+ newfile="$(echo ${FILE} |sed -e "s/COVENANT/${Random2^^}/g")";
+ mv "${FILE}" "${newfile}";
 done
-
-#find ./ -type f -name "*covenant*" | while read FILE ; do
-#	newfile="$(echo ${FILE} |sed -e "s/covenant/ottocommand/g")";
-#	mv "${FILE}" "${newfile}";
-#done
 
 mv ../AssemblyReferences/ ./Data/ 
 
@@ -318,14 +306,10 @@ systemctl enable ssh
 systemctl start ssh
 mkdir /opt/sys_ans
 useradd sysops
-#echo "sysops ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/sysops
-#echo "user ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/user
 sudo apt install -y software-properties-common
 sudo add-apt-repository --yes --update ppa:ansible/ansible
 sudo apt update
 sudo apt install -y ansible
-#ssh-keygen
-#ssh-copy-id baseC2
 mkdir /opt/sys_ans
 cp /usr/lib/python3/dist-packages/ansible/galaxy/data/apb/tests/ansible.cfg /opt/sys_ans/
 

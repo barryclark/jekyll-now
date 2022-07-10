@@ -21,7 +21,7 @@ The `Phoenix-` and `Unicorn Project` are awesome novels that are really worth to
 <img width="600" src="/images/24-capabilities.png">
 </p>
 
-Those 24 capabilities are a great north star, that can be used as an orientation in your way to master DevOps. 
+Those 24 capabilities are a great north star, that can be used as an orientation in your way to master DevOps.
 
 ## The three ways of DevOps
 
@@ -44,9 +44,7 @@ In other words, work should only flow into one direction, and that is downstream
 
 > The performance of a system increases proportionally to the throughput
 
-
 ### The Second Way – Amplify Feedback
-
 
 <p align="left">
 <img src="/images/way2.png">
@@ -55,7 +53,6 @@ In other words, work should only flow into one direction, and that is downstream
 > Shorten & Amplify the feedback loop
 
 Establish an upstream feedback loop to optimize the value stream. To achieve this - a fast feedback from Production is required to plan the next steps in the "Plan" Phase. Based on the feedback from production, strategies can be crafted to move forward or make a pirouette to rethink the plans and find new ways to build and ship your software.
-
 
 ### The Third Way – Continued experimentation
 

