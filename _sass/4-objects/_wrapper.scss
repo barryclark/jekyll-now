@@ -1,0 +1,11 @@
+/* ===============
+	WPAPPER
+=============== */
+
+$base-wrapper-width: 1440px;
+$wrapper-offset: $base-spacing-unit;
+
+.o-wrapper {
+  max-width: $base-wrapper-width;
+  position: relative;
+}

@@ -1,0 +1,21 @@
+/* ===============
+	CONTENT
+=============== */
+
+.c-content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding: 0 20px 0;
+  margin-left: 360px;
+}
+
+@media only screen and (max-width: 900px) {
+  .c-content {
+    position: static;
+    padding: 0 15px 0;
+    margin-left: 0;
+  }
+}

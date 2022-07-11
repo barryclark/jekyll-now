@@ -1,0 +1,25 @@
+<div class="c-form-box">
+  <form class="c-form" action="{% if site.author-email %}https://formspree.io/{{site.author-email}}{% else %}#{% endif %}" method="POST">
+    <div class="c-form-bnt__close" data-icon='ei-close' data-size='s'></div>
+      <div class="c-form__title">You can contact me!</div>
+    <div class="c-form__group">
+      <label for="form-name">Your Name (Required)</label>
+      <input class="c-form__input" id="form-name" type="text" name="name" required>
+    </div>
+    <div class="c-form__group">
+      <label for="form-email">Your Email (Required)</label>
+      <input class="c-form__input" id="form-email" type="email" name="_replyto" required>
+    </div>
+    <div class="c-form__group">
+      <label for="form-subject">Subject</label>
+      <input class="c-form__input" id="form-subject" type="text" name="_subject">
+    </div>
+    <div class="c-form__group">
+      <label for="form-text">Your Message (Required)</label>
+      <textarea class="c-form__input" id="form-text" name="text" rows="10" required></textarea>
+    </div>
+    <div class="c-form__group">
+      <button class="c-btn c-btn--secondary c-btn--big c-btn--shadow" type="submit">Send</button>
+    </div>
+  </form>
+</div> <!-- /.c-form-box -->

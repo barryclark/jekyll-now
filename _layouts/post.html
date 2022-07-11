@@ -1,17 +1,68 @@
 ---
-layout: default
+layout: home
 ---
-
-<article class="post">
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
+<article class="c-article">
+  <div class="c-article__content">
+    <header class="c-header u-hide u-no-margin-top">
+      <div class="c-header__box">
+        <div class="c-search u-full-width">
+          <div class="c-search__box">
+            <label for="js-search-input" class="u-screen-reader-text">Search for Blog</label>
+            <input type="text" id="js-search-input" class="c-search__text" autocomplete="off" placeholder="Type to search...">
+            <div data-icon='ei-search' data-size='s'></div>
+          </div>
+          <ul id="js-results-container" class="c-search-results-list"></ul>
+        </div>
+      </div>
+    </header>
+    {% if page.image %}
+    <div class="c-article__image o-opacity" style="background-image: url( {{"/images/" | prepend: site.baseurl | append : page.image}} )"></div>
+    {% else %}
+    {% endif %}
+    <div class="c-wrap-content">
+      <header class="c-article__header">
+        <h1 class="c-article__title">{{page.title}}</h1>
+        <div class="c-article__date">
+          <span>{{page.date | date: '%Y, %b %d'}}</span>
+        </div>
+      </header>
+      {{page.content | markdownify}}
+      <div class="c-article__footer u-clearfix">
+        <div class="c-article__tag">
+          {% for tag in page.tags %}
+          <a href="{{site.baseurl}}/tags#{{tag}}">&#35; {{ tag }}</a>
+          {% endfor %}
+        </div>
+        <div class="c-article__share">
+          <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ site.url }}{{ page.url }}" title="Share
+          on Twitter" rel="nofollow" target="_blank"><div data-icon='ei-sc-twitter' data-size='s'></div></a>
+          <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook" rel="nofollow" target="_blank"><div data-icon='ei-sc-facebook' data-size='s'></div></a>
+          <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google+" rel="nofollow" target="_blank"><div data-icon='ei-sc-google-plus' data-size='s'></div></a>
+        </div>
+      </div>
+      {% include newsletter.html %}
+      <div class="c-recent-post">
+        <h4 class="c-recent__title">You might also enjoy</h4>
+        <div class="c-recent__box">
+        {% for post in site.related_posts limit:4 %}
+        {% if post.image %}
+          <div class="c-recent__item">
+            <a class="c-recent__image" href="{{ post.url }}" style="background-image: url( {{"/images/" | prepend: site.baseurl | append: post.image}})"></a>
+            <div class="c-recent__footer">
+              <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+              <div class="c-recent__date">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{post.date | date: "%B %-d, %Y"}}</time>
+              </div>
+            </div>
+          </div>
+        {% else %}
+        {% endif %}
+        {% endfor %}
+        </div>
+      </div> <!-- /.c-recent-post -->
+      {% if site.disqus-identifier %}
+        {% include disqus-comments.html %}
+      {% endif %}
+    </div> <!-- /.c-wrap-content -->
+  </div> <!-- /.c-article__content -->
+</article> <!-- /.c-article-page -->

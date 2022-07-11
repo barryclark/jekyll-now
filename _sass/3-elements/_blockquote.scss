@@ -1,0 +1,15 @@
+/* ===============
+	BLOCKQUOTE
+=============== */
+
+blockquote {
+  padding-left: $base-spacing-unit;
+  border-left: 3px solid $primary-color;
+  font-family: 'Volkhov', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-size: 18px;
+  background-color: rgba(220, 235, 245, 0.2);
+  p {
+    padding: 10px;
+  }
+}

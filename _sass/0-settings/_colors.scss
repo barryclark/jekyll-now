@@ -1,0 +1,47 @@
+/* ===============
+	COLORS
+=============== */
+
+$primary-color: #33aaff;
+$secondary-color: #cfcfdd;
+$alternate-color: #404040;
+$red-color: #ee6c6c;
+$green-color: #55bf55;
+$white-color: #ffffff;
+
+
+$dark: #222222;
+$dark-gray: #333333;
+$darkest: #444444;
+
+$gray: #a0a0a0;
+$gray-dark: #757575;
+$gray-light: #dddddd;
+$gray-lighten: #edeeee;
+$gray-lighter: #cccccc;
+
+$blue: #33aaff;
+$blue-light: #cfcfdd;
+$blue-lighter: #dce4ea;
+$blue-dark: #263959;
+
+// Background Colors
+$background: #fbfbfb;
+$alternate-background: #fafafa;
+
+
+// Body Color
+$text-color: #404040;
+
+
+// Headings
+$heading-font-color: #404040;
+
+
+// Links
+$link-color: $primary-color;
+$link-color-hover: darken($link-color, 15%);
+
+
+// Border
+$border-color: #f0f0f0;

@@ -1,0 +1,24 @@
+---
+layout: home
+---
+{% include header.html %}
+<div class="c-posts o-opacity">
+  {% for post in site.categories[page.title] %}
+  <article class="c-post">
+    {% if post.image %}
+    <a class="c-post-thumbnail" style="background-image: url({{"/images/" | prepend: site.baseurl | append : post.image}})"
+      href="{{post.url | prepend: site.baseurl}}"></a>
+    {% else %} {% endif %}
+    <div class="c-post-content">
+      <h2 class="c-post-title">
+        <a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a>
+      </h2>
+      <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
+      <span class="c-post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+      <span class="c-post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus:
+        250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
+    </div>
+  </article>
+  {% endfor %}
+</div> <!-- /.c-posts -->
+{% include categories.html %}

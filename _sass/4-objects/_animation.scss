@@ -1,0 +1,20 @@
+/* ===============
+	ANIMATION
+=============== */
+
+.o-opacity {
+  animation-duration: 0.7s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+  animation-name: opacity;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

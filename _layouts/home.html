@@ -1,0 +1,74 @@
+---
+layout: default
+---
+<aside class="c-sidebar">
+  <div class="c-sidebar-author">
+    <div class="c-author__cover">
+      <a href="{{site.baseurl}}/">
+        <img src="{{site.baseurl}}/images/{% if site.author-image %}{{site.author-image}}{% endif %}" alt="{{site.author-name}}">
+      </a>
+    </div>
+    <div class="c-author__info">
+      <div class="c-author__name">{{site.author-name}}</div>
+      <span class="c-author__job">{{site.author-job}}</span>
+    </div>
+    <div class="c-contact-menu">
+      {% if site.author-email %}
+      <a href="/contact" class="c-contact-btn c-btn c-btn--secondary c-btn--round c-btn--shadow"><span data-icon='ei-envelope' data-size='s'></span> Send me</a>
+      {% else %}
+      {% endif %}
+      {% if site.author-twitter %}
+      <a href="https://twitter.com/intent/user?screen_name={{ site.social-twitter }}" class="c-btn c-btn--primary c-btn--round c-btn--shadow"><span data-icon='ei-sc-twitter' data-size='s'></span> Follow me</a>
+      {% else %}
+      {% endif %}
+    </div>
+    <p class="c-author__about">{{site.about-author | strip_html | truncatewords: 50}}</p>
+  </div>
+
+  <div class="c-sidebar-footer">
+    <div class="c-social">
+      <div class="c-social__title">Social</div>
+      <ul class="c-social__list u-lists-reset">
+        {% if site.social-twitter %}
+          <li class="c-social__item"><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank"><div data-icon='ei-sc-twitter' data-size='s'></div></a></li>
+        {% else %}
+        {% endif %}
+        {% if site.social-facebook %}
+          <li class="c-social__item"><a href="https://facebook.com/{{ site.social-facebook }}" target="_blank"><div data-icon='ei-sc-facebook' data-size='s'></div></a></li>
+        {% else %}
+        {% endif %}
+        {% if site.social-github %}
+          <li class="c-social__item"><a href="https://github.com/{{site.social-github}}" target="_blank"><div data-icon='ei-sc-github' data-size='s'></div></a></li>
+        {% else %}
+        {% endif %}
+        {% if site.social-pinterest %}
+          <li class="c-social__item"><a href="https://pinterest.com/{{site.social-pinterest}}" target="_blank"><div data-icon='ei-sc-pinterest' data-size='s'></div></a></li>
+        {% else %}
+        {% endif %}
+        {% if site.social-instagram %}
+          <li class="c-social__item"><a href="https://instagram.com/{{ site.social-instagram }}" target="_blank"><div data-icon='ei-sc-instagram' data-size='s'></div></a></li>
+        {% else %}
+        {% endif %}
+        {% if site.social-youtube %}
+          <li class="c-social__item"><a href="https://youtube.com/{{ site.social-youtube }}" target="_blank"><div data-icon='ei-sc-youtube' data-size='s'></div></a></li>
+        {% else %}
+        {% endif %}
+        {% if site.social-vk %}
+          <li class="c-social__item"><a href="https://vk.com/{{ site.social-vk }}" target="_blank"><div data-icon='ei-sc-vk' data-size='s'></div></a></li>
+        {% else %}
+        {% endif %}
+        {% if site.social-linkedin %}
+          <li class="c-social__item"><a href="https://in.linkedin.com/in/{{site.social-linkedin}}" target="_blank"><div data-icon='ei-sc-linkedin' data-size='s'></div></a></li>
+        {% else %}
+        {% endif %}
+      </ul>
+    </div>
+    <div class="c-copyright">
+      <p>{{site.time | date: '%Y'}} &copy; {{site.author-name}}</p>
+    </div>
+  </div>
+</aside> <!-- /.c-sidebar -->
+
+<main class="c-content">
+  {{ content }}
+</main> <!-- /.c-content -->
