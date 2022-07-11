@@ -4,10 +4,7 @@ title: "Why Tech Writing"
 date: 2022-07-11
 ---
 
----
-title: "Why Tech Writing"
-date: 2022-07-11
----
+
 # Why Tech Writing
 
 Technical writing combines my interest in technology, my skill at writing clear, useful content, and my knowledge of learning.
