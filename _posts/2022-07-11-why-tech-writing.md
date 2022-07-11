@@ -5,11 +5,9 @@ date: 2022-07-11
 ---
 
 
-# Why Tech Writing
+***Technical writing combines my interest in technology, my skill at writing clear, useful content, and my knowledge of learning.***
 
-Technical writing combines my interest in technology, my skill at writing clear, useful content, and my knowledge of learning.
-
-At this stage of my carrer, I want to challenge myself in new ways and work in a collaborative environment.
+***At this stage of my carrer, I want to challenge myself in new ways and work in a collaborative environment.***
 
 ## Career
 
