@@ -5,7 +5,7 @@ date: 2022-07-11
 ---
 
 
-***Technical writing combines my interest in technology, my skill at writing clear, useful content, and my knowledge of learning.***
+***Technical writing combines my interest in technology, my understanding of how people learn, and my ability to write clear, useful content, and.***
 
 ***At this stage of my carrer, I want to challenge myself in new ways and work in a collaborative environment.***
 
