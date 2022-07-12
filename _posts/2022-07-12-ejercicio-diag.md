@@ -25,28 +25,28 @@ y todos los de una involución 1 o -1.¿Depende este resultado de la dimensión 
 <p align = "justify"><b>Demostración:</b> Consideraremos primero el caso de una proyección $P:V\to V$. Si $P = \mathbb{I}$ o $0$,
 en tal caso tendremos que todos sus autovalores son 1 (en el caso que $P$ sea la identidad) o 0 (en el caso que $P$
 sea la trasnformación nula). Supongamos ahora que $P\neq\mathbb{I},0$. </p>
-<p align = "justify">Notemos que si $P$ es una proyección entonces</p>
+<p align = "justify">Notemos que si $P$ es una proyección, entonces</p>
 
-\begin{equation*}
+\begin{equation}
 P^2 = P\Rightarrow P-P^2 = 0\Rightarrow P (\mathbb{I}-P) = (\mathbb{I}-P)P = 0
-\end{equation*}
+\end{equation}
 
 <p align = "justify">Sabiendo que $P\neq\mathbb{I}$, entonces existe $w\in V$ tal que $Pw\neq w$. 
 Luego $(\mathbb{I}-P)w\in\mathrm{Ker}(P)$, entonces $\lambda = 0$ es autovalor de $P$.</p>        
 <p align = "justify">Por otro lado, suponiendo que $P$ no es trivial, es decir $P\neq 0$, entonces existe
 $v\in V$ tal que $Pv\neq 0$. Entonces $Pv\in\mathrm{Ker}(I-P)$, entonces $\lambda = 1$ es autovalor de $P$.</p>
 <p align = "justify">Supongamos ahora que hay un autovalor $\lambda \neq 0$, entonces existe $v\neq 0$ autovector tal que</p>
-\begin{equation*}
+\begin{equation}
   P(v) = \lambda v\Rightarrow P(P(v)) = P(\lambda v)\Rightarrow P(v) = \lambda^2 v\Rightarrow
    \lambda v = \lambda^2 v\Rightarrow v = \lambda v\Rightarrow \lambda = 1.
-\end{equation*}
+\end{equation}
 <p align = "justify">Luego 0 y 1 son los únicos autovalores posibles para una proyecci\'on.</p>
 
 <p align = "justify">Ahora estudiemos el caso de una involución $T:V\to V$. Supongamos $T\neq\pm\mathbb{I}$, en tal caso es 
 inmediato el resultado. Notemos que si $v$ es autovector y $\lambda$ autovalor entonces</p>
-\begin{equation*}
+\begin{equation}
   T(v) =\lambda v\Rightarrow v = T^2(v) = \lambda^2 v\Rightarrow \lambda^2 = 1
-\end{equation*}
+\end{equation}
 <p align = "justify">Luego $\lambda$ vale 1 \'o -1.</p>
 <p align = "justify">También tendremos que $\mathbb{I}-T^2=(\mathbb{I}-T)(\mathbb{I}+T) = 0$.</p>
 <p align = "justify">Bajo la hip\'otesis de que $T\neq -I$, tendremos $v$ tal que $T(v)\neq -v$, entonces 
@@ -72,18 +72,18 @@ el cuerpo $K$ cumple la condición de tener característica mayor que 2.</p>
 entrada.</p>
 
 <p align = "justify">Veamos primero el caso de la proyección $P$: dado $v\in V$ podemos escribir</p>
-\begin{equation*}
+\begin{equation}
  v = \underbrace{P(v)}_{E_1}+\underbrace{(v-P(v))}_{E_0}
-\end{equation*}
+\end{equation}
 <p align = "justify">Como los espacios propios siempre est\'an en suma directa (ver de vuelta la lista de <a href = "https://uliseschialva.github.io/Diagonalizacion/">resultados previos</a>).
 ), esa descomposici\'on es \'unica. Luego $V=E_{0}\oplus E_{1}$. Si $V$ es finito dimensional, por el item <em>ii)</em> del Teorema de Diagonalización,
 eso significa que $P$ es diagonalizable.</p>
 
 <p align = "justify">Ahora, de manera similar, veremos el caso de una involución $T$. Sea $v\in V$, entonces podemos
 escribir</p>
-\begin{equation*}
+\begin{equation}
 v = \underbrace{\frac{1}{2}\left(v+T(v)\right)}_{E_{1}}+\underbrace{\frac{1}{2}\left(v+T(v)\right)}_{E_{-1}}
-\end{equation*}
+\end{equation}
 <p align = "justify">Como los espacios propios est\'an en suma directa, esa descomposici\'on es \'unica, y cubren todo el espacio 
 $V$. Luego $V=E_{1}\oplus E_{-1}$. Si $V$ es finito dimensional, eso significa que $T$ es diagonalizable. QED.</p>
 
@@ -101,7 +101,7 @@ los autovecores son las matrices simétricas y antisimétricas.</p>
 
 <p align = "justify">Entonces, por la proposición 2, la transformación es diagonalizable, 
 y su matriz en cualquier base será semejante a</p>
-    \begin{equation*}
+    \begin{equation}
         \begin{pmatrix}
         1 & 0 & 0 & ...& 0 & 0\\
         0 & 1 & 0 & ... & 0 & 0\\
@@ -109,11 +109,11 @@ y su matriz en cualquier base será semejante a</p>
         0 & 0 & 0 & ... & -1 & 0\\
         0 & 0 & 0 & ... & 0 & -1\\
         \end{pmatrix}
-    \end{equation*}
+    \end{equation}
  <p align = "justify">Adem\'as tendremos que $dim(E_{1}) = n(n+1)/2$ y $dim(E_{-1}) = n(n-1)/2$,
  por lo que el polinomio característico de la transformación será</p>
- \begin{equation*}
+ \begin{equation}
  \mathcal{X}_{.^t}(X) = (X-1)^{\frac{n(n+1)}{2}}(X+1)^{\frac{n(n-1)}{2}}
- \end{equation*}
+ \end{equation}
 
 
