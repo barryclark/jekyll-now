@@ -9,7 +9,7 @@ date: 2022-07-12
 
 ***Here are some of the resources I am using.***
 
-***Feel free to email me your recommended resources at [erikasversion@gmail.com.](mailto:erikasversion@gmail.com)***
+***Feel free to [send me your recommended resources.](mailto:erikasversion@gmail.com)***
 
 ## Free Resources
 
