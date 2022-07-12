@@ -26,9 +26,8 @@ y todos los de una involución 1 o -1.¿Depende este resultado de la dimensión 
 en tal caso tendremos que todos sus autovalores son 1 (en el caso que $P$ sea la identidad) o 0 (en el caso que $P$
 sea la trasnformación nula). Supongamos ahora que $P\neq\mathbb{I},0$. </p>
 <p align = "justify">Notemos que si $P$ es una proyección, entonces</p>
-
 \begin{equation*}
-    P^2 = P\Rightarrow P-P^2 = 0\Rightarrow P (\mathbb{I}-P) = (\mathbb{I}-P)P = 0
+P^2 = P\Rightarrow P-P^2 = 0\Rightarrow P (\mathbb{I}-P) = (\mathbb{I}-P)P = 0
 \end{equation*}
 
 <p align = "justify">Sabiendo que $P\neq\mathbb{I}$, entonces existe $w\in V$ tal que $Pw\neq w$. 
@@ -73,7 +72,7 @@ entrada.</p>
 
 <p align = "justify">Veamos primero el caso de la proyección $P$: dado $v\in V$ podemos escribir</p>
 \begin{equation*}
- v = \underbrace{P(v)}_{E_1}+\underbrace{(v-P(v))}_{E_0}
+v = \underbrace{P(v)}_{E_1}+\underbrace{(v-P(v))}_{E_0}
 \end{equation*}
 <p align = "justify">Como los espacios propios siempre est\'an en suma directa (ver de vuelta la lista de <a href = "https://uliseschialva.github.io/Diagonalizacion/">resultados previos</a>).
 ), esa descomposici\'on es \'unica. Luego $V=E_{0}\oplus E_{1}$. Si $V$ es finito dimensional, por el item <em>ii)</em> del Teorema de Diagonalización,
