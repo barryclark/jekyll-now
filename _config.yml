@@ -4,10 +4,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jieunid.github.io/jieun/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author
-author-name:    Clayton Hanson
-author-image:   1.jpg
-author-job:     Web Developer
-author-email:   your-email@domain.com # Add your email for contant form.
+author-name:    kangjieun
+author-image:   jieun.jpg
+author-job:     Web Developer, Designer
+author-email:   wldms87985@naver.com # Add your email for contant form.
 author-twitter: artemsheludko_ # Add your twitter account
 about-author:   I am a web developer focusing on front-end development. Always hungry to keep learning.
 
