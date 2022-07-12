@@ -4,12 +4,17 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I bring over a decade of experience writing and teaching to technical writing.
 
-### More Information
+I'm excited about this new stage of my career.
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm also a big reader. Did you know that the sci-fi writer Ted Chiang is also a tech writer? ☺️
+
+
+### Some Places I've Lived
+
+I grew up in South Dakota, attended college in DC, did study abroad programs in Florence and London, and have lived in New York City since 2008.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[erikasversion@gmail.com](mailto:erikasversion@gmail.com)
