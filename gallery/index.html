@@ -1,0 +1,38 @@
+---
+layout: gallery
+title: Gallery
+permalink: /gallery/
+---
+
+
+    <div class="col-lg-8 offset-md-2">
+
+      <div class="row">
+    {% assign count = 0 %}
+    {% assign align = "left" %}
+    {% for gallery in site.data.galleries.overview %}
+    {% if count == 0 %}<div class="row">{% endif %}
+      <div class="card">
+        <div class="card-title"> {{gallery.title}}</div>
+        <div class="row">
+
+        <a href="{{ site.url }}{{ site.baseurl }}/gallery/{{ gallery.directory }}.html">
+          <img class="img-thumbnail" alt="{{ gallery.title }}" src="{{ site.url }}{{ site.baseurl }}/assets/img/gallery/{% if gallery.picture_path %}{{ gallery.picture_path }}{% else %}{{ gallery.directory }}{% endif %}/{{ gallery.preview.thumbnail }}" />
+        </a>
+        </div>
+      </div>
+    {% if count == 1 %}</div>{% endif %}
+    {% assign count = count | plus: 1 %}
+    {% assign align = "right" %}
+    {% if count >= 2 %}
+    {% assign align = "left" %}
+    {% assign count = 0 %}
+    {% endif %}
+    {% endfor %}
+
+    {% if count != 1 %}
+    </div>
+    {% endif %}
+
+    </div>
+</div>

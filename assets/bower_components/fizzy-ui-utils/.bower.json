@@ -1,0 +1,43 @@
+{
+  "name": "fizzy-ui-utils",
+  "authors": [
+    "David DeSandro"
+  ],
+  "description": "UI utilities",
+  "main": "utils.js",
+  "dependencies": {
+    "desandro-matches-selector": "^2.0.0"
+  },
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "utility",
+    "ui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "package.json"
+  ],
+  "devDependencies": {
+    "qunit": "~1.20.0"
+  },
+  "homepage": "https://github.com/metafizzy/fizzy-ui-utils",
+  "version": "2.0.7",
+  "_release": "2.0.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.7",
+    "commit": "637aea0eb26d84d0922513d891f1d7b4157b3d4c"
+  },
+  "_source": "https://github.com/metafizzy/fizzy-ui-utils.git",
+  "_target": "^2.0.4",
+  "_originalSource": "fizzy-ui-utils"
+}

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="card">
+        <div class="col-md-8 offset-md-2 offset-md-right">
+                <h1>Author : {{ page.name }}</h1>
+                <img src="{{site.url}}{{site.baseurl}}/assets/img/authors/{{ page.avatar}}" class="author-profile-img" />
+                <p>{{ page.bio }}</p>
+
+                <h2>Post by this author</h2>
+                {%- assign author_posts = site.posts
+                  | where: "author", page.username
+                -%}
+                {%- for post in author_posts -%}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {%- endfor -%}
+         </div>
+    </div>
