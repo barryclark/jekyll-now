@@ -20,6 +20,10 @@ layout: default
         {{ post.excerpt | rstrip | append: ' ...' | markdownify }}
       </div>
 
+      <div class="date">
+        Posted {{ post.date | date: "%Y-%m-%d" }} {%if post.last_updated %}, Last Updated {{post.last_updated | last_updated : "Y%-%m-%d"}} {% endif %}
+      </div>
+    
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
