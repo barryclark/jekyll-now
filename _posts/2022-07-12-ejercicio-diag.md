@@ -17,7 +17,7 @@ obviarse en una primer lectura.</p>
 <p align = "justify">
   <b>Definición:</b> Sea $V$ un espacio vectorial sobre un cuerpo $K$, y $P,T:V\to V$ dos transformaciones lineales.
 Diremos que $P$ es un <em>proyector</em> si cumple $P\circ P = P$, y diremos que $T$ es una <em>involución</em>
-si cumple $T\circ T = \mathbb{I}_V$.</p>
+si cumple $T\circ T = \mathbb{I}_V$. Escribiremos $P^2 = P\circ P$.</p>
 
 <p align = "justify">Vamos con el primer resultado <em>(Ejercicio implícito: Probar que los valores propios de una proyección son 0 o 1,
 y todos los de una involución 1 o -1.¿Depende este resultado de la dimensión del espacio vectorial?)</em></p>
