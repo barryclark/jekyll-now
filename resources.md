@@ -19,11 +19,11 @@ date: 2022-07-12
 
 ## Free Resources
 
-[Stanford's CS101 Online Course on edX](https://www.edx.org/course/computer-science-101)
-[Diátaxis: A systematic framework for technical documentation authoring.](https://diataxis.fr)
-[I'd Rather Be Writing Blog & API Documentation Course](https://idratherbewriting.com/learnapidoc/)
-[Tech Writer HQ YouTube Channel](https://www.youtube.com/channel/UCjMnGjosWhBxYtumwhQLZmA)
+- [Stanford's CS101 Online Course on edX](https://www.edx.org/course/computer-science-101)
+- [Diátaxis: A systematic framework for technical documentation authoring.](https://diataxis.fr)
+- [I'd Rather Be Writing Blog & API Documentation Course](https://idratherbewriting.com/learnapidoc/)
+- [Tech Writer HQ YouTube Channel](https://www.youtube.com/channel/UCjMnGjosWhBxYtumwhQLZmA)
 
 ## Paid Resources
 
-[Tech Writer HQ Certificate in Tech Writing](https://technicalwriterhq.com)
+- [Tech Writer HQ Certificate in Tech Writing](https://technicalwriterhq.com)
