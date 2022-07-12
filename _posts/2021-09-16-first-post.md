@@ -1,4 +1,6 @@
 ---
+layout: post
+title: Welcome...
 published: false
 ---
 ## A New Post
