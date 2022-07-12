@@ -1,4 +1,10 @@
 ---
+layout: page
+title: Resources I'm Using
+permalink: /resources/
+---
+
+---
 layout: post
 title: "Resources I'm Using"
 date: 2022-07-12
