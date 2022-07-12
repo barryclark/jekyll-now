@@ -8,9 +8,11 @@ ambas son diagonalizables en dimensión finita. Y todo lo haremos aplicando el t
 <a href = "https://uliseschialva.github.io/Diagonalizacion/">la entrada anterior</a>.
 Finalmente, en la última parte presentaremos un ejemplo de aplicación sobre la transposición de matrices.</p>
 
-<p align = "justify">Voy a plantear el modo tradicional de exposición Afirmación/Demostración, aunque todo esto también podría verse
-como la resolución de un ejercicio implícito (que lo anotaré en cursivas). También daré unos breves comentarios técnicos que pueden
+<p align = "justify">Voy a plantear el modo tradicional de exposición Afirmación/Demostración, aunque todo también podría verse
+como la resolución de una serie de ejercicios implícitos (que los anotaré en cursivas). También daré unos breves comentarios técnicos que pueden
 obviarse en una primer lectura.</p>
+
+<p align = "justify"><font size = "+1"><b>Breve, brevísimo estudio de Proyectores e Involuciones</b></font></p>
 
 <p align = "justify"><b>Definición:</b> Sea $V$ un espacio vectorial sobre un cuerpo $K$, y $P,T:V\to V$ dos transformaciones lineales.
 Diremos que $P$ es un <em>proyector</em> si cumple $P\circ P = P$, y diremos que $T$ es una <em>involución</em>
