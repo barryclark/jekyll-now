@@ -12,7 +12,7 @@ Finalmente, en la última parte presentaremos un ejemplo de aplicación sobre la
 como la resolución de una serie de ejercicios implícitos (que los anotaré en cursivas). También daré unos breves comentarios técnicos que pueden
 obviarse en una primer lectura.</p>
 
-<p align = "justify"><font size = "+1"><b>Breve, brevísimo estudio de Proyectores e Involuciones</b></font></p>
+<p align = "center"><font size = "+2"><b>Breve, brevísimo estudio de Proyectores e Involuciones</b></font></p>
 
 <p align = "justify"><b>Definición:</b> Sea $V$ un espacio vectorial sobre un cuerpo $K$, y $P,T:V\to V$ dos transformaciones lineales.
 Diremos que $P$ es un <em>proyector</em> si cumple $P\circ P = P$, y diremos que $T$ es una <em>involución</em>
@@ -92,7 +92,7 @@ al demostrar que las involuciones son diagonalizables. Al utilizar el factor $1/
 estamos asumiendo que es posible dividir por 2 (lo cual no ocurre si el cuerpo tiene característica 2, es decir, si
 $K = \mathbb{Z}_2$).</p>
 
-<p align = "justify"><font size = "+1"><b>Un ejercicio concreto de aplicación</b></font></p>
+<p align = "center"><font size = "+1"><b>Un ejercicio concreto de aplicación</b></font></p>
 <p><b>Ejercicio:</b> Sea el operador $T:K^{n\times n}\to K^{n\times n}$, donde $K$ es un cuerpo, definido por $T(A) = A^t$ 
 para $A\in K^{n\times n}$. Demostrar que $T$ es diagonalizable y determinar sus autovalores y autovectores.</p>
 <p><b>Resolución:</b> Notemos que $T$ es una involución, pues $T\circ T (A) = (A^t)^t = A$ y la dimensión 
