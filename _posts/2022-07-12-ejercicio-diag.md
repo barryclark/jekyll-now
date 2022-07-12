@@ -14,7 +14,7 @@ obviarse en una primer lectura.</p>
 
 <p align = "justify"><b>Definición:</b> Sea $V$ un espacio vectorial sobre un cuerpo $K$, y $P,T:V\to V$ dos transformaciones lineales.
 Diremos que $P$ es un <em>proyector</em> si cumple $P\circ P = P$, y diremos que $T$ es una <em>involución</em>
-si cumple $T\circ T = \mathcal{I}_V$.</p>
+si cumple $T\circ T = \mathbb{I}_V$.</p>
 
 <p align = "justify">Vamos con el primer resultado <em>(Ejercicio implícito: Probar que los valores propios de una proyección son 0 o 1,
 y todos los de una involución 1 o -1.¿Depende este resultado de la dimensión del espacio vectorial?)</em></p>
@@ -24,9 +24,11 @@ y todos los de una involución 1 o -1.¿Depende este resultado de la dimensión 
 en tal caso tendremos que todos sus autovalores son 1 (en el caso que $P$ sea la identidad) o 0 (en el caso que $P$
 sea la trasnformación nula). Supongamos ahora que $P\neq\mathbb{I},0$. </p>
 <p align = "justify">Notemos que si $P$ es una proyección entonces</p>
+
 \begin{equation*}
-        P^2 = P\Rightarrow P-P^2 = 0\Rightarrow P (\mathbb{I}-P) = (\mathbb{I}-P)P = 0
+P^2 = P\Rightarrow P-P^2 = 0\Rightarrow P (\mathbb{I}-P) = (\mathbb{I}-P)P = 0
 \end{equation*}
+
 <p align = "justify">Sabiendo que $P\neq\mathbb{I}$, entonces existe $w\in V$ tal que $Pw\neq w$. 
 Luego $(\mathbb{I}-P)w\in\mathrm{Ker}(P)$, entonces $\lambda = 0$ es autovalor de $P$.</p>        
 <p align = "justify">Por otro lado, suponiendo que $P$ no es trivial, es decir $P\neq 0$, entonces existe
