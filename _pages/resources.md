@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Resources I'm Using
+title: "Resources I'm Using"
 permalink: /resources/
 ---
 
