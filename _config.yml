@@ -49,7 +49,7 @@ google-analytics: # Add your identifier. For example UA-99631805-1
 disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
 
 # Build settings
-markdown: <{{ site.url }}{{ site.baseurl }}
+markdown: kramdown
 permalink: /:year/:month/:day/:title/
 plugins:
   - jekyll-paginate
