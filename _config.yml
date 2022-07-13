@@ -5,7 +5,7 @@ url: "https://jieunid.github.io/jieun/" # the base hostname & protocol for your 
 
 # Author
 author-name:    kangjieun
-author-image:   jieun.jpg
+author-image:   /assets/images/jieun.jpg
 author-job:     Web Developer, Designer
 author-email:   wldms87985@naver.com # Add your email for contant form.
 author-twitter: artemsheludko_ # Add your twitter account
@@ -51,3 +51,29 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # 블로그 댓글 기능 true
+      share: true
+      related: true
+
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: false
