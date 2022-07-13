@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Why Tech Writing
+title: "Why Tech Writing"
 permalink: /why/
 ---
 
