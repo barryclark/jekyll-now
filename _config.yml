@@ -4,12 +4,31 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jieunid.github.io/jieun/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author
-author-name:    kangjieun
-author-image:   assets/images/jieun.jpg
-author-job:     Web Developer, Designer
-author-email:   wldms87985@naver.com # Add your email for contant form.
-author-twitter: artemsheludko_ # Add your twitter account
-about-author:   I am a web developer focusing on front-end development. Always hungry to keep learning.
+#author-name:    kangjieun
+#author-image:   ![]({{ site.url }}{{ site.baseurl }}/assets/images/bio-photo-keyboard.jpg
+#author-job:     Web Developer, Designer
+#author-email:   wldms87985@naver.com # Add your email for contant form.
+#author-twitter: artemsheludko_ # Add your twitter account
+#about-author:   I am a web developer focusing on front-end development. Always hungry to keep learning.
+
+
+# Site Author
+author:
+  name             : "kangjieun"
+  avatar           : "/assets/images/jieun.jpg"
+  bio              : "웹디자인 가능한 웹퍼브리셔 & 웹 프론트앤드개발"
+  location         : "South Korea"
+  email            :
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:devinlifeidea@gmail.com
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://jieunid.github.io/jieun/"
+
+
+
 
 # Social settings
 social-twitter:   artemsheludko_
@@ -31,7 +50,7 @@ google-analytics: # Add your identifier. For example UA-99631805-1
 disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
 
 # Build settings
-markdown: kramdown
+markdown: <{{ site.url }}{{ site.baseurl }}
 permalink: /:year/:month/:day/:title/
 plugins:
   - jekyll-paginate
@@ -77,3 +96,10 @@ defaults:
       comments: false
       share: true
       related: false
+
+      # Analytics
+analytics:
+  provider               : false # 구글 어날리틱스 등록 false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          :
+    anonymize_ip         : # true, false (default)
