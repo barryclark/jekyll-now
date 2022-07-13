@@ -5,7 +5,7 @@ url: "https://jieunid.github.io/jieun/" # the base hostname & protocol for your 
 
 # Author
 author-name:    kangjieun
-author-image:   ![]({{ site.url }}{{ site.baseurl }}/assets/images/jieun.jpg
+author-image:  /images/jieun.jpg
 author-job:     Web Developer, Designer
 author-email:   wldms87985@naver.com # Add your email for contant form.
 author-twitter: artemsheludko_ # Add your twitter account
