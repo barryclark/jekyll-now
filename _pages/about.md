@@ -13,7 +13,7 @@ I'm also a big reader. Did you know that the sci-fi writer Ted Chiang is also a 
 
 ### Some Places I've Lived
 
-I grew up in South Dakota, attended college in DC, did study abroad programs in Florence and London, and have lived in New York City since 2008.
+I grew up in South Dakota, attended college in Washington, DC, studied abroad in Florence and London, and have lived in New York City since 2008.
 
 ### Contact me
 
