@@ -13,19 +13,18 @@ about-author:   I am a web developer focusing on front-end development. Always h
 
 
 # Site Author
-author:
-  name             : "kangjieun"
-  avatar           : "/assets/images/jieun.jpg"
-  bio              : "웹디자인 가능한 웹퍼브리셔 & 웹 프론트앤드개발"
-  location         : "South Korea"
-  email            :
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:devinlifeidea@gmail.com
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://jieunid.github.io/jieun/"
+#author:
+ # avatar           : "/assets/images/jieun.jpg"
+  #bio              : "웹디자인 가능한 웹퍼브리셔 & 웹 프론트앤드개발"
+ # location         : "South Korea"
+ # email            :
+ # links:
+   # - label: "Email"
+   #   icon: "fas fa-fw fa-envelope-square"
+   #   url: mailto:devinlifeidea@gmail.com
+   # - label: "Website"
+   #   icon: "fas fa-fw fa-link"
+    #  url: "https://jieunid.github.io/jieun/"
 
 
 
