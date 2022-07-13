@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - gem install sass
+  - gem install compass
+before_script:
+  - 'npm install -g bower grunt-cli'
+  - 'bower install'
