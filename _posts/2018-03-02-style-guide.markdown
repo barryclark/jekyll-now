@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style Guide
-<img src='./_images/8.jpg' >
+image: 8.jpg
 date: 2018-03-02 13:35:20 +0200
 tags:
 categories: guide
@@ -82,7 +82,8 @@ A paragraph looks like this — dolor amet cray stumptown fingerstache neutra fo
 
 #### Images
 
-<img src='./_images/2.jpg' >
+![]({{site.baseurl}}/images/2.jpg)
+
 ***
 
 #### Videos
