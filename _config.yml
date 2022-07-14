@@ -1,6 +1,6 @@
 title: Welcome to jieun blog
 description: Flexton is a responsive and ultra-minimal theme for Jekyll.
-baseurl: "./" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jieunid.github.io/jieun" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author
@@ -29,11 +29,11 @@ about-author:   디자인 가능한 웹 퍼블리셔 & 웹프론트앤드
 
 
 # Social settings
-social-twitter:   artemsheludko_
+social-twitter:   
 social-facebook:
 social-github:    artemsheludko
 social-pinterest: artemsheludko
-social-instagram: artemsheludko_
+social-instagram: kangjieun555
 social-youtube:
 social-vk:   
 social-linkedin:
