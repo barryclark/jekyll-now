@@ -143,6 +143,9 @@ GEngine->AddONScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Test!"));
 #endif
     
 ```
+
+강제 입력으로 Debug를 지우므로, 굳이, #if, #Endif를 해줄 필요 없습니다.
+
 ```cpp
 #include "Engine/GameEngine.h"
 

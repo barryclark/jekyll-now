@@ -3,22 +3,470 @@ layout: post
 title: Fragment
 ---
 
-## 2022 07 04
-Level 정리         80,~    2   40,~     실제 6
-Audio 정리         120,~   5   24,~     실제 4
-UI 정리            120,~   5   24,~     실제 0.5
+## 2022 07 14
+Cache pos하면, 포즈를 캐싱함.
 
-HorrorGame 정리    60,~    4   15,~
-포트폴리오 정리     44,~    4   11,~
-강의 집중           160,~   2   80,~
+애니메이션을 만들고 싶어도 맞는 애니메이션이 있는지 아는게 더 중요.
+
+오늘할 것이 몽타주를 집어넣은 다음에, 애니메이션 블렌딩.
+
+근데, 상하체 분리애니메이션만 하더라도, 기존의 로코모션에, 상하체를 결합할 수 밖에 없어서, 캐시포즈가 들어갈 수 밖에 없다.
+
+
+1. 내 문서에다 왜 이렇게 작성했는지 정리하기,
+2. 사이트 정리하기, <- 수학, 구현, 컴포넌트, 힛 이벤트 ...
+3. 코드 리펙토링,
+4. 포트폴리오에 정리
+
+AController와 APawn에서 SetIgnoreLook 또는 SetIgnoreMove설정으로 움직이고 움직이지 않는 것을 설정할 수 있습니다.
+
+* 동일한 액터에서의 컴포넌트는 작동하지 않는다.
+
+* Component에서 Swap의 결과를 가져오기 위해서는 Target이 PrimityComponent여야 합니다.
+
+오늘 한거 정리하고 싶은데, 어떻게 적어야 할까..?
+코드에서 버그를 찾을려 하니 못찾는건가?.. 맞는거 같네.
+
+글로 명확하게 적어서 해야하지만, 결과를 보면서도 만들어야 하기 때문에, 적절한 균형이 중요하다.
+
+* 무지성 3배는 굉장히 효율적이네, 실제로 그정도 걸리네,, 사실 그것보다 더 걸리긴 하지만...
+
+* ProjectWorldToScreen은 화면상에 들어오는지, 추가적으로 검사한다. 또한 ViewProject을 적용하기 때문에, 벡터를 구하는게 상당히 제한된다.
+
+블루프린트 펑션 라이브러리는 특정 게임 오브젝트에 묶이지 않은 유틸리티 함수성을 제공해 주는 정적인 함수의 모음입니다. 모든 블루프린트 라이브러리는 UBlueprintFunctionLibrary를 상속합니다.
+
+코드를 작성하기 전에, 전체 그림을 완성시키고 작성해야 합니다. 왜냐하면, 코드를 바꾸는 것 보다 글 또는 그림을 바꾸는게 더 편하기 때문입니다......
+
+## 2022 07 13
+
+자연스럽게 만드는 것이 가장 중요함
+
+1. 회전에 직접 매칭하지 않는다. UseControllerRotate을 끄고?
+2. 카메라하고 무브먼트를 건들어야 한다.??
+
+알고 있는 3인칭 시점.
+캐릭터는 가만히 있고, 카메라가 회전한다.
+
+이는 캐릭터에 매칭되어 있었는데, 캐릭터에 매칭되어있는 것을 끄고, 카메라에 매칭시킨다. 하지만 실질적으로 가는 것은 맞다. 보는 방향대로 가는 것을 말한다. 움직임은 맞다.
+
+캐릭터 무브먼트 스크롤 한참 내리면, 캐릭터 무브먼트 로테이션, 회전 세팅에 처박혀 있다. 여기서 오리엔트 로테이션 투 무브먼트는 가속되는 방향으로 캐릭터를 돌려주겠다 이말이다.
+
+캐릭터의 회전속도가 따로 설정된다. 흠... 이걸 쓰는 이유가, 카메라 움직이면, FPS에서는 일정 범위는 AIM OFFSET으로 상체만 움직이고, 넘어가면, 크게 회전함.
+
+AIMOFFSET이나 이런 것은, 먼저 큰 움직임을 전부 제어하고 만든다.
+
+1. 움직임을 먼저 구현한다.
+2. 큰 애니메이션을 맞춰넣는다.
+3. 디테일한 시스템을 만든다.
+
+Animation 스타트팩 보면, 예한테 이 애니메이션이 붙어있다는 것을 말한다.
+
+애니메이션 기억이 안날 떄, 키워드 애님 에셋 리타깃
+
+인간형 릭 선택하면, 된다. 언리얼에서 제공해준거니 엉뚱한 거 맵핑될일이 없다. 하지만, 다르면, 비슷한 위치에 있는 것을 맵핑해줘야 한다.
+
+애니메이션을 기준으로 무언가를 하는건 스켈레톤을 기준으로 만들어야 한다.
+
+언리얼은 호도법을 씁니다. 사람이 인지하기 쉽게, 라디안 값을 쓰지 않음.
+
+애니메이션 만드는게 잘 기억이 안나면, 애니메이션 스타트 팩, 애니메이션 블루프린트 뜯어다가 보도록 한다.
+
+컨트롤러 로테이션 기준으로 가져오면 이상할 테니, 캐릭터 기준으로 가져온다.
+
+서드펄슨에서 발생하는 일을, 애니메이션 블루프린트에서 가져오기도 뭐함. 모험모드일때는 모험모드를 하고, 아닐때는 아니고, 누가 누구를 아는게 맞느냐 하는게 맞다아? 기본적으론 애니메이션이 캐릭터의 데이터를 갖다가 한다. 캐릭터가 애니메이션을 알아야 하느냐? 아니냐, 머리아파 질 수 있음.
+
+애니메이션 블루프린트가, 캐릭터의 상태값을 체크해서, 매번 가져오는게 이상하기도 하고, 하여간 여러가지로 애매함. 인터페이스 때려밖으면 되나? 따라서 캐릭터 정보를 가져다가 직접 적용하는 식으로 만들것이다.
+
+애니메이션에 맞물려 있는 경우도 있고 해서, 쉽지 않음.
+Cast를 붙이는 순간, 여기에 밖에 못 붇힌다는 이야기가 됨.
+
+언더바는 스페이스로 검색됨, 제대로 검색이 안될 수 있음. 따라서 -를 쓴다는데, &&로 때려박아도 되기는 함.
+
+Resume란 영미권에서 구직활동을 할 때 사용하는 서류로, 우리나라의 이력서에 해당합니다. 레쥬메는 크게 두 가지 특성이 있습니다. 그중 하나는 간결함입니다. Resume는 학력, 성격, 주요 경력, 역량 등 나의 핵심 정보를 약 1 ~ 2페이지 내로 간결하게 소개한 서류입니다.
+
+[기술문서](https://jidocument.tistory.com/entry/%EA%B8%B0%EC%88%A0%EB%AC%B8%EC%84%9CTechnical-Document%EC%97%90%EB%8A%94-%EC%96%B4%EB%96%A4-%EB%AC%B8%EC%84%9C%EB%93%A4%EC%9D%B4-%EC%9E%88%EC%9D%84%EA%B9%8CAPI%EA%B0%80%EC%9D%B4%EB%93%9C%EB%B6%80%ED%84%B0-Whitepaper%EA%B9%8C%EC%A7%80)
+
+[100가지 팁](https://bbagwang.com/unreal-engine/%EC%96%B8%EB%A6%AC%EC%96%BC-%EB%B2%A0%ED%85%8C%EB%9E%91%EC%9D%98-100%EA%B0%80%EC%A7%80-%ED%8C%81%EA%B3%BC-%ED%8A%B8%EB%A6%AD-%EC%A0%95%EB%A6%AC/)
+
+! MathHall 이 존재한다고 한다. 풀어서 찬찬히 뜯어보면 지식을 얻을 수 있다고 생각된다.
+
+## 폴더 관리
+
+폴더 어떻게 관리하라는 거냐,,
+
+[협업시 관리해야할 언리얼 엔진 4 디렉토리에 대하여](https://somworks.tistory.com/21)
+
+[폴더 구조](https://hanneoul.tistory.com/entry/12-%ED%8F%B4%EB%8D%94-%EA%B5%AC%EC%A1%B0)
+
+규칙
+
+Actor
+특별한 이유를 제외하고 Actor의 RootComponent는 SceneComponent여야 합니다.
+ActorSequenceComponent를 이용하는데 있어, RootComponent를 옮길 경우, WorldPosition이 업데이트 됩니다.
+
+Component
+
+
+Character
+
+Material
+해당 머티리얼에 맞는 PhysMaterial을 설정해야 합니다.
+FirstPersonHorror의 IsFootHitComplex이 true인 경우 TraceFoot에서 Complex Collision을 검사합니다. 따라서 PhysicsMaterialOverride를 무시합니다.
+FaceIndex가 다르고 그에 따라 반환되는 PhysMaterial까지 다른 것은 알겠으나, Override되지 않는 이유는 모르겠습니다.
+
+
+## 카메라를 처리할 거면, 이걸로 하면 된다.
+
+[카메라](https://docs.unrealengine.com/4.26/ko/InteractiveExperiences/Framework/Camera/)
+
+[카메라 애님](https://docs.unrealengine.com/4.26/ko/InteractiveExperiences/Framework/Camera/Animations/)
+
+[APlayerCameraController](https://docs.unrealengine.com/4.27/en-US/API/Runtime/Engine/Camera/APlayerCameraManager/)
+
+포스트 프로세싱 설정을 위해서 굳이, 포스트 프로세스를 와핑할 필요는 없다.
+
+* 선검색의 중요성
+
+## 2022 07 12
+
+애님 스테이트 가져다가 모든 애니메이션을 만들 수 없음.
+
+보통 애니메이션을 작업할 때는 운동에 관해서 로코모션(운동)
+
+애님 스테이트는 if문을 보기 좋게 펼쳐준 것 ?.
+
+보통 로코모션을 애님 스테이트로 만듬. 왜? 보통 하나만 들어가야 하기 때문에.
+
+배경에다 애니메이션을 사용하는 것은 ,,.
+
+업데이트 에서 근거(변수)를 마련하고, 애님 그래프에서 애니메이션 재생
+
+음. Begin함수는 처음 호출될 때 한번만 실행된다. 코드 보면,, 뭐.. 당연한 소리 아닌가?
+
+작업할 때 플레이어나 몬스터 같은 경우, 모든 기능이 다들어 있는 것 하나를 만들고, 상속이나, 리소스 관리하는 식으로 만든다.
+
+트렌시션 룰에는 기본적으로 분류하는 형태를 집어넣음.
+
+애니메이션 트렌지션에서 남은 시간 비율로 구해야 한다. 매우 짧아서 0.01 이런식으로 나오기 때문에... 또한 앞에 있는 애니메이션이 다른 것으로 실행되도 상관없이 넘어가게.
+
+0.1은 10%, 대부분 애니메이션 블랜딩 기준이 0.1초 정도로 잡아서 그런지는 몰라도 그렇게 한 것 같다.
+
+게임 만들때 더러운게, 항상 상태를 만들어서, 내가 지금 공격을 할 수 있는 상태인가, 지정을 해줘야함. 상태없이 작업하면, 호출한 상태에서 덮어 씌우게 되닌까 이상하게 보임. 애님 몽타주가 어려운게 아니라 굉장히 더러운게,,, 따로 관리하는 작업이 어렵다.
+
+3인칭이 만들기 가장 어려움.? 여러번 한말 인거 같은데..
+
+##
+
+기획을 세우고, 그 위에 올려서 배치하도록??
+
+[게임 플레이어의 행동 패턴을 이용한 동적인 게임 환경의 설계](https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=JAKO200917639067039&dbt=NART)
+
+사이언스
+
+게임 인공지능은 플레이어에게 지능적이고 적응된 게임 환경을 제공하기 위해 주로 사용된다. 기존에는 사용자의 게임 행위를 수집/분석하여 동반자 또는 적대적 역활을 하는 Non-Plyaer character (NPC)를 위해 사용되었다. 그러나 사용자의 행동을 모방하는 것에서 그치는 경우가 많았다. 본 논문은 사용자의 게임 행위를 분석하여 게임 환경을 변화하는 방법을 소개한다. 사용자의 게임 성향을 파악하기 위해 게임 행위 데이터를 이용하였다. 또한, 사용자의 성향은 지형, 아이템, NPC의 분포를 결정하는데 반영하여 동적인 게임 환경을 제공하기 위해 사용하였다. 제안하는 방법의 실험을 위해 실제 2D 액션 게임에 적용하였고, 사용자의 게임 플레이 행위에 대하여 적절히 변화하는 게임 환경을 확인하였다.
+
+[뇌의 공포 기억 발현과 행동 제어 메커니즘 규명](https://www.korea.kr/news/pressReleaseView.do?newsId=156077920)
+
+정책 브리핑 보도 자료, 미래창조과학부
+
+도파민 수용체와 장기 시냅스 저하에 의한 공포 기억 발현 메커니즘에 대한 이해와 외상 후 스트레스 장애 및 편도체 내 억제성 신경회로의 연관성을 밝힘으로써 향후 관련 질환에 대한 치료제 개발에 중요한 기여를 할 것으로 기대된다. 
+
+## 폴리싱
+
+게임 출시 전사업 PM이 사업성을 목적으로 게임 특징 및 유료화 모델 등의 게임 전반에 대한 컨설팅 및 수정을 통해 다듬는 일련의 작업을 의미합니다.
+
+
+읽어볼만한 책 게임 매니악스 퍼즐 게임 알고리즘 
+
+* 계층 구조
+컴퓨터 시스템을 기능별, 목적별로 나누어 계층적인 연결을 갖게 하여 하나의 완성된 시스템이 되도록 만들어진 시스템 구조, 소프트웨어의 개발에 있어서도 기능 분할하여 조립하는 수법을 이렇게 말합니다.
+
+[게임 디자인 레벨업 가이드](https://book.naver.com/bookdb/book_detail.nhn?bid=8788735) 읽어볼만한 책인듯?
+
+[정신 치료를 위한 기능성 게임 분석](https://scienceon.kisti.re.kr/commons/util/originalView.do?cn=JAKO201113742752092&dbt=JAKO&koi=KISTI1.1003%2FJNL.JAKO201113742752092)
+
+[플레이어의 현실과 게임내의 교류패턴](https://koreascience.kr/article/JAKO201215239618088.pdf)
+
+[몰입기술을 활용한 영상그래픽 Processes구현에 대한 연구](https://j-kagedu.or.kr/upload/pdf/kagedu-10-4-371.pdf)
+
+[아이템 슬랏 보기 좋은거 찾아서 만들도록 하자](https://www.google.com/search?q=Item+slot+png&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjyifiK-uj4AhWWAd4KHaLLC_kQ_AUoAXoECAIQAw&biw=958&bih=919&dpr=1#imgrc=6Ww7KwQkVOSDhM)
+
+[C++로 다루는 언리얼](https://onionisdelicious.tistory.com/44)
+
+[TDD Framework을 도입해야 하는 이유](http://includes.egloos.com/v/1420572)
+[라이브 프로젝트에서 C++로 테스트 주도 개발하기](http://ndcreplay.nexon.com/NDC2013/sessions/NDC2013_0048.html)
+
+[애플리케이션 배포 및 테스트 전략](https://cloud.google.com/architecture/application-deployment-and-testing-strategies?hl=ko)
+
+앱에 대해서는 무슨 테스트가 많고 그러는데, 게임에 관해서는 못찾겠다.
+
+[배포 자동화란](https://www.redhat.com/ko/topics/automation/what-is-deployment-automation)
+
+[디자인 패턴을 대하는 자세](https://m.hanbit.co.kr/channel/category/category_view.html?cms_code=CMS2991837223)
+
+널 오브젝트 패턴 (Null Object Pattern)
+[인터페이스는 구현하지만 아무 일도 하지 않는 객체](https://johngrib.github.io/wiki/pattern/null-object/)
+
+
+* Anti-Pattern(안티 패턴)은 실제 많이 사용되는 패턴이지만 비효율적이거나 비생산적인 패턴을 의미합니다.
+[[클린아키텍처]서비스를 안티패턴이라고 하는 이유](https://eunjin3786.tistory.com/550?category=706837)
+
+[UML 다이어그램의 정의와 종류](https://m.blog.naver.com/icbanq/221781238065)
+[UML: 클래스 다이어그램과 소스코드 매핑](https://www.gamedev.net/forums/topic/678326-uml-for-ue4-robust-skill-system/)
+
+[UE4 로버스트 스킬 시스템용 UML](https://www.gamedev.net/forums/topic/678326-uml-for-ue4-robust-skill-system/)
+[UML 문서가 있습니까?](https://forums.unrealengine.com/t/any-uml-documentation/10687)
+[모바일 크리티카 - 1. 개요, 게임구성과 시스템](https://hiprock.tistory.com/169)
+
+direct
+direct는 자신은 행동에 참여하지 않고 좀 떨어진 곳에서 지시할 때 쓴다. 교통량이 많은 도로에서는 경찰이 교통 정리를 한다(A police officer directs traffic). 이때 직접 운전하는 것이 아니라 운전자들에게 지시하여 차량의 흐름을 정리하는 것이므로 direct를 쓴다. 길을 안내할 때 목적지까지 같이 가지 않고 지도나 말로 가르쳐 줄 때도 동사 direct를 쓴다. 영화 감독이나 연출자는 자기가 연기하지 않고 카메라 뒤쪽이나 좀 떨어진 곳에서 배우들에게 지시를 하므로 그들을 director라 한다.
+
+
+lead
+lead는 선두에 서서 다른 사람들을 이끌 때 사용한다. 등산할 때는 길을 잘 아는 사람이 선두에 서서 그룹을 이끈다(He leads the group). 정치인의 경우도 마찬가지다. Politicians lead their political parties and lead the country.(정치인들은 자신들의 정당과 나라를 이끈다.) 마라톤에서 한 선수가 '리드해서 달리고 있다'고 할 때 He is leading the field.이다. 다른 선수보다 앞서 있다는 뜻. lead에는 한번도 가본 적 없는 길을 용감하게 앞장서서 다른 사람을 이끈다는 뜻이 포함되어 있다. leader란 곧 이런 힘과 용기를 갖춘 사람을 말한다.
+
+guide
+guide는 lead에 '설명하다'라는 행위가 덧붙여진 것으로, 선두에서 설명하며 안내한다는 뜻이다. 관광지에서 안내하는 사람을 볼 수 있다. 위험한 산을 오를 때는 그 지역 등산가의 안내를 받는다(Mountain climbers have a local mountain climber go with them to guide them). 가이드하는 사람·사물을 뜻하는 명사도 guide. 스스로 해볼 수 있도록 쓰인 책은 self-help guide인데 그 종류가 관광 가이드, 놀이 가이드, TV 가이드 등 여러 가지다.
+
+conduct
+conduct는 guide와 direct를 합친, 조금은 문어적인 단어다. conduct tours 하면 일정을 정하고 호텔을 알아보고 현지 안내 및 설명하는 일을 모두 아우른다. '오케스트라를 지휘하다' 할 때도 conduct an orchestra라고 한다. 여행의 동승원, 오케스트라 지휘자 등 conduct 하는 사람은 conductor.
+
+escort
+escort는 도움이나 경호가 필요한 사람과 동행한다는 뜻이다. 중요 인물을 '호위하는' 일도 escort. 예전에는 '여성은 힘이 약하므로 보호해야 한다'는 생각에서 남자가 여자와 동행할 때 흔히 사용했는데 요즘 기준으로 보면 낡은 사고 방식이다. 명사 escort는 보통 파티나 무도회 등에 함께 참석하는 파트너를 가리키지만 가이드처럼 길을 안내해 주는 사람을 가리킬 때도 있다.
+
+
+[함수 및 UFUNCTION 주요 지정자](http://egloos.zum.com/sweeper/v/3205739)
+
+[중첩 맵을 허용하지 않는다.](https://www.reddit.com/r/unrealengine/comments/kghmxq/quick_question_does_unreal_support_nested/)
+
+[에피소드2의 유저 인벤토리 & 인터페이스](https://www.ubisoft.com/ko-kr/game/the-division/the-division-2/news-updates/VK670n17Zt3ArJetV12j3/2)
+
+[error C2511 오버로드된 멤버 함수가 'Map'에 없습니다. error C2061: 구문 오류 : 식별자](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=killkimno&logNo=70137636691)
+[Unreal Nested containers are not supported 오류 해결법](https://nellfamily.tistory.com/29)
+
+[C++ - 왜 `const type& variable`을 함수 입력으로 사용합니까?](https://stackoverflow.com/questions/36369947/c-why-const-type-variable-as-function-input)
+
+[바쁠수록 돌아가기 : 테스트 주도 개발로 더 좋은 게임 만들기](http://egloos.zum.com/parkpd/v/1589986)
+
+테스트 코드가 필요하기 시작하다...
+
+* [UPROPERTY를 사용하지 않을 때](https://forums.unrealengine.com/t/exposing-ustruct-when-in-a-pointer-type/124750/4)
+    - 나는 당신이 할 수 있다고 생각하지 않습니다. UPROPERTY 매크로가 없으면 Unreal Engine Build Tool은 컴포넌트를 반사 시스템에 추가하지 않으므로 편집기에 노출되지 않습니다.
+    - 반대로 가비지 등의 작업이 필요 없을 경우, 사용할 수 있다.
+
+* UStruct에 대한 포인터 유형은 허용되지 않습니다.
+    - 이는 가비지 컬렉션 시스템과 밀접하게 통합되어 있기 때문입니다. ??
+    (https://forums.unrealengine.com/t/exposing-ustruct-when-in-a-pointer-type/124750/4)
+
+
+[인터페이스(Interface)?? API?? 이것만 기억하면 된다]
+(https://engkimbs.tistory.com/626)
+
+## 전략 패턴
+
+Fabrik이나 FullBody들은 무슨개념으로 구현되어 있는건가?
+
+전략 패턴으로 구현되어 있는 것은 무엇인가... 있을 거 같기는 한데. 흠.
+디자인 패턴이 필요하기는 한데, 이는 코드상에서 필요한 것을 명확하게 표시하기 위한 수단일 뿐인가.
+[전략패턴](https://ko.wikipedia.org/wiki/%EC%A0%84%EB%9E%B5_%ED%8C%A8%ED%84%B4)
+
+알고리즘으로 적었는데, 음.... 기능을 빼는 것으로 이해하자.
+
+**그리고 어디가서 앞에서 아직까지 디자인 패턴이 뭐고, 이야기 하면 안된다.**
+
+## 
+
+테스트 또는 코드 작성방법은 Wiki에서 찾고,
+이론은 공식문서?
+Hm.... 이론등 다른 내용을 공부해야 할 때는 언리얼 러닝들어가서 공부하도록 하자.
+
+▪hold = to have something in your HANDS
+▪carry = to take something and MOVE it to a new location
+▪lift = to move something UPWARDS, usually from off the ground
+hold 의 반대말에는 release 가있습니다 감사합니다 좋은하루되세요
+
+## C++로 크래스 변수 설정
+
+DeferredSpawn을 이용하여 설정하는 방법.
+
+```
+AMyActor* pActor = GetWorld()->SpawnActorDeferred<AMyActor>(MyActorTemplate, GetActorLocation(), SpawnRotation);
+		if (pActor )
+		{
+                    pActor->//...setstuff here..then finish spawn..
+			UGameplayStatics::FinishSpawningActor(pActor , FTransform(SpawnRotation, GetActorLocation()));
+		}
+```
+
+SpawnActorDeferred를 사용하여 변수를 초기화한 후 FinishSpawningActor로 개체를 생성합니다. 비록 내가 말할 수 있는 한 생성 호출 내에서 매개변수를 전달할 방법이 없습니다.
+
+흠... 해봐야 알려나?
+
+[Spawn Actor with "Expose on Spawn" properties in C++](https://forums.unrealengine.com/t/spawn-actor-with-expose-on-spawn-properties-in-c/330104)
+
+["스폰 시 노출"과 동일한 C++](https://forums.unrealengine.com/t/c-equivalent-to-expose-on-spawn/341183/4)
+
+## 이사람 블로그도 굉장히 좋네.
+https://merry-nightmare.tistory.com/21
+
+https://algorfati.tistory.com/6 이것도 볼수 있다.
+
+## 
+
+언리얼 메모리 누수 감지하는 법....
+
+왜 설정이 안되는 거냐,,,
+음. 선택지.
+1. GetPackage 설정하는 법 찾기.
+2. 플레이커 컨트롤러에 배치하기
+3. 부모 호출하기. 최후의 수단 까지는 아닌가? 선택함. 쓸데없이 복잡하게 풀지 말고, 간단하게 풀자.
+
+Widget에 기능을 구현하는 것이 좋은가? 아니면 PlayerController에 기능을 구현하는 것이 좋은가?
+* Widget은 PlayerController에게 명령을 내리는 존재로 봐야하나???
+
+**Inventory인터페이스에 대해 PlayerController가 InventoryIteraction하는 것에 대해 조금더 생각하고, 만들도록 하자. 일단 내용을 정리하는 것 먼저 하자.**
+- 어떤 메서드를 필요로 하는가/
+휴식겸 정리하자.
+
+Widget의 의미는 사용자가 기능을 수행하거나 서비스에 액세스할 수 있도록 하는 응용 프로그램 또는 인터페이스의 구성 요소입니다. 실제 상호작용은 Widget에 있어야 한다.
+
+! Inventory, ItemList, ItemSlot, ItemWidget은 공통적으로 Inventory 인터페이스를 알고, 부모는 자식 위젯을 알지만, 자식 위젯은 부모 위젯을 모르게 만들었습니다.
+! 그냥 위젯은 하나로 퉁쳐서 만들도록 하자.
+
+Widget에 크기 및 정보를 가지고 생성시 초기화 하는 것이 잘못되었다고 생각하지 않는다. 위젯이 천개도 되지 않아 메모리를 별로 차지하지도 않고 UMG에서 작업할 때 조정가능하기 때문이다.
+
+**씨밤. 까먹지 말자. BlueprintImplementableEvent는 블루프린트에서 구현 하는 것이고 Native가 C++또는 블루프린트이다. 하...**
+
+TScriptInterface는 EditAnywhere로 해도 변수로 설정되지 않는다. 대신 UObject의 Meta = (AllowedClasses = "")로 설정할 수 있다.
+
+```
+
+```
+
+코드 작성할 때 const인거는 좀 확실하게 const라고 표시하자. 어떻게 매번 까먹냐.
+
+인터페이스를 사용하고 싶은데, 안된다. 결국, 어느정도 구현된 상태로 만들어야한다..
+
+오늘 목표
+PlayerCharacter에 Hand추가.
 
 화면 효과 추가
-아이템 만들기
-인벤토리 UI 만들기
+
+* 옵션
+    - 게임 키 설정
+    - 게임 화면 및 효과 설정
+* 아이템 리스트
+    - 아이템 3D view
+    - 아이템 리스트
+        - HorrorEngine의 ItemList는 세상에 아이템 선택하기 심각하게 귀찮다.
+        - 필터는 어떻게 추가하나?
+        - 목표로 삼을 것, 문을 열 때 긴장감 있게 아이템을 사용하는 것을 목표로 한다.
+* 메인 메뉴
+    - 컨티뉴
+    * 새로운 게임 시작
+    * 옵션
+    - 종료 버튼
+* HUD
+    - 상호작용이 가능한지 보여주는 위젯하고
+    - 체력 및 상태바
+    - 알림 창
+* 아이템사용
+    * 아이템 리스트
+* 인벤토리
+    - 필터
+    * 아이템 리스트
+* 게임 메뉴
+    * 옵션
+    - 게임 종료
+
+[인터페이스](https://engkimbs.tistory.com/626)란 상호작용하는 곳으로 간단히 말할 수 있음.
+
+월드에 존재하는 아이템과 상호작용하기 위한 인터페이스.
+
+[Smoothly push player while not moving?](https://forums.unrealengine.com/t/smoothly-push-player-while-not-moving/150842)
+
+[Collision not working when standing still?](https://forums.unrealengine.com/t/collision-not-working-when-standing-still/284364)
+
+[How do I use the SaveGame flag?](https://forums.unrealengine.com/t/how-do-i-use-the-savegame-flag/283064)
+
+[언리얼 게임저장/로드](https://dev-dudfufl.tistory.com/191)
+
+[Saving and loading your game](https://docs.unrealengine.com/4.27/en-US/InteractiveExperiences/SaveGame/)
+
+[GTW Mailbag: 3막 구조 외에 어떤 종류의 플롯 유형이 있습니까?](https://goteenwriters.com/2019/05/01/gtw-mailbag-what-kinds-of-plot-types-exist-besides-the-three-act-structure/)
+
+[3막 구조: 강력한 스토리 구조를 위한 3단계](https://blog.reedsy.com/guide/story-structure/three-act-structure/)
+
+[간단한 패턴 모음](https://jhtop0419.tistory.com/) Greek사이트 가는게 더 이득일듯.
+
+[C++에서 블루프린트의 확장](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=destiny9720&logNo=220940926812)
+
+[게임 그래픽 만들기](https://edu.kocca.kr/edu/onlineEdu/openLecture/view.do?pSeq=99&menuNo=500085&pageIndex=1)
+
+
+이벤트는 플레이어 컨트롤러의 인풋에서 전파됨.
+위젯의 구조가 조끔 애매하구만, 형태만 잡아놓자.
 
 이벤트의 추가는 Dispatch로 이루어진다.
 
 UI까지 추가하고 이제 만들면서 추가면 되나?
+
+## 추가할 효과들
+
+처항하지 못하고 주로 도망가는 것이 목표.??
+
+PlayerCharacter의 긴장상태에 따라 동일한 모션이라도, 애니메이션이 블랜드 될 수 있음.
+
+클레쉐, 이상한 현상 및 대놓고 위험한 현상으로, 집중시키고, 깝놀시킴.
+
+## 컨트롤 릭과 애니메이션 조합
+[Motion warping and full ik](https://www.youtube.com/watch?v=SM_AR-oZ-1k)
+
+## 지형지물에 의한 자연스러운 밀림
+생각보다 내용이 많네??
+https://forums.unrealengine.com/t/smoothly-push-player-while-not-moving/150842/21
+
+
+## 종료 버튼
+```
+void UWidget_MainMenu::QuitGame()
+{
+	UKismetSystemLibrary::QuitGame(this, GetOwningPlayer(), EQuitPreference::Quit, true);
+}
+```
+
+## 
+Leak Detected!  TRASH_TextAudio_0 (TextBlock) still has living Slate widgets, it or the parent widget is keeping them in memory.  Make sure all Slate resources (TSharedPtr<SWidget>'s) are being released in the  UWidget's ReleaseSlateResources().  Also check the USlot's ReleaseSlateResources().
+
+https://forums.unrealengine.com/t/textblock-inside-retainerbox-causes-leak-detected-message-when-containing-uuserwidget-is-moved-in-the-umg-designer/482997
+어떻게 해결하는지 모르겠구만.
+뭘 잘못했을까?
+삭제하고 다시 만드니 되네>???
+
+## Enum을 어떻게 쓸 것인가?
+int에 따른 스위치를 쓸것인가?
+
+에넘에서 자동으로 설정되는 것보다는 (버그 나기 쉬우므로) 차라리 선택을 안했으면, 선택을 안했다고 알려주는 것이 좋다.
+
+ENUM에서 선택에 따른 입력을 조절할 수 있는 장치를 제공했으니, Enum을 통해서 입력을 반환하도록 하는 코드를 작성하라라는 뜻.
+
+나중에 이런 기능을 계속해서 만들면, 원하는 기능을 원하는 작동을 통합하여, 감싸서 맞추는게 나중에 프로그래밍 하는게 더 도움이 된다.
+
+**집중이라고 하는게, 논리적인 로직을 많이 따지는 사람일 수록 프로그래밍을 더 못짠다. 발에다가 초점을 맞춘다. 하면은 나중에 게임에 구현해야 할 것이 너무 많기 때문에, 못한다. 차라리 쪼개거나, 합치거나 할 수 있어야 한다.**
+
+나중에 블루프린트로 만든 것을 보면 if나 이런 조건에 따라 코드가 굉장히 더러워진다. 코드로 보면 몇줄 안되는데... 블루프린트로 하면 그렇다.. 알아보기 힘들다.
+
+무료의 평생 무료 컨텐츠 2번째 탭으로 가면, 발에 대한 FootStep이 있따. 이런 땅에는 이런 이팩트가 어울리지 않는가 하는 모음집이다. 다만 무식한게, 본네임 가지고 위치에다 붙여서 호출한다.
+
+애니메이션을 언제든지 교체할 수 있음. 애니메이션 같은 경우, 매 프레임마다 업데이트 함?. 코드를 집어넣으면 생각보다 코드가 과부화 된다.
+
+루트 연산이 굉장히 과부화가 걸림.
+
+속도에 따라 애니메이션 블랜드할 수 있음. 달리기 속도 및 힘에 의해서 (활쏘는) 에서도 사용할 수 있음. 기능이 어려운게 아니라, 리소스가 없어서 못만드는게 대부분이다...
+
+왼쪽 싀프트 키를 누리고, 애니메이션 블랜드를 볼 수 있다. 이는 잘못 눌러서 바뀌는 경우를 막을 수 있다.
+
+보간 속도를 지정할 수 있다. 이 속도를 잘 지정해야 자연스럽게 보간된다.
 
 ## 잘하기 위해서는 해야할게 숨막히게 많네
 https://www.intel.co.kr/content/www/kr/ko/gaming/resources/game-design-principles-in-games.html

@@ -3,8 +3,7 @@ layout: post
 title: HUD and UI
 ---
 
-UE 5.01   
-2022 05 16   
+2022 07 10   
 
 * UMG란 언리얼 모션 그래픽?
 
@@ -116,3 +115,107 @@ HP는 프로그래스바를 통해 구현할 수 있으며, 이벤트 그래프�
 아틀라스는 하나 또는 그 이상의 텍스처 페이지들을 하나로 통합하는 것 입니다. 스프라이트 아틀라스 그룹에서 확인할 수 있으며, 하나로 통합했기에 효과적으로 관리, 사용할 수 있습니다.
 
 [인벤 UMG 제작, 에픽게임즈 코리아 최용훈 TA](https://www.inven.co.kr/webzine/news/?news=199871&site=sky)
+
+# UUserWidget과 CPP
+
+## 위젯 클래스 생성하기
+
+예시로 UUserWidget을 상속받는 클래스 생성이며, [UUserWidget은 UMG모듈을 필요로 합니다.](https://docs.unrealengine.com/4.27/en-US/API/Runtime/UMG/Blueprint/UUserWidget/)
+
+```cpp
+...
+#include "Blueprint/UserWidget.h"
+...
+
+UCLASS()
+class UMyWidget : public UUserWidget
+{
+    GENERATED_BODY()
+    ...
+}
+```
+
+* [UClass의 블루프린트 클래스의 생성](Concept-Blueprinttype-BlueprintAble)을 참고할 수 있습니다.
+
+## 함수 호출 순서
+
+**PreConstruct**
+PreConstruct메서드는 BeginPlay처럼 호출됩니다.
+
+* 액터가 게임에서 시작할 때 Tick 앞에서 호출됨을 의미합니다.
+
+**NativePreConstrct**
+NativePreConstruct는 PreConstruct앞에서 호출됩니다.
+
+* PreConstruct는 게임과 에디터에서 호출됩니다.
+* NativePreConstruct(cpp)를 호출후 PreConstruct(Blueprint)를 호출합니다.
+* UUserWidget의 NativeConstruct는 NativePreConstruct를 호출합니다.
+* NativeConstruct는 AddToViewport에서 호출됩니다.
+
+## Asset 불러오기
+
+NativeConstruct와 PreConstruct는 ConstructorHelpers를 사용할 수 없습니다.
+ConstructorHelpers를 include한 후 사용하려 하면 생성자 외부에서는 사용할 수 없다는 충돌을 발생합니다.
+따라서 ConstructorHelpers가 아닌 LoadObject<UBlueprintGeneratedClass>()를 이용하여 블루프린트 클래스나 오브젝트를 가져와야 합니다.
+
+```cpp
+class UMyWidget : public UUserWidget
+...
+    virtual void NativePreConstruct() override
+    {
+        Super::NativePreConstruct();
+
+        UBlueprintGeneratedClass* BlueprintGeneratedClass = LoadObject<UBlueprintGeneratedClass>(nullptr, "Asset path")
+    }
+```
+
+## Widget을 C++에 Bind하기
+
+```cpp
+class UMyWidget : public UUserWidget
+...
+    UPROPERTY(Meta = (BindWidget))
+    UWidgetClass* Widget;
+
+    UPROPERTY(Meta = (BindWidgetAnim), Transient)
+    UWidgetAnimation* WidgetAnimation;
+
+```
+
+C++ 위젯 클래스를 기반으로 위벳 BP를 만들고, 상속받은 Widget Blueprint에서 서로 대응되도록 만들면 cpp 변수에 해당 위젯이 할당됩니다.
+
+* Bind Widget을 설정해주지 않으면 오류가 납니다.
+* 직접 위젯을 생성해서 추가할 수도 있습니다.
+
+# C++로 만들기
+변수와 메서드는 c++에서 선언 후 할당하거나 정리합니다. 이미지나 머티리얼등의 애셋과 연결할 때나 보면서 만들 수 있어서 편하기 때문입니다.
+
+```cpp
+UCLASS()
+class HORRORSYSTEM_API UWidget_ItemWidget : public UUserWidget
+{
+	GENERATED_BODY()
+	
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Meta = (ExposeOnSpawn = true))
+	TScriptInterface<IHorrorInventoryInterface> Inventory;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Meta = (ExposeOnSpawn = true))
+	FIntPoint Index;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Meta = (ExposeOnSpawn = true))
+	int32 Stack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Meta = (ExposeOnSpawn = true))
+	float SquareSize = 90.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Meta = (ExposeOnSpawn = true, AllowedClasses = "HorrorItemInterface"))
+	UObject* ItemInterface;
+
+	UPROPERTY(BlueprintReadWrite, Meta = (BindWidget))
+	UImage* Icon;
+
+
+	…
+};
+```
