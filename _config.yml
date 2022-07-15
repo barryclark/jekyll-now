@@ -1,6 +1,6 @@
 title: Welcome to jieun blog
 description: 반갑습니다
-bseurl: "/" # the subpath of your site, e.g. /blog
+bseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jieunid.github.io/jieun" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author
@@ -9,7 +9,7 @@ author-image:   jieun.jpg
 author-job:     Web Developer, Designer
 author-email:   wldms87985@naver.com # Add your email for contant form.
 author-twitter: artemsheludko_ # Add your twitter account
-about-author:   디자인 가능한 웹 퍼블리셔 & 웹프론트앤드 입니다
+about-author:   디자인 가능한 웹 퍼블리셔 & 웹프론트앤드 
 
 # Site Author
 #author:
@@ -108,6 +108,3 @@ disqus_shortname: xxxxxxxx
 # disqus는 온라인 댓글 시스템. 댓글 기능을 사용하기 위해
 # disqus를 이용할 것인지 여부와 만약 사용하면
 # disqus shortname을 입력 ( disqus username이 아님 )
-
-branch: master
-# 사용할 branch명
