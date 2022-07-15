@@ -1,7 +1,7 @@
 title: Welcome to jieun blog
 description: 반갑습니다
 bseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jieunid.github.io/jieun" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://jieunid.github.io/jieun # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author
 author-name:    kangjieun
