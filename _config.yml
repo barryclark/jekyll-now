@@ -108,3 +108,4 @@ disqus_shortname: xxxxxxxx
 # disqus는 온라인 댓글 시스템. 댓글 기능을 사용하기 위해
 # disqus를 이용할 것인지 여부와 만약 사용하면
 # disqus shortname을 입력 ( disqus username이 아님 )
+theme: jekyll-theme-cayman
