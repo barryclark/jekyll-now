@@ -1,6 +1,6 @@
 title: Welcome to jieun blog
 description: 반갑습니다
-bseurl: "" # the subpath of your site, e.g. /blog
+bseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://jieunid.github.io/jieun" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author
@@ -101,3 +101,13 @@ analytics:
   google:
     tracking_id          :
     anonymize_ip         : # true, false (default)
+
+# Disqus
+disqus: True
+disqus_shortname: xxxxxxxx
+# disqus는 온라인 댓글 시스템. 댓글 기능을 사용하기 위해
+# disqus를 이용할 것인지 여부와 만약 사용하면
+# disqus shortname을 입력 ( disqus username이 아님 )
+
+branch: master
+# 사용할 branch명
