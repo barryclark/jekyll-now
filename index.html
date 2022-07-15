@@ -15,7 +15,7 @@ layout: home
   {% for post in site.posts limit:site.paginate offset:offset %}
   <article class="c-post">
     {% if post.image %}
-    <a class="c-post-thumbnail o-opacity" style="background-image: url({{"./images/" | prepend: site.baseurl | append : post.image}})"
+    <a class="c-post-thumbnail o-opacity" style="background-image: url({{"/images/" | prepend: site.baseurl | append : post.image}})"
         href="{{post.url | prepend: site.baseurl}}"></a>
     {% else %} {% endif %}
     <div class="c-post-content">
