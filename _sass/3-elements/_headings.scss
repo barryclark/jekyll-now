@@ -1,0 +1,47 @@
+/* ===============
+	HEADINGS
+=============== */
+
+$font-size-h1:  32px;
+$font-size-h2:  28px;
+$font-size-h3:  24px;
+$font-size-h4:  20px;
+$font-size-h5:  18px;
+$font-size-h6:  16px;
+
+$heading-line-height: 1.2;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  line-height: initial;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+
+h4 {
+  font-size: $font-size-h4;
+}
+
+h5 {
+  font-size: $font-size-h5;
+}
+
+h6 {
+  font-size: $font-size-h6;
+}

@@ -1,18 +1,39 @@
 ---
-layout: default
+layout: home
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+{% if paginator.page %}
+  {% assign offset = paginator.page | minus:1 | times:paginator.per_page %}
+  {% assign currentPage = paginator.page %}
+{% else %}
+  {% assign offset = 0 %}
+  {% assign currentPage = 1 %}
+{% endif %}
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+{% include header.html %}
+<div class="c-posts o-opacity" data-page="{{ currentPage }}" data-totalPages="{{ paginator.total_pages }}">
+  {% for post in site.posts limit:site.paginate offset:offset %}
+  <article class="c-post">
+    {% if post.image %}
+    <a class="c-post-thumbnail o-opacity" style="background-image: url({{"/images/" | prepend: site.baseurl | append : post.image}})"
+        href="{{post.url | prepend: site.baseurl}}"></a>
+    {% else %} {% endif %}
+    <div class="c-post-content">
+      <h2 class="c-post-title">
+        <a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a>
+      </h2>
+      <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
+      <span class="c-post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+      <span class="c-post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words |
+          plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
+    </div>
+  </article> <!-- /.c-post -->
   {% endfor %}
-</div>
+</div> <!-- /.c-posts -->
+
+{% assign postCount = site.posts | size %}
+{% assign postsCovered = site.paginate | plus:offset %}
+{% if postsCovered < postCount %}
+  <button class="c-load-more c-btn c-btn--middle">Load more posts</button>
+{% endif %}
+{% include categories.html %}

@@ -1,86 +1,111 @@
-#
-# This file contains configuration flags to customize your site
-#
+title: Welcome to jieun blog
+description: hello
+bseurl: "" # the subpath of your site, e.g. /blog
+url: "jieunid.github.io/jieun" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Name of your site (displayed in the header)
-name: Your Name
+# Author
+author-name:    kangjieun
+author-image:   jieun.jpg
+author-job:     Web Developer, Designer
+author-email:   wldms87985@naver.com # Add your email for contant form.
+author-twitter: artemsheludko_ # Add your twitter account
+about-author:   디자인 가능한 웹 퍼블리셔 & 웹프론트앤드 
 
-# Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github: barryclark/jekyll-now
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+# Site Author
+#author:
+ # avatar           : "/assets/images/jieun.jpg"
+  #bio              : "웹디자인 가능한 웹퍼브리셔 & 웹 프론트앤드개발"
+ # location         : "South Korea"
+ # email            :
+ # links:
+   # - label: "Email"
+   #   icon: "fas fa-fw fa-envelope-square"
+   #   url: mailto:devinlifeidea@gmail.com
+   # - label: "Website"
+   #   icon: "fas fa-fw fa-link"
+    #  url: "https://jieunid.github.io/jieun/"
 
 
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
 
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url:
+# Social settings
+social-twitter:   
+social-facebook:
+social-github:   jieunid/jieun
+social-pinterest: 
+social-instagram: kangjieun555
+social-youtube:
+social-vk:   
+social-linkedin:
 
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+# Newsletter
+mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1
 
-permalink: /:title/
+# Comment Section (Disqus)
+disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
 
-# The release of Jekyll Now that you're using
-version: v1.2.0
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+plugins:
+  - jekyll-paginate
 
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+paginate: 7
+paginate_path: "/page/:num/"
 
-# Set the Sass partials directory, as we're using @imports
+include:
+  - _pages
+
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  sass_dir: _sass
+  style: compressed
 
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
-# Exclude these files from your production _site
+# Exclude from processing.
 exclude:
   - Gemfile
   - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
+  - vendor
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # 블로그 댓글 기능 true
+      share: true
+      related: true
+
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: false
+
+      # Analytics
+analytics:
+  provider               : false # 구글 어날리틱스 등록 false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          :
+    anonymize_ip         : # true, false (default)
+
+# Disqus
+disqus: True
+disqus_shortname: xxxxxxxx
+# disqus는 온라인 댓글 시스템. 댓글 기능을 사용하기 위해
+# disqus를 이용할 것인지 여부와 만약 사용하면
+# disqus shortname을 입력 ( disqus username이 아님 )
+theme: jekyll-theme-cayman

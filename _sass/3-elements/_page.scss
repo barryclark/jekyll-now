@@ -1,0 +1,18 @@
+/* ===============
+	PAGE
+=============== */
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $text-color;
+  background-color: $background;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*::selection {
+  color: $white-color;
+  background-color: $primary-color;
+}

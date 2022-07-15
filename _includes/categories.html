@@ -1,0 +1,27 @@
+<div class="c-categories" style="display: none;">
+  <ul class="c-categories__list u-lists-reset">
+    {% capture cats %} {% for cat in site.categories %} {{ cat | first }} {% endfor %} {% endcapture %} {% assign sortedCats
+    = cats | split: ' ' | sort %} {% for category in sortedCats %}
+    <li class="c-categories__item">
+      {% assign cat_dir = site.category_dir | default: 'category' %}
+      <a class="c-categories__link" href="{{ site.baseurl }}/{{ cat_dir }}/{{ category | downcase | slugify }}/">
+        {% for post in site.categories[category] limit: 1 %}
+        {% assign empty-figure = nil %}
+        {% if post.image %}
+        <div class="c-categories__img">
+          <figure style="background-image: url('{{ site.baseurl }}/images/{{ post.image }}');"></figure>
+          <span class="c-categories__more">View all</span>
+        </div>
+        {% else %}
+          {% assign empty-figure = 'c-empty-figure' %}
+        {% endif %}
+        {% endfor %}
+        <div class="c-categories__container {{empty-figure}}">
+          <h2 class="c-categories__header">{{ category }}</h2>
+          <p class="c-categories__count"><span>{{ site.categories[category] | size }}</span> Posts</p>
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div> <!-- ./c-categories -->

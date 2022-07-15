@@ -1,0 +1,32 @@
+/* ===============
+	SHARED
+=============== */
+
+/**
+ * Shared declarations for certain elements.
+ */
+
+/**
+ * Always declare margins in the same direction:
+ * csswizardry.com/2012/06/single-direction-margin-declarations
+ */
+
+h1, h2, h3, h4, h5, h6,
+ul, ol, dl,
+blockquote, p, address,
+hr,
+table,
+fieldset, figure,
+pre {
+  margin-bottom: $base-spacing-unit;
+}
+
+
+/**
+ * Consistent indentation for lists.
+ */
+
+ul, ol,
+dd {
+  margin-left: $base-spacing-unit;
+}

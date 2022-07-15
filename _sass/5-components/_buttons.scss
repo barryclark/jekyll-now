@@ -1,0 +1,58 @@
+/* ===============
+	BUTTONS
+=============== */
+
+.c-btn {
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-family: 'Volkhov', serif;
+  font-size: 12px;
+  text-align: center;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: $global-transition;
+
+  &--primary {
+    color: $white-color;
+    background-color: $primary-color;
+    background: linear-gradient(135deg, #33aaff 0%, #62d5ff 100%);
+  }
+
+  &--secondary {
+    color: $white-color;
+    background-color: $secondary-color;
+    background: linear-gradient(135deg, #a2a2bd 0%,#cfcfdd 100%);
+  }
+
+  &--round {
+    border-radius: 30px;
+  }
+
+  &--shadow {
+    box-shadow: 8px 10px 20px 0 rgba(46, 61, 73, .15);
+    &:hover {
+      box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
+    }
+  }
+
+  &--middle {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+  }
+
+  &--big {
+    display: block;
+    width: 100%;
+  }
+
+  &:hover {
+    color: $white-color;
+    transition: $global-transition;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}

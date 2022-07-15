@@ -1,0 +1,39 @@
+---
+layout: home
+title: Tags
+permalink: /tags/
+---
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tag_words = site_tags | split:',' | sort %}
+
+<header class="c-header u-hide u-no-margin-bottom">
+  <div class="c-header__box">
+    <div class="c-search u-full-width">
+      <div class="c-search__box">
+        <label for="js-search-input" class="u-screen-reader-text">Search for Blog</label>
+        <input type="text" id="js-search-input" class="c-search__text" autocomplete="off" placeholder="Type to search...">
+        <div data-icon='ei-search' data-size='s'></div>
+      </div>
+      <ul id="js-results-container" class="c-search-results-list"></ul>
+    </div>
+  </div>
+</header>
+<section class="c-blog-tags o-opacity">
+  <h1>Tags in Blog</h1>
+  <ul class="c-tag__list">
+  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+    {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+    <li><a href="#{{ this_word | cgi_escape }}" class="c-tag">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a></li>
+  {% endunless %}{% endfor %}
+  </ul>
+  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+    {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+  <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
+    {% for post in site.tags[this_word] %}{% if post.title != null %}
+    <div class="c-tag__item">
+        <span>{% if post.image %}<img class="c-tag__image" src="{{"/images/" | prepend: site.baseurl | append : post.image}}" alt="{{post.title}}">{% else %}{% endif %} <a href="{{ post.url }}">{{ post.title }}</a></span>
+        <small><span>| {{ post.date | date_to_string }}</span></small>
+    </div>
+    {% endif %}{% endfor %}
+  {% endunless %}{% endfor %}
+</section>
