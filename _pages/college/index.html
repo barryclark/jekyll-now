@@ -1,0 +1,36 @@
+---
+layout: home
+title: College Recipes
+permalink: /college/
+---
+{% include header.html %}
+<div class="c-posts o-opacity">
+  {% for post in site.posts %}
+  {% assign first_dir = post.path | remove_first: "_posts/" | split: "/" | first %}
+  {% if first_dir == 'college' %}
+  <article class="c-post">
+    {% if post.image %}
+    <a class="c-post-thumbnail o-opacity" style="background-image: url({{"/images/" | prepend: site.baseurl | append : post.image}})"
+        href="{{post.url | prepend: site.baseurl}}"></a>
+    {% else %} {% endif %}
+    <div class="c-post-content">
+      <h2 class="c-post-title">
+        <a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a>
+      </h2>
+      <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
+      <span class="c-post-date">{{post.date | date: '%b %d, %Y'}}</span>
+      {% if post.prep-time %}
+      <span class="c-post-words">&nbsp;&nbsp;&nbsp;—&nbsp;{{post.prep-time | append: " prep time"}}</span>
+      {% endif %}
+      {% if post.cook-time %}
+      <span class="c-post-words">&nbsp;&nbsp;&nbsp;—&nbsp;{{post.cook-time | append: " cook time"}}</span>
+      {% endif %}
+      {% if post.total-time %}
+      <span class="c-post-words">&nbsp;&nbsp;&nbsp;—&nbsp;{{post.total-time | append: " total time"}}</span>
+      {% endif %}
+    </div>
+  </article> <!-- /.c-post -->
+  {% endif %}
+  {% endfor %}
+</div> <!-- /.c-posts -->
+{% include categories.html %}
