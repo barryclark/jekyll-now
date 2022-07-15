@@ -1,7 +1,7 @@
 title: Welcome to jieun blog
 description: hello
 bseurl: "" # the subpath of your site, e.g. /blog
-url: https://jieunid.github.io/jieun # the base hostname & protocol for your site, e.g. http://example.com
+url: "jieunid.github.io/jieun" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author
 author-name:    kangjieun
@@ -31,9 +31,9 @@ about-author:   디자인 가능한 웹 퍼블리셔 & 웹프론트앤드
 # Social settings
 social-twitter:   
 social-facebook:
-social-github:    artemsheludko
-social-pinterest: artemsheludko
-social-instagram: artemsheludko
+social-github:   jieun
+social-pinterest: 
+social-instagram: 
 social-youtube:
 social-vk:   
 social-linkedin:
