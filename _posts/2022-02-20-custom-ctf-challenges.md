@@ -17,3 +17,4 @@ Here are the Repos:
 * [Project Makalu - an unsecure webshop with an intentional broken session handling](https://github.com/BenjiTrapp/Project-Makalu)
 * [SSRF Playground - Evil monkey in your closet](https://github.com/BenjiTrapp/ssrf-playground)
 * [HTTP Request Smuggling Lab](https://github.com/BenjiTrapp/http-request-smuggling-lab)
+* [Leaky Bucket](https://github.com/BenjiTrapp/leaky-bucket)
