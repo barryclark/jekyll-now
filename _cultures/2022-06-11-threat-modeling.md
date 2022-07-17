@@ -70,7 +70,7 @@ In the picture above we have the following components:
 
 Wait where's the Security coming in? This description doesn't secure anything yet.
 
-#### Trusted Boundarys
+#### Trusted Boundaries
 
 Time to bring some Security aspects in and optimize the Dataflow Model to secure things by introducing: Trusted Boundaries
 

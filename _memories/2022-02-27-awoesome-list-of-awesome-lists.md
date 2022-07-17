@@ -26,7 +26,7 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [hysnsec/awesome-policy-as-code](https://github.com/hysnsec/awesome-policy-as-code)
 * [myoung34/awesome-cloudcustodian](https://github.com/myoung34/awesome-cloudcustodian)
 
-## AppSec 
+## AppSec
 
 * [analysis-tools-dev/static-analysis](https://github.com/analysis-tools-dev/static-analysis)
 * [jivoi/awesome-osint](https://github.com/jivoi/awesome-osint)
@@ -54,10 +54,13 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [awesome-pentest](https://github.com/enaqx/awesome-pentest)
 * [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
 * [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources)
+* [Penetration-Testing-Tools](https://github.com/mgeeky/Penetration-Testing-Tools)
 
+## Red Teaming
 
-## Read Teaming
 * [RistBS/Awesome-RedTeam-Cheatsheet](https://github.com/RistBS/Awesome-RedTeam-Cheatsheet)
+* [RedTeam-OffensiveSecurity](https://github.com/bigb0sss/RedTeam-OffensiveSecurity)
+* [awesome-hacker-search-engines](https://github.com/edoardottt/awesome-hacker-search-engines)
 
 ## Wordlists & Payload Lists
 
@@ -88,7 +91,6 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [dastergon/awesome-chaos-engineering](https://github.com/dastergon/awesome-chaos-engineering)
 * [minimaxir/big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings)
 * [secfigo/Awesome-Fuzzing](https://github.com/secfigo/Awesome-Fuzzing)
-
 
 ## DevSecOps
 
@@ -121,6 +123,8 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [avelino/awesome-go](https://github.com/avelino/awesome-go)
 * [leogdion/AWESOME-AWESOME-README](https://github.com/leogdion/AWESOME-AWESOME-README)
 * [Lissy93/personal-security-checklist](https://github.com/Lissy93/personal-security-checklist)
+* [Lissy93/awesome-privacy](https://github.com/Lissy93/awesome-privacy)
+* [MichaelKoczwara/Awesome-CobaltStrike-Defence](https://github.com/MichaelKoczwara/Awesome-CobaltStrike-Defence)
 
 ## Cheatsheets
 
