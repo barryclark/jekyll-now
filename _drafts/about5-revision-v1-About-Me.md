@@ -1,12 +1,11 @@
 ---
-id: 5
+id: 550
 title: 'About Me'
-date: '2022-01-14T13:08:11+00:00'
+date: '2022-06-25T09:56:03+00:00'
 author: Ryan
-layout: page
-guid: 'https://geekyryan.com/?page_id=5'
-gd_system_blocks_used:
-    - '{"core/image":1,"core/paragraph":5}'
+layout: revision
+guid: 'https://geekyryan.com/?p=550'
+permalink: '/?p=550'
 ---
 
 <figure class="wp-block-image size-full is-resized">![](https://geekyryan.com/wp-content/uploads/2022/01/image.png)</figure>My name is Ryan Nemeth and this is my personal blog. I write down my thoughts regarding Microsoft Azure, Kubernetes, cloud-native technologies, and software development. I find that documenting these things not only helps others but also helps reinforce my own knowledge as well. I may also blog about life or other random things from time to time.
