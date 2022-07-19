@@ -5,14 +5,116 @@ title: Axis Moveable
 
 2022 07 14
 
-# 기획
+|:---:|
+| ![컨셉](/images/Unreal_AxisMoveable_Concept.png) |
 
-<div style="text-align : center;">
-    <img src = Unreal_AxisMoveable_Concept.png style="user-select: auto;">
-</div>
+계층 구조에 컴포넌트를 추가하여 물체를 마우스로 이동시킵니다.
 
-<div style="text-align : center;">
-    <img src = Unreal_AxisMoveable_Result.gif style="user-select: auto;">
-</div>
+(1) 계층구조에서 추가하여 사용하면, 어떤 물체가 움직일 수 있는지 볼 수 있습니다. 다만 계층구조가 복잡해 질 수 있습니다.
 
-![Image Alt 텍스트](/images/Unreal_AxisMoveable_Concept.png)
+(2) 액터컴포넌트로 구현하면, 어떤 물체가 움직이는지 파악하기 힘듭니다. 추가하고 제거할 때 변수를 설정해야 합니다. 
+
+이동시킬 때 거리가 멀리 떨어져 있는 경우, 의도치 않게 한번에 많이 움직일 수 있습니다.
+
+다른 구조물에 의해 이동이 불가능 할 수 있습니다.
+
+# AxisMovement
+## 계획
+1. 마우스의 움직임에 따라 물체를 이동시킵니다.
+
+2. 이동의 경우 물체를 잡고 드래그 하면, 마우스가 이동한 만큼 이동해야 합니다.
+
+3. 이동시킬 때 거리가 멀리 떨어져 있을 때 움직이는 경우를 고려해야 합니다. 의도치 않게 많이 움직일 수 있습니다.
+
+4. 다른 구조물 등에 의해 이동이 불가능한 경우를 고려해야 합니다.
+
+(1) 1.에 대해 이동하는 축이 하나인 경우, 프로젝션 하거나, 최대 한 가까운 경우로 만들 수 있습니다.
+
+(2) 1.에 대해 한번에 여러 축을 이동 하는 경우, 평면에 대한 충돌로 위치를 구할 수 있습니다.
+    - 예로 XY, XYZ를 생각하면, XYZ는 바라보는 방향을 노말로 하는 평면에서 XY축으로 이동할 수 있지만 Z축으로 이동하는 것을 구현하는 방법을 모릅니다.
+    - 위의 이유로 인해 1.을 부합하지 못합니다.
+
+5. AxisMovement는 움직일 수 있는 평면을 기준으로 마우스가 클릭된 지점의 레이가 교차하는 점을 구합니다.
+
+6. 상대좌표의 설정은 교차하는 점의 상대좌표를 이동할 수 있는 범위에 클램프 시켜서 작동합니다.
+
+(3) 4.에 대해 물체가 충돌하여 멈췄을 때 옆으로 이동할 수 있습니다.
+
+(4) (3)에 따라 충돌한 노말을 기준으로 이동할 수 있습니다.
+
+에디터에서 범위를 적용받을 액터에 범위를 미리 적용되지 않음.
+
+충돌한 물체가 물리 시뮬레이션 중 일 때 힘을 적용하여 밀어내는 것을 추가할 수 있습니다.
+
+움직일 수 있는 평면이 어느정도인지 에디터에서 보여줄 수 있습니다.
+
+|:---:|
+| ![구현](/images/Unreal_AxisMoveable_Result.gif) |
+
+# AxisRotation
+## 계획
+
+1. 마우스의 움직임에 따라 물체를 회전시킵니다.
+
+2. 회전의 경우, 축에서 멀리있는 점을 잡고 회전시키면 작게 회전하고, 축에서 가까이 있는 점을 잡고 회전하면 보다 많이 회전하게 됩니다.
+
+(1) 마우스의 위치값을 기준으로 회전시킵니다. 처음 선택한 점과 변경된 위치정보를 가지고 계산합니다. 이 위치정보를 기억해야 합니다.
+
+(2) 마우스의 이동값을 기준으로 회전시킵니다. 오차가 발생할 수 있습니다. 이 오차는 매우 작습니다.
+    - 뷰포트를 기준으로 회전을 적용시킬 수 있습니다.
+    - 평면을 기준으로 회전을 적용시킵니다.
+
+3. 뷰포트의 트렌스폼으로 오브젝트를 회전시킵니다.
+
+(3) 충돌시 각운동량을 구해서 작성하는 경우, 질량이 복잡합니다.
+
+* 강체란 물리학에서 형태가 변하지 않는 물체를 가리킵니다. 외력이 가해져도 크기나 모양이 변형되지않거나 변형되는 정도가 무시할 수 있을 만큼 작다면 강체로 가정하기도 합니다.
+
+* 회전운동(Rotational motion)과 병진운동(Translational motion)
+    - 회전운동이란 물체가 한 점을 축으로 회전하는 운동을 말하며 병진운동이란 평행이동 즉 질점계의 모든 질점이 똑같이 이동하는 운동을 말합니다. 강체의 가장 일반적인 운동은 질량중심의 병진운동과 질량중심을 지나는 축에 대한 회전운동의 결합입니다. 이 운동을 설명 할 때 기본적으로 두 가지의 조건이 만족 되어야 합니다. 첫 번째는 회전축은 물체의 대칭축 이어야 하고, 물체의 질량 중심이 회전축 상에 이썽야 합니다. 두 번째는 회전축이 움직이더라도 그 방향은 달라져서는 안됩니다.
+    - 앞서 말한바와 같이 강체의 운동은 병진운동과 회전운동의 합으로 나타낼 수 있습니다. 예를 들면, 달리는 차의 바퀴를 생각해봤을 때 질량 중심의 속도는 v, v`벡터들은 각 지점에서의 질량중심에 대한 상대속도를 나타내며 이것은 중심축에 대한 회전운동의 속도를 말합니다. 움직이는 바퀴에 대해 복합적인 운동을 관성계에서 보면, 각 호부분의 실제 속도는 두 벡터의 합이 됩니다. 바퀴가 지면과 접하고 있는 점은 순간적으로 그 속도가 0이 됩니다. 또 바퀴의 맨 윗부분은 속도가 질량중심 속도의 2배가 되고, 양 옆의 점들의 속도는 수평면과 45도 각도를 이루고 있음을 알 수 있습니다.
+
+* UPrimitiveComponent::AddImpulseAtLocation 타고 들어가면, 코드를 볼 수 있습니다.
+
+* 회전운동을 어떻게 로테이션으로 바꾸는가.
+
+(4) 카메라를 기준으로 오브젝트를 바라 볼 경우,
+- RightVector를 회전해서 더한다.
+- ... 까먹음
+
+(5) 오브젝트를 기준으로 카메라를 바라볼 경우
+
+(6) (5)에서 화면상에서 이동하기전의 마우스 이동 포지션을 가르키는 벡터 v1과 이동 후의 마우스 이동 포지션을 가르키는 벡터 v2의 회전량을 구할 수 있습니다.
+    - 안움직이는 관계로 확인 불가능.
+
+(7) (6)에서 마우스 이동량은 벡터의 회전과 관계가 있습니다.
+
+(8) Quat를 이용하여 축에 의한 회전을 구할 수 있습니다. UKismetMathLibrary의 RotatorFromAxisAndAngle을 확인 할 수 있습니다.
+```cpp
+	APlayerCameraManager* PCM = UGameplayStatics::GetPlayerController(this, 0)->PlayerCameraManager;
+	FQuat Quat = FQuat(PCM->GetActorUpVector(), -Deleta.X) * FQuat(PCM->GetActorRightVector(), -Deleta.Y);
+
+	Target->AddWorldRotation(Quat/*, true, &HitResult*/);
+```
+* Quat의 로테이션은 왼손자표계인가요?
+* 쿼터니언 곱셈 순서좀 그만 까먹자.
+
+(9) Sweep이 안되서 확인해보니 SetWorldRotation은 Sweep을 지원하지 않음?? 대신 월드에서 직접 Querry할 수 있음.
+```cpp
+	TArray<FHitResult> HitResults;
+	const FVector& Pos = Target->GetComponentLocation();
+	FQuat Quat = Target->GetComponentQuat() * FQuat(PCM->GetActorUpVector(), -Deleta.X) * FQuat(PCM->GetActorRightVector(), -Deleta.Y);
+	
+	FComponentQueryParams Parms(FName(), Target->GetOwner());
+	GetWorld()->ComponentSweepMulti(HitResults, Primitive, Pos, Pos, Quat, Parms);
+```
+
+(10) 트렌스폼까지 고려하면 너무 복잡함. Sphere에 대한 인터렉션으로 변경함.
+
+Sphere에 대해서 인터섹션은 없지만, FMath::SphereDistToLine은 있따.
+
+* Overlap이 호출될라면, Overlap이여야 한다.
+
+할 수 있는 방법을 나열하고, 어느 정도 구체화 한다음. 선택해서 구현하는 방식을 해야 하나?
+
+충돌하는 지점이 어디인지 확인하기 위해 찾아봐야 합니다.

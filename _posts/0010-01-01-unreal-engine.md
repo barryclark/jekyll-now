@@ -3,8 +3,6 @@ layout: post
 title: Unreal engine
 ---
 
-![Image Alt 텍스트](/images/Unreal_AxisMoveable_Concept.png)
-
 |---|
 |[모르겠다 싶을때 Forum으로](https://forums.unrealengine.com/)|
 |[어떻게 써야하나 싶을때 Document로](https://docs.unrealengine.com/5.0/en-US/)|

@@ -3,10 +3,6 @@ layout: post
 title: Animation Fragment
 ---
 
-
-* 블렌딩 포즈를 메시 포즈랑 비슷하게 만들어야합니다.
-	- A Pose보다 T Pose가 더 맞추기 쉽다고 느껴지므로 언리얼의 리타겟팅 포즈를 Mixamo로 맞춥니다.
-
 ## Fook IK와 prediction Foot position
 * Foot은 서있거나 이동할 때 바닥을 지지해주는 부분. 기준은 허리 아래에 있는 것을 의미함. 트레이스를 이용하여 Heel과 Toe의 위치를 조정하는 것은 울퉁불퉁하거나 경사가 있는 지면, 서로 다른 위치에 있는 지형에 대해서 자연스러운 애니메이션을 제공함.
 	- Fullbody(Jacobian), LimbIK, FABRIK, CCDIK(실험적) 등의 IK가 있음.
@@ -104,29 +100,6 @@ https://arrowinmyknee.com/2019/05/11/tool-tips-for-ue4-animation-programming/
 ? Full body solver를 Control Rig에서도 사용할 수 있음.
 ? ComponentPosition을 업데이트 하는 조건이 무엇인가?
 ? MirrorDataTable 애니메이션 값 받아올 수 있겠는데?
-
-## Space 이해하기
-
-Bone space
-Component space
-WorldSpace
-
-## Bone Indices 이해하기(Demystifying)
-
-[참고자료](https://www.unrealengine.com/en-US/tech-blog/demystifying-bone-indices)
-
-* Mesh Bone Index
-	- 메시 본 익덱스는 계층 구조의 순서대로 인덱싱 되어 있으며 렌더링에 사용됩니다.
-	- 메시 본 인덱스를 이용해서 스켈레탈 메시의 ComponentSpaceTransforms(Old : SpaceBase)또는 BoneSpaceTransforms(Old : LocalAtom)에 접근합니다.
-* Skeleton Bone Index
-	- USkeletalMesh의 모든 본에 대한 인덱스입니다.
-	- UAnimSequence 내부에는 내부 트랙 인덱스와 일치하는 스켈레톤 본 인덱스간의 맵핑이 있습니다.
-		- 따라서 스켈레톤이 변경되면 애니메이션 데이터를 업데이트 해야합니다.
-* FCompact Pose Bone Index
-	- FCompactPose에서만 사용할 수 있는 인덱스입니다. FCompactPoseBoneIndex를 이용하여 여러 LOD를 가지는 Skelton Bone Index를 통합할 수 있습니다.
-	- 모든 애니메이션 코드는 FCompactPose를 이용합니다. SkeletalMesh와 Skelton간의 대부분의 변환은 USkeleton에서 차즐 수 있습니다.
-
-[참고자료](https://docs.unrealengine.com/4.27/ko/WhatsNew/Builds/ReleaseNotes/2016/4_13/)
 
 ## AnimNode와 AnimNodeGraph
 
