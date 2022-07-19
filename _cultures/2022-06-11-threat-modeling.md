@@ -153,4 +153,17 @@ If you want to go beyond that - try this List based on interactions:
 <img width="600" src="/images/stride-per-interaction.png">
 </p>
 
-Source: [Shostack, A. (2014). Threat modeling : designing for security., Indianapolis, Ind. : Wiley.]
+Source: [Shostack - Threat modeling: designing for security](https://www.amazon.de/-/en/Adam-Shostack/dp/1118809998)
+
+### Tools
+
+##### UI painting
+
+* [Draw.io Custom Templates](https://github.com/michenriksen/drawio-threatmodeling)
+* [MSTMT App](https://github.com/BenjiTrapp/tmt-cloud-templates/wiki/Practical-Threat-Modeling)
+* [Threat Modeling Worksheet](https://saweis.net/threatworksheet/)
+
+##### Threat Modeling As Code
+
+* [pyTM](https://github.com/izar/pytm)
+* [Threagile.io](https://threagile.io/)
