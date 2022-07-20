@@ -4,7 +4,7 @@ permalink: /projects/
 title: "Projects"
 ---
 <div class="posts">
-  {% for post in site.projects %}
+  {% for post in site.projects.reverse() %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
