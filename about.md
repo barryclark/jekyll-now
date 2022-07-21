@@ -22,9 +22,9 @@ I am an engineer and (data) science enthusiast. I am interested in understanding
 
 ### Work Experience
 
-* 2021 - Present: __Data Scientist__ ([electricityMap](https://electricitymap.org))
-  * electricityMap's mission is to organise the world's electricity data to drive the transition towards a truly decarbonised electricity system.
-  * Responsible for ensuring that electricityMap's data is accurate, reliable, and timely.
+* 2021 - Present: __Data Scientist__ ([Electricity Maps](https://electricitymaps.com/))
+  * Electricity Maps' mission is to organise the world's electricity data to drive the transition towards a truly decarbonised electricity system.
+  * Responsible for ensuring that ElectricityMaps' data is accurate, reliable, and timely.
   * Owning the building of the modelling infrastructure to power our estimation and forecast systems. These models allow for large scale load-shifting from e.g [Google](https://blog.google/outreach-initiatives/sustainability/carbon-aware-computing-location/).
 <div></div>
 * 2021 - 2021: __Research Assistant__ ([Denmark's Technical University](https://www.dtu.dk/))

@@ -11,13 +11,13 @@ canonical_url: "https://electricitymap.org/blog/practices-for-real-world-data-sc
 </div>
 
 
-As I write this introduction, I have been working as a data scientist for [electricityMap](https://www.electricitymap.org/) for about 8 months. Overall, I am responsible, together with the other data scientist in the team, for delivering high data quality at the end of the entire data processing pipeline. That data can be real-time, historical or forecasted.
+As I write this introduction, I have been working as a data scientist for [Electricity Maps](https://electricitymaps.com/) for about 8 months. Overall, I am responsible, together with the other data scientist in the team, for delivering high data quality at the end of the entire data processing pipeline. That data can be real-time, historical or forecasted.
 
-In a nutshell, the generation of electricityMap's data is a multi-stage process. Firstly, varied data points from numerous public data sources about electricity are aggregated. Secondly, they are validated and standardised against a reference schema. Finally, they are run through our flow-tracing algorithm for the generation of worldwide real-time hourly electricity consumption figures; and their associated greenhouse gas emissions.
+In a nutshell, the generation of Electricity Maps' data is a multi-stage process. Firstly, varied data points from numerous public data sources about electricity are aggregated. Secondly, they are validated and standardised against a reference schema. Finally, they are run through our flow-tracing algorithm for the generation of worldwide real-time hourly electricity consumption figures; and their associated greenhouse gas emissions.
 
 <div id="html" markdown="0" style="display: flex; flex-direction: column; align-items: center; margin: 16px 0 32px;">
     <img src="../../resources/posts/2022-01-20/emap_infra.png" style="width: 100%; overflow: hidden; margin: 16px 0;">
-    <span style="color: #666; font-size: 13px; font-style: italic;">A simplified overview of the electricityMap infrastructure. Thanks <a href="https://electricitymap.org/blog/data-pipeline/">Felix</a> for the figure!</span>
+    <span style="color: #666; font-size: 13px; font-style: italic;">A simplified overview of the Electricity Maps infrastructure. Thanks <a href="https://electricitymaps.com/blog/data-pipeline/">Felix</a> for the figure!</span>
 </div>
 
 This data is at the core of our mission: __to organise the world's electricity data to drive the transition towards a truly decarbonised electricity system__. This global ambition has two important consequences. We must first be able to overcome data sources becoming erroneous or unavailable at any moment. Secondly, we must come up with clever ways to generate truthful data for regions of the world where reliable public electrical data sources are unavailable.
@@ -26,14 +26,14 @@ These consequences reveal my other current responsibilities; develop and maintai
 
 <div id="html" markdown="0" style="display: flex; flex-direction: column; align-items: center; margin: 16px 0 32px;">
     <img src="../../resources/posts/2022-01-20/emap_team.JPG" style="width: 75%; overflow: hidden; margin: 16px 0;">
-    <span style="color: #666; font-size: 13px; font-style: italic;">The electricityMap team. (PS: yes, thank you Nick! See here the <a href="https://cloud.google.com/blog/topics/sustainability/the-year-in-carbon-free-energy-at-google">announcement</a> for a 1,000,000€ grant from Google.)</span>
+    <span style="color: #666; font-size: 13px; font-style: italic;">The Electricity Maps team. (PS: yes, thank you Nick! See here the <a href="https://cloud.google.com/blog/topics/sustainability/the-year-in-carbon-free-energy-at-google">announcement</a> for a 1,000,000€ grant from Google.)</span>
 </div>
 
-These responsibilities are far-reaching and evolve rapidly as electricityMap scales up. It is impossible to be highly specialised when only 11 (10 brights + me) people are fighting for something that is way too big for them only. The good news is that as electricityMap grows, I am constantly able to redefine my role as a data scientist, and the practices I should adopt to help the team be successful.
+These responsibilities are far-reaching and evolve rapidly as Electricity Maps scales up. It is impossible to be highly specialised when only 11 (10 brights + me) people are fighting for something that is way too big for them only. The good news is that as Electricity Maps grows, I am constantly able to redefine my role as a data scientist, and the practices I should adopt to help the team be successful.
 
-Recently, we opened a [position](https://electricitymap.org/jobs/index.html) to find a brilliant mind that can become the most knowledgeable about our data quality. At the same time, I started delivering on tasks whose scope overflowed into the realm of data engineering. The former event, because it will most likely reduce the scope of my responsibilities, pushed me to redefine what I, as a data scientist, should focus my efforts on. The latter, because it is much more common within software/data engineering, revealed to me the necessity of defining and implementing good practices for successfully delivering on that newly defined scope.
+Recently, we opened a [position](https://electricitymaps.com/jobs/index.html) to find a brilliant mind that can become the most knowledgeable about our data quality. At the same time, I started delivering on tasks whose scope overflowed into the realm of data engineering. The former event, because it will most likely reduce the scope of my responsibilities, pushed me to redefine what I, as a data scientist, should focus my efforts on. The latter, because it is much more common within software/data engineering, revealed to me the necessity of defining and implementing good practices for successfully delivering on that newly defined scope.
 
-Hence this blog post, which aims at capturing my current thoughts around the data scientist role and practices that should be more widely adopted within the profession. This opinion piece is a reflection of the prism through which I perceive my work. It is therefore highly influenced by my work for electricityMap, my previous interrogations between research and industry, and my relative freshness within this position. For that reason, it might get updated occasionally.
+Hence this blog post, which aims at capturing my current thoughts around the data scientist role and practices that should be more widely adopted within the profession. This opinion piece is a reflection of the prism through which I perceive my work. It is therefore highly influenced by my work for Electricity Maps, my previous interrogations between research and industry, and my relative freshness within this position. For that reason, it might get updated occasionally.
 
 #### Table of content:
 
@@ -114,7 +114,7 @@ In software engineering, it is very common practice to test every piece of produ
 I don't want here to expand precisely on how to test data science systems in practice, as it would extend beyond the scope of this post, and also because good resources already exist out there$$^3$$. Instead, I want to provide two simple, but sticky rules. Firstly, as often as possible when debugging, __write first a test that isolates and replicates the bug under investigation__. This has multiple benefits; speeding up the investigation by focusing it, providing a direct way to verify that the fix indeed fixes the bug without introducing any regression somewhere else, and expanding test coverage without much effort! Secondly, __always test the data itself__. Machine learning systems have an additional dependency on the data compared to standard software systems, and the testing setup must account for it.
 ## Conclusion
 
-I hope that you found this post instructive. As hinted earlier, I mostly wrote up this post to help me structure my thoughts around the development of my role working for electricityMap, but I would be thrilled to hear your opinion on the definition of the data scientist role and what principles he/she should adopt to successfully get his new ideas and models implemented in the real-world. I'm only beginning my journey and still have a lot to learn from the community ✌️.
+I hope that you found this post instructive. As hinted earlier, I mostly wrote up this post to help me structure my thoughts around the development of my role working for Electricity Maps, but I would be thrilled to hear your opinion on the definition of the data scientist role and what principles he/she should adopt to successfully get his new ideas and models implemented in the real-world. I'm only beginning my journey and still have a lot to learn from the community ✌️.
 
 Thanks for reading!
 
