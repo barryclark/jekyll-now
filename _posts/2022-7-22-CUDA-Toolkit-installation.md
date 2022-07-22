@@ -84,3 +84,6 @@ $ nvcc --version
 ```
 
 Congratulations, now you have successfully installed a new version of CUDA!
+
+Atheer Algarni
+
