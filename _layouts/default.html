@@ -38,8 +38,11 @@
         localStorage.setItem('lang', 'kor');
       }
 
-      $('.lang').click(function(){
-        localStorage.setItem('lang', $this.text());
+      $('.lang-ko').click(function(){
+        localStorage.setItem('lang', 'kor');
+      });
+      $('.lang-jp').click(function(){
+        localStorage.setItem('lang', 'jp');
       });
 
 
@@ -134,7 +137,7 @@
       </div>
 
       <div id="main" role="main" class="container">
-        <a class="lang" href="#" style="font-size:2em;">KO</a>/<a class="lang" href="#" style="font-size:2em;">JP</a>
+        <a class="lang-ko" href="#" style="font-size:2em;">KO</a>/<a class="lang-jp" href="#" style="font-size:2em;">JP</a>
         <a class="pull-left" href="#" style="font-size:2em;">+</a>
         <div class="notice">
           {% for post in site.categories.notice %}
