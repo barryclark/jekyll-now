@@ -84,26 +84,44 @@ permalink: /alchemist/
 
   if(searching_item){
     var item = localStorage.getItem('item');
+    var lang = localStorage.getItem('item');
     item = JSON.parse(item);
 
     var find = isitem(item, searching_item);
 
-    document.getElementById("searching_item").innerHTML = "\""+find.name+"\" 에 대한 검색 결과";
+    if (lang == "jp"){
+      document.getElementById("searching_item").innerHTML = "\""+find.jp+"\" たいする検索結果";
+    } else {
+      document.getElementById("searching_item").innerHTML = "\""+find.name+"\" 에 대한 검색 결과";
+    }
 
     var find_recipe = find.recipe;
     find_recipe = find_recipe.split(',');
     var find_recipe_print = '';
     for (var i=0; i < find_recipe.length;++i){
-      find_recipe_print += "<a href='{{ site.baseurl }}/alchemist/?item="+find.name+"&recipe="+find_recipe[i]+"'>일반 연금"+find_recipe[i]+"</a>";
+      if (lang == "jp"){
+        find_recipe_print += "<a href='{{ site.baseurl }}/alchemist/?item="+find.name+"&recipe="+find_recipe[i]+"'>ふつう錬金"+find_recipe[i]+"</a>";
+      } else {
+        find_recipe_print += "<a href='{{ site.baseurl }}/alchemist/?item="+find.name+"&recipe="+find_recipe[i]+"'>일반 연금"+find_recipe[i]+"</a>";
+      }
     }
     document.getElementById("searching_recipe").innerHTML = find_recipe_print;
   }
 
 
   if(searching_recipe){
-    document.getElementById("find_recipe").innerHTML = "일반 연금 "+searching_recipe+"의 각 슬롯별 등장 아이템 획득 확률";
+    if (lang == "jp"){
+      document.getElementById("find_recipe").innerHTML = "ふつう錬金 "+searching_recipe+"の各スロット別登場アイテム獲得確率";
+    } else {
+      document.getElementById("find_recipe").innerHTML = "일반 연금 "+searching_recipe+"의 각 슬롯별 등장 아이템 획득 확률";
+    }
     var recipe = get_recipe(searching_recipe, find.name, "recipe");
-    var recipe_material = "<h2>연금식 재료</h2><ul class='recipe_list'>";
+
+    if (lang == "jp"){
+      var recipe_material = "<h2>錬金の材料</h2><ul class='recipe_list'>";
+    } else {
+      var recipe_material = "<h2>연금식 재료</h2><ul class='recipe_list'>";
+    }
     $.getJSON("{{ site.baseurl }}/alchemist/recipe.json", function(data) {
       for (var i=0; i < data.length;++i){
         if(data[i]['no'] == searching_recipe){
