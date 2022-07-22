@@ -3,7 +3,7 @@ In this tutorial, we will be installing a new version of CUDA whilst having anot
 
 head to Nvidia [https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-downloads) to download the desired CUDA version, in this example, we will be installing the latest CUDA version to this date which is 11.7.
 
-![Screen Shot 2022-06-15 at 8.07.27 AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4664ea51-7a10-4fb7-a4b3-32a905cf990b/Screen_Shot_2022-06-15_at_8.07.27_AM.png)
+![cuda.png](https://github.com/NCAIts/NCAIts.github.io/blob/master/images/cuda.png)
 
 Once you open the installation page, you will get this box to customize CUDA installation based on your system. Let’s go through them one by one. 
 
