@@ -7,3 +7,10 @@ ex) 일반 연금1 = 파파녹
 <a href="https://gall.dcinside.com/mgallery/board/view/?id=purple&no=38310">디시인사이드 퍼플갤러리</a>
 <br>
 위 주소의 게시글에 댓글로 남겨주시면 감사하겠습니다.
+<div class="recent">
+  {% for post in site.categories.tips %}
+    <article class="post">
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    </article>
+  {% endfor %}
+</div>
