@@ -146,6 +146,7 @@ $ export PATH=/opt/anaconda3/bin:$PATH
 ```
 
 1. Then run:
+
 ```
 $ conda init
 
