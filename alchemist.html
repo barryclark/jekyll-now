@@ -26,7 +26,7 @@ permalink: /alchemist/
 		return str;
 	}
 
-  function get_recipe(recipe, item, target){
+  function get_recipe(recipe, item, target, lang){
       $.getJSON("{{ site.baseurl }}/alchemist/"+recipe+".json", function(data) {
         var step = '';
         var step_1='<div><h3>슬롯1</h3><ul>';
@@ -34,6 +34,15 @@ permalink: /alchemist/
         var step_3='<div><h3>슬롯3</h3><ul>';
         var step_4='<div><h3>슬롯4</h3><ul>';
         var step_5='<div><h3>슬롯5</h3><ul>';
+
+        if(lang == jp){
+          step_1 = step_1.replace('슬롯', 'スロット');
+          step_2 = step_2.replace('슬롯', 'スロット');
+          step_3 = step_3.replace('슬롯', 'スロット');
+          step_4 = step_4.replace('슬롯', 'スロット');
+          step_5 = step_5.replace('슬롯', 'スロット');
+        }
+
         var print_end = '';
         var find = '';
         for (var i=0; i < data.length;++i){
@@ -115,7 +124,7 @@ permalink: /alchemist/
     } else {
       document.getElementById("find_recipe").innerHTML = "일반 연금 "+searching_recipe+"의 각 슬롯별 등장 아이템 획득 확률";
     }
-    var recipe = get_recipe(searching_recipe, find.name, "recipe");
+    var recipe = get_recipe(searching_recipe, find.name, "recipe", lang);
 
     if (lang == "jp"){
       var recipe_material = "<h2>錬金の材料</h2><ul class='recipe_list'>";
