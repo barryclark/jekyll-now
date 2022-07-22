@@ -73,11 +73,13 @@
                     if(arg.name.indexOf(txt) > -1 || arg.jp.indexOf(txt) > -1){
                       if(arg.name.indexOf(txt) > -1){
                         var item_name = arg.name;
+                        var lang = "";
                       } else if(arg.jp.indexOf(txt) > -1){
                         var item_name = arg.jp;
+                        var lang = "&lang=jp";
                       }
                         $('#autoMaker').append(
-                            $('<div>').html("<a href='{{ site.baseurl }}/alchemist?item="+arg.name+"'>"+item_name+"</a>").attr({'recipe':arg.recipe})
+                            $('<div>').html("<a href='{{ site.baseurl }}/alchemist?item="+arg.name+""+lang+"'>"+item_name+"</a>").attr({'recipe':arg.recipe})
                         );
                     }
                 });
