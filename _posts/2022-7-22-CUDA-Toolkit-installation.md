@@ -90,5 +90,11 @@ $ nvcc --version
 
 Congratulations, now you have successfully installed a new version of CUDA!
 
+{% highlight py %}
+# Visualize the top scoring tokens after each layer
+output.layer_predictions(position=6)
+{% endhighlight %}
+
+
 Atheer Algarni
 
