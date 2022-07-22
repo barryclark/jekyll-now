@@ -35,7 +35,7 @@ permalink: /alchemist/
         var step_4='<div><h3>슬롯4</h3><ul>';
         var step_5='<div><h3>슬롯5</h3><ul>';
 
-        if(lang == jp){
+        if(lang == "jp"){
           step_1 = step_1.replace('슬롯', 'スロット');
           step_2 = step_2.replace('슬롯', 'スロット');
           step_3 = step_3.replace('슬롯', 'スロット');
@@ -62,7 +62,11 @@ permalink: /alchemist/
             if(find == ''){
               find += "<ul>";
             }
-            find += "<li>[슬롯"+step[1]+"] "+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
+            if(lang == "jp"){
+              find += "<li>[スロット"+step[1]+"] "+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
+            } else {
+              find += "<li>[슬롯"+step[1]+"] "+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
+            }
           }
         }
         step_1 += '</ul></div>';
