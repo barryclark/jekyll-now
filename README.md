@@ -2,7 +2,7 @@
 # NCAIts
 NCAIts as in insights, got it?
 
-In this blog, we share some helpful tips and tricks that make our life easier.
+In this blog, we share some helpful tips and tricks to make our lives easier.
 
 
 
