@@ -46,7 +46,7 @@ $('#google-submit').click(function () {
 
   $.ajax({
     type: "GET",
-    url: "https://script.google.com/macros/s/AKfycbwOW4yrdcFkdy5BUmAV_jqjMLEUg4aEInNiRsIJw92vIEWYGLOzGAnage8bFRd5XeyD/exec",
+    url: "https://script.google.com/macros/s/AKfycbzWCRlwB4HJ0PNEhaq2hmg2-FB35R8jkPXnesfy87mGkGsmS-xKz7C6Jqlu7DPNDObH/exec",
     data: {
       "name": inputName.val(),
       "date": dateString,
