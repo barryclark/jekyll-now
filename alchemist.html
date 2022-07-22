@@ -135,7 +135,11 @@ permalink: /alchemist/
       for (var i=0; i < data.length;++i){
         if(data[i]['no'] == searching_recipe){
           for (var j=0; j < data[i]['recipe'].length;++j){
-            find_recipe = data[i]['recipe'][j].split(',');
+            if (lang == "jp"){
+              find_recipe = data[i]['jp'][j].split(',');
+            } else {
+              find_recipe = data[i]['recipe'][j].split(',');
+            }
 
             if(find_recipe[0] === undefined){
               find_recipe[0] = '';
