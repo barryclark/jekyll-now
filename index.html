@@ -9,10 +9,11 @@ ex) 일반 연금1 = 파파녹
 위 주소의 게시글에 댓글로 남겨주시면 감사하겠습니다.
 
 <div class="recent">
-  <h2>TIPS</h2>
+  <h1>TIPS</h1>
   {% for post in site.categories.tips %}
     <article class="post">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} {{ post.excerpt }}</a>
+      </h2>
     </article>
   {% endfor %}
 </div>

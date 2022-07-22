@@ -9,7 +9,7 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css?version=20220705" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css?version=20220723" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
@@ -136,8 +136,7 @@
           {% for post in site.categories.notice %}
             <article class="post">
               <h1>
-                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.excerpt }}</a>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} {{ post.excerpt }}</a>
               </h1>
             </article>
           {% endfor %}
