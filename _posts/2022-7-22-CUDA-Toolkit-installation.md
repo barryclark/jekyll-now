@@ -1,4 +1,3 @@
-# CUDA **Toolkit installation**
 
 In this tutorial, we will be installing a new version of CUDA whilst having another one already installed.
 
