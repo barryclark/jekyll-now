@@ -93,7 +93,7 @@ The above is a human-readable (ish) file containing the fuse configuration that 
 
 Next up is coming up with a hello world! Rjhcoding has excellent [avr assembly tutorials](http://rjhcoding.com/avr-asm-tutorials.php) so I followed the [blink example](http://rjhcoding.com/avr-asm-led-blink.php). The first line is to import a set of `.def` statements that map all of the registers, memory mapped io, and various constant values to standard names. The file above is targeting an Atmega328, while we're targeting an ATTiny85. The official AVR studio appears to come with these include files, but the `avra` assembler I'm using doesn't. Fortunately, the author of the site also uploaded the .def files, and the includes can be found inside his [avra GitHub repo](https://github.com/Ro5bert/avra/tree/master/includes).
 
-I downloaded [tn85def.inc]](https://raw.githubusercontent.com/Ro5bert/avra/master/includes/tn85def.inc) into a directory, and authored `blink.asm` from the example, changing the include appropriately:
+I downloaded [tn85def.inc](https://raw.githubusercontent.com/Ro5bert/avra/master/includes/tn85def.inc) into a directory, and authored `blink.asm` from the example, changing the include appropriately:
 ```
 	.include "tn85def.inc"
 
