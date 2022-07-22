@@ -33,19 +33,6 @@
     	var item = localStorage.getItem('item');
     	item = JSON.parse(item);
 
-      var lang = localStorage.getItem('lang');
-      if(typeof lang === 'undefined' || lang === null){
-        localStorage.setItem('lang', 'kor');
-      }
-
-      $('.lang-ko').click(function(){
-        localStorage.setItem('lang', 'kor');
-      });
-      $('.lang-jp').click(function(){
-        localStorage.setItem('lang', 'jp');
-      });
-
-
     	function datalist_add(datalist, target){
     		var str='';
     		for (var i=0; i < datalist.length;++i){
@@ -144,7 +131,6 @@
       </div>
 
       <div id="main" role="main" class="container">
-        <a class="lang-ko" href="#" style="font-size:2em;">KO</a>/<a class="lang-jp" href="#" style="font-size:2em;">JP</a>
         <a class="pull-left" href="#" style="font-size:2em;">+</a>
         <div class="notice">
           {% for post in site.categories.notice %}
