@@ -214,7 +214,10 @@ Verification OK
 ```
 
 And it blinks, in 26 bytes of code!
-![](/images/VID_20220722_065352194.mp4)
+
+<video autoplay="" loop="" muted="" width="100%">
+   <source src="/images/VID_20220722_065352194.mp4" type="video/mp4">
+</video>
 
 ## Useful references:
 * [Datasheet](https://ww1.microchip.com/downloads/en/devicedoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf)
