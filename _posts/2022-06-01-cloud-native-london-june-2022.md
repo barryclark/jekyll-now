@@ -18,7 +18,7 @@ We are immensely grateful to [Palo Alto Networks](https://www.paloaltonetworks.c
 
 ### Overview
 
-![](/images/2022-06-01-Chris-NesbittSmith.jpeg
+![](/images/2022-06-01-Chris-NesbittSmith.jpeg)
 
 Kicking off our evening was Chris Nesbitt-Smith from esynergy with a fun and lively discussion on Policy as [versioned] code (starting at [15:38](https://youtu.be/kujkYxU8HoM?t=938)). He talked about how:
 
@@ -26,7 +26,7 @@ Kicking off our evening was Chris Nesbitt-Smith from esynergy with a fun and liv
 * Throwing some curly braces at a problem is not the solution. Policy if it is articulated as code, needs to embrace all the best practices of code.
 * Purposeless policy is potentially practically pointless. (now say it 5 times quickly)
 
-![](/images/2022-06-01-Ric-Featherstone.jpeg
+![](/images/2022-06-01-Ric-Featherstone.jpeg)
 
 Then we had Ric Featherstone from ControlPlane who told us to Throw Away Your Passwords: Trusting Workload Identity (starting at [52:59](https://youtu.be/kujkYxU8HoM?t=3179)). His takeaways mentioned that: 
 
@@ -34,7 +34,7 @@ Then we had Ric Featherstone from ControlPlane who told us to Throw Away Your Pa
 * Restrict the usefulness of compromised ServiceAccount Tokens by using Bound Service Account Tokens
 * Start to look at TPMs and TEEs for Hardware Roots of Trust
 
-![](/images/2022-06-01-Bruno Silva.jpeg
+![](/images/2022-06-01-Bruno Silva.jpeg)
 
 Finally we had Bruno Silva from Sysdig who wrapped up our evening with a talk on Cloud-Native Runtime Security with Sysdig & Falco (starting at [1:36:08](https://youtu.be/kujkYxU8HoM?t=5768)). His takeaways talked about: 
 
