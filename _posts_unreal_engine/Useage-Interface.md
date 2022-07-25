@@ -59,3 +59,26 @@ UPROPERTY(EditAnywhere, BlueprintReadWrite)
 TScriptInterface<IInterface> ChildActor;
 ```
 이를 통해 레벨에 있는 액터를 변수로 불러올 수 있습니다.
+
+## 인터페이스에 반환값을 입력할 떄,
+```cpp
+class HORRORSYSTEM_API IHorrorItemInterface
+{
+	GENERATED_BODY()
+
+public:
+	virtual AActor* SpawnItemActor(AActor* ContextObject, const FTransform& Transform, bool bNoCollisionFail = false, AActor* Owner = nullptr) const;
+
+public:
+	virtual const FName& GetItemName() const { return FName(); }
+	virtual int32 GetItemMaxStack() const { return 0; }
+
+	// 유효하면 아이템으로 스폰될 수 있고 그렇지 않으면 스폰될 수 없습니다
+	virtual const TSubclassOf<AActor>& GetItemActorClass() const { return TSubclassOf<AActor>(); }
+
+	virtual const FIntSize2D& GetIconSize() const { return FIntSize2D(1, 1); }
+	virtual const FSlateBrush& GetIconBrush() const { return FSlateBrush(); }
+};
+```
+
+다만 RVO되는지 안되는지 모르겠으니, 일딴 막고 나중에 찾아봅시다.

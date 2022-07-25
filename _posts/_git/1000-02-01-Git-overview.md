@@ -3,6 +3,52 @@ layout: post
 title: GIT overview
 ---  
 
+
+# Git으로 일하기
+## GitHub commit할 때 명심하기
+1. 적절한 단위로 나누었는지 확인한다.
+2. 제목은 잘지었는지 확인한다.
+3. 메시지는 충분히 설명하고 있는지 확인한다.
+
+## PullRequest하기 전에 확인하기
+1. 더이상 작업할 내용이 없는지 확인한다.
+2. 적절한 단위로 나눠져 있는지 확인한다.
+3. request제목이 적절한지 확인한다.
+4. 메세지가 정확한지 확인한다.
+
+## 그외
+
+
+1. 작성할 이슈를 선택한다.
+2. branch를 따 작업한다.
+3. pull request후 종료한다. 왜 풀리퀘스트를 이용해서 브런치를 관리해야 하는가? 더럽지 않게 하기 위해서이다.
+
+? git project 잘 사용하는 방법
+
+1. git wiki 그래프 그리기
+리드미에는 추가가 되지만, wiki에는 추가가 안되네.
+
+https://www.freecodecamp.org/news/how-to-add-diagrams-to-github-readme/
+
+2. github 브런치 기록보기
+3. github 망할 pullrequest
+
+* 깃 프로젝트와 마일스톤
+
+* 하나 빼먹고 코드 안고쳤더니, 바로 다음에 어떻게 해야 할지 애매한 상황이 나왔다. 최선을 다해서 현재 코드를 고치고 다음으로 넘어가자.
+
+* pull request를 통해서, 작은 변경을 하나의 큰 변경으로 바꿀 수 있다. 이 어찌 효율적인가...
+
+https://devlog-wjdrbs96.tistory.com/231
+
+https://xo.dev/github-collaboration-guide/ 
+
+
+* rebase, branch, pull request가 필요한 이유. 음. 써보니 필요하긴 하네.
+
+* 테스트 케이스가 필요한 이유, 만들라면 필요하기는 하네.
+
+## 
 서브모듈 한 번 정리해야 합니다.
 https://guseowhtjs.tistory.com/entry/%EB%AA%A8%EB%93%A0-git-%ED%95%98%EC%9C%84-%EB%AA%A8%EB%93%88%EC%9D%98-%EC%B5%9C%EC%8B%A0-%EB%B2%84%EC%A0%84%EC%9D%84-%EA%B0%80%EC%A0%B8%EC%98%A4%EB%8A%94-%EC%89%AC%EC%9A%B4-%EB%B0%A9%EB%B2%95
 

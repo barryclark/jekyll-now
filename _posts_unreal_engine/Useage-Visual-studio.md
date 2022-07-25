@@ -18,7 +18,7 @@ title: Visual studio setting
 
 원본 파일을 수정할 때마다 IntelliSense는 제공된 모든 경로를 검색하여 원본에서 만들어진 참조를 찾으려 하지만, 언리얼 엔진 프로젝트는 매우 크기가 크기때문에 모든 것들을 통과하는 데는 많은 시간이 걸립니다. 그러나 라이브러리 코드는 전혀 변경되지 않으므로 텍스트 편집기에서 검색할 필요가 없습니다. 모든 안정적인 코드가 포함된 미리 컴파일된 헤더 파일을 만들 수 있고 참조로 사용할 수 있도록 IntelliSense를 사용할 수 있습니다.
 
-/Yu를 추가 옶션에 넣음으로써 IntelliSense에 미리 작성된 헤더 파일을 사용하도록 지시합니다.
+**/Yu를 추가 옵션에 넣음으로써 IntelliSense에 미리 작성된 헤더 파일을 사용하도록 지시합니다.**
 (include했는데 식별자가 정의되지 않았다고 나오는 문제가 생길 수 있습니다.)
 
 * [Visual studio에서 인텔리센스가 작동하지 않을때](https://forums.unrealengine.com/t/intellisense-stopped-working/384124/6)
