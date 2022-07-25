@@ -14,7 +14,7 @@ My career goal is to become a professional data scientist.
 
 I program mostly in Python, and I have experience with R, Stata, and SQL. Also, I'm familiar with multiple data visualization tools, such as Tableau, R Shiny, R Markdown Dashboard. Please find more about me from [my Resume](https://MinShiMia.github.io/Resume_Min_Shi.pdf). Also, you could find my project from the [blogs](https://minshimia.github.io).
 
-I am eager to apply data analysis skills in my future internship. Please feel free to contact me if any research position or internship opportunity is open in 2022 summer. 
+I am eager to apply data analysis skills in my future internship. Please feel free to contact me if any research position or internship opportunity is open in 2023 spring or summer. 
 
 I look forward to your contact and working with you in the future! 
 
