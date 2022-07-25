@@ -37,7 +37,7 @@ Finally we had Prithvi Raj and Sunil Anjin from Harness who wrapped up our eveni
 * Chaos Engineering practices should not be a vision only for the ‘experts’ but it should be an easy and common practice available for everyone. Litmus is one such tool which can help ease the intricacies and aid in easy scenario creations.
 
 And of course, our usual group photo! 
-![](/images/2022-07-06-cloud-native-london-july-2022.jpg)
+![](/images/2022-07-06-cloud-native-london-july-2022.jpeg)
 
 ## Cloud Native London August 
 
