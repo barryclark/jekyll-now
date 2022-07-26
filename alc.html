@@ -31,8 +31,10 @@ permalink: /alc/
         {% assign page = recipe | split: "-" %}
         {% assign recipe_list = recipe_list | push: page[0] %}
       {% endfor %}
-      
-      {% for recipe in recipe_list | uniq | join: "," %}
+
+      {% assign recipe_list = recipe_list | uniq %}
+
+      {% for recipe in recipe_list %}
         {{ recipe }}
       {% endfor %}
     </ul>
