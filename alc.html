@@ -7,7 +7,7 @@ permalink: /alc/
   <h1 class="ko">일반 연금{{ recipe.no }}</h1>
   <h1 class="jp">ふつう錬金{{ recipe.no }}</h1>
   <ul class="ko">
-    {% for object in recipe.racipe %}
+    {% for object in recipe.recipe %}
       {% assign object2 = object | split: "," %}
       {% for stuff in object2 %}
         {{ stuff }}
