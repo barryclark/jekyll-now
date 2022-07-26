@@ -10,7 +10,9 @@ permalink: /alc/
     {% for object in recipe.recipe %}
       {% assign object2 = object | split: "," %}
       {% for stuff in object2 %}
-        {{ stuff }}
+        <li>
+          {{ stuff }}
+        </li>
       {% endfor %}
     {% endfor %}
   </ul>
