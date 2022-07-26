@@ -2,41 +2,10 @@
 layout: default
 permalink: /alc/
 ---
-{% for recipe in site.data.recipe %}
-<div class="recipe_object" id="recipe_{{ recipe.no }}">
-  <h1 class="ko">일반 연금{{ recipe.no }}</h1>
-  <h1 class="jp">ふつう錬金{{ recipe.no }}</h1>
-  <ul class="ko">
-    {% for object in recipe.recipe %}
-      {% assign object2 = object | split: "," %}
-      <li>
-      {% for stuff in object2 %}
-        <span>
-          {{ stuff }}
-        </span>
-      {% endfor %}
-      </li>
-    {% endfor %}
-  </ul>
-  <ul class="jp">
-    {% for object in recipe.jp %}
-      {% assign object2 = object | split: "," %}
-      <li>
-      {% for stuff in object2 %}
-        <span>
-          {{ stuff }}
-        </span>
-      {% endfor %}
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-{% endfor %}
 {% for alchemist in site.data.alchemist %}
   <div class="recipe_lists" id="{{ alchemist.name | remove: ' ' }}">
     <h1 class="ko">{{ alchemist.name }}</h1>
     <h1 class="jp">{{ alchemist.jp }}</h1>
-
 
       {% assign recipe_list = "" | split: ',' %}
       {% for recipe in alchemist.racipe %}
@@ -55,7 +24,7 @@ permalink: /alc/
     <ul class="jp">
       {% for recipe in recipe_list %}
       <li>
-        ふつう錬金{{ recipe }}
+        <button class="view_recipe" value="recipe_{{ recipe }}">ふつう錬金{{ recipe }}</button>
       </li>
       {% endfor %}
     </ul>
@@ -87,6 +56,38 @@ permalink: /alc/
     </ul>
   </div>
 {% endfor %}
+
+{% for recipe in site.data.recipe %}
+<div class="recipe_object" id="recipe_{{ recipe.no }}">
+  <h1 class="ko">일반 연금{{ recipe.no }}</h1>
+  <h1 class="jp">ふつう錬金{{ recipe.no }}</h1>
+  <ul class="ko">
+    {% for object in recipe.recipe %}
+      {% assign object2 = object | split: "," %}
+      <li>
+      {% for stuff in object2 %}
+        <span>
+          {{ stuff }}
+        </span>
+      {% endfor %}
+      </li>
+    {% endfor %}
+  </ul>
+  <ul class="jp">
+    {% for object in recipe.jp %}
+      {% assign object2 = object | split: "," %}
+      <li>
+      {% for stuff in object2 %}
+        <span>
+          {{ stuff }}
+        </span>
+      {% endfor %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endfor %}
+
 <script>
   var searching_item = getParameterByName('item');
   searching_item = searching_item.replace(' ', '');
