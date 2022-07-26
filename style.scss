@@ -372,9 +372,16 @@ footer {
   display: inline-block;
   padding: 0.2em;
   margin: 0.1em;
+  background: #282844;
+  color:white;
+  white-space:nowrap;
+  font-size:0.8em;
 }
 .recipe_lists{
   display: none;
+}
+.recipe_lists h1{
+  margin : 0;
 }
 .recipe_lists ul{
   list-style: none;
