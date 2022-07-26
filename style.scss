@@ -368,7 +368,19 @@ footer {
 .recipe_lists{
   display: none;
 }
+.recipe_lists .ko{
+  display: none;
+}
+.recipe_lists .jp{
+  display: none;
+}
 .recipe_object{
+  display: none;
+}
+.recipe_object .jp{
+  display: none;
+}
+.recipe_object .ko{
   display: none;
 }
 
