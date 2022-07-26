@@ -6,30 +6,30 @@ permalink: /alc/
 <div class="recipe" id="recipe_{{ recipe.no }}">
   <h1 class="ko">일반 연금{{ recipe.no }}</h1>
   <h1 class="jp">ふつう錬金{{ recipe.no }}</h1>
-  <div class="ko">
+  <ul class="ko">
     {% for object in recipe.recipe %}
       {% assign object2 = object | split: "," %}
-      <ul>
+      <li>
       {% for stuff in object2 %}
-        <li>
+        <span>
           {{ stuff }}
-        </li>
+        </span>
       {% endfor %}
-      </ul>
+      </li>
     {% endfor %}
-  </div>
-  <div class="jp">
+  </ul>
+  <ul class="jp">
     {% for object in recipe.jp %}
       {% assign object2 = object | split: "," %}
-      <ul>
+      <li>
       {% for stuff in object2 %}
-        <li>
+        <span>
           {{ stuff }}
-        </li>
+        </span>
       {% endfor %}
-      </ul>
+      </li>
     {% endfor %}
-  </div>
+  </ul>
 </div>
 {% endfor %}
 {% for alchemist in site.data.alchemist %}
