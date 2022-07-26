@@ -89,7 +89,7 @@ permalink: /alc/
 {% endfor %}
 <script>
   var searching_item = getParameterByName('item');
-  searching_item = searching_item.replace('%20', '');
+  searching_item = searching_item.replace(' ', '');
   var searching_recipe = getParameterByName('recipe');
 
   if(searching_item){
