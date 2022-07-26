@@ -12,10 +12,7 @@ permalink: /alc/
       {% assign range = (0..num) %}
       {% for i in range %}
       <li>
-        {{ i }}
-        {{ alchemist.up[i] }}
-        {{ alchemist.rand[i] }}
-        {{ alchemist.racipe[i] }}
+        [{{ alchemist.racipe[i] }}] +{{ alchemist.up[i] }} - {{ alchemist.rand[i] }} 
       </li>
       {% endfor %}
     </ul>
