@@ -1,7 +1,7 @@
 ---
 layout: post
 title: On Code Golfing
-published: false
+published: true
 ---
 
 I've recently been trying to learn Rust for use in embedded projects, and one of the things that I sometimes return to when learning a new language where it's hard to immediately dive in is [Project Euler](https://projecteuler.net/).
@@ -11,14 +11,18 @@ I have a love/hate relationship with code golf: I appreciate the clever answers 
 But I always harbor a small resentment toward wielders of languages optimized for code golf because it feels a bit like cheating.
 Here's one example of a golf language that solves the first Project Euler problem:
 
-> If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-> Find the sum of all the multiples of 3 or 5 below 1000.
+```
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+Find the sum of all the multiples of 3 or 5 below 1000.
+```
 
 Response by user `bxfbxf`:
-> Code in Stax ( 9 bytes): ñ╔♥╫ë«ñ«♫
-> Uncompressed (11 bytes): F3%_5%*0_?+
-> 
-> Link: https://staxlang.xyz/#p=a4c903d789aea4ae0e&i=999
+```
+Code in Stax ( 9 bytes): ñ╔♥╫ë«ñ«♫
+Uncompressed (11 bytes): F3%_5%*0_?+
+
+Link: https://staxlang.xyz/#p=a4c903d789aea4ae0e&i=999
+```
 
 The answer is written in the [Stax language](https://github.com/tomtheisen/stax/), which is implemented in dotnet and, for developer productivity, has a web UI and debugger integrated which is fairly nice.
 But it is an example of the endgame of code golfing as-is: golf languages game by pushing complexity out of the program into the layers underneath it.
@@ -54,10 +58,10 @@ It is 132 bytes, compiled, of assembly and will compute the answer and then blin
 
 ## Final Thoughts
 
-What's the logical conclusion of this?
-I think the endgame of hardware golf is likely to be far more interesting in its own right, in that gaming it would likely mean lower and lower hidden complexity or "standing on the shoulders of giants" in solutions.
-
-Overall I got pretty far distracted from my original goal of learning Rust for embedded processors, but I had a great time and it was really cool to learn the low-level workings of AVR microcontrollers by programming in assembly.
+Overall I went on a tangent pretty far away from my original goal of learning Rust for embedded processors, but I had a great time and it was really cool to learn the low-level workings of AVR microcontrollers by programming in assembly.
 This is by no means the most optimal hardware target or code, though.
+
+What's the logical conclusion of this?
+I suspect the endgame of hardware golf is likely to be far more interesting in its own right, in that gaming it would likely mean lower and lower hidden complexity or "standing on the shoulders of giants" in solutions.
 
 How would you improve on this?
