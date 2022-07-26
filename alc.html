@@ -41,7 +41,7 @@ permalink: /alc/
     <ul class="ko">
       {% assign num = alchemist.up.size %}
       {% assign range = (0..num) %}
-      {$ assign pre_recipe = 0 %}
+      {% assign pre_recipe = 0 %}
       {% for i in range %}
         {% if i == num %}
           {% break %}
