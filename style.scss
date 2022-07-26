@@ -399,12 +399,21 @@ footer {
 .recipe_object{
   display: none;
 }
+
+.recipe_object span {
+  display: inline-block;
+  padding: 0.2em;
+  margin: 0 0.1em 0;
+  border: 1px solid;
+}
+
 .recipe_object .jp{
   display: none;
 }
 .recipe_object .ko{
   display: none;
 }
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
