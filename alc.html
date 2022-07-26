@@ -90,9 +90,14 @@ permalink: /alc/
 <script>
   var searching_item = getParameterByName('item');
   searching_item = searching_item.replace(' ', '');
-  var searching_recipe = getParameterByName('recipe');
+  var searching_lng = getParameterByName('lng');
 
   if(searching_item){
     $("#"+searching_item).show();
+  }
+  if(searching_lng == "jp"){
+    $('.jp').show();
+  } else {
+    $('.ko').show();
   }
 </script>
