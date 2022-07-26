@@ -3,15 +3,12 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: MC作死狼王
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
-
+description: 中国 安徽省 合肥市 庐阳区 庐阳高中学生
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
-
-#
+avatar: https://s3.bmp.ovh/imgs/2022/07/25/f037764a4bddc096.jpg
 # Flags below are optional
 #
 
@@ -21,7 +18,7 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: langjian363840959.github.io
   instagram:
   linkedin:
   pinterest:
