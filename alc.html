@@ -2,11 +2,49 @@
 layout: default
 permalink: /alc/
 ---
+{% for recipe in site.data.recipe %}
+<div class="recipe" id="recipe_{{ recipe.no }}">
+  <h1 class="ko">일반 연금{{ recipe.no }}</h1>
+  <h1 class="jp">ふつう錬金{{ recipe.no }}</h1>
+  <ul class="ko">
+    {% for object in recipe.racipe %}
+      {% assign object2 = object | split: "," %}
+      {% for stuff in object2 %}
+        {{ stuff }}
+      {% endfor %}
+    {% endfor %}
+  </ul>
+</div>
+{% endfor %}
 {% for alchemist in site.data.alchemist %}
   <div class="list" id="{{ alchemist.name }}">
     <h1 class="ko">{{ alchemist.name }}</h1>
     <h1 class="jp">{{ alchemist.jp }}</h1>
-    {{ alchemist.up.size }}
+
+
+      {% assign recipe_list = "" | split: ',' %}
+      {% for recipe in alchemist.racipe %}
+        {% assign page = recipe | split: "-" %}
+        {% assign recipe_list = recipe_list | push: page[0] %}
+      {% endfor %}
+
+      {% assign recipe_list = recipe_list | uniq %}
+    <ul class="ko">
+      {% for recipe in recipe_list %}
+        <li>
+          일반 연금{{ recipe }}
+        </li>
+      {% endfor %}
+    </ul>
+    <ul class="jp">
+      {% for recipe in recipe_list %}
+      <li>
+        ふつう錬金{{ recipe }}
+      </li>
+      {% endfor %}
+    </ul>
+
+
     <ul class="ko">
       {% assign num = alchemist.up.size %}
       {% assign range = (0..num) %}
@@ -29,19 +67,6 @@ permalink: /alc/
             [{{ alchemist.racipe[i] }}] +{{ alchemist.up[i] }} {{ alchemist.jp }} ({{ alchemist.rand[i] }})
           </li>
         {% endif %}
-      {% endfor %}
-    </ul>
-    <ul>
-      {% assign recipe_list = "" | split: ',' %}
-      {% for recipe in alchemist.racipe %}
-        {% assign page = recipe | split: "-" %}
-        {% assign recipe_list = recipe_list | push: page[0] %}
-      {% endfor %}
-
-      {% assign recipe_list = recipe_list | uniq %}
-
-      {% for recipe in recipe_list %}
-        {{ recipe }}
       {% endfor %}
     </ul>
   </div>
