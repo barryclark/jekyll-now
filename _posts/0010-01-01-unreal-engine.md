@@ -62,8 +62,8 @@ title: Unreal engine
     - 레벨
 
 ## AnimationConcept
-* [Animation-system](/_posts_unreal_engine/AnimationConcept-Animation-system)
-* [Control Rig](/_posts_unreal_engine/AnimationConcept-Animation-system)
+* [Animation-system](/posts_unreal_engine/AnimationConcept-Animation-system)
+* [Control Rig](/posts_unreal_engine/AnimationConcept-Animation-system)
     - Control Rig란?
     - Control Rig의 solve
 
