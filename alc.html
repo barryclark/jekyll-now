@@ -80,7 +80,7 @@ permalink: /alc/
             {% else %}
             <li>
             {% endif %}
-            <button class="view_recipe" onclick="view({{ page[0] }})';" value="recipe_{{ page[0] }}">일반 연금{{ page[0] }} - {{ page[1] }}</button>
+            <button class="view_recipe" onclick="view({{ page[0] }});" value="recipe_{{ page[0] }}">일반 연금{{ page[0] }} - {{ page[1] }}</button>
             +{{ alchemist.up[i] }} {{ alchemist.name }} ({{ alchemist.rand[i] }})
             </li>
           {% assign pre_recipe = page[0] %}
@@ -94,7 +94,7 @@ permalink: /alc/
         {% else %}
           <li>
             {% assign page = alchemist.racipe[i] | split: "-" %}
-            <button class="view_recipe" onclick="view({{ page[0] }})';" value="recipe_{{ page[0] }}">ふつう錬金{{ page[0] }} - {{ page[1] }}</button>
+            <button class="view_recipe" onclick="view({{ page[0] }});" value="recipe_{{ page[0] }}">ふつう錬金{{ page[0] }} - {{ page[1] }}</button>
             +{{ alchemist.up[i] }} {{ alchemist.jp }} ({{ alchemist.rand[i] }})
           </li>
         {% endif %}
