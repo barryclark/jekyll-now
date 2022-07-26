@@ -53,7 +53,7 @@ permalink: /alc/
           <li>
             {% assign page = alchemist.racipe[i] | split: "-" %}
             <button class="view_recipe" value="recipe_{{ page[0] }}">ふつう錬金{{ page[0] }} - {{ page[1] }}</button>
-            [{{ alchemist.racipe[i] }}] +{{ alchemist.up[i] }} {{ alchemist.jp }} ({{ alchemist.rand[i] }})
+            +{{ alchemist.up[i] }} {{ alchemist.jp }} ({{ alchemist.rand[i] }})
           </li>
         {% endif %}
       {% endfor %}
