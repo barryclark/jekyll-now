@@ -18,14 +18,14 @@ permalink: /alc/
       <ul class="ko">
         {% for recipe in recipe_list %}
           <li>
-            일반 연금{{ recipe }}
+            <button class="view_recipe" value="recipe_{{ recipe }}">일반 연금{{ recipe }}</button>
           </li>
         {% endfor %}
       </ul>
       <ul class="jp">
         {% for recipe in recipe_list %}
         <li>
-          ふつう錬金{{ recipe }}
+          <button class="view_recipe" value="recipe_{{ recipe }}">ふつう錬金{{ recipe }}</button>
         </li>
         {% endfor %}
       </ul>

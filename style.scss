@@ -370,12 +370,8 @@ footer {
 }
 .recipes li{
   display: inline-block;
-  padding: 0.2em;
   margin: 0.1em;
-  background: #282844;
-  color:white;
   white-space:nowrap;
-  font-size:0.8em;
 }
 .recipe_lists{
   display: none;
@@ -385,6 +381,11 @@ footer {
 }
 .recipe_lists ul{
   list-style: none;
+}
+.recipe_lists button{
+  background: #282844;
+  color:white;
+  padding : 0.5em;
 }
 
 .recipe_lists .ko{
