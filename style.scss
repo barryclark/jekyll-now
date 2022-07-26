@@ -365,9 +365,21 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+.recipes ul{
+  list-style: none;
+}
+.recipes li{
+  display: inline-block;
+  padding: 0.2em;
+  margin: 0.1em;
+}
 .recipe_lists{
   display: none;
 }
+.recipe_lists ul{
+  list-style: none;
+}
+
 .recipe_lists .ko{
   display: none;
 }
