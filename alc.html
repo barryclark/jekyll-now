@@ -4,15 +4,32 @@ permalink: /alc/
 ---
 {% for alchemist in site.data.alchemist %}
   <div class="list" id="{{ alchemist.name }}">
-    <h1>KOR : {{ alchemist.name }}</h1>
-    <h1>JP : {{ alchemist.jp }}</h1>
+    <h1 class="ko">{{ alchemist.name }}</h1>
+    <h1 class="jp">{{ alchemist.jp }}</h1>
     {{ alchemist.up.size }}
-    <ul>
+    <ul class="ko">
       {% assign num = alchemist.up.size %}
       {% assign range = (0..num) %}
       {% for i in range %}
       <li>
-        [{{ alchemist.racipe[i] }}] +{{ alchemist.up[i] }} - {{ alchemist.rand[i] }} 
+        [{{ alchemist.racipe[i] }}] +{{ alchemist.up[i] }} {{ alchemist.name }} ({{ alchemist.rand[i] }})
+      </li>
+      {% endfor %}
+    </ul>
+    <ul class="jp">
+      {% assign num = alchemist.up.size %}
+      {% assign range = (0..num) %}
+      {% for i in range %}
+      <li>
+        [{{ alchemist.racipe[i] }}] +{{ alchemist.up[i] }} {{ alchemist.jp }} ({{ alchemist.rand[i] }})
+      </li>
+      {% endfor %}
+    </ul>
+    <ul>
+      {% for racipe in alchemist.racipe %}
+        {% assign page = racipe | split: "-" %}
+      <li>
+        {{ page[0] }}
       </li>
       {% endfor %}
     </ul>
