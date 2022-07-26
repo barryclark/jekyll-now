@@ -71,3 +71,12 @@ struct FInventory2DInsertTest : public FTableRowBase
 
 ## automation을 이용해서 테스트 돌리기
 테스트 케이스를 입력하고, 테스트를 돌리면, 테스트 결과를 얻을 수 있습니다.
+
+
+## 테스트 케이스 작성
+https://blog.squareys.de/ue4-automation-testing/
+
+https://forums.unrealengine.com/t/how-to-compare-a-fstring-in-c-condition-breakpoints/358380/2
+
+## Visual studio FString 조건문 찍기
+wcscmp((wchar_t*)MyString.Data.AllocatorInstance.Data,L"MyText") == 0

@@ -22,6 +22,12 @@ title: Level
 
 [에디터의 기본 레벨 설정](https://docs.unrealengine.com/5.0/ko/changing-the-default-level-of-an-unreal-engine-project/)
 
+## 레벨에서 액터 찾는 쉬운 방법
+
+Wolrd Outliner 또는 애셋으로 작업할 때 팁.
+검색에서 Or연산자를 이용해서 편하게 찾자
+
+
 ## 다수의 레벨 관리
 
 레벨은 항상 하나의 Persistent Level(지속 레벨, 퍼시스턴트 레벨)이 있으며, 항상 로드되거나 레벨 스트리밍 불륨, 블루프린트, C++ 코드를 통해 스트림 인 가능한 서브 레벨 하나 이상으로 구성됩니다. 레벨 창에는 이 레벨이 전부 표시되어, (두꺼운 파랑 글씨로 표시된) 현재 레벨 설정을 변경하거나, 하나 이상의 레벨을 저장하거나, 레벨 블루프린트에 접근할 수 있습니다. 

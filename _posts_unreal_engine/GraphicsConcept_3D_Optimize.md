@@ -81,3 +81,5 @@ LOD의 효율은 좋으나 CPU의 연산이 많습니다.
 * 오클루전 쿼리의 응용 하여 렌즈 플레어를 구현 할 수 있다고 합니다.
 
 [니비디아 오클루젼 컬링 설명](https://developer.nvidia.com/gpugems/gpugems/part-v-performance-and-practicalities/chapter-29-efficient-occlusion-culling)을 볼 수 있습니다.
+
+# 리토폴로지

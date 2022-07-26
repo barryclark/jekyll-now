@@ -14,3 +14,11 @@ title: INLINE
 inline이 뭔지도 모르고 쓰고 있었네,,,
 
 https://thinkpro.tistory.com/140
+
+
+## FORCEINLINE_DEBUGABLE
+https://usagi.hatenablog.jp/entry/2017/06/14/152825
+
+FORCEINLINE_에 대해서 이해도가 생기면 사용하자. 당장은,,, 모르겠다.
+
+* 마이크로소프트로 가면 디스어셈블리 뭐시기 하는데,,, 어지럽고..
