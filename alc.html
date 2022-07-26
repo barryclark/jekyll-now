@@ -7,6 +7,28 @@ permalink: /alc/
     <h1 class="ko">{{ alchemist.name }}</h1>
     <h1 class="jp">{{ alchemist.jp }}</h1>
 
+      {% assign recipe_list = "" | split: ',' %}
+      {% for recipe in alchemist.racipe %}
+        {% assign page = recipe | split: "-" %}
+        {% assign recipe_list = recipe_list | push: page[0] %}
+      {% endfor %}
+
+      {% assign recipe_list = recipe_list | uniq %}
+    <ul class="ko">
+      {% for recipe in recipe_list %}
+        <li>
+          일반 연금{{ recipe }}
+        </li>
+      {% endfor %}
+    </ul>
+    <ul class="jp">
+      {% for recipe in recipe_list %}
+      <li>
+        ふつう錬金{{ recipe }}
+      </li>
+      {% endfor %}
+    </ul>
+
     {% for recipe in site.data.recipe %}
     <div class="recipe_object" id="recipe_{{ recipe.no }}">
       <h1 class="ko">일반 연금{{ recipe.no }}</h1>
@@ -46,12 +68,10 @@ permalink: /alc/
         {% if i == num %}
           {% break %}
         {% else %}
-
-
             {% assign page = alchemist.racipe[i] | split: "-" %}
             {% if page[0] != pre_recipe %}
               {% if pre_recipe != 0 %}
-                <li style="margin-bottom:0.3em;">
+                <li style="margin-top:0.3em;">
               {% else %}
                 <li>
               {% endif %}
@@ -80,6 +100,8 @@ permalink: /alc/
     </ul>
   </div>
 {% endfor %}
+
+
 
 <script>
   var searching_item = getParameterByName('item');
