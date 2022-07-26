@@ -103,6 +103,7 @@ permalink: /alc/
 
   $('.view_recipe').click(function(){
     var recipe_object = $(this).attr('value');
-    $("#"+recipe_object).toggle();
+    $("#recipe_object").hide();
+    $("#"+recipe_object).show();
   });
 </script>
