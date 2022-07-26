@@ -48,7 +48,7 @@ permalink: /alc/
     <ul class="ko">
       {% for recipe in recipe_list %}
         <li>
-          <button name="recipe_object" value="recipe_{{ recipe }}">일반 연금{{ recipe }}</button>
+          <button class="view_recipe" value="recipe_{{ recipe }}">일반 연금{{ recipe }}</button>
         </li>
       {% endfor %}
     </ul>
@@ -101,7 +101,7 @@ permalink: /alc/
     $('.ko').show();
   }
 
-  $('recipe_object').click(function(){
+  $('.view_recipe').click(function(){
     var recipe_object = $(this).attr('value');
     $("#"+recipe_object).togle();
   });
