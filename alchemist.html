@@ -48,15 +48,35 @@ permalink: /alchemist/
         for (var i=0; i < data.length;++i){
           step = data[i]['recipe'].split('-');
           if(step[1] == 1){
-            step_1 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
+            if(lang == "jp"){
+              step_1 += "<li>+"+data[i]['up']+" "+data[i]['jp']+" ("+data[i]['rand']+")</li>";
+            } else {
+              step_1 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
+            }
           } else if(step[1] == 2){
-            step_2 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
+              if(lang == "jp"){
+                step_2 += "<li>+"+data[i]['up']+" "+data[i]['jp']+" ("+data[i]['rand']+")</li>";
+              } else {
+                step_2 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
+              }
           } else if(step[1] == 3){
-            step_3 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
+              if(lang == "jp"){
+                step_3 += "<li>+"+data[i]['up']+" "+data[i]['jp']+" ("+data[i]['rand']+")</li>";
+              } else {
+                step_3 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
+              }
           } else if(step[1] == 4){
-            step_4 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
+              if(lang == "jp"){
+                step_4 += "<li>+"+data[i]['up']+" "+data[i]['jp']+" ("+data[i]['rand']+")</li>";
+              } else {
+                step_4 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
+              }
           } else if(step[1] == 5){
-            step_5 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
+              if(lang == "jp"){
+                step_5 += "<li>+"+data[i]['up']+" "+data[i]['jp']+" ("+data[i]['rand']+")</li>";
+              } else {
+                step_5 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
+              }
           }
           if(item == data[i]['name']){
             if(find == ''){
