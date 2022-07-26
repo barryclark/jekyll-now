@@ -1,4 +1,4 @@
-{%- comment -%} 
+{%- comment -%}
 	This section is to determine whether or not chunked comment loading is enabled.
 	By default this is turned ON. If the page has enabled or disabled this feature explicitly,
 	the individual page value is used. Otherwise the site's value, if any, is used.
@@ -12,7 +12,7 @@
 	{%- endif -%}
 {%- endif -%}
 
-{%- comment -%} 
+{%- comment -%}
 	This section is to determine whether or not lazy loading of the comments is enabled.
 	By default this is turned OFF. If the page has enabled or disabled this feature explicitly,
 	the individual page value is used. Otherwise the site's value, if any, is used.
@@ -26,7 +26,7 @@
 	{%- endunless -%}
 {%- endif -%}
 
-{%- comment -%} 
+{%- comment -%}
 	This section is to determine whether or recaptcha is enabled.
 {%- endcomment -%}
 {%- assign recaptcha_enabled = false -%}
@@ -35,7 +35,7 @@
 {%- endif -%}
 
 
-{%- comment -%} 
+{%- comment -%}
 	This section is to determine whether or comment replies are enabled.
 {%- endcomment -%}
 {%- assign comment_replies_enabled = false -%}
@@ -48,9 +48,9 @@
 <script>
 
 	{%- comment -%}
-		Helper functions used so that we can forego using jQuery 
+		Helper functions used so that we can forego using jQuery
 		functions. When appscripts is enabled, this allows us to
-		get rid of the jQuery dependency (for comments) altogether. 
+		get rid of the jQuery dependency (for comments) altogether.
 	{%- endcomment -%}
 	function setText(elementId, textContent) {
 		document.getElementById(elementId).textContent = textContent;
@@ -108,7 +108,7 @@
 
 
 	{%- comment -%}
-	/* Load Required 3rd-Party Scripts. We use the following: 
+	/* Load Required 3rd-Party Scripts. We use the following:
     	- jquery for DOM manipulation
     	- jquery-csv for parsing Google Sheets CSV data to JSON
     	- validator for escaping user-entered comments to prevent malicious code input in comments
@@ -139,7 +139,7 @@
 		var loadRecaptcha = document.createElement("script");
 		loadRecaptcha.src = "https://www.google.com/recaptcha/api.js?render={{ site.google_forms_comments.recaptcha_site_key }}";
 		document.head.appendChild(loadRecaptcha);
-		{%- endif -%} 
+		{%- endif -%}
 
 		{%- comment -%}
 		/* Load Validator (to ensure we don't run code from comments for example) */
@@ -153,7 +153,7 @@
     	{%- endcomment -%}
 		{%- if recaptcha_enabled -%}
 		await loadRecaptcha.onload;
-		{%- endif -%} 
+		{%- endif -%}
 		await loadValidator.onload;
 
 		{%- if site.google_forms_comments.google_app_script -%}
@@ -462,7 +462,7 @@
 				displayComments(response);
 			}
 		});
-		
+
 	};
 	{%- else -%}
 	{%- comment -%}
@@ -640,7 +640,7 @@
 			{%- if site.google_forms_comments.google_app_script -%}
 			<p id="comment-submit-error"></p>
 			{%- endif -%}
-		</div>	
+		</div>
 		<div class="comments-form">
 			{%- if recaptcha_enabled -%}
 			<form onsubmit="return checkRecaptcha()" id="comment-form" autocomplete="off">
@@ -668,7 +668,7 @@
 	</div>
 </div>
 {%- comment -%}
-<!-- 
+<!--
 	Styling information.
 	This might typically be in an scss file but is added here so only a single
 	file needs to be added to a project trying to implement this feature. -->
