@@ -1,0 +1,969 @@
+{%- comment -%} 
+	This section is to determine whether or not chunked comment loading is enabled.
+	By default this is turned ON. If the page has enabled or disabled this feature explicitly,
+	the individual page value is used. Otherwise the site's value, if any, is used.
+{%- endcomment -%}
+{%- assign chunked_loading_enabled = true -%}
+{%- if page.chunked_comment_loading == false -%}
+	{%- assign chunked_loading_enabled = false -%}
+{%- else -%}
+	{%- if site.google_forms_comments.chunked_comment_loading == false and page.chunked_comment_loading != true -%}
+		{%- assign chunked_loading_enabled = false -%}
+	{%- endif -%}
+{%- endif -%}
+
+{%- comment -%} 
+	This section is to determine whether or not lazy loading of the comments is enabled.
+	By default this is turned OFF. If the page has enabled or disabled this feature explicitly,
+	the individual page value is used. Otherwise the site's value, if any, is used.
+{%- endcomment -%}
+{%- assign lazy_load_enabled = false -%}
+{%- if page.lazy_load_comments == true -%}
+	{%- assign lazy_load_enabled = true -%}
+{%- elsif site.google_forms_comments.lazy_load_comments == true -%}
+	{%- unless page.lazy_load_comments == false -%}
+		{%- assign lazy_load_enabled = true -%}
+	{%- endunless -%}
+{%- endif -%}
+
+{%- comment -%} 
+	This section is to determine whether or recaptcha is enabled.
+{%- endcomment -%}
+{%- assign recaptcha_enabled = false -%}
+{%- if site.google_forms_comments.recaptcha_site_key -%}
+	{%- assign recaptcha_enabled = true -%}
+{%- endif -%}
+
+
+{%- comment -%} 
+	This section is to determine whether or comment replies are enabled.
+{%- endcomment -%}
+{%- assign comment_replies_enabled = false -%}
+{%- if site.google_forms_comments.comment_replies_enabled == true -%}
+	{%- assign comment_replies_enabled = true -%}
+{%- endif -%}
+
+
+{%- if site.comment-read or site.google_forms_comments.google_app_script -%}
+<script>
+
+	{%- comment -%}
+		Helper functions used so that we can forego using jQuery 
+		functions. When appscripts is enabled, this allows us to
+		get rid of the jQuery dependency (for comments) altogether. 
+	{%- endcomment -%}
+	function setText(elementId, textContent) {
+		document.getElementById(elementId).textContent = textContent;
+	};
+
+	function show(elementId) {
+		document.getElementById(elementId).style.display = 'inline';
+	};
+
+	function hide(elementId) {
+		document.getElementById(elementId).style.display = 'none';
+	};
+
+	function getValue(elementId) {
+		return document.getElementById(elementId).value;
+	};
+
+	function setValue(elementId, value) {
+		return document.getElementById(elementId).value = value;
+	};
+
+	function fadeIn(element) {
+		var duration = 400;
+		element.style.opacity = 0;
+		let opacity = 0;
+		const timer = setInterval(function() {
+		  opacity += 50 / duration;
+		  if (opacity >= 1) {
+		    clearInterval(timer);
+		    opacity = 1;
+		  }
+		  element.style.opacity = opacity;
+		}, 50);
+	};
+
+
+	function disableButtonWithLoader(elementId) {
+		var buttonToDisable = document.getElementById(elementId);
+		if (buttonToDisable == null) {
+			return;
+		}
+		buttonToDisable.disabled = true;
+		setText(elementId, "\xa0");
+	}
+
+	function disablePostCommentButton() {
+		disableButtonWithLoader("comment-submit");
+	};
+
+	function enablePostCommentButton() {
+		var postCommentButton = document.getElementById("comment-submit");
+		postCommentButton.disabled = false;
+		setText("comment-submit", "Post");
+	};
+
+
+	{%- comment -%}
+	/* Load Required 3rd-Party Scripts. We use the following: 
+    	- jquery for DOM manipulation
+    	- jquery-csv for parsing Google Sheets CSV data to JSON
+    	- validator for escaping user-entered comments to prevent malicious code input in comments
+
+    	Make sure to update these to the latest versions every once in a while. */
+    {%- endcomment -%}
+
+	{%- comment -%}
+	/* Initial load of the comments section contnet. This ensures that we are only loading
+	   JQuery and other scripts once we actually need them */
+    {%- endcomment -%}
+	async function initialCommentLoad() {
+		disableButtonWithLoader("load-comment-button");
+		{%- unless site.google_forms_comments.google_app_script -%}
+		{%- comment -%}
+        /* Load JQuery, only needed in order to use JQuery CSV */
+		{%- endcomment -%}
+		var loadJquery = document.createElement("script");
+		loadJquery.type = "text/javascript";
+		loadJquery.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js";
+		document.head.appendChild(loadJquery);
+		{%- endunless -%}
+
+		{%- if recaptcha_enabled -%}
+		{%- comment -%}
+		/* Load Recaptcha */
+    	{%- endcomment -%}
+		var loadRecaptcha = document.createElement("script");
+		loadRecaptcha.src = "https://www.google.com/recaptcha/api.js?render={{ site.google_forms_comments.recaptcha_site_key }}";
+		document.head.appendChild(loadRecaptcha);
+		{%- endif -%} 
+
+		{%- comment -%}
+		/* Load Validator (to ensure we don't run code from comments for example) */
+    	{%- endcomment -%}
+		var loadValidator = document.createElement("script");
+		loadValidator.src = "https://cdnjs.cloudflare.com/ajax/libs/validator/13.5.2/validator.min.js";
+		document.head.appendChild(loadValidator);
+
+		{%- comment -%}
+		/* Await Scripts Loaded */
+    	{%- endcomment -%}
+		{%- if recaptcha_enabled -%}
+		await loadRecaptcha.onload;
+		{%- endif -%} 
+		await loadValidator.onload;
+
+		{%- if site.google_forms_comments.google_app_script -%}
+		reloadComments();
+		{%- else -%}
+		loadJquery.onload = function() {
+			{%- comment -%}
+			/* We need to ensure that jQuery is ready before we can load JQuery CSV (used for .csv parsing) */
+    		{%- endcomment -%}
+			async function checkJQuery() {
+				if (typeof jQuery === "undefined") {
+					return false;
+				} else {
+					clearTimeout(interval);
+
+					{%- comment -%}
+					/* Load JQuery CSV (need regular JQuery first) */
+					{%- endcomment -%}
+					var loadJqueryCsv = document.createElement("script");
+					loadJqueryCsv.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.11/jquery.csv.min.js";
+					document.head.appendChild(loadJqueryCsv);
+
+					{%- comment -%}
+					/* Wait for JQuery CSV to finish loading */
+					{%- endcomment -%}
+					await loadJqueryCsv.onload;
+
+					{%- comment -%}
+					/* Now, load the comments */
+					{%- endcomment -%}
+					reloadComments();
+				}
+			};
+			{%- comment -%}
+			/* check if JQuery is ready every 250 MS
+			   this timer will be cleared after the check passes */
+			{%- endcomment -%}
+			var interval = setInterval(checkJQuery, 250);
+		};
+		{%- endif -%}
+	};
+
+	var thisPageUrl = "{{ page.url }}";
+	const EXTRA_INFO_START = "chunkedCommentInfoStart";
+	const EXTRA_INFO_END = "chunkedCommentInfoEnd";
+
+	{%- comment -%}
+	/*  Visbile comments are those already dislayed to the user.
+		Hidden comments are those that are already retrieved from Google Sheets but not shown yet (i.e. with a load more button visible).
+		Net new comments are those that have been added since the comment submit button was pressed. Usually this will be the single added
+		comment. */
+	{%- endcomment -%}
+	var visibleComments = [];
+	var hiddenComments = [];
+	var netNewComments = [];
+	{%- if comment_replies_enabled -%}
+	var commentIds = new Set();
+	{%- endif -%}
+
+	{%- comment -%}
+	/* Format the comment's date to our desired format */
+	{%- endcomment -%}
+	function formatDate(stringDate) {
+		var date = new Date(stringDate);
+		var dateOptions = { year: 'numeric', month: 'long', day: 'numeric'};
+		var timeOptions = { hour: 'numeric', minute: 'numeric' };
+		return `${date.toLocaleDateString("en-us", dateOptions)} at ${date.toLocaleTimeString("en-us", timeOptions)}`;
+	};
+
+	{%- comment -%}
+	/* Called when the comments have been loaded or relaoded.
+	   Comments that we have already displayed on the page will be ignored */
+	{%- endcomment -%}
+	async function displayComments(comments) {
+		show("comments-and-input");
+		hide("load-comments");
+		var hasVisibleComments = visibleComments.length > 0;
+
+		{%- comment -%}
+		/* if we have no comments, show the 'no comments available' section */
+		{%- endcomment -%}
+		if (comments == null || comments === "" || comments == []) {
+			if (!hasVisibleComments) {
+				show("no-comments");
+				hide("load-more-comments");
+				hide("num-comments-displayed");
+			}
+			return;
+		}
+
+		{%- if comment_replies_enabled -%}
+		commentIds = new Set();
+		{%- endif -%}
+
+		{%- if site.google_forms_comments.google_app_script -%}
+		var newHiddenComments = comments
+			{%- if comment_replies_enabled -%}
+			.map(item => {
+				commentIds.add(Date.parse(item.timestamp)?.toString());
+				return item;
+			})
+			{%- endif -%}
+			.sort((a, b) => (new Date(a.timestamp).getTime() || 0) - (new Date(b.timestamp).getTime() || 0))
+			.map(item => JSON.stringify(item));
+		{%- else -%}
+		{%- comment -%}
+		/* Add headers so json objects are named properly */
+		{%- endcomment -%}
+		comments = `timestamp,name,comment,isAuthor\n${comments}`;
+		var newHiddenComments = $.csv.toObjects(comments)
+			{%- if comment_replies_enabled -%}
+			.map(item => {
+				commentIds.add(Date.parse(item.timestamp)?.toString());
+				return item;
+			})
+			{%- endif -%}
+			.sort((a, b) => (new Date(a.timestamp).getTime() || 0) - (new Date(b.timestamp).getTime() || 0))
+			.map(item => JSON.stringify(item));
+		{%- endif -%}
+
+		if (hasVisibleComments) {
+			netNewComments = newHiddenComments
+				.filter(item => !visibleComments.includes(item))
+				.filter(item => !hiddenComments.includes(item));
+		}
+
+		hiddenComments = newHiddenComments
+			.filter(item => !visibleComments.includes(item))
+			.filter(item => !netNewComments.includes(item));
+
+		loadMoreComments(false || !hasVisibleComments);
+	};
+
+	{%- comment -%}
+	/* Loads more comments if there are any left to display from those already loaded from the server */
+	{%- endcomment -%}
+	function loadMoreComments(isLoadMoreAction) {
+		{%- if chunked_loading_enabled  -%}
+			var newCommentsToDisplay = hiddenComments.slice(-5);
+		{%- else -%}
+			var newCommentsToDisplay = hiddenComments;
+		{%- endif -%}
+
+		if (isLoadMoreAction) {
+			{%- comment -%}
+			/* iterate over each comment that came from Google Sheets */
+			{%- endcomment -%}
+			newCommentsToDisplay.reverse().forEach(element => displaySingleComment(element, true));
+			hiddenComments = hiddenComments.filter(item => !newCommentsToDisplay.includes(item) && !visibleComments.includes(item));
+		} else {
+			{%- comment -%}
+			/* add the new comments if there are any */
+			{%- endcomment -%}
+			netNewComments.forEach(element => displaySingleComment(element, false));
+			netNewComments = []
+		}
+
+		setText("num-comments-displayed", `Showing ${visibleComments.length} of ${visibleComments.length + hiddenComments.length} comments`);
+
+		if (hiddenComments.length == 0) {
+			hide("load-more-comments");
+		} else {
+			show("load-more-comments");
+		}
+	};
+
+	{%- if comment_replies_enabled -%}
+	var currentFadeItem = null;
+
+	function fadeColor(element) {
+		if (currentFadeItem != null) {
+			clearInterval(currentFadeItem);
+			currentFadeItem = null;
+		}
+
+		var duration = 1000;
+		var step = 25;
+		let opacity = 1;
+		const timer = setInterval(function() {
+		  opacity -= (1 / (duration / step));
+		  if (opacity <= 0) {
+		    clearInterval(timer);
+		    currentFadeItem = null;
+		    opacity = 0;
+		  }
+		  element.style.background = "rgba(3, 155, 229, "+ opacity +")";
+		}, step);
+		currentFadeItem = timer;
+	};
+
+	function smoothScrollTo(element) {
+		element.scrollIntoView({
+		  behavior: "smooth",
+		  block: "start",
+		  inline: "nearest"
+		});
+	};
+
+	function jumpToComment(commentId) {
+		var element = document.getElementsByClassName("" + commentId)[0];
+		while(element == null && hiddenComments.length > 0) {
+			loadMoreComments(true);
+			element = document.getElementsByClassName("" + commentId)[0];
+		}
+		if (element != null) {
+			smoothScrollTo(element);
+			fadeColor(element);
+		}
+	};
+
+	function clearCommentReplyItem() {
+		document.getElementById("comment-reply-info").innerHTML = ``;
+	};
+
+	function replyToComment(commentId) {
+		document.getElementById("comment-reply-info").innerHTML = `<small class="comment-reply-clear" onclick="clearCommentReplyItem()">Ⓧ&nbsp;&nbsp;&nbsp;</small><small onClick="jumpToComment('${commentId}')">Replying to comment <a id="reply-to-comment-id">${commentId}</a></small>`;
+		smoothScrollTo(document.getElementsByClassName("comments-form")[0]);
+	};
+	{%- endif -%}
+
+	function getCommentInfo(comment) {
+		var extraCommentInfo = comment?.match(EXTRA_INFO_START + ".+" + EXTRA_INFO_END);
+		return {
+			text : comment?.replace(extraCommentInfo, ""),
+			extraCommentInfo : JSON.parse(extraCommentInfo?.toString()?.replace(EXTRA_INFO_START, "")?.replace(EXTRA_INFO_END, "") ?? "{}")
+		};
+	};
+
+	function displaySingleComment(element, isPrepend) {
+		{%- comment -%}
+		/* don't re-add existing comments */
+		{%- endcomment -%}
+		if (visibleComments.includes(element)) {
+			return;
+		}
+
+		var jsonElement = JSON.parse(element);
+		var comment = getCommentInfo(jsonElement.comment?.toString());
+		{%- comment -%}
+		/* If the author was the one who commented back, add this 'verified' logic */
+		{%- endcomment -%}
+		var verifiedAuthorTag = "";
+		if (jsonElement.isAuthor == true || jsonElement.isAuthor === "TRUE") {
+			verifiedAuthorTag = "&nbsp;<strong>(Author)</strong>";
+		}
+		{%- comment -%}
+		/* Create the new item using HTML and append it to the user-visible comment section */
+		{%- endcomment -%}
+		var newItem = document.createElement("div");
+		newItem.classList.add("comment-item");
+		{%- if comment_replies_enabled -%}
+		newItem.classList.add("reply-item");
+		var commentReplyId = "" + Date.parse(jsonElement.timestamp);
+		newItem.classList.add(commentReplyId);
+		var replyToHtml = null;
+		var replyId = comment?.extraCommentInfo?.replyToCommentId;
+		if (replyId != null && replyId != "" && commentIds.has(replyId)) {
+			replyToHtml = `<p class="comemnt-reply-id" onclick="jumpToComment('${replyId}')"><<< ${replyId}</p>`;
+		}
+		var currentCommentReplyButton = `<span class="comment-reply-button" onclick="replyToComment(${commentReplyId})"><img />Reply</span>`;
+		{%- endif -%}
+
+		newItem.innerHTML = `
+			<p class="commenter-name">${validator.escape(jsonElement.name.toString())}${verifiedAuthorTag}
+				<small>${formatDate(jsonElement.timestamp)}
+				{%- if comment_replies_enabled -%}
+				${currentCommentReplyButton ?? ""}
+				{%- endif -%}
+				</small>
+			</p>
+			<div>
+				{%- if comment_replies_enabled -%}
+				${replyToHtml ?? ""}
+				{%- endif -%}
+				<p>${validator.escape(comment?.text?.toString()).replace(new RegExp('\r?\n','g'), '<br />')}</p>
+			</div>
+		`.trim();
+		if (isPrepend) {
+			document.getElementById("comment-container").prepend(newItem);
+		} else {
+			document.getElementById("comment-container").append(newItem);
+		}
+		fadeIn(newItem);
+		visibleComments.push(element);
+
+		{%- comment -%}
+		/* Hide the 'no comments available' section since we have added a comment */
+		{%- endcomment -%}
+		hide("no-comments");
+		show("num-comments-displayed");
+	};
+
+	{%- if site.google_forms_comments.google_app_script -%}
+	function reloadComments() {
+		fetch(`{{ site.google_forms_comments.google_app_script }}?url=${thisPageUrl}`)
+		.then(response => response.json())
+		.then(response => {
+			var error = response?.error || null;
+			if (error != null) {
+				console.error(error);
+				setText("comment-submit-error", error);
+				show("comment-submit-error");
+			} else {
+				setText("comment-submit-error", '');
+				hide("comment-submit-error");
+				displayComments(response);
+			}
+		});
+		
+	};
+	{%- else -%}
+	{%- comment -%}
+	/* Calls to the Google Sheets gviz API to load the comment data
+	   Since we are storing comments for all of our blog articles in one sheet, we filter
+	   by page URL. */
+	{%- endcomment -%}
+	function reloadComments() {
+		{%- comment -%}
+		/*
+		Use SQL in the gviz URL to load the correct csv.
+		In this implementation, columns are mapped to the following:
+			A - timestamp, the time the comment was left
+			B - page url, the page the comment was left on
+			C - name, the text left in the comment name field
+			D - comment, the text left in the comment field
+			E - isAuthor, boolean indicating if the comment was left by the actual author
+		*/
+		{%- endcomment -%}
+		var sqlStatement = encodeURIComponent(`SELECT A, C, D, E WHERE B = '${thisPageUrl}'`);
+		fetch(`{{ site.comment-read }}/gviz/tq?tqx=out:csv&sheet=comments&tq=${sqlStatement}&headers=0`)
+		.then(response => response.text())
+		.then(response => displayComments(response));
+	};
+	{%- endif -%}
+
+	{%- comment -%}
+	/* encodes the form data for http transport */
+	{%- endcomment -%}
+	const encodeFormData = (data) => {
+	    return Object.keys(data)
+	        .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+	        .join('&');
+	};
+
+	{%- if recaptcha_enabled -%}
+	function checkRecaptcha() {
+		{%- comment -%}
+			Disallow posting a new comment until this one has posted or failed.
+		{%- endcomment -%}
+		disablePostCommentButton();
+        grecaptcha.ready(function() {
+        	var pageAction = "comment_submit_{{ page.title }}".replace(/[^A-Za-z/_]/g, "");
+        	grecaptcha.execute('{{ site.google_forms_comments.recaptcha_site_key }}', { action: pageAction }).then(function(token) {
+        		postComment(token);
+        	});
+        });
+        return false;
+    };
+	{%- endif -%}
+
+
+	function getCommentContent() {
+		var comment = getValue("comment-comment")?.toString();
+
+		var extraCommentInfo = {};
+
+		{%- if comment_replies_enabled -%}
+		var replyToCommentId = document?.getElementById("reply-to-comment-id")?.text;
+		if (replyToCommentId != null && replyToCommentId != "") {
+			extraCommentInfo.replyToCommentId = replyToCommentId;
+		}
+		{%- endif -%}
+
+		if (Object.keys(extraCommentInfo).length !== 0) {
+			comment = EXTRA_INFO_START + JSON.stringify(extraCommentInfo) + EXTRA_INFO_END + comment;
+		}
+
+		return comment;
+	};
+
+	{%- comment -%}
+	/* Posts a comment */
+	{%- endcomment -%}
+	{%- if site.google_forms_comments.google_app_script -%}
+	function postComment(recaptchaToken) {
+		disablePostCommentButton();
+		var username = getValue("comment-name");
+		var comment = getCommentContent();
+
+		fetch(`{{ site.google_forms_comments.google_app_script }}`, {
+		  method: 'POST',
+		  mode: 'cors',
+		  redirect: "follow",
+		  headers: {
+		    "Content-Type": "text/plain;charset=utf-8"
+		  },
+		  body: JSON.stringify({
+		  	url : thisPageUrl?.toString(),
+		  	name : username?.toString(),
+		  	comment : comment?.toString(),
+		  	recaptchaToken: (recaptchaToken || null)
+		  })
+		}).then(response => response.json())
+		.then(response => {
+			var error = response?.error || null;
+			if (error != null) {
+				console.error(error);
+				setText("comment-submit-error", error);
+				show("comment-submit-error");
+			} else {
+				setValue("comment-name", '');
+				setValue("comment-comment", '');
+				setText("comment-submit-error", '');
+				hide("comment-submit-error");
+				displayComments(response);
+				{%- if comment_replies_enabled -%}
+				clearCommentReplyItem();
+				{%- endif -%}
+			}
+		})
+		.catch(error => {console.log(error);})
+		.finally(() => { enablePostCommentButton(); });
+
+		return false;
+	};
+	{%- else -%}
+	function postComment(recaptchaToken) {
+		disablePostCommentButton();
+		var username = getValue("comment-name");
+		var comment = getCommentContent();
+
+		fetch(`{{ site.comment-post }}/formResponse`, {
+		  method: 'POST',
+		  mode: 'no-cors',
+		  headers: {
+		    "Content-Type": "application/x-www-form-urlencoded"
+		  },
+		  body: encodeFormData({
+		  	"{{ site.comment-post-fields[0] }}" : thisPageUrl?.toString(),
+		  	"{{ site.comment-post-fields[1] }}" : username?.toString(),
+		  	"{{ site.comment-post-fields[2] }}" : comment?.toString()
+		  })
+		}).then(response => {
+			setValue("comment-name", '');
+			setValue("comment-comment", '');
+			{%- if comment_replies_enabled -%}
+			clearCommentReplyItem();
+			{%- endif -%}
+			reloadComments();
+		})
+		.catch(error => {console.log(error);})
+		.finally(() => { enablePostCommentButton(); });
+
+		return false;
+	};
+	{%- endif -%}
+
+	{%- unless lazy_load_enabled -%}
+		initialCommentLoad();
+	{%- endunless -%}
+</script>
+{%- comment -%}
+<!--
+	HTML for displaying the actual comment section.
+	It has a state for oth when the article has comments and when it does not. -->
+{%- endcomment -%}
+<h4 class="post-subtitle">Comments</h4>
+<div id="load-comments" class="comments">
+	<button id="load-comment-button" class="comment-button" onclick="initialCommentLoad()">Load Comments</button>
+</div>
+<div id="comments-and-input">
+	<div id="comment-section" class="comments">
+		<p id="num-comments-displayed"></p>
+		<button id="load-more-comments" class="comment-button" onclick="loadMoreComments(true)" type="button">Load Older Comments</button>
+		<div id="no-comments" class="comment-info-text">
+			<p>There are currently no comments on this article, be the first to add one below</p>
+		</div>
+		<div id="comment-container"></div>
+	</div>
+	<h4 class="post-subtitle">Add a Comment</h4>
+	<div class="comments">
+		<div class="comment-info-text">
+			<p>Note that I may remove comments for any reason, so try to be civil. If you are looking for a response to your comment, either leave your email address or check back on this page periodically.</p>
+			{%- if site.google_forms_comments.google_app_script -%}
+			<p id="comment-submit-error"></p>
+			{%- endif -%}
+		</div>	
+		<div class="comments-form">
+			{%- if recaptcha_enabled -%}
+			<form onsubmit="return checkRecaptcha()" id="comment-form" autocomplete="off">
+			{%- else -%}
+			<form onsubmit="return postComment()" id="comment-form" autocomplete="off">
+			{%- endif -%}
+				<ul>
+					<li>
+						<input id="comment-name" name="username" type="text" placeholder="Name" required="" value="">
+						{%- if comment_replies_enabled -%}
+						<p id="comment-reply-info"></p>
+						{%- endif -%}
+					</li>
+					<li><textarea id="comment-comment" name="comment" placeholder="Comment" required=""></textarea></li>
+					<li><button id="comment-submit" type="submit" class="comment-button">Post</button></li>
+				</ul>
+				{%- if recaptcha_enabled -%}
+				<p id="comment-recaptcha-disclaimer">This site is protected by reCAPTCHA and the Google
+				    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+				    <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+				 {%- endif -%}
+				<p>
+			</form>
+		</div>
+	</div>
+</div>
+{%- comment -%}
+<!-- 
+	Styling information.
+	This might typically be in an scss file but is added here so only a single
+	file needs to be added to a project trying to implement this feature. -->
+{%- endcomment -%}
+<style>
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+.comment-item {
+	position: relative;
+	padding: 0.5em 2.5em;
+	background: white;
+	font-family: "Source Sans Pro", sans-serif;
+	width: 95%;
+	margin: 1em auto;
+	box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+
+.comment-item:after {
+	content: "";
+	position: relative;
+	display: block;
+	clear: both;
+}
+
+.comment-item p {
+	line-height: 1.6;
+}
+
+.comment-item small {
+	padding-left: 0.7em;
+	color: #999;
+	font-size: 0.8em;
+}
+
+.commenter-name {
+	color: #367588;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+.commenter-name strong {
+	color: #e91e63;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+{%- if comment_replies_enabled -%}
+.comment-reply-button {
+	float: right;
+	cursor: pointer;
+}
+
+.comment-reply-button img {
+	display: inline;
+	vertical-align: middle;
+	width: 1.2em;
+	height: 1.2em;
+	margin: 0;
+	content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23999999'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z'/%3E%3C/svg%3E");
+}
+
+.comment-reply-button:hover {
+	color: #e91e63;
+}
+
+.comment-reply-button:hover img {
+	content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23e91e63'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z'/%3E%3C/svg%3E");
+}
+
+.comemnt-reply-id {
+	color: #e91e63;
+	font-size: .9em;
+	cursor: pointer;
+}
+
+#comment-reply-info {
+	float: right;
+	font-size: .9em;
+	color: #e91e63;
+	cursor: pointer;
+}
+
+#comment-reply-info small {
+	vertical-align: middle;
+}
+
+.comment-reply-clear {
+	color: #e91e63;
+	font-size: 1.1em;
+	cursor: pointer;
+}
+{%- endif -%}
+
+#comment-reply-info p {
+	margin: 0;
+}
+
+.comments-form {
+	margin-left: 1em;
+	margin-right: 1em;
+	width: 95%;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+.comments-form ul {
+	list-style: none;
+	margin-left: -40px;
+}
+
+.comments-form ul li {
+	margin-bottom: 15px;
+}
+
+.comments {
+	align-items: center;
+	border-top: 0.5px solid #e5e5e5;
+	padding-top: 1rem;
+	position: relative;
+}
+
+.comment-button {
+	border: 0;
+	border-radius: 8px;
+	background: #9ccc65;
+	color: #fff;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: bold;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	outline-style: none;
+	padding: 10px 20px;
+	width: auto;
+	min-width: 25%;
+}
+
+#comment-submit {
+	width: auto;
+	min-width: 25%;
+	position: relative;
+}
+
+.comment-button:disabled::after,
+.comment-button[disabled]::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    -webkit-animation: button-loading-spinner 1s ease infinite;
+    animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@-webkit-keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+#load-more-comments {
+	width: auto;
+}
+
+#load-more-comments,
+#num-comments-displayed {
+	display: none;
+}
+
+#comment-name,
+#comment-comment {
+	width: 50%;
+	padding: 10px;
+	border: 0;
+	border-radius: 8px;
+	background: #f7f7f7;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+#comment-name::-webkit-input-placeholder,
+#comment-comment::-webkit-input-placeholder {
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+#comment-name::-moz-placeholder,
+#comment-comment::-moz-placeholder {
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+#comment-name:-ms-input-placeholder,
+#comment-comment:-ms-input-placeholder {
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+#comment-name::-ms-input-placeholder,
+#comment-comment::-ms-input-placeholder {
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+#comment-name::placeholder,
+#comment-comment::placeholder {
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+#comment-name:focus,
+#comment-comment:focus {
+	background: #fff;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+#comment-comment {
+	width: 100%;
+	height: 80px;
+	resize: vertical;
+	min-height: 80px;
+}
+
+{%- if recaptcha_enabled -%}
+{%- comment -%}
+If you want to use the regular recaptcha badge (instead of the text currently below
+the submit button), remove this and the text disclaimer in the HTML above. Note that
+according to their FAQ page, one or the other must be displayed.
+https://developers.google.com/recaptcha/docs/faq#id-like-to-hide-the-recaptcha-badge.-what-is-allowed
+{%- endcomment -%}
+.grecaptcha-badge {
+	visibility: hidden;
+}
+
+#comment-recaptcha-disclaimer {
+	text-align: justify;
+    text-align-last: center;
+    font-size: .7em;
+	font-family: "Source Sans Pro", sans-serif;
+}
+{%- endif -%}
+
+{%- if site.google_forms_comments.google_app_script -%}
+#comment-submit-error {
+	color: red;
+	display: none;
+}
+{%- endif -%}
+
+.comment-info-text {
+	letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.comment-info-text p {
+	margin: 0 0 1rem;
+	text-align: justify;
+    text-align-last: center;
+    font-size: .9em;
+}
+
+#comment-container {
+	width: 100%;
+}
+
+#comment-section, #load-comments {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+{%- if lazy_load_enabled -%}
+#comments-and-input {
+	display: none;
+}
+{%- else -%}
+#load-comments {
+	display: none;
+}
+{%- endif -%}
+</style>
+{%- endif -%}
