@@ -26,11 +26,15 @@ permalink: /alc/
       {% endfor %}
     </ul>
     <ul>
-      {% for racipe in alchemist.racipe %}
-        {% assign page = racipe | split: "-" %}
-      <li>
-        {{ page[0] }}
-      </li>
+      {% assign recipe_list = "" | split: ',' %}
+      {% for recipe in alchemist.racipe %}
+        {% assign page = recipe | split: "-" %}
+        {% assign recipe_list = recipe_list | push: page[0] %}
+      {% endfor %}
+      {{ recipe_list | uniq | join: "," }}
+
+      {% for recipe in recipe_list %}
+        {{ recipe }}
       {% endfor %}
     </ul>
   </div>
