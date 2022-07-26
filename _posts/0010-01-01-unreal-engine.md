@@ -3,7 +3,7 @@ layout: post
 title: Unreal engine
 ---
 
-## 개념
+# Concept
 * [Garbage-collection](/posts_unreal_engine/Concept-Garbage-collection)
     - 가비지 컬렉션의 작동방식
 * Replaction
@@ -61,6 +61,12 @@ title: Unreal engine
     - 컴포넌트
     - 레벨
 
+## AnimationConcept
+* [Animation-system](/_posts_unreal_engine/AnimationConcept-Animation-system)
+* [Control Rig](/_posts_unreal_engine/AnimationConcept-Animation-system)
+    - Control Rig란?
+    - Control Rig의 solve
+
 ## 활용
 * Module
     * [Module](/posts_unreal_engine/Useage-Create-module)
@@ -93,7 +99,7 @@ title: Unreal engine
     - Asset 불러오기
     - Widget C++에 Bind하기
 
-## 적용
+## 구현
 * [FABRIK](/posts_unreal_engine/Implement-FABRIKComponent)
     - 1차 구현
     - 디버그

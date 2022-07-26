@@ -3,18 +3,7 @@ layout: post
 title: Unreal engine Animation system
 ---
 
-UE 5.01
-2022 05 25
-
-목표
-* 절차적 애니메이션을 만들고 적용.
-* 이를 위한 자료조사.
-
 ## Unreal engine Animating Characters and Objects
-
-* Rig는 조작하다의 의미를 가지고 있습니다. 이미지로는 낚시줄이 나오는데 잘 모르겠습니다.
-
-상세한 내용은 [공식문서](https://docs.unrealengine.com/5.0/en-US/animating-characters-and-objects-in-unreal-engine/)에서 읽을 수 있습니다.
 
 * **[스켈레탈 메시 애니메이션 시스템(Skeletal Mesh Animation System)](https://docs.unrealengine.com/5.0/en-US/skeletal-mesh-animation-system-in-unreal-engine/)은 애니메이션 및 캐릭터 제어를 위한 언리얼 엔진 시스템입니다.**
     - 언리얼 엔진의 캐릭터 애니메이션은 애니메이션 생성을 위해 조작할 수 있는 조작된 메시인 스켈레탈 메시를 기반으로 구축됩니다. 
@@ -125,24 +114,12 @@ UE 5.01
     - 레벨 시퀀스 액터는 레벨에 있으며 레벨 시퀀스 애셋 용 컨테이너 입니다.
     - **게임 플레이와 시퀀서 애니메이션을 매끄럽게 혼합할 수 있습니다.**
     - 시퀀서와 애니메이션 블루프린트를 혼합하여 사용할 수 있습니다.
-* Control Rig
-    - Contol RIg는 엔진에서 캐릭터를 직접 애니메이션화하는 언리얼 엔진의 솔루션 입니다.
-        - **forward solve는 시퀀서 및 애니메이션 블루프린트 내에서 사용됩니다.**
-        - **backward solve는 애니메이션 시퀀스의 애니메이션을 Control Rig에 굽는데 사용됩니다.**
-        - Setup Event는 Control Rig의 초기화 후 한번 실행됩니다.
-    - Control Rig Editor에서는 캐릭터에 대한 사용자 정의 컨트롤, 채널 및 기타 조작기를 만들 수 있습니다. 리그를 만든 후에는 **시퀀서와 같은 Unreal Engine의 다른 영역 내에서 이러한 컨트롤을 에니메이션화 할 수 있습니다.**
-    - Control Rig를 이용해서 Unreal에서 Animation을 만들 수 있습니다.
-    - **AnimBlueprint에서 ControlRig로 호출할 수 있습니다. 이를 이용해 보다 자연스로운 애니메이션을 만들 수 있습니다.**
-        - Animation을 만들 때 FK Control Rig를 이용하여 Control Rig를 만들지 않고 작업할 수 있습니다.
-    - Anim Graphr가 멀티스레드를 이용한 업데이트가 아닐 경우 멀티 쓰레드에서 안전하지 않은 함수는 호출할 수 없습니다.
-        - 따라서 Trace함수는 호출할 수 없습니다.
-        - **애니메이션을 업데이트 할 떄 멀티 쓰레드를 이용한 업데이트는 필수라고 생각하므로 Trace를 적용할 다른 방법이 필요합니다.**
-    - Control Rig의 포즈 캐싱 기능은 **컨트롤 리그 그래프에서 애니메이션 포즈를 저장하고 다른 시간에 적용하는 데 사용됩니다.**
-        - 따라서 포즈 캐싱을 위해서는 Control Rig Asset을 필요로 합니다.
-        - ??? 포즈 캐싱을 통해서 Control Rig끼리 포즈를 공유할 수 있나요? 적혀 있는 것들로 봤을 때는 공유되는거 같은데.
-* IK Rig
-    - **IK Rig Editor에서 다양한 솔버를 만들고 뼈대 설정을 조정할 수 있습니다.**
-    - 이렇게 만들어진 IK Rig는 AnimBlueprint에서 IK Rig를 통해서 불러올 수 있습니다.
+
+# IK Rig
+
+**IK Rig Editor에서 다양한 솔버를 만들고 뼈대 설정을 조정할 수 있습니다.** 이렇게 만들어진 IK Rig는 AnimBlueprint에서 IK Rig를 통해서 불러올 수 있습니다.
+
+
 * Paper 2D
     - 페이퍼 2D는 에디터 내에서 2D 및 2D/3D 하이브리드 게임을 제작하기 위한 스프라이트 기반 시스템입니다. Paper2D의 핵심에는 스프라이트가 있습니다. 스프라이트 편집기를 사용하여 UE4 내에서 스프라이트를 편잡하고 플립북으로 스프라이트 기반 애니메이션을 만들 수 있습니다.
     - 추가적으로 [spine 플러그인](Plugin-Spine)을 볼 수 있습니다.
@@ -250,5 +227,13 @@ UE 5.01
 
 * [NDC 프로젝트 DH의 절차적 애니메이션 시스템](http://ndcreplay.nexon.com/NDC2017/sessions/NDC2017_0026.html#k%5B%5D=%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98)
 * [NDC 프로젝트 DH의 절차적 애니메이션 시스템2](http://ndcreplay.nexon.com/NDC2018/sessions/NDC2018_0042.html#k%5B%5D=%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98)
+
+## 애니메이션과 Trace함수
+Anim Graph가 멀티스레드를 이용한 업데이트가 아닐 경우 멀티 쓰레드에서 안전하지 않은 함수는 호출할 수 없습니다.
+
+따라서 Trace함수는 호출할 수 없습니다. **애니메이션을 업데이트 할 떄 멀티 쓰레드를 이용한 업데이트는 필수라고 생각하므로 Trace를 적용할 다른 방법이 필요합니다.**
+
+* 언리얼에서 Trace (트레이스)는 레벨을 뻗어나가며 직선상에 무엇이 존재하는지 확인할 수 있는 메서드를 제공합니다. 두 (시작과 끝 위치) 지점을 제공해 주면, 피직스 스시템에서 그 두 점에 직선을 그으며 거기에 (콜리전으로) 걸리는 액터가 있는지 보고해 주는 식으로 사용합니다. 트레이스는 본질적으로 다른 소프트웨어의 Raycast (레이 캐스트) 또는 Raytrace (레이 트레이스)와 같습니다.
+
 
 ## 언리얼 엔진 애니메이션 시스템
