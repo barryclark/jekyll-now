@@ -72,7 +72,7 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 comment-read: https://docs.google.com/spreadsheets/d/1UBpfqNkTWVLp194HWomtW1nW2ukz6laJHFJAeX9oLTs/edit?usp=sharing
-comment-post: https://docs.google.com/forms/d/e/1FAIpQLSdG9gD_sAVMfZnFVYN1QvphoSk_u5NHXXAWsrGVkSpCm1K8wA/viewform?usp=sf_link
+comment-post: https://docs.google.com/forms/d/e/1FAIpQLSdG9gD_sAVMfZnFVYN1QvphoSk_u5NHXXAWsrGVkSpCm1K8wA/viewform
 comment-post-fields: [ entry.2061969004, entry.1221277427, entry.1556408289]
 
 # Use the following plug-ins
