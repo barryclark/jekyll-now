@@ -49,8 +49,12 @@ permalink: /alc/
 
 
             {% assign page = alchemist.racipe[i] | split: "-" %}
-            {% if page[0] == pre_recipe %}
-            <li style="margin-bottom:0.3em;">
+            {% if page[0] != pre_recipe %}
+              {% if pre_recipe != 0 %}
+                <li style="margin-bottom:0.3em;">
+              {% else %}
+                <li>
+              {% endif %}
             {% else %}
             <li>
             {% endif %}
