@@ -11,18 +11,24 @@ permalink: /alc/
       {% assign num = alchemist.up.size %}
       {% assign range = (0..num) %}
       {% for i in range %}
-      <li>
-        [{{ alchemist.racipe[i] }}] +{{ alchemist.up[i] }} {{ alchemist.name }} ({{ alchemist.rand[i] }})
-      </li>
+        {% if i == num %}
+          {% break %}
+        {% else %}
+          <li>
+            [{{ alchemist.racipe[i] }}] +{{ alchemist.up[i] }} {{ alchemist.name }} ({{ alchemist.rand[i] }})
+          </li>
+        {% endif %}
       {% endfor %}
     </ul>
     <ul class="jp">
-      {% assign num = alchemist.up.size %}
-      {% assign range = (0..num) %}
       {% for i in range %}
-      <li>
-        [{{ alchemist.racipe[i] }}] +{{ alchemist.up[i] }} {{ alchemist.jp }} ({{ alchemist.rand[i] }})
-      </li>
+        {% if i == num %}
+          {% break %}
+        {% else %}
+          <li>
+            [{{ alchemist.racipe[i] }}] +{{ alchemist.up[i] }} {{ alchemist.jp }} ({{ alchemist.rand[i] }})
+          </li>
+        {% endif %}
       {% endfor %}
     </ul>
     <ul>
