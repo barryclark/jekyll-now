@@ -7,28 +7,36 @@ permalink: /alc/
     <h1 class="ko">{{ alchemist.name }}</h1>
     <h1 class="jp">{{ alchemist.jp }}</h1>
 
-      {% assign recipe_list = "" | split: ',' %}
-      {% for recipe in alchemist.racipe %}
-        {% assign page = recipe | split: "-" %}
-        {% assign recipe_list = recipe_list | push: page[0] %}
-      {% endfor %}
-
-      {% assign recipe_list = recipe_list | uniq %}
-    <ul class="ko">
-      {% for recipe in recipe_list %}
-        <li>
-          <button class="view_recipe" value="recipe_{{ recipe }}">일반 연금{{ recipe }}</button>
-        </li>
-      {% endfor %}
-    </ul>
-    <ul class="jp">
-      {% for recipe in recipe_list %}
-      <li>
-        <button class="view_recipe" value="recipe_{{ recipe }}">ふつう錬金{{ recipe }}</button>
-      </li>
-      {% endfor %}
-    </ul>
-
+    {% for recipe in site.data.recipe %}
+    <div class="recipe_object" id="recipe_{{ recipe.no }}">
+      <h1 class="ko">일반 연금{{ recipe.no }}</h1>
+      <h1 class="jp">ふつう錬金{{ recipe.no }}</h1>
+      <ul class="ko">
+        {% for object in recipe.recipe %}
+          {% assign object2 = object | split: "," %}
+          <li>
+          {% for stuff in object2 %}
+            <span>
+              {{ stuff }}
+            </span>
+          {% endfor %}
+          </li>
+        {% endfor %}
+      </ul>
+      <ul class="jp">
+        {% for object in recipe.jp %}
+          {% assign object2 = object | split: "," %}
+          <li>
+          {% for stuff in object2 %}
+            <span>
+              {{ stuff }}
+            </span>
+          {% endfor %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
 
     <ul class="ko">
       {% assign num = alchemist.up.size %}
@@ -59,37 +67,6 @@ permalink: /alc/
       {% endfor %}
     </ul>
   </div>
-{% endfor %}
-
-{% for recipe in site.data.recipe %}
-<div class="recipe_object" id="recipe_{{ recipe.no }}">
-  <h1 class="ko">일반 연금{{ recipe.no }}</h1>
-  <h1 class="jp">ふつう錬金{{ recipe.no }}</h1>
-  <ul class="ko">
-    {% for object in recipe.recipe %}
-      {% assign object2 = object | split: "," %}
-      <li>
-      {% for stuff in object2 %}
-        <span>
-          {{ stuff }}
-        </span>
-      {% endfor %}
-      </li>
-    {% endfor %}
-  </ul>
-  <ul class="jp">
-    {% for object in recipe.jp %}
-      {% assign object2 = object | split: "," %}
-      <li>
-      {% for stuff in object2 %}
-        <span>
-          {{ stuff }}
-        </span>
-      {% endfor %}
-      </li>
-    {% endfor %}
-  </ul>
-</div>
 {% endfor %}
 
 <script>
