@@ -53,15 +53,17 @@
         var isComplete = false;  //autoMaker 자식이 선택 되었는지 여부
         $('#search_area').keyup(function(){
             var txt = $(this).val();
+            txt = txt.replace(/ /g, '');
             if(txt != ''){  //빈줄이 들어오면
                 $('#autoMaker').children().remove();
 
                 ref.forEach(function(arg){
-                    if(arg.name.indexOf(txt) > -1 || arg.jp.indexOf(txt) > -1){
-                      if(arg.name.indexOf(txt) > -1){
+
+                    if(arg.name.replace(/ /g, '').indexOf(txt) > -1 || arg.jp.replace(/ /g, '').indexOf(txt) > -1){
+                      if(arg.name.replace(/ /g, '').indexOf(txt) > -1){
                         var item_name = arg.name;
                         var lang = "";
-                      } else if(arg.jp.indexOf(txt) > -1){
+                      } else if(arg.jp.replace(/ /g, '').indexOf(txt) > -1){
                         var item_name = arg.jp;
                         var lang = "&lang=jp";
                       }
