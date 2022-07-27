@@ -3,6 +3,21 @@ layout: post
 title: Unreal engine
 ---
 
+```mermaid
+classDiagram
+
+HorrorMoveableInterface <|.. PlaneMoveable  
+HorrorMoveableInterface <|.. CylinderMoveable  
+HorrorMoveableInterface <|.. SphereMoveable  
+HorrorMoveableInterface : +PreMovement(...) 
+HorrorMoveableInterface : +PostMovement(...) 
+HorrorMoveableInterface : +GetIntersection(...)
+HorrorMoveableInterface : +ApplyMovement(...)
+HorrorMoveableInterface : +ClampMovement(...)
+HorrorMoveableInterface : +AdjustMovement(...)
+
+```
+
 # Concept
 * [Garbage-collection](/posts_unreal_engine/Concept-Garbage-collection)
     - 가비지 컬렉션의 작동방식

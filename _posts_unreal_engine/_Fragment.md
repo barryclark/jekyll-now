@@ -3,6 +3,42 @@ layout: post
 title: Fragment
 ---
 
+## 애니메이션 몽타주에 제공되는 것
+
+|---|---|---|
+|Start|Loop|End|
+|Anim1|Anim2|Anim3|
+|점프스타트|점프중|점프종료|
+|-|주문을 외움|주문 종료|
+
+에픽 게임 콘텐츠 8번에 가서, 애니메이션 스타터 콘텐츠 8번 팩을 열도록 한다.
+
+아무리 잘 짤라도 툭툭 끊기는 느낌이 있음.
+
+## 하위 구성 요소 스윕에 대한 팁
+[하위 구성 요소 스윕에 대한 팁](https://forums.unrealengine.com/t/any-tips-for-child-component-sweeps-for-addactorlocaltransform/137490)은 우주선 폰 청시진이 충돌했을 때, 발생하는 문제에 대해서 말하고 있습니다.
+
+## 변환 행렬의 적용
+
+```
+P` = T * R * S * P
+```
+
+# Sweep에 대해서
+## SceneComponent의 경우
+
+## PrimitiveComponent의 경우
+
+# WTF
+## FComponentQueryParams
+
+## FCollisionResponseParams
+
+## GetWorld()->ComponentSweepMulti
+
+# Physics Constrain에 대한 정리
+* Physics constrain component는 
+
 ## 루트 모션 애니메이션을 사용하는 경우,
 
 **점프 루트모션이 적용이 안된다. 흠...**

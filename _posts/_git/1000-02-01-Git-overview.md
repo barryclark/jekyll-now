@@ -3,6 +3,13 @@ layout: post
 title: GIT overview
 ---  
 
+## mermaid
+Git에서 위키에서만 안되고, 메시지나, 리드미에서는 작동된다. 만세.
+```mermaid
+graph LR
+A(입력)-->B[연산]
+B-->C(출력)
+```
 
 # Git으로 일하기
 ## GitHub commit할 때 명심하기
