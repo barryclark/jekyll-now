@@ -52,7 +52,7 @@ struct Widget {
 All of the fields except for `some_field` had a `Default` implementation. What I wanted to do was manually set the value for `some_field`, but
 have all the other fields initialized with the default values of their respective types. What I ended up writing was:
 
-```
+```rust
 impl Default for Widget {
     fn default() -> Self {
         Self {
