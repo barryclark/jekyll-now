@@ -3,15 +3,6 @@ layout: post
 title: Unreal engine
 ---
 
-
-<div class="mermaid"> 
-graph TD;
-A(디자인)-->B; 
-B(테스트 코드 작성)-->C; B-->A;
-C(코드개발)-->D; 
-D(리팩토링)-->B; 
-</div>
-
 <details>
 <summary>블로그 작성 규칙</summary>
 <div markdown="1">
@@ -36,6 +27,7 @@ D(리팩토링)-->B;
 
 이론을 이해하기 위한 성행지식과, 이론을 작성합니다.
 
+</div>
 </details>
 
 
