@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /privateData/
+
+Sitemap: https://purple2m.github.io/sitemap.xml
