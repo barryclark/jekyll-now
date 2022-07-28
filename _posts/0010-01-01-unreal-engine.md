@@ -35,7 +35,7 @@ title: Unreal engine
 <summary>Other</summary>
 <div markdown="1">
 
-* [IT_TDD](/posts/_CS_And_IT/IT_TDD)
+* [IT_TDD](/CS_And_IT/IT_TDD)
 
 </div>
 </details>
