@@ -96,8 +96,8 @@
 
 
     	if(typeof item === 'undefined' || item === null || update != version){
+        window.localStorage.clear();
     		$.getJSON("{{ site.baseurl }}/alchemist/item.json?version=20220728", function(data) {
-          window.localStorage.clear();
   				localStorage.setItem('item', JSON.stringify(data));
           localStorage.setItem('version', 20200728);
           auto_come(data);
@@ -105,8 +105,8 @@
 
     	}else{
         if(item.length != 1174 || update != version){
+          window.localStorage.clear();
           $.getJSON("{{ site.baseurl }}/alchemist/item.json?version=20220728", function(data) {
-            window.localStorage.clear();
     				localStorage.setItem('item', JSON.stringify(data));
             localStorage.setItem('version', 20200728);
             auto_come(data);
