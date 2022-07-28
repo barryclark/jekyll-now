@@ -27,6 +27,8 @@ title: Unreal engine
 
 이론을 이해하기 위한 성행지식과, 이론을 작성합니다.
 
+지킬에서 마크다운 링크는 collection/Filename입니다. 어떻게 매번 헷갈리냐...
+
 </div>
 </details>
 
@@ -35,7 +37,7 @@ title: Unreal engine
 <summary>Other</summary>
 <div markdown="1">
 
-* [IT_TDD](/CS_And_IT/IT_TDD)
+* [IT_TDD](/posts_CS_And_IT/IT_TDD)
 
 </div>
 </details>

@@ -96,11 +96,11 @@ collections:
 - git
 - Graphics
 - visual_studio
-- CS_And_IT
 - GraphicsAPI
 - Math
-- posts_unreal_engine
+- posts_CS_And_IT
 - posts_jekyll_blog
+- posts_unreal_engine
 
 collections:
   Language:
@@ -115,11 +115,11 @@ collections:
     output: true
   visual_studio:
     output: true
-  CS_And_IT:
-    output: true
   GraphicsAPI:
     output: true
   Math:
+    output: true
+  posts_CS_And_IT:
     output: true
   posts_unreal_engine:
     output: true
