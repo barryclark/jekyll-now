@@ -22,6 +22,10 @@ TDD란 Test Driven Development의 약자로 '테스트 주도 개발'이라고 �
 # TDD로 일하기
 ## TDD의 개발 주기
 
+<div class="mermaid"> 
+  graph TD; A-->B; A-->C; B-->D; C-->D; 
+</div>
+
 ```mermaid
 graph LR;
 A(디자인)-->B; 
