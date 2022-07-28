@@ -96,7 +96,7 @@ collections:
 - git
 - Graphics
 - visual_studio
-- CS
+- CS_And_IT
 - GraphicsAPI
 - Math
 - posts_unreal_engine
@@ -115,7 +115,7 @@ collections:
     output: true
   visual_studio:
     output: true
-  CS:
+  CS_And_IT:
     output: true
   GraphicsAPI:
     output: true
