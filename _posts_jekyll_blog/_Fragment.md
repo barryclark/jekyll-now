@@ -18,3 +18,8 @@ CI/CD의 개념만을 두고 보자면 자동화와 직접적으로 관련이 �
 
 [CI/CD](https://artist-developer.tistory.com/24)
 [CI/CD란 무엇인가](https://jud00.tistory.com/entry/CICD%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C)
+
+[mermaid setting](https://frhyme.github.io/mermaid/Embedding_mermaid_in_github_page/)
+
+# Freeview
+페이지 우측 상단을 보면, Open Preview to the side가 있습니다.

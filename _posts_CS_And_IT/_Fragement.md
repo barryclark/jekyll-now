@@ -14,6 +14,18 @@ title: Fragment
 [레거시 시스템](https://ko.wikipedia.org/wiki/%EB%A0%88%EA%B1%B0%EC%8B%9C_%EC%8B%9C%EC%8A%A4%ED%85%9C)
 
 
+## 검사(Verification)
+'소프트웨어가 기획서의 요구 사항에 맞게 올바르게 만들어졌는가?'를 확인하는 것
+
+문서와 파일을 검사하는 명세 기반의 확인 방법이다.
+개발 단계의 시작 부분에서 부과된 조건을 만족하는지를 확인해 소프트웨어를 평가하는 과정이다.(CMMI-SW v1.1)
+
+## 검증(Validation)
+'소프트웨어가 실제 의도한 용도를 충족할 수 있는가?'를 확인하는 것
+
+사용자의 관점에서 확인으로 코드 실행을 수반한다
+개발과정 중,또는 끝에 소프트웨어를 평가하는 과정이다.(CMMI-SW v1.1)
+
 ## ISA(Industry Standard Architecture)
 초기 PC인 IBM PC의 XT 및 AT에서 사용하던, 8비트 또는 16비트 버스 구조 방식
 
