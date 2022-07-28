@@ -3,17 +3,178 @@ layout: post
 title: Fragment
 ---
 
-## 애니메이션 몽타주에 제공되는 것
+## 컴포넌트 사용법을 알아야 할때,
+위아래에 특정 컴포넌트를 붙여야 되거나 하는 경우, 액터로 필요한 컴포넌트를 묶어, 환성된 형태로 관리하는 방법이 있다.
 
-|---|---|---|
-|Start|Loop|End|
-|Anim1|Anim2|Anim3|
-|점프스타트|점프중|점프종료|
-|-|주문을 외움|주문 종료|
+차일드 액터 컴포넌트를 이용해서 사용해라,
+
+예로 BP콜리젼을 만들었다면, Child Actor안에서 BP콜리전을 만든것이다.
+
+차일드 액터쓸 때 매번 캐스트 하기 힘드니, 변수로 승격후 사용하도록 합시다.
+
+## 쿼터니언 선형 보간(nlerp)
+으로 충분할 경우 slerp 사용을 피해야 합니다.
+
+## 구면 선형 보간 (Slerp, Spherical linear interpolation)
+가능한 가장 작은 각도와 쌍을 이루는 회전 축을 사용하여 한 방향에서 다른 방향으로 최단 회전 경로를 이용하여 보간하는 작업입니다.
+
+수학적으로 slerp의 최단 회전 경로는 실제 기대와 다를 수 있습니다. 시각적으로 구의 가장 짧은 호를 벗어나는 것처럼 보입니다.
+
+## 스윙 트위스트 분리 (Swing twist decomposition)
+Swing-Twist 분해는 회전을 두 개의 연결된 회전인 스윙과 비틀기로 분할하는 작업입니다. 비틀림 축이 주어졌을 때 우리는 이축을 중심으로 비틀림에 기여하는 회전 부분을 분리하고 싶을때 사용합니다.
+
+* 사용자 입장에서 스윙 트위스트는 이렇게 접근할 수 있습니다.
+```
+Quat = Swing * Twist
+```
+
+Twist는 다음과 같이 구해집니다.
+```
+T = [W_R, proj_(V_T)(V_R)];
+```
+
+언리얼의 FQuat::ToSwingTwist의 코드는 아래와 같습니다.
+```cpp
+	// Vector part projected onto twist axis
+	FVector Projection = FVector::DotProduct(InTwistAxis, FVector(X, Y, Z)) * InTwistAxis;
+
+	// Twist quaternion
+	OutTwist = FQuat(Projection.X, Projection.Y, Projection.Z, W);
+
+	// Singularity close to 180deg
+	if(OutTwist.SizeSquared() == 0.0f)
+	{
+		OutTwist = FQuat::Identity;
+	}
+	else
+	{
+		OutTwist.Normalize();
+	}
+
+	// Set swing
+	OutSwing = *this * OutTwist.Inverse();
+```
+```
+S = Q * T^(-1)
+Q = S * Q
+```
+
+Hm.... 현재 상태에 대해 평가하면, 기본 이론을 모르니, 결론을 못내리는 것으로 보임. 이론 공부를 필요로함.
+```
+	if (!GetAttachParent())
+	{
+		return Transform;
+	}
+	const FVector& Axis = GetAttachParent()->GetUpVector();
+
+	FQuat Swing, Twist;
+	Transform.GetRotation().ToSwingTwist(Axis, Swing, Twist);
+
+	// 모르겠으면 일단 정리하자.
+	// 
+	// 어떠한 제약조건도 없는 경우
+	// 구체에 대한 회전은, 다음과 같습니다. 
+	// 
+	// Swing-Twist를 분리하는 경우
+	// 
+	// 
+
+	//float TwistAngle = FMath::RadiansToDegrees((Twist.Z > 0.f) ? Twist.GetAngle() : -Twist.GetAngle());
+	//TwistAngle = FMath::Clamp(TwistAngle, TwistLimit.X, TwistLimit.Y);
+
+	//const FQuat& LimitedTwist = FQuat(Axis, FMath::DegreesToRadians(TwistAngle));
+
+	//DrawDebugLine(GetWorld(), GetComponentLocation(), GetComponentLocation() + Axis * (SphereRadius + 10.0f), FColor::Blue);
+	//UE_LOG(LogTemp, Display, TEXT("Twist : %s, Angle : %f, Limited Twist : %s"), *Twist.ToString(), TwistAngle, *LimitedTwist.ToString());
+
+	//return FTransform(LimitedTwist * Swing, Transform.GetLocation(), Transform.GetScale3D());
+```
+
+**???**
+회전의 스윙 트위스트 분해는 일반적으로 휴머노이드 움직임의 계획에 사용됩니다. 팔을 목적한 장소로 움직일 때, 팔의 비틀리는 것을 적용하고 싶지 않을 때 사용합니다. 
+
+* 스윙 비틀림 분해는 수정 알고리즘의 고유한 부분입니다.
+
+???
+* Swing-Twist는 Slerp의 대안입니다.
+    - 컴퓨터 그래픽에서 Slerp는 구면 선형 보간법의 줄임말로 3D 회전에 애니메이션 효과를 주기 위한 보간법입니다.
+
+[이걸 봅시다](https://arxiv.org/pdf/1506.05481.pdf) 수식볼때마다 동공이 흔들리지만, 한개씩 보면, 그렇게 어려운 수학은 쓰지 않는 것 같습니다.
+
+## 스윙 트위스트 보간(Swing-Twist Interpolation)
+음... 무엇을 표현하고 싶을 때, 스윙 트위스트 보간을 사용할 지는 고민해 봐야합니다.
+
+스윙 트위스트로 분리하여 보간하는 방법은 다음과 같습니다.
+
+```
+Slerp(Q_Identity, S, t)Slerp(Q_Identity, T, t)
+```
+Q_Identity는 Quat의 항등원입니다. T는 twist, S는 swing입니다. t는 보간 매개변수 입니다.
+
+[참고 자료](https://allenchou.net/2018/05/game-math-swing-twist-interpolation-sterp/)
+
+## 깔끔한 함수 만들기 (Make clean Function)
+**개인적인 결론**
+깔끔한 함수인지, 개인적인 평가 다음과 같습니다.
+
+1. 함수의 선언부만 보고, 함수가 어떻게 사용하는지 알 수 있는가?
+2. Visual studio IDE에서 Alt + F12는 정의 피킹으로 코드를 한눈에 파악할 수 있는가?
+3. 함수명 대로 작동하는가?
+
+
+**클린코드에서의 내용**
+Clean Code에서는 깔끔한 코드 작성을 위해 다음과 같은 방법을 제시합니다.
+
+1. 깔끔한 함수를 작성하기 우해서 이 책의 저자의 마틴은 최대한 작게 더 작게 쓰라고 강조합니다.
+    - 특정 회사에서는 함수 호출시 발생하는 오버헤드가 무거우니 좋아하지는 않는 경우도 있습니다.
+2. 함수 내에선 여러가지 일을 처리하는 것이 아닌 한 개의 함수에서 한 가지 일만 하도록 합니다.
+3. 위키 창시자인 워드는 "짐작했던 기능이 그대로 수행한다면 좋은 코드다."라고 했습니다. 
+    - 즉, 함수의 이름을 자세하게 지을수록 함수가 수행하는 기능을 짐작하기 쉬울 것 입니다. 
+    - **아무리 길더라도 충분한 설명이 되는 이름이 짧고 어려운 이름보다 낫다고 말합니다.**
+4. 함수에서 이상적인 신수의 개수는 하나도 없는 것이 가장 좋고, 불가피 한 경우 이항에서 삼항까지 사용하지만, 그 이상은 특별한 이유가 있더라도 사용하면 안된다고 말합니다...
+    - 언리얼엔진 코드는 오래된 코드라 그런지는 잘 모르겠습니다.
+5. 보통 오류를 처리할 때 함수 내에서 일어나는 오류라면 바로 처리하는 경우가 많지만, 오류를 처리하는 코드 try catch 구문 등으로 함수가 길어지게 됩니다. 또한 오류도 한가지 작업 중에 하나이기 때문에 따로 분리하는 것이 좋다고 말합니다.
+    - 아예 CPP에서 noexcept를 권장하는 경우도 있습니다.
+
+
+**함수명에 대한 고민**
+함수 명이 길면 프로그래머가 적어야 하는 명이 길 수 있습니다. 가능한 깔끔하게 짧게 해야 합니다.
+
+하지만 영어권 사람이 아니므로, 영어의 줄임말을 잔뜩 사용한 동공 지진이 일어납니다.
+
+따라서 영어 단어에서, 해당 내용을 가장 잘 묘사하는 단어를 찾아 사용하는 것 입니다. **알고 있는 동사를 사용 하는 것이 아닌, 찾아서 사용하는 것을 말합니다.**
+
+
+## 깔끔한 주석 달기 (Write clean comment)
+개인적인 결론으로는 주석을 가능한 안달고, Git Blame으로 충분히 파악할 수 있도록 합니다.
+
+* 따라서 깔끔한 'Git Commit 메시지' 쓰기를 참고할 수 있습니다.
+
+
+## 컴포넌트의 기능호출
+컴포넌트에 기능을 만들고 호출해서 쓰는 것으로, 활용 재활용 가능하다. 액터에서 많이 쓰는 경우, 컴포넌트에 집어넣을 수 있다. 흠. 그정도 차이, 다만 Object를 쓸줄 안다면, 굳이 컴포넌트를 쓸 필요가 없을 수 있다.
+
+프로그램을 짠다고 하는건, 내가 어떻게 한다라고 경정하는 순간, 스스로 어떻게 관리체계를 만들겠다 결정하는게 가장 중요하다.
+
+## 과제 : Aim Offset을 이용해서 만들기,
+스테이트 머신을 많이 만들면, 정말 복잡하게 만들어짐. 무조건 오류남.
+
+## 캐릭터가 죽었을 때, 얌전히 죽는 경우도 있고, 죽는 애니메이션을 잘 안쓰는 경우도 있음. 이제 자동으로 애니메이션을 적용시키기 위해, 레그돌을 적용시킬 수 있다?!? 죽는다란 상태가 너무 많아서.
+애니메이션은 물리영향을 안받음. 따로 돌아감? 뭐라고 표현해야 할까? 한번 풀어버리면 되돌릴 수 없다아? 물리세팅을 하는게 있음. 레그돌은 확실히,,
+
+시뮬레이션으로 변환하면, 죽고나서 되돌리기 힘드니, 리셋하는 식으로 만들도록 합시다.
+
+물리가 적용이 되는데 몸뚱이는 어디로 가나?
+
+리지드 바디는 가능할지도.?
 
 에픽 게임 콘텐츠 8번에 가서, 애니메이션 스타터 콘텐츠 8번 팩을 열도록 한다.
 
 아무리 잘 짤라도 툭툭 끊기는 느낌이 있음.
+
+애셋브라우저로 들어가서, 애니메이션 몽타주를 하나 띄웁니다.
+
+캐릭터에 이펙트를 붙였는데, 레그돌 시뮬레이션을 적용하면, 이펙터와 캐릭터가 따로 놀게 됩니다.
 
 ## 하위 구성 요소 스윕에 대한 팁
 [하위 구성 요소 스윕에 대한 팁](https://forums.unrealengine.com/t/any-tips-for-child-component-sweeps-for-addactorlocaltransform/137490)은 우주선 폰 청시진이 충돌했을 때, 발생하는 문제에 대해서 말하고 있습니다.
@@ -561,7 +722,6 @@ FaceIndex가 다르고 그에 따라 반환되는 PhysMaterial까지 다른 것�
 
 [C++로 다루는 언리얼](https://onionisdelicious.tistory.com/44)
 
-[TDD Framework을 도입해야 하는 이유](http://includes.egloos.com/v/1420572)
 [라이브 프로젝트에서 C++로 테스트 주도 개발하기](http://ndcreplay.nexon.com/NDC2013/sessions/NDC2013_0048.html)
 
 [애플리케이션 배포 및 테스트 전략](https://cloud.google.com/architecture/application-deployment-and-testing-strategies?hl=ko)
