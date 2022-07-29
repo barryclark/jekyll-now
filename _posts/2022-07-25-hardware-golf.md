@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On Code Golfing
+title: Project Euler on a Microcontroller
 published: true
 ---
 
@@ -54,7 +54,11 @@ So... with all of that said, here's my (not very optimized yet) solution:
 
 <script src="https://gist.github.com/shawnnapora/c4a4e8892ea26184bc3c17021d4cba63.js"></script>
 
-It is 132 bytes, compiled, of assembly and will compute the answer and then blink it out in binary, starting from the least significant bit!
+It is 134 bytes, compiled, of assembly and will compute the answer and then blink it out in binary, starting from the least significant bit!
+
+<video width="100%">
+   <source src="/images/euler_blink.mp4" type="video/mp4">
+</video>
 
 ## Final Thoughts
 
