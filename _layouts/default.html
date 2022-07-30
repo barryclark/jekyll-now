@@ -23,7 +23,6 @@
   </head>
 
   <body>
-    {{ lang[1].size }}
     <div class="wrapper-masthead">
 
       <div class="container">
@@ -51,6 +50,9 @@
       </div>
 
       <div id="main" role="main" class="container">
+
+        {% assign lang2 = lang[1] + "/" %}
+        {{ lang2 }}
         <a class="pull-left" href="#" style="font-size:2em;">+</a>
         <div class="notice">
           {% for post in site.categories.notice limit:2 %}
