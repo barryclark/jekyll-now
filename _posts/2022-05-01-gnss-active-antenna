@@ -1,0 +1,32 @@
+---
+layout: post
+title: Active GNSS antenna design
+---
+
+Hey there folks!
+
+Once again, it's been a long time. I should really devote more time to this blog... Well anyway, let's get back to business! This time I'm posting about a little project I've been doing to support some activities at work. So, we've been working on some stuff with GNSS, but this time the receiver is designed to operate with an internal antenna as well as an external antenna, which can be active and it is supplied by what we called phantom voltage. Phantom because it is supplied through a dedicated LDO and has a bias tee network in place, so that it is perfectly isolated from the rest of the circuit to avoid noise from our circuit to sneak into the GNSS chain and screw the reception. 
+
+So, to test this device with an external antenna we need to acquire an external GNSS antenna and especially an active one. Of course, we did buy one, much like this one here:
+
+{:refdef: style="text-align: center;"}
+![decision-tree](/images/post13/gnss-antenna-example.png)
+{:refdef}
+
+But I thought to myself, well I think I can make a much better performance antenna for a similar price. Plus, that would be a nice little project I could do and would give a nice addition to my blog posts! And here we are...
+
+So first things first, let's define the requirements for this antenna:
+
+- Frequency band: 1575 - 1610 MHz
+- Maximum size: 100 x 100 x 20 mm
+- Maximum weight: 300 g
+- Passive gain: > 6 dBi
+- Polarization: RHCP
+- Active gain: > 23 dB
+- Noise figure: < 1.5 dB
+- VSWR: 2:1
+
+Now, there's also another rule for this challenge, the antenna must be designed and integrated into PCBs, so it is easier and cheaper to manufacture. Therefore, the use of ceramic patch antennas is not allowed. Also, the LNA (Low Noise Amplifier) must also be designed around a transistor, it doesn't count to use a pre-packaged integrated LNA, otherwise there would be no fun!
+
+If I wanted to make it easier (and probably better), it would be preferable to opt for an integrated LNA like the [BGA524N6](https://www.infineon.com/cms/en/product/rf/low-noise-amplifier-lna-ics/gps-glonass-compass-lna/bga524n6/) from Infineon. But instead, we're going to design a LNA around a [BFP640FESD](https://www.infineon.com/cms/en/product/rf/rf-transistor/low-noise-rf-transistors/bfp640fesd/) from Infineon as well, which are HBT (Heterojunction Bipolar Transistors) tailored for low noise applications. The reason I chose this particular transistor is because I had it already in my component box without any destination and because it fits well this application. There are probably better targets and as I said, maybe using an integrated LNA would be the smartest choice.
+
