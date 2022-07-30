@@ -13,7 +13,7 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link rel="stylesheet" href="{{ site.baseurl }}/flags.css?ddasda=42342423">
     {% assign lang = page.dir | split: '/' %}
-    {% if lang[1] %}
+    {% if lang[1].size > 0 %}
     {% lang[1] = lang[1] | append: "/" %}
     {% endif %}
     <link rel="alternate" hreflang="ko" href="{{ site.url }}/{{ lang[1] }}ko/">
