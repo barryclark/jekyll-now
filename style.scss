@@ -160,7 +160,6 @@ img {
   overflow: auto;
 }
 .wrapper-masthead .container:first-child{
-  height: 128px;
   width:100%;
   padding:0;
   background: #1a1c39;
@@ -170,7 +169,7 @@ img {
   @include mobile {
     display:none;
     width:100%;
-    height: 100%;
+    height:100%;
   }
 }
 .pull-left{
@@ -184,8 +183,7 @@ img {
 }
 
 .masthead {
-  padding: 20px 0;
-  text-align: center;
+  display: flex;
 }
 
 .site-avatar {
