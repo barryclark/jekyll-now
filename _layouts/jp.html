@@ -13,6 +13,13 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link rel="stylesheet" href="{{ site.baseurl }}/flags.css?ddasda=42342423">
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    {% assign lang = page.dir | split: '/' %}
+    {% assign url_slush = "" %}
+    {% if lang[1].size > 0 %}
+    {% assign url_slush = "/" %}
+    {% endif %}
+    <link rel="alternate" hreflang="ko" href="{{ site.url }}/{{ lang[1] }}{{ url_slush }}ko">
+    <link rel="alternate" hreflang="jp" href="{{ site.url }}/{{ lang[1] }}{{ url_slush }}jp">
     <script src="{{ base.url | prepend: site.url }}/assets/search.js"></script>
 <meta name="google-site-verification" content="CEG1EpI5wEnKjX0L5YuLaQY6yWkaggD0qWOZxXj3ApM" />
   </head>
@@ -29,7 +36,7 @@
         </div>
         <header class="masthead clearfix">
           <div class="logo">
-            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+            <a href="{{ site.baseurl }}/jp/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
           </div>
 
           <div class="site-info">
