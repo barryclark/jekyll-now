@@ -5,9 +5,9 @@ layout: default
 <h1><a href="https://twitter.com/L2MDCSCAM">Twitter</a></h1>
 
 
-{% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+{% assign posts=site.categories.tips | where:"lang-ref", page.lang-ref | sort: 'lang' %}
 {% if posts.size == 0 %}
-    {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+    {% assign posts=site.categories.tips | where:"lang-ref", page.lang-ref | sort: 'lang' %}
 {% endif %}
 {% if posts.size > 1 %}
 <footer class="lang-options">
