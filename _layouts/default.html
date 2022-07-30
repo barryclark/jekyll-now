@@ -67,18 +67,6 @@
             {% endfor %}
           {% endif %}
 
-          {% for post in site.categories.notice limit:2 %}
-            <article class="post">
-              <h1>
-                <div class="ko" lang="ko">
-                  <a href="{{ site.baseurl }}{{ post.url }}" >{{ post.title }}</a>
-                </div>
-                <div class="jp" lang="jp">
-                  <a href="{{ site.baseurl }}{{ post.url }}" >{{ post.excerpt }}</a>
-                </div>
-              </h1>
-            </article>
-          {% endfor %}
         </div>
         {{ content }}
       </div>
