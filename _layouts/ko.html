@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css?version=202207232" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <script>
+    function getParameterByName( name ){
+      name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+      var regexS = "[\\?&]"+name+"=([^&#]*)";
+      var regex = new RegExp( regexS );
+      var results = regex.exec( window.location.href );
+      if( results == null )
+        return "";
+      else
+        return decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+    $(document).ready(function() {
+      $('.pull-left').click(function(){
+        $('.wrapper-masthead').children(":first").toggle();
+        $('.wrapper-masthead').children(":last").toggle();
+      });
+    	//저장
+    	var item = localStorage.getItem('item');
+    	var update = localStorage.getItem('version');
+      const version = 20200728;
+
+    	item = JSON.parse(item);
+
+    	function datalist_add(datalist, target){
+    		var str='';
+    		for (var i=0; i < datalist.length;++i){
+    			if(datalist[i]['option'] != ""){
+    				str += "<option value=\""+datalist[i]['name']+"\" label=\""+datalist[i]['recipe']+"\" /></option>";
+    			}else{
+    				str += "<option value=\""+datalist[i]['name']+"\" /></option>";
+    			}
+    		}
+    		var my_list=document.getElementById(target);
+    		if (str) {
+    			my_list.innerHTML = str;
+    		}
+    	}
+
+      function auto_come(data){
+        var ref = data;
+        var isComplete = false;  //autoMaker 자식이 선택 되었는지 여부
+        $('#search_area').keyup(function(){
+            var txt = $(this).val();
+            txt = txt.replace(/ /g, '');
+            if(txt != ''){  //빈줄이 들어오면
+                $('#autoMaker').children().remove();
+
+                ref.forEach(function(arg){
+
+                    if(arg.name.replace(/ /g, '').indexOf(txt) > -1 || arg.jp.replace(/ /g, '').indexOf(txt) > -1){
+                      if(arg.name.replace(/ /g, '').indexOf(txt) > -1){
+                        var item_name = arg.name;
+                        var lang = "ko";
+                      } else if(arg.jp.replace(/ /g, '').indexOf(txt) > -1){
+                        var item_name = arg.jp;
+                        var lang = "jp";
+                      }
+                        $('#autoMaker').append(
+                            $('<div>').html("<a href='{{ site.baseurl }}/alchemist/"+lang+"/?item="+arg.name+"'>"+item_name+"</a>").attr({'recipe':arg.recipe})
+                        );
+                    }
+                });
+                $('#autoMaker').children().each(function(){
+                    $(this).click(function(){
+                        $('#search_area').val($(this).text());
+                        $('#insert_target').val($(this).text());
+                        $('#autoMaker').children().remove();
+                        isComplete = true;
+                    });
+                });
+            } else {
+                $('#autoMaker').children().remove();
+            }
+        });
+        $('#search_area').keydown(function(event){
+            if(isComplete) {  //autoMaker 자식이 선택 되었으면 초기화
+                $('#insert_target').val('')
+            }
+        });
+      }
+
+
+    	if(typeof item === 'undefined' || item === null || update != version){
+        window.localStorage.clear();
+    		$.getJSON("{{ site.baseurl }}/alchemist/item.json?version=20220728", function(data) {
+  				localStorage.setItem('item', JSON.stringify(data));
+          localStorage.setItem('version', 20200728);
+          auto_come(data);
+    		});
+
+    	}else{
+        if(item.length != 1174 || update != version){
+          window.localStorage.clear();
+          $.getJSON("{{ site.baseurl }}/alchemist/item.json?version=20220728", function(data) {
+    				localStorage.setItem('item', JSON.stringify(data));
+            localStorage.setItem('version', 20200728);
+            auto_come(data);
+      		});
+        } else {
+    		    auto_come(item);
+        }
+    	}
+    });
+
+
+
+
+    </script>
+<meta name="google-site-verification" content="CEG1EpI5wEnKjX0L5YuLaQY6yWkaggD0qWOZxXj3ApM" />
+  </head>
+
+  <body>
+
+    <div class="wrapper-masthead">
+
+      <div class="container">
+        <header class="masthead clearfix">
+          <a class="pull-left" href="#" style="font-size:2em;float:right;">X</a>
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
+
+          <div class="serach">
+            <input type="hidden" id='insert_target' readonly style='background: #cacaca' name='item'>
+            <input type="text" id='search_area' palceholder="Search for item">
+            <div id='autoMaker'></div>
+          </div>
+        </header>
+      </div>
+
+      <div id="main" role="main" class="container">
+        <a class="pull-left" href="#" style="font-size:2em;">+</a>
+        <div class="notice">
+          {% for post in site.categories.notice limit:1 %}
+            <article class="post">
+              <h1>
+                <div class="ko" lang="ko">
+                  <a href="{{ site.baseurl }}{{ post.url }}" >{{ post.title }}</a>
+                </div>
+                <div class="jp" lang="jp">
+                  <a href="{{ site.baseurl }}{{ post.url }}" >{{ post.excerpt }}</a>
+                </div>
+              </h1>
+            </article>
+          {% endfor %}
+        </div>
+        {{ content }}
+      </div>
+
+    </div>
+    <script>
+    function getLang() {
+      var userLang = navigator.language || navigator.userLanguage;
+      return userLang;
+    }
+
+    $(document).ready(function() {
+      lang = getLang();
+      if (lang.includes('ko')){
+        $('.site-description').text("연금 검색기");
+        $('.jp').hide();
+      } else if (lang.includes('jp')){
+        $('.site-description').text("錬金検査機");
+        $('.ko').hide();
+      }
+    });
+    </script>
+    {% include analytics.html %}
+  </body>
+</html>

@@ -13,7 +13,6 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    <script src="{{ base.url | prepend: site.url }}/assets/search.js"></script>
 <meta name="google-site-verification" content="CEG1EpI5wEnKjX0L5YuLaQY6yWkaggD0qWOZxXj3ApM" />
   </head>
 
@@ -28,7 +27,7 @@
 
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+            <p class="site-description">錬金検査機</p>
           </div>
 
           <div class="serach">
@@ -45,9 +44,6 @@
           {% for post in site.categories.notice limit:1 %}
             <article class="post">
               <h1>
-                <div class="ko" lang="ko">
-                  <a href="{{ site.baseurl }}{{ post.url }}" >{{ post.title }}</a>
-                </div>
                 <div class="jp" lang="jp">
                   <a href="{{ site.baseurl }}{{ post.url }}" >{{ post.excerpt }}</a>
                 </div>
@@ -64,18 +60,6 @@
       var userLang = navigator.language || navigator.userLanguage;
       return userLang;
     }
-
-    $(document).ready(function() {
-      lang = getLang();
-      if (lang.includes('ko')){
-        $('.site-description').text("연금 검색기");
-        $('.jp').hide();
-      } else if (lang.includes('jp')){
-        $('.site-description').text("錬金検査機");
-        $('.ko').hide();
-      }
-    });
-    </script>
     {% include analytics.html %}
   </body>
 </html>
