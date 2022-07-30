@@ -57,7 +57,7 @@ $(document).ready(function() {
                     var lang = "jp";
                   }
                     $('#autoMaker').append(
-                        $('<div>').html("<a href='https://purple2m.github.io/alchemist/"+lang+"/?item="+arg.name+"'>"+item_name+"</a>").attr({'recipe':arg.recipe})
+                        $('<div>').html("<a href='https://purple2m.github.io/"+lang+"/alchemist/?item="+arg.name+"'>"+item_name+"</a>").attr({'recipe':arg.recipe})
                     );
                 }
             });
