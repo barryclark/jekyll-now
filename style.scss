@@ -154,21 +154,23 @@ img {
 .wrapper-masthead {
   display:flex;
   height:100%;
+  flex-flow: column;
 }
 .wrapper-masthead .container{
-  height:100%;
   overflow: auto;
 }
 .wrapper-masthead .container:first-child{
-  width:350px;
+  height: 128px;
+  width:100%;
   padding:0;
   background: #1a1c39;
   color:white;
-  overflow-x: hidden;
+  overflow: hidden;
 
   @include mobile {
     display:none;
     width:100%;
+    height: 100%;
   }
 }
 .pull-left{
