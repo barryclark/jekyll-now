@@ -5,10 +5,14 @@ layout: ko
 <h1><a href="https://twitter.com/L2MDCSCAM">Twitter</a></h1>
 <div class="recent" lang="ko">
   <h1>TIPS</h1>
-  {% for post in site.categories.tips %}
+{% assign posts=site.categories.tips | where:"lang", "ko" | sort: 'lang-ref' %}
+{% if posts.size > 1 %}
+  {% for post in posts %}
     <article class="post">
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </h2>
+      <h2>{{ post.title }}</h2>
+      <a href="{{ site.baseurl }}{{ post.url }}"><span class="flag flag-kr"> </span> 한국어</a>
+      <a href="{{ site.baseurl }}{{ post.url | replace: "ko", "jp" }}"><span class="flag flag-jp"> </span>日本語</a>
     </article>
   {% endfor %}
+{% endif %}
 </div>
