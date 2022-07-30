@@ -3,7 +3,9 @@ layout: default
 ---
 
 <h1><a href="https://twitter.com/L2MDCSCAM">Twitter</a></h1>
-{% assign posts=site.categories.notice | where:"lang", "ko" | sort: 'lang-ref' %}
+<div class="recent" lang="ko">
+  <h1>Notice</h1>
+{% assign posts=site.categories.Notice | where:"lang", "ko" | sort: 'lang-ref' %}
 {% if posts.size > 1 %}
   {% for post in posts %}
     <article class="post">
@@ -14,9 +16,10 @@ layout: default
     </article>
   {% endfor %}
 {% endif %}
+</div>
 
 <div class="recent" lang="ko">
-  <h1>TIPS</h1>
+  <h1>Tips</h1>
 {% assign posts=site.categories.tips | where:"lang", "ko" | sort: 'lang-ref' %}
 {% if posts.size > 1 %}
   {% for post in posts %}
