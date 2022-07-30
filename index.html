@@ -5,7 +5,7 @@ layout: default
 <h1><a href="https://twitter.com/L2MDCSCAM">Twitter</a></h1>
 <div class="recent" lang="ko">
   <h1>Notice</h1>
-{% assign posts=site.categories.Notice | where:"lang", "ko" | sort: 'lang-ref' %}
+{% assign posts=site.categories.notice | where:"lang", "ko" | sort: 'lang-ref' %}
 {% if posts.size > 1 %}
   {% for post in posts %}
     <article class="post">
