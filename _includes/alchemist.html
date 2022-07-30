@@ -23,7 +23,7 @@
 	}
 
   function get_recipe(recipe, item, target, lang){
-      $.getJSON("{{ site.baseurl }}/alchemist/"+recipe+".json?version=20220728", function(data) {
+      $.getJSON("{{ site.baseurl }}/alchemist/"+lang+"/"+recipe+".json?version=20220728", function(data) {
         var step = '';
         var step_1='<div><h3>슬롯1</h3><ul>';
         var step_2='<div><h3>슬롯2</h3><ul>';
@@ -129,9 +129,9 @@
     var find_recipe_print = '';
     for (var i=0; i < find_recipe.length;++i){
       if (lang == "jp"){
-        find_recipe_print += "<a href='{{ site.baseurl }}/alchemist/?item="+find.name+"&recipe="+find_recipe[i]+"&lang=jp'>ふつう錬金"+find_recipe[i]+"</a>";
+        find_recipe_print += "<a href='{{ site.baseurl }}/alchemist/"+lang+"/?item="+find.name+"&recipe="+find_recipe[i]+"&lang=jp'>ふつう錬金"+find_recipe[i]+"</a>";
       } else {
-        find_recipe_print += "<a href='{{ site.baseurl }}/alchemist/?item="+find.name+"&recipe="+find_recipe[i]+"'>일반 연금"+find_recipe[i]+"</a>";
+        find_recipe_print += "<a href='{{ site.baseurl }}/alchemist/"+lang+"/?item="+find.name+"&recipe="+find_recipe[i]+"'>일반 연금"+find_recipe[i]+"</a>";
       }
     }
     document.getElementById("searching_recipe").innerHTML = find_recipe_print;
@@ -151,7 +151,7 @@
     } else {
       var recipe_material = "<h2>연금식 재료</h2><ul class='recipe_list'>";
     }
-    $.getJSON("{{ site.baseurl }}/alchemist/recipe.json?version=20220728", function(data) {
+    $.getJSON("{{ site.baseurl }}/alchemist/"+lang+"/recipe.json?version=20220728", function(data) {
       for (var i=0; i < data.length;++i){
         if(data[i]['no'] == searching_recipe){
           for (var j=0; j < data[i]['recipe'].length;++j){
