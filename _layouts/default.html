@@ -13,10 +13,11 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link rel="stylesheet" href="{{ site.baseurl }}/flags.css?ddasda=42342423">
     {% assign lang = page.dir | split: '/' %}
+    {% assign url_slush = "" %}
     {% if lang[1].size > 0 %}
-    {% assign lang[1] = lang[1] + "/" %}
+    {% assign url_slush = "/" %}
     {% endif %}
-    <link rel="alternate" hreflang="ko" href="{{ site.url }}/{{ lang[1] }}ko">
+    <link rel="alternate" hreflang="ko" href="{{ site.url }}/{{ lang[1] }}{{ url_slush }}ko">
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
     <script src="{{ base.url | prepend: site.url }}/assets/search.js"></script>
 <meta name="google-site-verification" content="CEG1EpI5wEnKjX0L5YuLaQY6yWkaggD0qWOZxXj3ApM" />
@@ -50,9 +51,6 @@
       </div>
 
       <div id="main" role="main" class="container">
-
-        {% assign lang2 = lang[1] "ddd" %}
-        {{ lang2 }}
         <a class="pull-left" href="#" style="font-size:2em;">+</a>
         <div class="notice">
           {% for post in site.categories.notice limit:2 %}
