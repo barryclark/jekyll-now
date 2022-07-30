@@ -241,8 +241,8 @@ nav {
   display:flex;
   position: absolute;
   flex-direction: column;
-  padding:0.2em;
-
+  height: 20em;
+  overflow: auto;
 }
 #autoMaker div{
   border-bottom:1px solid black;
