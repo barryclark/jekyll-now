@@ -42,6 +42,7 @@ $(document).ready(function() {
         var txt = $(this).val();
         txt = txt.replace(/ /g, '');
         if(txt != ''){  //빈줄이 들어오면
+            $('#autoMaker').show();
             $('#autoMaker').children().remove();
 
             ref.forEach(function(arg){
@@ -69,6 +70,7 @@ $(document).ready(function() {
             });
         } else {
             $('#autoMaker').children().remove();
+            $('#autoMaker').hide();
         }
     });
     $('#search_area').keydown(function(event){
