@@ -65,13 +65,13 @@
                     if(arg.name.replace(/ /g, '').indexOf(txt) > -1 || arg.jp.replace(/ /g, '').indexOf(txt) > -1){
                       if(arg.name.replace(/ /g, '').indexOf(txt) > -1){
                         var item_name = arg.name;
-                        var lang = "";
+                        var lang = "ko";
                       } else if(arg.jp.replace(/ /g, '').indexOf(txt) > -1){
                         var item_name = arg.jp;
-                        var lang = "&lang=jp";
+                        var lang = "jp";
                       }
                         $('#autoMaker').append(
-                            $('<div>').html("<a href='{{ site.baseurl }}/alchemist?item="+arg.name+""+lang+"'>"+item_name+"</a>").attr({'recipe':arg.recipe})
+                            $('<div>').html("<a href='{{ site.baseurl }}/alchemist/"+lang+"/?item="+arg.name+"'>"+item_name+"</a>").attr({'recipe':arg.recipe})
                         );
                     }
                 });
