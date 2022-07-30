@@ -188,9 +188,8 @@ img {
 
 .site-avatar {
   display: block;
-  margin : 0 auto;
-  width: 70px;
-  height: 70px;
+  width: 48px;
+  height: 48px;
   }
 
   img {
@@ -199,7 +198,7 @@ img {
 
 .site-info {
   display: block;
-  margin : 0 auto;
+  padding: 0.5em;
 }
 
 .site-name {
@@ -243,6 +242,7 @@ nav {
   position: absolute;
   flex-direction: column;
   padding:0.2em;
+
 }
 #autoMaker div{
   border-bottom:1px solid black;
