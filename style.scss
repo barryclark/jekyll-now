@@ -305,6 +305,9 @@ nav {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
 }
+.post > h1:first-child{
+  margin:0;
+}
 .post > .entry {
   margin-top: 1em;
   border-top: 1px solid #8c919a;
