@@ -252,7 +252,8 @@ nav {
   height: 20em;
   overflow: auto;
   @include mobile {
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
   }
 }
 #autoMaker div{
