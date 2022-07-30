@@ -11,8 +11,8 @@ layout: default
 {% if posts.size > 1 %}
   {% for post in posts %}
     <article class="post">
-      <h2 class="ko">{{ post.title }}</h2>
-      <h2 class="jp">{{ post.excerpt }}</h2>
+      <h2>{{ post.title }}</h2>
+      <h2>{{ post.excerpt }}</h2>
       <a href="{{ site.baseurl }}{{ post.url }}"><span class="flag flag-kr"> </span> 한국어</a>
       <a href="{{ site.baseurl }}{{ post.url | replace: "ko", "jp" }}"><span class="flag flag-jp"> </span>日本語</a>
     </article>
