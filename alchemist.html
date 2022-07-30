@@ -2,6 +2,9 @@
 layout: default
 permalink: /alchemist/
 ---
+{% assign lang = page.dir | split: '/' %}
+{{ page.dir }}
+{{ lang[1] }}
 <h1 id="searching_item"></h1>
 <div id="searching_recipe"></div>
 <h1 id="find_recipe"></h1>
