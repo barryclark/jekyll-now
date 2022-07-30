@@ -17,7 +17,7 @@ $(document).ready(function() {
 	//저장
 	var item = localStorage.getItem('item');
 	var update = localStorage.getItem('version');
-  const version = 20200728;
+  const version = 20200730;
 
 	item = JSON.parse(item);
 
@@ -84,18 +84,18 @@ $(document).ready(function() {
 
 	if(typeof item === 'undefined' || item === null || update != version){
     window.localStorage.clear();
-		$.getJSON("https://purple2m.github.io/alchemist/item.json?version=20220728", function(data) {
+		$.getJSON("https://purple2m.github.io/alchemist/item.json?version=20220730", function(data) {
 			localStorage.setItem('item', JSON.stringify(data));
-      localStorage.setItem('version', 20200728);
+      localStorage.setItem('version', 20200730);
       auto_come(data);
 		});
 
 	}else{
     if(item.length != 1174 || update != version){
       window.localStorage.clear();
-      $.getJSON("https://purple2m.github.io/alchemist/item.json?version=20220728", function(data) {
+      $.getJSON("https://purple2m.github.io/alchemist/item.json?version=20220730", function(data) {
 				localStorage.setItem('item', JSON.stringify(data));
-        localStorage.setItem('version', 20200728);
+        localStorage.setItem('version', 20200730);
         auto_come(data);
   		});
     } else {
