@@ -133,9 +133,9 @@ permalink: /alchemist/
     var find_recipe_print = '';
     for (var i=0; i < find_recipe.length;++i){
       if (lang == "jp"){
-        find_recipe_print += "<a href='{{ site.baseurl }}/ko/alchemist/?item="+find.name+"&recipe="+find_recipe[i]+"'>ふつう錬金"+find_recipe[i]+"</a>";
+        find_recipe_print += "<a href='{{ site.baseurl }}/jp/alchemist/?item="+find.name+"&recipe="+find_recipe[i]+"'>ふつう錬金"+find_recipe[i]+"</a>";
       } else {
-        find_recipe_print += "<a href='{{ site.baseurl }}/jp/alchemist/?item="+find.name+"&recipe="+find_recipe[i]+"'>일반 연금"+find_recipe[i]+"</a>";
+        find_recipe_print += "<a href='{{ site.baseurl }}/ko/alchemist/?item="+find.name+"&recipe="+find_recipe[i]+"'>일반 연금"+find_recipe[i]+"</a>";
       }
     }
     document.getElementById("searching_recipe").innerHTML = find_recipe_print;
