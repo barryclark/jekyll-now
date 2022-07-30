@@ -5,12 +5,14 @@ layout: null
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
     {% for post in site.posts %}
       {% if post.lang == "ko" %}
         <url>
             <loc>{{ site.url }}{{ post.url }}</loc>
-            <xhtml:link rel='alternate' hreflang='ko' href='{{ site.url }}{{ post.url }}'/>
+            <xhtml:link rel="alternate" hreflang="ko" href="{{ site.url }}{{ post.url }}"/>
+            <xhtml:link rel="alternate" hreflang="jp" href="{{ site.url }}{{ post.url | replace: "ko", "jp" }}"/>
             {% if post.lastmod == null %}
             <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
             {% else %}
