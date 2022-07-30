@@ -50,15 +50,16 @@
       <div id="main" role="main" class="container">
         <a class="pull-left" href="#" style="font-size:2em;">+</a>
         <div class="notice">
-          {% for post in site.categories.notice limit:2 %}
-            <article class="post">
-              <h1>
-                <div class="ko" lang="ko">
-                  <a href="{{ site.baseurl }}{{ post.url }}" >{{ post.title }}</a>
-                </div>
-              </h1>
-            </article>
-          {% endfor %}
+          {% assign posts=site.categories.notice | where:"lang", "ko" | sort: 'lang-ref' %}
+          {% if posts.size > 1 %}
+            {% for post in posts limit:2 %}
+              <article class="post">
+                <h2>{{ post.title }}</h2>
+                <a href="{{ site.baseurl }}{{ post.url }}"><span class="flag flag-kr"> </span> 한국어</a>
+                <a href="{{ site.baseurl }}{{ post.url | replace: "ko", "jp" }}"><span class="flag flag-jp"> </span>日本語</a>
+              </article>
+            {% endfor %}
+          {% endif %}
         </div>
         {{ content }}
       </div>
