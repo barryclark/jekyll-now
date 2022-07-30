@@ -55,7 +55,7 @@ $(document).ready(function() {
                     var lang = "jp";
                   }
                     $('#autoMaker').append(
-                        $('<div>').html("<a href='{{ site.baseurl }}/alchemist/"+lang+"/?item="+arg.name+"'>"+item_name+"</a>").attr({'recipe':arg.recipe})
+                        $('<div>').html("<a href='https://purple2m.github.io/alchemist/"+lang+"/?item="+arg.name+"'>"+item_name+"</a>").attr({'recipe':arg.recipe})
                     );
                 }
             });
@@ -81,7 +81,7 @@ $(document).ready(function() {
 
 	if(typeof item === 'undefined' || item === null || update != version){
     window.localStorage.clear();
-		$.getJSON("{{ site.baseurl }}/alchemist/item.json?version=20220728", function(data) {
+		$.getJSON("https://purple2m.github.io/alchemist/item.json?version=20220728", function(data) {
 			localStorage.setItem('item', JSON.stringify(data));
       localStorage.setItem('version', 20200728);
       auto_come(data);
@@ -90,7 +90,7 @@ $(document).ready(function() {
 	}else{
     if(item.length != 1174 || update != version){
       window.localStorage.clear();
-      $.getJSON("{{ site.baseurl }}/alchemist/item.json?version=20220728", function(data) {
+      $.getJSON("https://purple2m.github.io/alchemist/item.json?version=20220728", function(data) {
 				localStorage.setItem('item', JSON.stringify(data));
         localStorage.setItem('version', 20200728);
         auto_come(data);
