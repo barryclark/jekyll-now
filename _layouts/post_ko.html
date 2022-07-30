@@ -1,0 +1,16 @@
+---
+layout: ko
+---
+<a href="{{ site.baseurl }}/">Back</a>
+<article class="post">
+  <h1>{{ page.title }}<br>{{ page.excerpt }}</h1>
+
+  <div class="date">
+    {{ page.date | date: "%B %e, %Y" }}
+  </div>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+</article>
