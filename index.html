@@ -10,10 +10,11 @@ layout: default
 {% assign posts=site.categories.tips | where:"lang", "ko" | sort: 'lang-ref' %}
 {% if posts.size > 1 %}
   {% for post in posts %}
+  {% assign jp_url = post.url | replace: "ko", "jp"}
     <article class="post">
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.excerpt }}</a></h2>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.category }}</a> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <h2>{{ post.title }} {{ post.excerpt }}</h2>
+      <a href="{{ site.baseurl }}{{ post.url }}"><span class="flag flag-kr"> </span> 한국어</a>
+      <a href="{{ site.baseurl }}{{ post.url | replace: "ko", "jp" }}"><span class="flag flag-jp"> </span>日本語</a>
     </article>
   {% endfor %}
 {% endif %}
