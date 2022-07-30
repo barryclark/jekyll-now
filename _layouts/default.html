@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/flags.css?ddasda=42342423">
     {% assign lang = page.dir | split: '/' %}
     {% if lang[1].size > 0 %}
-    {% assign lang[1] = lang[1] | append: "/" %}
+    {% assign lang[1] = lang[1] + "/" %}
     {% endif %}
     <link rel="alternate" hreflang="ko" href="{{ site.url }}/{{ lang[1] }}ko">
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
