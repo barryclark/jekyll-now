@@ -152,8 +152,7 @@
           {% for post in site.categories.notice limit:1 %}
             <article class="post">
               <h1>
-                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><br>
-                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.excerpt }}</a>
+                <a class="ko" href="{{ site.baseurl }}{{ post.url }}" lang="ko">{{ post.title }}</a><a class="jp" href="{{ site.baseurl }}{{ post.url }}" lang="jp">{{ post.excerpt }}</a>
               </h1>
             </article>
           {% endfor %}
@@ -172,8 +171,10 @@
       lang = getLang();
       if (lang.includes('ko')){
         $('.site-description').text("연금 검색기");
+        $('.jp').hide();
       } else if (lang.includes('jp')){
         $('.site-description').text("錬金検査機");
+        $('.ko').hide();
       }
     });
     </script>
