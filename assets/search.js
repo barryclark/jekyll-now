@@ -9,6 +9,7 @@ function getParameterByName( name ){
     return decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 $(document).ready(function() {
+  $('#autoMaker').hide();
   $('.pull-left').click(function(){
     $('.wrapper-masthead').children(":first").toggle();
     $('.wrapper-masthead').children(":last").toggle();
