@@ -54,7 +54,7 @@
             <article class="post">
               <h1>
                 <div class="jp" lang="jp">
-                  <a href="{{ site.baseurl }}{{ post.url }}" >{{ post.excerpt }}</a>
+                  <a href="{{ site.baseurl }}{{ post.url | replace: "ko", "jp" }}" >{{ post.excerpt }}</a>
                 </div>
               </h1>
             </article>
