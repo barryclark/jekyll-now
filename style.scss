@@ -251,6 +251,7 @@ nav {
   flex-direction: column;
   height: 20em;
   overflow: auto;
+  width: 50%;
   @include mobile {
     width: 90%;
     margin-left: 5%;
