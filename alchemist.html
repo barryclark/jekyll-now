@@ -117,7 +117,7 @@ permalink: /alchemist/
 
   if(searching_item){
     var item = localStorage.getItem('item');
-    var lang = {{ lang[0] }};
+    var lang = {{ lang[1] }};
     item = JSON.parse(item);
 
     var find = isitem(item, searching_item);
