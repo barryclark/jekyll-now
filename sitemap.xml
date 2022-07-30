@@ -10,6 +10,7 @@ layout: null
       {% if post.lang == "ko" %}
         <url>
             <loc>{{ site.url }}{{ post.url }}</loc>
+            <xhtml:link rel='alternate' hreflang='ko' href='{{ site.url }}{{ post.url }}'/>
             {% if post.lastmod == null %}
             <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
             {% else %}
