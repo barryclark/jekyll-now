@@ -22,18 +22,22 @@
     <div class="wrapper-masthead">
 
       <div class="container">
-        <a href="{{ site.baseurl }}/ko"><span class="flag flag-kr"> </span>  한국어</a>
-        <a href="{{ site.baseurl }}/jp"><span class="flag flag-jp"> </span>  日本語</a>
-        <header class="masthead clearfix">
+        <div class="lang">
+          <a href="{{ site.baseurl }}/ko"><span class="flag flag-kr"> </span>  한국어</a>
+          <a href="{{ site.baseurl }}/jp"><span class="flag flag-jp"> </span>  日本語</a>
           <a class="pull-left" href="#" style="font-size:2em;float:right;">X</a>
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">錬金検査機</p>
+        </div>
+        <header class="masthead clearfix">
+          <div class="logo">
+            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
           </div>
 
-          <div class="serach">
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }} <span class="site-description">{{ site.description }}</span></a></h1>
+
+          </div>
+
+          <div class="search">
             <input type="hidden" id='insert_target' readonly style='background: #cacaca' name='item'>
             <input type="text" id='search_area' palceholder="Search for item">
             <div id='autoMaker'></div>
