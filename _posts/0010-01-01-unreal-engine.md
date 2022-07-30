@@ -3,24 +3,14 @@ layout: post
 title: Unreal engine
 ---
 
-![Image](../images/404.jpg)
+- [ ] life optimize 1개 - 지킬 블로그 & 마크다운
+- [ ] 선형 대수
+- [ ] 알고리즘 1개
+- [ ] 언리얼 1개
 
 <details>
 <summary>블로그 작성 규칙</summary>
 <div markdown="1">
-
-# 목차
-* Language
-* Algorithm and data struct
-* CS And IT
-* Design pattern
-* Game
-* Git
-* Math
-* Optimize life
-* Visual studio
-* Posts jekyll blog
-* Posts unreal engine
 
 # 포스트 구성
 이론을 몰라도 사용할 수 있도록 정리합니다.

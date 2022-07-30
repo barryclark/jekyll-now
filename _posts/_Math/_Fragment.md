@@ -3,12 +3,18 @@ layout: post
 title: Math
 ---
 
+- [ ] [언리얼 엔진 피직스 에센셜](https://www.perlego.com/book/4136/unreal-engine-physics-essentials-pdf)
+
 ## 에라토스테네스의 체 (소수 구하기)
 프로그래밍 문제를 해결하다 보면 소수를 활용해야 하는 경우가 종종 발생하는데, 그 중에서도 특정한 값 N이하의 소수를 모두 찾아야 하는 경우가 꽤 많습니다. 그럴 때 초, 중학교 시절 노가다 취급했던 에라토스테네스의 체가 꽤 좋은 방법이 되어줍니다.
 
 [에라토스테네스의 체 설명](https://www.weeklyps.com/entry/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98-%EC%B2%B4-%EC%86%8C%EC%88%98-%EA%B5%AC%ED%95%98%EA%B8%B0)
 
 ## 라디안(radian)과 디그리(degree)
+
+$$
+f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi \xi x} \,d\xi
+$$
 
 https://darkpgmr.tistory.com/26
 
