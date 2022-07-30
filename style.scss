@@ -255,10 +255,13 @@ nav {
 #autoMaker a{
   display: block;
 }
+.search{
+  width: 100%;
+  padding-right: 10px;
+}
 .serach input[type="text"] {
   width: 100%;
   padding : 0.1em 0.1em;
-  margin: 0.1em 0;
   box-sizing: border-box;
   font-size: 1em;
 }
