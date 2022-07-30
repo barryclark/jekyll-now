@@ -160,7 +160,8 @@ img {
   overflow: auto;
 }
 .wrapper-masthead .container:first-child{
-  width:250px;
+  width:350px;
+  padding:0;
   background: #1a1c39;
   color:white;
   overflow-x: hidden;
@@ -172,6 +173,8 @@ img {
 }
 .pull-left{
   display:none;
+  padding:0.2em;
+  margin-right: 0.2em;
 
   @include mobile {
     display:block;
