@@ -129,6 +129,8 @@
     <div class="wrapper-masthead">
 
       <div class="container">
+        <a href="{{ site.baseurl }}/ko"><span class="flag flag-kr"> </span>  한국어</a>
+        <a href="{{ site.baseurl }}/jp"><span class="flag flag-jp"> </span>  日本語</a>
         <header class="masthead clearfix">
           <a class="pull-left" href="#" style="font-size:2em;float:right;">X</a>
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
@@ -166,23 +168,6 @@
       </div>
 
     </div>
-    <script>
-    function getLang() {
-      var userLang = navigator.language || navigator.userLanguage;
-      return userLang;
-    }
-
-    $(document).ready(function() {
-      lang = getLang();
-      if (lang.includes('ko')){
-        $('.site-description').text("연금 검색기");
-        $('.jp').hide();
-      } else if (lang.includes('jp')){
-        $('.site-description').text("錬金検査機");
-        $('.ko').hide();
-      }
-    });
-    </script>
     {% include analytics.html %}
   </body>
 </html>
