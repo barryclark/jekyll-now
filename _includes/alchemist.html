@@ -23,7 +23,7 @@
 	}
 
   function get_recipe(recipe, item, target, lang){
-      $.getJSON("{{ site.baseurl }}/alchemist/"+lang+"/"+recipe+".json?version=20220728", function(data) {
+      $.getJSON("{{ site.baseurl }}/alchemist/"+recipe+".json?version=20220728", function(data) {
         var step = '';
         var step_1='<div><h3>슬롯1</h3><ul>';
         var step_2='<div><h3>슬롯2</h3><ul>';
@@ -151,7 +151,7 @@
     } else {
       var recipe_material = "<h2>연금식 재료</h2><ul class='recipe_list'>";
     }
-    $.getJSON("{{ site.baseurl }}/alchemist/"+lang+"/recipe.json?version=20220728", function(data) {
+    $.getJSON("{{ site.baseurl }}/alchemist/recipe.json?version=20220728", function(data) {
       for (var i=0; i < data.length;++i){
         if(data[i]['no'] == searching_recipe){
           for (var j=0; j < data[i]['recipe'].length;++j){
