@@ -3,36 +3,37 @@ layout: post
 title: Unreal engine
 ---
 
-- [ ] life optimize 1개 - 지킬 블로그 & 마크다운
 - [ ] 선형 대수
-- [ ] 알고리즘 1개
 - [ ] 언리얼 1개
 
+<!--
 <details>
 <summary>블로그 작성 규칙</summary>
 <div markdown="1">
 
-# 포스트 구성
-이론을 몰라도 사용할 수 있도록 정리합니다.
-
-사용법에 대한 정리합니다.
-
-이론을 이해하기 위한 성행지식과, 이론을 작성합니다.
-
-지킬에서 마크다운 링크는 collection/Filename입니다. 어떻게 매번 헷갈리냐...
-
 </div>
 </details>
+-->
 
-
-<details>
-<summary>Other</summary>
+<details open><summary>Other</summary>
 <div markdown="1">
 
-* [IT_TDD](/posts_CS_And_IT/IT_TDD)
+* [알고리즘과 자료구조](/algorithm_and_data_struct/AlgorithmAndDataSturct)
+    - 알고리즘
+    - 자료구조
+    - 복잡도
+    - 어떻게 쓰는가?
+    - 문제 해결
 
-</div>
-</details>
+
+* [선형 대수](/Math/Linear_Algebra)
+    - Aa
+
+
+* [Jekyll_blog](OptimizeLife/Jekyll_blog)
+    - Jekyll, Markdown, HTML 참고할 수 있는 링크
+
+</div></details>
 
 
 # Concept

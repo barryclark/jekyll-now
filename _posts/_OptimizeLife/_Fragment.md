@@ -3,6 +3,7 @@ layout: post
 title: Optimize life
 ---
 
+* **왜라는 질문을 계속해야 합니다.**
 
 # GitHub이용하기
 
