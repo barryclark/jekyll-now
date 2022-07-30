@@ -113,7 +113,7 @@
 
   if(searching_item){
     var item = localStorage.getItem('item');
-    var lng = "{{ lang[2] }}";
+    var lng = "{{ lang[1] }}";
     item = JSON.parse(item);
 
     var find = isitem(item, searching_item);
@@ -129,9 +129,9 @@
     var find_recipe_print = '';
     for (var i=0; i < find_recipe.length;++i){
       if (lng == "jp"){
-        find_recipe_print += "<a href='{{ site.baseurl }}/alchemist/"+lng+"/?item="+find.name+"&recipe="+find_recipe[i]+"'>ふつう錬金"+find_recipe[i]+"</a>";
+        find_recipe_print += "<a href='{{ site.baseurl }}/"+lng+"/alchemist/?item="+find.name+"&recipe="+find_recipe[i]+"'>ふつう錬金"+find_recipe[i]+"</a>";
       } else {
-        find_recipe_print += "<a href='{{ site.baseurl }}/alchemist/"+lng+"/?item="+find.name+"&recipe="+find_recipe[i]+"'>일반 연금"+find_recipe[i]+"</a>";
+        find_recipe_print += "<a href='{{ site.baseurl }}/"+lng+"alchemist/?item="+find.name+"&recipe="+find_recipe[i]+"'>일반 연금"+find_recipe[i]+"</a>";
       }
     }
     document.getElementById("searching_recipe").innerHTML = find_recipe_print;
