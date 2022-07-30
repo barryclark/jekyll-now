@@ -187,6 +187,11 @@ img {
 .masthead {
   display: flex;
   align-items: center;
+
+  @include mobile {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .site-avatar {
@@ -246,6 +251,9 @@ nav {
   flex-direction: column;
   height: 20em;
   overflow: auto;
+  @include mobile {
+    width: 100%;
+  }
 }
 #autoMaker div{
   border-bottom:1px solid black;
@@ -254,6 +262,9 @@ nav {
   background: white;
   color:black;
   font-size:0.8em;
+  @include mobile {
+    width: 90%; 
+  }
 }
 #autoMaker a{
   display: block;
@@ -264,6 +275,11 @@ nav {
 .search{
   flex: 1;
   padding-right: 10px;
+  @include mobile {
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 100%;
+  }
 }
 .search input[type="text"] {
   width: 100%;
