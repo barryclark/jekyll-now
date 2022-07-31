@@ -483,6 +483,15 @@ footer {
 }
 .alc_wrap{
   display: flex;
+  flex-direction: column;
+}
+.alc_wrap .top{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#collections{
+  min-width: 300px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
