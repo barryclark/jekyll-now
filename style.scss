@@ -489,7 +489,9 @@ footer {
   flex:1;
 }
 .alc_wrap .top{
-
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
 }
 #collections{
   min-width: 350px;
