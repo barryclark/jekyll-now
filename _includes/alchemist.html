@@ -181,8 +181,10 @@
       for (var i=0; i < data.contents.length;++i){
         var col_option = "";
         for (var o=0; o < data.contents[i].options.length;++o){
+          col_option += "<span>";
           col_option += data.contents[i].options[o].option_name;
           col_option += data.contents[i].options[o].display;
+          col_option += "</span>";
         }
         col_option = "<h4>"+col_option+"</h4>";
         var col_item = "";
