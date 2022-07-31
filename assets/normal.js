@@ -111,7 +111,6 @@ var searching_recipe = getParameterByName('recipe');
 
 if(searching_item){
   var item = localStorage.getItem('item');
-  var lng = "{{ lang[1] }}";
   item = JSON.parse(item);
 
   var find = isitem(item, searching_item);
