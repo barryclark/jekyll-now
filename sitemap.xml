@@ -3,6 +3,14 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/TR/xhtml11/xhtml11_schema.html" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+<loc>https://purple2m.github.io/ko/alchemist/</loc>
+<lastmod>2022-08-31T00:00:00+00:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+<xhtml:link rel="alternate" hreflang="ko" href="https://purple2m.github.io/ko/alchemist/"/>
+<xhtml:link rel="alternate" hreflang="jp" href="https://purple2m.github.io/jp/alchemist/"/>
+</url>
   {% for post in site.posts %}
       {% if post.lang == "ko" %}
  <url>
