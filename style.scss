@@ -463,7 +463,15 @@ footer {
 .recipe_object .ko{
   display: none;
 }
-
+.thumb{
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
