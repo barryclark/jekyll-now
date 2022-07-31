@@ -15,22 +15,6 @@ avatar: https://raw.githubusercontent.com/purple2m/purple2m.github.io/master/ima
 # Flags below are optional
 #
 
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github:
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: L2MDCSCAM
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
 disqus:
@@ -40,7 +24,7 @@ google_analytics: "G-5SHSL1S94B"
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url:https://purple2m.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -70,10 +54,6 @@ kramdown:
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed
-
-comment-read: https://docs.google.com/spreadsheets/d/1UBpfqNkTWVLp194HWomtW1nW2ukz6laJHFJAeX9oLTs
-comment-post: https://docs.google.com/forms/d/e/1FAIpQLSdG9gD_sAVMfZnFVYN1QvphoSk_u5NHXXAWsrGVkSpCm1K8wA
-comment-post-fields: [ entry.2061969004, entry.1221277427, entry.1556408289]
 
 # Use the following plug-ins
 gems:
