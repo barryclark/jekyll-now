@@ -3,10 +3,8 @@ const baseurl = "https://purple2m.github.io";
 $('.view_recipe').click(function(){
   $('#recipe').toggle();
 });
-$('#searching_recipe').children().each(function(){
-    $(this).click(function(){
-        console.log(this);
-    });
+$('#searching_recipe button').children().each(function(){
+      console.log($(this).val());
 });
 
 function isitem(datalist, item){
