@@ -119,9 +119,9 @@
     var find = isitem(item, searching_item);
 
     if (lng == "jp"){
-      document.getElementById("searching_item").innerHTML = "\""+find.jp+"\" たいする検索結果";
+      document.getElementById("searching_item").innerHTML = "<img class=\"thumb\" src=\"https://wstatic-cdn.plaync.com/powerbook/l2m/icon/Icon_128/Item/Icon_"+find.icon+".png\" onerror=\"this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';\">\""+find.jp+"\" たいする検索結果";
     } else {
-      document.getElementById("searching_item").innerHTML = "\""+find.name+"\" 에 대한 검색 결과";
+      document.getElementById("searching_item").innerHTML = "<img class=\"thumb\" src=\"https://wstatic-cdn.plaync.com/powerbook/l2m/icon/Icon_128/Item/Icon_"+find.icon+".png\" onerror=\"this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';\">\""+find.name+"\" 에 대한 검색 결과";
     }
 
     var find_recipe = find.recipe;
