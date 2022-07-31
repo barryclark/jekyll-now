@@ -1,5 +1,5 @@
-User-agent: *
-Allow: /
-Disallow: /privateData/
+user-agent: *
+allow: /
+disallow: /alchemist
 
-Sitemap: https://purple2m.github.io/sitemap.xml
+sitemap: https://purple2m.github.io/sitemap.xml
