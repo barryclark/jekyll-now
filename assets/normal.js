@@ -155,71 +155,75 @@ if(searching_item){
   });
 }
 
+function recipe_reset(searching_recipe, find, lng){
+  if(searching_recipe){
+    if (lng == "jp"){
+      document.getElementById("find_recipe").innerHTML = "ふつう錬金 "+searching_recipe+"の各スロット別登場アイテム獲得確率";
+    } else {
+      document.getElementById("find_recipe").innerHTML = "일반 연금 "+searching_recipe+"의 각 슬롯별 등장 아이템 획득 확률";
+    }
+    var recipe = get_recipe(searching_recipe, find.name, "recipe", lng);
 
-if(searching_recipe){
-  if (lng == "jp"){
-    document.getElementById("find_recipe").innerHTML = "ふつう錬金 "+searching_recipe+"の各スロット別登場アイテム獲得確率";
-  } else {
-    document.getElementById("find_recipe").innerHTML = "일반 연금 "+searching_recipe+"의 각 슬롯별 등장 아이템 획득 확률";
-  }
-  var recipe = get_recipe(searching_recipe, find.name, "recipe", lng);
+    if (lng == "jp"){
+      var recipe_material = "<h2>錬金の材料</h2><ul class='recipe_list'>";
+    } else {
+      var recipe_material = "<h2>연금식 재료</h2><ul class='recipe_list'>";
+    }
+    $.getJSON(baseurl+"/alchemist/recipe.json?version=20220728", function(data) {
+      for (var i=0; i < data.length;++i){
+        if(data[i]['no'] == searching_recipe){
+          for (var j=0; j < data[i]['recipe'].length;++j){
+            if (lng == "jp"){
+              find_recipe = data[i]['jp'][j].split(',');
+            } else {
+              find_recipe = data[i]['recipe'][j].split(',');
+            }
 
-  if (lng == "jp"){
-    var recipe_material = "<h2>錬金の材料</h2><ul class='recipe_list'>";
-  } else {
-    var recipe_material = "<h2>연금식 재료</h2><ul class='recipe_list'>";
-  }
-  $.getJSON(baseurl+"/alchemist/recipe.json?version=20220728", function(data) {
-    for (var i=0; i < data.length;++i){
-      if(data[i]['no'] == searching_recipe){
-        for (var j=0; j < data[i]['recipe'].length;++j){
-          if (lng == "jp"){
-            find_recipe = data[i]['jp'][j].split(',');
-          } else {
-            find_recipe = data[i]['recipe'][j].split(',');
+            if(find_recipe[0] === undefined){
+              find_recipe[0] = '';
+            } else {
+              recipe_material += "<li>";
+              recipe_material += "<span>"+find_recipe[0]+"</span>";
+            }
+
+            if(find_recipe[1] === undefined){
+              find_recipe[1] = '';
+            } else {
+              recipe_material += "<span>"+find_recipe[1]+"</span>";
+            }
+
+            if(find_recipe[2] === undefined){
+              find_recipe[2] = '';
+            } else {
+              recipe_material += "<span>"+find_recipe[2]+"</span>";
+            }
+
+            if(find_recipe[3] === undefined){
+              find_recipe[3] = '';
+            } else {
+              recipe_material += "<span>"+find_recipe[3]+"</span>";
+            }
+
+            if(find_recipe[4] === undefined){
+              find_recipe[4] = '';
+            } else {
+              recipe_material += "<span>"+find_recipe[4]+"</span>";
+            }
+            if(find_recipe[0] === undefined){
+              recipe_material += "</li>";
+            }
           }
 
-          if(find_recipe[0] === undefined){
-            find_recipe[0] = '';
-          } else {
-            recipe_material += "<li>";
-            recipe_material += "<span>"+find_recipe[0]+"</span>";
-          }
-
-          if(find_recipe[1] === undefined){
-            find_recipe[1] = '';
-          } else {
-            recipe_material += "<span>"+find_recipe[1]+"</span>";
-          }
-
-          if(find_recipe[2] === undefined){
-            find_recipe[2] = '';
-          } else {
-            recipe_material += "<span>"+find_recipe[2]+"</span>";
-          }
-
-          if(find_recipe[3] === undefined){
-            find_recipe[3] = '';
-          } else {
-            recipe_material += "<span>"+find_recipe[3]+"</span>";
-          }
-
-          if(find_recipe[4] === undefined){
-            find_recipe[4] = '';
-          } else {
-            recipe_material += "<span>"+find_recipe[4]+"</span>";
-          }
-          if(find_recipe[0] === undefined){
-            recipe_material += "</li>";
-          }
+          break;
         }
-
-        break;
       }
-    }
-    if (recipe_material != "<ul class='recipe_list'>"){
-      recipe_material += "</ul>";
-      document.getElementById("recipe_material").innerHTML = recipe_material;
-    }
-  });
+      if (recipe_material != "<ul class='recipe_list'>"){
+        recipe_material += "</ul>";
+        document.getElementById("recipe_material").innerHTML = recipe_material;
+      }
+    });
+  }
+}
+if(searching_recipe){
+  recipe_reset(searching_recipe, find, lng);
 }
