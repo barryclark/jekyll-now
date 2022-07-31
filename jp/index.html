@@ -13,7 +13,7 @@ tags: [リネージュ2M, リネージュ2m, れんきん, れんきん情報, �
 {% if posts.size > 1 %}
   {% for post in posts %}
     <article class="post">
-      <h2>{{ post.excerpt }}</h2>
+      <h2>{{ post.jp }}</h2>
       <a href="{{ site.baseurl }}{{ post.url }}"><span class="flag flag-kr"> </span> 한국어</a>
       <a href="{{ site.baseurl }}{{ post.url | replace: "ko", "jp" }}"><span class="flag flag-jp"> </span>日本語</a>
     </article>
