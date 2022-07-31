@@ -1,7 +1,8 @@
+const baseurl = "https://purple2m/github.io";
+
 $('.view_recipe').click(function(){
   $('#recipe').toggle();
 });
-
 function isitem(datalist, item){
 	var str='';
 	for (var i=0; i < datalist.length;++i){
@@ -14,7 +15,7 @@ function isitem(datalist, item){
 }
 
 function get_recipe(recipe, item, target, lng){
-    $.getJSON("{{ site.baseurl }}/alchemist/"+recipe+".json?version=20220728", function(data) {
+    $.getJSON(baseurl+"/alchemist/"+recipe+".json?version=20220728", function(data) {
       var step = '';
       var step_1='<div><h3>슬롯1</h3><ul>';
       var step_2='<div><h3>슬롯2</h3><ul>';
@@ -120,9 +121,9 @@ if(searching_item){
   var find_recipe_print = '';
   for (var i=0; i < find_recipe.length;++i){
     if (lng == "jp"){
-      find_recipe_print += "<a href='{{ site.baseurl }}/"+lng+"/alchemist/?item="+find.name+"&recipe="+find_recipe[i]+"'>ふつう錬金"+find_recipe[i]+"</a>";
+      find_recipe_print += "<a href='"+baseurl+"/"+lng+"/alchemist/?item="+find.name+"&recipe="+find_recipe[i]+"'>ふつう錬金"+find_recipe[i]+"</a>";
     } else {
-      find_recipe_print += "<a href='{{ site.baseurl }}/ko/alchemist/?item="+find.name+"&recipe="+find_recipe[i]+"'>일반 연금"+find_recipe[i]+"</a>";
+      find_recipe_print += "<a href='"+baseurl+"/ko/alchemist/?item="+find.name+"&recipe="+find_recipe[i]+"'>일반 연금"+find_recipe[i]+"</a>";
     }
   }
   document.getElementById("searching_recipe").innerHTML = find_recipe_print;
@@ -144,7 +145,7 @@ if(searching_item){
         col_item_name = data.contents[i].items[o].item_name;
         col_item_enchant_level = data.contents[i].items[o].enchant_level;
         col_item += "<li>";
-        col_item += "<a href='{{ site.baseurl }}/ko/alchemist/?item="+col_item_name+"'>";
+        col_item += "<a href='"+baseurl+"/ko/alchemist/?item="+col_item_name+"'>";
         col_item += "<img class=\"thumb\" src=\""+col_item_icon+"\" onerror=\"this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';\"><span>+"+col_item_enchant_level+"</span>";
         col_item += "</a></li>";
       }
@@ -168,7 +169,7 @@ if(searching_recipe){
   } else {
     var recipe_material = "<h2>연금식 재료</h2><ul class='recipe_list'>";
   }
-  $.getJSON("{{ site.baseurl }}/alchemist/recipe.json?version=20220728", function(data) {
+  $.getJSON(baseurl+"/alchemist/recipe.json?version=20220728", function(data) {
     for (var i=0; i < data.length;++i){
       if(data[i]['no'] == searching_recipe){
         for (var j=0; j < data[i]['recipe'].length;++j){
