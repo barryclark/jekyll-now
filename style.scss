@@ -485,10 +485,11 @@ footer {
   display: flex;
   flex-direction: column;
 }
+.alc_wrap .top .info{
+  flex:1;
+}
 .alc_wrap .top{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+
 }
 #collections{
   min-width: 350px;
