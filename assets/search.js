@@ -17,7 +17,7 @@ $(document).ready(function() {
 	//저장
 	var item = localStorage.getItem('item');
 	var update = localStorage.getItem('version');
-  const version = 20200730;
+  const version = 20200731;
 
 	item = JSON.parse(item);
 
@@ -87,7 +87,7 @@ $(document).ready(function() {
     window.localStorage.clear();
 		$.getJSON("https://purple2m.github.io/alchemist/item2.json?version=20220730", function(data) {
 			localStorage.setItem('item', JSON.stringify(data));
-      localStorage.setItem('version', 20200730);
+      localStorage.setItem('version', 20200731);
       auto_come(data);
 		});
 
@@ -96,7 +96,7 @@ $(document).ready(function() {
       window.localStorage.clear();
       $.getJSON("https://purple2m.github.io/alchemist/item2.json?version=20220730", function(data) {
 				localStorage.setItem('item', JSON.stringify(data));
-        localStorage.setItem('version', 20200730);
+        localStorage.setItem('version', 20200731);
         auto_come(data);
   		});
     } else {
