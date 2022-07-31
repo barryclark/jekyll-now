@@ -9,37 +9,6 @@
       <a href="#" class="view_recipe">View more</a>
     </div>
     <div id="collections">
-
-      <h4>최대 HP+50</h4>
-      <ul>
-        <li>
-            <button class="btn-item" data-id="200160006" data-enchant="5" title="+5 나무 흉갑">
-                <img class="thumb" src="https://assets.playnccdn.com/gamedata/powerbook/l2m/icon/Icon_128/Item/Icon_AR_Torso_G6_001.png" onerror="this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';">
-                <span class="enchant">+5</span>
-
-                <span class="price col_200160006_5" data-pricetype=""></span>
-            </button>
-        </li>
-
-        <li>
-            <button class="btn-item" data-id="200560007" data-enchant="5" title="+5 나무 헬멧">
-                <img class="thumb" src="https://assets.playnccdn.com/gamedata/powerbook/l2m/icon/Icon_128/Item/Icon_AR_Helmet_G6_007.png" onerror="this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';">
-                <span class="enchant">+5</span>
-
-                <span class="price col_200560007_5" data-pricetype=""></span>
-            </button>
-        </li>
-
-        <li>
-            <button class="btn-item" data-id="200860001" data-enchant="1" title="+1 페어리 시길">
-                <img class="thumb" src="https://assets.playnccdn.com/gamedata/powerbook/l2m/icon/Icon_128/Item/Icon_AR_Sigil_G6_001.png" onerror="this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';">
-                <span class="enchant">+1</span>
-
-                <span class="price col_200860001_1" data-pricetype=""></span>
-            </button>
-        </li>
-      </ul>
-
     </div>
   </div>
   <div clas=="bottom">
@@ -194,7 +163,7 @@
           col_item_enchant_level = data.contents[i].items[o].enchant_level;
           col_item += "<li>";
           col_item += "<a href='{{ site.baseurl }}/ko/alchemist/?item="+col_item_name+"'>";
-          col_item += "<img class=\"thumb2\" src=\""+col_item_icon+"\" onerror=\"this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';\"><span>+"+col_item_enchant_level+"</span>";
+          col_item += "<img class=\"thumb\" src=\""+col_item_icon+"\" onerror=\"this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';\"><span>+"+col_item_enchant_level+"</span>";
           col_item += "</a></li>";
         }
         col_print += "<div>"+col_option + "" + "<ul>" + col_item + "</ul>"+"</div>";

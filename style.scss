@@ -493,6 +493,10 @@ footer {
 #collections{
   min-width: 300px;
 }
+#collections .thumb{
+  width: 48px;
+  height: 48px;
+}
 #collections > div{
   padding:0.5em;
 }
