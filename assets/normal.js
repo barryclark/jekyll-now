@@ -3,12 +3,6 @@ const baseurl = "https://purple2m.github.io";
 $('.view_recipe').click(function(){
   $('#recipe').toggle();
 });
-$('#searching_recipe button').each(function(){
-    $(this).click(function(){
-        console.log($(this).val());
-        recipe_reset($(this).val(), find, lng);
-    });
-});
 
 function isitem(datalist, item){
 	var str='';
@@ -235,3 +229,9 @@ function recipe_reset(searching_recipe, find, lng){
 if(searching_recipe){
   recipe_reset(searching_recipe, find, lng);
 }
+$('#searching_recipe button').each(function(){
+    $(this).click(function(){
+        console.log($(this).val());
+        recipe_reset($(this).val(), find, lng);
+    });
+});
