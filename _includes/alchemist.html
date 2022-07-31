@@ -1,7 +1,15 @@
 <div class="alc_wrap">
   <div class="top">
     <div class="info">
-      <h1 id="searching_item"></h1>
+      <h1 id="searching_item">
+{% if lang[1] == “jp” %}
+リネージュ2M錬金検索機です。
+アイテムを検索すると、該当アイテムが存在する錬金材料に関連するアイテムコレクションを確認できます。
+{% else %}
+리니지2M 연금 검색기입니다.<br>
+아이템을 검색하여 해당 아이템이 존재하는 연금 재료와 연관된 아이템 컬렉션을 확인할 수 있습니다.
+{% endif %}
+</h1>
       <div id="searching_recipe"></div>
       <h1 id="find_recipe"></h1>
       <div id="searching_find"></div>
