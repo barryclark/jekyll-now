@@ -1,4 +1,4 @@
-const baseurl = "https://purple2m/github.io";
+const baseurl = "https://purple2m.github.io";
 
 $('.view_recipe').click(function(){
   $('#recipe').toggle();
