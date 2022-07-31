@@ -8,7 +8,8 @@
       <div id="recipe_material"></div>
     </div>
     <div id="collections">
-      최대 HP+50
+
+      <h4>최대 HP+50</h4>
       <ul>
         <li>
             <button class="btn-item" data-id="200160006" data-enchant="5" title="+5 나무 흉갑">
@@ -37,6 +38,7 @@
             </button>
         </li>
       </ul>
+
     </div>
   </div>
   <div clas=="bottom">
@@ -173,6 +175,17 @@
       }
     }
     document.getElementById("searching_recipe").innerHTML = find_recipe_print;
+
+    $.getJSON("https://api-goats.plaync.com/search/l2m/collections?page=1&size=50&search_keyword="+find.name, function(data) {
+      for (var i=0; i < data.contents.length;++i){
+        var option = "";
+        for (var o=0; o < data.contents[i].option.length;++i){
+          option += data.contents[i].options[o].option_name;
+          option += data.contents[i].options[o].display;
+        }
+      }
+      console.log(option);
+    });
   }
 
 
