@@ -2,6 +2,8 @@
 layout: post
 title: Photo sharing about Fitzwilliam Museum
 ---
+AS a record for visiting the Fitzwilliam Museum on 2022/7/31.
+
 #### Pic1 Misterious Austrian Vase
 ![IMG_20220731_Misterious Austrian Pattern](https://user-images.githubusercontent.com/100028581/182033069-5b7d291c-9ddb-498d-ba0a-5b5fa0e58426.jpg)
 
@@ -30,6 +32,7 @@ The river as a mirror and the shaft of light is splendid.
 
 #### Pic7-9 Clouds
 > That endless airy space, where the eyes wanders at liberty - William Hazlitt
+
 How incredible is it to take a snapshot of the rapidly changing clouds and sky, which vexes the photographers, with mere hands and pens.
 ![IMG_20220731_Clouds](https://user-images.githubusercontent.com/100028581/182032982-bae550e1-43e3-4860-b538-1773b8c6c447.jpg)
 ![IMG_20220731_Cloud study1-2](https://user-images.githubusercontent.com/100028581/182033003-f49f0779-e1c8-40f3-b493-8aa8571c42eb.jpg)
@@ -45,6 +48,7 @@ I can stare at these paintings whole day long.
 
 #### Pic15 Storm in Mountain
 >  An excellent capture of the forces of nature brewing and reminiscent of the powerful storms that struck the UK at the beginning of the year. Although demonstrating the impending ferocity of the natural world at times, to me, a serene sunbeam, is more forthcoming - that light is just around the corner.
+
 ![IMG_20220731_Storms](https://user-images.githubusercontent.com/100028581/182033108-7ca6988a-c422-469d-964a-909293b8ede7.jpg)
 
 #### Pic16 Eruption of Stromboli
