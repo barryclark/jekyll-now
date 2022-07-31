@@ -510,7 +510,16 @@ footer {
   margin:0;
   padding:0;
 }
-
+#collections ul > li > a{
+  display: block;
+  border: 1px solid black;
+  color:black;
+}
+#collections ul > li > a > span{
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
