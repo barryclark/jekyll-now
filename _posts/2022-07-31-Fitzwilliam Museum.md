@@ -2,7 +2,7 @@
 layout: post
 title: Photo sharing about Fitzwilliam Museum
 ---
-AS a record for visiting the Fitzwilliam Museum on 2022/7/31.
+As a record of visiting the Fitzwilliam Museum on 2022/7/31.
 
 #### Pic1 Misterious Austrian Vase
 ![IMG_20220731_Misterious Austrian Pattern](https://user-images.githubusercontent.com/100028581/182033069-5b7d291c-9ddb-498d-ba0a-5b5fa0e58426.jpg)
