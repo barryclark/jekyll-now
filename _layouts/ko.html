@@ -13,8 +13,8 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link rel="stylesheet" href="{{ site.baseurl }}/flags.css?ddasda=42342423">
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    <link rel="alternate" hreflang="ko" href="{{ site.baseurl }}{{ post.url | replace: "jp", "ko" }}">
-    <link rel="alternate" hreflang="jp" href="{{ site.baseurl }}{{ post.url | replace: "ko", "jp" }}">
+    <link rel="alternate" hreflang="ko" href="{{ site.url }}{{ page.url | replace: "jp", "ko" }}">
+    <link rel="alternate" hreflang="jp" href="{{ site.url }}{{ page.url | replace: "ko", "jp" }}">
     <script src="{{ base.url | prepend: site.url }}/assets/search.js?version=202207313"></script>
 <meta name="google-site-verification" content="CEG1EpI5wEnKjX0L5YuLaQY6yWkaggD0qWOZxXj3ApM" />
   </head>
@@ -49,9 +49,6 @@
 
       <div id="main" role="main" class="container">
         <a class="pull-left" href="#" style="font-size:2em;">+</a>
-        POST {{ post.url }}
-        SITE {{ site.url }}
-        PAGE {{ page.url }}
         {{ content }}
       </div>
 
