@@ -3,6 +3,12 @@ const baseurl = "https://purple2m.github.io";
 $('.view_recipe').click(function(){
   $('#recipe').toggle();
 });
+$('#searching_recipe').children().each(function(){
+    $(this).click(function(){
+        console.log(this);
+    });
+});
+
 function isitem(datalist, item){
 	var str='';
 	for (var i=0; i < datalist.length;++i){
@@ -121,6 +127,7 @@ if(searching_item){
   var find_recipe_print = '';
   for (var i=0; i < find_recipe.length;++i){
     if (lng == "jp"){
+      find_recipe_print += "<button value=\""+find_recipe[i]+"\"'>ふつう錬金"+find_recipe[i]+"</button>";
       find_recipe_print += "<a href='"+baseurl+"/"+lng+"/alchemist/?item="+find.name+"&recipe="+find_recipe[i]+"'>ふつう錬金"+find_recipe[i]+"</a>";
     } else {
       find_recipe_print += "<a href='"+baseurl+"/ko/alchemist/?item="+find.name+"&recipe="+find_recipe[i]+"'>일반 연금"+find_recipe[i]+"</a>";
