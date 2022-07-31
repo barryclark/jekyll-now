@@ -177,6 +177,7 @@
     document.getElementById("searching_recipe").innerHTML = find_recipe_print;
 
     $.getJSON("https://api-goats.plaync.com/search/l2m/collections?page=1&size=50&search_keyword="+find.name, function(data) {
+      var col_print = "";
       for (var i=0; i < data.contents.length;++i){
         var col_option = "";
         for (var o=0; o < data.contents[i].options.length;++o){
@@ -194,9 +195,9 @@
           col_item += "<img class=\"thumb\" src=\""+col_item_icon+"\" onerror=\"this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';\">"+col_item_enchant_level;
           col_item += "</a></li>";
         }
+        col_print += col_option + "" + "<ul>" + col_option + "</ul>";
       }
-      var collections = col_option + "" + "<ul>" + col_option + "</ul>";
-      document.getElementById("collections").innerHTML = collections;
+      document.getElementById("collections").innerHTML = col_print;
     });
   }
 
