@@ -493,6 +493,23 @@ footer {
 #collections{
   min-width: 300px;
 }
+#collections > div{
+  padding:0.5em;
+}
+#collections h4 > span{
+  margin-right: 0.5em;
+}#collections h4 > span:last-child{
+  margin: 0;
+}
+#collections h4{
+  margin:0;
+}
+#collections ul{
+  list-style-type: none;
+  display: flex;
+  margin:0;
+  padding:0;
+}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

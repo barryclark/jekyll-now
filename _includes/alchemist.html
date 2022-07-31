@@ -197,7 +197,7 @@
           col_item += "<img class=\"thumb\" src=\""+col_item_icon+"\" onerror=\"this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';\">+"+col_item_enchant_level;
           col_item += "</a></li>";
         }
-        col_print += col_option + "" + "<ul>" + col_item + "</ul>";
+        col_print += "<div>"+col_option + "" + "<ul>" + col_item + "</ul>"+"</div>";
       }
       document.getElementById("collections").innerHTML = col_print;
     });
