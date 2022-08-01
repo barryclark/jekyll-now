@@ -403,8 +403,9 @@ nav {
   border-radius: 14px;
   box-sizing: border-box;
   margin: 0 0.2em;
+  cursor: pointer;
 }#searching_recipe label:hover{
-  background: #8c919a;
+  background: #DBE0E4;
 }
 #searching_recipe input[type="radio"]{
   display:none;
