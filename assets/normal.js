@@ -253,9 +253,6 @@ function recipe_reset(searching_recipe, find, lng){
 if(searching_recipe){
   recipe_reset(searching_recipe, find, lng);
 }
-$('#searching_recipe button').each(function(){
-    $(this).click(function(){
-        console.log($(this).val());
-        recipe_reset($(this).val(), find, lng);
-    });
+$('#searching_recipe input[type=radio][name=recipe_list]').change(function() {
+  recipe_reset($(this).val(), find, lng);
 });
