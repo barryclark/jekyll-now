@@ -148,6 +148,7 @@ function col_option(data, option_lng, lng, baseurl){
       col_option += "<span>";
       if (lng == "jp"){
         var col_jp_index;
+        console.log(data.contents[i].options[o].option_name;)
         if(option_lng.kor.indexOf(data.contents[i].options[o].option_name) > -1){
           col_jp_index = option_lng.kr.indexOf(data.contents[i].options[o].option_name);
           console.log(col_jp_index);
