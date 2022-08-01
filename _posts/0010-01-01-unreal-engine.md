@@ -58,7 +58,7 @@ title: Unreal engine
 
 ## Unreal
 
-* [Log and debug](/posts_unreal_engine/Useage-Log-And-Debug)
+* [Log and debug](/posts_unreal_engine/Log-Debug-Console)
     - 언리얼의 로그(UE_LOG)
     - 언리얼 디버그(Debug)
     - 언리얼의 콘솔(Console)
