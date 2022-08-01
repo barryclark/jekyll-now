@@ -133,39 +133,44 @@ if(searching_item){
       var option_lng;
       $.getJSON(baseurl+"/alchemist/option.json?version=20220728", function(data2) {
         option_lng = data2;
+        col_option(data, data2);
       });
+    } else {
+      col_option(data, "");
     }
-    var col_print = "";
-    for (var i=0; i < data.contents.length;++i){
-      var col_option = "";
-      for (var o=0; o < data.contents[i].options.length;++o){
-        col_option += "<span>";
-        if (lng == "jp"){
-          if(option_lng.kor.indexOf(data.contents[i].options[o].option_name) > -1){
-            var col_jp_index = option_lng.kr.indexOf(data.contents[i].options[o].option_name);
-          }
-          col_option += option_lng.jp[col_jp_index];
-        } else {
-          col_option += data.contents[i].options[o].option_name;
-        }
-        col_option += data.contents[i].options[o].display;
-        col_option += "</span>";
-      }
-      col_option = "<h4>"+col_option+"</h4>";
-      var col_item = "";
-      for (var o=0; o < data.contents[i].items.length;++o){
-        col_item_icon = data.contents[i].items[o].image;
-        col_item_name = data.contents[i].items[o].item_name;
-        col_item_enchant_level = data.contents[i].items[o].enchant_level;
-        col_item += "<li>";
-        col_item += "<a href='"+baseurl+"/ko/alchemist/?item="+col_item_name+"'>";
-        col_item += "<img class=\"thumb\" src=\""+col_item_icon+"\" onerror=\"this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';\"><span>+"+col_item_enchant_level+"</span>";
-        col_item += "</a></li>";
-      }
-      col_print += "<div>"+col_option + "" + "<ul>" + col_item + "</ul>"+"</div>";
-    }
-    document.getElementById("collections").innerHTML = col_print;
   });
+}
+function col_option(data, option_lng){
+  var col_print = "";
+  for (var i=0; i < data.contents.length;++i){
+    var col_option = "";
+    for (var o=0; o < data.contents[i].options.length;++o){
+      col_option += "<span>";
+      if (lng == "jp"){
+        if(option_lng.kor.indexOf(data.contents[i].options[o].option_name) > -1){
+          var col_jp_index = option_lng.kr.indexOf(data.contents[i].options[o].option_name);
+        }
+        col_option += option_lng.jp[col_jp_index];
+      } else {
+        col_option += data.contents[i].options[o].option_name;
+      }
+      col_option += data.contents[i].options[o].display;
+      col_option += "</span>";
+    }
+    col_option = "<h4>"+col_option+"</h4>";
+    var col_item = "";
+    for (var o=0; o < data.contents[i].items.length;++o){
+      col_item_icon = data.contents[i].items[o].image;
+      col_item_name = data.contents[i].items[o].item_name;
+      col_item_enchant_level = data.contents[i].items[o].enchant_level;
+      col_item += "<li>";
+      col_item += "<a href='"+baseurl+"/ko/alchemist/?item="+col_item_name+"'>";
+      col_item += "<img class=\"thumb\" src=\""+col_item_icon+"\" onerror=\"this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';\"><span>+"+col_item_enchant_level+"</span>";
+      col_item += "</a></li>";
+    }
+    col_print += "<div>"+col_option + "" + "<ul>" + col_item + "</ul>"+"</div>";
+  }
+  document.getElementById("collections").innerHTML = col_print;
 }
 
 function recipe_reset(searching_recipe, find, lng){
