@@ -165,10 +165,10 @@ function col_option(data, option_lng, lng, baseurl){
   }
   if (lng == "jp"){
     var regex = new RegExp("/" + col_print + "/g");
-    for (var i=0; i < option_lng.length;++i){
-      if(col_print.includes(option_lng[i].kr)){
-        console.log(option_lng.kr[i]+"/"+option_lng.jp[i]);
-        col_print = col_print.replace(regex, option_lng[i].jp);
+    for (var i=0; i < option_lng.kor.length;++i){
+      if(col_print.includes(option_lng.kor[i])){
+        console.log(option_lng.kor[i]+"/"+option_lng.jp[i]);
+        col_print = col_print.replace(regex, option_lng.jp[i]);
       }
     }
   }
