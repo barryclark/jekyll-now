@@ -148,8 +148,9 @@ function col_option(data, option_lng, lng, baseurl){
     for (var o=0; o < data.contents[i].options.length;++o){
       col_option += "<span>";
       if (lng == "jp"){
+        var col_jp_index;
         if(option_lng.kor.indexOf(data.contents[i].options[o].option_name) > -1){
-          var col_jp_index = option_lng.kr.indexOf(data.contents[i].options[o].option_name);
+          col_jp_index = option_lng.kr.indexOf(data.contents[i].options[o].option_name);
         }
         col_option += option_lng.jp[col_jp_index];
       } else {
