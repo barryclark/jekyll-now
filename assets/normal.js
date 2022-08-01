@@ -129,10 +129,9 @@ if(searching_item){
   document.getElementById("searching_recipe").innerHTML = find_recipe_print;
 
   $.getJSON("https://api-goats.plaync.com/search/l2m/collections?page=1&size=50&search_keyword="+find.name, function(data) {
-    var option = new Array();
     if (lng == "jp"){
       $.getJSON(baseurl+"/alchemist/option.json?version=20220728", function(data) {
-        option = JSON.parse(data);
+        var option_lng = data;
       });
     }
     var col_print = "";
@@ -141,10 +140,10 @@ if(searching_item){
       for (var o=0; o < data.contents[i].options.length;++o){
         col_option += "<span>";
         if (lng == "jp"){
-          if(option.kr.indexOf(data.contents[i].options[o].option_name) > -1){
-            var col_jp_index = option.kr.indexOf(data.contents[i].options[o].option_name);
+          if(option_lng.kr.indexOf(data.contents[i].options[o].option_name) > -1){
+            var col_jp_index = option_lng.kr.indexOf(data.contents[i].options[o].option_name);
           }
-          col_option += option.jp[col_jp_index];
+          col_option += option_lng.jp[col_jp_index];
         } else {
           col_option += data.contents[i].options[o].option_name;
         }
