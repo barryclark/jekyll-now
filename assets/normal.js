@@ -136,12 +136,13 @@ if(searching_item){
         col_option(data, data2, lng, baseurl);
       });
     } else {
-      col_option(data, "", lng, baseurl);
+      col_option(data, option_lng, lng, baseurl);
     }
   });
 }
 function col_option(data, option_lng, lng, baseurl){
   var col_print = "";
+  console.log(option_lng);
   for (var i=0; i < data.contents.length;++i){
     var col_option = "";
     for (var o=0; o < data.contents[i].options.length;++o){
