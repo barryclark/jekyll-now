@@ -3,6 +3,32 @@ layout: post
 title: Fragment
 ---
 
+## 포스트 프로세싱이란
+
+* 포스트 프로세스 이펙트렌더링 직전의 전체 씬에 적용되는 이펙트로 아티스트와 디자이너가 컬러, 톤매핑, 라이팅 등에 영향을 미치는 프로퍼티와 기능을 결합하여 씬의 전체적인 룩 앤 필을 정의하도록 지원
+
+
+## 패키징이란 무엇인가?
+1. 레벨 세팅에서 Default game mode를 설정하지 않고, 기본 게임모드를 설정한다.
+2. 
+
+* 되도록이면 레벨 블루프린트에서 작업하지 않는다. 레벨 블루프린트에다 구현하느니 State에다 구현한다.
+
+레벨을 몇개 만들지 모른다. 하지만 게임 모드를 지정하면, 그 게임모드는 해당 레벨에서 강제된다.
+
+* 보더 위에, 캔버스 패널을 설치하면, 보더 크기랑 캔버스 크기가 일치합니다.
+
+* UI모드 only를 하게되면, 게임으로 못돌아 온다. 음... 게임으로 돌아오는 코드를 작성하기 위해서는 UI에 작성해야 한다.
+* 따라서 게임도 되고, UI도 되는 상태를 유지하면서, 게임도 같다가, UI도 같다가 이동하는 것을 한 곳에 몰아두기 위해서 이다.
+
+* 나는 게임을 할 때 인벤토리를 이렇게 연다.
+
+보더만들고, 보더위에 캔버스 만들고, 보더에서 마우스 입력을 받도록 만든다.
+
+UI열고 닫는건 PlayerController
+
+##
+
 빌보드란 무엇인가? 광고판을 빌보드라 하는데, 어느 방향에 어느 각도로 보든 빌보드라고 합니다.
 
 엘든링의 인벤토리 같은 경우, 링크드 리스트로 되어 있다. 흠...
@@ -1308,10 +1334,6 @@ FString ATest_Network::GetIpAddress()
 UPROPERTY(EditAnywhere, Category = "Camera", meta = (ClampMin = "-89.0", ClampMax = "0.0", UIMin = "-89.0", UIMax = "0.0"))
 float CameraMinPitch;
 ```
-## CameraShake
-
-Offset = Sin(DeletaTime * Frequency)
-Frequency가 2PI일 때 한번 진동이 완료됨.
 
 ## water line
 https://forums.unrealengine.com/t/camera-at-water-level-post-processing-effects-on-part-of-screen/92219

@@ -3,38 +3,65 @@ layout: post
 title: Unreal engine
 ---
 
-- [ ] 선형 대수
 - [ ] 언리얼 1개
+- [ ] 하위 목차 숨기기
 
 <!--
 <details>
 <summary>블로그 작성 규칙</summary>
 <div markdown="1">
 
+* [이해하기](OptimizeLife/OptimizeLife_이해하기)
+    - A를 이해하기 위해 분리하기
+
 </div>
 </details>
+
 -->
 
-<details open><summary>Other</summary>
+<details><summary>Cpp</summary>
 <div markdown="1">
 
-* [알고리즘과 자료구조](/algorithm_and_data_struct/AlgorithmAndDataSturct)
+## Language
+* [CPP](/Language/cpp) 
+
+</div></details>
+
+<details><summary>Other</summary>
+<div markdown="1">
+
+## Algorithm and datastruct
+* [알고리즘과 자료구조](/algorithm_and_data_struct/AlgorithmAndDataSturct) 
     - 알고리즘
     - 자료구조
     - 복잡도
     - 어떻게 쓰는가?
     - 문제 해결
 
-
+## Math
 * [선형 대수](/Math/Linear_Algebra)
-    - Aa
+    - 선형성
+    - 선형 결합
+    - 유클리드 공간
+    - 벡터 공간
+    - 선형 변환
+* [Vector](/Math/Vector)
+    - 벡터
+    - 3차원 벡터
+    - 벡터 공간
 
-
+## Life optimize
 * [Jekyll_blog](OptimizeLife/Jekyll_blog)
     - Jekyll, Markdown, HTML 참고할 수 있는 링크
 
 </div></details>
 
+## Unreal
+
+* [Log and debug](/posts_unreal_engine/Useage-Log-And-Debug)
+    - 언리얼의 로그(UE_LOG)
+    - 언리얼 디버그(Debug)
+    - 언리얼의 콘솔(Console)
 
 # Concept
 * [Garbage-collection](/posts_unreal_engine/Concept-Garbage-collection)
@@ -116,12 +143,6 @@ title: Unreal engine
         - Automation test
 * [Version control](/posts_unreal_engine/Concept-Version-control)
     - 버전 컬트롤이란?
-* [Log and debug](/posts_unreal_engine/Useage-Log-And-Debug)
-    - 매크로의 선언
-    - 로그 상세(Verbosity) 수준의 종류
-    - 로그 출력하기
-    - 스크린에 메시지를 출력하기
-    - 디버그 드로잉
 * [Asset with cpp](/posts_unreal_engine/Useage-Asset-with-cpp)
     - Asset의 경로
     - LoadClass와 LoadObject

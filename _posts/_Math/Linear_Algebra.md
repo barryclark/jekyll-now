@@ -3,6 +3,9 @@ layout: post
 title: Linear algebra
 ---
 
+- [ ] 조금더 이해하고, 더 깔끔하게 정리하기.
+- [ ] 군, 환, 체....
+
 <center>
 
 ```mermaid
@@ -44,120 +47,6 @@ LinearTransform
 * 선형성 또는 선형은 직선처럼 똑바른 도형, 또는 그와 비슷한 성질을 갖는 대상이라는 뜻으로, 이러한 성질을 갖고 있는 변환 등에 대하여 쓰는 용어입니다.
 * 함수의 경우, 어떠한 함수가 진행하는 모양이 '직선'이라는 의미로 사용된다. 이러한 개념은 수학, 물리학 등에서 많이 사용됩니다.
 * 수학, 물리학 등에서 많이 사용된다 합니다. 다른 말로 1차라고도 한다고 합니다.
-
-</div></details>
-
-<details><summary>언리얼 FRay 구조체</summary>
-<div markdown = "1">
-
-언리얼의 FRay를 보면, 원점과 방향으로만 이루어져 있습니다.
-
-```cpp
-/**
- * 3D Ray represented by Origin and (normalized) Direction
- */
-class FRay
-{
-public:
-
-	/** Ray origin point */
-	FVector Origin;
-
-	/** Ray direction vector (always normalized) */
-	FVector Direction;
-
-public:
-
-	/** Default constructor initializes ray to Zero origin and Z-axis direction */
-	FRay()
-	{
-		Origin = FVector::ZeroVector;
-		Direction = FVector(0, 0, 1);
-	}
-
-	/** 
-	  * Initialize Ray with origin and direction
-	  *
-	  * @param Origin Ray Origin Point
-	  * @param Direction Ray Direction Vector
-	  * @param bDirectionIsNormalized Direction will be normalized unless this is passed as true (default false)
-	  */
-	FRay(const FVector& Origin, const FVector& Direction, bool bDirectionIsNormalized = false)
-	{
-		this->Origin = Origin;
-		this->Direction = Direction;
-		if (bDirectionIsNormalized == false)
-		{
-			this->Direction.Normalize();    // is this a full-accuracy sqrt?
-		}
-	}
-
-
-public:
-
-	/** 
-	 * Calculate position on ray at given distance/parameter
-	 *
-	 * @param RayParameter Scalar distance along Ray
-	 * @return Point on Ray
-	 */
-	FVector PointAt(float RayParameter) const
-	{
-		return Origin + RayParameter * Direction;
-	}
-
-	/**
-	 * Calculate ray parameter (distance from origin to closest point) for query Point
-	 *
-	 * @param Point query Point
-	 * @return distance along ray from origin to closest point
-	 */
-	float GetParameter(const FVector& Point) const
-	{
-		return FVector::DotProduct((Point - Origin), Direction);
-	}
-
-	/**
-	 * Find minimum squared distance from query point to ray
-	 *
-	 * @param Point query Point
-	 * @return squared distance to Ray
-	 */
-	float DistSquared(const FVector& Point) const
-	{
-		float RayParameter = FVector::DotProduct((Point - Origin), Direction);
-		if (RayParameter < 0)
-		{
-			return FVector::DistSquared(Origin, Point);
-		}
-		else 
-		{
-			FVector ProjectionPt = Origin + RayParameter * Direction;
-			return FVector::DistSquared(ProjectionPt, Point);
-		}
-	}
-
-	/**
-	 * Find closest point on ray to query point
-	 * @param Point query point
-	 * @return closest point on Ray
-	 */
-	FVector ClosestPoint(const FVector& Point) const
-	{
-		float RayParameter = FVector::DotProduct((Point - Origin), Direction);
-		if (RayParameter < 0) 
-		{
-			return Origin;
-		}
-		else 
-		{
-			return Origin + RayParameter * Direction;
-		}
-	}
-
-
-};
-```
 
 </div></details>
 
@@ -262,120 +151,13 @@ $$
 ## 벡터 공간 (Vector space)
 * Vector field와 헷갈리지 말라고 합니다.
 
-수학 , 물리학 및 공학 에서 벡터 공간 ( 선형 공간 이라고도 함 )은 벡터 라고 하는 요소를 함께 더하고 스칼라 라는 숫자로 곱할 수 있는 집합 입니다. 
+수학, 물리학 및 공학에서 벡터 공간 (선형 공간 이라고도 함)은 벡터 라고 하는 요소를 함께 더하고 스칼라 라는 숫자로 곱할 수 있는 집합 입니다. 
 
 * 스칼라는 종종 실수 이지만 복소수 또는 더 일반적으로 모든 필드 의 요소일 수 있습니다.
-* 벡터 덧셈과 스칼라 곱셈 연산은 벡터 공리 라고 하는 특정 요구 사항을 충족해야 합니다.
-* 실수 벡터 공간 이라는 용어및 복소수 벡터 공간 은 종종 스칼라의 특성을 지정하는 데 사용됩니다( 실제 좌표 공간 또는 복소 좌표 공간 ).
+* 벡터 덧셈과 스칼라 곱셈 연산은 벡터 공리라고 하는 특정 요구 사항을 충족해야 합니다.
+* 실수 벡터 공간 이라는 용어및 복소수 벡터 공간 은 종종 스칼라의 특성을 지정하는 데 사용됩니다(실제 좌표 공간 또는 복소 좌표 공간).
 
-벡터 공간은 힘 과 속도 와 같이 크기뿐만 아니라 방향도 갖는 물리량 의 모델링을 허용하는 유클리드 벡터 를 일반화 합니다. 벡터 공간의 개념은 벡터 공간 에서 계산을 허용하는 행렬 의 개념과 함께 선형 대수학 의 기본입니다 . 이것은 선형 방정식 시스템 을 조작하고 연구하기 위한 간결하고 종합적인 방법을 제공합니다 .
-
-벡터공간의 예로는 유클리드 공간이 있습니다. 벡터공간은 유클리드 공간을 추상화, 일반화해서 벡터 공간의 정의를 만들었기 때문입니다.
-
-<details><summary>벡터 공간이 왜 필요한가요?</summary>
-<div markdown="1">
-
-다음과 같은 문제들을 가정해 봅니다.
-
-> Problem 1: 선형 연립방정식을 푸는 x1, x2, x3 ∈ R 찾기
-
-$$
-3x1 + 2x2 + 0x3 = 8\\
-1x1 + 0x2 + 1x3 = 2\\
-2x1 + 3x2 + 8x3 = 7
-$$
-
-문제 1을 행렬 방정식으로 작성할 수 있습니다.
-
-$$
-\begin{pmatrix}3&2&0\\1&0&1\\2&3&8 \end{pmatrix} \begin{pmatrix}x_1\\x_2\\x_3 \end{pmatrix} 
-= \begin{pmatrix}8\\2\\7 \end{pmatrix}
-$$
-
-열 행렬만 사용하여 작성할 수 있습니다.
-
-$$
-x_1 \begin{pmatrix}3\\1\\2 \end{pmatrix} + x_2 \begin{pmatrix}2\\0\\3 \end{pmatrix} + x_3 \begin{pmatrix}0\\1\\8 \end{pmatrix} = \begin{pmatrix}8\\2\\7 \end{pmatrix}
-$$
-
-열 행렬을 사용하면, 위의 문제는 다음 두 문제와 유사해 보입니다.
-
-> Problem 2: 다음과 같은 x1, x2, x3 ∈ R을 찾으십시오.
-
-$$
-x_1 (3t^2 + 5t - 2) + x_2 (0t^2 - t + 6) + x_3 (9t^2 + 0t + 1) = 6t^2 + 9t + 2
-$$
-
-
-> Problem 3: 다음과 같은 x1, x2, x3, x4, ··· ∈ C를 구합니다.
-
-문제 3은 물리학자가 상자 안의 입자의 운동량을 알고 그 에너지를 알고 싶다면 풀 수 있는 종류의 문제입니다.
-
-$$
-x_1 (sin(\pi t)) + x_2 (sin(2 \pi t)) + x_3 (sin(3 \pi t)) + ··· = e^{5it}
-$$
-
-* field(체, 값이 존재하는 집합, 채운다에서 나온 말인거 같은데, 찾아보면 나오겠지.)
-* coefficients(계수)
-* complex numbers(복소수, 복잡한 수, 실제 세계의 수와 다르게 곱하면 빙빙 회전하기 때문에)
-* mathematical objects(수학적 대상, 수학적으로 풀어야할 문제들)
-
-문제 1, 2, 3에는 특정 유형의 수학적 대상이 있습니다. (열 행렬 문제 1, 문제 2의 다항식, 문제 3의 함수) 이 문제에서 xi 계수에 대한 올바른 값을 찾아 방정식의 오른쪽에 있는 개체를 왼쪽에 있는 개체의 합으로 작성하는 것입니다.
-
-* 대상에 숫자를 곱하고 더할 수만 있다면 모든 종류의 수학적 대상를 사용하여 이러한 유형의 문제의 예를 찾을 수 있습니다.
-
-
-그러나 이러한 이질적인 유형의 수학적 대상에 적용되는 정리와 기술을 아래 문구로 시작합니다.
-
-> "열 벡터, 다항식, 함수 또는 숫자로 곱할 수 있는 다른 유형의 수학적 객체 모음이 있다고 가정합니다. 그리고 더해진..."
-
- 
-<center>
-
-```mermaid
-graph LR
-
-Problem1--->VectorSpace
-Problem2--->VectorSpace
-Problem3--->VectorSpace
-
-Problem1--->Solve1
-Problem2--->Solve2
-Problem3--->Solve3
-
-VectorSpace--->Solve1
-VectorSpace--->Solve2
-VectorSpace--->Solve3
-```
-
-</center>
-
-서로 다른 수학적 대상들을 정리와 기술이 있다면, 양이 많을 것입니다. 따라서 수학자들은 간결하게 표현하기 위해 벡터 공간이라는 용어를 발명하여 숫자를 곱하고 더할 수 있는 모든 유형의 수학적 객체를 의미합니다. 이런 식으로 정리는 위의 모호한 문구 대신 "V를 벡터 공간이 되게 하십시오..."라는 문구로 시작합니다.
-
-</div></details>
-
-<details><summary>벡터 공간의 정의</summary>
-<div markdown="1">
-
-벡터 공간은 집합 V(V의 요소를 벡터라고 함), 필드 F(F의 요소를 스칼라라고 함) 및 두 가지 연산으로 구성됩니다. 
-
-같은 수의 성분을 가지는 벡터들로 이루어진 공집합이 아닌 집합 V가 있을 때, 
-- V에 속하는 임의의 두 벡터 a와 b의 일차결합이 αa + βb (α, β 는 임의의 실수)가 또한 V에 속하고 
-- 벡터에 대한 덧셈과 스칼라곱이 아래의 8가지 벡터의 합과 스칼라곱에 대한 연산법칙을 만족하면 집합 V를 벡터공간(vector space) 또는 선형공간(linear space)이라고 하며, 그 원소를 벡터(vector)라고 합니다. 
- 
- 벡터의 합에 대해 
-   (1) a + b = b + a   : 교환(commutative)법칙
-   (2) (a + b) + c = a + (b + c)   : 결합(associative) 법칙
-   (3) a + 0 = a : 항등원
-   (4) a + (-a) = 0 : 역원
- 
-  스칼라곱에 대해 
-   (5) c(a + b) = ca + cb : 분배법칙
-   (6) (c + k)a = ca + ka : 분배법칙
-   (7) c(ka) = (ck)a
-   (8) 1a = a 
-
-</div></details>
+벡터 공간은 힘과 속도와 같이 크기뿐만 아니라 방향도 갖는 물리량 의 모델링을 허용하는 유클리드 벡터를 일반화 합니다. 벡터 공간의 개념은 벡터 공간 에서 계산을 허용하는 행렬의 개념과 함께 선형 대수학의 기본입니다. 이것은 선형 방정식 시스템 을 조작하고 연구하기 위한 간결하고 종합적인 방법을 제공합니다.
 
 ## 선형 변환 (Linear Transform)
 선형 변환(線型變換, 영어: linear transformation, vector space homomorphism, linear function) 또는 선형 사상(線型寫像, 영어: linear map, linear mapping) 또는 선형 연산자(線型演算子, 영어: linear operator) 혹은 선형 작용소(線型作用素)는 선형대수학에서 선형 결합을 보존하는, 두 벡터 공간 사이의 함수입니다.
@@ -396,4 +178,4 @@ VectorSpace--->Solve3
 선형 함수가 되기 위한 조건들을 만족하려면 함수가 반드시 1차여야 함을 알 수 있습니다. 2차 이상의 차수를 가진 수식에서 첫 번째나 두 번째 조건이 절대 만족할 수 가 없기 때문입니다.
 
 
-주요 참고자료 : 수학으로 시작하는 3D 게임 개발, 위키피디아, [유클리드 공간이란](https://freshrimpsushi.github.io/posts/what-is-an-euclidean-space/), [What is a Vector Space](http://www.math.toronto.edu/gscott/WhatVS.pdf)
+주요 참고자료 : 수학으로 시작하는 3D 게임 개발, 위키피디아, [유클리드 공간이란](https://freshrimpsushi.github.io/posts/what-is-an-euclidean-space/)
