@@ -142,7 +142,7 @@ if(searching_item){
 }
 function col_option(data, option_lng, lng, baseurl){
   var col_print = "";
-  console.log(option_lng);
+  console.log(option_lng.kor);
   for (var i=0; i < data.contents.length;++i){
     var col_option = "";
     for (var o=0; o < data.contents[i].options.length;++o){
