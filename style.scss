@@ -385,6 +385,10 @@ nav {
   margin: 0 0.1em 0;
   border: 1px solid;
 }
+#searching_recipe{
+  display: flex;
+  flex-wrap: wrap;
+}
 #searching_recipe a{
   text-decoration: none;
   padding: 0.2em;
@@ -396,9 +400,11 @@ nav {
 }
 #searching_recipe label{
   padding: 0.3em 0.5em;
-  border-radius: 1em;
+  border-radius: 14px;
   box-sizing: border-box;
   margin: 0 0.5em;
+}#searching_recipe label:hover{
+  background: #8c919a;
 }
 #searching_recipe input[type="radio"]{
   display:none;
