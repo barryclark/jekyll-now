@@ -130,9 +130,8 @@ if(searching_item){
 
   $.getJSON("https://api-goats.plaync.com/search/l2m/collections?page=1&size=50&search_keyword="+find.name, function(data) {
     if (lng == "jp"){
-      var option_lng = "";
       $.getJSON(baseurl+"/alchemist/option.json?version=20220728", function(data) {
-        option_lng = data;
+        localStorage.setItem('option', JSON.stringify(data));
       });
     }
     var col_print = "";
@@ -141,6 +140,7 @@ if(searching_item){
       for (var o=0; o < data.contents[i].options.length;++o){
         col_option += "<span>";
         if (lng == "jp"){
+          var option_lng = localStorage.getItem('option');
           if(option_lng.kr.indexOf(data.contents[i].options[o].option_name) > -1){
             var col_jp_index = option_lng.kr.indexOf(data.contents[i].options[o].option_name);
           }
