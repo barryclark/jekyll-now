@@ -191,11 +191,7 @@ function recipe_reset(searching_recipe, find, lng){
   if(searching_recipe){
     var recipe = get_recipe(searching_recipe, find.name, "recipe", lng);
 
-    if (lng == "jp"){
-      var recipe_material = "<h2>錬金の材料</h2><ul class='recipe_list'>";
-    } else {
-      var recipe_material = "<h2>연금식 재료</h2><ul class='recipe_list'>";
-    }
+    var recipe_material = "<ul class='recipe_list'>";
     $.getJSON(baseurl+"/alchemist/recipe.json?version=20220728", function(data) {
       for (var i=0; i < data.length;++i){
         if(data[i]['no'] == searching_recipe){
