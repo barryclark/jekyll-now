@@ -124,9 +124,9 @@ if(searching_item){
     find_recipe_print += "<input type=\"radio\" name=\"recipe_list\" value=\""+find_recipe[i]+"\">";
     find_recipe_print += "<label for=\""+find_recipe[i]+"\">";
     if (lng == "jp"){
-      find_recipe_print += ふつう錬金"+find_recipe[i];
+      find_recipe_print += "ふつう錬金"+find_recipe[i];
     } else {
-      find_recipe_print += 일반 연금"+find_recipe[i];
+      find_recipe_print += "일반 연금"+find_recipe[i];
     }
     find_recipe_print += "</label>";
   }
