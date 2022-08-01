@@ -121,8 +121,8 @@ if(searching_item){
   var find_recipe_print = '';
   for (var i=0; i < find_recipe.length;++i){
 
-    find_recipe_print += "<input type=\"radio\" name=\"recipe_list\" value=\""+find_recipe[i]+"\">";
-    find_recipe_print += "<label for=\""+find_recipe[i]+"\">";
+    find_recipe_print += "<input type=\"radio\" id=\"recipe_list"+find_recipe[i]+"\" name=\"recipe_list\" value=\""+find_recipe[i]+"\">";
+    find_recipe_print += "<label for=\"recipe_list"+find_recipe[i]+"\">";
     if (lng == "jp"){
       find_recipe_print += "ふつう錬金"+find_recipe[i];
     } else {
