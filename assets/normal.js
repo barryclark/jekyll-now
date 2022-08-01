@@ -133,14 +133,14 @@ if(searching_item){
       var option_lng;
       $.getJSON(baseurl+"/alchemist/option.json?version=20220728", function(data2) {
         option_lng = data2;
-        col_option(data, data2);
+        col_option(data, data2, lng);
       });
     } else {
-      col_option(data, "");
+      col_option(data, "", lng);
     }
   });
 }
-function col_option(data, option_lng){
+function col_option(data, option_lng, lng){
   var col_print = "";
   for (var i=0; i < data.contents.length;++i){
     var col_option = "";
