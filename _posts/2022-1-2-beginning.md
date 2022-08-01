@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Where it began
+title: 2022-01-02
 ---
 
 # Start of this blog
