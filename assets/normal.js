@@ -164,11 +164,11 @@ function col_option(data, option_lng, lng, baseurl){
     col_print += "<div>"+col_option + "" + "<ul>" + col_item + "</ul>"+"</div>";
   }
   if (lng == "jp"){
-    var regex = new RegExp("/" + col_print + "/g");
     for (var i=0; i < option_lng.kor.length;++i){
       if(col_print.includes(option_lng.kor[i])){
+        var regex = new RegExp("/" + option_lng.kor[i] + "/g");
         console.log(option_lng.kor[i]+"/"+option_lng.jp[i]);
-        col_print = col_print.replace(regex, option_lng.jp[i]);
+        col_print = col_print.replace(col_print, option_lng.jp[i]);
       }
     }
   }
