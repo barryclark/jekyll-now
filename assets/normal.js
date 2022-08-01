@@ -18,7 +18,7 @@ function isitem(datalist, item){
 }
 
 function get_recipe(recipe, item, target, lng){
-    $.getJSON(baseurl+"/alchemist/"+recipe+".json?version=20220728", function(data) {
+    $.getJSON(baseurl+"/alchemist/"+recipe+".json?version=20220801", function(data) {
       var step = '';
       var step_1='<div><h3>슬롯1</h3><ul>';
       var step_2='<div><h3>슬롯2</h3><ul>';
@@ -142,7 +142,7 @@ if(searching_item){
   $.getJSON("https://api-goats.plaync.com/search/l2m/collections?page=1&size=50&search_keyword="+find.name, function(data) {
     if (lng == "jp"){
       var option_lng;
-      $.getJSON(baseurl+"/alchemist/option.json?version=20220728", function(data2) {
+      $.getJSON(baseurl+"/alchemist/option.json?version=20220801", function(data2) {
         option_lng = data2;
         col_option(data, data2, lng, baseurl);
       });
@@ -193,7 +193,7 @@ function recipe_reset(searching_recipe, find, lng){
   if(searching_recipe){
     var recipe = get_recipe(searching_recipe, find.name, "recipe", lng);
     var recipe_material = "<ul class='recipe_list'>";
-    $.getJSON(baseurl+"/alchemist/recipe.json?version=20220728", function(data) {
+    $.getJSON(baseurl+"/alchemist/recipe.json?version=20220801", function(data) {
       for (var i=0; i < data.length;++i){
         if(data[i]['no'] == searching_recipe){
           for (var j=0; j < data[i]['recipe'].length;++j){
