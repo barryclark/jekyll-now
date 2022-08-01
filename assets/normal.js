@@ -166,7 +166,7 @@ function col_option(data, option_lng, lng, baseurl){
   if (lng == "jp"){
     for (var i=0; i < option_lng.kor.length;++i){
       if(col_print.includes(option_lng.kor[i])){
-        var regex = new RegExp('/{' + option_lng.kor[i] + '}/g')   ;
+        var regex = new RegExp('/{' + option_lng.kor[i] + '}/g');
         col_print = col_print.replace(regex, option_lng.jp[i]);
       }
     }
