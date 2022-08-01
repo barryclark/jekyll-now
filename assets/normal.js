@@ -164,10 +164,12 @@ function col_option(data, option_lng, lng, baseurl){
     col_print += "<div>"+col_option + "" + "<ul>" + col_item + "</ul>"+"</div>";
   }
   if (lng == "jp"){
-    option_lng.forEach(function(element){
-        var regex = new RegExp("/" + col_print + "/g");
-        col_print = col_print.replace(regex, element.jp);
-    });
+    var regex = new RegExp("/" + col_print + "/g");
+    for (var i=0; i < option_lng.kr.length;++i){
+      if(col_print.includes(option_lng.kr[i])){
+        col_print = col_print.replace(regex, option_lng.jp[i]);
+      }
+    }
   }
   document.getElementById("collections").innerHTML = col_print;
 }
