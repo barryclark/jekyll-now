@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An effort was made
+title: 2022-06-25
 ---
 
 # Continuous learning
