@@ -394,6 +394,11 @@ nav {
   white-space:nowrap;
   display: inline-block;
 }
+#searching_recipe input[type="radio"]:checked + label {
+  background: #282844;
+  color:white;
+  font-weight: bold;
+}
 .recent h1{
   margin:0;
 }
