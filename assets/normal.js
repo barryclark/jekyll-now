@@ -130,6 +130,7 @@ if(searching_item){
 
   $.getJSON("https://api-goats.plaync.com/search/l2m/collections?page=1&size=50&search_keyword="+find.name, function(data) {
     if (lng == "jp"){
+      var option_lng = "";
       $.getJSON(baseurl+"/alchemist/option.json?version=20220728", function(data) {
         var option_lng = data;
       });
