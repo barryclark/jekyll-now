@@ -168,7 +168,7 @@ function col_option(data, option_lng, lng, baseurl){
       if(col_print.includes(option_lng.kor[i])){
         var regex = new RegExp("/" + option_lng.kor[i] + "/g");
         console.log(option_lng.kor[i]+"/"+option_lng.jp[i]);
-        col_print = col_print.replace(col_print, option_lng.jp[i]);
+        col_print = col_print.replace(regex, option_lng.jp[i]);
       }
     }
   }
