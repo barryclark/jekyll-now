@@ -2,6 +2,8 @@ const baseurl = "https://purple2m.github.io";
 
 $('.view_recipe').click(function(){
   $('#recipe').toggle();
+  var offset = $('#recipe').offset();
+  $('html').animate({scrollTop : offset.top}, 400);
 });
 
 function isitem(datalist, item){
