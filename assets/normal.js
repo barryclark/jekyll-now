@@ -132,7 +132,7 @@ if(searching_item){
     if (lng == "jp"){
       var option_lng;
       $.getJSON(baseurl+"/alchemist/option.json?version=20220728", function(data) {
-        option_lng = JSON.parse(data));
+        option_lng = JSON.parse(data);
       });
     }
     var col_print = "";
