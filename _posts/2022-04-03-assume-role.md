@@ -14,6 +14,7 @@ Beside useful practices the Assume Role functionality can be an excellent vector
 ## Variant 1 - Assume Role in the Same Account
 
 To be able to assume a role we must fulfill the following prerequisites:
+
 1. The target role that shell be assumed has a trusted relationship with the entity attempting to assume the role
 2. The role attempting to perform the assumption needs the privilege: [sts:AssumeRole](https://docs.aws.amazon.com/cli/latest/reference/sts/assume-role.html)
 
@@ -62,9 +63,10 @@ As you can see, when attempting to assume a role in the same account things are 
 * Be aware of the different requirements between same and cross account role assumption. Some administrators have the impression that the base role requires AssumeRole privileges. In such a case they may not be aware of the security considerations around this option.
 
 ## Variant 2 - Cross Account Access
+
 By assuming a role across multiple accounts the base role is forced to have AssumeRole privileges. It doesn't care if the Trust Relationship specifies an account or a specific role.
 
-### Let's write some Code 
+### Let's write some Code
 
 <p align="center">
 <img width=300 src="/images/yodawgassume.webp">
@@ -72,21 +74,22 @@ By assuming a role across multiple accounts the base role is forced to have Assu
 
 With the theory above in mind, let's write some code to assume a role in a different account. To have something we can reuse and also a functionality that bring some benefits we write two classes. The table next will explain it on a high level:
 
-| File                 | Semantics                                              | 
+| File                 | Semantics                                              |
 | -------------------- | -------------------------------------------------------|
 | awsaccountlister.py  | High-level function that creates a Session in you Payer Account (hopefully you have one), get's all account back and required info to assume a role. After that it loops over each account and performs the function that you pass to the super loop |
 | shield_ddos_attack_lister.py | Function that gatherers info from AWS Shield about the occurrence of detected DDoS attacks in the past |
 
-Now to the Code and maybe to some Terraform modules to get this beast installed with ease. As you might already have figured out you require AWS Shield as a prerequisite :) 
- 
+Now to the Code and maybe to some Terraform modules to get this beast installed with ease. As you might already have figured out you require AWS Shield as a prerequisite :)
+
 awsaccountlister.py:
+
 ```python
 import boto3
 
 def get_organizations():
     sts_client = boto3.client('sts')
 
-    sts_response = sts_client.push_findings(
+    sts_response = sts_client.assume_role(
         RoleArn="arn:aws:iam::123456789:role/MyAwesomeAuditViewerRole",
         RoleSessionName="SessionInPayerAccount"
     )
@@ -131,6 +134,7 @@ def check_response(response):
 ```
 
 shield_ddos_attack_lister.py:
+
 ```python
 import datetime
 import awsaccountlister
