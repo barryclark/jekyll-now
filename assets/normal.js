@@ -71,10 +71,15 @@ function get_recipe(recipe, item, target, lng){
           if(find == ''){
             find += "<ul>";
           }
-          if(lng == "jp"){
-            find += "<li>[スロット"+step[1]+"] "+data[i]['up']+" "+data[i]['jp']+" ("+data[i]['rand']+")</li>";
+          if(data[i]['up'] == 0){
+            data[i]['up'] = "";
           } else {
-            find += "<li>[슬롯"+step[1]+"] "+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
+            data[i]['up'] = "+"+data[i]['up']+" ";
+          }
+          if(lng == "jp"){
+            find += "<li><span class='slot'>スロット"+step[1]+"</span>"+data[i]['up']+data[i]['jp']+" ("+data[i]['rand']+")</li>";
+          } else {
+            find += "<li><span class='slot'>슬롯"+step[1]+"</span>"+data[i]['up']+data[i]['name']+" ("+data[i]['rand']+")</li>";
           }
         }
       }
@@ -184,11 +189,6 @@ function col_option(data, option_lng, lng, baseurl){
 
 function recipe_reset(searching_recipe, find, lng){
   if(searching_recipe){
-    if (lng == "jp"){
-      document.getElementById("find_recipe").innerHTML = "ふつう錬金 "+searching_recipe+"の各スロット別登場アイテム獲得確率";
-    } else {
-      document.getElementById("find_recipe").innerHTML = "일반 연금 "+searching_recipe+"의 각 슬롯별 등장 아이템 획득 확률";
-    }
     var recipe = get_recipe(searching_recipe, find.name, "recipe", lng);
 
     if (lng == "jp"){

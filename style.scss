@@ -385,9 +385,18 @@ nav {
   margin: 0 0.1em 0;
   border: 1px solid;
 }
+#searching_find .slot{
+  padding: 0.3em 0.5em;
+  border-radius: 14px;
+  box-sizing: border-box;
+  margin: 0 0.2em;
+  background: #282844;
+  color:white;
+}
 #searching_recipe{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 #searching_recipe a{
   text-decoration: none;
