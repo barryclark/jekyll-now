@@ -146,17 +146,7 @@ function col_option(data, option_lng, lng, baseurl){
     var col_option = "";
     for (var o=0; o < data.contents[i].options.length;++o){
       col_option += "<span>";
-      if (lng == "jp"){
-        var col_jp_index;
-        console.log(data.contents[i].options[o].option_name);
-        if(option_lng.kor.indexOf(data.contents[i].options[o].option_name) > -1){
-          col_jp_index = option_lng.kr.indexOf(data.contents[i].options[o].option_name);
-          console.log(col_jp_index);
-        }
-        col_option += option_lng.jp[col_jp_index];
-      } else {
-        col_option += data.contents[i].options[o].option_name;
-      }
+      col_option += data.contents[i].options[o].option_name;
       col_option += data.contents[i].options[o].display;
       col_option += "</span>";
     }
@@ -172,6 +162,12 @@ function col_option(data, option_lng, lng, baseurl){
       col_item += "</a></li>";
     }
     col_print += "<div>"+col_option + "" + "<ul>" + col_item + "</ul>"+"</div>";
+  }
+  if (lng == "jp"){
+    option_lng.forEach(function(element){
+        var regex = new RegExp("/" + col_print + "/g");
+        col_print = col_print.replace(regex, element.jp);
+    });
   }
   document.getElementById("collections").innerHTML = col_print;
 }
