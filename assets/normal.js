@@ -160,7 +160,11 @@ function col_option(data, option_lng, lng, baseurl){
       col_item_name = data.contents[i].items[o].item_name;
       col_item_enchant_level = data.contents[i].items[o].enchant_level;
       col_item += "<li>";
-      col_item += "<a href='"+baseurl+"/ko/alchemist/?item="+col_item_name+"'>";
+      if(lng == "jp"){
+        col_item += "<a href='"+baseurl+"/jp/alchemist/?item="+col_item_name+"'>";
+      } else {
+        col_item += "<a href='"+baseurl+"/ko/alchemist/?item="+col_item_name+"'>";
+      }
       col_item += "<img class=\"thumb\" src=\""+col_item_icon+"\" onerror=\"this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';\"><span>+"+col_item_enchant_level+"</span>";
       col_item += "</a></li>";
     }
