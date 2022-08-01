@@ -1,6 +1,6 @@
 ---
 layout: memory
-title: SVG SSRF Cheatsheet
+title: AWS Security Services Cheatsheet
 ---
 
 ### GuardDuty
