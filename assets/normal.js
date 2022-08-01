@@ -190,7 +190,6 @@ function col_option(data, option_lng, lng, baseurl){
 function recipe_reset(searching_recipe, find, lng){
   if(searching_recipe){
     var recipe = get_recipe(searching_recipe, find.name, "recipe", lng);
-
     var recipe_material = "<ul class='recipe_list'>";
     $.getJSON(baseurl+"/alchemist/recipe.json?version=20220728", function(data) {
       for (var i=0; i < data.length;++i){
