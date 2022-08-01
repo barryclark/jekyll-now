@@ -394,6 +394,9 @@ nav {
   white-space:nowrap;
   display: inline-block;
 }
+#searching_recipe input[type="radio"]{
+  display:none;
+}
 #searching_recipe input[type="radio"]:checked + label {
   background: #282844;
   color:white;
