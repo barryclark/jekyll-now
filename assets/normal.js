@@ -141,6 +141,7 @@ if(searching_item){
         col_option += "<span>";
         if (lng == "jp"){
           var option_lng = localStorage.getItem('option');
+          option_lng = JSON.parse(option_lng);
           if(option_lng.kr.indexOf(data.contents[i].options[o].option_name) > -1){
             var col_jp_index = option_lng.kr.indexOf(data.contents[i].options[o].option_name);
           }
