@@ -394,6 +394,12 @@ nav {
   white-space:nowrap;
   display: inline-block;
 }
+#searching_recipe label{
+  padding: 0.3em 0.5em;
+  border-radius: 1em;
+  box-sizing: border-box;
+  margin: 0 0.5em;
+}
 #searching_recipe input[type="radio"]{
   display:none;
 }
