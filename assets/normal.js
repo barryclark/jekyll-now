@@ -142,7 +142,6 @@ if(searching_item){
 }
 function col_option(data, option_lng, lng, baseurl){
   var col_print = "";
-  console.log(option_lng.kor);
   for (var i=0; i < data.contents.length;++i){
     var col_option = "";
     for (var o=0; o < data.contents[i].options.length;++o){
@@ -151,6 +150,7 @@ function col_option(data, option_lng, lng, baseurl){
         var col_jp_index;
         if(option_lng.kor.indexOf(data.contents[i].options[o].option_name) > -1){
           col_jp_index = option_lng.kr.indexOf(data.contents[i].options[o].option_name);
+          console.log(col_jp_index);
         }
         col_option += option_lng.jp[col_jp_index];
       } else {
