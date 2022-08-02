@@ -3,7 +3,7 @@ layout: post
 title: cpp
 ---
 
-- [ ] L-value, R-value 분리 해서 정리하기
+- [ ] Cast
 
 ## 유용한 사이트 모음
 
@@ -43,6 +43,8 @@ title: cpp
 * [value category](/Language/cpp-value_categories)
 
 * [함수 파라메터에서 const TYPE&](/Language/cpp-Const_TYPE_Ref_function_parameter) (Pass by const reference)
+
+* [dynamic_allocation](cpp-dynamic_allocation)
 
 * [Cast의 종류]
 
