@@ -3,11 +3,20 @@ layout: post
 title: Vector
 ---
 
+<center>
+
 ```mermaid
 graph LR
 
+Norm--->Vector
+DotProduct--->Vector
+CrossProduct--->Vector
+VectorProjection--->Vector
+
 Vector--->3DVector--->VectorSpace
 ```
+
+</center>
 
 ## 벡터
 
@@ -23,6 +32,19 @@ Vector--->3DVector--->VectorSpace
 
 </center>
 
+<details><summary>벡터의 놈</summary>
+<div markdown="1">
+
+[Norm   노름, 놈, 벡터의 길이, 벡터의 크기](http://www.ktword.co.kr/test/view/view.php?m_temp1=4201)
+
+노름 (Norm) 이란 벡터/함수/신호 등의 크기(강도,길이)의 척도를 나타내는 수학적인 용어 입니다. 흔히, 벡터의 노름 이라고 하면, 유클리드 노름을 의미합니다.
+
+* 유클리드 노름 (Euclidean Norm)은 유클리드 길이(Euclidean Length)입니다. 즉 원점으로부터의 거리입니다.
+	- n차원 실수 공간 $R^n$ 에서, `원점에서 임의 점까지의 거리` 또는 `벡터의 크기(길이)`입니다.
+	- $\|v\|$로 표현합니다. $\|v\| = \sqrt{x_1^2 + x_2^2 + ... + x_n^n}$ 입니다.
+
+
+</div></details>
 
 <details><summary>벡터의 내적</summary>
 <div markdown="1">
@@ -36,15 +58,23 @@ $v_1 \cdot v_2 = x_1x_2 + y_1y_2 = \|v_1\| \|v_2\| cosθ $
 <details><summary>벡터의 외적</summary>
 <div markdown="1">
 
-벡터의 외적은 기본적으로 3차원에서 정의되며 두 벡터를 $ v_1 = (x_1, y_1, z_1), v_2 = (x_2, y_2, z_2) $라 했을 때, 두 벡터의 외적(cross product)는 다음과 같이 정의됩니다.
+벡터의 외적은 기본적으로 3차원에서 정의되며 두 벡터를 $ a = (x_1, y_1, z_1), b = (x_2, y_2, z_2) $라 했을 때, 두 벡터의 외적(cross product)는 다음과 같이 정의됩니다.
+
+보통 수학에서는 오른손 좌표계를 쓰나, 왼손 좌표계의 경우, 외적 벡터의 방향이 반대로 됩니다.
+
+<center>
+
+![CrossProduct](http://www.findmean.com/wp-content/uploads/2019/12/%EC%99%B8%EC%A0%81%EC%A0%95%EC%9D%98-300x251.png)
+
+</center>
 
 $
-v_1 \times v_2 = \begin{vmatrix} i&j&k \\ x_1&y_1&z_1 \\ x_2&y_2&z_2 \end{vmatrix} = (y_1z_2 - z_1y_2, z_1x_2 - x_1z_2, x_1y_2 - y_1x_2 ) = \|v_1\| \|v_2\| sinθ
+a \times b = \begin{vmatrix} i&j&k \\ x_1&y_1&z_1 \\ x_2&y_2&z_2 \end{vmatrix} = (y_1z_2 - z_1y_2, z_1x_2 - x_1z_2, x_1y_2 - y_1x_2 ) = \|a\| \|b\| sinθ
 $
 
 단, $ i=(1,0,0), j=(0,1,0), k=(0,0,1) $는 좌표축 단위벡터.
 
-* 외적 $ v_1 \times v_2 $는 $ v_1, v_2 $로 이루어지는 평면에 수직이면서 그 크기가 $ (v_1, v_2) $로 이루어지는 평행사변형의 넓이인 $ \|v1\|\|v2\|sinθ $를 나타냅니다.
+* 외적 $ a \times b $는 $ a, b $로 이루어지는 평면에 수직이면서 그 크기가 $ (a, b) $로 이루어지는 평행사변형의 넓이인 $ \|v1\|\|v2\|sinθ $를 나타냅니다.
 * **첫번째 벡터를 x축, 두번째 벡터를 y축이라 했을 때 두 벡터의 외적은 z축 이라고 생각합시다.**
 * 벡터의 외적은 원래 3차원 공간에서 정의되지만, z = 0이라 생각하면 2차원 평면에서도 계산이 가능합니다.
 * 영벡터가 아닌 두 벡터의 외적이 영벡터가 되는 경우는 두 벡터가 같은 방향이거나 또는 서로 반대 방향인 경우입니다.
@@ -68,6 +98,44 @@ $ θ = cos^{-1}(v_1·v_2 / \|v1\| \|v2\|) $
 직선의 경우에는 아래 그림과 같이 어떻게 벡터를 잡느냐에 따라서 서로 다른 2개의 사이각이 나올 수 있기 때문에 보통은 최소 사이각을 계산하는 것이 일반적입니다.
 
 기준이 되는 벡터를 잡았으면, 두 벡터의 사이각을 구하고, 다른 방법으로는 최소 사이각을 구할 수 있습니다.
+
+</div></details>
+
+<details><summary>벡터의 투영</summary>
+<div markdown="1">
+
+v의 벡터를 n에 투영했을때 생기는 벡터 v'를 의미하는 것이다. v에서 n로 수선을 긋게되면 직각삼각형이 생기는데, 여기에서 삼각함수을 이용하여 투영벡터를 구하는 공식을 구할수 있습니다.
+
+<center>
+
+![VectorProjection](https://t1.daumcdn.net/cfile/tistory/130CD03E5166AF870F)
+
+</center>
+
+cos θ는 V의 길이를 투영된 벡터 V`의 길이로 나눈 것으로 표현할 수 있습니다.
+
+$ 
+v \cdot n = \| v \| \cdot \| n \| \cdot cos θ = \| v \| \cdot \| n \| \cdot \frac { \|V_{proj}\| } { \| v \| } = \|n\| \cdot \|v_{proj}\| \\
+$
+
+따라서 투영벡터의 길이를 다음과 같이 쓸 수 있습니다.
+
+$ \|v_{proj}\| = \frac { v \cdot w } {\|n\|} $
+
+투영벡터의 길이를 투영 벡터와 같은 방향인 n의 유닛벡터를 곱하면 투영벡터를 구할 수 있습니다.
+
+$ v_{proj} = \frac { v \cdot w } {\|n\|} \cdot \hat n $
+
+</div></details>
+
+<details><summary>언리얼은 왼손좌표계</summary>
+<div markdown="1">
+
+[UE4 coordinate system NOT right handed](https://forums.unrealengine.com/t/ue4-coordinate-system-not-right-handed/80398)
+
+나침판은 위에서 볼때 왼손좌표계입니다. 수학 단위 원은 위에서 볼때 오른손 잡이입니다. 컴퓨터 그래픽은 전통적으로 비행 시뮬레이션에서 발전했기 때문에 관습적으로 왼손좌표계를 씁니다. 선형 대수학은 전통적인 수학에서 발전했으므로 (x축은 오른쪽, y축은 위쪽) 관습을 오른손에 두었습니다. 
+
+나침반으로 Y좌표를 물리적으로 해석하면, 양수 X는 앞으로, 양수 Y는 오른쪽으로 가고, Z는 위로 올라갑니다. 따라서 Z를 중심으로 한 왼쪽 회전은 시계 방향 회전을 생성합니다.
 
 </div></details>
 
