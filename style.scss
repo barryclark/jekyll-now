@@ -559,41 +559,40 @@ footer {
 }
 
 #collections{
-  min-width: 350px;
-  margin: 0 auto;
-}
-#collections .thumb{
-  width: 48px;
-  height: 48px;
-}
-#collections > div{
-  padding:0.5em;
-}
-#collections h4 > span{
-  display: block;
-}#collections h4 > span:last-child{
-  margin: 0;
-}
-#collections h4{
-  margin:0;
-}
-#collections ul{
-  list-style-type: none;
-  display: flex;
-  margin:0;
-  padding:0;
-}
-#collections ul > li > a{
-  display: block;
-  border: 1px solid $white8;
-  position: relative;
-  padding: 0.2em;
-  margin: 0.1em;
-}
-#collections ul > li > a > span{
-  position: absolute;
-  right: 5px;
-  bottom: 0;
+  .thumb{
+    width: 48px;
+    height: 48px;
+  }
+  div{
+    padding:0.5em;
+  }
+  h4 > span{
+    display: block;
+  }
+  h4 > span:last-child{
+    margin: 0;
+  }
+  h4{
+    margin:0;
+  }
+  ul{
+    list-style-type: none;
+    display: flex;
+    margin:0;
+    padding:0;
+  }
+  ul > li > a{
+    display: block;
+    border: 1px solid $white8;
+    position: relative;
+    padding: 0.2em;
+    margin: 0.1em;
+  }
+  ul > li > a > span{
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+  }
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
