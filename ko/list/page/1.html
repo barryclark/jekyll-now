@@ -15,7 +15,8 @@ tags: [리니지2M, 리니지2m, 연금 검색기]
         {% assign no=1 %}
         {% if list.size > 1 %}
           {% for item in list %}
-            <li>{{ no }}{{ item.name }}</li>
+          {% if item.id | slice: 2 == 100 %}
+            <li>{{ no }}|{{ item.name }}</li>
             {% assign no = no | plus: 1 %}
           {% endfor %}
         {% endif %}
