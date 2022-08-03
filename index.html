@@ -6,17 +6,21 @@ I am considering adding other lang of search function.<br>
 If there are any users other than Korean and Japanese, please leave a message on my Twitter.
 <h1><a href="https://twitter.com/L2MDCSCAM">Twitter</a></h1>
 
-<div class="recent" lang="ko">
-  <h1>Tips</h1>
-{% assign posts = site.categories.tips | where:"lang", "ko" | sort: 'lang-ref' %}
-{% if posts.size > 1 %}
-  {% for post in posts %}
-    <article class="post">
-      <h2>{{ post.title }}</h2>
-      <h2>{{ post.jp }}</h2>
-      <a href="{{ site.baseurl }}{{ post.url }}"><span class="flag flag-kr"> </span> 한국어</a>
-      <a href="{{ site.baseurl }}{{ post.url | replace: "ko", "jp" }}"><span class="flag flag-jp"> </span>日本語</a>
-    </article> 
-  {% endfor %}
-{% endif %}
-</div>
+<section class="recent-wrapper">
+  <header>
+    <h1>Tips</h1>
+  </header>
+  <div class="recent" lang="ko">
+    {% assign posts = site.categories.tips | where:"lang", "ko" | sort: 'lang-ref' %}
+    {% if posts.size > 1 %}
+      {% for post in posts %}
+        <article class="post">
+          <h2>{{ post.title }}</h2>
+          <h2>{{ post.jp }}</h2>
+          <a href="{{ site.baseurl }}{{ post.url }}"><span class="flag flag-kr"> </span> 한국어</a>
+          <a href="{{ site.baseurl }}{{ post.url | replace: "ko", "jp" }}"><span class="flag flag-jp"> </span>日本語</a>
+        </article>
+      {% endfor %}
+    {% endif %}
+  </div>
+</<section>
