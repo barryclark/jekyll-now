@@ -436,13 +436,13 @@ nav {
 .recent-wrapper{
   padding: 0 1em 0;
 }
-.recent-wrapper > h1{
+.recent-wrapper > header > h1{
   margin:0;
 }
-.recetn {
+.recent-wrapper > .recent {
   border:1px solid $white2;
 }
-.recent article{
+.recent-wrapper > .recent article{
   border-bottom: 1px solid $white2;
   padding: 0.5em;
 }
