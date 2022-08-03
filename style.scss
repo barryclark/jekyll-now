@@ -423,6 +423,7 @@ nav {
   box-sizing: border-box;
   margin: 0 0.2em;
   cursor: pointer;
+  white-space: nowrap;
 }#searching_recipe label:hover{
   background: $white2;
 }
