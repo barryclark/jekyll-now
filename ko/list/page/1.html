@@ -1,0 +1,21 @@
+---
+layout: ko
+title: 리니지2M 아이템 목록
+excerpt: "리니지2M의 무기, 방어구, 장신구 등 아이템 목록과 연금술 목록을 확인할 수 있습니다."
+tags: [리니지2M, 리니지2m, 연금 검색기]
+---
+<section class="recent-wrapper">
+  <header>
+    <h1>아이템 목록</h1>
+  </header>
+  <div class="recent" lang="ko">
+    <article class="post">
+    {% assign list=site.data.item2 | sort: 'id' %}
+    {% if list.size > 1 %}
+      {% for item in list %}
+      {{ item.name }}
+      {% endfor %}
+    {% endif %}
+    </article>
+  </div>
+</<section>
