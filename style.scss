@@ -402,11 +402,17 @@ nav {
   }
   ul{
     list-style: none;
-    padding: 0;
+    padding: 0.5em 1em 0.5em;
     background: $white2;
+    @include mobile {
+      padding: 0.5em 0em 0.5em;
+    }
   }
   li{
     padding: 0.3em 0;
+  }
+  @include mobile {
+    font-size:0.8em;
   }
 }
 
@@ -553,6 +559,9 @@ footer {
     .info{
       h1{
         margin: 0 0 0.2em;
+        @include mobile {
+          font-size: 1.2em;
+        }
       }
     }
   }
