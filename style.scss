@@ -422,6 +422,7 @@ nav {
 #searching_recipe{
   display: flex;
   flex-wrap: wrap;
+  padding: 0.5em 0 0.5em;
   max-width: 960px;
 }
 #searching_recipe a{
@@ -560,6 +561,8 @@ footer {
     .info{
       h1{
         margin: 0 0 0.2em;
+        display: flex;
+        align-items: center;
         @include mobile {
           font-size: 1.2em;
         }
