@@ -434,18 +434,22 @@ nav {
   font-weight: bold;
 }
 .recent-wrapper{
-  border:1px solid $white2;
-  padding: 2em 1em 2em;
+  padding: 0 1em 0;
 }
-.recent h1{
+.recent-wrapper > h1{
   margin:0;
 }
+.recetn {
+  border:1px solid $white2;
+}
 .recent article{
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid $white2;
   padding: 0.5em;
 }
 .recent h2{
   margin:0;
+  font-size: 1em;
+  font-weight: normal;
 }
 footer {
   padding: 20px 0;
