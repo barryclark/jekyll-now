@@ -430,7 +430,7 @@ nav {
   font-size: 0.8em;
 }
 #searching_recipe label:hover{
-  background: $white2;
+  background: $white8;
 }
 #searching_recipe input[type="radio"]{
   display:none;
@@ -447,10 +447,11 @@ nav {
   margin:0;
 }
 .recent-wrapper > .recent {
-  border:1px solid $white2;
+  border:1px solid $white8;
+  background: $white2;
 }
 .recent-wrapper > .recent article{
-  border-bottom: 1px solid $white2;
+  border-bottom: 1px solid $white8;
   padding: 0.5em;
 }
 .recent h2{
@@ -578,7 +579,7 @@ footer {
 }
 #collections ul > li > a{
   display: block;
-  border: 1px solid $white2;
+  border: 1px solid $white8;
   position: relative;
   padding: 0.2em;
   margin: 0.1em;
