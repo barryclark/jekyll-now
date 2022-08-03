@@ -400,6 +400,7 @@ nav {
 #searching_find ul{
   list-style: none;
   padding: 0;
+  min-height: 12em;
 }
 #searching_find li{
   padding: 0.3em 0;
@@ -407,6 +408,7 @@ nav {
 #searching_recipe{
   display: flex;
   flex-wrap: wrap;
+  max-width: 960px;
 }
 #searching_recipe a{
   text-decoration: none;
@@ -424,7 +426,10 @@ nav {
   margin: 0 0.2em;
   cursor: pointer;
   white-space: nowrap;
-}#searching_recipe label:hover{
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.8em;
+}
+#searching_recipe label:hover{
   background: $white2;
 }
 #searching_recipe input[type="radio"]{
@@ -433,7 +438,6 @@ nav {
 #searching_recipe input[type="radio"]:checked + label {
   background: #282844;
   color:white;
-  font-weight: bold;
   border: 2px solid rgba(255, 255, 255, 0.08);
 }
 .recent-wrapper{
@@ -537,7 +541,10 @@ footer {
 }
 .alc_wrap .top .info{
   flex:1;
-min-width:400px;
+  min-width:400px;
+  h1{
+    margin: 0 0 0.2em;
+  }
 }
 .alc_wrap .top{
   display: flex;
