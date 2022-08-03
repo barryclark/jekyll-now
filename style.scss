@@ -390,7 +390,8 @@ nav {
 }
 
 #searching_find{
-  min-height: 12em;
+  min-height: 11em;
+  background: $white2;
   .slot{
     padding: 0.3em 0.5em;
     border-radius: 14px;
@@ -404,13 +405,13 @@ nav {
     list-style: none;
     padding: 0.5em 1em 0.5em;
     margin: 0;
-    background: $white2;
+    border: 1px solid $white8;
     @include mobile {
       padding: 0.5em 0em 0.5em;
     }
   }
   li{
-    padding: 0.3em 0;
+    padding: 0.5em 0;
   }
   @include mobile {
     font-size:0.8em;
