@@ -1,11 +1,5 @@
 const baseurl = "https://purple2m.github.io";
 
-$('.view_recipe').click(function(){
-  $('#recipe').toggle();
-  var offset = $('#recipe').offset();
-  $('html').animate({scrollTop : offset.top}, 400);
-});
-
 function isitem(datalist, item){
 	var str='';
 	for (var i=0; i < datalist.length;++i){
@@ -20,55 +14,10 @@ function isitem(datalist, item){
 function get_recipe(recipe, item, target, lng){
     $.getJSON(baseurl+"/alchemist/"+recipe+".json?version=20220801", function(data) {
       var step = '';
-      var step_1='<div><h3>슬롯1</h3><ul>';
-      var step_2='<div><h3>슬롯2</h3><ul>';
-      var step_3='<div><h3>슬롯3</h3><ul>';
-      var step_4='<div><h3>슬롯4</h3><ul>';
-      var step_5='<div><h3>슬롯5</h3><ul>';
-
-      if(lng == "jp"){
-        step_1 = step_1.replace('슬롯', 'スロット');
-        step_2 = step_2.replace('슬롯', 'スロット');
-        step_3 = step_3.replace('슬롯', 'スロット');
-        step_4 = step_4.replace('슬롯', 'スロット');
-        step_5 = step_5.replace('슬롯', 'スロット');
-      }
-
       var print_end = '';
       var find = '';
       for (var i=0; i < data.length;++i){
         step = data[i]['recipe'].split('-');
-        if(step[1] == 1){
-          if(lng == "jp"){
-            step_1 += "<li>+"+data[i]['up']+" "+data[i]['jp']+" ("+data[i]['rand']+")</li>";
-          } else {
-            step_1 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
-          }
-        } else if(step[1] == 2){
-            if(lng == "jp"){
-              step_2 += "<li>+"+data[i]['up']+" "+data[i]['jp']+" ("+data[i]['rand']+")</li>";
-            } else {
-              step_2 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
-            }
-        } else if(step[1] == 3){
-            if(lng == "jp"){
-              step_3 += "<li>+"+data[i]['up']+" "+data[i]['jp']+" ("+data[i]['rand']+")</li>";
-            } else {
-              step_3 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
-            }
-        } else if(step[1] == 4){
-            if(lng == "jp"){
-              step_4 += "<li>+"+data[i]['up']+" "+data[i]['jp']+" ("+data[i]['rand']+")</li>";
-            } else {
-              step_4 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
-            }
-        } else if(step[1] == 5){
-            if(lng == "jp"){
-              step_5 += "<li>+"+data[i]['up']+" "+data[i]['jp']+" ("+data[i]['rand']+")</li>";
-            } else {
-              step_5 += "<li>+"+data[i]['up']+" "+data[i]['name']+" ("+data[i]['rand']+")</li>";
-            }
-        }
         if(item == data[i]['name']){
           if(find == ''){
             find += "<ul>";
@@ -85,25 +34,10 @@ function get_recipe(recipe, item, target, lng){
           }
         }
       }
-      step_1 += '</ul></div>';
-      step_2 += '</ul></div>';
-      step_3 += '</ul></div>';
-      step_4 += '</ul></div>';
-      step_5 += '</ul></div>';
-
-      print_end += step_1;
-      print_end += step_2;
-      print_end += step_3;
-      print_end += step_4;
-      print_end += step_5;
       if (find){
         find += "</ul>";
         var my_list2=document.getElementById("searching_find");
         my_list2.innerHTML = find;
-      }
-      var my_list=document.getElementById(target);
-      if (print_end) {
-        my_list.innerHTML = print_end;
       }
     });
 }
