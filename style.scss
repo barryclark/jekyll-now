@@ -388,23 +388,30 @@ nav {
 #recipe_material{
   margin: 0.5em 0;
 }
-#searching_find .slot{
-  padding: 0.3em 0.5em;
-  border-radius: 14px;
-  box-sizing: border-box;
-  margin: 0 0.2em;
-  background: #282844;
-  color:white;
-  border: 2px solid rgba(255, 255, 255, 0.08);
-}
-#searching_find ul{
-  list-style: none;
-  padding: 0;
+
+#searching_find{
   min-height: 12em;
+  .slot{
+    padding: 0.3em 0.5em;
+    border-radius: 14px;
+    box-sizing: border-box;
+    margin: 0 0.2em;
+    background: #282844;
+    color:white;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+    background: $white2;
+  }
+  li{
+    padding: 0.3em 0;
+  }
 }
-#searching_find li{
-  padding: 0.3em 0;
-}
+
+
+
 #searching_recipe{
   display: flex;
   flex-wrap: wrap;
@@ -539,19 +546,18 @@ footer {
 .alc_wrap{
   display: flex;
   flex-direction: column;
-}
-.alc_wrap .top .info{
-  flex:1;
-  min-width:400px;
-  h1{
-    margin: 0 0 0.2em;
+  .top{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .info{
+      h1{
+        margin: 0 0 0.2em;
+      }
+    }
   }
 }
-.alc_wrap .top{
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-}
+
 #collections{
   min-width: 350px;
   margin: 0 auto;
