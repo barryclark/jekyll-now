@@ -395,6 +395,7 @@ nav {
   margin: 0 0.2em;
   background: #282844;
   color:white;
+  border: 2px solid rgba(255, 255, 255, 0.08);
 }
 #searching_find ul{
   list-style: none;
@@ -423,7 +424,7 @@ nav {
   margin: 0 0.2em;
   cursor: pointer;
 }#searching_recipe label:hover{
-  background: #DBE0E4;
+  background: $white2;
 }
 #searching_recipe input[type="radio"]{
   display:none;
@@ -432,6 +433,7 @@ nav {
   background: #282844;
   color:white;
   font-weight: bold;
+  border: 2px solid rgba(255, 255, 255, 0.08);
 }
 .recent-wrapper{
   padding: 0 1em 0;
