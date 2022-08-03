@@ -403,6 +403,7 @@ nav {
   ul{
     list-style: none;
     padding: 0.5em 1em 0.5em;
+    margin: 0;
     background: $white2;
     @include mobile {
       padding: 0.5em 0em 0.5em;
