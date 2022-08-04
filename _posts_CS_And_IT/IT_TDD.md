@@ -3,8 +3,13 @@ layout: post
 title: TDD
 ---
 
+- [ ] 테스트 케이스로 만든 것들을 많이 봐야한다.
+- [ ] 테스트 엔지니어랑 대화해보기... 어떻게 테스트를 작성해야 하는가... 어떻게 관리해야 하는가...
+
 # TDD로 일하기
 ## TDD의 개발 주기
+
+<center>
 
 <div class="mermaid"> 
 graph LR;
@@ -13,6 +18,8 @@ B(테스트 코드 작성)-->C; B-->A;
 C(코드개발)-->D; 
 D(리팩토링)-->B; 
 </div>
+
+</center>
 
 <details>
 <summary>TDD란?</summary>

@@ -3,6 +3,48 @@ layout: post
 title: Fragment
 ---
 
+## 전역변수는 지옥이다.
+싱글톤부터, 전역변수가 왜 쓰지말라고 하는지, 괜히 있는 것이 아니다...
+
+정말로 어디서 오류났는지 찾기 어렵다.
+
+## 테스트 케이스에서 만든 메서드를 클래스&구조체로 옮기자.
+재활용 하기 좋다.
+
+## 항상 함수 파라메터를 확인하는 습관을 가지자...
+
+캐스팅 되는 문제가 있습니다. 이 자동으로 캐스팅 되는 문제는 굉장히 찾기 어렵습니다.
+
+## HTTP 모듈, 다운로드를 위한
+https://forums.unrealengine.com/t/is-it-possible-to-download-files-from-internet-runtime/595806/3
+
+##
+
+* UpdateResource를 지원하지 않으니, Sink에서 overflow문제가 발생하는데... 무슨 의미인지 이해를 못하니, 문제 해결 불가능. 생성하는 코드에서 updateResource를 구현하다 붙여주면, 문제없이 작동함.
+
+따라서, updateResource를 하지 않으면, Sink에서 overflow가 발생하지않게 update resource에서 작업을 한다는 것을 알 수 있는데... 놀라울 정도로 설명을 찾기 어렵다.
+
+[내용](https://forums.unrealengine.com/t/failed-to-set-media-texture-to-a-media-texture-which-is-from-construct-object-from-class/401551/3)을 정리하면, 목적을 달성할 수 있다.
+
+
+## 미디어의 재생이 거업나 특이하네에...
+[요거랑](https://docs.unrealengine.com/4.27/ko/WorkingWithMedia/IntegratingMedia/MediaFramework/HowTo/FileMediaSource/)
+[요거](https://forums.unrealengine.com/t/play-video-texture-in-umg/458434)
+대로만 하면 되기는함.
+
+변환하는 사이트는 https://convertio.co/kr/
+
+MP4, WMV가 있는데, 잘 모르겠음.
+
+## 버튼 눌럿을 때도 자료구조가 들어간다.
+오버랩에 담아두고, 사용하기 때문에, 이를 위해서 자료구조가 들어간다..? 음...
+
+## HUD
+* crosshair ?
+* hp bar ?
+
+##
+
 * 소프트웨어 디자인에서 그래픽 사용자 인터페이스의 모양과 느낌은 색상, 모양, 레이아웃 및 서체와 같은 요소와 버튼, 상자 및 메뉴와 같은 동적 요소의 동작을 포함한 디자인 측면으로 구성됩니다.
 
 - [ ] [dynamic allocation](https://unrealcommunity.wiki/garbage-collection-and-dynamic-memory-allocation-u29878mo)

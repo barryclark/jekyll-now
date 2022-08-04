@@ -23,6 +23,8 @@ bool FTestClassName::RunTest(const FString& parameters)
 #endif
 ```
 
+* error C2338: AutomationTest has no application flag.  It shouldn't run.  See AutomationTest.h.
+
 ```cpp
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FLTRAssociativtyExpressionsTest, "System.Core.Expression Parser.LTR Operator Associativity",
 									EAutomationTestFlags::ApplicationContextMask | EAutomationTestFlags::SmokeFilter);

@@ -4,8 +4,6 @@ title: Algorithm and Datastruct
 ---
 
 - [ ] 알고리즘... 우선순위를 정리할 필요가 있다.
-- [ ] 자료구조 책... 읽기
-- [ ] PS더 찾아보기
 
 <!--
 유한 시퀀스, 순서체, 순서 흠... 수학에서 순서론??
@@ -42,6 +40,10 @@ ProblemSolving
 * 즉, 문제 해결에 필요한 계산 절차 또는 처리 과정의 순서를 뜻한다. 프로그램 명령어의 집합을 의미하기도 한다. 알고리즘은 연산, 데이터 마이닝(기계 학습) 또는 자동화된 추론을 수행합니다.
 * **외워서 할 생각하지 말고 빨리 찾을 수 있는 것이 더 중요하다고 합니다. 이해는 필수고요.**
 
+[문제를 계산하기 위해 알고리즘을 어떻게 생각해 내거나 기존 알고리즘을 찾아 적용하는 방법을 알 수 있습니까?](https://www.quora.com/How-do-I-come-up-with-algorithms-or-know-how-to-find-and-apply-existing-ones-for-computing-problems)
+
+[문제 해결 및 알고리즘](http://sofia.cs.vt.edu/cs1114-ebooklet/chapter4.html)
+
 <details><summary>알고리즘이 왜 필요한가?</summary>
 <div markdown="1">
 
@@ -68,6 +70,15 @@ ProblemSolving
 |효율성|모든 과정은 명백히 실행(검증) 가능한 것이어야 합니다.|
 |입력|알고리즘은 0또는 그 이상의 입력들을 갖습니다. 즉 밖에서 들어오는 데이터가 없거나 1개 이상입니다.|
 |출력|알고리즘은 하나나 그 이상의 출력들을 갖습니다. 즉 최소한 출력이 1개라도 있어야 합니다.|
+
+</div></details>
+
+<details><summary>Cpp의 Algorithm</summary>
+<div markdown="1">
+
+C++ 표준 라이브러리의 알고리즘을 위한 탬플릿 함수입니다.
+
+[<algorithm>](https://docs.microsoft.com/en-us/cpp/standard-library/algorithm?view=msvc-170)
 
 </div></details>
 
