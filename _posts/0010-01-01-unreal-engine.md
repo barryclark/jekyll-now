@@ -3,12 +3,10 @@ layout: post
 title: Unreal engine
 ---
 
-{% Verbosity = 1 %}
+{% Verbosity %}
 
-벌보시티랑 상관없음
-
-{% if Verbosity>0 %}
-벌보시티 1이상
+{% if Verbosity %}
+시끄러운...
 {% endif %}
 
 <details><summary>Cpp</summary>
