@@ -11,9 +11,9 @@ tags: [리니지2M, 리니지2m, 연금 검색기]
   {% assign page = page.url | split: "/" %}
   {{ page[5] }}
   {% if page[5] > 1 %}
-  {% assign page = page[5] * 40 %}
+  {% assign paging = page[5] * 40 %}
   {% else %}
-  {% assign page = 1 %}
+  {% assign paging = 1 %}
   {% endif %}
   <div class="recent" lang="ko">
     <article class="post">
@@ -21,7 +21,7 @@ tags: [리니지2M, 리니지2m, 연금 검색기]
         {% assign list=site.data.item_weapon | sort: 'id' %}
         {% assign no=1 %}
         {% if list.size > 1 %}
-          {% for item in list in array offset:page[5] %}
+          {% for item in list in array offset:paging %}
             {% assign type = item.id | slice: 0, 2 %}
             {% if type == "10" %}
               {% if no == 41 %}
