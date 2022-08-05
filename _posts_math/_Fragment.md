@@ -3,6 +3,12 @@ layout: post
 title: Math
 ---
 
+[벡터 외적 간단 정리](https://blog.naver.com/PostView.naver?blogId=mindo1103&logNo=90103361104&redirect=Dlog&widgetTypeCall=true&directAccess=false)
+
+[반사 벡터](https://novemberfirst.tistory.com/112)
+
+[벡터 미분과 행렬 미분](https://darkpgmr.tistory.com/141)
+
 ## 벡터 공간
 <!-->
 

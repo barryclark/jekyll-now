@@ -21,7 +21,7 @@ title: 지킬 블로그
 
 * [기초 문법](https://www.markdownguide.org/basic-syntax/#code)
 * [mermaid](https://mermaid-js.github.io/mermaid/#/) (다이어 그램을 그리는 용도)
-* [math](https://velog.io/@d2h10s/LaTex-Markdown-%EC%88%98%EC%8B%9D-%EC%9E%91%EC%84%B1%EB%B2%95#%ED%96%89%EB%A0%AC-%ED%91%9C%EA%B8%B0%EB%B2%95) (수식을 그리는 용도)
+* [math](https://katex.org/docs/supported.html) (수식을 그리는 용도)
 
 <details><summary>코드 블럭이 더블 프레임으로 표시되는 경우</summary>
 <div markdown="1">
