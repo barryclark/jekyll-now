@@ -94,8 +94,17 @@ You can now use LaTeX style syntax to render math expressions within Markdown in
 * [HTML Tutorial](https://www.w3schools.com/html/default.asp)
 * [HTML Reference](https://www.w3schools.com/tags/default.asp)
 
+#### django
+HTML 은 기본적으로 정적인 언어입니다. 작성해놓고 나면, 동적으로 무언가를 변경하거나 수정할 수 없죠. 그런 HTML 의 한계를 극복하기 위해 사용하는 것이 django 의 템플릿 기능입니다.
+
+* [Diango](https://docs.djangoproject.com/en/3.2/topics/templates/#the-django-template-language)
+
+{% %} , {{ }} 와 같은 구문을 통해 HTML 내에 동적인 구문을 삽입할 수 있습니다.
+
 <details><summary>html에서 if문 사용하기</summary>
 </div markdown="1">
+
+[Conditional logic](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_conditional_logic.html)
 
 1. {% if (조건문) %}
 2. {% else %}
