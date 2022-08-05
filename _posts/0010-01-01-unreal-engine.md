@@ -3,18 +3,13 @@ layout: post
 title: Unreal engine
 ---
 
-<!--
-<details>
-<summary>블로그 작성 규칙</summary>
-<div markdown="1">
+{% Verbosity = 1 %}
 
-* [이해하기](OptimizeLife/OptimizeLife_이해하기)
-    - A를 이해하기 위해 분리하기
+벌보시티랑 상관없음
 
-</div>
-</details>
-
--->
+{% if Verbosity>0 %}
+벌보시티 1이상
+{% endif %}
 
 <details><summary>Cpp</summary>
 <div markdown="1">
