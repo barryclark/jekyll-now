@@ -1,0 +1,26 @@
+I"B<p>UE 5.01
+2022 05 28</p>
+
+<h2 id="class의-선언">class의 선언</h2>
+
+<ul>
+  <li>.h
+```cpp
+…
+#include “Animation/AnimNotifies/AnimNotifyState.h”</li>
+</ul>
+
+<p>…
+UCLASS()
+class …_API UMyAnimNotifyState : public UAnimNotifyState
+{
+    GENERATED_BODY()
+    …
+}</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+## 함수 오버라이드
+AnimNotifyState의 주요 함수는 Implementation으로 만들어 졌으므로 블루프린트에서 오버라이드 해야 합니다.
+
+```cpp
+</code></pre></div></div>
+:ET

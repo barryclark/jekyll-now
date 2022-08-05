@@ -1,0 +1,95 @@
+I"�<h1 id="rotation회전">Rotation(회전)</h1>
+
+<h1 id="gimbal짐벌">Gimbal(짐벌)</h1>
+<p><a href="https://ko.wikipedia.org/wiki/%EC%A7%90%EB%B2%8C">짐벌</a>은 하나의 축을 중심으로 물체가 회전할 수 있도록 만들어진 구조물입니다. 세 개의 짐벌로 구성된 구조에서 한 짐벌의 회전축이 다른 두 짐벌의 회전축과 직각을 이루도록 구성이 되면, 가장 안쪽 짐벌의 회전축에 장착된 물체는 바깥 지지대의 회전에 영향을 받지 않습니다.</p>
+
+<p>예로 자이로스코프, 나침판, 난로, 컵홀도들을 볼 수 있습니다.</p>
+
+<p>3차원에서는 3개의 짐벌을 하나로 하여 각각 Roll, Ptich, Yaw라고 부릅니다.</p>
+
+<p>https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Gimbal_3_axes_rotation.gif/220px-Gimbal_3_axes_rotation.gif</p>
+
+<h2 id="gimbal-lock짐벌-락">Gimbal lock(짐벌 락)</h2>
+<p>짐벌 락은 3개의 짐벌 중 2개의 축이 평행이 될 때 3차원에서 3개의 짐벌 메커니즘에서 자유도가 1 손실되어 시스템이 2개의 축으로 회전하도록 고정되는 현상을 말합니다.</p>
+
+<p>3개의 짐벌을 이용해 회전하는 3차원에서 두 개의 짐벌이 겹쳐질 경우 회전축 하나가 사라지는 현상입니다.</p>
+
+<p>오일러 각은 XYZ축으로 회전값이 같더라도 어떤 순서로 적용되는지에 따라 결과가 달라집니다. 회전 결과가 축의 회전 순서에 의존하는 방식은 짐벌락 문제를 발생시킵니다.</p>
+
+<p>https://upload.wikimedia.org/wikipedia/commons/4/49/Gimbal_Lock_Plane.gif</p>
+
+<p>https://youtu.be/zc8b2Jo7mno</p>
+
+<h2 id="euler-angles오일러-각">Euler Angles(오일러 각)</h2>
+<p>강체가 놓인 방향을 3차원 공간에 표시하기 위해서 사용됩니다. 강체의 방향은 오일러 각도를 사용하여 세 번의 회전을 통해 얻을 수 있습니다.</p>
+
+<p>X, Y, Z세 개의 축을 기준으로 회전하며, 직관적이고 조작하기 쉽습니다.
+또한 180도가 넘는 회전도 표현할 수 있습니다.</p>
+
+<p>하지만 오일러 각을 계산하는데 드는 비용이 크며, 짐벌락이 발생하여 degree of freedom을 상실하게 됩니다.</p>
+
+<p>https://edward0im.github.io/engineering/2019/11/12/euler-angle/</p>
+
+<h2 id="임의의-회전-순서-설정">임의의 회전 순서 설정</h2>
+
+<h2 id="삼원수">삼원수</h2>
+<ol>
+  <li>공간을 표현 하는 수</li>
+</ol>
+
+<ul>
+  <li>
+    <p>공간을 표현하기 위해서 세개의 축이 필요하다. 따라서 하나의 실수 축과 두개의 허수 축을 사용한다.</p>
+  </li>
+  <li>
+    <p>공간의 좌표가 a, b, c라고 할때 a + bi + cj로 나타 낼 수 있다. 세개의 수가 필요하기 때문에 삼원수라고 하며,</p>
+  </li>
+</ul>
+
+<p>이 수는 명백히 삼차원 공간의 한 점을 나타낼 수 있고 덧셈과 뺄셈에 있어 자유 롭다.</p>
+
+<p>삼원수의 한계</p>
+
+<ul>
+  <li>실수 단위에 i를 곱하는 것은 j축 기준으로 90도 회전, 실수 단위의 j를 곱하는 것은 i축 기준으로 90도 회전으로 정의 되지만 실수축을 기준으로는 회전에 대해서는 정의 되지 않는다.</li>
+</ul>
+
+<h2 id="quaternion쿼터니언-사원수">Quaternion(쿼터니언, 사원수)</h2>
+<ul>
+  <li>발견 : 수학자 해밀터에 의해 고안된 사원수. 축, 각 표현을 수학적으로 개선한것이다.</li>
+  <li>확장 : 삼원수의 한계를 해결하기 위해 허수축 1개가 더 추가되었다. a + bi + cj + dk</li>
+  <li>특징 : 사원수는 사칙연산은 되지만 교환법칙은 성립하지 않는다.</li>
+  <li>실질적으로 공간을 표현하는 것은 ( b, c, d )이다.</li>
+</ul>
+
+<p>짐벌락 발새을 최대한 방지하기 위해 사용합니다.
+단위 사원수 만이 회전에서 사용할 수 있습니다. 실제 회전 변환에 사원수를 적용하기 위해서는 반드시 사원수에 대하여 정규화 시켜야 합니다.</p>
+
+<ul>
+  <li>
+    <p>단위 사원수 : 단위 사원수 만이 회전에서 사용할 수 있다. 실제 회전 변환에 사원수를 적용하기 위해서는 반드시 사원수에 대하여 정규화를 해야 한다.</p>
+  </li>
+  <li>
+    <p>곱셈 연산 : 3D 공간에서의 한 방향을 표현하기 때문에 2개의 단위 쿼터니언 간의 곱은 2개의 단위 쿼터니언의 회전을 결합한 회전을 나타내는 단위 쿼터니언이 된다.</p>
+  </li>
+</ul>
+
+<p>사원수의 특징으로 사칙연산은 되지만 교환법칙은 성립하지 않습니다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(a_1 + b_1*i + c_1*j + d_1*k) + (a_2 + b_2*i + c_2*j + d_2*k) =
+(a_1 + a_2) + (b_1 + _b_2)i + (c_1 + c_2)j + (d_1 + d_2)k
+</code></pre></div></div>
+
+<p>https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&amp;blogId=lovetaehong&amp;logNo=130097277122</p>
+
+<h2 id="transform">Transform</h2>
+
+<p>이거는 PBRT 열심히 읽도록 하자.</p>
+
+<h2 id="findlookat">FindLookAt</h2>
+
+<dl>
+  <dt>참고자료</dt>
+  <dd><a href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&amp;blogId=dj3630&amp;logNo=221447943453">유니티 기초(quaternion)</a></dd>
+</dl>
+:ET

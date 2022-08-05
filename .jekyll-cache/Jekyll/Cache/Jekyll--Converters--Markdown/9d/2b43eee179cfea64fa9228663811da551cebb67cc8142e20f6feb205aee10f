@@ -1,0 +1,61 @@
+I"1
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />다음에, <code class="language-plaintext highlighter-rouge">10 tips for designing a game tutorial</code> 세부 내용 옮기기</li>
+</ul>
+
+<p>교육에서 튜토리얼이란,</p>
+<ol>
+  <li>정보를 전달하는 방법이자</li>
+  <li>학습하는 프로세스의 부분입니다.</li>
+</ol>
+
+<p>책과 강연 보다 더 상호작용 가능하며, 특징적입니다. 튜토리얼은 예시와 정해진 일 사이의 정보를 줍니다.</p>
+
+<h2 id="어떻게-만들어야-하는가">어떻게 만들어야 하는가?</h2>
+
+<details open=""><summary>간단한 튜토리얼</summary>
+<div>
+
+    <p>튜토리얼을 보여주는 위젯에는 영상과 이미지 그리고 텍스트로 설명합니다.</p>
+
+    <ol>
+      <li>처음 켜지는 동안은 종료되지 않으며,</li>
+      <li>아무키나 누르면 종료됩니다.</li>
+    </ol>
+
+    <p><strong>이미지 또는 영상이 재생되는 부분이 있고, 이에 대한 텍스트가 표시되어야 합니다.</strong></p>
+
+    <p>다음의 구현을 위해 필요합니다. 아래의 튜토리얼은 순서대로 나타납니다.</p>
+    <ul>
+      <li>조작법</li>
+      <li>상호작용</li>
+      <li>인벤토리</li>
+      <li>정신상태</li>
+    </ul>
+
+    <p><strong>구현</strong></p>
+    <ul>
+      <li>UHorrorTutorialWidget은 이미지, 미디어, 텍스트를 수직 스크롤바에 추가하는 메서드를 제공합니다.</li>
+      <li>UHorrorTutorial은 HorrorTutorialWidget을 만들고, 화면에 추가합니다.</li>
+      <li>UHorrorTutorialComponent는 조건에 따라 튜토리얼을 시작하며, 튜토리얼을 관리합니다.</li>
+    </ul>
+
+  </div></details>
+
+<h2 id="가이드">가이드</h2>
+
+<ul>
+  <li>게임에 튜토리얼을 녹여야 합니다.</li>
+  <li>플레이어가 하는게 읽는 것보다 더 좋습니다.</li>
+  <li>게임 매커니즘을 알려줘야 합니다.</li>
+  <li>플레이어가 딱 한번만 하게 해야합니다.</li>
+  <li>적은 단어를 사용해야 합니다.</li>
+  <li>가능한 거슬리지 않는 메시지를 사용하세요.</li>
+  <li>적용할 수 있는 메시지를 사용하세요.</li>
+  <li>소음을 만들지 마세요.</li>
+  <li>시각적인 요소를 사용해서 알려주세요.</li>
+  <li>사람들이 이미 알고있는 정보를 활용하세요.</li>
+</ul>
+
+<p>주요 참고자료 : <a href="https://www.filamentgames.com/blog/10-tips-designing-game-tutorial/">10 tips for designing a game tutorial</a></p>
+:ET

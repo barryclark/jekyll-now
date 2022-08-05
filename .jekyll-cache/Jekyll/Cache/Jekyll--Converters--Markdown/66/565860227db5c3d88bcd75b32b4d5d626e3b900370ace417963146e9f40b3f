@@ -1,0 +1,77 @@
+I"w<p><a href="/Concept-Module">Module</a></p>
+
+<p>엔진 자체가 모듈 모음으로 구성된 것과 같이, 각 게임은 하나 이상의 게임플레이 모듈로 구성됩니다. 관련 클래스 모음을 위한 컨테이너라는 점에서 이전 버전의 엔진 패키지와 유사합니다.
+게임을 많은 DLL파일로 분할하는 것은 링크 시간이 더 빨라지겠지만, DLL내보내기 및/또는 인터페이스 클래스를 더 자주 처리해야합니다.</p>
+
+<p>하나 이상의 모듈은 IMPLEMENT_<strong>PRIMARY</strong>_GAME_MODULE로 선언해야 하며, 나머지 모듈은 IMPLEMENT_GAME_MODULE매크로를 사용해야 합니다. UBT(언리얼 빌드 툴)은 자동으로 모듈을 검색하고 추가 게임 DLL을 컴파일 합니다.</p>
+
+<ul>
+  <li>
+    <p>상호 의존적인 모듈 생성을 지원하지만, 이는 컴파일 시간에 이상적이지 않습니다. 또한 변수의 정적 초기화에 문제를 일으킬 수 있습니다. 상호 의존적이지 않은 게임 플레이 모듈은 설계 및 유지 관리가 더 어렵지만 코드는 더 깨끗할 수 있습니다.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/kamrann/KantanCodeExamples">Kantan Code Examples</a>
+, <a href="https://github.com/kamrann/KantanCharts">KantanCharts</a>
+는 좋은 예시가 될 수 있습니다.</p>
+  </li>
+</ul>
+
+<h1 id="보조-모듈-만들기">보조 모듈 만들기</h1>
+<ol>
+  <li>SubModule폴더를 만듭니다. (한곳에 몰아넣어도 됩니다.)</li>
+  <li>SubModule.Build.cs를 추가합니다.
+    <div class="language-c# highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">using</span> <span class="nn">UnrealBuildTool</span><span class="p">;</span>
+
+ <span class="k">public</span> <span class="k">class</span> <span class="nc">SubModule</span> <span class="p">:</span> <span class="n">ModuleRules</span>
+ <span class="p">{</span>
+     <span class="k">public</span> <span class="nf">SubModule</span><span class="p">(</span><span class="n">ReadOnlyTargetRules</span> <span class="n">Target</span><span class="p">)</span> <span class="p">:</span> <span class="k">base</span><span class="p">(</span><span class="n">Target</span><span class="p">)</span>
+     <span class="p">{</span>
+         <span class="n">PCHUsage</span> <span class="p">=</span> <span class="n">PCHUsageMode</span><span class="p">.</span><span class="n">UseExplicitOrSharedPCHs</span><span class="p">;</span>
+
+     	<span class="n">PublicDependencyModuleNames</span><span class="p">.</span><span class="nf">AddRange</span><span class="p">(</span><span class="k">new</span> <span class="kt">string</span><span class="p">[]</span> <span class="p">{</span> <span class="s">"Core"</span><span class="p">,</span> <span class="s">"CoreUObject"</span><span class="p">,</span> <span class="s">"Engine"</span><span class="p">,</span> <span class="s">"InputCore"</span><span class="p">,</span> <span class="s">"HeadMountedDisplay"</span> <span class="p">});</span>
+     <span class="p">}</span>
+ <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>SubModule.h, .cpp를 추가합니다.
+ SubModule.h
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="cp">#pragma once
+</span>
+ <span class="cp">#include</span> <span class="cpf">"CoreMinimal.h"</span><span class="cp">
+</span></code></pre></div>    </div>
+    <p>SubModule.cpp</p>
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="cp">#include</span> <span class="cpf">"SubModule.h"</span><span class="cp">
+</span> <span class="cp">#include</span> <span class="cpf">"Modules/ModuleManager.h"</span><span class="cp">
+</span>
+ <span class="n">IMPLEMENT_GAME_MODULE</span><span class="p">(</span><span class="n">FDefaultGameModuleImpl</span><span class="p">,</span> <span class="n">SubModule</span><span class="p">,</span> <span class="s">"SubModule"</span> <span class="p">);</span>
+</code></pre></div>    </div>
+    <h1 id="모듈-빌드에-추가하기">모듈 빌드에 추가하기</h1>
+  </li>
+  <li>빌드 Target과 EditorTarget에 다음을 추가해 줍니다.
+    <div class="language-c# highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     <span class="n">ExtraModuleNames</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="s">".."</span><span class="p">,</span> <span class="s">"SubModule"</span><span class="p">);</span> <span class="c1">//현재 작동안함. 찾아봐야 할지 고민중.</span>
+</code></pre></div>    </div>
+    <p>또는</p>
+    <div class="language-c# highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     <span class="n">ExtraModuleNames</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="s">"SubModule"</span><span class="p">);</span>
+</code></pre></div>    </div>
+    <h1 id="에디터에-모듈-추가하기">에디터에 모듈 추가하기</h1>
+  </li>
+  <li>.uproject에 모듈을 추가해 줍니다.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 	"Modules": [
+ 		{
+             ...
+ 		},
+ 		{
+ 			"Name": "SubModule",
+ 			"Type": "Runtime"
+ 		}
+ 	],
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>이제 에디터에서 c++파일을 추가할 때 SubModule에 추가할 수 있습니다.</p>
+
+<p><a href="https://docs.unrealengine.com/4.26/en-US/ProductionPipelines/BuildTools/UnrealBuildTool/ModuleFiles/">ModuleRules</a>
+, <a href="https://docs.unrealengine.com/4.26/en-US/ProductionPipelines/BuildTools/UnrealBuildTool/TargetFiles/">Targets</a>
+, .uproject는 <a href="https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/Plugins/">plugins</a>와 \Engine\Source\Runtime\Projects\Public\ProjectDescriptor.h 그리고 \Engine\Source\Runtime\Projects\Public\ModuleDescriptor.h을 참고할 수 있습니다.</p>
+:ET

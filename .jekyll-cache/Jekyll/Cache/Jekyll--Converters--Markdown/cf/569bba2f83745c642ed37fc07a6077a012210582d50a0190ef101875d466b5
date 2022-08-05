@@ -1,0 +1,645 @@
+I"<p>UE 4.27</p>
+
+<h1 id="컴포넌트를-움직일-시-스윕을-체크하면">컴포넌트를 움직일 시 스윕을 체크하면</h1>
+<p><code class="language-plaintext highlighter-rouge">AddWorldOffset</code>를 예로 보면</p>
+
+<ul>
+  <li>\Engine\Source\Runtime\Engine\Classes\Components\SceneComponent.h
+```cpp
+  /**
+    <ul>
+      <li>Adds a delta to the location of the component in world space.</li>
+      <li>@param DeltaLocation		Change in location in world space for the component.</li>
+      <li>@param SweepHitResult	Hit result from any impact if sweep is true.</li>
+      <li>@param bSweep			Whether we sweep to the destination location, triggering overlaps along the way and stopping short of the target if blocked by something.</li>
+      <li>Only the root component is swept and checked for blocking collision, child components move without sweeping. If collision is off, this has no effect.</li>
+      <li>@param bTeleport			Whether we teleport the physics state (if physics collision is enabled for this object).</li>
+      <li>If true, physics velocity for this object is unchanged (so ragdoll parts are not affected by change in location).</li>
+      <li>If false, physics velocity is updated based on the change in position (affecting ragdoll parts).</li>
+      <li>If CCD is on and not teleporting, this will affect objects along the entire sweep volume.
+   <em>/
+  UFUNCTION(BlueprintCallable, Category=”Utilities|Transformation”, meta=(DisplayName=”AddWorldOffset”, ScriptName=”AddWorldOffset”, Keywords=”location position”))
+  void K2_AddWorldOffset(FVector DeltaLocation, bool bSweep, FHitResult&amp; SweepHitResult, bool bTeleport);
+  void AddWorldOffset(FVector DeltaLocation, bool bSweep=false, FHitResult</em> OutSweepHitResult=nullptr, ETeleportType Teleport = ETeleportType::None);
+```</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Sweep 파라메터의 주석을 보면</strong></p>
+
+<ol>
+  <li>목적지 위치로, 이동시키되 충돌이 발생하면 블락킹 되고, 충돌을 반환합니다.</li>
+  <li>쓰는 동안, Overlap을 발생시킵니다.</li>
+</ol>
+
+<p>! <a href="/images/Useage-Automation_test_HorrorMoveable_1.gif">스윕을 키고 움직이는 것을 보여주는 GIF</a></p>
+
+<ul>
+  <li>Sweep은 <code class="language-plaintext highlighter-rouge">쓸다</code>란 의미입니다. 빗자루로 바닥을 쓸 듯이, 콜리젼으로 휩쓰는 것으로 이해하고 있습니다.</li>
+</ul>
+
+<details>
+<summary>액터와 컴포넌트의 포지션 설정 함수</summary>
+<div>
+
+    <p>기본적으로 Component의 SetRelativeLocation으로 트랜스폼을 설정하도록 되어 있습니다.</p>
+
+    <center><div class="mermaid"> 
+graph TD;
+
+AActor::AddActorWorldOffset--&gt;USceneComponent::AddWorldOffset;
+USceneComponent::AddWorldOffset--&gt;USceneComponent::SetWorldLocation
+USceneComponent::SetWorldLocation--&gt;Component::SetRelativeComponent
+</div></center>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="n">AActor</span><span class="o">::</span><span class="n">AddActorWorldOffset</span><span class="p">(</span><span class="n">FVector</span> <span class="n">DeltaLocation</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">bSweep</span><span class="p">,</span> <span class="n">FHitResult</span><span class="o">*</span> <span class="n">OutSweepHitResult</span><span class="p">,</span> <span class="n">ETeleportType</span> <span class="n">Teleport</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">RootComponent</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">RootComponent</span><span class="o">-&gt;</span><span class="n">AddWorldOffset</span><span class="p">(</span><span class="n">DeltaLocation</span><span class="p">,</span> <span class="n">bSweep</span><span class="p">,</span> <span class="n">OutSweepHitResult</span><span class="p">,</span> <span class="n">Teleport</span><span class="p">);</span>
+	<span class="p">}</span>
+	<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">OutSweepHitResult</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="o">*</span><span class="n">OutSweepHitResult</span> <span class="o">=</span> <span class="n">FHitResult</span><span class="p">();</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="n">USceneComponent</span><span class="o">::</span><span class="n">AddWorldOffset</span><span class="p">(</span><span class="n">FVector</span> <span class="n">DeltaLocation</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">bSweep</span><span class="p">,</span> <span class="n">FHitResult</span><span class="o">*</span> <span class="n">OutSweepHitResult</span><span class="p">,</span> <span class="n">ETeleportType</span> <span class="n">Teleport</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="k">const</span> <span class="n">FVector</span> <span class="n">NewWorldLocation</span> <span class="o">=</span> <span class="n">DeltaLocation</span> <span class="o">+</span> <span class="n">GetComponentTransform</span><span class="p">().</span><span class="n">GetTranslation</span><span class="p">();</span>
+	<span class="n">SetWorldLocation</span><span class="p">(</span><span class="n">NewWorldLocation</span><span class="p">,</span> <span class="n">bSweep</span><span class="p">,</span> <span class="n">OutSweepHitResult</span><span class="p">,</span> <span class="n">Teleport</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="n">USceneComponent</span><span class="o">::</span><span class="n">SetWorldLocation</span><span class="p">(</span><span class="n">FVector</span> <span class="n">NewLocation</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">bSweep</span><span class="p">,</span> <span class="n">FHitResult</span><span class="o">*</span> <span class="n">OutSweepHitResult</span><span class="p">,</span> <span class="n">ETeleportType</span> <span class="n">Teleport</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">FVector</span> <span class="n">NewRelLocation</span> <span class="o">=</span> <span class="n">NewLocation</span><span class="p">;</span>
+
+	<span class="c1">// If attached to something, transform into local space</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">GetAttachParent</span><span class="p">()</span> <span class="o">!=</span> <span class="nb">nullptr</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">IsUsingAbsoluteLocation</span><span class="p">())</span>
+	<span class="p">{</span>
+		<span class="n">FTransform</span> <span class="n">ParentToWorld</span> <span class="o">=</span> <span class="n">GetAttachParent</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetSocketTransform</span><span class="p">(</span><span class="n">GetAttachSocketName</span><span class="p">());</span>
+		<span class="n">NewRelLocation</span> <span class="o">=</span> <span class="n">ParentToWorld</span><span class="p">.</span><span class="n">InverseTransformPosition</span><span class="p">(</span><span class="n">NewLocation</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="n">SetRelativeLocation</span><span class="p">(</span><span class="n">NewRelLocation</span><span class="p">,</span> <span class="n">bSweep</span><span class="p">,</span> <span class="n">OutSweepHitResult</span><span class="p">,</span> <span class="n">Teleport</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+  </div>
+</details>
+
+<hr />
+
+<p>SetRelativeTransform을 보면, 로테이션과 트렌시션에 대해서만 스윕에 따라 힛 결과를 반환하는 것을 알 수 있습니다.</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="n">USceneComponent</span><span class="o">::</span><span class="n">SetRelativeTransform</span><span class="p">(</span><span class="k">const</span> <span class="n">FTransform</span><span class="o">&amp;</span> <span class="n">NewTransform</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">bSweep</span><span class="p">,</span> <span class="n">FHitResult</span><span class="o">*</span> <span class="n">OutSweepHitResult</span><span class="p">,</span> <span class="n">ETeleportType</span> <span class="n">Teleport</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">SetRelativeLocationAndRotation</span><span class="p">(</span><span class="n">NewTransform</span><span class="p">.</span><span class="n">GetTranslation</span><span class="p">(),</span> <span class="n">NewTransform</span><span class="p">.</span><span class="n">GetRotation</span><span class="p">(),</span> <span class="n">bSweep</span><span class="p">,</span> <span class="n">OutSweepHitResult</span><span class="p">,</span> <span class="n">Teleport</span><span class="p">);</span>
+	<span class="n">SetRelativeScale3D</span><span class="p">(</span><span class="n">NewTransform</span><span class="p">.</span><span class="n">GetScale3D</span><span class="p">());</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>씬 컴포넌트의 HitResult ptr을 따라가면 USceneComponent::MoveComponentImpl에 반환을 볼 수 있는데, 기본 FHitResult를 반환하도록 되어 있습니다. 이는 당연한데 SceneComponent는 모양이 없기 때문입니다.</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">bool</span> <span class="n">USceneComponent</span><span class="o">::</span><span class="n">MoveComponentImpl</span><span class="p">(</span><span class="k">const</span> <span class="n">FVector</span><span class="o">&amp;</span> <span class="n">Delta</span><span class="p">,</span> <span class="k">const</span> <span class="n">FQuat</span><span class="o">&amp;</span> <span class="n">NewRotation</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">bSweep</span><span class="p">,</span> <span class="n">FHitResult</span><span class="o">*</span> <span class="n">OutHit</span><span class="p">,</span> <span class="n">EMoveComponentFlags</span> <span class="n">MoveFlags</span><span class="p">,</span> <span class="n">ETeleportType</span> <span class="n">Teleport</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">SCOPE_CYCLE_COUNTER</span><span class="p">(</span><span class="n">STAT_MoveComponentSceneComponentTime</span><span class="p">);</span>
+
+	<span class="c1">// static things can move before they are registered (e.g. immediately after streaming), but not after.</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">IsPendingKill</span><span class="p">()</span> <span class="o">||</span> <span class="n">CheckStaticMobilityAndWarn</span><span class="p">(</span><span class="n">SceneComponentStatics</span><span class="o">::</span><span class="n">MobilityWarnText</span><span class="p">))</span>
+	<span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">OutHit</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="o">*</span><span class="n">OutHit</span> <span class="o">=</span> <span class="n">FHitResult</span><span class="p">();</span>
+		<span class="p">}</span>
+		<span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="c1">// Fill in optional output param. SceneComponent doesn't sweep, so this is just an empty result.</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">OutHit</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="o">*</span><span class="n">OutHit</span> <span class="o">=</span> <span class="n">FHitResult</span><span class="p">(</span><span class="mf">1.</span><span class="n">f</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="n">ConditionalUpdateComponentToWorld</span><span class="p">();</span>
+
+	<span class="c1">// early out for zero case</span>
+	<span class="k">if</span><span class="p">(</span> <span class="n">Delta</span><span class="p">.</span><span class="n">IsZero</span><span class="p">()</span> <span class="p">)</span>
+	<span class="p">{</span>
+		<span class="c1">// Skip if no vector or rotation.</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">NewRotation</span><span class="p">.</span><span class="n">Equals</span><span class="p">(</span><span class="n">GetComponentTransform</span><span class="p">().</span><span class="n">GetRotation</span><span class="p">(),</span> <span class="n">SCENECOMPONENT_QUAT_TOLERANCE</span><span class="p">))</span>
+		<span class="p">{</span>
+			<span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+
+	<span class="c1">// just teleport, sweep is supported for PrimitiveComponents. This will update child components as well.</span>
+	<span class="k">const</span> <span class="kt">bool</span> <span class="n">bMoved</span> <span class="o">=</span> <span class="n">InternalSetWorldLocationAndRotation</span><span class="p">(</span><span class="n">GetComponentLocation</span><span class="p">()</span> <span class="o">+</span> <span class="n">Delta</span><span class="p">,</span> <span class="n">NewRotation</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="n">Teleport</span><span class="p">);</span>
+
+	<span class="c1">// Only update overlaps if not deferring updates within a scope</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">bMoved</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">IsDeferringMovementUpdates</span><span class="p">())</span>
+	<span class="p">{</span>
+		<span class="c1">// need to update overlap detection in case PrimitiveComponents are attached.</span>
+		<span class="n">UpdateOverlaps</span><span class="p">();</span>
+	<span class="p">}</span>
+
+	<span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>PrimitiveComponent로 가면 코드를 볼 수 있습니다. 전부다 이해하기는 많이 버겁지만, Hit을 반환하는 코드를 보면 bFilledHitResult가 true일 떄 BlockingHit로 설정됩니다.</p>
+
+<p>BlockingHit은 첫번째 충돌을 반환합니다. bSweep이 true일 때 코드는 다음과 같이 작동합니다. 오버렙은 첫번째 충돌이 나오기 전까지 작동합니다.</p>
+
+<ol>
+  <li>이 액터에 필요한 경우 이동 충돌 검사를 수행합니다.
+    <ul>
+      <li>IsQueryCollisionEnabled()이 true일 떄, 검사하는 길이가 0보다 클 때,</li>
+    </ul>
+  </li>
+  <li>World를 가져와 해당 프리미티브를 바탕으로 ComponentSweepMulti를 수행합니다.</li>
+  <li>Hits에서 충돌이 발생할 때까지 Hit과 Overlap을 처리합니다.</li>
+  <li>충돌이 있다면, BlockingHit = Hits[BlockingHitIndex]를 수행합니다.</li>
+  <li>충돌을 바탕으로 새로운 포지션으로 업데이트 합니다.
+    <ul>
+      <li>const FVector ToNewLocation = (NewLocation - TraceStart)로 작동합니다.</li>
+    </ul>
+  </li>
+  <li>새로운 포지션으로 설정한 후 (InternalSetWorldLocationAndRotation)합니다.
+    <ul>
+      <li>InternalSetWorldLocationAndRotation에서 UpdateComponentToWorldWithParent를 호출합니다.</li>
+    </ul>
+  </li>
+  <li>움직였을 떄, 움직임을 지연한 상태이면, 오버랩 이벤트를 대기시킵니다. 아니라면, 오버랩 이벤트를 발생시킵니다.
+    <ul>
+      <li>지연된 움직임의 결정은, ScopedMovementStack이 1이상일 때, 결정됩니다.</li>
+    </ul>
+  </li>
+  <li>마지막으로, 움직임을 지연한 상태라면, 힛트를 지연시키고, 아니라면, 히트 이벤트를 발생시킵니다.</li>
+</ol>
+
+<ul>
+  <li>IsDeferringMovementUpdates는 움직임이 현재 FScopedMovementUpdate 범위 내에 있으면 true를 반환합니다 .</li>
+  <li>FScopedMovementUpdate는 업데이트를 연기하지 않는 가장 바깥쪽 범위가 끝날 때까지 이동 전파를 연기할 수 있는 새로운 이동 범위를 만듭니다.
+ 이 범위 내에서 이동하면 이동이 커밋될 때까지 UpdateBounds(), OnUpdateTransform(), UpdatePhysicsVolume(), UpdateChildTransforms() 등과 같은 업데이트를 피할 수 있습니다(지연된 마지막 범위가 컨텍스트를 벗어날 때 발생).</li>
+  <li>언리얼에서 PrimitiveComponent는 일반적으로 렌더링되거나 충돌 데이터로  사용되는 일종의 지오메트리를 포함하거나 생성하는 SceneComponent입니다.</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">bool</span> <span class="n">UPrimitiveComponent</span><span class="o">::</span><span class="n">MoveComponentImpl</span><span class="p">(</span> <span class="k">const</span> <span class="n">FVector</span><span class="o">&amp;</span> <span class="n">Delta</span><span class="p">,</span> <span class="k">const</span> <span class="n">FQuat</span><span class="o">&amp;</span> <span class="n">NewRotationQuat</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">bSweep</span><span class="p">,</span> <span class="n">FHitResult</span><span class="o">*</span> <span class="n">OutHit</span><span class="p">,</span> <span class="n">EMoveComponentFlags</span> <span class="n">MoveFlags</span><span class="p">,</span> <span class="n">ETeleportType</span> <span class="n">Teleport</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">SCOPE_CYCLE_COUNTER</span><span class="p">(</span><span class="n">STAT_MoveComponentTime</span><span class="p">);</span>
+	<span class="n">CSV_SCOPED_TIMING_STAT</span><span class="p">(</span><span class="n">PrimitiveComponent</span><span class="p">,</span> <span class="n">MoveComponentTime</span><span class="p">);</span>
+
+<span class="cp">#if !(UE_BUILD_SHIPPING || UE_BUILD_TEST) &amp;&amp; PERF_MOVECOMPONENT_STATS
+</span>	<span class="n">FScopedMoveCompTimer</span> <span class="n">MoveTimer</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="n">Delta</span><span class="p">);</span>
+<span class="cp">#endif // !(UE_BUILD_SHIPPING || UE_BUILD_TEST) &amp;&amp; PERF_MOVECOMPONENT_STATS
+</span>
+<span class="cp">#if defined(PERF_SHOW_MOVECOMPONENT_TAKING_LONG_TIME) || LOOKING_FOR_PERF_ISSUES
+</span>	<span class="n">uint32</span> <span class="n">MoveCompTakingLongTime</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+	<span class="n">CLOCK_CYCLES</span><span class="p">(</span><span class="n">MoveCompTakingLongTime</span><span class="p">);</span>
+<span class="cp">#endif
+</span>
+	<span class="c1">// static things can move before they are registered (e.g. immediately after streaming), but not after.</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">IsPendingKill</span><span class="p">()</span> <span class="o">||</span> <span class="n">CheckStaticMobilityAndWarn</span><span class="p">(</span><span class="n">PrimitiveComponentStatics</span><span class="o">::</span><span class="n">MobilityWarnText</span><span class="p">))</span>
+	<span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">OutHit</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">OutHit</span><span class="o">-&gt;</span><span class="n">Init</span><span class="p">();</span>
+		<span class="p">}</span>
+		<span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="n">ConditionalUpdateComponentToWorld</span><span class="p">();</span>
+
+	<span class="c1">// Set up</span>
+	<span class="k">const</span> <span class="n">FVector</span> <span class="n">TraceStart</span> <span class="o">=</span> <span class="n">GetComponentLocation</span><span class="p">();</span>
+	<span class="k">const</span> <span class="n">FVector</span> <span class="n">TraceEnd</span> <span class="o">=</span> <span class="n">TraceStart</span> <span class="o">+</span> <span class="n">Delta</span><span class="p">;</span>
+	<span class="kt">float</span> <span class="n">DeltaSizeSq</span> <span class="o">=</span> <span class="p">(</span><span class="n">TraceEnd</span> <span class="o">-</span> <span class="n">TraceStart</span><span class="p">).</span><span class="n">SizeSquared</span><span class="p">();</span>				<span class="c1">// Recalc here to account for precision loss of float addition</span>
+	<span class="k">const</span> <span class="n">FQuat</span> <span class="n">InitialRotationQuat</span> <span class="o">=</span> <span class="n">GetComponentTransform</span><span class="p">().</span><span class="n">GetRotation</span><span class="p">();</span>
+
+	<span class="c1">// ComponentSweepMulti does nothing if moving &lt; KINDA_SMALL_NUMBER in distance, so it's important to not try to sweep distances smaller than that. </span>
+	<span class="k">const</span> <span class="kt">float</span> <span class="n">MinMovementDistSq</span> <span class="o">=</span> <span class="p">(</span><span class="n">bSweep</span> <span class="o">?</span> <span class="n">FMath</span><span class="o">::</span><span class="n">Square</span><span class="p">(</span><span class="mf">4.</span><span class="n">f</span><span class="o">*</span><span class="n">KINDA_SMALL_NUMBER</span><span class="p">)</span> <span class="o">:</span> <span class="mf">0.</span><span class="n">f</span><span class="p">);</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">DeltaSizeSq</span> <span class="o">&lt;=</span> <span class="n">MinMovementDistSq</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="c1">// Skip if no vector or rotation.</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">NewRotationQuat</span><span class="p">.</span><span class="n">Equals</span><span class="p">(</span><span class="n">InitialRotationQuat</span><span class="p">,</span> <span class="n">SCENECOMPONENT_QUAT_TOLERANCE</span><span class="p">))</span>
+		<span class="p">{</span>
+			<span class="c1">// copy to optional output param</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">OutHit</span><span class="p">)</span>
+			<span class="p">{</span>
+				<span class="n">OutHit</span><span class="o">-&gt;</span><span class="n">Init</span><span class="p">(</span><span class="n">TraceStart</span><span class="p">,</span> <span class="n">TraceEnd</span><span class="p">);</span>
+			<span class="p">}</span>
+			<span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="n">DeltaSizeSq</span> <span class="o">=</span> <span class="mf">0.</span><span class="n">f</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="k">const</span> <span class="kt">bool</span> <span class="n">bSkipPhysicsMove</span> <span class="o">=</span> <span class="p">((</span><span class="n">MoveFlags</span> <span class="o">&amp;</span> <span class="n">MOVECOMP_SkipPhysicsMove</span><span class="p">)</span> <span class="o">!=</span> <span class="n">MOVECOMP_NoFlags</span><span class="p">);</span>
+
+	<span class="c1">// WARNING: HitResult is only partially initialized in some paths. All data is valid only if bFilledHitResult is true.</span>
+	<span class="n">FHitResult</span> <span class="n">BlockingHit</span><span class="p">(</span><span class="n">NoInit</span><span class="p">);</span>
+	<span class="n">BlockingHit</span><span class="p">.</span><span class="n">bBlockingHit</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+	<span class="n">BlockingHit</span><span class="p">.</span><span class="n">Time</span> <span class="o">=</span> <span class="mf">1.</span><span class="n">f</span><span class="p">;</span>
+	<span class="kt">bool</span> <span class="n">bFilledHitResult</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+	<span class="kt">bool</span> <span class="n">bMoved</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+	<span class="kt">bool</span> <span class="n">bIncludesOverlapsAtEnd</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+	<span class="kt">bool</span> <span class="n">bRotationOnly</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+	<span class="n">TInlineOverlapInfoArray</span> <span class="n">PendingOverlaps</span><span class="p">;</span>
+	<span class="n">AActor</span><span class="o">*</span> <span class="k">const</span> <span class="n">Actor</span> <span class="o">=</span> <span class="n">GetOwner</span><span class="p">();</span>
+
+	<span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="n">bSweep</span> <span class="p">)</span>
+	<span class="p">{</span>
+		<span class="c1">// not sweeping, just go directly to the new transform</span>
+		<span class="n">bMoved</span> <span class="o">=</span> <span class="n">InternalSetWorldLocationAndRotation</span><span class="p">(</span><span class="n">TraceEnd</span><span class="p">,</span> <span class="n">NewRotationQuat</span><span class="p">,</span> <span class="n">bSkipPhysicsMove</span><span class="p">,</span> <span class="n">Teleport</span><span class="p">);</span>
+		<span class="n">bRotationOnly</span> <span class="o">=</span> <span class="p">(</span><span class="n">DeltaSizeSq</span> <span class="o">==</span> <span class="mi">0</span><span class="p">);</span>
+		<span class="n">bIncludesOverlapsAtEnd</span> <span class="o">=</span> <span class="n">bRotationOnly</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">AreSymmetricRotations</span><span class="p">(</span><span class="n">InitialRotationQuat</span><span class="p">,</span> <span class="n">NewRotationQuat</span><span class="p">,</span> <span class="n">GetComponentScale</span><span class="p">()))</span> <span class="o">&amp;&amp;</span> <span class="n">IsQueryCollisionEnabled</span><span class="p">();</span>
+	<span class="p">}</span>
+	<span class="k">else</span>
+	<span class="p">{</span>
+		<span class="n">TArray</span><span class="o">&lt;</span><span class="n">FHitResult</span><span class="o">&gt;</span> <span class="n">Hits</span><span class="p">;</span>
+		<span class="n">FVector</span> <span class="n">NewLocation</span> <span class="o">=</span> <span class="n">TraceStart</span><span class="p">;</span>
+
+		<span class="c1">// Perform movement collision checking if needed for this actor.</span>
+		<span class="k">const</span> <span class="kt">bool</span> <span class="n">bCollisionEnabled</span> <span class="o">=</span> <span class="n">IsQueryCollisionEnabled</span><span class="p">();</span>
+		<span class="k">if</span><span class="p">(</span> <span class="n">bCollisionEnabled</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">DeltaSizeSq</span> <span class="o">&gt;</span> <span class="mf">0.</span><span class="n">f</span><span class="p">))</span>
+		<span class="p">{</span>
+<span class="cp">#if !(UE_BUILD_SHIPPING || UE_BUILD_TEST)
+</span>			<span class="k">if</span><span class="p">(</span> <span class="o">!</span><span class="n">IsRegistered</span><span class="p">()</span> <span class="p">)</span>
+			<span class="p">{</span>
+				<span class="k">if</span> <span class="p">(</span><span class="n">Actor</span><span class="p">)</span>
+				<span class="p">{</span>
+					<span class="n">ensureMsgf</span><span class="p">(</span><span class="n">IsRegistered</span><span class="p">(),</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"%s MovedComponent %s not initialized deleteme %d"</span><span class="p">),</span><span class="o">*</span><span class="n">Actor</span><span class="o">-&gt;</span><span class="n">GetName</span><span class="p">(),</span> <span class="o">*</span><span class="n">GetName</span><span class="p">(),</span> <span class="n">Actor</span><span class="o">-&gt;</span><span class="n">IsPendingKill</span><span class="p">());</span>
+				<span class="p">}</span>
+				<span class="k">else</span>
+				<span class="p">{</span> <span class="c1">//-V523</span>
+					<span class="n">ensureMsgf</span><span class="p">(</span><span class="n">IsRegistered</span><span class="p">(),</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"MovedComponent %s not initialized"</span><span class="p">),</span> <span class="o">*</span><span class="n">GetFullName</span><span class="p">());</span>
+				<span class="p">}</span>
+			<span class="p">}</span>
+<span class="cp">#endif
+</span>
+<span class="cp">#if !(UE_BUILD_SHIPPING || UE_BUILD_TEST) &amp;&amp; PERF_MOVECOMPONENT_STATS
+</span>			<span class="n">MoveTimer</span><span class="p">.</span><span class="n">bDidLineCheck</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<span class="cp">#endif 
+</span>			<span class="n">UWorld</span><span class="o">*</span> <span class="k">const</span> <span class="n">MyWorld</span> <span class="o">=</span> <span class="n">GetWorld</span><span class="p">();</span>
+
+			<span class="k">static</span> <span class="k">const</span> <span class="n">FName</span> <span class="n">TraceTagName</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"MoveComponent"</span><span class="p">);</span>
+			<span class="k">const</span> <span class="kt">bool</span> <span class="n">bForceGatherOverlaps</span> <span class="o">=</span> <span class="o">!</span><span class="n">ShouldCheckOverlapFlagToQueueOverlaps</span><span class="p">(</span><span class="o">*</span><span class="k">this</span><span class="p">);</span>
+			<span class="n">FComponentQueryParams</span> <span class="n">Params</span><span class="p">(</span><span class="n">SCENE_QUERY_STAT</span><span class="p">(</span><span class="n">MoveComponent</span><span class="p">),</span> <span class="n">Actor</span><span class="p">);</span>
+			<span class="n">FCollisionResponseParams</span> <span class="n">ResponseParam</span><span class="p">;</span>
+			<span class="n">InitSweepCollisionParams</span><span class="p">(</span><span class="n">Params</span><span class="p">,</span> <span class="n">ResponseParam</span><span class="p">);</span>
+			<span class="n">Params</span><span class="p">.</span><span class="n">bIgnoreTouches</span> <span class="o">|=</span> <span class="o">!</span><span class="p">(</span><span class="n">GetGenerateOverlapEvents</span><span class="p">()</span> <span class="o">||</span> <span class="n">bForceGatherOverlaps</span><span class="p">);</span>
+			<span class="n">Params</span><span class="p">.</span><span class="n">TraceTag</span> <span class="o">=</span> <span class="n">TraceTagName</span><span class="p">;</span>
+			<span class="kt">bool</span> <span class="k">const</span> <span class="n">bHadBlockingHit</span> <span class="o">=</span> <span class="n">MyWorld</span><span class="o">-&gt;</span><span class="n">ComponentSweepMulti</span><span class="p">(</span><span class="n">Hits</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="n">TraceStart</span><span class="p">,</span> <span class="n">TraceEnd</span><span class="p">,</span> <span class="n">InitialRotationQuat</span><span class="p">,</span> <span class="n">Params</span><span class="p">);</span>
+
+			<span class="k">if</span> <span class="p">(</span><span class="n">Hits</span><span class="p">.</span><span class="n">Num</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+			<span class="p">{</span>
+				<span class="k">const</span> <span class="kt">float</span> <span class="n">DeltaSize</span> <span class="o">=</span> <span class="n">FMath</span><span class="o">::</span><span class="n">Sqrt</span><span class="p">(</span><span class="n">DeltaSizeSq</span><span class="p">);</span>
+				<span class="k">for</span><span class="p">(</span><span class="n">int32</span> <span class="n">HitIdx</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">HitIdx</span><span class="o">&lt;</span><span class="n">Hits</span><span class="p">.</span><span class="n">Num</span><span class="p">();</span> <span class="n">HitIdx</span><span class="o">++</span><span class="p">)</span>
+				<span class="p">{</span>
+					<span class="n">PullBackHit</span><span class="p">(</span><span class="n">Hits</span><span class="p">[</span><span class="n">HitIdx</span><span class="p">],</span> <span class="n">TraceStart</span><span class="p">,</span> <span class="n">TraceEnd</span><span class="p">,</span> <span class="n">DeltaSize</span><span class="p">);</span>
+				<span class="p">}</span>
+			<span class="p">}</span>
+
+			<span class="c1">// If we had a valid blocking hit, store it.</span>
+			<span class="c1">// If we are looking for overlaps, store those as well.</span>
+			<span class="n">int32</span> <span class="n">FirstNonInitialOverlapIdx</span> <span class="o">=</span> <span class="n">INDEX_NONE</span><span class="p">;</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">bHadBlockingHit</span> <span class="o">||</span> <span class="p">(</span><span class="n">GetGenerateOverlapEvents</span><span class="p">()</span> <span class="o">||</span> <span class="n">bForceGatherOverlaps</span><span class="p">))</span>
+			<span class="p">{</span>
+				<span class="n">int32</span> <span class="n">BlockingHitIndex</span> <span class="o">=</span> <span class="n">INDEX_NONE</span><span class="p">;</span>
+				<span class="kt">float</span> <span class="n">BlockingHitNormalDotDelta</span> <span class="o">=</span> <span class="n">BIG_NUMBER</span><span class="p">;</span>
+				<span class="k">for</span><span class="p">(</span> <span class="n">int32</span> <span class="n">HitIdx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">HitIdx</span> <span class="o">&lt;</span> <span class="n">Hits</span><span class="p">.</span><span class="n">Num</span><span class="p">();</span> <span class="n">HitIdx</span><span class="o">++</span> <span class="p">)</span>
+				<span class="p">{</span>
+					<span class="k">const</span> <span class="n">FHitResult</span><span class="o">&amp;</span> <span class="n">TestHit</span> <span class="o">=</span> <span class="n">Hits</span><span class="p">[</span><span class="n">HitIdx</span><span class="p">];</span>
+
+					<span class="k">if</span> <span class="p">(</span><span class="n">TestHit</span><span class="p">.</span><span class="n">bBlockingHit</span><span class="p">)</span>
+					<span class="p">{</span>
+						<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">ShouldIgnoreHitResult</span><span class="p">(</span><span class="n">MyWorld</span><span class="p">,</span> <span class="n">TestHit</span><span class="p">,</span> <span class="n">Delta</span><span class="p">,</span> <span class="n">Actor</span><span class="p">,</span> <span class="n">MoveFlags</span><span class="p">))</span>
+						<span class="p">{</span>
+							<span class="k">if</span> <span class="p">(</span><span class="n">TestHit</span><span class="p">.</span><span class="n">bStartPenetrating</span><span class="p">)</span>
+							<span class="p">{</span>
+								<span class="c1">// We may have multiple initial hits, and want to choose the one with the normal most opposed to our movement.</span>
+								<span class="k">const</span> <span class="kt">float</span> <span class="n">NormalDotDelta</span> <span class="o">=</span> <span class="p">(</span><span class="n">TestHit</span><span class="p">.</span><span class="n">ImpactNormal</span> <span class="o">|</span> <span class="n">Delta</span><span class="p">);</span>
+								<span class="k">if</span> <span class="p">(</span><span class="n">NormalDotDelta</span> <span class="o">&lt;</span> <span class="n">BlockingHitNormalDotDelta</span><span class="p">)</span>
+								<span class="p">{</span>
+									<span class="n">BlockingHitNormalDotDelta</span> <span class="o">=</span> <span class="n">NormalDotDelta</span><span class="p">;</span>
+									<span class="n">BlockingHitIndex</span> <span class="o">=</span> <span class="n">HitIdx</span><span class="p">;</span>
+								<span class="p">}</span>
+							<span class="p">}</span>
+							<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">BlockingHitIndex</span> <span class="o">==</span> <span class="n">INDEX_NONE</span><span class="p">)</span>
+							<span class="p">{</span>
+								<span class="c1">// First non-overlapping blocking hit should be used, if an overlapping hit was not.</span>
+								<span class="c1">// This should be the only non-overlapping blocking hit, and last in the results.</span>
+								<span class="n">BlockingHitIndex</span> <span class="o">=</span> <span class="n">HitIdx</span><span class="p">;</span>
+								<span class="k">break</span><span class="p">;</span>
+							<span class="p">}</span>
+						<span class="p">}</span>
+					<span class="p">}</span>
+					<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">GetGenerateOverlapEvents</span><span class="p">()</span> <span class="o">||</span> <span class="n">bForceGatherOverlaps</span><span class="p">)</span>
+					<span class="p">{</span>
+						<span class="n">UPrimitiveComponent</span><span class="o">*</span> <span class="n">OverlapComponent</span> <span class="o">=</span> <span class="n">TestHit</span><span class="p">.</span><span class="n">Component</span><span class="p">.</span><span class="n">Get</span><span class="p">();</span>
+						<span class="k">if</span> <span class="p">(</span><span class="n">OverlapComponent</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">OverlapComponent</span><span class="o">-&gt;</span><span class="n">GetGenerateOverlapEvents</span><span class="p">()</span> <span class="o">||</span> <span class="n">bForceGatherOverlaps</span><span class="p">))</span>
+						<span class="p">{</span>
+							<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">ShouldIgnoreOverlapResult</span><span class="p">(</span><span class="n">MyWorld</span><span class="p">,</span> <span class="n">Actor</span><span class="p">,</span> <span class="o">*</span><span class="k">this</span><span class="p">,</span> <span class="n">TestHit</span><span class="p">.</span><span class="n">GetActor</span><span class="p">(),</span> <span class="o">*</span><span class="n">OverlapComponent</span><span class="p">,</span> <span class="cm">/*bCheckOverlapFlags=*/</span> <span class="o">!</span><span class="n">bForceGatherOverlaps</span><span class="p">))</span>
+							<span class="p">{</span>
+								<span class="c1">// don't process touch events after initial blocking hits</span>
+								<span class="k">if</span> <span class="p">(</span><span class="n">BlockingHitIndex</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">TestHit</span><span class="p">.</span><span class="n">Time</span> <span class="o">&gt;</span> <span class="n">Hits</span><span class="p">[</span><span class="n">BlockingHitIndex</span><span class="p">].</span><span class="n">Time</span><span class="p">)</span>
+								<span class="p">{</span>
+									<span class="k">break</span><span class="p">;</span>
+								<span class="p">}</span>
+
+								<span class="k">if</span> <span class="p">(</span><span class="n">FirstNonInitialOverlapIdx</span> <span class="o">==</span> <span class="n">INDEX_NONE</span> <span class="o">&amp;&amp;</span> <span class="n">TestHit</span><span class="p">.</span><span class="n">Time</span> <span class="o">&gt;</span> <span class="mf">0.</span><span class="n">f</span><span class="p">)</span>
+								<span class="p">{</span>
+									<span class="c1">// We are about to add the first non-initial overlap.</span>
+									<span class="n">FirstNonInitialOverlapIdx</span> <span class="o">=</span> <span class="n">PendingOverlaps</span><span class="p">.</span><span class="n">Num</span><span class="p">();</span>
+								<span class="p">}</span>
+
+								<span class="c1">// cache touches</span>
+								<span class="n">AddUniqueOverlapFast</span><span class="p">(</span><span class="n">PendingOverlaps</span><span class="p">,</span> <span class="n">FOverlapInfo</span><span class="p">(</span><span class="n">TestHit</span><span class="p">));</span>
+							<span class="p">}</span>
+						<span class="p">}</span>
+					<span class="p">}</span>
+				<span class="p">}</span>
+
+				<span class="c1">// Update blocking hit, if there was a valid one.</span>
+				<span class="k">if</span> <span class="p">(</span><span class="n">BlockingHitIndex</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span>
+				<span class="p">{</span>
+					<span class="n">BlockingHit</span> <span class="o">=</span> <span class="n">Hits</span><span class="p">[</span><span class="n">BlockingHitIndex</span><span class="p">];</span>
+					<span class="n">bFilledHitResult</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+				<span class="p">}</span>
+			<span class="p">}</span>
+		
+			<span class="c1">// Update NewLocation based on the hit result</span>
+			<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">BlockingHit</span><span class="p">.</span><span class="n">bBlockingHit</span><span class="p">)</span>
+			<span class="p">{</span>
+				<span class="n">NewLocation</span> <span class="o">=</span> <span class="n">TraceEnd</span><span class="p">;</span>
+			<span class="p">}</span>
+			<span class="k">else</span>
+			<span class="p">{</span>
+				<span class="n">check</span><span class="p">(</span><span class="n">bFilledHitResult</span><span class="p">);</span>
+				<span class="n">NewLocation</span> <span class="o">=</span> <span class="n">TraceStart</span> <span class="o">+</span> <span class="p">(</span><span class="n">BlockingHit</span><span class="p">.</span><span class="n">Time</span> <span class="o">*</span> <span class="p">(</span><span class="n">TraceEnd</span> <span class="o">-</span> <span class="n">TraceStart</span><span class="p">));</span>
+
+				<span class="c1">// Sanity check</span>
+				<span class="k">const</span> <span class="n">FVector</span> <span class="n">ToNewLocation</span> <span class="o">=</span> <span class="p">(</span><span class="n">NewLocation</span> <span class="o">-</span> <span class="n">TraceStart</span><span class="p">);</span>
+				<span class="k">if</span> <span class="p">(</span><span class="n">ToNewLocation</span><span class="p">.</span><span class="n">SizeSquared</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="n">MinMovementDistSq</span><span class="p">)</span>
+				<span class="p">{</span>
+					<span class="c1">// We don't want really small movements to put us on or inside a surface.</span>
+					<span class="n">NewLocation</span> <span class="o">=</span> <span class="n">TraceStart</span><span class="p">;</span>
+					<span class="n">BlockingHit</span><span class="p">.</span><span class="n">Time</span> <span class="o">=</span> <span class="mf">0.</span><span class="n">f</span><span class="p">;</span>
+
+					<span class="c1">// Remove any pending overlaps after this point, we are not going as far as we swept.</span>
+					<span class="k">if</span> <span class="p">(</span><span class="n">FirstNonInitialOverlapIdx</span> <span class="o">!=</span> <span class="n">INDEX_NONE</span><span class="p">)</span>
+					<span class="p">{</span>
+						<span class="k">const</span> <span class="kt">bool</span> <span class="n">bAllowShrinking</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+						<span class="n">PendingOverlaps</span><span class="p">.</span><span class="n">SetNum</span><span class="p">(</span><span class="n">FirstNonInitialOverlapIdx</span><span class="p">,</span> <span class="n">bAllowShrinking</span><span class="p">);</span>
+					<span class="p">}</span>
+				<span class="p">}</span>
+			<span class="p">}</span>
+
+			<span class="n">bIncludesOverlapsAtEnd</span> <span class="o">=</span> <span class="n">AreSymmetricRotations</span><span class="p">(</span><span class="n">InitialRotationQuat</span><span class="p">,</span> <span class="n">NewRotationQuat</span><span class="p">,</span> <span class="n">GetComponentScale</span><span class="p">());</span>
+
+<span class="cp">#if !(UE_BUILD_SHIPPING || UE_BUILD_TEST)
+</span>			<span class="k">if</span> <span class="p">(</span><span class="n">UCheatManager</span><span class="o">::</span><span class="n">IsDebugCapsuleSweepPawnEnabled</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">BlockingHit</span><span class="p">.</span><span class="n">bBlockingHit</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">IsZeroExtent</span><span class="p">())</span>
+			<span class="p">{</span>
+				<span class="c1">// this is sole debug purpose to find how capsule trace information was when hit </span>
+				<span class="c1">// to resolve stuck or improve our movement system - To turn this on, use DebugCapsuleSweepPawn</span>
+				<span class="n">APawn</span> <span class="k">const</span><span class="o">*</span> <span class="k">const</span> <span class="n">ActorPawn</span> <span class="o">=</span> <span class="p">(</span><span class="n">Actor</span> <span class="o">?</span> <span class="n">Cast</span><span class="o">&lt;</span><span class="n">APawn</span><span class="o">&gt;</span><span class="p">(</span><span class="n">Actor</span><span class="p">)</span> <span class="o">:</span> <span class="nb">NULL</span><span class="p">);</span>
+				<span class="k">if</span> <span class="p">(</span><span class="n">ActorPawn</span> <span class="o">&amp;&amp;</span> <span class="n">ActorPawn</span><span class="o">-&gt;</span><span class="n">Controller</span> <span class="o">&amp;&amp;</span> <span class="n">ActorPawn</span><span class="o">-&gt;</span><span class="n">Controller</span><span class="o">-&gt;</span><span class="n">IsLocalPlayerController</span><span class="p">())</span>
+				<span class="p">{</span>
+					<span class="n">APlayerController</span> <span class="k">const</span><span class="o">*</span> <span class="k">const</span> <span class="n">PC</span> <span class="o">=</span> <span class="n">CastChecked</span><span class="o">&lt;</span><span class="n">APlayerController</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ActorPawn</span><span class="o">-&gt;</span><span class="n">Controller</span><span class="p">);</span>
+					<span class="k">if</span> <span class="p">(</span><span class="n">PC</span><span class="o">-&gt;</span><span class="n">CheatManager</span><span class="p">)</span>
+					<span class="p">{</span>
+						<span class="n">FVector</span> <span class="n">CylExtent</span> <span class="o">=</span> <span class="n">ActorPawn</span><span class="o">-&gt;</span><span class="n">GetSimpleCollisionCylinderExtent</span><span class="p">()</span><span class="o">*</span><span class="n">FVector</span><span class="p">(</span><span class="mf">1.001</span><span class="n">f</span><span class="p">,</span><span class="mf">1.001</span><span class="n">f</span><span class="p">,</span><span class="mf">1.0</span><span class="n">f</span><span class="p">);</span>							
+						<span class="n">FCollisionShape</span> <span class="n">CapsuleShape</span> <span class="o">=</span> <span class="n">FCollisionShape</span><span class="o">::</span><span class="n">MakeCapsule</span><span class="p">(</span><span class="n">CylExtent</span><span class="p">);</span>
+						<span class="n">PC</span><span class="o">-&gt;</span><span class="n">CheatManager</span><span class="o">-&gt;</span><span class="n">AddCapsuleSweepDebugInfo</span><span class="p">(</span><span class="n">TraceStart</span><span class="p">,</span> <span class="n">TraceEnd</span><span class="p">,</span> <span class="n">BlockingHit</span><span class="p">.</span><span class="n">ImpactPoint</span><span class="p">,</span> <span class="n">BlockingHit</span><span class="p">.</span><span class="n">Normal</span><span class="p">,</span> <span class="n">BlockingHit</span><span class="p">.</span><span class="n">ImpactNormal</span><span class="p">,</span> <span class="n">BlockingHit</span><span class="p">.</span><span class="n">Location</span><span class="p">,</span> <span class="n">CapsuleShape</span><span class="p">.</span><span class="n">GetCapsuleHalfHeight</span><span class="p">(),</span> <span class="n">CapsuleShape</span><span class="p">.</span><span class="n">GetCapsuleRadius</span><span class="p">(),</span> <span class="nb">true</span><span class="p">,</span> <span class="p">(</span><span class="n">BlockingHit</span><span class="p">.</span><span class="n">bStartPenetrating</span> <span class="o">&amp;&amp;</span> <span class="n">BlockingHit</span><span class="p">.</span><span class="n">bBlockingHit</span><span class="p">)</span> <span class="o">?</span> <span class="nb">true</span><span class="o">:</span> <span class="nb">false</span><span class="p">);</span>
+					<span class="p">}</span>
+				<span class="p">}</span>
+			<span class="p">}</span>
+<span class="cp">#endif
+</span>		<span class="p">}</span>
+		<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">DeltaSizeSq</span> <span class="o">&gt;</span> <span class="mf">0.</span><span class="n">f</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="c1">// apply move delta even if components has collisions disabled</span>
+			<span class="n">NewLocation</span> <span class="o">+=</span> <span class="n">Delta</span><span class="p">;</span>
+			<span class="n">bIncludesOverlapsAtEnd</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">DeltaSizeSq</span> <span class="o">==</span> <span class="mf">0.</span><span class="n">f</span> <span class="o">&amp;&amp;</span> <span class="n">bCollisionEnabled</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">bIncludesOverlapsAtEnd</span> <span class="o">=</span> <span class="n">AreSymmetricRotations</span><span class="p">(</span><span class="n">InitialRotationQuat</span><span class="p">,</span> <span class="n">NewRotationQuat</span><span class="p">,</span> <span class="n">GetComponentScale</span><span class="p">());</span>
+			<span class="n">bRotationOnly</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+		<span class="p">}</span>
+
+		<span class="c1">// Update the location.  This will teleport any child components as well (not sweep).</span>
+		<span class="n">bMoved</span> <span class="o">=</span> <span class="n">InternalSetWorldLocationAndRotation</span><span class="p">(</span><span class="n">NewLocation</span><span class="p">,</span> <span class="n">NewRotationQuat</span><span class="p">,</span> <span class="n">bSkipPhysicsMove</span><span class="p">,</span> <span class="n">Teleport</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="c1">// Handle overlap notifications.</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">bMoved</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">IsDeferringMovementUpdates</span><span class="p">())</span>
+		<span class="p">{</span>
+			<span class="c1">// Defer UpdateOverlaps until the scoped move ends.</span>
+			<span class="n">FScopedMovementUpdate</span><span class="o">*</span> <span class="n">ScopedUpdate</span> <span class="o">=</span> <span class="n">GetCurrentScopedMovement</span><span class="p">();</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">bRotationOnly</span> <span class="o">&amp;&amp;</span> <span class="n">bIncludesOverlapsAtEnd</span><span class="p">)</span>
+			<span class="p">{</span>
+				<span class="n">ScopedUpdate</span><span class="o">-&gt;</span><span class="n">KeepCurrentOverlapsAfterRotation</span><span class="p">(</span><span class="n">bSweep</span><span class="p">);</span>
+			<span class="p">}</span>
+			<span class="k">else</span>
+			<span class="p">{</span>
+				<span class="n">ScopedUpdate</span><span class="o">-&gt;</span><span class="n">AppendOverlapsAfterMove</span><span class="p">(</span><span class="n">PendingOverlaps</span><span class="p">,</span> <span class="n">bSweep</span><span class="p">,</span> <span class="n">bIncludesOverlapsAtEnd</span><span class="p">);</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+		<span class="k">else</span>
+		<span class="p">{</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">bIncludesOverlapsAtEnd</span><span class="p">)</span>
+			<span class="p">{</span>
+				<span class="n">TInlineOverlapInfoArray</span> <span class="n">OverlapsAtEndLocation</span><span class="p">;</span>
+				<span class="kt">bool</span> <span class="n">bHasEndOverlaps</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+				<span class="k">if</span> <span class="p">(</span><span class="n">bRotationOnly</span><span class="p">)</span>
+				<span class="p">{</span>
+					<span class="n">bHasEndOverlaps</span> <span class="o">=</span> <span class="n">ConvertRotationOverlapsToCurrentOverlaps</span><span class="p">(</span><span class="n">OverlapsAtEndLocation</span><span class="p">,</span> <span class="n">OverlappingComponents</span><span class="p">);</span>
+				<span class="p">}</span>
+				<span class="k">else</span>
+				<span class="p">{</span>
+					<span class="n">bHasEndOverlaps</span> <span class="o">=</span> <span class="n">ConvertSweptOverlapsToCurrentOverlaps</span><span class="p">(</span><span class="n">OverlapsAtEndLocation</span><span class="p">,</span> <span class="n">PendingOverlaps</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">GetComponentLocation</span><span class="p">(),</span> <span class="n">GetComponentQuat</span><span class="p">());</span>
+				<span class="p">}</span>
+				<span class="n">TOverlapArrayView</span> <span class="n">PendingOverlapsView</span><span class="p">(</span><span class="n">PendingOverlaps</span><span class="p">);</span>
+				<span class="n">TOverlapArrayView</span> <span class="n">OverlapsAtEndView</span><span class="p">(</span><span class="n">OverlapsAtEndLocation</span><span class="p">);</span>
+				<span class="n">UpdateOverlaps</span><span class="p">(</span><span class="o">&amp;</span><span class="n">PendingOverlapsView</span><span class="p">,</span> <span class="nb">true</span><span class="p">,</span> <span class="n">bHasEndOverlaps</span> <span class="o">?</span> <span class="o">&amp;</span><span class="n">OverlapsAtEndView</span> <span class="o">:</span> <span class="nb">nullptr</span><span class="p">);</span>
+			<span class="p">}</span>
+			<span class="k">else</span>
+			<span class="p">{</span>
+				<span class="n">TOverlapArrayView</span> <span class="n">PendingOverlapsView</span><span class="p">(</span><span class="n">PendingOverlaps</span><span class="p">);</span>
+				<span class="n">UpdateOverlaps</span><span class="p">(</span><span class="o">&amp;</span><span class="n">PendingOverlapsView</span><span class="p">,</span> <span class="nb">true</span><span class="p">,</span> <span class="nb">nullptr</span><span class="p">);</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+
+	<span class="c1">// Handle blocking hit notifications. Avoid if pending kill (which could happen after overlaps).</span>
+	<span class="k">const</span> <span class="kt">bool</span> <span class="n">bAllowHitDispatch</span> <span class="o">=</span> <span class="o">!</span><span class="n">BlockingHit</span><span class="p">.</span><span class="n">bStartPenetrating</span> <span class="o">||</span> <span class="o">!</span><span class="p">(</span><span class="n">MoveFlags</span> <span class="o">&amp;</span> <span class="n">MOVECOMP_DisableBlockingOverlapDispatch</span><span class="p">);</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">BlockingHit</span><span class="p">.</span><span class="n">bBlockingHit</span> <span class="o">&amp;&amp;</span> <span class="n">bAllowHitDispatch</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">IsPendingKill</span><span class="p">())</span>
+	<span class="p">{</span>
+		<span class="n">check</span><span class="p">(</span><span class="n">bFilledHitResult</span><span class="p">);</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">IsDeferringMovementUpdates</span><span class="p">())</span>
+		<span class="p">{</span>
+			<span class="n">FScopedMovementUpdate</span><span class="o">*</span> <span class="n">ScopedUpdate</span> <span class="o">=</span> <span class="n">GetCurrentScopedMovement</span><span class="p">();</span>
+			<span class="n">ScopedUpdate</span><span class="o">-&gt;</span><span class="n">AppendBlockingHitAfterMove</span><span class="p">(</span><span class="n">BlockingHit</span><span class="p">);</span>
+		<span class="p">}</span>
+		<span class="k">else</span>
+		<span class="p">{</span>
+			<span class="n">DispatchBlockingHit</span><span class="p">(</span><span class="o">*</span><span class="n">Actor</span><span class="p">,</span> <span class="n">BlockingHit</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+
+<span class="cp">#if defined(PERF_SHOW_MOVECOMPONENT_TAKING_LONG_TIME) || LOOKING_FOR_PERF_ISSUES
+</span>	<span class="n">UNCLOCK_CYCLES</span><span class="p">(</span><span class="n">MoveCompTakingLongTime</span><span class="p">);</span>
+	<span class="k">const</span> <span class="kt">float</span> <span class="n">MSec</span> <span class="o">=</span> <span class="n">FPlatformTime</span><span class="o">::</span><span class="n">ToMilliseconds</span><span class="p">(</span><span class="n">MoveCompTakingLongTime</span><span class="p">);</span>
+	<span class="k">if</span><span class="p">(</span> <span class="n">MSec</span> <span class="o">&gt;</span> <span class="n">PERF_SHOW_MOVECOMPONENT_TAKING_LONG_TIME_AMOUNT</span> <span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">GetOwner</span><span class="p">())</span>
+		<span class="p">{</span>
+			<span class="n">UE_LOG</span><span class="p">(</span><span class="n">LogPrimitiveComponent</span><span class="p">,</span> <span class="n">Log</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"%10f executing MoveComponent for %s owned by %s"</span><span class="p">),</span> <span class="n">MSec</span><span class="p">,</span> <span class="o">*</span><span class="n">GetName</span><span class="p">(),</span> <span class="o">*</span><span class="n">GetOwner</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetFullName</span><span class="p">()</span> <span class="p">);</span>
+		<span class="p">}</span>
+		<span class="k">else</span>
+		<span class="p">{</span>
+			<span class="n">UE_LOG</span><span class="p">(</span><span class="n">LogPrimitiveComponent</span><span class="p">,</span> <span class="n">Log</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"%10f executing MoveComponent for %s"</span><span class="p">),</span> <span class="n">MSec</span><span class="p">,</span> <span class="o">*</span><span class="n">GetFullName</span><span class="p">()</span> <span class="p">);</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="cp">#endif
+</span>
+	<span class="c1">// copy to optional output param</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">OutHit</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">bFilledHitResult</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="o">*</span><span class="n">OutHit</span> <span class="o">=</span> <span class="n">BlockingHit</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="k">else</span>
+		<span class="p">{</span>
+			<span class="n">OutHit</span><span class="o">-&gt;</span><span class="n">Init</span><span class="p">(</span><span class="n">TraceStart</span><span class="p">,</span> <span class="n">TraceEnd</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+
+	<span class="c1">// Return whether we moved at all.</span>
+	<span class="k">return</span> <span class="n">bMoved</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>UWorld::ComponentSweepMulti은 다음과 같이 작동합니다.</p>
+
+<ol>
+  <li>반환할 충돌을 초기화 합니다.</li>
+  <li>충돌검사가 가능한 경우, 콜리젼 타입을 가져옵니다.</li>
+  <li>이때 크기가 없다면, 점으로 처리합니다.</li>
+  <li>Physics가 충돌하는지 검사합니다.</li>
+</ol>
+
+<ul>
+  <li>공식문서의 피직스 바디 페이지를 보면 <code class="language-plaintext highlighter-rouge">PhysX 로 직접 호출하지 않습니다. 대신 모든 피직스 관련 호출은 피직스 인터페이스를 통합니다.</code></li>
+  <li>TArray의 Reset은 메모리를 초기화 하지 않고, Empty처럼 작동합니다.
+```cpp</li>
+</ul>
+
+<p>bool UWorld::ComponentSweepMulti(TArray<struct FHitResult="">&amp; OutHits, class UPrimitiveComponent* PrimComp, const FVector&amp; Start, const FVector&amp; End, const FQuat&amp; Quat, const FComponentQueryParams&amp; Params) const
+{
+	OutHits.Reset();</struct></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (GetPhysicsScene() == NULL)
+{
+	return false;
+}
+
+if (PrimComp == NULL)
+{
+	UE_LOG(LogCollision, Log, TEXT("ComponentSweepMulti : No PrimComp"));
+	return false;
+}
+
+ECollisionChannel TraceChannel = PrimComp-&gt;GetCollisionObjectType();
+
+// if extent is 0, do line trace
+if (PrimComp-&gt;IsZeroExtent())
+{
+	return FPhysicsInterface::RaycastMulti(this, OutHits, Start, End, TraceChannel, Params, FCollisionResponseParams(PrimComp-&gt;GetCollisionResponseToChannels()));
+}
+
+
+const FBodyInstance* BodyInstance = PrimComp-&gt;GetBodyInstance();
+
+if (!BodyInstance || !BodyInstance-&gt;IsValidBodyInstance())
+{
+	UE_LOG(LogCollision, Log, TEXT("ComponentSweepMulti : (%s) No physics data"), *PrimComp-&gt;GetReadableName());
+	return false;
+}
+</code></pre></div></div>
+
+<p>#if !(UE_BUILD_SHIPPING || UE_BUILD_TEST)
+	if(PrimComp-&gt;IsA(USkeletalMeshComponent::StaticClass()))
+	{
+		UE_LOG(LogCollision, Log, TEXT(“ComponentSweepMulti : SkeletalMeshComponent support only root body (%s) “), *PrimComp-&gt;GetReadableName());
+	}
+#endif</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SCOPE_CYCLE_COUNTER(STAT_Collision_GeomSweepMultiple);
+bool bHaveBlockingHit = false;
+
+FPhysicsCommand::ExecuteRead(BodyInstance-&gt;ActorHandle, [&amp;](const FPhysicsActorHandle&amp; Actor)
+{
+	if(!FPhysicsInterface::IsValid(Actor))
+	{
+		return;
+	}
+
+	// Get all the shapes from the actor
+	FInlineShapeArray PShapes;
+	const int32 NumShapes = FillInlineShapeArray_AssumesLocked(PShapes, Actor);
+
+	// calculate the test global pose of the actor
+	const FTransform GlobalStartTransform(Quat, Start);
+	const FTransform GlobalEndTransform(Quat, End);
+
+	for(FPhysicsShapeHandle&amp; Shape : PShapes)
+	{
+		check(Shape.IsValid());
+		ECollisionShapeType ShapeType = FPhysicsInterface::GetShapeType(Shape);
+</code></pre></div></div>
+
+<p>#if WITH_CHAOS
+			if (!Shape.GetGeometry().IsConvex())
+			{
+				//We skip complex shapes. Should this respect complex as simple?
+				continue;
+			}
+#else
+			if(ShapeType == ECollisionShapeType::Heightfield || ShapeType == ECollisionShapeType::Trimesh)
+			{
+				//We skip complex shapes. Should this respect complex as simple?
+				continue;
+			}
+#endif</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>		// Calc shape global pose
+		const FTransform ShapeLocalTransform = FPhysicsInterface::GetLocalTransform(Shape);
+		const FTransform GlobalStartTransform_Shape = ShapeLocalTransform * GlobalStartTransform;
+		FTransform GlobalEndTransform_Shape = ShapeLocalTransform * GlobalEndTransform;
+
+		// consider localshape rotation for shape rotation
+		const FQuat ShapeQuat = Quat * ShapeLocalTransform.GetRotation();
+
+		FPhysicsGeometryCollection GeomCollection = FPhysicsInterface::GetGeometryCollection(Shape);
+		TArray&lt;FHitResult&gt; TmpHits;
+		if(FPhysicsInterface::GeomSweepMulti(this, GeomCollection, ShapeQuat, TmpHits, GlobalStartTransform_Shape.GetTranslation(), GlobalEndTransform_Shape.GetTranslation(), TraceChannel, Params, FCollisionResponseParams(PrimComp-&gt;GetCollisionResponseToChannels())))
+		{
+			bHaveBlockingHit = true;
+		}
+		OutHits.Append(TmpHits);	//todo: should these be made unique?
+	}
+});
+
+return bHaveBlockingHit; } ```
+</code></pre></div></div>
+
+<ul>
+  <li>Geometry로 Sweep</li>
+</ul>
+:ET

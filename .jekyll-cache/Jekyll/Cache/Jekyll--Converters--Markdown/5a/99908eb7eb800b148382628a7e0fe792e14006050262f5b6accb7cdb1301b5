@@ -1,0 +1,7 @@
+I"�<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />(낮은 우선순위)행렬 사칙연산</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />수반 행렬(adjugate matrix)과 크로네커 델타(Kronecker delta)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />백터와 행렬</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />전치 행렬과 수반 행렬 목차로 분리하기</li>
+</ul>
+:ET

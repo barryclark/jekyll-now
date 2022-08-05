@@ -1,0 +1,51 @@
+I"D
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">Func</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span><span class="o">&amp;</span> <span class="n">Value</span><span class="p">);</span>
+</code></pre></div></div>
+
+<details><summary>언제 사용해야 하는가?</summary>
+<div>
+
+    <p><a href="https://stackoverflow.com/questions/49237649/const-type-when-i-will-want-to-use-by-reference-to-const">const TYPE&amp; - when I will want to use by reference to const?</a></p>
+
+    <ol>
+      <li>함수 기간동안, 해당 변수를 바꾸고 싶지 않을 때</li>
+      <li>매개 변수를 복사하고 싶지 않을 떄</li>
+      <li>변수가 nullptr을 참조하지 않을 때</li>
+    </ol>
+
+    <ul>
+      <li>1번 이유에 대해
+        <ul>
+          <li>Const 정확성은 자체 문서화에서도 매우 중요합니다. 함수의 프로토타입에서 매개변수를 수정하지 않을 것임을 즉시 알 수 있습니다.</li>
+          <li>실수로 변경하려고 하면 컴파일러가 알려줄 것입니다.</li>
+        </ul>
+      </li>
+      <li>2번 이유에 대해
+        <ul>
+          <li>참조형은 *와 마찬가지로, 복사를 하지않고 변수를 전달할 수 있게 합니다.</li>
+        </ul>
+      </li>
+      <li>3번 이유에 대해
+        <ul>
+          <li>참조형은 선언과 동시에 반드시 초기화 해야 합니다. 이러한 이유로 참조는 컴파일러에서 *로 구현 되더라도 참조된 내용이 있음을 의미할 수 있습니다.
+            <ul>
+              <li>nullptr을 참조형에 할당할 수 있지만, 정의되지 않은 행동입니다.</li>
+              <li>참조형이 항상 선언되어 있음을 의미하지는 않습니다. 지역변수의 참조를 반환하는 경우, 그리고 클래스에 참조변수를 할당한 경우를 예로 들 수 있습니다.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+  </div></details>
+
+<ul>
+  <li>사용 예시
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="p">...</span>
+  <span class="kt">int</span> <span class="n">A</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+  <span class="n">Func</span><span class="p">(</span><span class="n">A</span><span class="p">);</span>
+  <span class="n">Func</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+:ET

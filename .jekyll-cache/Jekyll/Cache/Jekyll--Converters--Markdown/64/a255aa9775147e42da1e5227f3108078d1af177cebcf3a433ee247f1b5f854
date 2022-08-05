@@ -1,0 +1,3 @@
+I"�<h2 id="최소-신장-트리mst-minimum-spanning-tree란">최소 신장 트리(MST, Minimum spanning tree)란</h2>
+<p>정점(Vertex)의 집합 V와 가중치를 갖는 에지(edge)의 집합 E로 구성된 그래프 <code class="language-plaintext highlighter-rouge">G = &lt;V, E&gt;</code>가 주어질 때, 모든 정점을 연결하고 연결된 에지의 가중치 합이 최소인 트리 T를 구하는 방법입니다.</p>
+:ET

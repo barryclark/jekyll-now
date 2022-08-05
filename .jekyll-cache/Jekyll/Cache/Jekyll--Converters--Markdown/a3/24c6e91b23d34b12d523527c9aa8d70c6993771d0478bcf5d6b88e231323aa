@@ -1,0 +1,297 @@
+I"p<h1 id="1차-구현">1차 구현</h1>
+<p><a href="FABRIK-algorithm.md">FABRIK Algorithm</a></p>
+
+<ul>
+  <li>
+    <p>목표 <br />
+FABRIKComponent를 이용하여, Actor에서 FABRIK을 Forward, Backward, Fixed(Forward and Backward), WithIndex(Backward -&gt; Index &lt;- Forward)로 활용할 수 있도록 만들기</p>
+  </li>
+  <li>Forward : 첫번째 헤드를 원하는 위치에 도달하도록 합니다.</li>
+  <li>Backward : 마지막 테일을 원하는 위치에 도달하도록 합니다.</li>
+  <li>Fixed : 테일을 위치를 고정한 FABRIK알고리즘을 적용합니다.</li>
+  <li>WithIndex : 특정 인덱스의 Segment가 원하는 위치에 도달하도록 합니다.</li>
+</ul>
+
+<h1 id="디버그">디버그</h1>
+
+<p>? 어디서 오류가 발생한건지는 모르겠지만, Insert에서부터 오류가 나기 시작합니다. 엄청 오래걸리는 빌드시간을 기다리고 있습니다.  <br />
+    ! 출력된 오류는 (Index &gt;= 0) &amp; (Index &lt; ArrayNum)문제라고 합니다.    <br />
+    ! 호출스택을 보니 ApplyForwardFABRIK을 호출하는 부분에서 오류가 발생합니다.</p>
+
+<p>! -1을 호출해서 오류가 나는 것 이였습니다.
+    ! TArray에 IsVaildIndex를 검사하는 매서드가 있습니다.</p>
+
+<hr />
+
+<p>? 왜 ApplyForwardFABRIK이 오류를 발생시킨다는 것을 몰랐을 까요?  <br />
+    ! 오류처리를 했지만, 오류를 제대로 걸러내지 못했습니다.  <br />
+    ! 조건문이 복잡하면 제가 생각할 수 있는 범위를 벗어나기 때문이라고 생각합니다.</p>
+
+<p>! IsVaildIndex를 만들고 false시 반환되도록 만들었습니다. <br />
+    <strong>? 오류를 보면 볼수록 어떻게 해야 좋은지 하나도 모르겠습니다.</strong></p>
+
+<hr />
+
+<p>! 수정하는 과정에서 오류처리를 어떻게 해야할지 애매해서 제거한 Segment의 Length가 0인 경우 오류를 출력하는 부분이 문제가 되었습니다. <br />
+    <strong>! Segment의 Legnth가 0이 되면, 뒤의 세그먼트들의 포지션 좌표값들이 NAN이 되는 문제가 있습니다.</strong> <br />
+    GetUnsafeNormal을 GetSafeNormal로 교체하였습니다.</p>
+
+<p>! GetSafeNormal이 유효하지 않을 경우 zero vector를 반환하게 만들었습니다. 제곱합이 Tolerance보다 작을 경우 Tail의 Position은 Target이 됩니다.</p>
+
+<hr />
+
+<p>! Recalculated가 작동하지 않습니다.
+    <strong>! 컴퓨터가 안좋은 관계로 디버깅 할때는 책읽으면서 디버깅 합시다.</strong> <br />
+    ! 음… GetSafeNormal을 zero vector로 반환 할 경우, Segment들이 동일한 포지션에 있을 때 업데이트 되지 않는다는 사실을 알았습니다.</p>
+
+<p>! SquareSum이 Tolerance보다 작은 경우 특정 벡터에 대하여 Length를 곱한 것으로 변경했습니다.  <br />
+    ? 어떤 벡터가 기준이 될지 몰라서 따로 분류했습니다. <br />
+    ! 제곱합 루트해주는 것을 까먹었습니다. <br />
+    <strong>? Other *= (1 / Val)이 Other /= Val보다 빠른지 궁금합니다.</strong></p>
+
+<p>! 동일한 값으로 AddSegment를 했을때 부동소수점의 특성(? 조금더 공부하자)으로 인해 지그재그로 배치되어 이상합니다. <br />
+    ! Forward는 이동했을 때 원하는 위치로 이동합니다. <br />
+    ! Backward는 이동했을 때 원하는 위치로 이동합니다. <br />
+    ! ApplyFixed가 이상하게 동작했던 이유는    GetNewTailPosition을 구하는데 Head의 포지션을 통해서 가져온 값을 TailPosition에 입력했기 때문입니다.  <br />
+        ? 이런 실수를 하지 않는 방법이 있을까요? <br />
+            ! 다음번에는 이런 실수를 하지 않기 위해 UpdateTailPosition을 추가했습니다.    <br />
+        ! 노트북 모니터 화면이 작아서 잘려 보여진 이유도 있다고 생각합니다. <br />
+        ! WithIndex는 되는 것처럼 보입니다.</p>
+
+<details>
+<summary>코드 리뷰</summary>
+<div>
+
+    <p><a href="https://codereview.stackexchange.com/questions/276144/components-with-fabrik-in-unreal-engine">Component to apply FABRIK in Unreal Engine</a></p>
+
+    <h2 id="component-to-apply-fabrik-in-unreal-engine">Component to apply FABRIK in Unreal Engine</h2>
+
+    <p>I read the <a href="https://sean.cm/a/fabrik-algorithm-2d">FABRIK</a> and implemented it to study Unreal syntax.</p>
+
+    <p>Update the position in the FABRIK Segment component.
+It is used to update the relative position of the static mesh using the updated position value.</p>
+
+    <p>.h</p>
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#pragma once
+</span>
+<span class="cp">#include</span> <span class="cpf">"CoreMinimal.h"</span><span class="cp">
+#include</span> <span class="cpf">"UnsortedFunctionLibrary.generated.h"</span><span class="cp">
+</span>
+<span class="n">USTRUCT</span><span class="p">(</span><span class="n">BlueprintType</span><span class="p">)</span>
+<span class="k">struct</span> <span class="nc">CHARACTERANIMATION_API</span> <span class="n">FFABRIKSegment</span>
+<span class="p">{</span>
+	<span class="n">GENERATED_BODY</span><span class="p">()</span>
+
+<span class="nl">public:</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">EditAnywhere</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">)</span>
+	<span class="n">FVector</span> <span class="n">Position</span><span class="p">;</span>
+
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">EditANywhere</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">)</span>
+	<span class="kt">float</span> <span class="n">Length</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="n">UCLASS</span><span class="p">(</span><span class="n">meta</span> <span class="o">=</span> <span class="p">(</span><span class="n">BlueprintSpawnableComponent</span><span class="p">))</span>
+<span class="k">class</span> <span class="nc">CHARACTERANIMATION_API</span> <span class="n">UFABRIKComponent</span> <span class="k">final</span> <span class="o">:</span> <span class="k">public</span> <span class="n">UActorComponent</span>
+<span class="p">{</span>
+	<span class="n">GENERATED_BODY</span><span class="p">()</span>
+
+<span class="nl">public:</span>
+	<span class="n">UFABRIKComponent</span><span class="p">();</span>
+
+<span class="nl">public:</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">EditAnywhere</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">)</span>
+	<span class="n">FVector</span> <span class="n">DefaultTailVector</span><span class="p">;</span>
+
+<span class="nl">public:</span>
+	<span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">)</span>
+	<span class="kt">void</span> <span class="n">AddSegment</span><span class="p">(</span><span class="k">const</span> <span class="n">FFABRIKSegment</span><span class="o">&amp;</span> <span class="n">Segment</span><span class="p">);</span>
+
+	<span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">)</span>
+	<span class="kt">void</span> <span class="n">InsertSegment</span><span class="p">(</span><span class="n">int32</span> <span class="n">Index</span><span class="p">,</span> <span class="k">const</span> <span class="n">FFABRIKSegment</span><span class="o">&amp;</span> <span class="n">Segment</span><span class="p">);</span>
+
+	<span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">)</span>
+	<span class="kt">float</span> <span class="n">GetLength</span><span class="p">(</span><span class="n">int32</span> <span class="n">Index</span><span class="p">);</span>
+
+	<span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">)</span>
+	<span class="n">FVector</span> <span class="n">GetPosition</span><span class="p">(</span><span class="n">int32</span> <span class="n">Index</span><span class="p">);</span>
+
+	<span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">)</span>
+	<span class="kt">void</span> <span class="n">ApplyForward</span><span class="p">(</span><span class="k">const</span> <span class="n">FVector</span><span class="o">&amp;</span> <span class="n">Target</span><span class="p">);</span>
+
+	<span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">)</span>
+	<span class="kt">void</span> <span class="n">ApplyBackward</span><span class="p">(</span><span class="k">const</span> <span class="n">FVector</span><span class="o">&amp;</span> <span class="n">Target</span><span class="p">);</span>
+
+	<span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">)</span>
+	<span class="kt">void</span> <span class="n">ApplyFixed</span><span class="p">(</span><span class="k">const</span> <span class="n">FVector</span><span class="o">&amp;</span> <span class="n">Target</span><span class="p">);</span>
+
+	<span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">)</span>
+	<span class="kt">void</span> <span class="n">ApplyWithIndex</span><span class="p">(</span><span class="n">int32</span> <span class="n">Index</span><span class="p">,</span> <span class="k">const</span> <span class="n">FVector</span><span class="o">&amp;</span> <span class="n">Target</span><span class="p">);</span>
+
+	<span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">)</span>
+	<span class="kt">void</span> <span class="n">Recalculated</span><span class="p">();</span>
+	
+<span class="nl">private:</span>
+	<span class="cm">/*
+	*	The first index means the first head.
+	*/</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">VisibleAnywhere</span><span class="p">,</span> <span class="n">BlueprintReadOnly</span><span class="p">,</span> <span class="n">meta</span> <span class="o">=</span> <span class="p">(</span><span class="n">AllowPrivateAccess</span> <span class="o">=</span> <span class="nb">true</span><span class="p">))</span>
+	<span class="n">TArray</span><span class="o">&lt;</span><span class="n">FFABRIKSegment</span><span class="o">&gt;</span> <span class="n">Segments</span><span class="p">;</span>
+
+<span class="nl">private:</span>
+	<span class="n">FORCEINLINE</span> <span class="kt">bool</span> <span class="n">IsVaildIndex</span><span class="p">(</span><span class="kt">int</span> <span class="n">Start</span><span class="p">,</span> <span class="kt">int</span> <span class="n">End</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="kt">bool</span> <span class="n">IsVaild</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">Segments</span><span class="p">.</span><span class="n">IsValidIndex</span><span class="p">(</span><span class="n">Start</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">IsVaild</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+		<span class="p">}</span>
+
+		<span class="k">if</span> <span class="p">(</span><span class="n">Segments</span><span class="p">.</span><span class="n">IsValidIndex</span><span class="p">(</span><span class="n">End</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">IsVaild</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+		<span class="p">}</span>
+
+		<span class="k">if</span> <span class="p">(</span><span class="n">IsVaild</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">UE_LOG</span><span class="p">(</span><span class="n">LogTemp</span><span class="p">,</span> <span class="n">Error</span><span class="p">,</span>
+				<span class="n">TEXT</span><span class="p">(</span><span class="s">"Invalid index use. Start : %d, End : %d, SegmentsNum : %d"</span><span class="p">),</span>
+				<span class="n">Start</span><span class="p">,</span> <span class="n">End</span><span class="p">,</span> <span class="n">Segments</span><span class="p">.</span><span class="n">Num</span><span class="p">());</span>
+		<span class="p">}</span>
+		<span class="k">return</span> <span class="n">IsVaild</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="n">FORCEINLINE</span> <span class="n">FVector</span> <span class="n">GetNewTailPosition</span><span class="p">(</span><span class="kt">float</span> <span class="n">Length</span><span class="p">,</span> <span class="k">const</span> <span class="n">FVector</span><span class="o">&amp;</span> <span class="n">Tail</span><span class="p">,</span> <span class="k">const</span> <span class="n">FVector</span><span class="o">&amp;</span> <span class="n">Target</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">FVector</span> <span class="n">TargetToTailVector</span> <span class="o">=</span> <span class="n">Tail</span> <span class="o">-</span> <span class="n">Target</span><span class="p">;</span>
+		<span class="k">const</span> <span class="kt">float</span> <span class="n">SquareSum</span> <span class="o">=</span> <span class="n">TargetToTailVector</span><span class="p">.</span><span class="n">SquaredLength</span><span class="p">();</span>
+
+		<span class="c1">// There is a problem that the position of</span>
+		<span class="c1">//the tail becomes NAN when Square Sum is 0.</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">SquareSum</span> <span class="o">&lt;</span> <span class="n">FLT_EPSILON</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="k">return</span> <span class="n">Target</span> <span class="o">+</span> <span class="n">DefaultTailVector</span> <span class="o">*</span> <span class="n">Length</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="k">else</span>
+		<span class="p">{</span>
+			<span class="n">TargetToTailVector</span> <span class="o">*=</span> <span class="n">FMath</span><span class="o">::</span><span class="n">InvSqrt</span><span class="p">(</span><span class="n">SquareSum</span><span class="p">);</span>
+			<span class="k">return</span> <span class="n">Target</span> <span class="o">+</span> <span class="n">TargetToTailVector</span> <span class="o">*</span> <span class="n">Length</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+
+	<span class="n">FORCEINLINE</span> <span class="kt">void</span> <span class="n">UpdateTailPosition</span><span class="p">(</span><span class="kt">float</span> <span class="n">Length</span><span class="p">,</span> <span class="n">FVector</span><span class="o">&amp;</span> <span class="n">Tail</span><span class="p">,</span> <span class="k">const</span> <span class="n">FVector</span><span class="o">&amp;</span> <span class="n">Target</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">Tail</span> <span class="o">=</span> <span class="n">GetNewTailPosition</span><span class="p">(</span><span class="n">Length</span><span class="p">,</span> <span class="n">Tail</span><span class="p">,</span> <span class="n">Target</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="n">FORCEINLINE</span> <span class="kt">void</span> <span class="n">ApplyForwardFABRIK</span><span class="p">(</span><span class="kt">int</span> <span class="n">Start</span><span class="p">,</span> <span class="kt">int</span> <span class="n">End</span><span class="p">,</span> <span class="n">FVector</span> <span class="n">Target</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">IsVaildIndex</span><span class="p">(</span><span class="n">Start</span><span class="p">,</span> <span class="n">End</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="k">return</span><span class="p">;</span>
+		<span class="p">}</span>
+
+		<span class="k">while</span> <span class="p">(</span><span class="n">Start</span> <span class="o">&lt;</span> <span class="n">End</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">Segments</span><span class="p">[</span><span class="n">Start</span><span class="p">].</span><span class="n">Position</span> <span class="o">=</span> <span class="n">Target</span><span class="p">;</span>
+			<span class="n">UpdateTailPosition</span><span class="p">(</span><span class="n">Segments</span><span class="p">[</span><span class="n">Start</span> <span class="o">+</span> <span class="mi">1</span><span class="p">].</span><span class="n">Length</span><span class="p">,</span> <span class="n">Segments</span><span class="p">[</span><span class="n">Start</span> <span class="o">+</span> <span class="mi">1</span><span class="p">].</span><span class="n">Position</span><span class="p">,</span> <span class="n">Target</span><span class="p">);</span>
+			<span class="n">Target</span> <span class="o">=</span> <span class="n">Segments</span><span class="p">[</span><span class="n">Start</span> <span class="o">+</span> <span class="mi">1</span><span class="p">].</span><span class="n">Position</span><span class="p">;</span>
+			<span class="n">Start</span><span class="o">++</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+
+	<span class="n">FORCEINLINE</span> <span class="kt">void</span> <span class="n">ApplyBackwardFABRIK</span><span class="p">(</span><span class="kt">int</span> <span class="n">Start</span><span class="p">,</span> <span class="kt">int</span> <span class="n">End</span><span class="p">,</span> <span class="n">FVector</span> <span class="n">Target</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">IsVaildIndex</span><span class="p">(</span><span class="n">Start</span><span class="p">,</span> <span class="n">End</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="k">return</span><span class="p">;</span>
+		<span class="p">}</span>
+
+		<span class="k">while</span> <span class="p">(</span><span class="n">Start</span> <span class="o">&lt;</span> <span class="n">End</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">Segments</span><span class="p">[</span><span class="n">End</span><span class="p">].</span><span class="n">Position</span> <span class="o">=</span> <span class="n">Target</span><span class="p">;</span>
+			<span class="n">UpdateTailPosition</span><span class="p">(</span><span class="n">Segments</span><span class="p">[</span><span class="n">End</span><span class="p">].</span><span class="n">Length</span><span class="p">,</span> <span class="n">Segments</span><span class="p">[</span><span class="n">End</span> <span class="o">-</span> <span class="mi">1</span><span class="p">].</span><span class="n">Position</span><span class="p">,</span> <span class="n">Target</span><span class="p">);</span>
+			<span class="n">Target</span> <span class="o">=</span> <span class="n">Segments</span><span class="p">[</span><span class="n">End</span> <span class="o">-</span> <span class="mi">1</span><span class="p">].</span><span class="n">Position</span><span class="p">;</span>
+			<span class="n">End</span><span class="o">--</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div>    </div>
+
+    <p>.cpp</p>
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">"UnsortedFunctionLibrary.h"</span><span class="cp">
+</span>
+<span class="n">UFABRIKComponent</span><span class="o">::</span><span class="n">UFABRIKComponent</span><span class="p">()</span> <span class="o">:</span> <span class="n">DefaultTailVector</span><span class="p">(</span><span class="n">FVector</span><span class="o">::</span><span class="n">UnitX</span><span class="p">())</span>
+<span class="p">{</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">UFABRIKComponent</span><span class="o">::</span><span class="n">AddSegment</span><span class="p">(</span><span class="k">const</span> <span class="n">FFABRIKSegment</span><span class="o">&amp;</span> <span class="n">Segment</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">Segments</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">Segment</span><span class="p">);</span>
+
+	<span class="n">Recalculated</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">UFABRIKComponent</span><span class="o">::</span><span class="n">InsertSegment</span><span class="p">(</span><span class="n">int32</span> <span class="n">Index</span><span class="p">,</span> <span class="k">const</span> <span class="n">FFABRIKSegment</span><span class="o">&amp;</span> <span class="n">Segment</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">Segments</span><span class="p">.</span><span class="n">IsValidIndex</span><span class="p">(</span><span class="n">Index</span><span class="p">)</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">UE_LOG</span><span class="p">(</span><span class="n">LogTemp</span><span class="p">,</span> <span class="n">Error</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"Inserting a segment out of bounds."</span><span class="p">));</span>
+		<span class="k">return</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="n">Segments</span><span class="p">.</span><span class="n">Insert</span><span class="p">(</span><span class="n">Segment</span><span class="p">,</span> <span class="n">Index</span><span class="p">);</span>
+
+	<span class="n">Recalculated</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">float</span> <span class="n">UFABRIKComponent</span><span class="o">::</span><span class="n">GetLength</span><span class="p">(</span><span class="n">int32</span> <span class="n">Index</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="k">return</span> <span class="n">Segments</span><span class="p">[</span><span class="n">Index</span><span class="p">].</span><span class="n">Length</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">FVector</span> <span class="n">UFABRIKComponent</span><span class="o">::</span><span class="n">GetPosition</span><span class="p">(</span><span class="n">int32</span> <span class="n">Index</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="k">return</span> <span class="n">Segments</span><span class="p">[</span><span class="n">Index</span><span class="p">].</span><span class="n">Position</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">UFABRIKComponent</span><span class="o">::</span><span class="n">ApplyForward</span><span class="p">(</span><span class="k">const</span> <span class="n">FVector</span><span class="o">&amp;</span> <span class="n">Target</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">ApplyForwardFABRIK</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Segments</span><span class="p">.</span><span class="n">Num</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Target</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">UFABRIKComponent</span><span class="o">::</span><span class="n">ApplyBackward</span><span class="p">(</span><span class="k">const</span> <span class="n">FVector</span><span class="o">&amp;</span> <span class="n">Target</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">ApplyBackwardFABRIK</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Segments</span><span class="p">.</span><span class="n">Num</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Target</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">UFABRIKComponent</span><span class="o">::</span><span class="n">ApplyFixed</span><span class="p">(</span><span class="k">const</span> <span class="n">FVector</span><span class="o">&amp;</span> <span class="n">Target</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">Segments</span><span class="p">.</span><span class="n">Num</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">return</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="k">const</span> <span class="n">FVector</span> <span class="n">FixedPosition</span> <span class="o">=</span> <span class="n">Segments</span><span class="p">.</span><span class="n">Last</span><span class="p">().</span><span class="n">Position</span><span class="p">;</span>
+	<span class="n">ApplyForwardFABRIK</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Segments</span><span class="p">.</span><span class="n">Num</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Target</span><span class="p">);</span>
+	<span class="n">ApplyBackwardFABRIK</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Segments</span><span class="p">.</span><span class="n">Num</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">FixedPosition</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">UFABRIKComponent</span><span class="o">::</span><span class="n">ApplyWithIndex</span><span class="p">(</span><span class="n">int32</span> <span class="n">Index</span><span class="p">,</span> <span class="k">const</span> <span class="n">FVector</span><span class="o">&amp;</span> <span class="n">Target</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">ApplyForwardFABRIK</span><span class="p">(</span><span class="n">Index</span><span class="p">,</span> <span class="n">Segments</span><span class="p">.</span><span class="n">Num</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Target</span><span class="p">);</span>
+	<span class="n">ApplyBackwardFABRIK</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Index</span><span class="p">,</span> <span class="n">Target</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">UFABRIKComponent</span><span class="o">::</span><span class="n">Recalculated</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">ApplyForwardFABRIK</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Segments</span><span class="p">.</span><span class="n">Num</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Segments</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">Position</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+    <blockquote>
+      <p>‘c++’, ‘game’, ‘beginner’</p>
+    </blockquote>
+
+    <p>&lt;/details&gt;</p>
+  </div></details>
+:ET

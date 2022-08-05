@@ -1,0 +1,280 @@
+I"��<h2 id="c에서-computeshader-생성">C++에서 ComputeShader 생성</h2>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">FGlobalComputeTestShader</span> <span class="o">:</span> <span class="k">public</span> <span class="n">FGlobalShader</span>
+<span class="p">{</span>
+	<span class="n">DECLARE_SHADER_TYPE</span><span class="p">(</span><span class="n">FGlobalComputeTestShader</span><span class="p">,</span> <span class="n">Global</span><span class="p">);</span>
+
+<span class="nl">public:</span>
+	<span class="n">FGlobalComputeTestShader</span><span class="p">()</span> <span class="p">{}</span>
+	<span class="n">FGlobalComputeTestShader</span><span class="p">(</span><span class="k">const</span> <span class="n">ShaderMetaType</span><span class="o">::</span><span class="n">CompiledShaderInitializerType</span><span class="o">&amp;</span> <span class="n">Initializer</span><span class="p">)</span>
+		<span class="o">:</span> <span class="n">FGlobalShader</span><span class="p">(</span><span class="n">Initializer</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">OutputSurface</span><span class="p">.</span><span class="n">Bind</span><span class="p">(</span><span class="n">Initializer</span><span class="p">.</span><span class="n">ParameterMap</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"OutputSurface"</span><span class="p">));</span>
+		<span class="n">TestStructureBufferSurface</span><span class="p">.</span><span class="n">Bind</span><span class="p">(</span><span class="n">Initializer</span><span class="p">.</span><span class="n">ParameterMap</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"TestStructureBuffer"</span><span class="p">));</span>
+	<span class="p">}</span>
+
+	<span class="k">static</span> <span class="kt">bool</span> <span class="n">ShouldCache</span><span class="p">(</span><span class="n">EShaderPlatform</span> <span class="n">Platform</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">return</span> <span class="n">IsFeatureLevelSupported</span><span class="p">(</span><span class="n">Platform</span><span class="p">,</span> <span class="n">ERHIFeatureLevel</span><span class="o">::</span><span class="n">SM5</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="k">static</span> <span class="kt">bool</span> <span class="n">ShouldCompilePermutation</span><span class="p">(</span><span class="k">const</span> <span class="n">FGlobalShaderPermutationParameters</span><span class="o">&amp;</span> <span class="n">Parameters</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">return</span> <span class="n">IsFeatureLevelSupported</span><span class="p">(</span><span class="n">Parameters</span><span class="p">.</span><span class="n">Platform</span><span class="p">,</span> <span class="n">ERHIFeatureLevel</span><span class="o">::</span><span class="n">SM5</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="k">virtual</span> <span class="kt">bool</span> <span class="n">Serialize</span><span class="p">(</span><span class="n">FArchive</span><span class="o">&amp;</span> <span class="n">Ar</span><span class="p">)</span> <span class="k">override</span>
+	<span class="p">{</span>
+		<span class="kt">bool</span> <span class="n">bShaderHasOutdatedParam</span> <span class="o">=</span> <span class="n">FGlobalShader</span><span class="o">::</span><span class="n">Serialize</span><span class="p">(</span><span class="n">Ar</span><span class="p">);</span>
+		<span class="n">Ar</span> <span class="o">&lt;&lt;</span> <span class="n">OutputSurface</span> <span class="o">&lt;&lt;</span> <span class="n">TestStructureBufferSurface</span><span class="p">;</span>
+		<span class="k">return</span> <span class="n">bShaderHasOutdatedParam</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="kt">void</span> <span class="n">SetSurface</span><span class="p">(</span><span class="n">FRHICommandList</span><span class="o">&amp;</span> <span class="n">RHICmdList</span><span class="p">,</span> <span class="n">FUnorderedAccessViewRHIRef</span> <span class="n">OutputSurfaceUAV</span>
+		<span class="p">,</span> <span class="n">FGlobalShaderStructData</span><span class="o">&amp;</span> <span class="n">ShaderStructData</span><span class="p">,</span> <span class="n">FUnorderedAccessViewRHIRef</span><span class="o">&amp;</span> <span class="n">TestStructureBuffUAV</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="c1">// RenderTargetTexture</span>
+		<span class="n">FComputeShaderRHIRef</span> <span class="n">ComputeShaderRHI</span> <span class="o">=</span> <span class="n">GetComputeShader</span><span class="p">();</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">OutputSurface</span><span class="p">.</span><span class="n">IsBound</span><span class="p">())</span>
+			<span class="n">RHICmdList</span><span class="p">.</span><span class="n">SetUAVParameter</span><span class="p">(</span><span class="n">ComputeShaderRHI</span><span class="p">,</span> <span class="n">OutputSurface</span><span class="p">.</span><span class="n">GetBaseIndex</span><span class="p">(),</span> <span class="n">OutputSurfaceUAV</span><span class="p">);</span>
+
+		<span class="c1">// UniformBuffer</span>
+		<span class="n">FGlobalUniformStructData</span> <span class="n">UniformData</span><span class="p">;</span>
+		<span class="n">UniformData</span><span class="p">.</span><span class="n">ColorOne</span> <span class="o">=</span> <span class="n">ShaderStructData</span><span class="p">.</span><span class="n">ColorOne</span><span class="p">;</span>
+		<span class="n">UniformData</span><span class="p">.</span><span class="n">ColorTwo</span> <span class="o">=</span> <span class="n">ShaderStructData</span><span class="p">.</span><span class="n">ColorTwo</span><span class="p">;</span>
+		<span class="n">UniformData</span><span class="p">.</span><span class="n">ColorThree</span> <span class="o">=</span> <span class="n">ShaderStructData</span><span class="p">.</span><span class="n">ColorThree</span><span class="p">;</span>
+		<span class="n">UniformData</span><span class="p">.</span><span class="n">ColorFour</span> <span class="o">=</span> <span class="n">ShaderStructData</span><span class="p">.</span><span class="n">ColorFour</span><span class="p">;</span>
+		<span class="n">UniformData</span><span class="p">.</span><span class="n">ColorIndex</span> <span class="o">=</span> <span class="n">ShaderStructData</span><span class="p">.</span><span class="n">ColorIndex</span><span class="p">;</span>
+		<span class="n">SetUniformBufferParameterImmediate</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="n">GetComputeShader</span><span class="p">(),</span> <span class="n">GetUniformBufferParameter</span><span class="o">&lt;</span><span class="n">FGlobalUniformStructData</span><span class="o">&gt;</span><span class="p">(),</span> <span class="n">UniformData</span><span class="p">);</span>
+
+		<span class="c1">// StructuredBuffer</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">TestStructureBufferSurface</span><span class="p">.</span><span class="n">IsBound</span><span class="p">())</span>
+			<span class="n">RHICmdList</span><span class="p">.</span><span class="n">SetUAVParameter</span><span class="p">(</span><span class="n">ComputeShaderRHI</span><span class="p">,</span> <span class="n">TestStructureBufferSurface</span><span class="p">.</span><span class="n">GetUAVIndex</span><span class="p">(),</span> <span class="n">TestStructureBuffUAV</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="kt">void</span> <span class="n">UnbindBuffers</span><span class="p">(</span><span class="n">FRHICommandList</span><span class="o">&amp;</span> <span class="n">RHICmdList</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">FComputeShaderRHIRef</span> <span class="n">ComputeShaderRHI</span> <span class="o">=</span> <span class="n">GetComputeShader</span><span class="p">();</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">OutputSurface</span><span class="p">.</span><span class="n">IsBound</span><span class="p">())</span>
+			<span class="n">RHICmdList</span><span class="p">.</span><span class="n">SetUAVParameter</span><span class="p">(</span><span class="n">ComputeShaderRHI</span><span class="p">,</span> <span class="n">OutputSurface</span><span class="p">.</span><span class="n">GetBaseIndex</span><span class="p">(),</span> <span class="n">FUnorderedAccessViewRHIRef</span><span class="p">());</span>
+
+		<span class="k">if</span> <span class="p">(</span><span class="n">TestStructureBufferSurface</span><span class="p">.</span><span class="n">IsBound</span><span class="p">())</span>
+			<span class="n">RHICmdList</span><span class="p">.</span><span class="n">SetUAVParameter</span><span class="p">(</span><span class="n">ComputeShaderRHI</span><span class="p">,</span> <span class="n">TestStructureBufferSurface</span><span class="p">.</span><span class="n">GetUAVIndex</span><span class="p">(),</span> <span class="n">FUnorderedAccessViewRHIRef</span><span class="p">());</span>
+	<span class="p">}</span>
+
+<span class="nl">private:</span>
+	<span class="n">FShaderResourceParameter</span> <span class="n">OutputSurface</span><span class="p">;</span>
+	<span class="n">FRWShaderParameter</span> <span class="n">TestStructureBufferSurface</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="n">IMPLEMENT_SHADER_TYPE</span><span class="p">(,</span> <span class="n">FGlobalComputeTestShader</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"/Plugin/globalShaderTest/Private/GlobalShaderTest.usf"</span><span class="p">),</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"MainCS"</span><span class="p">),</span> <span class="n">SF_Compute</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="compute-shader-usf-작성">Compute Shader .usf 작성</h2>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// GlobalShaderTest.usf</span>
+
+<span class="cp">#include</span> <span class="cpf">"/Engine/Public/Platform.ush"</span><span class="cp">
+#include</span> <span class="cpf">"/Engine/Private/Common.ush"</span><span class="c1">      // C++에서 만든 UniformBuffer 사용위해 추가</span><span class="cp">
+</span>                                           <span class="c1">// C++에서 정의한 모든 UniformSturct는 Common에 있음</span>
+
+<span class="k">struct</span> <span class="nc">TestStruct</span>
+<span class="p">{</span>
+    <span class="n">float3</span> <span class="n">TestPosition</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="n">RWStructuredBuffer</span><span class="o">&lt;</span><span class="n">TestStruct</span><span class="o">&gt;</span> <span class="n">TestStructureBuffer</span><span class="p">;</span>
+<span class="n">RWTexture2D</span><span class="o">&lt;</span><span class="n">float4</span><span class="o">&gt;</span> <span class="n">OutputSurface</span><span class="p">;</span>
+
+<span class="p">[</span><span class="n">numthreads</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">1</span><span class="p">)]</span>
+<span class="kt">void</span> <span class="n">MainCS</span><span class="p">(</span><span class="n">uint3</span> <span class="n">ThreadID</span> <span class="o">:</span> <span class="n">SV_DispatchThreadID</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">float</span> <span class="n">SizeX</span><span class="p">,</span> <span class="n">SizeY</span><span class="p">;</span>
+    <span class="n">OutputSurface</span><span class="p">.</span><span class="n">GetDimensions</span><span class="p">(</span><span class="n">SizeX</span><span class="p">,</span> <span class="n">SizeY</span><span class="p">);</span>
+    
+    <span class="n">float2</span> <span class="n">Resolution</span> <span class="o">=</span> <span class="n">float2</span><span class="p">(</span><span class="n">SizeX</span><span class="p">,</span> <span class="n">SizeY</span><span class="p">);</span>
+    <span class="n">float2</span> <span class="n">UV</span> <span class="o">=</span> <span class="p">(</span><span class="n">ThreadID</span><span class="p">.</span><span class="n">xy</span> <span class="o">/</span> <span class="n">Resolution</span><span class="p">.</span><span class="n">xy</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.5</span><span class="n">f</span><span class="p">;</span>
+    
+    <span class="c1">// FGlobalShaderTestUniform 라는 UniformBuffer의 ColorOne.r를 시간으로 사용.</span>
+    <span class="kt">float</span> <span class="n">GlobalTime</span> <span class="o">=</span> <span class="n">FGlobalShaderTestUniform</span><span class="p">.</span><span class="n">ColorOne</span><span class="p">.</span><span class="n">r</span><span class="p">;</span>
+    
+    <span class="kt">float</span> <span class="n">T</span> <span class="o">=</span> <span class="n">GlobalTime</span> <span class="o">*</span> <span class="mf">0.1</span> <span class="o">+</span> <span class="p">((</span><span class="mf">0.25</span> <span class="o">+</span> <span class="mf">0.05</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">GlobalTime</span> <span class="o">*</span> <span class="mf">0.1</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">length</span><span class="p">(</span><span class="n">UV</span><span class="p">.</span><span class="n">xy</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.07</span><span class="p">))</span> <span class="o">*</span> <span class="mf">2.2</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">SI</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="n">T</span><span class="p">);</span>
+    <span class="kt">float</span> <span class="n">CO</span> <span class="o">=</span> <span class="n">cos</span><span class="p">(</span><span class="n">T</span><span class="p">);</span>
+    <span class="n">float2x2</span> <span class="n">MA</span> <span class="o">=</span> <span class="p">{</span> <span class="n">CO</span><span class="p">,</span> <span class="n">SI</span><span class="p">,</span> <span class="o">-</span><span class="n">SI</span><span class="p">,</span> <span class="n">CO</span> <span class="p">};</span>
+    
+    <span class="kt">float</span> <span class="n">V1</span><span class="p">,</span> <span class="n">V2</span><span class="p">,</span> <span class="n">V3</span><span class="p">;</span>
+    <span class="n">V1</span> <span class="o">=</span> <span class="n">V2</span> <span class="o">=</span> <span class="n">V3</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+    
+    <span class="kt">float</span> <span class="n">S</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">90</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">float3</span> <span class="n">P</span> <span class="o">=</span> <span class="n">S</span> <span class="o">*</span> <span class="n">float3</span><span class="p">(</span><span class="n">UV</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">);</span>
+        <span class="n">P</span><span class="p">.</span><span class="n">xy</span> <span class="o">=</span> <span class="n">mul</span><span class="p">(</span><span class="n">P</span><span class="p">.</span><span class="n">xy</span><span class="p">,</span> <span class="n">MA</span><span class="p">);</span>
+        <span class="n">P</span> <span class="o">+=</span> <span class="n">float3</span><span class="p">(</span><span class="mf">0.22</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="n">S</span> <span class="o">-</span> <span class="mf">1.5</span> <span class="o">-</span> <span class="n">sin</span><span class="p">(</span><span class="n">GlobalTime</span> <span class="o">*</span> <span class="mf">0.13</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.1</span><span class="p">);</span>
+          
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>    
+            <span class="n">P</span> <span class="o">=</span> <span class="n">abs</span><span class="p">(</span><span class="n">P</span><span class="p">)</span> <span class="o">/</span> <span class="n">dot</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">P</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.659</span><span class="p">;</span>
+  
+        <span class="n">V1</span> <span class="o">+=</span> <span class="n">dot</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">P</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.0015</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.8</span> <span class="o">+</span> <span class="n">sin</span><span class="p">(</span><span class="n">length</span><span class="p">(</span><span class="n">UV</span><span class="p">.</span><span class="n">xy</span> <span class="o">*</span> <span class="mf">13.0</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">-</span> <span class="n">GlobalTime</span> <span class="o">*</span> <span class="mf">0.2</span><span class="p">));</span>
+        <span class="n">V2</span> <span class="o">+=</span> <span class="n">dot</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">P</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.0013</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.5</span> <span class="o">+</span> <span class="n">sin</span><span class="p">(</span><span class="n">length</span><span class="p">(</span><span class="n">UV</span><span class="p">.</span><span class="n">xy</span> <span class="o">*</span> <span class="mf">14.5</span><span class="p">)</span> <span class="o">+</span> <span class="mf">1.2</span> <span class="o">-</span> <span class="n">GlobalTime</span> <span class="o">*</span> <span class="mf">0.3</span><span class="p">));</span>
+        <span class="n">V3</span> <span class="o">+=</span> <span class="n">length</span><span class="p">(</span><span class="n">P</span><span class="p">.</span><span class="n">xy</span> <span class="o">*</span> <span class="mf">10.0</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.0003</span><span class="p">;</span>
+        <span class="n">S</span> <span class="o">+=</span> <span class="mf">0.035</span><span class="p">;</span>
+    <span class="p">}</span>
+  
+    <span class="kt">float</span> <span class="n">Len</span> <span class="o">=</span> <span class="n">length</span><span class="p">(</span><span class="n">UV</span><span class="p">);</span>
+    <span class="n">V1</span> <span class="o">*=</span> <span class="n">lerp</span><span class="p">(</span><span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">Len</span><span class="p">);</span>
+    <span class="n">V2</span> <span class="o">*=</span> <span class="n">lerp</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">Len</span><span class="p">);</span>
+    <span class="n">V3</span> <span class="o">*=</span> <span class="n">lerp</span><span class="p">(</span><span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">Len</span><span class="p">);</span>
+
+    <span class="n">float3</span> <span class="n">Col</span> <span class="o">=</span> <span class="n">float3</span><span class="p">(</span><span class="n">V3</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.5</span> <span class="o">+</span> <span class="n">sin</span><span class="p">(</span><span class="n">GlobalTime</span> <span class="o">*</span> <span class="mf">0.2</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.4</span><span class="p">),</span> <span class="p">(</span><span class="n">V1</span> <span class="o">+</span> <span class="n">V3</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.3</span><span class="p">,</span> <span class="n">V2</span><span class="p">)</span>
+                    <span class="o">+</span> <span class="n">lerp</span><span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">Len</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.85</span>
+                    <span class="o">+</span> <span class="n">lerp</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="n">V3</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.3</span><span class="p">;</span>
+  
+    <span class="n">float3</span> <span class="n">Powered</span> <span class="o">=</span> <span class="n">pow</span><span class="p">(</span><span class="n">abs</span><span class="p">(</span><span class="n">Col</span><span class="p">),</span> <span class="n">float3</span><span class="p">(</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">));</span>
+    <span class="n">float3</span> <span class="n">Minimized</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">Powered</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">);</span>
+    <span class="n">float4</span> <span class="n">OutputColor</span> <span class="o">=</span> <span class="n">float4</span><span class="p">(</span><span class="n">Minimized</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">);</span>
+    
+    <span class="n">OutputSurface</span><span class="p">[</span><span class="n">ThreadID</span><span class="p">.</span><span class="n">xy</span><span class="p">]</span> <span class="o">=</span> <span class="n">OutputColor</span><span class="p">;</span>
+    <span class="n">TestStructureBuffer</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">TestPosition</span> <span class="o">=</span> <span class="n">float3</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">);</span>    <span class="c1">// 테스트로 임의의 값으로 변경 시켜봄</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="structuredbuffer에-사용할-멤버를-관리할-구조체-정의">StructuredBuffer에 사용할 멤버를 관리할 구조체 정의</h2>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="nc">FStructuredDataTest</span>
+<span class="p">{</span>
+	<span class="k">struct</span> <span class="nc">TestStruct</span>
+	<span class="p">{</span>
+		<span class="n">FVector</span> <span class="n">TestPosition</span><span class="p">;</span>
+	<span class="p">};</span>
+
+	<span class="kt">void</span> <span class="n">Init</span><span class="p">()</span>
+	<span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">IsInitied</span><span class="p">)</span>
+			<span class="k">return</span><span class="p">;</span>
+		<span class="n">IsInitied</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+
+		<span class="n">TestStruct</span> <span class="n">TestElement</span><span class="p">;</span>
+		<span class="n">TestElement</span><span class="p">.</span><span class="n">TestPosition</span> <span class="o">=</span> <span class="n">FVector</span><span class="p">(</span><span class="mf">1.0</span><span class="n">f</span><span class="p">,</span> <span class="mf">1.0</span><span class="n">f</span><span class="p">,</span> <span class="mf">1.0</span><span class="n">f</span><span class="p">);</span>
+		<span class="n">TResourceArray</span><span class="o">&lt;</span><span class="n">TestStruct</span><span class="o">&gt;</span> <span class="n">BuffferData</span><span class="p">;</span>
+		<span class="n">BuffferData</span><span class="p">.</span><span class="n">Reset</span><span class="p">();</span>
+		<span class="n">BuffferData</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">TestElement</span><span class="p">);</span>
+		<span class="n">BuffferData</span><span class="p">.</span><span class="n">SetAllowCPUAccess</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+
+		<span class="n">FRHIResourceCreateInfo</span> <span class="n">TestCreateInfo</span><span class="p">;</span>
+		<span class="n">TestCreateInfo</span><span class="p">.</span><span class="n">ResourceArray</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">BuffferData</span><span class="p">;</span>
+
+		<span class="n">TestStructureBuff</span> <span class="o">=</span> <span class="n">RHICreateStructuredBuffer</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="n">TestStruct</span><span class="p">)</span>
+			<span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">TestStruct</span><span class="p">)</span> <span class="o">*</span> <span class="mi">1</span><span class="p">,</span> <span class="n">BUF_UnorderedAccess</span> <span class="o">|</span> <span class="n">BUF_ShaderResource</span><span class="p">,</span> <span class="n">TestCreateInfo</span><span class="p">);;</span>
+		<span class="n">TestStructureBuffUAV</span> <span class="o">=</span> <span class="n">RHICreateUnorderedAccessView</span><span class="p">(</span><span class="n">TestStructureBuff</span><span class="p">,</span> <span class="nb">true</span><span class="p">,</span> <span class="nb">false</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="n">FVector</span> <span class="n">ReadStructuredBuffer</span><span class="p">(</span><span class="n">FVector</span> <span class="n">InVector</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">TArray</span><span class="o">&lt;</span><span class="n">FVector</span><span class="o">&gt;</span> <span class="n">Data</span><span class="p">;</span>
+		<span class="n">Data</span><span class="p">.</span><span class="n">Reset</span><span class="p">();</span>
+		<span class="n">Data</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">InVector</span><span class="p">);</span>
+
+		<span class="n">FVector</span><span class="o">*</span> <span class="n">SrcPtr</span> <span class="o">=</span> <span class="p">(</span><span class="n">FVector</span><span class="o">*</span><span class="p">)</span><span class="n">RHILockStructuredBuffer</span><span class="p">(</span><span class="n">TestStructureBuff</span><span class="p">.</span><span class="n">GetReference</span><span class="p">(),</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">FVector</span><span class="p">),</span> <span class="n">EResourceLockMode</span><span class="o">::</span><span class="n">RLM_ReadOnly</span><span class="p">);</span>
+		<span class="n">FMemory</span><span class="o">::</span><span class="n">Memcpy</span><span class="p">(</span><span class="n">Data</span><span class="p">.</span><span class="n">GetData</span><span class="p">(),</span> <span class="n">SrcPtr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">FVector</span><span class="p">));</span>
+		<span class="n">RHIUnlockStructuredBuffer</span><span class="p">(</span><span class="n">TestStructureBuff</span><span class="p">.</span><span class="n">GetReference</span><span class="p">());</span>
+		<span class="k">return</span> <span class="n">Data</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+	<span class="p">}</span>
+
+	<span class="kt">bool</span> <span class="n">IsInitied</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+	<span class="n">FStructuredBufferRHIRef</span> <span class="n">TestStructureBuff</span><span class="p">;</span>
+	<span class="n">FUnorderedAccessViewRHIRef</span> <span class="n">TestStructureBuffUAV</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h2 id="compute-shader를-dispatch-해주는-함수-작성">Compute Shader를 Dispatch 해주는 함수 작성</h2>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">static</span> <span class="kt">void</span> <span class="nf">UseComputeShader_RenderThread</span><span class="p">(</span><span class="n">FRHICommandListImmediate</span><span class="o">&amp;</span> <span class="n">RHICmdList</span><span class="p">,</span> <span class="n">FTextureRenderTargetResource</span><span class="o">*</span> <span class="n">OutputRenderTargetResource</span>
+	<span class="p">,</span> <span class="n">FGlobalShaderStructData</span> <span class="n">ShaderStructData</span><span class="p">,</span> <span class="n">ERHIFeatureLevel</span><span class="o">::</span><span class="n">Type</span> <span class="n">FeatureLevel</span><span class="p">,</span> <span class="n">FName</span> <span class="n">TextureRenderTargetName</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">check</span><span class="p">(</span><span class="n">IsInRenderingThread</span><span class="p">());</span>
+
+	<span class="n">TShaderMapRef</span><span class="o">&lt;</span><span class="n">FGlobalComputeTestShader</span><span class="o">&gt;</span> <span class="n">ComputeShader</span><span class="p">(</span><span class="n">GetGlobalShaderMap</span><span class="p">(</span><span class="n">FeatureLevel</span><span class="p">));</span>
+	<span class="n">RHICmdList</span><span class="p">.</span><span class="n">SetComputeShader</span><span class="p">(</span><span class="n">ComputeShader</span><span class="o">-&gt;</span><span class="n">GetComputeShader</span><span class="p">());</span>
+
+	<span class="k">const</span> <span class="n">int32</span> <span class="n">SizeX</span> <span class="o">=</span> <span class="n">OutputRenderTargetResource</span><span class="o">-&gt;</span><span class="n">GetSizeX</span><span class="p">();</span>
+	<span class="k">const</span> <span class="n">int32</span> <span class="n">SizeY</span> <span class="o">=</span> <span class="n">OutputRenderTargetResource</span><span class="o">-&gt;</span><span class="n">GetSizeY</span><span class="p">();</span>
+	
+	<span class="n">FRHIResourceCreateInfo</span> <span class="n">CreateInfo</span><span class="p">;</span>
+
+	<span class="k">static</span> <span class="n">FStructuredDataTest</span> <span class="n">StructuredData</span><span class="p">;</span>
+	<span class="n">StructuredData</span><span class="p">.</span><span class="n">Init</span><span class="p">();</span>
+
+	<span class="c1">// PF_A32B32G32R32F 이기 때문에 RenderTarget에서 RenderTargetFormat이 RTF_RGBA32f 와 같은 형태로 호환 가능해야 함</span>
+	<span class="n">FTexture2DRHIRef</span> <span class="n">Texture</span> <span class="o">=</span> <span class="n">RHICreateTexture2D</span><span class="p">(</span><span class="n">SizeX</span><span class="p">,</span> <span class="n">SizeY</span><span class="p">,</span> <span class="n">PF_A32B32G32R32F</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">TexCreate_ShaderResource</span> <span class="o">|</span> <span class="n">TexCreate_UAV</span><span class="p">,</span> <span class="n">CreateInfo</span><span class="p">);</span>
+	<span class="n">FUnorderedAccessViewRHIRef</span> <span class="n">TextureUAV</span> <span class="o">=</span> <span class="n">RHICreateUnorderedAccessView</span><span class="p">(</span><span class="n">Texture</span><span class="p">);</span>
+	<span class="n">ComputeShader</span><span class="o">-&gt;</span><span class="n">SetSurface</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="n">TextureUAV</span><span class="p">,</span> <span class="n">ShaderStructData</span><span class="p">,</span> <span class="n">StructuredData</span><span class="p">.</span><span class="n">TestStructureBuffUAV</span><span class="p">);</span>
+	<span class="n">DispatchComputeShader</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="o">*</span><span class="n">ComputeShader</span><span class="p">,</span> <span class="n">SizeX</span> <span class="o">/</span> <span class="mi">32</span><span class="p">,</span> <span class="n">SizeY</span> <span class="o">/</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+	<span class="n">ComputeShader</span><span class="o">-&gt;</span><span class="n">UnbindBuffers</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">);</span>
+	
+	<span class="n">FVector</span> <span class="n">StructuredDataResult</span> <span class="o">=</span> <span class="n">StructuredData</span><span class="p">.</span><span class="n">ReadStructuredBuffer</span><span class="p">(</span><span class="n">FVector</span><span class="p">(</span><span class="mf">1.0</span><span class="n">f</span><span class="p">,</span> <span class="mf">1.0</span><span class="n">f</span><span class="p">,</span> <span class="mf">1.0</span><span class="n">f</span><span class="p">));</span>
+
+	<span class="c1">// [UE4]Global Shader 파트에서 만든 함수. Texture의 내용을 OutputRenderTargetResource에 그려줌</span>
+	<span class="n">DrawTestShaderRenderTarget_RenderThread</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="n">OutputRenderTargetResource</span><span class="p">,</span> <span class="n">FeatureLevel</span><span class="p">,</span> <span class="n">TextureRenderTargetName</span>
+		<span class="p">,</span> <span class="n">FLinearColor</span><span class="p">(),</span> <span class="n">Texture</span><span class="p">,</span> <span class="n">ShaderStructData</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="comopute-shader를-블루프린트로-호출할-수-있도록-함수-제공">Comopute Shader를 블루프린트로 호출할 수 있도록 함수 제공</h2>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// GlobalShaderTestCode.h</span>
+<span class="n">USTRUCT</span><span class="p">(</span><span class="n">BlueprintType</span><span class="p">)</span>
+<span class="k">struct</span> <span class="nc">FGlobalShaderStructData</span>
+<span class="p">{</span>
+	<span class="n">GENERATED_USTRUCT_BODY</span><span class="p">()</span>
+
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">VisibleAnywhere</span><span class="p">,</span> <span class="n">Category</span> <span class="o">=</span> <span class="n">ShaderData</span><span class="p">)</span>
+	<span class="n">FLinearColor</span> <span class="n">ColorOne</span><span class="p">;</span>
+
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">VisibleAnywhere</span><span class="p">,</span> <span class="n">Category</span> <span class="o">=</span> <span class="n">ShaderData</span><span class="p">)</span>
+	<span class="n">FLinearColor</span> <span class="n">ColorTwo</span><span class="p">;</span>
+
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">VisibleAnywhere</span><span class="p">,</span> <span class="n">Category</span> <span class="o">=</span> <span class="n">ShaderData</span><span class="p">)</span>
+	<span class="n">FLinearColor</span> <span class="n">ColorThree</span><span class="p">;</span>
+
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">VisibleAnywhere</span><span class="p">,</span> <span class="n">Category</span> <span class="o">=</span> <span class="n">ShaderData</span><span class="p">)</span>
+	<span class="n">FLinearColor</span> <span class="n">ColorFour</span><span class="p">;</span>
+
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">VisibleAnywhere</span><span class="p">,</span> <span class="n">Category</span> <span class="o">=</span> <span class="n">ShaderData</span><span class="p">)</span>
+	<span class="n">int32</span> <span class="n">ColorIndex</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="n">UCLASS</span><span class="p">(</span><span class="n">MinimalAPI</span><span class="p">,</span> <span class="n">meta</span> <span class="o">=</span> <span class="p">(</span><span class="n">ScriptName</span> <span class="o">=</span> <span class="s">"TestShaderLibrary"</span><span class="p">))</span>
+<span class="k">class</span> <span class="nc">UGlobalTestShaderBlueprintLibrary</span> <span class="o">:</span> <span class="k">public</span> <span class="n">UBlueprintFunctionLibrary</span>
+<span class="p">{</span>
+	<span class="n">GENERATED_UCLASS_BODY</span><span class="p">()</span>
+
+	<span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">,</span> <span class="n">Category</span> <span class="o">=</span> <span class="s">"GlobalShaderTestPlugin"</span><span class="p">,</span> <span class="n">meta</span> <span class="o">=</span> <span class="p">(</span><span class="n">WorldContext</span> <span class="o">=</span> <span class="s">"WorldContextObject"</span><span class="p">))</span>
+	<span class="k">static</span> <span class="kt">void</span> <span class="n">UseComputeShader</span><span class="p">(</span><span class="k">class</span> <span class="nc">UTextureRenderTarget2D</span><span class="o">*</span> <span class="n">OutputRenderTarget</span><span class="p">,</span> <span class="n">AActor</span><span class="o">*</span> <span class="n">Actor</span><span class="p">,</span> <span class="n">FGlobalShaderStructData</span> <span class="n">ShaderStructData</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="c1">// GlobalShaderTestCode.cpp</span>
+<span class="kt">void</span> <span class="n">UGlobalTestShaderBlueprintLibrary</span><span class="o">::</span><span class="n">UseComputeShader</span><span class="p">(</span><span class="k">class</span> <span class="nc">UTextureRenderTarget2D</span><span class="o">*</span> <span class="n">OutputRenderTarget</span><span class="p">,</span> <span class="n">AActor</span><span class="o">*</span> <span class="n">Actor</span><span class="p">,</span> <span class="n">FGlobalShaderStructData</span> <span class="n">ShaderStructData</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">check</span><span class="p">(</span><span class="n">IsInGameThread</span><span class="p">());</span>
+
+	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">OutputRenderTarget</span><span class="p">)</span>
+		<span class="k">return</span><span class="p">;</span>
+
+	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">Actor</span><span class="p">)</span>
+		<span class="k">return</span><span class="p">;</span>
+
+	<span class="n">FTextureRenderTargetResource</span><span class="o">*</span> <span class="n">TextureRenderTargetResource</span> <span class="o">=</span> <span class="n">OutputRenderTarget</span><span class="o">-&gt;</span><span class="n">GameThread_GetRenderTargetResource</span><span class="p">();</span>
+	<span class="n">UWorld</span><span class="o">*</span> <span class="n">World</span> <span class="o">=</span> <span class="n">Actor</span><span class="o">-&gt;</span><span class="n">GetWorld</span><span class="p">();</span>
+	<span class="n">ERHIFeatureLevel</span><span class="o">::</span><span class="n">Type</span> <span class="n">FeatureLevel</span> <span class="o">=</span> <span class="n">World</span><span class="o">-&gt;</span><span class="n">Scene</span><span class="o">-&gt;</span><span class="n">GetFeatureLevel</span><span class="p">();</span>
+	<span class="n">FName</span> <span class="n">TextureRenderTargetName</span> <span class="o">=</span> <span class="n">OutputRenderTarget</span><span class="o">-&gt;</span><span class="n">GetFName</span><span class="p">();</span>
+	<span class="n">ENQUEUE_RENDER_COMMAND</span><span class="p">(</span><span class="n">CaptureCommand</span><span class="p">)(</span>
+		<span class="p">[</span><span class="n">TextureRenderTargetResource</span><span class="p">,</span> <span class="n">FeatureLevel</span><span class="p">,</span> <span class="n">ShaderStructData</span><span class="p">,</span> <span class="n">TextureRenderTargetName</span><span class="p">](</span><span class="n">FRHICommandListImmediate</span><span class="o">&amp;</span> <span class="n">RHICmdList</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">UseComputeShader_RenderThread</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="n">TextureRenderTargetResource</span><span class="p">,</span> <span class="n">ShaderStructData</span><span class="p">,</span> <span class="n">FeatureLevel</span><span class="p">,</span> <span class="n">TextureRenderTargetName</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+:ET

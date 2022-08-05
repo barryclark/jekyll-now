@@ -1,0 +1,132 @@
+I"�B<h2 id="mediaplayer-생성하기">MediaPlayer 생성하기</h2>
+
+<p>레벨 안에 있는 TV 든, UI 일부로써 배경이든, 심지어 전체화면이든, 레벨 안에서 비디오를 재생하려는 방법을 찾는 경우, Media Framework (미디어 프레임워크) 툴과 Media Source (미디어 소스) 애셋을 사용해야 합니다.</p>
+
+<ul>
+  <li><a href="https://docs.unrealengine.com/4.27/ko/WorkingWithMedia/IntegratingMedia/MediaFramework/HowTo/FileMediaSource/">비디오 파일 재생</a></li>
+</ul>
+
+<p>미디어 프레임워크 가 필요합니다. 위의 두 가지 예제 모두 해결될 뿐만 아니라, 일반적인 미디어 재생 관련된 능력을 훨씬 많이 제공해 줍니다.</p>
+
+<p>언리얼 엔진의 미덩 프레임워크는</p>
+<ul>
+  <li>Engine &amp; Slate Agnostic, 즉 엔진이나 슬레이트 어디서든 사용할 수 있습니다.</li>
+  <li>현지화된 오디오 &amp; 비디오 트랙 지원이 가능합니다.</li>
+  <li>콘텐츠 브라우저, 머티리얼 에디터, 사운드 시스템에서 접근 가능합니다.</li>
+  <li>블루프린트 &amp; UMG UI 디자이너에서 사용 가능합니다.</li>
+  <li>스트리밍 미디어 지원이 가능합니다.</li>
+  <li>빨리 감기, 되돌리기, 재생, 일시정지, 스크러빙이 가능합니다.</li>
+  <li>
+    <p>플러그가능(Pluggable) 플레이어 지원이 가능합니다.</p>
+  </li>
+  <li><a href="https://docs.unrealengine.com/4.27/ko/WorkingWithMedia/IntegratingMedia/MediaFramework/">미디어 프레임워크</a></li>
+</ul>
+
+<p>레벨 안에 있는 TV 든, UI 일부로써 배경이든, 심지어 전체화면이든, 레벨 안에서 비디오를 재생하려는 방법을 찾는 경우, Media Framework (미디어 프레임워크) 툴과 Media Source (미디어 소스) 애셋을 사용해야 할 것입니다. 여러가지 미디어 소스 애셋 유형이 있지만, File Media Source (파일 미디어 소스) 애셋을 사용하면 (컴퓨터든 전화든 콘솔 기기든) 디바이스에 저장된 비디오 파일을 언리얼 엔진 4 (UE4) 안에서 재생할 수 있습니다.</p>
+
+<ul>
+  <li><a href="https://docs.unrealengine.com/5.0/ko/media-framework-technical-reference-for-unreal-engine/">미디어 프레임워크 테크니컬 레퍼런스</a>
+    <ul>
+      <li>현재 지원되는 파일 확장자, URL, 캡처 디바이스는 물론 다양한 플랫폼에서 Media Framework (미디어 프레임워크)를 켜는 법 관련 문제해결 팁을 개괄적으로 설명</li>
+    </ul>
+  </li>
+  <li>MediaPlayer의 OpenURL을 이용해서, 영상을 재생할 수 있습니다.</li>
+</ul>
+
+<details><summary>동적으로 미디어 번들 생성하기</summary>
+<div>
+
+    <p>블루프린트로 구현하기 전에 <code class="language-plaintext highlighter-rouge">MediaAssets</code> 모듈을 사용할 위치에 미디어 텍스처를 업데이트 하는 코드를 추가합니다.</p>
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">)</span>
+	<span class="kt">void</span> <span class="nf">UpdateMediaTexture</span><span class="p">(</span><span class="n">UMediaTexture</span><span class="o">*</span> <span class="n">mediaTexture</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">mediaTexture</span><span class="o">-&gt;</span><span class="n">UpdateResource</span><span class="p">();</span>
+	<span class="p">}</span>
+</code></pre></div>    </div>
+
+    <ul>
+      <li>텍스처 리소스를 업데이트를 블루프린트에서 불러올 수 있는 함수를 못찾았습니다.</li>
+    </ul>
+
+    <p>동적으로 미디어 번들을 생성하는 방법은 다음과 같습니다.</p>
+
+    <ol>
+      <li>MediaPlayer를 생성합니다. 여기서는 미디어 리소스를 설정하면 재생하고 반복하게 설정했습니다.</li>
+      <li>MediaTexture를 생성합니다. 생성한 미디어 플레이어를 설정하고, 미디어 텍스처의 리소스를 업데이트합니다.</li>
+      <li>여기서 미디어텍스처를 UI에 보여주는 머티리얼을 생성합니다.</li>
+      <li>MediaSource를 미디어 플레이어로 엽니다. 1에 따라 자동으로 재생되고, 반복하게 됩니다.</li>
+      <li>머티리얼 인스턴스와, 미디어 플레이어를 전달합니다.</li>
+    </ol>
+
+    <p>아래는 실제 코드입니다.
+<img src="../images/Unreal_DynamicMediaPlayer.png" alt="MediaPlayer" />
+<img src="../images/Unreal_DynamicMediaPlayer2.png" alt="MediaPlayer" /></p>
+
+  </div></details>
+
+<details><summary>에디터 미디어 번들 생성코드</summary>
+<div>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#if WITH_EDITOR
+</span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">UPackage</span><span class="o">*&gt;</span> <span class="n">UMediaBundle</span><span class="o">::</span><span class="n">CreateInternalsEditor</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">TArray</span><span class="o">&lt;</span><span class="n">UPackage</span><span class="o">*&gt;</span> <span class="n">Result</span><span class="p">;</span>
+
+	<span class="k">if</span> <span class="p">(</span><span class="n">GIsEditor</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">IAssetTools</span><span class="o">&amp;</span> <span class="n">AssetTools</span> <span class="o">=</span> <span class="n">FModuleManager</span><span class="o">::</span><span class="n">Get</span><span class="p">().</span><span class="n">LoadModuleChecked</span><span class="o">&lt;</span><span class="n">FAssetToolsModule</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"AssetTools"</span><span class="p">).</span><span class="n">Get</span><span class="p">();</span>
+
+		<span class="k">const</span> <span class="n">FString</span> <span class="n">ParentName</span> <span class="o">=</span> <span class="n">GetOuter</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetName</span><span class="p">()</span> <span class="o">+</span> <span class="s">"_InnerAssets/"</span><span class="p">;</span>
+		<span class="n">FString</span> <span class="n">OutAssetName</span><span class="p">;</span>
+		<span class="n">FString</span> <span class="n">OutPackageName</span><span class="p">;</span>
+
+		<span class="c1">//Create MediaPlayer</span>
+		<span class="n">AssetTools</span><span class="p">.</span><span class="n">CreateUniqueAssetName</span><span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="n">ParentName</span> <span class="o">+</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"/MediaP_"</span><span class="p">)</span> <span class="o">+</span> <span class="n">GetName</span><span class="p">()),</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">""</span><span class="p">),</span> <span class="n">OutPackageName</span><span class="p">,</span> <span class="n">OutAssetName</span><span class="p">);</span>
+		<span class="n">MediaPlayer</span> <span class="o">=</span> <span class="n">Cast</span><span class="o">&lt;</span><span class="n">UMediaPlayer</span><span class="o">&gt;</span><span class="p">(</span><span class="n">AssetTools</span><span class="p">.</span><span class="n">CreateAsset</span><span class="p">(</span><span class="n">OutAssetName</span><span class="p">,</span> <span class="n">ParentName</span><span class="p">,</span> <span class="n">UMediaPlayer</span><span class="o">::</span><span class="n">StaticClass</span><span class="p">(),</span> <span class="nb">nullptr</span><span class="p">));</span>
+		<span class="n">MediaPlayer</span><span class="o">-&gt;</span><span class="n">AffectedByPIEHandling</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+		<span class="n">Result</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">MediaPlayer</span><span class="o">-&gt;</span><span class="n">GetOutermost</span><span class="p">());</span>
+
+		<span class="c1">//Create MediaTexture </span>
+		<span class="n">AssetTools</span><span class="p">.</span><span class="n">CreateUniqueAssetName</span><span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="n">ParentName</span> <span class="o">+</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"/T_"</span><span class="p">)</span> <span class="o">+</span> <span class="n">GetName</span><span class="p">()</span> <span class="o">+</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"_BC"</span><span class="p">)),</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">""</span><span class="p">),</span> <span class="n">OutPackageName</span><span class="p">,</span> <span class="n">OutAssetName</span><span class="p">);</span>
+		<span class="n">MediaTexture</span> <span class="o">=</span> <span class="n">Cast</span><span class="o">&lt;</span><span class="n">UMediaTexture</span><span class="o">&gt;</span><span class="p">(</span><span class="n">AssetTools</span><span class="p">.</span><span class="n">CreateAsset</span><span class="p">(</span><span class="n">OutAssetName</span><span class="p">,</span> <span class="n">ParentName</span><span class="p">,</span> <span class="n">UMediaTexture</span><span class="o">::</span><span class="n">StaticClass</span><span class="p">(),</span> <span class="nb">nullptr</span><span class="p">));</span>
+		<span class="n">MediaTexture</span><span class="o">-&gt;</span><span class="n">SetDefaultMediaPlayer</span><span class="p">(</span><span class="n">MediaPlayer</span><span class="p">);</span>
+		<span class="n">MediaTexture</span><span class="o">-&gt;</span><span class="n">SetMediaPlayer</span><span class="p">(</span><span class="n">MediaPlayer</span><span class="p">);</span>
+		<span class="n">MediaTexture</span><span class="o">-&gt;</span><span class="n">UpdateResource</span><span class="p">();</span>
+		<span class="n">Result</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">MediaTexture</span><span class="o">-&gt;</span><span class="n">GetOutermost</span><span class="p">());</span>
+
+		<span class="c1">//Create LensDisplacementMap RenderTarget</span>
+		<span class="n">AssetTools</span><span class="p">.</span><span class="n">CreateUniqueAssetName</span><span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="n">ParentName</span> <span class="o">+</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"/RT_"</span><span class="p">)</span> <span class="o">+</span> <span class="n">GetName</span><span class="p">()</span> <span class="o">+</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"_LensDisplacement"</span><span class="p">)),</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">""</span><span class="p">),</span> <span class="n">OutPackageName</span><span class="p">,</span> <span class="n">OutAssetName</span><span class="p">);</span>
+		<span class="n">LensDisplacementMap</span> <span class="o">=</span> <span class="n">Cast</span><span class="o">&lt;</span><span class="n">UTextureRenderTarget2D</span><span class="o">&gt;</span><span class="p">(</span><span class="n">AssetTools</span><span class="p">.</span><span class="n">CreateAsset</span><span class="p">(</span><span class="n">OutAssetName</span><span class="p">,</span> <span class="n">ParentName</span><span class="p">,</span> <span class="n">UTextureRenderTarget2D</span><span class="o">::</span><span class="n">StaticClass</span><span class="p">(),</span> <span class="nb">nullptr</span><span class="p">));</span>
+		<span class="n">LensDisplacementMap</span><span class="o">-&gt;</span><span class="n">RenderTargetFormat</span> <span class="o">=</span> <span class="n">RTF_RGBA16f</span><span class="p">;</span>
+		<span class="n">LensDisplacementMap</span><span class="o">-&gt;</span><span class="n">InitAutoFormat</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="mi">256</span><span class="p">);</span>
+		<span class="n">LensDisplacementMap</span><span class="o">-&gt;</span><span class="n">UpdateResource</span><span class="p">();</span>
+		<span class="n">Result</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">LensDisplacementMap</span><span class="o">-&gt;</span><span class="n">GetOutermost</span><span class="p">());</span>
+
+		<span class="c1">//Create MaterialInstanceConstant</span>
+		<span class="n">UMaterialInstanceConstantFactoryNew</span><span class="o">*</span> <span class="n">Factory</span> <span class="o">=</span> <span class="n">NewObject</span><span class="o">&lt;</span><span class="n">UMaterialInstanceConstantFactoryNew</span><span class="o">&gt;</span><span class="p">();</span>
+		<span class="n">Factory</span><span class="o">-&gt;</span><span class="n">InitialParent</span> <span class="o">=</span> <span class="n">DefaultMaterial</span><span class="p">;</span>
+
+		<span class="n">AssetTools</span><span class="p">.</span><span class="n">CreateUniqueAssetName</span><span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="n">ParentName</span> <span class="o">+</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"/MI_"</span><span class="p">)</span> <span class="o">+</span> <span class="n">GetName</span><span class="p">()),</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">""</span><span class="p">),</span> <span class="n">OutPackageName</span><span class="p">,</span> <span class="n">OutAssetName</span><span class="p">);</span>
+		<span class="n">UMaterialInstanceConstant</span><span class="o">*</span> <span class="n">NewMaterial</span> <span class="o">=</span> <span class="n">Cast</span><span class="o">&lt;</span><span class="n">UMaterialInstanceConstant</span><span class="o">&gt;</span><span class="p">(</span><span class="n">AssetTools</span><span class="p">.</span><span class="n">CreateAsset</span><span class="p">(</span><span class="n">OutAssetName</span><span class="p">,</span> <span class="n">ParentName</span><span class="p">,</span> <span class="n">UMaterialInstanceConstant</span><span class="o">::</span><span class="n">StaticClass</span><span class="p">(),</span> <span class="n">Factory</span><span class="p">));</span>
+		<span class="n">NewMaterial</span><span class="o">-&gt;</span><span class="n">SetTextureParameterValueEditorOnly</span><span class="p">(</span><span class="n">FMaterialParameterInfo</span><span class="p">(</span><span class="n">MediaBundleMaterialParametersName</span><span class="o">::</span><span class="n">MediaTextureName</span><span class="p">),</span> <span class="n">MediaTexture</span><span class="p">);</span>
+		<span class="n">NewMaterial</span><span class="o">-&gt;</span><span class="n">SetTextureParameterValueEditorOnly</span><span class="p">(</span><span class="n">FMaterialParameterInfo</span><span class="p">(</span><span class="n">MediaBundleMaterialParametersName</span><span class="o">::</span><span class="n">FailedTextureName</span><span class="p">),</span> <span class="n">DefaultFailedTexture</span><span class="p">);</span>
+		<span class="n">NewMaterial</span><span class="o">-&gt;</span><span class="n">SetTextureParameterValueEditorOnly</span><span class="p">(</span><span class="n">FMaterialParameterInfo</span><span class="p">(</span><span class="n">MediaBundleMaterialParametersName</span><span class="o">::</span><span class="n">LensDisplacementMapTextureName</span><span class="p">),</span> <span class="n">LensDisplacementMap</span><span class="p">);</span>
+		<span class="n">NewMaterial</span><span class="o">-&gt;</span><span class="n">PostEditChange</span><span class="p">();</span>
+		<span class="n">Material</span> <span class="o">=</span> <span class="n">NewMaterial</span><span class="p">;</span>
+		<span class="n">Result</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">Material</span><span class="o">-&gt;</span><span class="n">GetOutermost</span><span class="p">());</span>
+	<span class="p">}</span>
+
+	<span class="c1">//If we are creating a new object, set the default actor class. Duplicates won't change this.</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">MediaBundleActorClass</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">MediaBundleActorClass</span> <span class="o">=</span> <span class="n">DefaultActorClass</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="k">return</span> <span class="n">Result</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">#endif // WITH_EDITOR
+</span></code></pre></div>    </div>
+
+  </div></details>
+
+:ET

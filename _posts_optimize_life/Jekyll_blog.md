@@ -10,7 +10,6 @@ title: 지킬 블로그
   - [ ] 마크다운에 HTML if문 적용하기
   - [ ] 지킬 조각파일, 그리고 include에 태그 붙이기
   - [ ] 태그별 LOD에 따라, 설명하는 깊이를 다르게 표시하기
-- [ ] 블로그, 꾸미고 싶어지네...
 
 # Jekyll (지킬, 깃 블로그)
 
@@ -19,6 +18,12 @@ title: 지킬 블로그
 
 * [Jekyll Doc](https://jekyllrb-ko.github.io/docs/)
 
+<details><summary>코드 블럭이 더블 프레임으로 표시되는 경우</summary>
+<div markdown="1">
+
+[Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll) 
+
+</div></details>
 
 ## Markdown
 
@@ -28,7 +33,6 @@ title: 지킬 블로그
 
 <details><summary>코드 블럭이 더블 프레임으로 표시되는 경우</summary>
 <div markdown="1">
-<br>
 
 **[Why do I get a double frame around markdown code block on Jekyll site?](https://stackoverflow.com/questions/55308142/why-do-i-get-a-double-frame-around-markdown-code-block-on-jekyll-site)**
 

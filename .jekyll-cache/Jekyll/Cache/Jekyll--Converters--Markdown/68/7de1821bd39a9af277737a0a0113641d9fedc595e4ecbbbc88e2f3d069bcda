@@ -1,0 +1,10 @@
+I"I<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />디버그…</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />콘솔오올….</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="https://docs.unrealengine.com/4.27/ko/ProgrammingAndScripting/GameplayDebugger/">게임플레이 디버거</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />언리얼 콘솔, 디버그, 로그 활용 예시들…</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="https://docs.unrealengine.com/5.0/ko/network-debugging-for-unreal-engine/">네트워크 디버깅</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />로그 카테고리….</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />더 낮은 수준의 코드가 컴파일 되지 않는다고 했는데, 뭔소리 인지 잘모르겠음. UBT에서 하는게 아니라면, static_assert 말하는거 같은데, 조금더 이해해야 함.</li>
+</ul>
+:ET

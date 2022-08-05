@@ -1,0 +1,176 @@
+I"�O<ul>
+  <li>FMath::SmoothStep
+    <ul>
+      <li>값 X에 대해 0과 1사이의 부드러은 Hermite보간을 반환합니다.(X는 A와 B사이의 범위입니다.)</li>
+      <li>X &lt;= A의 경우 0으로, X &gt;= B의 경우 1로 고정됩니다.</li>
+    </ul>
+  </li>
+  <li><a href="https://ko.wikipedia.org/wiki/%EC%97%90%EB%A5%B4%EB%AF%B8%ED%8A%B8_%EB%B3%B4%EA%B0%84%EB%B2%95">에르미트 보간법 (Hermite interpolation)</a>
+    <ul>
+      <li>에르미트 보간법은 자료 점들을 값과 1차 미분값을 대응시킵니다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="에르미트-보간법hermite-interpolation"><a href="https://conerstone.tistory.com/5">에르미트 보간법(Hermite Interpolation)</a></h2>
+
+<p>보간법(Interpolation)은 유한개 지점에서 관찰된 데이터를 통해 각 데이터 사이사이를 연속적인 함수의 모양으로 메우는 방법을 말합니다. 수학적으로 표현하자면, 주어진 유한개의 저을 모두 지나는 연속함수를 얻는 방법을 말합니다.</p>
+
+<p>라그랑지 보간법(Lagrange Interpolation)은 선형대수를 이용해 주어진 유한개 지점을 모두 지나는 다항함수르 얻는 방법을 말해줬습니다. 만약 이 방법으로 얻은 결과가 맘에 들지 않았다고 합시다 그러니까, 우리가 관측한 지점의 데이터를 가지고 얻은 다항식이 새로운 데이터에는 잘 맞지 않았다고 합시다. 그러면 이를 어떻게 더 보완할 수 있을까요?</p>
+
+<p>더 많은 데이터를 관찰할 수도 있을 것입니다. 그렇지만 이 방법은 관찰을 하면 할수록 더 많은 비용이 든다는 점과 관찰을 한 차례 더 할 때마다 필요한 연산이 매우 늘어난다는 점, 그리고 비싼 돈을 주고 관찰을 매우 많이 했는데 오히려 오차가 더 커지는 이상현상(Runge1s Phenomenon or Overfitting)이 발생할 수 있습니다.</p>
+
+<p>따라서 우리는 관측하는 지점은 그대로 유지하고 그 지점에서 차라리 다른 데이터를 더 얻어서 좀 더 정교한 함수를 찾을 것입니다. 비유를 들자면, 고속도로에 카메라를 더 많이 설치하기보다는, 기존에 설치된 카메라들에 차량의 속련만 측정하던 것에서 가속도까지 측정하도록 소프트웨어를 업그레이드 하겠다는 말입니다.</p>
+
+<dl>
+  <dt>필수적인 내용</dt>
+  <dd><a href="/posts_unreal_engine/GraphicsUseage-CustomExpression">Custom expression</a></dd>
+</dl>
+
+<h2 id="custom-노드-2d-메타볼">Custom 노드 2D 메타볼</h2>
+
+<p>DefineSphereFunction</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">float</span> <span class="nf">MakeSphere</span><span class="p">(</span><span class="n">float2</span> <span class="n">uv</span><span class="p">,</span> <span class="n">float2</span> <span class="n">position</span><span class="p">,</span> <span class="kt">float</span> <span class="n">radius</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">float</span> <span class="n">weight</span> <span class="o">=</span> <span class="n">radius</span> <span class="o">/</span> <span class="n">distance</span><span class="p">(</span><span class="n">uv</span><span class="p">,</span> <span class="n">position</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">weight</span> <span class="o">*</span> <span class="n">weight</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Custom</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#define CUSTOM_NODE_SIZE 4
+</span>
+<span class="n">float2</span> <span class="n">Positions</span><span class="p">[</span><span class="n">CUSTOM_NODE_SIZE</span><span class="p">];</span>
+<span class="n">Positions</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">float2</span><span class="p">(</span><span class="o">-</span><span class="n">sin</span><span class="p">(</span><span class="n">Time</span> <span class="o">*</span> <span class="mf">0.9</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.55</span><span class="p">,</span> <span class="o">-</span><span class="n">cos</span><span class="p">(</span><span class="n">Time</span> <span class="o">*</span> <span class="mf">0.9</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.2</span><span class="p">);</span>
+<span class="n">Positions</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">float2</span><span class="p">(</span><span class="o">-</span><span class="n">sin</span><span class="p">(</span><span class="n">Time</span> <span class="o">*</span> <span class="mf">0.8</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="n">cos</span><span class="p">(</span><span class="n">Time</span> <span class="o">*</span> <span class="mf">0.8</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.25</span><span class="p">);</span>
+<span class="n">Positions</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">float2</span><span class="p">(</span><span class="o">-</span><span class="n">sin</span><span class="p">(</span><span class="n">Time</span> <span class="o">*</span> <span class="mf">0.7</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.45</span><span class="p">,</span> <span class="o">-</span><span class="n">cos</span><span class="p">(</span><span class="n">Time</span> <span class="o">*</span> <span class="mf">0.7</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.3</span><span class="p">);</span>
+<span class="n">Positions</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">float2</span><span class="p">(</span><span class="o">-</span><span class="n">sin</span><span class="p">(</span><span class="n">Time</span> <span class="o">*</span> <span class="mf">0.6</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.4</span><span class="p">,</span> <span class="o">-</span><span class="n">cos</span><span class="p">(</span><span class="n">Time</span> <span class="o">*</span> <span class="mf">0.6</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.35</span><span class="p">);</span>
+
+<span class="n">float3</span> <span class="n">pixel</span> <span class="o">=</span> <span class="n">float3</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">);</span>
+
+<span class="k">for</span><span class="p">(</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">CUSTOM_NODE_SIZE</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">pixel</span> <span class="o">+=</span> <span class="n">MakeSphere</span><span class="p">(</span><span class="n">UV</span><span class="p">,</span> <span class="n">Positions</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">i</span><span class="o">*</span><span class="mf">0.05</span> <span class="o">+</span> <span class="mf">0.03</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">return</span> <span class="n">pixel</span> <span class="o">/</span> <span class="n">CUSTOM_NODE_SIZE</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>##################################
+? 스크린샷 찍는 플러그인이 버전 지원을 안해요. ㅠㅠ
+##################################</p>
+
+<dl>
+  <dt>참고자료</dt>
+  <dd><a href="https://m.blog.naver.com/checkjei/221885213673">UE4 Custom 노드 2D 메타볼</a></dd>
+</dl>
+
+<h2 id="흑정령-material">흑정령 Material</h2>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">return</span> <span class="mi">1</span><span class="p">;}</span>
+
+<span class="cm">/*
+ *  원점(origin)에 있는 구(sphere)를 고려하면 구 안쪽에 있는 점들은 원점으로 부터 거리가 반지름(radius)보다 작을 것입니다. 
+ * 구 표면상에 있는 점들은 반지름과 거리가 동일한 것이며, 구의 바깥 쪽에 있는 점들은 반지름 보다 거리들이 크게 계산됩니다.
+ */</span>
+<span class="kt">float</span> <span class="nf">SphereSDF</span><span class="p">(</span><span class="n">float2</span> <span class="n">TexCoord</span><span class="p">,</span> <span class="n">float2</span> <span class="n">Pos</span><span class="p">,</span> <span class="kt">float</span> <span class="n">radius</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="n">length</span><span class="p">(</span><span class="n">TexCoord</span> <span class="o">-</span> <span class="n">Pos</span><span class="p">)</span> <span class="o">-</span> <span class="n">radius</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cm">/*
+ * SDF를 부드럽게 더하는 역활을 합니다.
+ */</span>
+<span class="kt">float</span> <span class="n">AddObjectsSmooth</span><span class="p">(</span><span class="kt">float</span> <span class="n">SDF1</span><span class="p">,</span> <span class="kt">float</span> <span class="n">SDF2</span><span class="p">,</span> <span class="kt">float</span> <span class="n">Smoothness</span><span class="p">)</span> 
+<span class="p">{</span>
+    <span class="kt">float</span> <span class="n">t</span> <span class="o">=</span> <span class="p">((</span><span class="n">SDF1</span> <span class="o">-</span> <span class="n">SDF2</span><span class="p">)</span> <span class="o">/</span> <span class="n">Smoothness</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">k</span> <span class="o">=</span> <span class="n">clamp</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">lerp</span><span class="p">(</span><span class="n">SDF1</span><span class="p">,</span> <span class="n">SDF2</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="o">-</span> <span class="n">k</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">k</span><span class="p">)</span> <span class="o">*</span> <span class="n">Smoothness</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//SDF</span>
+<span class="k">return</span> <span class="nf">SphereSDF</span><span class="p">(</span><span class="n">TexCoord</span><span class="p">,</span> <span class="n">float2</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">));</span> 
+</code></pre></div></div>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">return</span> <span class="mi">1</span><span class="p">;}</span>
+
+<span class="cm">/*
+ * 파티클 기본위치 설정함
+ */</span>
+<span class="kt">float</span> <span class="nf">Hash12</span><span class="p">(</span><span class="n">float2</span> <span class="n">key</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="n">frac</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">dot</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">float2</span><span class="p">(</span><span class="mf">7875.541</span><span class="p">,</span> <span class="mf">3458.248</span><span class="p">)))</span> <span class="o">*</span> <span class="mf">5218.4731</span><span class="p">);</span>   
+<span class="p">}</span>
+
+<span class="cm">/*
+ *
+ */</span>
+<span class="n">float2</span> <span class="n">MakeRelativePos</span><span class="p">(</span><span class="kt">float</span> <span class="n">Hash</span><span class="p">,</span> <span class="kt">float</span> <span class="n">Time</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="cp">#define HASH_SCALE 5317
+</span>    <span class="k">return</span> <span class="n">float2</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">Hash</span> <span class="o">*</span> <span class="n">HASH_SCALE</span> <span class="o">+</span> <span class="n">Time</span> <span class="o">*</span> <span class="mf">2.0</span><span class="p">)</span> <span class="p">,</span> <span class="n">cos</span><span class="p">(</span><span class="n">Hash</span> <span class="o">*</span> <span class="n">HASH_SCALE</span> <span class="o">+</span> <span class="n">Time</span> <span class="o">*</span> <span class="mf">2.0</span><span class="p">))</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">;</span>        
+<span class="cp">#undef HASH_SCALE
+</span><span class="p">}</span>
+
+<span class="cm">/*
+ * 그리드로 원을 생성합니다.
+ * floor로 relativePos를 작성했을 때 Sphere가 셀의 경계에서 잘리기 때문에 인접한 셀도 계산하여 addObjectsSmooth해줍니다.
+ */</span>
+<span class="kt">float</span> <span class="n">MakeSphereGridSDF</span><span class="p">(</span><span class="n">float2</span> <span class="n">TexCoord</span><span class="p">,</span> <span class="kt">float</span> <span class="n">GridScale</span><span class="p">,</span> <span class="kt">float</span> <span class="n">Radius</span><span class="p">,</span> <span class="kt">float</span> <span class="n">Time</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">TexCoord</span> <span class="o">*=</span> <span class="n">GridScale</span><span class="p">;</span>
+    <span class="n">float2</span> <span class="n">GridCoord</span> <span class="o">=</span> <span class="n">floor</span><span class="p">(</span><span class="n">TexCoord</span><span class="p">);</span>
+            
+    <span class="kt">float</span> <span class="n">minSDF</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">float</span> <span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">;</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mf">1.0</span><span class="p">;</span> <span class="n">x</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">float</span> <span class="n">y</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">;</span> <span class="n">y</span> <span class="o">&lt;=</span> <span class="mf">1.0</span><span class="p">;</span> <span class="n">y</span><span class="o">++</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="kt">float</span> <span class="n">Hash</span> <span class="o">=</span> <span class="n">Hash12</span><span class="p">(</span><span class="n">GridCoord</span> <span class="o">+</span> <span class="n">float2</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">));</span>
+            <span class="kt">float</span> <span class="n">RelativePos</span> <span class="o">=</span> <span class="n">MakeRelativePos</span><span class="p">(</span><span class="n">Hash</span><span class="p">,</span> <span class="n">Time</span><span class="p">);</span>
+
+            <span class="kt">float</span> <span class="n">SDF</span> <span class="o">=</span> <span class="n">SphereSDF</span><span class="p">(</span><span class="n">TexCoord</span><span class="p">,</span> <span class="n">GridCoord</span> <span class="o">+</span> <span class="n">RelativePos</span><span class="p">,</span> <span class="n">Radius</span><span class="p">);</span>
+            <span class="n">minSDF</span> <span class="o">=</span> <span class="n">AddObjectsSmooth</span><span class="p">(</span><span class="n">minSDF</span><span class="p">,</span> <span class="n">SDF</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>        
+    <span class="k">return</span> <span class="n">minSDF</span> <span class="o">/</span> <span class="n">GridScale</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cm">/*
+ *
+ */</span>
+<span class="kt">float</span> <span class="n">MakeRadiusSphere</span><span class="p">(</span><span class="n">float2</span> <span class="n">TexCoord</span><span class="p">,</span> <span class="n">float2</span> <span class="n">Origin</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">smoothstep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">length</span><span class="p">(</span><span class="n">TexCoord</span> <span class="o">-</span> <span class="n">Origin</span><span class="p">))</span> <span class="o">-</span> <span class="mf">0.3</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="cm">/*
+ *
+ */</span>
+<span class="n">float2</span> <span class="n">MakeMovCoord</span><span class="p">(</span><span class="n">float2</span> <span class="n">TexCoord</span><span class="p">,</span> <span class="n">float2</span> <span class="n">Vector</span><span class="p">,</span> <span class="kt">float</span> <span class="n">Time</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="n">TexCoord</span> <span class="o">+</span> <span class="n">Vector</span> <span class="o">*</span> <span class="n">Time</span><span class="p">;</span>
+</code></pre></div></div>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">return</span> <span class="n">MakeSphereGridSDF</span><span class="p">(</span><span class="n">MovCoord</span><span class="p">,</span> <span class="n">GridScale</span><span class="p">,</span> <span class="n">Radius</span><span class="p">,</span> <span class="n">Time</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li><a href="https://vateran.tistory.com/52">SDF(Signed Distance Functions)</a>란 특정한 공간상의 지점(point)의 좌표를 지정해주면 점과 어떠한 표면(surface)사이의 가장 가까운 거리를 반환하는 함수입니다. 반환 되는 부호(sign)는 그 점이 표면의 안쪽(inside)인지 바깥(outside)인지를 나타냅니다.
+    <ul>
+      <li>원점(origin)에 있는 구(sphere)를 고려하면 구 안쪽에 있는 점들은 원점으로 부터 거리가 반지름(radius)보다 작을 것입니다. 구 표면상에 있는 점들은 반지름과 거리가 동일한 것이며, 구의 바깥 쪽에 있는 점들은 반지름 보다 거리들이 크게 계산됩니다.</li>
+      <li>SDF = Sphere - Radius</li>
+    </ul>
+  </li>
+  <li>smoothstep은</li>
+</ul>
+
+<dl>
+  <dt>참고자료</dt>
+  <dd><a href="https://m.blog.naver.com/PostView.naver?blogId=checkjei&amp;logNo=221890054685&amp;navType=by">지산 흑정령? 머티리얼</a>
+, <a href="https://www.shadertoy.com/view/WdtXz2">Moving ink</a></dd>
+</dl>
+
+:ET

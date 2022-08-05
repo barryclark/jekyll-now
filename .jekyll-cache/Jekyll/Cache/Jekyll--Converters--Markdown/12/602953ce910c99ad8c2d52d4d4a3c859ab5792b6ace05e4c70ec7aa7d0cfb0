@@ -1,0 +1,126 @@
+I"O<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="https://markdownmonster.west-wind.com/docs/_5ef0x96or.htm">mermaid…</a></li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />이미지 불러오기…</p>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />다른 문서에서 해당 문서의 참조를, 링크가 아닌, 태그에 따라 다르게 설명하도록 하기
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />마크다운에 HTML if문 적용하기</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />지킬 조각파일, 그리고 include에 태그 붙이기</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />태그별 LOD에 따라, 설명하는 깊이를 다르게 표시하기</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="jekyll-지킬-깃-블로그">Jekyll (지킬, 깃 블로그)</h1>
+
+<blockquote>
+  <p>제일 중요하다고 생각하는 것은, VSC에서 우측 상단에 Preview 사용하기
+일단 재미있어야 하기 때문에.</p>
+</blockquote>
+
+<ul>
+  <li><a href="https://jekyllrb-ko.github.io/docs/">Jekyll Doc</a></li>
+</ul>
+
+<details><summary>코드 블럭이 더블 프레임으로 표시되는 경우</summary>
+<div>
+
+    <p><a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll">Testing your GitHub Pages site locally with Jekyll</a></p>
+
+  </div></details>
+
+<h2 id="markdown">Markdown</h2>
+
+<ul>
+  <li><a href="https://www.markdownguide.org/basic-syntax/#code">기초 문법</a></li>
+  <li><a href="https://mermaid-js.github.io/mermaid/#/">mermaid</a> (다이어 그램을 그리는 용도)</li>
+  <li><a href="https://katex.org/docs/supported.html">math</a> (수식을 그리는 용도)</li>
+</ul>
+
+<details><summary>코드 블럭이 더블 프레임으로 표시되는 경우</summary>
+<div>
+
+    <p><strong><a href="https://stackoverflow.com/questions/55308142/why-do-i-get-a-double-frame-around-markdown-code-block-on-jekyll-site">Why do I get a double frame around markdown code block on Jekyll site?</a></strong></p>
+
+    <p>BEFORE:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.highlight{
+    ...
+    overflow: scroll;
+    ...
+} 
+</code></pre></div>    </div>
+    <p>AFTER:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pre.highlight{
+    ...
+    overflow: auto;
+    ...
+} 
+</code></pre></div>    </div>
+
+  </div></details>
+
+<details><summary>마크다운으로 이미지 넣기</summary>
+<div>
+<br />
+
+```
+![Image](/images/404.jpg)
+```
+
+![Image](/images/404.jpg)
+
+* !표 뒤에 띄어씌기 없습니다.
+
+</div></details>
+
+<details><summary>상대경로는 안되나?</summary>
+<div>
+<br />
+
+상대경로도 작동합니다. 다만, 폴더를 옮기면 링크가 깨지므로(고난이 예상되므로) 위의 방식을 이용하도록 합니다.
+
+```
+![Image](../images/404.jpg)
+```
+
+![Image](../images/404.jpg)
+
+</div></details>
+
+<details><summary>수식 표현하기</summary>
+<div>
+<br />
+
+[How to show math equations in general github's markdown(not github's blog)](https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog)에서 설명한 내용은 하나같이 불편합니다... (10년전 내용이기 때문에)
+
+아래로 내려가다 보면, \$를 이용해서 수식을 표현할 수 있다고 합니다.
+```
+It is officially supported since May 2022
+
+Render mathematical expressions in Markdown
+You can now use LaTeX style syntax to render math expressions within Markdown inline (using $ delimiters) or in blocks (using $$ delimiters).
+```
+
+</div></details>
+
+<h3 id="html">HTML</h3>
+<ul>
+  <li><a href="https://www.w3schools.com/html/default.asp">HTML Tutorial</a></li>
+  <li><a href="https://www.w3schools.com/tags/default.asp">HTML Reference</a></li>
+</ul>
+
+<h4 id="django">django</h4>
+<p>HTML 은 기본적으로 정적인 언어입니다. 작성해놓고 나면, 동적으로 무언가를 변경하거나 수정할 수 없죠. 그런 HTML 의 한계를 극복하기 위해 사용하는 것이 django 의 템플릿 기능입니다.</p>
+
+<ul>
+  <li><a href="https://docs.djangoproject.com/en/3.2/topics/templates/#the-django-template-language">Diango</a></li>
+</ul>
+
+<details><summary>html에서 if문 사용하기</summary>
+&lt;/div markdown="1"&gt;
+
+[Conditional logic](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_conditional_logic.html)
+
+&lt;/div&gt;</details>
+:ET

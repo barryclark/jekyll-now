@@ -1,0 +1,41 @@
+I"�	<h2 id="animation-notify">Animation notify</h2>
+<p>애니메이션 프로그래머는 Animation Notification 또는 AnimNotify 줄여서 그냥 Notify를 통해 애니메이션 시퀀스 도중의 특정 지점에 이벤트가 발생하도록 구성할 수 있습니다. 노티파이는 걷기나 달리기 도중의 발소리같은 이펙트 추가 빝 애니메이션 도중 파티클 시스템을 스폰시키는 데 주로 사용됩니다. 하지만 커스텀 노티파이 유형으로 시스템을 확장시켜 어떤 유형의 게임 요구에도 맞출 수 있기에 다른 식으로도 얼마든지 사용할 수 있습니다.</p>
+
+<ul>
+  <li>애니메이션에 노티파이 추가는 언리얼 엔진 애니메이션 노티파이 문서에</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">UCLASS</span><span class="p">()</span>
+<span class="k">class</span> <span class="nc">UNewAnimNotify</span> <span class="o">:</span> <span class="k">public</span> <span class="n">UAnimNotify</span>
+<span class="p">{</span>
+    <span class="n">GENERATED_BODY</span><span class="p">()</span>
+
+<span class="nl">public:</span>
+    <span class="k">virtual</span> <span class="n">FString</span> <span class="n">GetNotifyName_Implementation</span><span class="p">()</span> <span class="k">const</span> <span class="k">override</span><span class="p">;</span>
+<span class="nl">private:</span>
+    <span class="kt">void</span> <span class="n">Notify</span><span class="p">(</span><span class="n">USkeletalMeshComponent</span><span class="o">*</span> <span class="n">MeshComp</span><span class="p">,</span> <span class="n">UAnimSequenceBase</span><span class="o">*</span> <span class="n">Animation</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>/Engine/Source/Runtime/Engine/Classes/Animation/AnimNotifies/AnimNotify.h</li>
+</ul>
+
+<p>? 애니메이션 노티파이를 어떻게 써야 하는가?</p>
+
+<p>모르는 것들.</p>
+
+<h1 id="clothing-simulation-notify">Clothing simulation notify</h1>
+
+<h1 id="particle-effect">Particle effect</h1>
+
+<h1 id="sound-play">Sound play</h1>
+
+<h1 id="reset-anim-dynamics">Reset Anim dynamics</h1>
+<p>Anim dynamics가 뭡니까?</p>
+
+<h2 id="notify-state">Notify state</h2>
+
+<p>언리얼 애니메이션 노티파이 <br />
+https://docs.unrealengine.com/4.26/ko/AnimatingObjects/SkeletalMeshAnimation/Sequences/Notifies/</p>
+:ET

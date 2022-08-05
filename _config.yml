@@ -111,3 +111,12 @@ collections:
   posts_unreal_engine:
     output: true
 
+# Plugins (previously gems:)
+plugins:
+  - jekyll-coffeescript
+  - jekyll-default-layout
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-relative-links

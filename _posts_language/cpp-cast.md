@@ -3,9 +3,6 @@ layout: post
 title: cpp cast
 ---
 
-- [ ] 정리하기전에, 도대체 이 정리가 맞는건가 틀린건가 모르겠다아...
-- [ ] 명시적 형식 변환 연산자는 생성자인가?
-
 <details open><summary>컴퓨터 프로세서에 따른 자료형 크기</summary>
 <div markdown="1">
 
@@ -58,6 +55,10 @@ graph LR
 StandardConversion--->SecondStandardConversion
 
 ```
+
+[Casting](https://docs.microsoft.com/en-us/cpp/cpp/casting?view=msvc-170)
+
+
 
 # standard conversion (표준 변환)
 C++ 언어에서는 **기본 형식 간의 변환을 정의합니다. 또한 포인터, 참조 및 멤버 포인터 파생 형식에 대한 변환도 정의합니다.** 이러한 변환을 표준 변환이라고 합니다.

@@ -1,0 +1,476 @@
+I"cv<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />디버그…</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />콘솔오올….</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="https://docs.unrealengine.com/4.27/ko/ProgrammingAndScripting/GameplayDebugger/">게임플레이 디버거</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />언리얼 콘솔, 디버그, 로그 활용 예시들…</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="https://docs.unrealengine.com/5.0/ko/network-debugging-for-unreal-engine/">네트워크 디버깅</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />로그 카테고리….</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />더 낮은 수준의 코드가 컴파일 되지 않는다고 했는데, 뭔소리 인지 잘모르겠음. UBT에서 하는게 아니라면, static_assert 말하는거 같은데, 조금더 이해해야 함.</li>
+</ul>
+
+<h2 id="언리얼의-로그ue_log">언리얼의 로그(UE_LOG)</h2>
+
+<p><a href="http://wiki.hash.kr/index.php/%EB%A1%9C%EA%B7%B8_(%EC%BB%B4%ED%93%A8%ED%84%B0)">로그(log)는 컴퓨터의 처리 내용이나 이용 상황을 시간의 흐름에 따른 기록입니다.</a></p>
+
+<p>로깅은 런타임 중 특정 시간에 이벤트, 함수 호출, 변수 값 등을 순서대로 기록하는 것을 의미합니다. 이는 일반적으로 로그 파일에 텍스트 형태로 저장됩니다. 특정 순간에 코드가 수행하는 작업에 대한 자세한 정보를 제공할 수 있으므로 특히 디버깅할 때 소프트웨어 개발자에게 귀중한 도구입니다. 좋은 사용 사례에는 특정 코드 블록이 실행되고 있는지 확인하고, 함수 간에 전달되는 데이터 값을 검사하고, 잠재적인 문제를 보고하는 것이 포함됩니다.</p>
+
+<details><summary>UE_LOG 매크로란?</summary>
+<div>
+
+    <p>UE_LOG는 로그 메시지를 로그 파일에 출력 하는 매크로 입니다. <code class="language-plaintext highlighter-rouge">CoreGlobals.h</code>에 정의된 이러한 범주 중 상당수가 이미 엔진에 내장되어 있습니다. 사용자 정의 로깅 카테고리를 생성할 수도 있습니다.</p>
+
+    <p><strong>CategoryName는 로깅 카테고리 이름입니다. Verbosity는 테스트할 자세한 표시 수준입니다.</strong></p>
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#define UE_LOG(CategoryName, Verbosity, Format, ...) \
+</span></code></pre></div>    </div>
+
+    <p><strong>Formatting하는 tmxmflddms TCHAR 배열이여야 합니다. 그리고 Verbosity는 상수여야 하며 유요한 범위 안에 있어야 합니다.</strong></p>
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	<span class="p">{</span> \
+		<span class="k">static_assert</span><span class="p">(</span><span class="n">TIsArrayOrRefOfType</span><span class="o">&lt;</span><span class="k">decltype</span><span class="p">(</span><span class="n">Format</span><span class="p">),</span> <span class="n">TCHAR</span><span class="o">&gt;::</span><span class="n">Value</span><span class="p">,</span> <span class="s">"Formatting string must be a TCHAR array."</span><span class="p">);</span> \
+		<span class="k">static_assert</span><span class="p">((</span><span class="n">ELogVerbosity</span><span class="o">::</span><span class="n">Verbosity</span> <span class="o">&amp;</span> <span class="n">ELogVerbosity</span><span class="o">::</span><span class="n">VerbosityMask</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">ELogVerbosity</span><span class="o">::</span><span class="n">NumVerbosity</span> <span class="o">&amp;&amp;</span> <span class="n">ELogVerbosity</span><span class="o">::</span><span class="n">Verbosity</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"Verbosity must be constant and in range."</span><span class="p">);</span> \
+</code></pre></div>    </div>
+
+    <ol>
+      <li><strong>해당 로그의 Verbosity가 <code class="language-plaintext highlighter-rouge">COMPILED_IN_MINIMUM_VERBOSITY</code>보다 작고,</strong></li>
+      <li>LogCategoryCategoryName의 CompileTimeVerbosity가 경고보다 크다면</li>
+    </ol>
+
+    <p>Verbosity에 따라 해당 로그를 출력할지 말지를 결정합니다.</p>
+
+    <ul>
+      <li>안전을 위해 모든 코드 분석(Code analysis) 매크로를 빈 매크로로 정의합니다. <code class="language-plaintext highlighter-rouge">CA_CONSTANT_IF</code>는 ‘if’로 확장합니다.</li>
+      <li><code class="language-plaintext highlighter-rouge">COMPILED_IN_MINIMUM_VERBOSITY</code>매크로는 정의되어 있지 않으면 VeryVerbose로 확장합니다.
+        <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="n">CA_CONSTANT_IF</span><span class="p">((</span><span class="n">ELogVerbosity</span><span class="o">::</span><span class="n">Verbosity</span> <span class="o">&amp;</span> <span class="n">ELogVerbosity</span><span class="o">::</span><span class="n">VerbosityMask</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">ELogVerbosity</span><span class="o">::</span><span class="n">COMPILED_IN_MINIMUM_VERBOSITY</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">ELogVerbosity</span><span class="o">::</span><span class="n">Warning</span> <span class="o">&amp;</span> <span class="n">ELogVerbosity</span><span class="o">::</span><span class="n">VerbosityMask</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">FLogCategory</span><span class="err">##</span><span class="n">CategoryName</span><span class="o">::</span><span class="n">CompileTimeVerbosity</span><span class="p">)</span> \
+      <span class="p">{</span> \
+</code></pre></div>        </div>
+      </li>
+    </ul>
+
+    <p>로그 카테고리의 Verbosity보다 작아야 (ex) Fatal &lt; Display) <strong>카테고리에 의해 로그출력이 억제되지 않고 출력됩니다.</strong></p>
+
+    <ul>
+      <li>이 로그 카테고의 Verbosity는 런타임중에 바꿀 수 있습니다.
+        <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>          <span class="n">UE_LOG_EXPAND_IS_FATAL</span><span class="p">(</span><span class="n">Verbosity</span><span class="p">,</span> <span class="n">PREPROCESSOR_NOTHING</span><span class="p">,</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">CategoryName</span><span class="p">.</span><span class="n">IsSuppressed</span><span class="p">(</span><span class="n">ELogVerbosity</span><span class="o">::</span><span class="n">Verbosity</span><span class="p">)))</span> \
+          <span class="p">{</span> \
+</code></pre></div>        </div>
+      </li>
+    </ul>
+
+    <p>그 다음 로그를 실행하는 코드가 있습니다.</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>				auto UE_LOG_noinline_lambda = [](const auto&amp; LCategoryName, const auto&amp; LFormat, const auto&amp;... UE_LOG_Args) FORCENOINLINE \
+				{ \
+					TRACE_LOG_MESSAGE(LCategoryName, Verbosity, LFormat, UE_LOG_Args...) \
+					UE_LOG_EXPAND_IS_FATAL(Verbosity, \
+						{ \
+							FMsg::Logf_Internal(UE_LOG_SOURCE_FILE(__FILE__), __LINE__, LCategoryName.GetCategoryName(), ELogVerbosity::Verbosity, LFormat, UE_LOG_Args...); \
+							_DebugBreakAndPromptForRemote(); \
+							FDebug::ProcessFatalError(); \
+						}, \
+						{ \
+							FMsg::Logf_Internal(nullptr, 0, LCategoryName.GetCategoryName(), ELogVerbosity::Verbosity, LFormat, UE_LOG_Args...); \
+						} \
+					) \
+				}; \
+				UE_LOG_noinline_lambda(CategoryName, Format, ##__VA_ARGS__); \
+				UE_LOG_EXPAND_IS_FATAL(Verbosity, CA_ASSUME(false);, PREPROCESSOR_NOTHING) \
+			} \
+		} \
+	}
+</code></pre></div>    </div>
+
+    <ul>
+      <li>Play-In-Editor 세션이 종료되면 YourProjectName\Saved\Logs 폴더에서 해당 세션의 전체 로그를 찾을 수 있습니다. 액세스해야 하는 경우를 대비하여 이전 세션의 로그도 거기에 있습니다. 프로젝트가 어디에 있는지 모르는 경우 Epic Games 런처에서 프로젝트 라이브러리를 열고 해당 프로젝트를 마우스 오른쪽 버튼으로 클릭한 다음 폴더에 표시 옵션을 선택할 수 있습니다.</li>
+      <li>Output Log 탭의 Editor에서 재생하는 동안 실시간으로 로그 출력을 볼 수 있습니다. 기본적으로 열려 있지 않으면 창-&gt;개발자 도구-&gt;출력 로그에서 찾을 수 있습니다. 실시간 로깅 외에도 이 탭은 현재 언리얼 에디터 세션 동안 발생한 모든 플레이 세션의 모든 로그 정보를 보관합니다.</li>
+      <li>실행 파일이 있는 경우 이름 끝에 -Log를 사용하여 바로 가기를 만들어 실행 파일을 시작할 때 로그를 열 수 있습니다.</li>
+      <li>게임이 실행 중일 때 물결표(~) 키를 눌러 콘솔을 열고 콘솔 명령 showlog를 입력하고 Enter 키를 눌러 로그에 액세스할 수 있습니다. 에디터 내 플레이 세션 중에 이 작업을 수행하는 경우 x를 클릭하여 로그를 닫으면 언리얼 에디터 세션이 닫힙니다.</li>
+    </ul>
+
+  </div></details>
+
+<details><summary>로그 카테고리</summary>
+<div>
+
+    <p><strong>부정확합니다.</strong></p>
+
+    <p>Verbosity레벨을 조절하는 방법으로 게임의 구성 디렉토리에서 DefaultEngine.ini를 편집하고 아래와 같이 섹션을 찾아 다음을 추가할 수 있습니다.</p>
+
+    <div class="language-ini highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">[Core.Log]</span>
+<span class="py">LogActor</span><span class="p">=</span><span class="s">VeryVerbose ; (또는 Verbose, Log, Warning 등)</span>
+</code></pre></div>    </div>
+
+  </div></details>
+
+<details><summary>로그 상세(Verbosity)란?</summary>
+<div>
+
+    <p>verbose 란 사전적 의미로 “말 수가 많다” 라고 합니다. 상세한 로깅 logging 을 출력할지 말지를 조정하는 parameter 라고 볼 수 있습니다.</p>
+
+    <p>런타임 상세도는 명령줄을 통해 변경할 수 있습니다. 로그의 특정 상세 수준이 주어지면 일치하거나 더 낮은 상세 수준의 로그 메시지만 로그에 인쇄됩니다. 상세 수준이 더 높은 메시지는 무시됩니다.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Verbosity Level</th>
+          <th>Printed in Console?</th>
+          <th>Printed in Editor’s Log?</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fatal</td>
+          <td>Yes</td>
+          <td>N/A</td>
+          <td>Crashes the session, even if logging is disabled</td>
+        </tr>
+        <tr>
+          <td>Error</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Log text is coloured red</td>
+        </tr>
+        <tr>
+          <td>Warning</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Log text is coloured yellow</td>
+        </tr>
+        <tr>
+          <td>Display</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Log text is coloured grey</td>
+        </tr>
+        <tr>
+          <td>Log</td>
+          <td>No</td>
+          <td>Yes</td>
+          <td>Log text is coloured grey</td>
+        </tr>
+        <tr>
+          <td>Verbose</td>
+          <td>No</td>
+          <td>No</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>VeryVerbose</td>
+          <td>No</td>
+          <td>No</td>
+          <td> </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div></details>
+
+<details><summary>로그 출력하기</summary>
+<div>
+
+    <p>로그를 출력할 수 있으며 TEXT(““)에 서식 지정자를 이용하여 해당 자료형에 맞는 데이터를 출력할 수 있습니다.</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">UE_LOG</span><span class="p">(</span><span class="n">LogClass</span><span class="p">,</span> <span class="n">Log</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"Log text."</span><span class="p">));</span>
+</code></pre></div>    </div>
+
+    <ul>
+      <li>LogClass는 로그 카테고리 입니다.</li>
+      <li>Log는 상세도이며 ELogVerbosity Enum에 정의됩니다.</li>
+      <li>다음 인수는 출력하고자 하는 텍스트로 파라미터 마크업 포함입니다.</li>
+    </ul>
+
+    <details><summary>로그 출력을 위한 포멧은?</summary>
+<div>
+
+        <!-- Log Formatting : Formatting이 뭘까?-->
+
+        <table>
+          <thead>
+            <tr>
+              <th style="text-align: center">자료형</th>
+              <th>방법</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: center">Default</td>
+              <td>UE_LOG(LogTemp, Log, TEXT(“Log Message”));</td>
+            </tr>
+            <tr>
+              <td style="text-align: center">Fstring</td>
+              <td>UE_LOG(LogTemp, Log, TEXT(“FString : %s”), *FString);</td>
+            </tr>
+            <tr>
+              <td style="text-align: center">FName</td>
+              <td>Name-&gt;ToString()으로 FString을 받아온 후 FString을 로그로 출력합니다.</td>
+            </tr>
+            <tr>
+              <td style="text-align: center">bool</td>
+              <td>UE_LOG(LogTemp, Log, TEXT(“Bool : %s”), bValue ? TEXT(“true”) : TEXT(“false”));</td>
+            </tr>
+            <tr>
+              <td style="text-align: center">int</td>
+              <td>UE_LOG(LogTemp, Log, TEXT(“Int : %d”), intValue);</td>
+            </tr>
+            <tr>
+              <td style="text-align: center">float</td>
+              <td>UE_LOG(LogTemp, Log, TEXT(“Float : %f”), floatValue);</td>
+            </tr>
+            <tr>
+              <td style="text-align: center">FVector</td>
+              <td>UE_LOG(LogTemp, Log, TEXT(“FVector : %s”), *Vector().ToString());</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <ul>
+          <li>로그에서 %s는 <code class="language-plaintext highlighter-rouge">TCHAR*</code> 타입을 받습니다. 이는 <code class="language-plaintext highlighter-rouge">*FString</code>로 받아올 수 있도록 선언되어 있습니다.
+            <ul>
+              <li>추가적으로 FString클래스는 TCHAR의 Array로 만들어져 있습니다. 인코딩 변환 매크로는 아키텍쳐의 FString문서에서 읽을 수 있습니다.</li>
+            </ul>
+          </li>
+        </ul>
+
+      </div></details>
+
+  </div></details>
+
+<details><summary>커스텀 로그 카테고리 선언하기</summary>
+<div>
+
+    <p>커스텀 로그 카테고리(Custom Log Category)는 언리얼 엔진에서 제공하는 로그 카테고리 이외에 개발자가 필요한 카테고리를 직접 만들어서 사용할 수 있습니다.</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// header</span>
+<span class="n">MODULE_API</span> <span class="n">DECLARE_LOG_CATEGORY_EXTERN</span><span class="p">(</span><span class="n">CategoryName</span><span class="p">,</span> <span class="n">DefaultVerbosity</span><span class="p">,</span> <span class="n">CompileTimeVerbosity</span><span class="p">)</span>
+</code></pre></div>    </div>
+
+    <p>MODULE_API는 모듈외부에서 해당 로그 카테고리사용하기 위해서 사용합니다.</p>
+
+    <p>DefaultVerbosity는 .ini 파일이나 명령줄에 지정되지 않은 경우 사용되는 자세한 표시 수준입니다. 이보다 더 자세한 내용은 기록되지 않습니다.</p>
+
+    <p>CompileTimeVerbosity 는 코드에서 컴파일할 최대 상세 정보입니다. <strong>이보다 더 자세한 것은 컴파일되지 않습니다.</strong></p>
+
+    <ul>
+      <li>흠… 잘모르겠음.</li>
+    </ul>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// cpp</span>
+<span class="n">DEFINE_LOG_CATEGORY</span><span class="p">(</span><span class="n">LogName</span><span class="p">);</span>
+</code></pre></div>    </div>
+
+    <ul>
+      <li>일반적으로 Log를 접두사로 붙이지만 필수 사항은 아닙니다.</li>
+    </ul>
+
+  </div></details>
+
+<details><summary>콘솔 커멘드</summary>
+<div>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: center">Logging Commands</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center">showlog</td>
+          <td>will toggle output terminal</td>
+        </tr>
+        <tr>
+          <td style="text-align: center">Log list</td>
+          <td>list all log categories</td>
+        </tr>
+        <tr>
+          <td style="text-align: center">Log list [string]</td>
+          <td>list all log categories containing a substring</td>
+        </tr>
+        <tr>
+          <td style="text-align: center">Log reset</td>
+          <td>reset all log categories to their boot-time default</td>
+        </tr>
+        <tr>
+          <td style="text-align: center">Log [cat]</td>
+          <td>toggle the display of the category [cat]</td>
+        </tr>
+        <tr>
+          <td style="text-align: center">Log [cat] off</td>
+          <td>disable display of the category [cat]</td>
+        </tr>
+        <tr>
+          <td style="text-align: center">Log [cat] on</td>
+          <td>resume display of the category [cat]</td>
+        </tr>
+        <tr>
+          <td style="text-align: center">Log [cat] [level]</td>
+          <td>set the verbosity level of the category [cat]</td>
+        </tr>
+        <tr>
+          <td style="text-align: center">Log [cat] break</td>
+          <td>toggle the debug break on display of the category [cat]</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Command line to stream log output to file</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-log LOG=Logfile.txt
+</code></pre></div>    </div>
+
+    <p>Log categories to separate files</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-LogCategoryFiles="Category1=Filename1, Category2=Filename2"
+</code></pre></div>    </div>
+
+  </div></details>
+
+<h2 id="언리얼-디버그debug">언리얼 디버그(Debug)</h2>
+<p><a href="http://wiki.hash.kr/index.php/%EB%94%94%EB%B2%84%EA%B9%85">디버깅(debugging)이란 프로그램 개발의 마지막 단계에서 프로그램의 오류를 발견하고 그 원인을 밝히는 작업 과정을 말합니다.</a></p>
+
+<ul>
+  <li>엄밀히 말하면 런타임 중에 화면에 메시지를 인쇄하는 것은 메시지가 파일에 저장되지 않기 때문에 로깅으로 간주되지 않습니다.</li>
+  <li>로그에 대해 별도의 창을 열지 않고도 게임 창에서 메시지를 볼 수 있으므로 개발 및/또는 디버깅할 때 로그 메시지를 사용하는 것보다 더 편리한 경우가 많습니다. 실시간 변수 값부터 함수 호출 순서까지 모든 것을 이런 식으로 쉽게 볼 수 있습니다.</li>
+</ul>
+
+<details><summary>스크린에 메시지 띄우기</summary>
+<div>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">GEngine</span><span class="o">-&gt;</span><span class="n">AddONScreenDebugMessage</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mf">5.</span><span class="n">f</span><span class="p">,</span> <span class="n">FColor</span><span class="o">::</span><span class="n">White</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"Test!"</span><span class="p">));</span>
+</code></pre></div>    </div>
+
+    <ul>
+      <li>\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h에 있으며 “DrawDebugHelpers.h”로 인클루드 할 수 있습니다.</li>
+    </ul>
+
+  </div></details>
+
+<details><summary>디버그 드로잉 사용하기</summary>
+<div>
+
+    <p>화면상에 원하는 도형을 그려, 디버깅을 수월하게 도와줍니다.</p>
+
+    <ul>
+      <li>\Engine\Source\Runtime\Engine\Public\ <code class="language-plaintext highlighter-rouge">DrawDebugHelpers.h</code>에 선언되어 있습니다.</li>
+    </ul>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">...</span> <span class="n">include</span>
+<span class="cp">#include</span> <span class="cpf">"DrawDebugHelpers.h"</span><span class="cp">
+</span>
+    <span class="p">...</span> <span class="n">func</span>
+<span class="cp">#if ENABLE_DRAW_DEBUG
+</span>    <span class="n">DrawDebugCapsule</span><span class="p">(...);</span>
+<span class="cp">#endif
+</span>    
+</code></pre></div>    </div>
+  </div></details>
+
+<details><summary>디버그 하지 않을 경우, 디버그 코드는 어떻게 되나</summary>
+<div>
+
+    <p><code class="language-plaintext highlighter-rouge">UE_DEBUG</code>가 선언되어 있을 떄, 유효한 함수를, 선언되어 있지 않다면, 비어있는 함수를 호출합니다.</p>
+
+    <p>함수는 <code class="language-plaintext highlighter-rouge">FORCEINLINE</code>이므로 비어있는 함수는, 아무런 어셈블리 코드를 만들지 않습니다.</p>
+
+    <p>따라서, 디버그 코드를 숨기기 위해서 <code class="language-plaintext highlighter-rouge">#if, #endif</code>를 할 필요가 없습니다. 다만, 연산한 정보를 전달할 경우, 감쌀 필요가 있을 수도 있습니다.</p>
+
+    <!-- 키워드? 매크로? 어트리뷰트? 용어가 무지하게 헷갈리네...-->
+    <!-- 비어있는 함수를 forceinline했을 때, 어떻게 되는지에 대해서-->
+
+  </div></details>
+
+<h2 id="언리얼의-콘솔console">언리얼의 콘솔(Console)</h2>
+<p><a href="http://wiki.hash.kr/index.php/%EC%BD%98%EC%86%94">콘솔(console)은 관리자가 시스템의 상태를 확인하고 업무를 처리하기 위해 사용하는 특수한 기능의 단말 장치를 말합니다.</a></p>
+
+<details><summary>콘솔 매니저, 변수, 명령</summary>
+<div>
+
+    <p><a href="https://docs.unrealengine.com/4.27/ko/ProductionPipelines/DevelopmentSetup/Tools/ConsoleManager/">콘솔 매니저</a>에서 <strong>콘솔 명령과 변수를 등록하는 것으로 자동 완성과 Enum을 통해 콘솔 오브젝트 전체 목록을 구할 수 있습니다.</strong> 콘솔 변수에는 이름이 있어 콘솔에 이름을 입력하기 시작하면 자동 완성 기능이 지원됩니다.</p>
+
+    <p><strong>콘솔 변수란 엔진 측면의 state를 저장하는 단순 데이터</strong>입니다. 사용자가 state를 읽고 설정할 수 있습니다.</p>
+
+    <p>콘솔 명령이란 사용자가 입력한 무자열을 엔진에 전송하여, 엔진이 어떤 식으로 반응하는 것을 말합니다. 콘솔 변수는 콘솔을 통해 변경할 수 있는 몇몇 상태를 추가적으로 저장합니다.</p>
+
+  </div></details>
+
+<details><summary>콘솔 변수 생성/등록하기</summary>
+<div>
+
+    <ul>
+      <li>변수는 엔진이 생성되는 초기에 등록해 줘야 합니다.</li>
+      <li>필요하다면 함수 안에 선언할 수 있습니다.</li>
+    </ul>
+
+    <p>*.h</p>
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">"HAL/IConsoleManager.h"</span><span class="cp">
+</span><span class="p">...</span>
+
+<span class="cp">#if !NO_CVARS
+</span>
+<span class="c1">// consol 변수 선언</span>
+<span class="c1">// Name true/false로 설정 가능</span>
+<span class="k">extern</span> <span class="n">TAutoConsoleVariable</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="n">DebugDraw</span><span class="p">(</span><span class="n">TEXT</span><span class="p">(</span><span class="s">"Name"</span><span class="p">),</span> <span class="nb">false</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"Help"</span><span class="p">),</span> <span class="n">ECVF_Default</span><span class="p">);</span>
+
+<span class="cp">#endif
+</span></code></pre></div>    </div>
+
+    <p>*.cpp</p>
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#if !NO_CVARS
+</span>
+<span class="n">FAutoConsoleCommand</span> <span class="nf">CCmd_HorrorEvent_PrintConsoleState</span><span class="p">(</span>
+    <span class="n">TEXT</span><span class="p">(</span><span class="s">"Name"</span><span class="p">),</span>
+    <span class="n">TEXT</span><span class="p">(</span><span class="s">"Help"</span><span class="p">),</span>
+    <span class="n">FConsoleCommandWithArgsDelegate</span><span class="o">::</span><span class="n">CreateLambda</span><span class="p">([](</span><span class="k">const</span> <span class="n">TArray</span><span class="o">&lt;</span><span class="n">FString</span><span class="o">&gt;&amp;</span> <span class="n">Params</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="p">...</span>
+        <span class="p">}),</span>
+    <span class="n">ECVF_Default</span><span class="p">);</span>
+
+<span class="cp">#endif
+</span></code></pre></div>    </div>
+
+  </div></details>
+
+<details><summary>콘솔 변수 활용하기</summary>
+<div>
+
+    <p>애셋의 프로퍼티항목은 에디터 안에서 수정할 수 있지만, 그 외의 기능에서는 콘솔 변수와 콘솔 명령어를 활용해야 합니다. <strong>개발 단계에서 코드 수정없이 디테일한 값을 설정하거나 테스트를 하기에 유용합니다. 콘솔 명령어의 델리게이트 종류와 플래그 값의 종류 등 세세한 항목은 엔진 코드나 언리얼 문서를 통해서 확인할 수 있습니다.</strong></p>
+
+    <p>Getter함수를 사용해서 콘솔 변수를 받을 수 있지만, 다음의 방법으로도 가능합니다.</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#if !NO_CVARS
+</span><span class="k">static</span> <span class="k">const</span> <span class="k">auto</span> <span class="n">CVar</span> <span class="o">=</span> <span class="n">IConsoleManager</span><span class="o">::</span><span class="n">Get</span><span class="p">().</span><span class="n">FindConsoleVariable</span><span class="p">(</span><span class="n">TEXT</span><span class="p">(</span><span class="s">"Name"</span><span class="p">));</span> 
+<span class="n">int32</span> <span class="n">Value</span> <span class="o">=</span> <span class="n">CVar</span><span class="o">-&gt;</span><span class="n">GetInt</span><span class="p">();</span>
+<span class="cp">#endif
+</span></code></pre></div>    </div>
+
+    <p>이렇게 하면, 변수로의 포인터를 구해서 사용하게 됩니다. 이를 통해 처음 호출될 때만 콘솔 변수를 찾게 됩니다.</p>
+
+  </div></details>
+
+<details><summary>콘솔 변수 행위와 스타일의 의도</summary>
+<div>
+
+    <ul>
+      <li>콘솔 변수는 사용자 입력을 반영하나, (MotionBlur 0/1 같은 옵션은 지원하지 않는 플랫폼이 있을 수 있기에) 시스템의 state 까지 반영하지는 않습니다.</li>
+      <li><strong>변수 state 는 코드로 변경하지 않는 것이 좋습니다. 왜냐하면 사용자가 지정한 state 가 변수에 반영되지 않으면 잘못 입력했나 혼란을 줄 수도 있고, 다른 변수의 state 때문에 콘솔 변수를 변경하지 못하게 될 수도 있기 때문입니다.</strong></li>
+      <li>항상 변수의 용도와 적정값을 설명해 주는 도움말을 작성해 주시기 바랍니다.</li>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>대부분의 콘솔 변수는 개발 전용으로만 쓰이기에, 일찍 ECVF_Cheat 옵션을 붙여 주는 것도 좋은 생각입니다. 디파인을 사용하여 피처를 컴파일에서 빼버리는 것도 더욱 좋을 수 있습니다 (예: #if !(UE_BUILD_SHIPPING</td>
+              <td> </td>
+              <td>UE_BUILD_TEST)).</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>변수 이름은 가급적 최소 길이로 하면서도 이름 자체로 설명이 되게끔 하는 것이 좋으며, 부정적인 의미는 피하는 것이 좋습니다 (나쁜 이름의 예: EnableMotionBlur, MotionBlurDisable, MBlur, HideMotionBlur). 대소문자를 적절히 사용하여 읽기 쉽고 일관되게 해 주시기 바랍니다 (예: MotionBlur).</li>
+      <li>들여쓰기의 경우 (폭이 가변적이지 않은) 고정폭 폰트로 출력한다 가정하는 것이 좋습니다.</li>
+      <li>자동 완성과 DumpConsoleCommands 및 Help 의 동작을 위해서는 엔진 초기화 도중 변수를 등록시키는 것이 중요합니다.</li>
+    </ul>
+
+    <p>더 자세한 내용은 IConsoleManager.h 를 참고해 보시기 바랍니다.</p>
+
+  </div></details>
+
+<p>주요 참고자료 : <a href="https://unrealcommunity.wiki/logging-lgpidy6i">unrealcommunity</a>, <a href="https://docs.unrealengine.com/4.27/ko/">언리얼 엔진4 문서</a>, <a href="https://ikrima.dev/ue4guide/gameplay-programming/logging-commands/">GameDevGuild</a></p>
+:ET

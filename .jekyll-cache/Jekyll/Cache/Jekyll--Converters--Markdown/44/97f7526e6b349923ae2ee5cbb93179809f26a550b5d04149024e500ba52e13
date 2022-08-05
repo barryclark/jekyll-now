@@ -1,0 +1,118 @@
+I"<h1 id="분할-정복-알고리즘divide-and-conquer">분할 정복 알고리즘(Divide and conquer)</h1>
+
+<p>그대로 해결할 수 없는 커다란 문제를 작은 문제로 분할하여 문제를 해결해 나가는 방법론으로,
+재귀호출을 사용합니다.</p>
+
+<h2 id="합병-정렬-알고리즘-merge-sort">합병 정렬 알고리즘 (Merge sort)</h2>
+<p>정렬할 배열을 더 이상 나눠질 수 없는 배열로 나누어(Divide) 
+배열 단위별로 정렬(Conquer)해 나가는 알고리즘 입니다.
+존 폰 노이만에 의해 1945년에 개발되었습니다.</p>
+
+<p>#define MAX …
+int tempArray[MAX];</p>
+
+<p>void merge(int array[], int left, int mid, int right)
+{ <br />
+    // compare and insert 
+    int leftIndex = left; <br />
+    int rightIndex = mid + 1;
+    int tempIndex = left;   <br />
+    while (leftIndex &lt;= mid &amp;&amp; rightIndex &lt;= right) <br />
+    { <br />
+        if (array[leftIndex] &lt;= array[rightIndex]) <br />
+            tempArray[tempIndex++] = array[leftIndex++]; <br />
+        else <br />
+           tempArray[tempIndex++] = array[rightIndex++]; <br />
+    }</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// insert the rest   
+if (leftIndex &gt; mid)   
+{   
+    while(rightIndex &lt;= right)   
+        tempArray[tempIndex++] += list[rightIndex++];    
+}   
+else    
+{   
+    while(leftIndex &lt;= mid)   
+        tempArray[tempIndex++] += list[leftIndex++];     
+}   
+
+// copy tempArray to array   
+for (int i = left; i &lt;= right; i++)   
+{   
+   array[i] = tempArray[i];   
+}    }   
+</code></pre></div></div>
+
+<p>void merge_sort(int array[], int left, int right) <br />
+{ <br />
+    if (left &lt; right) <br />
+    { <br />
+        int mid = (left + right) / 2;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    // partition   
+    merge_sort(list, left, mid);   
+    merge_sort(list, mid + 1, right);   
+
+    // merge   
+    merge(list, left, mid, right);   
+}             }   
+</code></pre></div></div>
+
+<p>int main() <br />
+{ <br />
+   int array[MAX] = {…} <br />
+   merge_sort(array, 0, MAX - 1); <br />
+}</p>
+
+<p>이거 시간복잡도 어떻게 구해야 해요????…
+이걸 어떻게 활용한데요.</p>
+
+<h2 id="퀵-정렬-알고리즘quick-sort">퀵 정렬 알고리즘(Quick sort)</h2>
+<p>기준값 (pivod)을 두어 작으면 왼쪽, 크면 오른쪽에 배치하는 행위를 반복하는 
+Divide and conquer 방식의 정렬 알고리즘입니다.</p>
+
+<ol>
+  <li>Pivot을 기준으로 왼쪽은 left partition, 오른쪽은 right partition으로 잡습니다.</li>
+  <li>Partition의 맨 왼쪽 인덱스를 L, 오른쪽 인덱스를 R로 둡니다.</li>
+  <li>L는 정방향으로 이동하면서 원소를 차례대로 순회하되 Pivot보다 큰 수를 발견하면 멈춥니다.</li>
+  <li>R은 역방향으로 이동하면서 원소를 차례대로 순회하되 Pivot보다 작은 수를 발견하면 멈춥니다.</li>
+  <li>L과 R이 가리키는 원소들을 서로 바꿉니다.</li>
+  <li>L &gt;= R이면 순회를 멈추고 Pivot과 L(혹은 R)을 서로 바꿉니다.</li>
+  <li>Partition이 더 이상 나뉘어지지 않을 때까지 Divide and conquer 방식으로 재귀호출을 실행하면서 1~7를 반복한다.</li>
+</ol>
+
+<p>순서에 대한 정보가 없을 때 단일 요소를 선택하는 것보다 중앙값이 최적의 피벗을 더 잘 추정합니다.
+음… 이유는 몰루.</p>
+
+<p>void quickSort(int array[], const int&amp; min, const int&amp; max) <br />
+{ <br />
+    int pivotIndex = right;
+    int left = min; <br />
+    int right = pivotIndex - 1;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>while(left &lt; right)   
+{   
+    while (array[left] &lt; array[pivotIndex])   
+        ++left;   
+
+    while (array[right] &gt; array[pivotIndex])   
+        --right;   
+
+    if (left &lt; right)   
+        swap(array[left], array[right]);   
+}   
+ 
+if (left &lt; pivotIndex)   
+{   
+    swap(array[pivotIndex], array[right]);   
+    pivotIndex = right;   
+}   
+
+if (pivotIndex - min &gt; 1)   
+    quickSort(array, min, pivotIndex - 1);      
+
+if (max - pivotIndex &gt; 1)   
+    quickSort(array, pivotIndex + 1; max);    }   
+</code></pre></div></div>
+:ET
