@@ -11,11 +11,11 @@ tags: [리니지2M, 리니지2m, 연금 검색기]
 
   {% assign page = page.url | split: "/" %}
   {% assign type = page[3] %}
-  {% assign page = page[5] | decimal %}
-  {% if page == 1 %}
+  {% assign paging = page[5] | decimal %}
+  {% if paging == 1 %}
     {% assign paging = 1 %}
   {% else %}
-    {% assign paging = (page - 1) * 40 %}
+    {% assign paging = (paging - 1) * 40 %}
   {% endif %}
 
 
