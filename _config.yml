@@ -90,16 +90,7 @@ theme: jekyll-theme-slate
 # add collections
 
 collections:
-- Language
-- Algorithm_and_data_struct
-- design_pattern
-- git
-- Graphics
-- visual_studio
-- GraphicsAPI
-- Math
-- posts_CS_And_IT
-- posts_jekyll_blog
+- posts_OptimizeLife
 - posts_unreal_engine
 
 collections:
@@ -107,22 +98,8 @@ collections:
     output: true
   Algorithm_and_data_struct:
     output: true
-  design_pattern:
-    output: true
-  git:
-    output: true
-  Graphics:
-    output: true
-  visual_studio:
-    output: true
-  GraphicsAPI:
-    output: true
-  Math:
-    output: true
-  posts_CS_And_IT:
+  posts_OptimizeLife:
     output: true
   posts_unreal_engine:
-    output: true
-  posts_jekyll_blog:
     output: true
 
