@@ -3,14 +3,6 @@ layout: post
 title: Unreal engine
 ---
 
-{% with Verbosity = 1 %}
-
-벌보시티랑 상관없음
-
-{% if Verbosity>0 %}
-벌보시티 1이상
-{% endif %}
-
 <details><summary>Cpp</summary>
 <div markdown="1">
 
