@@ -1,0 +1,33 @@
+<section class="recent-wrapper">
+  <header>
+    <h1>아이템 목록</h1>
+  </header>
+
+  {% assign page = page.url | split: "/" %}
+  {% assign type = "item_" | append: page[3] %}
+  {% assign paging = page[5] | decimal %}
+  {% assign paging = (paging - 1) * 40 %}
+
+
+  <div class="recent" lang="ko">
+    <article class="post">
+      <ul>
+        {% assign list=site.data[type] %}
+        {% assign no=1 %}
+        {% for item in list in array offset:paging %}
+          {% if no == 41 %}
+            {% break %}
+          {% else %}
+            <li>
+              <a href="https://purple2m.github.io/ko/alchemist/?item={{ item.name }}">
+                <img class="thumb" src="https://wstatic-cdn.plaync.com/powerbook/l2m/icon/Icon_128/Item/Icon_{{ item.icon }}" onerror="this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';">
+                {{ item.name }}
+              </a>
+            </li>
+            {% assign no = no | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </article>
+  </div>
+</<section>
