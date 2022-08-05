@@ -10,7 +10,7 @@ tags: [리니지2M, 리니지2m, 연금 검색기]
   </header>
 
   {% assign page = page.url | split: "/" %}
-  {% assign type = page[3] %}
+  {% assign type = "item_" | append: page[3] %}
   {% assign paging = page[5] | decimal %}
   {% assign paging = (paging - 1) * 40 %}
 
@@ -18,7 +18,7 @@ tags: [리니지2M, 리니지2m, 연금 검색기]
   <div class="recent" lang="ko">
     <article class="post">
       <ul>
-        {% assign list=site.data.item_ | append: type | sort: 'id' %}
+        {% assign list=site.data | map: type | sort: 'id' %}
         {% assign no=1 %}
         {% if list.size > 1 %}
           {% for item in list in array offset:paging %}
