@@ -11,10 +11,9 @@
   {% else %}
     {% assign paging = paging | times: 40 %}
   {% endif %}
-  {{ page[5] }} / paging }}
 
-  <div class="recent" lang="ko">
-    <article class="post">
+  <div class="list" lang="ko">
+    <article class="items">
       <ul>
         {% assign list=site.data[type] %}
         {% assign no=1 %}
