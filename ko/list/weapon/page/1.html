@@ -10,6 +10,7 @@ tags: [리니지2M, 리니지2m, 연금 검색기]
   </header>
 
   {% assign page = page.url | split: "/" %}
+  {{ page[3] }}
   {% assign type = "item_" | append: page[3] %}
   {% assign paging = page[5] | decimal %}
   {% assign paging = (paging - 1) * 40 %}
