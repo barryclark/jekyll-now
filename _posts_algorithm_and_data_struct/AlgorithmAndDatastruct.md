@@ -3,33 +3,33 @@ layout: post
 title: Algorithm and Datastruct
 ---
 
+<!--
 - [ ] 알고리즘... 우선순위를 정리할 필요가 있다.
 
-<!--
 유한 시퀀스, 순서체, 순서 흠... 수학에서 순서론??
 -->
 
 <center>
 
 ```mermaid
-graph LR 
-Algorithm
-Algorithm--->DataStructs
-Algorithm--->Complexity
-Algorithm--->UsingAlgorithmAndDatastruct
+graph LR;
+Algorithm;
+Algorithm--->DataStructs;
+Algorithm--->Complexity;
+Algorithm--->UsingAlgorithmAndDatastruct;
 
-DataStructs
-DataStructs--->Algorithm
-DataStructs--->Complexity
-DataStructs--->UsingAlgorithmAndDatastruct
+DataStructs;
+DataStructs--->Algorithm;
+DataStructs--->Complexity;
+DataStructs--->UsingAlgorithmAndDatastruct;
 
-Complexity
-Complexity--->UsingAlgorithmAndDatastruct
+Complexity;
+Complexity--->UsingAlgorithmAndDatastruct;
 
-UsingAlgorithmAndDatastruct
-UsingAlgorithmAndDatastruct--->ProblemSolving
+UsingAlgorithmAndDatastruct;
+UsingAlgorithmAndDatastruct--->ProblemSolving;
 
-ProblemSolving
+ProblemSolving;
 ```
 
 </center>
