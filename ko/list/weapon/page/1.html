@@ -11,7 +11,7 @@ tags: [리니지2M, 리니지2m, 연금 검색기]
   <div class="recent" lang="ko">
     <article class="post">
       <ul>
-        {% assign list=site.data.item2 | sort: 'id' %}
+        {% assign list=site.data.weapon | sort: 'id' %}
         {% assign no=1 %}
         {% if list.size > 1 %}
           {% for item in list in array offset:41 %}
