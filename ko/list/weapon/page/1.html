@@ -8,6 +8,7 @@ tags: [리니지2M, 리니지2m, 연금 검색기]
   <header>
     <h1>아이템 목록</h1>
   </header>
+
   {% assign page = page.url | split: "/" %}
   {% assign page = page[5] | decimal %}
   {% if page == 1 %}
@@ -15,7 +16,6 @@ tags: [리니지2M, 리니지2m, 연금 검색기]
   {% else %}
     {% assign paging = (page - 1) * 40 %}
   {% endif %}
-  {{ paging }}
 
 
   <div class="recent" lang="ko">
@@ -25,14 +25,16 @@ tags: [리니지2M, 리니지2m, 연금 검색기]
         {% assign no=1 %}
         {% if list.size > 1 %}
           {% for item in list in array offset:paging %}
-            {% assign type = item.id | slice: 0, 2 %}
-            {% if type == "10" %}
-              {% if no == 41 %}
-                {% break %}
-              {% else %}
-                <li>{{ type }}|{{ no }}|{{ item.name }}</li>
-                {% assign no = no | plus: 1 %}
-              {% endif %}
+            {% if no == 41 %}
+              {% break %}
+            {% else %}
+              <li>
+                <a href="https://purple2m.github.io/ko/alchemist/?item={{ item.name }}">
+                  <img class="thumb" src="https://wstatic-cdn.plaync.com/powerbook/l2m/icon/Icon_128/Item/Icon_{{ item.icon }}" onerror="this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';">
+                  {{ item.name }}
+                </a>
+              </li>
+              {% assign no = no | plus: 1 %}
             {% endif %}
           {% endfor %}
         {% endif %}
