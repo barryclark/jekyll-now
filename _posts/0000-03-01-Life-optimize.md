@@ -3,7 +3,7 @@ layout: post
 title: Life optimize
 ---
 
-* [지킬 블로그](/OptimizeLife/Jekyll_blog)
+* [지킬 블로그](/posts_OptimizeLife/Jekyll_blog)
     - Jekyll
-* [Automation test](/OptimizeLife/TDD-Automation_test)
+* [Automation test](/posts_OptimizeLife/TDD-Automation_test)
     - Jekyll
