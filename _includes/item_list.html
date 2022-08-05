@@ -5,8 +5,8 @@
 
   {% assign page = page.url | split: "/" %}
   {% assign type = "item_" | append: page[3] %}
-  {% assign paging = page[5] | plus: 0 %}
-  {% assign paging = (paging - 1) * 40 %}
+  {% assign paging = page[5] | minus: 1 %}
+  {% assign paging = paging | times: 40 %}
   {{ page[5] }} / paging }}
 
   <div class="recent" lang="ko">
