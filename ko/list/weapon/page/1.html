@@ -8,13 +8,8 @@ tags: [리니지2M, 리니지2m, 연금 검색기]
   <header>
     <h1>아이템 목록</h1>
   </header>
-  {% assign page = page.url | split: "/" %}
-  {{ page[4] }}
-  {% if page[4] > 1 %}
-  {% assign page = page[4] * 40 %}
-  {% else %}
-  {% assign page = 1 %}
-  {% endif %}
+  {% assign paging = page.url | split: "/" %}
+  {{ paging[4] }}
   <div class="recent" lang="ko">
     <article class="post">
       <ul>
