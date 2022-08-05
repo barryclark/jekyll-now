@@ -29,8 +29,6 @@ title: 지킬 블로그
 
 **[Why do I get a double frame around markdown code block on Jekyll site?](https://stackoverflow.com/questions/55308142/why-do-i-get-a-double-frame-around-markdown-code-block-on-jekyll-site)**
 
-In the _sass/_highlights.scss file you simply need to replace .highlight with pre.highlight. It appears that some styling can be applied twice if this is not specified. I also had a entry in pre.highlight{...} that I changed from overflow: scroll; to overflow: auto; in order to hide the scroll bars if they are not necessary.
-
 BEFORE:
 ```
 .highlight{

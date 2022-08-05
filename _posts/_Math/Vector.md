@@ -3,21 +3,6 @@ layout: post
 title: Vector
 ---
 
-<center>
-
-```mermaid
-graph LR
-
-Norm--->Vector
-DotProduct--->Vector
-CrossProduct--->Vector
-VectorProjection--->Vector
-
-Vector--->3DVector--->VectorSpace
-```
-
-</center>
-
 ## 벡터
 
 유클리디안 벡터(Euclidean vector)란 그리스 수학자 유클리드의 이름을 따랐으며 기하학적 벡터(geometric vector) 로도 알려져 있습니다. 
