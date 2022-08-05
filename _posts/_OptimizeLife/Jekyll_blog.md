@@ -23,11 +23,6 @@ title: 지킬 블로그
 * [mermaid](https://mermaid-js.github.io/mermaid/#/) (다이어 그램을 그리는 용도)
 * [math](https://velog.io/@d2h10s/LaTex-Markdown-%EC%88%98%EC%8B%9D-%EC%9E%91%EC%84%B1%EB%B2%95#%ED%96%89%EB%A0%AC-%ED%91%9C%EA%B8%B0%EB%B2%95) (수식을 그리는 용도)
 
-### HTML
-* [HTML Tutorial](https://www.w3schools.com/html/default.asp)
-* [HTML Reference](https://www.w3schools.com/tags/default.asp)
-
-
 <details><summary>코드 블럭이 더블 프레임으로 표시되는 경우</summary>
 <div markdown="1">
 <br>
@@ -92,5 +87,18 @@ It is officially supported since May 2022
 Render mathematical expressions in Markdown
 You can now use LaTeX style syntax to render math expressions within Markdown inline (using $ delimiters) or in blocks (using $$ delimiters).
 ```
+
+</div></details>
+
+### HTML
+* [HTML Tutorial](https://www.w3schools.com/html/default.asp)
+* [HTML Reference](https://www.w3schools.com/tags/default.asp)
+
+<details><summary>html에서 if문 사용하기</summary>
+</div markdown="1">
+
+1. {% if (조건문) %}
+2. {% else %}
+3. {% endif %}
 
 </div></details>
