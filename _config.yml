@@ -91,15 +91,13 @@ theme: jekyll-theme-slate
 
 collections:
 - posts_Math
-- posts_OptimizeLife
+- posts_optimize_life
 - posts_unreal_engine
 
 collections:
-  Algorithm_and_data_struct:
-    output: true
   posts_Math:
     output: true
-  posts_OptimizeLife:
+  posts_optimize_life:
     output: true
   posts_unreal_engine:
     output: true
