@@ -97,7 +97,9 @@ HTML 은 기본적으로 정적인 언어입니다. 작성해놓고 나면, 동�
 
 * [Diango](https://docs.djangoproject.com/en/3.2/topics/templates/#the-django-template-language)
 
+```
 {% %} , {{ }} 와 같은 구문을 통해 HTML 내에 동적인 구문을 삽입할 수 있습니다.
+```
 
 <details><summary>html에서 if문 사용하기</summary>
 </div markdown="1">
