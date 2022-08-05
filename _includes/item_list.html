@@ -6,7 +6,7 @@
   {% assign page = page.url | split: "/" %}
   {% assign type = "item_" | append: page[3] %}
   {% assign pageing = page[5] | decimal %}
-  {% assign paging = (pageing - 1) * 40 %}
+  {% assign paging = (page[5] - 1) * 40 %}
   {{ paging }}
 
   <div class="recent" lang="ko">
