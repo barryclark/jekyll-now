@@ -90,12 +90,21 @@ theme: jekyll-theme-slate
 # add collections
 
 collections:
-- posts_Math
+- posts_math
+- posts_language
+- posts_CS_And_IT
+- posts_algorithm_and_data_struct
 - posts_optimize_life
 - posts_unreal_engine
 
 collections:
-  posts_Math:
+  posts_math:
+    output: true
+  posts_language:
+    output: true
+  posts_CS_And_IT:
+    output: true
+  posts_algorithm_and_data_struct:
     output: true
   posts_optimize_life:
     output: true
