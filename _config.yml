@@ -90,13 +90,14 @@ theme: jekyll-theme-slate
 # add collections
 
 collections:
+- posts_Math
 - posts_OptimizeLife
 - posts_unreal_engine
 
 collections:
-  Language:
-    output: true
   Algorithm_and_data_struct:
+    output: true
+  posts_Math:
     output: true
   posts_OptimizeLife:
     output: true
