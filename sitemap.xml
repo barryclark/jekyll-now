@@ -24,8 +24,6 @@ layout: null
             {% else %}
   <priority>{{ post.sitemap.priority }}</priority>
             {% endif %}
-  <xhtml:link rel="alternate" hreflang="ko" href="{{ site.url }}{{ post.url }}"/>
-  <xhtml:link rel="alternate" hreflang="jp" href="{{ site.url }}{{ post.url | replace: "ko", "jp" }}"/>
  </url>
       {% endif %}
     {% endfor %}
