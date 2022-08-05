@@ -9,9 +9,9 @@ tags: [리니지2M, 리니지2m, 연금 검색기]
     <h1>아이템 목록</h1>
   </header>
   {% assign page = page.url | split: "/" %}
-  {{ page[5] }}
-  {% if page[5] > 1 %}
-  {% assign page = page[5] * 40 %}
+  {{ page[4] }}
+  {% if page[4] > 1 %}
+  {% assign page = page[4] * 40 %}
   {% else %}
   {% assign page = 1 %}
   {% endif %}
