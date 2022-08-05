@@ -3,7 +3,7 @@ layout: post
 title: Unreal engine
 ---
 
-{% Verbosity = 1 %}
+{% with Verbosity = 1 %}
 
 벌보시티랑 상관없음
 
