@@ -10,7 +10,11 @@ tags: [리니지2M, 리니지2m, 연금 검색기]
   </header>
   {% assign page = page.url | split: "/" %}
   {% assign page = page[5] | decimal %}
-  {% assign paging = page[5] * 40 %}
+  {% if page == 1 %}
+    {% assign paging = 1 %}
+  {% else %}
+    {% assign paging = (page - 1) * 40 %}
+  {% endif %}
   {{ paging }}
 
 
@@ -20,7 +24,7 @@ tags: [리니지2M, 리니지2m, 연금 검색기]
         {% assign list=site.data.item_weapon | sort: 'id' %}
         {% assign no=1 %}
         {% if list.size > 1 %}
-          {% for item in list in array offset:1 %}
+          {% for item in list in array offset:paging %}
             {% assign type = item.id | slice: 0, 2 %}
             {% if type == "10" %}
               {% if no == 41 %}
