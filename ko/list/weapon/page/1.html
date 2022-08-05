@@ -19,7 +19,7 @@ tags: [리니지2M, 리니지2m, 연금 검색기]
   <div class="recent" lang="ko">
     <article class="post">
       <ul>
-        {% assign list=site.datas | map: type %}
+        {% assign list=site.data[type] %}
         {% assign no=1 %}
         {% for item in list in array offset:paging %}
           {% if no == 41 %}
