@@ -291,6 +291,7 @@ int get_sum(int n)
 <center>
 
 ![cheat sheet](https://www.bigocheatsheet.com/img/big-o-cheat-sheet-poster.png)
+
 [Big O cheet sheet](https://www.bigocheatsheet.com/)
 </center>
 

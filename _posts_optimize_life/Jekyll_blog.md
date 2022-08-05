@@ -3,6 +3,9 @@ layout: post
 title: 지킬 블로그
 ---
 
+- [ ] [mermaid...](https://markdownmonster.west-wind.com/docs/_5ef0x96or.htm)
+- [ ] 이미지 불러오기...
+
 - [ ] 다른 문서에서 해당 문서의 참조를, 링크가 아닌, 태그에 따라 다르게 설명하도록 하기
   - [ ] 마크다운에 HTML if문 적용하기
   - [ ] 지킬 조각파일, 그리고 include에 태그 붙이기
@@ -56,11 +59,13 @@ pre.highlight{
 ![Image](/images/404.jpg)
 ```
 
+![Image](/images/404.jpg)
+
 * !표 뒤에 띄어씌기 없습니다.
 
 </div></details>
 
-<details><summary>마크다운으로 이미지 넣기, 상대경로는 안되나?</summary>
+<details><summary>상대경로는 안되나?</summary>
 <div>
 <br>
 
@@ -69,6 +74,8 @@ pre.highlight{
 ```
 ![Image](../images/404.jpg)
 ```
+
+![Image](../images/404.jpg)
 
 </div></details>
 
