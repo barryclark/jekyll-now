@@ -3,7 +3,7 @@ layout: post
 title: Algorithm and data struct
 ---
 
-* [Complexity](/posts_algorithm_and_data_struct/Complexity)
+* [Complexity](/posts_algorithm_and_data_struct/AlgorithmAndDatastruct)
     - 자료구조와 알고리즘을 평가하는 기준
     - For문의 시간복잡도 (개인적인) 구하기
     - 이중 For문의 시간복잡도 구하기
