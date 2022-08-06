@@ -1,8 +1,7 @@
 ---
 published: true
+title: 'Saturnity EP Release - August 10, 2022'
 ---
-## Saturnity EP
-
 ![Saturnity EP]({{taylorjhawkins.com}}/images/saturnity-ep.png)
 I'm releasing my second EP, **Saturnity**, as **Taylor J Hawkins**, on **August 10th, 2022**. 
 It will be available on Spotify, ITunes, and other digital distribution platforms. 
