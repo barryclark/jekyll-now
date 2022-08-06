@@ -3,6 +3,7 @@ layout: post
 title: Optimize life
 ---
 
+? Bundle, Gem, Ruby, ...???? Bundle add ??? Hm...
 
 ## 엔진코드 보고 공부하기
 * 엔진코드를 보면 많은 것을 배울 수 있다. 엔진코드에서 왜 저렇게 했는지 모를때는, Git blame으로 보자. 정말 숨막히게 많이 배울 수 있다.
