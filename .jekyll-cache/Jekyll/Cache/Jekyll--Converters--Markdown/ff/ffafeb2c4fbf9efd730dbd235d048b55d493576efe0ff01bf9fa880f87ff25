@@ -1,9 +1,0 @@
-I"<ul>
-  <li>FMath::SmoothStep
-    <ul>
-      <li>값 X에 대해 0과 1사이의 부드러은 Hermite보간을 반환합니다.(X는 A와 B사이의 범위입니다.)</li>
-      <li>X &lt;= A의 경우 0으로, X &gt;= B의 경우 1로 고정됩니다.</li>
-    </ul>
-  </li>
-</ul>
-:ET

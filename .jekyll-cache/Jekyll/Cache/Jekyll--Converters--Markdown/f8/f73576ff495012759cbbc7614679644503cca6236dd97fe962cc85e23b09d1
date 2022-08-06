@@ -1,6 +1,0 @@
-I"`<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />어떻게 테스트코드를 먼저 작성하는가?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />어떻게 자체 검증?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />기능 테스트 (Functional test)는 클라이언트가 제공한 기능명세를 이용하여 수행하며 소프트웨어의 기능 요구사항을 확인합니다.</li>
-</ul>
-:ET

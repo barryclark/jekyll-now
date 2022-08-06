@@ -1,8 +1,0 @@
-I"1<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />일반적인 위젯은 크리에트 위젯을 사용합니다.</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />UProperty bind 이용하기 외 내용 정리하고 다듬기</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Slate 음… 어떻게 써야 하나?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />3D Widget을 사용하는 방법</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />WidgetAnimation이 비용이 이유?</li>
-</ul>
-:ET

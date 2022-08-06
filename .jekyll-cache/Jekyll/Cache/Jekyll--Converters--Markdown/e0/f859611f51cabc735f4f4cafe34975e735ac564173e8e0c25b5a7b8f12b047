@@ -1,3 +1,0 @@
-I"�<h2 id="render-hardware-interface">Render hardware interface</h2>
-<p><a href="https://docs.unrealengine.com/5.0/en-US/graphics-programming-overview-for-unreal-engine/">RHI</a>는 플랫폼 전용 그래픽 API위의 얇은 레이어입니다. UE4의 RHI 추상화 레벨은 가급적 낮추었습니다. 이는 모든 플랫폼에서 작동할 수 있도록 하기 위해서 입니다.</p>
-:ET
