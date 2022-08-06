@@ -1,9 +1,7 @@
 ---
 layout: post
-title: CPP *.inl
+title: inl extention
 ---
-
-- [ ] 조금더 공부 필요
 
 inl file에는 inline 함수의 정의부를 적어 놓고, 선언부가 있는 header file의 끝에
 #include로 inl file을 포함하여 사용할 수 있습니다.

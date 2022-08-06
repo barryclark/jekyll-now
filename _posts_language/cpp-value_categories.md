@@ -1,28 +1,32 @@
 ---
 layout: post
-title: value expression
+title: value category
 ---
+
+## Value category
 
 [LValue and Rvalue](https://docs.microsoft.com/en-us/cpp/cpp/lvalues-and-rvalues-visual-cpp?view=msvc-170)
 
 [What are rvalues, lvalues, xvalues, glvalues, and prvalues?](https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues)
 
-<center>
+<center><div markdown="1">
 
 ![도표](https://i.stack.imgur.com/xgCnV.png)
 
-</center>
+</div></center>
 
 |표현|설명|
-|:-:|---|
+|-|---|
 |glvalue|generalized + lvalue로 lvalue또는 xvalue를 의미합니다.|
-|rvalue|역사적으로는 표현식의 우측에 나타날 수 있기 때문에 rvalue로 부르며, xvalue 또는 임시 개체, 해당 하위 개체, 개체와 연결되지 않은 값입니다.|
+|rvalue &nbsp;&nbsp;&nbsp;&nbsp;|역사적으로는 표현식의 우측에 나타날 수 있기 때문에 rvalue로 부르며, xvalue 또는 임시 개체, 해당 하위 개체, 개체와 연결되지 않은 값입니다.|
+
+<br>
 
 |표현|설명|
-|:-:|---|
+|-|---|
 |lvalue|역사적으로 표현식의 좌측에 나타날 수 있기 때문에 lvalue로 부르며, 함수또는 객체를 지정합니다.|
 |xvalue|expiring + value로 일반적으로 수명이 다한 개체를 나타냅니다.
-|prvalue|pure + lvalue로 xvalue가 아닌 rvalue입니다.|
+|prvalue &nbsp;&nbsp;&nbsp;&nbsp; |pure + lvalue로 xvalue가 아닌 rvalue입니다.|
 
 lvalue에는 프로그램이 액세스할 수 있는 주소가 있습니다. lvalue 표현식의 예로는 const변수, 배열 요소, lvalue 참조를 반환하는 함수 호출, 비트 필드, 공용체 및 클래스 멤버를 포함한 변수 이름이 있습니다.
 
