@@ -8,9 +8,28 @@ tags: [리니지2M, 리니지2m, 연금 검색기]
 <h1><a href="https://twitter.com/L2MDCSCAM">Twitter</a></h1>
 <section class="recent-wrapper">
   <header>
+    <h1>리니지2M 정보</h1>
+  </header>
+  <div class="recent" lang="ko">
+    <article class="post">
+      <a href="{{ site.baseurl }}ko/list/weapon/page/1/"><h2>리니지2M 무기 목록</h2></a>
+    </article>
+    <article class="post">
+      <a href="{{ site.baseurl }}ko/list/armor/page/1/"><h2>리니지2M 방어구 목록</h2></a>
+    </article>
+    <article class="post">
+      <a href="{{ site.baseurl }}ko/list/accessary/page/1/"><h2>리니지2M 장신구 목록</h2></a>
+    </article>
+    <article class="post">
+      <a href="{{ site.baseurl }}ko/list/skill/page/1/"><h2>리니지2M 스킬북 목록</h2></a>
+    </article>
+  </div>
+</<section>
+<section class="recent-wrapper">
+  <header>
     <h1>Tips</h1>
   </header>
-  <div class="recent" lang="jp">
+  <div class="recent" lang="ko">
     {% assign posts=site.categories.tips | where:"lang", "ko" | sort: 'lang-ref' %}
     {% if posts.size > 1 %}
       {% for post in posts %}
