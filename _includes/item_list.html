@@ -1,22 +1,27 @@
+{% assign page = page.url | split: "/" %}
+{% assign type = "item_" | append: page[3] %}
+{% assign paging = page[5] | minus: 1 %}
+{% if paging == 0 %}
+  {% assign paging = 0 %}
+{% else %}
+  {% assign paging = paging | times: 40 %}
+{% endif %}
+{% assign list=site.data[type] %}
+{% assign no=1 %}
+
 <section class="list-wrapper">
   <header>
     <h1>아이템 목록</h1>
+    <ul>
+      <li>무기</li>
+      <li>방어구</li>
+      <li>장신구</li>
+    </ul>
+    {{ paging }}/{{ list.size }}
   </header>
-
-  {% assign page = page.url | split: "/" %}
-  {% assign type = "item_" | append: page[3] %}
-  {% assign paging = page[5] | minus: 1 %}
-  {% if paging == 0 %}
-    {% assign paging = 0 %}
-  {% else %}
-    {% assign paging = paging | times: 40 %}
-  {% endif %}
-
   <div class="list" lang="ko">
     <article class="items">
       <ul>
-        {% assign list=site.data[type] %}
-        {% assign no=1 %}
         {% for item in list in array offset:paging %}
           {% if no == 41 %}
             {% break %}
