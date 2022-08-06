@@ -13,9 +13,9 @@
   <header>
     <h1>아이템 목록</h1>
     <ul class="menu">
-      <li>무기</li>
-      <li>방어구</li>
-      <li>장신구</li>
+      <li><a href="{{ site.url }}{{ page[0] }}/{{ page[1] }}/{{ page[2] }}/weapon/{{ page[4] }}/1">무기</a></li>
+      <li><a href="{{ site.url }}{{ page[0] }}/{{ page[1] }}/{{ page[2] }}/armor/{{ page[4] }}/1">방어구</a></li>
+      <li><a href="{{ site.url }}{{ page[0] }}/{{ page[1] }}/{{ page[2] }}/accessary/{{ page[4] }}/1">장신구</a></li>
     </ul>
     전체 : {{ paging }}/{{ list.size }}
   </header>

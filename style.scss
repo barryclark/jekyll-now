@@ -580,10 +580,14 @@ footer {
   .menu{
     list-style: none;
     display: flex;
+    padding: 0;
+    margin: 0;
     li{
+      margin: 0.2em;
+    }
+    a{
       padding: 0.3em;
       border: 1px solid white;
-      margin: 0.2em;
     }
     li:first-child{
       margin-left: 0;
