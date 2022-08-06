@@ -33,4 +33,15 @@
       </ul>
     </article>
   </div>
+
+  <footer>
+    {% assign page_all = list.size | divided_by: 40.0 }}}
+    {% assgin page_all = page_all | ceil %}
+    <ul>
+      {% for i in (1..page_all) %}
+      <li><a href="{{ site.url }}{{ page.url }}">{{ i }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </footer>
 </<section>
