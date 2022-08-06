@@ -583,7 +583,19 @@ footer {
   }
   .list article{
     border-bottom: 1px solid $white8;
+    padding: 0;
+  }
+  .list ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+  }
+  .list li{
     padding: 0.5em;
+    border-bottom: 1px solid $white8;
+  }
+  .list li:last-child{
+    border-bottom:0;
   }
   .list h2{
     margin:0;
