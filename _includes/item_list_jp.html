@@ -1,0 +1,52 @@
+{% assign page = page.url | split: "/" %}
+{% assign type = "item_" | append: page[3] %}
+{% assign paging = page[5] | minus: 1 %}
+{% if paging == 0 %}
+  {% assign paging = 0 %}
+{% else %}
+  {% assign paging = paging | times: 40 %}
+{% endif %}
+{% assign list=site.data[type] %}
+{% assign no=1 %}
+
+<section class="list-wrapper">
+  <header>
+    <h1>アイテムリスト</h1>
+    <ul class="menu">
+      <li><a href="{{ site.url }}{{ page[0] }}/{{ page[1] }}/{{ page[2] }}/weapon/{{ page[4] }}/1">武器</a></li>
+      <li><a href="{{ site.url }}{{ page[0] }}/{{ page[1] }}/{{ page[2] }}/armor/{{ page[4] }}/1">防具</a></li>
+      <li><a href="{{ site.url }}{{ page[0] }}/{{ page[1] }}/{{ page[2] }}/accessary/{{ page[4] }}/1">アクセサリー</a></li>
+      <li><a href="{{ site.url }}{{ page[0] }}/{{ page[1] }}/{{ page[2] }}/skill/{{ page[4] }}/1">スキルブック</a></li>
+    </ul>
+    全体 : {{ paging }}/{{ list.size }}
+  </header>
+  <div class="list" lang="jp">
+    <article class="items">
+      <ul>
+        {% for item in list in array offset:paging %}
+          {% if no == 41 %}
+            {% break %}
+          {% else %}
+            <li>
+              <a href="https://purple2m.github.io/ko/alchemist/?item={{ item.name }}">
+                <img class="thumb" src="https://wstatic-cdn.plaync.com/powerbook/l2m/icon/Icon_128/Item/Icon_{{ item.icon }}" onerror="this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';">
+                {{ item.jp }}
+              </a>
+            </li>
+            {% assign no = no | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </article>
+  </div>
+
+  <footer>
+    {% assign page_all = list.size | divided_by: 40.0 }}}
+    {% assgin page_all = page_all | ceil %}
+    <ul class="menu">
+      {% for i in (1..page_all) %}
+      <li><a href="{{ site.url }}{{ page[0] }}/{{ page[1] }}/{{ page[2] }}/{{ page[3] }}/{{ page[4] }}/{{ i }}">{{ i }}</a></li>
+      {% endfor %}
+    </ul>
+  </footer>
+</<section>
