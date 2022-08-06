@@ -572,6 +572,28 @@ footer {
   }
 }
 
+.list-wrapper{
+  padding: 0 1em 0;
+  header > h1{
+    margin:0;
+  }
+  .list {
+    border:1px solid $white8;
+    background: $white2;
+  }
+  .list article{
+    border-bottom: 1px solid $white8;
+    padding: 0.5em;
+  }
+  .list h2{
+    margin:0;
+    font-size: 1em;
+    font-weight: normal;
+  }
+}
+
+
+
 #collections{
   .thumb{
     width: 48px;
