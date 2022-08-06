@@ -577,6 +577,18 @@ footer {
   header > h1{
     margin:0;
   }
+  .menu{
+    list-style: none;
+    display: flex;
+    li{
+      padding: 0.3em;
+      border: 1px solid white;
+      margin: 0.2em;
+    }
+    li:first-child{
+      margin-left: 0;
+    }
+  }
   .list {
     border:1px solid $white8;
     background: $white2;

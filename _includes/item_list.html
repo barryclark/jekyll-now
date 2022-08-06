@@ -1,6 +1,6 @@
-{% assign page2 = page.url | split: "/" %}
-{% assign type = "item_" | append: page2[3] %}
-{% assign paging = page2[5] | minus: 1 %}
+{% assign page = page.url | split: "/" %}
+{% assign type = "item_" | append: page[3] %}
+{% assign paging = page[5] | minus: 1 %}
 {% if paging == 0 %}
   {% assign paging = 0 %}
 {% else %}
@@ -12,7 +12,7 @@
 <section class="list-wrapper">
   <header>
     <h1>아이템 목록</h1>
-    <ul>
+    <ul class="menu">
       <li>무기</li>
       <li>방어구</li>
       <li>장신구</li>
@@ -42,9 +42,9 @@
   <footer>
     {% assign page_all = list.size | divided_by: 40.0 }}}
     {% assgin page_all = page_all | ceil %}
-    <ul>
+    <ul class="menu">
       {% for i in (1..page_all) %}
-      <li><a href="{{ site.url }}{{ page.url }}">{{ i }}</a></li>
+      <li><a href="{{ site.url }}{{ page[0] }}/{{ page[1] }}/{{ page[2] }}/{{ page[3] }}/{{ page[4] }}/{{ i }}">{{ i }}</a></li>
       {% endfor %}
     </ul>
   </footer>
