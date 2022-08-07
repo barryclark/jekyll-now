@@ -35,7 +35,7 @@ layout: null
 {% assgin page_all = page_all | ceil %}
 {% for i in (1..page_all) %}
 <url>
- <loc>{{ site.url }}ko/list/weapon/page/{{ i }}</loc>
+ <loc>{{ site.url }}/ko/list/weapon/page/{{ i }}</loc>
  <lastmod>2022-08-05T00:00:00+00:00</lastmod>
  <changefreq>weekly</changefreq>
  <priority>0.5</priority>
@@ -48,7 +48,7 @@ layout: null
 {% assgin page_all = page_all | ceil %}
 {% for i in (1..page_all) %}
 <url>
- <loc>{{ site.url }}ko/list/weapon/page/{{ i }}</loc>
+ <loc>{{ site.url }}/ko/list/armor/page/{{ i }}</loc>
  <lastmod>2022-08-05T00:00:00+00:00</lastmod>
  <changefreq>weekly</changefreq>
  <priority>0.5</priority>
@@ -61,7 +61,7 @@ layout: null
 {% assgin page_all = page_all | ceil %}
 {% for i in (1..page_all) %}
 <url>
- <loc>{{ site.url }}ko/list/weapon/page/{{ i }}</loc>
+ <loc>{{ site.url }}/ko/list/accessary/page/{{ i }}</loc>
  <lastmod>2022-08-05T00:00:00+00:00</lastmod>
  <changefreq>weekly</changefreq>
  <priority>0.5</priority>
@@ -74,7 +74,7 @@ layout: null
 {% assgin page_all = page_all | ceil %}
 {% for i in (1..page_all) %}
 <url>
- <loc>{{ site.url }}ko/list/weapon/page/{{ i }}</loc>
+ <loc>{{ site.url }}/ko/list/skill/page/{{ i }}</loc>
  <lastmod>2022-08-05T00:00:00+00:00</lastmod>
  <changefreq>weekly</changefreq>
  <priority>0.5</priority>
@@ -89,7 +89,7 @@ layout: null
 {% assgin page_all = page_all | ceil %}
 {% for i in (1..page_all) %}
 <url>
- <loc>{{ site.url }}jp/list/weapon/page/{{ i }}</loc>
+ <loc>{{ site.url }}/jp/list/weapon/page/{{ i }}</loc>
  <lastmod>2022-08-05T00:00:00+00:00</lastmod>
  <changefreq>weekly</changefreq>
  <priority>0.5</priority>
@@ -102,7 +102,7 @@ layout: null
 {% assgin page_all = page_all | ceil %}
 {% for i in (1..page_all) %}
 <url>
- <loc>{{ site.url }}jp/list/weapon/page/{{ i }}</loc>
+ <loc>{{ site.url }}/jp/list/armor/page/{{ i }}</loc>
  <lastmod>2022-08-05T00:00:00+00:00</lastmod>
  <changefreq>weekly</changefreq>
  <priority>0.5</priority>
@@ -115,7 +115,7 @@ layout: null
 {% assgin page_all = page_all | ceil %}
 {% for i in (1..page_all) %}
 <url>
- <loc>{{ site.url }}jp/list/weapon/page/{{ i }}</loc>
+ <loc>{{ site.url }}/jp/list/accessary/page/{{ i }}</loc>
  <lastmod>2022-08-05T00:00:00+00:00</lastmod>
  <changefreq>weekly</changefreq>
  <priority>0.5</priority>
@@ -128,7 +128,7 @@ layout: null
 {% assgin page_all = page_all | ceil %}
 {% for i in (1..page_all) %}
 <url>
- <loc>{{ site.url }}jp/list/weapon/page/{{ i }}</loc>
+ <loc>{{ site.url }}/jp/list/skill/page/{{ i }}</loc>
  <lastmod>2022-08-05T00:00:00+00:00</lastmod>
  <changefreq>weekly</changefreq>
  <priority>0.5</priority>
