@@ -1,13 +1,13 @@
 {% assign page = page.url | split: "/" %}
 
 {% if page.size == 3 %}
-  {% assign page = page | append: "/weapon/page/1" %}
+  {% assign page = page.url | append: "/weapon/page/1" %}
 {% endif %}
 {% if page.size == 4 %}
-  {% assign page = page | append: "/page/1" %}
+  {% assign page = page.url | append: "/page/1" %}
 {% endif %}
 {% if page.size == 5 %}
-  {% assign page = page | append: "/1" %}
+  {% assign page = page.url | append: "/1" %}
 {% endif %}
 
 {% assign page = page | split: "/" %}
