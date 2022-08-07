@@ -1,18 +1,16 @@
 {% assign page = page.url | split: "/" %}
 
 {% if page.size == 3 %}
-{% assign page = page | concat: "weapon" | concat: "page" | concat: "1" %}
+{% assign page = page | push: "weapon" | push: "page" | push: "1" %}
   {% assign page[3] = "weapon" %}
 {% endif %}
 {% if page.size == 4 %}
-{% assign page = page | concat: "page" | concat: "1" %}
+{% assign page = page | push: "page" | push: "1" %}
   {% assign page[3] = "weapon" %}
 {% endif %}
-{% if page[4] == "" %}
-  {% assign page[4] = "page" %}
-{% endif %}
-{% if page[5] == "" %}
-  {% assign page[5] = 1 %}
+{% if page.size == 5 %}
+{% assign page = page | push: "1" %}
+  {% assign page[3] = "weapon" %}
 {% endif %}
 
 {% assign type = "item_" | append: page[3] %}
