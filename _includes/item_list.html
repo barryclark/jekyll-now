@@ -1,4 +1,15 @@
 {% assign page = page.url | split: "/" %}
+
+{% if page[3] == "" %}
+  {% assgin page[3] = "weapon" %}
+{% endif %}
+{% if page[4] == "" %}
+  {% assgin page[4] = "page" %}
+{% endif %}
+{% if page[5] == "" %}
+  {% assgin page[5] = 1 %}
+{% endif %}
+
 {% assign type = "item_" | append: page[3] %}
 {% assign paging = page[5] | minus: 1 %}
 {% if paging == 0 %}
