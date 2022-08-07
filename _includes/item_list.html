@@ -9,7 +9,7 @@
 {% if page.size == 5 %}
   {% assign page = page.url | append: "/1" %}
 {% endif %}
-
+{{ page }}
 {% assign page = page | split: "/" %}
 
 {% assign type = "item_" | append: page[3] %}
