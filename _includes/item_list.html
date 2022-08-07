@@ -10,7 +10,7 @@
   {% assign page = page.url | append: "1" %}
   {% assign page = page | split: "/" %}
 {% else %}
-  {% assign page = page.url %}
+  {% assign page = page.url | split: "/" %}
 {% endif %}
 
 
