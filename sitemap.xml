@@ -25,5 +25,113 @@ layout: null
             {% endif %}
  </url>
     {% endfor %}
-        
+
+
+
+
+{% assign type = "item_" | append: "weapon" %}
+{% assign list=site.data[type] %}
+{% assign page_all = list.size | divided_by: 40.0 }}}
+{% assgin page_all = page_all | ceil %}
+{% for i in (1..page_all) %}
+<url>
+ <loc>{{ site.url }}ko/list/weapon/page/{{ i }}</loc>
+ <lastmod>2022-08-05T00:00:00+00:00</lastmod>
+ <changefreq>weekly</changefreq>
+ <priority>0.5</priority>
+</url>
+{% endfor %}
+
+{% assign type = "item_" | append: "armor" %}
+{% assign list=site.data[type] %}
+{% assign page_all = list.size | divided_by: 40.0 }}}
+{% assgin page_all = page_all | ceil %}
+{% for i in (1..page_all) %}
+<url>
+ <loc>{{ site.url }}ko/list/weapon/page/{{ i }}</loc>
+ <lastmod>2022-08-05T00:00:00+00:00</lastmod>
+ <changefreq>weekly</changefreq>
+ <priority>0.5</priority>
+</url>
+{% endfor %}
+
+{% assign type = "item_" | append: "accessary" %}
+{% assign list=site.data[type] %}
+{% assign page_all = list.size | divided_by: 40.0 }}}
+{% assgin page_all = page_all | ceil %}
+{% for i in (1..page_all) %}
+<url>
+ <loc>{{ site.url }}ko/list/weapon/page/{{ i }}</loc>
+ <lastmod>2022-08-05T00:00:00+00:00</lastmod>
+ <changefreq>weekly</changefreq>
+ <priority>0.5</priority>
+</url>
+{% endfor %}
+
+{% assign type = "item_" | append: "skill" %}
+{% assign list=site.data[type] %}
+{% assign page_all = list.size | divided_by: 40.0 }}}
+{% assgin page_all = page_all | ceil %}
+{% for i in (1..page_all) %}
+<url>
+ <loc>{{ site.url }}ko/list/weapon/page/{{ i }}</loc>
+ <lastmod>2022-08-05T00:00:00+00:00</lastmod>
+ <changefreq>weekly</changefreq>
+ <priority>0.5</priority>
+</url>
+{% endfor %}
+
+
+
+{% assign type = "item_" | append: "weapon" %}
+{% assign list=site.data[type] %}
+{% assign page_all = list.size | divided_by: 40.0 }}}
+{% assgin page_all = page_all | ceil %}
+{% for i in (1..page_all) %}
+<url>
+ <loc>{{ site.url }}jp/list/weapon/page/{{ i }}</loc>
+ <lastmod>2022-08-05T00:00:00+00:00</lastmod>
+ <changefreq>weekly</changefreq>
+ <priority>0.5</priority>
+</url>
+{% endfor %}
+
+{% assign type = "item_" | append: "armor" %}
+{% assign list=site.data[type] %}
+{% assign page_all = list.size | divided_by: 40.0 }}}
+{% assgin page_all = page_all | ceil %}
+{% for i in (1..page_all) %}
+<url>
+ <loc>{{ site.url }}jp/list/weapon/page/{{ i }}</loc>
+ <lastmod>2022-08-05T00:00:00+00:00</lastmod>
+ <changefreq>weekly</changefreq>
+ <priority>0.5</priority>
+</url>
+{% endfor %}
+
+{% assign type = "item_" | append: "accessary" %}
+{% assign list=site.data[type] %}
+{% assign page_all = list.size | divided_by: 40.0 }}}
+{% assgin page_all = page_all | ceil %}
+{% for i in (1..page_all) %}
+<url>
+ <loc>{{ site.url }}jp/list/weapon/page/{{ i }}</loc>
+ <lastmod>2022-08-05T00:00:00+00:00</lastmod>
+ <changefreq>weekly</changefreq>
+ <priority>0.5</priority>
+</url>
+{% endfor %}
+
+{% assign type = "item_" | append: "skill" %}
+{% assign list=site.data[type] %}
+{% assign page_all = list.size | divided_by: 40.0 }}}
+{% assgin page_all = page_all | ceil %}
+{% for i in (1..page_all) %}
+<url>
+ <loc>{{ site.url }}jp/list/weapon/page/{{ i }}</loc>
+ <lastmod>2022-08-05T00:00:00+00:00</lastmod>
+ <changefreq>weekly</changefreq>
+ <priority>0.5</priority>
+</url>
+{% endfor %}
 </urlset>

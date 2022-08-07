@@ -1,4 +1,19 @@
-{% assign page = page.url | split: "/" %}
+{% assign page2 = page.url | split: "/" %}
+
+{% if page2.size == 3 %}
+  {% assign page = page.url | append: "weapon/page/1" %}
+  {% assign page = page | split: "/" %}
+{% elsif page2.size == 4 %}
+  {% assign page = page.url | append: "page/1" %}
+  {% assign page = page | split: "/" %}
+{% elsif page2.size == 5 %}
+  {% assign page = page.url | append: "1" %}
+  {% assign page = page | split: "/" %}
+{% else %}
+  {% assign page = page.url | split: "/" %}
+{% endif %}
+
+
 {% assign type = "item_" | append: page[3] %}
 {% assign paging = page[5] | minus: 1 %}
 {% if paging == 0 %}
