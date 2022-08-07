@@ -35,7 +35,7 @@
     </ul>
     전체 : {{ paging }}/{{ list.size }}
   </header>
-  <div class="list" lang="ko">
+  <div class="list" lang="{{ page[0] }}">
     <article class="items">
       <ul>
         {% for item in list in array offset:paging %}
@@ -43,7 +43,7 @@
             {% break %}
           {% else %}
             <li>
-              <a href="https://purple2m.github.io/ko/alchemist/?item={{ item.name }}">
+              <a href="https://purple2m.github.io/{{ page[0] }}/alchemist/?item={{ item.name }}">
                 <img class="thumb" src="https://wstatic-cdn.plaync.com/powerbook/l2m/icon/Icon_128/Item/Icon_{{ item.icon }}" onerror="this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';">
                 {{ item.name }}
               </a>
