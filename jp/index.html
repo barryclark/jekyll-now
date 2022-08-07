@@ -32,13 +32,11 @@ tags: [リネージュ2M, リネージュ2m, れんきん, れんきん情報, �
   </header>
   <div class="recent" lang="jp">
     {% assign posts = site.categories.tips | where:"lang", "jp" %}
-    {% if posts.size > 1 %}
       {% for post in posts %}
         <article class="post">
           <a href="{{ site.baseurl }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
         </article>
       {% endfor %}
-    {% endif %}
   </div>
 </section>
 
@@ -48,12 +46,10 @@ tags: [リネージュ2M, リネージュ2m, れんきん, れんきん情報, �
   </header>
   <div class="recent" lang="jp">
     {% assign posts = site.categories.info | where:"lang", "jp" %}
-    {% if posts.size > 1 %}
       {% for post in posts %}
         <article class="post">
           <a href="{{ site.baseurl }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
         </article>
       {% endfor %}
-    {% endif %}
   </div>
 </section>
