@@ -2,13 +2,43 @@
 layout: default
 description: "You can search for items in Lineage 2M to find a collection of items related to the alchemy material in which the item exists."
 ---
-I am considering adding other lang of search function.<br>
-If there are any users other than Korean and Japanese, please leave a message on my Twitter.
+<a href="{{ site.url }}/ko"><span class="flag flag-kr"> </span>한국어</a><br>
+<a href="{{ site.url }}/jp"><span class="flag flag-jp"> </span>日本語</a>
+
 <h1><a href="https://twitter.com/L2MDCSCAM">Twitter</a></h1>
 
 <section class="recent-wrapper">
   <header>
-    <h1>Tips</h1>
+    <h1>Lineage2m item list</h1>
+    If you can't use the search, please use the list
+  </header>
+  <div class="recent" lang="ko">
+    <article class="post">
+      <h2>List of Lineage2m weapons</h2>
+      <a href="{{ site.baseurl }}ko/list/weapon/page/1/"><span class="flag flag-kr"> </span> 한국어</a>
+      <a href="{{ site.baseurl }}jp/list/weapon/page/1/"><span class="flag flag-kr"> </span> 日本語</a>
+    </article>
+    <article class="post">
+      <h2>List of Lineage2m armors</h2>
+      <a href="{{ site.baseurl }}ko/list/armor/page/1/"><span class="flag flag-kr"> </span> 한국어</a>
+      <a href="{{ site.baseurl }}jp/list/armor/page/1/"><span class="flag flag-kr"> </span> 日本語</a>
+    </article>
+    <article class="post">
+      <h2>List of Lineage2m accessories</h2>
+      <a href="{{ site.baseurl }}ko/list/accessary/page/1/"><span class="flag flag-kr"> </span> 한국어</a>
+      <a href="{{ site.baseurl }}jp/list/accessary/page/1/"><span class="flag flag-kr"> </span> 日本語</a>
+    </article>
+    <article class="post">
+      <h2>List of Lineage2m skills</h2>
+      <a href="{{ site.baseurl }}ko/list/skill/page/1/"><span class="flag flag-kr"> </span> 한국어</a>
+      <a href="{{ site.baseurl }}jp/list/skill/page/1/"><span class="flag flag-kr"> </span> 日本語</a>
+    </article>
+  </div>
+</section>
+
+<section class="recent-wrapper">
+  <header>
+    <h1>Lineage2m Alchemy information</h1>
   </header>
   <div class="recent" lang="ko">
     {% assign posts = site.categories.tips | where:"lang", "ko" | sort: 'lang-ref' %}
@@ -24,3 +54,18 @@ If there are any users other than Korean and Japanese, please leave a message on
     {% endif %}
   </div>
 </<section>
+
+<section class="recent-wrapper">
+  <header>
+    <h1>Lineage2m information</h1>
+  </header>
+  <div class="recent" lang="jp">
+    {% assign posts = site.categories.info | where:"lang", "jp" %}
+      {% for post in posts %}
+        <article class="post">
+          <h2>{{ post.title }}</h2>
+          <a href="{{ site.baseurl }}{{ post.url | replace: "ko", "jp" }}"><span class="flag flag-jp"> </span>日本語</a>
+        </article>
+      {% endfor %}
+  </div>
+</section>
