@@ -13,6 +13,8 @@
   {% assign page[3] = "weapon" %}
 {% endif %}
 
+{% assign page = page.url | split: "/" %}
+
 {% assign type = "item_" | append: page[3] %}
 {% assign paging = page[5] | minus: 1 %}
 {% if paging == 0 %}
