@@ -455,10 +455,11 @@ nav {
   border: 2px solid rgba(255, 255, 255, 0.08);
 }
 .recent-wrapper{
-  padding: 0 1em 0;
+  padding: 1em 1em 0;
 }
 .recent-wrapper > header > h1{
   margin:0;
+  font-size: 1.4em;
 }
 .recent-wrapper > .recent {
   border:1px solid $white8;
