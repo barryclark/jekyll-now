@@ -35,17 +35,4 @@ title: cpp
 
 * [Optimize c++](http://library.bagrintsev.me/CPP/Optimized-C%2B%2B.pdf)
 
-</div></details>
-<br>
-
-* [inline 파일 확장자](/Language/cpp-Const_TYPE_Ref_function_parameter)
-
-* [value category](/Language/cpp-value_categories)
-
-* [함수 파라메터에서 const TYPE&](/Language/cpp-Const_TYPE_Ref_function_parameter) (Pass by const reference)
-
-* [dynamic_allocation](cpp-dynamic_allocation)
-
-* [Cast의 종류]
-
 -->

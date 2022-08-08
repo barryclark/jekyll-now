@@ -55,7 +55,7 @@ Verbosity에 따라 해당 로그를 출력할지 말지를 결정합니다.
 ```
 
 그 다음 로그를 실행하는 코드가 있습니다.
-```
+```cpp
 				auto UE_LOG_noinline_lambda = [](const auto& LCategoryName, const auto& LFormat, const auto&... UE_LOG_Args) FORCENOINLINE \
 				{ \
 					TRACE_LOG_MESSAGE(LCategoryName, Verbosity, LFormat, UE_LOG_Args...) \
