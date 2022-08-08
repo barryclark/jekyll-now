@@ -3,19 +3,19 @@ layout: post
 title: Vector
 ---
 
+- [ ] mathjax의 행렬 표현 문제.
+
 ## 벡터
 
-유클리디안 벡터(Euclidean vector)란 그리스 수학자 유클리드의 이름을 따랐으며 기하학적 벡터(geometric vector) 로도 알려져 있습니다. 
+유클리디안 벡터(Euclidean vector)란 그리스 수학자 유클리드의 이름을 따랐으며 기하학적 벡터(geometric vector) 로도 알려져 있습니다. “벡터”라는 용어를 보면, 크기와 방향을 모두 가지는 어떤 양 으로 정의되는 유클리디안 벡터라고 생각할 수 있습니다.
 
-“벡터”라는 용어를 보면, 크기와 방향을 모두 가지는 어떤 양 으로 정의되는 유클리디안 벡터라고 생각할 수 있습니다.
-
-<center>
+<center><div markdown="1">
 
 |![Vector](https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vector_from_A_to_B.svg/220px-Vector_from_A_to_B.svg.png)|![Vector](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Vector_add_scale.svg/200px-Vector_add_scale.svg.png)|
 |---|---|
 |A에서 B로 향하는 벡터|벡터의 덧셈과 곱셉 : v벡터를 w벡터에 더하면 (v+w)벡터가 됩니다. 아래서 w벡터를 2배로 늘린 후 더하면 (v+2w)벡터가 됩니다.|
 
-</center>
+</div></center>
 
 <details><summary>벡터의 놈</summary>
 <div markdown="1">
@@ -25,8 +25,8 @@ title: Vector
 노름 (Norm) 이란 벡터/함수/신호 등의 크기(강도,길이)의 척도를 나타내는 수학적인 용어 입니다. 흔히, 벡터의 노름 이라고 하면, 유클리드 노름을 의미합니다.
 
 * 유클리드 노름 (Euclidean Norm)은 유클리드 길이(Euclidean Length)입니다. 즉 원점으로부터의 거리입니다.
-	- n차원 실수 공간 $R^n$ 에서, `원점에서 임의 점까지의 거리` 또는 `벡터의 크기(길이)`입니다.
-	- $\|v\|$로 표현합니다. $\|v\| = \sqrt{x_1^2 + x_2^2 + ... + x_n^n}$ 입니다.
+	- n차원 실수 공간 $$ R^n $$ 에서, `원점에서 임의 점까지의 거리` 또는 `벡터의 크기(길이)`입니다.
+	- $$ \|v\| $$로 표현합니다. $$ \|v\| = \sqrt{x_1^2 + x_2^2 + ... + x_n^n} $$ 입니다.
 
 
 </div></details>
@@ -34,35 +34,42 @@ title: Vector
 <details><summary>벡터의 내적</summary>
 <div markdown="1">
 
-두 벡터 $ v_1 = (x_1, y_1), v_2 = (x_2, y_2) $에 대해 그 사이각을 θ라 했을 때, 두 벡터의 내적(inner product 또는 dot product)는 다음과 같이 정의됩니다.
+두 벡터 $$ v_1 = (x_1, y_1), v_2 = (x_2, y_2) $$에 대해 그 사이각을 θ라 했을 때, 두 벡터의 내적(inner product 또는 dot product)는 다음과 같이 정의됩니다.
 
-$v_1 \cdot v_2 = x_1x_2 + y_1y_2 = \|v_1\| \|v_2\| cosθ $
+$$ v_1 \cdot v_2 = x_1x_2 + y_1y_2 = \|v_1\| \|v_2\| cosθ $$
 
 </div></details>
 
 <details><summary>벡터의 외적</summary>
 <div markdown="1">
 
-벡터의 외적은 기본적으로 3차원에서 정의되며 두 벡터를 $ a = (x_1, y_1, z_1), b = (x_2, y_2, z_2) $라 했을 때, 두 벡터의 외적(cross product)는 다음과 같이 정의됩니다.
+[Cross Product](https://en.wikipedia.org/wiki/Cross_product)
 
-보통 수학에서는 오른손 좌표계를 쓰나, 왼손 좌표계의 경우, 외적 벡터의 방향이 반대로 됩니다.
+벡터의 외적은 기본적으로 3차원에서 정의되며 두 벡터를 $$ a = (x_1, y_1, z_1), b = (x_2, y_2, z_2) $$라 했을 때, 두 벡터의 외적(cross product)는 다음과 같이 정의됩니다.
 
-<center>
+보통 수학에서는 오른손 좌표계를 쓰나, 왼손 좌표계의 경우, 외적 벡터의 방향이 반대로 됩니다. 언리얼 엔진은 왼손 좌표계 입니다.
+
+* 유감스럽게도 내적과 외적은 서로 전혀 관계가 없습니다.
+
+<center><div markdown="1">
 
 ![CrossProduct](http://www.findmean.com/wp-content/uploads/2019/12/%EC%99%B8%EC%A0%81%EC%A0%95%EC%9D%98-300x251.png)
 
-</center>
+</div></center>
 
-$
-a \times b = \begin{vmatrix} i&j&k \\ x_1&y_1&z_1 \\ x_2&y_2&z_2 \end{vmatrix} = (y_1z_2 - z_1y_2, z_1x_2 - x_1z_2, x_1y_2 - y_1x_2 ) = \|a\| \|b\| sinθ
-$
+$$ \|a\| \times \|b\| = \begin{vmatrix} i&j&k \\
+x_1&y_1&z_1 \\ 
+x_2&y_2&z_2  
+\end{vmatrix} = (y_1z_2 - z_1y_2, z_1x_2 - x_1z_2, x_1y_2 - y_1x_2 ) = \|a\| \|b\| sinθ $$
 
-단, $ i=(1,0,0), j=(0,1,0), k=(0,0,1) $는 좌표축 단위벡터.
+단, $$ i=(1,0,0), j=(0,1,0), k=(0,0,1) $$는 좌표축 단위벡터.
 
-* 외적 $ a \times b $는 $ a, b $로 이루어지는 평면에 수직이면서 그 크기가 $ (a, b) $로 이루어지는 평행사변형의 넓이인 $ \|v1\|\|v2\|sinθ $를 나타냅니다.
+* 외적 $$ a \times b $$는 $$ a, b $$로 이루어지는 평면에 수직이면서 그 크기가 $$ (a, b) $$로 이루어지는 평행사변형의 넓이인 $$ \|v1\|\|v2\|sinθ $$를 나타냅니다.
 * **첫번째 벡터를 x축, 두번째 벡터를 y축이라 했을 때 두 벡터의 외적은 z축 이라고 생각합시다.**
 * 벡터의 외적은 원래 3차원 공간에서 정의되지만, z = 0이라 생각하면 2차원 평면에서도 계산이 가능합니다.
 * 영벡터가 아닌 두 벡터의 외적이 영벡터가 되는 경우는 두 벡터가 같은 방향이거나 또는 서로 반대 방향인 경우입니다.
+
+두 벡터의 외적은 평행사변형의 넓이를 의미합니다. 그리고  Cross product의 정의 $$ \|A\|\times\|B\|=\|A\|\|B\|sinθ $$는 **CrossProduct로 나온 sinθ를 가지고 둔각에 대해서 제대로 구하지 못함합니다.**
 
 </div></details>
 
@@ -71,9 +78,9 @@ $
 
 3차원 공간에서는 어떤 방향에서 봤느냐(이쪽에서 봤는지 반대편에서 봤는지)에 따라서 회전의 방향이 서로 반대가 될 수 있기 때문에 각의 방향을 부호로서 정할 수가 없습니다. 
 
-따라서 3차원에서는 두 벡터 $ v_1 = (x_1,y_1,z_1), v_2 = (x_2,y_2,z_2) $의 절대적인 사이각은 내적을 이용하여 구하고 각의 방향은 외적 벡터의 방향을 보고 따로 판단해야 합니다.
+따라서 3차원에서는 두 벡터 $$ v_1 = (x_1,y_1,z_1), v_2 = (x_2,y_2,z_2) $$의 절대적인 사이각은 내적을 이용하여 구하고 각의 방향은 외적 벡터의 방향을 보고 따로 판단해야 합니다.
 
-$ θ = cos^{-1}(v_1·v_2 / \|v1\| \|v2\|) $
+$$ θ = cos^{-1}(v_1·v_2 / \|v1\| \|v2\|) $$
 
 </div></details>
 
@@ -82,11 +89,11 @@ $ θ = cos^{-1}(v_1·v_2 / \|v1\| \|v2\|) $
 
 직선의 경우에는 아래 그림과 같이 어떻게 벡터를 잡느냐에 따라서 서로 다른 2개의 사이각이 나올 수 있기 때문에 보통은 최소 사이각을 계산하는 것이 일반적입니다.
 
-<center>
+<center><div markdown="1">
 
 ![유튜브으](https://i.ytimg.com/vi/U5bNHvwLCQo/mqdefault.jpg)
 
-</center>
+</div></center>
 
 기준이 되는 벡터를 잡았으면, 두 벡터의 사이각을 구하고, 다른 방법으로는 최소 사이각을 구할 수 있습니다.
 
@@ -97,11 +104,11 @@ $ θ = cos^{-1}(v_1·v_2 / \|v1\| \|v2\|) $
 
 v의 벡터를 n에 투영했을때 생기는 벡터 v'를 의미하는 것이다. v에서 n로 수선을 긋게되면 직각삼각형이 생기는데, 여기에서 삼각함수을 이용하여 투영벡터를 구하는 공식을 구할수 있습니다.
 
-<center>
+<center><div markdown="1">
 
 ![VectorProjection](https://t1.daumcdn.net/cfile/tistory/130CD03E5166AF870F)
 
-</center>
+</div></center>
 
 cos θ는 V의 길이를 투영된 벡터 V`의 길이로 나눈 것으로 표현할 수 있습니다.
 
@@ -138,11 +145,11 @@ $ v_{proj} = \frac { v \cdot w } {\|n\|} \cdot \hat n $
 * 길이가 0인 벡터는 영 벡터(zero vector, null vector)라고 합니다.
 * 벡터공간에서 벡터의 체는 실수체입니다.
 
-<center>
+<center><div markdown="1">
 
 ![3DSpaceVector](https://www.intmath.com/vectors/img/235-3D-vector.png)
 
-</center>
+</div></center>
 
 <details><summary>FVector</summary>
 <div markdown="1">

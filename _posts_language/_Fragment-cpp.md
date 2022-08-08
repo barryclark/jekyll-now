@@ -3,8 +3,17 @@ layout: post
 title: CPP *.inl
 ---
 
+* TEnumAsByte는 레거시 코드에 대해서,
 
- 프로그래밍 언어는 다양한 패러다임으로 정의됩니다. 일부 언어는 하나의 패러다임을 지원하도록 설계되었지만 다른 프로그래밍 언어는 여러 패러다임(ex) object, Pascal, C++, Java, JavaScript, C#, ...)을 지원합니다. 예를 들어, C++은 순전히 절차 적이거나, 순전이 객체 지향이거나 둘다 또는 다른 패러다임을 포함할 수 있습니다. 소프트웨어 디자이너와 프로그래머는 이러한 패러다임 요소를 사용하는 방법을 결정합니다.
+## C++에 "추상"에 대한 키워드가 있습니까?
+
+[c-abstract-keyword](https://www.programmerinterview.com/c-cplusplus/c-abstract-keyword/)
+
+아니요, C++는 추상 클래스를 설명하기 위해 abstract 키워드를 사용하지 않습니다. 그러나 C++에서 abstract 키워드를 사용하지 않는다고 해서 추상 클래스가 없는 것은 아닙니다. C++에서 추상 클래스는 순수 가상 함수 를 사용하여 생성됩니다.
+
+## 
+
+프로그래밍 언어는 다양한 패러다임으로 정의됩니다. 일부 언어는 하나의 패러다임을 지원하도록 설계되었지만 다른 프로그래밍 언어는 여러 패러다임(ex) object, Pascal, C++, Java, JavaScript, C#, ...)을 지원합니다. 예를 들어, C++은 순전히 절차 적이거나, 순전이 객체 지향이거나 둘다 또는 다른 패러다임을 포함할 수 있습니다. 소프트웨어 디자이너와 프로그래머는 이러한 패러다임 요소를 사용하는 방법을 결정합니다.
 
 ​
 
@@ -239,8 +248,6 @@ Data oriented programing
 - [ ] 언리얼 Using Structs 문서 참고
 - [ ] [언리얼 엔진 4는 STL을 지원하지 않습니까?](https://www.gamedev.net/forums/topic/708066-unreal-engine-4-does-not-support-stl/5431473/)
 - [ ] 맴버함수를 어떻게 만들어야 하는가?
-
-- [ ] inline and forceinline 정리
 
 - [ ] 코드를 어떻게 작성해야 하는가?
 
@@ -3132,7 +3139,6 @@ https://sudeky.tistory.com/156
 주요 관심사. 어떻게 이걸 생각해 낼 수 있었을까? 그리고 어디에 쓸 수 있을까?
 
 ##
-- [ ] [지후에게 조롱을 받고 한달만에 인라인 함수를 다시 공부했습니다.](https://jerish.blog.csdn.net/article/details/85759127)
 - [ ] [역사상 가장 완벽한 C++/게임 개발 인터뷰 질문 요약 (2) - 가상 기능, 메모리, STL](https://jerish.blog.csdn.net/article/details/99098535)
 - [ ] [4년 동안 언리얼 엔진을 사용한 네트워크 아키텍처 공개](https://blog.csdn.net/csdnnews/article/details/106935212?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-9-106935212-blog-105101177.pc_relevant_multi_platform_whitelistv3&spm=1001.2101.3001.4242.6&utm_relevant_index=12)
 - [ ] ["Exploring in UE4" 게임 캐릭터의 동작 원리(파트 1)](https://blog.csdn.net/u012999985/article/details/105101177)
