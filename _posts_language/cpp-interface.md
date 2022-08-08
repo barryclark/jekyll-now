@@ -3,6 +3,8 @@ layout: post
 title: interface
 ---
 
+* 네이티브 코드가 아닌 블루프린트 코드의 경우, TScriptInterface가 유효하지 않습니다.
+
 - [ ] [Clean Architecture : Part 2 — The Clean Architecture](https://justwrite99.medium.com/clean-architecture-part-2-the-clean-architecture-3e2666cdce83)
 - [ ] [인터페이스를 분리하여 테스트하기 좋은 메서드로 만들기](https://tecoble.techcourse.co.kr/post/2020-05-17-appropriate_method_for_test_by_interface/)에서, 테스트를 위해 움직이게 하는 함수에서 실제 움직이게 하는 양을 NumberGenerator의 실체화인 RandomNumberGenerator라는 객체(전략)로 랜덤 넘버를 만드는 코드를 만드는 전략을 추가하여, 코드의 응집도를 높인다고 설명하지만, 이게 왜 인터페이스를 분리하여 테스트하기 좋은 메서드로 만들었는지? 그리고 이게 정상적인 방법인지 모르겠습니다. 더 찾아봐야 합니다. 
 

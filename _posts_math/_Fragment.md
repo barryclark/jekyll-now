@@ -3,6 +3,13 @@ layout: post
 title: Math
 ---
 
+- [ ] [3D game engine programming](https://www.3dgep.com/understanding-quaternions/)
+- [ ] [쿼터니언(Quaternion) 과 오일러 변환 (euler transform)](https://reminder-by-kwan.tistory.com/139?category=994137)
+
+- [ ] 정리해서 추가할 내용 [Make quat from axis](https://www.euclideanspace.com/maths/geometry/rotations/conversions/angleToQuaternion/index.htm) 각 축이 미치는 영향을 외운다면, 이 공식을 외울 필요 없이, 그자리에서 만들 수 있을 듯 하다. 유튜브에 있는 쿼터니언 마다 돌아가는 각도 설명해놓은거 이미지 가져오라는 뜻.
+
+- [ ] [외적의 둔각에 대한 모호성...](https://math.stackexchange.com/questions/1378755/using-the-cross-product-to-find-the-angle-between-two-vectors-in-bbb-r3)
+
 [벡터 외적 간단 정리](https://blog.naver.com/PostView.naver?blogId=mindo1103&logNo=90103361104&redirect=Dlog&widgetTypeCall=true&directAccess=false)
 
 [반사 벡터](https://novemberfirst.tistory.com/112)

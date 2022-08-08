@@ -20,7 +20,7 @@ title: Matrix
 
 <center>
 
-$
+$$
 M = (Matrix) = 
 \begin{bmatrix}
  a_{1,1} & a_{1,2} & a_{1,3} \\
@@ -28,7 +28,7 @@ M = (Matrix) =
  a_{3,1} & a_{3,2} & a_{3,3} \\
  a_{4,1} & a_{4,2} & a_{4,3}
 \end{bmatrix}
-$
+$$
 
 </center>
 
@@ -74,12 +74,12 @@ $
 
 이떄 $L^T$를 A의 수반 행렬(adjugate matrix)이라고 하며 adj(A)라고 합니다.
 
-<center>
+<center><div markdown="1">
 
-$ A \times adj(A) = adj(A) \times A = deb(A) \cdot I $
-$ A^{-1} = \frac{1}{deb(A)} \cdot adj(A) $
+$$ A \times adj(A) = adj(A) \times A = deb(A) \cdot I $$
+$$ A^{-1} = \frac{1}{deb(A)} \cdot adj(A) $$
 
-</center>
+</div></center>
 
 이 식을 이용해 역행렬을 구할 수 있습니다.
 

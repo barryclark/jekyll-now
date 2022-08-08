@@ -3,6 +3,8 @@ layout: post
 title: CPP *.inl
 ---
 
+* TEnumAsByte는 레거시 코드에 대해서,
+
 ## C++에 "추상"에 대한 키워드가 있습니까?
 
 [c-abstract-keyword](https://www.programmerinterview.com/c-cplusplus/c-abstract-keyword/)
