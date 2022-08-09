@@ -6,7 +6,7 @@ title: Quaternion
 - [ ] [사원수와 회전](https://ghebook.blogspot.com/2020/09/quaternion-and-rotation.html?m=1)
 - [ ] [A Tutorial on Euler Angles and Quaternions](https://www.weizmann.ac.il/sci-tea/benari/sites/sci-tea.benari/files/uploads/softwareAndLearningMaterials/quaternion-tutorial-2-0-1.pdf)
 
-# 사원수 (Quaternion : 쿼터니언)
+# 사원수 (Quaternion, 쿼터니언)
 3차원 그래픽에서 회전을 표현할 때, 행렬 대신 사용하는 수학적 개념으로 4개의 값으로 이루어진 복소수(Complex Number)체계입니다.
 
 $$ q = <w, x, y, z> = w + xi + yj + zk $$
@@ -62,13 +62,6 @@ $$ ki = -ik = j $$
 ![Quaternion from eluer](/images/Quaternion_MakeQuatFromEuler.png)
 
 </div></details>
-
-<!-- <details><summary>축과 각도로 부터 쿼터니언 구하기</summary>
-<div mardown="1">
-
-튜토리얼 공부하고 내용 채워넣어야 함.
-
-</div></details> -->
 
 <details><summary>축과 각도로 부터 쿼터니언 구하기</summary>
 <div markdown="1">
@@ -200,6 +193,20 @@ q(t) = sinΘ (1-t) / sinΘ * q1 + sinΘ t / sinΘs * q^2
 ```
 
 * 보간이란 처음과 끝의 값을 가지고 중간에 잇는 값을 계산해 내는 것입니다.
+
+</div></details>
+
+## 언리얼 쿼터니언
+
+<details><summary>지면에 물건 배치하기</summary>
+<div markdown="1">
+
+1. 두고자 하는 위치의 충돌정보를 구합니다.
+2. 충돌하는 위치의 노말과 업 벡터가 일치하도록 만드는 회전을 만듭니다.
+3. 회전을 적용하고, 물건을 배치합니다.
+
+* 물건 즉 액터의 업벡터가 액터의 위쪽 방향을 가르키는 상황을 전제로 합니다.
+* 외적은 둔각을 반영하지 못하니, 내적과 외적 둘다 해야합니다.
 
 </div></details>
 
