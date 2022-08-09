@@ -3,9 +3,6 @@ layout: post
 title: 지킬 블로그
 ---
 
-- [ ] [mermaid...](https://markdownmonster.west-wind.com/docs/_5ef0x96or.htm)
-- [ ] 이미지 불러오기...
-
 - [ ] 다른 문서에서 해당 문서의 참조를, 링크가 아닌, 태그에 따라 다르게 설명하도록 하기
   - [ ] 마크다운에 HTML if문 적용하기
   - [ ] 지킬 조각파일, 그리고 include에 태그 붙이기
@@ -18,7 +15,7 @@ title: 지킬 블로그
 
 * [Jekyll Doc](https://jekyllrb-ko.github.io/docs/)
 
-<details><summary>코드 블럭이 더블 프레임으로 표시되는 경우</summary>
+<details><summary>로컬에서 Jekyll 빌드하기</summary>
 <div markdown="1">
 
 [Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll) 
@@ -27,9 +24,8 @@ title: 지킬 블로그
 
 ## Markdown
 
-* [기초 문법](https://www.markdownguide.org/basic-syntax/#code)
-* [mermaid](https://mermaid-js.github.io/mermaid/#/) (다이어 그램을 그리는 용도)
-* [math](https://katex.org/docs/supported.html) (수식을 그리는 용도)
+[기초 문법](https://www.markdownguide.org/basic-syntax/#code)
+[math](https://katex.org/docs/supported.html) (수식을 그리는 용도)
 
 <details><summary>코드 블럭이 더블 프레임으로 표시되는 경우</summary>
 <div markdown="1">
@@ -56,8 +52,7 @@ pre.highlight{
 </div></details>
 
 <details><summary>마크다운으로 이미지 넣기</summary>
-<div>
-<br>
+<div markdown="1">
 
 ```
 ![Image](/images/404.jpg)
@@ -67,35 +62,39 @@ pre.highlight{
 
 * !표 뒤에 띄어씌기 없습니다.
 
-</div></details>
-
-<details><summary>상대경로는 안되나?</summary>
-<div>
-<br>
-
-상대경로도 작동합니다. 다만, 폴더를 옮기면 링크가 깨지므로(고난이 예상되므로) 위의 방식을 이용하도록 합니다.
+다음은 작동하지 않습니다.
 
 ```
 ![Image](../images/404.jpg)
 ```
 
-![Image](../images/404.jpg)
-
 </div></details>
 
-<details><summary>수식 표현하기</summary>
+<details><summary>mermaid</summary>
+<div markdown="1">
+
+[mermaid](https://mermaid-js.github.io/mermaid/#/) 
+
+다이어 그램과 차트를 그리는 용도입니다.
+
+` ```mermaid `는 html에서 인코딩 되므로, mermaid을 Jekyll에서 빌드될 때, 변환되도록 만들어야 합니다. `<div class="mermaid"> ... </div>`를 이용하여 mermaid가 html에서 만들어 지도록 합니다.
+
+[UML 클래스 다이어그램](https://sabarada.tistory.com/72)
+
+클래스 다이어그램을 어떻게 만들어야 하는지, 참고하는 용도로 사용합니다.
+
+</div>
+
+<details><summary>MathJaxx</summary>
 <div>
-<br>
 
-[How to show math equations in general github's markdown(not github's blog)](https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog)에서 설명한 내용은 하나같이 불편합니다... (10년전 내용이기 때문에)
+[MathJax v3 in Jekyll](https://quuxplusone.github.io/blog/2020/08/19/mathjax-v3-in-jekyll/)
 
-아래로 내려가다 보면, \$를 이용해서 수식을 표현할 수 있다고 합니다.
-```
-It is officially supported since May 2022
+행렬 표현식이 제대로 표현되지 않는 문제가 있기 때문에, v3를 이용해야 합니다.
 
-Render mathematical expressions in Markdown
-You can now use LaTeX style syntax to render math expressions within Markdown inline (using $ delimiters) or in blocks (using $$ delimiters).
-```
+**아래는 오래된 내용입니다.**
+
+[How to show math equations in general github's markdown(not github's blog)](https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog)
 
 </div></details>
 
