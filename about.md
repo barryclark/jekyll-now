@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Engineering at McAfee. Python and stuff. Currently getting into functional programming and distributed systems.
+Engineering at Booking.com. Cloud, Terraform, Go and Python.
 
 ### Contact me
 
