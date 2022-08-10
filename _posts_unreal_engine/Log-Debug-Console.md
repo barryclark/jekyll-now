@@ -9,7 +9,54 @@ title: Log, Debug, Console
 - [ ] 언리얼 콘솔, 디버그, 로그 활용 예시들...
 - [ ] [네트워크 디버깅](https://docs.unrealengine.com/5.0/ko/network-debugging-for-unreal-engine/)
 - [ ] 로그 카테고리....
-- [ ] 더 낮은 수준의 코드가 컴파일 되지 않는다고 했는데, 뭔소리 인지 잘모르겠음. UBT에서 하는게 아니라면, static_assert 말하는거 같은데, 조금더 이해해야 함.
+
+## 선행적 디버그
+
+<details><summary>C++에서 assert</summary>
+<div markdown="1">
+
+assert라는 함수는 인자로 받는 조건이 true가 아니면 예외를 발생시키는 함수로, **디버깅을 도와주거나, 코드의 가독성을 올리는 용도로 쓰입니다.** 게다가 릴리즈에서는 아무 일도 않기 때문에(c++의 경우 NDEBUG가 정의되었는가 아닌가로 동작이 달라집니다.), 성능 저하 없이 검증 코드를 집어넣을 수 있습니다.
+
+* 근데 릴리즈에서는 아무 동작도 하지 않는다는 특성 때문인지, assert가 가지는 implicit 한 의미를 이해 못 했는지 assert를 잘못 사용하는 때도 있습니다.
+
+**assert문이 가지는 의미는 절대로 valid하지 않을 때는 절대로 이 함수가 호출되지 않는다는 것입니다.**
+
+</div></details>
+
+<details><summary>범위가 명확한 경우</summary>
+<div markdown="1">
+
+해당 메서드 안에서, 값이 반드시 유효해야 하는 경우, 사용함으로써 가독성을 높일 수 있습니다. 이제 MustDivid의 B값이 0보다 큰지 명확하게 알 수 있습니다.
+
+```cpp
+float MustDivid(float A, float B)
+{
+	assert(B > FLT_EPSILON)
+
+	return A / B;
+}
+```
+
+</div></details>
+
+<details><summary>Automation test에서...</summary>
+<div markdown="1">
+
+테스트가 정상적으로 작동하는지 모를 때가 있습니다. 이를 위해 테스트의 테스트를 만들어야 하는 경우가 있습니다. 이때 이 테스트에서 이 값은 반드시 유효해야 하게 함으로써 해결 할 수 있을거라 생각합니다.
+
+```cpp
+	AActor* Actor = World->SpawnActor<...>();
+
+	TScriptInterface<IBurnable> IBurnable = Actor;
+	check(IBurnable);
+	...
+```
+
+인터페이스가 반드시 상속되었음을 확인하는 것이 좋다고 생각합니다.
+
+* 여기서 스폰하는 액터의 클래스가 블루프린트로부터 가져온 클래스인 경우, IBurnable을 상속받았다 하더라도, Interface의 주소가 유효하지 않아 실패할 수 있습니다.
+
+</div></details>
 
 ## 언리얼의 로그(UE_LOG)
 

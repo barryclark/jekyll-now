@@ -6,6 +6,10 @@ title: Automation test
 - [ ] [단위 테스트](http://www.yes24.com/Product/Goods/104084175)
 - [ ] 성능 평가 자동화 툴,,,,
 
+- [ ] [테스트 케이스로만 테스트하면 안되나요?](https://tech.devsisters.com/posts/not-enough-testcase/)
+- [ ] [통합 테스트란 무엇인가요?](https://support.suresofttech.com/ko/support/solutions/articles/5000760844-%ED%86%B5%ED%95%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94-)
+- [ ] [소프트웨어(SW) 개발방법론](https://www.kipo.go.kr/kpo/download?f=/upload/kipo/new/20161005154611873292_1.pdf&fn=32.+%C6%AF%C7%E3%C3%BB+%BC%D2%C7%C1%C6%AE%BF%FE%BE%EE%28SW%29+%B0%B3%B9%DF%B9%E6%B9%FD%B7%D0.pdf)
+
 ## TDD (Test-Driven Development, 테스트 주도 개발)
 
 > 테스트 케이스를 만들다 보면, 보이지 않았던 것들이 보인다.
@@ -40,6 +44,21 @@ D(리팩토링)-->B;
 
 * eXtream Programming(XP)는 미래에 대한 예측을 최대한 하지 않고, 지속적으로 프로토타입을 완성하는 애자일 방법론 중 하나입니다. 이 방법론은 추가 요구사항이 생기더라도, 실시간으로 반영할 수 있습니다.
 * 단위 테스트(Unit test)는 말 그대로 한 단위만을 테스트하는 것입니다.
+
+</div></details>
+
+<details><summary>유닛 테스트 (Unit test)</summary>
+<div markdown="1">
+
+[UE4의 테스트 및 테스트 주도 개발](https://benui.ca/unreal/unreal-testing-introduction/)
+
+이 예제는 가장 간단한 테스트 예를 보여줍니다.
+
+1. 지원기능을 보고, 클래스와 메서드를 생성 후,
+2. 지원사항을 충족할 테스트 케이스를 만듭니다.
+3. 메서드를 구현하며, 테스트 케이스를 만족시킵니다.
+
+이후, 계속 발전시키면서 더 많은 테스트를 추가하고 더 많은 기능을 추가할 수 있다고 합니다.
 
 </div></details>
 
@@ -132,8 +151,19 @@ IMPLEMENT_SIMPLE_AUTOMATION_TEST(TClass, PrettyName, TFlags)
 
 ```cpp
 #include "Misc/AutomationTest.h"
+#include "Tests/AutomationEditorCommon.h"
 
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FTestClassName, "Sample.AutomationSectionClasses", EAutomationTestFlags::ApplicationContextMask | EAutomationTestFlags::SmokeFilter)
+
+bool FTestClassName::RunTest(const FString& parameters)
+{
+}
+```
+
+아래는 월드를 생성해서 테스트 하는 방법입니다. 하지만... 월드를 생성하는 만큼 느립니다.
+```cpp
+// Test with world
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FTestClassName, "Sample.AutomationSectionClasses", EAutomationTestFlags::EditorContext	 | EAutomationTestFlags::ProductFilter)
 
 bool FTestClassName::RunTest(const FString& parameters)
 {
@@ -142,7 +172,6 @@ bool FTestClassName::RunTest(const FString& parameters)
         ATheFestivalCharacter* hero = world->...
     }
 }
-#endif
 ```
 
 * `EAutomationTestFlags::ApplicationContextMask`가 없을 경우, 
@@ -213,6 +242,47 @@ struct FInventory2DInsertTest : public FTableRowBase
 
 </div></details>
 
+<details><summary>블루프린트 테스트케이스를 만들기 위한 삽질들</summary>
+<div markdown="1">
+
+Blueprint를 도대체 어떻게 테스트하는가...
+
+블루프린트는 아파도, 확인할 때까지 아프다고 말해주지 않습니다... 
+
+그나마 이를 어느정도 해결 할 수 있는 방법은 모든 블루프린트를 컴파일 하는 것입니다.
+
+**돈으로 해결하는 방법**
+
+[Check All Blueprints Compile](https://www.unrealengine.com/marketplace/ko/product/check-blueprints-compile/questions)
+
+모든 블루프린트에 대해서 컴파일하는 플러그인이 있습니다. 사용해보지는 않았습니다.
+
+[CommandletPlugin](https://github.com/ue4plugins/CommandletPlugin)
+
+
+[UE4: How To Write a Commandlet](https://www.oneoddsock.com/blog/2020/07/08/ue4-how-to-write-a-commandlet/)
+
+Commandlet에 대해서 설명합니다.
+
+[Compiling all project blueprints in Unreal Engine](https://sarcasticcoder.com/unrealengine/compiling-all-project-blueprints-in-unreal-engine/)
+
+이제 Commandlet을 이용해서 모든 블루프린트를 컴파일 할 수 있습니다.
+
+[How to write commandlet](https://www.oneoddsock.com/blog/2020/07/08/ue4-how-to-write-a-commandlet/)
+
+
+[Blueprint Compiler Overview](https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/Blueprints/TechnicalGuide/Compiler/)
+
+이 Overview를 보면, UBlueprint클래스에 Compile이 있다는 것을 알 수 있습니다.
+
+
+## Command-Line Arguments
+
+명령줄 인수 는 명령줄이나 실행 파일 바로 가기를 통해 실행 파일을 실행할 때 전달할 수 있는 키워드 문자열입니다. 그들의 목적은 개발자 또는 사용자의 요구에 맞게 엔진이 실행되는 방식을 사용자 정의하는 것입니다. 이것은 게임 대신 에디터를 실행하게 하는 것처럼 간단할 수도 있고, 각 프레임을 개별 이미지 파일로 덤프하면서 지정된 해상도와 프레임 속도로 실행되는 특정 맵으로 게임을 시작하는 것과 같이 훨씬 더 복잡할 수 있습니다.
+
+* 이 문서는 Setting up your production pipeline에 있습니다.
+
+</div></details>
 
 ## 테스트 케이스 만들기
 
@@ -263,3 +333,6 @@ struct FInventory2DInsertTest : public FTableRowBase
 기능 구현에만 몰두하다 보면 성능, 보안 등의 문제를 소홀히 하기 쉽다. 이것들도 checklist에 적어두고 관리해야 한다. 이것들이 당신 작품의 가치를 떨어트릴지도 모를 일이다.
 
 </div></details>
+
+## Unreal Blueprint Functional Test
+

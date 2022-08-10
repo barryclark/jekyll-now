@@ -3,6 +3,9 @@ layout: post
 title: Optimize life
 ---
 
+
+- [ ] [ChoDragon9](https://chodragon9.github.io/blog/easy-code/#%EB%84%A4%EC%9D%B4%EB%B0%8D)
+
 ? Bundle, Gem, Ruby, ...???? Bundle add ??? Hm...
 
 ## 엔진코드 보고 공부하기
