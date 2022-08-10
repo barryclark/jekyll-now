@@ -117,6 +117,15 @@ UE 4.27
 
 FScriptDelegate 어디다 사용하는지 궁금함.
 
+[Binding blueprint method/event to C++ delegate](https://forums.unrealengine.com/t/binding-blueprint-method-event-to-c-delegate/377392/2)
+
+```cpp
+    UPROPERTY(BlueprintAssignable)
+    FExampleDelegate_OnSomething ExampleDelegateVariable;
+```
+
+* Delegate는 Object에 있어야 합니다. Struct에 구현하면, 블루프린트에서 통신하기 위해서 직접 감싸야 합니다.
+
 # 참고자료
 참고자료 
 : [UE4 디버깅 기록 Delegate / BeginDestroy](https://narakit.tistory.com/187?category=510720)

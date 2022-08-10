@@ -3,10 +3,18 @@ layout: post
 title: interface
 ---
 
+- [ ] TScriptInterface를 보다 정확하게 알 필요가 있음.
+- [ ] BrokenActorRefferen
+
+TScriptInterface는 EditAnywhere로 해도 변수로 설정되지 않는다. 대신 UObject의 Meta = (AllowedClasses = "")로 설정할 수 있다.
+
+TScriptInterface는 인터페이스의 주소가 반드시 있음을 보장하지 않는다. 변수를 담고자 한다면, 감싸서 사용하도록 하자. 심지어,, 오브젝트도 캐스팅 가능한지 의미하지 않는다. 인터페이스에 담을때는 반드시, 클래스가 삽입 되어 있는지 확인하자.
+
 * 네이티브 코드가 아닌 블루프린트 코드의 경우, TScriptInterface가 유효하지 않습니다.
 
 - [ ] [Clean Architecture : Part 2 — The Clean Architecture](https://justwrite99.medium.com/clean-architecture-part-2-the-clean-architecture-3e2666cdce83)
 - [ ] [인터페이스를 분리하여 테스트하기 좋은 메서드로 만들기](https://tecoble.techcourse.co.kr/post/2020-05-17-appropriate_method_for_test_by_interface/)에서, 테스트를 위해 움직이게 하는 함수에서 실제 움직이게 하는 양을 NumberGenerator의 실체화인 RandomNumberGenerator라는 객체(전략)로 랜덤 넘버를 만드는 코드를 만드는 전략을 추가하여, 코드의 응집도를 높인다고 설명하지만, 이게 왜 인터페이스를 분리하여 테스트하기 좋은 메서드로 만들었는지? 그리고 이게 정상적인 방법인지 모르겠습니다. 더 찾아봐야 합니다. 
+- [ ] [역활 책임](https://incheol-jung.gitbook.io/docs/study/object/2020-03-10-object-chap3)
 
 ## 인터페이스(interface)
 
@@ -132,6 +140,8 @@ class Activity
 **인터페이스 클래스는 (잠재적으로) 무관한 클래스 세트가 공통의 함수 세트를 구현할 수 있도록 하는 데 쓰입니다. 그대로라면 유사성이 없었을 크고 복잡한 클래스들에 어떤 게임 함수 기능을 공유시키고자 하는 경우 매우 좋습니다.**
 
 예를 들어 트리거 볼륨에 들어서면 함정이 발동되거나, 적에게 경보가 울리거나, 플레이어에게 점수를 주는 시스템을 가진 게임이 있다 칩시다. 함정, 적, 점수에서 ReactToTrigger (트리거에 반응) 함수를 구현하면 될 것입니다. 하지만 함정은 AActor 에서 파생될 수도, 적은 특수 APawn 또는 ACharacter 서브클래스일 수도, 점수는 UDataAsset 일 수도 있습니다. 이 모든 클래스에 공유 함수 기능이 필요하지만, UObject 말고는 공통 조상이 없습니다. 이럴 때 인터페이스를 추천합니다.
+
+**언리얼 엔진의 인터페이스를 역활 인터페이스로 쓰기에는 상당히 어렵습니다. 변수로 가지고있어도 리플리케이션 되지 않고, TScriptInterface는 블루프린트 클래스에서 인터페이스를 실체화 한 경우, Interface 래퍼런스는 유효하지 않습니다. 따라서 메시지 함수로 현재로서는 사용하는 것이 최선이라 생각합니다.**
 
 <details><summary>언리얼의 인터페이스란?</summary>
 <div markdown="1">
