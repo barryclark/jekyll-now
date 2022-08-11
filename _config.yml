@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: suhail(dot)xyz
+name: suhail.xyz
 
 # Short bio or description (displayed in the header)
 description: writing about learning about programming 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://beeimg.com/images/a12167595912.png
+avatar: https://beeimg.com/images/j14839749002.jpg
 
 #
 # Flags below are optional
@@ -25,7 +25,7 @@ footer-links:
   instagram:
   linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: feed # just type anything here for a working RSS icon
   twitter: jekyllrb
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
