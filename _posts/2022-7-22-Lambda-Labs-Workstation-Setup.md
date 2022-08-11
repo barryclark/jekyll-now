@@ -1,4 +1,4 @@
-<h3> Use this tutorial to help you setup a new Lambda-labs workstation </h3>
+<h3>Use this tutorial to help you setup a new Lambda-labs workstation</h3>
 
 After changing the power cable to the compatible one, follow the below steps:
 
