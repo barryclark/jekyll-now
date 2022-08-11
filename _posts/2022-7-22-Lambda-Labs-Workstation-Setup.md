@@ -74,7 +74,7 @@ $ sudo usermod -a -G groupname username
 
 ```
 <br>
-8. Create a shared folder e.g. __workspace folder__
+8. Create a shared folder e.g. workspace folder
 
 ```
 $ sudo mkdir workspace
