@@ -35,7 +35,7 @@ I am going to use [OAuth 2 Proxy](https://github.com/oauth2-proxy/oauth2-proxy) 
 # Prerequisites
 
 * EKS cluster (or any other type of Kubernetes cluster)
-* Global Administrator, Cloud Application Administrator or Application Administrator permissions into Azure AD in order to be able to create a new [Application registrtion](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
+* Global Administrator, Cloud Application Administrator or Application Administrator permissions into Azure AD in order to be able to create a new [App registrtion](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
 * [ElasticSearch cluster](https://github.com/elastic/helm-charts/tree/main/elasticsearch) and [Kibana](https://github.com/elastic/helm-charts/tree/main/kibana)
 * Helm 3
 * kubectl
