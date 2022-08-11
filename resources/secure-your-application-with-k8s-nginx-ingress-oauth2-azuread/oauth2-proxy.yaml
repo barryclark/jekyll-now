@@ -21,13 +21,6 @@ spec:
         - --azure-tenant=<Tenant ID>
         - --email-domain=<company domain name(eg. haufe.com)>
         - --http-address=0.0.0.0:4180
-        - --set-authorization-header=true
-        - --set-xauthrequest=true
-        - --pass-access-token=true
-        - --pass-authorization-header=true
-        - --pass-user-headers=true
-        - --pass-host-header=true
-        - --skip-jwt-bearer-tokens=true
         - --oidc-issuer-url=https://login.microsoftonline.com/<Tenant ID>/v2.0
         # Register a new application
         # https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app
