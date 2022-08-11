@@ -62,8 +62,11 @@ In the Further steps you will have to create a client secret and write it down a
 Modify oauth2_proxy variables in file [oauth2-proxy.yaml](resources/secure-your-application-with-k8s-nginx-ingress-oauth2-azuread/oauth2-proxy.yaml) with the values from the previous step:
 
 OAUTH2_PROXY_CLIENT_ID with the AzureAD <Application Client ID>
+
 OAUTH2_PROXY_CLIENT_SECRET with the AzureAD <Client Secret>
+
 OAUTH2_PROXY_COOKIE_SECRET with value of python -c 'import os,base64; print(base64.b64encode(os.urandom(16)).decode("ascii"))'
+
 COMPANY_TENANT_ID with the AzureAD <Tenant ID> 
 
 After you made the changes, you can create the oauth2-proxy deployment
