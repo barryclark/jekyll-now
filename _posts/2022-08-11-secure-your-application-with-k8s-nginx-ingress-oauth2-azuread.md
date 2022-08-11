@@ -146,5 +146,8 @@ Login with your credentials
 Access granted
 ![]( /images/secure-your-application-with-k8s-nginx-ingress-oauth2-azuread/welcome_kibana.png){:style="width:110%"}
 
+# Recommendation
 
+Of course if you would like to setup the proper environment, I recommend to install [cert-manager](https://github.com/cert-manager/cert-manager)
+helm chart, in order to generate valid certificates and activate HTTPS endpoints for your FQDN.
  
