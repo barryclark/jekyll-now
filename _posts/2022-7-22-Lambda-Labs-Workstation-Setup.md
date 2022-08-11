@@ -1,5 +1,5 @@
-Use this tutorial to help you setup a new Lambda-labs workstation
-<hr>
+Use this tutorial to help you setup a new Lambda-labs workstation.
+
 After changing the power cable to the compatible one, follow the below steps:
 
 When you turn on the station for the first time, there will be a wizard window asking you to
