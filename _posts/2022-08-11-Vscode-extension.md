@@ -86,3 +86,6 @@ By using Alt+:arrow_up: or Alt+:arrow_down: the line you are on will be duplicat
 ### Command Palette
 
 Ctrl + Shift + P. From here you can do anything you want.
+
+
+Tariq Aljaber
