@@ -1,13 +1,15 @@
+<h2> Use this tutorial to help you setup a new Lambda-labs workstation </h2>
 
-After changing the power cable, follow these steps to set up the station:
+After changing the power cable to the compatible one, follow the below steps:
 
 When you turn on the station for the first time, there will be a wizard window asking you to
 
-- Enter the name of root ‘asr’
-- Enter the name of the station, in our case it was ‘asr3’
-- Enter the password of the root user ‘asr123’
-- Then it will ask you to select the region, select ‘Riyadh’
-1. Open the terminal and write the following commands ( update could take some time)
+- Enter the name of the root e.g. __asr__
+- Enter the name of the station e.g. __asr3__
+- Enter the password of the root user e.g. __asr123__
+- Select a region, select __Riyadh__
+<br>
+1. Open the terminal and write the following commands ( updates could take some time)
 
 ```
 $ sudo apt-get update
@@ -19,17 +21,20 @@ $ sudo apt-get upgrade
 
 ```
 
-- * You might need to update again after upgrading
-1. Download Miniconda from the browser, then go to the directory where it is installed, and open the terminal and run the .exe file
+\* You might need to update again after upgrading.
+<br>
+<br>
+2. Download Miniconda from the browser, then go to the directory where it is installed, open the terminal and run the .exe file
 
 ```
 $ sudo bash Miniconda3-latest-Linux-x86_64.sh
 
 ```
 
-Please specify the location to be in /opt/ folder
-
-1. Run the following commands in the terminal
+\* Please specify the location to be in /opt/ folder
+<br>
+<br>
+3. Run the following commands in the terminal
 
 ```
 $ export PATH=$PATH:/opt/miniconda3/bin
@@ -40,71 +45,71 @@ $ export PATH=$PATH:/opt/miniconda3/bin
 $ conda init
 
 ```
-
-1. Create a group
+<br>
+4. Create a group
 
 ```
 $ sudo groupadd groupname
 
 ```
-
-1. Create user (repeat for each user)
+<br>
+5. Create a user (repeat for each user)
 
 ```
 $ sudo adduser username
 
 ```
-
-1. Change password for user (repeat for each user)
+<br>
+6. Change a password for the user (repeat for each user)
 
 ```
 $ sudo passwd username
 
 ```
-
-1. Add user to a group (repeat for each user)
+<br>
+7. Add the user to the group (repeat for each user)
 
 ```
 $ sudo usermod -a -G groupname username
 
 ```
-
-1. Create a shared folder (i.e. workspace folder)
+<br>
+8. Create a shared folder e.g. __workspace folder__
 
 ```
 $ sudo mkdir workspace
 
 ```
-
-1. Go to the directory where miniconda is installed (/opt) then make miniconda owner the group
+<br>
+9. Go to the directory where miniconda is installed (/opt) then make miniconda owner of the group
 
 ```
 $ chown -R :groupname /path/of/miniconda
 
 ```
-
-1. Change miniconda permission to read write exc to the group
+<br>
+10. Change miniconda permissions to the group i.e. make it able to read, write, and execute (rwx)
 
 ```
 $ chmod 777 -R {the miniconda/anaconda path}
 
 ```
-
-1. Change miniconda permission to sticky permission
+<br>
+11. Change miniconda permissions to sticky permissions
 
 ```
 $ chmod ug+s -R {the miniconda/anaconda path}
 
 ```
-
-To find the IP address of the station
+<br>
+**To find the IP address of the station**
 
 ```
 $ ip r
 
 ```
-
-1. Install OpenSSH Server
+<br>
+12. Install OpenSSH Server
 
 ```
 $ sudo apt-get install openssh-server
@@ -120,36 +125,36 @@ $ sudo apt-get install openssh-server
 $ sudo systemctl start ssh
 
 ```
-
-1. Test OpenSSH by login into the system
+<br>
+13. Test OpenSSH by login into the system
 
 ```
 $ ssh user@ip-address
 
 ```
+<br>
+<h3>Extra</h3>
+When you complete the steps described above, ensure each user follows the next steps to enable them to use the public conda.
 
-**Extra**
-When finished with the setup above, make sure that each user follow the next steps to enable them to use the public conda.
-
-1. From each user account, type
+1. From each user's account, type
 
 ```
 $ export PATH=$PATH:/opt/miniconda3/bin
 
 ```
-
-If it does not work you can type:
+<br>
+If it does not work, you can type:
 
 ```
 $ export PATH=/opt/anaconda3/bin:$PATH
 
 ```
-
-1. Then run:
+<br>
+2. Then run:
 
 ```
 $ conda init
 
 ```
-
+<br>
 Shaikhah Alsubaie
