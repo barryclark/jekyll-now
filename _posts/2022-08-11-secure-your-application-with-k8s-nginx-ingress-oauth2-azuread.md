@@ -59,7 +59,7 @@ In the Further steps you will have to create a client secret and write it down a
 
 # Install Oauth2 Proxy
 
-Modify oauth2_proxy variables in file [oauth2-proxy.yaml](resources/secure-your-application-with-k8s-nginx-ingress-oauth2-azuread/oauth2-proxy.yaml) with the values from the previous step:
+Modify oauth2_proxy variables in file [oauth2-proxy.yaml](/resources/secure-your-application-with-k8s-nginx-ingress-oauth2-azuread/oauth2-proxy.yaml) with the values from the previous step:
 
 OAUTH2_PROXY_CLIENT_ID with the AzureAD <Application Client ID>
 
@@ -122,12 +122,12 @@ helm install kibana-demo-outh2 elastic/kibana \
 
 # Deploy Ingress objects
 
-Yes, it is not a typo to this step, there are multiple [Ingress objects](resources/secure-your-application-with-k8s-nginx-ingress-oauth2-azuread/kibana-ingress.yaml),
+Yes, it is not a typo to this step, there are multiple Ingress objects,
 both of them are pointing to the same host.
 First Ingress object need to be annotated in such a way that require the user to authenticate against the second
 Ingress's endpoint, and can redirect 401s to the same endpoint. The second Ingress objects handles 
 authentication (oauth2-proxy)
-Keep in mind to modify the variables from the file with your own values
+Keep in mind to modify the variables from [kibana-ingress.yaml](/resources/secure-your-application-with-k8s-nginx-ingress-oauth2-azuread/kibana-ingress.yaml) file with your own values
 
 ```
 # Deploy ingress objects
