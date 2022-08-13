@@ -7,5 +7,14 @@ title: Unreal engine
     - 언리얼의 로그(UE_LOG)
     - 언리얼 디버그(Debug)
     - 언리얼의 콘솔(Console)
-* [Character animation](/posts_unreal_engine/CharacterAnimation)
-    - 캐릭터 발소리
+* [Animation](/posts_unreal_engine/Animation)
+    - Bone Space & indicies
+    - 스켈레탈 메시위 캐릭터
+    - 애니메이션 몽타주
+    - Anim Blueprint (애님 블루프린트)
+    - 애니메이션 시퀀스
+    - 애니메이션 노티파이
+    - Animation Notify State (애니메이션 노티파이 스테이트)
+    - Control Rig (컨트롤 리그)
+    - Skeletal mesh Animation System (스켈레탈 메시 애니메이션 시스템)
+    - 캐릭터 애니메이션

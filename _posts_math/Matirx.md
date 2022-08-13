@@ -14,7 +14,7 @@ title: Matrix
 <details><summary>어떻게 생겼나요?</summary>
 <div markdown="1">
 
-행렬 안의 각 요소들은 보통 행과 열을 첨자로 해서 &a_{row, column}이라고 표현합니다. 만약, 행과 열의 개수가 같다면 우리는 이를 정방 행렬(square matrix)이라고 말합니다. 또한, 모든 요소가 0인 행렬은 영 행렬(zero matrix)라고 합니다.
+행렬 안의 각 요소들은 보통 행과 열을 첨자로 해서 $$a_{row, column}$$이라고 표현합니다. 만약, 행과 열의 개수가 같다면 우리는 이를 정방 행렬(square matrix)이라고 말합니다. 또한, 모든 요소가 0인 행렬은 영 행렬(zero matrix)라고 합니다.
 
 * Matrix는 라틴어로 자궁이라고 합니다. 실베스터는 행과 열을 가지고 행렬식을 산출한다는 점에 착안해서 지은 이름이라고 설명했습니다.
 
@@ -36,7 +36,7 @@ $$
 
 원래 행렬의 각 요소 들의 행과 열을 뒤바꿔서 나온 결과를 전치 행렬(transpose matrix)라 합니다.
 
-* 즉, $A$가 $m \times n$행렬이라면 $A^T$는 $n \times m$이 됩니다. 각 요소들은 $a^T_{i,j}=a_{j,i}$가 됩니다.
+* 즉, $$A$$가 $$m \times n$$행렬이라면 $$A^T$$는 $$n \times m$$이 됩니다. 각 요소들은 $$a^T_{i,j}=a_{j,i}$$가 됩니다.
 
 </div></details>
 
@@ -47,13 +47,13 @@ $$
 
 수학 에서 행렬식은 정방 행렬의 항목에 대한 함수 인 스칼라 값 입니다. 행렬의 일부 속성과 행렬이 나타내는 선형 맵 을 특성화할 수 있습니다.
 
-<center>
+<center><div markdown="1">
 
 ![2,2](https://wikimedia.org/api/rest_v1/media/math/render/svg/5b2e40d390e1d26039aabee44c7d1d86c8755232)
 
 ![3,3](https://wikimedia.org/api/rest_v1/media/math/render/svg/a891ca1b518ba39ff21a458c74f9cc74bcefb18c)
 
-</center>
+</div></center>
 
 [Determinant](https://en.wikipedia.org/wiki/Determinant)에 구체적으로 설명 되어 있습니다.
 
@@ -72,7 +72,7 @@ $$
 
 여인수들을 모두 모은 행렬과 **L의 전치 행렬을 곱하면** 항등행렬에 행렬식(deb(A))를 곱한 값이 나옵니다.
 
-이떄 $L^T$를 A의 수반 행렬(adjugate matrix)이라고 하며 adj(A)라고 합니다.
+이떄 $$L^T$$를 A의 수반 행렬(adjugate matrix)이라고 하며 adj(A)라고 합니다.
 
 <center><div markdown="1">
 
