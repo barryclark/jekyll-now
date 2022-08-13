@@ -336,3 +336,13 @@ Commandlet에 대해서 설명합니다.
 
 ## Unreal Blueprint Functional Test
 
+<details><summary>블루프린트 펑셔널 테스트 만들기</summary>
+<div markdown="1">
+
+[Functional Testing](https://docs.unrealengine.com/4.27/en-US/TestingAndOptimization/Automation/FunctionalTesting/)
+
+1. Level의 게임모드를 Functional Test Gamemode로 만듭니다.
+2. Level에 Functional Test 액터를 배치합니다.
+3. Test가 끝났다면, Functional Test 액터의 Finish Test를 호출 합니다.
+
+</div></details>

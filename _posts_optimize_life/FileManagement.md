@@ -59,7 +59,7 @@ title: File management
 
 * 기본 클래스로 변경되는 클래스가 있지만, 아닐 경우, 위의 방법을 따라야 합니다.
 
-</div>
+</div></details>
 
 <details><summary>다른 프로젝트로 이동</summary>
 <div markdown="1">
@@ -71,4 +71,4 @@ title: File management
 
 * 이동시킬 때, 해당 프로젝트에 맞게 폴더를 다시 관리
 
-</div>
+</div></details>

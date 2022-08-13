@@ -5,13 +5,15 @@ title: Collision
 
 UE 4.27
 
+* 언리얼에서 Trace (트레이스)는 레벨을 뻗어나가며 직선상에 무엇이 존재하는지 확인할 수 있는 메서드를 제공합니다. 두 (시작과 끝 위치) 지점을 제공해 주면, 피직스 스시템에서 그 두 점에 직선을 그으며 거기에 (콜리전으로) 걸리는 액터가 있는지 보고해 주는 식으로 사용합니다. 트레이스는 본질적으로 다른 소프트웨어의 Raycast (레이 캐스트) 또는 Raytrace (레이 트레이스)와 같습니다.
+
 # 콜리전(Collision) 개요
 보다 자세한 내용은 공식 문서에 있습니다.
 
-[콜리전 개요](https://docs.unrealengine.com/4.27/ko/InteractiveExperiences/Physics/Collision/Overview/0)
-[콜리전 반응 레퍼런스](https://docs.unrealengine.com/4.27/ko/InteractiveExperiences/Physics/Collision/Reference/)
-[단순 vs 복합 콜리전](https://docs.unrealengine.com/4.27/ko/InteractiveExperiences/Physics/SimpleVsComplex/)
-
+- [ ] [콜리전 개요](https://docs.unrealengine.com/4.27/ko/InteractiveExperiences/Physics/Collision/Overview/0)
+- [ ] [콜리전 반응 레퍼런스](https://docs.unrealengine.com/4.27/ko/InteractiveExperiences/Physics/Collision/Reference/)
+- [ ] [단순 vs 복합 콜리전](https://docs.unrealengine.com/4.27/ko/InteractiveExperiences/Physics/SimpleVsComplex/)
+- [ ] UE-4.27.2 환경에서, 머티리얼 오버라이드의 경우, 레이 캐스트할 때, 컴플렉스 콜리전의 경우 적용되지 않습니다. 머티리얼 오버라이드의 경우, 심플 콜리전에 대해서만 작동하는 것으로 보입니다. 확인이 필요합니다. 또한 머티리얼에 피직스 머티리얼을 이용하는 경우, 이를 가져오기 위해서는 컴플렉스 레이 캐스트를 이용해야 가져올 수 있습니다. 현재 생각은 이름에 오해의 소지가 있고, 레이 캐스트가 컴플렉스에 따라 다른 성격을 고려했을 때, 콜리전 타입에 있는 피직스 머티리얼에 접근하는 것과, 폴리곤에 있는 피직스 머티리얼에 접근하는 것으로, 명확한 것으로 생각됩니다. 코드에서 확인이 필요합니다.
 
 ## 콜리전이란
 

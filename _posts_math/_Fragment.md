@@ -3,6 +3,10 @@ layout: post
 title: Math
 ---
 
+찾아야 될 사이트 목록
+
+[Cornell University](https://www.cornell.edu/)
+
 - [ ] [3D game engine programming](https://www.3dgep.com/understanding-quaternions/)
 - [ ] [쿼터니언(Quaternion) 과 오일러 변환 (euler transform)](https://reminder-by-kwan.tistory.com/139?category=994137)
 
@@ -518,3 +522,15 @@ Libigl은 C++ 지오메트리 처리를 연구하고 개발하는 오픈소스 �
 # 설치시 주의사항
 * window - libigl은 64비트 모드에서 Microsoft visual studio 2015컴파일러 이상만 지원합니다. 32비트 빌드에서는 작동하지 않으며 이전 버전의 visual studio에서는 작동하지 않습니다.
 
+
+## 스윙 트위스트 보간(Swing-Twist Interpolation)
+음... 무엇을 표현하고 싶을 때, 스윙 트위스트 보간을 사용할 지는 고민해 봐야합니다.
+
+스윙 트위스트로 분리하여 보간하는 방법은 다음과 같습니다.
+
+```
+Slerp(Q_Identity, S, t)Slerp(Q_Identity, T, t)
+```
+Q_Identity는 Quat의 항등원입니다. T는 twist, S는 swing입니다. t는 보간 매개변수 입니다.
+
+[참고 자료](https://allenchou.net/2018/05/game-math-swing-twist-interpolation-sterp/)

@@ -3,6 +3,26 @@ layout: post
 title: Fragment
 ---
 
+## constructHelper
+
+ConstructorHelpers::FObjectFinder가 애셋을 로드하고 해제하는 방법에 대해서 알아봅시다.
+
+[수까락의 프로그래밍](http://egloos.zum.com/sweeper/v/3208657)
+
+* 이를 하는 이유는, 할당 해제에 대해서 알기 위해서입니다.
+
+## Functional Test
+
+[Create Functional Test](https://mercuna.com/creating-functional-tests-in-unreal-engine-4/)
+
+* Log Message를 이용하여 로그를 남길 수 있습니다.
+
+##
+
+특정 기능을 구현하고 외우는 것이 아니라, 내가만든 것도 외우면 안된다. 정리하는 습관을 잘들여야 한다. 책임이 명확하면, 누가 무엇을 할지 명확하다.
+
+[Unreal Engine Release 4.13](https://docs.unrealengine.com/4.27/ko/WhatsNew/Builds/ReleaseNotes/2016/4_13/)
+
 ## 같은 자리에 아이템을 계속 떨구면, 어떻게 되는가.
 
 상관이 있나 없나?
@@ -273,18 +293,6 @@ Hm.... 현재 상태에 대해 평가하면, 기본 이론을 모르니, 결론�
     - 컴퓨터 그래픽에서 Slerp는 구면 선형 보간법의 줄임말로 3D 회전에 애니메이션 효과를 주기 위한 보간법입니다.
 
 [이걸 봅시다](https://arxiv.org/pdf/1506.05481.pdf) 수식볼때마다 동공이 흔들리지만, 한개씩 보면, 그렇게 어려운 수학은 쓰지 않는 것 같습니다.
-
-## 스윙 트위스트 보간(Swing-Twist Interpolation)
-음... 무엇을 표현하고 싶을 때, 스윙 트위스트 보간을 사용할 지는 고민해 봐야합니다.
-
-스윙 트위스트로 분리하여 보간하는 방법은 다음과 같습니다.
-
-```
-Slerp(Q_Identity, S, t)Slerp(Q_Identity, T, t)
-```
-Q_Identity는 Quat의 항등원입니다. T는 twist, S는 swing입니다. t는 보간 매개변수 입니다.
-
-[참고 자료](https://allenchou.net/2018/05/game-math-swing-twist-interpolation-sterp/)
 
 ## 깔끔한 함수 만들기 (Make clean Function)
 **개인적인 결론**
@@ -1593,7 +1601,6 @@ Actor는 Tick이 콜백이고, 컴포넌트의 경우 TickComponent이다.
 * 문작에 시퀀스 가가지고, 
 * 커브그래프 사용방법은, 원하는 값을 키프레임에서 찍어노호, 커브 에디터로 들어와서 작업하는 것이 편할 것이다.
 
-* 엘든링이 잘만든 것은, 래버를 당기는 애니메이션, 상자를 드는 애니메이션 하나가지고 여러곳에서 사용함.
 
 * 회사에서는 기획자가 필요한 리소스를 조합해서 만들어줌. 사서 쓰지 않음.
 
@@ -1611,7 +1618,7 @@ Actor는 Tick이 콜백이고, 컴포넌트의 경우 TickComponent이다.
 한일
 Volume에 컴포넌트 이벤트를 바인드함.
 프롤로그 형태를 잡음
-3. 플러그인 세팅
+1. 플러그인 세팅
 	- 프로젝트를 만들고, 서브모듈 다운로드 후, 커밋하는 식으로 프로젝트 폴더 분리,
 	- HorrorSource와 FirstPersonHorror작업하기,
     
@@ -1627,25 +1634,9 @@ HorrorEevent는 무조건 멀티캐스트 되도록 구현,
 Caller에서 서버로 호출
 - 이거 공부하고 만들도록 하자.
 
-2. 정리
-자연스러운 애니메이션 만들기
-서버 클라이언트 모델,
-메타휴먼 워크플로우 (메타휴먼 블렌더 파이프라인)
-구현한 플러그인 문서 작성하기...
-
-
-* 머티리얼이 깨지는 이유는 뭘까? 당연한 이유로 깨지는거 같은데, 모르겠네.
-    - 메타휴먼 파이프라인을 구축하도록 합시다.
 
 * 모르는 것을 찾아서 정리하자.
     1. FBX convert를 왜 하는가?
-    2. 모프 타겟이 무엇인가?
-        * Morph target은 기본 형태에서 목표 형태로 메시를 변형(deform)시키는 수단입니다. 보통 애니메이션 시스템의 일부로써 스켈레탈 메시와 함께 사용되나, 스태틱 메시도 모프 타깃을 사용하여 변형시킬 수 있습니다.
-        - [스태틱 메시 모프 타깃](https://docs.unrealengine.com/4.27/ko/WorkingWithContent/Types/StaticMeshes/MorphTargets/)에서 머티리얼 셋업을 볼 수 있습니다.
-        * **Morph Target(모프 타겟)이란 일정한 방식으로 변형되어 버린 특정 메시의 버텍스 위치에 대한 스냅샷을 말합니다.** 예를 들어 캐릭터 모델을 선택하여, 그 얼굴 모양을 바꿔 얼굴 표정을 만든 다음, 그 수정된 버전을 모프 타깃으로 저장합니다. 언리얼에서 그 모프 타깃으로 블렌딩하여, 캐릭터의 얼굴이 그 표정을 짓도록 만들 수 있습니다. 모프 타깃은 FBX를 통해 언리얼로 임포트되며, 애니메이션 시퀀스 안에서 캡슐화됩니다.
-        - [FBX 모프 타깃 파이프라인](https://docs.unrealengine.com/4.27/ko/WorkingWithContent/Importing/FBX/MorphTargets/)
-    3. 망할 왜 얼굴 애니메이션이 안되냐?
-    4. 단순하게 리임포트 하는 것은 로테이션을 조정하는 것으로 가능할 것 같은데,
 
 * 메타휴먼을 리임포트하는 절차에서, 래퍼런스 대체는 래퍼런스 설정 깨지므로, 없다고 생각하고, 리임포트 하는 방향으로 만들자. 앞의 설정을 유지하여 리임포트 하는 것으로, 가능하지 않을까?
 
@@ -2185,8 +2176,6 @@ $ git submodule add https://github.com/kbmhansungb/UnrealPlugin_HorrorCore Plugi
 6. 몽타주 실행을 위한 AnimInstance는 5번을 생각해서 파라미터로 넘겨주면 문제가 생길 수 있습니다. AnimInstance는 Transient합니다. 
 
 * 컴퓨터 프로그래밍에서, transient는 일시적인 시스템의 모든 요소의 속성입니다.
-
-7. 몽타주의 전체 재생 시간보다 blend 시간을 압도적으로 짧게 잡아야 합니다. 그렇지 않으면 blend 하는 사이에 애니메이션이 끝나 결과적으로 애니메이션이 재생되지 않는  것처럼 보입니다.
 
 ? WithValidation 
 
