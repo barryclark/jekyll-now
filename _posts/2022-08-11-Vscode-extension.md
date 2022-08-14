@@ -88,3 +88,6 @@ by using Ctrl+ . with the highlighted area you can extract the highligths as a m
 ### Command Palette
 
 Ctrl + Shift + P. From here you can do anything you want.
+
+
+Tariq Aljaber
