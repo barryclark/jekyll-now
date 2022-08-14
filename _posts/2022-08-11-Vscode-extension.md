@@ -1,6 +1,6 @@
-# Top 10 VScode Tips and Tricks :fire: :sunglasses:
+# Top 10 VScode Tips and Tricks  
 ---
-## Number 10 :eyeglasses:
+## Number 10 
 ![vscode-icon](/images/VScode-extenstion/vscode-icons-icon.png)
 ### VScode Icons
 For better looking repo like this   
@@ -9,7 +9,7 @@ For better looking repo like this
 [extenstion page](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 
 ---
-## Number 9 :red_circle: :yellow_circle: :large_blue_circle:
+## Number 9   
 ![bracket-icon](/images/VScode-extenstion/bracket-icon.png)
 ### Bracket pair colorizer
 For better looking brackets   
@@ -21,27 +21,27 @@ It has been added as feature, you just need to actuvated it in the settings.
 
 ---
 
-## Number 8 :floppy_disk:
+## Number 8 
 ### Auto save
 Activate auto save from File>Auto Save, to save time. 
 
 ---
 
-## Number 7 :video_game:
+## Number 7 
 ### Remote ssh
-I mean it is in the name. You ssh to the station or whatever with VScode! HOW?? MAGIC :sparkles:
+I mean it is in the name. You ssh to the station or whatever with VScode! HOW?? MAGIC 
 
 
 ---
 
-## Number 6 :snake:
+## Number 6 
 ### Python Extenstion Pack
 
-Python pack for everything related to python from coloring the code more for more readability :blue_book: to debuggers :bug:
+Python pack for everything related to python from coloring the code more for more readability to debuggers 
 
 ---
 
-## Number 5 :dna:
+## Number 5 
 ### Cells 
 
 You can run cells from .py files instead of .ipynb by adding "#%%" to create a cell and seprete the lines. 
@@ -62,12 +62,14 @@ It's hard to explain I know.
 ## Number 3
 ### Duplicate line
 
-By using Alt+:arrow_up: or Alt+:arrow_down: the line you are on will be duplicated to up or down.
+By using Alt+ or Alt+ the line you are on will be duplicated to up or down.
 
 ---
 
 ## Number 2
-###
+### Extract method/variable 
+
+by using Ctrl+ . with the highlighted area you can extract the highligths as a method. 
 
 ---
 
@@ -75,7 +77,7 @@ By using Alt+:arrow_up: or Alt+:arrow_down: the line you are on will be duplicat
 - F2
 - File creation with parent folder
 - Mouse button 3
-- Alt + :arrow_left: :arrow_right:
+- Alt +  
 - Ctrl + Shift + T
 - THEMES!
 
