@@ -9,6 +9,9 @@ title: UI
 - [ ] 3D Widget을 사용하는 방법
 - [ ] WidgetAnimation이 비용이 이유?
 
+- [ ] [GameUIDataBase](https://www.gameuidatabase.com/index.php)
+- [ ] [OpenGameArt](https://opengameart.org/)
+- [ ] [15 UI Color Scheme Tools and Generators for the Perfect Interface](https://htmlburger.com/blog/ui-color-scheme/)
 
 # 어떻게 만들어야 하는가?
 **음... 장기적인 관점에서 내용을 채워넣어야 합니다.**
