@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+{%- if page.title -%}
+    <title>{{ page.title | escape }} · {{ site.title | escape }}</title>
+{%- else -%}
+    <title>{{ site.title | escape }}</title>
+{%- endif -%}
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="{{site.description}}">
+
+{%- if site.gitbook_version -%}
+    <meta name="generator" content="Jekyll (using style of GitBook {{ site.gitbook_version | escape }})">
+{%- else -%}
+    <meta name="generator" content="Jekyll (using style of GitBook)">
+{%- endif -%}
+
+{%- if site.author -%}
+    <meta name="author" content="{{ site.author | escape }}">
+{%- endif -%}
+
+<link rel="stylesheet" href="{{site.baseurl}}/gitbook/style.css">
+<link rel="stylesheet" href="{{site.baseurl}}/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="{{site.baseurl}}/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="{{site.baseurl}}/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+
+<link rel="stylesheet" href="{{site.baseurl}}/gitbook/rouge/{{ site.syntax_highlighter_style }}.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{site.baseurl}}/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="{{site.baseurl}}/gitbook/images/favicon.ico" type="image/x-icon">
+
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+</script>
