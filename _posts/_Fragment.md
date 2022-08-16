@@ -3,6 +3,15 @@ layout: post
 title: Total Fragment
 ---
 
+## Widget
+
+Widget기준으로 먹어가는게, 없으??
+
+* unreal projectile 원칙
+* 진짜 필요한 연출만, 월드 물리를 쓰고, 게임이라고 하는게 절때 예측불가능한 상황을 두면 안됨.
+
+프로젝타일 무브먼트를 쓸 때, 루트에 충돌에 필요한 콜리전이 있어야함.
+
 ##
 
 [Semantic Depth of field](https://www.researchgate.net/publication/221005996_Semantic_Depth_of_Field)
@@ -36,11 +45,6 @@ title: Total Fragment
 [안드로이드 패치 시스템](https://ballbot.tistory.com/38)
 
 [게임내 광고 구현](https://docs.unrealengine.com/4.27/ko/SharingAndReleasing/Mobile/Ads/)
-
-
-## 함수 호출 순서에 대해서 To IDE
-
-중단점 찍고, 함수 호출스택에서 함수가 언제 호출되는지 확인하는 용도로 사용합니다. 공부를 위해서, 한번 정리해도, 이를 외우는 것은 불가능에 가깝습니다.
 
 ## To Debugging
 

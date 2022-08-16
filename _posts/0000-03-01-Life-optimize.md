@@ -10,3 +10,6 @@ title: Life optimize
     - Unreal automation test
 * [File management](/posts_optimize_life/FileManagement)
     - 개인 프로젝트에서 폴더 관리
+* [IDE and Unreal](/posts_optimize_life/IDEAndUnreal)
+    - Integrated Development Environment
+    - Unreal Visual Studio setting

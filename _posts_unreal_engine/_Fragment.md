@@ -3,6 +3,12 @@ layout: post
 title: Fragment
 ---
 
+## 셰이더 컴파일을 위한 세팅
+셰이더 컴파일을 위해서는 엔진의 Platform.ush를 필요로 합니다. 추가하지 않을시에 "/Engine/Shaders/Public/Platform.ush"를 추가하라고 합니다. 하지만 이는 include되지 않는 문제가 있습니다.
+
+"D:/Program Files/Epic Games/UE_5.0/Engine/Shaders/Public/Platform.ush"로 직접경로로 설정하면 가상경로를 이용하라는 오류를 발생시킵니다.
+
+
 ## constructHelper
 
 ConstructorHelpers::FObjectFinder가 애셋을 로드하고 해제하는 방법에 대해서 알아봅시다.
@@ -2331,30 +2337,7 @@ CharacterMovementComponent를 보면 ForceUnits를 통해서 Editor에서 단위
 
 * UPROPERTY 매크로에 Instanced를 추가합니다.
 
-! 개발을 좀더 편하게, Editor는 디버그가 편하게 DebugGame, 그리고 BuildTarget에서 Non-Unity mode로 빌드되도록.
-! 자동으로 인클루드 하는게 엄청 많았나 보구나, 오래걸릴만 하네. PCH가 하는 역활인가? 가끔식 PCH바뀌면서 엄청 오래걸렸던거 같은데?
-! 엄청나게 직접 추가해야 하기는 하는데, 빠를 수만 있다면, 충분히 감수할만하다고 생각합니다. 실제로 엄청더 빠릅니다.
-그래 빌드 속도가 이정도는 되야 할만하지. ㅠㅠ
-! 내가 병신이였구나, 이렇게 빌드 속도가 빨랐는데, 시간을 낭비하다니.
-
-```c#
-        bUseUnityBuild = false;
-        bUsePCHFiles = false;
-```
-
-? PoseLink는 Local space(부모본과의 관계)
-? ComponentSpacePose는 Component와의 관계
-
-? 이름은 안바꾼다고 생각하고 만들도록 하자.
-
-? **ㅠㅠㅠㅠㅠㅠㅠㅠㅠ 쓸데없는데서 시간 오래 잡아먹혔네, 내일 정리하자.**
-Interface,
-
-? UnityBuild로 cpp자동으로 통합되니, 한 클래스안에 때려박지 말도록 하자.
-
 ? 디퍼드 렌더링 모드, Static mesh component는 simulation 되어 있지 않으면 velocity를 그리지 않음.
-
-? 공부할 때는 25분 5분 타이머가 굉장히 효율적이다.
 
 ? 로딩 스크린 만드는 방법.
 https://www.youtube.com/watch?v=6CkR6KG2znM
@@ -2441,11 +2424,6 @@ https://rhyce.dev/2021/09/17/how-to-make-custom-unreal-engine-nodes-easily/?utm_
 - 예를 들어 헤미스피어가 (사실 헤미스피어는 아니지만) 평면위의 한 점에 대한 레이의 축척이라는 점을 이용해서 빛의 반사 성질을 설명할 수 있다.
 - 프레넬공식은 잘 모르지만, 들어오는 빛과 노말법선의 세타값이 커질 때 빛의 반사가 커진다. 이는 림라이트를 고려할 수 있다. 림라이트를 생각하면 NPBR과 PBR을 생각할 수 있는데, NPBR에서 흥미로운 것을 생각할 수 있다.
 
-왜 펄어비스에서 못했을 까? 지금 생각해보면 할만 했었는데.
-코드분석을 할줄 몰랐다.
-- **사실 지금도 할줄 모른다. 하지만 코딩 규약을 따른 코드가 정말 읽기 쉽다는 사실은 알았다.**
-- 읽기 쉬운 코드를 작성하는 것이 정말 중요하구나. KISS원칙이라고 하나. 추가적으로 간단하기 위해서는 정말 많이 알아야 한다. 다만 반복을 줄이기 위해서 사용한 코드가 어디에 있는지 아는게 조금 어렵다. 규칙이 있을 것 같은데 아직은 잘 모르겠다.
-이상행동을 좀 많이 했다.
 - 말할 때 생각하고 말하기.
     - 질문을 할 때는 상대방이 무슨 질문을
 못하는 것을 할려했다.
