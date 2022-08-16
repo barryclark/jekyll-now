@@ -3,6 +3,8 @@ layout: post
 title: Floyd-warshall algorithm
 ---
 
+- [ ] 크루스칼 알고리즘, 섬 연결하기
+
 ## 최소 신장 트리(MST, Minimum spanning tree)
 
 [Minimum spanning tree](https://en.wikipedia.org/wiki/Minimum_spanning_tree)
