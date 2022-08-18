@@ -12,7 +12,7 @@ title: 'Debugging A Stack Overflow In Rust'
 comments_id: 35
 ---
 
-A while ago I hit a stack overflow error in Rust and I found a helpful quick and dirty way of debugging it using a tool that a friendly
+Recently I hit a stack overflow error in Rust and I found a helpful quick and dirty way of debugging it using a tool that a friendly
 member of the community hacked. If you hit a stack overflow and are too lazy to fire up your debugger, this article is for you.
 
 # The Quick Fix
