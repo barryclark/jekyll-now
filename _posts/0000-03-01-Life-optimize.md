@@ -13,3 +13,7 @@ title: Life optimize
 * [IDE and Unreal](/posts_optimize_life/IDEAndUnreal)
     - Integrated Development Environment
     - Unreal Visual Studio setting
+* [Configuration management](/posts_optimize_life/ConfigurationManagement)
+    - 형상 관리
+    - Git Desktop
+    - Git Bash

@@ -332,12 +332,6 @@ Clean Code에서는 깔끔한 코드 작성을 위해 다음과 같은 방법을
 따라서 영어 단어에서, 해당 내용을 가장 잘 묘사하는 단어를 찾아 사용하는 것 입니다. **알고 있는 동사를 사용 하는 것이 아닌, 찾아서 사용하는 것을 말합니다.**
 
 
-## 깔끔한 주석 달기 (Write clean comment)
-개인적인 결론으로는 주석을 가능한 안달고, Git Blame으로 충분히 파악할 수 있도록 합니다.
-
-* 따라서 깔끔한 'Git Commit 메시지' 쓰기를 참고할 수 있습니다.
-
-
 ## 컴포넌트의 기능호출
 컴포넌트에 기능을 만들고 호출해서 쓰는 것으로, 활용 재활용 가능하다. 액터에서 많이 쓰는 경우, 컴포넌트에 집어넣을 수 있다. 흠. 그정도 차이, 다만 Object를 쓸줄 안다면, 굳이 컴포넌트를 쓸 필요가 없을 수 있다.
 
@@ -1239,10 +1233,11 @@ ETraceTypeQuery ConvertToTraceType(ECollisionChannel CollisionChannel) const
 
 HorrorEvent가 N개의 클래스와 N개의 클래스를 연결하므로 델리게이트로 연결
 
-```
 remote저장소와 연결해놓은 상태에서 진행하던 작업을 엎어버리고 다시 리모트 저장소의 내용을 덮어쓰고 싶을 때 
-git fetch -all
-git reset --hard origin/master
+
+```
+$ git fetch -all
+$ git reset --hard origin/master
 ```
 
 infrasound 의식하면 닭살 돋는 효과는 있는거 같네... 그러나 바로 까먹고 기억안남.
@@ -1410,12 +1405,6 @@ Weapon.GetDefaultObject()->OnAttackTrace();
 * 음수로 설정 시 Global의 경우 PlayerCharacter 이동을 시도할 경우 화면이 흔들리며, Custom의 경우 해당 Actor의 Global Location은 정지하지만 ANimation은 정지하지 않는 등 비정상적인 작동을 보입니다.
 # 포스트 프로세스 사용하기
 https://sonagi87174.tistory.com/5 포스트 프로세스 이용하기
-
-## 언리얼 엔진 스포트라이트
-
-GodRays라고도 하고, volumetric fog를 이용하고 light shaft라고도 한다.
-
-https://toramee2vr.tistory.com/344?category=955653
 
 # Depth of field
 ## Improve DOF quality
@@ -2453,22 +2442,6 @@ GlobalShader를 추가하기 위해 시도한 것들.
 
 쉐이더를 대하는 자세.
 - 다필요 없고 쉐이더가 어떻게 작동하는지 쪼갤 수 있는 수식, 함수 단위로 쪼개서 이해하도록 하자. 그래야 자유롭게 응용 가능하다.
-
-* final 어떻게 쓰는건지 모르겠네.
-
-* 사소한 코드의 오류로 시간을 낭비하는 것을 막는 방법이 있을까?
-    - 테스트 주도 개발, 다만 UI를 어떻게 테스트해야하는지는 모르겠음.
-
-* 비쥬얼 스튜디오로 디버그를 활성화 해도 핫 리로드가 작동함.
-
-* 함수 오버로딩은 하지말자, 하루동안 삽질했네...
-
-* Widget을 생성할때 World가 아니면 Loop에 빠지는가?
-
-* TSubclassOf<Class>에서 Class가 final일 경우?
-상관없다고 한다.
-* TSubclassOf<Class>에서 Class가 전방선언인 경우?
-상관없다고 한다.
 
 ## Asset의 구조와 애셋의 래퍼런싱?
 
