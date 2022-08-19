@@ -10,6 +10,8 @@ title: Automation test
 - [ ] [통합 테스트란 무엇인가요?](https://support.suresofttech.com/ko/support/solutions/articles/5000760844-%ED%86%B5%ED%95%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94-)
 - [ ] [소프트웨어(SW) 개발방법론](https://www.kipo.go.kr/kpo/download?f=/upload/kipo/new/20161005154611873292_1.pdf&fn=32.+%C6%AF%C7%E3%C3%BB+%BC%D2%C7%C1%C6%AE%BF%FE%BE%EE%28SW%29+%B0%B3%B9%DF%B9%E6%B9%FD%B7%D0.pdf)
 
+- [ ] UI test 자동화
+
 ## TDD (Test-Driven Development, 테스트 주도 개발)
 
 > 테스트 케이스를 만들다 보면, 보이지 않았던 것들이 보인다.

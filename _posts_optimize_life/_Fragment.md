@@ -13,12 +13,6 @@ title: Optimize life
 
 * **왜라는 질문을 계속해야 합니다.**
 
-# GitHub이용하기
-
-* [Github skills](https://skills.github.com/) (마크다운으로 커뮤니케이션 하기)
-* [GitHub Docs](https://docs.github.com/en)
-* [Git](https://git-scm.com/)
-
 ## 공부
 
 [효율적으로 공부하는 법](https://wonderfulmind.co.kr/strategies-get-study-time/)
