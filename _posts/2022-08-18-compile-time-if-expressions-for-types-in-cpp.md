@@ -118,7 +118,7 @@ evaluates to a concrete type depending on the condition. If the condition is tru
 To enable the else _else if_ part of the expression we put the (XXX) `ElseIf` associated type in the `Then_` structure template. This type being there is the reason we have to have this weird out of order declaration of `Then_` in the first place. You surely noticed that we declared the `Then_` template on top, then the `Elif_` template and only then specialized the `Then_` template for the possible outcomes of the condition, i.e. true and false. This is because we want to use `Then_` from `Elif_` but also `Elif_` from `Then_`. Since the compiler needs to see those declarations in order we help it by basically forward declaring the `Then_` template in a way where we don't have to use the `Elif_` inside it.
 
 We first need to declare the intermediate `Then_` template structure so we can reference it later. This is because the compiler in essence needs to be informed about declarations before they are used the first time and we would otherwise have a problem referencing the `Elif_` type in the `Then_` expressions because these types both reference each other.
-
+  
 
 # The Implementation
 We can build on the general idea of the `Conditional` implementation above which uses specialization to select for types. Also we take ideas from the [if expressions implementation](/blog/2020/if-expressions-for-cpp-part1), where we have created transient types for the _if_, _then_, _else if_, and _else_ parts of the expression. It's obvious we need an `If` structure template, but the hard part for me was figuring out how to enable the `Then`, `ElseIf`, and `Else` parts of the expression[^first_try].
