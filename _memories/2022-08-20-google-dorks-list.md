@@ -3,7 +3,9 @@ layout: memory
 title: Google Dorks List & SQLi List
 ---
 
-
+<p align="center">
+<img width="600" src="/images/google-dorks.png">
+</p>
 
 A Google Dorks List or “Google Hacking” is mainly referred to pull the sensitive information from Google using advanced search terms that help users to search the index of a specific website, specific file type and some interesting information from unsecured Websites.
 

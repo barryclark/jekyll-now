@@ -1,5 +1,9 @@
+---
+layout: memory
+title: Google Dorks Cheatsheet
+---
 
-# Google dork cheatsheet
+Based on the Google Dorks List it's time to gather all info at a glance in a cheatsheet. Here we go :)
 
 ## Search filters
 
