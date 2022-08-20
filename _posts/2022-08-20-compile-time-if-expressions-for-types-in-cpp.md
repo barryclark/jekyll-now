@@ -2,7 +2,7 @@
 layout: post
 tags: c++11 template-metaprogramming functional-programming
 #categories: []
-date: 2022-08-21
+date: 2022-08-20
 last_updated:
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'
