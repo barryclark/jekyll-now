@@ -9,7 +9,7 @@ last_updated:
 #description:
 #permalink:
 title: 'Compile-Time If-Expressions for Types in C++11'
-comments_id: 
+comments_id: 37
 ---
 
 The other day I wondered if there is a way to metaprogam a syntax that returns a type based on a conditional expression akin to an `if`...`else if`...`else` expression.
@@ -124,7 +124,7 @@ The &#9312; `Then_<C,T>` structure template remembers the condition `C` from the
 To enable the _else if_ part of the expression we add &#9317;&#9320; `ElseIf` associated types in the `Then_` structure template specializations. This type is the reason we have to have this weird out of order declaration of `Then_` in the first place. You surely noticed that we declared the `Then_` template on top, then the `Elif_` template and only after that we specialized the `Then_` template for the possible outcomes of the condition. This is because we want to use `Then_` from `Elif_` but also `Elif_` from `Then_`. Since the compiler needs to see those declarations before usage, we help it by essentially forward declaring the `Then_` template. &#9313; `Elif_` has one member metafunction &#9314; `Then` which uses our `Conditional` in such a way that we propagate the correct logic and types through the chain.
 
 # Conclusions and Code
-In summary, we have enabled a syntax for using an _if_..._else if_..._else_ logic to expressively select _types_ at compile time based on logical conditions. This nicely complements my previous [if expressions implementation](/blog/2020/if-expressions-for-cpp-part1), which we can use to select _values_ (but not types) at compile time. Both implementations are available as part of my [func++ repository](https://github.com/geo-ant/funcpp) repository on GitHub.
+In summary, we have enabled a syntax for using an _if_..._else if_..._else_ logic to expressively select _types_ at compile time based on logical conditions in C++11. This nicely complements my previous [if expressions implementation](/blog/2020/if-expressions-for-cpp-part1), which we can use to select _values_ (but not types) at compile time. Both implementations are available as part of my [func++ repository](https://github.com/geo-ant/funcpp) repository on GitHub.
 
 # Endnotes
 [^first_try]: For my first try I used `constexpr` functions on the `If` type which can be made to return (instances of) different types based on a compile time known condition using `if constexpr`. There's many problems with this approach, but the biggest problem is that we have to extract the return _type_ using `decltype`, which does not make for a nice syntax
