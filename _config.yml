@@ -3,13 +3,15 @@
 #
 
 # Name of your site (displayed in the header)
-name: Ulises Chialva
+name: Geometría Absoluta
 
 # Short bio or description (displayed in the header)
 description: Portafolio/Blog personal
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://uliseschialva.github.io/cv-online/foto_perfil.png
+avatar: https://github.com/uliseschialva/uliseschialva.github.io/blob/master/axioma.png
+
+#https://uliseschialva.github.io/cv-online/foto_perfil.png
 
 #
 # Flags below are optional
