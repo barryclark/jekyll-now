@@ -1,6 +1,6 @@
 ---
 layout: culture
-title: Performing a (Security) Code Review
+title: Performing a Security Code Review
 ---
 
 Code Reviews are required for auditing an application's source code by people **other then the author**
@@ -161,3 +161,90 @@ Key points:
 * Humans are fallible and miss faults
 * Manual code reviews are slow but have a high chance to find something.
 * Can be part of a nightly build or integrated in a CI/CD pipeline
+
+## How Static Analysis works
+
+To see how automation can help you it's a good idea to take a look under the hood. Time for an excursion and check out how static analysis works works internal.
+
+<p align="center">
+<img width=600  src="/images/sqli-checklist.png">
+</p>
+
+**Source**: Brian Chess and Jacob West, Secure Programming with Static Analysis, Addison-Wesley, 2007
+
+Let's discuss the entities shown in the picture above.
+
+### Build Model
+
+Parse method (as source or bytecode) and convert it into a control-flow graph (CFG). The CFG consists of nodes which represents simplified statements. The edges are possible control flow between such statements.
+
+<p align="center">
+<img width=600  src="/images/sa-build-model.png">
+</p>
+
+### Perform Taint Analysis
+
+During the taint analysis the flow of the data is tracked from the source to the sink.
+
+**Source (( <-))**: Spot where data comes into the program
+**Sink (( ->))**: A function that consumes the data
+
+The taint analysis reports a vulnerability if:
+
+* Data comes from an untrusted source
+* Data get's consumed by a dangerous sink
+* No sanitize function is implemented between source and sink
+
+#### Example for a taint analysis of SQL injection issues
+
+<p align="center">
+<img width=600  src="/images/taint-analysis-sqli.png">
+</p>
+
+The code above shows some Java code that processes an HTTP request, get's the Student ID back and queries the database for additional information about the student. Inside the code is the source and sink displayed. Since the code is looking a little messy it's a good idea to check the states between them and display it as a CFG and inspect the tainted values:
+
+<p align="center">
+<img width=600  src="/images/taint-analysis-sqli2.png">
+</p>
+
+The SQL example aboves show's the analysis of ONE function. Time to check the difference of the procedural analysis:
+
+* INTRAprocedural Analysis: Analysis of an individual function
+* INTERprocedural Analysis: Follow control and data flow **across**
+
+### Security knowledge
+
+In the steps before we identified possible issues, now it's time to spice everything up with some Security. Therefore we need an interpretation of results and check which kind of Security knowledge is required for configuring a static analysis tool:
+
+* What are the data sources?
+* What are the data sinks?
+* What sources are untrusted?
+* Which sinks are dangerous?
+* WHich functions sanitize data?
+
+### Result
+
+Time to check the results beside of true positve/negatives findings it's always a good idea to check for design flaws in the manual review since they are very hard to identify. The main goal of your Security knowledge is required to rate the results. But we also need to talk about two things we didn't discuss yet:
+
+<p align="center">
+<img width=600  src="/images/true_false_positives.jpeg.png">
+</p>
+
+**False positives**: 
+* Static analysis reports faults that don't exist
+* Complex control or data flow may confuse analysis
+
+**False negatives**: 
+* Static analysis fails to discover faults
+* Code complexity or missing rule
+
+Additional sources and info:
+
+* [OWASP Code Review Guide v2 (2017)](https://www.owasp.org/images/5/53/OWASP_Code_Review_Guide_v2.pdf)
+* [Best Kept Secrets of Peer Code Review (Jason Cohen et al., 2006)](https://smartbear.com/SmartBear/media/pdfs/Best-Kept-Secrets-of-Peer-Code-Review_Redirected.pdf)
+* [Security Code Review 101 (Paul Ionescu, 2019)](https://medium.com/@paul_io/security-code-review-101-a3c593dc6854)
+* [Code Review vs. Testing (Codacy, 2016)](https://www.codacy.com/blog/code-review-vs-testing/)
+* [Rick Kuipers on The Science of Code Reviews (DPC 2018)](https://www.youtube.com/watch?v=EyL7mqwpZhk)
+* [Security Code Review 101 with Paul Ionescu! (OWASP DevSlop Show, 2019)](https://www.youtube.com/watch?v=rAwxFw25x3E)
+* [Let’s play a game: what is the deadly bug here? (LiveOverflow, 2018)](https://www.youtube.com/watch?v=MpeaSNERwQA)
+* [Sources and Sinks – Code Review Basics (LiveOverflow, 2018)](https://www.youtube.com/watch?v=ZaOtY4i5w_U)
