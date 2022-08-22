@@ -6,7 +6,7 @@ category: dev
 tags: [howto, cloud, aws, devops, kubernetes]
 author: Cristian Pirtea
 author_email: pirteac@haufe.com
-header-img: "images/secure-your-application-with-k8s-nginx-ingress-oauth2-azuread/security-solutions.jpg"
+header-img: "images/secure-your-application-with-k8s-nginx-ingress-oauth2-azuread/security-graphic.jpg"
 ---
 
 Protecting resources behind a Kubernetes Ingress, is often NOT an easy task. Many applications do not provide built-in authentication out-of-the-box.
