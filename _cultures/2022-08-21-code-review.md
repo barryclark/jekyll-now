@@ -27,7 +27,7 @@ Testing isn't enough to find Security issues. The table below show a what both h
 
 ## Code Review Styles
 
-A code review can be consisting of two parts. First at all get a feeling about the code by using some automated tools like SAST Scanner, inspect the architecture diagrams (or get some created if they are missing), use some grep or SemGrep, and check for code parts with missing code coverage. Also you can create a Threat Model to create a prioritized list.
+A code review usually is consisting of two parts. First at all, get a feeling about the code by using some automated tools like SAST Scanner, inspect the architecture diagrams (or get some created if they are missing), use some grep or SemGrep, and check for code parts with missing code coverage. Also you can create a [Threat Model](https://benjitrapp.github.io/cultures/2022-06-11-threat-modeling/) to derive a prioritized list for the review.
 
 <p align="center">
 <img width=600  src="/images/code-review-style.png">
@@ -35,7 +35,7 @@ A code review can be consisting of two parts. First at all get a feeling about t
 
 ### Manual Code Review
 
-The manual part of a code review is the part which requires the most effort. Therefore you'll come to a prioritization problem. Since you can't inspect everything you have to inspect what probably has vulnerabilities. To find them you can relay on three typical approaches:
+The manual part of a code review, is the part which requires the most effort. Therefore you'll come fast to a prioritization problem. Since you can't inspect everything, you have to inspect what probably has vulnerabilities. To find vulnerable parts in the code, you can relay on three typical approaches:
 
 1. **Code coverage** - check what has NOT been tested. If there is NO test at all, plan in some more time and try an automated approach like fuzzing to find weak spots
 2. **Prediction** - what history says is vulnerable will also reveal something that you currently might watch right now
@@ -47,7 +47,7 @@ Before we start with the process it's a good idea to get an overview about who's
 
 **Moderator/Inspection Leader**: Responsible for planning and organizational tasks. Takes over the moderation of the meeting and also organizes follow-ups if issues or concerns were found
 
-**Recorder**: DOcuments faults, actions, decisions made in the meeting
+**Recorder**: Documents faults, actions, decisions made in the meeting
 
 **Reader (not the author)**: Leads through the review
 
@@ -68,7 +68,7 @@ Code Review Processes vary widely in their formality, focus. The most two common
 * Author = Moderator, Reader
 * Driven by author’s goal
 
-To have a better understanding, let'S go through the inspection:
+To have a better understanding, let's go through the inspection:
 
 <p align="center">
 <img width=600  src="/images/code-review-process.png">
@@ -227,7 +227,7 @@ In the steps before we identified possible issues, now it's time to spice everyt
 Time to check the results beside of true positve/negatives findings it's always a good idea to check for design flaws in the manual review since they are very hard to identify. The main goal of your Security knowledge is required to rate the results. But we also need to talk about two things we didn't discuss yet:
 
 <p align="center">
-<img width=600  src="/images/true_false_positives.jpeg.png">
+<img width=600  src="/images/true_false_positives.jpeg">
 </p>
 
 **False positives**: 
