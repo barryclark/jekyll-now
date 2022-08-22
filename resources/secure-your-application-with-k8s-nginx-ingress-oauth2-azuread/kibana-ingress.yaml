@@ -9,14 +9,14 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: __INGRESS_HOST__ # change to your FQDN
+  - host: <INGRESS_HOST> # change to your domain
     http:
       paths:
       - backend:
           service:
-            name: __SERVICE_NAME__ # change to your service name
+            name: <SERVICE_NAME> # change to your service name
             port:
-              number: __SERVICE_PORT__ # change to your service port
+              number: <SERVICE_PORT> # change to your service port
         path: /
         pathType: Prefix
 ---
@@ -28,7 +28,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: __INGRESS_HOST__
+  - host: <INGRESS_HOST> # change to your domain
     http:
       paths:
       - path: /oauth2
