@@ -6,7 +6,7 @@ category: dev
 tags: [howto, cloud, aws]
 author: Cristian Pirtea
 author_email: pirteac@haufe.com
-header-img: "images/aws-opensearch-kibana-azure-ad/someonescomputer.jpg"
+header-img: "images/secure-your-application-with-k8s-nginx-ingress-oauth2-azuread/security-solutions.jpg"
 ---
 
 Protecting resources behind a Kubernetes Ingress, is often NOT an easy task. Many applications do not provide built-in authentication out-of-the-box.
