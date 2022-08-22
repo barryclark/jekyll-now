@@ -227,7 +227,7 @@ In the steps before we identified possible issues, now it's time to spice everyt
 Time to check the results beside of true positve/negatives findings it's always a good idea to check for design flaws in the manual review since they are very hard to identify. The main goal of your Security knowledge is required to rate the results. But we also need to talk about two things we didn't discuss yet:
 
 <p align="center">
-<img width=600  src="/images/true_false_positives.jpeg.png">
+<img width=600  src="/images/true_false_positives.jpeg">
 </p>
 
 **False positives**: 
