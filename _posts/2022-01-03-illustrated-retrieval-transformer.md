@@ -10,6 +10,9 @@ title: The Illustrated Retrieval Transformer
 
 **Summary**: The latest batch of language models can be much smaller yet achieve GPT-3 like performance by being able to query a database or search the web for information. A key indication is that building larger and larger models is not the only way to improve performance.
 
+## Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sMPq4cVS4kg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <hr />
 
 The last few years saw the rise of Large Language Models (LLMs) -- machine learning models that rapidly improve how machines process and generate language. Some of the highlights since 2017 include:
