@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    k8s-app: oauth2-proxy
+  name: oauth2-proxy
+  namespace: demo-oauth2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: oauth2-proxy
+  template:
+    metadata:
+      labels:
+        k8s-app: oauth2-proxy
+    spec:
+      containers:
+      - args:
+        - --provider=oidc
+        - --azure-tenant=<Tenant ID> # replace with your tenant id
+        - --email-domain=<company domain name(eg. haufe.com)>
+        - --http-address=0.0.0.0:4180
+        - --oidc-issuer-url=https://login.microsoftonline.com/<Tenant ID>/v2.0 # replace with your tenant id
+        # Register a new application
+        # https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app
+        env:
+        - name: OAUTH2_PROXY_CLIENT_ID
+          value: <Application Client ID> # replace with client id
+        - name: OAUTH2_PROXY_CLIENT_SECRET
+          value: <Client Secret> # replace with client secret
+        - name: OAUTH2_PROXY_COOKIE_SECRET
+          value: <Random Secret> # replace with value of: python -c 'import os,base64; print(base64.b64encode(os.urandom(16)).decode("ascii"))'
+        image: quay.io/oauth2-proxy/oauth2-proxy:latest
+        imagePullPolicy: Always
+        name: oauth2-proxy
+        ports:
+        - containerPort: 4180
+          protocol: TCP
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    k8s-app: oauth2-proxy
+  name: oauth2-proxy
+  namespace: demo-oauth2
+spec:
+  ports:
+  - name: http
+    port: 4180
+    protocol: TCP
+    targetPort: 4180
+  selector:
+    k8s-app: oauth2-proxy
