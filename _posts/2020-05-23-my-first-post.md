@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Good Luck
+title: bla bla
 ---
 
-에어릭스 개발팀 blog입니다.
+Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
-공부한 지식들 공유 부탁드립니다.
+![_config.yml]({{ site.baseurl }}/images/config.png)
 
-많은 포스팅바랍니다. 감사합니다.
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
