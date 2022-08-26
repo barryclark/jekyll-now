@@ -16,7 +16,7 @@ Benefits of a code review:
 
 ## Testing ≠ Code Review
 
-Testing isn't enough to find Security issues. The table below show a what both have in common and where it differs:
+Testing isn't enough to find Security issues. The table below shows what both have in common and where they differ:
 
 | **Testing**                       | **Code Review**                                        |
 | --------------------------------- | ------------------------------------------------------ |
@@ -27,7 +27,7 @@ Testing isn't enough to find Security issues. The table below show a what both h
 
 ## Code Review Styles
 
-A code review usually is consisting of two parts. First at all, get a feeling about the code by using some automated tools like SAST Scanner, inspect the architecture diagrams (or get some created if they are missing), use some grep or SemGrep, and check for code parts with missing code coverage. Also you can create a [Threat Model](https://benjitrapp.github.io/cultures/2022-06-11-threat-modeling/) to derive a prioritized list for the review.
+A code review usually consists out of two parts a manual and an automated one. First at all, get a feeling about the code by using some automated tools like a SAST Scanner. Inspect the architecture diagrams (or get some created if they are missing), use some grep statements or SemGrep, and check for code parts with missing code coverage. Also you can create a [Threat Model](https://benjitrapp.github.io/cultures/2022-06-11-threat-modeling/) to derive a prioritized list for the review in a more risk based approach.
 
 <p align="center">
 <img width=600  src="/images/code-review-style.png">
@@ -230,11 +230,13 @@ Time to check the results beside of true positve/negatives findings it's always 
 <img width=600  src="/images/true_false_positives.jpeg">
 </p>
 
-**False positives**: 
+**False positives**:
+
 * Static analysis reports faults that don't exist
 * Complex control or data flow may confuse analysis
 
-**False negatives**: 
+**False negatives**:
+
 * Static analysis fails to discover faults
 * Code complexity or missing rule
 
