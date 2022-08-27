@@ -30,7 +30,7 @@ This is a living document outlining the things I use. Check out what other peopl
 
 * [AirPods Pro](https://www.amazon.com/dp/B09JQMJHXY/ref=cm_sw_r_tw_dp_4AAPA17YR935FEF5DVXB)
 * [JBL Flip](https://www.amazon.com/dp/B07QK2SPP7/ref=cm_sw_r_tw_dp_RM04TSGTFP9NVSBFGQJX?_encoding=UTF8&psc=1)&#8212;a great little bluetooth speaker.
-* [Sony WH1000XM3](https://www.amazon.com/dp/B07G4MNFS1/ref=cm_sw_r_tw_dp_AB2ZPTKNC9E4FQDWKH6G?_encoding=UTF8&psc=1) noise-cancelling headphones&#8212;I don't use this as often as I used to while working from home.
+* [Sony WH1000XM3](https://www.amazon.com/dp/B07G4MNFS1/ref=cm_sw_r_tw_dp_AB2ZPTKNC9E4FQDWKH6G?_encoding=UTF8&psc=1) noise-cancelling headphones&#8212;I don't use this as often as I used to since I mostly work from home.
 
 ## Other desk stuff
 
@@ -54,7 +54,7 @@ This is a living document outlining the things I use. Check out what other peopl
 * [Esington hourglass](https://www.esington.com/products/esington-glass-new-edition-stop-time)&#8212;I have both a small and large hourglass I purchased during their original Kickstarter.
 * [Star Wars Mighty Muggs Captain Rex](https://www.amazon.com/dp/B0014RC2WW/ref=cm_sw_r_tw_dp_VNP0DA681G0T3J8QWMPW)&#8212;Everyone needs a rubber duck to help with debugging. Mine is in the form of Captain Rex.
 * [eBags Pro Slim Laptop Backpack](https://www.ebags.com/backpacks/laptop-backpacks/pro-slim-laptop-backpack/117775XXXX.html?dwvar_117775XXXX_color=Solid%20Black&cgidmaster=laptop-backpacks)
-* [Tom Bihn snake charmer bag](https://www.tombihn.com/products/snake-charmer?variant=13808217849919)&#8212;In 2016 this bag got a redesign and I have the older style. The two-sided mesh bag is great for holding all sorts of cables and other junk.
+* [Tom Bihn snake charmer bag](https://www.tombihn.com/products/snake-charmer?variant=13808217849919)&#8212;In 2016 this bag got a redesign and I have the older style. The two-sided mesh bag is great for holding all sors of cables and other junk.
 
 ## Software
 
