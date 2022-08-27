@@ -1,0 +1,62 @@
+---
+layout: post
+title: Active GNSS antenna design (Part I)
+---
+
+Hey there folks!
+
+Once again, it's been a long time. I should really devote more time to this blog... Well anyway, let's get back to business! This time I'm posting about a little project I've been doing to support some activities at work. So, we've been working on some stuff with GNSS, but this time the receiver is designed to operate with an internal antenna as well as an external antenna, which can be active and it is supplied by what we called phantom voltage. Phantom because it is supplied through a dedicated LDO and has a bias tee network in place, so that it is perfectly isolated from the rest of the circuit to avoid noise from our circuit to sneak into the GNSS chain and screw the reception. 
+
+So, to test this device with an external antenna we need to acquire an external GNSS antenna and especially an active one. Of course, we did buy one, like this one here:
+
+{:refdef: style="text-align: center;"}
+![gnss-ant](/images/post13/gnss-antenna-example.png)
+{:refdef}
+
+But I thought to myself, well I think I can make a similar, or even better, performance antenna for a similar price. Plus, that would be a nice little project I could do and would give a nice addition to my blog posts! And here we are...
+
+When it comes to GNSS antennas
+
+So first things first, let's define the requirements for this antenna:
+
+- Frequency band: 1575 - 1610 MHz
+- Maximum size: 100 x 100 x 20 mm
+- Maximum weight: 300 g
+- Passive gain: > 6 dBi
+- Polarization: RHCP
+- Active gain: > 20 dB
+- Noise figure: < 1.5 dB
+- VSWR: 2:1
+
+Now, there's also another rule for this challenge, the antenna must be designed and integrated into PCBs, so it is easier and cheaper to manufacture. Therefore, the use of ceramic patch antennas is not allowed. Also, the LNA (Low Noise Amplifier) must also be designed around a transistor, it doesn't count to use a pre-packaged integrated LNA, otherwise where would be the fun?!
+
+{:refdef: style="text-align: center;"}
+![funny](/images/post13/funny.gif)
+{:refdef}
+
+If I wanted to make it easier (and probably better), it would be preferable to opt for an integrated LNA like the [BGA524N6](https://www.infineon.com/cms/en/product/rf/low-noise-amplifier-lna-ics/gps-glonass-compass-lna/bga524n6/) from Infineon. But instead, we're going to design a LNA around a [BFP640FESD](https://www.infineon.com/cms/en/product/rf/rf-transistor/low-noise-rf-transistors/bfp640fesd/), which is a HBT (Heterojunction Bipolar Transistor) tailored for low noise applications. The reason I chose this particular transistor is because I had it already in my component box without any destination and because it fits well this application. 
+
+To make this post shorter and to make it come out quicker, in this one I'll focus only on the antenna design and results, on a next post I will focus on the LNA design and on the making of a housing for the antenna and integration of everything.
+
+The antenna, well it's an air-core microstrip patch antenna, similar to the one I've shown in the past for the RFID reader...
+
+{:refdef: style="text-align: center;"}
+![sucks](/images/post13/sucks.gif)
+{:refdef}
+
+but with some minor twists!
+
+{:refdef: style="text-align: center;"}
+![bortus](/images/post13/impressive.gif)
+{:refdef}
+
+I have to agree with officer Bortus here, it's not very impressive, but that's that. We want cheap, simple, functional and accurate without being a master artisan, there's no way around it.
+
+So the patch antenna itself is a ring antenna. Why a ring? Well, to use a square, I'd either have to rotate the coupler by 45º, or make some weird lines out of those ports (adding losses), because rotating the patch would make it impossible to fit within the 100x100 mm square PCB space. A circular shape gives me much more flexibility, but still the point is that I chose a ring instead of a filled circular shape. Remember my post about compensating the inductance of long feed points in air-core microstrip antennas? No? Shame on you, [go check it out](https://theantennaguy.github.io/microstrip-patch-air-core-3/). Now, there's another way to compensate for that added inductance from the feeding which is creating not a small, but a large slot in the middle of the patch. This works particularly well in circular patches, because the electric path through the middle of the antenna is increased smoothly. And that's it. 
+
+As in the case of the RFID antenna I've used a double feed with a hybrid coupler, but this time I dimensioned the lines to work at 1.575 GHz and were designed for a 0.8 mm (cheapest after the 1.6 mm ones) thick FR-4 substrate. Here's the pictures:
+
+![3model](/images/post13/3D.png) | ![front](/images/3D_2.png) | ![back](/images/3D_1.png) 
+:-------------------------:|:-------------------------:|:-------------------------:
+Profile view | Front view | Back view
+
