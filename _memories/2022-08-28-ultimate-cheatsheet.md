@@ -27,9 +27,9 @@ Tiny but shiny collection of multiple things that can come to help during stress
 - **[One-liners](#one-liners-toc)**
 - **[Shell functions](#shell-functions-toc)**
 
-## :trident: &nbsp;
+## 🔱
 
-#### CLI Tools &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
+#### CLI Tools &nbsp;[<sup>[TOC]</sup>](#ultimate-cheatsheet-and-resources-list)
 
 ##### ▪️ Shells
 
@@ -293,7 +293,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://github.com/itchyny/bed"><b>bed</b></a> - binary editor written in Go.<br>
 </p>
 
-#### GUI Tools &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
+#### GUI Tools &nbsp;[<sup>[TOC]</sup>](#ultimate-cheatsheet-and-resources-list)
 
 ##### ▪️ Terminal emulators
 
@@ -353,7 +353,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://atom.io/"><b>Atom</b></a> - a hackable text editor for the 21st Century.<br>
 </p>
 
-#### Web Tools &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
+#### Web Tools &nbsp;[<sup>[TOC]</sup>](#ultimate-cheatsheet-and-resources-list)
 
 ##### ▪️ Browsers
 
@@ -618,7 +618,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://keyserver.ubuntu.com/"><b>SKS OpenPGP Key server</b></a> - services for the SKS keyservers used by OpenPGP.<br>
 </p>
 
-#### Systems/Services &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
+#### Systems/Services &nbsp;[<sup>[TOC]</sup>](#ultimate-cheatsheet-and-resources-list)
 
 ##### ▪️ Operating Systems
 
@@ -673,7 +673,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://github.com/StreisandEffect/streisand"><b>streisand</b></a> - sets up a new server running your choice of WireGuard, OpenSSH, OpenVPN, and more.<br>
 </p>
 
-#### Networks &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
+#### Networks &nbsp;[<sup>[TOC]</sup>](#ultimate-cheatsheet-and-resources-list)
 
 ##### ▪️ Tools
 
@@ -694,7 +694,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://ee.lbl.gov/"><b>LBNL's Network Research Group</b></a> - home page of the Network Research Group (NRG).<br>
 </p>
 
-#### Containers/Orchestration &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
+#### Containers/Orchestration &nbsp;[<sup>[TOC]</sup>](#ultimate-cheatsheet-and-resources-list)
 
 ##### ▪️ CLI Tools
 
@@ -740,7 +740,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://github.com/hjacobs/kubernetes-failure-stories"><b>kubernetes-failure-stories</b></a> - is a compilation of public failure/horror stories related to Kubernetes.<br>
 </p>
 
-#### Manuals/Howtos/Tutorials &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
+#### Manuals/Howtos/Tutorials &nbsp;[<sup>[TOC]</sup>](#ultimate-cheatsheet-and-resources-list)
 
 ##### ▪️ Shell/Command line
 
@@ -920,7 +920,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://postgresqlco.nf/en/doc/param/"><b>POSTGRESQLCO.NF</b></a> - your postgresql.conf documentation and recommendations.<br>
 </p>
 
-#### Inspiring Lists &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
+#### Inspiring Lists &nbsp;[<sup>[TOC]</sup>](#ultimate-cheatsheet-and-resources-list)
 
 ##### ▪️ SysOps/DevOps
 
@@ -999,7 +999,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://github.com/Sahith02/machine-learning-algorithms"><b>machine-learning-algorithms</b></a> - a curated list of all machine learning algorithms and concepts.<br>
 </p>
 
-#### Blogs/Podcasts/Videos &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
+#### Blogs/Podcasts/Videos &nbsp;[<sup>[TOC]</sup>](#ultimate-cheatsheet-and-resources-list)
 
 ##### ▪️ SysOps/DevOps
 
@@ -1134,7 +1134,7 @@ CyberTalks</b></a> - talks, interviews, and article about cybersecurity.<br>
 &nbsp;&nbsp;✅ <a href="https://www.youtube.com/watch?v=3QnD2c4Xovk"><b>Diffie-Hellman Key Exchange (short version)</b></a> - how Diffie-Hellman Key Exchange worked.<br>
 </p>
 
-#### Hacking/Penetration Testing &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
+#### Hacking/Penetration Testing &nbsp;[<sup>[TOC]</sup>](#ultimate-cheatsheet-and-resources-list)
 
 ##### ▪️ Pentesters arsenal tools
 
@@ -1384,7 +1384,7 @@ AWS deployment tool.<br>
 &nbsp;&nbsp;✅ <a href="https://github.com/Gr1mmie/Practical-Ethical-Hacking-Resources"><b>Practical-Ethical-Hacking-Resources</b></a> - compilation of resources from TCM's Udemy Course.<br>
 </p>
 
-#### Your daily knowledge and news &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
+#### Your daily knowledge and news &nbsp;[<sup>[TOC]</sup>](#ultimate-cheatsheet-and-resources-list)
 
 ##### ▪️ RSS Readers
 
@@ -1422,7 +1422,7 @@ AWS deployment tool.<br>
 &nbsp;&nbsp;✅ <a href="https://changelog.com/"><b>Changelog</b></a> - is a community of hackers; news & podcasts for developers and hackers.<br>
 </p>
 
-#### Other Cheat Sheets &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
+#### Other Cheat Sheets &nbsp;[<sup>[TOC]</sup>](#ultimate-cheatsheet-and-resources-list)
 
 ###### Build your own DNS Servers
 
@@ -1564,7 +1564,7 @@ _Encoding_
 text :arrow_right: encoded<br>
 text :arrow_left: encoded
 
-#### One-liners &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
+#### One-liners &nbsp;[<sup>[TOC]</sup>](#ultimate-cheatsheet-and-resources-list)
 
 ##### Table of Contents
 
@@ -4204,7 +4204,7 @@ perl -p -i -e 's/\t/  /g' filename
 perl -lne '$i++; $in += length($_); END { print "$i lines, $in characters"; }' filename
 ```
 
-#### Shell functions &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
+#### Shell functions &nbsp;[<sup>[TOC]</sup>](#ultimate-cheatsheet-and-resources-list)
 
 ##### Table of Contents
 
