@@ -9,10 +9,8 @@ Tiny but shiny collection of multiple things that can come to help during stress
 <img width="600" src="/images/ultimate_cheatsheet.png">
 </p>
 
-
 <!-- cSpell:disable -->
 # Ultimate Cheatsheet and Resources List
-
 
 - **[CLI Tools](#cli-tools-toc)**
 - **[GUI Tools](#gui-tools-toc)**
@@ -33,7 +31,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 
 #### CLI Tools &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
 
-##### :black_small_square: Shells
+##### ▪️ Shells
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.gnu.org/software/bash/"><b>GNU Bash</b></a> - is an sh-compatible shell that incorporates useful features from the Korn shell and C shell.<br>
@@ -46,7 +44,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://github.com/romkatv/powerlevel10k"><b>powerlevel10k</b></a> - is a fast reimplementation of Powerlevel9k ZSH theme.<br>
 </p>
 
-##### :black_small_square: Shell plugins
+##### ▪️ Shell plugins
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/rupa/z"><b>z</b></a> - tracks the folder you use the most and allow you to jump, without having to type the whole path.<br>
@@ -56,7 +54,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://github.com/unixorn/awesome-zsh-plugins"><b>Awesome ZSH Plugins</b></a> - A list of frameworks, plugins, themes and tutorials for ZSH.<br>
 </p>
 
-##### :black_small_square: Managers
+##### ▪️ Managers
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://midnight-commander.org/"><b>Midnight Commander</b></a> - is a visual file manager, licensed under GNU General Public License.<br>
@@ -67,7 +65,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://github.com/peikk0/tmux-cssh"><b>tmux-cssh</b></a> - is a tool to set comfortable and easy to use functionality, clustering and synchronizing tmux-sessions.<br>
 </p>
 
-##### :black_small_square: Text editors
+##### ▪️ Text editors
 
 <p>
 &nbsp;&nbsp;✅ <a href="http://ex-vi.sourceforge.net/"><b>vi</b></a> - is one of the most common text editors on Unix.<br>
@@ -79,14 +77,14 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://spacevim.org/"><b>spacevim</b></a> - a community-driven vim distribution.<br>
 </p>
 
-##### :black_small_square: Files and directories
+##### ▪️ Files and directories
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/sharkdp/fd"><b>fd</b></a> - is a simple, fast and user-friendly alternative to find.<br>
 &nbsp;&nbsp;✅ <a href="https://dev.yorhel.nl/ncdu"><b>ncdu</b></a> - is an easy to use, fast disk usage analyzer.<br>
 </p>
 
-##### :black_small_square: Network
+##### ▪️ Network
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.putty.org/"><b>PuTTY</b></a> - is an SSH and telnet client, developed originally by Simon Tatham.<br>
@@ -127,7 +125,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://github.com/proabiral/inception"><b>inception</b></a> - a highly configurable tool to check for whatever you like against any number of hosts.<br>
 </p>
 
-##### :black_small_square: Network (DNS)
+##### ▪️ Network (DNS)
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/farrokhi/dnsdiag"><b>dnsdiag</b></a> - is a DNS diagnostics and performance measurement tools.<br>
@@ -144,7 +142,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://github.com/looterz/grimd"><b>grimd</b></a> - fast dns proxy, built to black-hole internet advertisements and malware servers.<br>
 </p>
 
-##### :black_small_square: Network (HTTP)
+##### ▪️ Network (HTTP)
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://curl.haxx.se/"><b>curl</b></a> - is a command line tool and library for transferring data with URLs.<br>
@@ -174,7 +172,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://github.com/mozilla/http-observatory"><b>http-observatory</b></a> - Mozilla HTTP Observatory cli version.<br>
 </p>
 
-##### :black_small_square: SSL
+##### ▪️ SSL
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.openssl.org/"><b>openssl</b></a> - is a robust, commercial-grade, and full-featured toolkit for the TLS and SSL protocols.<br>
@@ -192,7 +190,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://github.com/trimstray/mkchain"><b>mkchain</b></a> - open source tool to help you build a valid SSL certificate chain.<br>
 </p>
 
-##### :black_small_square: Security
+##### ▪️ Security
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/deployment_guide/ch-selinux"><b>SELinux</b></a> - provides a flexible Mandatory Access Control (MAC) system built into the Linux kernel.<br>
@@ -201,7 +199,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://github.com/dev-sec/"><b>DevSec Hardening Framework</b></a> - Security + DevOps: Automatic Server Hardening.<br>
 </p>
 
-##### :black_small_square: Auditing Tools
+##### ▪️ Auditing Tools
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.ossec.net/"><b>ossec</b></a> - actively monitoring all aspects of system activity with file integrity monitoring.<br>
@@ -213,7 +211,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://github.com/hasherezade/pe-sieve"><b>PE-sieve</b></a> - is a light-weight tool that helps to detect malware running on the system.<br>
 </p>
 
-##### :black_small_square: System Diagnostics/Debuggers
+##### ▪️ System Diagnostics/Debuggers
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/strace/strace"><b>strace</b></a> - diagnostic, debugging and instructional userspace utility for Linux.<br>
@@ -238,7 +236,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://github.com/sharkdp/hexyl"><b>hexyl</b></a> - a command-line hex viewer.<br>
 </p>
 
-##### :black_small_square: Log Analyzers
+##### ▪️ Log Analyzers
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/rcoh/angle-grinder"><b>angle-grinder</b></a> - slice and dice log files on the command line.<br>
@@ -247,7 +245,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://github.com/lebinh/ngxtop"><b>ngxtop</b></a> - real-time metrics for nginx server.<br>
 </p>
 
-##### :black_small_square: Databases
+##### ▪️ Databases
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/xo/usql"><b>usql</b></a> - universal command-line interface for SQL databases.<br>
@@ -260,27 +258,27 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://github.com/laixintao/iredis"><b>iredis</b></a> - a terminal client for redis with autocompletion and syntax highlighting.<br>
 </p>
 
-##### :black_small_square: TOR
+##### ▪️ TOR
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/GouveaHeitor/nipe"><b>Nipe</b></a> - script to make Tor Network your default gateway.<br>
 &nbsp;&nbsp;✅ <a href="https://github.com/trimstray/multitor"><b>multitor</b></a> - a tool that lets you create multiple TOR instances with a load-balancing.<br>
 </p>
 
-##### :black_small_square: Messengers/IRC Clients
+##### ▪️ Messengers/IRC Clients
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://irssi.org"><b>Irssi</b></a> - is a free open source terminal based IRC client.<br>
 &nbsp;&nbsp;✅ <a href="https://weechat.org/"><b>WeeChat</b></a> - is an extremely extensible and lightweight IRC client.<br>
 </p>
 
-##### :black_small_square: Productivity
+##### ▪️ Productivity
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://taskwarrior.org"><b>taskwarrior</b></a> - task management system, todo list <br>
 </p>
 
-##### :black_small_square: Other
+##### ▪️ Other
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/skx/sysadmin-util"><b>sysadmin-util</b></a> - tools for Linux/Unix sysadmins.<br>
@@ -297,7 +295,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 
 #### GUI Tools &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
 
-##### :black_small_square: Terminal emulators
+##### ▪️ Terminal emulators
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/Guake/guake"><b>Guake</b></a> - is a dropdown terminal made for the GNOME desktop environment.<br>
@@ -306,7 +304,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://github.com/alacritty/alacritty"><b>Alacritty</b></a> - is a fast, cross-platform, OpenGL terminal emulator.<br>
 </p>
 
-##### :black_small_square: Network
+##### ▪️ Network
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.wireshark.org/"><b>Wireshark</b></a> - is the world’s foremost and widely-used network protocol analyzer.<br>
@@ -318,27 +316,27 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://github.com/locustio/locust"><b>locust</b></a> - scalable user load testing tool written in Python.<br>
 </p>
 
-##### :black_small_square: Browsers
+##### ▪️ Browsers
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.torproject.org/"><b>TOR Browser</b></a> - protect your privacy and defend yourself against network surveillance and traffic analysis.<br>
 </p>
 
-##### :black_small_square: Password Managers
+##### ▪️ Password Managers
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://keepassxc.org/"><b>KeePassXC</b></a> - store your passwords safely and auto-type them into your everyday websites and apps.<br>
 &nbsp;&nbsp;✅ <a href="https://bitwarden.com/"><b>Bitwarden</b></a> - open source password manager with built-in sync.<br>
 </p>
 
-##### :black_small_square: Messengers/IRC Clients
+##### ▪️ Messengers/IRC Clients
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://hexchat.github.io/index.html"><b>HexChat</b></a> - is an IRC client based on XChat.<br>
 &nbsp;&nbsp;✅ <a href="https://pidgin.im/"><b>Pidgin</b></a> - is an easy to use and free chat client used by millions.<br>
 </p>
 
-##### :black_small_square: Messengers (end-to-end encryption)
+##### ▪️ Messengers (end-to-end encryption)
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.signal.org/"><b>Signal</b></a> - is an encrypted communications app.<br>
@@ -347,7 +345,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://matrix.org/"><b>Matrix</b></a> - an open network for secure, decentralized, real-time communication.<br>
 </p>
 
-##### :black_small_square: Text editors
+##### ▪️ Text editors
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.sublimetext.com/3"><b>Sublime Text</b></a> - is a lightweight, cross-platform code editor known for its speed, ease of use.<br>
@@ -357,7 +355,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 
 #### Web Tools &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
 
-##### :black_small_square: Browsers
+##### ▪️ Browsers
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.ssllabs.com/ssltest/viewMyClient.html"><b>SSL/TLS Capabilities of Your Browser</b></a> - test your browser's SSL implementation.<br>
@@ -369,7 +367,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://suche.org/sslClientInfo"><b>sslClientInfo</b></a> - client test (incl TLSv1.3 information).<br>
 </p>
 
-##### :black_small_square: SSL/Security
+##### ▪️ SSL/Security
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.ssllabs.com/ssltest/"><b>SSLLabs Server Test</b></a> - performs a deep analysis of the configuration of any SSL web server.<br>
@@ -399,7 +397,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://github.com/mozilla/ssl-config-generator"><b>ssl-config-generator</b></a> - help you follow the Mozilla Server Side TLS configuration guidelines.<br>
 </p>
 
-##### :black_small_square: HTTP Headers & Web Linters
+##### ▪️ HTTP Headers & Web Linters
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://securityheaders.com/"><b>Security Headers</b></a> - analyse the HTTP response headers (with rating system to the results).<br>
@@ -407,7 +405,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://webhint.io/"><b>webhint</b></a> - is a linting tool that will help you with your site's accessibility, speed, security, and more.<br>
 </p>
 
-##### :black_small_square: DNS
+##### ▪️ DNS
 
 <p>
 &nbsp;&nbsp;✅ <a href="http://viewdns.info/"><b>ViewDNS</b></a> - one source for free DNS related tools and information.<br>
@@ -431,7 +429,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://blog.erbbysam.com/index.php/2019/02/09/dnsgrep/"><b>DNSGrep</b></a> - quickly searching large DNS datasets.<br>
 </p>
 
-##### :black_small_square: Mail
+##### ▪️ Mail
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://luxsci.com/smtp-tls-checker"><b>smtp-tls-checker</b></a> - check an email domain for SMTP TLS support.<br>
@@ -442,7 +440,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://dkimvalidator.com/"><b>DKIM SPF & Spam Assassin Validator</b></a> - checks mail authentication and scores messages with Spam Assassin.<br>
 </p>
 
-##### :black_small_square: Encoders/Decoders and Regex testing
+##### ▪️ Encoders/Decoders and Regex testing
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.url-encode-decode.com/"><b>URL Encode/Decode</b></a> - tool from above to either encode or decode a string of text.<br>
@@ -454,7 +452,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://gchq.github.io/CyberChef/"><b>The Cyber Swiss Army Knife</b></a> - a web app for encryption, encoding, compression and data analysis.<br>
 </p>
 
-##### :black_small_square: Net-tools
+##### ▪️ Net-tools
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://toolbar.netcraft.com/site_report"><b>Netcraft</b></a> - detailed report about the site, helping you to make informed choices about their integrity.<b>*</b><br>
@@ -471,14 +469,14 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="https://www.virustotal.com/gui/home/upload"><b>VirusTotal</b></a> - analyze suspicious files and URLs to detect types of malware.<br>
 </p>
 
-##### :black_small_square: Privacy
+##### ▪️ Privacy
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.privacytools.io/"><b>privacytools.io</b></a> - provides knowledge and tools to protect your privacy against global mass surveillance.<br>
 &nbsp;&nbsp;✅ <a href="https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Test+Servers"><b>DNS Privacy Test Servers</b></a> - DNS privacy recursive servers list (with a 'no logging' policy).<br>
 </p>
 
-##### :black_small_square: Code parsers/playgrounds
+##### ▪️ Code parsers/playgrounds
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.shellcheck.net/"><b>ShellCheck</b></a> - finds bugs in your shell scripts.<br>
@@ -490,7 +488,7 @@ Tiny but shiny collection of multiple things that can come to help during stress
 &nbsp;&nbsp;✅ <a href="http://www.vclfiddle.net/"><b>vclFiddle</b></a> - is an online tool for experimenting with the Varnish Cache VCL.<br>
 </p>
 
-##### :black_small_square: Performance
+##### ▪️ Performance
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://gtmetrix.com/"><b>GTmetrix</b></a> - analyze your site’s speed and make it faster.<br>
@@ -503,7 +501,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://github.com/GoogleChrome/lighthouse"><b>Lighthouse</b></a> - automated auditing, performance metrics, and best practices for the web.<br>
 </p>
 
-##### :black_small_square: Mass scanners (search engines)
+##### ▪️ Mass scanners (search engines)
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://censys.io/"><b>Censys</b></a> - platform that helps information security practitioners discover, monitor, and analyze devices.<br>
@@ -547,7 +545,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://webtechsurvey.com/common-response-headers"><b>Common Response Headers</b></a> - the largest database of HTTP response headers.<br>
 </p>
 
-##### :black_small_square: Generators
+##### ▪️ Generators
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://thispersondoesnotexist.com/"><b>thispersondoesnotexist</b></a> - generate fake faces in one click - endless possibilities.<br>
@@ -556,7 +554,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://tools.intigriti.io/redirector/"><b>Intigriti Redirector</b></a> - open redirect/SSRF payload generator.<br>
 </p>
 
-##### :black_small_square: Passwords
+##### ▪️ Passwords
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://haveibeenpwned.com/"><b>have i been pwned?</b></a> - check if you have an account that has been compromised in a data breach.<br>
@@ -564,7 +562,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://leakedsource.ru/"><b>Leaked Source</b></a> - is a collaboration of data found online in the form of a lookup.<br>
 </p>
 
-##### :black_small_square: CVE/Exploits databases
+##### ▪️ CVE/Exploits databases
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://cve.mitre.org/"><b>CVE Mitre</b></a> - list of publicly known cybersecurity vulnerabilities.<br>
@@ -577,7 +575,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://cveapi.com/"><b>cveapi</b></a> - free API for CVE data.<br>
 </p>
 
-##### :black_small_square: Mobile apps scanners
+##### ▪️ Mobile apps scanners
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.immuniweb.com/mobile/"><b>ImmuniWeb® Mobile App Scanner</b></a> - test security and privacy of mobile apps (iOS & Android).<br>
@@ -585,7 +583,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://www.ostorlab.co/scan/mobile/"><b>Ostorlab</b></a> - analyzes mobile application to identify vulnerabilities and potential weaknesses.<br>
 </p>
 
-##### :black_small_square: Private Search Engines
+##### ▪️ Private Search Engines
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.startpage.com/"><b>Startpage</b></a> - the world's most private search engine.<br>
@@ -598,7 +596,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://metager.org/"><b>MetaGer</b></a> - the search engine that uses anonymous proxy and hidden Tor branches.<br>
 </p>
 
-##### :black_small_square: Secure Webmail Providers
+##### ▪️ Secure Webmail Providers
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://countermail.com/"><b>CounterMail</b></a> - online email service, designed to provide maximum security and privacy.<br>
@@ -608,13 +606,13 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://www.startmail.com/en/"><b>Startmail</b></a> - private & encrypted email made easy.<br>
 </p>
 
-##### :black_small_square: Crypto
+##### ▪️ Crypto
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://keybase.io/"><b>Keybase</b></a> - it's open source and powered by public-key cryptography.<br>
 </p>
 
-##### :black_small_square: PGP Keyservers
+##### ▪️ PGP Keyservers
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://keyserver.ubuntu.com/"><b>SKS OpenPGP Key server</b></a> - services for the SKS keyservers used by OpenPGP.<br>
@@ -622,7 +620,7 @@ performance of any of your sites from across the globe.<br>
 
 #### Systems/Services &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
 
-##### :black_small_square: Operating Systems
+##### ▪️ Operating Systems
 
 <p>
 &nbsp;&nbsp;✅ <a href="http://www.slackware.com/"><b>Slackware</b></a> - the most "Unix-like" Linux distribution.<br>
@@ -639,7 +637,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://www.qubes-os.org"><b>Qubes OS</b></a> - is a security-oriented OS that uses Xen-based virtualization.<br>
 </p>
 
-##### :black_small_square: HTTP(s) Services
+##### ▪️ HTTP(s) Services
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://varnish-cache.org/"><b>Varnish Cache</b></a> - HTTP accelerator designed for content-heavy dynamic web sites.<br>
@@ -650,7 +648,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://www.haproxy.org/"><b>HAProxy</b></a> - the reliable, high performance TCP/HTTP load balancer.<br>
 </p>
 
-##### :black_small_square: DNS Services
+##### ▪️ DNS Services
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://nlnetlabs.nl/projects/unbound/about/"><b>Unbound</b></a> - validating, recursive, and caching DNS resolver (with TLS).<br>
@@ -658,13 +656,13 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://www.powerdns.com/"><b>PowerDNS</b></a> - is an open source authoritative DNS server, written in C++ and licensed under the GPL.<br>
 </p>
 
-##### :black_small_square: Other Services
+##### ▪️ Other Services
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/z3APA3A/3proxy"><b>3proxy</b></a> - tiny free proxy server.<br>
 </p>
 
-##### :black_small_square: Security/hardening
+##### ▪️ Security/hardening
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://twitter.com/EmeraldOnion"><b>Emerald Onion</b></a> - is a 501(c)(3) nonprofit organization and transit internet service provider (ISP).<br>
@@ -677,20 +675,20 @@ performance of any of your sites from across the globe.<br>
 
 #### Networks &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
 
-##### :black_small_square: Tools
+##### ▪️ Tools
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.capanalysis.net/ca/"><b>CapAnalysis</b></a> - web visual tool to analyze large amounts of captured network traffic (PCAP analyzer).<br>
 &nbsp;&nbsp;✅ <a href="https://github.com/digitalocean/netbox"><b>netbox</b></a> - IP address management (IPAM) and data center infrastructure management (DCIM) tool.<br>
 </p>
 
-##### :black_small_square: Labs
+##### ▪️ Labs
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://labs.networkreliability.engineering/"><b>NRE Labs</b></a> - learn automation by doing it. Right now, right here, in your browser.<br>
 </p>
 
-##### :black_small_square: Other
+##### ▪️ Other
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://ee.lbl.gov/"><b>LBNL's Network Research Group</b></a> - home page of the Network Research Group (NRG).<br>
@@ -698,14 +696,14 @@ performance of any of your sites from across the globe.<br>
 
 #### Containers/Orchestration &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
 
-##### :black_small_square: CLI Tools
+##### ▪️ CLI Tools
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/google/gvisor"><b>gvisor</b></a> - container runtime sandbox.<br>
 &nbsp;&nbsp;✅ <a href="https://github.com/bcicen/ctop"><b>ctop</b></a> - top-like interface for container metrics.<br>
 </p>
 
-##### :black_small_square: Web Tools
+##### ▪️ Web Tools
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/moby/moby"><b>Moby</b></a> - a collaborative project for the container ecosystem to assemble container-based system.<br>
@@ -716,7 +714,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://github.com/jwilder/nginx-proxy"><b>nginx-proxy</b></a> - automated nginx proxy for Docker containers using docker-gen.<br>
 </p>
 
-##### :black_small_square: Security
+##### ▪️ Security
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/docker/docker-bench-security"><b>docker-bench-security</b></a> - checks for dozens of common best-practices around deploying Docker.<br>
@@ -724,7 +722,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://goharbor.io/"><b>Harbor</b></a> - cloud native registry project that stores, signs, and scans content.<br>
 </p>
 
-##### :black_small_square: Manuals/Tutorials/Best Practices
+##### ▪️ Manuals/Tutorials/Best Practices
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/wsargent/docker-cheat-sheet"><b>docker-cheat-sheet</b></a> - a quick reference cheat sheet on Docker.<br>
@@ -744,7 +742,7 @@ performance of any of your sites from across the globe.<br>
 
 #### Manuals/Howtos/Tutorials &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
 
-##### :black_small_square: Shell/Command line
+##### ▪️ Shell/Command line
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/dylanaraps/pure-bash-bible"><b>pure-bash-bible</b></a> - is a collection of pure bash alternatives to external processes.<br>
@@ -757,13 +755,13 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://google.github.io/styleguide/shellguide.html"><b>Shell Style Guide</b></a> - a shell style guide for Google-originated open-source projects.<br>
 </p>
 
-##### :black_small_square: Text Editors
+##### ▪️ Text Editors
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://vim.rtorr.com/"><b>Vim Cheat Sheet</b></a> - great multi language vim guide.<br>
 </p>
 
-##### :black_small_square: Python
+##### ▪️ Python
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://awesome-python.com/"><b>Awesome Python</b></a> - a curated list of awesome Python frameworks, libraries, software and resources.<br>
@@ -771,13 +769,13 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://www.pythoncheatsheet.org/"><b>pythoncheatsheet.org</b></a> - basic reference for beginner and advanced developers.<br>
 </p>
 
-##### :black_small_square: Sed & Awk & Other
+##### ▪️ Sed & Awk & Other
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://posts.specterops.io/fawk-yeah-advanced-sed-and-awk-usage-parsing-for-pentesters-3-e5727e11a8ad?gi=c8f9506b26b6"><b>F’Awk Yeah!</b></a> - advanced sed and awk usage (Parsing for Pentesters 3).<br>
 </p>
 
-##### :black_small_square: \*nix & Network
+##### ▪️ \*nix & Network
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.cyberciti.biz/"><b>nixCraft</b></a> - linux and unix tutorials for new and seasoned sysadmin.<br>
@@ -803,13 +801,13 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://packetlife.net/"><b>PacketLife.net</b></a> - a place to record notes while studying for Cisco's CCNP certification.<br>
 </p>
 
-##### :black_small_square: Microsoft
+##### ▪️ Microsoft
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/infosecn1nja/AD-Attack-Defense"><b>AD-Attack-Defense</b></a> - attack and defend active directory using modern post exploitation activity.<br>
 </p>
 
-##### :black_small_square: Large-scale systems
+##### ▪️ Large-scale systems
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/donnemartin/system-design-primer"><b>The System Design Primer</b></a> - learn how to design large-scale systems.<br>
@@ -817,7 +815,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://engineering.videoblocks.com/web-architecture-101-a3224e126947?gi=a896808d22a"><b>Web Architecture 101</b></a> - the basic architecture concepts.<br>
 </p>
 
-##### :black_small_square: System hardening
+##### ▪️ System hardening
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.cisecurity.org/cis-benchmarks/"><b>CIS Benchmarks</b></a> - secure configuration settings for over 100 technologies, available as a free PDF.<br>
@@ -828,7 +826,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://madaidans-insecurities.github.io/guides/linux-hardening.html"><b>Linux Hardening Guide</b></a> - how to harden Linux as much as possible for security and privacy.<br>
 </p>
 
-##### :black_small_square: Security & Privacy
+##### ▪️ Security & Privacy
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.hackingarticles.in/"><b>Hacking Articles</b></a> - LRaj Chandel's Security & Hacking Blog.<br>
@@ -842,7 +840,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://lifehacker.com/the-comprehensive-guide-to-quitting-google-1830001964"><b>Quitting Google</b></a> - the comprehensive guide to quitting Google.<br>
 </p>
 
-##### :black_small_square: Web Apps
+##### ▪️ Web Apps
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.owasp.org/index.php/Main_Page"><b>OWASP</b></a> - worldwide not-for-profit charitable organization focused on improving the security of software.<br>
@@ -867,7 +865,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://github.com/GitGuardian/APISecurityBestPractices"><b>APISecurityBestPractices</b></a> - help you keep secrets (API keys, db credentials, certificates) out of source code.<br>
 </p>
 
-##### :black_small_square: All-in-one
+##### ▪️ All-in-one
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://lzone.de/cheat-sheet/"><b>LZone Cheat Sheets</b></a> - all cheat sheets.<br>
@@ -878,13 +876,13 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://gnulinux.guru/"><b>gnulinux.guru</b></a> - collection of cheat sheets about bash, vim and networking.<br>
 </p>
 
-##### :black_small_square: Ebooks
+##### ▪️ Ebooks
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/EbookFoundation/free-programming-books"><b>free-programming-books</b></a> - list of free learning resources in many languages.<br>
 </p>
 
-##### :black_small_square: Other
+##### ▪️ Other
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://bitvijays.github.io/LFC-VulnerableMachines.html"><b>CTF Series : Vulnerable Machines</b></a> - the steps below could be followed to find vulnerabilities and exploits.<br>
@@ -924,7 +922,7 @@ performance of any of your sites from across the globe.<br>
 
 #### Inspiring Lists &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
 
-##### :black_small_square: SysOps/DevOps
+##### ▪️ SysOps/DevOps
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/kahun/awesome-sysadmin"><b>Awesome Sysadmin</b></a> - amazingly awesome open source sysadmin resources.<br>
@@ -942,7 +940,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://issue.freebsdfoundation.org/publication/?m=33057&l=1&view=issuelistBrowser"><b>FreeBSD Journal</b></a> - it is a great list of periodical magazines about FreeBSD and other important things.<br>
 &nbsp;&nbsp;✅ <a href="https://github.com/bregman-arie/devops-interview-questions"><b>devops-interview-questions</b></a> - contains interview questions on various DevOps and SRE related topics.<br></p>
 
-##### :black_small_square: Developers
+##### ▪️ Developers
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/kamranahmedse/developer-roadmap"><b>Web Developer Roadmap</b></a> - roadmaps, articles and resources to help you choose your path, learn and improve.<br>
@@ -954,7 +952,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://github.com/RomuloOliveira/commit-messages-guide"><b>Commit messages guide</b></a> - a guide to understand the importance of commit messages.<br>
 </p>
 
-##### :black_small_square: Security/Pentesting
+##### ▪️ Security/Pentesting
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/qazbnm456/awesome-web-security"><b>Awesome Web Security</b></a> - a curated list of Web Security materials and resources.<br>
@@ -986,7 +984,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://github.com/ashutosh1206/Crypton"><b>Crypton</b></a> - library to learn and practice Offensive and Defensive Cryptography.<br>
 </p>
 
-##### :black_small_square: Other
+##### ▪️ Other
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.cheatography.com/"><b>Cheatography</b></a> - over 3,000 free cheat sheets, revision aids and quick references.<br>
@@ -1003,20 +1001,20 @@ performance of any of your sites from across the globe.<br>
 
 #### Blogs/Podcasts/Videos &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
 
-##### :black_small_square: SysOps/DevOps
+##### ▪️ SysOps/DevOps
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.youtube.com/watch?v=nAFpkV5-vuI"><b>Varnish for PHP developers</b></a> - very interesting presentation of Varnish by Mattias Geniar.<br>
 &nbsp;&nbsp;✅ <a href="https://www.youtube.com/watch?v=CZ3wIuvmHeM"><b>A Netflix Guide to Microservices</b></a> - talks about the chaotic and vibrant world of microservices at Netflix.<br>
 </p>
 
-##### :black_small_square: Developers
+##### ▪️ Developers
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.youtube.com/watch?v=yOyaJXpAYZQ"><b>Comparing C to machine lang</b></a> - compare a simple C app with the compiled machine code of that program.<br>
 </p>
 
-##### :black_small_square: Geeky Persons
+##### ▪️ Geeky Persons
 
 <p>
 &nbsp;&nbsp;✅ <a href="http://www.brendangregg.com/"><b>Brendan Gregg's Blog</b></a> - is an industry expert in computing performance and cloud computing.<br>
@@ -1039,7 +1037,7 @@ performance of any of your sites from across the globe.<br>
 &nbsp;&nbsp;✅ <a href="https://robert.penz.name/"><b>Robert Penz</b></a> - IT security expert.<br>
 </p>
 
-##### :black_small_square: Geeky Blogs
+##### ▪️ Geeky Blogs
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://linux-audit.com/"><b>Linux Audit</b></a> - the Linux security blog about auditing, hardening and compliance by Michael Boelen.<br>
@@ -1050,7 +1048,7 @@ Linux Security Expert</b></a> - trainings, howtos, checklists, security tools, a
 &nbsp;&nbsp;✅ <a href="https://duo.com/decipher"><b>Decipher</b></a> - security news that informs and inspires.<br>
 </p>
 
-##### :black_small_square: Geeky Vendor Blogs
+##### ▪️ Geeky Vendor Blogs
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.tenable.com/podcast"><b>Tenable Podcast</b></a> - conversations and interviews related to Cyber Exposure, and more.<br>
@@ -1063,7 +1061,7 @@ Linux Security Expert</b></a> - trainings, howtos, checklists, security tools, a
 &nbsp;&nbsp;✅ <a href="https://thycotic.com/company/blog/"><b>Thycotic</b></a> - where CISOs and IT Admins come to learn about industry trends, IT security, and more.<br>
 </p>
 
-##### :black_small_square: Geeky Cybersecurity Podcasts
+##### ▪️ Geeky Cybersecurity Podcasts
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://risky.biz/netcasts/risky-business/"><b>Risky Business</b></a> - is a weekly information security podcast featuring news and in-depth interviews.<br>
@@ -1077,7 +1075,7 @@ Cybercrime Investigations</b></a> - podcast by Geoff White about cybercrimes.<br
 &nbsp;&nbsp;✅ <a href="https://www.youtube.com/user/SecurityWeeklyTV"><b>Security Weekly</b></a> - the latest information security and hacking news.<br>
 </p>
 
-##### :black_small_square: Geeky Cybersecurity Video Blogs
+##### ▪️ Geeky Cybersecurity Video Blogs
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.youtube.com/channel/UCzvJStjySZVvOBsPl-Vgj0g"><b>rev3rse security</b></a> - offensive, binary exploitation, web app security, hardening, red team, blue team.<br>
@@ -1087,7 +1085,7 @@ Cybercrime Investigations</b></a> - podcast by Geoff White about cybercrimes.<br
 CyberTalks</b></a> - talks, interviews, and article about cybersecurity.<br>
 </p>
 
-##### :black_small_square: Best Personal Twitter Accounts
+##### ▪️ Best Personal Twitter Accounts
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://twitter.com/blackroomsec"><b>@blackroomsec</b></a> - a white-hat hacker/pentester. Intergalactic Minesweeper Champion 1990.<br>
@@ -1110,7 +1108,7 @@ CyberTalks</b></a> - talks, interviews, and article about cybersecurity.<br>
 &nbsp;&nbsp;✅ <a href="https://twitter.com/matthew_d_green"><b>@matthew_d_green</b></a> - a cryptographer and professor at Johns Hopkins University.<br>
 </p>
 
-##### :black_small_square: Best Commercial Twitter Accounts
+##### ▪️ Best Commercial Twitter Accounts
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://twitter.com/haveibeenpwned"><b>@haveibeenpwned</b></a> - check if you have an account that has been compromised in a data breach.<br>
@@ -1124,13 +1122,13 @@ CyberTalks</b></a> - talks, interviews, and article about cybersecurity.<br>
 &nbsp;&nbsp;✅ <a href="https://twitter.com/Synacktiv"><b>@Synacktiv</b></a> - IT security experts.<br>
 </p>
 
-##### :black_small_square: A piece of history
+##### ▪️ A piece of history
 
 <p>
 &nbsp;&nbsp;✅ <a href="http://ftp.arl.army.mil/~mike/howto/"><b>How to Do Things at ARL</b></a> - how to configure modems, scan images, record CD-ROMs, and other.<b>*</b><br>
 </p>
 
-##### :black_small_square: Other
+##### ▪️ Other
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.youtube.com/watch?v=3QnD2c4Xovk"><b>Diffie-Hellman Key Exchange (short version)</b></a> - how Diffie-Hellman Key Exchange worked.<br>
@@ -1138,7 +1136,7 @@ CyberTalks</b></a> - talks, interviews, and article about cybersecurity.<br>
 
 #### Hacking/Penetration Testing &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
 
-##### :black_small_square: Pentesters arsenal tools
+##### ▪️ Pentesters arsenal tools
 
 <p>
 &nbsp;&nbsp;✅ <a href="http://www.syhunt.com/sandcat/"><b>Sandcat Browser</b></a> - a penetration-oriented browser with plenty of advanced functionality already built in.<br>
@@ -1199,7 +1197,7 @@ CyberTalks</b></a> - talks, interviews, and article about cybersecurity.<br>
 &nbsp;&nbsp;✅ <a href="https://owasp.org/www-project-threat-dragon/"><b>OWASP Threat Dragon</b></a> - is a tool used to create threat model diagrams and to record possible threats.<br>
 </p>
 
-##### :black_small_square: Pentests bookmarks collection
+##### ▪️ Pentests bookmarks collection
 
 <p>
 &nbsp;&nbsp;✅ <a href="http://www.pentest-standard.org/index.php/Main_Page"><b>PTES</b></a> - the penetration testing execution standard.<br>
@@ -1259,13 +1257,13 @@ CyberTalks</b></a> - talks, interviews, and article about cybersecurity.<br>
 &nbsp;&nbsp;✅ <a href="https://hackso.me/"><b>hackso.me</b></a> - a great journey into security.<br>
 </p>
 
-##### :black_small_square: Backdoors/exploits
+##### ▪️ Backdoors/exploits
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/bartblaze/PHP-backdoors"><b>PHP-backdoors</b></a> - a collection of PHP backdoors. For educational or testing purposes only.<br>
 </p>
 
-##### :black_small_square: Wordlists and Weak passwords
+##### ▪️ Wordlists and Weak passwords
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://weakpass.com/"><b>Weakpass</b></a> - for any kind of bruteforce find wordlists or unleash the power of them all at once!<br>
@@ -1277,7 +1275,7 @@ CyberTalks</b></a> - talks, interviews, and article about cybersecurity.<br>
 &nbsp;&nbsp;✅ <a href="https://github.com/insidetrust/statistically-likely-usernames"><b>statistically-likely-usernames</b></a> - wordlists for creating statistically likely username lists.<br>
 </p>
 
-##### :black_small_square: Bounty platforms
+##### ▪️ Bounty platforms
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.yeswehack.com/"><b>YesWeHack</b></a> - bug bounty platform with infosec jobs.<br>
@@ -1289,7 +1287,7 @@ CyberTalks</b></a> - talks, interviews, and article about cybersecurity.<br>
 &nbsp;&nbsp;✅ <a href="https://hacktrophy.com/en/"><b>Hacktrophy</b></a> - bug bounty platform.<br>
 </p>
 
-##### :black_small_square: Web Training Apps (local installation)
+##### ▪️ Web Training Apps (local installation)
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project"><b>OWASP-VWAD</b></a> - comprehensive and well maintained registry of all known vulnerable web applications.<br>
@@ -1318,7 +1316,7 @@ AWS deployment tool.<br>
 &nbsp;&nbsp;✅ <a href="https://application.security/"><b>KONTRA</b></a> - application security training (OWASP Top Web & Api).<br>
 </p>
 
-##### :black_small_square: Labs (ethical hacking platforms/trainings/CTFs)
+##### ▪️ Labs (ethical hacking platforms/trainings/CTFs)
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://www.offensive-security.com/"><b>Offensive Security</b></a> - true performance-based penetration testing training for over a decade.<br>
@@ -1369,14 +1367,14 @@ AWS deployment tool.<br>
 &nbsp;&nbsp;✅ <a href="https://cryptopals.com/"><b>Cryptopals</b></a> - the cryptopals crypto challenges.<br>
 </p>
 
-##### :black_small_square: CTF platforms
+##### ▪️ CTF platforms
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/facebook/fbctf"><b>fbctf</b></a> - platform to host Capture the Flag competitions.<br>
 &nbsp;&nbsp;✅ <a href="https://github.com/google/ctfscoreboard"><b>ctfscoreboard</b></a> - scoreboard for Capture The Flag competitions.<br>
 </p>
 
-##### :black_small_square: Other resources
+##### ▪️ Other resources
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://github.com/bugcrowd/bugcrowd_university"><b>Bugcrowd University</b></a> - open source education content for the researcher community.<br>
@@ -1388,20 +1386,20 @@ AWS deployment tool.<br>
 
 #### Your daily knowledge and news &nbsp;[<sup>[TOC]</sup>](#anger-table-of-contents)
 
-##### :black_small_square: RSS Readers
+##### ▪️ RSS Readers
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://feedly.com/"><b>Feedly</b></a> - organize, read and share what matters to you.<br>
 &nbsp;&nbsp;✅ <a href="https://www.inoreader.com/"><b>Inoreader</b></a> - similar to feedly with a support for filtering what you fetch from rss.<br>
 </p>
 
-##### :black_small_square: IRC Channels
+##### ▪️ IRC Channels
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://wiki.hackerspaces.org/IRC_Channel"><b>#hackerspaces</b></a> - hackerspace IRC channels.<br>
 </p>
 
-##### :black_small_square: Security
+##### ▪️ Security
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://thehackernews.com/"><b>The Hacker News</b></a> - leading news source dedicated to promoting awareness for security experts and hackers.<br>
@@ -1418,7 +1416,7 @@ AWS deployment tool.<br>
 &nbsp;&nbsp;✅ <a href="https://nfsec.pl/"><b>nf.sec</b></a> - basic aspects and mechanisms of Linux operating system security (PL).<br>
 </p>
 
-##### :black_small_square: Other/All-in-one
+##### ▪️ Other/All-in-one
 
 <p>
 &nbsp;&nbsp;✅ <a href="https://changelog.com/"><b>Changelog</b></a> - is a community of hackers; news & podcasts for developers and hackers.<br>
