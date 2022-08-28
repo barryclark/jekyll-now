@@ -3,7 +3,7 @@ layout: memory
 title: Ultimate Linux Cheatsheet
 ---
 
-Tiny but shiny collection of multiple things that can come to help during stressy situations. Dear ladies and gentlemen, I proudle present the:
+Tiny but shiny collection of multiple things that can come to help during stressful situations. Dear ladies and gentlemen, I proudly present the:
 
 <p align="center">
 <img width="600" src="/images/ultimate_cheatsheet.png">
