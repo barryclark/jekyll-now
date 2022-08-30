@@ -39,25 +39,6 @@ Translation: [Robert Aitken, The Gateless Barrier, 1990](https://www.google.com/
 > Not evading, not falling--  
 > a thousand mistakes, ten thousand mistakes.
 
-## Notes
-
-This case can be found as:
-- Case 2 of Gateless Barrier
-- Case 8 of Book of Serenity,
-- Case 102 of Dogen's Shinji Shobogenzo.
-
-_"Such a person does not evade the law of cause and effect"_ is elsewhere rendered as:
-- _"The law of cause and effect cannot be obscured."_ (Koun Yamada Roshi, The Gateless Gate, 1979)
-- _"He is not blind to cause and effect."_ (Thomas Cleary, Book of Serenity, Case 8, 2005)
-- _"He is not deluded about cause and effect"_ (J.C. Cleary, Wumen's Gate, 2005)
-- _"Do not be unclear about cause and effect."_ (Gudo Nishijima, Master Dogen's Shinji Shobogenzo, Book II case 2, 2003)
-- _"Don't ignore cause and effect"_ (Kazuaki Tanahashi, John Daido Loori, The True Dharma Eye case 102, 2005)
-
-Book of Serenity Case 8 has some comments/notes/interjections following the case. Here's a few:
-- _"The old man was enlightened at these words - Fox drool is still there."_
-- _"For five hundred lives he couldn't do a thing - If he had known what would happen today, he'd regret not being careful to begin with."_
-- _"I fell into a wild fox body for five hundred lives - You said one doesn't fall into cause and effect."_
-
 # Prompts
 
 _The following are my own only. They are not part of the case in any way. I hope they can be useful to you. They are organized in "reads": a specific topic for the investigation of this koan._
