@@ -60,60 +60,15 @@ Book of Serenity Case 8 has some comments/notes/interjections following the case
 
 # Commentary [work in progress]
 
-## A read about being wrong all the time
-
-> One day, however, he remained behind. Paichang __asked him__,
-
-Hu ho...
-
-> "__Who are you__, standing here before me?"  
-
-Don't reply!
-
-> The old man __replied__...
-
-Oh no, you did!
-
-> __I__ am not a human being...
-
-Starting with "I", not a great start for an answer.
-
-What does this reply indicate? The old man indeed seems to be the object of the law of cause and effect.
-
-Would he answer __this__ question if he was enlightened?
-
-> One day __a monk asked me__, 'Does an enlightened person fall under the law of cause and effect or not?' ...
-
-Hu ho... don't tell me you replied to that one too?
-
-> ... __I replied__ ...
-
-Oh no, you did it again!
-
-Someone asking you a question does not mean you have to answer.
-
-> 'Such a person does not fall under the law of cause and effect.'
-
-A wrong question leads to a wrong answer.
-
-> With this I was reborn five hundred times as a fox.
-
-But... _"You said one doesn't fall into cause and effect."_
-
-> Huang-po stepped forward and said, "As you say, the old man missed the turning word and was reborn as a fox five hundred times. What if he had given __the right answer__ each time he was asked a question -- what would have happened then?"
-
-That's a trap!
-
-> Paichang said, "Just step here closer, and I'll tell you." Huang-po went up to Paichang and slapped him in the face.
-
-It seems better to just not answer anything at all.
-
-
 ## A read about doctrines
+
+> Making his bows he said, "I am released from the body of a fox. The body is __on the other side of this mountain__.
+
+I suggest you read the ["Sutra of Hui-neng"](https://www.shambhala.com/the-sutra-of-hui-neng-grand-master-of-zen-1434.html) , and [H. Dumoulin, "Zen Enlightenment", pp 44-52](https://www.thriftbooks.com/w/zen-enlightenment-origins-and-meaning_heinrich-dumoulin/623561/item/3095725/). They will introduce and explain the distinction between the northern and southern schools of zen. I've summarized a [comparison table here](https://datayana.github.io/2019/03/05/Notes).
+
 
 _Note: it is useful to have read the Sutra of Hui-neng for this read, and to know the distinction between the schools of Hui-neng and Shen-hsiu._
 
-> Making his bows he said, "I am released from the body of a fox. The body is __on the other side of this mountain__.
 
 I bet the other side of __this__ mountain is facing north.
 
