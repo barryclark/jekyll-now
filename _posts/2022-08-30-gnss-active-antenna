@@ -15,9 +15,67 @@ So, to test this device with an external antenna we need to acquire an external 
 
 But I thought to myself, well I think I can make a similar, or even better, performance antenna for a similar price. Plus, that would be a nice little project I could do and would give a nice addition to my blog posts! And here we are...
 
-When it comes to GNSS antennas
+When it comes to GNSS antennas there's a myriad of solutions. Let me cover briefly each of these, knowing very well there's more to each of the solutions and even sub-types within some of these options, but let's keep it simple:
+1. Ceramic patch antenna - The ceramic patch antenna is the most common type of integrated antenna for small GNSS receiver systems. It's compact size make it suitable for integration into portable devices. The small gain of these antennas makes them less attractive. We'd need to make a PCB to integrate this antenna then add the amplifier and connector. Since we have a good volume availability, the ceramic patch antenna is not the best course of action. Besides, designing one and manufacturing can be expensive since the access to the ceramic substrates is limited.
 
-So first things first, let's define the requirements for this antenna:
+{:refdef: style="text-align: center;"}
+![gnss-ant_1](/images/post13/ceramic_antenna.png)
+{:refdef}
+
+2. Chip antenna - The chip antenna is also a common type of integrated antenna for GNSS receiver systems. As the ceramic patch, it's man advantage is the very compact size, even smaller than the ceramic patch. But it comes at the cost of sacrificing gain as well as proper polarization. As well, designing a specific solution of this type could be very difficult (expensive) to manufacture. Here's an example of a Yageo chip antenna taken from [here](https://rutronik-tec.com/gps-ceramic-chip-antenna-yageo-ant6230ll01r1575a/).
+
+{:refdef: style="text-align: center;"}
+![gnss-ant_2](/images/post13/chip_antenna.jpg)
+{:refdef}
+
+3. Helical antenna - The helical antenna is many times found inside a monopole sleeve and make it look like a monopole antenna, but it is actually an helical antenna, which is usually linearly polarized. The gain is directly proportional to the length of the antenna which makes it hard to fit such a solution into our target volume. The balun is also tricky to design and can cut the bandwidth requirements short, besides it's not easy to integrate the amplifier in this design.
+
+{:refdef: style="text-align: center;"}
+![gnss-ant_3](/images/post13/helical_antenna.png)
+{:refdef}
+
+4. Chocked ring antenna - These are typically the highest gain GNSS antennas. With directivity above 12 dBi, sometimes 15 dBi and integrated LNAs with gains in the order of 20-40 dB, these are GNSS antennas for sensitive applications and military applications. They provide very high accuracy. But, they're usually big and heavy and are mostly targeted for fixed applications, more so given the aperture is usually small and requires some pointing during installation. Manufacturing such a solution, given its metal structure is also not cheap. 
+
+{:refdef: style="text-align: center;"}
+![gnss-ant_4](/images/post13/chocked_ring_antenna.png)
+{:refdef}
+
+5. Turnstile antenna - The turnstile antenna uses two orthogonal dipoles fed with 90º of phase in between each other in order to obtain the circular polarization, a second set of dipoles is fed with inversion of phase in order to direct the radiation pattern in the intended direction. Using the image principle, the second dipole set can be replaced by a ground plane. This is a possible solution, since this solution can be planarized in a PCB, the only downside is to achieve the correct gain with the limited height available.
+
+{:refdef: style="text-align: center;"}
+![gnss-ant_5](/images/post13/turnstile_antenna.png)
+{:refdef}
+
+6. Quadrifilar antenna - The quadrifilar antenna is a mix between the turnstile and the helical antenna, essentially the dipole elements of the turnstile are twisted along the propagation direction, like in the helical antenna. For us is not applicable for the same reason as the helical antenna. Save for the balun, which is non-existent in this case. 
+
+{:refdef: style="text-align: center;"}
+![gnss-ant_6](/images/post13/quadrifilar_antenna.png)
+{:refdef}
+
+7. Spiral antenna - The equiangular planar spiral is a type of "frequency-independent" antennas due to its very large bandwidth. The antenna is circularly polarized but its purity is dependent on the feeding arrangement. Since the basic element radiates equally in both hemispheres, a ground plane is usually needed to point the pattern in the right direction. The drawback is that the spiral antenna do not provide high gain, this solution might still be viable, counting that we can achieve the required gain.
+
+{:refdef: style="text-align: center;"}
+![gnss-ant_7](/images/post13/spiral_antenna.png)
+{:refdef}
+
+8. Parabolic antenna - A widely known antenna type, but very bulky and nearly impossible to make fit inside the requirement volume package. Here's an example from a [Spanish supplier](https://www.directindustry.es/prod/intellisystem-technologies/product-177774-1855686.html). 
+
+{:refdef: style="text-align: center;"}
+![gnss-ant_8](/images/post13/parabolic_antenna.png)
+{:refdef}
+
+9. Phased array antenna - This is the most advanced and complex option. It's the solution that is capable to provide a performance comparable to the radome and the chocked ring antennas without the drawback of adjustments. But this is also a bulky solution and very complex with processing units and gain/phase adjusting elements. This is nearly impossible to fit inside the volume package required. [Here's an article](https://blogs.3ds.com/simulia/functional-design-satellite-communication-satcom-antennas/) advocating for the development of phased array solutions for satellite comm systems from Simulia (owner's of CST software) themselves.
+
+{:refdef: style="text-align: center;"}
+![gnss-ant_9](/images/post13/phased_array.png)
+{:refdef}
+
+Having analyzed the typical antennas that can be used for GNSS antennas, the choice has fallen upon two candidates:
+- Printed microstrip antenna with an air core, instead of ceramic.
+- Printed turnstile antenna with a ground plane instead of mirror dipoles.
+And the second option was discarded because I'm not very good with artisanship, and a turnstile antenna is all about artisanship, so I'd end with a piece of metallic crap instead of an antenna, if I know me.
+
+So, let's define the requirements for this antenna:
 
 - Frequency band: 1575 - 1610 MHz
 - Maximum size: 100 x 100 x 20 mm
@@ -54,11 +112,23 @@ I have to agree with officer Bortus here, it's not very impressive, but that's t
 
 So the patch antenna itself is a ring antenna. Why a ring? Well, to use a square, I'd either have to rotate the coupler by 45º, or make some weird lines out of those ports (adding losses), because rotating the patch would make it impossible to fit within the 100x100 mm square PCB space. A circular shape gives me much more flexibility, but still the point is that I chose a ring instead of a filled circular shape. Remember my post about compensating the inductance of long feed points in air-core microstrip antennas? No? Shame on you, [go check it out](https://theantennaguy.github.io/microstrip-patch-air-core-3/). Now, there's another way to compensate for that added inductance from the feeding which is creating not a small, but a large slot in the middle of the patch. This works particularly well in circular patches, because the electric path through the middle of the antenna is increased smoothly. And that's it. 
 
-As in the case of the RFID antenna I've used a double feed with a hybrid coupler, but this time I dimensioned the lines to work at 1.575 GHz and were designed for a 0.8 mm (cheapest after the 1.6 mm ones) thick FR-4 substrate. Here's the pictures:
+As in the case of the RFID antenna I've used a double feed with a hybrid coupler, but this time I dimensioned the lines to work at 1.575 GHz and were designed for a 0.8 mm (cheapest possible after the 1.6 mm ones) thick FR-4 substrate. Here's the pictures:
 
 ![3model](/images/post13/3D.png) | ![front](/images/3D_2.png) | ![back](/images/3D_1.png) 
 :-------------------------:|:-------------------------:|:-------------------------:
 Profile view | Front view | Back view
 
-And here goes the simulation results for this antenna with the coupler included:
+I'm not gonna bother you very much with the design process details, as I said above you can check my [previous post](https://theantennaguy.github.io/microstrip-patch-air-core-3/) about the air-core microstrip antenna, and you'll get a good feeling on how to go about designing this one. To keep it short, here goes the simulation results for this antenna with the coupler included:
+
+![sparamdb](/images/post13/antenna_sparam_db.png) | ![sparamsmith](/images/antenna_sparam_smith.png)  
+:-------------------------:|:-------------------------:
+S-parameters cartesian plot | S-parameters Smith chart 
+
+
+
+{:refdef: style="text-align: center;"}
+![radiation](/images/post13/3d_rad.png)
+{:refdef}
+
+From the results we can we see we have a pretty decent bandwidth, covers all the L1 frequencies with margin. The antenna also shows a decent radiation gain and a very pure circular polarization with the RHCP component having nearly the same gain in dBis as the total gain component (check the left bottom corner data on the [radiation] picture).
 
