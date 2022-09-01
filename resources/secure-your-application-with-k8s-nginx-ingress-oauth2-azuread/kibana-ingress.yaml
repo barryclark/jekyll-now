@@ -1,0 +1,40 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/auth-signin: https://$host/oauth2/start?rd=$escaped_request_uri
+    nginx.ingress.kubernetes.io/auth-url: https://$host/oauth2/auth
+  name: kibana
+  namespace: demo-oauth2
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: <INGRESS_HOST> # change to your domain
+    http:
+      paths:
+      - backend:
+          service:
+            name: <SERVICE_NAME> # change to your service name
+            port:
+              number: <SERVICE_PORT> # change to your service port
+        path: /
+        pathType: Prefix
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: oauth2-proxy
+  namespace: demo-oauth2
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: <INGRESS_HOST> # change to your domain
+    http:
+      paths:
+      - path: /oauth2
+        pathType: Prefix
+        backend:
+          service:
+            name: oauth2-proxy
+            port:
+              number: 4180
