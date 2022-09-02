@@ -15,4 +15,4 @@ Now I use a simple format in my digital notebook of choice (in this case, an HTM
 >
 > YYYY-MM-DD The current status
 
-During my [daily shutdown](Daily-Shutdown/), I copy any updates from notes I jotted down to the status document. I always have an up-to-date status report document if needed.
+During my [daily shutdown](/Daily-Shutdown/), I copy any updates from notes I jotted down to the status document. I always have an up-to-date status report document if needed.
