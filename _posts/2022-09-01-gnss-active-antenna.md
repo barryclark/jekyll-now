@@ -3,8 +3,6 @@ layout: post
 title: Active GNSS antenna design (Part I)
 ---
 
-Hey there folks!
-
 Once again, it's been a long time. I should really devote more time to this blog... Well anyway, let's get back to business! This time I'm posting about a little project I've been doing to support some activities at work. So, we've been working on some stuff with GNSS, but this time the receiver is designed to operate with an internal antenna as well as an external antenna, which can (should) be active and it is supplied through the coaxial cable. It is supplied through a dedicated LDO and has a bias tee network in place, so that it is perfectly isolated from the rest of the circuit to avoid noise from our circuit to sneak into the GNSS chain and screw the reception. 
 
 So, to test this device with an external antenna we need to acquire an external GNSS antenna and especially an active one. Of course, we did buy one, like this one here:
