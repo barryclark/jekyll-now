@@ -112,20 +112,20 @@ So the patch antenna itself is a ring antenna. Why a ring? Well, to use a square
 
 As in the case of the RFID antenna I've used a double feed with a hybrid coupler, but this time I dimensioned the lines to work at 1.575 GHz and were designed for a 0.8 mm (cheapest possible option after the 1.6 mm ones) thick FR-4 substrate. Here's the pictures:
 
-![front](/images/3D_2.png) | ![back](/images/3D_1.png) 
+![front](/images/post13/3D_2.png) | ![back](/images/post13/3D_1.png) 
 :-------------------------:|:-------------------------:
  Front view | Back view
 
 I'm not gonna bother you very much with the design process details, as I said above you can check my [previous post](https://theantennaguy.github.io/microstrip-patch-air-core-3/) about the air-core microstrip antenna, and you'll get a good feeling on how to go about designing this one. To keep it short, here goes the simulation results for this antenna with the coupler included:
 
-![sparamdb](/images/post13/antenna_sparam_db.png) | ![sparamsmith](/images/antenna_sparam_smith.png)  
+![sparamdb](/images/post13/antenna_sparam_db.png) | ![sparamsmith](/images/post13/antenna_sparam_smith.png)  
 :-------------------------:|:-------------------------:
 S-parameters cartesian plot | S-parameters Smith chart 
 
 And here's the resulting radiation pattern:
 
 {:refdef: style="text-align: center;"}
-![radiation](/images/post13/3d_rad.png)
+![radiation](/images/post13/3D_rad.png)
 {:refdef}
 
 From the results we can we see we have a pretty decent bandwidth, covers all the L1 frequencies with margin. The antenna also shows a decent radiation gain and a very pure circular polarization, given the RHCP component have nearly the same gain in dBis as the total gain component (check the left bottom corner data on the [radiation] picture). That can also be shown in this plot of the gain and the axial-ration with frequency:
