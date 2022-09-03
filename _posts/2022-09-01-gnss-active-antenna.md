@@ -114,9 +114,9 @@ So the patch antenna itself is a ring antenna. Why a ring? Well, to use a square
 
 As in the case of the RFID antenna I've used a double feed with a hybrid coupler, but this time I dimensioned the lines to work at 1.575 GHz and were designed for a 0.8 mm (cheapest possible option after the 1.6 mm ones) thick FR-4 substrate. Here's the pictures:
 
-![3model](/images/post13/3D.png) | ![front](/images/3D_2.png) | ![back](/images/3D_1.png) 
-:-------------------------:|:-------------------------:|:-------------------------:
-Profile view | Front view | Back view
+![front](/images/3D_2.png) | ![back](/images/3D_1.png) 
+:-------------------------:|:-------------------------:
+ Front view | Back view
 
 I'm not gonna bother you very much with the design process details, as I said above you can check my [previous post](https://theantennaguy.github.io/microstrip-patch-air-core-3/) about the air-core microstrip antenna, and you'll get a good feeling on how to go about designing this one. To keep it short, here goes the simulation results for this antenna with the coupler included:
 
