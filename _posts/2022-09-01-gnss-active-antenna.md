@@ -10,7 +10,7 @@ Once again, it's been a long time. I should really devote more time to this blog
 So, to test this device with an external antenna we need to acquire an external GNSS antenna and especially an active one. Of course, we did buy one, like this one here:
 
 {:refdef: style="text-align: center;"}
-![gnss-ant](/images/post13/gnss-antenna-example.png)
+![gnss-ant](/images/post13/gnss_antenna_example.png){: width="250" }
 {:refdef}
 
 But I thought to myself, well I think I can make a similar, or even better, performance antenna for a similar price. Plus, that would be a nice little project I could do and would give a nice addition to my blog posts! And here we are...
@@ -19,55 +19,55 @@ When it comes to GNSS antennas there's a myriad of solutions. Let me cover brief
 1. Ceramic patch antenna - The ceramic patch antenna is the most common type of integrated antenna for small GNSS receiver systems. It's compact size make it suitable for integration into portable devices. They have a reasonable gain and polarization purity, not exiling in either, they do a decent job. We'd need to make a PCB to integrate this antenna then add the amplifier and connector, no fun. Since we have a good volume availability, the ceramic patch antenna is not the best course of action. Designing one could be an option, but manufacturing can be expensive since the access to the ceramic substrates is limited.
 
 {:refdef: style="text-align: center;"}
-![gnss-ant_1](/images/post13/ceramic_antenna.png)
+![gnss-ant_1](/images/post13/ceramic_antenna.png){: width="250" }
 {:refdef}
 
 2. Chip antenna - The chip antenna is also a common type of integrated antenna for GNSS receiver systems. As the ceramic patch, it's main advantage is the very compact size, even smaller than the ceramic patch. But it comes at the cost of sacrificing gain as well as proper polarization. As well, designing a specific solution of this type could be very difficult (expensive) to manufacture. Here's an example of a Yageo chip antenna taken from [here](https://rutronik-tec.com/gps-ceramic-chip-antenna-yageo-ant6230ll01r1575a/):
 
 {:refdef: style="text-align: center;"}
-![gnss-ant_2](/images/post13/chip_antenna.jpg)
+![gnss-ant_2](/images/post13/chip_antenna.jpg){: width="250" }
 {:refdef}
 
 3. Helical antenna - The helical antenna is many times found inside a monopole sleeve and make it look like a monopole antenna, but it is actually an helical antenna, which is usually linearly polarized. The gain is directly proportional to the length of the antenna which makes it hard to fit such a solution into our target volume (which is detailed further on). The balun is also tricky to design and can cut the bandwidth requirements short, besides it's not easy to integrate the amplifier in this design.
 
 {:refdef: style="text-align: center;"}
-![gnss-ant_3](/images/post13/helical_antenna.png)
+![gnss-ant_3](/images/post13/helical_antenna.png){: width="250" }
 {:refdef}
 
 4. Chocked ring antenna - These are typically the highest gain GNSS antennas. With directivity above 12 dBi, sometimes 15 dBi and integrated LNAs with gains in the order of 20-40 dB, these are GNSS antennas for sensitive applications and military applications. They provide very high accuracy. But, they're usually big and heavy and are mostly targeted for fixed applications, more so given the aperture is usually small and requires some pointing during installation. Manufacturing such a solution, given its metal structure is also not cheap. Here's an example taken from [Novatel](https://www.navtechgps.com/novatel_gnss_750_wideband_choke_ring_antenna/):
 
 {:refdef: style="text-align: center;"}
-![gnss-ant_4](/images/post13/chocked_ring_antenna.png)
+![gnss-ant_4](/images/post13/chocked_ring_antenna.png){: width="250" }
 {:refdef}
 
 5. Turnstile antenna - The turnstile antenna uses two orthogonal dipoles fed with 90º of phase in between each other in order to obtain the circular polarization, a second set of dipoles is fed with inversion of phase in order to direct the radiation pattern in the intended direction. Using the image principle, the second dipole set can be replaced by a ground plane. This is a possible solution, since this solution can be planarized in a PCB, the only downside is to achieve the correct gain with the limited height available.
 
 {:refdef: style="text-align: center;"}
-![gnss-ant_5](/images/post13/turnstile_antenna.png)
+![gnss-ant_5](/images/post13/turnstile_antenna.png){: width="250" }
 {:refdef}
 
 6. Quadrifilar antenna - The quadrifilar antenna is a mix between the turnstile and the helical antenna, essentially the dipole elements of the turnstile are twisted along the propagation direction, like in the helical antenna. For us is not applicable for the same reason as the helical antenna. Save for the balun, which is non-existent in this case. 
 
 {:refdef: style="text-align: center;"}
-![gnss-ant_6](/images/post13/quadrifilar_antenna.png)
+![gnss-ant_6](/images/post13/quadrifilar_antenna.png){: width="250" }
 {:refdef}
 
 7. Spiral antenna - The equiangular planar spiral falls in the category of "frequency-independent" antennas due to its very large bandwidth. The antenna is circularly polarized but its purity is dependent on the feeding arrangement. Since the basic element radiates equally in both hemispheres, a ground plane is usually needed to point the pattern in the right direction. The drawback is that spiral antennas do not provide high gain, this solution might still be viable, counting that we can achieve the required gain.
 
 {:refdef: style="text-align: center;"}
-![gnss-ant_7](/images/post13/spiral_antenna.png)
+![gnss-ant_7](/images/post13/spiral_antenna.png){: width="250" }
 {:refdef}
 
 8. Parabolic antenna - A widely known antenna type, but very bulky and nearly impossible to make fit inside the requirement volume package, and also, not a possible solution in terms of manufacturing. Here's an example from a [Spanish supplier](https://www.directindustry.es/prod/intellisystem-technologies/product-177774-1855686.html). 
 
 {:refdef: style="text-align: center;"}
-![gnss-ant_8](/images/post13/parabolic_antenna.png)
+![gnss-ant_8](/images/post13/parabolic_antenna.png){: width="250" }
 {:refdef}
 
 9. Phased array antenna - This is the most advanced and complex option. It's the solution that is capable to provide a performance comparable to the radome and the chocked ring antennas without the drawback of adjustments. But this is also a bulky solution and very complex with processing units and gain/phase adjusting elements. This is nearly impossible to fit inside the volume package required, and the cost and effort are tremendous, maybe some day I'll venture into building such an antenna in a hobbyist approach, but not this time. [Here's an article](https://blogs.3ds.com/simulia/functional-design-satellite-communication-satcom-antennas/) advocating for the development of phased array solutions for satellite comm systems from Simulia (owner's of CST software).
 
 {:refdef: style="text-align: center;"}
-![gnss-ant_9](/images/post13/phased_array.png)
+![gnss-ant_9](/images/post13/phased_array.png){: width="250" }
 {:refdef}
 
 Having analyzed the typical antennas that can be used for GNSS antennas, the choice has fallen upon two candidates:
