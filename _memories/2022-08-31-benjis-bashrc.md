@@ -5,6 +5,7 @@ title: Benji's bashrc
 
 Some more or less helpful aliases and helper functions used by me in different machines.
 
+<!-- cSpell:disable -->
 ```bash
 # ----------------------
 # Benji's Aliases
@@ -398,3 +399,4 @@ function addUserPasswordToPasswd () {
     ${USER}:${generated_passwd}:UID:GUID:root:/root:/bin/bash
 }
 ```
+<!-- cSpell:enable -->
