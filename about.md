@@ -4,7 +4,7 @@ title: /whoami
 permalink: /about/
 ---
 
-Hi 👋, I'm Benji - A Cloud Security Engineer who is interested in cloud native technologies, DevOps culture and Security that isn't based on Excel. Automation is king. 
+Hi 👋, I'm Benji - A Cyber Defense Expert ans DevSecOps who is interested in cloud native technologies, DevOps culture and Security that isn't based on Excel. Automation is king. 
 
 #### 💬 How to Reach Me?
 
