@@ -167,7 +167,7 @@ Key points:
 To see how automation can help you it's a good idea to take a look under the hood. Time for an excursion and check out how static analysis works works internal.
 
 <p align="center">
-<img width=600  src="/images/sqli-checklist.png">
+<img width=600  src="/images/static-analysis-internals.png">
 </p>
 
 **Source**: Brian Chess and Jacob West, Secure Programming with Static Analysis, Addison-Wesley, 2007
