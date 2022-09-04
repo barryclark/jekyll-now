@@ -15,6 +15,8 @@ First at all start a listener on your machine
 nc -lvnp <PORT e.g. 9001, 8080>
 ```
 
+If you've tough luck and have to run you listener on a windows machine try this [mini_reverse_shell_listener.ps1](https://gist.github.com/BenjiTrapp/6a2c130746c8ed0034ded80317dbe8c7)
+
 ## Dropping a Reverse Shell
 
 Source: [https://pentestmonkey.net/](https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
