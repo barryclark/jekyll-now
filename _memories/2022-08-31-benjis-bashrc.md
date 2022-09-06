@@ -265,7 +265,23 @@ function jsonPrettyPrint() {
     python -m json.tool $1
 }
 
-### AWS CLI stuff ###
+### AWS stuff ###
+function cdk_autocompleter {
+    STACK_CMDS="list synthesize bootstrap deploy destroy diff metadata init context docs doctor"
+
+    if [ "$3" == "cdk" ]; then
+        COMPREPLY=($(compgen -W "$STACK_CMDS" $2))
+    elif [[ -d "cdk.out" ]] && ! [[ "$2" == "-"* ]]; then
+        echo "cdk.out"
+        TEMPLATES=$(ls -1 cdk.out/*.template.json | awk '{split($0,t,/\/|\./); print t[3]}')
+        COMPREPLY=($(compgen -W "$TEMPLATES" $2))
+    else
+        COMPREPLY=()
+    fi
+}
+
+alias cdk_autocomplete='complete -F cdk_autocompleter cdk'
+
 function setAwsCredentials() {
     if [ -z "$1" ]; then
         logError "Two Arguments are needed 1.AWS_ACCESS_KEY_ID 2.AWS_SECRET_ACCESS_KEY "
