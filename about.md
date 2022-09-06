@@ -11,4 +11,3 @@ My [LinkedIn](https://www.linkedin.com/in/johnuhri/) profile.
 ### Contact me
 
 I'm best reached on Twitter: [y0mbo](https://twitter.com/y0mbo)
-
