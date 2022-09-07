@@ -6,7 +6,75 @@ title: Quaternion
 - [ ] [사원수와 회전](https://ghebook.blogspot.com/2020/09/quaternion-and-rotation.html?m=1)
 - [ ] [A Tutorial on Euler Angles and Quaternions](https://www.weizmann.ac.il/sci-tea/benari/sites/sci-tea.benari/files/uploads/softwareAndLearningMaterials/quaternion-tutorial-2-0-1.pdf)
 
-# 사원수 (Quaternion, 쿼터니언)
+## 방향 (Orientation)의 표현
+
+모델의 방향을 나타내기 위해서는 모델만의 좌표축을 사용합니다. 이때 보통 x, y, z라는 이름 대신에 요(yaw), 피치(pitch), 롤(roll)이라는 이름을 사용합니다.
+
+* `회전`과 `방향`을 정확히 구분하면, `회전`은 행위를 말하고 `방향`은 상태를 의합니다. 더 정확하게 표현하자면 회전은 변환이라는 행위를 나타내고 그 행위를 나타내기 위해 앞에서 아핀 변환 행렬을 사용하는 법을 배웠습니다. 방향은 회전 이전 혹은 이후에 모델이 어떻게 놓여 있는지에 대한 상태를 나타냅니다.
+
+<center><div markdown="1">
+
+![Roll_Pitch_Yaw](https://i.ytimg.com/vi/pQ24NtnaLl8/hqdefault.jpg)
+
+</div></center>
+
+<details><summary>요, 피치, 롤</summary>
+<div markdown="1">
+
+요, 피치, 롤은 서로에게 수직인 세 개의 단위 벡터라고 할 수 있습니다. 모델의 중심 점과 이 세개의 단위 벡터를 통해서 모델만의 좌표계를 만들 수 있습니다. 이것을 흔히 로컬 좌표계(local coordinate)라고 합니다.
+
+모델의 로컬 좌표계의 세 축, 요$$(Y_x, Y_y, Y_z)$$, 피치$$(P_x, P_y, P_z)$$, 롤$$(R_x, R_y, R_z)$$이 바로 모델의 방향을 나타낸다고 할 수 있습니다. 이 세단위 벡터들은 열벡터로 써서 다음과 같이 행렬로 나타낼 수 있습니다.
+
+$$
+\begin{bmatrix}
+Y_x & P_x & R_x \\
+Y_y & P_y & R_y \\
+Y_z & P_z & R_z
+\end{bmatrix}
+$$
+
+* 이 세 열벡터들이 단위 벡터이며, 서로에게 수직입니다. 따라서 위 행렬은 자련스럽게 회전 변환을 나타내는 행렬이 됩니다.
+* 이 말은 회전과 방향은 엄연히 다른 의미이지만 그들을 표현하는 방식이 서로 같을 수 있다는 것입니다.
+
+표현법에 따른 수식만을 가지고는 이것이 어떤 모델을 회전을 하려고 하는 것인지 아니면, 모델의 방향을 나타낸 것인지 알 수 없으므로, 때에 따라 분명히 해줘야 할 것입니다.
+
+</div></details>
+
+## 오일러 각(Euler Angles)
+임의의 한 회전 혹은 여러 회전의 조합은 결국 하나의 축과 그 축을 중심으로 얼마나 회전할지를 나타내는 각으로 표현할 수 있습니다. 이때 기준이 되는 축을 오일러 축(Euler axis)이라고 부르며 보통은 단위 벡터로 나타냅니다.
+
+* 이 방식을 흔히 축-각(axis-angle)방식이라고 부릅니다.
+
+<center><div markdown="1">
+
+![EulerAngles](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Eulerangles.svg/250px-Eulerangles.svg.png)
+
+</div></center>
+
+<details><summary>Axis-Angle</summary>
+<div markdown="1">
+
+`오일러의 회전 정리(Eulers rotation theorem)`에 따르면, 임의의 한 회전 혹은 여러 회전의 조합은 결국 하나의 축과 그 축을 중심으로 얼마나 회전할지를 나타내는 각으로 표현할 수 있습니다. 이때 기준이 되는 축을 오일러 축(Euler axis)이라고 부르며 보통은 단위 벡터로 나타냅니다.
+
+만약 벡터 $$v$$가 하나의 회전 혹은 여러 번의 회전을 거쳐 최종적으로 벡터$$v`$$가 되었다고 해보면, 이때 우리는 항상 $$v$$와 $$v`$$에 수직인 단위 벡터 $$\hat{k}$$를 두 벡터를 외적하고 그 결과를 정규화해서 구할 수 있습니다. 또한 $$v$$와 $$v`$$사이각 $$\theta$$는 두 벡터를 정규화해서 내적을 하고, 그 결과에 $$cos$$의 역함수, $$arccos$$함수를 적용하면 구할 수 있습니다.
+
+$$ \hat{k} = \frac{v \times v`}{\| v \times v \|} $$
+
+$$ \theta = arccos(\frac{v}{\|v\|} \cdot \frac{v`}{\| v`\|}) $$
+
+축-각 방식으로 방향을 표현하면 오일러 각과 비슷하게 하나의 단위 벡터 $$\hat{k} = (k_x, k_y, k_z)$$와 회전각 $$\theta$$, 총 4개의 성분만이 필요하므로 행렬에 비해 메모리를 적게 쓰는 장점이 있습니다.
+
+$$ R_{axis-angle} = (k_x, k_y, k_z, \theta) $$
+
+이 방식의 기본적인 아이디어는 회전하려는 벡터를 회전축에 평행한 성분과 수직인 성분으로 쪼개고, 수직인 성분을 회전시킨 후 이를 다시 평행인 성분과 결합하는 것입니다. 이렇게 벡터 $$v`$$는 다음과 같이 구할 수 있습니다.
+
+$$ v` = cos \theta \cdot v + (1 - cos \theta) \cdot (v \cdot \hat{k}) \cdot \hat{k} + sin \theta \cdot (\hat{k} \times v) $$
+
+* d이 식을 처음 소개한 사람은 프랑스 수학자인 로드리게스(Benjamin Olinde Rodrigues)입니다. 그의 이름을 따서 `로드리게스 회전 공식(Rodrigues rotation formula)`라고 불립니다.
+
+</div></details>
+
+## 사원수 (Quaternion, 쿼터니언)
 3차원 그래픽에서 회전을 표현할 때, 행렬 대신 사용하는 수학적 개념으로 4개의 값으로 이루어진 복소수(Complex Number)체계입니다.
 
 $$ q = <w, x, y, z> = w + xi + yj + zk $$

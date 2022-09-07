@@ -288,6 +288,8 @@ Commandlet에 대해서 설명합니다.
 
 ## 테스트 케이스 만들기
 
+* 만들 때, 확인하는 테스트들만 자동화 해도, 굉장히 편합니다...
+
 <details><summary>Mock object</summary>
 <div markdown="1">
 
