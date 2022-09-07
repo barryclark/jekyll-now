@@ -69,3 +69,11 @@ https://forums.unrealengine.com/t/how-can-i-pass-multiple-render-targets-to-a-co
 번역이 너무 이상해서 이해 안갈만 했다.!
 
 ## Add Graph추가하기 전에 Compute Shader부터 추가해보자.
+
+## 인공지능
+제 3자 입장에서, 변수 및 작업을 해야지, 모든지 상대적인 관점에서 작업하면, 많이 힘들어 진다.
+Wait가 없으면, 인공지능이 미친듯이 돌아갑니다. 보통 Select 뒤에 1초정도 wait를 두는 편입니다.
+
+AI perception. AI 만들 때, 굉장히 강력한 기능입니다.
+AI perception은 컨트롤러에 추가해야 합니다.
+시아에 관련 된 것 처리할 때, 매우매우 강력한 기능입니다.

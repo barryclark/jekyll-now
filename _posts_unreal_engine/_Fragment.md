@@ -3,6 +3,139 @@ layout: post
 title: Fragment
 ---
 
+기획자가 엑셀테이블에 데이터를 만들어서, 그걸 가지고 만드는 것은 옛날 방식입니다. 2010년도 쯤에 엑셀에다 데이터를 다 집어넣고 만들던 옛날 방식입니다. 생각해봅시다. 1번 테이블이 3번 사운드를 이용하고, 2번 애셋을 이용하는 것이 편할리 없습니다.
+
+## 포트폴리오
+SphereMoveableComponent에서 DropParameter에서 부모 컴포넌트가 있는지 없는지에 따라 다르게 작동하도록 옮길 수 있다고 생각하는데, 
+- PlaneMoveable부터 끝내고 작업하도록 한다.
+
+Unreal loading / 레벨 전환용 플러그인 async loading screen
+
+포트폴리오 자체는 완성되어 있어야함. 게임의 완변한 구성요소를 갖추고 있어야함.
+1. 인트로 화면이 있고,
+2. 부드러운 화면 전환이 있어야 하고,
+3. 너무 게임이 어려우면 안되고, 짧은 시간안에 많은걸 집어넣어야 하고,
+4. 젤 처음 시작지점은 무조건 튜토리얼
+
+주소에다가, 자기소개서 쓰면 반드시 보내라. 문서가 2개 있어야 한다. 게임 설명서가 있어야하고, 프로그램 메뉴얼이 있어야 한다.
+1. 프로그램 메뉴얼은 어떠한 기능과 어떠한 노력을 했는지에 대해서
+2. 게임 설명서는 게임 설명에 대해서.
+
+기능을 집어넣은 것은 기능을 집어넣었다 간략하게 설명하고,
+요즘에는 그냥 pdf로 작업한다고 한다.
+필요한 기능이 있으면 구글링을 하도록 한다.
+포트폴리오라는건 게임을 생각하는게 아니라, 프로그래머적으로 얼마나 많은 걸 보여주느냐임.
+게임회사에서 굉장히 많은 것을 고려함. 잡다하게 많은 것이 들어가기 때문입니다.
+시네마틱 같은 경우에는 영화적 연출이므로 팁이 없음. (시네마틱에서 제일 중요한건 카메라 워크입니다. 프로그래머쪽으로 중요한 것은 아닙니다.)
+
+면접과 관려되어
+원하는 회사에 이력서나 자소서가 통과과 되었다. 자소서가 이상하거나, 포트폴리오가 이상하다면, 
+서류는 늦어도 일주일 입니다. 일주일 안에 연락 안오면 탈락입니다.
+면접가서 떨어지는 것은, 성향이 안맞아서, 회사랑 안맞아서, 여러가지가 있지만, 면접을 보러왔다면 문제가없다.
+
+면접에서 떨어지는 것은, 크게 두 가지인데
+사람의 인격이 어떤지는 짧은 기간안에 파악하는 것은 어렵고, 얘가 우리회사에서 일할 때, 특정 집단에 소속시켰을 때 위화감 없이 일할 수 있을 것인가?
+회사 입장에서는 어차피 가르켜야 합니다. (업무적인 부분들을) 프로그래밍적인 기초부분이 탄탄한가? 포트폴리오 부분적인 내용들에 대해서,... 면접하러 오라는건, 검증하기 위해서 이다. 들어온 서류하고, 포트폴리오가 뭐가 좀 어긎난다. 탈락
+
+1. 대인관계, 2. 포트폴리오
+
+자기소개서 쓸 때 사람에 관련된 내용을 반드시 써야한다.
+대인관계에 관련된 내용이 절대적으로 중요합니다. 회사는 다양한 사람들이 모여있는데, 여러 사람들이 모인 공간에서 내가 해야할 게 있고, 안되는 경우가 있음. 그냥 해야하는 것 아닌가? 라고 생각하면 안될 것 이다.
+- 비가와서 반바지를 입고 출근했다. 부장님이 왜 반바지를 입고 출근했냐 물어보셨다. 왜? IT쪽은 크게 신경안쓰는데, 아니다.
+- 몇몇 데이터만 가지고 결론을 내리고 행동하기 때문에 실수를 하는 것이다. 시야가 좁다. ㅠㅠㅠㅠㅠㅠ 사고방식을 넓게 가지고, 생각의 다양성을 가져야 한다.
+- 여러 사람이 모일 때는, 규격화되는 것이 관리가 편하다.
+- 사람하고 대화할 때, 문제가 있으면 안된다. 안되면 스피치 학원이라도 다녀야 합니다. 혼자 잘해서는 아무것도 할 수 없다.
+회사입장에서는 월급주고 검증하고 싶은 생각이 일도 없음. 검증된 인력을 쓰고 싶음.
+자기소개서에 여러사람과 관련된 소속, 등 대인관계에 있어서 문제없다 등을 적는것이 좋다.
+
+
+## UFunction
+
+[Can I create a static function in C++ which I can access from any Blueprint?](https://forums.unrealengine.com/t/can-i-create-a-static-function-in-c-which-i-can-access-from-any-blueprint/284479)
+
+
+
+## Blueprint C++ 코드로
+
+> `File / Developer / Generate Native Code`를 보고, 궁금하니 사용해 봅니다.
+
+```cpp
+#pragma once
+#include "Blueprint/BlueprintSupport.h"
+#include "Runtime/CoreUObject/Public/UObject/NoExportTypes.h"
+#include "../Plugins/HorrorCore/HorrorCore/Source/HorrorSystem/Public/HorrorHandInterface.h"
+#include "Runtime/Engine/Classes/Engine/EngineTypes.h"
+#include "Runtime/Engine/Classes/GameFramework/Actor.h"
+#include "../Plugins/HorrorCore/HorrorCore/Source/HorrorSystem/Public/HorrorHoldableInterface.h"
+class UActorSequenceComponent;
+class UStaticMeshComponent;
+class USceneComponent;
+class UPhysicalMaterial;
+class AActor;
+class UPrimitiveComponent;
+#include "HoldableActor__pf2259725811.generated.h"
+UCLASS(config=Engine, Blueprintable, BlueprintType, meta=(ReplaceConverted="/HorrorCore/Actor/HoldableActor.HoldableActor_C", OverrideNativeName="HoldableActor_C"))
+class AHoldableActor_C__pf2259725811 : public AActor, public IHorrorHoldableInterface
+{
+public:
+	GENERATED_BODY()
+	UPROPERTY(BlueprintReadWrite, NonTransactional, meta=(Category="Default", OverrideNativeName="ActorSequence"))
+	UActorSequenceComponent* bpv__ActorSequence__pf;
+	UPROPERTY(BlueprintReadWrite, NonTransactional, meta=(Category="Default", OverrideNativeName="Cube"))
+	UStaticMeshComponent* bpv__Cube__pf;
+    ...
+```
+
+```cpp
+...
+#ifdef _MSC_VER
+#pragma warning (push)
+#pragma warning (disable : 4883)
+#endif
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+PRAGMA_DISABLE_OPTIMIZATION
+AHoldableActor_C__pf2259725811::AHoldableActor_C__pf2259725811(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
+{
+	
+	bpv__Scene__pf = CreateDefaultSubobject<USceneComponent>(TEXT("Scene"));
+	bpv__Cube__pf = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Cube"));
+	RootComponent = bpv__Scene__pf;
+	bpv__ActorSequence__pf = CreateDefaultSubobject<UActorSequenceComponent>(TEXT("ActorSequence"));
+	bpv__Scene__pf->CreationMethod = EComponentCreationMethod::Native;
+	static TWeakFieldPtr<FProperty> __Local__1{};
+	const FProperty* __Local__0 = __Local__1.Get();
+	if (nullptr == __Local__0)
+	{
+		__Local__0 = (UActorComponent::StaticClass())->FindPropertyByName(FName(TEXT("bCanEverAffectNavigation")));
+		check(__Local__0);
+		__Local__1 = __Local__0;
+	}
+	(((FBoolProperty*)__Local__0)->SetPropertyValue_InContainer((bpv__Scene__pf), false, 0));
+	bpv__Cube__pf->CreationMethod = EComponentCreationMethod::Native;
+	bpv__Cube__pf->AttachToComponent(bpv__Scene__pf, FAttachmentTransformRules::KeepRelativeTransform );
+	auto& __Local__2 = (*(AccessPrivateProperty<UStaticMesh* >((bpv__Cube__pf), UStaticMeshComponent::__PPO__StaticMesh() )));
+	__Local__2 = CastChecked<UStaticMesh>(CastChecked<UDynamicClass>(AHoldableActor_C__pf2259725811::StaticClass())->UsedAssets[0], ECastCheckedType::NullAllowed);
+	bpv__Cube__pf->OverrideMaterials = TArray<UMaterialInterface*> ();
+	bpv__Cube__pf->OverrideMaterials.Reserve(1);
+	bpv__Cube__pf->OverrideMaterials.Add(CastChecked<UMaterialInterface>(CastChecked<UDynamicClass>(AHoldableActor_C__pf2259725811::StaticClass())->UsedAssets[1], ECastCheckedType::NullAllowed));
+	bpv__Cube__pf->SetCollisionProfileName(FName(TEXT("IgnoreOnlyPawn")));
+	auto& __Local__3 = (*(AccessPrivateProperty<FVector >((bpv__Cube__pf), USceneComponent::__PPO__RelativeLocation() )));
+	__Local__3 = FVector(0.000000, 0.000000, 10.000000);
+	auto& __Local__4 = (*(AccessPrivateProperty<FVector >((bpv__Cube__pf), USceneComponent::__PPO__RelativeScale3D() )));
+	__Local__4 = FVector(0.200000, 0.200000, 0.200000);
+	(((FBoolProperty*)__Local__0)->SetPropertyValue_InContainer((bpv__Cube__pf), true, 0));
+	bpv__ActorSequence__pf->CreationMethod = EComponentCreationMethod::Native;
+	auto __Local__5 = CastChecked<UActorSequence>(bpv__ActorSequence__pf->GetDefaultSubobjectByName(TEXT("Sequence")), ECastCheckedType::NullAllowed);
+    ...
+```
+
+[Nativizing Blueprints](https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/Blueprints/TechnicalGuide/NativizingBlueprints/)
+
+이를 테스트하기위해서, 미리 생성하는 테스트라고 생각됩니다.
+
+* 사람이 알아보기 쉬운 코드는 아닙니다.
+* 직접 만드는 것이 더 빠를 것이라 생각됩니다.
+
 ## 셰이더 컴파일을 위한 세팅
 셰이더 컴파일을 위해서는 엔진의 Platform.ush를 필요로 합니다. 추가하지 않을시에 "/Engine/Shaders/Public/Platform.ush"를 추가하라고 합니다. 하지만 이는 include되지 않는 문제가 있습니다.
 
@@ -1584,12 +1717,6 @@ HorrorEvent 작업하기.
 Git을 이용할 때 branch좀 따서 만들도록 하자. 두 작업이 동시에 들어올 때 개판되네,
 
 Actor는 Tick이 콜백이고, 컴포넌트의 경우 TickComponent이다.
-
-게임 사운드는 시퀀스를 이용해서 구현할 수 있음. 굳이 사운드 플레이를 만들 필요 없음.
-
-라디오에 쓸 수 있는, 소리
-[Harsh Static](https://freesound.org/people/RoganMcDougald/sounds/261242/)
-[Passage Way ambience](https://freesound.org/people/Dpoggioli/sounds/213605/)
 
 ## Dev
 

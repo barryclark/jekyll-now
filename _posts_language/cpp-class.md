@@ -217,5 +217,13 @@ getter도 마찬가지로 굳이 예를들자면 자료에 무언가 더하거�
 
 ## Unreal UClass
 
+<details><summary>클래스 지정자</summary>
+<div markdown="1">
+
+[클래스 지정자](https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Classes/Specifiers/)
+
+엔진과 에디터의 다양한 측면에서 클래스가 어떻게 동작하는지 지정하기 위해 UClass를 선언할 때 사용되는 키워드입니다.
+
+</div></details>
 
 주요 참고자료 : 씹어먹는 C++, 위키피디아

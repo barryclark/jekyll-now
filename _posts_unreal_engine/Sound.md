@@ -3,7 +3,9 @@ layout: post
 title: Sound
 ---
 
-# 사운드
+## 사운드
+
+[오디오 및 사운드](https://docs.unrealengine.com/4.27/ko/WorkingWithAudio/)
 
 사운드는 사실적인 몰입 환경을 만드는 데 있어서 매우 중요한 부분입니다. 레벨의 배경음에서부터 탈것이나 무기와 상호작용할 때의 소리를 거쳐 캐릭터의 음성 대화와 뮤직 큐에 이르기까지, 오디오는 사용자 경험을 결정짓는 요소입니다.
 
@@ -11,6 +13,7 @@ title: Sound
 
 언리얼 엔진의 오디오 엔진 시스템은 **사운드 디자이너**와 엔지니어들이 목표하는 비전에 어울리는 오디오를 제작할 수 있도록 툴과 기능을 제공하고 있습니다. 이것이 중요한 이유는, 깨끗한 버전의 소리를 외부 어플리케이션에서 한 번만 제작한 당므 엔진으로 임포트해와서 원하는 결과를 내도록 엔진에서 만들 수 있다고 합니다.
 
+[오디오 시스템 개요](https://docs.unrealengine.com/4.27/ko/WorkingWithAudio/Overview/)
 
 ## Sound Attenuation(사운드 어테뉴에이션, 감쇠)
 감쇠란 플레이어가 사운드에서 멀어져감에 따라 그 볼륨을 줄여주는 기능입니다. 감쇠는 MinRadius와 MaxRadius의 두 반경을 통해 작동합니다.
@@ -51,3 +54,11 @@ MinRadius와 MaxRadius사이를 통과할 때 볼륨이 100%에서 고요해질 
 Audio Volume 에 변경을 가해도 에디터 안에서 실시간 작동하지는 않습니다. 편집된 볼륨이 들어있는 레벨의 지오메트리를 다시 빌드해 줘야 효과가 발휘됩니다.
 
 [오디오 볼륨 래퍼런스](https://docs.unrealengine.com/5.0/ko/audio-volume-actor-in-unreal-engine/)
+
+
+
+게임 사운드는 시퀀스를 이용해서 구현할 수 있음. 굳이 사운드 플레이를 만들 필요 없음.
+
+라디오에 쓸 수 있는, 소리
+[Harsh Static](https://freesound.org/people/RoganMcDougald/sounds/261242/)
+[Passage Way ambience](https://freesound.org/people/Dpoggioli/sounds/213605/)
