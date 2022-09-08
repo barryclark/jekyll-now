@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London August 2022: esynergy and NVIDIA"
+title: "Cloud Native London August 2022: featuring esynergy and NVIDIA"
 description: "speakers from esynergy and NVIDIA join us at the Cloud Native London meetup August 2022, hosted by Cheryl Hung, Engineering Manager at Apple"
 location: London, UK
 image: /images/2022-08-03-cloud-native-london-august-2022.jpeg
