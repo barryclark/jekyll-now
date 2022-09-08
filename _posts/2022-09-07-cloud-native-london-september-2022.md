@@ -30,6 +30,8 @@ Next up we had Dimitris Finas from Lightstep who described New observability wit
 * Distributed traces is the best way to do root cause analysis (RCA) for micro-services
 * In DevOps world, the best observability solution should be intuitive to be used by anyone
 
+Check out [his slides](/resources/DimitrisFinas_Meetup_slides.pdf)
+
 Finally we had Jaap Brasser from Harness wrapping up our evening with a talk on Chaos Engineering Implementations Demystified (starting at [1:48:07](https://youtu.be/En88atN_VgI?t=6487)). His takeaways discussed: 
 
 * What is Chaos Engineering
