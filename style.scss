@@ -13,6 +13,33 @@
 /* BASE RULES */
 /**************/
 
+// Table
+// 어따 둬야 잘 뒀다고 소문이 날까?
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 0.5px solid #ddd;
+  border-collapse: collapse;
+  font-size: 12px;
+  thead {
+    th {
+      text-align: center;
+      padding: .25rem .5rem;
+      background-color: #3a3531;
+      color: #fff;
+      border: 0.5px solid #ddd
+    }
+  }
+  tr {
+    background: #fff;
+    td {
+      padding: .25rem .5rem;
+      border: 0.5px solid #ddd;
+    }
+  }
+}
+
+// 
 html {
   font-size: 100%;
 }
