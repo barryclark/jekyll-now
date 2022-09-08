@@ -14,7 +14,7 @@ tags:
 
 We had three great speakers from Kong, Lightstep, and Harness joining us at our September Cloud Native London meetup at esynergy. We also had virtual attendees joining us via the YouTube/Twitch livestreams. 
 
-We are immensely grateful to [Palo Alto Networks](https://www.paloaltonetworks.com/),  [CircleCI](https://circleci.com/), and [Sysdig](https://sysdig.com/) for your generous support and sponsorship.
+We are immensely grateful to [Palo Alto Networks](https://www.paloaltonetworks.com/),  [CircleCI](https://circleci.com/), [Sysdig](https://sysdig.com/), [Lightstep](https://lightstep.com/), and [Okteto](https://www.okteto.com/) for your generous support and sponsorship.
 
 ### Overview
 
