@@ -8,7 +8,7 @@ Previous I wrote about [decomposing projects](https://johnuhri.com/Decomposing-P
 * by Implementation: Front-end, Middleware, Back-End or Ordering, Billing, Shipping
 * by Functionality: Scenarios across system components
 
-In [Righting Software](), software architect and author Juval Löwy recommends a better way: decomposing projects by volativity.
+In [Righting Software](https://read.amazon.com/kp/embed?asin=B0822XJZ48&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_Z1BF09CK13JRMCZE0Z2J), software architect and author Juval Löwy recommends a better way: decomposing projects by volativity.
 
 > "Volativity-based decomposition identifies areas of potential change and encapsulates those into service or system building blocks. You then implement the required behavior as the interaction between the encapsulated areas of volativity."
 
