@@ -12,4 +12,4 @@ In [Righting Software](https://read.amazon.com/kp/embed?asin=B0822XJZ48&preview=
 
 > "Volativity-based decomposition identifies areas of potential change and encapsulates those into service or system building blocks. You then implement the required behavior as the interaction between the encapsulated areas of volativity."
 
-In fact, Löwy suggests this is teh *only* way to decompose a project.
+In fact, Löwy suggests this is the *only* way to decompose a project.
