@@ -30,7 +30,7 @@ Each sponsor contributes £600 (no VAT) per event. **Event sponsorship will incr
 
 #### Can we host an event at our office?
 
-We aren't currently looking for a new venue, but if you have a venue and can commit to hosting 50-100 people on the first Wednesday of every month, email organisers@cloudnativelon.com to discuss!
+If your office can host 50-100 and you can commit to hosting on the first Wednesday of every month, email organisers@cloudnativelon.com.
 
 #### Can we run an event on a specific day?
 
@@ -46,7 +46,7 @@ You can display a banner inside the room, just bring it on the evening. For the 
 
 #### Can we sponsor as a recruitment agency?
 
-Yes! We work with one recruitment agency at a time and currently are open.
+Yes! We work with one recruitment agency at a time and currently are open to recruitment sponsorship.
 
 #### Can we share our event with your group?
 
