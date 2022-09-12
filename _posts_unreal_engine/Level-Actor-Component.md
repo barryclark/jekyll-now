@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Level
+title: Level, Actor, Component
 ---
 
 # Level(레벨)이란
@@ -137,3 +137,34 @@ Stage와 Plot은 필요에 게임의 진행 상황에 따라서 스트림 인 �
 따라서 죽어서 마지막 저장위치에서 다시 시작하거나, 이전 플레이를 이어하는 것은 MainLevel로 트레블 하는 것을 의미합니다. 마지막으로 진행한 플롯의 시작부분으로 이동하게 됩니다.
 
 * 아이템, 캐릭터의 체력 등의 변할 수 있는 상태는 별도로 저장방식을 결정해야 합니다.
+
+## Component
+
+<details><summary>컴포넌트 만들고 붙이기</summary>
+<div markdown="1">
+
+[컴포넌트 만들고 붙이기](https://docs.unrealengine.com/4.27/ko/ProgrammingAndScripting/ProgrammingWithCPP/CPPTutorials/Components/1/)
+
+1. 변수를 선언하고, 컴포넌트 생성 코드를 추가합니다.
+2. 생성된 컴포넌트를 부모 컴포넌트에 붙입니다.
+
+```cpp
+    // 루트 컴포넌트의 생성
+    USphereComponent* SphereComponent = CreateDefaultSubobject<USphereComponent>(TEXT("RootComponent"));
+    RootComponent = SphereComponent;
+    SphereComponent->InitSphereRadius(40.0f);
+    SphereComponent->SetCollisionProfileName(TEXT("Pawn"));
+    
+    // 자식 컴포넌트를 생성 후 부모 컴포넌트에 붙이기
+    UStaticMeshComponent* SphereVisual = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("VisualRepresentation"));
+    SphereVisual->SetupAttachment(RootComponent);
+    static ConstructorHelpers::FObjectFinder<UStaticMesh> SphereVisualAsset(TEXT("/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere"));
+    if (SphereVisualAsset.Succeeded())
+    {
+        SphereVisual->SetStaticMesh(SphereVisualAsset.Object);
+        SphereVisual->SetRelativeLocation(FVector(0.0f, 0.0f, -40.0f));
+        SphereVisual->SetWorldScale3D(FVector(0.8f));
+    }
+```
+
+</div></details>

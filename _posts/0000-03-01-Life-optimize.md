@@ -3,6 +3,14 @@ layout: post
 title: Life optimize
 ---
 
+<details><summary>Links</summary>
+<div markdown="1">
+
+|:---|---|
+|[Academia](https://www.academia.edu/search?q=FABRIK&utf8=%E2%9C%93&years=2020,2021)|논문 검색을 위한 사이트|
+
+</div></details>
+
 * [지킬 블로그](/posts_optimize_life/Jekyll_blog)
     - Jekyll
 * [Automation test](/posts_optimize_life/TDD-Automation_test)
