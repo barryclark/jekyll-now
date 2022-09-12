@@ -16,7 +16,7 @@ Each event has 200-300 attendees across in-person events, YouTube and Twitch.
 * You are welcome to [send a speaker](/cloudnativelondon/speak), but please no sales pitches. There is a typical waiting time of 6 months. 
 * Sponsors who commit for at least twelve months are listed on [https://www.meetup.com/Cloud-Native-London​](https://www.meetup.com/Cloud-Native-London).
 
-Each sponsor contributes £600 (no VAT) per event. **Event sponsorship will increase to £719 from January 2023, confirm your sponsorship by 31st October 2022 to lock in the 2022 price.**
+Each sponsor contributes £600 (no VAT) per event. **Event sponsorship will increase to £719 from January 2023. Confirm your sponsorship by 31st October 2022 to lock in the 2022 price.**
 
 <button onclick="location.href='/cloudnativelondon/sponsorship'" type="button">
          Sponsor event(s)</button>
