@@ -19,18 +19,17 @@ avatar: images/Prince1.jpg
 footer-links:
   dribbble:
   email: princek.iitk@gmail.com
-  facebook: https://www.facebook.com/prince.lat1
+  facebook: prince.lat1
   flickr:
-  github: barryclark/jekyll-now
+  github: princeklat03
   instagram:
-  linkedin: https://www.linkedin.com/in/prince-kumar-lat/
+  linkedin: prince-kumar-lat/
   pinterest:
   rss:  PK Lat
-  twitter: https://twitter.com/Princelat539
+  twitter: Princelat539
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: https://www.youtube.com/channel/UCZKbAogiFK7q541CLqrs_YA
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
+  youtube: channel/UCZKbAogiFK7q541CLqrs_YA
+  googlescholar: citations?user=JG90rZkAAAAJ&hl=en
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -41,7 +40,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: https://princeklat03.github.io/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
