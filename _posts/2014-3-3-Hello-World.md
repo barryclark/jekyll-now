@@ -3,7 +3,7 @@ layout: post
 title: Welcome!
 ---
 
-![Prince Kumar Lat|80x80](/images/Prince2.jpg)
+![Prince Kumar Lat|20x20](/images/Prince2.jpg)
 
 
 My Name is **Prince Kumar Lat**. I am an _Indian_ by birth and I have been living in the beautiful city of **_Burnaby, Canada_**, since September 2015. 
