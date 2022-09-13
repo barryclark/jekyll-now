@@ -15,4 +15,4 @@ My expertise lies in the field of DNA and RNA. Nucleic Acids (DNA/RNA) are one o
 
 ### Contact me
 
-[email@domain.com](princek.iitk@gmail.com)
+[princek.iitk@gmail.com](princek.iitk@gmail.com)
