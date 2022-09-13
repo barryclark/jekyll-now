@@ -1,3 +1,4 @@
+avatar: images/Prince1.jpg
 ---
 layout: post
 title: Welcome!
