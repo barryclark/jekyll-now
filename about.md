@@ -10,7 +10,7 @@ I was born in Jamui - a small town in India. My early education was from DAV Pub
 
 Fascinated by the irresistible nature of research to explore something new and innovative, I opted to go for higher studies. In Fall 2015, I moved to Canada to pursue my doctoral studies from Simon Fraser University (SFU). During my PhD, I accomplished 5 independent projects spanning the area of Cancer genomics, immunology, neurodegenerative disorders, DNA nanotechnology, _in-silico_ simulations and DNA/RNA catalysis which yielded 6 peer-reviewed journal publications, 11 oral/poster presentations and >10 awards/Fellowships. 
 
-Upon graduation, I worked in a Vancouver based biotech company "Flextrapower Technologies" as a Research Scientis for six months. 
+My expertise lies in the field of DNA and RNA. Nucleic Acids (DNA/RNA) are one of the most fundamental biopolymer in cells where DNA provides the instructions (code) for cellular activity and RNA decodes (convert) those code into functional proteins to carry out the cellular function. One major area of my research focuses on studying how the structural changes and mutations within DNA influence our health, particularly in the context of cancer and neurodegenerative disorders such as Amyotrophic Lateral Sclerosis. The other area of my research focuses on technological development using DNA. I make DNA electric switches, DNA nano-wires and other DNA origami/nanorobots with multitude of application in DNA nanotechnology and DNA computing 
 
 
 ### Contact me
