@@ -3,7 +3,7 @@ layout: page
 title: Publications
 permalink: /Publications/
 ---
-Google Scholar: [**Prince Kumar Lat**](https://scholar.google.com/citations?user=JG90rZkAAAAJ&hl=en)
+[Google Scholar](https://scholar.google.com/citations?user=JG90rZkAAAAJ&hl=en)
 
 1.) [**Lat PK** et al., (2021). A Long and Reversibly Self-Assembling 1-D DNA Nanostructure Built from Triplex and Quadruplex Hybrid Tiles. **_Angew Chem_** Int Ed, 60, 16, 8722 – 8727](https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.202016668)
 
