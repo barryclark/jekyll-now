@@ -1,5 +1,5 @@
 ---
 layout: page
-title: Data Science
-permalink: /Data Science/
+title: Gallery
+permalink: /Gallery/
 ---
