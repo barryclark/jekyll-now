@@ -17,19 +17,14 @@ avatar: /images/Prince.jpg
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
   email: princek.iitk@gmail.com
   facebook: prince.lat1
-  flickr:
   github: princeklat03
-  instagram:
   linkedin: prince-kumar-lat/
-  pinterest:
   rss:  PK Lat
   twitter: Princelat539
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: channel/UCZKbAogiFK7q541CLqrs_YA
-  googlescholar: citations?user=JG90rZkAAAAJ&hl=en
+  googlescholar: www.googlescholar.com/citations?user=JG90rZkAAAAJ&hl=en
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
