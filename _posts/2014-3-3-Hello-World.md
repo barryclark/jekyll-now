@@ -4,7 +4,6 @@ title: Welcome!
 ---
 <img src="/images/Prince2.jpg" width="185.8" height="320.5" align="right">
  
- 
 My Name is **Prince Kumar Lat**. I am an _Indian_ by birth and I have been living in **_Burnaby, Canada_**, since September 2015. 
 
 I have a background in engineering with deep interest in biology. I am an interdisciplinary researcher working on the non-conventional functional properties of DNA and RNA using tools of bioinformatics, data science, biophysics, biochemistry and molecular biology. 
