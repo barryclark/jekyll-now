@@ -21,9 +21,9 @@ permalink: /Publications/
 
 **_Conference Publications_**
 
-1. S Arthur, B Grande, A Jiang, R Cojocaru, M Alcaide, C Rushton, **PK Lat** et al., (2019) Identification and characterization of 3'UTR mutations affecting NFKBIZ in non-Hodgkin lymphoma. **_EUROPEAN JOURNAL OF HUMAN GENETICS_** 27, 577-578
+1. S Arthur, B Grande, A Jiang, R Cojocaru, M Alcaide, C Rushton, **PK Lat** et al., (2019) Identification and characterization of 3'UTR mutations affecting NFKBIZ in non-Hodgkin lymphoma. **_EUROPEAN JOURNAL OF HUMAN GENETICS_**  27, 577-578
 
-2. SE Arthur, A Mottok, R Cojocaru, A Jiang, BM Grande, M Alcaide, C Rushton, D Ennishi, **P Kumar Lat** et al., (2019) FUNCTIONAL CHARACTERIZATION OF NFKBIZ 3′ UTR MUTATIONS IN DIFFUSE LARGE B‐CELL LYMPHOMA. **_Hematological Oncology_** 37, 74-75
+2. SE Arthur, A Mottok, R Cojocaru, A Jiang, BM Grande, M Alcaide, C Rushton, D Ennishi, **P Kumar Lat** et al., (2019) FUNCTIONAL CHARACTERIZATION OF NFKBIZ 3′ UTR MUTATIONS IN DIFFUSE LARGE B‐CELL LYMPHOMA. **_Hematological Oncology_**  37, 74-75
 
 **_bioRxiv_**
 
