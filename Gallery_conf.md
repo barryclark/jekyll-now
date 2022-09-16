@@ -1,5 +1,5 @@
 ---
 layout: page
 title: Conference
-permalink: /Conference/
+permalink: /Gallery/Gallery_Conf/
 ---
