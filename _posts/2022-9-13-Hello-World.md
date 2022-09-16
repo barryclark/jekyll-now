@@ -7,6 +7,9 @@ title: Welcome!
 &nbsp
 &nbsp
 &nbsp
+&nbsp
+&nbsp
+&nbsp
 
 My Name is **Prince Kumar Lat**. I am an _Indian_ by birth and I have been living in **_Burnaby, Canada_**, since September 2015. 
 
