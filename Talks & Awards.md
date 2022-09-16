@@ -34,7 +34,7 @@ permalink: /Talks & Awards/
 5. A unique approach for making hybrid DNA tiles for nanotechnological applications. MBB Colloquium, SFU, 2021
 
 ### Guest Lecture
-**ESO 206**: Principles of Biotechnology: DNA application in Nanotechnology. 2021 (Host: Dr. Ashwani Kumar Thakur)
+1. IIT Kanpur **ESO 206**: Principles of Biotechnology: DNA application in Nanotechnology. 2021 (Host: Dr. Ashwani Kumar Thakur, Professor, IIT Kanpur)
 
 
 
