@@ -4,7 +4,7 @@ title: Talks & Awards
 permalink: /Talks & Awards/
 ---
 
-**Awards/Fellowship**
+## Awards/Fellowship
 1. CD Nelson Entrance Scholarship, SFU, Canada [Amount: $72,000]
 2. Provost Prize of Distinction, SFU, Canada [Amount: $16,666]
 3. David L. Baillie Grad Fellowship, SFU, Canada [Amount: $7,600]
@@ -20,7 +20,7 @@ permalink: /Talks & Awards/
 12. ACADEMIC EXCELLENCE AWARD Year 2012-13, IIT Kanpur, India
 13. Merit-cum-Means scholarship, IIT Kanpur, India (Tuition Fee)
 
-**Conference Talks**
+## Conference Talks
 ### _Poster Presentation_
 1. A novel technique to capture DNA/RNA G-Quadruplexes in living cells using Heme-Quadruplex enzymatic activity. CSC Conference, Quebec, Canada, June 2019
 2. A strange higher order structure of DNA formed by repeat expansion of d(G4C2) sequence linked to neurodegenerative disorders, Volcano Conference, Pack Forest, WA, USA, March 2017
