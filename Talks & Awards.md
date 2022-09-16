@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Talks/Awards
-permalink: /Talks/Awards/
+title: Talks & Awards
+permalink: /Talks & Awards/
 ---
 
 **Awards/Fellowship**
