@@ -2,7 +2,7 @@
 layout: post
 title: Welcome!
 ---
-<div style="text-align: right"><img src="/images/Prince2.jpg" width="185.8" height="320.5"/></div>
+<div style="text-align: left"><img src="/images/Prince2.jpg" width="185.8" height="320.5"/></div>
 
  
 My Name is **Prince Kumar Lat**. I am an _Indian_ by birth and I have been living in **_Burnaby, Canada_**, since September 2015. 
