@@ -11,7 +11,9 @@ My Name is **Prince Kumar Lat**. I have a background in engineering with deep in
 
 <div style="text-align: justify"><img src="/images/Prince_3MT.JPG" height="175" align="right"/></div> 
 
+<p align="justify">
 I was born in Jamui - a small town in India. My early education was from DAV Public School Jamui. I completed my undergrad studies in 2015 from **IIT Kanpur**, India, with a major in Bioeingineering. During my undergrad studies, I got an initial exposure to research while doing a short 3-month internship in the lab of **Dr. Detlef Weigel** at Max-Plansk Institute for Biology, Tubingen, Germany. In Dr. Weigel's lab, I learnt **NGS** and Gel Electrophoresis to sequence the circular RNA in _Arabidopsis Thaliana_ . Further, I did my B.Tech project in the lab of **Dr. Nitin Gupta** (Bioinformatics Group, BSBE), IIT Kanpur. I used computational tools and python programming to understand the olfactory sensing mechanism in _Drosophila_ (fruit fly).
+</p>
 \
 &nbsp;
 Fascinated by the irresistible attraction for research to explore something new and innovative, I opted to go for higher studies. In Fall 2015, I moved to _Canada_ to pursue my doctoral studies from Simon Fraser University (SFU). During my PhD, I accomplished 5 independent projects spanning the area of Cancer genomics, immunology, neurodegenerative disorders, DNA nanotechnology, _in-silico_ simulations and DNA/RNA catalysis which yielded **6** peer-reviewed journal publications, **11** oral/poster presentations and **>10** awards/Fellowships. 
