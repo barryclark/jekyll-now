@@ -8,7 +8,7 @@ permalink: /Data Science/
 
 ## Project 1: Reinforcement Learning
 Problem:
-![Statement]("/images/Prince_3MT.jpg")
+![Statement]("/images/Reinforcement_learning.png")
 
 [Solution](https://github.com/princeklat03/Reinforcement-Learning/blob/main/Reinforcement%20Learning.ipynb)
 
