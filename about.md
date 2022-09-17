@@ -23,7 +23,7 @@ Fascinated by the irresistible attraction for research to explore something new 
   When I am away from my lab, I enjoy playing <b><i>Flute</i></b> and <b><i>Tabla</i></b> (Indian Drum). Occasionally, I spend few evenings writing poetries in my mother tongue (Hindi).
 </p>
 
-&nbsp; &nbsp; &nbsp; &nbsp; <img src="/images/Prince_Tablapng.png" height="200" align="center"/> &nbsp; &nbsp; <img src="/images/Prince_Flute.png" height="180" align="centre"/> 
+&nbsp; &nbsp; &nbsp; &nbsp; <img src="/images/Prince_Tablapng.png" height="200" align="centre"/> &nbsp; &nbsp; <img src="/images/Prince_Flute.png" height="180" align="centre"/> 
 
 
 ### Contact me
