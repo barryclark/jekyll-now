@@ -7,8 +7,7 @@ permalink: /Data Science/
 [Github_Prince](https://github.com/princeklat03)
 
 ## Project 1: Reinforcement Learning
-Problem:
-<img src="/images/Reinforcement_learning.png" height="300" align="center"/>
+<img src="/images/Reinforcement_learning.png" height="800" align="center"/>
 
 [Solution](https://github.com/princeklat03/Reinforcement-Learning/blob/main/Reinforcement%20Learning.ipynb)
 
