@@ -5,7 +5,9 @@ permalink: /about/
 ---
 <div style="text-align: right"><img src="/images/Prince2.jpg" width="150" align="left"/></div> 
 
+<p align="justify">
 My Name is **Prince Kumar Lat**. I have a background in engineering with deep interest in biology. I am a passionate researcher and an amateaur Data Scientist trying to answer some of the most puzzling questions in _biology_ using tools of bioinformatics, data science, biophysics, biochemistry and molecular biology. I aim to make use of my programming, teamwork, and mathematical skills for social good. I have an eagerness to promote science within the community and a quest to improve the quality of human health though a combination of scientific innovation and technological development.
+</p>
 
 <div style="text-align: justify"><img src="/images/Prince_3MT.JPG" height="175" align="right"/></div> 
 
