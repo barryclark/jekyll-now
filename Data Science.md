@@ -20,3 +20,9 @@ permalink: /Data Science/
 <img src="/images/Time Series.png" height="700" align="center"/>
 
 [Solution](https://github.com/princeklat03/Time-Series-Analysis/blob/main/Time%20Series%20Analysis.ipynb)
+
+## Project 4: Association Rule Mining
+<img src="/images/Association.png" height="700" align="center"/>
+
+[Solution](https://github.com/princeklat03/Association-Rules-Mining/blob/main/Association_Rules.ipynb)
+
