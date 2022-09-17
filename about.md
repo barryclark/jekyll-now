@@ -22,6 +22,7 @@ Fascinated by the irresistible attraction for research to explore something new 
 <p align="justify">
   When I am away from my lab, I enjoy playing <b><i>Flute</i></b> and <b><i>Tabla</i></b> (Indian Drum). Occasionally, I spend few evenings writing poetries in my mother tongue (Hindi).
 </p>
+<div style="text-align: justify"><img src="/images/Prince_Tablapng.png.jpg" height="90" align="right"/></div> 
 
 ### Contact me
 [princek.iitk@gmail.com](princek.iitk@gmail.com)
