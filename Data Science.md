@@ -12,7 +12,7 @@ permalink: /Data Science/
 [Solution](https://github.com/princeklat03/Reinforcement-Learning/blob/main/Reinforcement%20Learning.ipynb)
 
 ## Project 2: Unsupervised Image Seqmentation
-<img src="/images/Unsupervised.png" height="300" align="center"/>
+<img src="/images/Unsupervised.png" height="270" align="center"/>
 
 [Solution](https://github.com/princeklat03/Unsupervised_Learning/blob/main/Unsupervised%20Learning.ipynb)
 
@@ -22,7 +22,7 @@ permalink: /Data Science/
 [Solution](https://github.com/princeklat03/Time-Series-Analysis/blob/main/Time%20Series%20Analysis.ipynb)
 
 ## Project 4: Association Rule Mining
-<img src="/images/Association_Rules.png" height="270" align="center"/>
+<img src="/images/Association_Rules.png" height="250" align="center"/>
 
 [Solution](https://github.com/princeklat03/Association-Rules-Mining/blob/main/Association_Rules.ipynb)
 
