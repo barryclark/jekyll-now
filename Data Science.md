@@ -15,3 +15,8 @@ permalink: /Data Science/
 <img src="/images/Unsupervised.png" height="300" align="center"/>
 
 [Solution](https://github.com/princeklat03/Unsupervised_Learning/blob/main/Unsupervised%20Learning.ipynb)
+
+## Project 2: Time Series Analysis
+<img src="/images/Time Series.png" height="300" align="center"/>
+
+[Solution](https://github.com/princeklat03/Time-Series-Analysis/blob/main/Time%20Series%20Analysis.ipynb)
