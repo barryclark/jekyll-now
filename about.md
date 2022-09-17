@@ -7,7 +7,7 @@ permalink: /about/
 
 My Name is **Prince Kumar Lat**. I have a background in engineering with deep interest in biology. I am a passionate researcher and an amateaur Data Scientist trying to answer some of the most puzzling questions in _biology_ using tools of bioinformatics, data science, biophysics, biochemistry and molecular biology. I aim to make use of my programming, teamwork, and mathematical skills for social good. I have an eagerness to promote science within the community and a quest to improve the quality of human health though a combination of scientific innovation and technological development.
 
-<div style="text-align: right"><img src="/images/Prince_3MT.JPG" height="180" align="right"/></div> 
+<div style="text-align: right"><img src="/images/Prince_3MT.JPG" height="170" align="right"/></div> 
 
 I was born in Jamui - a small town in India. My early education was from DAV Public School Jamui. I completed my undergrad studies in 2015 from **IIT Kanpur**, India, with a major in Bioeingineering. During my undergrad studies, I got an initial exposure to research while doing a short 3-month internship in the lab of **Dr. Detlef Weigel** at Max-Plansk Institute for Biology, Tubingen, Germany. In Dr. Weigel's lab, I learnt **NGS** and Gel Electrophoresis to sequence the circular RNA in _Arabidopsis Thaliana_ . Further, I did my B.Tech project in the lab of **Dr. Nitin Gupta** (Bioinformatics Group, BSBE), IIT Kanpur. I used computational tools and python programming to understand the olfactory sensing mechanism in _Drosophila_ (fruit fly).
 \
