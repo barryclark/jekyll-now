@@ -4,7 +4,7 @@ title: Data Science
 permalink: /Data Science/
 ---
 
-[Github_Prince](https://github.com/princeklat03)
+Github: [Github_Prince](https://github.com/princeklat03)
 
 ## Project 1: Reinforcement Learning
 <img src="/images/Reinforcement_learning.png" height="800" align="center"/>
