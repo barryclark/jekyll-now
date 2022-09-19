@@ -11,6 +11,8 @@ title: Algorithm and data struct
     - 빅-오 표기법(Big-O Notation)
     - 연습 문제
 
+* [List](/posts_algorithm_and_data_struct/list)
+
 * [Bubble selection insert](/posts_algorithm_and_data_struct/Bubble-selection-insert-sort)
     - Bubble sort
     - Selection sort
