@@ -77,5 +77,13 @@ Rending a final circuit that looks like this:
 ![circuit](/images/post14/final_circuit.png)
 {:refdef}
 
-The 22 pF caps at each side are essentially DC blocks for the biasing voltages of the transistor. The high capacitance has little effect at the working difference, but still they impose some effect, so I added those and always simulated with them so I was designing having that small effect of the DC blocks in consideration and not be surprised later on.
+Notice the 22 pF caps at each side are DC blocks for the biasing voltages of the transistor. The high capacitance has little effect at the working frequency, but still they impose some effect, so I added those and always simulated with them so I was designing having that small effect of the DC blocks in consideration and not be surprised later on.
+
+Another important thing is that the inductor in the previous circuit is ideal, which is not realistic, all components have parasitics, hence it's important to simulate this with a more realistic model for the inductor. And using touchstone files with the measured S-parameters from the inductor supplier is a good option. So I loaded the S-parameters from a Murata inductor, and soon realized I had to use a smaller inductor value to obtain the match I was hoping for, ending up with a 5.1 nH, 0402 SMD packaged, multi-layers type inductor. Rending the sinal result:
+
+{:refdef: style="text-align: center;"}
+![sparamsf2](/images/post14/sparams_final_wRealcomponent.png)
+{:refdef}
+
+A gain of above 26 dB and a NF of 1.13 in the L1 band looks good. Now the second part is to determine the circuit to make to correct bias to the transistor, that is, VCE = 3V and IC = 30 mA.
 
