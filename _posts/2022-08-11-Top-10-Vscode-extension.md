@@ -1,4 +1,3 @@
-# Top 10 VScode Tips and Tricks  
 ---
 ## Number 10 
 ![vscode-icon](/images/VScode-extenstion/vscode-icons-icon.png)
