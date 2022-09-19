@@ -1,4 +1,4 @@
-# 
+This post gives an overview of the DICOM format and how to view DICOM files. 
 
 ### An overview on DICOM:
 
