@@ -41,3 +41,6 @@ All feature values are recoded with four significant digits.<br><br>
 Missing attribute values: none<br><br>
 
 Class distribution: 357 benign, 212 malignant</p>
+
+[Solution](https://github.com/princeklat03/Breast-Cancer/blob/main/BreastCancerPrediction.ipynb)
+
