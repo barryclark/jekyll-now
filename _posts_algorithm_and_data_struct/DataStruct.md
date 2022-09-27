@@ -7,6 +7,8 @@ title: Data struct
 
 ![자료구조](https://velog.velcdn.com/images%2Fmar_f%2Fpost%2F5a1591f9-b2a6-4ee9-a710-f18ef102a891%2Fimage-20210117185326497.png)
 
+![자료구자](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FefLNM6%2FbtrgVOqM1ww%2Fq9Y1KFRs7y81CHkXtK1vy1%2Fimg.jpg)
+
 ## 자료구조 List(리스트)
 
 순열(Sequence)이라고도 불리며, 순서를 가지고 일렬로 나열한 원소들의 모임으로 정의합니다. 순서가 있다는 점에서 집합과는 구별되며, 갈림길 없이 일렬로 나열되어 처음과 끝이 각각 하나씩만 있다는 점에서 그래프와도 구별됩니다.
@@ -158,3 +160,33 @@ title: Data struct
 참고로 뒤에서부터 삽입하는 push_back()의 경우 O(1)의 시간이 걸리는데, 벡터의 크기가 증가되는 시간 복잡도가 amoritized 복잡도, 즉 상수 시간 복잡도 O(1)과 유사한 시간 복잡도를 가지기 때문입니다.
 
 push_back()을 한다고 해서 매번 크기가 증가하는 것이 아니라 2의 제곱승 +1 마다 크기를 2배로 늘리는 것을 알 수 있습니다.
+
+## 자료구조 맵(Map)
+
+맵(map)은 특정 순서에 따라 키와 매핑된 값의 조합으로 형성된 자료 구조입니다.
+
+* 레드 블랙 트리 자료 구조를 기반으로 형성되고, 삽입하면 자동으로 정렬됩니다.
+
+<details><summary>Map 자료구조는 왜 이용하는가?</summary>
+<div markdown="1">
+
+List형태의 자료구조들은 순서대로 값을 차곡차곡 집어넣는 일련의 하나의 줄과 같은 형태입니다. 반면 Map 형태의 자료구조는 각각의 Key와 매칭 되는 Value들이 존재합니다. 즉 순서보다는 정의된 이름(Key)와 상응하는 데이터들을 묶기 위한 자료 구조로서 효과적입니다.
+
+</div></details>
+
+<details><summary>Map 자료구조의 대표적인 종류</summary>
+<div markdown="1">
+
+Map의 개념을 이용하여 사용하는 대표적인 자료구조는 크게 3가지 정도 있습니다.
+
+* HashMap
+    * Key와 Value의 쌍으로만 구성이 될 뿐 자료구조 안에 묶인 쌍들에 대한 순서는 보장할 수 없습니다.
+    * 즉, 사용자는 키와 값이 구성되는 위치를 결정 하거나 알 수 없습니다.
+* TreeMap
+    * Key의 값을 이용해 순서대로 정렬하여 데이터를 저장하는 자료구조입니다.
+    * Key값을 통한 탐색 뿐 아니라 Key값의 정렬을 통한 탐색 등을 하기에 용의합니다.
+* LinkedHashMap
+    * 데이터를 입력한 순서대로 쌓아지며 데이터를 저장하는 자료구조입니다.
+    * 배열, 리스트처럼 인덱싱 접근을 하기에 용의합니다.
+
+</div></details>
