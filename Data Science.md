@@ -12,11 +12,10 @@ Github: [Github_Prince](https://github.com/princeklat03)
 [Solution](https://github.com/princeklat03/Reinforcement-Learning/blob/main/Reinforcement%20Learning.ipynb)
 
 ## Project 2: Unsupervised Image Seqmentation
-<p>Objective:<br><br>
+<p><b>Objective</b>:<br>
+Use k-means clustering for image segmentation and to identify dominant color in the image.<br><br>
 
-Use k-means clustering for image segmentation and to identify dominant color in the image.<br>
-Question:<br><br>
-
+<b>Question</b>:<br>
 Display the image “dog.jpeg”. Convert the image in to numpy array, so that it can be used in further processing<br>
 Find out the dimensions of the image and convert it in to a two-dimensional array<br>
 Use kmeans clustering with k set to 5 and cluster the image<br>
@@ -25,7 +24,7 @@ Find out the five dominant color in the image</p>
 [Solution](https://github.com/princeklat03/Unsupervised_Learning/blob/main/Unsupervised%20Learning.ipynb)
 
 ## Project 3: Time Series Analysis
-<p>Domain – SEA Transportation focus –forecast demand Business challenge/requirement <br><br>
+<p>Domain – SEA Transportation focus – <b>forecast demand Business challenge/requirement</b> <br><br>
 
 SeaPort is the largest operator of Sea Planes across sea shores in Europe.<br>
 SeaPort doesn't have planes of their own, rather they lease themon a short-term basis based on passenger traffic. You as an ML expert have to builda model to forecast the demand (passenger traffic) of traffic.<br><br>
@@ -51,21 +50,21 @@ Better utilization of planes will lead to decrease in cost and hence better bott
 
 ## Project 4: Association Rule Mining
 <p><b>Market Basket Analysis</b> There is an online transactional data of a retail store containing the information of different items sold in different countries<br><br>
-<b>Key Issue</b> As of now the company doesn't have a robust rule to club the items to maximize its sell Goal You as an ML expert have to build a model to forecast the demand (passenger traffic) of traffic<br><br>
+<b>Key Issue</b> As of now the company doesn't have a robust rule to club the items to maximize its sell Goal. You as an ML expert have to build a model to forecast the demand (passenger traffic) of traffic<br><br>
 
-<b>Strategy</b> We will apply apriori algorithm </p>
+<b>Strategy</b> Deploy apriori algorithm </p>
 
 [Solution](https://github.com/princeklat03/Association-Rules-Mining/blob/main/Association_Rules.ipynb)
 
 ## Project 5: Breast Cancer Prediction
-<p>Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass.<br> Attribute Information:<br>
+<p>Features are computed from a digitized image of a fine needle aspirate (FNA) of a <b>breast mass<\b>.<br> Attribute Information:<br><br>
 
-ID number 2) Diagnosis (M = malignant, B = benign) 3-32) <br>
-Ten real-valued features are computed for each cell nucleus: <br>
+1) ID number 2) Diagnosis (M = malignant, B = benign)<br><br>
+3-32) Ten real-valued features are computed for each cell nucleus: <br>
 
-a) radius (mean of distances from center to points on the perimeter) b) texture (standard deviation of gray-scale values) c) perimeter d) area e) smoothness (local variation in radius lengths) f) compactness (perimeter^2 / area - 1.0) g) concavity (severity of concave portions of the contour) h) concave points (number of concave portions of the contour) i) symmetry j) fractal dimension ("coastline approximation" - 1) <br><br>
+a) <b>radius</b> (mean of distances from center to points on the perimeter) b) <b>texture</b> (standard deviation of gray-scale values) c) <b>perimeter</b> d) <b>area</b> e) <b>smoothness</b> (local variation in radius lengths) f) <b>compactness</b> (perimeter^2 / area - 1.0) g) <b>concavity</b> (severity of concave portions of the contour) h) <b>concave points</b> (number of concave portions of the contour) i) <b>symmetry</b> j) <b>fractal dimension</b> ("coastline approximation" - 1) <br><br>
 
-The mean, standard error and "worst" or largest (mean of the three largest values) of these features were computed for each image, resulting in 30 features. For instance, field 3 is Mean Radius, field 13 is Radius SE, field 23 is Worst Radius.<br><br>
+The <b>mean</b>, <b>standard error</b> and <b>"worst"</b> or <b>largest</b> (mean of the three largest values) of these features were computed for each image, resulting in <b>30</b> features. For instance, field <b>3</b> is <b>Mean Radius</b>, <b>field 13 is Radius SE</b>, <b>field 23 is Worst Radius</b>.<br><br>
 
 All feature values are recoded with four significant digits.<br><br>
 
