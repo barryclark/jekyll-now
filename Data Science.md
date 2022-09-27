@@ -65,7 +65,7 @@ a) <b>radius</b> (mean of distances from center to points on the perimeter) b) <
 
 The <b>mean</b>, <b>standard error</b> and <b>"worst"</b> or <b>largest</b> (mean of the three largest values) of these features were computed for each image, resulting in <b>30</b> features. For instance, field <b>3</b> is <b>Mean Radius</b>, <b>field 13 is Radius SE</b>, <b>field 23 is Worst Radius</b>.<br><br>
 
-All feature values are recoded with four significant digits.<br><br>
+All feature values are recoded with four significant digits<br><br>
 
 Missing attribute values: none<br><br>
 
