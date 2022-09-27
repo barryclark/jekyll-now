@@ -60,7 +60,7 @@ Better utilization of planes will lead to decrease in cost and hence better bott
 <p>Features are computed from a digitized image of a fine needle aspirate (FNA) of a <b>breast mass<\b>.<br> Attribute Information:<br><br>
 
 1) ID number 2) Diagnosis (M = malignant, B = benign)<br><br>
-3-32) Ten real-valued features are computed for each cell nucleus: <br>
+3-32) Ten real-valued features are computed for each cell nucleus:<br>
 
 a) <b>radius</b> (mean of distances from center to points on the perimeter) b) <b>texture</b> (standard deviation of gray-scale values) c) <b>perimeter</b> d) <b>area</b> e) <b>smoothness</b> (local variation in radius lengths) f) <b>compactness</b> (perimeter^2 / area - 1.0) g) <b>concavity</b> (severity of concave portions of the contour) h) <b>concave points</b> (number of concave portions of the contour) i) <b>symmetry</b> j) <b>fractal dimension</b> ("coastline approximation" - 1) <br><br>
 
