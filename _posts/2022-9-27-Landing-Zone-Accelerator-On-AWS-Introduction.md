@@ -91,13 +91,18 @@ The network-config.yaml file as part of the Landing Zone accelerator is used to 
 **Remote Access Connectivity - AWS Resources**
 
 Removing the ability for interactive access reduces the risk of human error, and the potential for manual configuration or management.  With this principle in mind, all teams should use AWS Systems Manager to manage EC2 instances instead of allowing direct access, or via a bastion host. AWS Systems Manager can automate a variety of maintenance and deployment tasks, using features including automation workflows, documents (playbooks) and the run command. AWS Session Manager is accessed via the AWS Management Console, which means MFA and any networks policies will be applied. Key benefits of Systems Manager over RDP or SSH include:
-•	Centralised access control to managed nodes using IAM policies
-•	No open inbound ports and no need to manage bastion hosts or SSH keys
-•	One-click access to managed nodes from the console and CLI
-•	Port forwarding
-•	Cross-platform support for Windows, Linux, and macOS
-•	Logging and auditing of session activity.
 
+*	Centralised access control to managed nodes using IAM policies
+
+*	No open inbound ports and no need to manage bastion hosts or SSH keys
+
+*	One-click access to managed nodes from the console and CLI
+
+*	Port forwarding
+
+*	Cross-platform support for Windows, Linux, and macOS
+
+*	Logging and auditing of session activity.
 
 ## Conclusion ##
 
