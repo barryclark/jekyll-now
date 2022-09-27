@@ -58,13 +58,13 @@ Better utilization of planes will lead to decrease in cost and hence better bott
 
 ## Project 5: Breast Cancer Prediction
 <br>
-<p>Features are computed from a digitized image of a fine needle aspirate (FNA) of a <b>breast mass</b>.<br> Attribute Information:<br>
+<p>Features are computed from a digitized image of a fine needle aspirate (FNA) of a <b>breast mass</b>.<br> <b>Attribute Information</b>:<br>
   1) ID number<br>2) Diagnosis (M = malignant, B = benign)<br>
   3-32) Ten real-valued features are computed for each cell nucleus:<br>
 
 a) <b>radius</b> (mean of distances from center to points on the perimeter) b) <b>texture</b> (standard deviation of gray-scale values) c) <b>perimeter</b> d) <b>area</b> e) <b>smoothness</b> (local variation in radius lengths) f) <b>compactness</b> (perimeter^2 / area - 1.0) g) <b>concavity</b> (severity of concave portions of the contour) h) <b>concave points</b> (number of concave portions of the contour) i) <b>symmetry</b> j) <b>fractal dimension</b> ("coastline approximation" - 1) <br><br>
 
-The <b>mean</b>, <b>standard error</b> and <b>"worst"</b> or <b>largest</b> (mean of the three largest values) of these features were computed for each image, resulting in <b>30</b> features. For instance, field <b>3</b> is <b>Mean Radius</b>, <b>field 13 is Radius SE</b>, <b>field 23 is Worst Radius</b>.<br><br>
+The <b>mean</b>, <b>standard error</b> and <b>"worst"</b> or <b>largest</b> (mean of the three largest values) of these features were computed for each image, resulting in <b>30</b> features. For instance, field <b>3</b> is <b>Mean Radius</b>, <b>field 13</b> is <b>Radius SE</b>, <b>field 23</b> is <b>Worst Radius</b>.<br><br>
 
 All feature values are recoded with four significant digits<br><br>
 
