@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS Landing Zone - Part One Introduction to Landing Zone Accelerator on AWS
+title: Landing Zone Accelerator on AWS - Part One Introduction
 ---
 
 ## Landing Zone Accelerator - Introduction ##
