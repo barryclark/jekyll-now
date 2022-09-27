@@ -12,20 +12,20 @@ Github: [Github_Prince](https://github.com/princeklat03)
 [Solution](https://github.com/princeklat03/Reinforcement-Learning/blob/main/Reinforcement%20Learning.ipynb)
 
 ## Project 2: Unsupervised Image Seqmentation
-<p>Objective:<br<br>
+<p>Objective:<br><br>
 
 Use k-means clustering for image segmentation and to identify dominant color in the image.<br>
 Question:<br><br>
 
-Display the image “dog.jpeg”. Convert the image in to numpy array,so that it can be used in further processing<br>
+Display the image “dog.jpeg”. Convert the image in to numpy array, so that it can be used in further processing<br>
 Find out the dimensions of the image and convert it in to a two-dimensional array<br>
 Use kmeans clustering with k set to 5 and cluster the image<br>
 Predict the cluster label of every pixel in the image and plot it back as an image<br>
-Find out the three dominant color in the image</p>
+Find out the five dominant color in the image</p>
 [Solution](https://github.com/princeklat03/Unsupervised_Learning/blob/main/Unsupervised%20Learning.ipynb)
 
 ## Project 3: Time Series Analysis
-<p>Domain –SEA Transportation focus –forecast demand Business challenge/requirement <br><br>
+<p>Domain – SEA Transportation focus –forecast demand Business challenge/requirement <br><br>
 
 SeaPort is the largest operator of Sea Planes across sea shores in Europe.<br>
 SeaPort doesn't have planes of their own, rather they lease themon a short-term basis based on passenger traffic. You as an ML expert have to builda model to forecast the demand (passenger traffic) of traffic.<br><br>
@@ -37,7 +37,7 @@ As of now utilization of Planes is low due to poor forecasts of traffic<br><br>
 NONE<br><br>
 
 <b>Data volume</b><br>
-Approx 144 records–data month wise for last 12 years –file SeaPlaneTravel.csv<br>
+Approx 144 records–data month wise for last 12 years – file SeaPlaneTravel.csv<br>
 <b>Fields in Data</b><br>
 Month: Month in which traffic data was recorded<br>
 '#Passenger': No of travellers availing Service in that month<br>
