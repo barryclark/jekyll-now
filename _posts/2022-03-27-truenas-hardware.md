@@ -25,9 +25,11 @@ For 5+ years???
 
 ### Images
 Motherboard:
+
 ![motherboard]({{ site.baseurl }}/images/2022-03-27/mainboard.jpg){:width="70%"}
 
 Storage array:
+
 ![storage-array]({{ site.baseurl }}/images/2022-03-27/ssd-hdd.jpg){:width="70%"}
 
 ## Software
