@@ -23,6 +23,13 @@ For 5+ years???
   * SSD RaidZ0: 2x [1TB Crucial BX500 2.5" (6.4cm) SATA 3D-NAND QLC](https://www.crucial.de/ssd/bx500/ct1000bx500ssd1) ➡ 1TB usable storage
   * HDD RaidZ1: 4x [6TB WD Red WD60EFAX 256MB 3.5" (8.9cm) SATA 6Gb/](https://www.westerndigital.com/de-at/products/internal-drives/wd-red-sata-hdd#WD60EFAX) ➡ 15.72 TB usable storage
 
+### Images
+Motherboard:
+![motherboard]({{ site.baseurl }}/images/2022-03-27/mainboard.jpg){:width="100%"}
+
+Storage array:
+![storage-array]({{ site.baseurl }}/images/2022-03-27/ssh-hdd.jpg){:width="100%"}
+
 ## Software
 * OS: TrueNas Scale `TrueNAS-SCALE-22.02-RC.2`
 
