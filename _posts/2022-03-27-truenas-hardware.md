@@ -15,7 +15,7 @@ For 5+ years???
 🤦‍♂.
 
 ## Hardware
-* Mainboard: [ASUS Z10PA-D8 Series](https://servers.asus.com/products/Servers/Server-Motherboards/Z10PAD8)
+* Mainboard: [ASUS Z10PA-D8 Series](https://www.asus.com/de/Commercial-Servers-Workstations/Z10PAD8/)
 * CPU: [8-core Intel(R) Xeon(R) CPU E5-2620 v4 @ 2.10GHz](https://ark.intel.com/content/www/de/de/ark/products/92986/intel-xeon-processor-e52620-v4-20m-cache-2-10-ghz.html)
 * RAM: Kingston 32GB DDR4-ECC (4x 8GB), 1Rx4, 2400 MHz, PC4
 * Storage:
