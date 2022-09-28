@@ -28,7 +28,7 @@ Motherboard:
 ![motherboard]({{ site.baseurl }}/images/2022-03-27/mainboard.jpg){:width="100%"}
 
 Storage array:
-![storage-array]({{ site.baseurl }}/images/2022-03-27/ssh-hdd.jpg){:width="100%"}
+![storage-array]({{ site.baseurl }}/images/2022-03-27/ssd-hdd.jpg){:width="100%"}
 
 ## Software
 * OS: TrueNas Scale `TrueNAS-SCALE-22.02-RC.2`
