@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am an enthusiastic and dynamic AWS Professional with a keen interest in AWS technology. Currently have 9 active AWS certifications including Security Specialty and both Professional certs. I have a proven track record of leading and delivering commercially pertinent and scalable solutions.
 
-### More Information
+### Current Projects
 
-A place to include any other types of information that you'd like to include about yourself.
-
+* Amazon Connect integration with Salesforce for public sector client
+ 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[brian.madden@scamall.io](mailto:brian.madden@scamall.io)
