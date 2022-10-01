@@ -63,6 +63,8 @@ collections:
     output: true
   cultures:
     output: true
+  defenses:
+    output: true    
 
 # Tipue search settings
 tipue_search:
