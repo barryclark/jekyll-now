@@ -62,6 +62,10 @@ Still work in progress and probably this list will never end to be updated. Now 
 * [RedTeam-OffensiveSecurity](https://github.com/bigb0sss/RedTeam-OffensiveSecurity)
 * [awesome-hacker-search-engines](https://github.com/edoardottt/awesome-hacker-search-engines)
 
+## Blue Teaming
+
+* [fabacab/awesome-cybersecurity-blueteam](https://github.com/fabacab/awesome-cybersecurity-blueteam)
+
 ## Wordlists & Payload Lists
 
 * [six2dez/OneListForAll](https://github.com/six2dez/OneListForAll)
