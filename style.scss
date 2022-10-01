@@ -341,6 +341,37 @@ nav {
   }
 }
 
+// Styling for defense
+
+.defenses > .defense {
+  padding-bottom: 2em;
+}
+
+.defenses > .defense:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.defense {
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $light-lime;
+    padding: 0.1em 1em;
+    color: $lightGray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
 // Styling for memories in the pensieve
 
 .memories > .memory {

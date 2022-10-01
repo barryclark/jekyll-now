@@ -3,7 +3,7 @@ layout: default
 ---
 
 <p align="center">
-<img width="600" src="/images/blue-knight.png">
+<img width="200" src="/images/blue-knight.png">
 <br>The offense sells tickets. Defense wins championships
 </p>
 <br>
