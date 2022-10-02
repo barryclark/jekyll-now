@@ -23,6 +23,7 @@ For 5+ years???
   * Boot device: [128GB Transcend 430S M.2 2242 6Gb/s 3D NAND](https://transcend-info.com/Products/No-981)
   * SSD RaidZ0: 2x [1TB Crucial BX500 2.5" (6.4cm) SATA 3D-NAND QLC](https://www.crucial.de/ssd/bx500/ct1000bx500ssd1) ➡ 1TB usable storage
   * HDD RaidZ1: 4x [6TB WD Red WD60EFAX 256MB 3.5" (8.9cm) SATA 6Gb/](https://www.westerndigital.com/de-at/products/internal-drives/wd-red-sata-hdd#WD60EFAX) ➡ 15.72 TB usable storage
+* Case: [Nanoxia Deep Silence 1 Rev. B silenced](https://www.nanoxia-world.com/page/view.product.php?x=96&y=49&id=1JBocV-3m9djk-JX0010-iskgLE)
 
 ### Images
 Motherboard:
