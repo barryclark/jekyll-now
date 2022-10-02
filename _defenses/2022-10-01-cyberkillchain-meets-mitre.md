@@ -104,7 +104,10 @@ For the sake of simplicity, and completeness at the same time, the baseline of a
 <img width=600  src="/images/Attack_Kill_Chain.png">
 </p>
 
-Get the more detailed Version [here](/assets/defense/ATT&CK_Cyber_Kill_Chain.pdf)
+Get the more detailed Version:
+* [PDF](/assets/defense/ATT&CK_Cyber_Kill_Chain.pdf)
+* [XMind](/assets/defense/ATT&CK_Cyber_Kill_Chain.xmind)
+
 
 ### Sources & Relevant Links
 
