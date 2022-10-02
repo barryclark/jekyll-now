@@ -4,7 +4,7 @@ title: Cyber Kill Chain meets MITRE ATT&CK
 ---
 
 
-## CYBER KILL CHAIN® FRAMEWORK OVERVIEW
+## Cyber Kill Chain® Framework
 
 As a first step, let’s talk about the [Cyber Kill Chain® Framework](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html). The framework itself was developed by Lockheed Martin. It includes the different stages of common cyber attack, starting from the reconnaissance stage till the end goal stage. Most of the successful attacks which were performed by various APT (Advanced Persistent Threat) groups, or the “attack groups”, often adopt the end-to-end process of the Cyber Kill Chain as part of their methodologies. So it's a good idea to be familiar with it. Disrupting attackers at any point in the cycle may help reduce the impacts of the attacks.
 
@@ -22,7 +22,7 @@ Let's discuss the stages displayed in the process above:
 6. **Command & Control** — Adversary remotely controls and manipulates target
 7. **Actions On Objectives** — Adversary performs actions to achieve their goals (e.g. data exfiltration/theft, data encryption for ransom, or data destruction)
 
-## MITRE ATT&CK® FRAMEWORK OVERVIEW
+## MITRE ATT&CK® Framework
 
 Now, let’s visit the [MITRE ATT&CK® Framework](https://attack.mitre.org/) in contrast. ATT&CK stands for Adversarial Tactics, Techniques, & Common Knowledge. This framework takes a deeper dive into the matrix that consists of various (cyber) attack techniques, categorized by tactics that adversaries/attackers can utilize to infiltrate your network and exfiltrate data. To walk through the framework take a look at my [MITRE ATT&CK Bash Oneliner](https://benjitrapp.github.io/memories/2022-01-15-MITRE-Attack/)
 
@@ -92,7 +92,20 @@ If you are interested, take a look at the vast amounts of [techniques](https://a
 
 In a nutshell, the ATT&CK® Framework is backed up by many real-world observations and findings and is constantly updated to help organizations to “understand their adversaries”. Essentially, it provides insights on how attackers can potentially get in, avoid being caught, and manipulate, interrupt, or destroy critical organization assets/resources.
 
-Sources & Relevant Links:
+## Cyber Kill Chain® meets MITRE ATT&CK®
+
+The term Cyber Kill Chain is also used by various organizations besides the one from LockHeed Martin ([Gartner](http://blogs.gartner.com/ramon-krikken/2014/08/08/introducing-gartners-cyber-attack-chain-model/), [Varonis](https://www.varonis.com/blog/cyber-kill-chain/), [SANS](https://www.sans.org/course/red-team-exercises-adversary-emulation)). Those models are all having slight variants but are based on the original one. That might confuse, even more if you assume there is only one Cyber Kill Chain model. With the knowledge based on MITRE ATT&CK this confusion might gets increased further and ask yourself, how they fit together.
+
+One of the reasons why they can be so confusing to new learners with Penetration Testing background is because they are more or less derived from a typical Penetration Testing workflow. Anyone with Penetration Testing background could be bluffed by them with terms “model”, “kill chain”, "APT" and “weaponization”.
+
+For the sake of simplicity, and completeness at the same time, the baseline of all known Kill Chain Models is added as a root node into the Fishbone Diagram below. All nodes are also enriched with MITRE ATT&CK Tactics and Techniques.
+
+<p align="center">
+<img width=600  src="/images/Attack_Kill_Chain.png">
+</p>
+
+Get the more detailed Version [here](/assets/defense/AATT&CK_Cyber_Kill_Chain.pdf)
+### Sources & Relevant Links:
 
 * [Cyber Kill Chain® Framework](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
 · [MITRE ATT&CK® Framework](https://attack.mitre.org/)
