@@ -47,7 +47,7 @@ url: zhuhai0247.github.io
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "zhuhai0247.github.io"
+baseurl: "https://github.com/Zhuhai0247/zhuhai0247.github.io"
 
 #
 # !! You don't need to change any of the configuration flags below !!
