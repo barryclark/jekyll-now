@@ -277,7 +277,7 @@ The choice of language model is shown by the Imagen paper to be an important one
 <div class="img-div" markdown="0">
   <img src="/images/stable-diffusion/text-language-models-clip-image-generation.png" />
   <br />
-  Larger/better language models have a significant effect on the quality of image generation models. Source: <a hreef="https://arxiv.org/abs/2205.11487">Google Imagen paper by Saharia et. el.</a>. Figure A.5.
+  Larger/better language models have a significant effect on the quality of image generation models. Source: <a hreef="https://arxiv.org/abs/2205.11487">Google Imagen paper by Saharia et al.</a>. Figure A.5.
 </div>
 
 The early Stable Diffusion models just plugged in the pre-trained ClipText model released by OpenAI. It's possible that future models may switch to the newly released and much larger [OpenCLIP](https://laion.ai/blog/large-openclip/) variants of CLIP. This new batch includes text models of sizes up to 354M parameters, as opposed to the 63M parameters in ClipText.
@@ -352,11 +352,11 @@ Let's first look at a diffusion Unet that does not use text. Its inputs and outp
 
 </div>
 
-Inside, We see that:
+Inside, we see that:
 
 * The Unet is a series of layers that work on transforming the latents tensor
 * Each layer operates on the output of the previous layer
-* Some of the outputs are measure (via residual connections) into the processing later in the network
+* Some of the outputs are fed (via residual connections) into the processing later in the network
 * The timestep is transformed into a time step embedding vector, and that's what gets used in the layers 
 
 
