@@ -89,7 +89,7 @@ With this we come to see the three main components (each with its own neural net
   Output: 77 token embeddings vectors, each in 768 dimensions.
   
 - **UNet + Scheduler** to gradually process/diffuse information in the information (latent) space. <br />
-  Input: text embeddings and a starting tensor (structured lists of numbers) made up of noise.<br />
+  Input: text embeddings and a starting tensor (structured lists of numbers, or if you're a programmer, a multi-dimensional array of floats) made up of noise.<br />
   Output: A processed information tensor
 
 - **Autoencoder Decoder** that paints the final image using the processed information tensor.<br />
