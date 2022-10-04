@@ -115,7 +115,7 @@ Diffusion is the process that takes place inside the pink "image information cre
 </div>
 
 
-This process happens in a step-by-step fashion. Each step adds more relevant information. To get an intuition of the process, we can inspect the ransom latents tensor, and see that it translates to visual noise. Visual inspection in this case is passing it through the image decoder.
+This process happens in a step-by-step fashion. Each step adds more relevant information. To get an intuition of the process, we can inspect the random latents tensor, and see that it translates to visual noise. Visual inspection in this case is passing it through the image decoder.
 
 
 
