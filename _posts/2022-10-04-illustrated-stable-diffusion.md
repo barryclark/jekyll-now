@@ -200,7 +200,7 @@ The beautiful thing now is that once we get this noise prediction network workin
 
 ### Painting images by removing noise
 
-The trained noise predictor can take a noisy image, and athe number of the denoising step, and is able to predict a slice of noise. 
+The trained noise predictor can take a noisy image, and the number of the denoising step, and is able to predict a slice of noise. 
 <div class="img-div" markdown="0">
   <img src="/images/stable-diffusion/stable-diffusion-denoising-step-1.png" />
   <br />
