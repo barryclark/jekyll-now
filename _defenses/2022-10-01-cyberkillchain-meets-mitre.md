@@ -3,6 +3,7 @@ layout: defense
 title: Cyber Kill Chain meets MITRE ATT&CK
 ---
 
+In this article we will dive into Cyber Kill Chain and MITRE ATT&CK. After getting comfortable with both frameworks, a short combination of both will be shown. The fishbone model is still under construction.
 
 ## Cyber Kill Chain® Framework
 
