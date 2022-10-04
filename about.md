@@ -32,4 +32,4 @@ As this is my technical blog, it's probably fitting to point out some aspects of
 
 ### Contact me
 
-alammar at gmail
+jayalammar42 at gmail
