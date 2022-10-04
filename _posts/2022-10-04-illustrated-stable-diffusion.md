@@ -89,11 +89,11 @@ With this we come to see the three main components (each with its own neural net
   Output: 77 token embeddings vectors, each in 768 dimensions.
   
 - **UNet + Scheduler** to gradually process/diffuse information in the information (latent) space. <br />
-  Input: text embeddings and a starting tensor (structured lists of numbers, or if you're a programmer, a multi-dimensional array of floats) made up of noise.<br />
-  Output: A processed information tensor
+  Input: text embeddings and a starting multi-dimensional array (structured lists of numbers, also called a *tensor*) made up of noise.<br />
+  Output: A processed information array
 
-- **Autoencoder Decoder** that paints the final image using the processed information tensor.<br />
-Input: The processed information tensor (dimensions: (4,64,64))  <br />
+- **Autoencoder Decoder** that paints the final image using the processed information array.<br />
+Input: The processed information array (dimensions: (4,64,64))  <br />
   Output: The resulting image (dimensions: (3, 512, 512) which are (red/green/blue, width, height))
 
 
@@ -106,7 +106,7 @@ Input: The processed information tensor (dimensions: (4,64,64))  <br />
 
 ## What is Diffusion Anyway?
 
-Diffusion is the process that takes place inside the pink "image information creator" component. Having the token embeddings that represent the input text, and a random starting *image information tensor* (these are also called *latents*), the process produces an information tensor that the image decoder uses to paint the final image.
+Diffusion is the process that takes place inside the pink "image information creator" component. Having the token embeddings that represent the input text, and a random starting *image information array* (these are also called *latents*), the process produces an information array that the image decoder uses to paint the final image.
 
 <div class="img-div-any-width" markdown="0">
   <img src="/images/stable-diffusion/stable-diffusion-diffusion-process.png" />
@@ -115,7 +115,7 @@ Diffusion is the process that takes place inside the pink "image information cre
 </div>
 
 
-This process happens in a step-by-step fashion. Each step adds more relevant information. To get an intuition of the process, we can inspect the random latents tensor, and see that it translates to visual noise. Visual inspection in this case is passing it through the image decoder.
+This process happens in a step-by-step fashion. Each step adds more relevant information. To get an intuition of the process, we can inspect the random latents array, and see that it translates to visual noise. Visual inspection in this case is passing it through the image decoder.
 
 
 
@@ -125,7 +125,7 @@ This process happens in a step-by-step fashion. Each step adds more relevant inf
 
 </div>
 
-Diffusion happens in multiple steps, each step operates on an input latents tensor, and produces another latents tensor that better resembles the input text and all the visual information the model picked up from all images the model was trained on.
+Diffusion happens in multiple steps, each step operates on an input latents array, and produces another latents array that better resembles the input text and all the visual information the model picked up from all images the model was trained on.
 
 
 
@@ -356,7 +356,7 @@ Let's first look at a diffusion Unet that does not use text. Its inputs and outp
 
 Inside, we see that:
 
-* The Unet is a series of layers that work on transforming the latents tensor
+* The Unet is a series of layers that work on transforming the latents array
 * Each layer operates on the output of the previous layer
 * Some of the outputs are fed (via residual connections) into the processing later in the network
 * The timestep is transformed into a time step embedding vector, and that's what gets used in the layers 
