@@ -277,7 +277,9 @@ The choice of language model is shown by the Imagen paper to be an important one
 <div class="img-div" markdown="0">
   <img src="/images/stable-diffusion/text-language-models-clip-image-generation.png" />
   <br />
-  Larger/better language models have a significant effect on the quality of image generation models. Source: <a hreef="https://arxiv.org/abs/2205.11487">Google Imagen paper by Saharia et al.</a>. Figure A.5.
+
+  Larger/better language models have a significant effect on the quality of image generation models. Source: <a href="https://arxiv.org/abs/2205.11487">Google Imagen paper by Saharia et. el.</a>. Figure A.5.
+
 </div>
 
 The early Stable Diffusion models just plugged in the pre-trained ClipText model released by OpenAI. It's possible that future models may switch to the newly released and much larger [OpenCLIP](https://laion.ai/blog/large-openclip/) variants of CLIP. This new batch includes text models of sizes up to 354M parameters, as opposed to the 63M parameters in ClipText.
