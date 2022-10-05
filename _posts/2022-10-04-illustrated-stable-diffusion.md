@@ -278,7 +278,7 @@ The choice of language model is shown by the Imagen paper to be an important one
   <img src="/images/stable-diffusion/text-language-models-clip-image-generation.png" />
   <br />
 
-  Larger/better language models have a significant effect on the quality of image generation models. Source: <a href="https://arxiv.org/abs/2205.11487">Google Imagen paper by Saharia et. el.</a>. Figure A.5.
+  Larger/better language models have a significant effect on the quality of image generation models. Source: <a href="https://arxiv.org/abs/2205.11487">Google Imagen paper by Saharia et. al.</a>. Figure A.5.
 
 </div>
 
