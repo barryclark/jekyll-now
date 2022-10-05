@@ -198,6 +198,8 @@ While this example shows two steps from image to total noise, we can control how
 </div>
 The beautiful thing now is that once we get this noise prediction network working properly, it can effectively paint pictures by removing noise over a number of steps.
 
+Note: This is a slight oversimplification of the diffusion algorithm. The resources at the bottom give you the whole mathematical picture in more detail.
+
 ### Painting images by removing noise
 
 The trained noise predictor can take a noisy image, and the number of the denoising step, and is able to predict a slice of noise. 
