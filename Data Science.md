@@ -50,7 +50,7 @@ Better utilization of planes will lead to decrease in cost and hence better bott
 
 ## Project 4: Association Rule Mining
 <p><b>Market Basket Analysis</b> There is an online transactional data of a retail store containing the information of different items sold in different countries<br><br>
-<b>Key Issue</b> As of now the company doesn't have a robust rule to club the items to maximize its sell Goal. You as an ML expert have to build a model to forecast the demand (passenger traffic) of traffic<br><br>
+<b>Key Issue</b> As of now the company doesn't have a robust rule to club the items to maximize its sell Goal. You as an ML expert have to build a model to develop association rules, using online transaction data of retail store, with their corresponding support, confidence and lift values<br><br>
 
 <b>Strategy</b> Deploy apriori algorithm </p>
 
