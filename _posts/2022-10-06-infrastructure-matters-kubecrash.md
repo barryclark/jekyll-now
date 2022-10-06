@@ -3,6 +3,7 @@ layout: post
 title: "Infrastructure Matters: KubeCrash keynote"
 description: "Cheryl Hung shares the numbers on sustainable infrastructure, tools, groups and trends looking forward to 2023"
 image: images/2022-10-06-infrastructure-matters-kubecrash.png
+slides: //www.slideshare.net/slideshow/embed_code/key/lAB75s6EXGtJDw
 tags:
   - Video
   - "2022"
