@@ -31,7 +31,7 @@ yes, I know OOP is bad, member fields in traits
 BUT: Good thing that Rust does not allow comparisons of e.g. types of different signedness (https://stackoverflow.com/questions/5416414/signed-unsigned-comparisons)
 small one implicit widening conversions on numeric types. Rust PG: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=3045450fe76bce27e7fa0b6561ca6998. Why do I have to be so explicit, because there is literally that can be wrong here!!! 
 
-## Metaprogramming
+## Weak-ish type level Metaprogramming
 this is a weird one
 biig plusses
 * mostly (!), not completely hygenic
@@ -40,7 +40,19 @@ but at the end of the day this is just glorified string replacement without any 
 
 Example: accessing tuple elements by type.
 Example: the impls crate
-Specialization: do something when a type is copy vs do something else when a type is clone. Maybe the compiler is already smart enough to optimize that away...
+
+Specialization: e.g. do something when a type is copy vs do something else when a type is clone. Maybe the compiler is already smart enough to optimize that away...
+also Specialization can fix a lot of the current weaknesses of type level metaprogramming
+
+# Macros (and types again)
+It's hard to see what type a macro returns. While the rust analyzer and it's intellij equivalent are getting better and better
+at usefully expanding macros, it is still hard to see what type a macro invocation returns (which might be different depending on macro arguments).
+The thing is it is even impossible to see from the documentation because there is no "signature" for macros. They just manipulate the ast.
+I like how Zig thinks about types. Types are things that can be manipulated at compiler time using regular old functions (which of course
+can only be executed at compile time). Those functions have signatures that we can look at, which might help for a first understanding. If not,
+the whole function in written in Zig, whereas a macro uses a syntax that is quite different from normal Rust. Also zig has very powerful
+built-in introspection.
+
 
 ## Half-baked Allocator Support in the Standard Library
 
