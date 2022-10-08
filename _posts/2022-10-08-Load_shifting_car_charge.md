@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A back of the enveloppe case for load-shifting
+title: A back of the envelope case for load-shifting
 comments: True
 share: True
 ---
@@ -131,7 +131,7 @@ For that specific two day window, the second day has much lower carbon intensity
     <span style="color: #666; font-size: 13px; font-style: italic;">Comparison of charge profiles on a given day. Colours highlight the charging times selected by both profiles.</span>
 </div>
 
-Overall, this simple back of the enveloppe optimisation strategy leads to 66 kg of CO2 saved per year. __That amounts to a 10% reduction of total emissions related to car charging.__
+Overall, this simple back of the envelope optimisation strategy leads to 66 kg of CO2 saved per year. __That amounts to a 10% reduction of total emissions related to car charging.__
 
 <div id="html" markdown="0" style="display: flex; flex-direction: column; align-items: center; margin: 16px 0 32px;">
 <style type="text/css">
