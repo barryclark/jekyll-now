@@ -2,10 +2,14 @@
 layout: post
 title: Android Reverse 学习总结
 ---
+
+*第一份 Android 学习文档* 
+
+
 ## Step1
-
+~~~
 > 参考：[创建 Android 项目](https://developer.android.google.cn/training/basics/firstapp/creating-project)
-
+~~~
 根据实验要求创建安卓新项目，参数：API23；Android6.0；Empty Activity。
 
 ### 开发基础
@@ -124,7 +128,7 @@ title: Android Reverse 学习总结
 > 参考2：[为什么要添加FLAG_ACTIVITY_NEW_TASK](https://blog.csdn.net/weixin_44618862/article/details/106268932)，因为Context并不存在任务栈，被启动的活动就无法进入启动它的活动的任务栈中，就会出现错误。
 
 接下来实现无通知启动一个service，同理创建一个service文件后，receiver可以通过启动Mainactivity来间接启动service，即在Mainactivity中启动service。
-```java
+~~~java
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -133,7 +137,7 @@ title: Android Reverse 学习总结
         Intent intent = new Intent(MainActivity.this, SecretService.class);
         startService(intent);
     }
-```
+~~~
 > 报错：Installed Build Tools revision 33.0.0 is corrupted. Remove and install again using the SDK Manager.
 > 解决：找到build tools目录中的d8.bat，将文件名修改为dx.bat。找到build tools目录中的lib/d8.jar，将文件名修改为dx.jar。
 
@@ -144,6 +148,7 @@ title: Android Reverse 学习总结
 `<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />`
 `<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />`
 然后在Mainactivity中申请权限：
+
 ```java
 if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
         != PackageManager.PERMISSION_GRANTED) {
@@ -153,9 +158,10 @@ if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCA
         != PackageManager.PERMISSION_GRANTED) {
     requestPermissions(new String[] { Manifest.permission.ACCESS_FINE_LOCATION }, 1);
 }
+
 ```
 权限拿到手后，开始获取其位置信息，基本思路为使用LocationManager调用requestLocationUpdates方法每三秒获取位置信息，而LocationListener进行监听，监听结果使用toast进行显示。
-```Java
+~~~java
     @Override
     public void onCreate() {
         super.onCreate();
@@ -194,7 +200,7 @@ if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCA
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 3000, 0, locationListener);
 
     }
-```
+~~~
 
 > 参考1：[官方文档-位置信息](https://developer.android.google.cn/training/location)
 > 参考2：[官方文档-请求权限](https://developer.android.google.cn/training/permissions/requesting)
