@@ -4,8 +4,8 @@ title: AWS Gameday
 subtitle: What to expect from such an event
 category: dev
 tags: [cloud, aws]
-author: Lucian Patian
-author_email: patianl@haufe.com
+author: Lucian Patian, Cristian Pirtea
+author_email: patianl@haufe.com, pirteac@haufe.com
 header-img: "images/aws-gameday/aws-gameday.png"
 ---
 
