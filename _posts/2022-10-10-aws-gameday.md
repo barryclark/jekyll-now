@@ -3,7 +3,7 @@ layout: post
 title: AWS Gameday
 subtitle: What to expect from such an event
 category: infra
-tags: [fun, cloud, aws]
+tags: [cloud, aws]
 author: Lucian Patian
 author_email: patianl@haufe.com
 header-img: "images/aws-gameday/aws-gameday.png"
