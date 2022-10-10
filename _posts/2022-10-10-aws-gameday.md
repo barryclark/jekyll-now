@@ -9,7 +9,7 @@ author_email: patianl@haufe.com
 header-img: "images/aws-gameday/aws-gameday.png"
 ---
 
-### A few weeks ago our company hosted an AWS Gameday event throughout our sites and since looking online for details about it won't give you much, I decided to give you a short heads-up.
+### A few weeks ago our company hosted an AWS Gameday event throughout our sites. There aren't too many details online about it so I decided to give you a short heads-up.
 
 If you get the chance to take part in it, don't miss out. It's really fun and in the end everyone agreed they learned something new.
 
@@ -22,9 +22,11 @@ During the activity there will be a live ranking system displayed on a local TV/
 {:.center}
 ![]( /images/aws-gameday/wolf-wall-street.png){:style="width:100%"} 
 
-You'll get access to AWS accounts with already deployed infrastructure so keep the templates/scripts out of this, it will just consume your time and you won't have much, those 5 hours really fly fast. The concept of the game is to configure and tweak your resources to be available as much as possible for others to consume. On the other hand, you will also need to consume data from other teams and this adds an extra spice to the entire gamble.
+You'll get access to AWS accounts with deployed infrastructure so prepairing with templates/scripts won't help, it will just consume your time and you won't have much, those 5 hours fly really fast. 
 
-Every now and then, some changes will be done to your existing infrastructure which will cause a bit of chaos. This is a great moment to be on your toes and climb the rakings, if you're not the TV yet 😬
+There are two ways to win points during the game. One is to configure and tweak your resources to be available as much as possible for other teams to use. The other is to consume data from other teams and this adds an extra spice to the entire gamble.
+
+Every now and then, some changes will be done to your existing infrastructure which will cause a bit of chaos. This is a great moment to be on your toes and climb the rakings.
 
 {:.center}
 ![]( /images/aws-gameday/chaos-monkey.jpeg){:style="width:80%"} 
