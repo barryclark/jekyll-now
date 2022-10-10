@@ -27,7 +27,7 @@ You'll get access to AWS accounts with already deployed infrastructure so keep t
 Every now and then, some changes will be done to your existing infrastructure which will cause a bit of chaos. This is a great moment to be on your toes and climb the rakings, if you're not the TV yet 😬
 
 {:.center}
-![]( /images/aws-gameday/chaos-monkey.jpeg){:style="width:60%"} 
+![]( /images/aws-gameday/chaos-monkey.jpeg){:style="width:80%"} 
 
 Try to delegate separate tasks to each member because details matter... 👀 
 
