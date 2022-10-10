@@ -2,7 +2,7 @@
 layout: post
 title: AWS Gameday
 subtitle: What to expect from such an event
-category: infra
+category: dev
 tags: [cloud, aws]
 author: Lucian Patian
 author_email: patianl@haufe.com
