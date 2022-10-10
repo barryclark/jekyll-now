@@ -29,6 +29,8 @@ Every now and then, some changes will be done to your existing infrastructure wh
 {:.center}
 ![]( /images/aws-gameday/chaos-monkey.jpeg){:style="width:60%"} 
 
+Try to delegate separate tasks to each member because details matter... 👀 
+
 I'm not going to mention the services used because it would be a major spoiler but don't worry, they are really common ones, so you'll be just fine.
 
 **I wish you all the fun a geek can have and enjoy it!**
