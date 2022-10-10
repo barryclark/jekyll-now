@@ -24,7 +24,7 @@ During the activity there will be a live ranking system displayed on a local TV/
 
 You'll get access to AWS accounts with already deployed infrastructure so keep the templates/scripts out of this, it will just consume your time and you won't have much, those 5 hours really fly fast. The concept of the game is to configure and tweak your resources to be available as much as possible for others to consume. On the other hand, you will also need to consume data from other teams and this adds an extra spice to the entire gamble.
 
-Every now and then, some changes will be done to your existing infrastructure which will cause a bit a chaos. This is a great moment to be on your toes and climb the rakings, if you're not the TV yet :grimacing: 
+Every now and then, some changes will be done to your existing infrastructure which will cause a bit of chaos. This is a great moment to be on your toes and climb the rakings, if you're not the TV yet :grimacing: 
 
 {:.center}
 ![]( /images/aws-gameday/chaos-monkey.jpeg){:style="width:60%"} 
