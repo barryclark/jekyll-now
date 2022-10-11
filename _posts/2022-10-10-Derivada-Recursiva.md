@@ -134,4 +134,6 @@ int main ()
 
 ![_config.yml]({{ site.baseurl }}/images/rainmanref.gif)
 
-Author: EGM
+****
+
+Author: _EGM_
