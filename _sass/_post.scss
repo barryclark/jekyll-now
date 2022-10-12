@@ -1,0 +1,138 @@
+// =============================
+// post.scss
+// =============================
+// Used for single post view.
+
+.post{
+
+    justify-self: center;
+    margin: 0 2rem;
+    max-width: 1000px;
+    @include flexbox{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__title{
+
+        &__text{
+            text-align: center;
+            color: var(--c-postTitle);
+            margin-bottom: 0;
+        }
+    }
+
+    &__meta{
+
+        @include flexbox;
+        width: 100%;
+
+        &__divider{
+            color: var(--c-postText);
+            margin: 0 1rem;
+
+            @include for-size('tablet'){
+                display: none;
+            }
+        }
+
+        &__category{
+            text-transform: uppercase;
+            margin: 0;
+            @include flexbox;
+
+            &__title{
+                color: var(--c-noCategoryText);
+                background: var(--c-noCategoryBackground);
+                padding: .2rem .5rem;
+            }
+
+            @include for-size('tablet'){
+
+                display: none;
+                margin-top: 1rem;
+                p{
+                    margin: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+                flex-direction: column;
+            }
+        }
+
+        &__date{
+
+            color: var(--c-postText);
+            @include for-size('tablet'){
+                margin-top: .5rem;
+            }
+        }
+
+        &__author{
+
+            color: var(--c-postText);
+            width: fit-content;
+            @include flexbox;
+    
+            &__photo{
+                margin: 0 1rem;
+                width: 2rem;
+                border-radius: 100%;
+            }
+        }
+
+        @include for-size('tablet'){
+            flex-direction: column;
+        }
+    }
+
+    &__content{
+
+        color: var(--c-postText);
+        h1{
+            font-size: 1.8rem;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+
+    &__navigator{
+
+        margin-top: 1rem;
+        width: 100%;
+
+        &__buttons{
+
+            @include flexbox{
+                justify-content: space-between;
+            };
+
+            a{
+                transition: $t-smooth;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 1.25rem;
+                color: var(--c-navigator);
+                filter: var(--c-navigatorFilter);
+
+                display: flex;
+                align-items: center;
+
+                &:hover{
+                    letter-spacing: .25rem;
+                }
+
+                .arrow-left{
+                    margin-right: .5rem;
+                    height: 1em;
+                }
+                .arrow-right{
+                    margin-left: .5rem;
+                    height: 1em;
+                }
+            }
+        }
+    }
+}

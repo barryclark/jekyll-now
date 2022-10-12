@@ -1,0 +1,157 @@
+// =============================
+// global.scss
+// =============================
+// Used for global styles.
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+html{
+
+    font-family: var(--f-text);
+
+    // Root font size. Other sizes are derived from this accroding to variable values.
+    font-size: 16px;
+
+    @include for-size('tablet'){
+        font-size: 18px;
+    }
+}
+
+body{
+    background: var(--c-pageBackground);
+    
+    margin: 0;
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,h2,h3,h4,h5,h5,h6{
+
+    font-family: var(--f-header);
+}
+
+h1{
+
+    font-size: 2rem;
+}
+
+p{
+    font-size: var(--s-p);
+}
+
+a{
+    
+    &:link{
+        color: var(--c-link);
+    }
+
+    &:visited{
+        color: var(--c-linkVisited);
+    }
+
+    &:hover{
+        color: var(--c-linkHover);
+    }
+
+    &:active{
+        color: var(--c-linkActive);
+    }
+}
+
+table:not([class]){
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid var(--c-tableBorder);
+
+    th,td{
+        padding: .25rem;
+        border: 1px solid var(--c-tableBorder);
+    }
+}
+
+.highlight{
+
+    margin: 2rem 0;
+    transition: $t-smooth;
+    box-shadow: inset 0px 0px 14px -4px var(--c-codeShadow);
+
+    &:hover{
+        box-shadow: inset 0px 0px 14px -4px var(--c-codeShadowHover);
+    }
+
+    max-width: calc(100vw - 2rem);
+    overflow-x: auto;
+
+    pre{
+        margin: 0;
+        padding: 1rem;
+    }
+}
+
+.sx-center{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sx-button{
+
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__content{
+
+        &:link, &:visited, &:hover, &:active{
+            color: var(--c-themePrimaryLight);
+        }
+        text-decoration: none;
+        width: fit-content;
+        padding: .5rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: $t-smooth;
+
+        &.red{background-color: var(--c-themeHueRed);}
+        &.orange{background-color: var(--c-themeHueOrange);}
+        &.green{background-color: var(--c-themeHueGreen);}
+        &.blue{background-color: var(--c-themeHueBlue);}
+        &.purple{background-color: var(--c-themeHuePurple);}
+        &.brown{background-color: var(--c-themeHueBrown);}
+
+        img{
+            margin-right: 1rem;
+            height: 1rem;
+            filter: brightness(0) invert(1);
+        }
+
+        &:hover{
+            letter-spacing: .05rem;
+        }
+    }
+}
+
+.sx-subtitle{
+    font-style: italic;
+    color: var(--c-subtitle);
+}
+
+.sx-picture{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 1.5rem 0;
+}

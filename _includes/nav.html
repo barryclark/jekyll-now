@@ -1,0 +1,30 @@
+{% if include.embedded != nil %}
+<ul class="list">
+{% else %}
+<ul class="list primary">
+{% endif %}
+    {% for item in include.nav %}
+        <li class="item">
+
+            <div class="item-controls">
+                <a href="{{ site.url }}/{{ item.url }}">
+                {% if item.icon != nil %}
+                    <img src="{{ site.url }}/{{ item.icon }}"/>
+                {% endif %}
+                {% if item.hue != nil %}
+                    <p style="color: {{ item.hue }}">{{ item.title }}</p>
+                {% else %}
+                    <p>{{ item.title }}</p>
+                {% endif%}
+                </a>
+
+            {% if item.subnav %}
+                <a class="button-submenu" href="#"><i class="arrow"></i></a>
+            </div>
+                {% include nav.html nav=item.subnav embedded=true %}
+            {% else %}
+            </div>
+            {% endif %}
+        </li>   
+    {% endfor %}
+</ul>
