@@ -1,0 +1,308 @@
+// =============================
+// header.scss
+// =============================
+// Used for page header.
+
+.header{
+
+    @include flexbox{
+        flex-direction: column;
+    };
+
+    padding-top: 2rem;
+
+    .logo{
+
+        &__link{
+
+            text-decoration: none;
+            color: var(--c-themePrimaryDark);
+            transition: $t-smooth;
+
+            &:hover{
+                letter-spacing: .5rem;
+            }
+            h1{
+                margin: 0;
+            }
+            &__img{
+                filter: var(--c-headerImageFilter);
+                height: 2rem;
+            }
+        }
+    }
+
+    #menuToggle{
+        display: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        
+        margin: 2rem 0 1rem 0;
+        padding: 0;
+        font-size: 1rem;
+        width: 3em;
+
+        @include for-size('tablet'){
+            display: block;
+        }
+
+        div{
+            pointer-events:none;
+            width: 100%;
+            height: 0.25em;
+            margin: 0.5em 0;
+            background: black;
+            transition: $t-smooth;
+        }
+
+        &.open{
+
+            div:nth-child(1){
+                transform: translateY(.75em) rotateZ(45deg);
+            }
+
+            div:nth-child(2){
+                opacity: 0;
+            }
+    
+            div:nth-child(3){
+                transform: translateY(-.75em) rotateZ(-45deg);
+            }
+        }
+    }
+
+    .menu{
+
+        max-width: 100vw;
+        width: 100%;
+        margin-top: 2rem;
+    
+        .list{
+
+            @include flexbox;
+
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            @include for-size('tablet'){
+                flex-direction: column;
+            }
+
+            .item{
+
+                position: relative; 
+
+                @include flexbox;
+                cursor: pointer;
+
+                .item-controls{
+
+                    @include flexbox;
+                    width: 100%;
+
+                    img,p{
+                        transition: $t-smooth;
+                        filter: var(--c-menuItemsFilter);
+                    }
+    
+                    img{
+                        @include for-size('tablet'){
+                            margin: 0 .5rem 0 0;
+                        }
+                    }
+
+                    p{
+                        @include for-size('tablet'){
+                            margin: 0 0 0 0;
+                        }
+                    }
+    
+                    a{
+                        text-decoration: none;
+                        color: var(--c-menuLinks);
+                        @include flexbox;
+                        @include for-size('tablet'){
+                            padding: 1rem;
+                        }
+                    }
+
+                    .button-submenu{
+                        display: none;
+                    }
+
+                    @include for-size('tablet'){
+                        .button-submenu{
+                            @include flexbox;
+                        }
+                    }
+
+                }
+
+                >.list{
+                    
+                    max-height: 0;
+                    width: 250px;
+                    overflow: hidden;
+                    box-shadow: inset 0px 0px 14px -4px var(--c-menuShadow);
+                    transition: $t-smooth;
+                    flex-direction: column;
+
+                    .item{
+                        width: 100%;
+                    }
+
+                    @include for-size('tablet-up'){
+                        a{
+                            padding: 0 4rem;
+                        }
+                    }
+
+                    @include for-size('tablet'){
+                        
+                        position: static;    
+                        width: 100%;
+                    }
+                }
+    
+                a:hover{
+      
+                    img{
+                        transform: scale(1.1);
+                        filter: var(--c-menuItemsFilterHover);
+
+                        @include for-size('tablet'){
+                            transform: scale(1);
+                        }
+                    }
+
+                    p{
+                        letter-spacing: .1rem;
+                        filter: var(--c-menuItemsFilterHover);
+
+                        @include for-size('tablet'){
+                            letter-spacing: .2rem;
+                        }
+                    }
+                }
+
+                &.open{
+                    >.list{
+                        max-height: $s-m-menuMaxHeight;
+                    }
+                }
+
+                @include for-size('tablet'){
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 0;
+                }
+
+                @include for-size('tablet-up'){
+                    
+                    display: block;
+                    &:hover{
+                        >.list{
+                            max-height: $s-m-menuMaxHeight;
+                        }
+                    }
+                }
+            }
+
+            &.primary{
+
+                >.item{
+
+                    margin: 0 1rem;
+
+                    >.item-controls>a{
+                        
+                        @include flexbox{
+                            flex-direction: column;
+                        };
+
+                        &.button-submenu{
+                            display: none;
+                        }
+                        
+                        img{
+    
+                            height: 5rem;
+                        }
+        
+                        p{
+                            margin: 1rem 0 0 0;
+
+                            @include for-size('tablet'){
+                                margin: 0 0 0 .5rem;
+                            }
+                        }
+
+                        &:hover p{
+                            letter-spacing: normal;
+                            transform: scale(1.1);
+                        }
+
+                        @include for-size('tablet'){
+                            flex-direction: row;
+                            width: unset;
+
+                            img{
+                                max-height: 1.5rem;
+                            }
+
+                            &.button-submenu{
+                                @include flexbox;
+                            }
+                        }
+                    }
+
+                    >.list{
+                        position: absolute;
+                        top: calc(100% + 1rem);
+                        left: 0;
+                        z-index: 1000;
+                        background: var(--c-pageBackground);
+
+                        @include for-size('tablet'){
+                            position: static;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include for-size('tablet'){
+            box-shadow: inset 0px 0px 14px -4px var(--c-menuShadow);
+
+            transition: $t-smooth;
+            max-height: 0;
+            overflow: hidden;
+            margin: 0;
+            &.open{
+                max-height: $s-m-menuMaxHeight;
+            }
+        }
+    }
+
+    .button-submenu{
+    
+        .arrow{
+            pointer-events:none;
+            border: solid black;
+            border-width: 0 .25rem .25rem 0;
+            display: inline-block;
+            padding: .25rem;
+
+            transform: translateY(-.125rem) rotate(45deg);
+            transition: $t-smooth;
+        }
+
+        &.open{
+            .arrow{
+                transform: translateY(.125rem) rotate(-135deg);
+            }
+        }
+    }
+}

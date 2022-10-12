@@ -1,0 +1,31 @@
+---
+---
+
+// =============================
+// main.scss
+// =============================
+// Used to include all the partials.
+
+// Do not change the order of the imports behind this comment.
+
+// GLOBAL VARIABLES
+@import "_variables.scss";
+
+// LIQUID CALCULATIONS
+{% for items in site.data.nav %}
+    $s-menuWidth: calc({{ forloop.length }} * (#{$s-menuItemWidth} + #{$s-menuItemPadding} * 2));
+{% endfor %}
+
+// OTHER IMPORTS
+@import "_mixins.scss";
+@import "_global.scss";
+
+// Do not change the order of the imports above this comment.
+
+@import "_header.scss";
+@import "_footer.scss";
+@import "_feed.scss";
+@import "_index.scss";
+@import "_post.scss";
+@import "_page.scss";
+

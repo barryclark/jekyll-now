@@ -1,0 +1,173 @@
+// =============================
+// feed.scss
+// =============================
+// Used for page feed - used in index and categories.
+
+.feed{
+
+    padding: 2rem;
+    margin: 2rem;
+    max-width: 1000px;
+    width: 100%;
+    justify-self: center;
+
+    @include flexbox{
+        flex-direction: column;
+    };
+
+    &__description{
+        @include flexbox{
+            flex-direction: column;
+        };
+
+        color: var(--c-feed-title);
+
+        text-align: center;
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+        min-width: 80%;
+
+        h1{
+            margin: 1rem 0 0 0;
+
+            @include for-size('tablet'){
+                margin: 0;
+            }
+        }
+    }
+
+    .snippet{
+
+        @include flexbox;
+        position: relative;
+        width: 100%;
+        
+        &__link{
+            text-decoration: none;
+            color: initial;
+            width: 100%;
+            height: 100%;
+            margin: 1rem 0;
+            padding: 1rem 2rem;
+            box-shadow: inset 0px 0px 14px -4px var(--c-snippetShadow);
+            transition: $t-smooth;
+
+            &:hover{
+                transform: scale(.99);
+                box-shadow: inset 0px 0px 14px -4px var(--c-snippetShadowHover);
+            }
+        }
+
+        @include for-size('tablet'){
+            width: 100%;
+            padding: 0;
+        }
+
+        &__data{
+
+            @include flexbox{
+                flex-direction: column;
+                align-items: flex-start;
+            };
+
+            &__metadata{
+                font-family: var(--f-header);
+                
+                @include flexbox;
+
+                &__category{
+                    text-transform: uppercase;
+                    margin: 0;
+                    @include flexbox;
+
+                    &__title{
+                        color: var(--c-noCategoryText);
+                        background: var(--c-noCategoryBackground);                        
+                        padding: .2rem .5rem;
+                    }
+
+                    
+                    @include for-size('tablet'){
+                        flex-direction: column;
+
+                        p{
+                            text-align: center;
+                            width: 100%;
+                            margin: 0;
+                        }
+                    }
+                }
+
+                &__date{
+                    margin: 0 0 0 1rem;
+                    color: var(--c-snippetDate);
+
+                    @include for-size('tablet'){
+                        margin: 1rem 0 0 0;
+                    }
+                }
+
+                @include for-size('tablet'){
+                    flex-direction: column;
+                }
+            }
+            
+            &__header{
+                margin: 1rem 0 0 0;
+                color: var(--c-articleHeading);
+
+                @include for-size('tablet'){
+                    margin: 1rem 0 0 0;
+                    text-align: center;
+                }
+            }
+
+            &__text{
+
+                color: var(--c-snippetHeading);
+                margin: 1rem 0 0 0;
+            }
+
+            &__author{
+
+                margin: 1.5rem 0 0 0;
+                color: var(--c-snippetAuthor);
+
+                @include flexbox{
+                    flex-direction: row;
+                };
+
+                img{
+                    height: 2rem;
+                    border-radius: 100%;
+                }
+
+                p{
+                    margin: 0 0 0 1rem;
+                }
+            }
+
+            @include for-size('tablet'){
+                align-items: center;
+            }
+        }
+        
+        &::after{
+            content: "";
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: .2;
+
+            @include for-size('tablet'){
+                opacity: .3;
+            }
+        }
+    }
+
+    @include for-size('tablet'){
+        padding: 0;
+    }
+}

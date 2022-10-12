@@ -1,0 +1,67 @@
+// =============================
+// mixins.scss
+// =============================
+// Useful functions.
+
+
+// responsivity
+// ===============================================
+@mixin for-size($size, $width: 1000px) {
+   
+    // ▼▼▼▼ DO NOT EDIT ▼▼▼▼
+    // by resolution
+    @if $size == 'hd-up' {
+        @media (min-width: 720px) { @content; }
+    } @else if $size == 'fhd-up' {
+        @media (min-width: 1080px) { @content; }
+    } @else if $size == 'qhd-up' {
+        @media (min-width: 1440px) { @content; }
+    } @else if $size == 'uhd-up' {
+        @media (min-width: 2160px) { @content; }
+    } 
+
+    // by devices
+    @else if $size == 'tablet' {
+        @media (max-width: 768px) { @content; }
+    }
+    @else if $size == 'tablet-up' {
+        @media (min-width: 768px) { @content; }
+    } 
+    @else if $size == 'desktop' {
+        @media (min-width: 769px) { @content; }
+    } 
+
+    // custom natural breakpoints (project+element-specific)
+    @else if $size == 'bp-up'{
+        @media (min-width: $width) { @content; }
+    }
+
+    // custom natural breakpoints down (project+element-specific)
+    @else if $size == 'bp-down'{
+        @media (max-width: $width) { @content; }
+    }
+
+    // ▲▲▲▲ DO NOT EDIT ▲▲▲▲
+
+    // natural breakpoints (project-specific)
+    @else if $size == 'menu-width'{
+
+        @media (max-width: $s-menuWidth) { @content; }        
+    }
+
+    @else if $size == 'menu-width-up'{
+
+        @media (min-width: $s-menuWidth) { @content; }        
+    }
+}
+
+// flexbox
+// ===============================================
+@mixin flexbox($align: center, $justify: center, $direction: row){
+
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    @content;
+}

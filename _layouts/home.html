@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<section class="feed">
+    <section class="feed__description">
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+    </section>
+    
+    {% for post in site.posts %}
+        <section class="snippet snippet_{{ post.id | slugify: "ascii" }}">
+            {% include snippet.html post=post %}
+        </section>
+    {% endfor %}
+</section>
