@@ -62,7 +62,7 @@ We use the line calculator embedded into QUCS to calculate that line characteris
 After adding this line section to the circuit input and simulating, we get the following results for the S-parameters:
 
 {:refdef: style="text-align: center;"}
-![sparams2](/images/post14/lsparams_after_input.png)
+![sparams2](/images/post14/sparams_after_input.png)
 {:refdef}
 
 From here, we just need to do matching of the output impedance to the complex conjugate in order to get maximum power transfer, therefore, to match the impedance of 45.6-j40. This impedance is really close to 50 Ohm, hence we'll just add a series inductor to bring it upwards in the direction of the circle center. I could do some calculations to determine the correct value of inductor to match this impedance, but my lazy ass we'll do it the lazy way, I just add the inductor to the circuit and click "Tune" to vary the inductor value and iteratively see in the smith chart the output match moving. Which led me to a value of 6 nH and the resulting final S-parameters:
