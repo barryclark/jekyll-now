@@ -23,7 +23,7 @@ The S-parameter folder from Infineon has a bunch of files with the parameters of
 
 ![noisef](/images/post14/noise-figure.png) | ![gain](/images/post14/gain.png)  
 :-------------------------:|:-------------------------:
-Noise figure with collector current | Gain with collector current 
+Noise figure with collector current | Gain with collector current
 
 From the plot on the left we can see the minimal NF is attained with a low collector current, but the gain is smaller for lower currents. The compromise is to have the collector current (IC) between 20 and 30 mA. This provides a noise figure between 0.9 and 1.1 dB and a gain between 26 and 28 dB. Something in between would be preferable, but since Infineon only provides S-parameters for the 20 and 30 mA, we have to go with either one or the other and I'll choose to go with higher gain IC = 30mA.
 
@@ -79,11 +79,48 @@ Rending a final circuit that looks like this:
 
 Notice the 22 pF caps at each side are DC blocks for the biasing voltages of the transistor. The high capacitance has little effect at the working frequency, but still they impose some effect, so I added those and always simulated with them so I was designing having that small effect of the DC blocks in consideration and not be surprised later on.
 
-Another important thing is that the inductor in the previous circuit is ideal, which is not realistic, all components have parasitics, hence it's important to simulate this with a more realistic model for the inductor. And using touchstone files with the measured S-parameters from the inductor supplier is a good option. So I loaded the S-parameters from a Murata inductor, and soon realized I had to use a smaller inductor value to obtain the match I was hoping for, ending up with a 5.1 nH, 0402 SMD packaged, multi-layers type inductor. Rending the sinal result:
+Another important thing is that the inductor in the previous circuit is ideal, which is not realistic, all components have parasitics, hence it's important to simulate this with a more realistic model for the inductor. And using touchstone files with the measured S-parameters from the inductor supplier is a good option. So I loaded the S-parameters from a Murata inductor, and soon realized I had to use a smaller inductor value to obtain the match I was hoping for, ending up with a 5.1 nH, 0402 SMD packaged, multi-layers type inductor. Rending the final result:
 
 {:refdef: style="text-align: center;"}
 ![sparamsf2](/images/post14/sparams_final_wRealcomponent.png)
 {:refdef}
 
-A gain of above 26 dB and a NF of 1.13 in the L1 band looks good. Now the second part is to determine the circuit to make to correct bias to the transistor, that is, VCE = 3V and IC = 30 mA.
+A gain of above 26 dB and a NF of 1.13 in the L1 band looks good. Now the second part is to determine the circuit to make to correct bias to the transistor, that is, VCE = 3V and IC = 30 mA. For that we fill in the SPICE parameters of the transistor (can be found in Infineon application notes), and then tune the base and collector resistors to get the correct VCE voltage and collector current, as follows:
 
+{:refdef: style="text-align: center;"}
+![bias](/images/post14/bias-circuit.png)
+{:refdef}
+
+In this case, I come up to the values for R1, R2 and R3 as you see in the picture above, which for 3.3 V of input voltage, render a VCE of 3.01 V and IC of 29.4 mA, pretty close!
+
+Well, and that's it. We have finished our LNA!
+
+Now, remember the part where I said I screwed up and I actually had a different part in my stock? Yeah. I had BFP740F not the BFP640F... Good thing is that these transistor are not that different, even though the BFP740F is more tailored for applications around 2.4 GHz, it can still prove worthy in 1.575 GHz. Let's check again the gain and NF plots on the datasheet, check S-parameters for the best bias point and then determine the correct bias resistors to achieve that bias point.
+
+For the BFP740F the best spot seems to be anywhere with VCE between 2 and 3V and IC between 15 to 20 mA. I decided to go with VCE of 2.5 V and IC of 15 mA.
+
+![noisef2](/images/post14/noise-figure2.png) | ![gain](/images/post14/gain2.png)  
+:-------------------------:|:-------------------------:
+Noise figure with collector current | Gain with collector current
+
+For that we need the following bias values:
+
+{:refdef: style="text-align: center;"}
+![bias2](/images/post14/bias-circuit2.png)
+{:refdef}
+
+As for matching, since I couldn't change the input matching line, I just checked what would be the final performance of the amplifier in terms of Noise Figure, and adjusted the output matching network for maximum possible gain - which I realized is actually no output matching network at all!
+
+{:refdef: style="text-align: center;"}
+![pikachu](/images/post14/surprised-pikachu.png)
+{:refdef}
+
+So, with the previously designed input matching network (a $\lambda /4$ transmission line) and no output matching at all, the final S-parameters of the LNA looked like the following:
+
+{:refdef: style="text-align: center;"}
+![sparams_f](/images/post14/sparams_final_bfp740f.png)
+{:refdef}
+
+With a final NF of 1.02 and a gain of 26.4 dB, I find these results very hard to believe. So I'll have to test the board and see how it ended up in the real thing *Crossing my fingers*. Next post will be about the construction of the whole thing and the measurements of the prototype. Hopefully won't take so long to come out as this post.
+
+Stay tuned!
