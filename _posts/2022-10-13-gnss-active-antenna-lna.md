@@ -13,7 +13,7 @@ In the [last post](https://theantennaguy.github.io/gnss-active-antenna/), I desc
 
 I mentioned in the last post that for the LNA design I've chosen the BFP640FESD low noise BJT transistor from Infineon. Because Infineon has good documentation, has support files for simulation, it's cheap and I had it available - problem is sometimes I trust too much on my memory, and when the PCBs for this board arrived, I realized I had not the BFP640FESD, but the BFP740F! 
 
-<div class="tenor-gif-embed" data-postid="11107551" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/elaine-well-thats-because-youre-an-idiot-seinfeld-idiot-gif-11107551">Elaine Well Thats Because Youre An Idiot GIF</a>from <a href="https://tenor.com/search/elaine-gifs">Elaine GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<div class="tenor-gif-embed" data-postid="11107551" data-share-method="host" data-aspect-ratio="1" data-width="50%"><a href="https://tenor.com/view/elaine-well-thats-because-youre-an-idiot-seinfeld-idiot-gif-11107551">Elaine Well Thats Because Youre An Idiot GIF</a>from <a href="https://tenor.com/search/elaine-gifs">Elaine GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
 Oh well, I'll explain the design steps with the BFP540FESD and use this opportunity to show what I checked and verified the impact of adapting the existing board and matching networks to the BFP740F instead of the BFP640F.
 
@@ -62,7 +62,7 @@ We use the line calculator embedded into QUCS to calculate that line characteris
 After adding this line section to the circuit input and simulating, we get the following results for the S-parameters:
 
 {:refdef: style="text-align: center;"}
-![sparams2](/images/post14/lsparams_after_input.png)
+![sparams2](/images/post14/sparams_after_input.png)
 {:refdef}
 
 From here, we just need to do matching of the output impedance to the complex conjugate in order to get maximum power transfer, therefore, to match the impedance of 45.6-j40. This impedance is really close to 50 Ohm, hence we'll just add a series inductor to bring it upwards in the direction of the circle center. I could do some calculations to determine the correct value of inductor to match this impedance, but my lazy ass we'll do it the lazy way, I just add the inductor to the circuit and click "Tune" to vary the inductor value and iteratively see in the smith chart the output match moving. Which led me to a value of 6 nH and the resulting final S-parameters:
