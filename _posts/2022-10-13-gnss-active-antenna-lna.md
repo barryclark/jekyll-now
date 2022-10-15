@@ -13,7 +13,7 @@ In the [last post](https://theantennaguy.github.io/gnss-active-antenna/), I desc
 
 I mentioned in the last post that for the LNA design I've chosen the BFP640FESD low noise BJT transistor from Infineon. Because Infineon has good documentation, has support files for simulation, it's cheap and I had it available - problem is sometimes I trust too much on my memory, and when the PCBs for this board arrived, I realized I had not the BFP640FESD, but the BFP740F! 
 
-<div style="text-align: center;" class="tenor-gif-embed" data-postid="11107551" data-share-method="host" data-aspect-ratio="1" data-width="45%"><a href="https://tenor.com/view/elaine-well-thats-because-youre-an-idiot-seinfeld-idiot-gif-11107551">Elaine Well Thats Because Youre An Idiot GIF</a>from <a href="https://tenor.com/search/elaine-gifs">Elaine GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<div style="text-align: center;"><div class="tenor-gif-embed" data-postid="11107551" data-share-method="host" data-aspect-ratio="1" data-width="45%"><a href="https://tenor.com/view/elaine-well-thats-because-youre-an-idiot-seinfeld-idiot-gif-11107551">Elaine Well Thats Because Youre An Idiot GIF</a>from <a href="https://tenor.com/search/elaine-gifs">Elaine GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script></div>
 
 Oh well, I'll explain the design steps with the BFP540FESD and use this opportunity to show what I checked and verified the impact of adapting the existing board and matching networks to the BFP740F instead of the BFP640F.
 
@@ -37,7 +37,7 @@ S-parameters | Stability
 :-------------------------:|:-------------------------:
 S-parameters | Gain and Noise circles
 
-First, from the stability results we can see the transistor is unconditionally stable, that is, \mathit{K} and $\mu$ > 1 and $\Delta$ < 1, this is good since we can design the matching networks for the noise/gain we want and don't have restrictions with stability of the amplifier. To obtain the \mathit{K}, $\mu$ and $\Delta$ parameters we place equations in QUCS schematic as I show in the final circuit figure further down this post. The equations for the Rollet's stability criterion (\mathit{K}-factor) and the Edwards-Sinsky stability criterion ($\mu$-factor), as found in [Pozar's](https://www.wiley.com/en-us/Microwave+Engineering%2C+4th+Edition-p-9780470631553):
+First, from the stability results we can see the transistor is unconditionally stable, that is, $\mathit{K}$ and $\mu$ > 1 and $\Delta$ < 1, this is good since we can design the matching networks for the noise/gain we want and don't have restrictions with stability of the amplifier. To obtain the $\mathit{K}$, $\mu$ and $\Delta$ parameters we place equations in QUCS schematic as I show in the final circuit figure further down this post. The equations for the Rollet's stability criterion ($\mathit{K}$-factor) and the Edwards-Sinsky stability criterion ($\mu$-factor), as found in [Pozar's](https://www.wiley.com/en-us/Microwave+Engineering%2C+4th+Edition-p-9780470631553):
 
 $$K=\frac{1-|S_{11}|^2|-S_{22}|^2+|\Delta|^2}{2|S_{12}S_{21}|}$$
 

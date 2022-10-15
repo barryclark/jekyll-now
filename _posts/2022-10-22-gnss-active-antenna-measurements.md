@@ -3,9 +3,11 @@
 [//]: <> title: Active GNSS antenna design (Part III)
 [//]: <> ---
 
-Alright, welcome to the third and last post about the Active GNSS antenna design saga. 
+Alright, welcome to the third and last post about the Active GNSS antenna design saga. In this one I'll post about the actual results obtained from the constructed antenna. First of all, here's some nice pictures of the fabricated PCBs of the antenna and the LNA.
 
-
+![antpcb](/images/post15/sparams_final.png) | ![lnapcb](/images/post15/sparams_final_smith.png)  
+:-------------------------:|:-------------------------:
+Ring antenna PCB | LNA PCB
 
 
 
