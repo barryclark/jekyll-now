@@ -5,7 +5,7 @@ title: Active GNSS antenna design (Part II)
 
 Alright, here we are for the second part of the GNSS active antenna design. This time it didn't took so long to get a new post release into the blog. I guess it's because I haven't been doing any online courses or anything, so more free time to play around with 
 
-<iframe style="display: block; margin-left: auto; margin-right: auto;";" src="https://giphy.com/embed/V2Ylf5EhsUPMQ" width="440" height="184" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/reactiongifs-request-redditors-V2Ylf5EhsUPMQ">via GIPHY</a></p>
+<iframe style="display: block; margin-left: auto; margin-right: auto;" src="https://giphy.com/embed/V2Ylf5EhsUPMQ" width="440" height="184" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/reactiongifs-request-redditors-V2Ylf5EhsUPMQ">via GIPHY</a></p>
 
 ...engineering!
 
@@ -49,7 +49,7 @@ You can look into the book to know how you come to these criteria, but the princ
 
 Next, we look into the Gain and Noise circles, these are generated for a NF (Noise Figure) < 1.5 and a Gain > 26 dB. There's a zone where both these circles intersect each other. If we design our input network to match any impedance in this zone, and then design the output matching network for the complex match, we get a noise figure below 1.5 and a gain above 26 dB. For reference, I also plotted there the 'Sopt' which is the optimal impedance for minimum noise, which is why it is right in the center of the Noise circle. Luckily, this spot falls right in the intersection between our noise and gain circles, and besides, it is a real impedance (no imaginary part), which means a simple $\lambda$/4 line can be used to match it. These pieces seem the be falling into place quite nicely...
 
-<iframe style="text-align: center;" src="https://giphy.com/embed/l2Je6sbvJEn1W9OWQ" width="430" height="328" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/season-3-the-simpsons-3x11-l2Je6sbvJEn1W9OWQ">via GIPHY</a></p>
+<iframe style="display: block; margin-left: auto; margin-right: auto;" src="https://giphy.com/embed/l2Je6sbvJEn1W9OWQ" width="430" height="328" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/season-3-the-simpsons-3x11-l2Je6sbvJEn1W9OWQ">via GIPHY</a></p>
 
 To get the noise and gain circles in QUCStudio, run a S-parameter simulation for a single frequency, in this case I did for 1.575 GHz, place a smith chart into the data analysis pane and plot the 'GaCircle(x)' and the 'noiseCircle(y)', where the 'x' and 'y' parameters are the gain and noise you want in **linear form**!
 
