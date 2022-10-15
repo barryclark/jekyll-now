@@ -5,7 +5,7 @@ title: Active GNSS antenna design (Part II)
 
 Alright, here we are for the second part of the GNSS active antenna design. This time it didn't took so long to get a new post release into the blog. I guess it's because I haven't been doing any online courses or anything, so more free time to play around with 
 
-<iframe src="https://giphy.com/embed/V2Ylf5EhsUPMQ" width="480" height="201" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/reactiongifs-request-redditors-V2Ylf5EhsUPMQ">via GIPHY</a></p>
+<iframe style="display: block; margin-left: auto; margin-right: auto;";" src="https://giphy.com/embed/V2Ylf5EhsUPMQ" width="440" height="184" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/reactiongifs-request-redditors-V2Ylf5EhsUPMQ">via GIPHY</a></p>
 
 ...engineering!
 
@@ -13,7 +13,7 @@ In the [last post](https://theantennaguy.github.io/gnss-active-antenna/), I desc
 
 I mentioned in the last post that for the LNA design I've chosen the BFP640FESD low noise BJT transistor from Infineon. Because Infineon has good documentation, has support files for simulation, it's cheap and I had it available - problem is sometimes I trust too much on my memory, and when the PCBs for this board arrived, I realized I had not the BFP640FESD, but the BFP740F! 
 
-<div class="tenor-gif-embed" data-postid="11107551" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/elaine-well-thats-because-youre-an-idiot-seinfeld-idiot-gif-11107551">Elaine Well Thats Because Youre An Idiot GIF</a>from <a href="https://tenor.com/search/elaine-gifs">Elaine GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<div style="text-align: center;" class="tenor-gif-embed" data-postid="11107551" data-share-method="host" data-aspect-ratio="1" data-width="45%"><a href="https://tenor.com/view/elaine-well-thats-because-youre-an-idiot-seinfeld-idiot-gif-11107551">Elaine Well Thats Because Youre An Idiot GIF</a>from <a href="https://tenor.com/search/elaine-gifs">Elaine GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
 Oh well, I'll explain the design steps with the BFP540FESD and use this opportunity to show what I checked and verified the impact of adapting the existing board and matching networks to the BFP740F instead of the BFP640F.
 
@@ -43,17 +43,17 @@ $$K=\frac{1-|S_{11}|^2|-S_{22}|^2+|\Delta|^2}{2|S_{12}S_{21}|}$$
 
 $$\Delta=S_{11}S_{22}-S_{12}S_{21}$$
 
-$$\mu=frac{1-|S_{11}|^2|}{|S_{22}-S_{11}\Delta|+|S_{12}S_{21}|}$$
+$$\mu=\frac{1-|S_{11}|^2|}{|S_{22}-S_{11}^*\Delta|+|S_{12}S_{21}|}$$
 
 You can look into the book to know how you come to these criteria, but the principle is that if the Rollet's stability criteria or the Edwards-Sinsky criteria are met, meaning the \mathit{K} and $\mu$ are above 1, the transistor is unconditionally stable. When this does not happen, then the input and output matching networks need to be carefully designed in order to avoid getting an oscillator instead of a transistor.
 
 Next, we look into the Gain and Noise circles, these are generated for a NF (Noise Figure) < 1.5 and a Gain > 26 dB. There's a zone where both these circles intersect each other. If we design our input network to match any impedance in this zone, and then design the output matching network for the complex match, we get a noise figure below 1.5 and a gain above 26 dB. For reference, I also plotted there the 'Sopt' which is the optimal impedance for minimum noise, which is why it is right in the center of the Noise circle. Luckily, this spot falls right in the intersection between our noise and gain circles, and besides, it is a real impedance (no imaginary part), which means a simple $\lambda$/4 line can be used to match it. These pieces seem the be falling into place quite nicely...
 
-<iframe src="https://giphy.com/embed/l2Je6sbvJEn1W9OWQ" width="480" height="366" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/season-3-the-simpsons-3x11-l2Je6sbvJEn1W9OWQ">via GIPHY</a></p>
+<iframe style="text-align: center;" src="https://giphy.com/embed/l2Je6sbvJEn1W9OWQ" width="430" height="328" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/season-3-the-simpsons-3x11-l2Je6sbvJEn1W9OWQ">via GIPHY</a></p>
 
 To get the noise and gain circles in QUCStudio, run a S-parameter simulation for a single frequency, in this case I did for 1.575 GHz, place a smith chart into the data analysis pane and plot the 'GaCircle(x)' and the 'noiseCircle(y)', where the 'x' and 'y' parameters are the gain and noise you want in **linear form**!
 
-We use the line calculator embedded into QUCS to calculate that line characteristics for the input match, we know it has to have an impedance of $\sqrt{50 x 32} = 40 \Omega$:
+We use the line calculator embedded into QUCS to calculate that line characteristics for the input match, we know it has to have an impedance of $\sqrt{50 \times 32} = 40 \Omega$:
 
 {:refdef: style="text-align: center;"}
 ![lambda4](/images/post14/line_section_1.png)
