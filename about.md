@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Wang Junshi is a statistics student. But he is also very interested in theoretical statistics(causal inference, statistical inference, statistical learning, time series analysis, biostat) and is open for all interesting opportunities in these fields. He has strong sense of social responsibility and is ready to commit and serve.
+Wang Junshi is a statistics student. He has been focused on mathematical statistics(statistical learning, statistical inference, causal inference,) and is currently enthusiastically learning about AI safety(Reinforcement learning, active learning, inverse reinforcement learning). He is passionate about academic research and is looking for a gap year research opportunity about inverse reinforcement learning in 2023. He has strong sense of social responsibility and is ready to commit and serve.
 
 ### More Information
 
