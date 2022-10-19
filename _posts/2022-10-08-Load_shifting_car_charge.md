@@ -3,6 +3,7 @@ layout: post
 title: A back of the envelope case for load-shifting
 comments: True
 share: True
+canonical_url: "https://www.electricitymaps.com/blog/carbon-savings-load-shifting"
 ---
 
 <div id="html" markdown="0" style="display: flex; flex-direction: column; align-items: center; margin: 16px 0 32px;">
@@ -30,9 +31,9 @@ To do this, I'll use a back of the envelope optimisation procedure in a simplifi
 
 ### Use case
 
-Let's stay in Eastern Denmark, and look at the example of Mette. Let's say that she is an eco-conscious engineer that works for Novo Nordisk. Everyday, she has to commute from her cosy apartment in central Copenhagen to Målov, where the company has production facilities. She drives a Tesla model 3 back and forth, for a total of around 70 km per day. She usually makes sure that her car is plugged in after she's done putting her kids to bed, and walking her dog. Overall that means that the car is plugged in between 00:00 an 07:00 every day.
+Let's stay in Eastern Denmark, and look at the example of Mette. Let's say that she is an eco-conscious engineer that works for Novo Nordisk. Every day, she has to commute from her cozy apartment in central Copenhagen to Målov, where the company has production facilities. She drives a Tesla model 3 back and forth, for a total of around 70 km per day. She usually makes sure that her car is plugged in after she's done putting her kids to bed, and walking her dog. Overall, that means that the car is plugged in between 00:00 an 07:00 every day.
 
-### The modelisation
+### The modelling
 
 We will rely on the following assumptions, which should correspond to standard values for a Tesla model 3 [2]:
 
@@ -52,7 +53,7 @@ In the naive scenario, the car is plugged and charges at full power until it is 
     <span style="color: #666; font-size: 13px; font-style: italic;">The charge profile in the naive scenario.</span>
 </div>
 
-The daily energy consumption being 11.154 kWh, it takes 1.02 hours to charge the car everyday.
+The daily energy consumption being 11.154 kWh, it takes 1.02 hours to charge the car every day.
 
 __Smart charging__
 
@@ -74,9 +75,9 @@ $$\begin{aligned}
 
 With $$E_d = 11.154$$ (kWh) the daily energy usage, we have:
 
-* $$\mathbf{x}$$ is the vector of decision variables. Here $$x_i$$ represents the amount of energy charged at hour $$i$$.
-* $$\mathbf{c}$$ is the vector of cost coefficients. Here $$c_i$$ represents the carbon intensity of the grid at hour $$i$$.
-* $$\mathbf{A}_{ub}$$ is the matrix of upper bound constraints and $$\mathbf{b}_{ub}$$ is the vector of upper bound constraints. Here $$\mathbf{A}_{ub}$$ and $$\mathbf{b}_{ub}$$ are used to express the constraint of not being able to charge more than what was consumed.
+* $$\mathbf{x}$$ is the vector of decision variables. Here, $$x_i$$ represents the amount of energy charged at hour $$i$$.
+* $$\mathbf{c}$$ is the vector of cost coefficients. Here, $$c_i$$ represents the carbon intensity of the grid at hour $$i$$.
+* $$\mathbf{A}_{ub}$$ is the matrix of upper bound constraints and $$\mathbf{b}_{ub}$$ is the vector of upper bound constraints. Here, $$\mathbf{A}_{ub}$$ and $$\mathbf{b}_{ub}$$ are used to express the constraint of not being able to charge more than what was consumed.
 
 $$\begin{aligned}
 \mathbf{A}_{ub} = \begin{bmatrix}
@@ -95,7 +96,7 @@ E_d \\
 
 with $$\mathbf{L}$$ being the lower triangular matrix of ones and $$\mathbf{J}$$ being the matrix of ones.
 
-* $$\mathbf{A}_{eq}$$ is the matrix of equality constraints and $$\mathbf{b}_{eq}$$ is the vector of equality constraints. Here $$\mathbf{A}_{eq}$$ and $$\mathbf{b}_{eq}$$ are used to express the constraint of having a full battery at the end of the optimisation window.
+* $$\mathbf{A}_{eq}$$ is the matrix of equality constraints and $$\mathbf{b}_{eq}$$ is the vector of equality constraints. Here, $$\mathbf{A}_{eq}$$ and $$\mathbf{b}_{eq}$$ are used to express the constraint of having a full battery at the end of the optimisation window.
 
 $$\begin{aligned}
 \mathbf{A}_{eq} = \begin{bmatrix}
@@ -124,7 +125,7 @@ Overall, and reassuringly, we can see below that the daily emissions are lower f
 </div>
 
 Looking at a specific day, we see what we would expect. Below highlights the selected charging times in both scenarii.
-For that specific two day window, the second day has much lower carbon intensity, and the algorithmn correctly tells our dear Mette to only charge during the second night.
+For that specific two-day window, the second day has much lower carbon intensity, and the algorithm correctly tells our dear Mette to only charge during the second night.
 
 <div id="html" markdown="0" style="display: flex; flex-direction: column; align-items: center; margin: 16px 0 32px;">
     <img src="../../resources/posts/2022-10-08/largest_difference.png" style="width: 90%; overflow: hidden; margin: 16px 0;">
@@ -161,11 +162,11 @@ Overall, this simple back of the envelope optimisation strategy leads to 66 kg o
 <span style="color: #666; font-size: 13px; font-style: italic; margin-top: 16px;">Total emissions.</span>
 </div>
 
-In practice this very simple modelisation simply amounts to selecting the hours with the lowest carbon intensity in the optimisation window and charging as much as possible during these hours. This simplistic formulation of the problem might seem overly complex, and it is, but could be expanded with more realistic constraints.
+In practice, this very simple modelling simply amounts to selecting the hours with the lowest carbon intensity in the optimisation window and charging as much as possible during these hours. This simplistic formulation of the problem might seem overly complex, and it is, but could be expanded with more realistic constraints.
 
 For example, the behaviour of Mette could be different on weekends, and she might allow for greater flexibility than what we did.
 
-Finally, orders of magnitude are important to keep in mind when considering how useful it would be in practice to roll-out smart charging. These 66 kg of greenhouse gas saved are important as they are very much a low-hanging fruit. They nevertheless are only a fraction of what Mette would emit flying to Canada for her holidays, thinking that her ecoconscious behaviour compensates for her flying.
+Finally, orders of magnitude are important to keep in mind when considering how useful it would be in practice to roll out smart charging. These 66 kg of greenhouse gas saved are important as they are very much a low-hanging fruit. They nevertheless are only a fraction of what Mette would emit flying to Canada for her holidays, thinking that her ecoconscious behaviour compensates for her flying.
 
 Thanks for reading!
 
