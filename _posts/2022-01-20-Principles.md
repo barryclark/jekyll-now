@@ -3,7 +3,7 @@ layout: post
 title: Practices for real world data science
 comments: True
 share: True
-canonical_url: "https://electricitymap.org/blog/practices-for-real-world-data-science/"
+canonical_url: "https://www.electricitymaps.com/blog/practices-for-real-world-data-science"
 ---
 
 <div id="html" markdown="0" style="margin: -16px 0 24px;">
