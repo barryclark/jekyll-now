@@ -16,7 +16,7 @@ I was born in Jamui - a small town in the Bihar province of India. My early educ
 </p>
 
 <p align="justify">
-Fascinated by the irresistible attraction for research to explore something new and innovative, I opted to go for higher studies. In Fall 2015, I moved to <b><i>Canada</i></b> to pursue my doctoral studies from <b>Simon Fraser University</b> (SFU). During my PhD, I accomplished 5 independent projects spanning the area of <b>Cancer genomics</b>, <b>immunology</b>, <b>neurodegenerative disorders</b>, <b>DNA nanotechnology</b>, <b><i>in-silico</i> simulations</b> and <b>computational biology</b> which yielded <b>6</b> high-impact journal publications, <b>11</b> oral/poster presentations and <b>>10</b> awards/Fellowships. 
+Fascinated by the irresistible attraction for research to explore something new and innovative, I opted to go for higher studies. In Fall 2015, I moved to <b><i>Canada</i></b> to pursue my doctoral studies from <b>Simon Fraser University</b> (SFU) under the supervision of <b>Dr. Dipankar Sen</b> - disciple of <b><i>Nobel Laureate</i> Walter Gilbert</b> and godfather of <b>G-Quadruplexes</b>). During my PhD, I accomplished 5 independent projects spanning the area of <b>Cancer genomics</b>, <b>Immunology</b>, <b>Neurodegenerative Disorders</b>, <b>DNA Nanotechnology</b>, <b><i>In-silico</i> Simulations</b> and <b>Computational Biology</b> which yielded <b>6</b> high-impact journal publications, <b>11</b> oral/poster presentations and <b>>10</b> awards/Fellowships. 
 </p>
 
 <p align="justify">
