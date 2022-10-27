@@ -29,3 +29,8 @@ permalink: /Publications/
 
 1. Arthur SE, Jiang A, Grande BM, Alcaide M, Mottok A, Ennishi D, Rushton C, Jessa S, **Lat PK** et al., (2017) Genome-wide discovery of somatic coding and regulatory variants in Diffuse Large B-cell Lymphoma. bioRxiv, Cold Spring Harbor Laboratory, 225870
 
+
+**_Interviews/Media Highlights_**
+
+[Interview Biopatrika](https://biopatrika.com/2022/10/24/dna-a-next-generation-material-for-digital-data-storage/)
+[Interview Biopatrika](!/images/Screenshot 2022-10-27 at 12.35.16 PM.png)
