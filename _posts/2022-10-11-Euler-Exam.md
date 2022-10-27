@@ -24,6 +24,8 @@ El método numérico de Euler Mejorado se aplicará a la siguiente forma de ecua
 
 ![_config.yml]({{ site.baseurl }}/images/ejercicio1.JPG
 
+A continuación se muestra el desarrollo del programa: 
+
 ```c++
 #include <iostream>
 #include <cmath>
