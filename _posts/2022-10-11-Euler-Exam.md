@@ -1,6 +1,8 @@
+Examen 
+
 ---
 layout: post
-title: Derivada Recursiva
+title: Método de Euler Mejorado 
 ---
 
 Ejemplo de post con codigo e imagen
@@ -58,3 +60,8 @@ int main()
 
   return 0;
 }
+```
+
+****
+
+Author: _EGM_
