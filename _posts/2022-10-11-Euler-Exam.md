@@ -1,3 +1,11 @@
+---
+layout: post
+title: Derivada Recursiva
+---
+
+Ejemplo de post con codigo e imagen
+
+```c++
 #include <iostream>
 #include <cmath>
 using namespace std;
