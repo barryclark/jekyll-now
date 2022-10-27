@@ -33,4 +33,4 @@ permalink: /Publications/
 **_Interviews/Media Highlights_**
 
 [Interview Biopatrika](https://biopatrika.com/2022/10/24/dna-a-next-generation-material-for-digital-data-storage/)
-![Interview Biopatrika](/images/Screenshot 2022-10-27 at 12.35.16 PM.png)
+![Interview Biopatrika]("/images/Screenshot 2022-10-27 at 12.35.16 PM.png")
