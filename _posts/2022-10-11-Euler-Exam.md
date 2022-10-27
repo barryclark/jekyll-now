@@ -5,7 +5,24 @@ layout: post
 title: Método de Euler Mejorado 
 ---
 
-Ejemplo de post con codigo e imagen
+## Método de Euler ##
+
+Este método ajusta el error de método estándar de Euler, el cuál se basa en generar un valor **predictor**, que corresponde al primer cálculo, en **i**, a continuación se genera un valor **corrector** que en realidad es el cálculo de la pendiente en el punto **i+1**
+
+Ocuparemos la siguiente expresión para **Euler-Predictor** :
+
+**𝒚𝒑𝒊+𝟏 = 𝒚𝒊 + 𝒇 𝒙𝒊 , 𝒚𝒊 𝒉**
+
+Y la siguiente para **Euler-Corrector** :
+**yi+1 =y𝒊 + h/2 (f(xi,yi) + f(xi+1, ypi+1))** (tomamos el predictor en y, que es un valor aproximado)
+
+#### Gráfico de Método de Euler Mejorado 
+
+![_config.yml]({{ site.baseurl }}/images/metodo_euler_mejorado.JPG
+
+El método numérico de Euler Mejorado se aplicará a la siguiente forma de ecuación diferencial: **y’ = f(x,y)**
+
+![_config.yml]({{ site.baseurl }}/images/ejercicio1.JPG
 
 ```c++
 #include <iostream>
