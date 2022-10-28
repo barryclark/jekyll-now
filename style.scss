@@ -25,7 +25,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 960px; /* originally 740 */
   padding: 0 10px;
   width: 100%;
 }
@@ -140,6 +140,12 @@ img {
 
 .clearfix:after {
     clear: both;
+}
+
+.img-div-any-width {
+  font-size: 85%;
+  color: #999;
+  text-align: center;
 }
 
 /*********************/
