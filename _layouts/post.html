@@ -5,8 +5,8 @@ layout: default
 <article class="post">
   <h1 class="page-title">{{ page.title | markdownify }}</h1>
   
-  {% if page.preview_img %}
-      <meta property="og:image" content="{{page.preview_img}}" />
+  {% if page.og_image %}
+      <meta property="og:image" content="https://raw.githubusercontent.com/geo-ant/blog/master/images/og/{{page.og_image}}" />
       <meta name="twitter:card" content="summary_large_image" />
   {% endif %}
 
