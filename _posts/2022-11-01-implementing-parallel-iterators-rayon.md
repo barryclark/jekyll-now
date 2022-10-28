@@ -5,12 +5,17 @@ tags: rust rayon parallel concurrency multi-threading
 date: 2022-11-01
 last_updated:
 #excerpt: ''
-#image: 'BASEURL/assets/blog/img/.png'
 #description:
 #permalink:
 title: Implementing Rayon's Parallel Iterators - A Tutorial
-comments_id:
+#
+#
+# Make sure this image is correct !!!
 og_image: parallel-iterators.png
+#
+#
+# Make sure comments are enabled !!!	
+comments_id:
 ---
 
 I recently faced the problem of having to implement [rayon's](https://docs.rs/rayon/latest/rayon/)
