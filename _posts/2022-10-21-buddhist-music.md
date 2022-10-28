@@ -38,3 +38,5 @@ title: 佛教梵呗初体验
 
 谢谢阅读。<br>
 愚夫合十。
+
+![](../images/signature.png)
