@@ -121,6 +121,6 @@ So, with the previously designed input matching network (a $\lambda /4$ transmis
 ![sparams_f](/images/post14/sparams_final_bfp740f.png)
 {:refdef}
 
-With a final NF of 1.02 and a gain of 26.4 dB, I find these results very hard to believe. So I'll have to test the board and see how it ended up in the real thing *Crossing my fingers*. Next post will be about the construction of the whole thing and the measurements of the prototype. Hopefully won't take so long to come out as this post.
+That is pretty screwed up since the input matching is miserable... I'll have to test the board and see how it ended up in the real thing. Next post will be about the construction of the whole thing and the measurements of the prototype. Hopefully won't take so long to come out as this post.
 
 Stay tuned!
