@@ -4,10 +4,16 @@ title:  "From Python to Julia: Basic Data Manipulation and EDA"
 date:   2022-03-31 10:24:01 +0800
 categories: jekyll update
 ---
+
 As an emerging programming language in the space of statistical computing, Julia is gaining more and more attention in recent years. There are two features which make Julia superior over other programming languages.
 
 * Julia is a high-level language like Python. Therefore, it is easy to learn and use.
 * Julia is a compiled language, designed to be as fast as C/C++.
+
+<div class="img-div-any-width">
+  <img src="/images/2022-3-31/julia-console.png" />
+  <br />
+</div>
 
 When I first got to know Julia, I was attracted by its computing speed. So I decided to give Julia a try, and see if I can use it practically in my daily work.
 
