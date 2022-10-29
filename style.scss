@@ -110,6 +110,24 @@ img {
   max-width: 100%;
 }
 
+table{
+  font-size: 100% ;
+  border-collapse: collapse;
+  margin: 40px auto;
+}
+table tr{  padding: 1px 10px;  }
+table th{
+  padding: 4px 5px;
+  font-weight: bold;
+  font-size: 100%;
+  border: 1px solid #bbb;
+}
+table td{
+  padding: 4px 5px;
+  border: 1px solid #bbb;
+  // border: 1px solid #333;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
