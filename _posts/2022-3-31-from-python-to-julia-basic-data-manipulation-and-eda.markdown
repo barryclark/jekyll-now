@@ -19,7 +19,7 @@ When I first got to know Julia, I was attracted by its computing speed. So I dec
 
 As a data science practitioner, I develop prototype ML models for various purposes using Python. To learn Julia quickly, I’m going to mimic my routine process of building a simple ML model with both Python and Julia. By comparing the Python and Julia code side by side, I can easily capture the syntax difference of the two languages. That’s how this blog will be arranged in the following sections.
 
-## Setup
+# Setup
 
 Before getting started, we need to first install Julia on the workstation. The installation of Julia takes the following 2 steps.
 * Download the installer file from the [official website][official-website].
@@ -28,13 +28,13 @@ Before getting started, we need to first install Julia on the workstation. The i
 A detailed guideline on installing Julia is provided in [this blog][julia-installation].
 
 
-## Dataset
+# Dataset
 
 I’m going to use a [credit card fraud detection dataset][dataset] obtained from Kaggle. The dataset contains 492 frauds out of 284,807 transactions. There are in total of 30 features including transaction time, amount, and 28 principal components obtained with PCA. The “Class” of the transaction is the target variable to be predicted, which indicates whether a transaction is a fraud.
 
-Similar to Python, the Julia community developed various packages to support the needs of the Julia users. The packages can be installed using Julia’s package manager `Pkg`, which is equivalent to Python’s pip .
+Similar to Python, the Julia community developed various packages to support the needs of the Julia users. The packages can be installed using Julia’s package manager <code class="inline">Pkg</code>, which is equivalent to Python’s pip .
 
-The fraud detection data I use is in the typical .csv format. To load the csv data as a dataframe in Julia, both `CSV` and `DataFrame` packages need to be imported. The `DataFrame` package can be treated as the Pandas equivalent in Julia.
+The fraud detection data I use is in the typical .csv format. To load the csv data as a dataframe in Julia, both <code class="inline">CSV</code> and <code class="inline">DataFrame</code> packages need to be imported. The <code class="inline">DataFrame</code> package can be treated as the Pandas equivalent in Julia.
 
 {% highlight julia %}
 using CSV
@@ -57,7 +57,7 @@ Here’s how the imported data looks like.
   Load data with Julia
 </div>
 
-In Jupyter, the loaded dataset can be displayed as shown in the above image. If you’d like to view more columns, one quick solution will be to specify the environment variable `ENV["COLUMNS"]`. Otherwise, only fewer than 10 columns will be displayed.
+In Jupyter, the loaded dataset can be displayed as shown in the above image. If you’d like to view more columns, one quick solution will be to specify the environment variable <code class="inline">ENV["COLUMNS"]</code>. Otherwise, only fewer than 10 columns will be displayed.
 
 The equivalent Python implementation is as follows.
 
@@ -67,13 +67,13 @@ The equivalent Python implementation is as follows.
   Load data with Python
 </div>
 
-## Exploratory Data Analysis (EDA)
+# Exploratory Data Analysis (EDA)
 
 Exploratory analysis allows us to examine the data quality and discover the patterns among the features, which can be extremely useful for feature engineering and training ML models.
 
-### Basic statistics
+## Basic statistics
 
-We can start with computing some simple statistics of the features, such as mean, standard deviation. Similar to Pandas in Python, Julia’s DataFrame package provides a `describe` function for this purpose.
+We can start with computing some simple statistics of the features, such as mean, standard deviation. Similar to Pandas in Python, Julia’s DataFrame package provides a <code class="inline">describe</code> function for this purpose.
 
 <div class="img-div-any-width">
   <img src="/images/2022-3-31/basic_stats_julia.png" />
@@ -82,7 +82,7 @@ We can start with computing some simple statistics of the features, such as mean
 </div>
 
 
-The `describe` function allows us to generate 12 types of basic statistics. We can choose which one to generate by changing the `:all` argument such as `describe(df, :mean, :std)`. It’s a little annoying that the `describe` function will keep omitting the display of statistics if we do not specify `:all`, even if the upper limit for the number of displayable columns is set. This is something the Julia community can work on in future.
+The <code class="inline">describe</code> function allows us to generate 12 types of basic statistics. We can choose which one to generate by changing the <code class="inline">:all</code> argument such as <code class="inline">describe(df, :mean, :std)</code>. It’s a little annoying that the <code class="inline">describe</code> function will keep omitting the display of statistics if we do not specify <code class="inline">:all</code>, even if the upper limit for the number of displayable columns is set. This is something the Julia community can work on in future.
 
 <div class="img-div-any-width">
   <img src="/images/2022-3-31/stats_omitted_julia.png" />
@@ -90,7 +90,7 @@ The `describe` function allows us to generate 12 types of basic statistics. We c
   Julia omits printing specified statistics
 </div>
 
-### Class balance
+## Class balance
 
 Fraud detection datasets usually suffer from the issue of extreme class imbalance. Therefore, we'd like to find out the distribution of the data between the two classes. In Julia, this can be done by applying the ["split-apply-combine"][split-apply-combine] functions, which is equivalent to Pandas' "groupby-aggregate" function in Python.
 
@@ -100,7 +100,7 @@ Fraud detection datasets usually suffer from the issue of extreme class imbalanc
   Check the class distribution with Julia
 </div>
 
-In Python, we can achieve the same purpose by using the `value_counts()` function.
+In Python, we can achieve the same purpose by using the <code class="inline">value_counts()</code> function.
 
 <div class="img-div-any-width">
   <img src="/images/2022-3-31/class_distribution_python.png" />
@@ -108,7 +108,7 @@ In Python, we can achieve the same purpose by using the `value_counts()` functio
   Check the class distribution with Python
 </div>
 
-### Univariate analysis
+## Univariate analysis
 
 Next, let’s look into the distribution of features using histograms. In particular, we take the transaction amount and time as examples, since they are the only interpretable features in the dataset.
 
@@ -149,7 +149,7 @@ In Python, we can use matplotlib and seaborn to create the same charts.
   Plot distribution of transaction time and amount with Python
 </div>
 
-### Bivariate analysis
+## Bivariate analysis
 
 While the above univariate analysis shows us the general pattern of the transaction amount and time, it does not tell us how they are related to the fraud flag to be predicted. To have a quick overview of the relationship between the features and the target variable, we can create a correlation matrix and visualize it using a heatmap.
 
@@ -173,7 +173,7 @@ println(size(balanced_df))
 </div>
 
 The preceding code counts the number of the fraud transactions, and combines the fraud transactions with the same number of the non-fraud transactions.
-* To create the correlation matrix, we need to convert the features dataframe into a matrix, and use the `cor` function from the `Statistics` library to calculate the Pearson correlation coefficients in between the features.
+* To create the correlation matrix, we need to convert the features dataframe into a matrix, and use the <code class="inline">cor</code> function from the <code class="inline">Statistics</code> library to calculate the Pearson correlation coefficients in between the features.
 * Next, we can create a heatmap to visualise the correlation matrix. The [Plots][Plots] library provides a simple implementation.
 
 {% highlight julia %}
@@ -230,7 +230,7 @@ p4 = @df balanced_df boxplot(
 plot(p1, p2, p3, p4, layout = (1, 4), titlefontsize=9)
 {% endhighlight %}
 
-The `@df` here serves as a macro which indicates creating a boxplot over the target dataset, i.e. `balanced_df`. The resulting plot is shown as follows.
+The <code class="inline">@df</code> here serves as a macro which indicates creating a boxplot over the target dataset, i.e. <code class="inline">balanced_df</code>. The resulting plot is shown as follows.
 
 <div class="img-div-any-width">
   <img src="/images/2022-3-31/feature_class_corr_plot_with_julia.png" />
@@ -246,7 +246,7 @@ The following code can be used to create the same boxplot in Python.
   Plot feature vs. class box plot in Python
 </div>
 
-## Intermission
+# Intermission
 
 I’m going to pause here with a quick comment on my “user experience” with Julia so far. In terms of the language syntax, Julia seems to be somewhere in between Python and R. There are Julia packages which provide comprehensive support to the various needs of data manipulation and EDA. However, since the development of Julia is still in the early stage, the programming language still lacks resources and community support. It can take a lot of time to search for a Julia implementation of certain data manipulation exercises such as [unnesting a list-like dataframe column][pandas-explode]. Furthermore, the syntax of Julia is nowhere close to getting stabilized like Python 3. At this point, I won’t say Julia is a good choice of programming language for large businesses and enterprises.
 

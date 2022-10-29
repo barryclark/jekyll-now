@@ -128,6 +128,16 @@ table td{
   // border: 1px solid #333;
 }
 
+.inline {
+  border-radius: 5px; 
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border: 1px solid #BCBEC0;
+  padding: 2px;
+  font-size: 80%;
+  background: $lightGray;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
@@ -141,11 +151,11 @@ table td{
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  background: rgb(172, 210, 254);
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: rgb(172, 210, 254);
 }
 
 // Nicolas Gallagher's micro clearfix hack
