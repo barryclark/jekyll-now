@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+👋 Hi, Shenghao's here.
 
-### More Information
+I'm a data scientist, an amateur photographer, and a chess fan. I write about my journey of exploring the world of data science and technology. Some fun facts about me
 
-A place to include any other types of information that you'd like to include about yourself.
+* In my hometown, I have chance to experience a 50°C temperature difference between indoor and outdoor, during winter, of course.
+* Right now I stay at a place where I can see a plane flying over my head every half an hour.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[wangshenghao1993@gmail.com](mailto:wangshenghao1993@gmail.com)
