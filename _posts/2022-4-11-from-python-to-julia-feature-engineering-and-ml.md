@@ -1,16 +1,21 @@
 ---
 layout: post
 title: "From Python to Julia: Feature Engineering and ML"
+excerpt_separator: <!--more-->
 ---
+
+<div class="img-div-any-width">
+  <img src="/images/2022-4-11/credit-cards.jpg" style="max-width: 80%;"/>
+  <br />
+  Photo by <a href="https://unsplash.com/ja/@cardmapr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CardMapr.nl</a> on <a href="https://unsplash.com/s/photos/credit-cards?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+</div>
+
+<!--more-->
 
 This is part 2 in my two part series on getting started with Julia for applied data science. In [the first article](https://shenghaowang.github.io/from-python-to-julia-basic-data-manipulation-and-eda/), we went through a few examples of simple data manipulation and conducting exploratory data analysis with Julia. In this blog, we will carry on the task of building a fraud detection model to identify fraudulent transactions.
 
 To recap briefly, we used a [credit card fraud detection dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) obtained from Kaggle. The dataset contains 30 features including transaction time, amount, and 28 principal component features obtained with PCA. Below is a screenshot of the first 5 instances of the dataset, loaded as a dataframe in Julia. Note that the transaction time feature records the elapsed time (in second) between the current transaction and the first transaction in the dataset.
-
-<div class="img-div-any-width">
-  <img src="/images/2022-4-11/features-preview.png" />
-  <br />
-</div>
 
 # Feature Engineering
 
