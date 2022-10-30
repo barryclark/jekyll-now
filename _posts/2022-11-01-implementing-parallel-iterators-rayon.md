@@ -15,18 +15,20 @@ og_image: parallel-iterators.png
 #
 #
 # Make sure comments are enabled !!!	
-comments_id:
+comments_id: 39
 ---
 
-I recently faced the problem of having to implement [rayon's](https://docs.rs/rayon/latest/rayon/)
+Rayon is a brilliant piece of engineering that is so simple to use that one 
+seldom has to descend into its depths. This is the story of how I 
+learned to implement [rayon's](https://docs.rs/rayon/latest/rayon/)
 [`ParallelIterator`](https://docs.rs/rayon/latest/rayon/iter/trait.ParallelIterator.html)
 trait for my own type. There are tons of guides on _how to use_ rayon's parallel
-iterators. There are few explanations on _how they work_ under the hood,
-but I found no tutorials on _how to implement one_ on my own type from the ground up.
-So this is what this article aims for.
+iterators and there are a few explanations on _how they work_ under the hood. However,
+I found no tutorials on _how to implement one_ on my own type from the ground up.
+This article aims to close that gap.
 
-There is a bit of complexity around rayon's parallel iterators and this guide
-cannot explain every nook and cranny. What I'd rather do is give a guided intro
+There is a fair bit of complexity around rayon's parallel iterators and this tutorial
+cannot explain every nook and cranny. What I'd rather do is give a guide
 for a not-too-trivial example. It might or might not be enough for your use case
 , but you'll have an understanding of the map of the territory either way.
 
@@ -39,8 +41,8 @@ Eventually, reading [the source](https://github.com/rayon-rs/rayon/tree/master/s
 will prove invaluable, though it would not be my first port of call.
 
 Inside the rayon repository, there is a [plumbing/README.md](https://github.com/rayon-rs/rayon/blob/master/src/iter/plumbing/README.md).
-It was too terse as a beginning for me, but it does come in handy as a refresher
-or if you have prior knowledge. What I found very helpful to understand how rayon
+It was too terse as an introduction for me, but it does come in handy as a refresher
+or if you have prior knowledge. What I found very helpful in understanding how rayon
 thinks about parallel iterators is the three part blog series
 ([Part 1 - Foundations](https://smallcultfollowing.com/babysteps/blog/2016/02/19/parallel-iterators-part-1-foundations/),
 [Part 2 - Producers](https://smallcultfollowing.com/babysteps/blog/2016/02/25/parallel-iterators-part-2-producers/),
@@ -49,8 +51,8 @@ by Niko Matsakis, rayon's creator. It's a brilliant introduction to this subject
 and I hope this guide will complement it nicely. We're going to see
 the principles applied to an example.
 
-Finally, it's worth noting that often you don't _have_ to implement your own
-parallel iterator from the ground up because you can use what is already there
+Finally, it's worth noting that often you don't really _have_ to implement your own
+parallel iterator from the ground up because you can use what's already there
 in rayon. [Here](https://stackoverflow.com/questions/59028562/implementing-a-rayoniterparalleliterator)
 and [here](https://github.com/dimforge/nalgebra/issues/848) are examples of how the
 [`par_bridge`](https://docs.rs/rayon/latest/rayon/iter/trait.ParallelBridge.html)
@@ -70,11 +72,11 @@ territory.
 
 We'll implement parallel iterators for a collection of some data where sequential
 iterators are already present. This is a common use case. Our example will be
-deliberately simple, which is why use vectors and slices as the underlying ways
+deliberately simple, which is why I use vectors and slices as the underlying ways
 of storing and accessing our data. Those already give us sequential iterators[^double_ended].
 Note that rayon already has parallel iterators for `Vec`s and slices, but we will
-_not_ use them. So we learn how to implement parallel iterators from the ground up.
-Finally, we'll use `i32`s as a stand-in for the data[^send] inside our collection.
+_not_ use them. So we learn how to implement parallel iterators from first principles.
+For convenience, we'll use `i32`s as a stand-in for the data[^send] inside our collection.
 
 ```rust
 type Data = i32;
@@ -86,7 +88,7 @@ struct DataCollection {
 
 We will make heavy use of the fact that we can split a vector into slices and
 that there are sequential iterators over slices. Again, we will not exploit
-rayons parallel iterators on slices or `Vec`s.
+rayons parallel iterators over slices or `Vec`s.
 
 ## Rayon Tour de Force
 
@@ -94,8 +96,8 @@ I am interested in writing an iterator that implements both rayons
 [`ParallelIterator`](https://docs.rs/rayon/latest/rayon/iter/trait.ParallelIterator.html)
 as well as [`IndexedParallelIterator`](https://docs.rs/rayon/latest/rayon/iter/trait.IndexedParallelIterator.html#),
 which makes this (in rayon's terms) a "random access" iterator with an exactly
-known length. Some of what I am going to say is going to be true for parallel
-iterators that are not random access, but other things won't be, so keep that in
+known length. Some of what I am going to say will be true for other types 
+of parallel iterators but some things won't be, so keep that in
 mind.
 
 We will start out by writing a structure for the parallel iterator over our data
@@ -105,8 +107,8 @@ piece of the puzzle, we have to understand rayon's concept of a [`Producer`](htt
 It helps to think of rayon as a divide and conquer multithreading library.
 It wants to split the whole iteration into smaller and smaller chunks,
 distribute them across threads, then fall back to regular sequential iterators
-to perform the actual work within the threads, before piecing the iteration
-together again. Producers are the glue that allow rayon to understand how to
+to perform the actual work within the threads.
+Producers are the glue that allows rayon to understand how to
 split your iteration into smaller chunks and how to iterate over those chunks
 _sequentially_. If that all seems a bit much now, bear with me.
 
@@ -130,7 +132,7 @@ struct ParDataIter<'a> {
 I already mentioned that I want to write a parallel iterator that has an exactly
 known size. So the two traits we have to implement are [`ParallelIterator`](https://docs.rs/rayon/latest/rayon/iter/trait.ParallelIterator.html)
 and [`IndexedParallelIterator`](https://docs.rs/rayon/latest/rayon/iter/trait.IndexedParallelIterator.html#)
-on our iterator.So we start out by implementing all the required methods and
+on our `ParDataIter`. Let's start out by implementing all the required methods by
 just putting a `todo!()` into each body to appease the compiler.
 This looks something like this:
 
@@ -139,9 +141,7 @@ impl<'a> ParallelIterator for ParDataIter<'a> {
     type Item = &'a i32;
 
     fn drive_unindexed<C>(self, consumer: C) -> C::Result
-    where
-        C: UnindexedConsumer<Self::Item>,
-    {
+    where C: UnindexedConsumer<Self::Item> {
         todo!()
     }
 }
@@ -149,8 +149,8 @@ impl<'a> ParallelIterator for ParDataIter<'a> {
 
 The `ParallelIterator` trait only has one required method, which seems not that
 bad, right? The associated type `Item` is clear, because we want to iterate over
-references to the data, so we make it `&'a i32` right away .Let's look at the
-second iterator trait now before we go any further:
+references to the data, so we make it `&'a i32` right away. Now let's look at the
+second iterator trait before we go any further:
 
 ```rust
 impl<'a> IndexedParallelIterator for ParDataIter<'a> {
@@ -173,13 +173,12 @@ impl<'a> IndexedParallelIterator for ParDataIter<'a> {
 
 This one has three methods we need to implement. The simplest one is `len`, which
 must return the number of elements that this parallel iterator produces. This is
-just `self.data_slice.len()` and we're done. The next two methods we'll implement
-are `drive_unindexed` and `drive` of `ParallelIterator` and `IndexedParallelIterator`
-respectively. The three part series by Niko Matsakis linked above gives an
-explanation of what the logic behind these methods is and it's important to
-understand eventually. Here, we'll take a practical approach and look at how
-rayon goes about implementing these methods. In the [parallel iterator Implementation
-for slices](https://github.com/rayon-rs/rayon/blob/3e8f617e21b8e6957e0c378a299096046ce36f9e/src/slice/mod.rs)
+just `self.data_slice.len()` and we're done. The next two methods we implement
+are `drive_unindexed` and `drive` of `ParallelIterator` and `IndexedParallelIterator`,
+respectively. The three part series by Niko Matsakis linked above gives a great
+explanation of what the logic behind these methods is. Here, we'll take a practical
+approach and look at how rayon goes about implementing these methods.
+In the [parallel iterator Implementation for slices](https://github.com/rayon-rs/rayon/blob/3e8f617e21b8e6957e0c378a299096046ce36f9e/src/slice/mod.rs)
 in lines 708 and 721, we can see that both methods are implemented by a simple
 call to `bridge(self, consumer)`. Interesting! If we look at the documentation of
 [`rayon::iter::plumbing::bridge`](https://docs.rs/rayon/latest/rayon/iter/plumbing/fn.bridge.html)
@@ -194,11 +193,12 @@ The last sentence tells us that this is exactly what we need. It is worth noting
 that `bridge` requires the first argument (i.e. `self`) to implement `IndexedParallelIterator`,
 which is no problem for us, because that is what we are doing anyways. That lets
 us fill all but one method with the correct logic. Before we see how to implement
-`with_producer`, let's throw in a low-hanging optimization in there. `ParallelIterator`
-has a method [`opt_len(&self)->Option<usize>`](https://docs.rs/rayon/latest/rayon/iter/trait.ParallelIterator.html#method.opt_len),
+`with_producer`, let's throw in a low-hanging optimization in there.
+
+`ParallelIterator` has a method [`opt_len(&self)->Option<usize>`](https://docs.rs/rayon/latest/rayon/iter/trait.ParallelIterator.html#method.opt_len)
 that returns the length of this iterator if it is known. We can just return
 `Some(self.len())`, which calls the `len` method of `self` as an implementor of
-`IndexedParallelIterator`. Here is where we are at now:
+`IndexedParallelIterator`. In summary, this leaves us with this code:
 
 ```rust
 impl<'a> ParallelIterator for ParDataIter<'a> {
@@ -214,7 +214,6 @@ impl<'a> ParallelIterator for ParDataIter<'a> {
       Some(self.len())
     }
 }
-
 
 impl<'a> IndexedParallelIterator for ParDataIter<'a> {
     fn with_producer<CB: ProducerCallback<Self::Item>>(
@@ -241,13 +240,11 @@ So the only thing left to implement is `with_producer` and we're done.
 It's pretty important to understand rayon's concept of producers when we want
 to implement parallel iterators. They work in hand in hand with a concept called
 _consumers_. Put simply, producers produce elements and consumers consume them.
-Duh! Functions like `fold` on parallel iterators work with a `FoldConsumer` [under
-the hood](https://github.com/rayon-rs/rayon/blob/master/src/iter/fold.rs)
+I know: thanks Captain Obvious! But bear with me. Functions like `fold` on 
+parallel iterators work with a `FoldConsumer` [under the hood](https://github.com/rayon-rs/rayon/blob/master/src/iter/fold.rs)
 that consumes the elements produced by the producer. That's about all we
 need to know about consumers here, but we need to dive into producers a little
-bit more.
-
-Producers are described by the rayon documentation [like  this](https://docs.rs/rayon/1.5.3/rayon/iter/plumbing/trait.Producer.html#method.min_len):
+bit more. Producers are described by the rayon documentation [like  this](https://docs.rs/rayon/1.5.3/rayon/iter/plumbing/trait.Producer.html#method.min_len):
 
 > A Producer is effectively a “splittable IntoIterator”. That is, a producer is
 > a value which can be converted into an iterator at any time: at that point,
@@ -275,7 +272,7 @@ trait for this structure we have to know essentially three things.
 
 Let's start at the top. The sequential iterator should be the iterator over a
 borrowed slice of `Data`, i.e. [`std::slice::Iter<'a,Data>`](https://doc.rust-lang.org/std/slice/struct.Iter.html).
-This implies that the type of item returned from this iterator is `&Data`. It is
+This implies that the type of item returned from this iterator is `&'a Data`. It is
 worth noting that `Producer` requires the returned iterator to implement both
 [`DoubleEndedIterator`](https://doc.rust-lang.org/nightly/core/iter/traits/double_ended/trait.DoubleEndedIterator.html)
 as well as [`ExactSizeIterator`](https://doc.rust-lang.org/nightly/core/iter/traits/exact_size/trait.ExactSizeIterator.html).
@@ -316,8 +313,8 @@ impl<'a> From<ParDataIter<'a>> for DataProducer<'a> {
 }
 ```
 
-Finally, we can revisit our implementation of `IndexedParallelIterator` for our
-iterator and fill in the missing piece.
+Finally, we can revisit our implementation of `IndexedParallelIterator` for
+`ParDataIter` and fill in the missing piece.
 
 ```rust
 impl<'iter> IndexedParallelIterator for ParDataIter<'iter> {
@@ -336,7 +333,7 @@ impl<'iter> IndexedParallelIterator for ParDataIter<'iter> {
 
 If you are wondering what on earth a producer callback is, I recommend to
 read the appropriately titled section ["What on earth is `ProducerCallback`"](https://github.com/rayon-rs/rayon/blob/master/src/iter/plumbing/README.md#producer-callback)
-in the rayon README. For us as implementors we just need
+in the rayon README. For us as implementors, we just need to remember
 to invoke that callback function on a producer that we create from
 our iterator. We do that by using the slightly awkward (but very cleverly
 designed) `callback.callback(producer)` syntax.
@@ -361,8 +358,10 @@ Now we can call this function on our collection to obtain a parallel iterator
 and this is a fine way to do so. Matter of fact, for structures that have more
 than one way to iterate over their data it is good practice to implement 
 descriptive member functions that return different kinds of parallel iterators.
-Think a matrix that could have element wise, column wise, and row wise parallel
-iterators. But if there is only one unique way to iterate over the elements 
+Think e.g. of a matrix that could have element wise, column wise, and row wise parallel
+iterators.
+
+However, if there is only one way to reasonable iterate over the elements
 in our datastructure, rayon has a nice feature through blanket implementations.
 There is a trait [`IntoParallelRefIterator`](https://docs.rs/rayon/latest/rayon/iter/trait.IntoParallelRefIterator.html#)
 that exposes a function `par_iter()` that iterates over references of elements.

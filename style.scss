@@ -41,6 +41,9 @@ code {
   font-size: 0.85em;
 }
 
+.highlight {
+  font-size: 0.95em; // this gets multiplied to the code font size in the code blocks, making it smaller there but not in body text
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $Headings;
