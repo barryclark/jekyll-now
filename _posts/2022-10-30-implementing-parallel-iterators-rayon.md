@@ -2,7 +2,7 @@
 layout: post
 tags: rust rayon parallel concurrency multi-threading
 #categories: []
-date: 2022-11-01
+date: 2022-10-30
 last_updated:
 #excerpt: ''
 #description:
