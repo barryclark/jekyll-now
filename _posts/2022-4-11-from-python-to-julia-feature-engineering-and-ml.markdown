@@ -5,7 +5,7 @@ excerpt_separator: <!--more-->
 ---
 
 <div class="img-div-any-width">
-  <img src="/images/2022-4-11/credit-cards.jpg" style="max-width: 80%;"/>
+  <img src="/images/2022-4-11/credit-cards.jpg" style="max-width: 70%;"/>
   <br />
   Photo by <a href="https://unsplash.com/ja/@cardmapr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CardMapr.nl</a> on <a href="https://unsplash.com/s/photos/credit-cards?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   

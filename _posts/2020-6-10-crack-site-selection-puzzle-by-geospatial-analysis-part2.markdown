@@ -6,7 +6,7 @@ post_description: In the second blog of the site selection series, we are going 
 ---
 
 <div class="img-div-any-width">
-  <img src="/images/2020-6-10/fairprice_tiong_bahru.jpeg" style="max-width: 80%;" />
+  <img src="/images/2020-6-10/fairprice_tiong_bahru.jpeg" style="max-width: 70%;" />
   <br />
 </div>
 
