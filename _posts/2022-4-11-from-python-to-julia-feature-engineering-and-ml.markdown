@@ -2,6 +2,7 @@
 layout: post
 title: "From Python to Julia: Feature Engineering and ML"
 excerpt_separator: <!--more-->
+post_description: In addition to data manipulation and EDA, Julia is also equipped with a full set of tools for conducting predictive modeling, including both traditional ML and deep learning. In this article, I'd like to carry on my exploration of Julia mainly to test out its support for the modeling tasks.
 ---
 
 <div class="img-div-any-width">

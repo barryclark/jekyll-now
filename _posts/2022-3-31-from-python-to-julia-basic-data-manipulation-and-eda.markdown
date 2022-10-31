@@ -4,7 +4,7 @@ title:  "From Python to Julia: Basic Data Manipulation and EDA"
 date:   2022-03-31 10:24:01 +0800
 categories: jekyll update
 excerpt_separator: <!--more-->
-post_description: A plugin to extend Swiper for easier JW Player integration.
+post_description: As the next generation of the statistical programming language, Julia has been gaining spotlight in recent years. Is it ready to replace Python to become the go-to language for the data science practitioners? In this article, we are going to leverage the resources offered by Julia, to tackle a few basic data manipulation and EDA tasks most data scientists would experience in their daily work. I'd like to share my "user exeprience" as a newbie of Julia.
 ---
 
 <div class="img-div-any-width">
