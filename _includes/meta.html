@@ -16,3 +16,8 @@
     <meta property="og:title" content="{{ page.title | markdownify | strip_html | xml_escape | trim }}" />
     <meta property="twitter:title" content="{{ page.title | markdownify | strip_html | xml_escape | trim }}" />
     {% endif %}
+
+    {% if page.og_image %}
+    <meta property="og:image" content="https://raw.githubusercontent.com/geo-ant/blog/master/images/og/{{page.og_image}}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    {% endif %}
