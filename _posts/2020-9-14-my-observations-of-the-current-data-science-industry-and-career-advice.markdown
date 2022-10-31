@@ -2,9 +2,17 @@
 layout: post
 title:  My Observations of the Current Data Science Industry and Career Advice - an SEA point of view
 author: Wang Shenghao
-date:   2020-09-14 10:24:01 +0800
-categories: jekyll update
+excerpt_separator: <!--more-->
+post_description: How much "science" work is there within a data scientist's job scope? The title of "data scientist" is getting inflated, and the value of the DS work varies across companies serving different services and product. As a junior DS, I'd like to share my understanding of the current DS and analytics industry and offer some advice to the ones who are keen to pursue a DS career.
 ---
+
+<div class="img-div-any-width">
+  <img src="/images/2020-9-14/truth_of_data_science.jpeg" style="max-width: 60%;" />
+  <br />
+</div>
+
+<!--more-->
+
 A short bio of myself. I am a 1 year old data scientist, based in Singapore. Without a computer science or a statistics degree, I spent 3 years pursuing a career of data science before I landed a full time DS job. In this blog, I’d like to share my understanding of the data science industry and give some advice to the friends who are keen to pursue a DS career. The opinions expressed here represent my own, and are given based on the experience of my work, social networking, as well as the books and articles I read.
 
 # 1. The title of data scientist is undergoing an “inflation”.
