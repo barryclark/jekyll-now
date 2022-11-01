@@ -3,7 +3,7 @@ layout: post
 title: "AuthN + AuthZ: Security, Compliance, and Other Challenges"
 description: "Cheryl Hung's hosts a webinar with Or Weis, CEO of Permit.io and Dan Moore, Head of DevRel at FusionAuth, on Authentication and Authorization"
 location: London, UK
-image: https://media-exp1.licdn.com/dms/image/C4D22AQH5ePG51dz7jA/feedshare-shrink_800/0/1662563041985?e=1666828800&v=beta&t=O8SH6MIza_vhch-SOFkPikMZngQpxqdcdb7xBJnWUwA
+image: https://i.ytimg.com/vi/DM7XOomsj04/maxresdefault.jpg
 video: https://www.youtube.com/embed/DM7XOomsj04
 tags:
   - Video
