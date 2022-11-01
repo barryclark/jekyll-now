@@ -13,11 +13,13 @@ In the [last post](https://theantennaguy.github.io/gnss-active-antenna/), I desc
 
 I mentioned in the last post that for the LNA design I've chosen the BFP640FESD low noise BJT transistor from Infineon. Because Infineon has good documentation, has support files for simulation, it's cheap and I had it available - problem is sometimes I trust too much on my memory, and when the PCBs for this board arrived, I realized I had not the BFP640FESD, but the BFP740F! 
 
-{:refdef: style="text-align: center;"}
-<div class="tenor-gif-embed" data-postid="11107551" data-share-method="host" data-aspect-ratio="1" data-width="45%"><a href="https://tenor.com/view/elaine-well-thats-because-youre-an-idiot-seinfeld-idiot-gif-11107551">Elaine Well Thats Because Youre An Idiot GIF</a>from <a href="https://tenor.com/search/elaine-gifs">Elaine GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script></div>
-{:refdef:}
+<div class="tenor-gif-embed" data-postid="11107551" data-share-method="host" data-aspect-ratio="1" data-width="45%">
+<p class="image-holder">
+<a href="https://tenor.com/view/elaine-well-thats-because-youre-an-idiot-seinfeld-idiot-gif-11107551">Elaine Well Thats Because Youre An Idiot GIF</a>
+from <a href="https://tenor.com/search/elaine-gifs">Elaine GIFs</a></p></div> 
+<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
-Oh well, I'll explain the design steps with the BFP540FESD and use this opportunity to show what I checked and verified the impact of adapting the existing board and matching networks to the BFP740F instead of the BFP640F.
+Oh well, I'll explain the design steps with the BFP640FESD and use this opportunity to show what I checked and verified the impact of adapting the existing board and matching networks to the BFP740F instead of the BFP640F.
 
 Alright, so first step is to download the S-parameter files for the transistor. Otherwise, it's also possible to use the component models for SPICE, Keysight ADS or AWR Microwave Office - good guy Infineon having the support for all the tools. With the latter two, one can use non-linear simulations and make a more refined design. However, I'll keep it simple and go for the design steps using the linear models (S-parameters) and design the LNA with those only. This is possible for LNAs, especially for a GNSS application, where power levels are so low that we are sure to be operating in a linear range of operation of the transistor. It would be more risky to assume something like this when designing a PA (Power Amplifier).
 
