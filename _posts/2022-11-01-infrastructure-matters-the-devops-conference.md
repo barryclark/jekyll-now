@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Infrastructure Matters: The DevOps Conference keynote"
+title: "Infrastructure Matters: Keynote at The DevOps Conference, Copenhagen"
 description: "Cheryl Hung discusses why sustainable infrastructure matters, and frameworks, tools and groups to explore."
 image: images/2022-11-01-infrastructure-matters-the-devops-conference.png
+location: Copenhagen, Denmark
 slides: //www.slideshare.net/slideshow/embed_code/key/4JCciRBeuCu7Gw
 tags:
   - Video
