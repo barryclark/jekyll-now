@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London October 2022: Maersk Corporation, MATRIXX Software, and Tecknuovo"
 description: "speakers from Maersk Corporation, MATRIXX Software, and Tecknuovo join us at the Cloud Native London meetup October 2022, hosted by Cheryl Hung, Engineering Manager at Apple"
 location: London, UK
-image: /images/2022-10-12-cloud-native-london-october-2022.jpeg
+image: /images/2022-10-12-cloud-native-london-october-2022.png
 video: https://www.youtube.com/embed/7gAPtILNlrc
 tags:
   - Photos
