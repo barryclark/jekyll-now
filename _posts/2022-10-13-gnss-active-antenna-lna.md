@@ -13,7 +13,7 @@ In the [last post](https://theantennaguy.github.io/gnss-active-antenna/), I desc
 
 I mentioned in the last post that for the LNA design I've chosen the BFP640FESD low noise BJT transistor from Infineon. Because Infineon has good documentation, has support files for simulation, it's cheap and I had it available - problem is sometimes I trust too much on my memory, and when the PCBs for this board arrived, I realized I had not the BFP640FESD, but the BFP740F! 
 
-<div style="text-align: center;"><div class="tenor-gif-embed" data-postid="11107551" data-share-method="host" data-aspect-ratio="1" data-width="45%"><a href="https://tenor.com/view/elaine-well-thats-because-youre-an-idiot-seinfeld-idiot-gif-11107551">Elaine Well Thats Because Youre An Idiot GIF</a>from <a href="https://tenor.com/search/elaine-gifs">Elaine GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script></div>
+<div style="display: block; margin-left: auto; margin-right: auto;" class="tenor-gif-embed" data-postid="11107551" data-share-method="host" data-aspect-ratio="1" data-width="45%"><a href="https://tenor.com/view/elaine-well-thats-because-youre-an-idiot-seinfeld-idiot-gif-11107551">Elaine Well Thats Because Youre An Idiot GIF</a>from <a href="https://tenor.com/search/elaine-gifs">Elaine GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script></div>
 
 Oh well, I'll explain the design steps with the BFP540FESD and use this opportunity to show what I checked and verified the impact of adapting the existing board and matching networks to the BFP740F instead of the BFP640F.
 
@@ -45,7 +45,7 @@ $$\Delta=S_{11}S_{22}-S_{12}S_{21}$$
 
 $$\mu=\frac{1-|S_{11}|^2|}{|S_{22}-S_{11}^*\Delta|+|S_{12}S_{21}|}$$
 
-You can look into the book to know how you come to these criteria, but the principle is that if the Rollet's stability criteria or the Edwards-Sinsky criteria are met, meaning the \mathit{K} and $\mu$ are above 1, the transistor is unconditionally stable. When this does not happen, then the input and output matching networks need to be carefully designed in order to avoid getting an oscillator instead of a transistor.
+You can look into the book to know how you come to these criteria, but the principle is that if the Rollet's stability criteria or the Edwards-Sinsky criteria are met, meaning the $\mathit{K}$ and $\mu$ are above 1, the transistor is unconditionally stable. When this does not happen, then the input and output matching networks need to be carefully designed in order to avoid getting an oscillator instead of a transistor.
 
 Next, we look into the Gain and Noise circles, these are generated for a NF (Noise Figure) < 1.5 and a Gain > 26 dB. There's a zone where both these circles intersect each other. If we design our input network to match any impedance in this zone, and then design the output matching network for the complex match, we get a noise figure below 1.5 and a gain above 26 dB. For reference, I also plotted there the 'Sopt' which is the optimal impedance for minimum noise, which is why it is right in the center of the Noise circle. Luckily, this spot falls right in the intersection between our noise and gain circles, and besides, it is a real impedance (no imaginary part), which means a simple $\lambda$/4 line can be used to match it. These pieces seem the be falling into place quite nicely...
 
@@ -121,6 +121,6 @@ So, with the previously designed input matching network (a $\lambda /4$ transmis
 ![sparams_f](/images/post14/sparams_final_bfp740f.png)
 {:refdef}
 
-That is pretty screwed up since the input matching is miserable... I'll have to test the board and see how it ended up in the real thing. Next post will be about the construction of the whole thing and the measurements of the prototype. Hopefully won't take so long to come out as this post.
+With a final NF of 1.02 and a gain of 26.4 dB, I find these results very hard to believe. So I'll have to test the board and see how it ended up in the real thing *Crossing my fingers*. Next post will be about the construction of the whole thing and the measurements of the prototype. Hopefully won't take so long to come out as this post.
 
 Stay tuned!
