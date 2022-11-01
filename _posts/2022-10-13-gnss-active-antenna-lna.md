@@ -15,7 +15,7 @@ I mentioned in the last post that for the LNA design I've chosen the BFP640FESD 
 
 <div class="tenor-gif-embed" data-postid="11107551" data-share-method="host" data-aspect-ratio="1" data-width="45%">
 <p class="image-holder">
-<a href="https://tenor.com/view/elaine-well-thats-because-youre-an-idiot-seinfeld-idiot-gif-11107551">Elaine Well Thats Because Youre An Idiot GIF</a>
+<img src="https://tenor.com/view/elaine-well-thats-because-youre-an-idiot-seinfeld-idiot-gif-11107551">
 from <a href="https://tenor.com/search/elaine-gifs">Elaine GIFs</a></p></div> 
 <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
