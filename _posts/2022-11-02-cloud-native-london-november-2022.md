@@ -16,6 +16,8 @@ We had four speakers from Transmit Security, Permit.io, and Amazon Web Services 
 
 We are immensely grateful to [Palo Alto Networks](https://www.paloaltonetworks.com/),  [CircleCI](https://circleci.com/), [Sysdig](https://sysdig.com/), and [Transmit Security](https://www.transmitsecurity.com/) for your generous support and sponsorship.
 
+We also have an offer for our members: [10% off Kubernetes Community Days UK tickets](https://ti.to/open-source-events/kcduk2022/discount/KCDUK_MEETUP_10)! Join your fellow techies on November 22nd–23rd at CodeNode, 10 South Pl, London EC2M 7EB. 
+
 ### Overview
 
 Kicking off our evening was Micheál Kenny from Transmit Security with a talk on Going Passwordless (starting at [14:30](https://youtu.be/-S-RJ0WczhM?t=870)). His takeaways discussed: 
