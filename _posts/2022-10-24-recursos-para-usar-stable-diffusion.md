@@ -34,18 +34,18 @@ published: true
 
 
 # Índice
-1. [¿Qué son los modelos text to image?](#)
-2. [¿Qué son los modelos de difusión?](#)
-3. [Historia](#)
-4. [La velocidad cambia con la liberación de Stable Diffusion](#)
-5. [Aplicaciones con las que puedes usar Stable Diffusion](#)
-6. [Documentación oficial](#)
-7. [Tutoriales](#)
-8. [Notebooks de Google Colab que puedes usar gratis](#)
-9. [Ayudas para generar buenos prompts](#)
-10. [¿Qué es Dreambooth?](#)
-11. [Glosario](#)
-12. [Métodos de sampling que he probado hasta ahora](#)
+1. [¿Qué son los modelos text to image?](#1-qué-son-los-modelos-text-to-image)
+2. [¿Qué son los modelos de difusión?](#2-qué-son-los-modelos-de-difusión)
+3. [Historia](#3-historia)
+4. [La velocidad cambia con la liberación de Stable Diffusion](#4-la-velocidad-cambia-con-la-liberación-de-stable-diffusion)
+5. [Documentación oficial](#5-documentación-oficial)
+6. [Aplicaciones con las que puedes usar Stable Diffusion](#6-aplicaciones-con-las-que-puedes-usar-stable-diffusion)
+7. [Tutoriales](#7-tutoriales)
+8. [Notebooks de Google Colab que puedes usar gratis](#8-notebooks-de-google-colab-que-puedes-usar-gratis)
+9. [Ayudas para generar buenos prompts](#9-ayudas-para-generar-buenos-prompts)
+10. [¿Qué es Dreambooth?](#10-qué-es-dreambooth)
+11. [Glosario](#11-glosario)
+12. [Métodos de sampling que he probado hasta ahora](#12-métodos-de-sampling-que-he-probado-hasta-ahora)
 
 ## 1. ¿Qué son los modelos text to image?
 
@@ -77,7 +77,7 @@ published: true
   - Hasta ahora, modelos similares solo liberaban el código y necesitabas conseguir datos y máquinas muy grandes para los entrenos.
   - En muchos casos solo se publica el paper sin código con las explicación de como lo han hecho.
   - Pero Stability.ai publica el modelo [Stable Diffusion]([https://stability.ai/blog/stable-diffusion-public-release](https://stability.ai/blog/stable-diffusion-public-release)), los datos y es entrenable en máquinas accesible para usaurios particulares.
-  - Detras de Stable Diffusion está un multimillonario conocido como [Emad](https://twitter.com/EMostaque)
+  - Detras de Stable Diffusion está un multimillonario conocido como [Emad](https://twitter.com/EMostaque).  
 
 - **Agosto 2022** - Se publica DreamBooth de Google. Explica como reentrenar modelos de difusión con muy pocas imágenes. 
   - Solo se publica el paper sin código [https://dreambooth.github.io/(https://dreambooth.github.io/](https://dreambooth.github.io/(https://dreambooth.github.io/)
@@ -86,21 +86,21 @@ published: true
 
 ## 4. La velocidad cambia con la liberación de Stable Diffusion
 
-- **Solo en los últimos 2 meses**:
+- **Sólo en los últimos 2 meses**:
 
 	- DALL-E 2 ya no es beta privada y puedes subir fotos con caras reales y hacer in-painting y out-painting
 
-	- Stable.ai saca Dream Studio y consigue hacer conversiones de [imagen a imagen](https://invoke-ai.github.io/InvokeAI/features/IMG2IMG)
+	- Stability.ai saca Dream Studio y consigue hacer conversiones de [imagen a imagen](https://invoke-ai.github.io/InvokeAI/features/IMG2IMG)
 
-	- La comunidad ha combinado el img2img para crear videos: https://youtu.be/rvHgcOa9gDk
+	- La comunidad ha combinado el img2img para crear videos: [https://youtu.be/rvHgcOa9gDk](https://youtu.be/rvHgcOa9gDk)
 
-	- Sale Make-A-Video: https://makeavideo.studio/
+	- Sale Make-A-Video: [https://makeavideo.studio/](https://makeavideo.studio/)
 
-	- Sale Phenaki: https://phenaki.video/
+	- Sale Phenaki: [https://phenaki.video/](https://phenaki.video/)
 
-	- Google saca Imagen-Video: https://imagen.research.google/video/
+	- Google saca Imagen-Video: [https://imagen.research.google/video/](https://imagen.research.google/video/)
 
-	- Esta semana han sacado Dream-Fusion: genera cualquier malla 3d que le pidas.....: https://dreamfusion3d.github.io/
+	- Esta semana han sacado Dream-Fusion: genera cualquier malla 3d que le pidas.....: [https://dreamfusion3d.github.io/](https://dreamfusion3d.github.io/)
 
 	- Ya hay demos de Text To Audio
 
@@ -108,10 +108,17 @@ published: true
 
 	- Inyectan capital de 101 millones a StabilityAI para seguir haciendo su magia. [Stability AI, desarrolladora de Stable Diffusion, recauda 101 millones de dólares en una ronda de financiación](https://www.reasonwhy.es/actualidad/stability-ai-stable-diffusion-ronda-financiacion)
 
-- Y cuando leas esto habrán pasado decenas de cosas más.....
+- **Y cuando leas esto habrán pasado decenas de cosas más...**
 
+## 5. Documentación oficial
 
-## 5. Aplicaciones con las que puedes usar Stable Diffusion
+- Reddit oficial: [https://www.reddit.com/r/StableDiffusion/](https://www.reddit.com/r/StableDiffusion/)
+
+- Github oficial con el modelo: [https://github.com/CompVis/stable-diffusion](https://github.com/CompVis/stable-diffusion)
+
+- Link modelo Satble Diffusion 1.4 para descargar o usar: [https://huggingface.co/CompVis/stable-diffusion-v1-4](https://huggingface.co/CompVis/stable-diffusion-v1-4)
+
+## 6. Aplicaciones con las que puedes usar Stable Diffusion
 
 - Dream Studio - Web oficial para usar el modelo. Es de pago pero inicialmente te dan créditos para probar: [https://beta.dreamstudio.ai/dream](https://beta.dreamstudio.ai/dream)
 
@@ -119,14 +126,7 @@ published: true
 
 - Si tienes PC con Windows y GPU Nvidia. Es gratis: [https://nmkd.itch.io/t2i-gui](https://nmkd.itch.io/t2i-gui)
 
-
-## 6. Documentación oficial
-
-- Reddit oficial: [https://www.reddit.com/r/StableDiffusion/](https://www.reddit.com/r/StableDiffusion/)
-
-- Github oficial con el modelo: [https://github.com/CompVis/stable-diffusion](https://github.com/CompVis/stable-diffusion)
-
-- Link modelo Satble Diffusion 1.4 para descargar o usar: [https://huggingface.co/CompVis/stable-diffusion-v1-4](https://huggingface.co/CompVis/stable-diffusion-v1-4)
+- Si quieres usarlo gratis mirá el punto [Notebooks de Google Colab que puedes usar gratis](#8-notebooks-de-google-colab-que-puedes-usar-gratis)
 
 
 ## 7. Tutoriales
@@ -153,9 +153,9 @@ published: true
 
 ## 9. Ayudas para generar buenos prompts
 
-- Inspiración de imágenes y prompts: [https://lexica.art/](https://lexica.art/)
+- Web para inspiración de imágenes y prompts: [https://lexica.art/](https://lexica.art/)
 
-- Inspiración de imágenes y prompts: [https://www.krea.ai/](https://www.krea.ai/)
+- Otra web para inspiración de imágenes y prompts: [https://www.krea.ai/](https://www.krea.ai/)
 
 - Generador automático de prompts a partir de una idea: [https://promptomania.com/stable-diffusion-prompt-builder/](https://promptomania.com/stable-diffusion-prompt-builder/)
 
@@ -200,7 +200,7 @@ published: true
 
 - Euler: más realista
 
-- LMS: Falla con cossa realistas
+- LMS: Falla con cosas realistas
 
 - Heun: colores mas estridentes
 
