@@ -15,22 +15,22 @@ published: true
 ## 0. Consejos si vas a lo kamikaze
 - Si vas a usar [Google Colab](https://colab.research.google.com/), créate una cuenta nueva de Google porque te va a crear muchos ficheros en tu Drive. Unos 4-5 GB más las imágenes que vayas generando, que se guardarán en tu Drive.
 
-- Para tener imágenes en poco tiempo, genera imágenes con pocos pasos, yo uso 20 y cuando encuentres algo que te guste genéralas con la misma semilla pero con 40-50 pasos para tener mejores imágenes.
+- Para tener imágenes en poco tiempo, genera imágenes con pocos pasos, yo uso 20 y cuando encuentres algo que te guste, genéralas con la misma semilla pero con 40-50 pasos para tener mejores imágenes.
 
-- Genera imágenes en resoluciones no más grandes de 768px. Luego puede usar modelos [ESRGAN](https://huggingface.co/spaces/akhaliq/Real-ESRGAN) para subir la resolución de esas imágnenes x4 e incluso x8. La mayoría de GUIs de Stable Diffusion lo traen integrado.
+- Genera imágenes en resoluciones no más grandes de 768px. Luego puede usar modelos [ESRGAN](https://huggingface.co/spaces/akhaliq/Real-ESRGAN) para subir la resolución de esas imágenes x4 e incluso x8. La mayoría de GUIs de Stable Diffusion lo traen integrado.
 
 - Si quieres mejorar las caras pasa tu imagen generada pásala por un modelo [GFPGAN](https://huggingface.co/spaces/Xintao/GFPGAN). La mayoría de GUIs de Stable Diffusion lo traen integrado.
 
 ## TLTR
-- ¿Quieres usar Stable Diffusion gratis? Puedes desde un notebook de Google Colab. Usa el de [TheLastBen](https://colab.research.google.com/github/TheLastBen/fast-stable-diffusion/blob/main/fast_stable_diffusion_AUTOMATIC1111.ipynb)
+- ¿Quieres usar Stable Diffusion gratis? Puedes hacerlo desde un notebook de Google Colab. Usa el de [TheLastBen](https://colab.research.google.com/github/TheLastBen/fast-stable-diffusion/blob/main/fast_stable_diffusion_AUTOMATIC1111.ipynb)
 
-- No sabes que es Google Colab y solo quieres jugar un poco. Créate una cuenta en [Dream Studio](https://beta.dreamstudio.ai/dream). Es la aplicación oficial de [Stability.ai](https://stability.ai/) y tienes créditos gratis para generar muchas imágenes.
+- No sabes qué es Google Colab y solo quieres jugar un poco. Créate una cuenta en [Dream Studio](https://beta.dreamstudio.ai/dream). Es la aplicación oficial de [Stability.ai](https://stability.ai/) y tienes créditos gratis para generar muchas imágenes.
 
 -  ¿Quieres entrenar Stable Diffusion con tus imágenes y gratis? Aquí tienes el [tutorial que usé yo](https://bytexd.com/how-to-use-dreambooth-to-fine-tune-stable-diffusion-colab/)
 
-- ¿Quieres profundizar en el tema en castellano y de una forma snecilla? Mira los videos de [Carlos Santana - DotCSV](https://www.youtube.com/c/DotCSV)
+- ¿Quieres profundizar en el tema en castellano y de una forma sencilla? Mira los videos de [Carlos Santana - DotCSV](https://www.youtube.com/c/DotCSV)
 
-- ¿Estas interesado en el debate sobre los derechos de autor de estos modelos? Lee este [artículo](https://akme.es/imagenes-inteligencia-artificial/) de [Marelisa Blanco](https://twitter.com/MarelisaBlanco) que compartió [zigiella](https://twitter.com/zigiella) en la [Barcelona Software Crafters 2022](https://twitter.com/search?q=%23scbcn22)
+- ¿Estás interesado en el debate sobre los derechos de autor de estos modelos? Lee este [artículo](https://akme.es/imagenes-inteligencia-artificial/) de [Marelisa Blanco](https://twitter.com/MarelisaBlanco) que compartió [zigiella](https://twitter.com/zigiella) en la [Barcelona Software Crafters 2022](https://twitter.com/search?q=%23scbcn22)
 
 
 # Índice
@@ -74,12 +74,12 @@ published: true
 
 - **Agosto 2022** - Stable Diffusion revienta el mercado porque es el primer modelo de este tipo Open Source de verdad. 
   - En ML necesitas, el código, los datos y poder entrenar el modelo en una máquina que no te hipoteque para toda la vida... 
-  - Hasta ahora, modelos similares solo liberaban el código y necesitabas conseguir datos y máquinas muy grandes para los entrenos.
+  - Hasta ahora, modelos similares sólo liberaban el código y necesitabas conseguir datos y máquinas muy grandes para los entrenos.
   - En muchos casos solo se publica el paper sin código con las explicación de como lo han hecho.
-  - Pero Stability.ai publica el modelo [Stable Diffusion]([https://stability.ai/blog/stable-diffusion-public-release](https://stability.ai/blog/stable-diffusion-public-release)), los datos y es entrenable en máquinas accesible para usaurios particulares.
-  - Detras de Stable Diffusion está un multimillonario conocido como [Emad](https://twitter.com/EMostaque).  
+  - Pero Stability.ai publica el modelo [Stable Diffusion]([https://stability.ai/blog/stable-diffusion-public-release](https://stability.ai/blog/stable-diffusion-public-release)), los datos y es entrenable en máquinas accesible para usuarios particulares.
+  - Detrás de Stable Diffusion está un multimillonario conocido como [Emad](https://twitter.com/EMostaque).  
 
-- **Agosto 2022** - Se publica DreamBooth de Google. Explica como reentrenar modelos de difusión con muy pocas imágenes. 
+- **Agosto 2022** - Se publica DreamBooth de Google. Explica cómo reentrenar modelos de difusión con muy pocas imágenes. 
   - Solo se publica el paper sin código [https://dreambooth.github.io/(https://dreambooth.github.io/](https://dreambooth.github.io/(https://dreambooth.github.io/)
 	 - En 2 semanas estaba implementado en Stable Diffusion por la comunidad: [https://github.com/XavierXiao/Dreambooth-Stable-Diffusion](https://github.com/XavierXiao/Dreambooth-Stable-Diffusion)
 
@@ -137,7 +137,7 @@ published: true
 
 - Stable Diffusion Infinity para hacer outpainting: [https://github.com/lkwq007/stablediffusion-infinity](https://github.com/lkwq007/stablediffusion-infinity)
 
-- Web para redimensionar tus imágenes de forma sencilla: [Birme]https://www.birme.net/?target_width=512&target_height=512()
+- Web para redimensionar tus imágenes de forma sencilla: [Birme](https://www.birme.net/?target_width=512&target_height=512)
 
 
 ## 8. Notebooks de Google Colab que puedes usar gratis
@@ -196,12 +196,12 @@ published: true
 
 ## 12. Métodos de sampling que he probado hasta ahora
 
-- Euler a: más artisitico
+- Euler a: más artísitico
 
 - Euler: más realista
 
 - LMS: Falla con cosas realistas
 
-- Heun: colores mas estridentes
+- Heun: colores más estridentes
 
 - DPM Fast: Muy loco
