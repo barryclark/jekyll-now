@@ -75,9 +75,9 @@ The first review sentence carries a sentiment towards *service*, whereas the sec
 
 Althought the sentiment labels were created for 5 aspects, it is not necessary for a review to have labels available for all the aspects. In fact, each review in the training data has labels for ~1.2 aspects on average. Here I imputed the missing labels with "absent". Our task is to make predictions for the sentiment of all 5 aspects. To tackle this multi-task problem, we are going to build a multi-head deep learning model. Let's go!
 
-# Dataset Creation
+## Data Splitting
 
-Now it's time to create datasets for training our neural network. Take note that in the review data, there are multiple classes within each aspect. With pandas' <code class="inline">value_counts</code> function, we can have a quick overview on the distribution of labels for different aspects. There are more than just positive and negative labels.
+It can be observed that in the review data, there are multiple classes within each aspect. With pandas' <code class="inline">value_counts</code> function, we can have a quick overview on the distribution of labels for different aspects. There are more than just positive and negative labels.
 
 {% highlight txt %}
 
@@ -94,7 +94,12 @@ Interestingly, in addition to the typical positive, negative and neutral labels,
 
 > It took half an hour to get our check, which was perfect since we could sit, have drinks and talk!
 
+To split the given training data for model training and validation, we'd like to maintain the proportion of different classes for all 5 aspects as much as possible. This can be achieved with the [<code class="inline">IterativeStratification</code> module](http://scikit.ml/api/skmultilearn.model_selection.iterative_stratification.html) from the *skmultilearn* library. The idea is to consider the combination of labels from different aspects, and assign the examples based on the predefined training/validation split ratio. I used a *train_size* of 0.8 in practice. The following function was used to perform the stratified split of the data.
+
 {% highlight python %}
+
+from skmultilearn.model_selection import IterativeStratification
+
 
 def iterative_train_test_split(
     self, X: np.array, y: np.array
@@ -126,15 +131,146 @@ def iterative_train_test_split(
 
 {% endhighlight %}
 
+## Dataset Creation
 
-# Model Training
+To create the datasets for training our neural network. I first define a vectorizer class to tokenize the review words and convert them into pre-trained word vectors with a medium-sized English model provided by [Spacy](https://spacy.io/models/en). This model can be replaced with a transfermer based model, which can potentially improve the accuracy of classification. Alternatively, we can train the embedding layer with the neural network. For the POC purpose, the Spacy model I chose is sufficient. It will help us quickly finish training the model.
+
+Note that the Spacy model needs to be downloaded before using.
+
+
+{% highlight python %}
+
+import en_core_web_md
+
+
+class ABSAVectorizer:
+    def __init__(self):
+        """Convert review sentences to pre-trained word vectors"""
+        self.model = en_core_web_md.load()
+
+    def vectorize(self, words):
+        """
+        Given a sentence, tokenize it and returns a pre-trained word vector
+        for each token.
+        """
+
+        sentence_vector = []
+        # Split on words
+        for _, word in enumerate(words.split()):
+            # Tokenize the words using spacy
+            spacy_doc = self.model.make_doc(word)
+            word_vector = [token.vector for token in spacy_doc]
+            sentence_vector += word_vector
+
+        return
+
+{% endhighlight %}
+
+Then we can create the dataset class as follows. Since we need to make predictions for 5 aspects, the sentiment labels need to be fed as a vector for each review.
+
+{% highlight python %}
+
+from torch.utils.data import Dataset
+
+
+class ABSADataset(Dataset):
+    """Creates an pytorch dataset to consume our pre-loaded text data
+    Reference: https://pytorch.org/tutorials/beginner/basics/data_tutorial.html
+    """
+
+    def __init__(self, data, vectorizer):
+        self.dataset = data
+        self.vectorizer = vectorizer
+
+    def __len__(self):
+        return len(self.dataset)
+
+    def __getitem__(self, idx):
+        (labels, sentence) = self.dataset[idx]
+        sentence_vector = self.vectorizer.vectorize(sentence)
+        return {
+            "vectors": sentence_vector,
+            "labels": labels,
+            "sentence": sentence,  # for debugging only
+        }
+
+{% endhighlight %}
+
+
+## Model Training
+
+Now it's time to build our neural network. How can we enable our network to handle multiple tasks at the same time? The trick is to create multiple "heads" so that each "head" can undertake a specific task. Since all tasks need to be tackled based on the same set of features created out of the reviews, we need to declare a "backbone" to connect the source features with the different "heads". That's why we arrive at the following network architecture.
 
 <div class="img-div-any-width">
   <img src="https://raw.githubusercontent.com/shenghaowang/absa-for-restaurant-reviews/main/absa-network.png" style="max-width: 80%;" />
   <br />
 </div>
 
-# Results and Conclusion
+{% highlight python %}
+
+from typing import List
+
+import torch
+from omegaconf import DictConfig
+
+from attention import MultiHeadAttention
+
+
+class MultiTaskClassificationModel(torch.nn.Module):
+    def __init__(
+        self,
+        aspects: List[str],
+        num_classes: int,
+        hyparams: DictConfig,
+    ):
+        super().__init__()
+        self.aspects = aspects
+        self.backbone = torch.nn.LSTM(
+            input_size=hyparams.word_vec_dim,
+            hidden_size=hyparams.hidden_dim,
+            num_layers=hyparams.num_layers,
+            batch_first=True,
+            bidirectional=True,
+        )  # Output dimension = (batch_size, seq_length, num_directions * hidden_dim)
+
+        # Define task specific layers
+        num_directions = 2
+        self.heads = torch.nn.ModuleList([])
+        for aspect in aspects:
+            module_name = f"h_{aspect}"
+            module = torch.nn.Sequential(
+                MultiHeadAttention(
+                    embed_dim=hyparams.hidden_dim * num_directions,
+                    num_heads=hyparams.num_heads,
+                ),
+                torch.nn.Linear(
+                    hyparams.hidden_dim * num_directions, int(hyparams.hidden_dim / 2)
+                ),
+                torch.nn.Dropout(hyparams.dropout),
+                torch.nn.Linear(int(hyparams.hidden_dim / 2), num_classes),
+            )
+            setattr(self, module_name, module)
+
+    def forward(self, batch, batch_len):
+        """Projection from word_vec_dim to n_classes
+        Batch in is shape (batch_size, max_seq_len, word_vector_dim)
+        Batch out is shape (batch, num_classes)
+        """
+
+        # This deals with variable length sentences. Sorted works faster.
+        packed_input = torch.nn.utils.rnn.pack_padded_sequence(
+            batch, batch_len, batch_first=True, enforce_sorted=True
+        )
+        lstm_output, (h, c) = self.backbone(packed_input)
+        output_unpacked, _ = torch.nn.utils.rnn.pad_packed_sequence(
+            lstm_output, batch_first=True
+        )
+        hs = [getattr(self, f"h_{aspect}")(output_unpacked) for aspect in self.aspects]
+        return torch.cat(hs, axis=1)
+
+{% endhighlight %}
+
+## Results and Conclusion
 
 ## References
 
