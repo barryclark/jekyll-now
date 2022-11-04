@@ -42,7 +42,9 @@ for checking out the docs.
 ## So what are we going to benchmark and test?
 
 I wrote some simple code here
+
 * `source_code.h`:
+
 ```cpp
 #ifndef SOURCECODE_H
 #define SOURCECODE_H
@@ -55,6 +57,7 @@ extern std::vector<int> do_something(void);
 ```
 
 * `source_code.cpp`:
+
 ```cpp
 #include "source_code.h"
 
@@ -87,7 +90,8 @@ and testing our code.
 
 For testing let's make a simple test for this code
 
-* `source_code.test.cpp`
+* `source_code.test.cpp`:
+
 ```cpp
 #include "source_code.h"
 #include <gtest/gtest.h>
@@ -104,6 +108,7 @@ TEST(do_something, CorrectSize)
 For benchmarking we can add another simple test.
 
 * `source_code.benchmark.cpp`
+
 ```cpp
 #include "source_code.h"
 #include <benchmark/benchmark.h>
