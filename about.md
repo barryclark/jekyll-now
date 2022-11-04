@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-👋 Hi, Shenghao's here.
+👋 Hello! I'm Shenghao and welcome to my tech blog site. I develop and operate machine learning systems that serve users at scale. Outside work, I write about my journey of exploring the world of data science and technology. The topics that interest me include but are not limited to
 
-I'm a data scientist, an amateur photographer, and a chess fan. I write about my journey of exploring the world of data science and technology. Some fun facts about me
-
-* In my hometown, I have chance to experience a 50°C temperature difference between indoor and outdoor, during winter, of course.
-* Right now I stay at a place where I can see a plane flying over my head every half an hour.
+* NLP: text classification, topic modeling, dependency parsing etc.
+* Causual inference: uplift modeling, effectiveness optimization.
+* Geospatial analytics.
 
 ### Contact me
 
