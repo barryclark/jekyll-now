@@ -43,7 +43,7 @@ for checking out the docs.
 
 I wrote some simple code here
 
-* `source_code.h`:
+`source_code.h`:
 
 ```cpp
 #ifndef SOURCECODE_H
@@ -56,7 +56,7 @@ extern std::vector<int> do_something(void);
 #endif
 ```
 
-* `source_code.cpp`:
+`source_code.cpp`:
 
 ```cpp
 #include "source_code.h"
@@ -90,7 +90,7 @@ and testing our code.
 
 For testing let's make a simple test for this code
 
-* `source_code.test.cpp`:
+`source_code.test.cpp`:
 
 ```cpp
 #include "source_code.h"
@@ -107,7 +107,7 @@ TEST(do_something, CorrectSize)
 
 For benchmarking we can add another simple test.
 
-* `source_code.benchmark.cpp`
+`source_code.benchmark.cpp`
 
 ```cpp
 #include "source_code.h"
