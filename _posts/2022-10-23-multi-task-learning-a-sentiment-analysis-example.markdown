@@ -9,8 +9,9 @@ post_description: The article explains the concept of multi-task learning using 
 ---
 
 <div class="img-div-any-width">
-  <img src="https://raw.githubusercontent.com/shenghaowang/absa-for-restaurant-reviews/main/absa-network.png" style="max-width: 80%;" />
+  <img src="/images/2022-10-23/multitasking.jpeg" style="max-width: 80%;" />
   <br />
+  Image by <a href="https://www.taylorintime.com/there-are-three-types-of-multitasking/">Harold Taylor</a>
 </div>
 
 <!--more-->
@@ -76,9 +77,62 @@ Althought the sentiment labels were created for 5 aspects, it is not necessary f
 
 # Dataset Creation
 
-Now it's time to create datasets for training our neural network. Take note that in the review data, there are multiple classes within each aspect. With pandas' `value_counts` function, we can have a quick overview on the distribution of labels for different aspects.
+Now it's time to create datasets for training our neural network. Take note that in the review data, there are multiple classes within each aspect. With pandas' <code class="inline">value_counts</code> function, we can have a quick overview on the distribution of labels for different aspects. There are more than just positive and negative labels.
+
+{% highlight txt %}
+
+          service  food  anecdotes/miscellaneous  price  ambience
+absent       2441  1806                     1911   2717      2607
+positive      324   867                      544    179       263
+negative      218   209                      199    115        98
+conflict       35    66                       30     17        47
+neutral        20    90                      354     10        23
+
+{% endhighlight %}
+
+Interestingly, in addition to the typical positive, negative and neutral labels, we also see some reviews with a "conflict" label. **Conflict** indicates that both positive and negative sentiment were detected from a review. Here's one example of such reviews.
+
+> It took half an hour to get our check, which was perfect since we could sit, have drinks and talk!
+
+{% highlight python %}
+
+def iterative_train_test_split(
+    self, X: np.array, y: np.array
+) -> Tuple[np.array, np.array]:
+    """Custom iterative train test split which maintains the
+    distribution of labels in the training and test sets
+    Parameters
+    ----------
+    X : np.array
+        features array
+    y : np.array
+        labels array
+    Returns
+    -------
+    Tuple[np.array, np.array]
+        indices of training and test examples
+    """
+    stratifier = IterativeStratification(
+        n_splits=2,
+        order=1,
+        sample_distribution_per_fold=[
+            1.0 - self.train_size,
+            self.train_size,
+        ],
+    )
+    train_indices, test_indices = next(stratifier.split(X, y))
+
+    return train_indices, test_indices
+
+{% endhighlight %}
+
 
 # Model Training
+
+<div class="img-div-any-width">
+  <img src="https://raw.githubusercontent.com/shenghaowang/absa-for-restaurant-reviews/main/absa-network.png" style="max-width: 80%;" />
+  <br />
+</div>
 
 # Results and Conclusion
 
