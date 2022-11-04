@@ -10,6 +10,8 @@ permalink: /about/
 * Causual inference: uplift modeling, effectiveness optimization.
 * Geospatial analytics.
 
+Feel free to drop me an email. I'm always open to interesting conversations and opportunities of collaboration.
+
 ### Contact me
 
 [wangshenghao1993@gmail.com](mailto:wangshenghao1993@gmail.com)
