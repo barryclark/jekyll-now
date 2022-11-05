@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London November 2022: Transmit Security, Permit.io, and Amazon Web Services"
+title: "Cloud Native London November 2022: Transmit Security, Permit.io, and AWS"
 description: "speakers from Transmit Security, Permit.io, and Amazon Web Services join us at the Cloud Native London meetup November 2022, hosted by Cheryl Hung, Engineering Manager at Apple"
 location: London, UK
 image: /images/2022-11-02-cloud-native-london-november-2022.jpeg
