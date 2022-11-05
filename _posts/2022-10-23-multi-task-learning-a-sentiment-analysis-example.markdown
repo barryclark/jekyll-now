@@ -20,7 +20,7 @@ Imagine at an autonomous driving company, you are tasked with building an object
 
 One simple approach is to frame a multi-label classification problem, which can be solved by building 4 binary classifiers. In this case, each classifier will be in charge of identifying one of the aspects within our interest, such as traffic lights. However, building multiple independent models can be tedious especially if there are dozens of aspects you need to work on. Given the fact that we aim to solve multiple problems with the same nature of image classification, is it possible for us to develop an all-in-one solution to simultaneously address all the problems? This leads to the topic of this article, **multi-task learning (MTL)**.
 
-The general idea of multi-task learning is to learn multiple tasks in parallel by allowing the lower-level features to be shared across the tasks. The training signals learned from one task can help improve the generalization of the other tasks. Let's take a look at an example using MTL for aspect based sentiment analysis.
+The general idea of MTL is to learn multiple tasks in parallel by allowing the lower-level features to be shared across the tasks. The training signals learned from one task can help improve the generalization of the other tasks. Let's take a look at an example using MTL for aspect based sentiment analysis.
 
 ## Problem Statement & Dataset
 
@@ -32,7 +32,7 @@ Aspect based sentiment analysis (ABSA) requires us to identify the polarity of t
   Amazon product review
 </div>
 
-In this article, we are going to use a restaurant review dataset, which is well studied in the ABSA related research. The dataset was taken from SemEval 2014, an international NLP research workshop. The training and test datasets contain 3041 and 800 restaurant reviews with annotations for 5 common aspects: service, food, anecdotes/miscellaneous, price, and ambience. A snippet of raw data is given as follows.
+In this article, we are going to use a restaurant review dataset, which is well studied in the ABSA related research. The dataset was taken from SemEval 2014, an international NLP research workshop. The training and test datasets contain 3041 and 800 restaurant reviews with annotations for 5 common aspects: service, food, anecdotes/miscellaneous, price, and ambience. A snippet of the raw data is given as follows.
 
 {% highlight julia %}
 
@@ -73,7 +73,7 @@ The first review sentence carries a sentiment towards *service*, whereas the sec
 
 {% endhighlight %}
 
-Althought the sentiment labels were created for 5 aspects, it is not necessary for a review to have labels available for all the aspects. In fact, each review in the training data has labels for ~1.2 aspects on average. Here I imputed the missing labels with "absent". Our task is to make predictions for the sentiment of all 5 aspects. To tackle this multi-task problem, we are going to build a multi-head deep learning model. Let's go!
+Althought the sentiment labels were created for 5 aspects, it is not necessary for a review to have labels available for all the aspects. In fact, each review in the training data has labels for ~1.2 aspects on average. Here I impute the missing labels with "absent". Our task is to make predictions for the sentiment of all 5 aspects. To tackle this multi-task problem, we are going to build a multi-head deep learning model. Let's go!
 
 ## Data Splitting
 
@@ -133,9 +133,9 @@ def iterative_train_test_split(
 
 ## Dataset Creation
 
-To create the datasets for training our neural network. I first define a vectorizer class to tokenize the review words and convert them into pre-trained word vectors with a medium-sized English model provided by [Spacy](https://spacy.io/models/en). This model can be replaced with a transfermer based model, which can potentially improve the accuracy of classification. Alternatively, we can train the embedding layer with the neural network. For the POC purpose, the Spacy model I chose is sufficient. It will help us quickly finish training the model.
+To create the datasets for training our neural network. I first define a vectorizer class to tokenize the review words and convert them into pre-trained word vectors with a medium-sized English model provided by [Spacy](https://spacy.io/models/en). This model can be replaced with a transfermer based model, which can potentially improve the accuracy of classification. Alternatively, we can train the embedding layer within the neural network. For the POC purpose, the Spacy model I chose is sufficient. It will help us quickly finish training the model.
 
-Note that the Spacy model needs to be downloaded before using.
+Note that the Spacy model needs to be downloaded before being used.
 
 
 {% highlight python %}
@@ -199,12 +199,14 @@ class ABSADataset(Dataset):
 
 ## Model Training
 
-Now it's time to build our neural network. How can we enable our network to handle multiple tasks at the same time? The trick is to create multiple "heads" so that each "head" can undertake a specific task. Since all tasks need to be tackled based on the same set of features created out of the reviews, we need to declare a "backbone" to connect the source features with the different "heads". That's why we arrive at the following network architecture.
+Now it's time to build our neural network. How can we enable our network to handle multiple tasks at the same time? The trick is to create multiple "heads" so that each "head" can undertake a specific task. Since all tasks need to be tackled based on the same set of features created out of the reviews, we need to declare a "backbone" to connect the source features with the different "heads". That's how we arrive at the following network architecture.
 
 <div class="img-div-any-width">
   <img src="https://raw.githubusercontent.com/shenghaowang/absa-for-restaurant-reviews/main/absa-network.png" style="max-width: 80%;" />
   <br />
 </div>
+
+The [Sequential API](https://pytorch.org/docs/stable/generated/torch.nn.Sequential.html) provided by Pytorch can help us declare the "heads" with a loop. Within each "head", a vanilla attention layer is introduced. The implementation of the attention layer can be found [here](https://github.com/shenghaowang/absa-for-restaurant-reviews/blob/main/src/attention.py). Based on my experiment, adding the attention layer improved the model accuracy by ~10%.
 
 {% highlight python %}
 
@@ -270,8 +272,139 @@ class MultiTaskClassificationModel(torch.nn.Module):
 
 {% endhighlight %}
 
+The total loss of the multi-task network can be calculated by aggregating the cross entropy losses from all the heads. We can skip calculating the loss for the aspects with no label, since we are not interested in making prediction for them. This is also aligned with the evaluation methodology specified by [SemEval-2014](https://aclanthology.org/S14-2004.pdf). The accuracy is also computed with the "absent" aspects skipped.
+
+{% highlight python %}
+
+from typing import Dict, List
+
+import numpy as np
+import torch
+import pytorch_lightning as pl
+import torch.nn.functional as F
+import torchmetrics
+
+
+class ABSAClassifier(pl.LightningModule):
+    def __init__(
+        self,
+        model,
+        aspects: List[str],
+        label_encoder: Dict[str, int],
+        learning_rate: float,
+        class_weights: List[float],
+    ):
+        super().__init__()
+        self.model = model
+        self.aspects = aspects
+        self.label_encoder = label_encoder
+        self.num_aspects = len(self.aspects)
+        self.learning_rate = learning_rate
+        self.class_weights = torch.tensor(class_weights)
+        self.acc = torchmetrics.Accuracy()
+
+    def forward(self, x, x_len):
+        return self.model(x, x_len)
+
+    def _calculate_loss(self, batch, mode="train"):
+        # Fetch data and transform labels to one-hot vectors
+        x = batch["vectors"]
+        x_len = batch["vectors_length"]
+        y = batch["labels"]  # One-hot encoding is not required
+
+        # Perform prediction and calculate loss and F1 score
+        y_hat = self(x, x_len)
+        agg_loss = 0
+        total_examples = 0
+        correct_examples = 0
+        for idx, _ in enumerate(self.aspects):
+            prob_start_idx = self.num_aspects * idx
+            prob_end_idx = self.num_aspects * (idx + 1)
+
+            # Skip data points with the "absent" label
+            valid_label_ids = np.where(y[:, idx] != self.label_encoder["absent"])[0]
+            if len(valid_label_ids) > 0:
+                loss = F.cross_entropy(
+                    y_hat[valid_label_ids, prob_start_idx:prob_end_idx],
+                    y[valid_label_ids, idx],
+                    reduction="mean",
+                    weight=self.class_weights,
+                )
+                agg_loss += loss
+
+            predictions = torch.argmax(
+                y_hat[valid_label_ids, prob_start_idx:prob_end_idx], dim=1
+            )
+            correct_examples += torch.sum(predictions == y[valid_label_ids, idx])
+            total_examples += len(valid_label_ids)
+            acc = correct_examples / total_examples
+
+        # Logging
+        self.log_dict(
+            {
+                f"{mode}_loss": agg_loss,
+                f"{mode}_acc": acc,
+            },
+            prog_bar=True,
+        )
+        return agg_loss
+
+{% endhighlight %}
+
+Across all 5 aspects, a majority of the review data fall under the "positive" and "negative" categories. To tackle the class imbalance, we can assign higher weights for the examples under "conflict" and "negative" categories. This technique can lead to a slight increase of the accuracy.
+
 ## Results and Conclusion
+
+After training the multi-task network for 3 epochs, we evaluate its performance with the unseen test dataset. An overall accuracy of 0.7434 can be achieved. This is ~10% higher than the baseline test accuracy obtained with the naive majority class classifier. Let's also look at the breakdown of accuracy for different aspects.
+
+<table>
+  <tr>
+    <th>Aspect</th>
+    <th>Majority class accuracy</th>
+    <th>MTL accuracy</th>
+  </tr>
+  <tr>
+    <td>food</td>
+    <td>0.7225</td>
+    <td>0.7823</td>
+  </tr>
+  <tr>
+    <td>service</td>
+    <td>0.5872</td>
+    <td>0.8430</td>
+  </tr>
+  <tr>
+    <td>price</td>
+    <td>0.6145</td>
+    <td>0.7590</td>
+  </tr>
+  <tr>
+    <td>ambience</td>
+    <td>0.6441</td>
+    <td>0.7542</td>
+  </tr>
+  <tr>
+    <td>anecdotes/miscellaneous</td>
+    <td>0.5427</td>
+    <td>0.5897</td>
+  </tr>
+  <tr>
+    <td>overall</td>
+    <td>0.6410</td>
+    <td>0.7434</td>
+  </tr>
+</table>
+
+Our multi-task network model outperforms the baseline in all 5 aspects, although the accuracy for *anecdotes/miscellaneous* is below 0.6. It is potentially due to the high proportion of the neutral examples from this aspect.
+
+One future work for further validating the MTL approach is to train 5 independent multi-class classification models for individual aspects, and compare the accuracy. It's highly likely that we will end up with a poor accuracy for the *price* and *ambience* aspects due to their small volume of data. In this problem the superior performance of MTL is brought by the effect of data enrichment across different tasks. MTL typically works well under the following conditions.
+
+* There are multiple highly similar problems to solve.
+* There is sufficient amount of data relevant for solving all the problems.
+
+Hope this example can give you a basic understanding of multi-task learning, and how it can be applied to tackle a practical problem. The full code for this blog can be found on [GitHub](https://github.com/shenghaowang/absa-for-restaurant-reviews).
 
 ## References
 
 * [An Overview of Multi-Task Learning in Deep Neural Networks](https://arxiv.org/abs/1706.05098)
+* [SemEval-2014 Task 4: Aspect Based Sentiment Analysis](https://aclanthology.org/S14-2004.pdf)
