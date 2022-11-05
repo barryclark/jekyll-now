@@ -5,7 +5,7 @@ description: "Cheryl Hung discusses why sustainable infrastructure matters, and 
 image: https://pbs.twimg.com/media/FgfFF9YX0AEg_gm?format=jpg&name=medium
 location: Copenhagen, Denmark
 video: https://www.youtube.com/embed/BnSw6C7Us9k
-slides: //www.slideshare.net/slideshow/embed_code/key/BnSw6C7Us9k
+slides: //www.slideshare.net/slideshow/embed_code/key/4JCciRBeuCu7Gw
 tags:
   - Video
   - "2022"
