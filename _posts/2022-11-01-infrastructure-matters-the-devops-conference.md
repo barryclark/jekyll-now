@@ -4,7 +4,8 @@ title: "Infrastructure Matters: Keynote at The DevOps Conference, Copenhagen"
 description: "Cheryl Hung discusses why sustainable infrastructure matters, and frameworks, tools and groups to explore."
 image: https://pbs.twimg.com/media/FgfFF9YX0AEg_gm?format=jpg&name=medium
 location: Copenhagen, Denmark
-slides: //www.slideshare.net/slideshow/embed_code/key/4JCciRBeuCu7Gw
+video: https://www.youtube.com/embed/TyJPqIuurzs
+slides: //www.slideshare.net/slideshow/embed_code/key/BnSw6C7Us9k
 tags:
   - Video
   - "2022"
