@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Is the OS dead? Interview with Richard Simon, Cloud Therapist"
+title: "Is the OS dead? Interview with Richard Simon of the Cloud Therapist"
 description: "Cheryl Hung chats with Richard Simon on the Cloud Therapist about whether full fat OS is still required."
 image: images/2022-10-09-is-the-os-dead-cloud-therapist.jpeg
 video: https://www.youtube.com/embed/W1HfyuOLCeI
