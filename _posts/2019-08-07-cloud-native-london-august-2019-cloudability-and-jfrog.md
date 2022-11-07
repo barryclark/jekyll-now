@@ -18,11 +18,11 @@ As always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Cont
 
 We only had two speakers this month, which meant more time for networking down the pub! First up was a talk on container costs, then we had a discussion on running community projects on Kubernetes. Check out the full videos of their talks below!
 
-![Erik Onnen](https://pbs.twimg.com/media/EBYw9C7WsAACx0r?format=jpg)
+![Erik Onnen](/images/2019-08-07-cloud-native-london-august-2019-cloudability-and-jfrog-1.jpeg)
 
 Kicking off our evening, Erik Onnen from Cloudability asked [What did that container cost and why should I care?](https://skillsmatter.com/skillscasts/14346-what-did-that-container-cost-and-why-should-i-care)
 
-![Rimantas Mocevicius](https://pbs.twimg.com/media/EBY3HN9WwAAebhL?format=jpg)
+![Rimantas Mocevicius](/images/2019-08-07-cloud-native-london-august-2019-cloudability-and-jfrog-2.jpeg)
 
 Our second speaker was Rimantas Mocevicius from JFrog, who talked about his experiences around [How community projects such as central repositories can be run on Kubernetes](https://skillsmatter.com/skillscasts/14328-how-community-projects-such-as-central-repositories-can-be-run-on-kubernetes).
 

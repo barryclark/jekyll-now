@@ -15,7 +15,7 @@ Even with pouring rain, Cloud Native London bravely gathered this week to learn,
 
 Our wonderful speakers for the evening were Paul Fremantle from WSO2, Marc Cluet from Nationwide Building Society, and Anurag Ranjan from Intel. Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [WSO2](https://wso2.com/), [Intel](http://intel.com) and [xMatters](https://www.xmatters.com/).
 
-![Paul Fremantle](https://pbs.twimg.com/media/EFz-L2XW4AUHppL?format=jpg&name=medium)
+![Paul Fremantle](/images/2019-10-01-cloud-native-london-october-2019-wso2-nationwide-building-society-and-intel-1.jpeg)
 
 First up, Paul described how to [Build, run and manage composite apps on Kubernetes with Cellery](https://skillsmatter.com/skillscasts/14551-build-run-and-manage-composite-apps-on-kubernetes-with-cellery).
 
@@ -23,7 +23,7 @@ First up, Paul described how to [Build, run and manage composite apps on Kuberne
 * Code provides some significant benefits over YAML for configuring Kubernetes and Service Mesh deployment - simpler, easier to read, type validation and compilation, and less is more - half the lines of code means fewer mistakes.
 * Having immutable units that have a life through development, build, test, deployment, runtime, monitoring brings significant benefits in consistency, DevOps and human factors, such as team organisation.
 
-![Marc Cluet](https://pbs.twimg.com/media/EF0NEebWwAApoeH?format=jpg)
+![Marc Cluet](/images/2019-10-01-cloud-native-london-october-2019-wso2-nationwide-building-society-and-intel-2.jpeg)
 
 Next up, Marc Cluet gave an entertaining talk on [Your Kernel and You - How cgroups make containers possible](https://skillsmatter.com/skillscasts/14629-your-kernel-and-you-how-cgroups-make-containers-possible).
 
@@ -31,7 +31,7 @@ Next up, Marc Cluet gave an entertaining talk on [Your Kernel and You - How cgro
 * Cgroups v1 still most used, can be composable
 * Cgroups v2 just released 3 years ago, still maturing
 
-![Anurag Ranjan](https://pbs.twimg.com/media/EF0PIGfWwAEFLQQ?format=jpg)
+![Anurag Ranjan](/images/2019-10-01-cloud-native-london-october-2019-wso2-nationwide-building-society-and-intel-3.jpeg)
 
 Anurag rounded off the evening with [Building an open source Cloud-native Edge Computing infrastructure with the OpenNESS Toolkit for 5G and Industry 4.0.](https://skillsmatter.com/skillscasts/14553-building-an-open-source-cloud-native-edge-computing-infrastructure-with-the-openness-toolkit-for-5g-and-industry-4-0)
 

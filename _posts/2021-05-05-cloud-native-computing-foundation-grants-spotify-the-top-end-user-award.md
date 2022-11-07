@@ -2,7 +2,7 @@
 layout: post
 title: "Cloud Native Computing Foundation Grants Spotify the Top End User Award"
 description: "Cheryl Hung, VP Ecosystem at CNCF, awards the CNCF Top End User Award 2021 to Spotify"
-image: https://storage.googleapis.com/rnd-atspotify/sites/2/2021/05/spotify-wins-cncf-end-user-award-1.png
+image: /images/2021-05-05-cloud-native-computing-foundation-grants-spotify-the-top-end-user-award.png
 tags:
   - Article
   - "2021"
