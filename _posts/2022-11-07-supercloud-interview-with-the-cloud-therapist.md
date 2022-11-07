@@ -2,7 +2,7 @@
 layout: post
 title: "Do we need a Supercloud?! Interview with Richard Simon of the Cloud Therapist"
 description: "Cheryl Hung chats with Richard Simon on the Cloud Therapist on what is a supercloud."
-image: images/2022-11-07-supercloud-interview-with-the-cloud-therapist.png
+image: /images/2022-11-07-supercloud-interview-with-the-cloud-therapist.png
 video: https://www.youtube.com/embed/jbjlHOZRb-o
 tags:
   - Video
