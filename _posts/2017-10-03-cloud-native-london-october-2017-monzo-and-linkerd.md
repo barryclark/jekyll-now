@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London, October 2017 - Monzo and linkerd"
 description: "Read the roundup from Attest and Monzo at Cloud Native London, hosted by Cheryl Hung, Developer advocate at StorageOS."
 location: London, UK
-image: /images/2017-10-03-cnl.jpg
+image: /images/2017-10-03-cloud-native-london-october-2017-monzo-and-linkerd.jpg
 slides: //www.slideshare.net/slideshow/embed_code/key/GbAIwb7kEAsTNx
 tags:
   - Photos
@@ -19,10 +19,10 @@ Unfortunately James Stewart had to pull out due to illness, but he will be back 
 
 Our first speaker, Dario Simonetti, explained the different benefits that linkerd brought to their infrastructure at Attest, and the difference between data plane components like linkerd vs control plane components like Istio.
 
-![Dario Simonetti]({{site.baseurl}}/images/CNLOct-2.jpg)
+![Dario Simonetti]({{site.baseurl}}/images/2017-10-03-cloud-native-london-october-2017-monzo-and-linkerd-1.jpg)
 
 Irina Bednova leads the payments team at Monzo. She took the stage to explain their "modern banking" strategy. Their microservices-based architecture is built with Go, using Cassandra as the data store, and runs on Docker, Kubernetes and AWS.
 
-![Irina Bednova]({{site.baseurl}}/images/CNLOct-1.jpg)
+![Irina Bednova]({{site.baseurl}}/images/2017-10-03-cloud-native-london-october-2017-monzo-and-linkerd-2.jpg)
 
 Thanks to all our speakers, sponsors, catering and the events and AV team. [See you in November!](https://www.meetup.com/Cloud-Native-London/events/240151506/)

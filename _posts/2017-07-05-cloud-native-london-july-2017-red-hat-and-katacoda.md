@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London, July 2017 - Red Hat and Katacoda"
 description: "Read the roundup Red Hat and Katacoda at Cloud Native London, hosted by Cheryl Hung, Developer advocate at StorageOS."
 location: London, UK
-image: /images/IMG_20170704_185045.jpg
+image: /images/2017-07-05-cloud-native-london-july-2017-red-hat-and-katacoda.jpg
 tags:
   - Photos
   - Slides

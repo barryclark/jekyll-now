@@ -3,7 +3,7 @@ layout: post
 title: "What does the CNCF actually do - CloudNative conference"
 description: "Cheryl Hung, Developer Advocate at StorageOS, explains the structure and mission of the Cloud Native Computing Foundation."
 location: London, UK
-image: /images/2017-09-27-What-does-the-CNCF-do.jpg
+image: /images/2017-09-27-what-does-the-cncf-actually-do-cloudnative-conference.jpg
 hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/sWb05b76GAZSO6
 tags:

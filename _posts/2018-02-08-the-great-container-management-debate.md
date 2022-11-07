@@ -3,7 +3,7 @@ layout: post
 title: "The Great Container Management Debate"
 description: "Cheryl Hung, Product Manager at StorageOS, moderates a panel on competing container orchestration systems."
 location: London, UK
-image: /images/2018-2-8-pic1.jpg
+image: /images/2018-02-08-the-great-container-management-debate.jpg
 hide_image: true
 video: https://www.youtube.com/embed/MkHZgJseOkU
 tags:
@@ -15,6 +15,8 @@ redirect_from: /great-container/
 
 This was a fun event held in London on Feb 8, 2018, with myself moderating an evening debate between four teams. Each team consisted of one advocate and one customer.
 
+![The Great Container Management Debate](/images/2018-02-08-the-great-container-management-debate.jpg)
+
 **Moderators:** Cheryl Hung, StorageOS; James Betteley, Contino
 
 **KUBERNETES:** Luke Bond, Home Office; Ben Hall, Founder of Katacoda
@@ -25,11 +27,13 @@ This was a fun event held in London on Feb 8, 2018, with myself moderating an ev
 
 **RANCHER:** Shannon Williams, Rancher Co-Founder; Tom Bamford, Platform Engineering Lead, Buildit@Wipro Digital
 
+![The Great Container Management Debate](/images/2018-02-08-the-great-container-management-debate-1.jpg)
+
 I greatly enjoyed hearing the teams discuss the complexity, tooling, integration with existing systems, security, diagnostics and upgrading of their chosen container management platforms.
 
-![The Great Container Management Debate]({{site.baseurl}}/images/2018-2-8-pic3.png)
-
 The surprise winner of the audience vote was Rancher, given the visibility and community traction of Kubernetes. However Shannon Williams did a excellent job sharing the motivations and vision behind Rancher, which won the audience over.
+
+![The Great Container Management Debate](/images/2018-02-08-the-great-container-management-debate-2.png)
 
 Congratulations to all the teams, and thanks to the organizers and sponsors!
 

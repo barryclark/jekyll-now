@@ -2,7 +2,7 @@
 layout: post
 title: "The 8 Principles of Cloud Native Storage - The New Stack"
 description: "Cheryl Hung, Product Manager at StorageOS, discusses how to evaluate cloud native storage with The New Stack"
-image: https://storage.googleapis.com/cdn.thenewstack.io/media/2018/01/4c6c1d07-samuel-zeller-111390.jpg
+image: /images/2018-01-15-the-8-principles-of-cloud-native-storage-the-new-stack.png
 tags:
   - Article
   - "2018"

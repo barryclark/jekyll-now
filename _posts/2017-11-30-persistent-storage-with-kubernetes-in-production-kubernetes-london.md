@@ -3,7 +3,7 @@ layout: post
 title: "Persistent storage with Kubernetes in production - Kubernetes London"
 description: "Cheryl Hung, Product Manager at StorageOS, explains how to evaluate storage for Kubernetes."
 location: London, UK
-image: "/images/k8s-1.jpg"
+image: "/images/2017-11-30-persistent-storage-with-kubernetes-in-production-kubernetes-london.jpg"
 slides: //www.slideshare.net/slideshow/embed_code/key/axa0to9qRjaeAg
 tags:
   - Slides
@@ -20,8 +20,8 @@ Resource links:
 * [StorageOS slack channel](https://slack.storageos.com)
 * [Cloud Native London December](https://www.meetup.com/Cloud-Native-London/events/243917004/)
 
-![Cheryl Hung]({{site.baseurl}}/images/k8s-2.JPG)
+![Cheryl Hung]({{site.baseurl}}/images/2017-11-30-persistent-storage-with-kubernetes-in-production-kubernetes-london-2.JPG)
 
-![Cheryl Hung]({{site.baseurl}}/images/k8s-3.JPG)
+![Cheryl Hung]({{site.baseurl}}/images/2017-11-30-persistent-storage-with-kubernetes-in-production-kubernetes-london-3.JPG)
 
-![Cheryl Hung]({{site.baseurl}}/images/k8s-4.jpg)
+![Cheryl Hung]({{site.baseurl}}/images/2017-11-30-persistent-storage-with-kubernetes-in-production-kubernetes-london-4.jpg)

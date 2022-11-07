@@ -3,7 +3,7 @@ layout: post
 title: "Presenting at CloudNative and ContainerSched conferences"
 description: "Cheryl Hung, Developer Advocate at StorageOS, presenting at conferences."
 location: London, UK
-image: /images/2017-09-28-cloudnative.jpg
+image: /images/2017-09-28-presenting-at-cloudnative-and-containersched-conferences.jpg
 tags:
   - Photos
   - "2017"
