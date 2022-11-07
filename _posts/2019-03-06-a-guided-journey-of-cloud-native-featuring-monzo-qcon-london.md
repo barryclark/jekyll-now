@@ -3,7 +3,7 @@ layout: post
 title: "A Guided Journey of Cloud Native, featuring Monzo - QCon, London"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, co-hosts a talk with Monzo at QCon London."
 location: London, UK
-image: images/2019-03-06-a-guided-journey-of-cloud-native-featuring-monzo-qcon-london.jpeg
+image: /images/2019-03-06-a-guided-journey-of-cloud-native-featuring-monzo-qcon-london.jpeg
 hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/9tMJqznIWJh1cj
 tags:

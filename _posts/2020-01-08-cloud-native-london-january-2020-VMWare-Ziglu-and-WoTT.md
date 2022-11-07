@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London January 2020: VMWare, Ziglu, and WoTT"
 description: "Read the roundup from VMWare, Ziglu, and WoTT at the Cloud Native London meetup in January, hosted by Cheryl Hung, Director of Ecosystem at the Cloud Native Computing Foundation."
 location: London, UK
-image: images/2020-01-08-cloud-native-london-january-2020-VMWare-Ziglu-and-WoTT.jpeg
+image: /images/2020-01-08-cloud-native-london-january-2020-VMWare-Ziglu-and-WoTT.jpeg
 video: https://www.youtube.com/embed/24YCgJbv2ms
 tags:
   - Photos
