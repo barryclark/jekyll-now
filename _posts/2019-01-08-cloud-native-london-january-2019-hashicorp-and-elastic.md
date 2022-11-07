@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London, January 2019 - HashiCorp and Elastic"
 description: "Read the roundup from HashiCorp and Elastic at Cloud Native London, hosted by Cheryl Hung, Director of Ecosystem at the CNCF."
 location: London, UK
-image: https://pbs.twimg.com/media/DwafGRPX0AARdNg.jpg
+image: /images/2019-01-08-cloud-native-london-january-2019-hashicorp-and-elastic.jpeg
 tags:
   - Video
   - Meetup
@@ -17,7 +17,7 @@ Thanks to our sponsors [StorageOS](https://storageos.com/), [Tecknuovo](https://
 
 First up is securing and integrating legacy applications, followed by a discussion about observable Kubernetes, and wrapping up with me giving an overview of the mission of Cloud Native Computing Foundation.
 
-![Nic Jackson](https://pbs.twimg.com/media/DwaXT1lXQAMrrnd.jpg)
+![Nic Jackson](/images/2019-01-08-cloud-native-london-january-2019-hashicorp-and-elastic-1.jpeg)
 
 Nic Jackson from HashiCorp discussed ["Securing and integrating legacy applications with Kubernetes and Consul Connect"](https://skillsmatter.com/skillscasts/13339-securing-and-integrating-legacy-applications-with-kubernetes-and-consul-connect), focusing on the following topics:
 
@@ -25,7 +25,7 @@ Nic Jackson from HashiCorp discussed ["Securing and integrating legacy applicati
 * Running Consul Connect and Envoy on Kubernetes
 * Securely integrating external applications such as data stores and legacy applications with Kubernetes
 
-![Samir Bennacer](https://pbs.twimg.com/media/DwahvX8X4AEd6Nw.jpg)
+![Samir Bennacer](/images/2019-01-08-cloud-native-london-january-2019-hashicorp-and-elastic-2.jpeg)
 
 Following that, Samir Bennacer from Elastic talked about ["Observable Kubernetes with the Elastic Stack"](https://skillsmatter.com/skillscasts/13338-observable-kubernetes-with-the-elastic-stack), discussing:
 
@@ -36,7 +36,7 @@ Following that, Samir Bennacer from Elastic talked about ["Observable Kubernetes
 
 Ending up with a demo.
 
-![Cheryl Hung](https://pbs.twimg.com/media/Dwa_qmZXgAMkihs.jpg)
+![Cheryl Hung](/images/2019-01-08-cloud-native-london-january-2019-hashicorp-and-elastic-3.jpeg)
 
 Finally I gave an overview about CNCF in ["Crossing the chasm with cloud native"](https://skillsmatter.com/skillscasts/13394-crossing-the-chasm-with-cloud-native). My takeaways were:
 
