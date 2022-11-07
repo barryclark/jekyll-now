@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London, October 2018 - Jetstack, WSO2 and Exelerys"
 description: "Read the roundup from Jetstack, WSO2 and Exelerys at Cloud Native London, hosted by Cheryl Hung, Director of Ecosystem at the CNCF."
 location: London, UK
-image: https://pbs.twimg.com/media/DpFfBRuXgAEII1q.jpg
+image: /images/2018-10-09-cloud-native-london-october-2018-jetstack-wso2-and-exelerys.jpeg
 tags:
   - Photos
   - "2018"
@@ -17,7 +17,7 @@ As always, thanks to our sponsors [StorageOS](https://storageos.com/), [Tecknuov
 
 First up was a discussion on Auditing with eBPF, followed by an explanation of a Cloud Native programming language called Ballerina, and wrapping up with an advanced analysis of container security.
 
-![Luke Addison](https://pbs.twimg.com/media/DpFgOjEXoAAjl9c.jpg)
+![Luke Addison](/images/2018-10-09-cloud-native-london-october-2018-jetstack-wso2-and-exelerys-1.jpeg)
 
 Luke Addison from Jetstack told us about eBPF (extended Berkeley Packet Filter), showing how:
 
@@ -25,7 +25,7 @@ Luke Addison from Jetstack told us about eBPF (extended Berkeley Packet Filter),
 * eBPF programs can be attached to certain code paths in the Linux kernel so that they are triggered when that code path is traversed
 * Running an eBPF program using a DaemonSet on a Kubernetes cluster can be used to aggregate kernel metrics
 
-![Paul Fremantle](https://pbs.twimg.com/media/DpFn7R8XcAAoPmE.jpg)
+![Paul Fremantle](/images/2018-10-09-cloud-native-london-october-2018-jetstack-wso2-and-exelerys-2.jpeg)
 
 Following that, Paul Fremantle from WSO2 gave a live demo of Ballerina, a Cloud Native Programming Language. His takeaways were that:
 
@@ -35,7 +35,7 @@ Following that, Paul Fremantle from WSO2 gave a live demo of Ballerina, a Cloud 
 
 * Ballerina is fully open source and being developed in Github. There is an open package management model and lots of ways to extend the language - PRs are welcome!
 
-![Jesus Escolar](https://pbs.twimg.com/media/DpFyD5eW4AAFQOS.jpg)
+![Jesus Escolar](/images/2018-10-09-cloud-native-london-october-2018-jetstack-wso2-and-exelerys-3.jpeg)
 
 Finally, Jesus Escolar from Exelerys gave an advanced analysis of container security:
 

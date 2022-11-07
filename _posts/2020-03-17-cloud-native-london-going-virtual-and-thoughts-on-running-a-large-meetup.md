@@ -31,4 +31,4 @@ Until we meet again - I will see you all online!
 
 Cheryl
 
-![](https://pbs.twimg.com/media/ENyKLL9X0AE9vLH?format=jpg&name=4096x4096)
+![](/images/2020-03-17-cloud-native-london-going-virtual-and-thoughts-on-running-a-large-meetup.jpeg)
