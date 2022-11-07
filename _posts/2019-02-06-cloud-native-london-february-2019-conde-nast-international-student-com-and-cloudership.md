@@ -54,7 +54,7 @@ Other resources mentioned in the talk:
 
 
 
-![Asfand Qazi](https://pbs.twimg.com/media/Dyv-Y5WWkAMwdn_.jpg)
+![Asfand Qazi](/images/2019-02-06-cloud-native-london-february-2019-conde-nast-international-student-com-and-cloudership-4.jpeg)
 
 Finally Asfand Qazi from Cloudership talked about ["How you can get more out of the modern cloud by letting someone else look after your servers"](https://skillsmatter.com/skillscasts/13440-how-you-can-get-more-out-of-the-modern-cloud-by-letting-someone-else-look-after-your-servers-asfand-qazi-cloudership). His takeaways were that:
 
