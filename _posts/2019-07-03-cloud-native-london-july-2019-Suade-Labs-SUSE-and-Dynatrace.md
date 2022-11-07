@@ -18,7 +18,7 @@ As always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Cont
 
 First up was a talk on CNCF tools, then we went from Code to Production on Kubernetes with Open Source tools, wrapping up with a discussion on Continuous Deployment & Operations on Kubernetes with keptn.
 
-![Hubert Bosiacki](https://pbs.twimg.com/media/D-kgUFUWsAIvbOn.jpg)
+![Hubert Bosiacki](/images/2019-07-03-cloud-native-london-july-2019-Suade-Labs-SUSE-and-Dynatrace-1.jpeg)
 
 Kicking off our evening, Hubert Bosiacki from Suade Labs shared his experiences with ["CNCF tools for SysOps"](https://skillsmatter.com/skillscasts/12558-cloud-native), explaining that:
 
@@ -26,7 +26,7 @@ Kicking off our evening, Hubert Bosiacki from Suade Labs shared his experiences 
 * Containers changing how we’re working, deploying, delivering applications, however, they’re evolving as well.
 * Stable tools with stable license help with migration legacy software to modern times.
 
-![Rob de Canha-Knight](https://pbs.twimg.com/media/D-kntQiXkAAZiCp.jpg)
+![Rob de Canha-Knight](/images/2019-07-03-cloud-native-london-july-2019-Suade-Labs-SUSE-and-Dynatrace-2.jpeg)
 
 Next up was Rob de Canha-Knight from SUSE discussing [“Code to Production in less than 3 minutes on Kubernetes with Open Source tools"](https://skillsmatter.com/skillscasts/14094-code-to-production-in-less-than-3-minutes-on-kubernetes-with-open-source-tools), mentioning that:
 

@@ -3,12 +3,13 @@ layout: post
 title: "Cloud Native London, December 2018 - Paybase, DNEG and ControlPlane"
 description: "Read the roundup from Paybase, DNEG and ControlPlane at Cloud Native London, hosted by Cheryl Hung, Director of Ecosystem at the CNCF."
 location: London, UK
-image: https://pbs.twimg.com/media/DuPOblYXgAIDUDp.jpg
+image: /images/2018-12-12-cloud-native-london-december-2018-paybase-dneg-and-controlplane.jpeg
 tags:
   - Photos
   - Video
   - Meetup
   - "2018"
+video: https://www.youtube.com/embed/_adkJbf1bRU
 redirect_from: /Cloud-Native-London-Dec-2018/
 ---
 
@@ -16,13 +17,9 @@ The room was packed out for Cloud Native London's December meetup, ably hosted b
 
 As always, thanks to our sponsors [StorageOS](https://storageos.com/), [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/) and [Pusher](https://pusher.com/)
 
-<div class="video-wrapper">
-    <iframe src="https://www.youtube.com/embed/_adkJbf1bRU" frameborder="0" allowfullscreen></iframe>
-</div>
-
 First up was using Spinnaker and Kubernetes for continuous delivery in the cloud with Spinnaker and Kubernetes, followed by a modern approach to writing microservices called gRPC, and wrapping up with implementing secure GitOps in production.
 
-![Ana Calin](https://pbs.twimg.com/media/DuPWoRaWsAQnoix.jpg)
+![Ana Calin](/images/2018-12-12-cloud-native-london-december-2018-paybase-dneg-and-controlplane-1.jpeg)
 
 Ana Calin from Paybase gave a talk on ["Continuous Delivery in the Cloud with Spinnaker and Kubernetes"](https://youtu.be/_adkJbf1bRU?t=240), explaining that:
 
@@ -31,13 +28,13 @@ Ana Calin from Paybase gave a talk on ["Continuous Delivery in the Cloud with Sp
 * Spinnaker has not been designed to replace Jenkins or any other CI tool and running Spinnaker requires plugging in a CI server. Although Jenkins has extensive plugin support, it can fall short as a complete deployment tool especially since it wasn’t built with the cloud in mind.
 See her slides [here](https://docs.google.com/presentation/d/1nl0kG-jQ2M2BZvySbYwbUOrF9bd2EokNoA1r2XywTfM/edit)
 
-![Dheeraj Bhadani](https://pbs.twimg.com/media/DuPZyDRW0AAoqJR.jpg)
+![Dheeraj Bhadani](/images/2018-12-12-cloud-native-london-december-2018-paybase-dneg-and-controlplane-2.jpeg)
 
 Following that, Dheeraj Bhadani from DNEG (formerly known as Double Negative) described ["gRPC: Modern approach to write microservices"](https://youtu.be/_adkJbf1bRU?t=1975), and left us with the takeaway that:
 
 * Writing microservices with defined contract, advantage of http2 and bidirectional streaming of data, server and client stub in 10 different languages are a few key capabilities of gRPC.
 
-![Luke Bond](https://pbs.twimg.com/media/DuPmsEyWsAEY9Og.jpg)
+![Luke Bond](/images/2018-12-12-cloud-native-london-december-2018-paybase-dneg-and-controlplane-3.jpeg)
 
 Finally Luke Bond from Control Plane told us about ["Secure GitOps in Production"](https://youtu.be/_adkJbf1bRU?t=4345). In his takeaways he told mentioned that:
 

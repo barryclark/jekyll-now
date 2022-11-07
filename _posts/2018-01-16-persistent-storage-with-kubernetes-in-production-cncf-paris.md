@@ -3,7 +3,7 @@ layout: post
 title: "Persistent storage with Kubernetes in production - CNCF Paris"
 description: "Cheryl Hung, Product Manager at StorageOS discusses evaluating storage options for Kubernetes"
 location: Paris, France
-image: https://pbs.twimg.com/media/DTrui3JWsAET6h8.jpg
+image: /images/2018-01-16-persistent-storage-with-kubernetes-in-production-cncf-paris.jpeg
 hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/wHl2VXMOPI1hp3
 tags:
