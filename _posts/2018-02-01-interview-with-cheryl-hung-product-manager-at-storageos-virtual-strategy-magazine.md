@@ -2,7 +2,7 @@
 layout: post
 title: "Interview with Cheryl Hung, Product Manager at StorageOS - Virtual Strategy Magazine"
 description: "Cheryl Hung, Product Manager at StorageOS, discusses container technology and enterprise with Virtual Strategy Magazine."
-image: https://virtual-strategy.com/wp-content/uploads/2018/02/StorageOS_Hung_022018.jpg
+image: /images/2018-02-01-interview-with-cheryl-hung-product-manager-at-storageos-virtual-strategy-magazine.png
 tags:
   - Article
   - "2018"
