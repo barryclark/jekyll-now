@@ -2,7 +2,7 @@
 layout: post
 title: "Spotify’s Golden Path to Kubernetes Adoption - Podcast with The New Stack"
 description: "Listen to Spotify's usage of Kubernetes, co-hosted by Cheryl Hung, VP Ecosystem at CNCF and The New Stack"
-image: https://i.ytimg.com/vi/KTspO7vDHOU/hqdefault.jpg
+image: /images/2020-08-13-spotifys-golden-path-to-kubernetes-adoption.jpeg
 tags:
   - Podcast
   - Article

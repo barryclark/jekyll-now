@@ -2,7 +2,7 @@
 layout: post
 title: "Data and Storage Ecosystem Opportunities and Need - Keynote, SODACON2020"
 description: "Cheryl Hung, VP Ecosystem at CNCF, presents at SODACON 2020"
-image: https://i.ytimg.com/vi/WMCBjojxhyQ/maxresdefault.jpg
+image: /images/2020-12-23-data-and-storage-ecosystem-opportunities-and-need-keynote-sodacon2020.jpeg
 video: https://www.youtube.com/embed/WMCBjojxhyQ
 slides: //www.slideshare.net/slideshow/embed_code/key/7inFNBVq4Zc2x3
 tags:

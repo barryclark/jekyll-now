@@ -3,7 +3,7 @@ layout: post
 title: "Diversity Luncheon Panel - KubeCon + CloudNativeCon Europe"
 description: "Cheryl Hung, Product Manager at StorageOS, discusses diversity and open source."
 location: Copenhagen, Denmark
-image: https://i.ytimg.com/vi/WFlFmhKSnv0/maxresdefault.jpg
+image: /images/2018-05-03-diversity-luncheon-panel-kubecon-cloudnativecon-copenhagen.jpeg
 hide_image: true
 video: https://www.youtube.com/embed/WFlFmhKSnv0
 tags:

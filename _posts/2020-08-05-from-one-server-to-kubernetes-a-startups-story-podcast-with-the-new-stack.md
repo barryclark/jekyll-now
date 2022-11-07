@@ -2,7 +2,7 @@
 layout: post
 title: "From One Server to Kubernetes, a Startup’s Story - Podcast with The New Stack"
 description: "A podcast about EquityZen's usage of Kubernetes, co-hosted by Cheryl Hung, VP Ecosystem at CNCF and The New Stack"
-image: https://i.ytimg.com/vi/KTspO7vDHOU/hqdefault.jpg
+image: /images/2020-08-05-from-one-server-to-kubernetes-a-startups-story-podcast-with-the-new-stack.jpeg
 tags:
   - Podcast
   - Article

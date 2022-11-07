@@ -3,7 +3,7 @@ layout: post
 title: "The CNCF End User Community, the Tech Radar and Virtual KubeCon 2020 - BeerSecOps"
 description: "A podcast introducing the CNCF End User Community and KubeCon Virtual EU, by Cheryl Hung, VP Ecosystem at CNCF and The BeerSecOps podcast"
 video: https://www.youtube.com/embed/wOesy7yByUY
-image: https://i.ytimg.com/vi/wOesy7yByUY/hqdefault.jpg
+image: /images/2020-08-11-the-cncf-end-user-community-and-virtual-kubecon-2020-beersecops-podcast.jpeg
 tags:
   - Podcast
   - Video

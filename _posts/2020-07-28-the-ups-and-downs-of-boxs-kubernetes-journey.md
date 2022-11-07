@@ -2,7 +2,7 @@
 layout: post
 title: "The Ups and Downs of Box’s Kubernetes Journey - Podcast with The New Stack"
 description: "A podcast about Box's usage of Kubernetes, co-hosted by Cheryl Hung, VP Ecosystem at CNCF and The New Stack"
-image: https://i.ytimg.com/vi/KTspO7vDHOU/hqdefault.jpg
+image: /images/2020-07-28-the-ups-and-downs-of-boxs-kubernetes-journey.jpeg
 tags:
   - Podcast
   - Article
