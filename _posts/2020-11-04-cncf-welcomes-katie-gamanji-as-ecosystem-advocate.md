@@ -3,7 +3,7 @@ layout: post
 title: "Cheryl Hung welcomes Katie Gamanji as CNCF Ecosystem Advocate"
 description: "Cheryl Hung's interview welcoming Katie Gamanji to CNCF"
 location: London, UK
-image: /images/
+image: /images/2020-11-04-cncf-welcomes-katie-gamanji-as-ecosystem-advocate.jpeg
 video: https://www.youtube.com/embed/h4Iso6e29bA
 tags:
   - Video
