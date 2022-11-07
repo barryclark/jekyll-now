@@ -41,7 +41,7 @@ This year I've been learning Mandarin Chinese. I presented the [CNCF End User Aw
 
 The Cloud Native London meetup is still incredibly popular. Over 500 registered for [July](/2019/07/03/cloud-native-london-july-2019-Suade-Labs-SUSE-and-Dynatrace/), making it the largest meetup of the year:
 
-[![Cloud Native London, July 2019](https://pbs.twimg.com/media/D-kf3WoWwAA2xwT.jpg)](/2019/07/03/cloud-native-london-july-2019-Suade-Labs-SUSE-and-Dynatrace/)
+[![Cloud Native London, July 2019](/images/2019-07-03-cloud-native-london-july-2019-Suade-Labs-SUSE-and-Dynatrace.jpeg)](/2019/07/03/cloud-native-london-july-2019-Suade-Labs-SUSE-and-Dynatrace/)
 
 I've particularly enjoyed encouraging women to speak and be publicly visible:
 
@@ -49,4 +49,4 @@ I've particularly enjoyed encouraging women to speak and be publicly visible:
 
 I truly believe that everyone can be part of this smart, enthusiastic and welcoming community, and I can't wait to see what we do in the next decade. See you in 2020!
 
-[![Cheryl Hung on a beach in Mexico](https://pbs.twimg.com/media/EKP25P8VAAANdyx?format=jpg&name=medium)](https://twitter.com/oicheryl/status/1199073394697728001)
+[![Cheryl Hung on a beach in Mexico](/images/2019-12-31-my-personal-highlights-of-2019.jpeg)](https://twitter.com/oicheryl/status/1199073394697728001)

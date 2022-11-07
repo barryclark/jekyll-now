@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London, May 2019 - Microsoft, Finimize and ForgeRock"
 description: "Read the roundup from Microsoft, Finimize and ForgeRock at Cloud Native London, hosted by Cheryl Hung, Director of Ecosystem at the CNCF."
 location: London, UK
-image: https://pbs.twimg.com/media/D5gC-GvWsAAlvxO.jpg
+image: /images/2019-05-01-cloud-native-london-may-2019-microsoft-finimize-and-forgerock.jpeg
 tags:
   - Photos
   - Video
@@ -19,7 +19,7 @@ First up as always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com
 
 First was a discussion of the Azure SQL Database, then An intro to EKS, wrapping up with a talk on the ForgeRock identity platform.
 
-![Manish Kumar](https://pbs.twimg.com/media/D5gEYcSXkAEjCvN.jpg)
+![Manish Kumar](/images/2019-05-01-cloud-native-london-may-2019-microsoft-finimize-and-forgerock-1.jpeg)
 
 Manish Kumar from Microsoft gave us a talk on ["Intelligent Performance of Azure SQL Database"](https://drive.google.com/open?id=1UlgHRTDhENqH8MpiE3yTZZA2woDsjB-Q), mentioning:
 
@@ -27,7 +27,7 @@ Manish Kumar from Microsoft gave us a talk on ["Intelligent Performance of Azure
 * How to use these features to see performance overview of your database and get performance recommendations that can improve the workload performance.
 * How to find top resources consuming queries, intelligent insights and when to let Azure SQL DB optimise itself automatically.
 
-![Matt Dalton](https://pbs.twimg.com/media/D5gL3LzXkAEdBVw.jpg)
+![Matt Dalton](/images/2019-05-01-cloud-native-london-may-2019-microsoft-finimize-and-forgerock-2.jpeg)
 
 Following that, Matt Dalton from Finimize discussed ["An intro to EKS - managed Kubernetes from AWS"](https://drive.google.com/open?id=13ORAYnBeiPRqxc8M2DPRK-h7JHBetLYx), mentioning that:
 
@@ -35,7 +35,7 @@ Following that, Matt Dalton from Finimize discussed ["An intro to EKS - managed 
 * EKS manages your master nodes for you (including e.g. updates), while your worker nodes are built automatically on standard auto-scaling EC2 servers. You pay a flat rate for the managed nodes, then are charged for any EC2 infrastructure.
 * The setup process uses 2 Cloud Formation templates to build this for you. Understanding what has been built can be a little difficult, and it's worth understanding this if you're looking to build multiple clusters.
 
-![Andrew Potter](https://pbs.twimg.com/media/D5gSzX6W4AAEI5O.jpg)
+![Andrew Potter](/images/2019-05-01-cloud-native-london-may-2019-microsoft-finimize-and-forgerock-3.jpeg)
 
 Finally Andrew Potter from ForgeRock talked about ["ForgeRock - the most cloud friendly identity platform"](https://drive.google.com/open?id=1AemMg1EUh-lOpGFcstDeSPiVEBJuP4-B). His takeaways were that:
 
