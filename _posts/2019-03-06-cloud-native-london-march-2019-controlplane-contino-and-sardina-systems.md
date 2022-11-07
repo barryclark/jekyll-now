@@ -15,7 +15,7 @@ redirect_from: /Cloud-Native-London-Mar-2019/
 
 The mood was very upbeat for our March Cloud Native London meetup, as we were presented with three great talks!
 
-![Kenneth Tan, Pi Unnerup, me and Deepak Ramchandani](https://pbs.twimg.com/media/D1ALOfrW0AEjtaR.jpg)
+![Kenneth Tan, Pi Unnerup, me and Deepak Ramchandani](images/2019-03-06-cloud-native-london-march-2019-controlplane-contino-and-sardina-systems-1.jpeg)
 (From left to right: Kenneth Tan, Pi Unnerup, me and Deepak Ramchandani)
 
 First up as always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/) and [Sardina Systems](https://www.sardinasystems.com/)
