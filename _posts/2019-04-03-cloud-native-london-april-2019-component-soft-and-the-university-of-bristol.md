@@ -19,7 +19,7 @@ First up as always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com
 
 First was a talk on connecting your microservices with Istio, then running HPC Workloads via Jupyter.
 
-![Laszlo Budai](https://pbs.twimg.com/media/D3P5DlMWAAIfdYk.jpg)
+![Laszlo Budai](/images/2019-04-03-cloud-native-london-april-2019-component-soft-and-the-university-of-bristol-1.jpg)
 
 Laszlo Budai from Component Soft gave a talk about ["Istio – connect your microservices in a secure way"](https://skillsmatter.com/skillscasts/12555-cloud-native), explaining that:
 
@@ -28,7 +28,7 @@ Laszlo Budai from Component Soft gave a talk about ["Istio – connect your micr
 * Is securing service-to-service communication of your #CloudNative application a headache for you? Not anymore! In my talk at #CloudNativeLon I have demonstrated how Istio (istio.io) provides a secure communication channel between your microservices. Want to know more? Check this out: https://bit.ly/2uJzalx.
 
 
-![Christopher Woods](https://pbs.twimg.com/media/D3QLmOUXkAA3zUF.jpg)
+![Christopher Woods](/images/2019-04-03-cloud-native-london-april-2019-component-soft-and-the-university-of-bristol-2.jpg)
 
 Following that, Dr Christoper Woods from Bristol University discussed ["Running HPC Workloads via Jupyter using Kubernetes and Fn serverless functions"](https://skillsmatter.com/skillscasts/13710-running-hpc-workloads-via-jupyter-using-kubernetes-and-fn-serverless-functions), mentioning that:
 

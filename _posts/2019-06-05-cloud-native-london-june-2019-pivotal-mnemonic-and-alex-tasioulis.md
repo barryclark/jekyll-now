@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London, June 2019 - Pivotal, mnemonic and Alex Tasioulis"
 description: "Read the roundup from Pivotal, mnemonic and Alex Tasioulis at Cloud Native London, hosted by Cheryl Hung, Director of Ecosystem at the CNCF."
 location: London, UK
-image: https://pbs.twimg.com/media/D8UUO6qUIAAXWSN.jpg
+image: /images/2019-06-05-cloud-native-london-june-2019-pivotal-mnemonic-and-alex-tasioulis.jpeg
 tags:
   - Photos
   - Video
@@ -19,11 +19,11 @@ As always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Cont
 
 First was a recap of KubeCon CloudNativeCon, for anyone who wasn’t able to be there, then we were into the talks for the evening with a discussion on Creating a DevOps culture, then Securing microservices in a serverless world, wrapping up with a talk on Observability for microservices.
 
-![Josh Michielsen](https://pbs.twimg.com/media/D8URs-VUYAEdUdp.jpg)
+![Josh Michielsen](/images/2019-06-05-cloud-native-london-june-2019-pivotal-mnemonic-and-alex-tasioulis-1.jpeg)
 
 Kicking off the evening, Josh Michielsen gave us a recap of the events of KubeCon Europe 2019, in Barcelona. All the talks from KubeCon are available on the [CNCF playlist on Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2PpmMAnvpvsnR4c27wJePh3), so check that out!
 
-![Michael Coté](https://pbs.twimg.com/media/D8UWXBqUwAAREgw.jpg)
+![Michael Coté](/images/2019-06-05-cloud-native-london-june-2019-pivotal-mnemonic-and-alex-tasioulis-2.jpeg)
 
 Following that, Michael Coté from Pivotal shared his experiences with ["Creating a DevOps culture, whatever that means"](https://skillsmatter.com/skillscasts/12557-cloud-native), explaining that:
 
@@ -31,7 +31,7 @@ Following that, Michael Coté from Pivotal shared his experiences with ["Creatin
 * At scale, changing culture requires executive support and much work. Otherwise, you're just putting up new posters in the hallway.
 * Achieving a blameless culture requires management taking the first step: discussing their own failures at the failure festivals.
 
-![Andreas Claesson](https://pbs.twimg.com/media/D8UdpcLUEAEgV-8.jpg)
+![Andreas Claesson](/images/2019-06-05-cloud-native-london-june-2019-pivotal-mnemonic-and-alex-tasioulis-3.jpeg)
 
 Next up was Andreas Claesson from mnemonic, discussing [“Securing microservices in a serverless world"](https://skillsmatter.com/skillscasts/14001-securing-microservices-in-a-serverless-world), mentioning that:
 
@@ -40,7 +40,7 @@ Next up was Andreas Claesson from mnemonic, discussing [“Securing microservice
 * Serverless gives a lot of benefits, especially regarding scalability and cost. It comes with a price in terms of complexity, something that in some cases makes the transition from traditional IT environments difficult and time consuming.
 
 
-![Alex Tasioulis](https://pbs.twimg.com/media/D8UmNG8UIAAtulo.jpg)
+![Alex Tasioulis](/images/2019-06-05-cloud-native-london-june-2019-pivotal-mnemonic-and-alex-tasioulis-4.jpeg)
 
 Finally Alex Tasioulis talked about ["Observability for microservices: practical advice"](https://skillsmatter.com/skillscasts/13924-observability-for-microservices-practical-advice). His takeaways were that:
 

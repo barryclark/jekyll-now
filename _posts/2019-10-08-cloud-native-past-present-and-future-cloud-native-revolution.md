@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native Past, Present and Future - Keynote, Cloud Native Revolution"
 description: "Read about the past, present and future of cloud native from Cheryl Hung, CNCF Director of Ecosystem."
 location: Philadelphia, USA
-image: https://pbs.twimg.com/media/EGXHXvnWwAEZ6RJ?format=jpg&name=medium
+image: /images/2019-10-08-cloud-native-past-present-and-future-cloud-native-revolution.jpeg
 hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/2yt030eEEcNQtD
 twitter_moment: https://twitter.com/i/moments/1206121620663783425
