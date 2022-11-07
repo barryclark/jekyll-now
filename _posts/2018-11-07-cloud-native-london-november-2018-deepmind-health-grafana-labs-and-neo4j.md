@@ -18,7 +18,7 @@ As always, thanks to our sponsors [StorageOS](https://storageos.com/), [Tecknuov
 
 First up we heard about managing deployments with Kapitan followed by Cortex and horizontally scalable, highly available Prometheus monitoring, and wrapping up with a presentation of experiences with Kubernetes operators.
 
-![Alessandro De Maria](https://pbs.twimg.com/media/DrbCUsFWsAAeunU.jpg)
+![Alessandro De Maria](/images/2018-11-07-cloud-native-london-november-2018-deepmind-health-grafana-labs-and-neo4j-1.jpeg)
 
 Alessandro De Maria from DeepMind Health gave a talk on Deployments with Kapitan, explaining that:
 
@@ -26,7 +26,7 @@ Alessandro De Maria from DeepMind Health gave a talk on Deployments with Kapitan
 * Kapitan proposes an inventory that acts as a single source of truth for all your deployments. The inventory is used to feed two template engines, jsonnet (for json/yaml) and Jinja (for everything else). A simple but powerful Secrets management features completes the picture.
 * Kapitan allows to create developers friendly "gitops" workflow giving them visibility on what changes before the code is applied to Kubernetes, which allows to evaluate the impact of a change over all environments at once.
 
-![Tom Wilkie](https://pbs.twimg.com/media/DrbLfXrXgAAyPNo.jpg)
+![Tom Wilkie](/images/2018-11-07-cloud-native-london-november-2018-deepmind-health-grafana-labs-and-neo4j-2.jpeg)
 
 Following that, Tom Wilkie from Grafana Labs presented Cortex: Horizontally Scalable, Highly Available Prometheus Monitoring, and his takeaways were that:
 
@@ -36,7 +36,7 @@ Following that, Tom Wilkie from Grafana Labs presented Cortex: Horizontally Scal
 
 See his slides [here](https://www.slideshare.net/grafana/cortex-horizontally-scalable-highly-available-prometheus)
 
-![Andrew Jefferson](https://pbs.twimg.com/media/DrbV64oXcAAMvg0.jpg)
+![Andrew Jefferson](/images/2018-11-07-cloud-native-london-november-2018-deepmind-health-grafana-labs-and-neo4j-3.jpeg)
 
 Finally, Andrew Jefferson from Neo4j told us about creating Kubernetes operators for fun and profit, and in his experience:
 

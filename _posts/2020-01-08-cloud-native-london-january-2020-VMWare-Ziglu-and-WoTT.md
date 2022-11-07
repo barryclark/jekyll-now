@@ -17,7 +17,7 @@ For our first meetup of 2020, Cloud Native London January kicked off the year wi
 Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [xMatters](https://www.xmatters.com/), [SUSE](https://www.suse.com), [D2iQ](https://d2iq.com) and [Palo Alto Networks](https://www.paloaltonetworks.com/).
 
 
-![Chris Milsted](https://pbs.twimg.com/media/ENyC1WrWkAYeWtu?format=jpg)
+![Chris Milsted](/images/2020-01-08-cloud-native-london-january-2020-VMWare-Ziglu-and-WoTT-1.jpeg)
 
 First up, Chris from VMWare was talking about Rethinking Security from Scratch: The Case for Shifting Container Security from the Edge to the Core. His takeaways are:
 
@@ -27,7 +27,7 @@ First up, Chris from VMWare was talking about Rethinking Security from Scratch: 
 
 Check out his slides [here](https://github.com/chris-milsted/CloudNativeLondonJanuary2020/blob/master/Rethinking%20Security%20from%20Scratch_%20The%20Case%20for%20Shifting%20Container%20Security%20from%20the%20Edge%20to%20the%20Core.pdf)
 
-![Hussein Badakhchani](https://pbs.twimg.com/media/ENyNZmmWoAYvFBk?format=jpg)
+![Hussein Badakhchani](/images/2020-01-08-cloud-native-london-january-2020-VMWare-Ziglu-and-WoTT-2.jpeg)
 
 Next up, Hussein from Ziglu discussed Building a Crypto Bank in the Cloud. He concluded that:
 

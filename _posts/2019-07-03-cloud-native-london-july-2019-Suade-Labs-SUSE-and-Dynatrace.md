@@ -35,7 +35,7 @@ Next up was Rob de Canha-Knight from SUSE discussing [“Code to Production in l
 * SUSE also offers their Cloud Application Platform, which is a fully Open Sourced PaaS Platform that can be deployed on top of most major Kubernetes distributions out there enabling an advanced cloud native developer experience to Kubernetes. SUSE Cloud Application platform eliminates manual IT configuration and helps accelerate innovation by getting applications to market faster.
 
 
-![Andreas Grabner](https://pbs.twimg.com/media/D-kx3kbWsAIU9BD.jpg)
+![Andreas Grabner](/images/2019-07-03-cloud-native-london-july-2019-Suade-Labs-SUSE-and-Dynatrace-3.jpeg)
 
 Finally Andreas Grabner from Dynatrace talked about ["Continuous Deployment & Operations on Kubernetes with keptn"](https://skillsmatter.com/skillscasts/14095-continuous-deployment-and-operations-on-kubernetes-with-keptn). His takeaways were that:
 

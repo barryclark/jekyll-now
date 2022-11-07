@@ -15,7 +15,7 @@ redirect_from: /Cloud-Native-London-Mar-2019/
 
 The mood was very upbeat for our March Cloud Native London meetup, as we were presented with three great talks!
 
-![Kenneth Tan, Pi Unnerup, me and Deepak Ramchandani](images/2019-03-06-cloud-native-london-march-2019-controlplane-contino-and-sardina-systems-1.jpeg)
+![Kenneth Tan, Pi Unnerup, me and Deepak Ramchandani](/images/2019-03-06-cloud-native-london-march-2019-controlplane-contino-and-sardina-systems-1.jpeg)
 (From left to right: Kenneth Tan, Pi Unnerup, me and Deepak Ramchandani)
 
 First up as always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/) and [Sardina Systems](https://www.sardinasystems.com/)
@@ -23,7 +23,7 @@ First up as always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com
 
 First was a how-to guide for converting your project to GitOps with Flux, then a discussion of Kubernetes within the Enterprise, wrapping up with a talk on Clouds, toys, and enterprise, including sing a case study.
 
-![Pi Unnerup](https://pbs.twimg.com/media/D0_4IXeWkAEpTm2.jpg)
+![Pi Unnerup](/images/2019-03-06-cloud-native-london-march-2019-controlplane-contino-and-sardina-systems-2.jpeg)
 
 Pi Unnerup from Controlplane gave us ["A how-to guide for converting your project to GitOps with Flux"](https://skillsmatter.com/skillscasts/13633-a-how-to-guide-for-converting-your-project-to-gitops-with-flux), explaining that:
 
@@ -32,7 +32,7 @@ Pi Unnerup from Controlplane gave us ["A how-to guide for converting your projec
 * With segregated infrastructure and application repositories for flux, you can safely and automatically manage the state of your projects and application
 
 
-![Deepak Ramchandani](https://pbs.twimg.com/media/D0__wwmXQAEKuIm.jpg)
+![Deepak Ramchandani](/images/2019-03-06-cloud-native-london-march-2019-controlplane-contino-and-sardina-systems-3.jpeg)
 
 Following that, Deepak Ramchandani from Contino talked about [the increased adoption of Kubernetes since 2016; and the complexities and security challenges that enterprises face when trying to scale](https://skillsmatter.com/skillscasts/13634-kubernetes-within-the-enterprise-the-nightmares-that-keeps-one-awake). The talk covered:
 * The increased choice that was now available when choosing a Kubernetes distribution
@@ -41,7 +41,7 @@ Following that, Deepak Ramchandani from Contino talked about [the increased adop
 * The key security mishaps and K8s anti-patterns Contino has seen being repeated time and time again
 
 
-![Kenneth Tan](https://pbs.twimg.com/media/D1AL63GXcAox2VB.jpg)
+![Kenneth Tan](/images/2019-03-06-cloud-native-london-march-2019-controlplane-contino-and-sardina-systems-4.jpeg)
 
 Finally Kenneth Tan from Sardina Systems talked about ["Clouds, toys, and enterprise. Case study: European banking group "](https://skillsmatter.com/skillscasts/13573-clouds-toys-and-enterprise-case-study-european-banking-group). His takeaways were that:
 
