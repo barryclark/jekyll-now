@@ -3,7 +3,7 @@ layout: post
 title: "Meet the Ambassador - CNCF"
 description: "Cheryl Hung, Product Manager at StorageOS, talks about being a CNCF Ambassador."
 location: Copenhagen, Denmark
-image: https://i.ytimg.com/vi/RWwvZvnRV8s/maxresdefault.jpg
+image: /images/2018-07-26-meet-the-ambassador-cncf.jpeg
 hide_image: true
 video: https://www.youtube.com/embed/RWwvZvnRV8s
 tags:

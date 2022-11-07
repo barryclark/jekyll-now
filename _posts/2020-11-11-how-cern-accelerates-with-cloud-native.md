@@ -2,7 +2,7 @@
 layout: post
 title: "How CERN Accelerates with K8s and Cloud Native - Podcast with The New Stack"
 description: "Cheryl Hung, VP Ecosystem at CNCF, discusses the CERN's journey towards cloud native"
-image: https://i.ytimg.com/vi/KTspO7vDHOU/hqdefault.jpg
+image: /images/2020-11-11-how-cern-accelerates-with-cloud-native.jpeg
 tags:
   - Podcast
   - Article

@@ -3,7 +3,7 @@ layout: post
 title: "AuthN + AuthZ: Security, Compliance, and Other Challenges"
 description: "Cheryl Hung's hosts a webinar with Or Weis, CEO of Permit.io and Dan Moore, Head of DevRel at FusionAuth, on Authentication and Authorization"
 location: London, UK
-image: https://i.ytimg.com/vi/DM7XOomsj04/maxresdefault.jpg
+image: /images/2022-09-20-authn-authz-security-compliance-and-other-challenges.jpeg
 video: https://www.youtube.com/embed/DM7XOomsj04
 tags:
   - Video
@@ -22,7 +22,7 @@ FusionAuth and Permit.io discuss how to build Auth (Authentication and Authoriza
 - Combining FusionAuth and Permit.io
 - Live Demo application
 
-Link to Demo ► 
+Link to Demo ►
 Slack Community ► https://bit.ly/permit-slack
 Permit Twitter ► https://twitter.com/permit_io
 OPAL on GitHub ► https://github.com/permitio/opal

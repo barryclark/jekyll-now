@@ -2,7 +2,7 @@
 layout: post
 title: "Managing 600 clusters with CERN - Cloud Native End User Lounge"
 description: "Cheryl Hung, VP Ecosystem at CNCF, talks to Ricardo Rocha about how CERN does cloud native."
-image: https://i.ytimg.com/vi/j17qcJ0ZH84/maxresdefault.jpg
+image: /images/2021-03-25-managing-600-clusters-with-cern-cloud-native-end-user-lounge.jpeg
 video: https://www.youtube-nocookie.com/embed/j17qcJ0ZH84
 tags:
   - Video

@@ -2,7 +2,7 @@
 layout: post
 title: "End User Community Adoption of Cloud Native Principles & Lessons Learned - KubeCon Europe 2020"
 description: "Watch a panel with Mastercard, Spotify, Condé Nast and Lunar, with Cheryl Hung, VP Ecosystem at CNCF"
-image: https://i.ytimg.com/vi/sAiOqSmN-B0/hqdefault.jpg
+image: /images/2020-08-20-kubecon-cloudnativecon-europe-2020-virtual-panel-end-user-community-adoption-of-cloud-native-principles-lessons-learned.jpeg
 video: https://www.youtube.com/embed/sAiOqSmN-B0
 tags:
   - Video

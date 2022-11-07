@@ -2,7 +2,7 @@
 layout: post
 title: "3 Key Takeaways from KubeCon EU 2021, livestream with The New Stack"
 description: "Cheryl Hung, VP Ecosystem at CNCF livestreams with The New Stack after KubeCon EU 2021"
-image: https://i.ytimg.com/vi/xSAP9rPmitM/maxresdefault.jpg
+image: /images/2021-05-11-3-key-takeaways-from-kubecon-eu-2021-the-new-stack.jpeg
 video: https://www.youtube-nocookie.com/embed/xSAP9rPmitM
 tags:
   - Video

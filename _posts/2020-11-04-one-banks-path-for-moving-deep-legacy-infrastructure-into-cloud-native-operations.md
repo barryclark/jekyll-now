@@ -2,7 +2,7 @@
 layout: post
 title: "One Bank’s Path for Moving Legacy into Cloud Native - Podcast with The New Stack"
 description: "Cheryl Hung, VP Ecosystem at CNCF, discusses the MUFG's journey towards cloud native"
-image: https://i.ytimg.com/vi/KTspO7vDHOU/hqdefault.jpg
+image: /images/2020-11-04-one-banks-path-for-moving-deep-legacy-infrastructure-into-cloud-native-operations.jpeg
 tags:
   - Podcast
   - Article
