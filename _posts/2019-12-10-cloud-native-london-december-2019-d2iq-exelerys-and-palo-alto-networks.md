@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London December 2019 - D2iQ, EXELERYS and Palo Alto Networks"
 description: "Read the roundup from D2iQ, EXELERYS and Palo Alto Networks at the Cloud Native London meetup in December 2019."
 location: London, UK
-image: /images/IMG_20191210_195229.jpg
+image: /images/2019-12-10-cloud-native-london-december-2019-d2iq-exelerys-and-palo-alto-networks.jpg
 video: https://www.youtube.com/embed/KauKPpej0Ug
 tags:
   - Photos
@@ -17,7 +17,7 @@ For our Xmas meetup, Cloud Native London December started off with some deliciou
 Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/),  [xMatters](https://www.xmatters.com/), [SUSE](https://www.suse.com), [D2iQ](https://d2iq.com), [Palo Alto Networks](https://www.paloaltonetworks.com/) and [OVH](https://www.ovh.co.uk).
 
 
-![Matt Jarvis](https://pbs.twimg.com/media/ELcuTfKW4AEAch-?format=jpg)
+![Matt Jarvis](/images/2019-12-10-cloud-native-london-december-2019-d2iq-exelerys-and-palo-alto-networks-1.jpg)
 
 First up, Matt was Introducing Kudo (starting at 09:30). His takeaways are:
 
@@ -25,7 +25,7 @@ First up, Matt was Introducing Kudo (starting at 09:30). His takeaways are:
 * Writing operators for stateful applications is hard, it takes a lot of code and deep understanding of Kubernetes and the stateful app itself.
 * The KUDO project can simplify the operator development process, in most cases just using YAML.
 
-![Jesus Escolar](https://pbs.twimg.com/media/ELc15coXUAcOl-C?format=jpg)
+![Jesus Escolar](/images/2019-12-10-cloud-native-london-december-2019-d2iq-exelerys-and-palo-alto-networks-2.jpg)
 
 Next up, Jesus Escolar returned to tell us about Securing DevOps CI/CD Pipelines in the Cloud (starting at 43:40). He mentioned that:
 
@@ -34,7 +34,7 @@ Next up, Jesus Escolar returned to tell us about Securing DevOps CI/CD Pipelines
 * The legacy security issues are mainstream for DevOps. Dust old security books. Apply #ZeroTrust!
 
 
-![Ashley Ward](https://pbs.twimg.com/media/ELc_aUBW4AEIm6X?format=jpg)
+![Ashley Ward](/images/2019-12-10-cloud-native-london-december-2019-d2iq-exelerys-and-palo-alto-networks-3.jpg)
 
 Finally, Ashley rounded off our evening with a talk on The Age of the Cloud Native Security Platform (starting 1:24:50). He concluded that:
 

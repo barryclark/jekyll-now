@@ -2,7 +2,7 @@
 layout: post
 title: "KubeCon + CloudNativeCon Europe: Cloud native goes mainstream - TechBeacon"
 description: "Cheryl Hung, VP Ecosystem at CNCF, talks about the things to look forward to at KubeCon + CloudNativeCon EU"
-image: https://vengreso.com/wp-content/uploads/sbe-uploads/2015/09/75_TechBeacon.jpg
+image: /images/2020-07-15-kubecon-cloudnativecon-europe-techbeacon.jpeg
 tags:
   - Article
   - "2020"

@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London, February 2019 - Condé Nast International, Student.com and Cloudership"
 description: "Read the roundup from Condé Nast International, Student.com and Cloudership at Cloud Native London, hosted by Cheryl Hung, Director of Ecosystem at the CNCF."
 location: London, UK
-image: https://pbs.twimg.com/media/Dyvrp3KWsAAAzl2.jpg
+image: /images/2019-02-06-cloud-native-london-february-2019-conde-nast-international-student-com-and-cloudership.jpeg
 tags:
   - Photos
   - Video
@@ -15,14 +15,14 @@ redirect_from: /Cloud-Native-London-Feb-2019/
 
 The room was buzzing as we kicked off our February Cloud Native London meetup, featuring three great speakers.
 
-![Asfand Qazi, me, Ecaterina Gamanji and Jakub Borys](https://pbs.twimg.com/media/DywACEaX0AM4I_L.jpg)
+![Asfand Qazi, me, Ecaterina Gamanji and Jakub Borys](/images/2019-02-06-cloud-native-london-february-2019-conde-nast-international-student-com-and-cloudership-1.jpeg)
 (From left to right: Asfand Qazi, me, Ecaterina Gamanji and Jakub Borys)
 
 Thanks to our sponsors [StorageOS](https://storageos.com/), [Tecknuovo](https://www.tecknuovo.com/), [Contino](https://www.contino.io/), [Pusher](https://pusher.com/), [Humio](https://humio.com/) and [Upcloud](https://upcloud.com/).
 
 First up was a talk on Horizontal pod autoscaler (HPA) and vertical pod autoscaler (VPA), followed by developing in the cloud, and finally getting more out of the modern cloud by letting someone else look after your servers.
 
-![Ecaterina Gamanji](https://pbs.twimg.com/media/DyvsA42X0AI88XC.jpg)
+![Ecaterina Gamanji](/images/2019-02-06-cloud-native-london-february-2019-conde-nast-international-student-com-and-cloudership-2.jpeg)
 
 Ecaterina Gamanji from Condé Nast International explained about ["HPA and VPA: scale your K8s cluster on any metrics"](https://skillsmatter.com/skillscasts/13439-hpa-and-vpa-scale-your-k8s-cluster-on-any-metrics-ecaterina-gamanji-conde-nast-international), focusing on the following topics:
 
@@ -38,7 +38,7 @@ Ecaterina Gamanji from Condé Nast International explained about ["HPA and VPA: 
 - admission controller - intercepts the pod creation request and makes sure the recommended thresholds for CPU and memory are set
 
 
-![Jakub Borys](https://pbs.twimg.com/media/DyvyGDnXgAE7Hgh.jpg)
+![Jakub Borys](/images/2019-02-06-cloud-native-london-february-2019-conde-nast-international-student-com-and-cloudership-3.jpeg)
 
 Following that, Jakub Borys from Student.com discussed ["Development in the Cloud"](https://skillsmatter.com/skillscasts/13441-development-in-the-cloud-jakub-borys-student-com), mentioning that:
 
