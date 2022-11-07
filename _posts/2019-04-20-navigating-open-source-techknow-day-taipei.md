@@ -3,7 +3,7 @@ layout: post
 title: "Navigating Open Source - TECH(K)NOW Day, Taipei"
 description: "Cheryl Hung, Director of Ecosystem at CNCF, explains why and how to get involved with open source at TECH(K)NOW Day Taipei."
 location: Taipei, Taiwan
-image: https://pbs.twimg.com/media/D4kP-b-U0AALmY2.jpg
+image: /images/2019-04-20-navigating-open-source-techknow-day-taipei.jpeg
 hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/EKRiWl0Z9Ekfuk
 tags:
@@ -20,8 +20,6 @@ Summary:
 * The impact of open source is both personal and universal.
 * Understand *how* you want to engage in open source.
 * Find sponsors to help you with the unspoken rules.
-
-![Cheryl Hung speaking at TECH(K)NOW Day Taipei](https://pbs.twimg.com/media/D4kP-b-U0AALmY2.jpg)
 
 Resources:
 

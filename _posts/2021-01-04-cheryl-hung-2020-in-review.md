@@ -44,4 +44,4 @@ Until we meet again,
 
 Cheryl
 
-[![Cloud Native London, January 2020](https://pbs.twimg.com/media/ENyKLL9X0AE9vLH?format=jpg&name=4096x4096)](/2020/01/08/cloud-native-london-january-2020-VMWare-Ziglu-and-WoTT/)
+[![Cloud Native London, January 2020](/images/2020-01-08-cloud-native-london-january-2020-VMWare-Ziglu-and-WoTT.jpeg)](/2020/01/08/cloud-native-london-january-2020-VMWare-Ziglu-and-WoTT/)

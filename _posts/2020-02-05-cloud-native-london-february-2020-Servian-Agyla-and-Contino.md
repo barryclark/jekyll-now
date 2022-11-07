@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native London February 2020: Servian, Agyla, and Contino"
 description: "Check out the roundup of talks from Servian, Agyla, and Contino at the Cloud Native London meetup in February, hosted by Cheryl Hung, Director of Ecosystem at the Cloud Native Computing Foundation."
 location: London, UK
-image: https://pbs.twimg.com/media/EQChsAzWkAI7R3F?format=jpg
+image: /images/2020-02-05-cloud-native-london-february-2020-Servian-Agyla-and-Contino.jpeg
 video: https://www.youtube.com/embed/gxd8h9ddnxQ
 tags:
   - Photos
@@ -20,7 +20,7 @@ Thanks also to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Contino](h
 
 Join us for the first ever Kubernetes Community Days London on 3-4 September 2020! [Register your interest now](http://kubernetesdays.london) to attend, speak, sponsor or volunteer.
 
-![Byron Allen](https://pbs.twimg.com/media/EQCNYKnX4AAhqOT?format=jpg)
+![Byron Allen](/images/2020-02-05-cloud-native-london-february-2020-Servian-Agyla-and-Contino-1.jpeg)
 
 First up, Byron Allen from Servian told us about The Cheesy Analogy of MLflow and Kubeflow (starting at [06:15](https://youtu.be/gxd8h9ddnxQ?t=375)). His takeaways are:
 
@@ -28,7 +28,7 @@ First up, Byron Allen from Servian told us about The Cheesy Analogy of MLflow an
 * MLFlow is great as it is lightweight, versatile and easy to use with the simple pattern Byron explained, and it scales well to production.
 * Kubeflow, also an open-source favorite, is more complex and offers a powerful system for practitioners who are Kubernetes  capable and ready to deploy ML models 'in anger'.
 
-![Ines Cheikhrouhou](https://pbs.twimg.com/media/EQCV_fOX0AAVIPN?format=jpg)
+![Ines Cheikhrouhou](/images/2020-02-05-cloud-native-london-february-2020-Servian-Agyla-and-Contino-2.jpeg)
 
 Next up, Ines Cheikhrouhou from Agyla described Cloud native disaster recovery in Cloud (starting at [42:07](https://youtu.be/gxd8h9ddnxQ?t=2527)). She concluded that:
 
@@ -36,7 +36,7 @@ Next up, Ines Cheikhrouhou from Agyla described Cloud native disaster recovery i
 * Planning steps to follow such as organizing for DR and deciding on some keys. (communication, backup plan, RPO and RTO)
 * How to start with the Pilot light and move to the full picture with continued tests and improvements.
 
-![Jai Campbell](https://pbs.twimg.com/media/EQCgihpU4AA65_6?format=jpg)
+![Jai Campbell](/images/2020-02-05-cloud-native-london-february-2020-Servian-Agyla-and-Contino-3.jpeg)
 
 Finally,  Jai Campbell from Contino rounded off our evening with My Journey into Site Reliability Engineering (starting [1:21:35](https://youtu.be/gxd8h9ddnxQ?t=4895)). He left us with these takeaways from his recent experiences drawn from his professional journey into the world of site reliability engineering:
 

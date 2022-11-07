@@ -17,7 +17,7 @@ As always, thanks to our sponsors [Tecknuovo](https://www.tecknuovo.com/), [Cont
 
 First Josh spoke about using Open Source Software to operate the Conde Nast global cloud platform, then we had David talking about the Telegraf project, and finally Andy to share how machine learning can help with deployment pipelines. Check out the full videos of their talks below!
 
-![Josh Michielsen](https://pbs.twimg.com/media/EDpP6H7XUAAYSOm?format=jpg)
+![Josh Michielsen](/images/2019-09-04-cloud-native-london-september-2019-conde-nast-international-influxdata-and-harness-1.jpeg)
 
 Kicking off our evening, Josh Michielsen shared Condé Nast's story on [Utilising OSS to Operate a Centralised, Globally Distributed Cloud Platform](https://skillsmatter.com/skillscasts/14461-cloud-native-september).
 
@@ -25,7 +25,7 @@ Kicking off our evening, Josh Michielsen shared Condé Nast's story on [Utilisin
 * I hope that my talk can serve as an example to enterprises that OSS can be successfully utilised to operate and accelerate cloud native applications and technologies.
 * Open source software is a key part of a successful cloud native strategy, and not all software has to come with a support contract.
 
-![David McKay](https://pbs.twimg.com/media/EDpEVPaXkAE7dM6?format=jpg)
+![David McKay](/images/2019-09-04-cloud-native-london-september-2019-conde-nast-international-influxdata-and-harness-2.jpeg)
 
 Our second speaker was David McKay from InfluxData describing [Cloud Native Telegraf](https://skillsmatter.com/skillscasts/14462-cloud-native-telegraf).
 
@@ -33,7 +33,7 @@ Our second speaker was David McKay from InfluxData describing [Cloud Native Tele
 * How to use Telegraf to monitor your Kubernetes cluster and cloud native applications
 * How to use Telegraf with Prometheus
 
-![Andrew Page](https://pbs.twimg.com/media/EDo-BHVWwAUYTeb?format=jpg)
+![Andrew Page](/images/2019-09-04-cloud-native-london-september-2019-conde-nast-international-influxdata-and-harness-3.jpeg)
 
 Last up was Andrew Page from Harness, who described [Automating Deployment Pipelines with Machine Learning](https://skillsmatter.com/skillscasts/14463-automating-deployment-pipelines-with-machine-learning).
 

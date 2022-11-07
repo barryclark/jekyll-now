@@ -3,7 +3,7 @@ layout: post
 title: "Why Cloud Native Matters - Keynote, Rackspace Cloud Native Day"
 description: "Read about why cloud native matters and how infrastructure is changing from Cheryl Hung, CNCF Director of Ecosystem."
 location: London, UK
-image: https://pbs.twimg.com/media/EOY5UPfXUAA86Eb?format=jpg&name=medium
+image: /images/2020-01-16-why-cloud-native-matters-rackspace-cloud-native-takeover-day.jpeg
 slides: //www.slideshare.net/slideshow/embed_code/key/xcws8s3vAfqiw2
 twitter_moment:
 tags:
