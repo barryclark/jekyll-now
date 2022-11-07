@@ -3,7 +3,7 @@ layout: post
 title: "Persistent storage with Kubernetes in production - Kubecon + Cloud NativeCon NA"
 description: "Cheryl Hung, Product Manager at StorageOS, talks about cloud native storage with Kubernetes at KubeCon CloudNativeCon."
 location: Austin, USA
-image: https://pbs.twimg.com/media/DyK5nu_XQAAryfE.jpg
+image: images/2017-12-08-persistent-storage-with-kubernetes-in-production-kubecon-cloud-native-con-2017-austin.jpeg
 hide_image: true
 video: https://www.youtube.com/embed/hqE5c5pyfrk
 slides: //www.slideshare.net/slideshow/embed_code/key/axa0to9qRjaeAg

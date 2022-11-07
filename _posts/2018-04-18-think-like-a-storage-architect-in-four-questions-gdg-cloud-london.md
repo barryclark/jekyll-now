@@ -3,7 +3,7 @@ layout: post
 title: "Think like a storage architect, in four questions - GDG Cloud London"
 description: "Cheryl Hung, Product Manager at StorageOS, explains how to think about storage with Kubernetes"
 location: London, UK
-image: https://pbs.twimg.com/media/DbFVeWmXcAEjY9e.jpg
+image: /images/2018-04-18-think-like-a-storage-architect-in-four-questions-gdg-cloud-london.jpeg
 hide_image: true
 slides: //www.slideshare.net/slideshow/embed_code/key/4OIpoqaaO09eYA
 tags:
