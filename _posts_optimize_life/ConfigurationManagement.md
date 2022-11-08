@@ -423,3 +423,18 @@ TortoiseSVN은 Windows 셸 확장으로 구현된 Apache ™ Subversion(SVN) ® 
 |Info|로컬 저장소 또는 원격 저장소의 파일, 폴더 정보를 확인하는 명령어입니다.|
 
 </div></details>
+
+<details><summary>Tortoise SVN</summary>
+<div markdown="1">
+
+[TortoiseSVN DOC](https://tortoisesvn.net/docs/release/TortoiseSVN_en/index.html)
+
+* 업데이트시 변경한 파일들을 덮어씌우므로 조심해서 해야합니다.
+* 커밋시 변경사항을 변경한 내용을 명확히 확인한 다음 커밋해야 합니다.
+  * 커밋하지 않고 업데이트하면 변경내용을 잃어버리게 됩니다.
+  * 예를 들어 MainLevel은 아트팀에서 관리합니다. 메인 레벨을 변경하면 아트팀의 작업내역과 충돌하게 됩니다.
+* 추적하지 않는 파일을 확인해서 커밋해야합니다.
+  * 언리얼엔진의 블루프린트의 부모 클래스 누락하고 커밋하면, 블루프린트가 깨지게 됩니다.
+* 커밋시 깨졌을 경우 정리 명령어를 실행하라고 표시됩니다. TortoiseSVN에서 정리명령을 실행할 수 있습니다.
+
+</div></details>
