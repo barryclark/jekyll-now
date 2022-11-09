@@ -5,6 +5,7 @@ title: Optimize life
 
 
 - [ ] [ChoDragon9](https://chodragon9.github.io/blog/easy-code/#%EB%84%A4%EC%9D%B4%EB%B0%8D)
+- [ ] [가짜 구멍 추가하기](https://gamedevworks.com/tutorials/ue4-how-to-create-a-fake-hole-in-the-ground-that-you-can-move-it-in-runtime/)
 
 ? Bundle, Gem, Ruby, ...???? Bundle add ??? Hm...
 
