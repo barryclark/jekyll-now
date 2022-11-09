@@ -99,3 +99,43 @@ if (this::IsNoTouch() &&
 ## Unreal VR
 
 [VR Cheet Sheet](https://docs.unrealengine.com/4.27/en-US/SharingAndReleasing/XRDevelopment/VR/VRTipsAndTricks/)
+
+<details><summary>VR 스테레오 레이어</summary>
+<div markdown="1">
+
+[VR 스테레오 레이어](https://docs.unrealengine.com/4.26/ko/SharingAndReleasing/XRDevelopment/VR/DevelopVR/StereoLayers/)
+
+가상 현실 (VR) 스테레오 레이어로 VR 머리 장착 디스플레이(HMD)에 텍스처를 전송하고 나머지 프로젝트와 다른 독립 렌더링 패스에서 재투영시킵니다.
+
+* [스테레오 타입](https://docs.unrealengine.com/5.0/ko/openxr-stero-layers-overview-in-unreal-engine/)에서 스테레오 레이어 타입별 동작을 볼수 있습니다.
+
+</div></details>
+
+<details><summary>VR 위치 표현</summary>
+<div markdown="1">
+
+<center><div markdown="1">
+
+![Result](/images/VR_Focuse_1_Animation.gif)
+
+</div></center>
+
+1. 화면의 중심에서 스크린 스페이스화된 월드 포지션까지의 벡터를 구합니다.
+2. 벡터를 정규화 하고 원하는 길이만큼 곲해준 후, 바라보도록 회전각을 만들어, 위젯의 트렌스폼을 만듭니다. 
+
+* PlayerController에서 WidgetGeometry를 가져와, 로컬 스크린 사이즈를 구합니다. 이를 반으로 나누면, 스크린의 중심이 됩니다.
+* PlayerController에서 월드 로케이션에 대해 ProjectWorldLocationToWidgetPosition을 통해 스크린 스페이스를 구하면, 스크린에서 위젯의 포지션을 구할 수 있습니다.
+* 월드 로케이션의 스크린 스페이스에서 로컬 스크린의 중심을 빼면, 중심에서 스크린 스페이스로 가는 벡터를 구할 수 있습니다.
+* 위젯의 엥글은 -180 ~ 180 디그리, 시계방향으로 6시까지 0 ~ 180 디그리로 되어있습니다.
+
+<center><div markdown="1">
+
+![Image1](/images/VR_Focuse_1_1.png)
+
+![Image2](/images/VR_Focuse_1_1.png)
+
+![Image3](/images/VR_Focuse_1_1.png)
+
+</div></center>
+
+</div></details>
