@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Love programming, Tinkering, breaking and building things from scratch.
-- Enjoy working with embedded microcontrollers ( Arduino and Raspi)
-- Script kiddy with advance electrical knowlege
+Love coding, tinkering, breaking and building things from scratch.
+- Enjoy working with embedded microcontrollers (Arduino and Raspi)
 - Able to reverse engineer small electrical equipment
 - Build own IOT devices with ESP32 and ESP8266 dev boards
-- Prcticing cloud on azure on side
+- Practicing cloud on azure
+- And getting beeeer
 
 
 ### More Information
