@@ -12,12 +12,17 @@
 /* BASE RULES */
 /**************/
 
+:root {
+  --background_colour: $white;
+  --white: #faf0e6;
+}
+
 html {
   font-size: 100%;
 }
 
 body {
-	background: $white;
+	background: var(--background_colour);
   font: 18px/1.4 $helvetica;
   color: $darkerGray;
 }
