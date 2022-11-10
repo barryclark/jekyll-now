@@ -20,4 +20,6 @@ Fav OS - Any but prefer linux
 Fav lang - python
 Fav hobby - Learn new thing everyday!, Either its coding, Reading a novel, Or listening to new music!.
 
+Also check out this if you are looking get a job : https://50waystogetajob.com/
+
 <script src="https://tryhackme.com/badge/148051"> </script>
