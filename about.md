@@ -17,8 +17,11 @@ I look forward to having a chance to work alongside the industry’s brightest e
 
 ### TECHNICAL SKILLS
 Programming: Python, R, SQL, Stata
+
 Visualization: Tableau, Jupyter Notebook, Excel Charts, R Shiny
+
 Database & Big Data: MySQL, PostgreSQL, Mango DB, Amazon RDS, Hadoop, Sqoop, Hive, Impala, Pig, Spark
+
 Languages: English, Chinese, Japanese  
 
 ### Contact me
