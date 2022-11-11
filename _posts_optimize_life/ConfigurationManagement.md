@@ -438,3 +438,24 @@ TortoiseSVN은 Windows 셸 확장으로 구현된 Apache ™ Subversion(SVN) ® 
 * 커밋시 깨졌을 경우 정리 명령어를 실행하라고 표시됩니다. TortoiseSVN에서 정리명령을 실행할 수 있습니다.
 
 </div></details>
+
+<details><summary>커밋 실수했을 때 다시 올리기</summary>
+<div markdown="1">
+
+[SVN Revision 되돌리는 법](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=bb_&logNo=221412841585)
+
+커밋을 실수해도 당황하지 말고 되돌려서 사용하도록 합니다. 커밋을 되돌릴 수 있기만 해도 어지간한 문제는 해결 할 수 있습니다.
+
+</div></details>
+
+<details><summary>With 언리얼 엔진</summary>
+<div markdown="1">
+
+언리얼 엔진에서 SVN 오류를 피하기 위한 전략
+
+1. 저장하지 않는다. **자동 저장 기능을 사용하지 않고 직접 변경한 내역만 저장하도록 한다.**
+   * 이때 연관된 래퍼런스가 깨질 수 있다.
+2. 해당 하는 부분만 변경되었는지 확인하기 위해서, 엔진을 자주 껐다 킵니다.
+3. 기존 프로젝트를 끈 후, 변경하지 않은 내역에 대해 되돌리기를 수행합니다. 그리고 다시 테스트합니다.
+
+</div></details>
