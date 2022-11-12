@@ -10,4 +10,4 @@ permalink: /about/
 
 ### Contact me
 
-[Twitter](https://twitter.com/TheSnowWight)
+[Mastodon - infosec.exchange](https://infosec.exchange/@thesnowwight)
