@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Powering PC... easy, right?
+title: 2022-11-12
 ---
 
 # Powering PC... easy, right?
