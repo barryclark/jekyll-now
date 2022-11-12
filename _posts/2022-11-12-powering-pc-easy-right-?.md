@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Powering PC
+title: Powering PC... easy, right?
 ---
 
 # Powering PC... easy, right?
