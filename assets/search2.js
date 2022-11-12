@@ -75,6 +75,6 @@ $(document).ready(function() {
       auto_come(data);
 		});
 	}else{
-    auto_come(item);
+    auto_come(item2);
 	}
 });
