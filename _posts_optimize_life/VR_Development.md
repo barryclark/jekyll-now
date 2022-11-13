@@ -64,6 +64,12 @@ if (this::IsNoTouch() &&
 
 큰 박스 콜리전을 두어, 컨트롤러의 콜리전이 오버라이드 이벤트를 발생시켜 탭하면, 큰 박스 콜리전과의 오버랩이 끝날 때 까지, 오버라이드 이벤트시 동작하지 않게 하면 드래그로 탭 이벤트가 발생하지 않게 할 수 있습니다. 
 
+<center><div markdown="1">
+
+![Double Box](/images/VR_Development_InteractionWithUI_DoubleBox.png)
+
+</div></center>
+
 * 더티 플래그 패턴은 불필요한 작업을 피하기 위해 실제로 필요할 때까지 그 일을 미루는 의도입니다. 비슷하나 다른 개념입니다.
 
 <details><summary>Mobile Gesture</summary>
