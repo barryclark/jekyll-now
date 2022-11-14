@@ -1,11 +1,36 @@
-@import 'https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Lexend:wght@300;700&display=swap';
 
 $font: 'Lexend', sans-serif;
+$color: #d72d2d;
 
 body,
 nav,
+h1, h2, h3, h4, h5, h6,
 .site-name {
     font-family: $font;
+}
+
+a {
+  color: $color;
+  &:hover, &:active {
+    color: $color;
+  }
+}
+
+nav {
+    font-size: 16px;
+    a {
+        letter-spacing: 0;
+    }
+}
+
+.site-info {
+    .sitename {
+        color: $color;
+    }
+    .site-description {
+        font-size: 14px;
+    }
 }
 
 article.post {
