@@ -1,3 +1,13 @@
+@import 'https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap';
+
+$font: 'Lexend', sans-serif;
+
+body,
+nav,
+.site-name {
+    font-family: $font;
+}
+
 article.post {
     img {
         display: block;
