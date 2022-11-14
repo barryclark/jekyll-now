@@ -8,7 +8,7 @@ SiCepat Ekspres merupakan perusahaan yang bergerak pada bidang jasa berfokus pad
 
 Saat ini SiCepat sedang membuka lowongan kerja untuk posisi [**Customer Service di area Yogyakarta**](https://www.sicepat.com/career/job-view/634cfa7778226c0011abf8ce-608a7d7beeb7a17e4d7d68bc-Customer%20Service).
 
-![sicepat logo]({{ site.baseurl }}/images/logo-sicepat-2.png)
+![sicepat logo]({{ site.baseurl }}/images/logo-sicepat-2.jpg)
 
 **Deskripsi pekerjaan:**
 
@@ -29,4 +29,4 @@ Saat ini SiCepat sedang membuka lowongan kerja untuk posisi [**Customer Service 
 5. Bersedia bekerja sistem Shifting
 6. pernah menggunakan sistem Customer Service menjadi nilai plus
 
-[![lamar posisi ini]({{ site.baseurl }}/images/lamar-posisi-ini-CTA.png)](https://www.sicepat.com/career/personal-data/634cfa7778226c0011abf8ce-608a7d7beeb7a17e4d7d68bc-Commerce)
+[![lamar posisi ini]({{ site.baseurl }}/images/lamar-posisi-ini-CTA.jpg)](https://www.sicepat.com/career/personal-data/634cfa7778226c0011abf8ce-608a7d7beeb7a17e4d7d68bc-Commerce)
