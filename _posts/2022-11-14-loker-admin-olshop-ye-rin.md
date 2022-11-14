@@ -34,6 +34,10 @@ Mempunyai pengalaman min. 1 tahun menjadi admin di bidang Fashion
 * Teliti, cekatan, rapih, dan cepat
 * Bisa berkerjasama dengan team dan memiliki etos kerja yang tinggi
 
+**Kisaran Gaji:**
+
+Rp.2.000.000,- - Rp.4.000.000,-
+
 **Tunjangan:**
 
 Uang makan & transport
