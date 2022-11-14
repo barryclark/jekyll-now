@@ -6,7 +6,7 @@ author: Pak Budi
 
 YE-RIN merupakan 1st Korean Inspired Local Brand. Berdedikasi menawarkan produk dengan gaya Korea namun tetap sesuai dengan market Indonesia. saat ini kami membuka lowongan kerja untuk mengisi posisi sebagai Admin Online Shop. Admin online shop yang memiliki ketertarikan tinggi di bidang fashion dan mengerti tentang trend gaya korea. Bisa mengoperasikan social media (Instagram dan Tiktok) dan mengerti mengoperasikan market place.
 
-![ye-rin logo]({{ site.baseurl }}/images/Copy-of-YE-RIN-logo-3-150x150.png)
+![ye-rin logo]({{ site.baseurl }}/images/Copy-of-YE-RIN-logo-3-150x150.png){ width="800" height="600" style="display: block; margin: 0 auto" }
 
 **Tanggung Jawab Pekerjaan:**
 
