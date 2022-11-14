@@ -472,3 +472,143 @@ ENQUEUE_RENDER_COMMAND(BeginFrame)([CurrentFrameCounter](FRHICommandListImmediat
 ```
 
 </div></details>
+
+## Level
+
+<details><summary>레벨의 저장</summary>
+<div markdown="1">
+
+언리얼 IED의 FEditorFileUtils SaveLevel 함수에 레벨을 해당 디렉토리에 저장하는 것을 볼 수 있습니다.
+
+```cpp
+/**
+ * Saves the specified level.  SaveAs is performed as necessary.
+ *
+ * @param	Level				The level to be saved.
+ * @param	DefaultFilename		File name to use for this level if it doesn't have one yet (or empty string to prompt)
+ *
+ * @return				true if the level was saved.
+ */
+bool FEditorFileUtils::SaveLevel(ULevel* Level, const FString& DefaultFilename, FString* OutSavedFilename )
+{
+	bool bLevelWasSaved = false;
+
+	// Disallow the save if in interpolation editing mode and the user doesn't want to exit interpolation mode.
+	if ( Level && !InInterpEditMode() )
+	{
+		// Check and see if this is a new map.
+		const bool bIsPersistentLevelCurrent = Level->IsPersistentLevel();
+
+		// If the user trying to save the persistent level?
+		if ( bIsPersistentLevelCurrent )
+		{
+			// Check to see if the persistent level is a new map (ie if it has been saved before).
+			FString Filename = GetFilename( Level->OwningWorld );
+			if( !Filename.Len() )
+			{
+				// No file name, provided, so use the default file name we were given if we have one
+				Filename = FString( DefaultFilename );
+			}
+
+			if( !Filename.Len() )
+			{
+				if (GIsRunningUnattendedScript) // prevent modal if running in Unattended Script mode
+				{
+					return false;
+				}
+				else
+				{
+					// Present the user with a SaveAs dialog.
+					const bool bAllowStreamingLevelRename = false;
+					bLevelWasSaved = SaveAsImplementation(Level->OwningWorld, Filename, bAllowStreamingLevelRename, OutSavedFilename);
+					return bLevelWasSaved;
+				}
+			}
+		}
+
+		////////////////////////////////
+		// At this point, we know the level we're saving has been saved before,
+		// so don't bother checking the filename.
+
+		UWorld* WorldToSave = Cast<UWorld>( Level->GetOuter() );
+		if ( WorldToSave )
+		{
+			FString FinalFilename;
+			bLevelWasSaved = SaveWorld( WorldToSave,
+										DefaultFilename.Len() > 0 ? &DefaultFilename : NULL,
+										NULL, NULL,
+										true, false,
+										FinalFilename,
+										false, false );
+			if (bLevelWasSaved && OutSavedFilename)
+			{
+				*OutSavedFilename = FinalFilename;
+			}
+		}
+	}
+
+	return bLevelWasSaved;
+}
+```
+
+레벨을 저장하고 가져오는 간단한 예제는 자동화 테스트에서 볼 수 있습니다.
+```cpp
+/**
+* Automation test to create a simple level and save it
+*/
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FBuildPromotionNewProjectMapTest, "System.Promotion.Project Promotion Pass.Step 2 Basic Level Creation.Create Basic Level", /*EAutomationTestFlags::Disabled |*/ EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter);
+bool FBuildPromotionNewProjectMapTest::RunTest(const FString& Parameters)
+{
+	//New level
+	UWorld* CurrentWorld = FAutomationEditorCommonUtils::CreateNewMap();
+	if (!CurrentWorld)
+	{
+		UE_LOG(LogGameProjectGenerationTests, Error, TEXT("Failed to create an empty level"));
+		return false;
+	}
+
+	UE_LOG(LogGameProjectGenerationTests, Display, TEXT("Adding Level Geometry"));
+
+	//Add some bsp and a player start
+	GEditor->Exec(CurrentWorld, TEXT("BRUSH Scale 1 1 1"));
+	for(FLevelEditorViewportClient* ViewportClient : GEditor->GetLevelViewportClients())
+	{
+		if (!ViewportClient->IsOrtho())
+		{
+			ViewportClient->SetViewLocation(FVector(176, 2625, 2075));
+			ViewportClient->SetViewRotation(FRotator(319, 269, 1));
+		}
+	}
+	ULevel* CurrentLevel = CurrentWorld->GetCurrentLevel();
+
+	//Cube Additive Brush
+	UCubeBuilder* CubeAdditiveBrushBuilder = Cast<UCubeBuilder>(GEditor->FindBrushBuilder(UCubeBuilder::StaticClass()));
+	CubeAdditiveBrushBuilder->X = 4096.0f;
+	CubeAdditiveBrushBuilder->Y = 4096.0f;
+	CubeAdditiveBrushBuilder->Z = 128.0f;
+	CubeAdditiveBrushBuilder->Build(CurrentWorld);
+	GEditor->Exec(CurrentWorld, TEXT("BRUSH MOVETO X=0 Y=0 Z=0"));
+	GEditor->Exec(CurrentWorld, TEXT("BRUSH ADD"));
+
+	//Add a playerstart
+	const FTransform Transform(FRotator(-16384, 0, 0), FVector(0.f, 1750.f, 166.f));
+	AActor* PlayerStart = GEditor->AddActor(CurrentWorld->GetCurrentLevel(), APlayerStart::StaticClass(), Transform);
+	if (PlayerStart)
+	{
+		UE_LOG(LogGameProjectGenerationTests, Display, TEXT("Added a player start"));
+	}
+	else
+	{
+		UE_LOG(LogGameProjectGenerationTests, Error, TEXT("Failed to add a player start"));
+	}
+
+	// Save the map
+    FString PathToSave = FPaths::ConvertRelativePathToFull(FPaths::ProjectContentDir() + TEXT("Maps/NewProjectTest.umap"));
+	FEditorFileUtils::SaveLevel(CurrentLevel, PathToSave);
+	UE_LOG(LogGameProjectGenerationTests, Display, TEXT("Saved map"));
+
+	return true;
+}
+```
+
+</div></details>
