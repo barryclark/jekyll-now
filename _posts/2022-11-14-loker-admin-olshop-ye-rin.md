@@ -10,12 +10,12 @@ YE-RIN merupakan 1st Korean Inspired Local Brand. Berdedikasi menawarkan produk 
 
 **Tanggung Jawab Pekerjaan:**
 
-– Packing orderan setiap hari Senin-Sabtu (10.00-17.00)
-– Membuat laporan penjualan harian
-– Mengurus market place (membalas chat & membuat campaign)
-– Mengurus inventory (update stock & stock opname)
-– Membantu dalam semua kegiatan operasional toko setiap harinya
-– Membantu dalam mengurus content (jika diperlukan)
+* Packing orderan setiap hari Senin-Sabtu (10.00-17.00)
+* Membuat laporan penjualan harian
+* Mengurus market place (membalas chat & membuat campaign)
+* Mengurus inventory (update stock & stock opname)
+* Membantu dalam semua kegiatan operasional toko setiap harinya
+* Membantu dalam mengurus content (jika diperlukan)
 
 **Syarat Pengalaman:**
 
@@ -23,16 +23,16 @@ Mempunyai pengalaman min. 1 tahun menjadi admin di bidang Fashion
 
 **Keahlian:**
 
-– Bisa mengoperasikan basic Microsoft (Word, Excel, Power Point)
-– Bisa mengoperasikan market place
-– Bisa membuat content socmed / menjadi host live streaming menjadi point plus dan akan mendapatkan bonus
+* Bisa mengoperasikan basic Microsoft (Word, Excel, Power Point)
+* Bisa mengoperasikan market place
+* Bisa membuat content socmed / menjadi host live streaming menjadi point plus dan akan mendapatkan bonus
 
 **Kualifikasi:**
 
-– Wanita, min. 21-30 tahun, pendidikan min. SMA/SMK
-– Jujur, ingin terus belajar, bisa beradaptasi
-– Teliti, cekatan, rapih, dan cepat
-– Bisa berkerjasama dengan team dan memiliki etos kerja yang tinggi
+* Wanita, min. 21-30 tahun, pendidikan min. SMA/SMK
+* Jujur, ingin terus belajar, bisa beradaptasi
+* Teliti, cekatan, rapih, dan cepat
+* Bisa berkerjasama dengan team dan memiliki etos kerja yang tinggi
 
 **Tunjangan:**
 
