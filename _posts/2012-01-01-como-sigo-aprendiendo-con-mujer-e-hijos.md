@@ -25,6 +25,22 @@ Si quieres llevarte una sola idea, **aprende haciendo** (learning by doing) pero
 
 Si quieres saber como llego a esa **práctica deliberada** con un trabajo exigente, mujer y 4 hijos... Tendrás que seguir leyendo.
 
+## Índice
+1. [¿Por qué sigo aprendiendo?](#por-qué-sigo-aprendiendo)
+2. [Mi contexto](#mi-contexto)
+3. [¿Cómo me organizo?](#cómo-me-organizo)
+4. [Para mantenerme actualizado necesito tener fuentes de conocimiento](#para-mantenerme-actualizado-necesito-tener-fuentes-de-conocimiento)
+5. [¿Cómo organizo todo lo que aprendo?](#cómo-organizo-todo-lo-que-aprendo)
+6. [¿Qué son notas atómicas altamente enlazadas?](#qué-son-notas-atómicas-altamente-enlazadas)
+7. [Vale, ya he recopilado mucha información, pero ¿cuándo aprendo?](#vale-ya-he-recopilado-mucha-información-pero-cuándo-aprendo)
+8. [¿Y esto es suficiente?](#y-esto-es-suficiente)
+9. [¿Qué es eso de la práctica deliberada?](#qué-es-eso-de-la-práctica-deliberada)
+10. [¿Qué es eso de aprender haciendo?](#qué-es-eso-de-aprender-haciendo)
+11. [¿Y si quiero aprender soft-skills?](#y-si-quiero-aprender-soft-skills)
+12. [¿Y cómo aprendendo en mi día a día haciendo con práctica deliberada si casi no tengo tiempo?](#y-cómo-aprendendo-en-mi-día-a-día-haciendo-con-práctica-deliberada-si-casi-no-tengo-tiempo)
+13. [¿Cómo consigo aprender si solo tengo 15 minutos libres?](#cómo-consigo-aprender-si-solo-tengo-15-minutos-libres)
+14. [Resumen](#resumen)
+15. [Estas son las herramientas que uso para organizarme](#estas-son-las-herramientas-que-uso-para-organizarme)
 
 ## ¿Por qué sigo aprendiendo?
 
@@ -52,7 +68,7 @@ Además tengo una opinión bastante impopular:
   - Todos tenemos 24 horas al día. 
   - Cada uno elegimos en qué las dedicamos. 
   - Menos respirar, y unas cuantas horas de sueño, el resto del tiempo decidimos de forma consciente en qué lo invertimos.
-Cuando quieras me lo rebates por Twitter y lo discutimos :p
+Cuando quieras me lo rebates por Twitter y lo discutimos 😜
 
 ## ¿Cómo me organizo?
 
@@ -64,10 +80,10 @@ Te dejo mi definición y un par de diagramas que lo resumen muy bien. (El site d
 Para mí, GTD es una metodología que me permite descargar y organizar todo lo que tengo en la cabeza de una forma que sé que en cada momento voy a tener disponible lo siguiente que necesito hacer y no voy a perder nada de lo que quiero conservar en el futuro.
 
 ### Pasos de GTD 
-![[Getting_Things_Done_Overview.jpg]({{ site.baseurl }}/2022-11-14-como-aprendo/Getting_Things_Done_Overview.jpg)
+![Getting_Things_Done_Overview.jpg]({{ site.baseurl }}/images/2022-11-014-como-sigo-aprendiendo-con-mujer-e-hijos/Getting_Things_Done_Overview.jpg)
 
 ### Flujo de GTD
-![[GTD_Todoist_Flowchart.jpg]({{ site.baseurl }}/2022-11-14-como-aprendo/GTD_Todoist_Flowchart.jpg)
+![GTD_Todoist_Flowchart.jpg]({{ site.baseurl }}/images/2022-11-014-como-sigo-aprendiendo-con-mujer-e-hijos/GTD_Todoist_Flowchart.jpg)
 
 Que las apariencias no te engañen.  
 Usar GTD no es sencillo. 
@@ -126,7 +142,7 @@ Actualmente mis fuentes de conocimiento son:
 
 ### 3. Google Noticias
 - Google puede ser tu amigo si lo personalizas y le das tiempo...
-- Puedes modificar la personalizacion de Google <a href="https://adssettings.google.com/authenticated" target="_blank">aquí</a>.
+- Puedes modificar la personalizacion de Google <a href="https://adssettings.google.com/authenticated" target="_blank">sobre publicidad</a> y <a href="https://myactivity.google.com/activitycontrols/webandapp" target="_blank">sobre tu actividad</a>.
 - Así cuando en tu móvil Android deslizas a la izquierda y vas a Google noticias, verás cosas que te interesan de verdad.
 - Y si algo te interesa... A la Bandeja de Entrada.
 
@@ -168,7 +184,7 @@ Actualmente mis fuentes de conocimiento son:
 - Por ejemplo, este post sale de copiar cosas de muchas notas atómicas. Notas sobre GTD, Aprender haciendo, Práctica deliberada, Zettelkasten, como priorizar....
 
 ## Vale, ya he recopilado mucha información, pero ¿cuándo aprendo?
-- Cada semana "me comprometo" como mínimo a usar 2 fuentes de conocimiento ya sean artículos, capítulos de libros, videos. 
+- Cada semana como mínimo "me comprometo" a usar 2 fuentes de conocimiento ya sean artículos, capítulos de libros, videos. 
 - Los selecciono en la revisión semanal de GTD:
 	- Selecciono 1 fuente sobre Machine Learning (Mi foco actual es aprender sobre modelos de difusión como Stable Diffusion. Si te interesa el tema, estas son <a href="https://nikeyes.github.io/recursos-para-usar-stable-diffusion/" target="_blank">mis notas de lo último que he aprendido</a>)
 	- Selecciono 1 fuente que me apetezca de los que tengo recopilados, sea de lo que sea. Desde videojuegos, crianza, jardinería, etc. Cualquier cosa no relacionada con la primera fuente. (A no ser que me aptezca leer más cosas sobre lo anterior XD)
@@ -187,7 +203,7 @@ Actualmente mis fuentes de conocimiento son:
 - Eso implica que tienes que tener muy claro a qué vas a renunciar para hacer esa práctica deliberada de forma sostenida.
 - Y por supuesto, tener fuerza de voluntad y constancia para cumplirlo.
 
-## Sobre aprender haciendo
+## ¿Qué es eso de aprender haciendo?
 - Siempre aprendo más si lo aplico en algo práctico, ya sea algo para casa, para el trabajo, dar una charla, un taller, etc. Algo en lo que pueda aplicar lo que estoy aprendiendo.
 - Intento seguir el siguiente proceso:
 	- Me hago la siguiente pregunta: Si tengo que explicárselo a alguien que no sabe del tema ¿Qué le explicaría? ¿Cómo se lo explicaría? ¿Por dónde empezaría la explicación?
@@ -197,7 +213,7 @@ Actualmente mis fuentes de conocimiento son:
 	- Y por último, me plateo continuamente como podía haber aprendido mejor y más rápido.
 - En realidad estoy aplicando mi propia variante de la <a href="https://www.businessinsider.es/tecnica-feynman-como-aprender-cualquier-cosa-forma-efectiva-969275" target="_blank">técnica Feynman</a>.
 
-## ¿Más o menos lo veo si quiero aprender algo como un lenguaje de programación o una tarea técnica, pero que pasa si quiero aprender soft-skills?
+## ¿Y si quiero aprender soft-skills?
 - Exactamente lo mismo. 
 - **Aprender haciendo** y **práctica deliberada**.
 - Por ejemplo, quiero mejorar la escucha activa.
@@ -273,7 +289,7 @@ Actualmente mis fuentes de conocimiento son:
 
 - Y por último, **vuelve a empezar**...
 
-## Por si te interesa estas son las herramientas que uso para organizarme
+## Estas son las herramientas que uso para organizarme
 - **Todoist** -  para implementar GTD
 - **Obsidian** - donde estoy creando mi cerebro digital
 - **Google Calendar** - para todo aquello que tiene día y hora concreta
