@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Como sigo aprendiendo con mujer e hijos.
+title: Como sigo aprendiendo con trabajo, mujer e hijos.
 categories:
   - buenas prácticas
   - conciliación
@@ -80,10 +80,10 @@ Te dejo mi definición y un par de diagramas que lo resumen muy bien. (El site d
 Para mí, GTD es una metodología que me permite descargar y organizar todo lo que tengo en la cabeza de una forma que sé que en cada momento voy a tener disponible lo siguiente que necesito hacer y no voy a perder nada de lo que quiero conservar en el futuro.
 
 ### Pasos de GTD 
-![Getting_Things_Done_Overview.jpg]({{ site.baseurl }}/images/2022-11-014-como-sigo-aprendiendo-con-mujer-e-hijos/Getting_Things_Done_Overview.jpg)
+![Getting_Things_Done_Overview.jpg]({{ site.baseurl }}/images/2022-11-014-como-sigo-aprendiendo-con-trabajo-mujer-e-hijos/Getting_Things_Done_Overview.jpg)
 
 ### Flujo de GTD
-![GTD_Todoist_Flowchart.jpg]({{ site.baseurl }}/images/2022-11-014-como-sigo-aprendiendo-con-mujer-e-hijos/GTD_Todoist_Flowchart.jpg)
+![GTD_Todoist_Flowchart.jpg]({{ site.baseurl }}/images/2022-11-014-como-sigo-aprendiendo-con-trabajo-mujer-e-hijos/GTD_Todoist_Flowchart.jpg)
 
 Que las apariencias no te engañen.  
 Usar GTD no es sencillo. 
