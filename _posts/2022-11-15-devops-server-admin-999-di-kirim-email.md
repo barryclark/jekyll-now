@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [KERJA REMOTE] Devops, Server Admin [999] di PT. Kirim Email Indonesia
+title: KERJA REMOTE - Devops, Server Admin [999] di PT. Kirim Email Indonesia
 author: Pak Budi
 ---
 
