@@ -6,9 +6,11 @@ published: true
 ---
 
 
-The best way to learn is to just build it.
+Hi, I'm Alex.
 
-This blog will give a behind the scenes look at the successes and failures of the projects I am working on.
+I have a keen interest in marketing, open source and start ups.
+
+This blog is where I will give a behind the scenes look into the projects I'm working on and share articles I write that need a home.
 
 ### Contact me
 
