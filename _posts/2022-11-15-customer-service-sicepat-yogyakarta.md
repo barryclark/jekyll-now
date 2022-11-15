@@ -4,7 +4,9 @@ title: Customer Service SiCepat Yogyakarta
 author: Pak Budi
 ---
 
-SiCepat Ekspres merupakan perusahaan yang bergerak pada bidang jasa berfokus pada pelayanan jasa pengiriman barang yang mencakup seluruh wilayah Indonesia. SiCepat Ekspres telah berkembang pesat dan memiliki lebih dari ratusan cabang yang tersebar di seluruh Indonesia untuk mendukung seluruh kegiatan operasional pengiriman. Meski baru di dirikan pada tahun 2014, SiCepat Ekspres telah menjadi salah satu perusahaan yang cukup besar dan sudah di perhitungkan keberadaannya oleh perusahaan-perusahaan lain yang bergerak di bidang jasa pengiriman serupa di Indonesia.
+SiCepat Ekspres merupakan perusahaan yang bergerak pada bidang jasa berfokus pada pelayanan jasa pengiriman barang yang mencakup seluruh wilayah Indonesia.
+
+SiCepat Ekspres telah berkembang pesat dan memiliki lebih dari ratusan cabang yang tersebar di seluruh Indonesia untuk mendukung seluruh kegiatan operasional pengiriman. Meski baru di dirikan pada tahun 2014, SiCepat Ekspres telah menjadi salah satu perusahaan yang cukup besar dan sudah di perhitungkan keberadaannya oleh perusahaan-perusahaan lain yang bergerak di bidang jasa pengiriman serupa di Indonesia.
 
 Saat ini SiCepat sedang membuka lowongan kerja untuk posisi [**Customer Service di area Yogyakarta**](https://www.sicepat.com/career/job-view/634cfa7778226c0011abf8ce-608a7d7beeb7a17e4d7d68bc-Customer%20Service).
 
@@ -29,4 +31,4 @@ Saat ini SiCepat sedang membuka lowongan kerja untuk posisi [**Customer Service 
 5. Bersedia bekerja sistem Shifting
 6. pernah menggunakan sistem Customer Service menjadi nilai plus
 
-[![lamar posisi ini]({{ site.baseurl }}/images/lamar-posisi-ini-CTA.jpg)](https://www.sicepat.com/career/personal-data/634cfa7778226c0011abf8ce-608a7d7beeb7a17e4d7d68bc-Commerce)
+[![lamar posisi ini]({{ site.baseurl }}/images/lamar-posisi-ini-CTA.png)](https://www.sicepat.com/career/personal-data/634cfa7778226c0011abf8ce-608a7d7beeb7a17e4d7d68bc-Commerce)
