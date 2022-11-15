@@ -31,7 +31,7 @@ Apa itu KIRIM.EMAIL? Lihat di sini : [**https://KIRIM.EMAIL**](https://KIRIM.EMA
 
 **Catatan:**
 
-* Dilarang double kontrak (freelance, kerja di perusahaan lain). Kegiatan lain yang bersifat volunteer, atau membantu komunitas tidak ada larangan.
+* Dilarang _double_ kontrak (_freelance_, kerja di perusahaan lain). Kegiatan lain yang bersifat _volunteer_, atau membantu komunitas tidak ada larangan.
 * Lebih dari 5 hari tidak kami respon berarti belum cocok.
 
 **Cara mengirimkan lamaran:**
