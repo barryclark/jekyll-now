@@ -29,6 +29,6 @@ Saat ini SiCepat sedang membuka lowongan kerja untuk posisi [**Customer Service 
 3. Mahir menggunakan Ms. Office, 
 4. Memiliki kemampuan analisa yang bagus, 
 5. Bersedia bekerja sistem Shifting
-6. pernah menggunakan sistem Customer Service menjadi nilai plus
+6. Pernah menggunakan sistem Customer Service menjadi nilai plus
 
 [![lamar posisi ini]({{ site.baseurl }}/images/lamar-posisi-ini-CTA.png)](https://www.sicepat.com/career/personal-data/634cfa7778226c0011abf8ce-608a7d7beeb7a17e4d7d68bc-Commerce)
