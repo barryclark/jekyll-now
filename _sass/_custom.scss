@@ -15,11 +15,14 @@ $color: #d72d2d;
     border-width: 0;
 }
 
-body,
-nav,
-h1, h2, h3, h4, h5, h6,
-.site-name {
+body {
     font-family: $font;
+    font-size: 16px;
+    nav,
+    h1, h2, h3, h4, h5, h6,
+    .site-name {
+        font-family: $font;
+    }
 }
 
 a {
