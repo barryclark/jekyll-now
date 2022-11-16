@@ -69,3 +69,21 @@ nav {
         }
     }
 }
+
+.apply {
+    text-align: center;
+    a {
+        display: inline-block;
+        background-color: $color;
+        color: white;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 50px;
+        margin: 1rem 0;
+        text-decoration: none;
+        @include mobile {
+            display: block;
+        }
+    }
+}
