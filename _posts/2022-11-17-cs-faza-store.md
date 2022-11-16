@@ -12,8 +12,8 @@ Berikut informasinya:
 
 **Cara Mendaftar:**
 
-* Kirim lamaran dan CV ke email hrdfazaofficial@gmail.com, dengan subjek email: CS_Nama
-* Datang langsung ke Head Office Faza Store; Jl. Melati Raya Perum Buntek No.54, Ds. Rowoyoso, Kec. Wonokerto, Kab. Pekalongan
+* Kirim lamaran dan CV ke email **hrdfazaofficial@gmail.com**, dengan subjek email: **CS_Nama**
+* Datang langsung ke **Head Office Faza Store**; Jl. Melati Raya Perum Buntek No.54, Ds. Rowoyoso, Kec. Wonokerto, Kab. Pekalongan
 
 **Lowongan Pekerjaan ini berakhir pada 25 November 2022**
 
