@@ -84,6 +84,7 @@ nav {
         text-decoration: none;
         @include mobile {
             display: block;
+            margin: 2rem 0;
         }
     }
 }
