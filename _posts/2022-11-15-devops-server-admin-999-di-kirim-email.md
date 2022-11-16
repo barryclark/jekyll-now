@@ -55,4 +55,4 @@ Apa itu KIRIM.EMAIL? Lihat di sini : [**https://KIRIM.EMAIL**](https://KIRIM.EMA
 
 3. Email yang tidak sesuai persyaratan di atas akan **diabaikan**.
 
-[![lamar posisi ini]({{ site.baseurl }}/images/lamar-posisi-ini-CTA.png)](mailto:recruit@krm.email)
+<div class="apply"><a href="mailto:recruit@krm.email">Lamar posisi ini</a></div>
