@@ -85,7 +85,7 @@ nav {
         font-weight: bold;
         border-radius: 50px;
         margin: 1rem 0;
-        text-decoration: none;
+        text-decoration: none !important;
         @include mobile {
             display: block;
             margin: 2rem 0;
