@@ -54,12 +54,16 @@ nav {
 }
 
 .post {
-    a {
-        text-decoration: underline;
-    }
-    img {
-        display: block;
-        margin: 0 auto;
+    .entry {
+        a {
+            text-decoration: underline;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
     }
     .date {
         font-size: 14px;
