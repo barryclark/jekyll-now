@@ -10,7 +10,8 @@ layout: default
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    <hr>
+    <span>Dipublikasikan pada <time datetime="">{{ page.date | date: "%e %B %Y" }}</time></span>
   </div>
 
   {% include disqus.html %}
