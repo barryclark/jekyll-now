@@ -32,3 +32,8 @@ Saat ini SiCepat sedang membuka lowongan kerja untuk posisi [**Customer Service 
 6. Pernah menggunakan sistem Customer Service menjadi nilai plus
 
 <div class="apply"><a href="https://www.sicepat.com/career/personal-data/634cfa7778226c0011abf8ce-608a7d7beeb7a17e4d7d68bc-Commerce">Lamar posisi ini</a></div>
+
+---
+
+<!-- https://www.mailerlite.com/ -->
+<div class="ml-embedded" data-form="OJcQpQ" style="min-height:480px"></div>
