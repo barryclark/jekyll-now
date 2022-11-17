@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+$font-name: "blog";
+$font-path-file-name: /assets/fonts/blog;
+
+// font_name font
+@font-face {
+  font-family: $font-name;
+  src: url($font-path-file-name+'.eot'); /* IE9 Compat Modes */
+  src: url($font-path-file-name+'.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//       url($font-path-file-name+'.woff2') format('woff2'), /* Super Modern Browsers */
+       url($font-path-file-name+'.woff') format('woff'), /* Pretty Modern Browsers */
+       url($font-path-file-name+'.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url($font-path-file-name+'.svg#font_name') format('svg'); /* Legacy iOS */
+}
+
+
+[data-icon]:before {
+  font-family: "blog" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icons-"]:before,
+[class*=" icons-"]:before {
+  font-family: "blog" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icons-dribble:before {
+  content: "a";
+}
+.icons-facebook:before {
+  content: "c";
+}
+.icons-github:before {
+  content: "b";
+}
+.icons-gamepad:before {
+  content: "d";
+}
+.icons-instagram:before {
+  content: "e";
+}
+.icons-linkedin:before {
+  content: "f";
+}
+.icons-rss:before {
+  content: "g";
+}
+.icons-twitter:before {
+  content: "h";
+}
+.icons-tumblr:before {
+  content: "i";
+}
+.icons-behance:before {
+  content: "j";
+}
+.icons-steam:before {
+  content: "k";
+}
+.icons-vimeo:before {
+  content: "l";
+}
+.icons-google-plus:before {
+  content: "m";
+}
+.icons-next:before {
+  content: "n";
+}
+.icons-prev:before {
+  content: "o";
+}
+.icons-pin:before {
+    content: "p";
+}
+.icons-about:before {
+  content: "r";
+    margin-right: 5px;
+}
+.icons-cup:before {
+  content: "s";
+}
+.icons-up:before {
+  content: "t";
+}

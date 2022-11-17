@@ -3,45 +3,66 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Dactrtr.rocks
+
+# Header Image
+imgheader: /assets/build/blog.gif
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: With great power comes a great blog, I don't have any power so this blog is shitty
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
-
+avatar: https://avatars1.githubusercontent.com/u/2884334?v=3&s=460
+author:
+    gravatar_md5:  78bb581d6e6e3ef3d75c78a57774c436
+paginate: 48
 #
 # Flags below are optional
 #
-
+collections:
+    quotes:
+        output: true
+    projects:
+        output: true
+    travels:
+        output: true
+        
+defaults:
+  - scope:
+      path: " "
+      type: "posts"
+    values:
+      layout: "post"
+      title: " "
+      titledesc: " "
+      featured: " "
+        
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github: barryclark/jekyll-now
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  dribbble: 
+  email: dactrtr@gmail.com
+  facebook: 
+  flickr: 
+  github: dactrtr
+  instagram: dactrtrs
+  linkedin: 
+  pinterest: 
+  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: dactrtr
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  behance: dactrtr
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: dactrtr
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: http://dactrtr.rocks
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -52,35 +73,31 @@ baseurl: ""
 #
 # !! You don't need to change any of the configuration flags below !!
 #
-
+highlighter: rouge
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
-version: v1.2.0
+version: v1.1.0
 
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
 
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed
-
+jekyll_admin:
+  hidden_links:
+    - pages
+    - travels
+    - quotes
+    - data files
 # Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
+plugins:
+  #- jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-paginate
+  - jekyll-feed
 # Exclude these files from your production _site
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - CNAME

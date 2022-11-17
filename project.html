@@ -1,0 +1,24 @@
+---
+layout: project
+---
+<!--this is collections-->
+
+ <div class="posts">
+
+  {% for album in site.projects %}
+    <article class="post"> 
+       {% if album.image.feature %}
+        <a href="{{ album.link }}" style="background:url({{ album.image.feature}});background-size:cover;">
+        {% else %}
+        <a href="{{ album.link }}" style="background:url(http://i.giphy.com/FRmOsocKhM1xK.gif);background-size:cover;">
+        {% endif %}   
+            <span class="cover"></span>
+            <div class="data-post">
+            <h1 class="title">{{ album.title }}</h1>
+            <h4 class="desc">{{ album.titledesc }}</h4>
+            </div>
+        </a>
+    </article>
+  {% endfor %}
+</div>
+

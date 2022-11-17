@@ -1,0 +1,28 @@
+.zdog-canvas {
+    background:grid;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-area: 1 / 1 / 2 / 2; 
+  }
+  svg{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-area: 1 / 1 / 2 / 2; 
+  }
+  body{
+    background:#342c47;
+    display:grid;
+  }
+  .container{
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    width: 100vw;
+    height: 100vh;
+    align-self: center;
+    justify-self: center;
+  }

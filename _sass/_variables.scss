@@ -5,6 +5,11 @@
 
 // Colors
 $blue: #4183C4;
+$pink: #e9194c;
+$ig:#A03EB5;
+$tw:#1DA1F2;
+$be:#3B5998;
+$ln:#0077B5;
 
 // Grays
 $black: #000;
@@ -18,10 +23,33 @@ $white: #fff;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
-
+$body:"Open Sans";
+// $headings:;
 // Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
+@mixin border{
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px rgba(8, 8, 8, 0.70);
+}
+@mixin cut-off{
+    -webkit-clip-path: polygon(0 100%, 0 100%, 0 0, 100% 0, 100% 81%);
+    clip-path: polygon(0 100%, 0 100%, 0 0, 100% 0, 100% 81%);
+}
+@mixin ghost-btn{
+    border:none;
+}
+@mixin mobile-small {
+  @media screen and (max-width: 529px) {
     @content;
   }
+}
+// Mobile tablet
+@mixin mobile-tablet {
+    @media only screen and (min-width: 530px) and (max-width: 949px) {
+        @content;
+    }
+}
+@mixin mobile-small-land{
+    @media only screen and (max-width: 529px) and (orientation: landscape){
+        @content;
+    }
 }

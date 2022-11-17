@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <title>{% if page.title %}{{ page.title }}  {% endif %}{{ site.name }}</title>
+
+    <meta name="author" content="{{ site.name }}" />
+    <meta name="description" content="{{ site.description }}">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Based on Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body class="single-project">
+        <a href="/project" class="back icons-prev"></a>
+    <div id="main" role="main" class="container-project" >
+<!--       <h1 class="title">{{ page.title }}</h1>-->
+        <div class="wrapper">        
+          {{ content }}
+        </div>
+    </div>       
+  </body>
+   
+</html>
