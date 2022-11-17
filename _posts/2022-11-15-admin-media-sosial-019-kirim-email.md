@@ -63,6 +63,6 @@ Apa itu KIRIM.EMAIL? Lihat di sini : [**https://KIRIM.EMAIL**](https://KIRIM.EMA
 
 <div class="apply"><a href="mailto:recruit@krm.email">Lamar posisi ini</a></div>
 
-<style>.page h1{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}</style>
+---
 <!-- https://www.mailerlite.com/ -->
 <div class="ml-embedded" data-form="OJcQpQ" style="min-height:480px"></div>
