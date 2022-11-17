@@ -21,3 +21,8 @@ Berikut informasinya:
 
 Sumber:
 * [Instagram LokerPekalongan](https://www.instagram.com/p/Ck7y6xKydmXe2f5f2kEUygTQ73ai7Owi9ugxwg0/)
+
+---
+
+<!-- https://www.mailerlite.com/ -->
+<div class="ml-embedded" data-form="OJcQpQ" style="min-height:480px"></div>
