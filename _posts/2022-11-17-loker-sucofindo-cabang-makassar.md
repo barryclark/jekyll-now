@@ -59,3 +59,8 @@ Berikut hal-hal yang perlu diperhatikan terkait proses rekrutmen PT SUCOFINDO:
 
 Sumber:
 * [website resmi PT SUCOFINDO](https://www.sucofindo.co.id/id/karir)
+
+---
+
+<!-- https://www.mailerlite.com/ -->
+<div class="ml-embedded" data-form="OJcQpQ" style="min-height:480px"></div>
