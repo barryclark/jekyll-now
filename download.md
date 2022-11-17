@@ -10,4 +10,4 @@ permalink: /download/
 <!-- <script src="https://app.getresponse.com/view_webform_v2.js?u=MiSg5&webforms_id=huTzj" data-webform-id="huTzj"></script> -->
 
 <!-- https://www.mailerlite.com/ -->
-<div class="ml-embedded" data-form="hJDCzW" style="min-height:530px"></div>
+<div class="ml-embedded" data-form="hJDCzW" style="min-height:480px"></div>
