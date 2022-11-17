@@ -45,3 +45,8 @@ _Angkasa Pura Property tidak memungut biaya apapun dalam proses rekrutmen. Infor
 Sumber:
 * [Instagram.com/ap.property](https://www.instagram.com/p/CkuiHQ3PtFA/?hl=en)
 * [Kompas](https://money.kompas.com/read/2022/11/16/063325326/lowongan-kerja-pt-angkasa-pura-properti-untuk-s1-ini-posisi-yang-ditawarkan?page=all#page2)
+
+---
+
+<!-- https://www.mailerlite.com/ -->
+<div class="ml-embedded" data-form="OJcQpQ" style="min-height:480px"></div>
