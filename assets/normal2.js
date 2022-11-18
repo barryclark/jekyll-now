@@ -9,7 +9,7 @@ $('.view_recipe').click(function(){
 function isitem(datalist, item){
 	var str='';
 	for (var i=0; i < datalist.length;++i){
-		if(datalist[i]['name'] === item){
+		if(datalist[i]['no'] === item){
 			str = datalist[i];
       break;
 		}
@@ -108,8 +108,31 @@ function get_recipe(recipe, item, target, lng){
     });
 }
 
-var searching_item = getParameterByName('item');
-var searching_recipe = getParameterByName('recipe');
+let searching_item = getParameterByName('item');
+let searching_recipe = getParameterByName('recipe');
+
+function get_item(item, lng){
+  let item_type;
+  let item_type1 = item.substr(0, 2);
+  let item_type2 = item.substr(2, 2);
+
+  if(item_type1 == 10){ // 무기
+    item_type = "weapone";
+  } else if(item_type1 == 20){ // 방어구
+    item_type = "armor";
+
+  } else if(item_type1 == 30){ // 장신구
+    item_type = "accessary";
+
+  } else if(item_type1 == 50){ // 스킬
+    item_type = "skill";
+  }
+
+  $.getJSON(baseurl+"/item/"+item_type+"/"+item_type2+".json", function(data) {
+    let info = isitem(data, item);
+    console.log(info);
+  });
+}
 
 if(searching_item){
   var item = localStorage.getItem('item');
