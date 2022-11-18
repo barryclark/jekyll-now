@@ -42,7 +42,7 @@ $(document).ready(function() {
                     var lang = "jp";
                   }
                     $('#autoMaker').append(
-                        $('<div>').html("<a href='https://purple2m.github.io/"+lang+"/alchemist/?item="+arg.no+"'><img class=\"thumb\" src=\"https://wstatic-cdn.plaync.com/powerbook/l2m/icon/Icon_128/Item/Icon_"+arg.icon+".png\" onerror=\"this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';\">"+item_name+"</a>").attr({'recipe':arg.recipe})
+                        $('<div>').html("<a href='https://purple2m.github.io/"+lang+"/alchemist/?item="+arg.no+"'><img class=\"thumb\" src=\"https://wstatic-cdn.plaync.com/powerbook/l2m/icon/Icon_128/Item/Icon_"+arg.icon+".png\" onerror=\"this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';\">"+item_name+"("+arg.icon+")</a>").attr({'recipe':arg.recipe})
                     );
                 }
             });
