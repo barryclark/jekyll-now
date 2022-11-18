@@ -4,91 +4,145 @@ $font: 'Open Sans', sans-serif;
 $color: #d72d2d;
 
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    white-space: nowrap;
-    border-width: 0;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	white-space: nowrap;
+	border-width: 0;
 }
 
 body {
-    font-family: $font;
-    font-size: 16px;
+	font-family: $font;
+	font-size: 16px;
 }
 
 nav,
 h1, h2, h3, h4, h5, h6,
 .site-name {
-    font-family: $font;
+	font-family: $font;
 }
 
 a {
-  color: $color;
-  &:hover, &:active {
-    color: $color;
-  }
+	color: $color;
+	&:hover, &:active {
+		color: $color;
+	}
 }
 
 nav {
-    font-size: 16px;
-    a {
-        letter-spacing: 0;
-        @include mobile {
-            color: $color;
-        }
-    }
+	font-size: 16px;
+	a {
+		letter-spacing: 0;
+		@include mobile {
+			color: $color;
+		}
+	}
 }
 
 .site-info {
-    .site-name {
-        color: $color;
-        font-weight: 700;
-    }
-    .site-description {
-        font-size: 14px;
-    }
+	.site-name {
+		color: $color;
+		font-weight: 700;
+	}
+	.site-description {
+		font-size: 14px;
+	}
 }
 
 .post {
-    .entry {
-        a {
-            text-decoration: underline;
-        }
-        img {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            height: auto;
-        }
-    }
-    .date {
-        font-size: 12px;
-        opacity: 50%;
-        hr {
-            margin: 1rem 0;
-        }
-    }
+	h2 {
+		font-size: 30px;
+		color: $darkerGray;
+	}
+	.entry {
+		a {
+			text-decoration: underline;
+		}
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.date {
+		font-size: 12px;
+		opacity: 50%;
+		hr {
+			margin: 1rem 0;
+		}
+	}
 }
 
 .apply {
-    text-align: center;
-    a {
-        display: inline-block;
-        background-color: $color;
-        color: white;
-        padding: 1rem 2rem;
-        text-transform: uppercase;
-        font-weight: bold;
-        border-radius: 50px;
-        margin: 1rem 0;
-        text-decoration: none !important;
-        @include mobile {
-            display: block;
-            margin: 2rem 0;
-        }
-    }
+	text-align: center;
+	a {
+		display: inline-block;
+		background-color: $color;
+		color: white;
+		padding: 1rem 2rem;
+		text-transform: uppercase;
+		font-weight: bold;
+		border-radius: 50px;
+		margin: 1rem 0;
+		text-decoration: none !important;
+		@include mobile {
+			display: block;
+			margin: 2rem 0;
+		}
+	}
+}
+
+#search {
+	margin-top: -1.5rem;
+	margin-bottom: 3.5rem;
+	form {
+		position: relative;
+	}
+	input {
+		display: block;
+		padding: .75rem 3rem .75rem 1rem;
+		border: 1px solid #ddd;
+		border-radius: .5rem;
+		font-family: inherit;
+		font-size: 1rem;
+		width: 100%;
+		&:focus {
+			border-color: $color;
+		}
+		&:focus-visible {
+			outline: $color auto 1px;
+		}
+	}
+	button {
+		background: transparent;
+		border: none;
+		padding: .85rem 1rem;
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		right: 0;
+		&:focus {
+			border-color: $color;
+		}
+		&:focus-visible {
+			outline: $color auto 1px;
+		}
+	}
+	#search-count {
+		margin: 1rem 0 3rem;
+		padding: .75rem 1rem;
+		font-size: 13px;
+		background-color: $lightGray;
+		border-radius: .5rem;
+		small {
+			float: right;
+			cursor: pointer;
+			color: $color;
+		}
+	}
 }
