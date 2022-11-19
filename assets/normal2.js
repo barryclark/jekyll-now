@@ -88,9 +88,9 @@ function get_recipe(data, lng){
     step = data.normal[i].split(',');
     recipe = step[2].split('-');
     if(lng == "jp"){
-      find += "<li onclick=\"find_material(\"normal\", lng);\" class=\""+recipe[0]+"\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
+      find += "<li onclick=\"find_material('normal', 'ko');\" class=\""+recipe[0]+"\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
     } else {
-      find += "<li onclick=\"find_material(\"normal\", lng);\" class=\""+recipe[0]+"\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
+      find += "<li onclick=\"find_material('normal', 'ko');\" class=\""+recipe[0]+"\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
     }
   }
   find += "</ul>";
