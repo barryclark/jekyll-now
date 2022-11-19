@@ -85,9 +85,9 @@ function get_recipe(data, lng){
     step = data.normal[i].split(',');
     recipe = step[2].split('-');
     if(lng == "jp"){
-      find += "<li onclick=\"find_material('"+recipe[0]+"','recipe', 'ko');\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
+      find += "<li onclick=\"find_material('"+recipe[0]+"','recipe', '"+lng+"');\">"+step[2]+" +"+step[0]+" "+data.jp+" ("+step[1]+")</li>";
     } else {
-      find += "<li onclick=\"find_material('"+recipe[0]+"','recipe', 'ko');\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
+      find += "<li onclick=\"find_material('"+recipe[0]+"','recipe', '"+lng+"');\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
     }
   }
   find += "</ul>";
