@@ -15,6 +15,38 @@ function isitem(element, item)  {
 let searching_item = getParameterByName('item');
 let searching_recipe = getParameterByName('recipe');
 
+function get_recipe(data, lng){
+  var step = '';
+  var find = '';
+  let recipe;
+  find += "<ul class=\"normal_alc\">";
+  for (var i=0; i < data.normal.length;++i){
+    step = data.normal[i].split(',');
+    let recipe = step[2].split('-');
+    if(lng == "jp"){
+      find += "<li class=\""+recipe[0]+"\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
+    } else {
+      find += "<li class=\""+recipe[0]+"\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
+    }
+  }
+  find += "</ul>";
+
+  find += "<ul class=\"top_alc\">";
+  for (var i=0; i < data.top.length;++i){
+    step = data.top[i].split(',');
+    recipe = step[2].split('-');
+    if(lng == "jp"){
+      find += "<li class=\""+recipe[0]+"\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
+    } else {
+      find += "<li class=\""+recipe[0]+"\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
+    }
+  }
+  find += "</ul>";
+
+  var my_list2=document.getElementById("searching_find");
+  my_list2.innerHTML = find;
+}
+
 function get_item(item, lng){
   let item_type;
   let item_type1 = item.substr(0, 2);
@@ -33,8 +65,15 @@ function get_item(item, lng){
   }
 
   $.getJSON(baseurl+"/item/"+item_type+"/"+item_type2+".json", function(data) {
-    const info = data.find(v => v.no === item);
-    console.log(info.name);
+    const info = data.find(v => v.no == item);
+
+    if (lng == "jp"){
+      document.getElementById("searching_item").innerHTML = "<img class=\"thumb2\" src=\"https://wstatic-cdn.plaync.com/powerbook/l2m/icon/Icon_128/Item/Icon_"+info.icon+"\" onerror=\"this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';\">"+info.jp;
+    } else {
+      document.getElementById("searching_item").innerHTML = "<img class=\"thumb2\" src=\"https://wstatic-cdn.plaync.com/powerbook/l2m/icon/Icon_128/Item/Icon_"+info.icon+"\" onerror=\"this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';\">"+info.name;
+    }
+
+    get_recipe(info, lng)
   });
 }
 
