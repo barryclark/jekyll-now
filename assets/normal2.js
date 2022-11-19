@@ -140,8 +140,10 @@ if(searching_item){
 if(searching_recipe){
   recipe_reset(searching_recipe, find, lng);
 }
-$('#searching_find li').click(function(){
-  find_recipe(5, "recipe", lng);
+
+$('#searching_find ul li').click(function(){
+  var className = $('#searching_find ul li').attr('class');
+  find_recipe(className, "recipe", lng);
   $('#recipe_material').show();
 });
 
