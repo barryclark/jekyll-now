@@ -106,7 +106,7 @@
    {
       "no":300120005,
       "name":"타테오시안 네크리스",
-      "jp":"",
+      "jp":"タテオシアンネックレス",
       "grade":"legendary",
       "icon":"ACC_Necklace_G2_005.png",
       "normal":[
@@ -123,7 +123,7 @@
    {
       "no":300120006,
       "name":"크란벨 네크리스",
-      "jp":"",
+      "jp":"クランベルネックレス",
       "grade":"legendary",
       "icon":"ACC_Necklace_G2_006.png",
       "normal":[
@@ -602,7 +602,7 @@
    {
       "no":300130010,
       "name":"광휘의 목걸이",
-      "jp":"",
+      "jp":"光輝のネックレス",
       "grade":"epic",
       "icon":"ACC_Necklace_G3_010.png",
       "normal":[
@@ -1111,7 +1111,7 @@
    {
       "no":300140013,
       "name":"신록의 목걸이",
-      "jp":"",
+      "jp":"新緑のネックレス",
       "grade":"rare",
       "icon":"ACC_Necklace_G4_014.png",
       "normal":[
@@ -1135,7 +1135,7 @@
    {
       "no":300140014,
       "name":"달의 목걸이",
-      "jp":"",
+      "jp":"ムーンネックレス",
       "grade":"rare",
       "icon":"ACC_Necklace_G4_015.png",
       "normal":[
@@ -1361,7 +1361,7 @@
    {
       "no":300150011,
       "name":"토파즈 목걸이",
-      "jp":"",
+      "jp":"トパーズネックレス",
       "grade":"uncommon",
       "icon":"ACC_Necklace_G5_011.png",
       "normal":[

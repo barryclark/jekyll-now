@@ -2,7 +2,7 @@
    {
       "no":101120001,
       "name":"베스페르 핀서",
-      "jp":"",
+      "jp":"ベスペルフィンサー",
       "grade":"legendary",
       "icon":"WP_Rapier_G2_001.png",
       "normal":[
@@ -23,7 +23,7 @@
    {
       "no":101120002,
       "name":"미스틸테인",
-      "jp":"",
+      "jp":"ミスティルテイン",
       "grade":"legendary",
       "icon":"WP_Rapier_G2_002.png",
       "normal":[
@@ -49,7 +49,7 @@
    {
       "no":101130001,
       "name":"바리사다",
-      "jp":"",
+      "jp":"バリサダ",
       "grade":"epic",
       "icon":"WP_Rapier_G3_001.png",
       "normal":[
@@ -106,7 +106,7 @@
    {
       "no":101130002,
       "name":"글로리어스",
-      "jp":"",
+      "jp":"グローリアス",
       "grade":"epic",
       "icon":"WP_Rapier_G3_002.png",
       "normal":[
@@ -153,7 +153,7 @@
    {
       "no":101130003,
       "name":"아크엔젤 레이피어",
-      "jp":"",
+      "jp":"アークエンジェルレイピア",
       "grade":"epic",
       "icon":"WP_Rapier_G3_003.png",
       "normal":[
@@ -200,7 +200,7 @@
    {
       "no":101130004,
       "name":"레바테인",
-      "jp":"",
+      "jp":"レーヴァテイン",
       "grade":"epic",
       "icon":"WP_Rapier_G3_004.png",
       "normal":[
@@ -256,7 +256,7 @@
    {
       "no":101130005,
       "name":"오트클레르",
-      "jp":"",
+      "jp":"オートクレール",
       "grade":"epic",
       "icon":"WP_Rapier_G3_005.png",
       "normal":[
@@ -313,7 +313,7 @@
    {
       "no":101140001,
       "name":"솔다트 에스터크",
-      "jp":"",
+      "jp":"ソルダットエストック",
       "grade":"rare",
       "icon":"WP_Rapier_G4_001.png",
       "normal":[
@@ -338,7 +338,7 @@
    {
       "no":101140002,
       "name":"에끌레르 비쥬",
-      "jp":"",
+      "jp":"エクレールビジュー",
       "grade":"rare",
       "icon":"WP_Rapier_G4_002.png",
       "normal":[
@@ -360,7 +360,7 @@
    {
       "no":101140003,
       "name":"거인의 레이피어",
-      "jp":"",
+      "jp":"巨人のレイピア",
       "grade":"rare",
       "icon":"WP_Rapier_G4_003.png",
       "normal":[
@@ -384,7 +384,7 @@
    {
       "no":101140004,
       "name":"어설트 레이피어",
-      "jp":"",
+      "jp":"アサルトレイピア",
       "grade":"rare",
       "icon":"WP_Rapier_G4_004.png",
       "normal":[
@@ -406,7 +406,7 @@
    {
       "no":101140005,
       "name":"트롬바의 송곳니",
-      "jp":"",
+      "jp":"トロンバの牙",
       "grade":"rare",
       "icon":"WP_Rapier_G4_005.png",
       "normal":[
@@ -436,7 +436,7 @@
    {
       "no":101140006,
       "name":"그리드 레이피어",
-      "jp":"",
+      "jp":"グリードレイピア",
       "grade":"rare",
       "icon":"WP_Rapier_G4_006.png",
       "normal":[
@@ -487,7 +487,7 @@
    {
       "no":101140007,
       "name":"블링크 레이피어",
-      "jp":"",
+      "jp":"ブリンクレイピア",
       "grade":"rare",
       "icon":"WP_Rapier_G4_007.png",
       "normal":[
@@ -512,7 +512,7 @@
    {
       "no":101140008,
       "name":"콜리슈마르드",
-      "jp":"",
+      "jp":"コリシュマルド",
       "grade":"rare",
       "icon":"WP_Rapier_G4_008.png",
       "normal":[
@@ -563,7 +563,7 @@
    {
       "no":101150001,
       "name":"라피드 에스터크",
-      "jp":"",
+      "jp":"ラフィードエストック",
       "grade":"uncommon",
       "icon":"WP_Rapier_G5_001.png",
       "normal":[
@@ -584,7 +584,7 @@
    {
       "no":101150002,
       "name":"프레스토",
-      "jp":"",
+      "jp":"プレスト",
       "grade":"uncommon",
       "icon":"WP_Rapier_G5_002.png",
       "normal":[
@@ -610,7 +610,7 @@
    {
       "no":101150003,
       "name":"오키쉬 레이피어",
-      "jp":"",
+      "jp":"オーキッシュレイピア",
       "grade":"uncommon",
       "icon":"WP_Rapier_G5_003.png",
       "normal":[
@@ -630,7 +630,7 @@
    {
       "no":101150004,
       "name":"일루전 레이피어",
-      "jp":"",
+      "jp":"イリュージョンレイピア",
       "grade":"uncommon",
       "icon":"WP_Rapier_G5_004.png",
       "normal":[
@@ -650,7 +650,7 @@
    {
       "no":101150005,
       "name":"윈드 피어스",
-      "jp":"",
+      "jp":"ウィンドピアス",
       "grade":"uncommon",
       "icon":"WP_Rapier_G5_005.png",
       "normal":[
@@ -671,7 +671,7 @@
    {
       "no":101150006,
       "name":"라피에르 레이피어",
-      "jp":"",
+      "jp":"ラピエールレイピア",
       "grade":"uncommon",
       "icon":"WP_Rapier_G5_006.png",
       "normal":[
@@ -692,7 +692,7 @@
    {
       "no":101150007,
       "name":"아미랄 에스터크",
-      "jp":"",
+      "jp":"アミラルエストック",
       "grade":"uncommon",
       "icon":"WP_Rapier_G5_007.png",
       "normal":[
@@ -713,7 +713,7 @@
    {
       "no":101150008,
       "name":"레토 리자드맨의 레이피어",
-      "jp":"",
+      "jp":"レットリザードマンレイピア",
       "grade":"uncommon",
       "icon":"WP_Rapier_G5_008.png",
       "normal":[
@@ -733,7 +733,7 @@
    {
       "no":101150009,
       "name":"천궁 수호기사의 레이피어",
-      "jp":"",
+      "jp":"ヘブンズパラディンレイピア",
       "grade":"uncommon",
       "icon":"WP_Rapier_G5_009.png",
       "normal":[
@@ -759,7 +759,7 @@
    {
       "no":101150010,
       "name":"하거인 수호 전사의 레이피어",
-      "jp":"",
+      "jp":"下巨人ガーディアンファイターレイピア",
       "grade":"uncommon",
       "icon":"WP_Rapier_G5_010.png",
       "normal":[
@@ -780,7 +780,7 @@
    {
       "no":101160001,
       "name":"슈발리에 레이피어",
-      "jp":"",
+      "jp":"シュヴァリエレイピア",
       "grade":"common",
       "icon":"WP_Rapier_G6_001.png",
       "normal":[
@@ -800,7 +800,7 @@
    {
       "no":101160002,
       "name":"엑시고 레이피어",
-      "jp":"",
+      "jp":"エクシーゴレイピア",
       "grade":"common",
       "icon":"WP_Rapier_G6_002.png",
       "normal":[
@@ -820,7 +820,7 @@
    {
       "no":101160003,
       "name":"쏜즈",
-      "jp":"",
+      "jp":"ソンズ",
       "grade":"common",
       "icon":"WP_Rapier_G6_003.png",
       "normal":[
@@ -840,7 +840,7 @@
    {
       "no":101160004,
       "name":"케트라 오크 보병의 레이피어",
-      "jp":"",
+      "jp":"ケトラーオークフットマンレイピア",
       "grade":"common",
       "icon":"WP_Rapier_G6_004.png",
       "normal":[
@@ -860,7 +860,7 @@
    {
       "no":101160005,
       "name":"백금족 수호기사의 레이피어",
-      "jp":"",
+      "jp":"プラチナムパラディンレイピア",
       "grade":"common",
       "icon":"WP_Rapier_G6_005.png",
       "normal":[
@@ -880,7 +880,7 @@
    {
       "no":101160006,
       "name":"미들 에스터크",
-      "jp":"",
+      "jp":"ミドルエストック",
       "grade":"common",
       "icon":"WP_Rapier_G6_006.png",
       "normal":[
@@ -900,7 +900,7 @@
    {
       "no":101160007,
       "name":"그랑 레이피어",
-      "jp":"",
+      "jp":"グランレイピア",
       "grade":"common",
       "icon":"WP_Rapier_G6_007.png",
       "normal":[
@@ -920,7 +920,7 @@
    {
       "no":101160008,
       "name":"기사단의 레이피어",
-      "jp":"",
+      "jp":"騎士団のレイピア",
       "grade":"common",
       "icon":"WP_Rapier_G6_008.png",
       "normal":[
@@ -940,7 +940,7 @@
    {
       "no":101160009,
       "name":"레이피어",
-      "jp":"",
+      "jp":"レイピア",
       "grade":"common",
       "icon":"WP_Rapier_G6_009.png",
       "normal":[
@@ -960,7 +960,7 @@
    {
       "no":101160010,
       "name":"에스터크",
-      "jp":"",
+      "jp":"エストック",
       "grade":"common",
       "icon":"WP_Rapier_G6_010.png",
       "normal":[
@@ -980,7 +980,7 @@
    {
       "no":101160011,
       "name":"플뢰레",
-      "jp":"",
+      "jp":"フルーレ",
       "grade":"common",
       "icon":"WP_Rapier_G6_011.png",
       "normal":[

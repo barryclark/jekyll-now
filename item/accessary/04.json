@@ -54,7 +54,7 @@
    {
       "no":300420003,
       "name":"타테오시안 벨트",
-      "jp":"",
+      "jp":"タテオシアンベルト",
       "grade":"legendary",
       "icon":"ACC_Belt_G2_003.png",
       "normal":[
@@ -71,7 +71,7 @@
    {
       "no":300420004,
       "name":"하르나크의 벨트",
-      "jp":"",
+      "jp":"ハルナークのベルト",
       "grade":"legendary",
       "icon":"ACC_Belt_G2_004.png",
       "normal":[
@@ -602,7 +602,7 @@
    {
       "no":300440008,
       "name":"황금의 벨트",
-      "jp":"",
+      "jp":"黄金のベルト",
       "grade":"rare",
       "icon":"ACC_Belt_G4_008.png",
       "normal":[
@@ -626,7 +626,7 @@
    {
       "no":300440009,
       "name":"미궁의 벨트",
-      "jp":"",
+      "jp":"メイズベルト",
       "grade":"rare",
       "icon":"ACC_Belt_G4_009.png",
       "normal":[
@@ -732,7 +732,7 @@
    {
       "no":300450005,
       "name":"청동 벨트",
-      "jp":"",
+      "jp":"ブロンズベルト",
       "grade":"uncommon",
       "icon":"ACC_Belt_G5_005.png",
       "normal":[

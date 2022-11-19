@@ -106,7 +106,7 @@
    {
       "no":300320005,
       "name":"크란벨 링",
-      "jp":"",
+      "jp":"クランベルリング",
       "grade":"legendary",
       "icon":"ACC_Ring_G2_005.png",
       "normal":[
@@ -652,7 +652,7 @@
    {
       "no":300330011,
       "name":"광휘의 반지",
-      "jp":"",
+      "jp":"光輝のリング",
       "grade":"epic",
       "icon":"ACC_Ring_G3_011.png",
       "normal":[
@@ -1346,7 +1346,7 @@
    {
       "no":300340017,
       "name":"마안의 반지",
-      "jp":"",
+      "jp":"魔眼のリング",
       "grade":"rare",
       "icon":"ACC_Ring_G4_017.png",
       "normal":[
@@ -1370,7 +1370,7 @@
    {
       "no":300340018,
       "name":"달의 반지",
-      "jp":"",
+      "jp":"ムーンリング",
       "grade":"rare",
       "icon":"ACC_Ring_G4_018.png",
       "normal":[
@@ -1534,7 +1534,7 @@
    {
       "no":300350008,
       "name":"카넬리안 반지",
-      "jp":"",
+      "jp":"カーネリアンリング",
       "grade":"uncommon",
       "icon":"ACC_Ring_G5_008.png",
       "normal":[
@@ -1550,7 +1550,7 @@
    {
       "no":300350009,
       "name":"토파즈 반지",
-      "jp":"",
+      "jp":"トパーズリング",
       "grade":"uncommon",
       "icon":"ACC_Ring_G5_009.png",
       "normal":[

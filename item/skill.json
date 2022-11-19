@@ -106,7 +106,7 @@
    {
       "no":500312006,
       "name":"전투 기술서 (리벤지)",
-      "jp":"",
+      "jp":"戦闘技術書(リベンジ)",
       "grade":"legendary",
       "icon":"Item_Usable_SkillBook_Sword_05.png",
       "normal":[
@@ -548,7 +548,7 @@
    {
       "no":500322006,
       "name":"이도류 비전서 (스플릿 슬래시)",
-      "jp":"",
+      "jp":"二刀流秘伝書(スプリットスラッシュ)",
       "grade":"legendary",
       "icon":"Item_Usable_SkillBook_Dual_05.png",
       "normal":[
@@ -990,7 +990,7 @@
    {
       "no":500332007,
       "name":"암살 비급 (데스 사인)",
-      "jp":"",
+      "jp":"暗殺秘本(デスサイン)",
       "grade":"legendary",
       "icon":"Item_Usable_SkillBook_Dagger_05.png",
       "normal":[
@@ -1427,6 +1427,22 @@
          "0,0.94%,14-4",
          "0,0.94%,16-3",
          "0,0.94%,18-3"
+      ]
+   },
+   {
+      "no":500342006,
+      "name":"궁술 교본 (에너지 쉴드)",
+      "jp":"弓術教本(エナジーシールド)",
+      "grade":"legendary",
+      "icon":"Item_Usable_SkillBook_Bow_05.png",
+      "normal":[
+      ],
+      "top":[
+        "0,2.16%,15-5",
+        "0,2.16%,15-5",
+        "0,2.16%,16-4",
+        "0,2.16%,17-4",
+        "0,2.16%,18-4"
       ]
    },
    {
@@ -1871,7 +1887,7 @@
    {
       "no":500352008,
       "name":"마도서 (글래시어 스톰)",
-      "jp":"",
+      "jp":"魔導書(グレイシャーストーム)",
       "grade":"legendary",
       "icon":"Item_Usable_SkillBook_Staff_05.png",
       "normal":[
@@ -2342,7 +2358,7 @@
    {
       "no":500362006,
       "name":"사제의 기록 (세인트 길로틴)",
-      "jp":"",
+      "jp":"司祭録(セイントギロチん)",
       "grade":"legendary",
       "icon":"Item_Usable_SkillBook_Orb_05.png",
       "normal":[
@@ -2813,7 +2829,7 @@
    {
       "no":500372006,
       "name":"창술서 (언터쳐블 포스)",
-      "jp":"",
+      "jp":"槍術書(アンタッチャブルフォース)",
       "grade":"legendary",
       "icon":"Item_Usable_SkillBook_Spear_05.png",
       "normal":[
@@ -3194,7 +3210,7 @@
    {
       "no":500382003,
       "name":"대검 전술서 (디스리가드)",
-      "jp":"",
+      "jp":"両手剣戦術書(ディスリガード)",
       "grade":"legendary",
       "icon":"Item_Usable_SkillBook_GreatSword_05.png",
       "normal":[
@@ -3760,7 +3776,7 @@
    {
       "no":500392009,
       "name":"석궁 훈련서 (텀블다운)",
-      "jp":"",
+      "jp":"クロスボウ訓練書(タンブルダウン)",
       "grade":"legendary",
       "icon":"Item_Usable_SkillBook_CrossBow_05.png",
       "normal":[
@@ -4113,7 +4129,7 @@
    {
       "no":503202001,
       "name":"세검 지도서 (블링크)",
-      "jp":"",
+      "jp":"細身剣指導書(ブリンク)",
       "grade":"legendary",
       "icon":"Item_Usable_SkillBook_Rapier_05.png",
       "normal":[
@@ -4139,7 +4155,7 @@
    {
       "no":503202002,
       "name":"세검 지도서 (레번 클로)",
-      "jp":"",
+      "jp":"細身剣指導書(レイヴンクロー)",
       "grade":"legendary",
       "icon":"Item_Usable_SkillBook_Rapier_05.png",
       "normal":[
@@ -4165,7 +4181,7 @@
    {
       "no":503202003,
       "name":"세검 지도서 (다크 윙)",
-      "jp":"",
+      "jp":"細身剣指導書(ダークウィング)",
       "grade":"legendary",
       "icon":"Item_Usable_SkillBook_Rapier_05.png",
       "normal":[
@@ -4191,7 +4207,7 @@
    {
       "no":503202004,
       "name":"세검 지도서 (레이피어니즘)",
-      "jp":"",
+      "jp":"細身剣指導書(レイピアニズム)",
       "grade":"legendary",
       "icon":"Item_Usable_SkillBook_Rapier_05.png",
       "normal":[
@@ -4217,7 +4233,7 @@
    {
       "no":503202005,
       "name":"세검 지도서 (익스트림 무브)",
-      "jp":"",
+      "jp":"細身剣指導書(エクストリームムーブ)",
       "grade":"legendary",
       "icon":"Item_Usable_SkillBook_Rapier_05.png",
       "normal":[
@@ -4234,7 +4250,7 @@
    {
       "no":503203001,
       "name":"세검 지도서 (스팅 Ⅲ)",
-      "jp":"",
+      "jp":"細身剣指導書(スティングⅢ)",
       "grade":"epic",
       "icon":"Item_Usable_SkillBook_Rapier_04.png",
       "normal":[
@@ -4253,7 +4269,7 @@
    {
       "no":503203002,
       "name":"세검 지도서 (슈팅 스타 Ⅰ)",
-      "jp":"",
+      "jp":"細身剣指導書(シューティングスターⅠ)",
       "grade":"epic",
       "icon":"Item_Usable_SkillBook_Rapier_04.png",
       "normal":[
@@ -4274,7 +4290,7 @@
    {
       "no":503203003,
       "name":"세검 지도서 (패링 애로우)",
-      "jp":"",
+      "jp":"細身剣指導書(パリィアロー)",
       "grade":"epic",
       "icon":"Item_Usable_SkillBook_Rapier_04.png",
       "normal":[
@@ -4293,7 +4309,7 @@
    {
       "no":503203004,
       "name":"세검 지도서 (서몬 소드)",
-      "jp":"",
+      "jp":"細身剣指導書(サモンソード)",
       "grade":"epic",
       "icon":"Item_Usable_SkillBook_Rapier_04.png",
       "normal":[
@@ -4312,7 +4328,7 @@
    {
       "no":503203005,
       "name":"세검 지도서 (컷 앤 슬라이스)",
-      "jp":"",
+      "jp":"細身剣指導書(カットアンドスライス)",
       "grade":"epic",
       "icon":"Item_Usable_SkillBook_Rapier_04.png",
       "normal":[
@@ -4330,7 +4346,7 @@
    {
       "no":503203006,
       "name":"세검 지도서 (소드 블라썸)",
-      "jp":"",
+      "jp":"細身剣指導書(ソードブロッサム)",
       "grade":"epic",
       "icon":"Item_Usable_SkillBook_Rapier_04.png",
       "normal":[
@@ -4351,7 +4367,7 @@
    {
       "no":503203007,
       "name":"세검 지도서 (트레이스리스)",
-      "jp":"",
+      "jp":"細身剣指導書(トレイスレス)",
       "grade":"epic",
       "icon":"Item_Usable_SkillBook_Rapier_04.png",
       "normal":[
@@ -4372,7 +4388,7 @@
    {
       "no":503204001,
       "name":"세검 지도서 (스팅 Ⅱ)",
-      "jp":"",
+      "jp":"細身剣指導書(スティングⅡ)",
       "grade":"rare",
       "icon":"Item_Usable_SkillBook_Rapier_03.png",
       "normal":[
@@ -4387,7 +4403,7 @@
    {
       "no":503204002,
       "name":"세검 지도서 (레이피어 왈츠)",
-      "jp":"",
+      "jp":"細身剣指導書(レイピアワルツ)",
       "grade":"rare",
       "icon":"Item_Usable_SkillBook_Rapier_03.png",
       "normal":[
@@ -4401,7 +4417,7 @@
    {
       "no":503204003,
       "name":"세검 지도서 (소드 플러리)",
-      "jp":"",
+      "jp":"細身剣指導書(ソードフラリー)",
       "grade":"rare",
       "icon":"Item_Usable_SkillBook_Rapier_03.png",
       "normal":[
@@ -4416,7 +4432,7 @@
    {
       "no":503204004,
       "name":"세검 지도서 (이베이전 마스터)",
-      "jp":"",
+      "jp":"細身剣指導書(イベイジョンマスター)",
       "grade":"rare",
       "icon":"Item_Usable_SkillBook_Rapier_03.png",
       "normal":[
@@ -4430,7 +4446,7 @@
    {
       "no":503204005,
       "name":"세검 지도서 (리포스테)",
-      "jp":"",
+      "jp":"細身剣指導書(リポステ)",
       "grade":"rare",
       "icon":"Item_Usable_SkillBook_Rapier_03.png",
       "normal":[
@@ -4444,7 +4460,7 @@
    {
       "no":503204006,
       "name":"세검 지도서 (라이트 스텝)",
-      "jp":"",
+      "jp":"細身剣指導書(ライトステップ)",
       "grade":"rare",
       "icon":"Item_Usable_SkillBook_Rapier_03.png",
       "normal":[
@@ -4458,7 +4474,7 @@
    {
       "no":503204007,
       "name":"세검 지도서 (페네트레이트)",
-      "jp":"",
+      "jp":"細身剣指導書(ペネトレイト)",
       "grade":"rare",
       "icon":"Item_Usable_SkillBook_Rapier_03.png",
       "normal":[
@@ -4472,7 +4488,7 @@
    {
       "no":503205001,
       "name":"세검 지도서 (스팅 Ⅰ)",
-      "jp":"",
+      "jp":"細身剣指導書(スティングⅠ)",
       "grade":"uncommon",
       "icon":"Item_Usable_SkillBook_Rapier_02.png",
       "normal":[
@@ -4486,7 +4502,7 @@
    {
       "no":503205002,
       "name":"세검 지도서 (로어 바디 트레이닝)",
-      "jp":"",
+      "jp":"細身剣指導書(ロウアーボディートレーニング)",
       "grade":"uncommon",
       "icon":"Item_Usable_SkillBook_Rapier_02.png",
       "normal":[
@@ -4500,7 +4516,7 @@
    {
       "no":503205003,
       "name":"세검 지도서 (스테이블 포지션)",
-      "jp":"",
+      "jp":"細身剣指導書(ステイブルポジション)",
       "grade":"uncommon",
       "icon":"Item_Usable_SkillBook_Rapier_02.png",
       "normal":[
@@ -4514,7 +4530,7 @@
    {
       "no":503205004,
       "name":"세검 지도서 (리포지드 엣지)",
-      "jp":"",
+      "jp":"細身剣指導書(リフォージドエッジ)",
       "grade":"uncommon",
       "icon":"Item_Usable_SkillBook_Rapier_02.png",
       "normal":[
@@ -4528,7 +4544,7 @@
    {
       "no":503205005,
       "name":"세검 지도서 (부스트 스피릿)",
-      "jp":"",
+      "jp":"細身剣指導書(ブーストスピリッツ)",
       "grade":"uncommon",
       "icon":"Item_Usable_SkillBook_Rapier_02.png",
       "normal":[
@@ -4542,7 +4558,7 @@
    {
       "no":503205006,
       "name":"세검 지도서 (리파인 블레이드)",
-      "jp":"",
+      "jp":"細身剣指導書(リファインブレード)",
       "grade":"uncommon",
       "icon":"Item_Usable_SkillBook_Rapier_02.png",
       "normal":[
@@ -4556,7 +4572,7 @@
    {
       "no":503205007,
       "name":"세검 지도서 (샤픈 레이피어)",
-      "jp":"",
+      "jp":"細身剣指導書(シャープンレイピア)",
       "grade":"uncommon",
       "icon":"Item_Usable_SkillBook_Rapier_02.png",
       "normal":[
@@ -4648,7 +4664,7 @@
    {
       "no":503292006,
       "name":"마검 비술서 (뱀파이어릭 존)",
-      "jp":"",
+      "jp":"魔剣秘伝書(ヴァンパイアリックゾーン)",
       "grade":"legendary",
       "icon":"Item_Usable_SkillBook_ChainSword_05.png",
       "normal":[

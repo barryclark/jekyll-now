@@ -74,7 +74,7 @@
    {
       "no":200620004,
       "name":"크란벨의 망토",
-      "jp":"",
+      "jp":"クランベルのクローク",
       "grade":"legendary",
       "icon":"AR_Cape_G2_004.png",
       "normal":[
@@ -602,7 +602,7 @@
    {
       "no":200630010,
       "name":"월영의 망토",
-      "jp":"",
+      "jp":"ムーンシャドークローク",
       "grade":"epic",
       "icon":"AR_Cape_G3_011.png",
       "normal":[
@@ -1018,7 +1018,7 @@
    {
       "no":200640011,
       "name":"혼돈의 망토",
-      "jp":"",
+      "jp":"混沌のクローク",
       "grade":"rare",
       "icon":"AR_Cape_G4_011.png",
       "normal":[
@@ -1050,7 +1050,7 @@
    {
       "no":200640012,
       "name":"감시자의 날개",
-      "jp":"",
+      "jp":"監視者の翼",
       "grade":"rare",
       "icon":"AR_Cape_G4_012.png",
       "normal":[
@@ -1226,7 +1226,7 @@
    {
       "no":200650008,
       "name":"신성의 망토",
-      "jp":"",
+      "jp":"ブレスドクローク",
       "grade":"uncommon",
       "icon":"AR_Cape_G5_008.png",
       "normal":[

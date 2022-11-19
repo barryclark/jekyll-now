@@ -787,7 +787,7 @@
    {
       "no":200130013,
       "name":"월영의 흉갑",
-      "jp":"",
+      "jp":"ムーンシャドーブレストプレート",
       "grade":"epic",
       "icon":"AR_Torso_G3_013.png",
       "normal":[
@@ -1059,7 +1059,7 @@
    {
       "no":200140008,
       "name":"혼돈의 흉갑",
-      "jp":"",
+      "jp":"混沌のブレストプレート",
       "grade":"rare",
       "icon":"AR_Torso_G4_008.png",
       "normal":[
@@ -1605,7 +1605,7 @@
    {
       "no":200150026,
       "name":"봉인의 로브",
-      "jp":"",
+      "jp":"封印のローブ",
       "grade":"uncommon",
       "icon":"AR_Torso_G5_026.png",
       "normal":[
@@ -1623,7 +1623,7 @@
    {
       "no":200150027,
       "name":"신성의 튜닉",
-      "jp":"",
+      "jp":"ブレスドチューニック",
       "grade":"uncommon",
       "icon":"AR_Torso_G5_027.png",
       "normal":[

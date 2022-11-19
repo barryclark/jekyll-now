@@ -753,7 +753,7 @@
    {
       "no":200430013,
       "name":"월영의 부츠",
-      "jp":"",
+      "jp":"ムーンシャドーブーツ",
       "grade":"epic",
       "icon":"AR_Boots_G3_013.png",
       "normal":[
@@ -1135,7 +1135,7 @@
    {
       "no":200440011,
       "name":"혼돈의 부츠",
-      "jp":"",
+      "jp":"混沌のブーツ",
       "grade":"rare",
       "icon":"AR_Boots_G4_011.png",
       "normal":[
@@ -1497,7 +1497,7 @@
    {
       "no":200450017,
       "name":"신성의 부츠",
-      "jp":"",
+      "jp":"ブレスドブーツ",
       "grade":"uncommon",
       "icon":"AR_Boots_G5_017.png",
       "normal":[

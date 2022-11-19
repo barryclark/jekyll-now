@@ -512,7 +512,7 @@
    {
       "no":200230009,
       "name":"정령의 각반",
-      "jp":"",
+      "jp":"精霊のゲートル",
       "grade":"epic",
       "icon":"AR_Pants_G3_009.png",
       "normal":[
@@ -798,7 +798,7 @@
    {
       "no":200240008,
       "name":"혼돈의 각반",
-      "jp":"",
+      "jp":"混沌のゲートル",
       "grade":"rare",
       "icon":"AR_Pants_G4_008.png",
       "normal":[
@@ -830,7 +830,7 @@
    {
       "no":200240009,
       "name":"사념의 호즈",
-      "jp":"",
+      "jp":"思念のホース",
       "grade":"rare",
       "icon":"AR_Pants_G4_009.png",
       "normal":[
@@ -1122,7 +1122,7 @@
    {
       "no":200250014,
       "name":"신성의 호즈",
-      "jp":"",
+      "jp":"ブレスドホース",
       "grade":"uncommon",
       "icon":"AR_Pants_G5_015.png",
       "normal":[
@@ -1140,7 +1140,7 @@
    {
       "no":200250015,
       "name":"자연의 호즈",
-      "jp":"",
+      "jp":"ネイチャーホース",
       "grade":"uncommon",
       "icon":"AR_Pants_G5_016.png",
       "normal":[

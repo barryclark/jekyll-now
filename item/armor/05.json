@@ -672,7 +672,7 @@
    {
       "no":200530011,
       "name":"세계수의 면류관",
-      "jp":"",
+      "jp":"世界樹の冠",
       "grade":"epic",
       "icon":"AR_Helmet_G3_011.png",
       "normal":[
@@ -955,7 +955,7 @@
    {
       "no":200540008,
       "name":"키리츠의 투구",
-      "jp":"",
+      "jp":"キリッツのヘルム",
       "grade":"rare",
       "icon":"AR_Helmet_G4_008.png",
       "normal":[
@@ -1279,7 +1279,7 @@
    {
       "no":200550015,
       "name":"봉인의 서클릿",
-      "jp":"",
+      "jp":"封印のサークレット",
       "grade":"uncommon",
       "icon":"AR_Helmet_G5_015.png",
       "normal":[
@@ -1297,7 +1297,7 @@
    {
       "no":200550016,
       "name":"신성의 서클릿",
-      "jp":"",
+      "jp":"ブレスドサークレット",
       "grade":"uncommon",
       "icon":"AR_Helmet_G5_016.png",
       "normal":[

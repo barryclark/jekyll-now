@@ -717,7 +717,7 @@
    {
       "no":200840007,
       "name":"미궁의 큐브",
-      "jp":"",
+      "jp":"メイズキューブ",
       "grade":"rare",
       "icon":"AR_Sigil_G4_007.png",
       "normal":[
@@ -748,7 +748,7 @@
    {
       "no":200840008,
       "name":"키리츠의 저주",
-      "jp":"",
+      "jp":"キリッツの呪い",
       "grade":"rare",
       "icon":"AR_Sigil_G4_008.png",
       "normal":[
@@ -933,7 +933,7 @@
    {
       "no":200850008,
       "name":"신수의 꽃잎",
-      "jp":"",
+      "jp":"神樹の花びら",
       "grade":"uncommon",
       "icon":"AR_Sigil_G5_008.png",
       "normal":[
@@ -1018,7 +1018,7 @@
    {
       "no":200860004,
       "name":"정령의 가시",
-      "jp":"",
+      "jp":"精霊の茨",
       "grade":"common",
       "icon":"AR_Sigil_G6_004.png",
       "normal":[

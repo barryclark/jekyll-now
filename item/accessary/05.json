@@ -148,7 +148,7 @@
    {
       "no":300540005,
       "name":"황금의 팔찌",
-      "jp":"",
+      "jp":"黄金のブレスレット",
       "grade":"rare",
       "icon":"ACC_Bracelet_G4_005.png",
       "normal":[
@@ -172,7 +172,7 @@
    {
       "no":300540006,
       "name":"미궁의 팔찌",
-      "jp":"",
+      "jp":"メイズブレスレット",
       "grade":"rare",
       "icon":"ACC_Bracelet_G4_006.png",
       "normal":[
@@ -302,7 +302,7 @@
    {
       "no":300550005,
       "name":"카넬리안 팔찌",
-      "jp":"",
+      "jp":"カーネリアンブレスレット",
       "grade":"uncommon",
       "icon":"ACC_Bracelet_G5_005.png",
       "normal":[
