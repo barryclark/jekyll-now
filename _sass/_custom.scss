@@ -43,6 +43,11 @@ nav {
 	}
 }
 
+hr {
+	opacity: 50%;
+	margin: 1rem 0;
+}
+
 .site-info {
 	.site-name {
 		color: $color;
@@ -71,10 +76,7 @@ nav {
 	}
 	.date {
 		font-size: 12px;
-		opacity: 50%;
-		hr {
-			margin: 1rem 0;
-		}
+		color: lighten($darkGray,50%);
 	}
 }
 
@@ -144,5 +146,11 @@ nav {
 			cursor: pointer;
 			color: $color;
 		}
+	}
+}
+
+.mailerlite {
+	& > div {
+		margin: 2rem 0;
 	}
 }
