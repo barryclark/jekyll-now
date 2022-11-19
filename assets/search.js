@@ -15,26 +15,11 @@ $(document).ready(function() {
     $('.wrapper-masthead').children(":last").toggle();
   });
 	//저장
-	var item = localStorage.getItem('item');
-	var update = localStorage.getItem('version');
-  const version = 20200731;
+	var item2 = localStorage.getItem('item2');
+	var update2 = localStorage.getItem('version2');
+  const version2 = 20221112;
 
-	item = JSON.parse(item);
-
-	function datalist_add(datalist, target){
-		var str='';
-		for (var i=0; i < datalist.length;++i){
-			if(datalist[i]['option'] != ""){
-				str += "<option value=\""+datalist[i]['name']+"\" label=\""+datalist[i]['recipe']+"\" /></option>";
-			}else{
-				str += "<option value=\""+datalist[i]['name']+"\" /></option>";
-			}
-		}
-		var my_list=document.getElementById(target);
-		if (str) {
-			my_list.innerHTML = str;
-		}
-	}
+	item2 = JSON.parse(item2);
 
   function auto_come(data){
     var ref = data;
@@ -57,8 +42,7 @@ $(document).ready(function() {
                     var lang = "jp";
                   }
                     $('#autoMaker').append(
-
-                        $('<div>').html("<a href='https://purple2m.github.io/"+lang+"/alchemist/?item="+arg.name+"'><img class=\"thumb\" src=\"https://wstatic-cdn.plaync.com/powerbook/l2m/icon/Icon_128/Item/Icon_"+arg.icon+".png\" onerror=\"this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';\">"+item_name+"</a>").attr({'recipe':arg.recipe})
+                        $('<div>').html("<a href='https://purple2m.github.io/"+lang+"/alchemist/?item="+arg.no+"'><img class=\"thumb\" src=\"https://wstatic-cdn.plaync.com/powerbook/l2m/icon/Icon_128/Item/Icon_"+arg.icon+"\" onerror=\"this.src='https://wstatic-cdn.plaync.com/plaync/gameinfo/img/thumb-lineage2m.png';\">"+item_name+"</a>").attr({'recipe':arg.recipe})
                     );
                 }
             });
@@ -83,24 +67,14 @@ $(document).ready(function() {
   }
 
 
-	if(typeof item === 'undefined' || item === null || update != version){
+	if(typeof item2 === 'undefined' || item2 === null || update2 != version2){
     window.localStorage.clear();
 		$.getJSON("https://purple2m.github.io/alchemist/item2.json?version=20220809", function(data) {
-			localStorage.setItem('item', JSON.stringify(data));
-      localStorage.setItem('version', 20200731);
+			localStorage.setItem('item2', JSON.stringify(data));
+      localStorage.setItem('version2', 20221112);
       auto_come(data);
 		});
-
 	}else{
-    if(item.length != 1174 || update != version){
-      window.localStorage.clear();
-      $.getJSON("https://purple2m.github.io/alchemist/item2.json?version=20220809", function(data) {
-				localStorage.setItem('item', JSON.stringify(data));
-        localStorage.setItem('version', 20200731);
-        auto_come(data);
-  		});
-    } else {
-		    auto_come(item);
-    }
+    auto_come(item2);
 	}
 });
