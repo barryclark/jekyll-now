@@ -59,9 +59,9 @@ Dikutip dari laman resmi https://diajurit.tni-au.mil.id/, berikut informasinya:
 
 4. Bagi yang sudah bekerja:
 
-   a. Melampirkan surat persetujuan/ijin dari kepala dinas/jawatan/instansi yang bersangkutan.
+   * Melampirkan surat persetujuan/ijin dari kepala dinas/jawatan/instansi yang bersangkutan.
    
-   b. Melampirkan surat pernyataan bersedia diberhentikan dari status pegawai, bila diterima menjadi Prajurit Karier Tamtama PK TNI Angkatan Udara.
+   * Melampirkan surat pernyataan bersedia diberhentikan dari status pegawai, bila diterima menjadi Prajurit Karier Tamtama PK TNI Angkatan Udara.
  
 5. Bersedia mematuhi peraturan bebas KKN baik langsung maupun tidak langsung. Apabila terbukti secara hukum melanggar sebagaimana yang dimaksud, maka harus bersedia dinyatakan tidak lulus dan atau dikeluarkan dari Dikma, jika pelanggaran tersebut diketemukan di kemudian hari pada saat mengikuti pendidikan pertama.
  
