@@ -142,12 +142,13 @@ if(searching_item){
 if(searching_recipe){
   recipe_reset(searching_recipe, find, lng);
 }
-
-$('#searching_find ul li').click(function(){
-  var className = $(this).attr('class');
-  find_material(className, "recipe", lng);
-  $('#recipe_material').show();
-});
+$(document).ready(function() {
+  $('#searching_find ul li').click(function(){
+    var className = $(this).attr('class');
+    find_material(className, "recipe", lng);
+    $('#recipe_material').show();
+  });
+});  
 
 $('#searching_recipe input[type=radio][name=recipe_list]').change(function() {
   recipe_reset($(this).val(), find, lng);
