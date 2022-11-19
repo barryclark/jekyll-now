@@ -11,6 +11,62 @@ function isitem(element, item)  {
     return true;
   }
 }
+function find_recipe(searching_recipe, type, lng){
+  var recipe_material = "<ul class='recipe_list'>";
+    $.getJSON(baseurl+"/alchemist/"+type+".json?version=20220801", function(data) {
+      for (var i=0; i < data.length;++i){
+        if(data[i]['no'] == searching_recipe){
+          for (var j=0; j < data[i]['recipe'].length;++j){
+            if (lng == "jp"){
+              find_recipe = data[i]['jp'][j].split(',');
+            } else {
+              find_recipe = data[i]['recipe'][j].split(',');
+            }
+
+            if(find_recipe[0] === undefined){
+              find_recipe[0] = '';
+            } else {
+              recipe_material += "<li>";
+              recipe_material += "<span>"+find_recipe[0]+"</span>";
+            }
+
+            if(find_recipe[1] === undefined){
+              find_recipe[1] = '';
+            } else {
+              recipe_material += "<span>"+find_recipe[1]+"</span>";
+            }
+
+            if(find_recipe[2] === undefined){
+              find_recipe[2] = '';
+            } else {
+              recipe_material += "<span>"+find_recipe[2]+"</span>";
+            }
+
+            if(find_recipe[3] === undefined){
+              find_recipe[3] = '';
+            } else {
+              recipe_material += "<span>"+find_recipe[3]+"</span>";
+            }
+
+            if(find_recipe[4] === undefined){
+              find_recipe[4] = '';
+            } else {
+              recipe_material += "<span>"+find_recipe[4]+"</span>";
+            }
+            if(find_recipe[0] === undefined){
+              recipe_material += "</li>";
+            }
+          }
+
+          break;
+        }
+      }
+      if (recipe_material != "<ul class='recipe_list'>"){
+        recipe_material += "</ul>";
+        document.getElementById("recipe_material").innerHTML = recipe_material;
+      }
+    });
+}
 
 let searching_item = getParameterByName('item');
 let searching_recipe = getParameterByName('recipe');
@@ -19,10 +75,11 @@ function get_recipe(data, lng){
   var step = '';
   var find = '';
   let recipe;
+
   find += "<ul class=\"normal_alc\">";
   for (var i=0; i < data.normal.length;++i){
     step = data.normal[i].split(',');
-    let recipe = step[2].split('-');
+    recipe = step[2].split('-');
     if(lng == "jp"){
       find += "<li class=\""+recipe[0]+"\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
     } else {
@@ -83,6 +140,11 @@ if(searching_item){
 if(searching_recipe){
   recipe_reset(searching_recipe, find, lng);
 }
+$('#searching_find li').click(function(){
+  find_recipe(5, "recipe", lng);
+  $('#recipe_material').show();
+});
+
 $('#searching_recipe input[type=radio][name=recipe_list]').change(function() {
   recipe_reset($(this).val(), find, lng);
 });

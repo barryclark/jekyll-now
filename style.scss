@@ -385,6 +385,12 @@ nav {
 }
 #recipe_material{
   margin: 0.5em 0;
+  position: absolute;
+  bottom: 0;
+  right: 1em;
+  background: black;
+  padding: 0.3em;
+  display: none;
 }
 
 #searching_find{
