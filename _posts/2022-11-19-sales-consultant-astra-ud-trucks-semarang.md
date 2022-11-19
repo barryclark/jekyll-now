@@ -2,6 +2,7 @@
 layout: post
 title: Sales Consultant Astra UD Trucks di Semarang
 author: Pak Budi
+date: 2022-11-19 08:00:00 +07:00
 ---
 
 **ASTRA UD Trucks** sebagai mitra bisnis terpercaya di industri truk Indonesia berkomitmen untuk menyediakan total solusi transportasi terdepan melalui inovasi produk serta layanan yang berkesinambungan.

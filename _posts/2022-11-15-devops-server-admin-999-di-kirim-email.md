@@ -2,6 +2,7 @@
 layout: post
 title: KERJA REMOTE - Devops, Server Admin [999] di PT. Kirim Email Indonesia
 author: Pak Budi
+date: 2022-11-15 08:00:00 +07:00
 ---
 
 Saat ini ada lebih dari 28.000 perusahaan menggunakan layanan di KIRIM.EMAIL dan Insya Allah akan bertambah lagi tahun ini.

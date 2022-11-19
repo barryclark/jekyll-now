@@ -2,6 +2,7 @@
 layout: post
 title: Customer Service Faza Store di Wonokerto Pekalongan
 author: Pak Budi
+date: 2022-11-17 09:00:00 +07:00
 ---
 
 **Faza Store** yang beralamat di Kecamatan Wonokerto, Kabupaten Pekalongan tengah membuka lowongan pekerjaan dengan posisi **Customer Service**.

@@ -2,6 +2,7 @@
 layout: post
 title: Finance Accounting Staff Adaro Energy di Jakarta
 author: Pak Budi
+date: 2022-11-18 09:00:00 +07:00
 ---
 
 Sejarah Adaro dimulai dari guncangan minyak dunia pada tahun 1970an. Hal ini menyebabkan Pemerintah Indonesia merevisi kebijakan energinya, yang pada saat itu berfokus kepada minyak dan gas, untuk mengikut sertakan batubara sebagai bahan bakar untuk penggunaan dalam negeri.

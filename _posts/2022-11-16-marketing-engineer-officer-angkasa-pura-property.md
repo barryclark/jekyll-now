@@ -2,6 +2,7 @@
 layout: post
 title: Marketing Engineer Officer di PT. Angkasa Pura Properti
 author: Pak Budi
+date: 2022-11-16 08:00:00 +07:00
 ---
 
 PT Angkasa Pura Properti merupakan anak perusahaan dari PT Angkasa Pura I (Persero) yang beroperasi secara efektif pada 6 Januari 2012.

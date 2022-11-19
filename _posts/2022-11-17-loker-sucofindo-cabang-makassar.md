@@ -2,6 +2,7 @@
 layout: post
 title: Lowongan Kerja BUMN PT SUCOFINDO Cabang Makassar untuk Lulusan D3-S1
 author: Pak Budi
+date: 2022-11-17 08:00:00 +07:00
 ---
 
 [PT Superintending Company of Indonesia (selanjutnya disebut SUCOFINDO)](https://www.sucofindo.co.id/id/sejarah-singkat-sucofindo) secara resmi telah tergabung dalam Holding Jasa Survei yang diberi nama IDSurvey bersama dengan PT Biro Klasifikasi Indonesia (Persero) sebagai ketua holding dan PT Surveyor Indonesia.

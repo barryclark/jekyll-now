@@ -2,6 +2,7 @@
 layout: post
 title: Customer Service SiCepat Yogyakarta
 author: Pak Budi
+date: 2022-11-15 09:00:00 +07:00
 ---
 
 SiCepat Ekspres merupakan perusahaan yang bergerak pada bidang jasa berfokus pada pelayanan jasa pengiriman barang yang mencakup seluruh wilayah Indonesia.
