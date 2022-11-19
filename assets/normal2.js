@@ -6,15 +6,10 @@ $('.view_recipe').click(function(){
   $('html').animate({scrollTop : offset.top}, 400);
 });
 
-function isitem(datalist, item){
-	var str='';
-	for (var i=0; i < datalist.length;++i){
-		if(datalist[i]['no'] === item){
-			str = datalist[i];
-      break;
-		}
-	}
-	return str;
+function isitem(element, item)  {
+  if(element.no === item)  {
+    return true;
+  }
 }
 
 let searching_item = getParameterByName('item');
@@ -38,7 +33,7 @@ function get_item(item, lng){
   }
 
   $.getJSON(baseurl+"/item/"+item_type+"/"+item_type2+".json", function(data) {
-    let info = isitem(data, item);
+    const info = data.find(v => v.no === item);
     console.log(info.name);
   });
 }
