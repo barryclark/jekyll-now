@@ -50,8 +50,3 @@ Available Position: 1
 
 Sumber:
 * [website resmi Adaro Energy](https://www.adaro.com/pages/read/11/48/Lowongan%20Pekerjaan)
-
----
-
-<!-- https://www.mailerlite.com/ -->
-<div class="ml-embedded" data-form="OJcQpQ" style="min-height:480px"></div>

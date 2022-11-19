@@ -38,8 +38,3 @@ Produk dan layanan yang inovatif dari ASTRA UD Trucks menjawab segala tantangan 
 
 _Catatan:_
 * _Untuk update posisi lowongan kerja ASTRA UD Trucks dapat dicek [di link ini](https://astraudtrucks.co.id/page/karir)._
-
----
-
-<!-- https://www.mailerlite.com/ -->
-<div class="ml-embedded" data-form="OJcQpQ" style="min-height:480px"></div>

@@ -71,8 +71,3 @@ Thank you for visiting and, bye…_
 3. Email yang tidak sesuai persyaratan di atas akan **diabaikan**.
 
 <div class="apply"><a href="mailto:recruit@krm.email">Lamar posisi ini</a></div>
-
----
-
-<!-- https://www.mailerlite.com/ -->
-<div class="ml-embedded" data-form="OJcQpQ" style="min-height:480px"></div>
