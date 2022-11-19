@@ -11,10 +11,7 @@ function isitem(element, item)  {
     return true;
   }
 }
-function find_material(type, lng){
-  var className = $(this).attr('class');
-  const searching_recipe = className;
-
+function find_material(searching_recipe, type, lng){
   var recipe_material = "<ul class='recipe_list'>";
 
     $.getJSON(baseurl+"/alchemist/"+type+".json?version=20220801", function(data) {
@@ -88,9 +85,9 @@ function get_recipe(data, lng){
     step = data.normal[i].split(',');
     recipe = step[2].split('-');
     if(lng == "jp"){
-      find += "<li onclick=\"find_material('normal', 'ko');\" class=\""+recipe[0]+"\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
+      find += "<li onclick=\"find_material('"+recipe[0]+"','recipe', 'ko');\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
     } else {
-      find += "<li onclick=\"find_material('normal', 'ko');\" class=\""+recipe[0]+"\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
+      find += "<li onclick=\"find_material('"+recipe[0]+"','recipe', 'ko');\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
     }
   }
   find += "</ul>";
@@ -144,10 +141,3 @@ function get_item(item, lng){
 if(searching_item){
   get_item(searching_item, lng);
 }
-if(searching_recipe){
-  recipe_reset(searching_recipe, find, lng);
-}
-
-$('#searching_recipe input[type=radio][name=recipe_list]').change(function() {
-  recipe_reset($(this).val(), find, lng);
-});
