@@ -11,8 +11,9 @@ function isitem(element, item)  {
     return true;
   }
 }
-function find_recipe(searching_recipe, type, lng){
+function find_material(searching_recipe, type, lng){
   var recipe_material = "<ul class='recipe_list'>";
+
     $.getJSON(baseurl+"/alchemist/"+type+".json?version=20220801", function(data) {
       for (var i=0; i < data.length;++i){
         if(data[i]['no'] == searching_recipe){
@@ -65,6 +66,7 @@ function find_recipe(searching_recipe, type, lng){
         recipe_material += "</ul>";
         document.getElementById("recipe_material").innerHTML = recipe_material;
       }
+
     });
 }
 
@@ -143,7 +145,7 @@ if(searching_recipe){
 
 $('#searching_find ul li').click(function(){
   var className = $(this).attr('class');
-  find_recipe(className, "recipe", lng);
+  find_material(className, "recipe", lng);
   $('#recipe_material').show();
 });
 
