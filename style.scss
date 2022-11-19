@@ -419,10 +419,10 @@ nav {
     border-bottom: 1px solid $white8;
   }
   li>span:first-child{
-    border:
+    background:red;
   }
   li>span:nth-child(2){
-    border:
+    background:blue;
   }
   @include mobile {
     font-size:0.8em;
