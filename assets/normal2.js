@@ -81,18 +81,28 @@ function get_recipe(data, lng){
   let recipe;
 
   find += "<ul class=\"normal_alc\">";
+  if(lng == "jp"){
+    find += "<h1>ふつう錬金</h1>";
+  } else {
+    find += "<h1>일반 연금</h1>";
+  }
   for (var i=0; i < data.normal.length;++i){
     step = data.normal[i].split(',');
     recipe = step[2].split('-');
     if(lng == "jp"){
-      find += "<li onclick=\"find_material('"+recipe[0]+"','recipe', '"+lng+"');\">"+step[2]+" +"+step[0]+" "+data.jp+" ("+step[1]+")</li>";
+      find += "<li onclick=\"find_material('"+recipe[0]+"','recipe', '"+lng+"');\"><span>"+recipe[0]+"</span><span>"+recipe[1]+"</span>" +"+step[0]+" "+data.jp+" ("+step[1]+")</li>";
     } else {
-      find += "<li onclick=\"find_material('"+recipe[0]+"','recipe', '"+lng+"');\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
+      find += "<li onclick=\"find_material('"+recipe[0]+"','recipe', '"+lng+"');\"><span>"+recipe[0]+"</span><span>"+recipe[1]+"</span>" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
     }
   }
   find += "</ul>";
 
   find += "<ul class=\"top_alc\">";
+  if(lng == "jp"){
+    find += "<h1>上級錬金</h1>";
+  } else {
+    find += "<h1>상급 연금</h1>";
+  }
   for (var i=0; i < data.top.length;++i){
     step = data.top[i].split(',');
     recipe = step[2].split('-');
