@@ -39,7 +39,7 @@ function get_item(item, lng){
 }
 
 if(searching_item){
-
+  get_item(searching_item, lng);
 }
 if(searching_recipe){
   recipe_reset(searching_recipe, find, lng);
