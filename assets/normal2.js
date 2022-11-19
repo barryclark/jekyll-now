@@ -11,7 +11,10 @@ function isitem(element, item)  {
     return true;
   }
 }
-function find_material(searching_recipe, type, lng){
+function find_material(type, lng){
+  var className = $(this).attr('class');
+  const searching_recipe = className;
+
   var recipe_material = "<ul class='recipe_list'>";
 
     $.getJSON(baseurl+"/alchemist/"+type+".json?version=20220801", function(data) {
@@ -65,6 +68,8 @@ function find_material(searching_recipe, type, lng){
       if (recipe_material != "<ul class='recipe_list'>"){
         recipe_material += "</ul>";
         document.getElementById("recipe_material").innerHTML = recipe_material;
+
+        $('#recipe_material').show();
       }
 
     });
@@ -83,9 +88,9 @@ function get_recipe(data, lng){
     step = data.normal[i].split(',');
     recipe = step[2].split('-');
     if(lng == "jp"){
-      find += "<li class=\""+recipe[0]+"\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
+      find += "<li onclick=\"find_material(\"normal\", lng);\" class=\""+recipe[0]+"\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
     } else {
-      find += "<li class=\""+recipe[0]+"\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
+      find += "<li onclick=\"find_material(\"normal\", lng);\" class=\""+recipe[0]+"\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
     }
   }
   find += "</ul>";
@@ -142,13 +147,6 @@ if(searching_item){
 if(searching_recipe){
   recipe_reset(searching_recipe, find, lng);
 }
-$(document).ready(function() {
-  $('#searching_find ul li').click(function(){
-    var className = $(this).attr('class');
-    find_material(className, "recipe", lng);
-    $('#recipe_material').show();
-  });
-});  
 
 $('#searching_recipe input[type=radio][name=recipe_list]').change(function() {
   recipe_reset($(this).val(), find, lng);
