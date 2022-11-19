@@ -107,9 +107,9 @@ function get_recipe(data, lng){
     step = data.top[i].split(',');
     recipe = step[2].split('-');
     if(lng == "jp"){
-      find += "<li class=\""+recipe[0]+"\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
+      find += "<li onclick=\"find_material('"+recipe[0]+"','recipe', '"+lng+"');\"><span>"+recipe[0]+"</span><span>"+recipe[1]+"</span> +"+step[0]+" "+data.jp+" ("+step[1]+")</li>";
     } else {
-      find += "<li class=\""+recipe[0]+"\">"+step[2]+" +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
+      find += "<li onclick=\"find_material('"+recipe[0]+"','recipe', '"+lng+"');\"><span>"+recipe[0]+"</span><span>"+recipe[1]+"</span> +"+step[0]+" "+data.name+" ("+step[1]+")</li>";
     }
   }
   find += "</ul>";
