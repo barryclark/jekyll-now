@@ -142,7 +142,7 @@ if(searching_recipe){
 }
 
 $('#searching_find ul li').click(function(){
-  var className = $('#searching_find ul li').attr('class');
+  var className = $(this).attr('class');
   find_recipe(className, "recipe", lng);
   $('#recipe_material').show();
 });
