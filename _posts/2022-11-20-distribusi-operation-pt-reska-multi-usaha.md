@@ -36,10 +36,10 @@ Lowongan kerja ini **dibuka pada 18 November - 23 November 2022**.
 2. Fotokopi kartu keluarga terbaru;
 3. Fotokopi Sertifikat Vaksin Booster;
 4. A S L I Surat keterangan sehat yang diterbitkan oleh Klinik / Rumah Sakit;
-5. A S L I Surat Lamaran Kerja yang sudahditandatangani;
+5. A S L I Surat Lamaran Kerja yang sudah ditandatangani;
 6. A S L I Daftar riwayat hidup/Curriculum Vitae (CV);
-7. Fotokopi SKCK yang masihberlaku dan sudah dilegalisir;
-8. Fotoberwarna ukuran 4 x 6 sebanyak 2 lembar background warna merah;
+7. Fotokopi SKCK yang masih berlaku dan sudah dilegalisir;
+8. Foto berwarna ukuran 4 x 6 sebanyak 2 lembar background warna merah;
 9. Fotokopi Ijazah terakhir;
 10. Fotokopi kartu BPJS Kesehatan;
 11. Seluruh Dokumen Dimasukkan dalam 1 (satu) map snelhecter dan dibawa pada saat pemanggilan
