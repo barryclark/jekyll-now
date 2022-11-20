@@ -68,7 +68,7 @@ Dikutip dari laman resmi https://diajurit.tni-au.mil.id/, berikut informasinya:
 6. Bagi yang memiliki keterampilan khusus berbahasa asing (Rusia, Prancis, Spanyol, Mandarin, Korea, Inggris dan bahasa Asing lainnya) serta prestasi minimal juara di tingkat nasional dapat melampirkan Sertifikat/piagam penghargaan.
 
 **Pendaftaran dibuka secara online dan offline**
-
+ 
 ![alur daftar tni au]({{ site.baseurl }}/images/alur-daftar-tni-au.png)
 
 **Lokasi Pendaftaran:**
