@@ -51,7 +51,7 @@ Dikutip dari laman resmi https://diajurit.tni-au.mil.id/, berikut informasinya:
 
 **c. Persyaratan tambahan sebagai berikut:**
 
-1. Harus ada surat persetujuan orang tua/wali dan selama proses penerimaan prajurit TNI tidak melakukan itervensi terhadap panitia penerimaan dalam bentuk apapun.
+1. Harus ada surat persetujuan orang tua/wali dan selama proses penerimaan prajurit TNI tidak melakukan intervensi terhadap panitia penerimaan dalam bentuk apapun.
 
 2. Bagi yang memperoleh ijazah dari negara lain, harus mendapat pengesahan dari Kembuddikdasmen atau Kemenristek dan Dikti.
 
