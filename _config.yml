@@ -58,6 +58,9 @@ baseurl: ""
 
 permalink: /:title/
 
+# Schedule build
+future: false
+
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
