@@ -3,6 +3,10 @@
 $font: 'Open Sans', sans-serif;
 $color: #d72d2d;
 
+* {
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
 .sr-only {
 	position: absolute;
 	width: 1px;
@@ -33,28 +37,105 @@ a {
 	}
 }
 
-nav {
-	font-size: 16px;
-	a {
-		letter-spacing: 0;
-		@include mobile {
-			color: $color;
-		}
-	}
-}
-
 hr {
 	opacity: 50%;
 	margin: 1rem 0;
 }
 
+button {
+	font-family: inherit;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.masthead {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	@include mobile {
+		display: block;
+		padding: 15px 0;
+		border: none;
+	}
+}
+
+header {
+	@include mobile {
+		position: sticky;
+		top: 0;
+		z-index: 9;
+		background: white;
+		box-shadow: 0 0 1rem rgba(0,0,0,.1);
+	}
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	.brand {
+		display: flex;
+		align-items: center;
+	}
+	.toggle {
+		display: none;
+		@include mobile {
+			display: flex;
+			align-items: center;
+		}
+		button {
+			margin-left: .75rem;
+		}
+	}
+}
+
+nav {
+	font-size: 15px;
+	white-space: nowrap;
+	@include mobile {
+		display: none;
+		white-space: normal;
+		margin-top: 15px;
+		&.open {
+			display: block;
+		}
+	}
+	a {
+		letter-spacing: 0;
+		@include mobile {
+			display: block;
+			text-align: left;
+			padding: .5rem 0;
+		}
+	}
+}
+
+.site-avatar {
+	display: flex;
+	margin-right: 10px;
+	@include mobile {
+		margin-right: 5px;
+		img {
+			width: 40px;
+			height: 40px;
+		}
+	}
+}
 .site-info {
 	.site-name {
 		color: $color;
 		font-weight: 700;
+		@include mobile {
+			font-size: 20px;
+		}
 	}
 	.site-description {
 		font-size: 14px;
+		margin: .1rem 0;
+		opacity: .5;
+		@include mobile {
+			display: none;
+		}
 	}
 }
 
@@ -121,10 +202,7 @@ hr {
 		}
 	}
 	button {
-		background: transparent;
-		border: none;
 		padding: .85rem 1rem;
-		cursor: pointer;
 		position: absolute;
 		top: 0;
 		right: 0;
