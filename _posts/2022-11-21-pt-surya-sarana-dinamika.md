@@ -14,7 +14,7 @@ Awalnya PT Surya Sarana Dinamika berdiri tanggal 28 April 2000 dengan nama CV Su
 Profil perusahaan selengkapnya dapat [dibaca di sini](http://www.suryasarana.com/Tentang-Kami/profil-perusahaan.html).
 
 Dikutip dari laman [Alumni UGM](https://alumni.ugm.ac.id/2022/11/18/pt-surya-sarana-dinamika-7/), PT Surya Sarana Dinamika sedang membuka beberapa lowongan kerja dengan posisi sebagai berikut:
-
+ 
 ## Posisi: Human Resources Intern ##
 
 ![posisi hr intern]({{ site.baseurl }}/images/1-hr-intern-ssd.jpeg)
