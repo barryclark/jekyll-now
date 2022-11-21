@@ -9,7 +9,7 @@ categories:
 tags:
   - aprendizaje
   - mejora continua
-published: true
+published: false
 ---
 
 > “Nunca vas a aprender todo lo que quieres.   
