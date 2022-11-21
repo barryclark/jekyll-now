@@ -5,7 +5,7 @@ author: Pak Budi
 date: 2022-11-21 12:00:00 +07:00
 ---
 
-**AUTOFIX INDONESIA** merupakan perusahaan yang bergerak dibidang jasa body repair mobil.
+**AUTOFIX INDONESIA** merupakan perusahaan yang bergerak di bidang jasa body repair mobil.
 
 ![logo Santosa Group]({{ site.baseurl }}/images/logo-santosa-grup.png)
 
