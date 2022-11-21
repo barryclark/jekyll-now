@@ -1,13 +1,28 @@
-name: Build every 8 hour
+name: Build and deploy Jekyll site to GitHub Pages
 
 on:
   schedule:
-   - cron: '0 */3 * * *'
+    - cron: "50 13 * * *"
+  workflow_dispatch:
+
 jobs:
-  curl:
+  build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: curl
-      uses: wei/curl@master
-      with:
-        args: "-X POST -H 'Authorization: token ${{ secrets.PAGES_ACCESS_TOKEN }}' -H 'Accept: application/vnd.github.ant-man-preview+json' https://api.github.com/repos/siapkerjo/siapkerjo.github.io/pages/builds"
+      - uses: actions/checkout@v2
+
+      # Use GitHub Actions' cache to cache dependencies on servers
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      # Use GitHub Deploy Action to build and deploy to Github
+      - uses: jeffreytse/jekyll-deploy-action@v0.3.1
+        with:
+          provider: 'github'
+          token: ${{ secrets.GH_ACTIONS_TOKEN }} 
+          branch: 'utama'
+          cname: 'siapkerjo.com'
