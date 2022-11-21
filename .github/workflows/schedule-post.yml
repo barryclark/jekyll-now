@@ -1,4 +1,4 @@
-name: Build and deploy Jekyll site to GitHub Pages
+name: Auto Deploy Jekyll
 
 on:
   schedule:
@@ -20,7 +20,7 @@ jobs:
             ${{ runner.os }}-gems-
 
       # Use GitHub Deploy Action to build and deploy to Github
-      - uses: jeffreytse/jekyll-deploy-action@v0.3.1
+      - uses: siapkerjo/jekyll-deploy-action@v0.3.1
         with:
           provider: 'github'
           token: ${{ secrets.GH_ACTIONS_TOKEN }} 
