@@ -6,9 +6,12 @@ description: "Cheryl Hung's biography, photo and contact details"
 
 <img src="/images/headshot.jpeg" alt="Cheryl Hung, Apple" class="about-image"/>
 
-Cheryl Hung ([@oicheryl](http://oicheryl.com/)) is a thought leader bringing the best of Kubernetes and cloud native infrastructure to [Apple](https://apple.com/). She advises startups ([Helio](https://helio.exchange/), [Ondat](https://ondat.io/) and [Permit.io](https://www.permit.io/)) on developer-led growth and open source strategy.
+Cheryl brings engineers together to build the future of infrastructure, especially cloud native and open source.
 
-Cheryl founded the 6000+ strong [Cloud Native London meetup](http://cloudnativelon.com/), was the first VP Ecosystem at the [Cloud Native Computing Foundation](https://www.cncf.io/), and has deep technical expertise building distributed systems at Google. She graduated from the University of Cambridge with a Masters degree in Computer Science.
+As Senior Director at Apple, Cheryl bringing the best of Kubernetes and cloud native infrastructure. She founded the Cloud Native London meetup and grew it to over 7000 members.
+
+Previously Cheryl was VP Ecosystem at CNCF, expanding the End User Community to 150 organisations including Spotify, Apple and Airbnb. As a C++ engineer at Google, she built backend features for Google Maps.
+
 
 # Contact me
 
