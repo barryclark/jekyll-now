@@ -5,7 +5,7 @@ author: Pak Budi
 date: 2022-11-22 07:05:00 +07:00
 ---
 
-PT Bank Central Asia Tbk (BCA) berdiri sejak 1957, hadir di tengah masyarakat Indonesia dan tumbuh menjadi salah satu bank terbesar di Indonesia.
+**PT Bank Central Asia Tbk (BCA)** berdiri sejak 1957, hadir di tengah masyarakat Indonesia dan tumbuh menjadi salah satu bank terbesar di Indonesia.
 
 ![logo BCA]({{ site.baseurl }}/images/logo-bca.png)
 
