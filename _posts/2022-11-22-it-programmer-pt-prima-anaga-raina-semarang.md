@@ -12,7 +12,7 @@ Astra Motor merupakan salah satu Corporate Operation PT Astra International Tbk.
 ![logo Astra Honda Prima]({{ site.baseurl }}/images/logo-honda-prima.jpg)
 
 Dilansir dari laman [UDINUS Career Center](https://cc.dinus.ac.id/lowongan/detail/MTIzNTE%3D), PT. PRIMA ANAGA RAINA tengah membuka lowongan pekerjaan. Berikut informasinya:
-
+ 
 ## Posisi: IT PROGRAMMER (SEMARANG) ##
 
 |  |  |
