@@ -12,7 +12,7 @@ Global Prestasi School (GPS) dikenal sebagai sekolah yang menawarkan pendidikan 
 ![logo Global Prestasi School]({{ site.baseurl }}/images/logo-Global_Prestasi_School.png)
 
 Dikutip dari laman [Pusat Pengembangan Karir UNY](https://ppk.lppmp.uny.ac.id/lowongan/show_landing/ODQ5), Global Prestasi School (GPS) membuka kesempatan untuk bergabung melalui lowongan berikut ini:
-
+ 
 ## Posisi: Guru Bahasa Indonesia ##
 
 ![loker Global Prestasi School]({{ site.baseurl }}/images/loker-guru-b-indonesia.png)
