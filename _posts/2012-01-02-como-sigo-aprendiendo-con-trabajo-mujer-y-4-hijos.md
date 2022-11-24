@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Como sigo aprendiendo con trabajo, mujer e hijos.
+title: Como sigo aprendiendo con trabajo, mujer y 4 hijos.
 categories:
   - buenas prácticas
   - conciliación
