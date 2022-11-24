@@ -43,7 +43,7 @@ As we look under the hood, the first observation we can make is that there's a t
 
 </div>
 
-We're starting with a high-level view and we'll get into more machine learning details later in this article. However, we can say that this text encoder is a special Transformer language model (technically: the text encoder of a CLIP model). It takes the input text and outputs a list of numbers (a vector) representing each word/token in the text.
+We're starting with a high-level view and we'll get into more machine learning details later in this article. However, we can say that this text encoder is a special Transformer language model (technically: the text encoder of a CLIP model). It takes the input text and outputs a list of numbers representing each word/token in the text  (a vector per token).
 
 That information is then presented to the Image Generator, which is composed of a couple of components itself.
 
@@ -145,7 +145,7 @@ We can visualize a set of these latents to see what information gets added at ea
 </div>
 
 
-The process is quite breathtaking to look at
+The process is quite breathtaking to look at.
 
 <div class="img-div-any-width" markdown="0">
 <video height="auto" loop autoplay  controls>
@@ -165,73 +165,77 @@ Something especially fascinating happens between steps 2 and 4 in this case. It'
 </div>
 
 ### How diffusion works
-The central idea of generating images with diffusion model relies on the fact that we have powerful computer vision models. Given a large enough dataset, these models can learn complex operations. Diffusion models approach image generation by framing the problem as following:
+The central idea of generating images with diffusion models relies on the fact that we have powerful computer vision models. Given a large enough dataset, these models can learn complex operations. Diffusion models approach image generation by framing the problem as following:
 
-Say we have an image, let's take a first step of adding some noise to it.
+Say we have an image, we generate some noise, and add it to the image.
+
 
 <div class="img-div" markdown="0">
-  <img src="/images/stable-diffusion/stable-diffusion-forward-step-1.png" />
+  <img src="/images/stable-diffusion/stable-diffusion-forward-diffusion-training-example.png" />
   <br />
 
 </div>
-Let's call the "slice" of noise we added to the image "noise slice 1". Let's now take another step adding some more noise to the noisy image ("noise slice 2").
+This can now be considered a training example. We can use this same formula to create lots of training examples to train the central component of our image generation model. 
 
 <div class="img-div" markdown="0">
-  <img src="/images/stable-diffusion/stable-diffusion-forward-step-2.png" />
+  <img src="/images/stable-diffusion/stable-diffusion-forward-diffusion-training-example-2.png" />
   <br />
 
 </div>
 
-At this point, the image is made entirely of noise. Now let's take these as training examples for a computer vision neural network. Given a step number and image, we want it to predict how much noise was added in the previous step.
+
+While this example shows a few noise amount values from image (amount 0, no noise) to total noise (amount 4, total noise), we can easily control how much noise to add to the image, and so we can spread it over tens of steps, creating tens of training examples per image for all the images in a training dataset.
 
 <div class="img-div" markdown="0">
-  <img src="/images/stable-diffusion/stable-diffusion-u-net-noise-training-examples.png" />
+  <img src="/images/stable-diffusion/stable-diffusion-u-net-noise-training-examples-2.png" />
   <br />
 
 </div>
-While this example shows two steps from image to total noise, we can control how much noise to add to the image, and so we can spread it over tens of steps, creating tens of training examples per image for all the images in a training dataset.
+
+With this dataset, we can train the noise predictor and end up with a great noise predictor that actually creates images when run in a certain configuration. A training step should look familiar if you've had ML exposure:
+
 
 <div class="img-div" markdown="0">
-  <img src="/images/stable-diffusion/stable-diffusion-noise-predictor-dataset-and-model.png" />
-  <br />
+<a href="/images/stable-diffusion/stable-diffusion-u-net-noise-training-step.png">
+  <img src="/images/stable-diffusion/stable-diffusion-u-net-noise-training-step.png" />
+  </a><br />
 
 </div>
-The beautiful thing now is that once we get this noise prediction network working properly, it can effectively paint pictures by removing noise over a number of steps.
 
-
-Note: This is a slight oversimplification of the diffusion algorithm. The resources at the bottom give you the whole mathematical picture in more detail.
+Let's now see how this can generate images.
 
 ### Painting images by removing noise
 
 The trained noise predictor can take a noisy image, and the number of the denoising step, and is able to predict a slice of noise. 
 <div class="img-div" markdown="0">
-  <img src="/images/stable-diffusion/stable-diffusion-denoising-step-1.png" />
+  <img src="/images/stable-diffusion/stable-diffusion-denoising-step-1v2.png" />
   <br />
 
 </div>
 
-The slice of noise is predicted so that if we subtract it from the image, we get an image that's closer to the images the model was trained on.
+The sampled noise is predicted so that if we subtract it from the image, we get an image that's closer to the images the model was trained on (not the exact images themselves, but the *distribution* - the world of pixel arrangements where the sky is usually blue and above the ground, people have two eyes, cats look a certain way -- pointy ears and clearly unimpressed).
 
 <div class="img-div" markdown="0">
-  <img src="/images/stable-diffusion/stable-diffusion-denoising-step-2.png" />
+  <a href="/images/stable-diffusion/stable-diffusion-denoising-step-2v2.png"><img src="/images/stable-diffusion/stable-diffusion-denoising-step-2v2.png" /></a>
   <br />
 
 </div>
 
-If the training dataset was of aesthetically pleasing images (e.g., [LAION Aesthetics](https://laion.ai/blog/laion-aesthetics/), which Stable Diffusion was trained on), then the resulting image would tend to be aesthetically pleasing.
+If the training dataset was of aesthetically pleasing images (e.g., [LAION Aesthetics](https://laion.ai/blog/laion-aesthetics/), which Stable Diffusion was trained on), then the resulting image would tend to be aesthetically pleasing. If the we train it on images of logos, we end up with a logo-generating model.
 
 <div class="img-div" markdown="0">
-  <img src="/images/stable-diffusion/stable-diffusion-image-generation.png" />
+<a href="/images/stable-diffusion/stable-diffusion-image-generation-v2.png">
+  <img src="/images/stable-diffusion/stable-diffusion-image-generation-v2.png" />
+</a>
   <br />
 
 </div>
 
-This concludes the description of image generation by diffusion models mostly as described in [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239). Now that you have this intuition of diffusion, you know how the main components of not only Stable Diffusion, but also Dall-E 2 and Google's Imagen.
+This concludes the description of image generation by diffusion models mostly as described in [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239). Now that you have this intuition of diffusion, you know the main components of not only Stable Diffusion, but also Dall-E 2 and Google's Imagen.
 
+Note that the diffusion process we described so far generates images without using any text data. So if we deploy this model, it would generate great looking images, but we'd have no way of controlling if it's an image of a pyramid or a cat or anything else. In the next sections we’ll describe how text is incorporated in the process in order to control what type of image the model generates.
 
-Note that the diffusion process we described so far generates images without using any text data. In the next sections we'll describe how text is incorporated in the process.
-
-## Speed Boost: Diffusion on Compressed (latent) Data Instead of the Pixel Image
+## Speed Boost: Diffusion on Compressed (Latent) Data Instead of the Pixel Image
 
 To speed up the image generation process, the Stable Diffusion paper runs the diffusion process not on the pixel images themselves, but on a compressed version of the image. [The paper](https://arxiv.org/abs/2112.10752) calls this "Departure to Latent Space".  
 
@@ -246,7 +250,9 @@ This compression (and later decompression/painting) is done via an autoencoder. 
 Now the forward diffusion process is done on the compressed latents. The slices of noise are of noise applied to those latents, not to the pixel image. And so the noise predictor is actually trained to predict noise in the compressed representation (the latent space).
 
 <div class="img-div" markdown="0">
-  <img src="/images/stable-diffusion/stable-diffusion-latent-forward-process.png" />
+<a href="/images/stable-diffusion/stable-diffusion-latent-forward-process-v2.png">
+  <img src="/images/stable-diffusion/stable-diffusion-latent-forward-process-v2.png" />
+</a>
   <br />
 
 </div>
@@ -255,13 +261,15 @@ The forward process (using the autoencoder's encoder) is how we generate the dat
 
 
 <div class="img-div" markdown="0">
-  <img src="/images/stable-diffusion/stable-diffusion-forward-and-reverse-process.png" />
+<a href="/images/stable-diffusion/stable-diffusion-forward-and-reverse-process-v2.png">
+  <img src="/images/stable-diffusion/stable-diffusion-forward-and-reverse-process-v2.png" />
+</a>
   <br />
 
 </div>
 
 
-These two flows are what's show in Figure 3 of the LDM/Stable Diffusion paper:
+These two flows are what's shown in Figure 3 of the LDM/Stable Diffusion paper:
 
 <div class="img-div" markdown="0">
   <img src="/images/stable-diffusion/article-Figure3-1-1536x762.png" />
@@ -297,6 +305,8 @@ CLIP is trained on a dataset of images and their captions. Think of a dataset lo
   A dataset of images and their captions.
 </div>
 
+In actuality, CLIP was trained on images crawled from the web along with their "alt" tags.
+
 CLIP is a combination of an image encoder and a text encoder. Its training process can be simplified to thinking of taking an image and its caption. We encode them both with the image and text encoders respectively. 
 
 <div class="img-div" markdown="0">
@@ -331,8 +341,9 @@ To make text a part of the image generation process, we have to adjust our noise
 
 
 <div class="img-div" markdown="0">
-  <img src="/images/stable-diffusion/stable-diffusion-unet-inputs.png" />
-  <br />
+<a href="/images/stable-diffusion/stable-diffusion-unet-inputs-v2.png">
+  <img src="/images/stable-diffusion/stable-diffusion-unet-inputs-v2.png" />
+  </a><br />
 
 </div>
 
@@ -340,7 +351,7 @@ To make text a part of the image generation process, we have to adjust our noise
 Our dataset now includes the encoded text. Since we're operating in the latent space, both the input images and predicted noise are in the latent space.
 
 <div class="img-div" markdown="0">
-  <img src="/images/stable-diffusion/stable-diffusion-text-dataset.png" />
+  <img src="/images/stable-diffusion/stable-diffusion-text-dataset-v2.png" />
   <br />
 
 </div>
@@ -352,7 +363,7 @@ To get a better sense of how the text tokens are used in the Unet, let's look de
 Let's first look at a diffusion Unet that does not use text. Its inputs and outputs would look like this:
 
 <div class="img-div-any-width" markdown="0">
-  <img src="/images/stable-diffusion/unet-inputs-outputs.png" />
+  <img src="/images/stable-diffusion/unet-inputs-outputs-v2.png" />
   <br />
 
 </div>
@@ -366,7 +377,7 @@ Inside, we see that:
 
 
 <div class="img-div-any-width" markdown="0">
-  <img src="/images/stable-diffusion/unit-resnet-steps.png" />
+  <img src="/images/stable-diffusion/unit-resnet-steps-v2.png" />
   <br />
 
 </div>
@@ -378,7 +389,7 @@ Inside, we see that:
 Let's now look how to alter this system to include attention to the text.
 
 <div class="img-div-any-width" markdown="0">
-  <img src="/images/stable-diffusion/unet-with-text-inputs-outputs.png" />
+  <img src="/images/stable-diffusion/unet-with-text-inputs-outputs-v2.png" />
   <br />
 
 </div>
@@ -387,12 +398,12 @@ The main change to the system we need to add support for text inputs (technical 
 
 
 <div class="img-div-any-width" markdown="0">
-  <img src="/images/stable-diffusion/unet-with-text-steps.png" />
+  <img src="/images/stable-diffusion/unet-with-text-steps-v2.png" />
   <br />
 
 </div>
 
-Note that the resnet block don't directly look at the text. But the attention layers merge those text representations in the latents. And now the next ResNet can utilize that incorporated text information in its processing.
+Note that the ResNet block doesn't directly look at the text. But the attention layers merge those text representations in the latents. And now the next ResNet can utilize that incorporated text information in its processing.
 
 ## Conclusion
 
@@ -412,7 +423,7 @@ I hope this gives you a good first intuition about how Stable Diffusion works. L
 
 ## Acknowledgements
 
-Thanks to Robin Rombach, Dennis Soemers, Yan Sidyakin, and the [Cohere For AI](https://cohere.for.ai/) community for feedback on earlier versions of this article.
+Thanks to Robin Rombach, Dennis Soemers, Yan Sidyakin, Freddie Vargus, Anna Golubeva, and the [Cohere For AI](https://cohere.for.ai/) community for feedback on earlier versions of this article.
 
 ## Contribute
 Please help me make this article better. Possible ways:
