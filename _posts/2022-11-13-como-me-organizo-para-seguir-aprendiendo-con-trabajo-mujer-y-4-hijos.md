@@ -9,6 +9,7 @@ categories:
 tags:
   - aprendizaje
   - mejora continua
+  - aprender con hijos
 published: true
 ---
 
@@ -40,7 +41,7 @@ He trabajado como Backend, SRE, Tech Lead, Engineering Manager y últimamente di
 
 El desarrollo de software es una profesión que aunque estés 2 años en un mismo rol y en una misma empresa, necesitas adquirir nuevos conocimientos, herramientas y habilidades.
 
-Nunca me había parado a pesar como me mantengo actualizado.
+Nunca me había parado a pesar cómo me mantengo actualizado.
 Pensarlo me ha hecho ser consciente de que sigo un proceso y he intentado estructurarlo para poder explicarlo.
 
 A lo mejor alguna cosa te sirve.
@@ -82,13 +83,13 @@ Que las apariencias no te engañen.
 Usar GTD no es sencillo. 
 Yo tarde 3 intentos (a lo largo de 2 años) en conseguir que me funcionara.🤯  
 
-Durante el post nombraré varias veces la *Bandeja de entrada* (Inbox), así que te explico como la uso:
+Durante el post nombraré varias veces la *Bandeja de entrada* (Inbox), así que te explico cómo la uso:
 
 - Es donde apunto todo lo que quiero sacar de mi cabeza. 
 - En mi caso la tengo centralizada en una carpeta en <a href="https://todoist.com/" target="_blank">Todoist</a>.
 - En esta Bandeja de Entrada apunto cada idea, nota, tarea, link interesante, pensamiento, curso que me interesa, video, etc. todo aquello que quiero sacar de mi cabeza pero que después quiero hacer algo con ello.
 - Apunto todo lo que se me ocurre, incluso cuando estoy fregando cacharros, limpiando la casa, doblando la ropa, etc. Cosas mecánicas que me permiten parar de hacerlas, apuntar y seguir con la tarea.
-- Esta Bandeja de Entrada debería procesarla varias veces al día, pero lo normal es que solo consiga hacerlo 1 vez al dia. 🤷 (Y desde que llegó mi 4ª hija, una vez cada 2 días...)
+- Esta Bandeja de Entrada debería procesarla varias veces al día, pero lo normal es que solo consiga hacerlo 1 vez al día. 🤷 (Y desde que llegó mi 4ª hija, una vez cada 2 días...)
 - Intento que quede vacía y organizada para garantizar que voy a volver a esas tareas cuando sea necesario, sin tener que estar pensando continuamente en ellas. 
 - Cuando se me acumulan cosas sin procesar en la bandeja de entrada no miro nuevas cosas hasta que la proceso.
 
@@ -101,8 +102,8 @@ Aquí te dejo una <a href="https://www.muypymes.com/2014/03/31/gtd-para-dummies-
 ## Para mantenerme actualizado necesito tener fuentes de conocimiento
 
 Siempre busco la forma de conseguir información con el mínimo esfuerzo. 
-Tengo muchas fuentes de conocimiento, y siempre que puedo me "aprovecho" de los algoritmo de recomendación.
-Además dejo que Google me conozca para que me muestre lo que yo quiero ver y evitar un poco la procastinación. 
+Tengo muchas fuentes de conocimiento, y siempre que puedo me "aprovecho" de los algoritmos de recomendación.
+Además dejo que Google me conozca para que me muestre lo que yo quiero ver y evitar un poco la procrastinación. 
 Mi objetivo es minimizar el tiempo que necesito para conseguir la información para continuar aprendiendo.
 
 Actualmente mis fuentes de conocimiento son:
@@ -124,15 +125,15 @@ Actualmente mis fuentes de conocimiento son:
 - Muchos días solo leo el subject de los Daily Digest (suele ser el título del primer artículo). Si no me interesa ni lo abro.
 - Si abro el mail, leo como máximo el título de los 3 primeros artículos del mail.
 - Es la forma de no recopilar información infinita, porque si miras hasta el final, siempre encuentras algo que te llama la atención.
-- ¿Y que hago si me interesa el título de alguno de esos artículos? Pues lo mando a mi Bandeja de Entrada.
+- ¿Y qué hago si me interesa el título de alguno de esos artículos? Pues lo mando a mi Bandeja de Entrada.
 
 - **¡Importante!** Si te interesa algún link y no quieres que afecte a las recomendaciones de esa cuenta:
 	- Copia el link desde el email
-	- Edíta la URL para quitar los items del source para que Medium no te lo trackee.
+	- Edita la URL para quitar los ítems del source para que Medium no te lo trackee.
 	- Ábrelo en una ventana de incógnito o usa DuckDuckGo por si estás logado en Medium con la otra cuenta (Yo suelo estar deslogado siempre)
 
 ### 2.Twitter
-- La mayoría de cuentas que sigo están relacionada con mis intereses.
+- La mayoría de cuentas que sigo están relacionadas con mis intereses.
 - Dejo que Twitter haga su magia..... ¿Por qué? porque lo miro muy poco, un par de veces por semana.
 - No me interesa ver el último comentario de las cuentas que sigo.
 - Me interesa ver "lo más destacado"
@@ -156,7 +157,7 @@ Actualmente mis fuentes de conocimiento son:
 - Otro de mis rincones de lectura es el baño.
 - Leo muy lento porque las ideas que me parecen interesantes del libro las intento convertir en [*notas atómicas altamente enlazadas*](#qué-son-notas-atómicas-altamente-enlazadas). Luego hablaré de qué es esto.
 
-- ¿Esto quiere decir que cada día me levanto antes y en el desayuno leo libros? No, algunos días leo algún árticulo, otros programo algo, muchos no hago nada... 
+- ¿Esto quiere decir que cada día me levanto antes y en el desayuno leo libros? No, algunos días leo algún artículo, otros programo algo, muchos no hago nada... 
 - Depende del día, el tiempo que tenga y las ganas que tenga ese día de hacer algo.
 
 ## ¿Cómo organizo todo lo que aprendo?
@@ -164,13 +165,13 @@ Actualmente mis fuentes de conocimiento son:
 - En mi caso solo con Todoist no es suficiente.
 - Tomo [notas atómicas altamente enlazadas](#qué-son-notas-atómicas-altamente-enlazadas) de todo lo que aprendo, pero Todoist no me sirve para hacerlo.
 - Para las notas he tenido que crear <a href="https://youtu.be/h9LfuVZquhg" target="_blank">mi cerebro digital</a>.
-- Llevaba años usando <a href="https://www.onenote.com/" target="_blank">OneNote</a> para volcar todo lo que aprendro o todo lo que luego quiero volver a consultar. 
+- Llevaba años usando <a href="https://www.onenote.com/" target="_blank">OneNote</a> para volcar todo lo que aprendo o todo lo que luego quiero volver a consultar. 
 - En los últimos meses he cambiando a <a href="https://obsidian.md/" target="_blank">Obsidian</a> y poco a poco estoy migrando lo que tengo en OneNote. 
 - *(Sí, he probado Notion y no es lo que yo necesito)*
 
 - Las principales razones para el cambio a Obsidian son:
 	- Su sencillez para crear [notas atómicas altamente enlazadas](#qué-son-notas-atómicas-altamente-enlazadas).
-	- Tener las mismas funcionalidsdes en móvil y en escritorio
+	- Tener las mismas funcionalidades en móvil y en escritorio
 	- Tener control total sobre mis notas. Son markdowns y puedo guardarlos y leerlos como yo quiera. 
 	
 - Para organizar mis notas uso varios de los principios de **Zettelkasten**.
@@ -179,7 +180,7 @@ Actualmente mis fuentes de conocimiento son:
 
 ### ¿Qué son notas atómicas altamente enlazadas?
 - Son la base de **Zettelkasten**.
-- Son notas tomadas con **tus propias palábras**
+- Son notas tomadas con **tus propias palabras**
 - Son **atómicas** porque solo hablan de un concepto. No tienen porque ser cortas, pero cuanto más breves mejor.
 - Son **altamente enlazadas** porque creas notas con referencias cruzadas con otras notas que a su vez tienen referencias cruzadas a otras notas, etc..
 - Por ejemplo, este post sale de copiar cosas de muchas notas atómicas. Notas sobre GTD, Aprender haciendo, Práctica deliberada, Zettelkasten, como priorizar....
@@ -190,8 +191,8 @@ Actualmente mis fuentes de conocimiento son:
 ## Vale, ya he recopilado mucha información, pero ¿cuándo aprendo?
 - Cada semana "me comprometo" como mínimo a usar 2 fuentes de conocimiento, ya sean artículos, capítulos de libros, videos. 
 - Los selecciono en <a href="https://facilethings.com/blog/es/basics-weekly-review" target="_blank">la revisión semanal de GTD</a>
-	- Selecciono 1 fuente sobre Machine Learning. (Ahora estoy aprendiedo sobre modelos de difusión como Stable Diffusion. Si te interesa el tema, estas son <a href="https://nikeyes.github.io/recursos-para-usar-stable-diffusion/" target="_blank">mis notas de lo último que he aprendido</a>)
-	- Selecciono 1 fuente que me apetezca de las que tengo recopiladas, sea de lo que sea. Desde videojuegos, crianza, jardinería, mágia, etc. Cualquier cosa no relacionada con la primera fuente. (A no ser que me aptezca leer más cosas sobre lo anterior 😅)
+	- Selecciono 1 fuente sobre Machine Learning. (Ahora estoy aprendiendo sobre modelos de difusión como Stable Diffusion. Si te interesa el tema, estas son <a href="https://nikeyes.github.io/recursos-para-usar-stable-diffusion/" target="_blank">mis notas de lo último que he aprendido</a>)
+	- Selecciono 1 fuente que me apetezca de las que tengo recopiladas, sea de lo que sea. Desde videojuegos, crianza, jardinería, magia, etc. Cualquier cosa no relacionada con la primera fuente. (A no ser que me apetezca leer más cosas sobre lo anterior 😅)
 
 ## ¿Y esto es suficiente? 
 - **Pues no**. Esto solo sirve para leer y tomar notas de nuevas cosas o profundizar en lo que quiero aprender. 
