@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Como sigo aprendiendo con trabajo, mujer y 4 hijos.
+title: Como sigo aprendiendo con trabajo, mujer y 4 hijos
 categories:
   - buenas prácticas
   - conciliación
@@ -27,13 +27,14 @@ Si quieres saber como llego a esa **práctica deliberada** con un trabajo exigen
 ## Índice
 1. [¿Por qué sigo aprendiendo?](#por-qué-sigo-aprendiendo)
 2. [Mi contexto](#mi-contexto)
-1. [¿cuándo leo cosas nuevas?](#cuándo-aprendo)
+1. [¿Cuándo leo cosas nuevas?](#cuándo-leo-cosas-nuevas)
 2. [¿Y esto es suficiente?](#y-esto-es-suficiente)
 3. [¿Qué es eso de la práctica deliberada?](#qué-es-eso-de-la-práctica-deliberada)
 4. [¿Qué es eso de aprender haciendo?](#qué-es-eso-de-aprender-haciendo)
 5. [¿Y si quiero aprender soft-skills?](#y-si-quiero-aprender-soft-skills)
-6. [¿Y cómo aprendendo en mi día a día con práctica deliberada si casi no tengo tiempo?](#y-cómo-aprendendo-en-mi-día-a-día-con-práctica-deliberada-si-casi-no-tengo-tiempo)
-7. [¿Cómo consigo aprender si solo tengo 15 minutos libres?](#cómo-consigo-aprender-si-solo-tengo-15-minutos-libres)
+6. [¿Y cómo aprendendo en mi día a día?](#y-cómo-aprendendo-en-mi-día-a-día)
+7. [¿Cómo sigo aprendiendo cuando solo tengo 30 minutos libres?](#cómo-sigo-aprendiendo-cuando-solo-tengo-30-minutos-libres)
+8. [¿Y si solo tengo 5 minutos libres?](y-si-solo-tengo-5-minutos-libres)
 8. [Resumen](#resumen)
 
 Para aprender tengo que recopilar información y tenela siempre disponible y a punto. Tengo mi forma de organizarme y de capturar información para aprender. Si te interesa el tema puedes leerlo <a href="https://nikeyes.github.io/como-me-organizo-para-seguir-aprendiendo-con-trabajo-mujer-y-4-hijos" target="_blank">aquí</a> 
@@ -158,7 +159,7 @@ Cuando quieras me lo rebates por <a href="https://twitter.com/nikey_es" target="
 - Como dice [Tony Robbins](https://twitter.com/TonyRobbins)
 > - No importa lo mal o lento que vayan las cosas, sigues estando muy por delante de todos los que ni siquiera lo intentan.
 
-## ¿Y si solo tengo 5 minutos libres?
+## ¿Y si solo tengo 5 minutos libres?
 - Si solo tienes 5 minutos libres es que estás priorizbando otras cosas por delante de tu aprendizaje. 
 - O cambias las prioridades o asumes que solo podrás leer alguna cosa de vez en cuando. 
 - Solo leer sin tiempo de práctica, mejor usa esos 5 minutos a descansar y desconectar que te hace falta.
@@ -172,7 +173,7 @@ Cuando quieras me lo rebates por <a href="https://twitter.com/nikey_es" target="
 
 - <a href="https://nikeyes.github.io/como-me-organizo-para-seguir-aprendiendo-con-trabajo-mujer-y-4-hijos/#para-mantenerme-actualizado-necesito-tener-fuentes-de-conocimiento" target="_blank">**Recopila información**</a> relacionada con el tema durante un tiempo: capitulos de libros, cursos, tutoriales, podcasts, lo que creas que te ayudará para empezar a aprender.
 
-- <a href="https://nikeyes.github.io/como-me-organizo-para-seguir-aprendiendo-con-trabajo-mujer-y-4-hijos/" target="_blank">**Organízate** la información para tenela siempre accesible de forma rápida</a>.
+- <a href="https://nikeyes.github.io/como-me-organizo-para-seguir-aprendiendo-con-trabajo-mujer-y-4-hijos/" target="_blank">**Organízate la información**</a> para tenela siempre accesible de forma rápida.
 
 - Elige algo práctico donde aplicar lo que vas a aprender y usa cada minuto que tengas para aprender usando **práctica deliberada**.
 
