@@ -38,7 +38,7 @@ Si quieres saber como llego a esa **práctica deliberada** con un trabajo exigen
 8. [¿Y si solo tengo 5 minutos libres?](#y-si-solo-tengo-5-minutos-libres)
 8. [Resumen](#resumen)
 
-Para aprender tengo que recopilar información y tenela siempre disponible y a punto. Tengo mi forma de organizarme y de capturar información para aprender. Si te interesa el tema puedes leerlo <a href="https://nikeyes.github.io/como-me-organizo-para-seguir-aprendiendo-con-trabajo-mujer-y-4-hijos" target="_blank">aquí</a> 
+Para aprender tengo que recopilar información y tenerla siempre disponible y a punto. Tengo mi forma de organizarme y de capturar información para aprender. Si te interesa el tema puedes leerlo <a href="https://nikeyes.github.io/como-me-organizo-para-seguir-aprendiendo-con-trabajo-mujer-y-4-hijos" target="_blank">aquí</a> 
 
 ## ¿Por qué sigo aprendiendo?
 
@@ -47,7 +47,7 @@ He trabajado como Backend, SRE, Tech Lead, Engineering Manager y últimamente di
 
 El desarrollo de software es una profesión que aunque estés 2 años en un mismo rol y en una misma empresa, necesitas adquirir nuevos conocimientos, herramientas y habilidades.
 
-Nunca me había parado a pesar como me mantengo actualizado.
+Nunca me había parado a pesar cómo me mantengo actualizado.
 Pensarlo me ha hecho ser consciente de que sigo un proceso y he intentado estructurarlo para poder explicarlo.
 
 A lo mejor alguna cosa te sirve.
@@ -75,7 +75,7 @@ Cuando quieras me lo rebates por <a href="https://twitter.com/nikey_es" target="
 - Cada semana "me comprometo" a usar 2 fuentes de conocimiento ya sean artículos, capítulos de libros, videos. 
 - Ahora mismo tengo 2 grupos:
 	- Selecciono 1 fuente sobre Machine Learning. (Ahora estoy aprendiedo sobre modelos de difusión como Stable Diffusion. Si te interesa el tema, estas son <a href="https://nikeyes.github.io/recursos-para-usar-stable-diffusion/" target="_blank">mis notas de lo último que he aprendido</a>)
-	- Selecciono 1 fuente que me apetezca de las que tengo recopiladas, sea de lo que sea. Desde videojuegos, crianza, jardinería, mágia, etc. Cualquier cosa no relacionada con la primera fuente. (A no ser que me aptezca leer más cosas sobre lo anterior 😅)
+	- Selecciono 1 fuente que me apetezca de las que tengo recopiladas, sea de lo que sea. Desde videojuegos, crianza, jardinería, magia, etc. Cualquier cosa no relacionada con la primera fuente. (A no ser que me apetezca leer más cosas sobre lo anterior 😅)
 
 ## ¿Y esto es suficiente? 
 - Pues no. Esto solo sirve para leer y <a href="https://nikeyes.github.io/como-me-organizo-para-seguir-aprendiendo-con-trabajo-mujer-y-4-hijos/#qu%C3%A9-son-notas-at%C3%B3micas-altamente-enlazadas" target="_blank">tomar notas</a> de nuevas cosas o profundizar en lo que quiero aprender. 
@@ -96,11 +96,11 @@ Cuando quieras me lo rebates por <a href="https://twitter.com/nikey_es" target="
 ## ¿Qué es eso de aprender haciendo?
 - Siempre aprendo más si lo aplico en algo práctico, ya sea algo para casa, para el trabajo, dar una charla, un taller, etc. Algo en lo que pueda aplicar lo que estoy aprendiendo.
 - Intento seguir el siguiente proceso:
-	- Me hago la siguientes preguntas: Si tengo que explicárselo a alguien que no sabe del tema ¿Qué le explicaría? ¿Cómo se lo explicaría? ¿Por dónde empezaría la explicación?
+	- Me hago las siguientes preguntas: Si tengo que explicárselo a alguien que no sabe del tema ¿Qué le explicaría? ¿Cómo se lo explicaría? ¿Por dónde empezaría la explicación?
 	- Divido lo que quiero aprender en partes pequeñas y manejables.
 	- Recopilo <a href="https://nikeyes.github.io/como-me-organizo-para-seguir-aprendiendo-con-trabajo-mujer-y-4-hijos/#para-mantenerme-actualizado-necesito-tener-fuentes-de-conocimiento" target="_blank">mis fuentes de información</a>
 	- Busco la forma de recibir feedback lo más inmediato posible de cada una de las partes que he dividido. Por ejemplo, código funcionando, llevar una conversación con la técnica que quería aprender, etc.
-	- Y me plateo continuamente como podía haber aprendido mejor y más rápido.
+	- Y me planteo continuamente cómo podía haber aprendido mejor y más rápido.
 
 - En realidad estoy aplicando mi propia variante de la <a href="https://www.businessinsider.es/tecnica-feynman-como-aprender-cualquier-cosa-forma-efectiva-969275" target="_blank">técnica Feynman</a>.
 
@@ -111,24 +111,24 @@ Cuando quieras me lo rebates por <a href="https://twitter.com/nikey_es" target="
 - **Aprender haciendo** y **práctica deliberada**.
 - Por ejemplo, quiero mejorar la escucha activa.
 - Tu práctica será utilizar de forma consciente alguno de los principios de escucha activa en la siguiente conversación que tengas con otra persona, ya sea tu pareja, tu hijo, un amigo o una persona de tu equipo si eres manager.
-- Y cuando lo hayas practicado piensa en como lo podías haber hecho mejor y vas mejorando poco a poco.
+- Y cuando lo hayas practicado piensa en cómo lo podías haber hecho mejor y vas mejorando poco a poco.
 
 ## ¿Y cómo aprendendo en mi día a día?
 - Aquí empieza lo difícil.
 - Te toca saber priorizar de verdad...🤷‍♂️
 - Durante X semanas solo me centro en un tema.
-- Lo difícil no es elegir el tema al que me quiero dedicar, lo difícil es decidir a que voy a renunciar. Por ejemplo, no veré esa serie que tantas ganas le tengo, o no jugaré ese nuevo juego que tiene buena pinta, o no aprenderé sobre este tema que también me interesa hasta dentro de un tiempo...
+- Lo difícil no es elegir el tema al que me quiero dedicar, lo difícil es decidir a qué voy a renunciar. Por ejemplo, no veré esa serie que tantas ganas le tengo, o no jugaré ese nuevo juego que tiene buena pinta, o no aprenderé sobre este tema que también me interesa hasta dentro de un tiempo...
 - Algunas noches, cuando las fieras se van a dormir, en lugar de ponerme una serie/peli/juego, pruebo cosas que me han parecido interesantes de lo que he ido aprendiendo.
 - Otras veces me levanto 1 hora antes para programar o probar algo que llevo días dándole vueltas.
 - Esto quiere decir que aprendo muy pocas cosas y muy lento. Es algo que tienes que asumir y vivir con ello.
 - **Si intentas aprender a un ritmo que no es sostenible con tu vida, acabará afectando a tu salud, a tu familia y a tu trabajo.**
 - En vacaciones siempre intento hacer como mínimo un curso (Codely, Pluralsight, Udemy u otras plataformas) y aplicar lo que aprendo del curso: 
-  - Por ejemplo, las última vacaciones hice varios cursos sobre bash y Mac en Codely (cada día intentaba ver un capítulo del curso en varios ratos que iba teniendo) y de ahí he creado la template para configurar el entorno para desarrollar proyecots de Machine Learning.  
+  - Por ejemplo, las últimas vacaciones hice varios cursos sobre bash y Mac en Codely (cada día intentaba ver un capítulo del curso en varios ratos que iba teniendo) y de ahí he creado la template para configurar el entorno para desarrollar proyectos de Machine Learning.  
   - Para aprender Node.js me hice un scrapper de precios de PortAventura (y antes de la pandemia nos íbamos a PortAventura con todo incluido y hotel de lujo a precio de los "baratos"). 
   - Para aprender Python hice una template de despliegue de modelos de Machine Learning.
   - Para aprender Obsidian estoy creando mi propio cerebro digital.
 - Tienes que buscar algo que te permita aplicar lo que quieres aprender de forma práctica.
-- Y si lo vas a aplicar en tu trabajo, que sea en una prueba de concepto o fuera del camino crítica de tu negocio. (Qué nos conocemos... 😜)
+- Y si lo vas a aplicar en tu trabajo, que sea en una prueba de concepto o fuera del camino crítico de tu negocio. (Qué nos conocemos... 😜)
 - A veces me propongo explicar ese tema a otra persona o dar una charla o escribir sobre ello, así me obligo a tener fechas y a pensar muy bien que necesito aprender en el tiempo que tengo para que lo puedas explicar a otras personas.
 
 ## ¿Cómo sigo aprendiendo cuando solo tengo 30 minutos libres?
@@ -139,7 +139,7 @@ Cuando quieras me lo rebates por <a href="https://twitter.com/nikey_es" target="
 - Por ejemplo, si quiero aprender testing en legacy code:
   - En mis primeros huecos disponibles recupero posts o capítulos de libros que <a href="https://nikeyes.github.io/como-me-organizo-para-seguir-aprendiendo-con-trabajo-mujer-y-4-hijos/#para-mantenerme-actualizado-necesito-tener-fuentes-de-conocimiento" target="_blank">tengo guardados sobre el tema</a>. 
   - Si creo que sigo necesitando más información, en los siguientes huecos busco nueva información sobre el tema.
-  - Después voy leyendo/viendo, tomando notas y decidiendo que tema concreto practicaré.
+  - Después voy leyendo/viendo, tomando notas y decidiendo qué tema concreto practicaré.
   - Por ejemplo, decido practicar "Approval Testing"
   - En los siguientes huecos busco ejemplos que podría implementar para practicar "Approval Testing"
   - En alguno de los huecos preparo el entorno y el ejemplo
@@ -161,9 +161,9 @@ Cuando quieras me lo rebates por <a href="https://twitter.com/nikey_es" target="
 > - No importa lo mal o lento que vayan las cosas, sigues estando muy por delante de todos los que ni siquiera lo intentan.
 
 ## ¿Y si solo tengo 5 minutos libres?
-- Si solo tienes 5 minutos libres es que estás priorizbando otras cosas por delante de tu aprendizaje. 
+- Si solo tienes 5 minutos libres es que estás priorizando otras cosas por delante de tu aprendizaje. 
 - O cambias las prioridades o asumes que solo podrás leer alguna cosa de vez en cuando. 
-- Para solo leer sin tiempo de práctica, mejor usa esos 5 minutos a descansar y desconectar que te hace falta.
+- Para solo leer sin tiempo de práctica, mejor usa esos 5 minutos para descansar y desconectar que te hace falta.
 
 ## Resumen 
 - Para aprender vas a necesitar motivación, pero la motivación se te va a acabar. Lo que de verdad necesitas es mucha **fuerza de voluntad y constancia**.
@@ -172,15 +172,15 @@ Cuando quieras me lo rebates por <a href="https://twitter.com/nikey_es" target="
 
 - Elige un tema, **solo un tema** y durante un tiempo enfócate solo en ese tema.
 
-- <a href="https://nikeyes.github.io/como-me-organizo-para-seguir-aprendiendo-con-trabajo-mujer-y-4-hijos/#para-mantenerme-actualizado-necesito-tener-fuentes-de-conocimiento" target="_blank">**Recopila información**</a> relacionada con el tema durante un tiempo: capitulos de libros, cursos, tutoriales, podcasts, lo que creas que te ayudará para empezar a aprender.
+- <a href="https://nikeyes.github.io/como-me-organizo-para-seguir-aprendiendo-con-trabajo-mujer-y-4-hijos/#para-mantenerme-actualizado-necesito-tener-fuentes-de-conocimiento" target="_blank">**Recopila información**</a> relacionada con el tema durante un tiempo: capítulos de libros, cursos, tutoriales, podcasts, lo que creas que te ayudará para empezar a aprender.
 
-- <a href="https://nikeyes.github.io/como-me-organizo-para-seguir-aprendiendo-con-trabajo-mujer-y-4-hijos/" target="_blank">**Organízate la información**</a> para tenela siempre accesible de forma rápida.
+- <a href="https://nikeyes.github.io/como-me-organizo-para-seguir-aprendiendo-con-trabajo-mujer-y-4-hijos/" target="_blank">**Organízate la información**</a> para tenerla siempre accesible de forma rápida.
 
 - Elige algo práctico donde aplicar lo que vas a aprender y usa cada minuto que tengas para aprender usando **práctica deliberada**.
 
 - Ten tu **entorno** de aprendizaje **siempre a punto** y listo para continuar donde lo dejaste.
 
-- Parte del aprendizaje es organizar todo lo que has aprendido, ya sea código bien ordenado en GitHub, resumenes, notas bien estructuradas, etc. Esto te ayudará a consolidar el aprendizaje y te permitirá consultar ese tema de forma muy rapida en un futuro.
+- Parte del aprendizaje es organizar todo lo que has aprendido, ya sea código bien ordenado en GitHub, resúmenes, notas bien estructuradas, etc. Esto te ayudará a consolidar el aprendizaje y te permitirá consultar ese tema de forma muy rápida en un futuro.
 
 - Antes de pasar al siguiente tema **descansa** unos días, semanas o meses.
 
