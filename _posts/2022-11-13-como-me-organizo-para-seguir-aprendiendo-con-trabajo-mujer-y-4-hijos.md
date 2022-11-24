@@ -18,7 +18,7 @@ published: true
 
 Para aprender necesito recopilar, procesar y organizar información.
 
-Con una mezcla de configuración de mis redes sociales, Getting Things Done (GTD) y la creación de mi cerebro digita, he encontrado mi forma de hacerlo de seguir aprendiendo con un trabajo exigente, mujer y 4 hijos.
+Con una mezcla de configuración de mis redes sociales, Getting Things Done (GTD) y la creación de mi cerebro digital, he encontrado mi forma de seguir aprendiendo con un trabajo exigente, mujer y 4 hijos.
 
 Si quieres saber cómo lo hago tendrás que seguir leyendo.
 
@@ -38,7 +38,7 @@ Si quieres saber cómo lo hago tendrás que seguir leyendo.
 He pasado por muchos roles que necesitan habilidades y conocimientos diferentes.
 He trabajado como Backend, SRE, Tech Lead, Engineering Manager y últimamente disfruto trabajando como Machine Learning Engineer en Adevinta.
 
-El desarroll de software es una profesión que aunque estés 2 años en un mismo rol y en una misma empresa, necesitas adquirir nuevos conocimientos, herramientas y habilidades.
+El desarrollo de software es una profesión que aunque estés 2 años en un mismo rol y en una misma empresa, necesitas adquirir nuevos conocimientos, herramientas y habilidades.
 
 Nunca me había parado a pesar como me mantengo actualizado.
 Pensarlo me ha hecho ser consciente de que sigo un proceso y he intentado estructurarlo para poder explicarlo.
@@ -90,9 +90,9 @@ Durante el post nombraré varias veces la *Bandeja de entrada* (Inbox), así que
 - Apunto todo lo que se me ocurre, incluso cuando estoy fregando cacharros, limpiando la casa, doblando la ropa, etc. Cosas mecánicas que me permiten parar de hacerlas, apuntar y seguir con la tarea.
 - Esta Bandeja de Entrada debería procesarla varias veces al día, pero lo normal es que solo consiga hacerlo 1 vez al dia. 🤷 (Y desde que llegó mi 4ª hija, una vez cada 2 días...)
 - Intento que quede vacía y organizada para garantizar que voy a volver a esas tareas cuando sea necesario, sin tener que estar pensando continuamente en ellas. 
-- Cuando se me acumulan cosas en la bandeja de entrada sin procesar, no miro nuevas cosas hasta que la proceso.
+- Cuando se me acumulan cosas sin procesar en la bandeja de entrada no miro nuevas cosas hasta que la proceso.
 
-La bandeja de entrada solo es el punto de entrada a GTD.
+La bandeja de entrada es solo el punto de entrada a GTD.
 Sin el resto de la metodología solo sería una lista infinita de cosas y no me serviría para nada.
 Para explicar el resto de fases de GTD harían falta muchos posts.
 
@@ -111,7 +111,7 @@ Actualmente mis fuentes de conocimiento son:
 3. Google Noticias (cuando me apetece porque también me ayuda a desconectar)
 4. Youtube
 5. Libros (En los pocos momentos que tengo para leer)
-6. Cuando quiero profundizar en un tema busco en Google y leo libros que me ham recomendado o que ya tengo pendientes de leer.
+6. Cuando quiero profundizar en un tema busco en Google y leo libros que me han recomendado o que ya tengo pendientes de leer.
 
 ### 1. Medium Daily Digest
 - Deja que Medium trabaje por ti. 
@@ -155,7 +155,8 @@ Actualmente mis fuentes de conocimiento son:
 - Otro de mis rincones de lectura es el baño.
 - Leo muy lento porque las ideas que me parecen interesantes del libro las intento convertir en [*notas atómicas altamente enlazadas*](#qué-son-notas-atómicas-altamente-enlazadas). Luego hablaré de qué es esto.
 
-- ¿Esto quiere decir que cada día me levanto antes y en el desayuno leo libros? No, algunos días leo algún árticulo, otros programo algo, muchos no hago nada... Depende del día, el tiempo que tenga y las ganas que tenga ese día de hacer algo.
+- ¿Esto quiere decir que cada día me levanto antes y en el desayuno leo libros? No, algunos días leo algún árticulo, otros programo algo, muchos no hago nada... 
+- Depende del día, el tiempo que tenga y las ganas que tenga ese día de hacer algo.
 
 ## ¿Cómo organizo todo lo que aprendo?
 - Tengo implementado GTD en una cuenta de pago de Todoist.
@@ -173,7 +174,7 @@ Actualmente mis fuentes de conocimiento son:
 	
 - Para organizar mis notas uso varios de los principios de **Zettelkasten**.
 - Si no conoces Zettelkasten este video lo explica muy bien y muestra una posible implementación en Notion. <a href="https://www.youtube.com/watch?v=2rV13AhSHgs" target="_blank">Tomar Notas de esta forma me ha Cambiado la Vida | Zettelkasten con Notion</a>.
-- Este otro video que te puede ayudar a entender Zettelkasten de forma visual: <a href="https://www.youtube.com/watch?v=XsAKJLWunOM" target="_blank">Cómo tomar notas para siempre | Método Zettelkasten explicado con ejemplos visuales</a>.
+- Este otro video te puede ayudar a entender Zettelkasten de forma visual: <a href="https://www.youtube.com/watch?v=XsAKJLWunOM" target="_blank">Cómo tomar notas para siempre | Método Zettelkasten explicado con ejemplos visuales</a>.
 
 ### ¿Qué son notas atómicas altamente enlazadas?
 - Son la base de **Zettelkasten**.
@@ -182,17 +183,17 @@ Actualmente mis fuentes de conocimiento son:
 - Son **altamente enlazadas** porque creas notas con referencias cruzadas con otras notas que a su vez tienen referencias cruzadas a otras notas, etc..
 - Por ejemplo, este post sale de copiar cosas de muchas notas atómicas. Notas sobre GTD, Aprender haciendo, Práctica deliberada, Zettelkasten, como priorizar....
 - Este es el grafo que tengo actualmente con notas enlazadas y cada día va creciendo
--  ![Getting_Things_Done_Overview.jpg]({{ site.baseurl }}/images/2022-11-13-como-me-organizo-para-seguir-aprendiendo-con-trabajo-mujer-y-4-hijos/mi-cerebro-digital)
+![mi-cerebro-digital.png]({{ site.baseurl }}/images/2022-11-13-como-me-organizo-para-seguir-aprendiendo-con-trabajo-mujer-y-4-hijos/mi-cerebro-digital.png)
 
 
 ## Vale, ya he recopilado mucha información, pero ¿cuándo aprendo?
 - Cada semana "me comprometo" como mínimo a usar 2 fuentes de conocimiento, ya sean artículos, capítulos de libros, videos. 
 - Los selecciono en <a href="https://facilethings.com/blog/es/basics-weekly-review" target="_blank">la revisión semanal de GTD</a>
 	- Selecciono 1 fuente sobre Machine Learning (ahora estoy aprendiedo sobre modelos de difusión como Stable Diffusion. Si te interesa el tema, estas son <a href="https://nikeyes.github.io/recursos-para-usar-stable-diffusion/" target="_blank">mis notas de lo último que he aprendido</a>)
-	- Selecciono 1 fuente que me apetezca de los que tengo recopilados, sea de lo que sea. Desde videojuegos, crianza, jardinería, mágia, etc. Cualquier cosa no relacionada con la primera fuente. (A no ser que me aptezca leer más cosas sobre lo anterior XD)
+	- Selecciono 1 fuente que me apetezca de las que tengo recopiladas, sea de lo que sea. Desde videojuegos, crianza, jardinería, mágia, etc. Cualquier cosa no relacionada con la primera fuente. (A no ser que me aptezca leer más cosas sobre lo anterior XD)
 
 ## ¿Y  esto es suficiente? 
-- Pues no. Esto solo sirve para leer y tomar notas de nuevas cosas o profundizar en lo que quiero aprender. 
+- **Pues no**. Esto solo sirve para leer y tomar notas de nuevas cosas o profundizar en lo que quiero aprender. 
 - Leer y leer sin practicar a mí no me funciona.
 - A mí lo que me funciona es **aprender haciendo** (learning by doing), sobretodo usando **práctica deliberada** 
 - Para explicarte cómo aprendo he creado [este otro post]() con todo el detalle
