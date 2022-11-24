@@ -9,6 +9,7 @@ categories:
 tags:
   - aprendizaje
   - mejora continua
+  - aprender con hijos
 published: true
 ---
 
