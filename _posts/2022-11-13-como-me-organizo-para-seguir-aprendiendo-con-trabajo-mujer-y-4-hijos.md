@@ -120,6 +120,7 @@ Actualmente mis fuentes de conocimiento son:
 - En cada cuenta recibo temas diferentes:
 	- Temas tech, desarrollo de software, ML, etc..
 	- Temas de productividad, management, mejora personal, etc..
+- Puedes <a href="https://medium.com/me/readinghistory" target="_blank">refinar las recomendaciones</a> y <a href="https://medium.com/me/following" target="_blank">cambiar los topics que sigues</a>.
 - Muchos días solo leo el subject de los Daily Digest (suele ser el título del primer artículo). Si no me interesa ni lo abro.
 - Si abro el mail, leo como máximo el título de los 3 primeros artículos del mail.
 - Es la forma de no recopilar información infinita, porque si miras hasta el final, siempre encuentras algo que te llama la atención.
@@ -190,7 +191,7 @@ Actualmente mis fuentes de conocimiento son:
 - Cada semana "me comprometo" como mínimo a usar 2 fuentes de conocimiento, ya sean artículos, capítulos de libros, videos. 
 - Los selecciono en <a href="https://facilethings.com/blog/es/basics-weekly-review" target="_blank">la revisión semanal de GTD</a>
 	- Selecciono 1 fuente sobre Machine Learning. (Ahora estoy aprendiedo sobre modelos de difusión como Stable Diffusion. Si te interesa el tema, estas son <a href="https://nikeyes.github.io/recursos-para-usar-stable-diffusion/" target="_blank">mis notas de lo último que he aprendido</a>)
-	- Selecciono 1 fuente que me apetezca de las que tengo recopiladas, sea de lo que sea. Desde videojuegos, crianza, jardinería, mágia, etc. Cualquier cosa no relacionada con la primera fuente. (A no ser que me aptezca leer más cosas sobre lo anterior XD)
+	- Selecciono 1 fuente que me apetezca de las que tengo recopiladas, sea de lo que sea. Desde videojuegos, crianza, jardinería, mágia, etc. Cualquier cosa no relacionada con la primera fuente. (A no ser que me aptezca leer más cosas sobre lo anterior 😅)
 
 ## ¿Y esto es suficiente? 
 - **Pues no**. Esto solo sirve para leer y tomar notas de nuevas cosas o profundizar en lo que quiero aprender. 
