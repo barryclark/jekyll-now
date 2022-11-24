@@ -4,6 +4,8 @@ published: True
 title: The Illustrated Stable Diffusion
 ---
 
+(**V2 Nov 2022**: Updated images for more precise description of forward diffusion thanks to [Jeremy](https://twitter.com/jeremyphoward) and [Hamel](https://twitter.com/HamelHusain). a few more images)
+
 AI image generation is the most recent AI capability blowing people's minds (mine included). The ability to create striking visuals from text descriptions has a magical quality to it and points clearly to a shift in how humans create art. The release of [Stable Diffusion](https://stability.ai/blog/stable-diffusion-public-release) is a clear milestone in this development because it made a high-performance model available to the masses (performance in terms of image quality, as well as speed and relatively low resource/memory requirements).
 
 After experimenting with AI image generation, you may start to wonder how it works. 
@@ -293,7 +295,7 @@ The choice of language model is shown by the Imagen paper to be an important one
 
 </div>
 
-The early Stable Diffusion models just plugged in the pre-trained ClipText model released by OpenAI. It's possible that future models may switch to the newly released and much larger [OpenCLIP](https://laion.ai/blog/large-openclip/) variants of CLIP. This new batch includes text models of sizes up to 354M parameters, as opposed to the 63M parameters in ClipText.
+The early Stable Diffusion models just plugged in the pre-trained ClipText model released by OpenAI. It's possible that future models may switch to the newly released and much larger [OpenCLIP](https://laion.ai/blog/large-openclip/) variants of CLIP (Nov2022 update: True enough, [Stable Diffusion V2 uses OpenClip](https://stability.ai/blog/stable-diffusion-v2-release)). This new batch includes text models of sizes up to 354M parameters, as opposed to the 63M parameters in ClipText.
 
 #### How CLIP is trained
 
@@ -419,11 +421,12 @@ I hope this gives you a good first intuition about how Stable Diffusion works. L
 * [Stable Diffusion - What, Why, How?](https://www.youtube.com/watch?v=ltLNYA3lWAQ) [Video]
 * [High-Resolution Image Synthesis with Latent Diffusion Models](https://ommer-lab.com/research/latent-diffusion-models/) [The Stable Diffusion paper]
 * For a more in-depth look at the algorithms and math, see Lilian Weng's [What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)
+* Watch the [great Stable Diffusion videos from fast.ai](https://www.youtube.com/watch?v=_7rMfsA24Ls&ab_channel=JeremyHoward)
 
 
 ## Acknowledgements
 
-Thanks to Robin Rombach, Dennis Soemers, Yan Sidyakin, Freddie Vargus, Anna Golubeva, and the [Cohere For AI](https://cohere.for.ai/) community for feedback on earlier versions of this article.
+Thanks to Robin Rombach, Jeremy Howard, Hamel Husain, Dennis Soemers, Yan Sidyakin, Freddie Vargus, Anna Golubeva, and the [Cohere For AI](https://cohere.for.ai/) community for feedback on earlier versions of this article.
 
 ## Contribute
 Please help me make this article better. Possible ways:
