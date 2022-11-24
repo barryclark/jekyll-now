@@ -34,7 +34,7 @@ Si quieres saber como llego a esa **práctica deliberada** con un trabajo exigen
 5. [¿Y si quiero aprender soft-skills?](#y-si-quiero-aprender-soft-skills)
 6. [¿Y cómo aprendendo en mi día a día?](#y-cómo-aprendendo-en-mi-día-a-día)
 7. [¿Cómo sigo aprendiendo cuando solo tengo 30 minutos libres?](#cómo-sigo-aprendiendo-cuando-solo-tengo-30-minutos-libres)
-8. [¿Y si solo tengo 5 minutos libres?](y-si-solo-tengo-5-minutos-libres)
+8. [¿Y si solo tengo 5 minutos libres?](#y-si-solo-tengo-5-minutos-libres)
 8. [Resumen](#resumen)
 
 Para aprender tengo que recopilar información y tenela siempre disponible y a punto. Tengo mi forma de organizarme y de capturar información para aprender. Si te interesa el tema puedes leerlo <a href="https://nikeyes.github.io/como-me-organizo-para-seguir-aprendiendo-con-trabajo-mujer-y-4-hijos" target="_blank">aquí</a> 
