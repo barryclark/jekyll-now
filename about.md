@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Padre de 4 dragones, marido de la Khaleeshi y me relajo y descanso cada día desarrollando en @AdevintaSpain.
+Padre de 4 dragones, marido de la Khaleeshi y me relajo y descanso cada día desarrollando en [Adevinta](https://www.adevinta.com/).
 
 ### Contacto
 
