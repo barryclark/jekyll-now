@@ -12,7 +12,7 @@ Established in 2017, PDG was founded by Rangu Salgame and Varoon Raghavan in par
 The PDG leadership team is made up of industry veterans from the global telecommunication, internet infrastructure, data center, and real estate sectors. Our strong platform leadership is complemented by deep in-country teams. Our unique three-pronged investment strategy of acquisition, development, and carve-outs supports our mission to bring scale with speed to market to Asia’s most dynamic regions.
 
 PDG has 20 data centers in Asia Pacific in 5 countries and 14 cities. Out of these 20 data centers 10 are operational and 10 are under development.
-
+ 
 **Investing in Sustainability**
 
 We at PDG believe in creating a sustainable digital future and are committed to having all of our data centers powered by renewable energy by 2030. We have four pillars of our sustainability approach:
