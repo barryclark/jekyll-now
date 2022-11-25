@@ -198,7 +198,7 @@ Actualmente mis fuentes de conocimiento son:
 - **Pues no**. Esto solo sirve para leer y tomar notas de nuevas cosas o profundizar en lo que quiero aprender. 
 - Leer y leer sin practicar a mí no me funciona.
 - A mí lo que me funciona es **aprender haciendo** (learning by doing), sobretodo usando **práctica deliberada** 
-- Para explicarte cómo aprendo he creado [este otro post]() con todo el detalle
+- Para explicarte cómo aprendo he creado <a href="https://nikeyes.github.io/como-sigo-aprendiendo-con-trabajo-mujer-y-4-hijos/" target="_blank">este otro post</a> con todo el detalle
 
 ## Estas son las herramientas que uso para organizarme
 - **Todoist** -  para implementar GTD
