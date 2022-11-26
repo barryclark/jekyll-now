@@ -2,7 +2,7 @@
 layout: post
 title: MAGANG REMOTE - Software Engineering Interns di MATCHUB.CO
 author: Pak Budi
-date: 2022-11-26 06:40:30 +07:00
+date: 2022-11-26 07:20:30 +07:00
 ---
 
 **MatcHub** is an AI-powered platform that matches talents with companies based on their career aspirations, personality and work styles, in addition to their CV and experiences.
