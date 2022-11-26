@@ -6,7 +6,7 @@ date: 2022-11-26 06:40:30 +07:00
 ---
 
 **MatcHub** is an AI-powered platform that matches talents with companies based on their career aspirations, personality and work styles, in addition to their CV and experiences.
-
+ 
 Through MatcHub, the recruitment process is more efficient and fairer.
 
 ![logo MatcHub]({{ site.baseurl }}/images/logo-matchub_blackwords_highres-e1584588152685-1536x829.png)
