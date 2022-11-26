@@ -1,82 +1,77 @@
 ---
 layout: page
 title: "Paichang's Fox (full commentary)"
-permalink: /pages/study/zen/gateless-case2-full/
+permalink: /pages/study/zen/gateless-case2-/
 ---
 
 > **IMPORTANT** - This page will offer a full (personal) commentary on this koan. If you'd rather not be polluted by my thoughts on this case, please do not read this page. You can also check out the [version with only prompts](../gateless-gate2.md). Remember, the investigation **has to be your own** (see [introduction](../intro-to-koans)).
 
-Translation: [Robert Aitken, The Gateless Barrier, 1990](https://www.google.com/search?q=robert+aitken+gateless+barrier).
+## Notes on the text of this case
 
-> ### The Case
->
-> Once when Paichang gave a series of talks, a certain old man was always there listening together with the monks. When they left, he would leave too. One day, however, he remained behind. Paichang asked him, "Who are you, standing here before me?"
->
-> The old man replied, "I am not a human being. In the far distant past, in the time of Kasyapa Buddha, I was head priest at this mountain. One day a monk asked me, 'Does an enlightened person fall under the law of cause and effect or not?' I replied, 'Such a person does not fall under the law of cause and effect.' With this I was reborn five hundred times as a fox. Please say a turning word for me and release me from the body of a fox."
->
-> He then asked Paichang, "Does an enlightened person fall under the law of cause and effect or not?"
->
-> Paichang said, "Such a person does not evade the law of cause and effect."
->
-> Hearing this, the old man immediately was enlightened. Making his bows he said, "I am released from the body of a fox. The body is on the other side of this mountain. I wish to make a request of you. Please, Abbot, perform my funerals as for a priest."
->
-> Paichang had a head monk strike the signal board and inform the assembly that after the noon meal there would be a funeral service for a priest. The onks talked about this in wonder. "All of us are well. There is no one in the morgue. What does the teacher mean?"
->
-> After the meal, Paichang led the monks to the foot of a rock on the far side of the mountain. And there, with his staff, he poked out the body of a dead fox. He then performed the ceremony of cremation. That evening he took the high seat before his assembly and told the monks the whole story.
->
-> Huang-po stepped forward and said, "As you say, the old man missed the turning word and was reborn as a fox five hundred times. What if he had given the right answer each time he was asked a question -- what would have happened then?"
->
-> Paichang said, "Just step here closer, and I'll tell you." Huang-po went up to Paichang and slapped him in the face.
->
-> Paichang clapped his hands and laughed, saying, "I thought the Barbarian had a red beard, but here is a red-bearded Barbarian."
->
-> ### Wu-men's comment
-> "Not falling under the law of cause and effect." Why should this prompt five hundred lives as a fox? "Not evading the law of cause and effect." Why should this prompt a return a human life? If you have the single eye of realization, you will appreciate how old Paichang lived five hundred lives as a fox as lives of grace.
->
-> ### Wu-men's verse
-> Not falling, not evading--  
-> two faces of the same die.  
-> Not evading, not falling--  
-> a thousand mistakes, ten thousand mistakes.
+You can find the a version in the ["prompt-only" version of this page](./gateless-case2.md).
 
-## Notes
-
-This case can be found, with some variations, in:
-- Case 2 of Gateless Barrier
-- Case 8 of Book of Serenity,
+The story of Paichang/Baizhang/Hyakujo and the Fox can be found in multiple collections of koans with some variations:
+- Case 2 of the Gateless Barrier (_Mumonkan_),
+- Case 8 of Book of Serenity (_Shōyōroku_),
 - Case 102 of Dogen's Shinji Shobogenzo.
 
-_"Such a person does not evade the law of cause and effect"_ is elsewhere rendered as:
-- _"The law of cause and effect cannot be obscured."_ (Koun Yamada Roshi, The Gateless Gate, 1979)
-- _"He is not blind to cause and effect."_ (Thomas Cleary, Book of Serenity, Case 8, 2005)
-- _"He is not deluded about cause and effect"_ (J.C. Cleary, Wumen's Gate, 2005)
-- _"Do not be unclear about cause and effect."_ (Gudo Nishijima, Master Dogen's Shinji Shobogenzo, Book II case 2, 2003)
-- _"Don't ignore cause and effect"_ (Kazuaki Tanahashi, John Daido Loori, The True Dharma Eye case 102, 2005)
+Central to the case, the question and response is rendered different ways according to translators:
 
-Book of Serenity Case 8 has some comments/notes/interjections following the case. Here's a few:
+Robert Aitken, The Gateless Barrier, 1990:
+> \- Does an enlightened person fall under the law of cause and effect or not?  
+> \- Such a person does not evade the law of cause and effect.  
+
+Koun Yamada Roshi, The Gateless Gate, 1979:
+> \- TODO
+> \- The law of cause and effect cannot be obscured.  
+
+Thomas Cleary, Book of Serenity, Case 8, 2005:
+> \- TODO
+> \- He is not blind to cause and effect.
+
+J.C. Cleary, Wumen's Gate, 2005:
+> \- TODO
+> \- He is not deluded about cause and effect.
+
+Gudo Nishijima, Master Dogen's Shinji Shobogenzo, Book II case 2, 2003:
+> \- TODO
+> \- Do not be unclear about cause and effect.
+
+Kazuaki Tanahashi, John Daido Loori, The True Dharma Eye case 102, 2005:
+> \- TODO
+> \- Don't ignore cause and effect.
+
+
+The Book of Serenity, in covering Case 8, provides "added sayings" as foot notes of the text. Those are interjections, thoughts related to specific lines of the text. Here's a few:
 - _"The old man was enlightened at these words - Fox drool is still there."_
 - _"For five hundred lives he couldn't do a thing - If he had known what would happen today, he'd regret not being careful to begin with."_
 - _"I fell into a wild fox body for five hundred lives - You said one doesn't fall into cause and effect."_
 
 # Commentary [work in progress]
 
-## A read about doctrines
+- "in my opinion"
+- explain the structure
+
+## 1. Schools on the nature of enlightenment
 
 > Making his bows he said, "I am released from the body of a fox. The body is __on the other side of this mountain__.
 
-I suggest you read the ["Sutra of Hui-neng"](https://www.shambhala.com/the-sutra-of-hui-neng-grand-master-of-zen-1434.html) , and [H. Dumoulin, "Zen Enlightenment", pp 44-52](https://www.thriftbooks.com/w/zen-enlightenment-origins-and-meaning_heinrich-dumoulin/623561/item/3095725/). They will introduce and explain the distinction between the northern and southern schools of zen. I've summarized a [comparison table here](https://datayana.github.io/2019/03/05/Notes).
-
-
-_Note: it is useful to have read the Sutra of Hui-neng for this read, and to know the distinction between the schools of Hui-neng and Shen-hsiu._
-
-
 I bet the other side of __this__ mountain is facing north.
+
+When I read this line, it evokes two things to me. First, Kalu Rimpoche used to describe all the vehicles (_yana_) of Buddhism (Hinayana, Mahayana, Vajrayana) as paths on a mountain, all leading to the top, but being different in difficulty and time depending on the side a practitioner is taking. Second, the ["Sutra of Hui-neng"](https://www.shambhala.com/the-sutra-of-hui-neng-grand-master-of-zen-1434.html) introduces the distinction between the northern and southern schools of Zen. For an explanation, you can read  [H. Dumoulin, "Zen Enlightenment", pp 44-52](https://www.thriftbooks.com/w/zen-enlightenment-origins-and-meaning_heinrich-dumoulin/623561/item/3095725/), that I have summarized in a [comparison table here](https://datayana.github.io/2019/03/05/Notes).  
+I like to think of the expression "other side of the mountain" as pointing to the difference in doctrine between Hyakujo and the old men.
+
+### Different but still entitled to respect
 
 > After the meal, Paichang led the monks to the foot of a rock __on the far side of the mountain__. And there, with his staff, he poked out the body of a dead fox. He then __performed the ceremony of cremation__.
 
-Old Paichang does not belong to the same side of the mountain, still he deserves to receive the ritual owed to a priest.
+The old man does not belong to the same side of the mountain, still he deserves to receive the ritual owed to a priest.
 
-> "In the far distant past, in the time of Kasyapa Buddha, I was head priest at this mountain. One day a monk asked me, 'Does an enlightened person fall under the law of cause and effect or not?' I replied, '__Such a person does not fall under the law of cause and effect.__' With this I was __reborn five hundred times__ as a fox. Please say a turning word for me and release me from the body of a fox."
+Even if we belong to different schools, to different traditions, we still owe each other respect, we have to help one another. Here, I am going to forget those differences to allow for a ritual we both share, offering dignity and respect at the passing of my traditional adversary.
+
+### Sudden enlightenment rescueing gradual enlightenment from rebirth
+
+> "In the far distant past, in the time of Kasyapa Buddha, I was head priest at this mountain. One day a monk asked me, 'Does an enlightened person fall under the law of cause and effect or not?' I replied, '__Such a person does not fall__ under the law of cause and effect.' With this I was __reborn five hundred times__ as a fox. Please say a turning word for me and release me from the body of a fox."
 >
 > He then asked Paichang, "Does an enlightened person fall under the law of cause and effect or not?"
 >
@@ -84,30 +79,56 @@ Old Paichang does not belong to the same side of the mountain, still he deserves
 >
 > Hearing this, the old man __immediately was enlightened__. Making his bows he said, "I am released from the body of a fox."
 
-If we were to pick between the view of gradual enlightenment and the view of sudden enlightenment:
-- Which view is related to "Such a person does not fall..."?
-- Which view is related to "With this I was reborn five hundred times as a fox"?
-- Which view is related to "Such a person does not evade..."?
-- Which view is related to "Hearing this, the old man immediately was enlightened."?
+This is where the distinction between northern and southern schools of Zen shows up for me.
 
-Why did old Paichang have to wait for such a long time, go through so many lives, to ultimately be suddenly enlightened? Isn't that ironic?
+One interesting exercise is to examine each line according to a distinction between gradual enlightenment or sudden enlightenment.
 
-> Huang-po stepped forward and said, "As you say, the old man missed the turning word and was reborn as a fox five hundred times. What if he had given __the right answer__ each time he was asked a question -- what would have happened then?"
+"**Such a person does not fall...**" - This sounds very much like something someone from the school of gradual enlightenment would say. Maybe the old man comes from the northern school.
 
-Could you really do that? Answer correctly to this hard question even the very first time you're being asked? Is answering wrongly a natural step for someone on the path to enlightenment?
+"**With this** I was **reborn five hundred times as a fox**" - Again here, the old man holds a view in which a single wrong answer can throw you into a long line of rebirths, that can be exhausted. It sounds to me that the old man still holds the view of gradual enlightenment at this point of the conversation.
 
+"**Such a person does not evade...**" - Hyakujo is providing an answer that fits well in the view of sudden enlightenment.
+
+"**Hearing this, the old man immediately was enlightened**" - Suddenly, the old man enlightened, after being exposed to the view of sudden enlightenment. The old man realizes the truth of this view and suddenly sheds the skin of the fox on the floor of the other side of the mountain.
+
+### Is one view better than the other?
+
+> Huang-po stepped forward and said, "As you say, the old man missed the turning word and was reborn as a fox five hundred times. What if he had given __the right answer__ each time he was asked a question -- what would have happened then?"  
 > Paichang said, "Just step here closer, and I'll tell you." Huang-po went up to Paichang and __slapped him in the face__.
 
-Can Paichang's answer - _"such a person does not evade"_ karmic law - be considered "true" if the fruit of that answer is to get slapped in the face?
+Now, it would be too easy to just claim victory fo the view of sudden enlightenment. I read that passage as indicative that if you do that, you will be slapped in the face (by reality, probably).
 
-Is Sudden enlightenment, as a view, not "more true" than gradual? (_a thousand mistakes, ten thousand mistakes_?)
+The irony here is that old man **had to wait** for such a long time, go through so many lives, to ultimately be suddenly enlightened after meeting Hyakujo. Who knows how many lives he would have lived if he had now met Hyakujo. Who knows if he could have become enlightened another way.
 
-If I am pragmatic for a second, I'd rather get slapped in the face than be reborn five hundred times as a fox. Could sudden enlightenment be "less wrong" than gradual enlightenment?
+Going back to Huang-po's question, "What if...", there's also a lot of irony, almost cynicism. Let's go through it.
 
-Still, Huang-po's slap suggests that none of those answers are actually right. What to make of this?
+"**What if he had given the right answer**" - This seems to imply there **is** a right answer, but Huang-po doesn't believe there is one, he's calling out Hyakujo because his story implied there is one. Huang-po's slap suggests that none of those answers are actually right. What to make of this?
 
+"What if he had given **the right answer each time he was asked** a question" - To me, there's two funny aspects about this.  
+First, it means you would have to give the right answer the very first time you're being asked. Seriously, could anyone really do that? We're talking about such a fundamental question, if you were asked this question before you understand the true nature of enlightenment, you could very well give the wrong answer. Would you then be reborn as a fox for? That doesn't sound very reasonable (or fair). Dogen pointed this out, we'll get back to it later: "Senior monks who have made mistakes over the past two or three hundred years would certainly have become innumerable foxes" (in _Daishugyo_).  
+True understanding of enlightenment is not just something you can deliver like that on your first try, it is something you will realize with time and practice. This points to a contradiction, because _sudden_ enlightenment would then be _gradual_.
 
-## A read about the ritual
+Now let's say you _did_ answer properly at some point. Well, you'll still have to answer this question right every single time you're being asked, for the rest of your life, or else you'll be thrown in a long chain of rebirths as a fox. What's the point of being suddenly enlightened if you're still stuck with the possibility of being thrown in hell at every single corner, if you're still stuck within a reality that very much sounds aligned with the view of gradual enlightenment.
+
+"**Huang-po went up to Paichang and slapped him in the face**" - If previously it sounded like the reward for the old man's answer was to be thrown in rebirths, here it sounds like the reward for Hyakujo's answer is to be slapped in the face. Is Sudden enlightenment, as a view, not "more true" than gradual?. The (_a thousand mistakes, ten thousand mistakes_?).  
+Between us, if I can pragmatic for a second, I'd rather get slapped in the face than be reborn five hundred times as a fox. So, could sudden enlightenment be "less wrong" than gradual enlightenment?
+
+### What if we could hold both together?
+
+What I suggest this reading points to, is that the opposition between those two views is a trap, a false dichotomy.
+
+Maybe that's why the _Mumonkan_ closes the case the verses:
+
+> Not falling, not evading--  
+> two faces of the same die.  
+> Not evading, not falling--  
+> a thousand mistakes, ten thousand mistakes.
+
+Each of them leads to a partial understanding of reality and contradictions. Holding one view, sudden enlightenment, might be helpful but grasping it as the one true view is an illusion.
+
+Ultimately, the question is not whether sudden enlightenment is more true than gradual enlightenment. The question is.... what is enlightenment itself? and what is the relationship between enlightenment and karmic law?
+
+## 2. The ritual
 
 Ritual and liturgy, is that the answer to the question? Is the ritual of cremation the way to find your way between the two answers? Is it the function, the end of Zen practice and liturgy to pay respect to both answers and hold them simultaneously?
 
@@ -177,7 +198,6 @@ The answer is a distraction, a reflection in the water. The answer old Paichang 
 At this point in my exploration, after a couple of months, I read Dogen's commentary on this case. There are two chapters of the Shobogenzo, one titled "On the Great Practice" (_Daishugyo_) \[[pdf](https://www.thezensite.com/ZenTeachings/Dogen_Teachings/Shobogenzo/073daishugyo.pdf)\], the other "On the Absolute Certainty of Cause and Effect" (_Jinshin Inga_) \[[pdf](http://www.thezensite.com/ZenTeachings/Dogen_Teachings/Shobogenzo/088jinshiInga.pdf)\].
 
 ### Commentary from _Daishugyo_
-
 > If being reduced to the state of a wild fox was the inevitable consequence of answering a trainee’s question inaccurately, then how many thousands of myriad times would the Rinzais and Tokusans of more recent times, along with their disciples, have been reduced to being wild foxes as a consequence? And apart from them, senior monks who have made mistakes over the past two or three hundred years would certainly have become innumerable foxes.
 
 > If you were to say, “When someone who was a bystander spoke a triggering phrase concerning causality, that freed another from the mind of a wild fox,” well, the great earth with its mountains and rivers has already been giving forth innumerable triggering expressions concerning causality and is continually doing so. But even so, the old man had not yet dropped off the mind of a wild fox in the past, and he only dropped it off due to the later Abbot’s triggering words concerning causality.

@@ -6,10 +6,10 @@ permalink: /pages/study/zen/gateless-case2/
 
 > **IMPORTANT** - This page will offer some minimal prompts and notes to support your own investigation of the koan. I intentionally removed my own interpretations from it so that the investigation can remain you own (see [introduction](../intro-to-koans)). I've kept [my full commentary](../gateless-gate2-full.md) for another page.
 
+## The Case
+
 Translation: [Robert Aitken, The Gateless Barrier, 1990](https://www.google.com/search?q=robert+aitken+gateless+barrier).
 
-> ### The Case
->
 > Once when Paichang gave a series of talks, a certain old man was always there listening together with the monks. When they left, he would leave too. One day, however, he remained behind. Paichang asked him, "Who are you, standing here before me?"
 >
 > The old man replied, "I am not a human being. In the far distant past, in the time of Kasyapa Buddha, I was head priest at this mountain. One day a monk asked me, 'Does an enlightened person fall under the law of cause and effect or not?' I replied, 'Such a person does not fall under the law of cause and effect.' With this I was reborn five hundred times as a fox. Please say a turning word for me and release me from the body of a fox."
