@@ -3,12 +3,12 @@ layout: default
 published: true
 ---
 
-#<p><b><u>Blog Posts</u></b></p>
+<h1><b><u>Blog Posts</u></b></h1>
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
 
-      ###<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 
 
     </article>
