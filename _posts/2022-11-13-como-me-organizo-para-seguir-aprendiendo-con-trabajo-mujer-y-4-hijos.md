@@ -41,7 +41,7 @@ He trabajado como Backend, SRE, Tech Lead, Engineering Manager y últimamente di
 
 El desarrollo de software es una profesión que aunque estés 2 años en un mismo rol y en una misma empresa, necesitas adquirir nuevos conocimientos, herramientas y habilidades.
 
-Nunca me había parado a pesar cómo me mantengo actualizado.
+Nunca me había parado a pensar cómo me mantengo actualizado.
 Pensarlo me ha hecho ser consciente de que sigo un proceso y he intentado estructurarlo para poder explicarlo.
 
 A lo mejor alguna cosa te sirve.
