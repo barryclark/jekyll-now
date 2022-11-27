@@ -47,12 +47,19 @@ The Book of Serenity, in covering Case 8, provides "added sayings" as foot notes
 - _"For five hundred lives he couldn't do a thing - If he had known what would happen today, he'd regret not being careful to begin with."_
 - _"I fell into a wild fox body for five hundred lives - You said one doesn't fall into cause and effect."_
 
+# Available commentaries
+
+There are two chapters of Dogen's Shobogenzo, commenting on this case. One is titled "On the Great Practice" (_Daishugyo_) \[[pdf](https://www.thezensite.com/ZenTeachings/Dogen_Teachings/Shobogenzo/073daishugyo.pdf)\], the other "On the Absolute Certainty of Cause and Effect" (_Jinshin Inga_) \[[pdf](http://www.thezensite.com/ZenTeachings/Dogen_Teachings/Shobogenzo/088jinshiInga.pdf)\].
+
+Heine, Steven. Shifting Shape, Shaping Text: Philosophy and Folklore in the Fox Koan. University of Hawai’i Press, 1999. http://www.jstor.org/stable/j.ctt6wqz3j.
+
 # Commentary [work in progress]
 
 - "in my opinion"
 - explain the structure
+- one point/argument can come back several times, under different reads
 
-## 1. Schools on the nature of enlightenment
+## Read 1. Schools on the nature of enlightenment
 
 > Making his bows he said, "I am released from the body of a fox. The body is __on the other side of this mountain__.
 
@@ -126,36 +133,29 @@ Maybe that's why the _Mumonkan_ closes the case the verses:
 
 Each of them leads to a partial understanding of reality and contradictions. Holding one view, sudden enlightenment, might be helpful but grasping it as the one true view is an illusion.
 
-Ultimately, the question is not whether sudden enlightenment is more true than gradual enlightenment. The question is.... what is enlightenment itself? and what is the relationship between enlightenment and karmic law?
+Ultimately, the question is not whether sudden enlightenment is more true than gradual enlightenment. The question is.... what is enlightenment itself? and what is the relationship with the law of cause and effect?
 
-## 2. The ritual
+## Read 2. The law of cause and effect
 
-Ritual and liturgy, is that the answer to the question? Is the ritual of cremation the way to find your way between the two answers? Is it the function, the end of Zen practice and liturgy to pay respect to both answers and hold them simultaneously?
+### Causality is everywhere
 
-> Hearing this, the old man immediately was enlightened. Making his bows he said, "I am released from the body of a fox. The body is on the other side of this mountain. I wish to make a request of you. __Please__, Abbot, __perform my funerals as for a priest__."
+One interesting exercise is to look for, in the text and between the lines, where causal relationships are present. And even at the very start of the case, it is clear they are everywhere.
 
-Why does old Paichang even request a funeral? What's the purpose of it from the perspective of Enlightenment?
+> Once when Paichang gave a series of talks, a certain old man was always there listening together with the monks. When they left, he would leave too. One day, however, he remained behind.
 
-Is the ritual requested by old Paichang, __because__ he understands that an enlightened person __does not evade__ the law of cause and effect? Old Paichang is enlightened, but there are still things that need to happen, and a law that cannot be obscured?
+"**One day, however, he remained behind.**" - This sentence alone can raise so many questions. What happened **that** day? Why is that day different from the day before? Was Hyakujo teaching on a specific topic? Or did the old man feel he needed to ask a question that day? Why wouldn't he ask that question the day before? What is the cause leading to this old man asking the most pressing question of his existence on that particular day? This day will be important. We're talking about the day of the old man's enlightenment. Conditions on that day seemed more favorable for him than the day before. Why and how? Does that even make sense to ask this question?
 
-> "There, with his staff, he poked out the body of a dead fox. He then performed __the ceremony of cremation__."
+Once you deep dive like this, reading from the beginning again brings a lot more opportunities to contemplate causality.
 
-Why would there be anything to do with the fox's body? What does it __do__ to cremate it? What does it accomplish?
+"**Once when...**" - When was this exaclty? What happened before? Why was this series of teachings more favorable for the old man to show up? Is this story only about karmic law applying to the old man? Or is it also about karmic law applying to Hyakujo? Are those two meeting here as the fruit of a process relating both?
+
+"**was always there...**" - Was the old man literally **always** there since the beginning of time? Probably not, so he must have entered the teaching hall at some point for the first time. What happened then? Why at that time? Was it just ok for him to show up like this?
+
+"**When they left, he would leave too.**" - He was going with the stream. Maybe that can explain why nobody noticed or interacted with him before "that day". Why did nobody notice him or interact with him before? Did Hyakujo notice him only when he started asking questions?
+
+"**One day, however..** - There the stream meets a boulder, causing the water to stop for a moment. Now, if the old man had never asked any question to Hyakujo, would he still be reborn as a fox again and again? 
 
 
-## A read about cause and effects
-
-> Once when Paichang gave a series of talks, a certain old man was always there listening together with the monks. When they left, he would leave too. __One day__, however, __he remained behind.__
-
-What happened that day? What came to be? What was different about that day? What emerged so that __this__ day old Paichang went to the master?
-
-> __When they left, he would leave too__.
-
-He was going with the stream.
-
-> __One day, however__, he remained behind.
-
-There the stream meets a boulder, causing the water to stop for a moment.
 
 > "Not falling under the law of cause and effect." Why should __this__ prompt five hundred lives as a fox? "Not evading the law of cause and effect." Why should __this__ prompt a return a human life? If you have the single eye of realization, you will appreciate how old Paichang lived five hundred lives as a fox as lives of grace.
 
@@ -184,6 +184,22 @@ Yes. What would have happened then? What **then**?
 
 What is the effect of **this** cause? Is there any even?
 
+## 3. The ritual
+
+Ritual and liturgy, is that the answer to the question? Is the ritual of cremation the way to find your way between the two answers? Is it the function, the end of Zen practice and liturgy to pay respect to both answers and hold them simultaneously?
+
+> Hearing this, the old man immediately was enlightened. Making his bows he said, "I am released from the body of a fox. The body is on the other side of this mountain. I wish to make a request of you. __Please__, Abbot, __perform my funerals as for a priest__."
+
+Why does old Paichang even request a funeral? What's the purpose of it from the perspective of Enlightenment?
+
+Is the ritual requested by old Paichang, __because__ he understands that an enlightened person __does not evade__ the law of cause and effect? Old Paichang is enlightened, but there are still things that need to happen, and a law that cannot be obscured?
+
+> "There, with his staff, he poked out the body of a dead fox. He then performed __the ceremony of cremation__."
+
+Why would there be anything to do with the fox's body? What does it __do__ to cremate it? What does it accomplish?
+
+
+
 ## Unsorted notes
 
 Enlightenment itself is impermanent?
@@ -198,6 +214,7 @@ The answer is a distraction, a reflection in the water. The answer old Paichang 
 At this point in my exploration, after a couple of months, I read Dogen's commentary on this case. There are two chapters of the Shobogenzo, one titled "On the Great Practice" (_Daishugyo_) \[[pdf](https://www.thezensite.com/ZenTeachings/Dogen_Teachings/Shobogenzo/073daishugyo.pdf)\], the other "On the Absolute Certainty of Cause and Effect" (_Jinshin Inga_) \[[pdf](http://www.thezensite.com/ZenTeachings/Dogen_Teachings/Shobogenzo/088jinshiInga.pdf)\].
 
 ### Commentary from _Daishugyo_
+
 > If being reduced to the state of a wild fox was the inevitable consequence of answering a trainee’s question inaccurately, then how many thousands of myriad times would the Rinzais and Tokusans of more recent times, along with their disciples, have been reduced to being wild foxes as a consequence? And apart from them, senior monks who have made mistakes over the past two or three hundred years would certainly have become innumerable foxes.
 
 > If you were to say, “When someone who was a bystander spoke a triggering phrase concerning causality, that freed another from the mind of a wild fox,” well, the great earth with its mountains and rivers has already been giving forth innumerable triggering expressions concerning causality and is continually doing so. But even so, the old man had not yet dropped off the mind of a wild fox in the past, and he only dropped it off due to the later Abbot’s triggering words concerning causality.
