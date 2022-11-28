@@ -69,7 +69,7 @@ The problem we are trying to optimise can be expressed in the standard form as:
 $$\begin{aligned}
 \min_{x} & \;\;\;\mathbf{c}^T \mathbf{x} \\
 \text{s.t.} & \;\;\;\mathbf{A}_{ub}\mathbf{x} \leq \mathbf{b}_{ub}\\
-& \;\;\;\mathbf{A}_{eq}\mathbf{x} \leq \mathbf{b}_{eq}\\
+& \;\;\;\mathbf{A}_{eq}\mathbf{x} = \mathbf{b}_{eq}\\
 & 0 \leq x_i \leq P_{\text{max}}, \quad i = 1, \dots, n
 \end{aligned}$$
 
