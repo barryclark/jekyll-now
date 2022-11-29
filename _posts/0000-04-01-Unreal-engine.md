@@ -41,4 +41,4 @@ title: Unreal engine
     - 언리얼 라이팅
     - 조명
 * [Event](/posts_unreal_engine/Event)
-* [Localize](/posts_unreal_engine/Localize)
+* [Localize Build Packaging](/posts_unreal_engine/LocalizeAndBuildAndPackagingSetting)
