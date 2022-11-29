@@ -12,7 +12,7 @@ date: 2022-11-29 07:15:00 +07:00
 Pada tahun 1990, telah dilakukan perubahan nama menjadi PT Astra International Tbk, dalam rangka penawaran umum perdana saham Perseroan kepada masyarakat, yang dilanjutkan dengan pencatatan saham Perseroan di Bursa Efek Indonesia dengan menggunakan ticker ASII. Nilai kapitalisasi pasar Astra pada akhir tahun 2021 adalah sebesar Rp231 triliun.
 
 Dikutip dari laman [karir Astra.co.id](https://career.astra.co.id/lowongan), berikut info lowongan kerja yang tersedia:
-
+ 
 ## Posisi: Brand Associate ##
 
 | |
