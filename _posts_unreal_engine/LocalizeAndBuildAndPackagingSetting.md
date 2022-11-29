@@ -169,12 +169,12 @@ Unreal Engine 4 프로젝트에 사용할 수 있는 빌드 작업(쿠킹, 패�
 <div markdown="1">
 
 - [ ] 빌드시 Command로 컬쳐 설정
-- [ ] 설정에서 프로젝트명 변경
+- [ ] 설정에서 실행파일 이름 변경
 
 현지화한 빌드를 출력하는 것이 목표이므로 
 1. 블루프린트 프로젝트의 .uproject를 복사하여 ..._ko, ..._en을 각각 추가
 
-Project Launcher의 세팅을
+Custom Project Launcher을 각각추가한 다음 세팅을
 1. Project를 해당하는 프로젝트로 설정 (예를 들어 Localize_en)
 2. Build를 Build로 설정
 3. Cook을 By the book으로 설정
@@ -182,5 +182,11 @@ Project Launcher의 세팅을
 5. Deploy를 Do not deploy로 설정
 
 두 커스텀 실행 프로파일을 실행하면, 기본 컬쳐가 다른 두 빌드를 얻을 수 있습니다.
+
+<center><div markdown="1">
+
+![Custom Project Launch](/images/CustomProjectLaunch.gif)
+
+</div></center>
 
 </div></details>
