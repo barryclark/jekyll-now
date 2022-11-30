@@ -14,7 +14,7 @@ Perusahaan induk SGB adalah Grup Suntory yang berkantor pusat di Tokyo, Jepang y
 SGB memproduksi beragam produk minuman, mulai dari minuman jelly Okky; teh siap minum Mountea; teh botol MYTEA dan air rasa kebaikan alami - Good Mood. Profil perusahaan selengkapnya dapat dibaca [di sini](https://www.suntorygaruda.com/informasi-perusahaan).
 
 ---
-
+ 
 Dilansir dari laman [CDC Universitas Indonesia](https://cdc.ui.ac.id/pt-suntory-garuda-beverage/?utm_source=rss&utm_medium=rss&utm_campaign=pt-suntory-garuda-beverage), tersedia lowongan kerja sebagai berikut:
 
 ## Posisi: Process Development Specialist ##
