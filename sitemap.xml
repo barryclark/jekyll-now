@@ -31,7 +31,7 @@ sitemap:
   {% endfor %}
 
   {% for page in site.pages %}
-  	{% if page.url == '/search/database.json' or page.url == '/assets/css/style.css' or page.url == '/404.html' or page.url == '/feed.xml' %}
+  	{% if page.url == '/search/database.json' or page.url == '/style.css' or page.url == '/assets/css/style.css' or page.url == '/404.html' or page.url == '/feed.xml' %}
   		{% continue %}
   	{% endif %}
     {% unless page.sitemap.exclude == "yes" or page.name == "feed.xml" %}
