@@ -10,7 +10,7 @@ date: 2022-12-1 07:07:30 +07:00
 ![logo kompascom]({{ site.baseurl }}/images/logo-kompascom.png)
 
 Waktu itu Kompas hanya menampilkan replika dari berita-berita harian *Kompas* yang terbit hari itu. Lalu awal tahun 1996 alamat *Kompas Online* berubah menjadi www.kompas.com. Profil selengkapnya, [cek di sini](http://inside.kompas.com/about-us)
-
+ 
 ---
 
 Dilansir dari laman [Karir Kompas](https://jobs.kompas.com/karir/detail/221/CONTENT-WRITER-KOMPASCOM-SOLO), tersedia lowongan kerja sebagai berikut:
