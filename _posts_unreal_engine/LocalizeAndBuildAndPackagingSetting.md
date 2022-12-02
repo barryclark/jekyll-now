@@ -181,7 +181,7 @@ Custom Project Launcher을 각각추가한 다음 세팅을
 4. Package에 확인하기 쉬운 위치에 저장되도록 설정
 5. Deploy를 Do not deploy로 설정
 
-두 커스텀 실행 프로파일을 실행하면, 기본 컬쳐가 다른 두 빌드를 얻을 수 있습니다.
+두 커스텀 실행 프로파일을 실행하면, 이름이 다른 두 빌드를 얻을 수 있습니다.
 
 <center><div markdown="1">
 

@@ -3,6 +3,11 @@ layout: post
 title: Life optimize
 ---
 
+- [ ]  XR rig란 무엇인가..?
+- [ ]  오큘러스 세팅은?
+- 디바이스 입력을 시뮬레이션 하는게 불편할 것이라 생각은 했는데… 정말 불편하다.
+- [ ]  오큘러스랑 바이브 입력 하나로 만든 것 찾아서 보자..
+
 <details><summary>Links</summary>
 <div markdown="1">
 

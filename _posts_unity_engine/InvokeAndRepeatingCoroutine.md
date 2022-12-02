@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Invoke, InvokeRepeating, Coroutine
+title: Invoke & InvokeRepeating & Coroutine
 ---
 
 <details><summary>Invoke & InvokeRepeating</summary>
@@ -16,11 +16,33 @@ title: Invoke, InvokeRepeating, Coroutine
 
 </div></details>
 
+## Coroutine
+- [ ] [yield return의 종류](https://yeobi27.tistory.com/entry/Unity-yield-return-종류)
+
 <details><summary>Coroutine</summary>
 <div markdown="1">
 
 [Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html)
 
 코루틴은 완료 될 때까지 실행(yield)을 일시 중지할 수 있는 함수입니다.
+
+</div></details>
+
+<details><summary>코루틴 예시</summary>
+<div markdown="1">
+
+```C#
+IEnumerator EffectDestroy()
+    {
+        Particle.Play();
+        while(Particle ? Particle.isPlaying : false)
+        {
+            float ReverseTime = 1.0f - (Particle.time / Particle.main.duration);
+            transform.localScale = new Vector3(ReverseTime, ReverseTime, ReverseTime);
+            yield return null;
+        }
+        Destroy(gameObject);
+    }
+```
 
 </div></details>
