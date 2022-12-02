@@ -49,16 +49,16 @@ title: Unity engine
 
 </div></details>
 
-* [UnityEngine](/posts_unity_eninge/UnityEngine)
-* [Interaction](/posts_unity_eninge/Interaction)
-* [Folder & Prefab & Package](/posts_unity_eninge/FolderPrefabPackage)
+* [UnityEngine](/posts_unity_engine/UnityEngine)
+* [Interaction](/posts_unity_engine/Interaction)
+* [Folder & Prefab & Package](/posts_unity_engine/FolderPrefabPackage)
 
 문법에 대해서
 
-* [InvokeAndRepeating & Coroutine](/posts_unity_eninge/InvokeAndRepeatingCoroutine)
-* [Physics](/posts_unity_eninge/Physics)
-* [Particle & Shader](/posts_unity_eninge/ParticleShader)
+* [InvokeAndRepeating & Coroutine](/posts_unity_engine/InvokeAndRepeatingCoroutine)
+* [Physics](/posts_unity_engine/Physics)
+* [Particle & Shader](/posts_unity_engine/ParticleShader)
 
 좀더 효율적으로
 
-* [Inspector & AutomationTest](/posts_unity_eninge/InspectorAutomationTest)
+* [Inspector & AutomationTest](/posts_unity_engine/InspectorAutomationTest)
