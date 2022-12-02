@@ -10,7 +10,7 @@ date: 2022-12-2 07:19:30 +07:00
 ![logo crewdible]({{ site.baseurl }}/images/crewdible-logo.jpg)
 
 Crewdible memberdayakan gudang/ruko kosong untuk dijadikan mitra gudang. Sejak 2017, Crewdible telah menyediakan jasa terpadu bagi business e-commerce dan UKM untuk penyimpanan barang, packing, hingga siap untuk di pick up oleh kurir, dimana semua aktivitas dipadu dalam suatu aplikasi yang dapat memudahkan online seller dalam transaksi bisnisnya.
-
+ 
 ---
 
 Berdasarkan laman [Karir Crewdible](https://karir.crewdible.com/#karir), mereka saat ini tengah membuka beberapa posisi lowongan kerja sebagai berikut:
