@@ -16,12 +16,13 @@ title: Life optimize
 
 </div></details>
 
+생각하지 않기 위하여
 
 * [Who am I](/posts_optimize_life/WhoAmI)
 
+개발의 효율을 위하여
 
-* [지킬 블로그](/posts_optimize_life/Jekyll_blog)
-    - Jekyll
+* [Use window](/posts_optimize_life/UseWindow)
 * [Automation test](/posts_optimize_life/TDD-Automation_test)
     - TDD
     - Unreal automation test
@@ -35,6 +36,11 @@ title: Life optimize
     - Git Desktop
     - Git Bash
 
-<br>
+어떻게 만들어야 하는지
 
-[VR Development](/posts_optimize_life/VR_Development)
+* [VR Development](/posts_optimize_life/VR_Development)
+
+정리하기 위하여
+
+* [지킬 블로그](/posts_optimize_life/Jekyll_blog)
+    - Jekyll
