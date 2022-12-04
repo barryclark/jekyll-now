@@ -23,6 +23,8 @@ title: Life optimize
 개발의 효율을 위하여
 
 * [Use window](/posts_optimize_life/UseWindow)
+    - Window
+    - Batch
 * [Automation test](/posts_optimize_life/TDD-Automation_test)
     - TDD
     - Unreal automation test
