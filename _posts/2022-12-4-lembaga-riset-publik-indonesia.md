@@ -8,7 +8,7 @@ date: 2022-12-4 07:05:30 +07:00
 **Larispa** telah lahir sebagai Komunitas peneliti, Relawan, Pelatih, tutor yang melakukan difersifikasi layanan seperti: Konsultan Manajemen, Akuntansi, Akreditasi dan Pusat Pelatihan.
 
 Larispa memiliki tujuan untuk mengembangkan hasil-hasil penelitian sebagai dasar pembangunan di Indonesia. Profil selengkapnya dapat diakses [di sini](http://larispa.or.id/tentang-kami/).
-
+ 
 ![logo Larispa]({{ site.baseurl }}/images/logo-LARISPA-INDONESIA-300x225.jpg)
 
 Berdasarkan laman [Karir Larispa.or.id](http://larispa.or.id/berita/lowongan-dosen-mengajar-daerah/), tersedia lowongan kerja sebagai Dosen Tetap pada Institusi Mitra Kerja Larispa. Berikut informasinya:
