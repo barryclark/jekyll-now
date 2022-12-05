@@ -6,7 +6,7 @@ date: 2022-12-5 07:28:30 +07:00
 ---
 
 **PT KIMIA FARMA DIAGNOSTIKA** sebagai perusahaan jaringan pelayanan laboratorium medis dan klinik terbesar di indonesia.
-
+ 
 PT KIMIA FARMA DIAGNOSTIKA hadir melayani seluruh pelanggan dari berbagai segmen. Dengan dukungan para dokter, perawat, phlebotomist, ATLM, radiografer, dan Bidan yang kompeten dan terserfifikasi, serta terus tumbuh dan berkembang. 
 
 ![loker kimia farma]({{ site.baseurl }}/images/logo-kimia-farma-diagnostika-1586165632fix-lab.jpg)
