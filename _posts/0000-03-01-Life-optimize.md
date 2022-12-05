@@ -19,10 +19,13 @@ title: Life optimize
 생각하지 않기 위하여
 
 * [Who am I](/posts_optimize_life/WhoAmI)
+* [How to work](/posts_optimize_life/HowToWork)
 
 개발의 효율을 위하여
 
 * [Use window](/posts_optimize_life/UseWindow)
+    - Window
+    - Batch
 * [Automation test](/posts_optimize_life/TDD-Automation_test)
     - TDD
     - Unreal automation test
