@@ -4,13 +4,14 @@ title: About
 description: "Cheryl Hung's biography, photo and contact details"
 ---
 
-<img src="/images/headshot.jpeg" alt="Cheryl Hung, Apple" class="about-image"/>
+<img src="/images/headshot.jpeg" alt="Cheryl Hung, Arm" class="about-image"/>
 
 Cheryl brings engineers together to build the future of infrastructure, especially cloud native and open source.
 
-As Senior Director at Apple, Cheryl brings the best of Kubernetes and cloud native infrastructure. She founded the Cloud Native London meetup and grew it to over 7000 members.
+As Senior Director at Arm, Cheryl leads strategy across the cloud and infrastructure ecosystem. She founded the Cloud Native London meetup and grew it to over 7000 members.
 
-Previously Cheryl was VP Ecosystem at CNCF, expanding the End User Community to 150 organisations including Spotify, Apple and Airbnb. As a C++ engineer at Google, she built backend features for Google Maps.
+Previously Cheryl was VP Ecosystem at CNCF, expanding the End User Community to 150 organisations including Spotify, Apple and Airbnb. She built web-scale distributed systems at Google Maps, and high performing engineering teams at Apple.
+
 
 
 # Contact me
