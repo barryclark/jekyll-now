@@ -19,6 +19,7 @@ title: Life optimize
 생각하지 않기 위하여
 
 * [Who am I](/posts_optimize_life/WhoAmI)
+* [How to work](/posts_optimize_life/HowToWork)
 
 개발의 효율을 위하여
 
