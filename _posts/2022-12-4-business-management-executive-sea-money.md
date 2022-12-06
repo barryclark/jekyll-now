@@ -6,10 +6,9 @@ date: 2022-12-4 7:15:30 +07:00
 ---
 
 **SeaMoney** is a part of Sea Group, a leading global consumer internet company.
+![logo SeaMoney]({{ site.baseurl }}/images/logo-sea-money-cd71ce31.png)
 
 SeaMoney’s mission is to better the lives of individuals and businesses in our region with financial services through technology. SeaMoney’s offerings include mobile wallet services, payment processing, credit offerings, and related digital financial services and products. These are available in seven markets across Southeast Asia and Taiwan under various brands, including ShopeePay, SPayLater, and other brands.
-
-![logo SeaMoney]({{ site.baseurl }}/images/logo-sea-money-cd71ce31.png)
 
 ## Position: Business Management Executive - Digital Banking (Campus Hiring 2022 / 2023)
 
