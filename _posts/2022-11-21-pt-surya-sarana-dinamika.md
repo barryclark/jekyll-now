@@ -6,7 +6,6 @@ date: 2022-11-21 08:00:00 +07:00
 ---
 
 **PT Surya Sarana Dinamika** adalah perusahaan rekanan manufaktur yang fokus melayani kebutuhan sistem otomasi industri di Indonesia. Pengalaman lebih dari 20 tahun menjadikan PT Surya Sarana Dinamika ahli di bidang sistem otomasi (mekanik dan elektrik), modifikasi mesin, training centre, service centre, serta sebagai konsultan sistem otomasi.
-
 ![logo SSD]({{ site.baseurl }}/images/logo_header-ssd.png)
 
 Awalnya PT Surya Sarana Dinamika berdiri tanggal 28 April 2000 dengan nama CV Surya Sarana Sentosa. Perusahaan bertumbuh dan semakin profesional sehingga mengubah badan usaha menjadi PT Surya Sarana Dinamika sejak tahun 2007 hingga sekarang. Selain PT Surya Sarana Dinamika, perusahaan ini juga dikenal dengan nama **SSD Automation**.
