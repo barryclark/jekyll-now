@@ -6,7 +6,6 @@ date: 2022-12-5 07:16:30 +07:00
 ---
 
 **PT Midi Utama Indonesia Tbk** yang didirikan pada bulan Juli 2007 berkedudukan di Gedung Alfa Tower, Lantai 12, Kav. 7 – 9, Jl. Jalur Sutera Barat, Alam Sutera, Tangerang, Banten 15143.
-
 ![logo alfamidi]({{ site.baseurl }}/images/alfamidi-logo.png)
 
 Sesuai dengan Anggaran Dasar Perusahaan, ruang lingkup kegiatan Perseroan antara lain bergerak dalam bidang perdagangan umum termasuk perdagangan toserba/swalayan dan minimarket.
