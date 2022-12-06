@@ -6,7 +6,6 @@ date: 2022-12-2 07:19:30 +07:00
 ---
 
 **Crewdible** adalah perusahaan Start-up Indonesia yang bergerak di bidang online fulfillment service dengan mengedepankan sistem crowdsourcing.
-
 ![logo crewdible]({{ site.baseurl }}/images/crewdible-logo.jpg)
 
 Crewdible memberdayakan gudang/ruko kosong untuk dijadikan mitra gudang. Sejak 2017, Crewdible telah menyediakan jasa terpadu bagi business e-commerce dan UKM untuk penyimpanan barang, packing, hingga siap untuk di pick up oleh kurir, dimana semua aktivitas dipadu dalam suatu aplikasi yang dapat memudahkan online seller dalam transaksi bisnisnya.
