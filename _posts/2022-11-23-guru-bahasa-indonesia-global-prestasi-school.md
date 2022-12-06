@@ -6,10 +6,9 @@ date: 2022-11-23 07:05:00 +07:00
 ---
 
 **Global Prestasi School (GPS)** adalah sekolah swasta yang menghadirkan pendidikan berkualitas tinggi mulai dari PAUD hingga SMA Kelas 12.
+![logo Global Prestasi School]({{ site.baseurl }}/images/logo-Global_Prestasi_School.png)
 
 Global Prestasi School (GPS) dikenal sebagai sekolah yang menawarkan pendidikan yang berkualitas tidak hanya mengembangkan kemampuan akademis namun juga kecerdasan emosional, seraya membangun pola pikir global untuk membantu siswa meraih kesuksesan dalam dunia yang sangat kompetitif saat ini.
-
-![logo Global Prestasi School]({{ site.baseurl }}/images/logo-Global_Prestasi_School.png)
 
 Dikutip dari laman [Pusat Pengembangan Karir UNY](https://ppk.lppmp.uny.ac.id/lowongan/show_landing/ODQ5), Global Prestasi School (GPS) membuka kesempatan untuk bergabung melalui lowongan berikut ini:
  
