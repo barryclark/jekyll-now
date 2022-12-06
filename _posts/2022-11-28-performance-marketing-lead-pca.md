@@ -6,7 +6,6 @@ date: 2022-11-28 07:19:00 +07:00
 ---
 
 **PowerCommerce.Asia** is the Leading Ecommerce Omnichannel Enabler and Supply Chain Technology Solution – Services Company.
-
 ![logo PCA]({{ site.baseurl }}/images/logo-powercommerce-asia.png)
  
 PowerCommerce.Asia open vacancy for position:
