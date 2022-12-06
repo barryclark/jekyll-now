@@ -6,7 +6,6 @@ date: 2022-11-29 06:37:00 +07:00
 ---
 
 **PT Astra International Tbk** didirikan di Jakarta pada tahun 1957 sebagai sebuah perusahaan perdagangan umum dengan nama Astra International Inc.
-
 ![logo astra]({{ site.baseurl }}/images/logo-astra.png)
 
 Pada tahun 1990, telah dilakukan perubahan nama menjadi PT Astra International Tbk, dalam rangka penawaran umum perdana saham Perseroan kepada masyarakat, yang dilanjutkan dengan pencatatan saham Perseroan di Bursa Efek Indonesia dengan menggunakan ticker ASII. Nilai kapitalisasi pasar Astra pada akhir tahun 2021 adalah sebesar Rp231 triliun.
