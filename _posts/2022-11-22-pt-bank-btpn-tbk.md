@@ -6,10 +6,9 @@ date: 2022-11-22 14:05:00 +07:00
 ---
 
 **Bank BTPN** merupakan bank devisa hasil penggabungan usaha PT Bank Tabungan Pensiunan Nasional Tbk (BTPN) dengan PT Bank Sumitomo Mitsui Indonesia (SMBCI).
+![logo BTPN]({{ site.baseurl }}/images/btpn-smbc-approved_all-logo-01-copy.png)
 
 Bank BTPN memfokuskan diri untuk melayani segmen mass market yang terdiri dari para pensiunan, pelaku usaha mikro, kecil, dan menengah (UMKM), komunitas prasejahtera produktif; segmen consuming class; serta segmen korporasi.
-
-![logo BTPN]({{ site.baseurl }}/images/btpn-smbc-approved_all-logo-01-copy.png)
 
 Dilansir dari website [Alumni UGM](https://alumni.ugm.ac.id/2022/11/17/pt-bank-btpn-tbk-3/), Bank BTPN tengah membuka lowongan kerja sebagai berikut:
 
