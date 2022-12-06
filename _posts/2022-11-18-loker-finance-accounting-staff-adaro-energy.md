@@ -6,12 +6,11 @@ date: 2022-11-18 09:00:00 +07:00
 ---
 
 Sejarah Adaro dimulai dari guncangan minyak dunia pada tahun 1970an. Hal ini menyebabkan Pemerintah Indonesia merevisi kebijakan energinya, yang pada saat itu berfokus kepada minyak dan gas, untuk mengikut sertakan batubara sebagai bahan bakar untuk penggunaan dalam negeri.
+![logo adaro]({{ site.baseurl }}/images/logo-adaro-head.png)
 
 Dengan meningkatnya fokus terhadap batubara pada tahun 1976, Departemen Pertambangan membagi Kalimantan Timur dan Selatan menjadi 8 blok batubara dan membuka tender untuk blok-blok tersebut. Profil selengkapnya [baca di sini](https://www.adaro.com/pages/read/6/14/History).
 
 Berdasarkan laman resminya, Adaro Energy tengah membuka lowongan pekerjaan untuk beberapa posisi dengan pengalaman kerja minimal 1 tahun. Salah satunya posisi: **Finance Accounting Staff**. Posisi lain bisa dilihat [di sini](https://www.adaro.com/pages/read/11/48/Lowongan%20Pekerjaan).
-
-![logo adaro]({{ site.baseurl }}/images/logo-adaro-head.png)
 
 ## Posisi: Finance Accounting Staff ##
 
