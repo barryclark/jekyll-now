@@ -6,7 +6,6 @@ date: 2022-12-1 07:07:30 +07:00
 ---
 
 **CoLearn** was founded in 2020 in the midst of the pandemic with a mission to bring Indonesia to the top 50% of the Global PISA ranking by being laser-focused on STEM subjects.
-
 ![logo colearn]({{ site.baseurl }}/images/logo-colearn.png)
 
 ---
