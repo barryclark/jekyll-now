@@ -6,7 +6,6 @@ date: 2022-11-30 07:16:30 +07:00
 ---
 
 **Zenius Education** is the pioneer for Education Technology (EdTech) in Indonesia since 2004.
-
 ![logo zenius]({{ site.baseurl }}/images/logo-zenius.png)
 
 Zenius founded by teachers passionate about learning, problem-solving, and establishing strong foundations on scientific thinking.
