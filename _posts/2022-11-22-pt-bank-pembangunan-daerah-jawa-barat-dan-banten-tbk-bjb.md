@@ -6,7 +6,6 @@ date: 2022-11-22 15:16:00 +07:00
 ---
 
 **PT Bank Pembangunan Daerah Jawa Barat dan Banten Tbk**, berdagang sebagai Bank BJB adalah bank BUMD milik Pemerintah Provinsi Jawa Barat dan Banten yang berkantor pusat di Bandung.
-
 ![logo BJB]({{ site.baseurl }}/images/Bank_BJB_logo.svg.png)
 
 Dikutip dari laman [Alumni UGM](https://alumni.ugm.ac.id/2022/11/18/pt-bank-pembangunan-daerah-jawa-barat-dan-banten-tbk-2/), PT Bank Pembangunan Daerah Jawa Barat dan Banten Tbk tengah membuka kesempatan bagi _Fresh Graduate_ dari berbagai universitas terkemuka di Indonesia. Berikut informasinya:
