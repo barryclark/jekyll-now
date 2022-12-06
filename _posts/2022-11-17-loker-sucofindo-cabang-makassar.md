@@ -6,7 +6,6 @@ date: 2022-11-17 08:00:00 +07:00
 ---
 
 [PT Superintending Company of Indonesia (selanjutnya disebut SUCOFINDO)](https://www.sucofindo.co.id/id/sejarah-singkat-sucofindo) secara resmi telah tergabung dalam Holding Jasa Survei yang diberi nama IDSurvey bersama dengan PT Biro Klasifikasi Indonesia (Persero) sebagai ketua holding dan PT Surveyor Indonesia.
-
 ![logo sucofindo]({{ site.baseurl }}/images/logo_sucofindo_idsurvey2.png)
 
 Berdiri pada tanggal 22 Oktober 1956 berdasarkan Akta Notaris Johan Arifin Lumban Tobing Sutan Arifin Nomor 42, awalnya SUCOFINDO hanya berfokus pada layanan jasa Pemeriksaan dan Pengawasan di bidang perdagangan, terutama komoditas pertanian, serta membantu pemerintah dalam menjamin kelancaran arus barang dan pengamanan devisa negara dalam perdagangan ekspor impor. Seiring dengan perkembangan kebutuhan dunia usaha, SUCOFINDO melakukan langkah kreatif dan inovatif serta menawarkan jasa-jasa terkait lainnya.
