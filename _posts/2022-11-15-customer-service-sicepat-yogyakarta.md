@@ -6,12 +6,11 @@ date: 2022-11-15 09:00:00 +07:00
 ---
 
 SiCepat Ekspres merupakan perusahaan yang bergerak pada bidang jasa berfokus pada pelayanan jasa pengiriman barang yang mencakup seluruh wilayah Indonesia.
+![sicepat logo]({{ site.baseurl }}/images/logo-sicepat-2.jpg)
 
 SiCepat Ekspres telah berkembang pesat dan memiliki lebih dari ratusan cabang yang tersebar di seluruh Indonesia untuk mendukung seluruh kegiatan operasional pengiriman. Meski baru di dirikan pada tahun 2014, SiCepat Ekspres telah menjadi salah satu perusahaan yang cukup besar dan sudah di perhitungkan keberadaannya oleh perusahaan-perusahaan lain yang bergerak di bidang jasa pengiriman serupa di Indonesia.
 
 Saat ini SiCepat sedang membuka lowongan kerja untuk posisi [**Customer Service di area Yogyakarta**](https://www.sicepat.com/career/job-view/634cfa7778226c0011abf8ce-608a7d7beeb7a17e4d7d68bc-Customer%20Service).
-
-![sicepat logo]({{ site.baseurl }}/images/logo-sicepat-2.jpg)
 
 **Deskripsi pekerjaan:**
 
