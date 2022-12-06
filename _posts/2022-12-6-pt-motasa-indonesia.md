@@ -6,7 +6,6 @@ date: 2022-12-6 07:11:30 +07:00
 ---
 
 **PT Motasa Indonesia** berdiri sejak tahun 2008, dimulai dengan fokus pada proses pengolahan lada.
-
 ![logo motasa]({{ site.baseurl }}/images/LOGO-MOTASA.jpg)
 
 Dengan berjalannya waktu PT Motasa Indonesia juga telah memproduksi ketumbar bubuk, kunyit bubuk, dan bumbu masak. Produk diproses secara higienis dan dengan menggunakan teknologi modern berstandar Internasional. Produk yang dihasilkan sebagai berikut: Merica Putih, Merica Hitam, Merica Putih Bubuk, Merica Hitam Bubuk, Kunyit Bubuk, Ketumbar Bubuk dan bumbu masakan.
