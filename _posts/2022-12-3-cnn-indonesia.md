@@ -6,7 +6,6 @@ date: 2022-12-3 07:19:30 +07:00
 ---
 
 **CNN Indonesia** adalah situs berita milik Trans Media dengan mengambil lisensi nama CNN dari Warner Bros.
-
 ![logo cnn]({{ site.baseurl }}/images/CNN-logo.png)
 
 CNN Indonesia juga merupakan jaringan televisi berita digital gratis dan berbayar (di Transvision, IndiHome dan UseeTV).
