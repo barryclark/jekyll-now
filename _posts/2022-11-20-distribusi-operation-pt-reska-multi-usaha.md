@@ -6,6 +6,7 @@ date: 2022-11-20 08:01:00 +07:00
 ---
 
 **PT Reska Multi Usaha** atau disebut **KAI SERVICES**, merupakan salah satu anak perusahaan PT. Kereta Api Indonesia (persero) yang berdiri pada 2003, mempunyai tujuan melaksanakan dan menunjang kebijakan dan program PT Kereta Api Indonesia (Persero) selaku perusahaan induk khususnya usaha restoran kereta api serta usaha lainnya.
+![logo KAI Services]({{ site.baseurl }}/images/220px-Logo_KAI_Services-svg.png)
 
 Bidang usaha PT Reska Multi Usaha sendiri memiliki 3 core business yaitu :
 * **On Board Services** Terdiri dari Sales On Train, On Train Cleaning dan passenger Amenities
@@ -13,8 +14,6 @@ Bidang usaha PT Reska Multi Usaha sendiri memiliki 3 core business yaitu :
 * **Commercial Services** Terdiri dari Restaurant, Catring, General Trading, Cafe and Catering.
 
 Sejarah selengkapnya dapat diakses di [laman resmi di sini](https://www.reska.id/index.php/TentangKami).
-
-![logo KAI Services]({{ site.baseurl }}/images/220px-Logo_KAI_Services-svg.png)
 
 Dilansir dari [laman resmi di sini](https://karir.reska.id/lowongan_review?id=Vzk3dm0xNGQxNjdtMTRkU1lIbQ==), **PT Reska Multi Usaha** sedang membuka lowongan kerja untuk posisi **Distribusi Operation** dengan penempatan di seluruh wilayah kerja PT Reska Multi Usaha.
 
