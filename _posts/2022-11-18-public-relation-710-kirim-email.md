@@ -12,7 +12,7 @@ Saat ini ada lebih dari 28.000 perusahaan menggunakan layanan di KIRIM.EMAIL dan
 PT. Kirim Email melalui laman resmi [di sini](https://kirim.email/pekerjaan) tengah membutuhkan sosok yang amanah dan siap untuk melayani para pebisnis dan bertumbuh bersama kami.
 
 Apa itu KIRIM.EMAIL? Lihat di sini : [**https://KIRIM.EMAIL**](https://KIRIM.EMAIL)
-
+ 
 ## Posisi: Public Relation [710] ##
 
 **Tanggung Jawab:**
