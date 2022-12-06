@@ -6,7 +6,6 @@ date: 2022-11-28 07:25:00 +07:00
 ---
 
 **PT. Sinar Metrindo Perkasa (Simetri)** didirikan pada tahun 1986 untuk mengisi potensi pasar Switchboard berkualitas baik di Indonesia.
- 
 ![logo sinarmetrindo]({{ site.baseurl }}/images/logo-sinarmetrindo.png)
 
 Saat itu, industri infrastruktur sedang booming, namun kekurangan switchboard berkualitas. Simetri memutuskan untuk menyediakan switchboard berkualitas tinggi untuk mencapai standar yang lebih tinggi untuk keselamatan gedung dan manusia di Indonesia.
