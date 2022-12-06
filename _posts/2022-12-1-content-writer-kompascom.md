@@ -6,7 +6,6 @@ date: 2022-12-1 07:07:30 +07:00
 ---
 
 *Kompas.com* adalah salah satu pionir media *online* di Indonesia ketika pertama kali hadir di Internet pada 14 September 1995 dengan nama *Kompas Online* atau KOL (kompas.co.id).
-
 ![logo kompascom]({{ site.baseurl }}/images/logo-kompascom.png)
 
 Waktu itu Kompas hanya menampilkan replika dari berita-berita harian *Kompas* yang terbit hari itu. Lalu awal tahun 1996 alamat *Kompas Online* berubah menjadi www.kompas.com. Profil selengkapnya, [cek di sini](http://inside.kompas.com/about-us)
