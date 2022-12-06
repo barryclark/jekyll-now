@@ -6,7 +6,6 @@ date: 2022-11-27 17:00:00 +07:00
 ---
 
 **PT. Mega Global Food Industry (KOKOLA GROUP)** adalah perusahaan yang bergerak di industri makanan khususnya biskuit dan wafer.
-
 ![logo Kokola]({{ site.baseurl }}/images/logo-kokola.png)
 
 PT. Mega Global Food Industry (KOKOLA GROUP) bertempat di Driyorejo - Gresik, mempunyai lisensi HALAL dari MUI, ISO 22000:2005, FSSC, BRC (British Retail Consortium) sehingga lebih dari 50% produk yang dihasilkan mampu menembus pasar eksport baik di ASIA, AUSTRALIA maupun  EROPA.
