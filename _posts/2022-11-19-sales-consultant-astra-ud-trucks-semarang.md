@@ -6,12 +6,11 @@ date: 2022-11-19 08:00:00 +07:00
 ---
 
 **ASTRA UD Trucks** sebagai mitra bisnis terpercaya di industri truk Indonesia berkomitmen untuk menyediakan total solusi transportasi terdepan melalui inovasi produk serta layanan yang berkesinambungan.
+![logo Astra UD Trucks]({{ site.baseurl }}/images/logo-udtrucks-2.png)
 
 Produk dan layanan yang inovatif dari ASTRA UD Trucks menjawab segala tantangan dalam industri truk di Indonesia. Informasi selengkapnya dapat dibaca di [website resmi di sini](https://astraudtrucks.co.id/page/sejarah-astra-ud-trucks).
 
 **ASTRA UD Trucks** tengah membuka lowongan kerja untuk beberapa posisi, salah satunya posisi Sales Consultant untuk area Semarang. Berikut informasinya:
-
-![logo Astra UD Trucks]({{ site.baseurl }}/images/logo-udtrucks-2.png)
 
 ## Posisi: Sales Consultant (SEMARANG) ##
 
