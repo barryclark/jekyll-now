@@ -6,7 +6,6 @@ date: 2022-11-30 07:29:30 +07:00
 ---
 
 **Suntory Garuda Beverage (SGB)** merupakan salah satu perusahaan minuman terbesar di Indonesia.
-
 ![logo suntory garuda]({{ site.baseurl }}/images/new-logo-sgb.png)
 
 Perusahaan induk SGB adalah Grup Suntory yang berkantor pusat di Tokyo, Jepang yang merupakan perusahaan multinasional dan pemimpin industri minuman di dunia.
