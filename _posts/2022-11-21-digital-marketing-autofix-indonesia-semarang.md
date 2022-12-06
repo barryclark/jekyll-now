@@ -6,7 +6,6 @@ date: 2022-11-21 12:00:00 +07:00
 ---
 
 **AUTOFIX INDONESIA** merupakan perusahaan yang bergerak di bidang jasa body repair mobil.
-
 ![logo Santosa Group]({{ site.baseurl }}/images/logo-santosa-grup.png)
 
 Dilansir dari laman [UDINUS Career Center](https://cc.dinus.ac.id/lowongan/detail/MTIzMzI%3D), AUTOFIX INDONESIA tengah membuka lowongan pekerjaan. Berikut informasinya:
