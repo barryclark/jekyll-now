@@ -6,7 +6,6 @@ date: 2022-12-2 07:08:30 +07:00
 ---
 
 **Yayasan Konservasi Alam Nusantara (YKAN)** is a non-profit organization which was established in Indonesia in 2014.
-
 ![logo ykan]({{ site.baseurl }}/images/Logo-ykan.jpg)
 
 With the mission to protect lands and waters on which all life depends, YKAN provides innovative solutions for realizing harmony between people and nature, through effective management, non-confrontational approaches, and building collaborative partnerships with all stakeholders for a sustainable Indonesia.
