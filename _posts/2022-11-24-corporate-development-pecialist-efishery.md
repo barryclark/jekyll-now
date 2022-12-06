@@ -6,7 +6,6 @@ date: 2022-11-24 07:03:00 +07:00
 ---
 
 **eFishery Technoplex (PT Multidaya Teknologi Nusantara)** memiliki tujuan menyediakan produk perikanan sebagai sumber utama protein hewani yang tidak hanya kaya nutrisi tetapi juga dapat diakses oleh semua kalangan.
-
 ![logo eFishery]({{ site.baseurl }}/images/logo-retina-colored.png)
 
 Baik Pembudidaya ikan maupun udang memiliki peran yang sangat vital dalam berkontribusi terhadap ketahanan pangan dunia. Untuk mewujudkan mimpi besar tersebut, eFishery membangun ekosistem di mana para Pembudidaya ikan dan udang dapat dengan mudah meningkatkan produktivitas, sekaligus menciptakan lingkungan yang lebih berkelanjutan, aman, dan adil bagi mereka. Dengan cara ini, eFishery dapat menyediakan produk ikan dan udang berkualitas tinggi dan kaya nutrisi yang diperoleh langsung dari Pembudidaya.
