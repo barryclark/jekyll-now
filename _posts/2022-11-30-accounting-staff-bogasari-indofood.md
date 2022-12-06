@@ -6,7 +6,6 @@ date: 2022-11-30 07:26:30 +07:00
 ---
 
 **PT Indofood Sukses Makmur Tbk.**, yang didirikan dengan nama PT Panganjaya Intikusuma di tahun 1990, memiliki berbagai kegiatan usaha yang telah beroperasi sejak awal tahun 1980an.
-
 ![logo indofood]({{ site.baseurl }}/images/logo-indofood-footer.png)
 
 Profil perusahaan selengkapnya dapat dibaca [di sini](https://www.indofood.com/company/history).
