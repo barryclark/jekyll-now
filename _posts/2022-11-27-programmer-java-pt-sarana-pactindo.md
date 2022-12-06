@@ -6,7 +6,6 @@ date: 2022-11-27 09:00:00 +07:00
 ---
 
 **PT. Sarana Pactindo (PAC)** adalah perusahaan penyedia jasa teknologi yang fokus pada industri perbankan dan retail. Solusi yang disediakan oleh PAC kepada bank adalah internet banking, mobile banking, EDC, dsb.
-
 ![logo PAC]({{ site.baseurl }}/images/logo-pac.jpeg)
 
 Berdasarkan laman [Pusat Pengembangan Karir UNY](https://ppk.lppmp.uny.ac.id/lowongan/show_landing/ODkx), PT. Sarana Pactindo tengah membutuhkan 5 orang untuk posisi **Programmer Java**. Info selengkapnya sebagai berikut:
