@@ -6,7 +6,6 @@ date: 2022-11-29 11:00:00 +07:00
 ---
 
 **METRO TV** merupakan televisi berita pertama di Indonesia yang mulai mengudara sejak 25 November 2000.
-
 ![logo metrotv]({{ site.baseurl }}/images/logo_mainmetro.png)
 
 Metro TV adalah anak perusahaan dari MEDIA GROUP yang dimiliki oleh Surya Paloh, tokoh pers Indonesia yang telah merintis usaha di bidang pers sejak ia mendirikan Harian PRIORITAS. Profil perusahaan selengkapnya, [cek di sini](https://www.metrotvnews.com/about).
