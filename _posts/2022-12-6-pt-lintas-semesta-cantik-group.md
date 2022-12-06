@@ -6,6 +6,7 @@ date: 2022-12-6 07:19:30 +07:00
 ---
 
 **PT Lintas Semesta (Cantik Group)** berawal dari usaha Warung Telekomunikasi (Wartel) pada Maret 1997 dan diberi nama Cantik Wartel.
+![logo cantik group]({{ site.baseurl }}/images/logo-cantik-group.jpeg)
 
 Kini usahanya semakin luas & menjadi salah satu Perusahaan Retail yang terus berkembang pesat di Tangerang. Adapun berbagai unit bisnis dari Cantik Group adalah:
 
@@ -14,8 +15,6 @@ Kini usahanya semakin luas & menjadi salah satu Perusahaan Retail yang terus ber
 3. Kaz Payment
 4. Salon
 5. Maiso 
-
-![logo cantik group]({{ site.baseurl }}/images/logo-cantik-group.jpeg)
 
 Berdasarkan laman [Alumni UGM](https://alumni.ugm.ac.id/2022/12/05/pt-lintas-semesta-cantik-group-3/), terdapat lowongan kerja sebagai berikut:
 
