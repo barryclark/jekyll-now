@@ -6,6 +6,7 @@ date: 2022-11-25 07:01:15 +07:00
 ---
 
 **PT. Whiteopen Teknologi (Trilink Sistem Integrasi)** merupakan perusahaan yang bergerak di bidang pelatihan & perekrutan sumber daya manusia yang terfokus di bidang teknologi informasi dan memiliki badan hukum pada tahun 2017.
+![logo TSI]({{ site.baseurl }}/images/tsi-logo.png)
 
 [Visi](https://trilinkintegrasi.com/): Menjadi perusahaan penyedia jasa IT yang terkemuka dan terpercaya yg unggul dalam kinerja, sumber daya dan layanan.
 
