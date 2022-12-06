@@ -6,7 +6,6 @@ date: 2022-11-16 08:00:00 +07:00
 ---
 
 PT Angkasa Pura Properti merupakan anak perusahaan dari PT Angkasa Pura I (Persero) yang beroperasi secara efektif pada 6 Januari 2012.
-
 ![logo angkasa pura]({{ site.baseurl }}/images/logo-app3.png)
 
 Pendirian Angkasa Pura Properti merupakan pengembangan lini bisnis Angkasa Pura I yang awalnya hanya memperoleh pendapatan dari kegiatan aeronautika.
