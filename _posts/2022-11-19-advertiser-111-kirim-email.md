@@ -6,7 +6,6 @@ date: 2022-11-19 09:00:00 +07:00
 ---
 
 Saat ini ada lebih dari 28.000 perusahaan menggunakan layanan di KIRIM.EMAIL dan Insya Allah akan bertambah lagi tahun ini.
-
 ![logo kirim email]({{ site.baseurl }}/images/logo-kirim-email.jpg)
 
 PT. Kirim Email melalui laman resmi [di sini](https://kirim.email/pekerjaan) tengah membutuhkan sosok yang amanah dan siap untuk melayani para pebisnis dan bertumbuh bersama kami.
