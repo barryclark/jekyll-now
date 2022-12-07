@@ -47,6 +47,15 @@ https://noahstory.tistory.com/26
 - [ ] Asset을 구매하면 Unity의 PackageManager에서 Asset을 볼 수 있습니다.
     - `Reference Explorer`
 
+[Unity Package and Feature Sets](https://docs.unity3d.com/Manual/PackagesList.html)
+
+패키지 에는 프로젝트의 다양한 요구 사항에 맞는 기능이 포함되어 있습니다 . 여기에는 에디터 설치 중에 포함된 핵심 Unity 기능이나 필요에 따라 설치할 수 있는 기타 패키지가 포함될 수 있습니다.
+
+* 패키지를 이용할때는 특히 버전을 신경써야합니다.
+  * 이를 위해서 마지막 업데이트를 언제했는지 확인해야합니다.
+  * 유니티의 프로젝트, 패키지등의 버전을 함부로 올리면 안됩니다. API가 달라져 오류에 고통받습니다.
+* Asset을 구매할 때, 시트란 개념이 있습니다. 이는 몇명이 애셋을 공유할 수 있는지를 나타냅니다.
+
 <details><summary>XR Setting</summary>
 <div markdown="1">
 

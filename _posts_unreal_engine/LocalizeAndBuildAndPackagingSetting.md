@@ -190,3 +190,21 @@ Custom Project Launcher을 각각추가한 다음 세팅을
 </div></center>
 
 </div></details>
+
+## UBT(Unreal Build Tool)
+
+[compiling-unreal](https://github.com/Allar/compiling-unreal)
+
+언리얼 빌드툴이 어떻게 작동하는지 설명합니다.
+
+[Targets](https://docs.unrealengine.com/4.26/en-US/ProductionPipelines/BuildTools/UnrealBuildTool/TargetFiles/)
+
+* 게임을 실행하려면 쿠킹된 데이터가 필요한 독립 실행형 게임입니다.
+* 클라이언트는 게임과 동일하지만 서버 코드를 포함하지 않습니다. 네트워크 게임에 유용합니다.
+* 서버는 게임과 동일하지만 클라이언트 코드를 포함하지 않습니다. 네트워크 게임의 전용 서버에 유용합니다.
+* 에디터는 Unreal Editor를 확장하는 대상입니다.
+* 프로그램은 언리얼 엔진 위에 구축된 독립 실행형 유틸리티 프로그램입니다.
+
+[Command-Line Arguments](https://docs.unrealengine.com/4.26/en-US/ProductionPipelines/CommandLineArguments/)
+
+명령줄 인수 는 명령줄 또는 실행 파일에 대한 바로 가기를 통해 실행 파일을 실행할 때 전달할 수 있는 키워드 문자열입니다. 그 목적은 개발자나 사용자의 요구에 맞게 엔진이 실행되는 방식을 사용자 지정하는 것입니다. 이는 게임 대신 편집기를 실행하는 것처럼 간단할 수도 있고, 각 프레임을 개별 이미지 파일로 덤프하는 동안 지정된 해상도와 프레임 속도로 실행되는 특정 맵으로 게임을 시작하는 것과 같이 훨씬 더 복잡할 수도 있습니다.

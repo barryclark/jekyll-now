@@ -8,6 +8,7 @@ title: Life optimize
 - 디바이스 입력을 시뮬레이션 하는게 불편할 것이라 생각은 했는데… 정말 불편하다.
 - [ ]  오큘러스랑 바이브 입력 하나로 만든 것 찾아서 보자..
 
+
 <details><summary>Links</summary>
 <div markdown="1">
 
@@ -16,12 +17,13 @@ title: Life optimize
 
 </div></details>
 
-생각하지 않기 위하여
+**생각하지 않기 위하여**
 
 * [Who am I](/posts_optimize_life/WhoAmI)
+* [How to study](/posts_optimize_life/HowToStudy)
 * [How to work](/posts_optimize_life/HowToWork)
 
-개발의 효율을 위하여
+**개발의 효율을 위하여**
 
 * [Use window](/posts_optimize_life/UseWindow)
     - Window
@@ -38,12 +40,13 @@ title: Life optimize
     - 형상 관리
     - Git Desktop
     - Git Bash
+* 윈도우에서 하는 작업의 자동화를 위해, 간단하고 효율적으로 배치파일을 이용할 수 있습니다.
 
-어떻게 만들어야 하는지
+**어떻게 만들어야 하는지**
 
 * [VR Development](/posts_optimize_life/VR_Development)
 
-정리하기 위하여
+**정리하기 위하여**
 
 * [지킬 블로그](/posts_optimize_life/Jekyll_blog)
     - Jekyll

@@ -6,38 +6,57 @@ title: VR Development
 - [ ] Steam VR 및 Google VR API
 - [ ] [Testing in VR without equipment](https://forums.unrealengine.com/t/testing-in-vr-without-equipment/462833)
 - [ ] [UI Widget 직접 누르기](https://docs.unrealengine.com/4.27/ko/InteractiveExperiences/UMG/HowTo/InWorldWidgetInteraction/)
+- [ ] [Oculus Development](https://developer.oculus.com/documentation/unity/meta-avatars-overview/)
 
 ## VR
 
-코어 프로그램으로 Steam VR과 Google VR 등이 있습니다.
+<center><div class="mermaid"> 
+graph RL;
+A(Localization\n현지화할 언어 추가\n 번역 및 현지화 애셋추가)-->B;
+B(Language & Culture\n언어 및 문화설정)--->C;
+C(Packaging & Cooking\n런치할 프로젝트 설정\n프로젝트 런치);
 
-<details><summary>Steam VR</summary>
-<div markdown="1">
+UnityOculus(UnityOculus\nAndroidAPK)
+Oculus
+
+Oculus--OculusLink-->UnityOculus
+</div></center>
+
+### Vive
+
+<center><div markdown="1">
+
+![바이브 입출력](https://t1.daumcdn.net/cfile/tistory/9944023B5A70A6B624)
+
+</div></center>
+
+### Oculus
+
+### Steam VR
 
 [개발을 위한 Steam VR 퀵 스타트](https://docs.unrealengine.com/4.27/ko/SharingAndReleasing/XRDevelopment/VR/VRPlatforms/SteamVR/QuickStart/)
 
 1. SteamVR 초기 구성을 설치합니다.
 2. 언리얼에서 VR 프리뷰로 실행합니다.
 
-</div></details>
+### Oculus Link
 
-VR 장치로는 바이브 등이 있습니다.
+### Unreal
 
-<details><summary>바이브</summary>
-<div markdown="1">
+* Steam VR 플러그인을 이용하여 연결할 수 있습니다.
 
-![바이브 입출력](https://t1.daumcdn.net/cfile/tistory/9944023B5A70A6B624)
+### Unity
 
-</div></details>
+코어 프로그램으로 Steam VR과 Google VR 등이 있습니다.
 
-<details><summary>현실 공간과 가상 공간의 위치 고려</summary>
-<div markdown="1">
+## VR 개발시 고려사항
 
-VR의 경우 실제로 움직이기 때문에, 현실 공간과 가상 공간 둘다 고려해야합니다. 예를 들어 새로운 위치로 이동할 때 마다, 시작위치로 이동시킨다면 결국에는 벽에 부딛히게 됩니다.
+* 현실 공간과 가상 공간의 위치 고려
+  * VR의 경우 실제로 움직이기 때문에, 현실 공간과 가상 공간 둘다 고려해야합니다. 예를 들어 새로운 위치로 이동할 때 마다, 시작위치로 이동시킨다면 결국에는 벽에 부딛히게 됩니다.
+* VR 기본 방설정
+  * 문제가 무엇인이 정확하게 알기위해, 방설정은 완변하게, 명확하게 해야합니다. 시작위치의 문제인지, VR 세팅의 문제인지 알기 위해서입니다.
 
-</div></details>
-
-## 샘플 예시
+## 구현 목록
 
 <details><summary>콜리전을 이용한 월드의 UI 상호작용시</summary>
 <div markdown="1">
