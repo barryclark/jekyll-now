@@ -16,7 +16,7 @@ layout: default
 
   <div class="date">
     <hr>
-    <span>Dipublikasikan pada <time datetime="">{{ page.date | date: "%e %B %Y" }}</time></span>
+    <span>Dipublikasikan pada <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%e %B %Y" }}</time></span>
   </div>
 
   {% include disqus.html %}
