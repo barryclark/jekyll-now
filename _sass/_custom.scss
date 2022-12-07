@@ -1,7 +1,7 @@
 @import 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap';
 
 $font: 'Open Sans', sans-serif;
-$color: #d72d2d;
+$color: #00babd;
 
 * {
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
@@ -61,6 +61,9 @@ button {
 }
 
 header {
+	.brand img {
+		object-fit: contain;
+	}
 	@include mobile {
 		position: sticky;
 		top: 0;
