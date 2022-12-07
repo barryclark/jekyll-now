@@ -20,7 +20,7 @@ Berdasarkan laman [Karir LRT Jakarta](https://www.lrtjakarta.co.id/staff_pemerik
 
 * Melakukan pekerjaan pemeriksaan jalur dan bangunan.
 * Melakukan analisa dan laporan hasil apabila terjadi anomali pada aset jalur dan bangunan.
-* Mampu mengawasi pekerjaan vendor dibawah departemen Jalur dan Bangunan.
+* Mampu mengawasi pekerjaan vendor di bawah departemen Jalur dan Bangunan.
 
 ### Persyaratan Jabatan:
 
