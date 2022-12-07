@@ -2,7 +2,7 @@
 layout: post
 title: Staff Pemeriksa dan Perawat Jalur Bangunan LRT Jakarta
 author: Pak Budi
-date: 2022-12-7 07:27:30 +07:00
+date: 2022-12-7 07:27:39 +07:00
 ---
 
 **LRT Jakarta** adalah moda transportasi publik baru yang didedikasikan bagi masyarakat menuju era mobilitas ramah lingkungan.
