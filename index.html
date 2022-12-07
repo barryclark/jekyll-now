@@ -71,6 +71,9 @@ layout: default
 <div class="posts" id="posts">
   {% for post in site.posts %}
     <article class="post">
+      <div class="date">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%e %h %Y" }}</time>
+      </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
 
