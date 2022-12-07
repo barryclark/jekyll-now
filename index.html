@@ -71,7 +71,7 @@ layout: default
 <div class="posts" id="posts">
   {% for post in site.posts %}
     <article class="post">
-      <div class="date">
+      <div class="date" style="margin:2rem 0 -1rem">
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%e %h %Y" }}</time>
       </div>
 
