@@ -65,6 +65,35 @@ permalink: /:title/
 # Schedule build
 future: false
 
+# Months in Indonesian
+months:
+  - Januari
+  - Februari
+  - Maret
+  - April
+  - Mei
+  - Juni
+  - Juli
+  - Agustus
+  - September
+  - Oktober
+  - November
+  - Desember
+
+months_short:
+  - Jan
+  - Feb
+  - Mar
+  - Apr
+  - Mei
+  - Jun
+  - Jul
+  - Ags
+  - Sep
+  - Okt
+  - Nov
+  - Des
+
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
