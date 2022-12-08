@@ -247,6 +247,10 @@ nav {
 
 .pagination {
 	margin: 2rem 0;
+	text-align: center;
+	@include mobile {
+		text-align: left;
+	}
 	a, span {
 		display: inline-block;
 		padding: .5rem 1rem;
