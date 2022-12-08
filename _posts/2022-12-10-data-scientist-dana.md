@@ -14,10 +14,11 @@ With the mission of "bring the world equal opportunities", DANA is dedicated to 
 
 Berdasarkan laman [Karir DANA](https://www.dana.id/career), terdapat lowongan kerja sebagai berikut:
 
-## Data Scientist (Jakarta Selatan)
+## Data Scientist
 
 |   |   |
 | --- | --- |
+| Location | : Jakarta Selatan |
 | Department | : Data |
 | Employment Type | : Permanent |
 | Minimum Experience | : Experienced |
