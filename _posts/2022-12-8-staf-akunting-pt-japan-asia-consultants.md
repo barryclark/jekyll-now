@@ -2,7 +2,7 @@
 layout: post
 title: Staf Akunting PT. JAPAN ASIA CONSULTANTS
 author: Pak Budi
-date: 2022-12-8 07:04:30 +07:00
+date: 2022-12-8 07:04:18 +07:00
 ---
 
 **PT. Japan Asia Consultants (JAC)** adalah perusahaan yang bergerak di bidang jasa konsultan manajemen dan bisnis serta merupakan salah satu perusahaan penanaman modal asing (Jepang).
