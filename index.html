@@ -72,7 +72,12 @@ layout: default
   {% for post in paginator.posts %}
     <article class="post">
       <div class="date" style="margin:2rem 0 -1rem">
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%e %h %Y" }}</time>
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%-d" }}
+          {% assign m = post.date | date: "%-m" | minus: 1 %}
+          {{ site.months_short[m] }}
+          {{ post.date | date: "%Y" }}
+        </time>
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
