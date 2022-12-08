@@ -185,6 +185,9 @@ nav {
 
 .entry {
 	word-break: break-word;
+	& > p:first-child > img {
+		margin-top: 1rem;
+	}
 }
 
 #search {
