@@ -19,12 +19,12 @@ layout: default
     <small>Reset</small>
   </div>
   <div class="posts" id="search-result"></div>
-  <script src="search/simple-jekyll-search.min.js"></script>
+  <script src="{{ site.url }}/search/simple-jekyll-search.min.js"></script>
   <script>
     var sjs = SimpleJekyllSearch({
       searchInput: document.getElementById('search-type'),
       resultsContainer: document.getElementById('search-result'),
-      json: 'search/database.json',
+      json: '{{ site.url }}/search/database.json',
       searchResultTemplate: '<article class="post"><a href="{{ site.url }}{url}"><h2>{title}</h2></a><div class="entry"><p>{content}</p></div><a href="{{ site.url }}{url}" class="read-more">Baca selengkapnya <span class="sr-only">tentang {title}</span></a></article>',
       noResultsText: 'Tidak ditemukan lowongan yang Anda cari'
     })
