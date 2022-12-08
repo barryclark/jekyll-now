@@ -69,7 +69,7 @@ layout: default
 <h1 class="sr-only">{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</h1>
 
 <div class="posts" id="posts">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <article class="post">
       <div class="date" style="margin:2rem 0 -1rem">
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%e %h %Y" }}</time>
@@ -84,4 +84,26 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>Baca selengkapnya</b> <span class="sr-only">tentang {{ post.title }}</span></a>
     </article>
   {% endfor %}
+  
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}">&lt;</a>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <span>{{ page }}</span>
+      {% elsif page == 1 %}
+        <a href="{{ '/' | relative_url }}">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}">&gt;</a>
+    {% endif %}
+  </div>
+  {% endif %}
 </div>
