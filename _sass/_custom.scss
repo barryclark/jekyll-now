@@ -244,3 +244,25 @@ nav {
 		margin: 2rem 0;
 	}
 }
+
+.pagination {
+	margin: 2rem 0;
+	a, span {
+		display: inline-block;
+		padding: .5rem 1rem;
+		border-radius: .5rem;
+		margin-right: .25rem;
+	}
+	a {
+		color: $darkGray;
+		background-color: $lightGray;
+		&:hover {
+			color: white;
+			background-color: $color;
+		}
+	}
+	span {
+		color: white;
+		background-color: $color;
+	}
+}
