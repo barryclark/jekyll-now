@@ -18,9 +18,9 @@ Dilansir dari laman [Karir Kompas](https://jobs.kompas.com/karir/detail/221/CONT
 
 **Job Requirements:**
 
-- Must have at least Bachelor Degree in Journalism.
-- Have min. 5 years experience as Reporter at online media.
-- Writing news related to:
+- Must have at least Bachelor Degree in Journalism.
+- Have min. 5 years experience as Reporter at online media.
+- Writing news related to:
   * regional /
   * international /
   * economics /
@@ -31,9 +31,9 @@ Dilansir dari laman [Karir Kompas](https://jobs.kompas.com/karir/detail/221/CONT
   * travel / 
   * property / 
   * health / 
-  * home lifestyle or any current trends & issues.
-- An active social media user.
-- Willing to be hired as **Professional Contract**.
+  * home lifestyle or any current trends & issues.
+- An active social media user.
+- Willing to be hired as **Professional Contract**.
 
 **Cara Mendaftar**
 
