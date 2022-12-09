@@ -25,7 +25,7 @@ layout: default
       searchInput: document.getElementById('search-type'),
       resultsContainer: document.getElementById('search-result'),
       json: '{{ site.url }}/search/database.json',
-      searchResultTemplate: '<article class="post"><div class="date" style="margin:2rem 0 -1rem">{date}</div><a href="{{ site.url }}{url}"><h2>{title}</h2></a><div class="entry">{content}</div><a href="{{ site.url }}{url}" class="read-more"><b>Baca selengkapnya</b> <span class="sr-only">tentang {title}</span></a></article>',
+      searchResultTemplate: '<article class="post"><div class="date" style="margin:2rem 0 -1rem">{date}</div><a href="{{ site.url }}{url}"><h2>{title}</h2></a><div class="entry"><p>{content}</p></div><a href="{{ site.url }}{url}" class="read-more"><b>Baca selengkapnya</b> <span class="sr-only">tentang {title}</span></a></article>',
       noResultsText: 'Tidak ditemukan lowongan yang Anda cari'
     })
 
