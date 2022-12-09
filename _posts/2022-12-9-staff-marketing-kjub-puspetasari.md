@@ -12,7 +12,7 @@ KJUB Puspetasari memproduksi pakan sapi potong dan sapi perah dengan merek "Nutr
 
 Berdasarkan laman [Alumni UGM](https://alumni.ugm.ac.id/2022/12/07/kjub-puspetasari/), terdapat lowongan kerja sebagai berikut:
 
-## Staff Marketing
+## Staff Marketing 
 
 ![loker marketing kjub]({{ site.baseurl }}/images/kjub-puspetasari-lowongan-marketing-klaten-1405x2048.jpg)
 
