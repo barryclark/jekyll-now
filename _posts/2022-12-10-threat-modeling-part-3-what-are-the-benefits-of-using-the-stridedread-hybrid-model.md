@@ -1,0 +1,42 @@
+layout: post
+title: 'What are the Benefits of Using the STRIDE/DREAD Hybrid Model?'
+toc: true
+
+
+
+#What are the Benefits of Using the STRIDE/DREAD Hybrid Model?
+
+Many organizations face increased risk from cyber-attacks and other security threats on a daily basis. The constantly evolving nature of these threats means traditional security approaches may no longer be enough to protect the organization. This is where the STRIDE/DREAD hybrid threat model can help.
+
+##What is STRIDE/DREAD? 
+
+STRIDE/DREAD is an acronym for “Security Threats, Risks and Deterrents Evaluator/Diminishing Risk and Eliminating Defects”. It is a comprehensive threat model which offers both proactive and reactive approaches to security threats. STRIDE looks at six main areas which need to be addressed in order to minimize the risks associated with software development: 
+* Spoofing – the ability to impersonate an authorized user or system
+* Tampering – changes or modifications to data or programs without authorization
+* Repudiation – denying access or activities on a system without justification
+* Information disclosure – access to restricted information beyond that available to an authorized user 
+* Denial of service – deliberate attempts to prevent access to systems or services 
+* Elevation of privilege – exploits that allow an unauthorized user to gain elevated access rights. 
+
+The DREAD component of the model takes a more proactive approach by discouraging potential attackers through risk management and deterrent techniques such as: 
+* Damage potential – assessing the potential damage caused by an attack 
+* Reproducibility – ability of an attacker to replicate the attack successfully 
+* Exploitability – ease with which an attacker can gain access or perform actions not permitted by design 
+* Affected users – number of users and systems affected by the attack 
+* Discoverability – discovering exploitable vulnerabilities in a system or application. 
+
+ By combining these two models, the STRIDE/DREAD hybrid threat model gives organizations a robust security approach for dealing with any kind of cyber-attack. 
+
+ ##The Benefits of Using a STRIDE/DREAD Hybrid Model 
+
+ * Improved Security Posture: One of the key benefits of using a STRIDE/DREAD hybrid model is that it provides organizations with an improved security posture due to its comprehensive approach. By taking a proactive stance on identifying and mitigating threats, this model reduces the chances that an organization will be targeted by attackers.  
+
+ * Easier Risk Management: The DREAD component provides simple risk management strategies which can be easily implemented in any software development process. This makes it easier for organizations to identify potential threats early on in order to make changes before they become serious problems.
+
+ * Improved Application Development: Having a clear understanding of potential security threats can also improve application development by helping developers identify possible flaws in advance, allowing them to make changes before launching their product commercially. By creating secure applications in this way, organizations can better protect their customers by ensuring their data is safe from both internal and external hackers.  
+
+ * Increased Cost Savings: Finally, using a STRIDE/DREAD hybrid model can save organizations money in the long run by reducing costs associated with remediation efforts after a successful attack has occurred. In addition, preventing successful attacks from occurring in the first place eliminates additional costs associated with restoring services, data losses, and reputation damage after an incident has occurred.   
+
+ ##Conclusion  
+  
+ Using the STRIDE/DREAD hybrid model provides organizations with significant advantages when it comes to protecting their networks and applications from cyber attacks. By taking a comprehensive approach focused on proactive security strategies, this model helps reduce risks associated with software development projects while saving resources in potentially costly remediation efforts.

@@ -1,0 +1,41 @@
+layout: post
+title: ' Putting It All Together: Building Security into Software Development'
+toc: true
+
+
+
+# Putting It All Together: Building Security into Software Development
+
+As new technologies continue to emerge and our reliance on software increases, it is crucial that we understand and effectively apply the STRIDE/DREAD hybrid threat model. This model can inform many aspects of the software development process and greatly reduce the risk of attack. By putting it all together, we can create secure systems that are both reliable and enjoyable to use.  
+
+## An Overview of the STRIDE/DREAD Model
+
+The STRIDE/DREAD hybrid threat model was developed by Microsoft in 2012 as an evolution of the original STRIDE threat model. This model combines the strengths of STRIDE (which focuses on identifying different types of security threats) and DREAD (which assesses the severity of threats). 
+
+Using this hybrid approach allows us to take a holistic view when evaluating security risks—we can identify what types of attacks may be successful and then assess the severity of these threats in order to understand their overall impact on a system. 
+
+At its core, the STRIDE/DREAD hybrid model considers six distinct threat categories: Spoofing Identity, Tampering, Repudiation, Information Disclosure, Denial of Service (DoS), and Elevation of Privilege (EoP), each with three corresponding types of risk assessment in DREAD: Damage Potential, Reproducibility, and Exploitability.  By evaluating how severe each category is across these three metrics, we can gain a better understanding of potential threats and prioritize our defense accordingly. 
+
+
+## Applying STRIDE/DREAD During Software Development
+
+Once we have an understanding of different security threats in the context of STRIDE/DREAD and how they can be applied to software development, let’s take a look at how we can use this model during the various stages of design, development, testing, deployment, and maintenance. 
+
+### Design & Requirements Gathering 
+During this stage, we must identify potential risks for our system—this includes understanding who could be attacking it (such as malicious actors on the internet or within an organization) as well as what attacks they might employ in order to disrupt service or gain access to sensitive data. To do this, we should conduct a thorough threat assessment using the STRIDE/DREAD model to identify all possible attack vectors. This will give us an idea of where our system is most vulnerable and allow us to build stronger security measures into the design process accordingly.  
+ 
+### Development & Unit Testing 
+Once we have identified potential attack vectors for our system, it’s time to focus on building secure code. We should begin by properly validating user input data—this includes ensuring that any non-alphanumeric characters are not allowed in input fields, that passwords are sufficiently strong enough and stored securely using appropriate hashing algorithms or encryption techniques when needed, that each user has a unique amount access rights depending on their role within the organization or system, etc. On top of this base layer of security measures, any potentially vulnerable functions should be tested thoroughly with automated tests or manual code reviews in order to identify any additional issues before they become exploitable weaknesses.  
+ 
+### Integration & System Testings 
+  Once secure code has been written and any unit tests have passed successfully, it’s time to integrate these components into larger systems and evaluate how they interact with each other. During these tests, it’s important to consider any potential attack scenarios that could occur when different parts are connected together—for example looking for any areas where one part may be able to access unauthorized resources from other parts or where malicious data or commands may be injected into legitimate requests. With this in mind, it’s also important to test for both DoS attacks as well as attacks with EoP goals as both types can have devastating results if successful.  
+  
+    
+    Finally! After successfully passing integration tests your application or system should be ready for deployment! But there is one more important step before you deploy—Security Validation Testing! This is where real-world exploitation techniques are used to break your application or system in order to understand what kind of impact malicious attacks could leave behind if successful. So don’t forget - even if you think everything is secure - perform appropriate Security Validation Testing before you deploy!
+      
+      
+  ## Keeping Your System Secure
+
+ After deploying your application or system onto production servers its important that security is not forgotten! Your application should still be monitored regularly for potential threats while its being used regularly - employing services such as application scanning tools that detect security flawsy vulnerabilities in its codebase- as well as checking for updates which address any newly discovered weaknesses - can reduce your application's exposure significantly! And don't forget about your users either - providing education about password practices and sending notifications alerting them about service updatescan help protect them from becoming victims as well!  
+
+ Finally taking all this information together - understanding what types threats could affect your system using strandthe hybrid approach of STRIDE/DREAD assessing their severity according DREAD's three metrics - can help empower you build secure applications that have been prepared for whatever comes their way!

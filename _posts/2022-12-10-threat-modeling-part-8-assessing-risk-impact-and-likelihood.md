@@ -1,0 +1,59 @@
+layout: post
+title: ' Assessing Risk Impact and Likelihood - A Guide to Using the STRIDE/DREAD Hybrid Threat Model'
+toc: true
+
+
+
+
+# Assessing Risk Impact and Likelihood - A Guide to Using the STRIDE/DREAD Hybrid Threat Model
+ 
+In the world of software development, there is an ever-increasing need for heightened security. Fortunately, the STRIDE/DREAD hybrid threat model is a risk assessment framework that all organizations can use to evaluate their own security risks and respond appropriately. This chapter outlines some of the key principles for assessing risk impact and likelihood when using the STRIDE/DREAD approach.
+
+## What is the STRIDE/DREAD Hybrid Threat Model? 
+The STRIDE/DREAD hybrid threat model is a combination of two existing models - the Microsoft Security Development Lifecycle (SDL) security risk assessment process and the DREAD danger modeling system. These two models were combined to create a hybrid approach that eliminates overlapping threats and allows developers and security teams to better evaluate risks associated with different layers of their software systems. In doing so, they can take certain precautions in order to minimize their exposure or likelihood of experiencing an attack. 
+
+The acronym **STRIDE** stands for:
+- Spoofing 
+- Tampering 
+- Repudiation 
+- Information Disclosure 
+- Denial of Service 
+- Elevation of Privilege
+
+The acronym **DREAD** stands for: 
+- Damage potential  
+- Reproducibility  
+- Exploitability  
+- Affected users  
+- Discoverability  
+
+ By combining these two methods, organizations are able to better understand where their greatest vulnerabilities lie and take steps to reduce their risk levels across multiple layers. 
+ 
+## Assessing Risk Impact and Likelihood With the STRIDE/DREAD Hybrid Threat Model 
+When assessing risk impact and likelihood using this hybrid model, organizations must first examine their vulnerabilities using various tools, such as source code reviews, manual penetration testing, vulnerability scanning, network intrusion detection systems (IDS), and more. They must identify threats that could have an impact on both availability and confidentiality by looking for any potential malicious activities in all areas within the system. Once this is done, they can then use STRIDE categories and DREAD rankings to help them assess risk impact and likelihood accordingly. 
+
+ First, let's look at how we assign ratings according to severity based on the DREAD criteria: 
+
+| Rating | Description | Severity | 
+|-|-|-| 
+| 1 | No Risk | Low | 
+| 2 | Minor Risk | Low-Medium | 
+| 3 | Moderate Risk | Medium |   
+| 4 | High Risk | High |   
+
+Moreover, organizations can also assess risk likelihood by assigning values based on how difficult an attacker might find it to compromise the system using these ratings:  
+
+| Rating      | Description           | Likelihood  |   
+|-------------|-----------------------|-------------|   
+| 1           | Not Possible          | Very Low    |   
+| 2           | Low Difficulty        | Low         |   
+| 3           | Moderate Difficulty   | Medium      |   
+| 4           | High Difficulty       | High        |   
+
+ After assigning values according to these ratings, organizations can begin identifying possible corrective measures or preventive steps for each detected threat. Such measures may include implementing access control measures or disabling certain vulnerable applications or protocols. Additionally, organizations can use specific security controls such as encryption or network segmentation to limit access in order to further reduce their risk profile.    
+
+ With all of these steps taken in combination with an effective response plan in place, organizations can use the STRIDE/DREAD hybrid threat model as a powerful tool for minimizing security risks within their software systems.      
+
+ ## In Summary...  
+
+ The STRIDE/DREAD hybrid threat model provides developers with an effective means of assessing security risks by combining two existing models into one comprehensive approach. Through careful consideration of factors like damage potential, exploitability ,and affected users ,organizations can effectively calculate both risk impact and likelihood when evaluating different layers of their software systems. Ultimately, this will help them create more secure applications and reduce the risk of successful malicious activities across multiple layers of defense.

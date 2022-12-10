@@ -1,0 +1,18 @@
+layout: post
+title: ' What is a Threat? '
+toc: true
+
+
+
+# What is a Threat? 
+It's increasingly common for software to act as the linchpin of any modern business. However, with so much valuable data and functionality accessible via technology, it has become vitally important for organizations to ensure that their products are secure from the threats posed by malicious actors. To this end, understanding and correctly utilizing the **STRIDE/DREAD Hybrid Threat Model** is an essential component of any software development process. 
+
+The STRIDE/DREAD Hybrid Threat Model is a combination of two existing threat assessment models: **STRIDE** (Spoofing identity, Tampering with data, Repudiation, Information Disclosure, Denial of Service, Elevation of privilege) and **DREAD** (Damage potential, Reproducibility, Exploitability, Affected users, Discoverability). This hybrid approach to evaluating threats combines the strengths of both models in order to deliver an encompassing characterization that serves as a comprehensive security risk assessment tool. 
+
+To understand the STRIDE/DREAD Hybrid Threat Model's comprehensive significance, it's crucial to first have an understanding of what constitutes a threat to software security. Generally speaking, a threat is any entity or circumstance that has the potential to cause harm through unauthorized access or misuse of an organization's assets. These threats can arise from anywhere and may encompass anything from malware infections to social engineering schemes on users. A more specific definition will accordingly involve looking at all security-related risks with respect to their Probability (how likely is it that this issue will be exploited) as well as their Impact (what damage will occur when this risk is realized). 
+
+By empirically assessing each potential risk according to its listed criteria, it becomes possible to gain a fuller appreciation of how best to protect against these risks. Organizations can then gain an indication as to how best structure their data protection policies and malware protections in order to minimize the probability for further threats in the future. 
+
+At its core, the STRIDE/DREAD Hybrid Threat Model provides a streamlined means by which organizations can weigh the relative impact and probability of any threat-based risks associated with their product's development lifecycle. By thoroughly analyzing all potential issues using these two models, an organization can guarantee that its product is being built securely and that users can rest assured that its data is safe from malicious actors. 
+
+In conclusion, STRIDE/DREAD Hybrid Threat Model combines two existing threat assessment models in order to provide organizations with the necessary tools they need in order to guarantee optimal security measures for their software development projects. By taking into account all potential risks according to both STRIDE and DREAD criteria, organizations can know what areas need improvement or enhancement in order to best ward off malicious intent.

@@ -1,0 +1,35 @@
+layout: post
+title: ' What is the STRIDE/DREAD Hybrid Model? '
+toc: true
+
+
+
+# What is the STRIDE/DREAD Hybrid Model? 
+The STRIDE/DREAD Hybrid Model is a software security model that fuses the two security threat assessment models: STRIDE and DREAD. It is useful for developers looking to understand and address security threats in the software they produce. By combining the features of both models, this hybrid approach creates a more comprehensive framework for determining, assessing, and countering potential threats.
+
+## Overview of the STRIDE and DREAD Models
+The first model incorporated into the Hybrid Model is [STRIDE](https://msdn.microsoft.com/en-us/library/ee658588.aspx), created by Microsoft employees in 2001. STRIDE stands for **S**poofing, **T**ampering, **R**epudiation, **I**nformation Disclosure, **D**enial of Service, and **E**levation of Privilege. It focuses on specific types of attack scenarios, including ***spoofing*** (impersonating another user or system), ***tampering*** (unauthorized changes to data), ***repudiation*** (absolving responsibility for an action after it occurs), ***information disclosure*** (unintended or malicious unauthorized release of information), ***denial of service*** (preventing legitimate users from accessing resources), and ***elevation of privilege*** (gaining access to privileges that aren’t authorized).
+
+The second model is [DREAD](http://www.cisecurity.org/dread-risk-assessment-model), created by the non-profit Center for Internet Security in 2000. DREAD stands for **D**amage potential, **R**eproducibility, **E**xploitability, **A**ffected users and **D**iscovery*.* It uses a rating system based on percentages from 1 to 10 to measure the severity of an attack based on five criteria: 
+* *Damage potential* - How much damage can be caused by the attack?
+
+* *Reproducibility* - How easy is it for attackers to replicate this attack?
+
+* *Exploitability* - How easy is it to launch this attack or use the exploit code?
+
+* *Affected users* - What percentage of users are affected by this attack? 
+
+* *Discoverability* - How easy is it for attackers to find out about this vulnerability? 
+
+
+## Advantages and Techniques of the Combined Model 
+The advantage of using a hybrid approach to security threat assessment is that it allows developers to look at potential threats from multiple angles and create comprehensive countermeasures to protect against them. Furthermore, combining each model together will help ensure that developers do not miss any security issues when analysing their software applications as only one model may not be sufficient. 
+
+In order to effectively apply the hybrid model during software development processes, there are several techniques that should be implemented: 
+1) Start by analyzing each situation with both models separately; use STRIDE’s categorization system to identify each threat category individually before using DREAD’s quantifiable rating scale to assess severity levels accurately.  
+2) Once all categories have been identified, use the combined scores from both models to determine potential risk factors involved in the situation and whether any additional action needs to take place in order to minimize those risks.   
+3) Create countermeasures that address both models simultaneously so they are as effective as possible in preventing future attacks; these can include sandboxing techniques, encryption policies, access control mechanisms etc…  
+
+  
+
+ Overall, using STRIDE/DREAD Hybrid Model allows developers to gain a more holistic understanding of potential security threats in their software development process so they can create more effective countermeasures for those threats.

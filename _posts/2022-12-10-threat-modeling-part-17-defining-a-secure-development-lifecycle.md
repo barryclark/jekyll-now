@@ -1,0 +1,60 @@
+layout: post
+title: ' Chapter 3: Defining a Secure Development Lifecycle Through the STRIDE/DREAD Hybrid Model'
+toc: true
+
+ 
+
+# Chapter 3: Defining a Secure Development Lifecycle Through the STRIDE/DREAD Hybrid Model
+
+We've now reached the part of software development where we get to dive into some of the nitty-gritty details of creating an actual secure development lifecycle, using the STRIDE/DREAD hybrid model as our basis. Let's take a closer look at how we can apply this to create a detailed and effective secure development process.
+
+## What is a Secure Development Lifecycle? 
+
+A secure development lifecycle (SDL) is an organized procedure that ensures software is created with the highest possible standards for security. It guides teams from the earliest stages of design through post-production maintenance phases. SDLs provide teams with guidelines and systems to identify, address, and mitigate software security issues and threats. 
+
+The SDL is not just a single mechanism but rather an amalgamation of tools and processes that combine to achieve comprehensive security.  We'll be touching on various aspects and components of security, such as architecture reviews, secure coding practices, and threat modeling, in this chapter. 
+
+## The STRIDE/DREAD Hybrid Model 
+The STRIDE/DREAD hybrid model is "a heavyweight, comprehensive model" for threat modeling (Guerraoui & Alagoz 2017). It combines the STRIDE acronym system and the DREAD risk assessment system to identify what kind of threats may be present in our projects and prepare responses accordingly. Let’s briefly explore each system before we delve into them in more detail: 
+
+ - STRIDE stands for: 
+
+    * Spoofing (Positive) : The act of masquerading as another user 
+	* Tampering (Negative): The act of attempting to alter data or program logic
+	* Repudiation (Negative): The inability to prove that something has occurred  
+	* Information Disclosure (Negative): Unauthorized disclosure or visibility of information 
+	* Denial of Service (Negative): The inability to interact with a resource due to it being unavailable.
+	* Elevation of Privilege (Positive): The act of escalating privileges beyond what one should have access to
+
+ - DREAD stands for: 
+
+    * Damage Potential: How bad can it get? 
+    * Reproducibility: How easy is it repeat?  
+	* Exploitability: How feasible is it for an attacker?  
+	* Affected Users: How many people does this impact if exploited?  
+	* Discoverability: How easy would it be for someone to find this vulnerability? 
+
+ By combining these two systems into one robust model, we have improved our ability to detect potential threats within our software system. We can then mark them according to their risk level, so that we know which ones need our attention the most. This gives us a more systematic approach than just security by omission; instead, we can actively evaluate variables that could present risks within our system and strategize against them with confidence.   
+
+ ## Developing Software Securely with SDL Processes 
+
+ Now that you understand what SDL is and have an understanding of some of the underlying principles behind the STRIDE/DREAD threat model, let’s take a closer look at how integrating both into your SDL process will help secure your software against malicious actors. Let’s explore some basic steps you can take in order to ensure your software is resilient against potential threats: 
+
+ ### Step 1: Perform Architecture Reviews For Weak Points  
+
+ Take time to review your system architecture usually during designing architecture process or designing module relationship process. During this review process look for weak spots within your application landscape from data storage locations all way down how does function interacts; take notes like which module calls which function in certain logic flows using certain variables (User inputs or back end private data). This kind of navigation mostly helps during source code review process because more clear context will help you identify exploitable points during its implementation level..In short perform architecture reviews before you even start coding can greatly reduce number vulnerable points by identifying weak points prior implementation.  
+
+ ### Step 2: Create Detailed User Stories For Your Codebase  
+
+ Before starting code base writing; create detailed user stories as much as possible so every code has written according its intended role also helps identify hidden cases which breaks application logic easily; this helps pinpoint bugs introduced due developer miss understandings early on design phase again before coding part.. at some point here you may go over threat modeling analysis using DREAD/STRIDE model over identified scenarios learned from User stories adn architecture reviews then prepare countermeasures against those potentials again before coding part..When starting developing pick your IDE well; choose IDE depending on language’s popular plug-ins if available better.. check available shortcuts needed from completion automation up static code analysis report automation capability; feature list effects on overall productivity by decreasing somewhat errors during coding part too but depending on language you choose all not every languages do support such kind capabilities .Also check supported version control options like git or svn connectable options from chosen IDE check also connected build systems like jenkins via IDE so you don’t waste your time when setting up build systems manualy which may delay start dev progress ..Develop offering are toolset related so best always have right tools right configured IDE ready before starting write first couple lines.. Last hints catch up internal team conventions ASAP; propose some if needed include qualified review feedback integration solutions Çonerxample jira plugged tools etc –TLDR--> Do thorough preparation prior start implementing technically!.  
+	   ### Step 3: Implement Secure Coding Practices 
+
+ Now let’s move onto code practice portion; depending on programming language itself task may vary however generally code should be following best practice rules set by respected parties like OWASP top 10 & WASC categories ; some examples below check all related resources from coding language context web… Choose best algorithm & user input validation libraries; choose validate user input libraries always approved by community experts who keeping update about potential risks about certain methods… Use Security libraries belongs industry standard configurations like use only standardized authentication & authorization protocols eg OAuth2 etc… Disable lesser known features which may lead gaining additional privileges eg in java default usable java beans mostly used drawing GUI’s however they do expose application context exposed through client side scripts use active frameworks who keeps track such exploit attempts & disable such lesser known features… Aside preventative measures use proper error handling codes turn errors meaningful & no xss attacks through case exceptions.. Last but not least if available pick static analysis libraries & create scan cycles also automated build systems; static code analysis provides tesing possibilities for certain admin only functions however beware about false positive rate report may heavily occupied positive type warnings which actually unimportant ones hence make sure know exact difference between vital warnings & non important warnings otherwise fix all reported warnings .TLDR--> Properly configure your environment with secure coding standards that are approved by partners and organizations in the industry, invest time in understanding and utilizing static analysis tools when available in order to flush out any errors before they become a real hazard later on!
+
+ ### Step 4: Create Comprehensive Testing Protocols Using Threat Modeling  
+
+ Before actually pushing code base onto server add comprehensive testings as much as possible… Threat modelling helps choose address impacted custom modules ; take time analyse modules picked according results gathered via STRIDE/DREAD whilst generating reports; threat modelling stept creates blueprint example set exploits test case scenarios …Also create adhoc tests case scenarios manually according expected application logics Example when contact form filled up check forms post request executed normally no suspicious requests contains etc… execute chaos engineering functionalities once system got enough tests do volume testing ; stress indicators increase application failed under heavy stress conditions then jiggle around settings until reach stable point , last gather coverage info test report result hopefully full activities based tests executions conducted understand weak parts application behaviour…) TLDR--> Create comprehensive testing protocols by investing time in exploring potential threats and actively testing different scenarios within the threat model!
+
+ ## Conclusion 
+
+ With proper processes combined with careful planning, organizations no matter how small or large can ensure their applications are resilient towards potential malicious actors. By leveraging the powerful framework created by the hybrid STRIDE / DREAD model within their software development lifecycles (SDL), organizations can reduce risk levels across their entire technology stack while still producing applications quickly enough to meet customer demands. With thoughtful strategy focusing on planning rather than removal tactics combined with careful attention given to high-risk areas identified while architecture reviewing , teams will be able to maximize their productivity while still maintaining sensible levels of security across their entire product suite until termination phase .. TLDR--> Plan ahead and focus on presenting mitigation plans over relying solely on removal tactics during development phases in order keep your security posture tight while achieving productivity goals!

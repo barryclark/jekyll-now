@@ -1,0 +1,25 @@
+layout: post
+title: ' Summarizing the Benefits of Using STRIDE/DREAD Model'
+toc: true
+
+
+
+# Summarizing the Benefits of Using STRIDE/DREAD Model
+The STRIDE/DREAD hybrid threat model is an effective security assessment tool for software development and application. It allows us to evaluate user and system threats, evaluate risk factors, and develop an effective countermeasure strategy to protect our applications from potential attacks. As such, there are many benefits that the STRIDE/DREAD hybrid threat model can offer software development teams. In this chapter, we will discuss the various benefits of integrating the STRIDE/DREAD hybrid threat model into your software development process. 
+
+## Determining Security Vulnerabilities 
+The first benefit of using the STRIDE/DREAD hybrid threat model is that it allows us to quickly identify security vulnerabilities in our software products. By analyzing each component of the model, we can understand where critical weaknesses in our code may exist; thus allowing us to take steps to correct them before they can be exploited by malicious actors. 
+
+## Minimizing System Risk 
+The second benefit of using the STRIDE/DREAD hybrid threat model is that it helps us minimize the risk of serious security breaches in our applications. By taking into account both user and system threats, we can develop a comprehensive risk assessment and come up with measures to mitigate or eliminate known vulnerabilities from our systems, further minimizing any possible risks posed by malicious actors. 
+
+## Taking Proactive Steps 
+The third benefit of using the STRIDE/DREAD hybrid threat model is that it allows us to take a proactive approach to security management. By integrating threat models into the software development and application process, we can anticipate potential issues before they arise and develop countermeasures accordingly; thus improving security and reducing potential losses from malicious attacks in the future. 
+
+## Better Understanding User Behavior 
+The fourth benefit of using the STRIDE/DREAD hybrid threat model is that it helps us better understand user behavior with regards to our application. In particular, analyzing user behavior can help us evaluate potential human errors that may be associated with our code as well as identify areas where extra education may be needed. This helps us keep users safe while also ensuring their information remains secure in our applications. 
+
+## Cost-Effective Security Investing 
+Finally, using the STRIDE/DREAD hybrid threat model also serves as a cost-effective method of investing in overall application and system security. By having a reliable framework for identifying threats, analyzing risk factors, and developing countermeasures accordingly; organizations are able to spend their limited resources on areas where they would be most effective while minimizing spending on unnecessary measures. 
+
+Overall, there are many advantages associated with incorporating a security strategy based on the STRIDE/DREAD hybrid threat model into software development processes. With its ability to identify user and system threats more effectively and quicker when compared to other available strategies; organizations can enjoy better overall protection against malicious attacks while also benefiting from cost-savings due to targeted spending on security measures.

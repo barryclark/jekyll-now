@@ -1,0 +1,37 @@
+layout: post
+title: ' Understanding the DREAD System '
+toc: true
+
+
+
+# Understanding the DREAD System 
+
+The DREAD system is an important tool for evaluating threats and vulnerabilities in software development. It combines the principles of STRIDE and DREAD, two of the most popular threat models, in a single, comprehensive assessment tool. To apply the DREAD system during software development, it is essential to first understand the basic concepts behind it and how it works. 
+
+## What is STRIDE? 
+STRIDE stands for *Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege*. It is a system of threat patterns used to evaluate potential attacks on a system. Each pattern looks at the types of risks and attacks that could be used against the system and attempts to identify specific vulnerabilities. 
+
+## What is DREAD? 
+DREAD stands for *Damage Potential, Reproducibility, Exploitability, Affected Users, Detectability*. This system helps to assess the severity of potential attacks on a system by looking at various factors. These elements help determine if a threat is real or not and if it should be taken seriously. 
+
+## How Does STRIDE/DREAD Hybrid Model Work? 
+The STRIDE/DREAD hybrid model combines the two systems into a single assessment tool. This model allows developers to evaluate threats at both the pattern level (with STRIDE) and risk level (with DREAD). It helps ensure that threats are addressed at both theoretical and practical levels. 
+
+At the pattern level (STRIDE), developers analyze common attack patterns to identify particular types of threats against their system. They then assess each threat based on its ease of exploitation and potential damage it can cause. They use this data to prioritize vulnerabilities based on their severity and likelihood of being exploited by an attacker. 
+
+At the risk level (DREAD), developers assess each identified risk using a five-point scale for Damage Potential, Reproducibility, Exploitability, Affected Users, Detectability (DREAD). These points are used to further pinpoint which risks should be addressed first. By assessing these points for each vulnerability or threat against their system, developers can focus their energy on addressing those with the highest risk rating first. 
+
+## Applying STRIDE/DREAD Hybrid Model in Practice 
+The STRIDE/DREAD hybrid model is an effective tool for improving security during software development. Once you have a thorough understanding of how it works, you can begin to apply it in practice. Here are some tips for putting this model into action: 
+
+1. Analyze attack patterns to identify potential threats - Use STRIDE’s six primary categories (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege) to identify common attack patterns against your system that should be addressed first. 
+
+2. Assess risks using the DREAD ratings - Use DREAM’s five-point scale to further assess identified risks in terms of Damage Potential, Reproducibility, Exploitability Affected Users, Detectability (DREAM). This will help you determine which risks pose the greatest impact and should be attended to first. 
+
+3. Prioritize security tasks - Utilize the information gathered from step 1 (threat analysis) and step 2 (risk assessment) to determine which tasks are most important when it comes to security and address them accordingly. For example, prioritize addressing those vulnerabilities with high Damage Potential before addressing those with low Damage Potential but high Affected Users scores. 
+
+ 4 Test your security measures - As with any endeavor involving security features, you must thoroughly test your measures after implementing them before releasing your product or service into production.
+
+ ## Summary 
+
+ The DREAD system is an important tool for evaluating threats and vulnerabilities in software development that combines two popular threat models: STRIDE and DREAD into one comprehensive assessment tool. The STRIDE/DREAM hybrid model allows developers to assess threats at both theoretical and practical levels utilizing pattern analysis (STRIDE) as well as risk assessment (DREAM). When applied correctly during software development stages this model can help developers prioritize tasks based on risk ratings thus improving overall security posture of your software product or services prior to releasing it into production phasee

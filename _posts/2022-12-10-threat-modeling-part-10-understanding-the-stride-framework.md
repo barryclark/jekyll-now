@@ -1,0 +1,28 @@
+layout: post
+title: ' Understanding the STRIDE Framework'
+toc: true
+
+
+
+# Understanding the STRIDE Framework
+
+The STRIDE/DREAD hybrid threat model is an incredibly powerful tool for software security professionals. By combining the strengths of both models, we can greatly improve the security of our products. In this chapter, we'll discuss how to use the STRIDE framework to apply the hybrid threat model to software development. 
+
+## What is STRIDE?
+
+STRIDE stands for Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege. It is a threat modeling approach developed by Microsoft which is commonly used for application level risk analysis. 
+
+The idea behind STRIDE is that all threats can be categorized into one of these six areas. By applying the model to software development, we can identify potential threats before they become a problem and work to reduce or eliminate them. 
+
+## Applying STRIDE to Your Software
+
+The first step in applying STRIDE to your software is to understand the context in which your software will be used and operated. Knowing who your users are and what they need access to will help you identify potential threats more easily. For example, if you're developing an online banking application, you should consider data encryption and authentication requirements that would be necessary for secure communications between users and banking systems. 
+
+Once you have established the context of your software, you can then begin to scan for threats using the STRIDE framework. You should use each category of STRIDE – Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege – as a blueprint for identifying system-level or application-level security threats. 
+
+Spoofing threats can come from external malicious actors who try to pretend that they are legitimate system users in order to gain access to sensitive data or networks. Tampering threats occur when unauthorized actors make changes to code or data within a system without permission from system administrators. Repudiation risks involve attempts by users or systems to deny their own actions after they have taken place. Information disclosure involves the aiding or encouraging the leakage of confidential data that should remain hidden from untrusted parties. Denial of service attacks involve malicious actors attempting to prevent legitimate users from accessing services by flooding them with bogus requests or data. Finally, elevation of privilege refers to identity theft attempts by malicious actors trying to gain access rights they are not authorized to possess within a system.    
+
+Once you have identified particular threats based on your understanding of your system's context and an examination through the six categories provided by STRIDE, you can begin taking action against them through various security controls such as adding authentication mechanisms or encryption technologies alongside comprehensive logging and alerting policies. Additionally, processes like code reviews and penetration testing should also be applied regularly in order to ensure the effectiveness of these security controls. 
+
+## Conclusion 
+The STRIDE framework is a powerful tool for understanding how different threats can impact your software applications and how best to protect against them through security controls and infrastructure hardening practices. By taking a proactive approach at establishing contextual understanding around your application landscape and using the six categories provided by STRIDE as a blueprint for threat analysis, you can greatly reduce the risk posed by malicious actors and protect valuable user data within your system.

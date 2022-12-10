@@ -1,0 +1,67 @@
+layout: post
+title: ' Identifying Threats and Risks Using the STRIDE/DREAD Hybrid Threat Model'
+toc: true
+
+
+
+# Identifying Threats and Risks Using the STRIDE/DREAD Hybrid Threat Model
+
+Software development teams are constantly faced with the challenge of protecting their applications and data from malicious actors. The **STRIDE/DREAD** hybrid threat model is an effective approach that lets teams quickly identify potential threats to their software’s security. In this chapter, we’ll explain how to apply this model to the process of software development and provide practical steps for identifying threats and risks. 
+
+## What is the STRIDE/DREAD Hybrid Threat Model? 
+
+The STRIDE/DREAD Hybrid Threat Model is a framework that integrates the advantages of two distinct security models, **STRIDE** and **DREAD**. *STRIDE*, an acronym created by Microsoft researchers in 2000, stands for Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege. The *DREAD* method was introduced two years later by renowned security professional Jeremiah Grossman and stands for Damage Potential, Reproducibility, Exploitability, Affected Users, and Discoverability. 
+
+The STRIDE/DREAD hybrid threat model builds upon these two approaches to provide a way of gathering and organizing information about potential threats during the software development process. 
+
+## Applying the STRIDE/DREAD Hybrid Threat Model 
+The goal of applying the STRIDE/DREAD hybrid threat model is to identify specific threats to a given application or system. For each threat identified by the team, additional information must be provided about its impact so that effective countermeasures can be developed in order to protect the system or application from vulnerabilities.  
+
+To apply the model effectively requires understanding the threats and risks that are associated with a given system or application. In this section, we’ll take an individual approach to exploring each concept:   
+
+ - **Spoofing** is the practice where someone masquerades as another user in order to gain access to sensitive information or resources.  
+ - **Tampering** occurs when someone modifies data without authorization.   
+ - **Repudiation** refers to a situation where someone revokes responsibility for an action they previously took.  
+ - **Information Disclosure** happens when confidential data is accessed without permission.  
+ - **Denial-of-Service (DoS)** attacks happen when an attacker overloads a system with requests in order to prevent legitimate users from accessing it.  
+ - **Elevation of Privilege (EoP)** occurs when someone gains access to higher-level functions or resources than they should be able to access with their current permissions level.  
+
+ - **Damage Potential** refers to the likelihood of a successful attack causing harm or damage on a given target.  
+ - **Reproducibility** indicates how easily an attack can be repeated or scaled up by an attacker if successful initially.   
+ - **Exploitability** measures how easy it is to craft an attack against a given target.   
+ - **Affected Users** measures how many people would be impacted by a successful attack against a target.    
+ - **Discoverability** reflects how easy it is for an attacker to detect potential vulnerabilities in a system or application in order to exploit them.   
+ 
+Once these concepts are understood individually, they can be combined into larger categories depending on the specific application or system being assessed: 
+
+ - Spoofing/Tampering 			(Impact on user authentication) 			      	 	 	 	 	        	  	  	 	             	              
+
+ - Repudiation/Information Disclosure (Impact on data integrity)     	    	    
+
+ - Methods of DoS (Availability)               	    
+
+ - Exploitability/Elevation of Privilege (Impact on confidentiality)      
+
+ - Damage Potential (Lowest / Highest)     
+
+ - Reproducibility / Discoverability (Maturity of defense measures)            
+
+ The categories provide structure for assessing potential threats to underlying systems or applications; this important data can then be used as part of wider security assessment strategies such as Security Risk Management and Secure Software Development Life Cycle (SSDLC).       
+
+ ## Final Steps for Identifying Threats and Risks        
+
+ By combining both models into one unified approach, teams can effectively identify potential threats during the software development process and develop strategies for preventing their exploitation.     
+
+ To carry out this process effectively:  
+
+ 1) Identify all assets that could potentially be targeted by attackers – including any web servers, networks, user accounts etc – then assess them individually using both STRIDE & DREAD categories        
+
+ 2) Document any vulnerabilities found in each asset – capturing relevant information such as affected users, potential damage inflicted etc – then rank them according to severity              
+
+ 3) Develop specific tactics for protecting assets according to the risks identified e.g., deploying firewalls or installing antivirus software            
+
+ 4) Track progress on protection efforts using relevant metrics such as firewall log review management tools or antivirus efficiency calculators          
+
+ 5) Repeat steps 1-4 periodically as part of an ongoing risk assessment strategy          
+
+ By following these steps teams can quickly identify potential security risks during the software development process – ensuring that employees have access only to authorized systems with appropriate levels of protection.      

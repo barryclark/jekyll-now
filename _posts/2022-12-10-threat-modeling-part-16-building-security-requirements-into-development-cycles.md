@@ -1,0 +1,33 @@
+layout: post
+title: 'Chapter 9: Building Security Requirements into Development Cycles'
+toc: true
+
+ 
+
+## Chapter 9: Building Security Requirements into Development Cycles 
+
+No matter how well a software project is planned and implemented, security risks have the potential to impact the timeline, cost and even the legal risks if not addressed properly. The STRIDE/DREAD hybrid threat model is a tool used by security professionals to identify threats and risks to a software system  and create action plans for the team to address them. This chapter will focus on how to apply this model when building security requirements into development cycles. 
+
+### Overview of the STRIDE/DREAD Hybrid Model 
+
+The STRIDE/DREAD Hybrid Threat Model is a simple, yet powerful tool created by Microsoft to help software developers identify and manage security threats and risks in their projects. The acronym STRIDE stands for **Spoofing**, **Tampering**, **Repudiation**, **Information disclosure**, **Denial of Service** and **Elevation of privilege**. The acronym DREAD stands for **Damage potential**, **Reproducibility**, **Exploitability**, **Affected users** and **Discoverability**. 
+
+When applied together, these two models can be used to determine what threats and security risks exist in a given software system as well as ways to reduce or eliminate those threats . For example, looking at Spoofing in the STRIDE model, developers can use the Discoverability criteria from DREAD to assess the probability that attackers can spoof an authentication credential or identity. Similarly with Tampering, developers can use Damage Potential from DREAD to determine how likely it is an attacker can alter data or functionality maliciously.   
+
+### Applying the STRIDE/DREAD Hybrid Model within Software Development 
+
+The two halves of the STRIDE/DREAD Hybrid Threat Model can be used during different stages of software development in order to identify security risks and build more secure software: 
+
+1. **Design Stage:** During the design stage of development, engineers will want to use both parts of the model in order to understand what the most critical security threats and risks are for their project. This helps them identify areas in which they need to focus more development time and effort accommodating extra controls or preventative measures. By running thorough risk assessments off the bat as well as having numerous code reviews throughout development progressions will likely keep any malicious intent out of your code scoresheet.  
+
+2. **Implementation Stage:** During the implementation stage, engineers will want to use both parts of the model again but with a focus on system configuration settings. All application controls must be appropriately configured in ways that reduce vulnerabilities as much as possible while also ensuring that all sensitive data is kept safe and secure (including authentication credentials).  Finally, developers should also ensure that proper logging processes are implemented so they can detect any suspicious activities quickly. 
+
+ 3. **Testing Stage:** During testing and debugging phases engineers should again consider both sections of this model but particularly focusing on approaches such as assessing test coverage and penetration testing which can identify potential issues before they become an actual problem. Also consider methods such as fuzz testing which injects malicious inputs into applications systems in order to test for specific defects or weaknesses that could be exploited by an attacker..  
+
+ 4. **Deployment Stage:** Finally during deployment it is critical to test as many aspects of your system as possible when operating in its production environment with actual users interacting with it daily. Although automated security scans are useful for identifying potential issues, manual tests looking at specific system function calls or areas known vulnerability are important too such as Cross-Site Scripting (XSS), SQL Injection (SQLi) attacks etc., 
+
+ By applying this hybrid threat model throughout each stage of your development cycle you'll be able to ensure that each iteration of your project addresses existing problems while also taking into account new threats or risks introduced with changes or updates..   
+
+    ## Conclusion 
+
+ The STRIDE/DREAD hybrid threat model is a powerful tool developed by Microsoft which enables developers to properly assess security threats and risks throughout every stage of software development cycles so they can produce better secure software applications overall. By utilizing this forumla early on developers have better visibility over potential loopholes or problems within their systems which will not only make them more secure but also cost effective because risky requests can be addressed before deployment rather tehn dealing with costly retrofits or remediation afterwards..

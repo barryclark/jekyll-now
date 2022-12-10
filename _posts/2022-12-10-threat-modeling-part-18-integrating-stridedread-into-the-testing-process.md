@@ -1,0 +1,25 @@
+layout: post
+title: 'Integrating STRIDE/DREAD into the Testing Process'
+toc: true
+
+
+
+## Integrating STRIDE/DREAD into the Testing Process
+Any software development team should take security seriously. The STRIDE/DREAD model is a great way to evaluate what areas of your software may be vulnerable and identify potential threats. By integrating the STRIDE/DREAD hybrid threat model into your software development testing process, you can ensure that your software is as secure as possible. 
+
+### What is the STRIDE/DREAD Model? 
+The STRIDE/DREAD threat model is a framework for understanding, categorizing, and responding to security threats and vulnerabilities in software. It is based on Microsoft’s Security Risk Management (SRM) analysis and combines DREAD (Damage, Reproducibility, Exploitability, Affected Users, Discoverability) with STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege). 
+
+STRIDE helps identify common categories of threats involved in all types of digital security breaches such as data corruption or theft and denial of service. DREAD is then used to score the likelihood that a given threat can be exploited successfully and the impact it could have on your system. 
+
+### How to Integrate STRIDE/DREAD into Your Test Process
+The key to successfully integrating the STRIDE/DREAD model into your test process is to make sure that all stakeholders are aware of their roles in developing secure systems and testing for security risks. Developers should understand the importance of considering threats throughout their development processes and be prepared to make adjustments and develop defenses against those threats. Furthermore, testers should be well-versed in identifying common threats through the use of the model and have an understanding of some basic best practices for testing for those threats. 
+
+First and foremost, it is important to understand each component of the model. In other words, developers must know what each factor in DREAD means and how it affects security risk posture as well as recognize potential signs of a threat associated with one or more areas in STRIDE. This level of knowledge gives testers a good baseline for evaluating security risks during their tests. 
+
+Once an understanding has been established, familiarize yourself with your team’s specific processes and guidelines for secure code development such as following best practices for authentication schemes or coding standards for secure data storage. Ensure that testers are aware of these guidelines during their test execution so they know when they are testing against known threats identified through STRIDE/DREAD or documented standards set by your organization. 
+
+Another consideration when evaluating security risks through STRIDE/DREAD is exploring outside sources such as industry publications or news articles on recent events that can inform testers how attackers may attempt to exploit vulnerabilities they discover while testing. Understanding current attacking trends helps inform testers whether they need to adjust their tests accordingly on a periodic basis. 
+
+### Conclusion 
+Integrating the STRIDE/DREAD hybrid threat model into your software development test process will help ensure that you identify potential threats early so that appropriate remediation steps can be taken quickly before attackers gain access to sensitive data or impact systems adversely. By understanding what each component means in the context of evaluating risk posture during test execution and adjusting tests based upon current attacking trends, testers will be more successful at ensuring system security from malicious actors before releasing software into production environments.

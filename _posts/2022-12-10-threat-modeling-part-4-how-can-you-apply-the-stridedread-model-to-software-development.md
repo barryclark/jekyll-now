@@ -1,0 +1,26 @@
+layout: post
+title: ' How Can You Apply the STRIDE/DREAD Model to Software Development?'
+toc: true
+
+
+
+# How Can You Apply the STRIDE/DREAD Model to Software Development?
+
+Developing secure software is a key element of building secure systems, and the STRIDE/DREAD hybrid threat model can play an important role in making sure that you produce a secure product. This chapter explains how to apply the hybrid threat model and suggests best practices for secure software development.
+
+## What is the STRIDE/DREAD Hybrid Threat Model?
+
+STRIDE stands for Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege. DREAD is an acronym for Damage, Reproducibility, Exploitability, Affected Users, and Discoverability. The STRIDE/DREAD hybrid threat model combines these two models to create a more comprehensive approach to understanding threats and mitigating vulnerability within software applications.
+
+### How to Use the STRIDE/DREAD Model?
+ 
+The first step in applying the hybrid threat model correctly is to define your requirements and consider each of the threats within those requirements. This includes using the STRIDE approach to identify possible threats (or “attack vectors”) to your system. Once you have identified all possible attack vectors, it’s time to consider the DREAD criteria. This involves assessing each attack vector for its level of Damage, Reproducibility, Exploitability, Affected Users, and Discoverability. Based on your assessment of each criteria, you should then rank the severity of each identified attack vector from low to high. This will enable you to prioritize which threats you should address first. 
+
+Once you've identified your threats and ranked their severity, it’s time to figure out how to mitigate them. There are a variety of approaches you can take depending on the nature of the attack vector. In most cases however, security measures such as enforcing authorization policies or data encryption can be effective in reducing risk wherever appropriate. Additionally, making sure that development teams are following best practices such as isolation techniques or regular security testing will improve your system’s overall security posture by helping you identify vulnerabilities early on in development and correcting them quickly before they become bigger problems down the road. 
+
+### Benefits of Using the STRIDE/DREAD Model 
+Using the STRIDE/DREAD model will help reduce your application’s risk profile by allowing you to identify and prioritize any potential risks that could lead to issues in your system. It also allows developers to gain a better understanding of which security measures are most effective for mitigating different types of threats and how their decisions might affect user experience or system performance when it comes time to implement them.  
+Finally, this approach gives developers a better understanding of global threat landscape which can give them deeper insight into emerging trends in cyber security so they can stay ahead of potential vulnerabilities early on before they become more serious issues down the road.  
+
+ ## To Sum Up 
+The STRIDE/DREAD hybrid threat model is an invaluable tool for application developers looking to reduce risks within their products while also gaining insight into evolving cyber threats facing today’s IT environment. By continually assessing potential attack vectors against both models while implementing appropriate security measures, developers should be able to create more secure software applications that stand up against malicious attacks while also providing their customers with seamless user experiences they expect from modern products

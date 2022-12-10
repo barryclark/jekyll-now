@@ -1,0 +1,46 @@
+layout: post
+title: ' Introduction to Using the STRIDE/DREAD Hybrid Threat Model in Software Development'
+toc: true
+
+
+
+# Introduction to Using the STRIDE/DREAD Hybrid Threat Model in Software Development
+
+Software development is becoming a complex field, with a range of threats to be taken into consideration. To help deal with those threats, security professionals across the globe use detailed threat models such as the STRIDE/DREAD Hybrid Threat Model. In this chapter, we will take an introductory look into how the STRIDE/DREAD hybrid threat model works when applied to software development.
+
+## What Is The STRIDE/DREAD Hybrid Threat Model?
+
+The STRIDE/DREAD hybrid threat model is a user-driven approach which combines elements of two popular threat models - STRIDE and DREAD - to help assess risks in software design. 
+ 
+STRIDE (Security Threat Identification and Risk Evaluation) is a technique which helps identify risks associated with the confidentiality, integrity, availability, authorization and non-repudiation of code (CIAN). Using the Cian acronym empowers developers to think critically about threats during coding. 
+
+DREAD (Damage, Reproducibility, Exploitability and Affected users) was developed as an benchmark for threat assessment for which every risk can be assigned a numerical weighting – making it easy for individuals to do an overall risk analysis of their projects. 
+
+The merging of these two aspects allows security professionals to get a better overview on both external and internal threats - combining identification and evaluation into one comprehensive model. 
+
+## What Are The Benefits Of Using The STRIDE/DREAD Hybrid? 
+
+The biggest advantage of using the STRIDE/DREAD hybrid is that it helps coders understand risks from both external and internal sources at the same time. By thinking critically about potential threats with code, developers can identify potential weaknesses before they become major issues. Additionally, the weighted approach allows clear assessment of risks, allowing developers to implement better practices that protect data while also reducing development costs. 
+
+ Finally, developers can use this model as an addition tool during development, as well applicable during testing stages as well as maintenance and delivery - giving teams greater control over infosec practices during all stages of the development process. 
+ 
+## How To Use The STRIDE/DREAD Hybrid During Software Development? 
+Throughout software development there are three main stages where uses of the Threat Model are generally required: Identification & Scoping Analysis Strategy & Mitigation Execution Evaluation & Control These three stages are at the core of any secure software development process and all should use some form of threat modeling to ensure full coverage for potential risks. 
+
+ ### Identification & Scoping Analysis: 
+
+During this stage all potential threats must be identified and scope appropriately – what is the danger posed by each one? At this point coders must use their skills in combination with CIAN Methodology from SRIE structure in order to correctly identify potential risks. This will inform how severe each risk should be weighted by DREAD’s numerical system – helping coders decide how serious an issue each risk really is. 
+
+ ### Strategy & Mitigation:
+
+In modern software design defensive coding techniques are often used instead of trying to protect against every single attack vector that has been identified. Code should be seen as strictly data - allowing coders to defend against anything malicious on a packet level rather than having to defend against specific attacks beforehand. This stage also requires teams work together to develop comprehensive mitigation strategies which can help tackle problem areas before they become major issues.
+
+ ### Execution & Evaluation:
+
+ Once teams have identified all potential issues and have established mitigation strategies faced then they can move onto execution and evaluation stages of their project utilizing security tools throughout execution when needed – making sure every possible safety measure is taken into account when releasing software applications into production environments. This also involves tracking user feedbacks for potential additional security issues related to usage of applications already released over-time ensuring up-to date security measures are implemented when needed or required due by emerging e-threats or new industry standards related further safety guidelines how may affect current applications still out there on market cause developers need always keep eye on industry trends for improvement too by means of patient feedback process implemented already mentioned previously part along another industry standards .  
+
+ ## Conclusion
+
+ Secure software design can be tricky but with proper utilization and understanding of the STRIDE/DREAD Hybrid Threat Model it becomes much easier! In this chapter we looked at an introductory overview of how this methodology works when applied properly during all stages of software development lifecycle providing better visibility into main strength point’s aka weaknesses along development process helping us unify risk management objectives throughout different phases thus enhancing implementable mitigation strategies by weighted scoring system using numerical rankings assigned directly per each domain attached each individual threat posed!  
+
+This methodology looks complicated but streamlined processes such Cian structured methodologies STRIDE combined together with numerical ranking system used by DRED helps developers shorten time spent seeking meanings out there amidst chaos validating correct implementation measures taking in place along reduce cost by preventing same causes on repetitive errors flow pattern detection utilized accordingly from aims reduction e-threat incidents enabling businesses staying put atop racing competition keep up safety standards demanded world nowadays!

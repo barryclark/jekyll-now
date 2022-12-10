@@ -1,0 +1,28 @@
+layout: post
+title: ' Chapter 6: Implementing Controls with the DREAD Model'
+toc: true
+
+
+
+
+# Chapter 6: Implementing Controls with the DREAD Model
+
+Learning how to apply the STRIDE/DREAD hybrid threat model to your software development process can help ensure robust security practices within your organization. The DREAD model is used to prioritize potential threats and their risks, helping you determine which threats should be countered most urgently. In this chapter, we'll explore how you can incorporate DREAD into your existing threat modeling process and software development lifecycle (SDLC) for maximum effectiveness.
+
+## What Is the DREAD Model? 
+In order for an effective threat evaluation and response process, it is important to understand the threat landscape and potential risks associated with each one. The DREAD model is a tool that helps classify threats by assessing the severity of the damage they would cause if exploited. It consists of five criteria: 
+* **D**amage - The amount of physical or metaphorical damage that could be caused by a breach or malicious attack; 
+* **R**isk - The frequency of occurrence or possibility of a certain security event occurring;
+* **E**xploitability - How easy it could be to exploit a vulnerability in a system;
+* **A**wareness - The degree of visibility and awareness that an organization has concerning a certain risk or vulnerability; and 
+* **D**iscoverability – The likelihood of finding evidence in order to confirm a successful exploit. 
+
+The DREAD model allows organizations to quickly assess the potential severity of threats and prioritize those more likely to cause more damaging impacts. 
+
+## Implementing the DREAD Model 
+Integrating the DREAD model into your existing SDLC process requires a few steps: 
+1. Identify potential threats – Start by analyzing your software development process for potential risks and vulnerabilities. Research industry trends as well as security widely accepted best practices for solutions.  Identify what assets are valuable and at risk, so that you can better understand which threats could have most damaging impacts on your organization.  
+2. Assess the severity of each risk – Assign each risk or threat an initial score on a scale from 1-10 based on the five criteria of the DREAD model outlined above. This score will help you measure and prioritize threats - higher scores indicate greater severity and higher priority. 
+3. Take action – Use the data gathered from vulnerability assessment to develop appropriate countermeasures. Establish policies and controls to reduce risks and prevent future vulnerabilities from emerging. Adopt tools or technologies that can help you better understand and manage security threats in your environment.  
+4. Monitor & re-evaluate – Finally, review initially established controls regularly in order to make sure they still align with current needs and trends in technology solutions, industry best practices, etc., as these continue to evolve rapidly over time.  
+Being able to effectively incorporate DREAD threat assessment into software development is essential for ensuring robust security for any organization - it not only allows you to identify actual or potential risks quickly but also helps prioritize them based on severity so that countermeasures can adopted more efficiently than ever before!
