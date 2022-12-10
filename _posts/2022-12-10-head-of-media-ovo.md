@@ -2,7 +2,7 @@
 layout: post
 title: Head of Media (Digital & Offline) OVO
 author: Pak Budi
-date: 2022-12-10 07:29:51 +07:00
+date: 2022-12-10 07:29:56 +07:00
 ---
 
 **OVO (Visionet Internasional)** is a leading Indonesian payments, rewards and financial services platform.
