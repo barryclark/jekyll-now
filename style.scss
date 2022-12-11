@@ -310,7 +310,64 @@ footer {
   text-align: center;
 }
 
+.toc {
+  position: fixed;
+  right: 0px;
+  width: 240px;
+  color: $lightGray;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-right: 0px;
+  font-size: 0.7rem;
+  border-left: 2px solid #e0d9e7;
+
+  display: none;
+  @media (min-width: 75em){
+    width: 240px;
+    display: block;
+  }
+  @media (min-width: 85em){
+    width: 300px;
+    display: block;
+  }
+  @media (min-width: 95em){
+    width: 360px;
+    display: block;
+  }
+
+  // 작동안함.
+  a.toc-active {
+    font-weight: bold; 
+    transition: all 0.125s ease-in 0s; 
+    font-size: 0.75rem;
+    color: #9075aa;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-bottom: 0.1rem;
+    padding-left: 0rem;
+    li {
+      padding-left: .5rem;
+    }
+  }
+
+  a {
+      color: $gray;
+      text-decoration: none;
+  }
+ 
+  a:hover {
+     color:$black;
+  }
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+

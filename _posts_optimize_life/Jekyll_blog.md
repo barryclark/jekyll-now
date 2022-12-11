@@ -97,7 +97,7 @@ pre.highlight{
 </div>
 
 <details><summary>MathJaxx</summary>
-<div>
+<div markdown="1">
 
 [MathJax v3 in Jekyll](https://quuxplusone.github.io/blog/2020/08/19/mathjax-v3-in-jekyll/)
 
@@ -119,8 +119,15 @@ HTML 은 기본적으로 정적인 언어입니다. 작성해놓고 나면, 동�
 * [Diango](https://docs.djangoproject.com/en/3.2/topics/templates/#the-django-template-language)
 
 <details><summary>html에서 if문 사용하기</summary>
-</div markdown="1">
+<div markdown="1">
 
 [Conditional logic](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_conditional_logic.html)
+
+</div></details>
+
+<details><summary>스크롤에 따른 목차를 띄우는 ScrollSpy 기능 구현하기</summary>
+<div markdown="1">
+
+[스크롤에 따른 목차를 띄우는 ScrollSpy 기능 구현하기](https://velog.io/@outstandingboy/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8%EC%97%90-%EC%8A%A4%ED%81%AC%EB%A1%A4%EC%97%90-%EB%94%B0%EB%A5%B8-%EB%AA%A9%EC%B0%A8Table-of-Contents-TOC%EB%A5%BC-%EB%9D%84%EC%9A%B0%EB%8A%94-ScrollSpy-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
 
 </div></details>
