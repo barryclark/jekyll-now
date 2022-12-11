@@ -12,14 +12,34 @@ title: VR Development
 
 <center><div class="mermaid"> 
 graph RL;
-A(Localization\n현지화할 언어 추가\n 번역 및 현지화 애셋추가)-->B;
-B(Language & Culture\n언어 및 문화설정)--->C;
-C(Packaging & Cooking\n런치할 프로젝트 설정\n프로젝트 런치);
 
-UnityOculus(UnityOculus\nAndroidAPK)
 Oculus
+Vive
 
-Oculus--OculusLink-->UnityOculus
+OculusLink(OculusLink\nUSE 3.0\nAir Link)
+UnrealSteamVRPlugin(Unreal\nSteamVR Plugin)
+XRInteraction(XR Interaction)
+OculusInteraction(Oculus Interaction)
+
+UnrealViveWindow(UnrealVive\nWindowEXE)
+UnityOculusAndroid(UnityOculus\nAndroidAPK)
+UnityOculusWindow(UnityOculus\nWindowEXE)
+
+Vive-->SteamVR
+
+Oculus-->OculusLink
+OculusLink-->XRInteraction
+OculusLink-->OculusInteraction
+OculusLink-->SteamVR
+
+SteamVR-->XRInteraction
+SteamVR-->UnrealSteamVRPlugin
+
+XRInteraction-->UnityOculusAndroid
+OculusInteraction-->UnityOculusAndroid
+XRInteraction-->UnityOculusWindow
+OculusInteraction-->UnityOculusWindow
+UnrealSteamVRPlugin-->UnrealViveWindow
 </div></center>
 
 ### Vive
