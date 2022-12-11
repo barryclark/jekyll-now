@@ -23,11 +23,14 @@ title: Life optimize
 * [How to study](/posts_optimize_life/HowToStudy)
 * [How to work](/posts_optimize_life/HowToWork)
 
-**개발의 효율을 위하여**
+**사용하는 도구들에 대한 관심**
 
 * [Use window](/posts_optimize_life/UseWindow)
     - Window
-    - Batch
+
+**개발의 효율을 위하여**
+
+* [Batch](/posts_optimize_life/Batch)
 * [Automation test](/posts_optimize_life/TDD-Automation_test)
     - TDD
     - Unreal automation test
