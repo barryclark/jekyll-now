@@ -4,6 +4,7 @@ title: hello-there
 published: true
 ---
 
-![]({{site.baseurl}}/https://unsplash.com/photos/CTOEvaAaTMQ/download?ixid=MnwxMjA3fDB8MXxhbGx8Mjh8fHx8fHwyfHwxNjcwODE1ODI1&force=true&w=640)
+![jim-plaum-CTOEvaAaTMQ-unsplash.jpg]({{site.baseurl}}/_posts/jim-plaum-CTOEvaAaTMQ-unsplash.jpg)
+
 ## My first time using jekyll
 > Seek not the good in eternal things, suck it in yourself.
