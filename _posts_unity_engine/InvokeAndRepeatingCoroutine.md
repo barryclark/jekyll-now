@@ -18,9 +18,11 @@ title: Invoke & InvokeRepeating & Coroutine
 
 ## Coroutine
 
-[Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html)
+[Coroutine Manual](https://docs.unity3d.com/2023.1/Documentation/Manual/Coroutines.html)
 
-코루틴은 완료 될 때까지 실행(yield)을 일시 중지할 수 있는 함수입니다.
+[Coroutine API](https://docs.unity3d.com/ScriptReference/Coroutine.html)
+
+코루틴은 완료 될 때까지 실행(yield)을 일시 중지할 수 있는 함수입니다. 시간의 흐름에 따른 이벤트의 시퀀스나 절차상의 애니메이션을 포함하기 위해 메서드콜을 사용하고자 하는 상황에서 코루틴을 사용할 수 있습니다.
 
 <details><summary>yield return의 종류</summary>
 <div markdown="1">
