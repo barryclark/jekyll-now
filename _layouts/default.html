@@ -36,6 +36,12 @@
       </div>
     </div>
 
+    <!-- script에서 엘리먼트로 가져오기 위해 추가한 코드 -->
+    <div class="toc">
+      <!-- <a href="#">&lt;맨 위로&gt;</a> -->
+      {% include toc.html html=content %}
+    </div>
+
     <!-- 내용을 나타내는 부분. -->
     <div id="main" role="main" class="container">
       {{ content }}
@@ -55,6 +61,80 @@
 
     {% include analytics.html %}
 
+    <!-- 스크롤 이벤트가 발생할 때마다 article의 엘리먼트들의 위치와 스크롤 위치를 비교하면서 
+    현재 보고있는 부분에 해당하는 toc의 태그의 스타일을 바꿔주는 스크립트입니다. -->
+    <script>
+      function getTOCNodes(master) {
+        var nodes = Array.prototype.slice.call(master.getElementsByTagName("*"), 0);
+        var tocNodes = nodes.filter(function(elem) {
+            return elem.tagName == "A";
+        });
+        return tocNodes;
+      }
+      function getHeaderNodes(master) {
+        var nodes = Array.prototype.slice.call(master.getElementsByTagName("*"), 0);
+        var headerNodes = nodes.filter(function(elem) {
+            return elem.tagName == "H1" || elem.tagName == "H2" || elem.tagName == "H3" || elem.tagName == "H4" || elem.tagName == "H5" || elem.tagName == "H6";
+        });
+        return headerNodes;
+      }
+    
+      var title = document.getElementsByClassName("post-title")[0];
+      var titleY = window.pageYOffset + title.getBoundingClientRect().top;
+      
+      var article = document.getElementsByClassName("post-article")[0];
+      var articleY = window.pageYOffset + article.getBoundingClientRect().top;
+    
+      var toc = document.getElementsByClassName("toc")[0];
+    
+      var headerNodes = getHeaderNodes(article);
+      var tocNodes = getTOCNodes(toc);
+    
+      var before = undefined;
+    
+      document.addEventListener('scroll', function(e) {
+        if (window.scrollY >= articleY-60) {
+          toc.style.cssText = "position: fixed; top: 60px;";
+        }
+        else {
+          toc.style.cssText = "";
+        }
+      
+        var current = headerNodes.filter(function(header) {
+          var headerY = window.pageYOffset + header.getBoundingClientRect().top;
+          return window.scrollY >= headerY - 60;
+        });
+      
+        if (current.length > 0) {
+          current = current[current.length-1];
+        
+          var currentA = tocNodes.filter(function(tocNode) {
+            return tocNode.innerHTML == current.innerHTML;
+          })
+          
+          currentA = currentA[0];
+          if (currentA) {
+            if (before == undefined) before = currentA;
+          
+            if (before != currentA) {
+              before.classList.remove("toc-active");
+              before = currentA;
+            }
+          
+            currentA.classList.add("toc-active");
+          }
+          else {
+            if (before) 
+              before.classList.remove("toc-active");
+          }
+        }
+        else {
+          if (before) 
+              before.classList.remove("toc-active");
+        }
+      
+      }, false);
+    </script>
     
   </body>
 </html>
