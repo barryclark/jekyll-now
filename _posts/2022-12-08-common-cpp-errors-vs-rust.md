@@ -227,8 +227,65 @@ will tell us.
 
 This is a really curious one. Did you know that `std::string(foo);` is valid code
 and is parsed as `std::string foo;`? Both get us a default constructed instance
-of a string named `foo`. So far so good. Where this gets interesting is when
-we use the 
+of a string named `foo`. This can lead to an interesting problem, in case we 
+try to lock a mutex to update some stared state inside a class, like in this
+common scenario:
+
+```c++
+void Widget::update_state() {
+  std::unique_lock<std::mutex>(m_mutex);
+  do_some_update(m_state);
+}
+```
+
+The first line of the function does not actually lock the mutex `m_mutex`, but
+instead defines a default constructed instance of a `std::unique_lock` called
+`m_mutex`. A correction would just require two more characters like so:
+`std::unique_lock<std::mutex> g(m_mutex)`. The difference is not easy to spot.
+Louis Brandy then shows that despite a running linter, he found 
+two instances in the production codebase making exactly that mistake[^lock_warnings].
+
+Evaluating whether this mistake is easy to make in Rust is interesting. Rust's 
+[`Mutex`](https://docs.rust-lang.org/std/sync/struct.Mutex.html) work very differently than in C++ because a mutex is a class template[^rust_template]
+where the instance of a mutex owns the contained data. When we lock this mutex
+we get a pointer like guard that can be dereferenced to access the underlying value.
+Once the guard goes out of scope, the mutex is locked again. This data-oriented
+approach to mutexes makes it impossible to lock a mutex that protects data, because
+we cannot otherwise access the data. I have written about this paradigm in 
+[an article](/blog/2020/mutexes-rust-vs-cpp/) and also explored [data-oriented mutexes for C++](/blog/2020/rust-style-mutex-for-cpp/).
+Spoiler: there's no way to have data-oriented mutexes in C++ without the risk of running
+into trouble with lifetimes of references.
+
+While using mutexes to protect data like above is surely a very common (maybe
+the most common) use case, there are valid reasons to use a mutex to protect
+sections of code rather than data. We can achieve this in rust with the `Mutex<()>`
+specialization, where `()` in Rust is (in this case) equivalent to `void`. To 
+lock this mutex we can just call 
+
+```rust
+{
+  let _ = my_mutex.lock();
+  // ... code in section
+}
+```
+...and that would produce the same problem as the C++ code above! Question to 
+Rust developers: would you have noticed the problem? The unnamed `let _ =` binding
+destroys the mutex guard at the end of the line rather than the end of the scope.
+This means the mutex is not locked inside the scope. As of the time of writing,
+this passes without compiler warnings[^clippy-lint]. The fix is to bind the guard
+to a named value, i.e. `let _g = my_mutex.lock()`, but it is an error that
+is easy to miss. This is a 1!!LINK EHERE!!! confusing design, where the
+often used `let _ =` binding means something different as the `let _g =` binding,
+which binds to an unused _but named_ temporary. For the latter one the destructor
+is invoked, when the named temporary goes out of scope and the former destroys
+its content at the end of the line !!CHECK WHETHER  TRUE OR jUSTSYNTAX SUGUAR FOR DONT WANTTO USSE!!!.
+
+!!!!TODO!!!!!!!!
+* ADD CLIPPY LINT IN THE Endnotes
+* LET UNDERSCORE INTERNAL DISCUSSION CONFUSING
+
+# Conclusion
+
 
 # Endnotes
 
@@ -241,3 +298,14 @@ is synchronized. This implies that the reference count is actually thread-safe, 
 this does not mean that the pointed-to instance is safe to access across threads.
 It's as safe as sharing a raw pointer would be, i.e. read-only sharing would 
 be safe while any form of mutation could incur a data race.
+[^lock_warnings]: The problem here is that warnings for unused locals will probably not help because
+all we need that lock to do is invoke its destructor once it goes out of scope.
+In the talk he gives a mitigation using special compiler warnings
+that might or might not be available on the particular compiler you are using.
+[^rust_template]: "Templates" in Rust are not called templates and also work rather 
+differently than templates in C++. But in very broad strokes, Rust _generics_
+are somewhat like C++ templates.
+[^clippy_lint]: There is a `clippy` error for this. Clippy is the
+static analyzer that ships with the rust toolchain Rust and many projects use it to 
+run extra analyses on their code. However, the compiler does not complain and
+so I feel it would be unfair to C++ to disregard that problem in the Rust language.
