@@ -171,7 +171,6 @@ use std::rc::Rc;
 type SharedPtr<T>= Rc<T>;
 
 fn main() {
-
     let val = SharedPtr::new(10);
 
     let shared1 = SharedPtr::clone(&val);
@@ -202,7 +201,24 @@ shared ownership semantics, like [`Rc<T>`](https://doc.rust-lang.org/std/rc/stru
 It turns out that `Rc<T>` is not safe to send across different threads because
 the reference counting is not atomic as it would be in `std::shared_ptr<T>`. The 
 correct equivalent for an atomically reference counted shared pointer would be 
-the Rust type [`Arc`]()
+the Rust type [`Arc`](https://doc.rust-lang.org/std/sync/struct.Arc.html). This
+type does implement `Send` and thus using `type SharedPtr = Arc` makes this 
+code compile. If we then tried to mutate the value from two different threads,
+we would find out that we cannot simply do that because we are missing a second
+fundamental trait for concurrency, which is [`Sync`](https://doc.rust-lang.org/nomicon/send-and-sync.html).
+This trait, again via the typesystem, indicates whether a value is safe to access
+from multiple threads at the same time. The short story is that we have to 
+explicitly use a synchronization mechanism for the data that makes it safe to 
+access from different threads, such as a mutex. I won't go into detail here, because
+I have written a two part series comparing mutexes in Rust and C++ ([part 1](/blog/2020/mutexes-rust-vs-cpp/),
+[part 2](/blog/2020/rust-style-mutex-for-cpp/).
+
+The takeaway here is that Rust does prevent this type of thread-safety problem
+(and many more) by making thread safety part of the type system. It even presents
+an opportunity for optimization by giving us non-atomically reference counted pointers
+that are only safe to use from one thread. We only pay for atomic counting if 
+we need it and we cannot forget to use it during a refactor because the compiler
+will tell us.
 
 
 # Endnotes
