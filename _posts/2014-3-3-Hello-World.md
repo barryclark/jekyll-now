@@ -8,4 +8,4 @@ published: true
 
 
 ## My first time using jekyll
- #> Seek not the good in eternal things, suck it in yourself.
+> Seek not the good in eternal things, suck it in yourself.
