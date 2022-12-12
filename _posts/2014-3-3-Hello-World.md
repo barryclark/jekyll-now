@@ -3,8 +3,7 @@ layout: post
 title: hello-there
 published: true
 ---
-![]({{site.baseurl}}/_posts/kelly-sikkema-4JxV3Gs42Ks-unsplash.jpg)![kelly-sikkema-4JxV3Gs42Ks-unsplash.jpg]({{site.baseurl}}/_posts/kelly-sikkema-4JxV3Gs42Ks-unsplash.jpg)
-
+![]({{site.baseurl}}/https://github.com/Adi202001/adi202001.github.io/raw/master/images/logo_black.png)
 
 
 
