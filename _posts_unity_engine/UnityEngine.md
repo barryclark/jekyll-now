@@ -21,6 +21,15 @@ title: UnityEngine
 
 </div></details>
 
+## 이벤트 함수의 실행 순서
+
+[이벤트 함수의 실행 순서](https://docs.unity3d.com/kr/2021.3/Manual/ExecutionOrder.html)
+
+Unity 스크립트를 실행하면 사전에 지정한 순서대로 여러 개의 이벤트 함수가 실행됩니다. 이 페이지에서는 이러한 이벤트 함수를 소개하고 실행 시퀀스에 어떻게 포함되는지 설명합니다.
+
+## 주요 스크립트 API
+
+
 유니티의 주요 Scripting API입니다.
 
 <details><summary>Object.Instantiate</summary>
