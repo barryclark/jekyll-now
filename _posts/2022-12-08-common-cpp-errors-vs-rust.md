@@ -195,6 +195,7 @@ called clone because otherwise Rust would move the type out of our scope).
 All threads (including) main, just print the value of the shared integer. One problem:
 this program does not compile. The compiler will tell us that `Rc` does not
 implement the [`Send`](https://doc.rust-lang.org/nomicon/send-and-sync.html) trait.
+
 This is Rusts way, via the _type system_, to indicate whether it is safe to 
 _send_ a value to a different thread. This is important for types that carry 
 shared ownership semantics, like [`Rc<T>`](https://doc.rust-lang.org/std/rc/struct.Rc.html).
@@ -203,7 +204,9 @@ the reference counting is not atomic as it would be in `std::shared_ptr<T>`. The
 correct equivalent for an atomically reference counted shared pointer would be 
 the Rust type [`Arc`](https://doc.rust-lang.org/std/sync/struct.Arc.html). This
 type does implement `Send` and thus using `type SharedPtr = Arc` makes this 
-code compile. If we then tried to mutate the value from two different threads,
+code compile.
+
+Now if we tried to mutate the value from two different threads,
 we would find out that we cannot simply do that because we are missing a second
 fundamental trait for concurrency, which is [`Sync`](https://doc.rust-lang.org/nomicon/send-and-sync.html).
 This trait, again via the typesystem, indicates whether a value is safe to access
@@ -213,13 +216,19 @@ access from different threads, such as a mutex. I won't go into detail here, bec
 I have written a two part series comparing mutexes in Rust and C++ ([part 1](/blog/2020/mutexes-rust-vs-cpp/),
 [part 2](/blog/2020/rust-style-mutex-for-cpp/).
 
-The takeaway here is that Rust does prevent this type of thread-safety problem
-(and many more) by making thread safety part of the type system. It even presents
+The takeaway here is that Rust does indeed prevent this type of thread-safety problem
+(and many more) by making thread safety part of the type system. This even presents
 an opportunity for optimization by giving us non-atomically reference counted pointers
 that are only safe to use from one thread. We only pay for atomic counting if 
 we need it and we cannot forget to use it during a refactor because the compiler
 will tell us.
 
+# Bug \#6: A Vexing Parse that Only Pretends To Lock A Mutex
+
+This is a really curious one. Did you know that `std::string(foo);` is valid code
+and is parsed as `std::string foo;`? Both get us a default constructed instance
+of a string named `foo`. So far so good. Where this gets interesting is when
+we use the 
 
 # Endnotes
 
