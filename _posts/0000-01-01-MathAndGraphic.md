@@ -51,7 +51,6 @@ title: Math & Graphic
 
 ### PBR
 * [PhysicallyBasedRendering](/posts_math/PhysicallyBasedRendering)
-  * [Unreal 물리 기반 머티리얼](https://docs.unrealengine.com/5.0/ko/physically-based-materials-in-unreal-engine/)
 
 ## 구현
 

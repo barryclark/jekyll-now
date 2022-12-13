@@ -3,17 +3,41 @@ layout: post
 title: PhysicallyBasedRendering
 ---
 
+- [ ] 조금더 정리 및 이미지 가져오기
+- [ ] PBR을 더 찾아서 읽어보기 (이 페이퍼는 광대한 영역의 작은 아이디어 만을 제공합니다. 그리고 독자는 이 주제에 대해 더 읽을 것을 권장합니다.)
+- [ ] [GPU Gems](https://developer.nvidia.com/gpugems/gpugems/part-iii-materials/chapter-16-real-time-approximations-subsurface-scattering)
+
 > **주요 참고자료**
 > * MASTER THESIS no. 1375 Physically based rendering, Jure Ratkovic, Zagreb, April 2017
+> * [Unreal 물리 기반 머티리얼](https://docs.unrealengine.com/5.0/ko/physically-based-materials-in-unreal-engine/)
 
-# PBR이란?
-물리학 기반 렌더링(Physically based rendering, PBR)은 쉐이딩 모델들 다음과 같이 둡니다. 최고레벨의 현실성과 정확한 빛 모델과 물질간의 상호작용을 통하여 최고 레벨의 렌더링 퀄리티를 시도하도록 합니다. 이전의 쉐이딩 모델, Phong, Blinn-Phong등 은 속임수(adhoc, 임시변통가설 ????)입니다. 이 의미는 다음과 같은 것에서 나왔기 때문입니다. 다양한 라이팅 조건 밑의 관찰되는 오브젝트나 유사한 결과를 내도록 발명한 쉐이딩 공식들 말입니다.  반대로 여기에서는, PBR의 쉐이딩 공식들은 다음의 것들로 부터 도출됩니다. 빛의 상호작용 법칙들 말입니다. 물리학적 컨셉들, 확산, 반사 그리고 에너지 보존등은 다음의 아래에서 연구됩니다. 엄격한 수학적 프레임워크, 물리학적으로 정확한 쉐이딩 공식을 제공하기 위한)아래서 말입니다.
+# PBR(Physically based rendering)이란?
+**물리기반 렌더링(Physically based rendering, PBR)은 이름과는 반대로 표면이 현실의 라이트 작용 방식을 모방한다는 뜻입니다.** PBR 원칙에 부합하는 머티리얼은 아티스트의 직관에만 의존하여 파라미터를 세팅하는 셰이딩 워크플로보다 더 정확하고 자연스럽게 보입니다. **PBR은 최고레벨의 현실성과 정확한 빛 모델과 물질간의 상호작용을 통하여 최고 레벨의 렌더링 퀄리티를 시도하도록 쉐이딩 모델을 둡니다.** PBR의 쉐이딩 공식들은 빛의 상호작용 법칙들로 부터 도출됩니다. 물리학적 개념들, **확산, 반사 그리고 에너지 보존등**은 엄격한 수학적 프레임워크, 물리학적으로 정확한 쉐이딩 공식을 제공하기 위한)아래서 연구됩니다.
 
-최근 몇년간, 그래픽 처리 수용량의 증가로, 물리기반 렌더링은, 실시간 처리 제품에 폭넓게 적용되었습니다. 게임 같은 것들요. 하지만 이러한 산업의 관심사로 인해, PBR 필드의 개발은 매우 빠릅니다. PBR과 블림 퐁 모델의 퍼포먼스 차이는 (쉐이딩 모델들에 대해서) 무시할 수 있습니다.(negligible) 많은 현대의 PC grade GPU에서요. PBR모델에 대한 몇 가지 더 많은 셰이더 지침에 해당하기 때문입니다.(????) 이러한 사실은 우얼성을 증언합니다.(testify to the superiority, ??) PBR이 다른 물리적 기반 쉐이딩 모델에 대해서요. PBR의 단점은(drawbacks) 높은 스타일라이즈 그래픽에 대한 상대적으로(relatively) 낮은 적용 가능성입니다. (비록 최근에 많은 게임들이 PBR과 함게 스타일라이즈된 그래픽을 성공적으로 사용했습니다.) PBR에 비해 BlinnPhong의 작은 성능 우위는 매우 제한된 하드웨어 환경에서 문제가 될 수 있습니다.  모바일 플랫폼 같은데서요. 이 페이퍼는 광대한 영역의 작은 아이디어 만을 제공합니다. 그리고 독자는 이 주제에 대해 더 읽을 것을 권장합니다.
+* 이전의 쉐이딩 모델, Phong, Blinn-Phong등은 속임수입니다. 이들은 다양한 라이팅 조건 밑의 관찰되는 오브젝트나 유사한 결과를 내도록 발명한 쉐이딩 공식들 입니다.
 
+**물리기반 머티리얼은 모든 라이팅 환경에서 동일하게 잘 작동합니다 또한 머티리얼 값이 덜 복잡해지고 상호 의존성도 줄어들기 때문에 머티리얼 제작 워크플로가 더 사용자 친화적입니다.** 이러한 장점은 픽사나 디즈니의 영화처럼 포토리얼하지 않은 레더링에도 적용됩니다. 최근 몇년간, 그래픽 처리 수용량의 증가로, 물리기반 렌더링은, 실시간 처리 제품(게임 같은 것들)에 폭넓게 적용되었습니다. 이러한 산업의 관심사로 인해, PBR 필드의 개발은 매우 빠릅니다.
+
+* PBR과 블림 퐁 모델의 퍼포먼스 차이는(쉐이딩 모델들에 대해서) 현대의 GPU에서 무시할 수 있습니다.
+* PBR의 단점은(drawbacks) 높은 스타일라이즈 그래픽에 대한 상대적으로(relatively) 낮은 적용 가능성입니다. (비록 최근에 많은 게임들이 PBR과 함게 스타일라이즈된 그래픽을 성공적으로 사용했습니다.) 
+* PBR에 비해 BlinnPhong의 작은 성능 우위는 매우 제한된 하드웨어 환경(모바일 플랫폼 같은데)에서 고려될 수 있습니다.
 ​
+
 ## 빛의 물리학(Physics of light)
-이 챕터는 충분히 설명해줄겁니다. 물리학적 기반 쉐이딩 모델 아래에 있는 있는 물리학들을 말입니다. 
+<center><div class="mermaid">
+graph RL
+
+Scattering(산란 Scattering)
+Reflection(반사 Reflection)
+Refraction(굴절 Refraction)
+Roughness(거칠기 Roughness)
+
+Scattering--->Reflection
+Scattering--->Refraction
+
+Reflection--미세 융기로 인한 거칠기-->Roughness
+
+</div></center>
 
 ### 빛과 물질의 상호작용
 빛은 전자기적 횡파입니다. 물질의 전자기적 특성의 차이에 따라 다른 상호작용을 합니다. 상호작용을 정의하는 물리적 특성은 굴절률(reflactive index)입니다. 이 지수는 복잡한 숫자입니다. 물질 안에서 빛의 속도를 결정하는 진정한 부분인, 그리고 파장을 얼만큼 흡수하닌지 결정하는 복잡한 부분입니다.
@@ -22,38 +46,78 @@ title: PhysicallyBasedRendering
 
 매질이 이질적(heterogeneous)일때 굴절률이 갑자기 작은 길이(over small distance)에서 변경되면, 빛은 매질에 부딪혀 scatters 됩니다. 가능한 모든 방향으로 말입니다. 빛의 분포는 가끔식 정규화 되지 않습니다. 대신 특정 방향으로 spike합니다.표면의 특성에 따라서 말입니다. 이것은 다음과 같이 주목할 가치가 있습니다. (It is worth noting) 모든 매체는 충분히(sufficiently) 먼 거리에 걸쳐 빛을 어느 정도 산란시키는 것 말입니다.
 
-세 번째 유형의 빛과 물질의 상호작용은, emission(방사)입니다. 방사 물질은 바꿉니다. 다른 형태의 에너지에서 빛으로 말입니다. 마치 텅스탠 전구 같습니다. 방사물질은 음영 처리와는 관련 없습니다. 광원(light sources)는 종종 수학적으로 모델링 됩니다.
+세 번째 유형의 빛과 물질의 상호작용은, emission(방사)입니다. 방사 물질은 바꿉니다. 다른 형태의 에너지에서 빛으로 말입니다. 마치 텅스탠 전구 같습니다. 방사물질은 음영 처리와는 관련 없습니다. 광원(light sources)은 종종 수학적으로 모델링 됩니다.
 
 ### 빛의 산란(Scattering)
-#### 평면경계의 산란
 
-물리학 기반 음영 처리는 대개 빛의 방사와 흡수를 고려하지 않습니다. 하지만 빛의 산란은 고려합니다. 대개의 경우 빛의 산란의 행동은 매우 복잡합니다. 그리고 분석적으로(analytically)풀 수 없습니다. 운좋게도, 음영 목적을 위해 유일한 중요한 경우는(for shading purposes the only important case is) 무한 평면 경계에서의 산란입니다. 왜냐하면 물질의 표면에 미세한 융기(microscopic bumps)가 있어도, 빛의 파장(wavelength)에 대해 무한하고 평면으로 취급할 수 있습니다. 이 경우에, 빛은 모든 방향으로 산란되지 않습니다. 하지만 각 ray(광선)는 정확히 두개로 분리됩니다. reflected(반사)와 refracted(굴절)로 말입니다. 반사의 각은  투사(incidence)각 과 같습니다. 굴절각은 Snell`s law에 의해 정의됩니다.
+물리학 기반 음영 처리는 대개 빛의 방사와 흡수를 고려하지 않습니다. 하지만 빛의 산란은 고려합니다. 대개의 경우 빛의 산란의 행동은 매우 복잡합니다. 그리고 분석적으로(analytically)풀 수 없습니다.
+
+**운좋게도, 음영 목적을 위해 유일한 중요한 경우는(for shading purposes the only important case is) 무한 평면 경계에서의 산란입니다. 왜냐하면 물질의 표면에 미세한 융기(microscopic bumps)가 있어도, 빛의 파장(wavelength)에 대해 무한하고 평면으로 취급할 수 있습니다.** 이 경우에, 빛은 모든 방향으로 산란되지 않습니다. 하지만 각 ray(광선)는 정확히 두개로 분리됩니다. reflected(반사)와 refracted(굴절)로 말입니다. 반사의 각은  투사(incidence)각 과 같습니다. 굴절각은 Snell`s law에 의해 정의됩니다.
 
 $$ \sin \theta _r=\frac{n_1\sin \theta _i}{n_2} $$
 
-n_1과 n_2는 각기(respectively) 머테리얼 1과 머테리얼 2의 굴절 지수 입니다. 이 광선 사이의 에너지는 보존됩니다. 반사와 굴절 광선의 에너지 합은 입사 광선의 에너지와 같습니다.(다를 수도 있음) 굴절과 반사사이의 에너지 비율은 Fresnel equations에 의해 정의됩니다. 이는 나중에 논의됩니다.
+$$n_1$$과 $$n_2$$는 각기(respectively) 머테리얼 1과 머테리얼 2의 굴절 지수 입니다. 이 광선 사이의 에너지는 보존됩니다. 반사와 굴절 광선의 에너지 합은 입사 광선의 에너지와 같습니다.(다를 수도 있음) 굴절과 반사사이의 에너지 비율은 Fresnel equations에 의해 정의됩니다.
 
-[프레넬 방정식(Fresnel equations)](https://ko.wikipedia.org/wiki/%ED%94%84%EB%A0%88%EB%84%AC_%EB%B0%A9%EC%A0%95%EC%8B%9D)
+### 프레넬 방정식(Fresnel equations)
+[프레넬 방정식(Fresnel equations)](https://en.wikipedia.org/wiki/Fresnel_equations)
 
-프레넬 방정식(Fresnel equations) 또는 프레넬 공식(Fresnel`s formulas)은 반사계수와 투과계수에 관한것으로 한 매질과 광학적 특성 즉, 굴절률이 다른 매질의 계면에서 반사 또는 투과 진폭을 입사진폭으로 나눈 값을 말한다. 프랑스의 물리학자 오귀스탱 장 프레넬이 유도하였다. 
+프레넬 방정식(Fresnel equations) 또는 프레넬 공식(Fresnel`s formulas)은 반사계수와 투과계수에 관한것으로 한 매질과 광학적 특성 즉, 굴절률이 다른 매질의 계면에서 반사 또는 투과 진폭을 입사진폭으로 나눈 값을 말한다.
 
-#### 반사
-현실세계에서, 거울과 같이 정확하게 평평한(polished) 표면을 가지고 있지 않습니다. 대부분은 미세한 융기를 가지고 있습니다. 융기는 픽셀보다 작습니다. 하지만 빛의 파장보다는 깁니다. 이러한 종류의 표면은 다음과 같이 모델링됩니다. 미세한 광학적(optically)으로 평평한 표면의 대규모 집합으로 말입니다. 각각의 작은 표면의 빛의 반사는 다른 각을 가집니다.
+<center><div markdown="1">
 
-PBR모델에서 이러한 표면특성을 파라메터화 하면 roughness라 합니다. 표면이 광학적으로 표면일 경우, 러프니스 파라메터값은 0입니다. 반면 값이 1이라면 최대 러프니스 값을 가리킵니다. 이는 주목할 만합니다. 표면이  감각이 같게 보인다는 점에서요. 사람의 눈이나 촉감에서요. 예를 들어, 두개의 다른 물체가 있을 때 (그림 2.5) 만졌을 때 똑같이 부드럽게 보입니다. 하지만 오른쪽은 마이크로스코픽 크기에서 더 거칩니다.
+![Fresnel equation](/images/300px-Fresnel.png)
 
-#### 굴절
-물질의 흡수력과 구성이 빛의 굴절이 일어나는 일을 결정합니다. 금속은 매우 높은 흡수력을 가지고 있습니다. 따라서 물질에서 나오는 굴절이 없습니다. 다른 의미로, 물질은 유리는 매우 낮은 흡수율을 가지고 있습니다. 따라서 굴절된 빛은 볼륨을 온전히 통과할 수 있습니다. 흡수 없이 말입니다.
+</div></center>
 
-두개의 극단적인 유전체(dielectric)물질에서, 유전체는 일정량의 빛을 흡수합니다. 하지만 구성물들은 빛이 물질을 방해받고 통과하는 것을 허용하지 않습니다. 유리와 같이 말입니다. 대신에 빛은 입자에 대하여 산란합니다. 오브젝트의 표면 아래에서요. 그리고 일부의 빛은 같은 표면으로 다시 나가게 됩니다. 이러한 현상을 subsurface scattering 또는 diffusion이라고 합니다.
+광선 $$IO$$ 방향의 입사 평면파는 점 $$O$$에서 굴절률 $$n_1$$ 및 $$n_2$$의 두 매질 사이의 인터페이스에 충돌합니다. 파동의 일부는 $$OR$$방향으로 반사되고 일부는 $$OT$$방향으로 굴절됩니다. 입사광선, 반사광선 및 굴절광선이 결계면의 법선에 대해 이루는 각도는 각각 $$\theta_i$$, $$\theta_r$$ 및 $$\theta_t$$로 지정됩니다. 이 각도 사이의 관계는 반사 법칙에 의해 제공됩니다.
 
-쉐이딩에서 디퓨전을 모델링하는 것은 표면 아래에서 산란하는 크기에 의해 결정됩니다. 만일 모든 거리가 (모든 광선이 표면에서 들어오는 진입과 나가는 부분까지의 거리) 픽셀보다 작다면, 지역적으로 diffusion을 계산할 수 있습니다. 아니라면, 특별한 non-local subsurface scattering 랜더링 기술이 필요합니다. 예를 들어 사람의 피부와같은, 왁스 또는 충분히 얇은 유전체 물질등이요.
+$$\theta_1=\theta_r$$    
+
+$$n_1\sin\theta_i = n_2\sin\theta_t$$
+
+### 반사(Reflection)
+현실세계에서, 거울과 같이 정확하게 평평한(polished) 표면을 가지고 있지 않습니다. 대부분은 미세한 융기를 가지고 있습니다. 융기는 픽셀보다 작습니다. 하지만 빛의 파장보다는 깁니다. 이러한 종류의 표면은 미세한 광학적(optically)으로 평평한 표면의 대규모 집합으로 모델링됩니다. 각각의 작은 표면의 빛의 반사는 다른 각을 가집니다.
+
+**PBR모델에서 이러한 표면특성을 파라메터화 하면 러프니스(Roughness)라 합니다. 표면이 광학적으로 평면일 경우, 러프니스 파라메터값은 0입니다. 반면 값이 1이라면 최대 러프니스 값을 가리킵니다.**
+
+### 거칠기(Roughness)
+러프니스는 머티리얼 표면이 거칠거나 부드러운 정도를 제어합니다. 머티리얼에서 러프니스 입력은 **머티리얼에 나타나는 리플렉션이 얼마나 희미하거나 선명한지를 결정합니다. 이는 표면이 사람의 눈이나 촉감에서 감각과 같게 보인다는 점에서 주목할 만합니다.**
+
+거친 재질에 반사된 빛은 부드러운 재질보다 여러 방향으로 퍼져 분산되며, 가끔 미세한 반사가 나타나기도 합니다. 매끄러운 표면에서는 빛이 더 균등하게 반사되므로 선명하고 집중된 리플렉션 또는 스페큘러 하이라이트가 나타납니다.
+
+<center><div markdown="1">
+
+![비금속 러프니스에 따른 변화](https://docs.unrealengine.com/5.0/Images/designing-visuals-rendering-and-graphics/materials/physically-based-materials/roughness_nonmetal.png)
+![금속 러프니스에 따른 변화](https://docs.unrealengine.com/5.0/Images/designing-visuals-rendering-and-graphics/materials/physically-based-materials/roughness_metal.png)
+
+</div></center>
+
+### 굴절(Refraction)
+**물질의 흡수력과 구성이 빛의 굴절이 일어나는 일을 결정합니다.** 금속은 매우 높은 흡수력을 가지고 있어서 물질에서 나오는 굴절이 없습니다. 반대로 유리는 매우 낮은 흡수율을 가지고 있습니다. 따라서 굴절된 빛은 볼륨을 흡수 없이 온전히 통과할 수 있습니다.
+
+두개의 극단적인 유전체물질에서, 유전체는 일정량의 빛을 흡수합니다. 하지만 유리와 같이 구성물들은 빛이 물질을 방해받고 통과하는 것을 허용하지 않습니다. **대신에 빛은 입자에 대하여 오브젝트의 표면 아래에서 산란합니다. 그리고 일부의 빛은 같은 표면으로 다시 나가게 됩니다. 이러한 현상을 Subsurface scattering 또는 Diffusion이라고 합니다.**
+
+* 유전체(dielectric material)는 전기장 안에서 극성을 지니게 되는 절연체입니다.
+
+<center><div markdown="1">
+
+![Subserface scattering](https://developer.nvidia.com/sites/all/modules/custom/gpugems/books/GPUGems/elementLinks/fig16-04.jpg)
+
+**Subsurface scattering**
+
+![Diffusion](/images/pbr_theory_refl_diff.png)
+
+**Diffusion**
+
+</div></center>
+
+**쉐이딩에서 디퓨전을 모델링하는 것은 표면 아래에서 산란하는 크기에 의해 결정됩니다.** 만일 모든 거리가 (모든 광선이 표면에서 들어오는 진입과 나가는 부분까지의 거리) 픽셀보다 작다면, 지역적으로 Diffusion을 계산할 수 있습니다. 아니라면, 예를 들어 사람의 피부와같은, 왁스 또는 충분히 얇은 유전체 물질등은 특별한 non-local subsurface scattering 랜더링 기술이 필요합니다.
 
 ## PBR 수학적 모델
 이 챕터에서는 quantitative 수학 모델을 제공할 것입니다. PBR을 위해서요.
 
 ### 반사 공식​
-주요 방상량은 쉐이딩을 위해서 사용됩니다. 방사량을 위해서요. (symbol L). 비록 방사는 스팩트럼 양입니다. 랜더링 목적으로 대부분 RGP 세개로 저장되는 것 말이죠. 방사가 나가는 특정 지점(L_0)는 방사가 들어오는 지점(L_i)의 함수입니다. 이 모델은 대개 사용됩니다. reflectance equation을 묘사하기 위해서요.
+주요 방상량은 쉐이딩을 위해서 사용됩니다. 방사량을 위해서요. (symbol L). 비록 방사는 스팩트럼 양입니다. 랜더링 목적으로 대부분 RGB 세개로 저장되는 것 말이죠. 방사가 나가는 특정 지점(L_0)는 방사가 들어오는 지점(L_i)의 함수입니다. 이 모델은 대개 사용됩니다. reflectance equation을 묘사하기 위해서요.
 
 $$L_0\left(w_0\right)=\int _{\Omega }^{\ }f\left(w_0,\ w_i\right)\otimes L_i\left(w_i\right)\left(\underline {n\cdot w_i}\right)dw_i$$
 
@@ -253,3 +317,6 @@ specular image를 미리 계산하는 것은 불가능하지 않습니다. 뷰 �
 PBR쉐이딩 모델의 경계선은 albedo로 파라메터화 될 수 있습니다. specular, surface, rougness로요. 비록 블림 퐁 모델은 유사하게 diffuse, specular 그리고 glossiness로 파라메터화 하지만, 이 파라메터그룹은 매우 다른 의미를 가지고 있습니다. 다음과 같은 이유로요. 같은 파라메터를 각각의 모델이 입력하고 결과를 비교했을 때 유효하지 않습니다. 각 모델이 생성할 수 있는 그래픽 충실도를 완전히 활용하려면 각 모델에 대해 별도의 매개변수 세트를 만들어야 합니다.(??? A separate set of parameters should be made for each model in order to fully utilize(활용하다, 이용하다) the graphical fidelity(충실도? 충실) each model can produce)
 
 더 나아가, 두 모델을 비교하는 절대적인 방법은 없습니다. 비교는 일반적으로 렌더링된 이미지의 인지된 시각적 정확성을 비교하여 이루어집니다. 내 메모와 함께 그림 4.6에서 4.8은 각 모델로 렌더링된 동일한 장면을 나타냅니다.
+
+## Unreal PBR
+[Unreal 물리 기반 머티리얼](https://docs.unrealengine.com/5.0/ko/physically-based-materials-in-unreal-engine/)
