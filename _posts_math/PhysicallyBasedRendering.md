@@ -4,6 +4,9 @@ title: PhysicallyBasedRendering
 ---
 
 - [ ] 조금더 정리 및 이미지 가져오기
+- [ ] 언리얼 각각의 파라메터가 어디서 나오는지 정리학
+- [ ] 수학공식을 개념 설명 다음에 옮기기
+- [ ] Implement를 구현하기
 - [ ] PBR을 더 찾아서 읽어보기 (이 페이퍼는 광대한 영역의 작은 아이디어 만을 제공합니다. 그리고 독자는 이 주제에 대해 더 읽을 것을 권장합니다.)
 - [ ] [GPU Gems](https://developer.nvidia.com/gpugems/gpugems/part-iii-materials/chapter-16-real-time-approximations-subsurface-scattering)
 
