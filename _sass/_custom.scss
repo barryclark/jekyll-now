@@ -270,3 +270,60 @@ nav {
 		background-color: $color;
 	}
 }
+
+.banner-below-header {
+	position: relative;
+	div {
+		position: absolute;
+		bottom: 60px;
+		left: 23%;
+		@include mobile {
+			bottom: 200%;
+			left: 17%;
+		}
+	}
+	svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 22px;
+		height: 22px;
+		color: white;
+		animation: bounceLeft ease 2s infinite;
+		@include mobile {
+			top: -3px;
+		}
+	}
+	strong {
+		display: block;
+		color: white;
+		@include mobile {
+			font-size: 80%;
+		}
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+		margin-top: -1.75rem;
+		margin-bottom: 1.5rem;
+		border-radius: .5rem;
+		@include mobile {
+			max-width: 100vw;
+			margin-left: -20px;
+			margin-right: -20px;
+			border-radius: 0;
+		}
+	}
+}
+
+@keyframes bounceLeft {
+	0% {
+		margin-left: -35px;
+	}
+	50% {
+		margin-left: -25px;
+	}
+	100% {
+		margin-left: -35px;
+	}
+}
