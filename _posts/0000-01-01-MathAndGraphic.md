@@ -10,7 +10,7 @@ title: Math & Graphic
 > 
 > 하는 것을 목적으로 만들어졌습니다.
 
-# Math
+## Math
 <details><summary>Books</summary>
 <div markdown="1">
 
@@ -43,18 +43,17 @@ title: Math & Graphic
 * [Orientation](/posts_math/Orientation)
     - Quaternion
 
-# PBR
-* [PhysicallyBasedRendering](/posts_math/PhysicallyBasedRendering)
-  * [Unreal 물리 기반 머티리얼](https://docs.unrealengine.com/5.0/ko/physically-based-materials-in-unreal-engine/)
-
-
-# Graphic
+## Graphic
 - [ ] Unity Shader
 - [ ] Wiper퀄리티를 높이고 어떻게 만들었는지 작성하기
 - [ ] Test01의 내용을 정리해야함
 - [ ] 간접광 어떻게 주었나 보았지만, 조명이었습니다.
 
-# 구현
+### PBR
+* [PhysicallyBasedRendering](/posts_math/PhysicallyBasedRendering)
+  * [Unreal 물리 기반 머티리얼](https://docs.unrealengine.com/5.0/ko/physically-based-materials-in-unreal-engine/)
+
+## 구현
 
 <details><summary>Wiper</summary>
 <div markdown="1">
