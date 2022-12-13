@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (FACULTY) MASTER THESIS no. 1375 Physically based rendering, Jure Ratkovic, Zagreb, April 2017
+title: PhysicallyBasedRendering
 ---
 
 ZAGREB 대학교

@@ -3,6 +3,13 @@ layout: post
 title: Math & Graphic
 ---
 
+> 이페이지는
+> 
+> 1. 엔진을 이미 능숙하게 사용할 줄 알며
+> 2. 수학식이나 구현방법이 기억이 안날 경우 참고
+> 
+> 하는 것을 목적으로 만들어졌습니다.
+
 # Math
 <details><summary>Books</summary>
 <div markdown="1">
@@ -37,8 +44,8 @@ title: Math & Graphic
     - Quaternion
 
 # PBR
-- [x] MASTER THESIS no. 1375 Physically based rendering, Jure Ratkovic, Zagreb, April 2017
-
+* [PhysicallyBasedRendering](/posts_math/PhysicallyBasedRendering)
+  * [Unreal 물리 기반 머티리얼](https://docs.unrealengine.com/5.0/ko/physically-based-materials-in-unreal-engine/)
 
 
 # Graphic
