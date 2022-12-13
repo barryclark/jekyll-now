@@ -5,7 +5,7 @@ title: How to buy, sell, spend and accept Bitcoin in Greece
 
 ![](/images/Bitcoin_4_year_cycle.jpeg)
 
-Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0/), Thessaloniki [#1](https://www.meetup.com/BlockchainGreece-1/) [#2](https://www.meetup.com/Greek-Cryptocurrency-community/), [Nicosia and Limassol](https://www.meetup.com/Paphos-Bitcoin-Cryptocurrency-Meetup) or [Paphos](https://www.meetup.com/Paphos-Bitcoin-Cryptocurrency-Meetup). Join our [Slack](https://slackinvite.weacceptbitcoin.gr/) (online chat).
+Come to one of our meetups in [Athens](https://www.meetup.com/BlockchainGreece-0/), Thessaloniki [#1](https://www.meetup.com/BlockchainGreece-1/) [#2](https://www.meetup.com/Greek-Cryptocurrency-community/), [Nicosia](https://www.meetup.com/nicosia-bitcoin/) or [Paphos](https://www.meetup.com/Paphos-Bitcoin-Cryptocurrency-Meetup). Join our [Slack] (online chat, email us for an invite).
 
 - [Which companies, stores and professionals accept Bitcoin in Greece?](#merchant-table)
 - [How can I buy Bitcoin in Greece?](#buybitcoin)
@@ -80,7 +80,7 @@ Cryptocurrency in Greece is currently only regulated from an AML (Anti Money Lau
 - The [Hellenic Blockchain Hub](http://blockchain.org.gr) non-profit organization
 - The [Cyprus Blockchain Technologies](http://cybt.eu) non-profit organization
 
-Last update: 2021-09-27
+Last update: 2022-12-14
 
 <!-- <div class="posts">
   {% for post in site.posts %}
