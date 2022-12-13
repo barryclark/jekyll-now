@@ -1,11 +1,51 @@
 ---
 layout: post
-title: Graphic
+title: Math & Graphic
 ---
 
+# Math
+<details><summary>Books</summary>
+<div markdown="1">
+
+- [ ] [선형대수학 Linear Algebra](http://matrix.skku.ac.kr/2015-Album/BigBook-LinearAlgebra-2015.pdf)
+- [ ] [수치해석](http://www.ktword.co.kr/word/abbr_view.php?nav=&m_temp1=1064&id=751)
+- [ ] [NumericalRecipesinC](http://www.grad.hr/nastava/gs/prg/NumericalRecipesinC.pdf)
+- [ ] GamePhysicsCookbook (game-physics-cookbook_compress)
+- [ ] [LIBIGL](https://libigl.github.io/tutorial/)
+- [ ] [Interactive Mesh Processing with libigl in Unreal Engine 4.24](http://www.gradientspace.com/tutorials/2020/1/2/libigl-in-unreal-engine)
+
+</div></details>
+
+* [Vector](/posts_math/Vector)
+    - 벡터
+    - 3차원 공간에서의 벡터
+    - 벡터 공간
+* [Linear algebra](/posts_math/Linear_Algebra)
+    - 선형성
+    - 선형 결합
+    - 유클리드 공간
+    - 벡터 공간
+    - 선형 변환
+* [Matrix](/posts_math/Matirx)
+    - 행렬
+* [Linear Transformation](/posts_math/Linear_Transformation)
+    - Affine Space
+    - Triangle (삼각형)
+    - Affine Transformation (아핀 변환)
+    - Homogeneous Coordinates (동차 좌표계)
+* [Orientation](/posts_math/Orientation)
+    - Quaternion
+
+# PBR
+- [x] MASTER THESIS no. 1375 Physically based rendering, Jure Ratkovic, Zagreb, April 2017
+
+
+
+# Graphic
+- [ ] Unity Shader
 - [ ] Wiper퀄리티를 높이고 어떻게 만들었는지 작성하기
 - [ ] Test01의 내용을 정리해야함
-- [ ]  간접광 어떻게 주었나 보았지만, 조명이었습니다.
+- [ ] 간접광 어떻게 주었나 보았지만, 조명이었습니다.
 
 ## Unreal Material
 
@@ -50,7 +90,7 @@ Shading Model(셰이딩 모델)은 머티리얼이 빛을 받아 반사하는 �
 
 [Unreal Material Library](https://github.com/kbmhansungb/UnrealMaterialLibrary)
 
-## 작업물
+# 구현
 
 <details><summary>Wiper</summary>
 <div markdown="1">
