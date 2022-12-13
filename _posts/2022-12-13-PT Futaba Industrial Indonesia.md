@@ -2,7 +2,7 @@
 layout: post
 title: PT Futaba Industrial Indonesia
 author: Pak Budi
-date: 2022-12-13 07:26:51 +07:00
+date: 2022-12-13 07:26:41 +07:00
 ---
 
 **PT Futaba Industrial Indonesia** adalah sebuah perusahaan manufaktur yang bergerak dalam bidang produksi komponen otomotif khususnya untuk kendaraan roda empat.
