@@ -4,6 +4,20 @@ title: PhysicallyBasedRendering
 ---
 
 - [ ] 조금더 정리 및 이미지 가져오기
+  - [ ] ​(absortion)균등한 굴절율을 갖는 매개의 볼륨을 통과할 때, 특정 길이의 빛을 흡수하면 색깔을 가짐.
+  - [ ] (scatter)매질이 이질적일때 굴절률이 갑자기 작은 길에서 변경되면, 빛은 가능한 모든 방향으로 산란됨.
+  - [ ] (emission)다른 형태의 에너지에서 빛으로 에너지가 변경됨. ex)텅스텐 전구
+  - [ ] 평면 경계의 산란에서 광선은 반사와 굴절로 분리됨.
+  - [ ] 광선 사이의 에너지는 보존됨. 반사와 굴절의 에너지합은 입사의 에너지와 같음.
+  - [ ] (굴절 사이의 에너지 비율은 Fresnel equations에 의해 정의됨)
+  - [ ] (roughness)표면이 마이크로스코프의 융기가 있고, 이를 광학적으로 평평한 표면의 대규모 집합으로 모델링함. 각각의 작은 표면의 빛의 반사는 다른 각을 가짐. 특이한 점은 사람눈에는 표면의 감각이 같게 보인다는 점.
+  - [ ] (subsurface scattering or diffusion)오브젝트의 표면 아래에서 산란하여 들어온 표면으로 나가는 것을 의미함.
+  - [ ] (local subsurface scattering)광선이 표면에서 들어오는 진입과 나가는 부분까지의 거리가 픽셀보다 작다면 지역적으로 diffusion을 계산할 수 있음.
+  - [ ] 반사 공식을 다음과 같이 생각할 수 있습니다.    
+  (나가는 방사) = 합{ BRDF * (들어오는 방사) * (Normal과 IncomingLightDirection의 clamp된 코사인 값) *dw}
+- [ ] 언리얼 각각의 파라메터가 어디서 나오는지 정리학
+- [ ] 수학공식을 개념 설명 다음에 옮기기
+- [ ] Implement를 구현하기
 - [ ] PBR을 더 찾아서 읽어보기 (이 페이퍼는 광대한 영역의 작은 아이디어 만을 제공합니다. 그리고 독자는 이 주제에 대해 더 읽을 것을 권장합니다.)
 - [ ] [GPU Gems](https://developer.nvidia.com/gpugems/gpugems/part-iii-materials/chapter-16-real-time-approximations-subsurface-scattering)
 
@@ -31,9 +45,14 @@ Scattering(산란 Scattering)
 Reflection(반사 Reflection)
 Refraction(굴절 Refraction)
 Roughness(거칠기 Roughness)
+SubsurfaceScattering(Subsurface scattering)
+Specular(Specular)
 
 Scattering--->Reflection
 Scattering--->Refraction
+
+Refraction--굴절되어 다시 나오는 빛-->SubsurfaceScattering
+SubsurfaceScattering--->Specular
 
 Reflection--미세 융기로 인한 거칠기-->Roughness
 
@@ -58,7 +77,46 @@ $$ \sin \theta _r=\frac{n_1\sin \theta _i}{n_2} $$
 
 $$n_1$$과 $$n_2$$는 각기(respectively) 머테리얼 1과 머테리얼 2의 굴절 지수 입니다. 이 광선 사이의 에너지는 보존됩니다. 반사와 굴절 광선의 에너지 합은 입사 광선의 에너지와 같습니다.(다를 수도 있음) 굴절과 반사사이의 에너지 비율은 Fresnel equations에 의해 정의됩니다.
 
-### 프레넬 방정식(Fresnel equations)
+### 반사(Reflection)
+현실세계에서, 거울과 같이 정확하게 평평한(polished) 표면을 가지고 있지 않습니다. 대부분은 미세한 융기를 가지고 있습니다. 융기는 픽셀보다 작습니다. 하지만 빛의 파장보다는 깁니다. 이러한 종류의 표면은 미세한 광학적(optically)으로 평평한 표면의 대규모 집합으로 모델링됩니다. 각각의 작은 표면의 빛의 반사는 다른 각을 가집니다.
+
+**PBR모델에서 이러한 표면특성을 파라메터화 하면 러프니스(Roughness)라 합니다. 표면이 광학적으로 평면일 경우, 러프니스 파라메터값은 0입니다. 반면 값이 1이라면 최대 러프니스 값을 가리킵니다.**
+
+#### 양방향 반사도 분포 함수(BRDF, Birdrectional reflectance distribution function)
+주요 방상량은 쉐이딩을 위해서 사용됩니다. 방사량을 위해서요. (symbol L). 비록 방사는 스팩트럼 양입니다. 랜더링 목적으로 대부분 RGB 세개로 저장되는 것 말이죠. 방사가 나가는 특정 지점($$L_0$$)는 방사가 들어오는 지점($$L_i$$)의 함수입니다. 이 모델은 대개 사용됩니다. reflectance equation을 묘사하기 위해서요.
+
+$$L_0\left(w_0\right)=\int _{\Omega }^{\ }f\left(w_0,\ w_i\right)\otimes L_i\left(w_i\right)\left(\underline {n\cdot w_i}\right)dw_i$$
+
+나가는 방사는 $$w_0$$로 주어집니다. 지역 조명 세이딩을 위한 $$w_0$$는 view vector v입니다. 이는 쉐이딩 포지션의 카메라에서 가리키는 단위 벡터입니다. 들어가는 방사인 $$w_i$$는 빛의 벡터 입니다. 라이트 소스에서 쉐이딩 포지션으로 가리킵니다. 정수(integral) 오메가는 노말 $$n$$으로 정의되는 반구입니다. 
+
+이 공식에서, 반구로 들어오는 모든 방사의 합과 나가는 방사, 즉 들어오는 광선과 표면의 노말의 각으로 가중된 들어오는 모든 방사들은 Bidrectional reflectance distribution function(양방향 반사도 분포 함수, BRDF)로 가중됩니다. 이 함수는 나가는 광선을 가지고, 최종적으로 나가는 방사에 대해서 들어오는 광선이 얼만큼 기여하는지를 구합니다.
+
+BRDF는 scatter에 대한 특정한 분산이나 들어오는 빛의 반사로 표현됩니다. 이는 4개의 각으로 파라메터화 됩니다. 이는 물리적으로 그럴듯 합니다. **BRDF는 반드시 reciprocal이여 합니다.**
+
+$$f\left(w_0,\ w_i\right)=f\left(w_i,w_0\right)$$
+
+그리고 **에너지가 보존되어야 합니다.**
+
+$$\forall w_i,\ \int _{\Omega }^{\ }f\left(w_0,w_i\right)\left(\underline {n\cdot w_i}\right)dw_0\le 1$$
+
+가능한 모든 나가는 방향 $$w_0$$에 대해 코사인 계수를 곱한 BRDF의 적분은 가능한 모든 들어오는 방향 $$w_i$$에 대해 1을 초과해서는 안됩니다. 이것은 다음과 같은 간단한 의미입니다. 나가는 모든 빛의 양은 들어오는 모든 빛의 양을 초과해서는 안된다입니다. reflection과 subsurface scattering은 매우 다른 현상입니다. 그리고 가끔 BRDF에서 분리하여 모델링 되기도 합니다. 
+
+**subsurface scattering을 묘사하는 용어는 specular입니다.** 실시간 shading을 위한 두개의 가장 일반적인 BRDF를 설명합니다. 첫번째는 diffuse를 위한 Lambert`s BRDF와 specular를 위한 Cook-Torrance BRDF입니다.
+
+#### Cook-Torrance specular BRDF
+- [ ] 표면 법선 $$n$$이 $$l$$과 $$v$$사이의 절반 벡터 $$h$$와$$ $$동일한 미세면만이 반사에 기여할 수 있습니다.
+
+Cook-Torrance specular BRDF는 1981에 만들어 졌습니다. 그리고 필름 렌더링과 off-line 렌더링에 널리 이용되었습니다. 최근에 그래픽 프로세스는 Cook-Torrance model을 실시간으로 실행시킬 수 있을 만큼 발전했습니다. 이로인해 전방위 적으로 PBR을 비디오 게임에서 실시간으로 돌리는 결과를 가져왔습니다.
+
+Cook-Torrance BRDF는 microfacet theory에 바탕을 두고 있습니다. 이 이론에서 표면은 광학적으로 평평한 작은 표면의 집합으로 다룹니다. 각각의 이 microfacets는 normal $$n$$을 가집니다. 뿐만 아니라(futhermore) 표면의 한 점을 쉐이딩 할 때, 들어오는 빛의 벡터는 $$l$$입니다. 그리고 나가는 방향은 $$v$$입니다. 계산해야 하는 것은 $$v$$방향에서 반사되는 $$l$$방향에서 오는 빛의 비율입니다. 표면 법선 $$n$$이 $$l$$과 $$v$$사이의 절반 벡터 $$h$$와$$ $$동일한 미세면만이 반사에 기여할 수 있습니다.
+
+Microfacet로 들어오고 microfacet로 나가는 빛은 근처의 기형의 표면에 의해 방해받습니다. 이 현상은 shadowing 그리고 masking으로 각각 불립니다. shadowed 그리고 masked된 microfacets는 반사에 기여하지 않습니다. 모든 반사에 기여하는 microfacets는 active microfacets로 불립니다. Cook-Torrance BRDF는 이러한 가정들로 부터 나옵니다. 그리고 다음의 공식을 따릅니다.
+
+$$f_{Cook-Torrance}\left(v,\ l\right)=\frac{F\left(l,h\right)G\left(l,v,h\right)D\left(h\right)}{4\left(n\cdot l\right)\left(n\cdot v\right)}$$
+
+이 방정식에서, $$F$$는 Fresnel reflectance 항입니다. $$G$$는 shadowing and masking 항입니다. $$D$$는 normal distribution 항입니다. 그리고 분모는 노말라이즈 팩터입니다.
+
+#### 프레넬 방정식(Fresnel equations)
 [프레넬 방정식(Fresnel equations)](https://en.wikipedia.org/wiki/Fresnel_equations)
 
 프레넬 방정식(Fresnel equations) 또는 프레넬 공식(Fresnel`s formulas)은 반사계수와 투과계수에 관한것으로 한 매질과 광학적 특성 즉, 굴절률이 다른 매질의 계면에서 반사 또는 투과 진폭을 입사진폭으로 나눈 값을 말한다.
@@ -75,10 +133,75 @@ $$\theta_1=\theta_r$$
 
 $$n_1\sin\theta_i = n_2\sin\theta_t$$
 
-### 반사(Reflection)
-현실세계에서, 거울과 같이 정확하게 평평한(polished) 표면을 가지고 있지 않습니다. 대부분은 미세한 융기를 가지고 있습니다. 융기는 픽셀보다 작습니다. 하지만 빛의 파장보다는 깁니다. 이러한 종류의 표면은 미세한 광학적(optically)으로 평평한 표면의 대규모 집합으로 모델링됩니다. 각각의 작은 표면의 빛의 반사는 다른 각을 가집니다.
+#### Fresnel reflectance
+프랜실 방정식은 빛의 행동을 묘사합니다. 다양한 지수적 반사를 가지며 materials를 통과할 때를요. shading 목적으로, Frsnel항은 반사되는 빛의 양으로 계산됩니다. 빛의 입사각과 재료의 굴절률의 함수로요. 각이 0도일때 각각의 재료의 반사는 특정 양의 빛을 반사합니다. 이것은 기본 반사율 입니다. 45도 각도에서 반사율은 비교적 일정하게 유지됩니다. 그리고 90도에 가까워지면 빠르게 100%에 가까워집니다.
 
-**PBR모델에서 이러한 표면특성을 파라메터화 하면 러프니스(Roughness)라 합니다. 표면이 광학적으로 평면일 경우, 러프니스 파라메터값은 0입니다. 반면 값이 1이라면 최대 러프니스 값을 가리킵니다.**
+이 현상의 근사값을 사용하는 모델은 Schlick`s function이라고 합니다.
+
+$$F_{Schlick}\left(F_0,\theta \right)=F_0+\left(1-F_0\right)\left(1-\cos \left(\theta \right)^5\right)$$
+
+여기서 specular BRDF 및 microfacets의 경우 입사각은 다음과 같습니다.
+
+$$\cos \left(\theta \right)=l\cdot h$$   
+
+$$F_{Schlick}\left(F_0,l,h\right)=F_0+\left(1-F_0\right)\left(1-\left(l\cdot h\right)^5\right)$$
+
+어떤 물질의 기본 반사는 들어오는 빛의 파장(wave length)의 함수가 일 수 있습니다(be). 이 현상은 금이나 구리의 색을 부여합니다(gives). PBR에서 $$F$$의 RGB 삼중항(triplet (term))으로 모델링 됩니다.
+
+#### Normal distribution term
+Normal 분포 항, NDF는 스칼라 함수(0개 이상의 파라메터를 받아 단 하나의 값을 반환하는 함수)입니다. h 방향으로 향하는 미세면 법선의 백분율을 제공하는 함수요. (that gives the percentage of microfacet normals oriented towards the direction h) 이 퍼센테이지는 높아지는 경향이 있습니다. h가 macroscopic surface의 노말 n으로 가까워 질 수록이요. 
+
+노말 분포의 함수 모델은 표면의 roughness로 파라메터화 됩니다. 보통요. alpha(roughness) 값은 0~1사이의 값입니다. NDF는 에너지를 보존하기위해 노말라이즈 팩터를 가지고 있어야 합니다. 다음의 제약으로 부터 파생된 노말라이즈 팩터요. (NDF가 파생됬다는 건가? 노말라이즈 팩터가 파생되었다는 건가?)
+
+$$\ \int _{\Omega }^{\ }D\left(h\right)\left(\underline {n\cdot h}\right)dw_i=1$$
+
+등방성(isotropic)의 경우 모든 NDF모델의 노말라이즈 팩터는 다음과 같습니다. 가장 자주 이용되는 NDF모델은 Trowbridge-Reitz GGX입니다. (? 어떻게 도출했는지 도저히 모르겠네. 지금은 넘어가야 하나?)
+
+$$isotropic\ case\ NDF`s\ normalization\ factor\ =\ \frac{1}{\alpha ^2\pi }$$
+
+$$D_{GGX}\left(h,\alpha \right)=\frac{\alpha }{\pi \left(\left(n\cdot h\right)^2\left(a^2-1\right)+1\right)^2}$$
+
+다른 중요한 모델은 Beckmann` NDF입니다.
+
+$$D_{Beckmann}\left(h,\alpha \right)=\frac{1}{\pi \alpha ^2\left(n\cdot h\right)^4}\exp \left(\frac{\left(n\cdot h\right)^2-1}{\alpha ^2\left(h\cdot h\right)^2}\right)$$
+
+이 효과의 roughness parameter는 그림 3.4와 같이 보일 수 있습니다.
+
+#### Geometric term
+기하학적(? Geoemtric) 또는 shadow masking 항은 다음과 같은 개연성 있는 output의 함수입니다. 주어진 normal h를 가지는 미세면은 들어오는 빛을 나가는 빛의 방향으로 반사할 수 있습니다. 다른말로 probability는 microfacets는 다른 microfacets로 마스크 되거나 쉐도우 되지 않는다 입니다. (오우,,, 이해 못함. 왜요?) NDF에서는 다양한 이론적 모델이 있습니다. 가장 중요한 모델은 Smith`s function입니다. G를 들어오는 빛과 보이는 부분으로 나눈 모델요.
+
+$$G_{Smith}\left(l,v,h\right)=G_1\left(l\right)G_1\left(v\right)$$
+
+G_1은 GGX같은 다른 모델이 될 수 있습니다.
+
+$$G_{GGX}\left(e\right)=\frac{2\left(n\cdot e\right)}{\left(n\cdot e\right)+\sqrt{a^2+\left(1+a^2\right)\left(n\cdot e\right)^2}}$$
+
+또는 Beckmann에서는
+
+$$c=\frac{n\cdot e}{\alpha \sqrt{1-\left(n\cdot e\right)^2}}$$    
+
+$$G_{Beckmann}\left(e\right)=\begin{cases}3.535c\ +2.181c^2&if\ c<1.6\ \\1&if\ c\ \ge 1.6\end{cases}$$
+
+이것으로 cook-torrance specular BRDF의 분석이 완료되었습니다. 벡만과 GGX항과 다른점은 다음 그림 3.5, 3.6 그리고 3.7에서 볼 수 있습니다.
+
+#### Lambert`s diffuse BRDF
+실시간 렌더링에서, 가장 자주 사용되는 diffuse BRDF는 Lambert`s BRDF입니다.
+
+$$f_{Lambert}\left(v,l\right)=\frac{c_{diff}}{\pi }$$
+
+이 BRDF는 사실 상수입니다. 무슨 뜻이냐면, 균일한(uniform) 확산(diffusion)을 모델링합니다. 들어오는 빛은 가능한 모든 방향으로 똑같이 산란 가능합니다. 이 파라메터는 종종 albedo 또는 diffuse color로 불립니다. 그리고 일반적으로 재료의 색상으로 생각되는 것과 밀접하게 일치합니다. (재료의 색상이 어떻게 diffuse BRDF가 되는지 모르겠는데?)
+
+반사율 방정식에 사용되는 BRDF는 Specular와 Diffuse BRDF로 구성(consists)됩니다. 하지만 어떻게 조합되든간에 에너지 보존법칙은 지켜집니다. 이것은 다양한 방법으로 달성될 수 있습니다. 가장 평범한 방법으로는 BRDF요소 간의 선형 보간을 통해서 할 수 있습니다. 어떤 계수(factor)냐면 주어진 음영 지점에서 물체의 반사율에 비례(proportional)하는 계수요. 이 성질을 만족시키는 인자는 diffuse Fresnel 항입니다.
+
+$$\cos \left(\theta \right)=v\cdot n$$    
+
+$$F_{diff}\left(F_0,v,n\right)=F_0+\left(1-F_0\right)\left(1-\left(v\cdot n\right)^5\right)$$
+
+마지막으로, 전체 BRDF는
+
+$$f\left(v,l\right)=f_{Lambert}\left(v\cdot l\right)\left(1-F_{diff}\right)+f_{Cook-Torrance}\left(v,l\right)F_{diff}$$
+
+그림 3.8에서 F_0의 값은 왼쪽 0에서 오른쪽 1로 변합니다. diffuse와 roughness는 유지된 채로요. 구체의 모양이 유전체에서 금속으로 어떻게 변하는지 볼 수 있습니다.(It can be seen how the sphere`s appearance changes from dieletric to metallic)
 
 ### 거칠기(Roughness)
 러프니스는 머티리얼 표면이 거칠거나 부드러운 정도를 제어합니다. 머티리얼에서 러프니스 입력은 **머티리얼에 나타나는 리플렉션이 얼마나 희미하거나 선명한지를 결정합니다. 이는 표면이 사람의 눈이나 촉감에서 감각과 같게 보인다는 점에서 주목할 만합니다.**
@@ -113,125 +236,7 @@ $$n_1\sin\theta_i = n_2\sin\theta_t$$
 
 **쉐이딩에서 디퓨전을 모델링하는 것은 표면 아래에서 산란하는 크기에 의해 결정됩니다.** 만일 모든 거리가 (모든 광선이 표면에서 들어오는 진입과 나가는 부분까지의 거리) 픽셀보다 작다면, 지역적으로 Diffusion을 계산할 수 있습니다. 아니라면, 예를 들어 사람의 피부와같은, 왁스 또는 충분히 얇은 유전체 물질등은 특별한 non-local subsurface scattering 랜더링 기술이 필요합니다.
 
-## PBR 수학적 모델
-이 챕터에서는 quantitative 수학 모델을 제공할 것입니다. PBR을 위해서요.
-
-### 반사 공식​
-주요 방상량은 쉐이딩을 위해서 사용됩니다. 방사량을 위해서요. (symbol L). 비록 방사는 스팩트럼 양입니다. 랜더링 목적으로 대부분 RGB 세개로 저장되는 것 말이죠. 방사가 나가는 특정 지점(L_0)는 방사가 들어오는 지점(L_i)의 함수입니다. 이 모델은 대개 사용됩니다. reflectance equation을 묘사하기 위해서요.
-
-$$L_0\left(w_0\right)=\int _{\Omega }^{\ }f\left(w_0,\ w_i\right)\otimes L_i\left(w_i\right)\left(\underline {n\cdot w_i}\right)dw_i$$
-
-나가는 방사는 w_0로 주어집니다. 지역조명세이딩을 위한 w_0는 view vector v입니다. 쉐이딩 포지션의 카메라에서 가리키는 단위 벡터요. 들어가는 방사인 w_i는 빛의 벡터 입니다. 라이트 소스에서 쉐이딩 포지션으로 가리킵니다. 정수(integral) 오메가는 반구입니다. 노말 n으로 정의되는 것 말이죠.
-
-이 공식에서, 나가는 방사는 비례합니다. 반구로 들어오는 모든 방사의 합과요. 들어오는 광선과 표면의 노말의 각으로 가중된 들어오는 모든 방사들이랑요. (? 제대로 이해한거 맞나?) 들어오는 방사도 가중됩니다. bidrectional reflectance distribution function(양방향 반사도 분포 함수, BRDF)로요. 이 함수는 들어오고 나가는 광선을 가지고, 들어오는 광선이 얼만큼 기여하는지를 구합니다. 최종적으로 나가는 방사에 대해서요. PBR모델과의 차이는 BRDF를 선택할 수 있다는 점입니다.
-
-​
-* ​(absortion)균등한 굴절율을 갖는 매개의 볼륨을 통과할 때, 특정 길이의 빛을 흡수하면 색깔을 가짐.
-* (scatter)매질이 이질적일때 굴절률이 갑자기 작은 길에서 변경되면, 빛은 가능한 모든 방향으로 산란됨.
-* (emission)다른 형태의 에너지에서 빛으로 에너지가 변경됨. ex)텅스텐 전구
-* 평면 경계의 산란에서 광선은 반사와 굴절로 분리됨.
-* 광선 사이의 에너지는 보존됨. 반사와 굴절의 에너지합은 입사의 에너지와 같음.
-* (굴절 사이의 에너지 비율은 Fresnel equations에 의해 정의됨)
-* (roughness)표면이 마이크로스코프의 융기가 있고, 이를 광학적으로 평평한 표면의 대규모 집합으로 모델링함. 각각의 작은 표면의 빛의 반사는 다른 각을 가짐. 특이한 점은 사람눈에는 표면의 감각이 같게 보인다는 점.
-* (subsurface scattering or diffusion)오브젝트의 표면 아래에서 산란하여 들어온 표면으로 나가는 것을 의미함.
-* (local subsurface scattering)광선이 표면에서 들어오는 진입과 나가는 부분까지의 거리가 픽셀보다 작다면 지역적으로 diffusion을 계산할 수 있음.
-* 반사 공식을 다음과 같이 생각할 수 있습니다.    
-  (나가는 방사) = 합{ BRDF * (들어오는 방사) * (Normal과 IncomingLightDirection의 clamp된 코사인 값) *dw}
-
-### BRDF
-BRDF는 scatter에 대한 특정한 분산이나 들어오는 빛의 반사로 표현됩니다. 이는 4개의 각으로 파라메터화 됩니다. 이는 물리적으로 그럴듯 합니다. BRDF는 반드시 reciprocal이여 합니다.
-
-$$f\left(w_0,\ w_i\right)=f\left(w_i,w_0\right)$$
-
-그리고 에너지가 보존되어야 합니다.
-
-$$\forall w_i,\ \int _{\Omega }^{\ }f\left(w_0,w_i\right)\left(\underline {n\cdot w_i}\right)dw_0\le 1$$
-
-가능한 모든 나가는 방향 w0에 대해 코사인 계수를 곱한 BRDF의 적분은 가능한 모든 들어오는 방향 wi에 대해 1을 초과해서는 안됩니다. (왜 이렇게 작성했는지 도출 없나? 흠...) 이것은 다음과 같은 간단한 의미입니다. 나가는 모든 빛의 양은 들어오는 모든 빛의 양을 초과해서는 안된다입니다. reflection과 subsurface scattering은 매우 다른 현상입니다. 그리고 가끔 BRDF에서 분리하여 모델링 되기도 합니다. subsurface scattering을 묘사하는 용어는 specular입니다. 실시간 shading을 위한 두개의 가장 일반적인 BRDF를 설명합니다. 첫번째는 diffuse를 위한 Lambert`s BRDF와 specular를 위한 Cook-Torrance BRDF입니다.
-
-### Cook-Torrance specular BRDF
-Cook-Torrance specular BRDF는 1981에 만들어 졌습니다. 그리고 필름 렌더링과 off-line 렌더링(???)에 널리 이용되었습니다. 최근에 그래픽 프로세스는 Cook-Torrance model을 실시간으로 실행시킬 수 있을 만큼 발전했습니다. 이로인해 전방위 적으로 PBR을 비디오 게임에서 실시간으로 돌리는 결과를 가져왔습니다.
-
-#### Microfacet theory
-Cook-Torrance BRDF는 microfacet theory에 바탕을 두고 있습니다. 이 이론에서 표면은 광학적으로 평평한 작은 표면의 집합으로 다룹니다. 각각의 이 microfacets는 normal m을 가집니다. 뿐만 아니라(futhermore) 표면의 한 점을 쉐이딩 할 때, 들어오는 빛의 벡터는 l입니다. 그리고 나가는 방향은 v입니다. 계산해야 하는 것은 v방향에서 반사되는 l방향에서 오는 빛의 비율입니다. 표면 법선 m이 l과 v사이의 절반 벡터 h와 동일한 미세면만이 반사에 기여할 수 있습니다. (normal m에 대해서 반사를 계산할 때 m=h만이 반사에 기여한다는 말인가?, 반사에 대해서 reflection공식을 생각하고, microfacets를 표면의 집합이라고 생각할 때, 이는 정확한 말인거 같은데, 적으면서 다시한번 말한 이유는 무엇일까?)
-
-microfacet로 들어오고 microfacet로 나가는 빛은 근처의 기형의 표면에 의해 방해받습니다. 이 현상은 shadowing 그리고 masking으로 각각 불립니다. shadowed 그리고 masked된 microfacets는 반사에 기여하지 않습니다. 모든 반사에 기여하는 microfacets는 active microfacets로 불립니다. Cook-Torrance BRDF는 이러한 가정들로 부터 나옵니다. 그리고 다음의 공식을 따릅니다.
-
-$$f_{Cook-Torrance}\left(v,\ l\right)=\frac{F\left(l,h\right)G\left(l,v,h\right)D\left(h\right)}{4\left(n\cdot l\right)\left(n\cdot v\right)}$$
-
-이 방정식에서, F는 Fresnel reflectance 항입니다. G는 shadowing and masking 항입니다. D는 normal distribution 항입니다. 그리고 분모는 노말라이즈 팩터입니다.
-
-#### Fresnel reflectance
-프랜실 방정식은 빛의 행동을 묘사합니다. 다양한 지수적 반사를 가지며 materials를 통과할 때를요. shading 목적으로, Frsnel항은 반사되는 빛의 양으로 계산됩니다. 빛의 입사각과 재료의 굴절률의 함수로요. 각이 0도일때 각각의 재료의 반사는 특정 양의 빝을 반사합니다. 이것은 기본 반사율 입니다. 45도 각도에서 반사율은 비교적 일정하게 유지됩니다. 그리고 90도에 가까워지면 빠르게 100%에 가까워집니다. 이 효과는 다음의 그림 3.2와 같이 보여집니다. 플라스틱공의 중심에서는 주변 환경을 반사하지 않습니다. 하지만 경계에서는 반사합니다.
-
-이 현상의 근사값을 사용하는 모델은 Schlick`s function이라고 합니다.
-
-$$F_{Schlick}\left(F_0,\theta \right)=F_0+\left(1-F_0\right)\left(1-\cos \left(\theta \right)^5\right)$$
-
-여기서 specular BRDF 및 microfacets의 경우입사각은 다음과 같습니다.
-
-$$\cos \left(\theta \right)=l\cdot h$$   
-
-$$F_{Schlick}\left(F_0,l,h\right)=F_0+\left(1-F_0\right)\left(1-\left(l\cdot h\right)^5\right)$$
-
-어떤 물질의 기본 반사는 들어오는 빛의 파장(wave length)의 함수가 일 수 있습니다(be). 이 현상은 금이나 구리의 색을 부여합니다(gives). PBR에서 F의 RGB 삼중항(triplet (term))으로 모델링 됩니다.
-
-#### Normal distribution term
-Normal 분포 항, NDF는 스칼라 함수(0개 이상의 파라메터를 받아 단 하나의 값을 반환하는 함수)입니다. h 방향으로 향하는 미세면 법선의 백분율을 제공하는 함수요. (that gives the percentage of microfacet normals oriented towards the direction h) 이 퍼센테이지는 높아지는 경향이 있습니다. h가 macroscopic surface의 노말 n으로 가까워 질 수록이요. (간단하게 생각할 수 있다고 생각했지만 간단하지 않다.) 노말 분포의 함수 모델은 표면의 roughness로 파라메터화 됩니다. 보통요. alpha(roughness) 값은 0~1사이의 값입니다. NDF는 에너지를 보존하기위해 노말라이즈 팩터를 가지고 있어야 합니다. 다음의 제약으로 부터 파생된 노말라이즈 팩터요. (NDF가 파생됬다는 건가? 노말라이즈 팩터가 파생되었다는 건가?)
-
-$$\ \int _{\Omega }^{\ }D\left(h\right)\left(\underline {n\cdot h}\right)dw_i=1$$
-
-등방성(isotropic)의 경우 모든 NDF모델의 노말라이즈 팩터는 다음과 같습니다. 가장 자주 이용되는 NDF모델은 Trowbridge-Reitz GGX입니다. (? 어떻게 도출했는지 도저히 모르겠네. 지금은 넘어가야 하나?)
-
-$$isotropic\ case\ NDF`s\ normalization\ factor\ =\ \frac{1}{\alpha ^2\pi }$$
-
-$$D_{GGX}\left(h,\alpha \right)=\frac{\alpha }{\pi \left(\left(n\cdot h\right)^2\left(a^2-1\right)+1\right)^2}$$
-
-다른 중요한 모델은 Beckmann` NDF입니다.
-
-$$D_{Beckmann}\left(h,\alpha \right)=\frac{1}{\pi \alpha ^2\left(n\cdot h\right)^4}\exp \left(\frac{\left(n\cdot h\right)^2-1}{\alpha ^2\left(h\cdot h\right)^2}\right)$$
-
-이 효과의 roughness parameter는 그림 3.4와 같이 보일 수 있습니다.
-
-#### Geometric term
-기하학적(? Geoemtric) 또는 shadow masking 항은 다음과 같은 개연성 있는 output의 함수입니다. 주어진 normal h를 가지는 미세면은 들어오는 빛을 나가는 빛의 방향으로 반사할 수 있습니다. 다른말로 probability는 microfacets는 다른 microfacets로 마스크 되거나 쉐도우 되지 않는다 입니다. (오우,,, 이해 못함. 왜요?) NDF에서는 다양한 이론적 모델이 있습니다. 가장 중요한 모델은 Smith`s function입니다. G를 들어오는 빛과 보이는 부분으로 나눈 모델요.
-
-$$G_{Smith}\left(l,v,h\right)=G_1\left(l\right)G_1\left(v\right)$$
-
-G_1은 GGX같은 다른 모델이 될 수 있습니다.
-
-$$G_{GGX}\left(e\right)=\frac{2\left(n\cdot e\right)}{\left(n\cdot e\right)+\sqrt{a^2+\left(1+a^2\right)\left(n\cdot e\right)^2}}$$
-
-또는 Beckmann에서는
-
-$$c=\frac{n\cdot e}{\alpha \sqrt{1-\left(n\cdot e\right)^2}}$$    
-
-$$G_{Beckmann}\left(e\right)=\begin{cases}3.535c\ +2.181c^2&if\ c<1.6\ \\1&if\ c\ \ge 1.6\end{cases}$$
-
-이것으로 cook-torrance specular BRDF의 분석이 완료되었습니다. 벡만과 GGX항과 다른점은 다음 그림 3.5, 3.6 그리고 3.7에서 볼 수 있습니다.
-
-### Lambert`s diffuse BRDF
-실시간 렌더링에서, 가장 자주 사용되는 diffuse BRDF는 Lambert`s BRDF입니다.
-
-$$f_{Lambert}\left(v,l\right)=\frac{c_{diff}}{\pi }$$
-
-이 BRDF는 사실 상수입니다. 무슨 뜻이냐면, 균일한(uniform) 확산(diffusion)을 모델링합니다. 들어오는 빛은 가능한 모든 방향으로 똑같이 산란 가능합니다. 이 파라메터는 종종 albedo 또는 diffuse color로 불립니다. 그리고 일반적으로 재료의 색상으로 생각되는 것과 밀접하게 일치합니다. (재료의 색상이 어떻게 diffuse BRDF가 되는지 모르겠는데?)
-
-반사율 방정식에 사용되는 BRDF는 Specular와 Diffuse BRDF로 구성(consists)됩니다. 하지만 어떻게 조합되든간에 에너지 보존법칙은 지켜집니다. 이것은 다양한 방법으로 달성될 수 있습니다. 가장 평범한 방법으로는 BRDF요소 간의 선형 보간을 통해서 할 수 있습니다. 어떤 계수(factor)냐면 주어진 음영 지점에서 물체의 반사율에 비례(proportional)하는 계수요. 이 성질을 만족시키는 인자는 diffuse Fresnel 항입니다.
-
-$$\cos \left(\theta \right)=v\cdot n$$    
-
-$$F_{diff}\left(F_0,v,n\right)=F_0+\left(1-F_0\right)\left(1-\left(v\cdot n\right)^5\right)$$
-
-마지막으로, 전체 BRDF는
-
-$$f\left(v,l\right)=f_{Lambert}\left(v\cdot l\right)\left(1-F_{diff}\right)+f_{Cook-Torrance}\left(v,l\right)F_{diff}$$
-
-그림 3.8에서 F_0의 값은 왼쪽 0에서 오른쪽 1로 변합니다. diffuse와 roughness는 유지된 채로요. 구체의 모양이 유전체에서 금속으로 어떻게 변하는지 볼 수 있습니다.(It can be seen how the sphere`s appearance changes from dieletric to metallic)
-
-# Implementing PBR
-이 챕터는 이전 챕터에서 논의된 수학적 모델의 구현 예시를 보여줍니다.
-
+# 지식의 확장
 ## Gamma and high dynamic range
 자세한 구현을 하기 전에, gamma correction과 high dynamic range가 강조되어야 합니다.
 
@@ -241,11 +246,13 @@ $$f\left(v,l\right)=f_{Lambert}\left(v\cdot l\right)\left(1-F_{diff}\right)+f_{C
 선형화는 색상 값을 감마의 거듭제곱으로 올려서 수행됩니다. 또는 감마 보정의 경우 감마의 역수로 값을 올립니다.
 
 ### High dynamic range
-화창한 날, 태양에서 오는 빛의 밝기는 수천배더 강합니다. 다른 광원의 강도보다요. 이러한 폭넓은 밝기는 8bit 빛 축적 버퍼에서 모델링 하는 것이 불가능합니다. 이러한 문제는 high dynamic range를 이용하여 풀 수 있습니다. 8bit per channel 대신 16bit 또는 더 거대한 부동 소수점 버퍼를 이용해서요. 8비트 버퍼와 다르게 부동소수점 버퍼는 값을 1보다 더 크게 할 수 있습니다. (왜 InterlockAdd의 기준을 255로 했을 때 그러한 표정이였는지 알 수 있는지 이것을 통해서 알 수 있는가? ㅠㅠㅠㅠㅠㅠㅠ) 빛의 축적 단계 후, 언바운드된 버퍼값은 반드시 [0,1]범위에 리맵되어야 합니다. 모니터에 출력되기 위해서요. 함수는 이러한 달성을 톤 맵핑이라 부릅니다. 예를 들면 다음과 같습니다.
+화창한 날, 태양에서 오는 빛의 밝기는 수천배더 강합니다. 다른 광원의 강도보다요. 이러한 폭넓은 밝기는 8bit 빛 축적 버퍼에서 모델링 하는 것이 불가능합니다. 이러한 문제는 high dynamic range를 이용하여 풀 수 있습니다. 8bit per channel 대신 16bit 또는 더 거대한 부동 소수점 버퍼를 이용해서요. 8비트 버퍼와 다르게 부동소수점 버퍼는 값을 1보다 더 크게 할 수 있습니다. 빛의 축적 단계 후, 언바운드된 버퍼값은 반드시 [0,1]범위에 리맵되어야 합니다. 모니터에 출력되기 위해서요. 함수는 이러한 달성을 톤 맵핑이라 부릅니다. 예를 들면 다음과 같습니다.
 
 $$T\left(c_{hdr}\right)=1-\exp \left(-c_{hdr}\cdot \exp osure\right)$$
 
 이러한 exposure파라메터는 phtography i.e의 exposure와 유사(analogous)합니다. 단위 면적당 빛의 총량 같은거요. 이러한 파라메터는 스크린 화면의 밝기 총량의 평균으로부터 도출할 수 있습니다. 또는 조정(tweaking, 이미지랑 일치 하지 않는데, 부정적인 느낌의 조정인가?)을 위해 아티스트에게 맡길 수 있습니다. HDR의 효과와 톤 맵핑은 그림 4.2와 같이 묘사될 수 있습니다.
+
+# Implementing PBR
 
 ## Solving the reflectance equation
 이 섹션은 가능한 해결법과 랜더링 방정식의 근사치를 제공합니다.
