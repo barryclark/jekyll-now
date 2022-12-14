@@ -2,7 +2,7 @@
 layout: post
 title: PT Mitra Insan Sejahtera (PHAROS Group)
 author: Pak Budi
-date: 2022-12-14 07:26:51 +07:00
+date: 2022-12-14 07:36:51 +07:00
 ---
 
 **PT PHAROS INDONESIA** is a major regional pharmaceutical company that develops and markets innovative products in Indonesia and other countries in South-East Asia.
