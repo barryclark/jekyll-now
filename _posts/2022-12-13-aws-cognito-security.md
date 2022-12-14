@@ -6,7 +6,7 @@ category: dev
 tags: [cloud, aws]
 author: Lucian Patian, Martin Birtel
 author_email: patianl@haufe.com, martin.birtel@haufe-lexware.com
-header-img: "images/aws-cognito-security/aws_cognito_security_03.png"
+header-img: "images/aws-cognito-security/calathea-orbifolia-green-natural-leaves-background.jpg"
 ---
 
 # This blog post is a call for debate on how secure is actually Cognito
