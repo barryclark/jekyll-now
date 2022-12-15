@@ -26,6 +26,7 @@ Imagine that some developers are not aware of this fact and use custom attribute
 * blocking undesired calls towards the Cognito public API using AWS WAF (Header: "X-Amz-Target", String: "AWSCognitoIdentityProviderService.<api_action>") - [Cognito API reference](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_Operations.html)
 * below is an example of a WAF rule which blocks the *AWSCognitoIdentityProviderService.UpdateUserAttributes* action
 
+
 ```
 {
   "Name": "BlockCognitoUpdateUserAttributes",
@@ -58,6 +59,7 @@ Imagine that some developers are not aware of this fact and use custom attribute
 }
 ```
 
+
 ## Account takeover via unverified e-mail/phone
 
 Most of the user pools are configured with multiple login options, including e-mail, username or phone. By default, the user pool option "Keep original attribute value active when an update is pending" is turned off.
@@ -71,3 +73,6 @@ An attacker can change the email attribute value of its own user to impersonate 
 * enable by default in all Cognito userpools the "Keep original attribute value active when an update is pending" setting.
 * modify your applications to respect the email_verified and phone_number_verified claims.
 * if possible, modify your applications not to rely on modifiable attributes like email, username, etc.
+
+
+#### We are aware that we might miss other security hardening scheme so feel free to pitch in.
