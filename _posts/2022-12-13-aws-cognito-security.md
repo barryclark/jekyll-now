@@ -6,10 +6,10 @@ category: dev
 tags: [cloud, aws]
 author: Lucian Patian, Martin Birtel
 author_email: patianl@haufe.com, martin.birtel@haufe-lexware.com
-header-img: "images/aws-cognito-security/calathea-orbifolia-green-natural-leaves-background.jpg"
+header-img: "images/aws-cognito-security/green-background.jpg"
 ---
 
-# This blog post is a call for debate on how secure is actually Cognito
+# A call for debate on how secure is actually Cognito
 
 While performing security reviews for our AWS infrastructure, we found out that some Cognito userpools were deployed in their default configuration, making them possible honeypots.
 
@@ -17,7 +17,7 @@ While performing security reviews for our AWS infrastructure, we found out that 
 
 We discovered that the app client configuration attributes are writable by default, meaning that if a user obtains a token with the *aws.cognito.signin.user.admin* scope, they can modify a local user's attributes via the Cognito public endpoint (cognito-idp.eu-central-1.amazonaws.com, X-Amz-Target: CognitoIdentityProvider.UpdateUserAttributes). Even more, a user can also delete its own attributes or its own account using the same approach.
 
-Imagine that some of your developers are not aware of this fact and use custom attributes for tenant separation or RBAC, an attacker can breach the tenant separation, access foreign user data, etc. by modifying these attributes (e.g. by changing attribute "custom:tenant: companyA" to "custom:tenant: companyB")
+Imagine that some developers are not aware of this fact and use custom attributes for tenant separation or RBAC, an attacker can breach the tenant separation, access foreign user data, etc. by modifying these attributes (e.g. by changing attribute "custom:tenant: companyA" to "custom:tenant: companyB")
 
 ### The solution 
 
@@ -40,7 +40,7 @@ Imagine that some of your developers are not aware of this fact and use custom a
       },
       "TextTransformations": [
         {
-          "Priority": 2,
+          "Priority": 1,
           "Type": "NONE"
         }
       ],
