@@ -2,7 +2,7 @@
 layout: post
 title: PT Saba Indomedika
 author: Pak Budi
-date: 2022-12-15 07:09:38 +07:00
+date: 2022-12-15 07:09:46 +07:00
 ---
 
 **PT SABA INDOMEDIKA** is a national distributor of diagnostic products in Indonesia, has grown rapidly since 2005.
