@@ -77,6 +77,5 @@ An attacker can change the email attribute value of its own user to impersonate 
 * Modify your applications to respect the *email_verified* and *phone_number_verified* claims.
 * If possible, modify your applications not to rely on modifiable attributes like email, username, etc.
 
-&nbsp;    
 ### Did you face any of the scenarios above? How did you mitigate the issues? What else got your attention when it comes to securing Cognito? 
 &nbsp;  
