@@ -29,8 +29,7 @@ Imagine that some developers are not aware of this fact and use custom attribute
 * Remove the write-access permission in the app client configuration. Consider that this breaks federation with external IDPs because (some) attributes need to be modified when logging in via federated IDP (attribute mapping).
 * Block undesired calls towards the Cognito public API using AWS WAF (Header: "X-Amz-Target", String: "AWSCognitoIdentityProviderService.<api_action>") - [Cognito API reference](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_Operations.html)
 
-#### Below is an example of a WAF rule which blocks the *AWSCognitoIdentityProviderService.UpdateUserAttributes* action
-&nbsp;  
+Below is an example of a WAF rule which blocks the *AWSCognitoIdentityProviderService.UpdateUserAttributes* action
 
 ```yaml
 
@@ -64,7 +63,6 @@ Imagine that some developers are not aware of this fact and use custom attribute
 
 ```  
 
-&nbsp;  
 ## Account takeover via unverified email/phone
 
 Most of the user pools are configured with multiple login options, including email, username or phone. By default, the user pool option "Keep original attribute value active when an update is pending" is turned off.
@@ -78,6 +76,7 @@ An attacker can change the email attribute value of its own user to impersonate 
 * Enable by default in all Cognito userpools the "Keep original attribute value active when an update is pending" setting.
 * Modify your applications to respect the email_verified and phone_number_verified claims.
 * If possible, modify your applications not to rely on modifiable attributes like email, username, etc.
-&nbsp;  
-##### Did you face any of the scenarios above? How did you mitigate the issues? What else got your attention when it comes to securing Cognito? 
+
+&nbsp;    
+### Did you face any of the scenarios above? How did you mitigate the issues? What else got your attention when it comes to securing Cognito? 
 &nbsp;  
