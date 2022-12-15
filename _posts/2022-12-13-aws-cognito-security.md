@@ -57,12 +57,12 @@ Imagine that some developers are not aware of this fact and use custom attribute
     }
 }
 
-```
+```  
 
 
-## Account takeover via unverified e-mail/phone
+## Account takeover via unverified email/phone
 
-Most of the user pools are configured with multiple login options, including e-mail, username or phone. By default, the user pool option "Keep original attribute value active when an update is pending" is turned off.
+Most of the user pools are configured with multiple login options, including email, username or phone. By default, the user pool option "Keep original attribute value active when an update is pending" is turned off.
 
 If your application consuming a cognito-issued token does not check the *email_verified* attribute but uses it directly to load the data/identify of a user, it will be exposed to a possbile takeover.
 
@@ -72,8 +72,7 @@ An attacker can change the email attribute value of its own user to impersonate 
 
 * enable by default in all Cognito userpools the "Keep original attribute value active when an update is pending" setting.
 * modify your applications to respect the email_verified and phone_number_verified claims.
-* if possible, modify your applications not to rely on modifiable attributes like email, username, etc.
-
+* if possible, modify your applications not to rely on modifiable attributes like email, username, etc.  
 
 
 ##### We are aware that we might miss other security hardening scheme so feel free to pitch in.
