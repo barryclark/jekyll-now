@@ -28,35 +28,35 @@ Imagine that some developers are not aware of this fact and use custom attribute
 
 
 ```json
+
 {
-  "Name": "BlockCognitoUpdateUserAttributes",
-  "Priority": 1,
-  "Statement": {
-    "ByteMatchStatement": {
-      "SearchString": "AWSCognitoIdentityProviderService.UpdateUserAttributes",
-      "FieldToMatch": {
-        "SingleHeader": {
-          "Name": "x-amz-target"
+    "Name": "BlockCognitoUpdateUserAttributes",
+    "Priority": 1,
+    "Statement": {
+        "ByteMatchStatement": {
+            "SearchString": "AWSCognitoIdentityProviderService.UpdateUserAttributes",
+            "FieldToMatch": {
+                "SingleHeader": {
+                    "Name": "x-amz-target"
+                }
+            },
+            "TextTransformations": [{
+                "Priority": 1,
+                "Type": "NONE"
+            }],
+            "PositionalConstraint": "EXACTLY"
         }
-      },
-      "TextTransformations": [
-        {
-          "Priority": 1,
-          "Type": "NONE"
-        }
-      ],
-      "PositionalConstraint": "EXACTLY"
+    },
+    "Action": {
+        "Block": {}
+    },
+    "VisibilityConfig": {
+        "SampledRequestsEnabled": true,
+        "CloudWatchMetricsEnabled": true,
+        "MetricName": "BlockCognitoUpdateUserAttributes"
     }
-  },
-  "Action": {
-    "Block": {}
-  },
-  "VisibilityConfig": {
-    "SampledRequestsEnabled": true,
-    "CloudWatchMetricsEnabled": true,
-    "MetricName": "BlockCognitoUpdateUserAttributes"
-  }
 }
+
 ```
 
 
@@ -74,5 +74,6 @@ An attacker can change the email attribute value of its own user to impersonate 
 * modify your applications to respect the email_verified and phone_number_verified claims.
 * if possible, modify your applications not to rely on modifiable attributes like email, username, etc.
 
-\
+
+
 ##### We are aware that we might miss other security hardening scheme so feel free to pitch in.
