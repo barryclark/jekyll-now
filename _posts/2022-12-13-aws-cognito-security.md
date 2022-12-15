@@ -25,7 +25,7 @@ Imagine that some developers are not aware of this fact and use custom attribute
 * you can remove the write-access permission in app client configuration but this breaks federation with external IDPs because (some) attributes need to be modified when logging in via federated IDP (attribute mapping).
 * blocking undesired calls towards the Cognito public API using AWS WAF (Header: "X-Amz-Target", String: "AWSCognitoIdentityProviderService.<api_action>") - [Cognito API reference](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_Operations.html)
 * below is an example of a WAF rule which blocks the *AWSCognitoIdentityProviderService.UpdateUserAttributes* action
-
+&nbsp;  
 
 ```json
 
