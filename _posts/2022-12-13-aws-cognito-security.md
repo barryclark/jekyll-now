@@ -27,7 +27,7 @@ Imagine that some developers are not aware of this fact and use custom attribute
 * below is an example of a WAF rule which blocks the *AWSCognitoIdentityProviderService.UpdateUserAttributes* action
 
 
-```
+```json
 {
   "Name": "BlockCognitoUpdateUserAttributes",
   "Priority": 1,
@@ -74,5 +74,5 @@ An attacker can change the email attribute value of its own user to impersonate 
 * modify your applications to respect the email_verified and phone_number_verified claims.
 * if possible, modify your applications not to rely on modifiable attributes like email, username, etc.
 
-
+\
 ##### We are aware that we might miss other security hardening scheme so feel free to pitch in.
