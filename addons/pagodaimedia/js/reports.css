@@ -1,0 +1,22 @@
+.widget input[type=text], .widget input[type=email], .widget textarea{display:block;width:100%;border:1px solid rgba(0,0,0,.05);outline:0;padding:15px 15px;margin-bottom:15px}
+.widget input[type=text]:focus, .widget input[type=email]:focus, .widget textarea:focus{border-color:var(--bodyC)}
+.widget input[type=button], .widget input[type=submit]{display:inline-flex;align-items:center;margin:15px 0 0;padding:10px 20px;outline:0;border:0;border-radius:2px;color:#fefefe;background-color:var(--linkB);font-size:14px;font-family:var(--fontB);white-space:nowrap;overflow:hidden;max-width:100%}
+.widget input[type=button]:hover, .widget input[type=submit]:hover{opacity:.7}
+.widget input[type=file]{display:inline-block;margin:0;position:absolute;top:0;left:0;overflow:hidden;opacity:0;width:0;height:0}
+/* Widget ContactForm */
+.ContactForm{max-width:500px;font-size:92%;margin-bottom:40px}
+.ContactForm .inputArea{position:relative}
+.ContactForm label{display:inline-block;margin-bottom:8px}
+.ContactForm label span{color:var(--synxRed);font-size:90%}
+.ContactForm .labelUpload{display:flex;align-items:center;margin-bottom:15px;padding:12px 15px;border:1px solid rgba(0,0,0,.05);background-color:#fefefe}
+.ContactForm .labelUpload svg{flex-shrink:0}
+.ContactForm .labelUpload span{max-width:300px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:rgba(0,0,0,.6);font-size:13px;padding-left:15px}
+#success{display:none;position:fixed;top:30px;left:0;right:0;margin:auto;width:calc(100% - 40px);max-width:380px;font-size:13px;line-height:1.6em;text-align:center;background-color:rgba(0,0,0,.7);color:#fefefe;padding:15px 15px;border-radius:3px;z-index:20}
+#success:target{display:block}
+.drK .ContactForm .labelUpload{border:1px solid rgba(0,0,0,.05); background-color:var(--darkBs)}
+.drK .ContactForm .labelUpload span{color:#fff}
+
+.grecaptcha-badge{
+  z-index: 999;
+  margin-bottom: 55px;
+}
