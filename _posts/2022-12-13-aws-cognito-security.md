@@ -69,12 +69,12 @@ Most of the user pools are configured with multiple login options, including ema
 
 If your application consuming a cognito-issued token does not check the *email_verified* attribute but uses it directly to load the data/identify of a user, it will be exposed to a possbile takeover.
 
-An attacker can change the email attribute value of its own user to impersonate a victim's email address, then login into an application using an alternative login option like username. The application processing the cognito-issued token will see the victim's email address and use the unverified e-mail attribute to load data/identify of the user.
+An attacker can change the email attribute value of its own user to impersonate a victim's email address, then login into an application using an alternative login option like username. The application processing the cognito-issued token will see the victim's email address and use the unverified email attribute to load data/identify of the user.
 
 ### The solution 
 
-* Enable by default in all Cognito userpools the "Keep original attribute value active when an update is pending" setting.
-* Modify your applications to respect the email_verified and phone_number_verified claims.
+* Enable by default in all Cognito userpools the *Keep original attribute value active when an update is pending* setting.
+* Modify your applications to respect the *email_verified* and *phone_number_verified* claims.
 * If possible, modify your applications not to rely on modifiable attributes like email, username, etc.
 
 &nbsp;    
