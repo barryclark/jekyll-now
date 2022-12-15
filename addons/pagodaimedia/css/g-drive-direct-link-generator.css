@@ -1,0 +1,10 @@
+#stm-gdrive-form{background-color:#fff;text-align:center;margin:auto;padding:20px 28px;border:none;border-radius:6px;box-shadow:0 0 8px 0 rgba(0,0,0,.08);width:100%;display:block;}
+@media all and (max-width:576px){#stm-gdrive-form{padding:24px 28px;}}
+#stm-gdrive-form .stm-gdrive-group{margin-bottom:1rem;}
+.stm-gdrive-group label{display:inline-block;margin-bottom:10px;font-size:14px;margin-top:5px;}
+#stm-gdrive-form input.stm-tools-control{display:block;width:100%;height:calc(1.7em + .75rem + 2px);padding:.375rem .75rem;font-size:14px;font-weight:400;line-height:1.1;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:6px;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+#stm-gdrive-form .stm-gdrive-group button{color:#fff;background:#ff830f;line-height:20px;border:none;border-radius:6px;margin:12px 0;padding:10px 15px;font-size:13px;font-weight:400;text-decoration:none;max-width:320px;}
+
+/* Dark Mode Css */
+.drK #stm-gdrive-form{background:#333;color:#f6f6f6;}
+.drK #stm-gdrive-form input.stm-tools-control{background:#444;color:#f6f6f6;border:1px solid #666;}
