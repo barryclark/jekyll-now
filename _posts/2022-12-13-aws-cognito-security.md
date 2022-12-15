@@ -74,5 +74,6 @@ An attacker can change the email attribute value of its own user to impersonate 
 * modify your applications to respect the email_verified and phone_number_verified claims.
 * if possible, modify your applications not to rely on modifiable attributes like email, username, etc.
 
+</br>
 
-#### We are aware that we might miss other security hardening scheme so feel free to pitch in.
+##### We are aware that we might miss other security hardening scheme so feel free to pitch in.
