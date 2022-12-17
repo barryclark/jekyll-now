@@ -249,10 +249,7 @@ title: How to work
 잘못된 자세는 척추와 관절의 통증 및 질환의 주요원인이 된다고 합니다. 의자에 앉을 때는 등을 의자에 기대어 허리에 가중되는 부담을 의자에 나누어줍니다. 먼저 엉덩이를 의자 등받이에 닿을 정도로 깊숙하게 넣어 앉고, 허리는 등받이에 대고 꼿꼿하게 세웁니다. 이때 구부린 무릎의 각도는 90도를 유지하도록 하고, 무릎 높이는 엉덩이보다 약간 높게 합니다. 또한, 발바닥은 바닥 전체가 완전히 닿게 합니다. 의자 높이는 자신의 키에 맞게 조절해 앉도록 합니다.
 
 ## 프로그래밍에서
-
-<details><summary>더 열심히보다는 더 현명하게</summary>
-<div markdown="1">
-
+### 더 열심히보다는 더 현명하게
 [ ] 훌륭한 프로그래머 되는 법 (Becoming a Better Programmer)
 
 * 문제를 해결할 때 하나의 방법에 몰입하는 것은 위험하다. 목표를 달성하기에 더 쉽고 직접적인 방법이 많습니다. 시간낭비할 필요 없습니다.
@@ -271,10 +268,7 @@ title: How to work
   * 지쳐 나가떨어지지 않습니다. 번아웃 이후에는 다시 돌아오기 힙듭니다.
   * **강력한 도구를 찾습니다. 업무 흐름에 가속성을 더해줄 것입니다.**
 
-</div></details>
-
-<details><summary>끝나야 끝나는 것</summary>
-<div markdown="1">
+### 끝나야 끝나는 것
 
 [ ] 훌륭한 프로그래머 되는 법 (Becoming a Better Programmer)
 
@@ -290,18 +284,52 @@ title: How to work
   * 완료 지점까지만 작업합니다. 필요한 것보다 많을 일을 하지 않습니다.
   * **코드가 충분하다면 그만 멈춥니다. 코드가 완벽하지 않아도 좋습니다. 코드가 잘못된 방향으로 되었더라면 결국에는 리팩토링을 할 수 있습니다.** 미리 하는 것은 노력낭비일 수 있습니다.
 
-</div></details>
-
-<details><summary>교훈 얻기</summary>
-<div markdown="1">
-
+### 교훈 얻기
 [ ] 훌륭한 프로그래머 되는 법 (Becoming a Better Programmer)
 
 * 개발자는 혼자가 아닙니다. 주변의 동료 및 개발자를 충분히 이용합니다.
 * 자신을 감시합니다. 자신의 코딩이 잘못되는 것을 항상 살펴보고 조심해야 합니다. 이를 위해 동료를 이용해야 합니다. 자신이 누군가에게 의무감을 갖도록 합니다.
 * 산을 올라가기 전 우선 한 발짝 물러서서 경로를 계획해야 합니다. 마찬가지로 작업을 진행하기 전에 경로를 계획해야 합니다. 문제에 접근해본 첫 번째 길이 가장 최선의 방법일 경우는 드뭅니다. **적어도 한가지 이상의 접근법을 고려해 본 뒤 일에 착수합니다.**
 
-</div></details>
+### 코드작성이란
+#### 변수의 활용
+- [ ] [External 변수](https://en.wikipedia.org/wiki/External_variable)
+- [ ] 언어마다 변수의 차이
+
+[Variable](https://en.wikipedia.org/wiki/Variable_(computer_science))
+
+변수는 관련 기호 일므과 쌍을 이루는 추상적인 저장 위치, 간단하게 값을 담아두는 공간입니다. 이 변수는 지역변수, 전역변수, 매개변수 또는 맴버 변수, 클래스 변수일 수도 있습니다. 혹은 외부변수일 수도 있습니다.
+
+* 메모리등의 자원관리, 다른 변수와의 충돌을 고려하여 생각해야 합니다.
+* 사용하는 영역을 고려하여 지역변수인지 전역변수인지 정해야 합니다.
+* 해당하는 값의 특성에 맞게 변수의 범위를 정할 수 있습니다.
+
+<center><div class="mermaid">
+graph LR
+
+Variable--지정된 영역에서만 사용할 수 있는-->LocalVariable
+Variable--모든 영역에서 사용할 수 있는-->GlobalVariable
+LocalVariable--함수내에서 정적으로 할당된다면-->StaticVariable
+GlobalVariable--다른 모듈에서 사용할 수 있는-->StaticVariable
+LocalVariable--함수를 호출될 때 전달되는-->Parameter
+Variable--클래스에서 멤버 필드에 있는-->MemberVariable
+MemberVariable--개별 인스턴스로 존재하면-->InstanceVariable
+MemberVariable--모든 인스턴스에서 공유하면-->ClassVariable
+
+</div></center>
+
+|Scope|Describe|
+|:-:|---|
+|[Local](https://en.wikipedia.org/wiki/Local_variable)|지역변수는 일정한 또는 지정된 지역에서만 사용할 수 있는 특정한 변수를 의미합니다.<br>지역 변수는 변수가 선언된 블록 내에서만 유효하며, 블록이 종료되면 메모리에서 사라집니다.|
+|[Global](https://en.wikipedia.org/wiki/Global_variable)|전역변수는 함수의 외부에서 선언된 모든 영역에서 사용할 수 있는 변수를 말합니다.<br>전역변수는 프로그램의 어디에서나 접근할 수 있으며, 프로그램이 종료되어야만 메모리에서 사라집니다.|
+|[Parameter](https://en.wikipedia.org/wiki/Parameter#Computer_programming)|매개변수는 결과값을 얻기 위해 입력값으로 주어지는 변수로 지역변수입니다.|
+|[Static](https://en.wikipedia.org/wiki/Static_variable)|정적으로 할당되는 변수이며, 프로그래밍 실행 전반에 걸쳐 변수의 수명이 유지됩니다.<br>C언어에서 정적 변수란 static 키워드로 선언한 변수를 의미합니다.|
+
+|Scope|Describe|
+|:-:|---|
+|[Member](https://en.wikipedia.org/wiki/Member_variable)|멤버 변수 또는 멤버 필드는 특정 객체와 연결된 변수의 하나입니다.<br>해당 변수의 모든 메소드에서 접근이 가능합니다.|
+|[Instance](https://en.wikipedia.org/wiki/Instance_variable)|각각의 인스턴스화된 클래스의 객체가 별도의 사본이나 인스턴스를 가지고 있는 변수입니다.|
+|[Class](https://en.wikipedia.org/wiki/Class_variable)|클래스의 인스턴스가 얼마나 많이 존재하는지에 관계 없이, 하나의 사본이 존재하는 클래스에 정의된 변수입니다.|
 
 ## 경험을 기록
 
