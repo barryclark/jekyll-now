@@ -18,17 +18,19 @@ og_image:
 comments_id:
 ---
 
-I used to like C++. I still do, but I used to, too. Furthermore, I am not one of 
+I used to like C++. I still do, but I used to, too. Also I am not one of 
 those people that tells any c++ dev to just use rust. There are a ton 
-of valid reasons why companies or individuals decide to use C++. What I am trying
+of valid reasons why companies or individuals decide to use C++ and I don't 
+wish to deter anyone from doing so. What I am trying
 to do in this article is to see how Rust stacks up against a handful of 
 very common (and severe) bugs that are easy to produce in C++.
 
-I'll use Louis Brandy's (who works at facebook, now Meta) excellent CppCon 2017 Talk [Curiously Recurring C++ Bugs at Facebook](https://youtu.be/lkgszkPnV8g)
+I'll use Louis Brandy's excellent CppCon 2017 talk [Curiously Recurring C++ Bugs at Facebook](https://youtu.be/lkgszkPnV8g)
 as the basis for what constitutes a common and scary bug that is easy to produce
-in C++. I am aware that facebook does not represent every C++ use case, but my personal
-experience is very compatible with the given list. I'll try to not repeat the talk
-too much because it is an excellent talk that I urge you to watch yourself.
+in C++. Louis draws his experience from working at the C++ codebase at 
+facebook (now Meta). I am aware that facebook does not represent every C++ use case, but my personal
+experience is very much compatible with the given list. I'll try to not repeat the talk
+too much because it is an excellent presentation that I urge you to watch yourself.
 
 In the talk, Louis gives mitigations against many of the bugs, mostly involving
 Sanitizers. I won't go into those kind of runtime mitigations here because I want
@@ -36,19 +38,19 @@ to explore how Rust stacks up on a more fundamental level.
 
 # Bug \#1: Vector Out of Bounds Access Using `[]`
 
-We all know array or vector access using operator `[]` runs the danger of out of
-bounds access. For example, for `std::vector`[^arrays] it does [not perform bounds checking](https://en.cppreference.com/w/cpp/container/vector/operator_at),
-so an illegal memory access can occurr unnoticed. The problem is not that this
+We all know that array or vector access using operator `[]` can cause out of
+bounds access. For example, for `std::vector` it does [not perform bounds checking](https://en.cppreference.com/w/cpp/container/vector/operator_at),
+so an illegal memory access can occurr unnoticed[^arrays]. The problem is not that this
 is possible at all, since a low level language that cares about performance
-must offer these kinds of unchecked accesses. The problem is that this is 
-the simplest way to access a vector element, deep in every programmers DNA, that is
+_must_ offer these kinds of unchecked accesses. The problem is that 
+this basic way to access a vector element, deep in every programmers DNA, is
 inherently unsafe.
 
 There is, of course a bounds-checked API for element access using
 `std::vector::at`, but few people seem to use it. Rust does the trade-off
-differently. On slices, arrays, vectors and such the `[]` operator is bounds-checked
+differently. On slices, arrays, vectors and the like operator `[]` is bounds-checked
 and will panic[^panic] for out of bounds access.
-There also is a method [`get_unchecked`](https://doc.rust-lang.org/std/primitive.slice.html#method.get_unchecked)
+There is a method [`get_unchecked`](https://doc.rust-lang.org/std/primitive.slice.html#method.get_unchecked)
 that allows unchecked access to the elements if you tell the compiler _trust me,
 I know what I am doing_ using the `unsafe` keyword. I personally think this is 
 the right default to have, since the other way leads to the most common bug 
@@ -59,12 +61,13 @@ contained in Louis's presentation.
 This one is a pretty well known confusing API, because on a map in C++ the operator
 `[]` actually means _get me a reference to the element or insert the default value
 and then get me a reference to that_. There are cases where this is a useful
-API to have. However, it seems that it should be the `[]` operator 
+API to have. Imbuing the operator `[]` with that behavior seems problematic 
 because it violates the [principle of least surprise](https://en.m.wikipedia.org/wiki/Principle_of_least_astonishment).
-Louis Brandy has an excellent example of how that becomes a serious problem:
+Louis Brandy has an excellent example of how that becomes a serious problem.
+Take a look at this constructor for a `Widget` class that performs some logging:
 
 ```c++
-Ẁidget::Widget(
+Widget::Widget(
   const std::map<std::string, int>& settings) :
     m_settings(settings) {
       std::cout << "Widget initialized..."
@@ -76,14 +79,15 @@ Louis Brandy has an excellent example of how that becomes a serious problem:
 
 Here the programmers mindset is _let me just log the timeout real quick_, but it 
 is easy to forget that this operation inserts a timeout of `0` (which in often
-means _infinite wait_) in case no such key was already present.
+means infinite wait) if no such key was already present.
 Rust's [BTreeMap](https://doc.rust-lang.org/std/collections/struct.BTreeMap.html#)
-exposes a much less surprising API, which makes this kind of error hard to make.
+exposes a much less surprising API, which makes this kind of error arguably 
+impossible to make.
 
 # Bug \#3: References to Temporaries
 
-While the bugs described above might in theory be fixed by an API redesign in
-the standard library [^backwards], the next one is inherent in the language. It 
+While the bugs described above might theoretically be fixed by an API redesign in
+the standard library[^backwards], the next one is inherent in the language. It 
 has to do with the lifetime of temporaries. I assume that many of us know about [lifetime](https://en.cppreference.com/w/cpp/language/lifetime)
 in the C++ standard and also know that lifetimes of temporaries _may_ be extended
 under certain circumstances. However, I personally would be hard-pressed to recount
@@ -91,58 +95,60 @@ all of those rules and exceptions to them. Louis gives a very cool motivating
 example.
 
 Building on the discussion about maps above, let's write a function that 
-gets an element from a map with string pairs or returns a default value that we explicitly
-specify. He presents us with the following function:
+gets an element from a map with string pairs or returns a given default value.
+He presents us with the following function:
 
 ```c++
 std::string get_or_default(
-  const std::map<std::string,std:string> & map,
-  const std::string & key,
-  const std::string & default_value) {
+  const std::map<std::string,std:string>& map,
+  const std::string& key,
+  const std::string& default_value) {
     auto it = map.find(key);
     return (it != map.end()) ?
             it->second : default_value;
 }
 ```
-This function works perfectly fine. It is commonly used like so:
+This function works perfectly fine and it is commonly used like so:
 
 ```c++
 get_or_default(people_map,"name","John Doe");
 ```
 
-There is nothing wrong with that usage. The problem arises only when we try
+The important thing here is that giving the character literal `"John Doe"`
+as the default parameter implies the construction of a temporary string.
+There is nothing wrong with that. The problem arises only when we try
 to optimize the `get_or_default` function implementation. The function always returns
 a copy of the value it chooses to return. Being good C++ programmers, we might 
 want to get rid of that extra copy-construction and change the return value to a
-_constant reference_ to string instead of the by value return that causes the copy.
-Let me quote Louis Brandy: "this code is _hopelessly broken_". The problem manifests
-not if we return a reference to an element in the map. This is of course fine,
-but if the map does not contain the given key, we return a reference to a the
-temporary for the default vaule. This is a dangling reference.
+_constant reference_ to string instead of the by value return causing the copy.
+Let me quote Louis Brandy: "this code \[would be\] _hopelessly broken_". The 
+does not problem manifest if we return a reference to an element in the map.
+This is of course fine, but if the map does not contain the given key, we return a reference to a the
+temporary. This is a dangling reference and thus undefined behavior.
 
-There are rules such as [lifetime extension](https://en.cppreference.com/w/cpp/language/reference_initialization#Lifetime_of_a_temporary),
-which make it defined behavior to bind a temporary value to a references to `const`.
-However, we find also this exception to the rules on cpprefernce:
+As mentioned above, there are rules such as [lifetime extension](https://en.cppreference.com/w/cpp/language/reference_initialization#Lifetime_of_a_temporary),
+which make it defined behavior to bind a temporary value to a reference to `const`.
+However, we find this exception to the rules:
 
 > a temporary bound to a return value of a function in a `return` statement is not 
 > extended: it is destroyed immediately at the end of the `return` expression.
 > Such `return` statement always returns a dangling reference. 
 
-Dangling references in C++ are hard, [even in 2022](https://pvs-studio.com/en/blog/posts/cpp/1006/) and
+References to temporaries in C++ are hard, [even in 2022](https://pvs-studio.com/en/blog/posts/cpp/1006/) and
 address sanitizer and static analyzers can be used as mitigations to some degree.
-Still, it would surely be nice to not have that problem at all. This is where
+Still, it would surely be nice not to have that problem at all. This is where
 one of Rust's most well-known features comes in, the [Borrow Checker](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html).
 This is such an integral (and well-documented) part of the Rust language that I won't
 go into detail here. Suffice it to say that dangling references are a 
-_compile time error_ in Rust at the expense of a slightly more complex 
-syntax that allows us to annotate lifetimes.
+_compile time error_ in Rust at the expense of a more complex 
+syntax that allows us to annotate lifetimes if we have to.
 
 # Bug \#4: Volatile for Atomic
 
 Louis Brandy tells a success story here. Years ago, the `volatile` keyword was 
 commonly misused to enforce synchronization across threads. With the advent of 
 `std::atomic`, and more generally the addition library and language facilities
-for concurrent programming in C++11, us programmers stopped misusing `volatile`. We 
+for concurrent programming in C++11, programmers stopped misusing `volatile`. We 
 started using the used the newly available language and library facilities, since
 they were simple to use and simple to teach.
 
@@ -153,9 +159,9 @@ thread safety in the next section.
 
 In a very fun section of this great talk, Louis shows that developers seem 
 to forget that a `shared_ptr` does not enforce any synchronization for its 
-pointed to element [^shared_ptr], yet the _reference count_ is synchronized
-across threads. This distinction apparently confuses people enough that 
-bugs are regularly produced by sharing `shared_ptr` instances across threads. 
+pointed to element, yet the _reference count_ is synchronized
+across threads[^shared_ptr]. This distinction seems to be sufficiently confusing
+so that bugs are regularly produced by sharing `shared_ptr` instances across threads. 
 Rather than blaming the developers, it seems to me that this is a systemic 
 issue that should be addressed.
 
@@ -167,7 +173,7 @@ program, where we'll try to use a reference counted shared pointer `Rc<T>`
 to share an integer value across threads:
 
 ```rust
-std::sync::Arc;
+use std::sync::Arc;
 use std::rc::Rc;
 
 type SharedPtr<T>= Rc<T>;
@@ -190,7 +196,6 @@ fn main() {
     let _ = handle2.join();
 }
 ```
-
 We have typedef'd `SharedPtr<T>` to the standard library type `Rc<T>`. Then we 
 created a new instance via `Rc::new` (think of this somewhat like `std::make_shared`)
 and share a copy of that shared pointer across different threads (using a method
@@ -206,18 +211,18 @@ It turns out that `Rc<T>` is not safe to send across different threads because
 the reference counting is not atomic as it would be in `std::shared_ptr<T>`. The 
 correct equivalent for an atomically reference counted shared pointer would be 
 the Rust type [`Arc`](https://doc.rust-lang.org/std/sync/struct.Arc.html). This
-type does implement `Send` and thus using `type SharedPtr = Arc` makes this 
+type does indeed implement `Send` and thus using `type SharedPtr = Arc` makes this 
 code compile.
 
-Now if we tried to mutate the value from two different threads,
-we would find out that we cannot simply do that. We are missing a second
-fundamental trait for concurrency, called [`Sync`](https://doc.rust-lang.org/nomicon/send-and-sync.html).
+If we now tried to mutate the value from two different threads,
+we would find out that we cannot simply do that. We'll eventually hit an error 
+telling us we need a second fundamental trait for concurrency, called [`Sync`](https://doc.rust-lang.org/nomicon/send-and-sync.html).
 This trait, again via the typesystem, indicates whether a value is safe to access
 from multiple threads at the same time. The short story is that we have to 
 explicitly use a synchronization mechanism for the data that makes it safe to 
 access from different threads, such as a mutex. I won't go into detail here, because
 I have written a two part series comparing mutexes in Rust and C++ ([part 1](/blog/2020/mutexes-rust-vs-cpp/),
-[part 2](/blog/2020/rust-style-mutex-for-cpp/).
+[part 2](/blog/2020/rust-style-mutex-for-cpp/)).
 
 The takeaway here is that Rust does indeed prevent this type of thread-safety problem
 (and many more) by making thread safety part of the type system. This even presents
