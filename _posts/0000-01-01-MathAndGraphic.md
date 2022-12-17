@@ -23,6 +23,7 @@ title: Math & Graphic
 
 </div></details>
 
+백터와 선형공간
 * [Vector](/posts_math/Vector)
     - 벡터
     - 3차원 공간에서의 벡터
@@ -43,6 +44,8 @@ title: Math & Graphic
 * [Orientation](/posts_math/Orientation)
     - Quaternion
 
+삼각함수
+* [Radian and Steradian](/posts_math/RadianSteradian)
 ## Graphic
 - [ ] Unity Shader
 - [ ] Wiper퀄리티를 높이고 어떻게 만들었는지 작성하기
