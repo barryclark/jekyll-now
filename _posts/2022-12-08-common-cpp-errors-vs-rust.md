@@ -233,7 +233,7 @@ will tell us.
 
 # Bug \#6: A Vexing Parse that Only Pretends To Lock A Mutex
 
-This bug is a really curious one. Did you know that `std::string(foo);` is valid code
+This bug is a really curious one. Did you know that `std::string(foo);` is valid C++
 and is parsed as `std::string foo;`? Both produce a default constructed instance
 of a string named `foo`. This can lead to an interesting problem, when trying
 to lock a mutex using the RAII guards in the standard library. Take a look at 
@@ -251,20 +251,21 @@ instead defines a default constructed instance of a `std::unique_lock` called
 `m_mutex`. A correction would just require two more characters like so:
 `std::unique_lock<std::mutex> g(m_mutex)`. The difference is not easy to spot.
 Louis shows that despite a running linter, he found 
-two instances in the production codebase making exactly that mistake[^lock_warnings].
+two instances that made it into the production codebase with exactly that mistake[^lock_warnings].
 
 Evaluating whether this mistake is easy to make in Rust is interesting. Rust's 
-[`Mutex`](https://docs.rust-lang.org/std/sync/struct.Mutex.html) work very differently than in C++ because a mutex is a class template[^rust_template]
-where the instance of a mutex owns the contained data. When we lock this mutex
-we get a pointer like guard that can be dereferenced to access the underlying value.
+[`Mutex`](https://docs.rust-lang.org/std/sync/struct.Mutex.html) works very 
+differently than in C++. In Rust a mutex is a class template[^rust_template]
+where the instance of a mutex is the sole owner of the contained data. When we lock this mutex
+we get a pointer-like guard that can be dereferenced to access the underlying value.
 Once the guard goes out of scope, the mutex is locked again. This data-oriented
-approach to mutexes makes it impossible to lock a mutex that protects data, because
+approach to mutexes makes it impossible to forget to lock a mutex that protects data, because
 we cannot otherwise access the data. I have written about this paradigm in 
 [an article](/blog/2020/mutexes-rust-vs-cpp/) and also explored [data-oriented mutexes for C++](/blog/2020/rust-style-mutex-for-cpp/).
 Spoiler: there's no way to have data-oriented mutexes in C++ without the risk of running
-into trouble with lifetimes of references.
+into trouble with lifetimes.
 
-While using mutexes to protect data like above is surely a very common (maybe
+While using mutexes to protect data as described above is surely a very common (maybe
 the most common) use case, there are valid reasons to use a mutex to protect
 sections of code rather than data. We can achieve this in rust with the `Mutex<()>`
 specialization, where `()` in Rust is (in this case) equivalent to `void`. To 
@@ -280,30 +281,36 @@ lock this mutex we can just call
 Rust developers: did you spot the problem?
 
 It turns out that `let _ =` is not actually binding the mutex guard to a named
-variable, which means the created temporary is immediately destructed, rather
-than at the end of the scope, like a named entity would. In fact, `let _ = expr`
-semantically equivalent to `(void)(expr);` in C++ and serves only to e.g. suppress
+variable. This means the created temporary is immediately destructed, rather
+than at the end of the scope, unlike a named entity. In fact, `let _ = expr`
+semantically equivalent to `(void)(expr);` in C++ and serves to e.g. suppress
 compiler warnings about unused return values. On the other hand `let _g = expr`
-is something like `auto _g = expr` in C++ and binds to a named entity whose destructor
-is invoked at the end of the scope in which it is declared.
+is somewhat like `auto _g = expr` in C++ and binds to a named entity whose destructor
+is invoked at the end of its scope. At the time of writing the code shown above
+compiles without warnings in Rust 1.65. The mutex will not be locked until 
+the end of the scope.
 
-At the time of writing this code compiles without warnings in Rust 1.65. However, 
-the mutex will not be locked inside the scope. I really think the semantic 
-difference between `let _ = expr` and `let _g = expr` are a confusing and bad design,
-as evidenced e.g. by the discussions [here]() and [here](). There is a [clippy lint]()
+I really think the semantic 
+difference between `let _ = expr` and `let _g = expr` is a confusing design choice,
+as evidenced e.g. by the discussions [here](https://internals.rust-lang.org/t/confusing-behaviour-of-let/13435)
+and [here](https://internals.rust-lang.org/t/pre-rfc-must-bind/12658/25). There is a [clippy lint](https://rust-lang.github.io/rust-clippy/master/#let_underscore_lock)
 [^clippy-lint] that will catch the mistake in the code using mutexes above, but it cannot prevent
-general underlying problem for other types of RAII guards. We could, of course,
+deeper underlying problem for other types of RAII guards. We could, of course,
 argue that using `Mutex<()>` is an indication of bad design, but that would
 be unfair to C++, because then we could always say producing bugs is bad design.
-If `Mutex<()>` exists, people will eventually use it.
+If `Mutex<()>` exists, people will eventually use it and the `let _ =` confusion
+goes beyond just mutexes.
 
 # Summary
 We looked at six common errors in C++ in the facebook codebase and we saw that Rust enables us to catch
-most of the bugs at compile time and also emphasises memory safety in its
-API. For one thread safety bug  caused by a syntax quirk in C++, we saw
-that Rust's data-oriented mutex design makes the bug much more improbable to write. However,
-through a syntax quirk of its own, Rust leaves the door open to produce the
-same bug as in C++, where it looks like we are locking a mutex but aren't.
+most of the bugs at compile time and also emphasizes memory safety in its safe
+API. But we also discovered a thread safety bug caused by a syntax quirk in C++ that 
+exists in Rust as well, albeit through a completely different syntax quirk.
+
+I don't want to pass judgement on Rust vs C++, but it is nice
+to see that a language which is taunted as a safe successor to C++ does indeed
+address many common bugs in C++. And yet we saw that Rust is not entirely without
+its flaws.
 
 # Endnotes
 
