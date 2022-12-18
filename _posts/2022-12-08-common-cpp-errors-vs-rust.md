@@ -7,7 +7,7 @@ last_updated:
 #excerpt: ''
 #description:
 #permalink:
-title: Facebook's Most Common C++ Errors in Rust
+title: Rust vs Common C++ Bugs
 #
 #
 # Make sure this image is correct !!!
@@ -19,15 +19,15 @@ comments_id:
 ---
 
 I used to like C++. I still do, but I used to, too. Also I am not one of 
-those people that tells any c++ dev to just use rust. There are a ton 
+those people that tells any C++ programmer to just use Rust. There are a ton 
 of valid reasons why companies or individuals decide to use C++ and I don't 
 wish to deter anyone from doing so. What I am trying
 to do in this article is to see how Rust stacks up against a handful of 
 very common (and severe) bugs that are easy to produce in C++.
 
 I'll use Louis Brandy's excellent CppCon 2017 talk [Curiously Recurring C++ Bugs at Facebook](https://youtu.be/lkgszkPnV8g)
-as the basis for what constitutes a common and scary bug that is easy to produce
-in C++. Louis draws his experience from working at the C++ codebase at 
+as the basis for what constitutes a common and scary bug easily produced in C++.
+Louis draws his experience from working on the C++ codebase at 
 facebook (now Meta). I am aware that facebook does not represent every C++ use case, but my personal
 experience is very much compatible with the given list. I'll try to not repeat the talk
 too much because it is an excellent presentation that I urge you to watch yourself.
@@ -53,8 +53,8 @@ and will panic[^panic] for out of bounds access.
 There is a method [`get_unchecked`](https://doc.rust-lang.org/std/primitive.slice.html#method.get_unchecked)
 that allows unchecked access to the elements if you tell the compiler _trust me,
 I know what I am doing_ using the `unsafe` keyword. I personally think this is 
-the right default to have, since the other way leads to the most common bug 
-contained in Louis's presentation.
+the right default to have, since the other way leads to the number one bug
+contained in Louis' presentation.
 
 # Bug \#2: `std::map` Acccess using `[]`
 
@@ -77,12 +77,12 @@ Widget::Widget(
 }
 ```
 
-Here the programmers mindset is _let me just log the timeout real quick_, but it 
+Here the programmer's mindset is _let me just log the timeout real quick_, but it 
 is easy to forget that this operation inserts a timeout of `0` (which in often
 means infinite wait) if no such key was already present.
 Rust's [BTreeMap](https://doc.rust-lang.org/std/collections/struct.BTreeMap.html#)
 exposes a much less surprising API, which makes this kind of error arguably 
-impossible to make.
+impossible to make[^mutability].
 
 # Bug \#3: References to Temporaries
 
@@ -95,7 +95,7 @@ all of those rules and exceptions to them. Louis gives a very cool motivating
 example.
 
 Building on the discussion about maps above, let's write a function that 
-gets an element from a map with string pairs or returns a given default value.
+gets an element from a map or returns a given default value.
 He presents us with the following function:
 
 ```c++
@@ -122,11 +122,11 @@ a copy of the value it chooses to return. Being good C++ programmers, we might
 want to get rid of that extra copy-construction and change the return value to a
 _constant reference_ to string instead of the by value return causing the copy.
 Let me quote Louis Brandy: "this code \[would be\] _hopelessly broken_". The 
-does not problem manifest if we return a reference to an element in the map.
-This is of course fine, but if the map does not contain the given key, we return a reference to a the
+problem does not manifest if we return a reference to an element inside the map.
+This is of course fine, but if the map does not contain the given key, we return a reference to the
 temporary. This is a dangling reference and thus undefined behavior.
 
-As mentioned above, there are rules such as [lifetime extension](https://en.cppreference.com/w/cpp/language/reference_initialization#Lifetime_of_a_temporary),
+As mentioned above, there are rules for [lifetime extension](https://en.cppreference.com/w/cpp/language/reference_initialization#Lifetime_of_a_temporary),
 which make it defined behavior to bind a temporary value to a reference to `const`.
 However, we find this exception to the rules:
 
@@ -147,9 +147,9 @@ syntax that allows us to annotate lifetimes if we have to.
 
 Louis Brandy tells a success story here. Years ago, the `volatile` keyword was 
 commonly misused to enforce synchronization across threads. With the advent of 
-`std::atomic`, and more generally the addition library and language facilities
+`std::atomic`, and more generally the addition of library and language facilities
 for concurrent programming in C++11, programmers stopped misusing `volatile`. We 
-started using the used the newly available language and library facilities, since
+started using the newly available language and library facilities, since
 they were simple to use and simple to teach.
 
 Let's enjoy this success story, before we get back to the broader topic of 
@@ -200,7 +200,7 @@ We have typedef'd `SharedPtr<T>` to the standard library type `Rc<T>`. Then we
 created a new instance via `Rc::new` (think of this somewhat like `std::make_shared`)
 and share a copy of that shared pointer across different threads (using a method
 called `clone` because otherwise Rust would move the value out of our scope). 
-All threads including `main`, just print the value of the shared integer. One problem:
+All threads including `main` just print the value of the shared integer. One problem:
 this program does not compile. The compiler will complain that `Rc` does not
 implement the [`Send`](https://doc.rust-lang.org/nomicon/send-and-sync.html) trait.
 
@@ -283,7 +283,7 @@ Rust developers: did you spot the problem?
 It turns out that `let _ =` is not actually binding the mutex guard to a named
 variable. This means the created temporary is immediately destructed, rather
 than at the end of the scope, unlike a named entity. In fact, `let _ = expr`
-semantically equivalent to `(void)(expr);` in C++ and serves to e.g. suppress
+is semantically equivalent to `(void)(expr);` in C++ and serves to e.g. suppress
 compiler warnings about unused return values. On the other hand `let _g = expr`
 is somewhat like `auto _g = expr` in C++ and binds to a named entity whose destructor
 is invoked at the end of its scope. At the time of writing the code shown above
@@ -294,21 +294,21 @@ I really think the semantic
 difference between `let _ = expr` and `let _g = expr` is a confusing design choice,
 as evidenced e.g. by the discussions [here](https://internals.rust-lang.org/t/confusing-behaviour-of-let/13435)
 and [here](https://internals.rust-lang.org/t/pre-rfc-must-bind/12658/25). There is a [clippy lint](https://rust-lang.github.io/rust-clippy/master/#let_underscore_lock)
-[^clippy-lint] that will catch the mistake in the code using mutexes above, but it cannot prevent
+[^clippy_lint] that will catch the mistake in the code using mutexes above, but it cannot prevent
 deeper underlying problem for other types of RAII guards. We could, of course,
 argue that using `Mutex<()>` is an indication of bad design, but that would
 be unfair to C++, because then we could always say producing bugs is bad design.
-If `Mutex<()>` exists, people will eventually use it and the `let _ =` confusion
+If `Mutex<()>` exists, people will eventually use it and the `let _ = ...` confusion
 goes beyond just mutexes.
 
 # Summary
 We looked at six common errors in C++ in the facebook codebase and we saw that Rust enables us to catch
-most of the bugs at compile time and also emphasizes memory safety in its safe
-API. But we also discovered a thread safety bug caused by a syntax quirk in C++ that 
+most of the bugs at compile time and also emphasizes memory safety and simplicity
+in its API design. But we also discovered a thread safety bug caused by a syntax quirk in C++ that 
 exists in Rust as well, albeit through a completely different syntax quirk.
 
-I don't want to pass judgement on Rust vs C++, but it is nice
-to see that a language which is taunted as a safe successor to C++ does indeed
+I don't want to pass judgement on Rust vs C++ as languages in general, but it is nice
+to see that a language which is often taunted as a safe successor to C++ does indeed
 address many common bugs in C++. And yet we saw that Rust is not entirely without
 its flaws.
 
@@ -317,20 +317,8 @@ its flaws.
 [^arrays]: This is true for other array like containers in the STL as well as C-style arrays.
 [^panic]: A panic is an early, but orderly termination of the program with stack unwinding.
 [^backwards]: However, I'd be surprised if they are ever fixed, because of backwards compatibility.
-[^shared_ptr]: Part of this confusion surely stems from the fact that the [control
-block](https://en.cppreference.com/w/cpp/memory/shared_ptr) of a shared pointer
-is synchronized. This implies that the reference count is actually thread-safe, but
-this does not mean that the pointed-to instance is safe to access across threads.
-It's as safe as sharing a raw pointer would be, i.e. read-only sharing would 
-be safe while any form of mutation could incur a data race.
-[^lock_warnings]: The problem here is that warnings for unused locals will probably not help because
-all we need that lock to do is invoke its destructor once it goes out of scope.
-In the talk he gives a mitigation using special compiler warnings
-that might or might not be available on the particular compiler you are using.
-[^rust_template]: "Templates" in Rust are not called templates and also work rather 
-differently than templates in C++. But in very broad strokes, Rust _generics_
-are somewhat like C++ templates.
-[^clippy_lint]: Clippy is the static analyzer that ships with the rust toolchain
-Rust and many projects use it to run extra analyses on their code. However,
-the compiler does not complain and so I feel it would be unfair to C++
-to disregard that problem in the Rust language.
+[^shared_ptr]: Part of this confusion surely stems from the fact that the [control block](https://en.cppreference.com/w/cpp/memory/shared_ptr) of a shared pointer is synchronized. This implies that the reference count is actually thread-safe, but this does not mean that the pointed-to instance is safe to access across threads. It's as safe as sharing a raw pointer would be, i.e. read-only sharing would be safe while any form of mutation could incur a data race.
+[^lock_warnings]: The problem here is that warnings for unused locals will probably not help because all we need that lock to do is invoke its destructor once it goes out of scope. In the talk he gives a mitigation using special compiler warnings that might or might not be available on the particular compiler you are using.
+[^rust_template]: "Templates" in Rust are not called templates and also work rather differently than templates in C++. But in very broad strokes, Rust _generics_ are somewhat like C++ templates.
+[^clippy_lint]: Clippy is the static analyzer that ships with the rust toolchain Rust and many projects use it to run extra analyses on their code. However, the compiler does not complain and so I feel it would be unfair to C++ to disregard that problem in the Rust language.
+[^mutability]: Half of the reason this operation is so problematic in C++ is that it does not work on a `const` map. Louis shows that this does not deter programmers from using the operator because they just get rid of the `const`.
