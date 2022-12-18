@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
+title: Tentang
 permalink: /about/
 ---
 
-Some information about you!
+Pagodaimedia CDN Adalah Layanan CDN Untuk Pagodaimedia dan Orang orang Dari Seluruh Dunia.
 
-### More Information
+### Informasi Menarik
 
-A place to include any other types of information that you'd like to include about yourself.
+Gambar-Gambar dan Beberapa CDN yang ada Di Situs Pagodaimedia Berasal dari Sini.
 
-### Contact me
+### Hubungi Saya
 
-[email@domain.com](mailto:email@domain.com)
+[info@pagodaimedia.my.id](mailto:info@pagodaimedia.my.id)
