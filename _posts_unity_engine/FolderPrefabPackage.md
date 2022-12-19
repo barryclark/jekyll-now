@@ -74,3 +74,14 @@ https://noahstory.tistory.com/26
 2. 플레이할 씬에 [CameraRig]를 추가합니다.
 
 </div></details>
+
+<details><summary>Addressable asset</summary>
+<div markdown="1">
+
+[Addressables](https://docs.unity3d.com/Packages/com.unity.addressables@1.20/manual/index.html)
+
+Addressable 시스템은 런타임에 자산을 로드하고 릴리스하기 위한 API와 애플리케이션용 콘텐츠를 구성하고 패키징하는 도구와 스크립트를 제공합니다.
+
+**자산을 "주소 지정 가능"으로 만들면 해당 자산의 주소를 사용하여 어디에서나 로드할 수 있습니다. 해당 자산이 로컬 애플리케이션에 있든 콘텐츠 전송 네트워크에 있단 Addressable 시스템은 이를 찾아 반환합니다.**
+
+</div></details>

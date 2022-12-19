@@ -33,6 +33,9 @@ title: cpp class
 계시는 변수와 함수와 동일한 것으로 생각하시면 됩니다. 누군가 인스턴스 메소드라고 하면 "아 그냥
 객체에 정의되어 있는 함수구나" 라고 생각하시면 됩니다.
 
+* 실제로 작업을 하다보면, 개인적인 판단이 필요한 부분입니다.
+* "내가 누구한테 일을 시킨다"라는 대상이 명확해야합니다. 클래스 또는 ptr을 가져와 .을 찍는 것은 일을 시키는 것 입니다. 따라서 액터의 각각의 부품이 무슨일을 하는지 명확하게 알아야합니다.
+
 <details><summary>클래스와 인스턴스</summary>
 <div markdown="1">
 
@@ -74,7 +77,7 @@ title: cpp class
 
 </div></details>
 
-<details><summary>Is a Has a</summary>
+<details><summary>Is a - Has a</summary>
 <div markdown="1">
 
 is-a는 추상화(형식이나 클래스와 같은)들 사이의 포함 관계를 의미하며, 한 클래스 A가 다른 클래스 B의 서브클래스(파생클래스)임을 이야기합니다. 다른 말로, 타입 A는 타입 B의 명세(specification)를 암시한다는 점에서 타입 B의 서브타입이라고도 할 수 있습니다.
@@ -194,3 +197,8 @@ getter도 마찬가지로 굳이 예를들자면 자료에 무언가 더하거�
 </div></details>
 
 주요 참고자료 : 씹어먹는 C++, 위키피디아
+
+## C++에 "추상"에 대한 키워드가 있습니까?
+[c-abstract-keyword](https://www.programmerinterview.com/c-cplusplus/c-abstract-keyword/)
+
+아니요, C++는 추상 클래스를 설명하기 위해 abstract 키워드를 사용하지 않습니다. 그러나 C++에서 abstract 키워드를 사용하지 않는다고 해서 추상 클래스가 없는 것은 아닙니다. C++에서 추상 클래스는 순수 가상 함수 를 사용하여 생성됩니다.

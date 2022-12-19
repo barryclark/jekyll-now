@@ -84,7 +84,7 @@ pre.highlight{
 <details><summary>mermaid</summary>
 <div markdown="1">
 
-[mermaid](https://mermaid-js.github.io/mermaid/#/) 
+[mermaid](https://mermaid-js.github.io/mermaid/#/), [mermaid setting](https://frhyme.github.io/mermaid/Embedding_mermaid_in_github_page/)
 
 다이어 그램과 차트를 그리는 용도입니다.
 
@@ -93,6 +93,7 @@ pre.highlight{
 [UML 클래스 다이어그램](https://sabarada.tistory.com/72)
 
 클래스 다이어그램을 어떻게 만들어야 하는지, 참고하는 용도로 사용합니다.
+
 
 </div>
 

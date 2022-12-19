@@ -2,6 +2,8 @@
 layout: post
 title: Algorithm and data struct
 ---
+## 알고리즘을 푸는 법
+* 알고리즘 문제 풀 때, 풀이방법을 정의하고 해결방법을 찾는게 아니라 문제를 명확히 이해하고, 적용할 수 있는 방법을 찾아야 합니다.
 
 * [Complexity](/posts_algorithm_and_data_struct/AlgorithmAndDatastruct)
     - 자료구조와 알고리즘을 평가하는 기준
