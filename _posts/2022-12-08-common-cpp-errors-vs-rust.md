@@ -18,8 +18,8 @@ og_image:
 comments_id:
 ---
 
-I used to like C++. I still do, but I used to, too. Also I am not one of 
-those people that tells any C++ programmer to just use Rust. There are a ton 
+I used to like C++. I still do, but I used to, too. Joking aside, I am not one
+to tell any C++ programmer to just use Rust. There are a ton 
 of valid reasons why companies or individuals decide to use C++ and I don't 
 wish to deter anyone from doing so. What I am trying
 to do in this article is to see how Rust stacks up against a handful of 
@@ -31,9 +31,8 @@ Louis draws his experience from working on the C++ codebase at
 facebook (now Meta). I am aware that facebook does not represent every C++ use case, but my personal
 experience is very much compatible with the given list. I'll try to not repeat the talk
 too much because it is an excellent presentation that I urge you to watch yourself.
-
 In the talk, Louis gives mitigations against many of the bugs, mostly involving
-Sanitizers. I won't go into those kind of runtime mitigations here because I want
+Sanitizers. I won't go into those kind of mitigations here because I want
 to explore how Rust stacks up on a more fundamental level.
 
 # Bug \#1: Vector Out of Bounds Access Using `[]`
