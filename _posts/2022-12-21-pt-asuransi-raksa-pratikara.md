@@ -2,7 +2,7 @@
 layout: post
 title: PT Asuransi Raksa Pratikara
 author: Pak Budi
-date: 2022-12-21 10:14:51 +07:00
+date: 2022-12-21 10:15:51 +07:00
 ---
 
 **PT Asuransi Raksa Pratikara** didirikan pada tahun 1975 dan menjalankan usahanya berdasarkan semboyan "BIJAKSANA DAN TEPERCAYA”. Kualitas pelayanan bertumpu pada staf yang profesional, handal, berpengalaman dan selalu siap bekerja keras.
