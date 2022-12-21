@@ -11,11 +11,11 @@ title: Rust vs Common C++ Bugs
 #
 #
 # Make sure this image is correct !!!
-og_image: 
+og_image: rust-vs-cpp-bugs.png 
 #
 #
 # Make sure comments are enabled !!!	
-comments_id:
+comments_id: 41
 ---
 
 I used to like C++. I still do, but I used to, too. Joking aside, I am not one
