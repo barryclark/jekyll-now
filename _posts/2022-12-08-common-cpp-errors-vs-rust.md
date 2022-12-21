@@ -40,9 +40,9 @@ to explore how Rust stacks up on a more fundamental level.
 We all know that array or vector access using operator `[]` can cause out of
 bounds access. For example, for `std::vector` it does [not perform bounds checking](https://en.cppreference.com/w/cpp/container/vector/operator_at),
 so an illegal memory access can occurr unnoticed[^arrays]. The problem is not that this
-is possible at all, since a low level language that cares about performance
+is possible at all, since a systems language that cares about performance
 _must_ offer these kinds of unchecked accesses. The problem is that 
-this basic way to access a vector element, deep in every programmers DNA, is
+this most fundamental way to access a vector element, deep in every programmers DNA, is
 inherently unsafe.
 
 There is, of course a bounds-checked API for element access using
@@ -57,7 +57,7 @@ contained in Louis' presentation.
 
 # Bug \#2: `std::map` Acccess using `[]`
 
-This one is a pretty well known confusing API, because on a map in C++ the operator
+This one is a pretty well known confusing API: on a `std::map` in C++ the operator
 `[]` actually means _get me a reference to the element or insert the default value
 and then get me a reference to that_. There are cases where this is a useful
 API to have. Imbuing the operator `[]` with that behavior seems problematic 
@@ -83,12 +83,31 @@ Rust's [BTreeMap](https://doc.rust-lang.org/std/collections/struct.BTreeMap.html
 exposes a much less surprising API, which makes this kind of error arguably 
 impossible to make[^mutability].
 
+Let's have a quick look at the API for accessing entries in Rust's `BTreeMap`.
+We can use the [`[]` operator](https://doc.rust-lang.org/std/collections/struct.BTreeMap.html#impl-Index%3C%26Q%3E-for-BTreeMap%3CK%2C%20V%2C%20A%3E)
+for accessing an (immutable) reference to an element in the map via its key. This operator
+panics if the key is not present in the map. That might seem peculiar at first, 
+but is consistent with how a vector or array behaves when using the `[]` operator,
+where it means bounds-checked access to the element or panic.
+We can also use the [`get`](https://doc.rust-lang.org/std/collections/struct.BTreeMap.html#method.get)
+or [`get_mut`](https://doc.rust-lang.org/std/collections/struct.BTreeMap.html#method.get_mut)
+methods for immutable or mutable access respectively if we are not sure the key
+exists in the map. Rather than throw an exception they return an optional reference
+to the element if it exists. Optional references are safe in Rust. 
+
+But is there a way to have the behavior of `operator[]` as in C++ in a clearer 
+manner? Turns out there is, using the [`entry`](https://doc.rust-lang.org/std/collections/struct.BTreeMap.html#method.entry)
+method. Say we have a `BTreeMap` named `map`: then we can write
+`map.entry(key).or_default()` to get the equivalent
+behavior to C++'s `map[key]`. The expression returns a mutable reference that can be manipulated,
+just as the C++ operator would. I would argue that this is a much cleaner API.
+
 # Bug \#3: References to Temporaries
 
 While the bugs described above might theoretically be fixed by an API redesign in
 the standard library[^backwards], the next one is inherent in the language. It 
 has to do with the lifetime of temporaries. I assume that many of us know about [lifetime](https://en.cppreference.com/w/cpp/language/lifetime)
-in the C++ standard and also know that lifetimes of temporaries _may_ be extended
+in C++ and also know that lifetimes of temporaries _may_ be extended
 under certain circumstances. However, I personally would be hard-pressed to recount
 all of those rules and exceptions to them. Louis gives a very cool motivating
 example.
@@ -119,7 +138,7 @@ There is nothing wrong with that. The problem arises only when we try
 to optimize the `get_or_default` function implementation. The function always returns
 a copy of the value it chooses to return. Being good C++ programmers, we might 
 want to get rid of that extra copy-construction and change the return value to a
-_constant reference_ to string instead of the by value return causing the copy.
+_constant reference_ to string instead of the by-value return that causes the copy.
 Let me quote Louis Brandy: "this code \[would be\] _hopelessly broken_". The 
 problem does not manifest if we return a reference to an element inside the map.
 This is of course fine, but if the map does not contain the given key, we return a reference to the
@@ -136,11 +155,50 @@ However, we find this exception to the rules:
 References to temporaries in C++ are hard, [even in 2022](https://pvs-studio.com/en/blog/posts/cpp/1006/) and
 address sanitizer and static analyzers can be used as mitigations to some degree.
 Still, it would surely be nice not to have that problem at all. This is where
-one of Rust's most well-known features comes in, the [Borrow Checker](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html).
-This is such an integral (and well-documented) part of the Rust language that I won't
-go into detail here. Suffice it to say that dangling references are a 
-_compile time error_ in Rust at the expense of a more complex 
-syntax that allows us to annotate lifetimes if we have to.
+one of Rust's most well-known features comes in: the [Borrow Checker](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html).
+This is such an integral and well-documented part of the Rust language
+that I'll keep the example brief. We can write the `get_or_default` function in Rust like so:
+
+```rust
+fn get_or_default<'a,'b,'c>(
+  map : &'a BTreeMap<String,String>,
+  key : &String,
+  default_val : &'b String) -> &'c String 
+where 'a : 'c,
+      'b : 'c {
+    match map.get(key) {
+        Some(val) => val, we 
+        None => default_val,
+    }
+}
+```
+This is not idiomatic Rust since there are much cleaner ways to achieve this 
+logic by using the `BTreeMap` API, but it's a straightforward translation of the 
+C++ code. The interesting thing is that the `get_or_default` function takes references to _all_
+of it's parameters (even the default value) and returns a reference, which will
+point to either the default value or the entry in the map. Those weird `'a`,
+`'b`, and `'c` parameters that look like generics are actually named lifetimes
+that are enforced _completely at compile time_ to check that references can never
+be dangling. What we have told the compiler here is that the map has a lifetime of `'a`.
+References to the elements inside the map will also have this lifetime. For the `key`
+we don't have to specify an explicit lifetime, because the
+lifetime of the reference returned from the function is completely independent from it.
+The compiler can take care of that on its own. The lifetime
+of the default value is `'b` and finally the lifetime of the returned reference is 
+`'c`. The real magic happens in the `where` clause, where we indicate the relationship
+between the lifetimes. We tell the compiler that the lifetime `'a` and `'b` must 
+be _at least_ as long as `'c`. Thus, at the callsite, the compiler will check that the 
+returned reference is only used as long as the map and the default value are still 
+alive. Again, this is enforced at compile time without any runtime overhead. 
+For any program that compiles, we can be sure that the `get_or_default` function
+never returns a dangling reference. 
+
+If that syntax seems weird and complicated to you, don't panic because there 
+is such a thing as [lifetime elision](https://doc.rust-lang.org/reference/lifetime-elision.html)
+which makes those explicit lifetime annotations unneccessary in many common 
+usecases. Still, sometimes we have to help the compiler by annotating the lifetimes
+which is the price we have to pay in Rust (at compile time) for the absence of 
+dangling references[^unsafe].
 
 # Bug \#4: Volatile for Atomic
 
@@ -152,7 +210,8 @@ started using the newly available language and library facilities, since
 they were simple to use and simple to teach.
 
 Let's enjoy this success story, before we get back to the broader topic of 
-thread safety in the next section.
+thread safety in the next section. Harking back to the first two sections,
+this success story shows that good API design does go a long way in preventing bugs.
 
 # Bug \#5: Is `shared_ptr` Thread Safe?
 
@@ -195,6 +254,7 @@ fn main() {
     let _ = handle2.join();
 }
 ```
+
 We have typedef'd `SharedPtr<T>` to the standard library type `Rc<T>`. Then we 
 created a new instance via `Rc::new` (think of this somewhat like `std::make_shared`)
 and share a copy of that shared pointer across different threads (using a method
@@ -224,11 +284,20 @@ I have written a two part series comparing mutexes in Rust and C++ ([part 1](/bl
 [part 2](/blog/2020/rust-style-mutex-for-cpp/)).
 
 The takeaway here is that Rust does indeed prevent this type of thread-safety problem
-(and many more) by making thread safety part of the type system. This even presents
+(and many more) by making thread safety part of the type system. So thread-safety
+is checked at compile time. This even presents
 an opportunity for optimization by giving us non-atomically reference counted pointers
 that are only safe to use from one thread. We only pay for atomic counting if 
 we need it and we cannot forget to use it during a refactor because the compiler
 will tell us.
+
+It's fair to note that the thread-safety guarantees aren't all sunshine and
+rainbows in Rust and truly getting into the specifics of what thread-safety guarantees
+Rust actually gives is [complicated](https://github.com/rust-lang/rust/issues/26215).
+The term is just  so loosely defined. For one, Rust does prevent data races
+and on the other hand you can still deadlock all you want. Also, at the time of writing,
+Rust does not have a defined [memory model](https://doc.rust-lang.org/reference/memory-model.html), 
+[unlike C++](https://en.cppreference.com/w/cpp/language/memory_model).
 
 # Bug \#6: A Vexing Parse that Only Pretends To Lock A Mutex
 
@@ -286,7 +355,7 @@ is semantically equivalent to `(void)(expr);` in C++ and serves to e.g. suppress
 compiler warnings about unused return values. On the other hand `let _g = expr`
 is somewhat like `auto _g = expr` in C++ and binds to a named entity whose destructor
 is invoked at the end of its scope. At the time of writing the code shown above
-compiles without warnings in Rust 1.65. The mutex will not be locked until 
+compiles without warnings in Rust. The mutex will not be locked until 
 the end of the scope.
 
 I really think the semantic 
@@ -297,18 +366,19 @@ and [here](https://internals.rust-lang.org/t/pre-rfc-must-bind/12658/25). There 
 deeper underlying problem for other types of RAII guards. We could, of course,
 argue that using `Mutex<()>` is an indication of bad design, but that would
 be unfair to C++, because then we could always say producing bugs is bad design.
-If `Mutex<()>` exists, people will eventually use it and the `let _ = ...` confusion
-goes beyond just mutexes.
-
+If `Mutex<()>` exists, people will eventually use it. Furthermore, the problem with
+`let _ = ...` goes beyond just mutexes.
 # Summary
 We looked at six common errors in C++ in the facebook codebase and we saw that Rust enables us to catch
 most of the bugs at compile time and also emphasizes memory safety and simplicity
 in its API design. But we also discovered a thread safety bug caused by a syntax quirk in C++ that 
-exists in Rust as well, albeit through a completely different syntax quirk.
+exists in Rust as well, albeit through a completely different syntax quirk. We also
+learned that thread safety is a very underspecified aspect of the Rust language
+despite some amazing compile time guarantees.
 
 I don't want to pass judgement on Rust vs C++ as languages in general, but it is nice
 to see that a language which is often taunted as a safe successor to C++ does indeed
-address many common bugs in C++. And yet we saw that Rust is not entirely without
+help to prevent many of the bugs common in C++. And yet we saw that Rust is not without
 its flaws.
 
 # Endnotes
@@ -320,4 +390,5 @@ its flaws.
 [^lock_warnings]: The problem here is that warnings for unused locals will probably not help because all we need that lock to do is invoke its destructor once it goes out of scope. In the talk he gives a mitigation using special compiler warnings that might or might not be available on the particular compiler you are using.
 [^rust_template]: "Templates" in Rust are not called templates and also work rather differently than templates in C++. But in very broad strokes, Rust _generics_ are somewhat like C++ templates.
 [^clippy_lint]: Clippy is the static analyzer that ships with the rust toolchain Rust and many projects use it to run extra analyses on their code. However, the compiler does not complain and so I feel it would be unfair to C++ to disregard that problem in the Rust language.
-[^mutability]: Half of the reason this operation is so problematic in C++ is that it does not work on a `const` map. Louis shows that this does not deter programmers from using the operator because they just get rid of the `const`.
+[^mutability]: Half of the reason this operation is so problematic in C++ is that it does not work with `const`-correctness in an intuitive way. It will not work on a `const` map, but Louis shows that this does not deter programmers from using the operator. We just get rid of the `const`.
+[^unsafe]: There is such a thing as [`unsafe` Rust](https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html) which can cause all kinds of UB, including dangling references. Unsafe Rust is _not_ disabling the Borrow Checker. It can introduce [legitimate safety problems](https://shnatsel.medium.com/auditing-popular-rust-crates-how-a-one-line-unsafe-has-nearly-ruined-everything-fab2d837ebb1), but since it's _opt-in_ we can decide not to use the unsafe subset of Rust and loads of libraries and applications can be _and are_ written without it.
