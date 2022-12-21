@@ -1,11 +1,11 @@
 ---
 published: true
 ---
-Face it, if you want to make your open-source project your day job, you’re going to have to put some effort into marketing it.
+<p>Face it, if you want to make your open-source project your day job, you’re going to have to put some effort into marketing it.
 
 This doesn’t mean clickbait titles and fluffy articles, but rather a clear layout of what your product can do and an easy path for users to discover why it's awesome.
 
-This article is aimed at commercial open-source software (COSS) because if you want to live off your project, you’re going to need more than just stars coming in.
+This article is aimed at commercial open-source software (COSS) because if you want to live off your project, you’re going to need more than just stars coming in.</p>
 
 ## Focus on positioning your product
 
