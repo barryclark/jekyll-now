@@ -2,25 +2,26 @@
 published: true
 ---
 Face it, if you want to make your open-source project your day job, you’re going to have to put some effort into marketing it.
+<br>
 
 This doesn’t mean clickbait titles and fluffy articles, but rather a clear layout of what your product can do and an easy path for users to discover why it's awesome.
-
+<br>
 This article is aimed at commercial open-source software (COSS) because if you want to live off your project, you’re going to need more than just stars coming in.
-
+<br>
 ## Focus on positioning your product
-
+<br>
 This is the foundation of your marketing strategy.
-
+<br>
 Who is your target?
-
+<br>
 If you don’t know this, how can you speak to your audience?
-
+<br>
 Mikael Nida from Lotus, an open-source tool that lets you optimize, test and deploy new pricing packaging models said,
-
+<br>
 “Take more time than you think you should to properly understand your positioning.
-
+<br>
 This aspect is so important because it helps you iterate on who your true customer is, which in turn helps you build a better product.
-
+<br>
 Positioning is the key aspect of marketing I would tell other founders to focus on.”
 
 Ask questions to your early users or go directly to people from your perceived target audience.
