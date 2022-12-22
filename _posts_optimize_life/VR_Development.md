@@ -7,6 +7,44 @@ title: VR Development
 - [ ] [UI Widget 직접 누르기](https://docs.unrealengine.com/4.27/ko/InteractiveExperiences/UMG/HowTo/InWorldWidgetInteraction/)
 - [ ] [Oculus Development](https://developer.oculus.com/documentation/unity/meta-avatars-overview/)
 
+# VR - AR - MR
+게임, 엔터테인먼트, 건축, 훈련 및 교육과 같은 산업에서 VR의 급속한 성장으로 이 기술 세트에 대한 수요가 그 어느 때보다 높아졌습니다. Hired의 2021년 소프트웨어 엔지니어 현황 보고서에 따르면 VR/AR 엔지니어는 또한 가장 높은 급여를 받는 개발자 중 하나입니다.
+
+- VR을 직접 플레이해서 테스트하는데 굉장히 힘이 많이드므로, 로그를 이용하도록 합시다.
+- VR은 회사마다 기기마다 작동하는 방법이 다다르니 그 회사 홈페이지로 가야합니다.
+- 버전마다 다르고, 패키지 버전 마다 다르고… 정신이 혼미한데…
+- ObjectActivator를 만들고 이벤트를 추가하여 사용하는 이유는, 오브젝트의 실제 상호작용과 물체의 상호작용이 다르기 때문…?
+- XR Base Interactable은 상속받아서 덮어씌우기 어려움..? 어찌되었건, 사실 행동을 다시 정의할 일은 거의 없음.
+
+### XR
+XR은 다음을 포함하여 현실 세계와 디지털 세계를 혼합하는 모든 기술을 포괄하는 용어입니다.
+
+- **VR** 가상 현실
+- **AR** 증강 현실
+- **MR** 혼합 현실
+
+XR의 X는 각각 VR, AR, MR의 V, A, M의 대명사입니다. X는 아직 발명되지 않은 미래의 두문자어를 나타낼 수도 있습니다!
+
+### VR
+VR은 실제 환경을 완전히 대체하는 디지털 환경을 만들어 사용자를 디지털 세계에 몰입시킵니다. VR은 사용자가 두 개의 렌즈를 통해 화면을 직접 볼 수 있는 HMD(Head Mounted Display)가 필요합니다.
+
+### AR
+AR은 디지털 방식으로 생성된 콘텐츠를 사용자의 실제 환경에 오버레이합니다. VR과 달리 AR 사용자는 여전히 주변의 현실 세계를 볼 수 있습니다.
+
+### MR
+MR은 AR 및 VR의 요소를 포함할 수 있으므로 세 가지 용어 중 가장 넓은 용어입니다. 한쪽 끝에 실제 물리적 환경이 있고 다른 쪽 끝에 완전한 가상 환경이 있는 현실-가상 연속체를 따라 이러한 기술에 대해 생각하는 것이 아마도 가장 도움이 될 것입니다.
+
+![https://connect-prd-cdn.unity.com/20220615/learn/images/aca27594-cb34-4d7a-ae78-e133d24d7399_A.1.4_Reality_Diagram.jpg.2000x0x1.jpg](https://connect-prd-cdn.unity.com/20220615/learn/images/aca27594-cb34-4d7a-ae78-e133d24d7399_A.1.4_Reality_Diagram.jpg.2000x0x1.jpg)
+
+### VR 하드웨어 요구사항
+이 경로를 완료하는 데 VR 헤드셋이 필요하지 않습니다. 헤드셋에 액세스할 수 없는 경우 XR 장치 시뮬레이터를 사용하여 프로젝트를 테스트할 수 있습니다. 이를 통해 마우스와 키보드를 사용하여 헤드 마운트 디스플레이 및 컨트롤러의 움직임과 입력을 시뮬레이션할 수 있습니다.
+
+XR 장치 시뮬레이터를 사용하는 것은 어렵고 비효율적일 수 있으며 VR에서 프로젝트를 완전히 경험할 수 없으므로 가능한 경우 헤드셋에 액세스하는 것이 좋습니다.
+
+이 학습 콘텐츠는 Oculus/Meta Quest 모델로 검증 및 테스트되었으므로 이러한 헤드셋 중 하나를 사용하여 원활한 경험을 할 가능성이 매우 높습니다.
+
+Valve Index, HTC Vive, Windows Mixed Reality 헤드셋 또는 Oculus Rift 모델을 포함하여 [OpenXR](https://www.khronos.org/openxr/) 을 지원하는 다른 헤드셋을 사용할 수 있습니다 . 모든 것이 제대로 작동해야 하지만 이 학습 콘텐츠는 이러한 장치에서 철저히 테스트 및 검증되지 않았습니다.
+
 # VR 개발
 ## VR 기기 및 개발환경
 <center><div class="mermaid"> 
