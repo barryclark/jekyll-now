@@ -16,14 +16,14 @@ Who is your target?
 If you don’t know this, how can you speak to your audience?
 
 Mikael Nida from Lotus, an open-source tool that lets you optimize, test and deploy new pricing packaging models said,
-&nbsp;
+<br/>
 
 *“Take more time than you think you should to properly understand your positioning.*
 
 *This aspect is so important because it helps you iterate on who your true customer is, which in turn helps you build a better product.*
 
 *Positioning is the key aspect of marketing I would tell other founders to focus on.”*
-&nbsp;
+<br/>
 
 Ask questions to your early users or go directly to people from your perceived target audience.
 
