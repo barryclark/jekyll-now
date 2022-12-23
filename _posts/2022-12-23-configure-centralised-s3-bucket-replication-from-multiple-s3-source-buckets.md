@@ -61,7 +61,7 @@ The next step is valid **ONLY** for centralised S3 bucket, in order to have a pr
 # Replication is configured via rules.
 
 You have to create a rule in each source S3 bucket to replicate objects to centralised S3 bucket.
-The bellow step done only in sources AWS accounts:
+The bellow step is done only in sources AWS accounts:
 
 1. Go to the Amazon S3 console
 2. Click on the name of the **source S3 bucket**
