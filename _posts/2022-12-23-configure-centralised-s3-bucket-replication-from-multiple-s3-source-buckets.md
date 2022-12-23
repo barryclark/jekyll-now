@@ -3,7 +3,7 @@ layout: post
 title: Configure Centralised S3 bucket replication from multiple s3 bucket sources
 subtitle: AWS does not offer an managed backup service for your files, so needed to be creatives
 category: dev
-tags: [howto, cloud, aws, devops, kubernetes]
+tags: [howto, cloud, aws, devops]
 author: Cristian Pirtea
 author_email: pirteac@haufe.com
 header-img: "images/configure-centralised-s3-bucket-replication-from-multiple-s3-source-buckets/pipelines-1632712.jpg"
