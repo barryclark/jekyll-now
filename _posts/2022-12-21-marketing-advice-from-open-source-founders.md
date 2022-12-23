@@ -17,11 +17,11 @@ If you don’t know this, how can you speak to your audience?
 
 Mikael Nida from Lotus, an open-source tool that lets you optimize, test and deploy new pricing packaging models said,
 
-“Take more time than you think you should to properly understand your positioning.
+_“Take more time than you think you should to properly understand your positioning.
 
 This aspect is so important because it helps you iterate on who your true customer is, which in turn helps you build a better product.
 
-Positioning is the key aspect of marketing I would tell other founders to focus on.”
+Positioning is the key aspect of marketing I would tell other founders to focus on.”_
 
 Ask questions to your early users or go directly to people from your perceived target audience.
 
@@ -33,14 +33,14 @@ Be specific in your questions.
 
 Avoid asking questions that can be answered with yes or no.
 
-~~Do you find our product useful?~~
+  ~~Do you find our product useful?~~
  
-What feature of our product did you find most useful?
+  What feature of our product did you find most useful?
 
 
-~~Did our product save you time during your work day?~~
+  ~~Did our product save you time during your work day?~~
  
-What task did [product name] save you the most time on?
+  What task did [product name] save you the most time on?
 
 
 Think of these like icebreaking questions and then dive deeper depending on the answers you receive. 
