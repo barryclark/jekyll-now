@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configure Centralised S3 bucket replication from multiple s3 bucket sources
-subtitle: AWS does not offer an managed backup service for your files, so we were needed to be creatives
+subtitle: AWS does not offer an managed backup service for your files, so needed to be creatives
 category: dev
 tags: [howto, cloud, aws, devops, kubernetes]
 author: Cristian Pirtea
@@ -10,7 +10,7 @@ header-img: "images/secure-your-application-with-k8s-nginx-ingress-oauth2-azurea
 ---
 
 In Haufe we are using AWS Organization service with hundreds of accounts and multiple OUs, therefore it was a challenge for us to offer a centralised backup solution for files.
-AWS does not offer an out-of-box backup service for your files, so we were needed to be creatives.
+AWS does not offer an out-of-box backup service for your files, so we needed to be creatives.
 Considering this requirement, we realised that S3 bucket replication can be a good candidate, in order to achive our goal. Of course, having one-to-one replicated bucket solution do not scale, therefore we were thinking to create **ONLY** one centralised replicated S3 bucket, which stores all the file from multiple S3 buckets sources.
 There was one last challenge: how do we organise the centralised S3 bucket, in order to have a well structured folder/prefix for each source S3 bucket. The solution came from the centralised S3 bucket permission policy, where we used the [${aws:PrincipalAccount}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html) context key.
 
