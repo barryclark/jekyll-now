@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 Face it, if you want to make your open-source project your day job, you’re going to have to put some effort into marketing it.
 
