@@ -47,9 +47,9 @@ From AWS console, go to S3 service and select Create bucket
 
 * Write the name of the source/centralised bucket 
 * Enable Bucket version 
-* Enable server side encryption and specify kms key are created in the previous step
+* Enable server side encryption and specify kms key created in the previous step
 
-The next step is valid ONLY for centralised S3 bucket, in order to have a proper policy based on account id and with Organization ID condition:
+The next step is valid ONLY for centralised S3 bucket, in order to have a proper policy based on aws:PrincipalAccount and including Organization ID condition:
 
 {:.center}
 ![]( /images/configure-centralised-s3-bucket-replication-from-multiple-s3-source-buckets/S3_policy.png){:style="width:110%"}
@@ -61,26 +61,26 @@ You have to create a rule in each source S3 bucket to replicate objects to centr
 The bellow step done only in sources AWS accounts:
 
 1. Go to the Amazon S3 console
-2. Click on the name of the  source S3 bucket
-3. Click on the Management tab
-4. Click Create replication rule
-5. Specify  Replication rule name
-6. Leave Status set to enabled
-7. Choose a rule scope select,  Limit the scope of this rule using one or more filters 
+2. Click on the name of the **source S3 bucket**
+3. Click on the **Management** tab
+4. Click **Create replication rule**
+5. Specify **Replication rule name**
+6. Leave **Status** set to **enabled**
+7. Choose a rule scope select, **Limit the scope of this rule using one or more filters**
    * Specify for prefix/folder the account id value, in order to be sync with centralised S3 bucked policy based on ${aws:PrincipalAccount}
      * eg. 123456789123 <- account id
-8. For Destination select  Specify a bucket in another account 
+8. For Destination select **Specify a bucket in another account**
    * Specify the account id of the centralised S3 bucket 
    * Specify the centralised S3 bucket name created in the prerequisites chapter
-   * Check box  Change object ownership to destination bucket owner 
-9. For IAM Role leave Choose from existing IAM roles selected, and select Create a new role from the search results box
+   * Check box **Change object ownership to destination bucket owner**
+9. For **IAM Role** leave **Choose from existing IAM roles** selected, and select **Create a new role** from the search results box
    * A new IAM role will be created, which has privileges to both S3 buckets and to KMS keys in both accounts
-10. For  Encryption , choose  Replicate objects encrypted with KMS keys  and select  Enter AWS KMS Key ARN
+10. For **Encryption**, choose **Replicate objects encrypted with KMS keys** and select **Enter AWS KMS Key ARN**
     * For source objects check box the KMS key name created in the prerequisite step in source account 
     * For destination objects get the KMS key ARN from the centralised account and paste in the field
-11. For  Destination Storage Class , you can specify a destination storage class for objects replicated in centralised S3 bucket.
-12. For  Additional replication options , I recommend to check box only  Replication Time Control , and do not select  Delete marker replication , since Delete markers created by S3 delete operations will be replicated in centralised S3 bucket
-13. Click  Save 
+11. For **Destination Storage Class**, you can specify a destination storage class for objects replicated in centralised S3 bucket.
+12. For **Additional replication options**, I recommend to check box only **Replication Time Control**, and do not select **Delete marker replication**, since Delete markers created by S3 delete operations will be replicated in centralised S3 bucket
+13. Click **Save**
 
 {:.center}
 ![]( /images/configure-centralised-s3-bucket-replication-from-multiple-s3-source-buckets/rule_name.png){:style="width:110%"}
