@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configure Centralised S3 bucket replication from multiple s3 bucket sources
-subtitle: AWS does not offer an managed backup service for your files, so needed to be creatives
+subtitle: AWS does not offer an managed backup service for your files, so needed to be creative
 category: dev
 tags: [howto, cloud, aws, devops]
 author: Cristian Pirtea
@@ -9,11 +9,11 @@ author_email: pirteac@haufe.com
 header-img: "images/configure-centralised-s3-bucket-replication-from-multiple-s3-source-buckets/pipelines-1632712.jpg"
 ---
 
-In Haufe we are using AWS Organization service with hundreds of accounts and multiple OUs, therefore it was a challenge for us to offer a centralised backup solution for files.
+In Haufe we are using AWS Organizations service with hundreds of accounts and multiple OUs, therefore it was a challenge for us to offer a centralised backup solution for files.
 
-AWS does not offer an out-of-box backup service for your files, so we needed to be creatives.
+AWS does not offer an out-of-box backup service for your files, so we needed to be creative.
 
-Considering this requirement, we realised that S3 bucket replication can be a good candidate in order to achive our goal. Of course, having a one-to-one replicated bucket solution does not scale, therefore we were thinking to create **ONLY** one centralised replicated S3 bucket, which stores all the files from multiple S3 buckets sources.
+Considering this requirement, we realised that S3 bucket replication can be a good candidate in order to achive our goal. Of course, having a one-to-one replicated bucket solution does not scale, therefore we were thinking to create **ONLY** one in the centralised replicated S3 bucket, which stores all the files from multiple S3 buckets sources.
 
 Amazon S3 replication enables automatic, asynchronous copying of objects across Amazon S3 buckets. Buckets that are configured for object replication can be owned by the same AWS account or by different accounts.
 
@@ -42,7 +42,7 @@ One important aspect is to create a valid kms policy, which allows AWS services 
 
 # Create S3 Buckets
 
-We have to create 2 buckets one in each source accounts and another one in the centralised one.
+We have to create 2 buckets one in each source account and another one in the centralised one.
 From AWS console, go to S3 service and select Create bucket
 
 {:.center}
@@ -60,7 +60,7 @@ The next step is valid **ONLY** for centralised S3 bucket, in order to have a va
 
 # Replication is configured via rules.
 
-You have to create a rule in each source S3 bucket to replicate objects to centralised S3 bucket.
+You have to create a rule in each source S3 bucket to replicate objects to the centralised S3 bucket.
 The bellow step is done only in sources AWS accounts:
 
 1. Go to the Amazon S3 console
