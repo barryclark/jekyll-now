@@ -6,7 +6,7 @@ category: dev
 tags: [howto, cloud, aws, devops, kubernetes]
 author: Cristian Pirtea
 author_email: pirteac@haufe.com
-header-img: "images/secure-your-application-with-k8s-nginx-ingress-oauth2-azuread/security-graphic.jpg"
+header-img: "images/configure-centralised-s3-bucket-replication-from-multiple-s3-source-buckets/pipelines-1632712.jpg"
 ---
 
 In Haufe we are using AWS Organization service with hundreds of accounts and multiple OUs, therefore it was a challenge for us to offer a centralised backup solution for files.
