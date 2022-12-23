@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configure Centralised S3 bucket replication from multiple s3 bucket sources
-subtitle: AWS does not offer an out-of-box backup service for your files, so we were needed to be creatives
+subtitle: AWS does not offer an managed backup service for your files, so we were needed to be creatives
 category: dev
 tags: [howto, cloud, aws, devops, kubernetes]
 author: Cristian Pirtea
@@ -11,7 +11,7 @@ header-img: "images/secure-your-application-with-k8s-nginx-ingress-oauth2-azurea
 
 In Haufe we are using AWS Organization service with hundreds of accounts and multiple OUs, therefore it was a challenge for us to offer a centralised backup solution for files.
 AWS does not offer an out-of-box backup service for your files, so we were needed to be creatives.
-Considering this requirement, we realised that S3 bucket replication can be a good candidate, in order to achive our goal. Of course, having one-to-one replicated bucket solution do not scale, therefore we were thinking to create ONLY one centralised replicated S3 bucket, which stores all the file from multiple S3 buckets sources.
+Considering this requirement, we realised that S3 bucket replication can be a good candidate, in order to achive our goal. Of course, having one-to-one replicated bucket solution do not scale, therefore we were thinking to create **ONLY** one centralised replicated S3 bucket, which stores all the file from multiple S3 buckets sources.
 There was one last challenge: how do we organise the centralised S3 bucket, in order to have a well structured folder/prefix for each source S3 bucket. The solution came from the centralised S3 bucket permission policy, where we used the [${aws:PrincipalAccount}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html) context key.
 
 Amazon S3 replication enables automatic, asynchronous copying of objects across Amazon S3 buckets. Buckets that are configured for object replication can be owned by the same AWS account or by different accounts.
@@ -49,7 +49,7 @@ From AWS console, go to S3 service and select Create bucket
 * Enable Bucket version 
 * Enable server side encryption and specify kms key created in the previous step
 
-The next step is valid ONLY for centralised S3 bucket, in order to have a proper policy based on aws:PrincipalAccount and including Organization ID condition:
+The next step is valid **ONLY** for centralised S3 bucket, in order to have a proper policy based on aws:PrincipalAccount and including Organization ID condition:
 
 {:.center}
 ![]( /images/configure-centralised-s3-bucket-replication-from-multiple-s3-source-buckets/S3_policy.png){:style="width:110%"}
@@ -99,8 +99,8 @@ To test this rule you will upload an object into the source S3 bucket in  accou
 ![]( /images/configure-centralised-s3-bucket-replication-from-multiple-s3-source-buckets/source.png){:style="width:110%"}
 ![]( /images/configure-centralised-s3-bucket-replication-from-multiple-s3-source-buckets/replica.png){:style="width:110%"}
 
-As seen, the object uploaded in source S3 bucket in the account id prefix is replicated in centralised S3 bucket in the same prefix. 
-This is the way how you can have a centralised S3 bucket for multiple source S3 buckets, splitting the source buckets based on the account id prefix.
+As seen, the object uploaded to source S3 bucket in the **account_id** prefix is replicated in centralised S3 bucket to the same prefix(account_id). 
+This is the way how you can configure a centralised S3 bucket for multiple source S3 buckets, splitting the source buckets based on the account_id prefix.
 
 
 
