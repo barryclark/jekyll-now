@@ -27,7 +27,7 @@ In order to keep data encrypted at rest, you have to create at least 2 KMS keys,
 *  one in each source account
 
 From AWS console -> KMS -> Customer-managed keys -> Create key.
-One important aspect is to create a proper kms policy, which allows AWS services to encrypt/decrypt data. Below you can see the kms policy for each type of key:
+One important aspect is to create a valid kms policy, which allows AWS services to encrypt/decrypt data. Below you can see the kms policy for each type of key:
 
 *  KMS for centralised bucket, contains a condition based on OrganizationID, which allows all AWS accounts in our AWS Organization to use it 
 
@@ -52,7 +52,7 @@ From AWS console, go to S3 service and select Create bucket
 * Enable Bucket version 
 * Enable server side encryption and specify kms key created in the previous step
 
-The next step is valid **ONLY** for centralised S3 bucket, in order to have a proper policy based on aws:PrincipalAccount and including Organization ID condition:
+The next step is valid **ONLY** for centralised S3 bucket, in order to have a valid policy based on aws:PrincipalAccount and including Organization ID condition:
 
 {:.center}
 ![]( /images/configure-centralised-s3-bucket-replication-from-multiple-s3-source-buckets/S3_policy.png){:style="width:110%"}
