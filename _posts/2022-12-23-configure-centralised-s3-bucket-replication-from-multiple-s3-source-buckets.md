@@ -13,9 +13,9 @@ In Haufe we are using AWS Organization service with hundreds of accounts and mul
 
 AWS does not offer an out-of-box backup service for your files, so we needed to be creatives.
 
-Amazon S3 replication enables automatic, asynchronous copying of objects across Amazon S3 buckets. Buckets that are configured for object replication can be owned by the same AWS account or by different accounts.
+Considering this requirement, we realised that S3 bucket replication can be a good candidate in order to achive our goal. Of course, having a one-to-one replicated bucket solution does not scale, therefore we were thinking to create **ONLY** one centralised replicated S3 bucket, which stores all the files from multiple S3 buckets sources.
 
-Considering this requirement, we realised that S3 bucket replication can be a good candidate, in order to achive our goal. Of course, having a one-to-one replicated bucket solution does not scale, therefore we were thinking to create **ONLY** one centralised replicated S3 bucket, which stores all the files from multiple S3 buckets sources.
+Amazon S3 replication enables automatic, asynchronous copying of objects across Amazon S3 buckets. Buckets that are configured for object replication can be owned by the same AWS account or by different accounts.
 
 There was one last challenge: how do we organise the centralised S3 bucket, in order to have a well structured folder/prefix for each source S3 bucket. The solution came from the centralised S3 bucket permission policy, where we used the [${aws:PrincipalAccount}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html) context key.
 
