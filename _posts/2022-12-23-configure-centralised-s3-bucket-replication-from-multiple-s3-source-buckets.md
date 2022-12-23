@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configure Centralised S3 bucket replication from multiple s3 bucket sources
-subtitle: AWS does not offer an managed backup service for your files, so needed to be creative
+subtitle: AWS does not offer an managed backup service for your files, so we needed to be creative
 category: dev
 tags: [howto, cloud, aws, devops]
 author: Cristian Pirtea
