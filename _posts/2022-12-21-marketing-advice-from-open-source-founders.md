@@ -16,9 +16,12 @@ Who is your target?
 If you don’t know this, how can you speak to your audience?
 
 Mikael Nida from Lotus, an open-source tool that lets you optimize, test and deploy new pricing packaging models said,
-/
-/
-/
+
+
+
+
+
+
 *“Take more time than you think you should to properly understand your positioning.*
 
 *This aspect is so important because it helps you iterate on who your true customer is, which in turn helps you build a better product.*
