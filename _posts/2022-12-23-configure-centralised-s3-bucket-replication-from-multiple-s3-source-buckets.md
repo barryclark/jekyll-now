@@ -103,7 +103,7 @@ To test this rule you will upload an object into the source S3 bucket in  accou
 ![]( /images/configure-centralised-s3-bucket-replication-from-multiple-s3-source-buckets/replica.png){:style="width:110%"}
 
 As seen, the object uploaded to source S3 bucket in the **account_id** prefix is replicated in centralised S3 bucket to the same prefix(account_id). 
-This is the way how you can configure a centralised S3 bucket for multiple source S3 buckets, splitting the source buckets based on the account_id prefix.
+This is the way you can configure a centralised S3 bucket for multiple source S3 buckets, splitting the source buckets based on the account_id prefix.
 
 
 
