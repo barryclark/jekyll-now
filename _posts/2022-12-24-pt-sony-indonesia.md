@@ -2,7 +2,7 @@
 layout: post
 title: PT Sony Indonesia
 author: Pak Budi
-date: 2022-12-24 07:21:51 +07:00
+date: 2022-12-24 07:30:51 +07:00
 ---
 
 **PT Sony Indonesia** didirikan pada tanggal 1 September 1995 sebagai perusahaan penjual dan pemasaran yang diberi wewenang oleh Sony Corporation telah menjalankan pemasaran, aktivitas penjualan dan layanan yang dapat diandalkan untuk purna jual  produk Sony yang terbaik ke seluruh penjuru Indonesia melalui 7 Sony Center, lebih dari 600 dealer resmi, 4 kantor cabang dan 43 service center resmi.
