@@ -2,7 +2,7 @@
 layout: post
 title: PT. Boga Handal Indonesia
 author: Pak Budi
-date: 2022-12-25 07:15:51 +07:00
+date: 2022-12-25 07:15:41 +07:00
 ---
 
 **PT. Boga Handal Indonesia (Bohan Group)** adalah perusahaan induk yang memiliki berbagai grup bisnis dan unit bisnis yang terintegrasi. Bisnis Bohan Group dimulai tahun 2007 dengan membangun unit bisnis pengolahan ikan dan hasil laut lainnya.
