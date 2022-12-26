@@ -237,7 +237,7 @@ to share an integer value across threads:
 use std::sync::Arc;
 use std::rc::Rc;
 
-type SharedPtr<T>= Rc<T>;
+type SharedPtr<T> = Rc<T>;
 
 fn main() {
     let val = SharedPtr::new(10);
