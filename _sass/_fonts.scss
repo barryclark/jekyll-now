@@ -1,16 +1,32 @@
 @font-face {
   font-family: 'EB Garamond';
-  src: url('https://github.com/geo-ant/blog/blob/master/fonts/EB_Garamond/static/EBGaramond-Medium.ttf?raw=true') format('truetype');
+  src: url('https://raw.githubusercontent.com/geo-ant/blog/master/fonts/EB_Garamond/static/EBGaramond-Medium.ttf') format('truetype');
   font-display: swap;
-  font-weight: 500;
+  font-weight: medium;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('https://raw.githubusercontent.com/geo-ant/blog/master/fonts/EB_Garamond/static/EBGaramond-MediumItalic.ttf') format('truetype');
+  font-display: swap;
+  font-weight: medium;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('https://raw.githubusercontent.com/geo-ant/blog/master/fonts/EB_Garamond/static/EBGaramond-Bold.ttf') format('truetype');
+  font-display: swap;
+  font-weight: medium;
+  font-style: bold;
 }
 
 @font-face {
   font-family: 'Dela Gothic One';
   src: url('https://raw.githubusercontent.com/geo-ant/blog/master/fonts/Dela_Gothic_One/DelaGothicOne-Regular.ttf') format('truetype');
   font-display: swap;
-  font-weight: black;
+  font-weight: normal;
   font-style: normal;
 }
 // @font-face {
