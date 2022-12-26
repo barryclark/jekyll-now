@@ -20,7 +20,9 @@ html {
 
 body {
 	background: $backgroundColor;
-  font: 19px/1.4 $Serif;
+  font-family:  $Serif;
+  font-size: 22px;
+  line-height: 1.4;
   color: $foregroundColor;
   font-kerning: auto;
 
@@ -39,7 +41,7 @@ body {
 
 code {
   font-family: $Monospace;
-  font-size: 0.85em;
+  font-size: 0.83em;
 }
 
 .highlight {
