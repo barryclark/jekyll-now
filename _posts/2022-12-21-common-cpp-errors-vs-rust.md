@@ -3,7 +3,7 @@ layout: post
 tags: rust errors c++ bugs safety
 #categories: []
 date: 2022-12-21
-last_updated:
+last_updated: 2022-12-26
 #excerpt: ''
 #description:
 #permalink:
