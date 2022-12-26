@@ -18,8 +18,8 @@
   font-family: 'EB Garamond';
   src: url('https://raw.githubusercontent.com/geo-ant/blog/master/fonts/EB_Garamond/static/EBGaramond-Bold.ttf') format('truetype');
   font-display: swap;
-  font-weight: medium;
-  font-style: bold;
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
@@ -29,7 +29,19 @@
   font-weight: normal;
   font-style: normal;
 }
-// @font-face {
-//   font-family: 'EB Garamond';
-//   display: swap;
-// }
+
+@font-face {
+  font-family: 'Lato';
+  src: url('https://raw.githubusercontent.com/geo-ant/blog/master/fonts/Lato/Lato-Black.ttf') format('truetype');
+  font-display: swap;
+  font-weight: black;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('https://raw.githubusercontent.com/geo-ant/blog/master/fonts/Lato/Lato-Bold.ttf') format('truetype');
+  font-display: swap;
+  font-weight: bold;
+  font-style: normal;
+}
