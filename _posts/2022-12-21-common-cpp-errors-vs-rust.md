@@ -56,7 +56,7 @@ I know what I am doing_ using the `unsafe` keyword. I personally think this is
 the right default to have, since the other way leads to the number one bug
 contained in Louis' presentation.
 
-# Bug \#2: `std::map` Acccess using `[]`
+# Bug \#2: `std::map` Access using `[]`
 
 This one is a pretty well known confusing API: on a `std::map` in C++ the operator
 `[]` actually means _get me a reference to the element or insert the default value
@@ -80,7 +80,7 @@ Widget::Widget(
 Here the programmer's mindset is _let me just log the timeout real quick_, but it 
 is easy to forget that this operation inserts a timeout of `0` (which in often
 means infinite wait) if no such key was already present.
-Rust's [BTreeMap](https://doc.rust-lang.org/std/collections/struct.BTreeMap.html#)
+Rust's [`BTreeMap`](https://doc.rust-lang.org/std/collections/struct.BTreeMap.html#)
 exposes a much less surprising API, which makes this kind of error arguably 
 impossible to make[^mutability].
 
@@ -279,10 +279,10 @@ code compile.
 If we now tried to mutate the value from two different threads,
 we would find out that we cannot simply do that. We'll eventually hit an error 
 telling us we need a second fundamental trait for concurrency, called [`Sync`](https://doc.rust-lang.org/nomicon/send-and-sync.html).
-This trait, again via the typesystem, indicates whether a value is safe to access
-from multiple threads at the same time. The short story is that we have to 
+This trait, again via the typesystem, indicates whether a value is safe to share
+between threads. The short story is that we have to 
 explicitly use a synchronization mechanism for the data that makes it safe to 
-access from different threads, such as a mutex. I won't go into detail here, because
+share among threads, such as a mutex. I won't go into detail here, because
 I have written a two part series comparing mutexes in Rust and C++ ([part 1](/blog/2020/mutexes-rust-vs-cpp/),
 [part 2](/blog/2020/rust-style-mutex-for-cpp/)).
 
@@ -300,7 +300,7 @@ Rust actually gives is [complicated](https://github.com/rust-lang/rust/issues/26
 The term is just  so loosely defined. For one, Rust does prevent data races
 and on the other hand you can still deadlock all you want. Also, at the time of writing,
 Rust does not have a defined [memory model](https://doc.rust-lang.org/reference/memory-model.html), 
-[unlike C++](https://en.cppreference.com/w/cpp/language/memory_model).
+[unlike C++](https://en.cppreference.com/w/cpp/language/memory_model) [^misleading].
 
 # Bug \#6: A Vexing Parse that Only Pretends To Lock A Mutex
 
@@ -322,7 +322,7 @@ instead defines a default constructed instance of a `std::unique_lock` called
 `m_mutex`. A correction would just require two more characters like so:
 `std::unique_lock<std::mutex> g(m_mutex)`. The difference is not easy to spot.
 Louis shows that despite a running linter, he found 
-two instances that made it into the production codebase with exactly that mistake[^lock_warnings].
+two instances that made it into the production codebase with exactly that mistake.
 
 Evaluating whether this mistake is easy to make in Rust is interesting. Rust's 
 [`Mutex`](https://docs.rust-lang.org/std/sync/struct.Mutex.html) works very 
@@ -381,7 +381,7 @@ learned that thread safety is a very underspecified aspect of the Rust language
 despite some amazing compile time guarantees.
 
 I don't want to pass judgement on Rust vs C++ as languages in general, but it is nice
-to see that a language which is often taunted as a safe successor to C++ does indeed
+to see that a language which is often hailed as a safe successor to C++ does indeed
 help to prevent many of the bugs common in C++. And yet we saw that Rust is not without
 its flaws.
 
@@ -395,3 +395,4 @@ its flaws.
 [^clippy_lint]: Clippy is the static analyzer that ships with the rust toolchain Rust and many projects use it to run extra analyses on their code. However, the compiler does not complain and so I feel it would be unfair to C++ to disregard that problem in the Rust language.
 [^mutability]: Half of the reason this operation is so problematic in C++ is that it does not work with `const`-correctness in an intuitive way. It will not work on a `const` map, but Louis shows that this does not deter programmers from using the operator. We just get rid of the `const`.
 [^unsafe]: There is such a thing as [`unsafe` Rust](https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html) which can cause all kinds of UB, including dangling references. Unsafe Rust is _not_ disabling the Borrow Checker. It can introduce [legitimate safety problems](https://shnatsel.medium.com/auditing-popular-rust-crates-how-a-one-line-unsafe-has-nearly-ruined-everything-fab2d837ebb1), but since it's _opt-in_ we can decide not to use the unsafe subset of Rust and loads of libraries and applications can be _and are_ written without it.
+[^misleading]: A reader on reddit characterized this statement as "both factually true and incredibly misleading". See their [comment](https://www.reddit.com/r/rust/comments/zt7lv1/comment/j1dj871/) on the matter.
