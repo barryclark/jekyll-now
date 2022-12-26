@@ -45,3 +45,19 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://raw.githubusercontent.com/geo-ant/blog/master/fonts/JetBrains_Mono/static/JetBrainsMono-Medium.ttf') format('truetype');
+  font-display: swap;
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://raw.githubusercontent.com/geo-ant/blog/master/fonts/JetBrains_Mono/static/JetBrainsMono-MediumItalic.ttf') format('truetype');
+  font-display: swap;
+  font-weight: medium;
+  font-style: italic;
+}
