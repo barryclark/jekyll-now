@@ -2,7 +2,7 @@
 layout: post
 title: Customer Solutions Consultant, Public Sector, Google Cloud
 author: Pak Budi
-date: 2022-12-26 07:11:51 +07:00
+date: 2022-12-26 07:11:57 +07:00
 ---
 
 **Google** adalah perusahaan mesin pencari terpopuler di dunia saat ini. Didirikan oleh Sergey Brin dan Larry Page pada tahun 1998.
