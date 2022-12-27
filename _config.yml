@@ -9,7 +9,7 @@ name: Gaming Wiki Network
 description: A network of independently-hosted gaming wikis
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: images/Logo-GamingWikiNetwork.png
+avatar: https://gamingwikinetwork.github.io/images/Logo-GamingWikiNetwork.png
 
 #
 # Flags below are optional
