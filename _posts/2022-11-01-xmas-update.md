@@ -45,7 +45,7 @@ Wait its a _joke_ that **Russia** Bombed **Ukraine** right? it's 2022 this kind 
 
 > "but dude, not big deal, you are from Chile right?"
 
-Yeah, but I got a few friends from **Ukraine**, and my Girlfriend it's **Ukrainian**...
+friends from **Ukraine**, and my GF it's **Ukrainian**...
 
 Also got fired, but didn't care, at that point means that I could shift my focus to **BF mode** and learn new things(SwiftUI & LUA)
 
