@@ -12,7 +12,7 @@ The GWN currently consists of {{site.data.members.size}} member wikis. You can f
    <img src="{{member.logo}}" alt="{{member.name}}">
   </td>
   <td>
-    <a href="{{member.url}}">{{member.name}}</a><br>{{member.description}}
+    <a href="{{member.url}}">{{member.name}}</a> {% if member.discord %}<a title="Discord" href="{{ member.discord }}"><i class="discord-icon discord"></i></a>{% endif %}<br>{{member.description}}
   </td>
  </tr>
 {% endfor %}
