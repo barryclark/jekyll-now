@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2022-12-28 21:00:00
 title: Kingdom Hearts Database joins the GWN
 published: true
 ---
