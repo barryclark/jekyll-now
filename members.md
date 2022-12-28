@@ -3,11 +3,16 @@ layout: page
 title: Members
 permalink: /members/
 ---
-
+<table>
 {% for member in site.data.members %}
-
-![{{member.name}}]({{member.logo}})
-### [{{member.name}}]({{member.url}})
-{{member.description}}
-
+ <tr>
+  <td>
+    ![{{member.name}}]({{member.logo}})
+  </td>
+  <td>
+    ### [{{member.name}}]({{member.url}})
+    {{member.description}}
+  <td>
+ </tr>
 {% endfor %}
+</table>
