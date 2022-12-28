@@ -7,12 +7,11 @@ permalink: /members/
 {% for member in site.data.members %}
  <tr>
   <td>
-    ![{{member.name}}]({{member.logo}})
+   <img src="{{member.logo}}" alt="{{member.name}}">
   </td>
   <td>
-    ### [{{member.name}}]({{member.url}})
-    {{member.description}}
-  <td>
+    <a href="{{member.url}}">{{member.name}}</a><br>{{member.description}}
+  </td>
  </tr>
 {% endfor %}
 </table>
