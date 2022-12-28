@@ -1,7 +1,7 @@
 # ToDo
 ## Graphic
 - [ ] [Billboard](http://www.opengl-tutorial.org/intermediate-tutorials/billboards-particles/billboards/)
-- [ ] 어떻게 데이터 테이블을 작성하는가?
+- [ ] 어떻게 데이터 테이블, 구조체 등 데이터를 설계하는가?
 
 ## Unity / Debug
 ### DebugLog
