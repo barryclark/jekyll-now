@@ -15,14 +15,6 @@
   mainpage: "Main_Page"
   discord: "https://discord.com/invite/c4F2rRc"
 - member:
-  id: "jiggywikki"
-  name: "Jiggywikki"
-  description: "Jiggywikki is a wiki that provides coverage on the Banjo-Kazooie series. The wiki was originally started in August 2007 by Legodude760 on FANDOM. It was forked from Banjo-Kazooie FANDOM in November 2018, and it has since been heavily reworked."
-  logo: "/images/logos/jiggywikki.png"
-  url: "https://banjokazooiewiki.com/"
-  mainpage: "Main_Page"
-  discord: "https://discord.com/invite/drvvy8f"
-- member:
   id: "falloutwiki"
   name: "Independent Fallout Wiki"
   description: "The Independent Fallout Wiki is the Wasteland's One Stop Shop for Fallout Games, Community Events, News, and Mods! The site was founded on April 8, 2022 and entered early access on Great War Day, October 23, 2022. It officially launched to the public on December 31, 2022."
@@ -32,6 +24,14 @@
   discord: "https://discord.gg/falloutwiki"
   twitter: "thefalloutwiki"
   instagram: "thefalloutwiki"
+- member:
+  id: "jiggywikki"
+  name: "Jiggywikki"
+  description: "Jiggywikki is a wiki that provides coverage on the Banjo-Kazooie series. The wiki was originally started in August 2007 by Legodude760 on FANDOM. It was forked from Banjo-Kazooie FANDOM in November 2018, and it has since been heavily reworked."
+  logo: "/images/logos/jiggywikki.png"
+  url: "https://banjokazooiewiki.com/"
+  mainpage: "Main_Page"
+  discord: "https://discord.com/invite/drvvy8f"
 - member:
   id: "finalfantasywiki"
   name: "Final Fantasy Wiki"
