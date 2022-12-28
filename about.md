@@ -8,16 +8,9 @@ The **Gaming Wiki Network**, or **GWN**, is a network of independently-hosted wi
 
 ### A brief history
 
-- **October 15, 2020**: The GWN is founded by RMV. Its 6 founding members are JiggyWikki, Conker Wiki, Rare Wiki, Triforce Wiki, Crash Bandicoot Wiki and Spyro Wiki. It is also affiliated with the Arthur Wiki, Diary of a Wimpy Kid Wiki and SpongeBob Wiki.
-- **October 23, 2020**: Final Fantasy Wiki joins as a member.
-- **August 31, 2020**: Wiki of Mana joins as a member.
-- **February 22, 2022**: Speedrunwiki.com and SaGa Wiki join as members.
-- **March 11, 2022**: RMV steps down from running the GWN.
-- **October 13, 2022**: MediEvil Wiki joins as a member. 
-- **October 21, 2022**: The GWN undergoes a rebrand; a new logo is made and the wiki footer is updated.
-- **November 21, 2022**: SEIWA becomes an affiliate of the GWN.
-- **December 1, 2022**: The Independent Fallout Wiki joins as a member.
-- **December 21, 2022**: PaRappa.party becomes an affiliate of the GWN.
+{% for event in site.data.history %}
+- **{{event.date}}**: {{event.description}}
+{% endfor %}
 
 ### Join us
 
