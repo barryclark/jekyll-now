@@ -1,0 +1,8 @@
+- member:
+  id: "medievilwiki"
+  name: "MediEvil Wiki"
+  description: "The MediEvil Wiki is an independent, unofficial, non-profit, fan-made project that seeks to document and preserve the MediEvil games and all related content."
+  logo: "/images/logos/medievil.png"
+  url: "https://medievil.wiki/"
+  mainpage: "Main_Page"
+  discord: "https://discord.com/invite/S7PSNrVNxt"
