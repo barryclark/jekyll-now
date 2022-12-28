@@ -173,10 +173,6 @@ blockquote {
   margin-bottom: 40px;
   padding-bottom: 30px;
   padding-top: 30px;
-  @include mobile-small {
-    margin-left: -20px;
-    width: 110%;
-  }
 }
 
 blockquote small {

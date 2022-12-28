@@ -179,7 +179,6 @@ ul.rs {
     }
   }
   a:hover h1.title {
-    margin-top: none;
     font-size: 4.9rem;
   }
 }
@@ -198,12 +197,8 @@ ul.rs {
 }
 #main article.post a:hover h1.title {
   color: #e9194c;
-  margin-top: 65px;
   font-size: 4.2rem;
   transition: all ease-in 0.2s;
-  @include mobile-small {
-    //        margin-top: 70px;
-  }
 }
 #main article.post a:hover .desc {
   opacity: 0.5;
@@ -764,10 +759,8 @@ header a.home:hover {
   background: transparent;
   @include mobile-small {
     margin-bottom: 50px;
-    width: 110%;
+    width: 100%;
     background: #3e3e3e;
-    margin-left: -20px;
-    padding: 24px 16px;
   }
 }
 
