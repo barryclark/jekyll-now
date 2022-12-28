@@ -12,6 +12,7 @@ The **Gaming Wiki Network**, or **GWN**, is a network of independently-hosted wi
 - **October 23, 2020**: Final Fantasy Wiki joins as a member.
 - **August 31, 2020**: Wiki of Mana joins as a member.
 - **February 22, 2022**: Speedrunwiki.com and SaGa Wiki join as members.
+- **March 11, 2022**: RMV steps down from running the GWN.
 - **October 13, 2022**: MediEvil Wiki joins as a member. 
 - **October 21, 2022**: The GWN undergoes a rebrand; a new logo is made and the wiki footer is updated.
 - **November 21, 2022**: SEIWA becomes an affiliate of the GWN.
