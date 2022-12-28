@@ -33,6 +33,15 @@
   mainpage: "Main_Page"
   discord: "https://discord.com/invite/drvvy8f"
 - member:
+  id: "khdatabase"
+  name: "Kingdom Hearts Database"
+  description: "The Kingdom Hearts Database is a project that works to provide the ultimate source for news, information, and media from the Kingdom Hearts series. It works to document and preserve a wide-range of content, including lore, gameplay data, news, scripts, media, interviews, development history, and more related to the Kingdom Hearts series."
+  logo: "/images/logos/khdatabase.png"
+  url: "https://www.khdatabase.com/"
+  mainpage: "Main_Page"
+  discord: "http://discord.com/invite/Frt564B"
+  twitter: "KHDatabase"
+- member:
   id: "finalfantasywiki"
   name: "Final Fantasy Wiki"
   description: "Final Fantasy Wiki is an independent wiki covering Final Fantasy and related franchises. It was founded in January 2020 by members of the Square Enix Independent Wiki Alliance, as they did not have a representative wiki for Final Fantasy, the flagship franchise of Square Enix. The wiki utilizes a format that is derived from both the Kingdom Hearts Wiki and the Super Mario Wiki."
