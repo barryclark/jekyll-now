@@ -6,7 +6,7 @@ permalink: /members/
 <table>
 {% for member in site.data.members %}
  <tr>
-  <td>
+  <td width="20%" style="text-align: center;">
    <img src="{{member.logo}}" alt="{{member.name}}">
   </td>
   <td>
