@@ -3,6 +3,8 @@ layout: page
 title: Members
 permalink: /members/
 ---
+The GWN currently consists of {{site.data.members.size}} member wikis. You can find out more about our members below.
+
 <table>
 {% for member in site.data.members %}
  <tr>
