@@ -4,6 +4,7 @@ title: You're up and running!
 ---
 
 ~~~html
+<!DOCTYPE html>
 <html>
 <head>
   <titlee> 나의 웹 페이지 </title>
