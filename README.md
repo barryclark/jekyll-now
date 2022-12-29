@@ -30,6 +30,9 @@
 1. Component가 시작할 때 래퍼런스를 검사하면, 오류가 많이 떠 알아보기 힘들 수 있습니다.
 2. 또한 시작할 때, 컴포넌가 없고 이후에 생성되서 추가될 수 있습니다.
 
+### Prefab
+Unity는 Enum을 Prefab에 숫자로 저장합니다.
+
 ## Unity / Component
 ### GetComponent
 ### Engine / GetComponent
