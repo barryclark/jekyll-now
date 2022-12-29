@@ -3,7 +3,7 @@ layout: post
 title: You're up and running!
 ---
 
-~~html
+~~~html
 <html>
 <head>
   <titlee> 나의 웹 페이지 </title>
@@ -12,7 +12,7 @@ title: You're up and running!
 <p>안녕하세요</p>
 </body>
 </HTML>
-~~
+~~~
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
