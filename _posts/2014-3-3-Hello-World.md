@@ -12,6 +12,7 @@ title: You're up and running!
 < p > 안녕하세요 </ p >
 </ 본문 >
 </ HTML >
+~~
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
