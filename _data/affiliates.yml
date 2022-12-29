@@ -16,7 +16,8 @@
 - affiliate:
   id: "parappaparty"
   name: "PaRappa.party"
-  description: "Parappa.party is your local PaRappa The Rapper and Um Jammer Lammy fansite where you can find all sorts of information regarding the PaRappa franchise, from development history to translations of Japanese-only interviews to fun facts about Katy Kat."
+  description: "Parappa.party is a fansite inspired by the creative aesthetics and ethos of Web 1.0 and dedicated to everything related to the video game franchise PaRappa the Rapper. It first went live in September 2022, and its been growing ever
+    since."
   logo: "/images/logos/PaRappa.party.png"
   url: "https://parappa.party/"
 - affiliate:
