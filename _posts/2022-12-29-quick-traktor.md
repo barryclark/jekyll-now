@@ -2,7 +2,7 @@
 layout: post
 title: CV Karya Hidup Sentosa (Quick Traktor)
 author: Pak Budi
-date: 2022-12-29 07:19:51 +07:00
+date: 2022-12-29 07:19:57 +07:00
 ---
 
 **CV Karya Hidup Sentosa (KHS)** didirikan oleh pasangan suami-istri Kirdjo Hadi Suseno pada 1953 di Yogyakarta ini merupakan perusahaan swasta nasional terbesar dalam industri traktor tangan roda dua, traktor roda empat, dan traktor angkut pedesaan roda empat dengan merek QUICK.
