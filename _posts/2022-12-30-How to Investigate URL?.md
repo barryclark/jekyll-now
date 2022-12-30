@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to investigate if url is safe?"
+title: "How to investigate url?"
 date: "2022-12-30"
 ---
 
