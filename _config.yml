@@ -6,7 +6,7 @@
 name: Trung Tiến Blog
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: một blog nhỏ để nghịch ngợm
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatarfiles.alphacoders.com/877/87750.png
@@ -18,11 +18,11 @@ avatar: https://avatarfiles.alphacoders.com/877/87750.png
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: trungtien10318@gmail.com
   facebook:
   flickr:
   github: barryclark/jekyll-now
-  instagram:iti.tien
+  instagram: 
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
