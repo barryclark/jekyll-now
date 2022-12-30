@@ -2,7 +2,7 @@
 layout: post
 title: PT Surya Citra Media Tbk
 author: Pak Budi
-date: 2022-12-30 07:29:51 +07:00
+date: 2022-12-30 07:29:34 +07:00
 ---
 
 **PT Surya Citra Media Tbk** memulai perjalanannya dari tahun 1999 dan senantiasa tumbuh dan berkembang untuk berkontribusi di industri media Indonesia
