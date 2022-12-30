@@ -4,7 +4,11 @@ published: True
 title: The Illustrated Stable Diffusion
 ---
 
-(**V2 Nov 2022**: Updated images for more precise description of forward diffusion thanks to [Jeremy](https://twitter.com/jeremyphoward) and [Hamel](https://twitter.com/HamelHusain). A few more images in this version)
+<span class="discussion">Translations: <a href="https://trituenhantao.io/kien-thuc/minh-hoa-stable-diffusion/">Vietnamese</a>.
+</span>
+
+
+(**V2 Nov 2022**: Updated images for more precise description of forward diffusion. A few more images in this version)
 
 AI image generation is the most recent AI capability blowing people's minds (mine included). The ability to create striking visuals from text descriptions has a magical quality to it and points clearly to a shift in how humans create art. The release of [Stable Diffusion](https://stability.ai/blog/stable-diffusion-public-release) is a clear milestone in this development because it made a high-performance model available to the masses (performance in terms of image quality, as well as speed and relatively low resource/memory requirements).
 
