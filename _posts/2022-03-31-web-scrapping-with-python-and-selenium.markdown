@@ -5,10 +5,7 @@ date: "2022-03-31 00:16:51 -0300"
 ---
 
 # Summary
-Hi Guys!, So I recently completed a side project to practice python and selenium.
-The Goal of this project is to grab a job title from indeed job site's search results.
-To complete this goal, we are going to use python to code a script which will use selenium and beautifulsoup.
-And Pandas library for creating a CSV file of the data we have collected.
+I recently completed a side project to practice Python and Selenium. The goal of this project was to scrape job titles from Indeed's search results and store them in a CSV file using Pandas. To achieve this, I wrote a Python script that used Selenium and Beautiful Soup to navigate the website and extract the desired data.
 
 # Tools
 I am using Pycharm with python 3.8 as my virtual environment.
