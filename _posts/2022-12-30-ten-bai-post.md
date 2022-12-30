@@ -3,6 +3,18 @@ layout: post
 title: Bài viết của tôi
 ---
 
-terraform là một phần mềm mã nguồn mở dùng code để dựng hệ thống.  
-cùng với gitlab tạo để quản lý code 
-ta xa lên hệ thống IAC
+// hello.go
+package main
+
+import (
+    "fmt"
+    "net/http"
+)
+
+func main() {
+    http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+        fmt.Fprintf(w, "Hello, you've requested: %s\n", r.URL.Path)
+    })
+
+    http.ListenAndServe(":3000", nil)
+}
