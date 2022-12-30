@@ -3,13 +3,13 @@
 - company: SecureOps
   position: Security Analyst
   duration: Oct 2021, Present
-  summary: I work as security analyst, where I investigate alerts related to Phish, Scam, Spam related emails and network based alerts like suspicious malware at one of the end devices on cloud.<ul><li>Investigate alerts on azure sentinel and Microsoft Defender 365 for any suspicious activity</li><li>Scan emails for phish related url which redrects user to webpage to harvest user login info</li><li>Use wireshark to investigate network packets and look for suscpected suspicious url in nazomi devices</li></ul>
+  summary: As a security analyst, I investigate alerts related to phishing, scam, and spam emails, as well as network-based alerts such as suspicious malware on end devices in the cloud. My responsibilities include:<ul><li>Investigating alerts on Azure Sentinel and Microsoft Defender 365 for any suspicious activity</li><li>Scanning emails for phishing-related URLs that redirect users to webpages to harvest login information</li><li>Using Wireshark to analyze network packets and identify suspicious URLs on devices using Naxomi.</li></ul>
 
 # IT Specialist
 - company: Telecom metrics Inc
   position: IT Specialist
   duration: Jan 2021, Oct 2021
-  summary: I worked as an IT specialist, responsible for configuring IP phones and auditing servers. <ul><li>Configure IP phones to connect with 3CX voip system by using phones webpage</li><li>Created pyton script to automate legacy ziptel servers via using selenium library</li></ul>
+  summary: As an IT specialist, I have experience in configuring and auditing servers, as well as implementing and maintaining various IT systems. My responsibilities have included:<ul><li>Configuring IP phones to connect with 3CX VoIP system using the phones's webpages</li><li>Creating Python scripts to automate legacy Ziptel servers using the Selenium library</li></ul>Troubleshooting and resolving technical issues with servers, networks, and other IT systems</li></ul>Managing and maintaining server backups and disaster recovery plans</li></ul>Installing and configuring software and hardware for servers and other IT systems</li></ul>Providing technical support and training to end users on various IT systems and applications</li></ul>Participating in IT projects and initiatives, including planning, implementation, and testing</li></ul>
 
 # Service Technician
 - company: Bell Canada
