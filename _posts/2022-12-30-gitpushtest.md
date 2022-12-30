@@ -1,6 +1,6 @@
 ---
-layout:post
-title:git push test
+layout: post
+title: git push test
 ---
 
 git push test
