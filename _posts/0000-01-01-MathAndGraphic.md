@@ -55,39 +55,6 @@ title: Math & Graphic
 ### PBR
 * [PhysicallyBasedRendering](/posts_math/PhysicallyBasedRendering)
 
-## 구현
-
-<details><summary>Wiper</summary>
-<div markdown="1">
-
-![WiperAnimation](/images/WiperAnimation.gif)
-
-\\<!--리소스는 회사에서 사용하는 리소스를 쓰므로 공유하지 않는다.-->
-
-<details><summary>유리 머티리얼과 빗방울 표현</summary>
-<div markdown="1">
-
-
-
-</div></details>
-
-<details><summary>마스크 만들기</summary>
-<div markdown="1">
-
-</div></details>
-
-<details><summary>마스크를 이용한 빗방울 제거하기</summary>
-<div markdown="1">
-
-</div></details>
-
-<details><summary>와이퍼 구현하기</summary>
-<div markdown="1">
-
-</div></details>
-
-</div></details>
-
 <details><summary>Unreal VR Station</summary>
 <div markdown="1">
 

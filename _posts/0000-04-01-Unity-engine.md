@@ -40,4 +40,5 @@ title: Unity engine
 
 좀더 효율적으로
 
-* [Inspector & AutomationTest](/posts_unity_engine/InspectorAutomationTest)
+* [Inspector](/posts_unity_engine/Inspector)
+* [DebugTest](/posts_unity_engine/DebugTest)
