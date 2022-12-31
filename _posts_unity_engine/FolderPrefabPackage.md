@@ -40,6 +40,9 @@ https://noahstory.tistory.com/26
 
 </div></details>
 
+* Enum은 정수로 저장됩니다. 
+  * Enum의 수를 늘리거나 줄일 경우, 예를 들어 { A, B ... }에서 { B ... }로 변경할 경우, 기존에 있던 A값이 B로 변경됩니다.  
+
 ## Package
 
 - [ ]  패키지
