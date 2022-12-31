@@ -9,7 +9,7 @@ The **Gaming Wiki Network**, or **GWN**, is a network of independently-hosted wi
 ### A brief history
 
 {% for event in site.data.history reversed %}
-- **{{event.date}}**: {{event.description}}
+- **{{event.date}}**: {% if event.url %}[{{event.description}}]({{event.url}}){% endif %}{% else %}{{event.description}}{% endif %}
 {% endfor %}
 
 ### Join us
