@@ -30,4 +30,13 @@
   description: "PaRappa.party becomes an affiliate of the GWN."
 - event:
   date: "December 28, 2022"
-  description: "The Kingdom Hearts Database joins as a member and the GWN website goes live!"
+  description: "The GWN website goes live!"
+  url: "https://gamingwikinetwork.org/we-are-live/"
+- event:
+  date: "December 28, 2022"
+  description: "The Kingdom Hearts Database joins as a member."
+  url: "https://gamingwikinetwork.org/khdatabase/"
+- event:
+  date: "December 31, 2022"
+  description: "The Independent Fallout Wiki exits early access and opens up to the public."
+  url: "https://gamingwikinetwork.org/fallout-open/"
