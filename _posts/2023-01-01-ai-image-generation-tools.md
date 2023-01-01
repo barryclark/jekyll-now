@@ -30,8 +30,9 @@ Here's a side-by-side look at the panels from the original cinematic (left colum
 
 This figure does not show the final Dr. Venom graphic because I want you to witness it as I had, in the proper context and alongside the appropriate music. You can watch that here:
 
-
-[Embed video]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/43bsSVnioI0" style="
+width: 100%;
+max-width: 560px;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### Panel 1 
