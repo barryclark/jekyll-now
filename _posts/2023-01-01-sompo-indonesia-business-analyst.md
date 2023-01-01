@@ -3,7 +3,7 @@
 layout: post
 title: Business Analyst PT Sompo Insurance Indonesia
 author: Pak Budi
-date: 2023-01-01 07:29:51 +07:00
+date: 2023-01-01 07:29:34 +07:00
 
 ---
 
