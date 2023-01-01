@@ -19,3 +19,8 @@ The GWN is always looking for new wikis to join it either as [members]({{site.ba
 - We also have a social media presence which we can use to share news about your wiki achievements!
 
 Sound interesting? [Apply today](https://discord.com/invite/pCfH7uk9jh)!
+
+### Not independent? No problem!
+Is your wiki currently hosted by a wiki farm that does **NOT** allow for host migration? Is your wiki full of ads you didn't ask for? Are your users being served content unrelated to your wiki's subject matter? 
+
+Don't worry, you're not alone! We've been there. Join our [community server](https://discord.com/invite/pCfH7uk9jh) to talk with people who have successfully gained independence of a controlling wiki host. Get tips and tricks on how to migrate your content and how to find new hosting. Don't wait, migrate!
