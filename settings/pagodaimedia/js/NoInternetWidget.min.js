@@ -1,0 +1,2 @@
+/* No Internet Connection */
+(function(){var noIntPop=qSel('#noInternet');window.addEventListener("offline",function(){if(noIntPop!=null){addCt(noIntPop,'visible')};if(PuSet.noInternet.enableToast=='true'){toastNotif("<span><i class='offWifi'></i>"+PuSet.noInternet.offlineMes+"</span>")}});window.addEventListener("online",function(){if(noIntPop!=null){remCt(noIntPop,'visible')};if(PuSet.noInternet.enableToast=='true'){toastNotif("<span><i class='onWifi'></i>"+PuSet.noInternet.onlineMes+"</span>")}});})();
