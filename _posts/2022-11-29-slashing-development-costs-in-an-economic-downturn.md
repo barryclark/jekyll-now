@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Slashing Development Costs in an Economic Downturn"
+title: "Slashing Development Costs in an Economic Downturn: Panel with Wayfair, LightRun"
 description: "Cheryl Hung chats with Wayfair and Lightrun on how to slash development costs."
 image: /images/2022-11-29-slashing-development-costs-in-an-economic-downturn.png
 tags:
