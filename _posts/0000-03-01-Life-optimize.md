@@ -28,9 +28,11 @@ title: Life optimize
 
 * [Use window](/posts_optimize_life/UseWindow)
     - Window
+* [Task](/posts_optimize_life/Task)
 
 **개발의 효율을 위하여**
 
+* [Build platform](/posts_optimize_life/BuildPlatform)
 * [Batch](/posts_optimize_life/Batch)
 * [Automation test](/posts_optimize_life/TDD-Automation_test)
     - TDD
@@ -48,6 +50,7 @@ title: Life optimize
 
 **어떻게 만들어야 하는지**
 
+* [UI Development](/posts_optimize_life/UI_Development)
 * [VR Development](/posts_optimize_life/VR_Development)
 
 **정리하기 위하여**
