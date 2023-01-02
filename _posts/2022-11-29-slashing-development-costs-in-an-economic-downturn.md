@@ -17,4 +17,4 @@ In this panel with Tom Granot and Gary White Jr, we discuss:
 * Measuring the effectiveness of your processes and double down on what works
 * And So Much More!
 
-<iframe src="https://www.linkedin.com/video/embed/live/urn:li:ugcPost:7002561594052235264" height="399" width="710" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+[View on LinkedIn](https://www.linkedin.com/video/embed/live/urn:li:ugcPost:7002561594052235264)
