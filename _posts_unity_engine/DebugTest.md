@@ -3,12 +3,14 @@ layout: post
 title: Debug, Test
 ---
 
-## Debug
+## Debug & Exception
 
 일반적으로 레퍼런스가 깨져있는지 검사하고 로그를 찍는 것은 실제로 함수가 호출될 때 사용됩니다.
 
 * Component가 시작할 때 레퍼런스를 검사하면, 오류가 많이 떠 알아보기 힘들 수 있습니다.
 * 시작할 때, 컴포넌트가 없고 이후에 생성되서 추가되는 경우가 있습니다.
+
+throw exception 하고, 메시지를 넣으면 Unity에서 오류 메시지가 뜹니다. **반드시 지켜야 되는 수준일 경우 예외 처리를 하도록 합니다.**
 
 ## Automation Test
 

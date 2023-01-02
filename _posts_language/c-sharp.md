@@ -14,3 +14,19 @@ title: C# Basic
 > 주요 참고자료
 > - [예제로 배우는 C# 프로그래밍](https://www.csharpstudy.com/)
 > - [정성태의 닷넷 이야기](https://www.sysnet.pe.kr/)
+
+### ?, ??
+* `int? Nullable = null;`
+  * 변수에 null을 입력하게 함으로써, 0의 값이 들어가야 하는지 아니면 입력이 없는지를 구분할 수 있게 해줍니다.
+* `A?.[B]?.[C]....`
+  * null이 아닐경우, 오른쪽으로 계속 진행합니다. 값이 null일 경우, 더이상 진행하지 않습니다.
+* `X ?? Y`
+  * [null 병합 연사자](https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/operators/null-coalescing-operator)는 왼쪽의 값이 null일 경우 오른쪽의 값을 반환합니다.
+  * 
+```c#
+int Return(Data data)
+{
+	// data가 null이 아니라면 data.Int를, null이라면 0을 반환합니다.
+	return data?.Int ?? 0;
+}  
+```

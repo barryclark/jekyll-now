@@ -97,6 +97,7 @@ collections:
 - posts_optimize_life
 - posts_unreal_engine
 - posts_unity_engine
+- posts_implement
 
 collections:
   posts_math:
@@ -112,6 +113,8 @@ collections:
   posts_unreal_engine:
     output: true
   posts_unity_engine:
+    output: true
+  posts_implement:
     output: true
 
 # Plugins (previously gems:)
