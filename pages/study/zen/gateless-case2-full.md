@@ -4,7 +4,7 @@ title: "Paichang's Fox (full commentary)"
 permalink: /pages/study/zen/gateless-case2-/
 ---
 
-> **IMPORTANT** - This page will offer a full (personal) commentary on this koan. If you'd rather not be polluted by my thoughts on this case, please do not read this page. You can also check out the [version with only prompts](../gateless-gate2.md). Remember, the investigation **has to be your own** (see [introduction](../intro-to-koans)).
+> **IMPORTANT** - This page will offer a full (personal) commentary on this koan. If you'd rather not be polluted by my thoughts on this case, please **do not read this page**. You can also check out the [version with only prompts](../gateless-gate2.md). Remember, the investigation **has to be your own** (see [introduction](../intro-to-koans)).
 
 ## Notes on the text of this case
 
@@ -22,11 +22,11 @@ Robert Aitken, The Gateless Barrier, 1990:
 > \- Such a person does not evade the law of cause and effect.  
 
 Koun Yamada Roshi, The Gateless Gate, 1979:
-> \- TODO
+> \- Does an enlightened person fall under the law of cause and effect or not?  
 > \- The law of cause and effect cannot be obscured.  
 
 Thomas Cleary, Book of Serenity, Case 8, 2005:
-> \- TODO
+> \- Does a greatly cultivated man still fall into cause and effect or not?  
 > \- He is not blind to cause and effect.
 
 J.C. Cleary, Wumen's Gate, 2005:
@@ -38,20 +38,20 @@ Gudo Nishijima, Master Dogen's Shinji Shobogenzo, Book II case 2, 2003:
 > \- Do not be unclear about cause and effect.
 
 Kazuaki Tanahashi, John Daido Loori, The True Dharma Eye case 102, 2005:
-> \- TODO
+> \- Does an enlightened person fall into cause and effect?  
 > \- Don't ignore cause and effect.
 
 
-The Book of Serenity, in covering Case 8, provides "added sayings" as foot notes of the text. Those are interjections, thoughts related to specific lines of the text. Here's a few:
+The Book of Serenity, in covering Case 8, provides "added sayings" as footnotes of the text. Those are interjections, thoughts related to specific lines of the text. Here's a few:
 - _"The old man was enlightened at these words - Fox drool is still there."_
 - _"For five hundred lives he couldn't do a thing - If he had known what would happen today, he'd regret not being careful to begin with."_
 - _"I fell into a wild fox body for five hundred lives - You said one doesn't fall into cause and effect."_
 
-# Available commentaries
+# Commentaries available elsewhere
 
 There are two chapters of Dogen's Shobogenzo, commenting on this case. One is titled "On the Great Practice" (_Daishugyo_) \[[pdf](https://www.thezensite.com/ZenTeachings/Dogen_Teachings/Shobogenzo/073daishugyo.pdf)\], the other "On the Absolute Certainty of Cause and Effect" (_Jinshin Inga_) \[[pdf](http://www.thezensite.com/ZenTeachings/Dogen_Teachings/Shobogenzo/088jinshiInga.pdf)\].
 
-Heine, Steven. Shifting Shape, Shaping Text: Philosophy and Folklore in the Fox Koan. University of Hawai’i Press, 1999. http://www.jstor.org/stable/j.ctt6wqz3j.
+There is also a book covering this koan: Steven Heine, "Shifting Shape, Shaping Text: Philosophy and Folklore in the Fox Koan", University of Hawai’i Press, 1999 [link](http://www.jstor.org/stable/j.ctt6wqz3j).
 
 # Commentary [work in progress]
 
@@ -66,9 +66,11 @@ Heine, Steven. Shifting Shape, Shaping Text: Philosophy and Folklore in the Fox 
 I bet the other side of __this__ mountain is facing north.
 
 When I read this line, it evokes two things to me. First, Kalu Rimpoche used to describe all the vehicles (_yana_) of Buddhism (Hinayana, Mahayana, Vajrayana) as paths on a mountain, all leading to the top, but being different in difficulty and time depending on the side a practitioner is taking. Second, the ["Sutra of Hui-neng"](https://www.shambhala.com/the-sutra-of-hui-neng-grand-master-of-zen-1434.html) introduces the distinction between the northern and southern schools of Zen. For an explanation, you can read  [H. Dumoulin, "Zen Enlightenment", pp 44-52](https://www.thriftbooks.com/w/zen-enlightenment-origins-and-meaning_heinrich-dumoulin/623561/item/3095725/), that I have summarized in a [comparison table here](https://datayana.github.io/2019/03/05/Notes).  
-I like to think of the expression "other side of the mountain" as pointing to the difference in doctrine between Hyakujo and the old men.
+I like to think of the expression _"the other side of the mountain"_ as pointing to the difference in doctrine between Hyakujo and the old men.
 
 ### Different but still entitled to respect
+
+Before we establish a comparison between those schools, it is important for them to respect each other.
 
 > After the meal, Paichang led the monks to the foot of a rock __on the far side of the mountain__. And there, with his staff, he poked out the body of a dead fox. He then __performed the ceremony of cremation__.
 
@@ -90,9 +92,9 @@ This is where the distinction between northern and southern schools of Zen shows
 
 One interesting exercise is to examine each line according to a distinction between gradual enlightenment or sudden enlightenment.
 
-"**Such a person does not fall...**" - This sounds very much like something someone from the school of gradual enlightenment would say. Maybe the old man comes from the northern school.
+"**Such a person does not fall...**" - This sounds very much like something said by someone from the school of gradual enlightenment. Maybe the old man comes from the northern school.
 
-"**With this** I was **reborn five hundred times as a fox**" - Again here, the old man holds a view in which a single wrong answer can throw you into a long line of rebirths, that can be exhausted. It sounds to me that the old man still holds the view of gradual enlightenment at this point of the conversation.
+"**With this** I was **reborn five hundred times as a fox**" - Again here, the old man holds a view in which a single wrong answer can throw you into a long line of rebirths (that can be exhausted). It sounds to me that the old man still holds the view of gradual enlightenment at this point of the conversation.
 
 "**Such a person does not evade...**" - Hyakujo is providing an answer that fits well in the view of sudden enlightenment.
 
@@ -103,22 +105,22 @@ One interesting exercise is to examine each line according to a distinction betw
 > Huang-po stepped forward and said, "As you say, the old man missed the turning word and was reborn as a fox five hundred times. What if he had given __the right answer__ each time he was asked a question -- what would have happened then?"  
 > Paichang said, "Just step here closer, and I'll tell you." Huang-po went up to Paichang and __slapped him in the face__.
 
-Now, it would be too easy to just claim victory fo the view of sudden enlightenment. I read that passage as indicative that if you do that, you will be slapped in the face (by reality, probably).
+Now, it would be too easy to just claim victory for one side, to say the view of sudden enlightenment is superior. I read the passage above as indicative that, if you do that, you will be slapped in the face, not just by Huang-po, but also by reality.
 
-The irony here is that old man **had to wait** for such a long time, go through so many lives, to ultimately be suddenly enlightened after meeting Hyakujo. Who knows how many lives he would have lived if he had now met Hyakujo. Who knows if he could have become enlightened another way.
+There is some irony here though. The old man was suddenly enlightened after discussing with Hyakugo, but he **had to wait** for such a long time, go through so many lives. Who knows how many lives he would have lived if he had now met Hyakujo. Who knows if he could have become enlightened another way. Ultimately, this sounds very much like a gradual path to enlightenment.
 
 Going back to Huang-po's question, "What if...", there's also a lot of irony, almost cynicism. Let's go through it.
 
 "**What if he had given the right answer**" - This seems to imply there **is** a right answer, but Huang-po doesn't believe there is one, he's calling out Hyakujo because his story implied there is one. Huang-po's slap suggests that none of those answers are actually right. What to make of this?
 
 "What if he had given **the right answer each time he was asked** a question" - To me, there's two funny aspects about this.  
-First, it means you would have to give the right answer the very first time you're being asked. Seriously, could anyone really do that? We're talking about such a fundamental question, if you were asked this question before you understand the true nature of enlightenment, you could very well give the wrong answer. Would you then be reborn as a fox for? That doesn't sound very reasonable (or fair). Dogen pointed this out, we'll get back to it later: "Senior monks who have made mistakes over the past two or three hundred years would certainly have become innumerable foxes" (in _Daishugyo_).  
-True understanding of enlightenment is not just something you can deliver like that on your first try, it is something you will realize with time and practice. This points to a contradiction, because _sudden_ enlightenment would then be _gradual_.
+First, it means you would have to give the right answer the very first time you're being asked. Seriously, could anyone really do that? We're talking about such a fundamental question, if you were asked this question before you understand the true nature of enlightenment, you could very well give the wrong answer. Would you then be reborn as a fox? That doesn't sound very reasonable (or fair). Dogen pointed this out in _Daishugyo_: _"Senior monks who have made mistakes over the past two or three hundred years would certainly have become innumerable foxes"_.  
+True understanding of enlightenment is not just something you can deliver like that on your first try, it is something you will realize with time and practice. This points to a contradiction, because _sudden_ enlightenment would then require _gradual_ practice.
 
 Now let's say you _did_ answer properly at some point. Well, you'll still have to answer this question right every single time you're being asked, for the rest of your life, or else you'll be thrown in a long chain of rebirths as a fox. What's the point of being suddenly enlightened if you're still stuck with the possibility of being thrown in hell at every single corner, if you're still stuck within a reality that very much sounds aligned with the view of gradual enlightenment.
 
-"**Huang-po went up to Paichang and slapped him in the face**" - If previously it sounded like the reward for the old man's answer was to be thrown in rebirths, here it sounds like the reward for Hyakujo's answer is to be slapped in the face. Is Sudden enlightenment, as a view, not "more true" than gradual?. The (_a thousand mistakes, ten thousand mistakes_?).  
-Between us, if I can pragmatic for a second, I'd rather get slapped in the face than be reborn five hundred times as a fox. So, could sudden enlightenment be "less wrong" than gradual enlightenment?
+"**Huang-po went up to Paichang and slapped him in the face**" - If previously it sounded like the reward for the old man's original answer was to be thrown in rebirths, here it sounds like the reward for Hyakujo's answer is to be slapped in the face. Is Sudden enlightenment, as a view, not "more true" than gradual?. The (Could it be the meaning of Wumen's verses _"a thousand mistakes, ten thousand mistakes"_?).  
+Between us, if I can pragmatic for a second, I'd rather get slapped in the face than be reborn five hundred times as a fox. So, could we just say sudden enlightenment is "less wrong" than gradual enlightenment?
 
 ### What if we could hold both together?
 
@@ -131,7 +133,7 @@ Maybe that's why the _Mumonkan_ closes the case the verses:
 > Not evading, not falling--  
 > a thousand mistakes, ten thousand mistakes.
 
-Each of them leads to a partial understanding of reality and contradictions. Holding one view, sudden enlightenment, might be helpful but grasping it as the one true view is an illusion.
+Each of them leads to a partial understanding of reality and contradictions. Holding one view - sudden enlightenment - might be helpful but grasping it as the one true view is an illusion.
 
 Ultimately, the question is not whether sudden enlightenment is more true than gradual enlightenment. The question is.... what is enlightenment itself? and what is the relationship with the law of cause and effect?
 
