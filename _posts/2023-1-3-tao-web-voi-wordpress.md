@@ -6,12 +6,12 @@ title: tạo wordpress với LEMP(linux,nginx,mariadb, php)
 truy cấp link dưới và làm theo. tùy chỉnh 1 số cái theo bên dưới
 
 
-```https://vi.linuxcapable.com/c%C3%A1ch-c%C3%A0i-%C4%91%E1%BA%B7t-wordpress-v%E1%BB%9Bi-lemp-stack-tr%C3%AAn-ubuntu-20-04/#Install_PHP_LEMP_STACK
+permalink:https://vi.linuxcapable.com/c%C3%A1ch-c%C3%A0i-%C4%91%E1%BA%B7t-wordpress-v%E1%BB%9Bi-lemp-stack-tr%C3%AAn-ubuntu-20-04/#Install_PHP_LEMP_STACK
 
 
 
 - sau khi cài đặt nginx xong nếu k restast được thì gõ lệnh
-   `sudo killall apache2`  # bỏ qua phần cấu hình tường lửa
+   sudo killall apache2  # bỏ qua phần cấu hình tường lửa
 - bỏ qua phần đặt khóa bảo mật wordpress
 - cấu hình nginx đổi tên
 ` sudo nano /etc/nginx/sites-available/localhost`
