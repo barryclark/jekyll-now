@@ -58,6 +58,11 @@ permalink: /:title/
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
+# theadamwright - added modernist theme described here(https://github.com/pages-themes/modernist)
+remote_theme: pages-themes/modernist@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
