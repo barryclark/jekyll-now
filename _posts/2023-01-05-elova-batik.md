@@ -44,7 +44,7 @@ Jika kamu memenuhi persyaratan di atas, silahkan KLIK tombol di bawah ini.
 
 ![loker elova]({{ site.baseurl }}/images/D8DCB633-A53C-409D-832A-D295A5DDE22B.jpeg)
 
-**Tugas** utama Host Live adalah **membangun** interaksi dengan audience melalui **Live Streaming** via aplikasi Sosial Media dan atau Marketplace untuk **menjual** produk sesuai target perusahaan.
+**Tugas** utama Host Live adalah **membangun** interaksi dengan audience melalui **Live Streaming** via aplikasi Sosial Media dan atau Marketplace untuk **menjual** produk sesuai target perusahaan.
 
 Terbuka untuk Mahasiswa/i aktif, Pelajar dan Umum.
 
@@ -63,7 +63,7 @@ Jika kamu memenuhi persyaratan di atas, silahkan KLIK tombol di bawah ini.
 
 ![loker elova]({{ site.baseurl }}/images/BCEC6E1D-AAF1-4599-9096-1CC4436CE4C0.jpeg)
 
-**Tugas** utama **Advertiser** adalah mendatangkan traffic dengan online marketing (Facebook, IG, Tiktok dan Google) baik dengan cara berbayar maupun organik
+**Tugas** utama **Advertiser** adalah mendatangkan traffic dengan online marketing (Facebook, IG, Tiktok dan Google) baik dengan cara berbayar maupun organik.
 
 **Persyaratan Khusus:**
 
