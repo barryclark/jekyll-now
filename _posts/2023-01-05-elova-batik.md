@@ -26,9 +26,9 @@ Berdasarkan informasi di laman [Karir ELOVA](https://elovabatik.com/karir/), ter
 
 ![loker elova]({{ site.baseurl }}/images/EA967EB6-CC3A-4D75-9FA0-C9321EAC6D2B.jpeg)
 
-**Tugas** utama CS adalah **melayani** customer yang masuk melalui **online** **chatting** atau **telepon** untuk **menjual** produk sesuai target perusahaan.
+**Tugas** utama CS adalah **melayani** customer yang masuk melalui **online chatting** atau **telepon** untuk **menjual** produk sesuai target perusahaan.
 
-**Persyaratan Khusus :**
+**Persyaratan Khusus:**
 
 1. Familiar dengan Aplikasi Media Sosial
 2. Menguasai Ms. Excel / Google Spreadsheet
@@ -48,7 +48,7 @@ Jika kamu memenuhi persyaratan di atas, silahkan KLIK tombol di bawah ini.
 
 Terbuka untuk Mahasiswa/i aktif, Pelajar dan Umum.
 
-**Persyaratan Khusus :**
+**Persyaratan Khusus:**
 
 1. Mempunyai Skill Public Speaking dan Komunikasi yang Baik
 2. Percaya Diri Didepan Kamera
@@ -65,7 +65,7 @@ Jika kamu memenuhi persyaratan di atas, silahkan KLIK tombol di bawah ini.
 
 **Tugas** utama **Advertiser** adalah mendatangkan traffic dengan online marketing (Facebook, IG, Tiktok dan Google) baik dengan cara berbayar maupun organik
 
-**Persyaratan Khusus :**
+**Persyaratan Khusus:**
 
 1. Menguasai Online Advertising (Facebook, Tiktok, Google)
 2. Bisa Membuat Landing Page
