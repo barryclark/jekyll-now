@@ -22,6 +22,10 @@ body {
   font: 18px/1.4 $helvetica;
   color: $darkGray;
   padding: 90px 0 0;  // padding-top equal to masthead height or greater
+
+  @include mobile {
+    padding: 110px 0 0;  // padding-top equal to masthead height or greater
+  }
 }
 
 .container {
@@ -167,6 +171,7 @@ img {
 
   @include mobile {
     text-align: center;
+    height: 110px; // need a magic number here which may break in different viewports
   }
 }
 
@@ -178,8 +183,8 @@ img {
   margin-right: 15px;
 
   @include mobile {
-    float: left;
-    display: block;
+    float: none;
+    display: inline-block;
     margin: 0 auto;
   }
 
