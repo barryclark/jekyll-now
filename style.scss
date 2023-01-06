@@ -24,7 +24,7 @@ body {
   padding: 90px 0 0;  // padding-top equal to masthead height or greater
 
   @include mobile {
-    padding: 110px 0 0;  // padding-top equal to masthead height or greater
+    padding: 120px 0 0;  // padding-top equal to masthead height or greater
   }
 }
 
@@ -172,7 +172,7 @@ img {
   @include mobile {
     display: inline-block;
     text-align: center;
-    height: 110px; // need a magic number here which may break in different viewports
+    height: 120px; // need a magic number here which may break in different viewports
   }
 }
 
