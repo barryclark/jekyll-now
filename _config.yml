@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Juan Agustin Flores
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Profesor y amante del Software Libre - creador de contenidos en FediverseTv y YT
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://yt3.ggpht.com/2IsBB2CVXdmlM9AVY9_I5oUwHXoAOpGXr5ezrpU8WVwqLIxK0ag-6wNupmikXcmuLCRznvl_wvw=s88-c-k-c0x00ffffff-no-rj-mo
 
 #
 # Flags below are optional
@@ -18,17 +18,17 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: juanagustinf@gmail.com
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: maneflo
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: ProfeJuan_SL
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
+  youtube: channel/UCbLeBKWLvry6VPeen-lN6sQ
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
