@@ -21,7 +21,7 @@ body {
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
-  padding: 50px 0 0;  // padding-top equal to masthead height or greater
+  padding: 80px 0 0;  // padding-top equal to masthead height or greater
 }
 
 .container {
@@ -156,13 +156,13 @@ img {
 }
 
 .masthead {
-  padding: 20px 20px;
+  padding: 10px 10px;
   // border-bottom: 1px solid $lightGray;
   position: fixed;
   top: 0;
   width: 100%;
   background: white;  // set a color to hide content that may appear below masthead
-  height: 50px; // need a magic number here which may break in different viewports
+  height: 80px; // need a magic number here which may break in different viewports
 
   @include mobile {
     text-align: center;
