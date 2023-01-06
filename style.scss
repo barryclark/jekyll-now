@@ -306,15 +306,15 @@ footer {
 
 .header {
   padding: 10px 20px;
-  // background: #000;
+  // background: #fff;
   top: 0;
   // box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
   z-index: 3;
   height: 90px; // need a magic number here which may break in different viewports
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  // backdrop-filter: blur(5px);
+  // -webkit-backdrop-filter: blur(5px);
 }
 
 .header ul {
@@ -477,7 +477,7 @@ footer {
 
 
 .research-img-wrapper {
-    padding: 90px 0 0;
+    // padding: 90px 0 0;
     width: 100%;
     height: 400px;
     z-index: 0;
