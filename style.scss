@@ -172,12 +172,12 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
+  width: 255px;
   height: 70px;
   margin-right: 15px;
 
   @include mobile {
-    float: none;
+    float: left;
     display: block;
     margin: 0 auto;
   }
