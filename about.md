@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
+title: Acerca de mi
 permalink: /about/
 ---
 
-Some information about you!
+Estoy en el ámbito de la Educación tanto secundaria como terciaria utilizando sofwareLibre desde fines del siglo pasado ( mi primera instalación fue con un cd con un gnu/linux en formato rpm en una 386 clon!
 
-### More Information
+### Mis intereses principales son:
 
-A place to include any other types of information that you'd like to include about yourself.
+Me gusta la tecnología e investigar por mi cuenta las herramientas, me gusta disfrutar de la naturaleza y los amigos!.
 
-### Contact me
+### Contáctame en la redes que están abajo o por mail
 
-[email@domain.com](mailto:email@domain.com)
+[mi correo](mailto:juflores4@abc.gob.ar)
