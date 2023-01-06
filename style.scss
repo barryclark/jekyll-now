@@ -306,15 +306,15 @@ footer {
 
 .header {
   padding: 10px 20px;
-  background: #000;
+  // background: #000;
   top: 0;
   // box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
   z-index: 3;
   height: 90px; // need a magic number here which may break in different viewports
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .header ul {
