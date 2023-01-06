@@ -170,6 +170,7 @@ img {
   height: 90px; // need a magic number here which may break in different viewports
 
   @include mobile {
+    display: inline-block;
     text-align: center;
     height: 110px; // need a magic number here which may break in different viewports
   }
@@ -185,7 +186,7 @@ img {
   @include mobile {
     float: none;
     display: inline-block;
-    margin: 0 auto;
+    margin: 0 0;
   }
 
   img {
