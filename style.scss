@@ -226,13 +226,10 @@ nav {
   font-size: 18px;
 
   @include mobile {
-    .hamburger{
-      display: block;
-    }
-    // float: none;
-    // margin-top: 9px;
-    // display: block;
-    // font-size: 16px;
+    float: none;
+    margin-top: 9px;
+    display: inline-block;
+    font-size: 16px;
   }
 
   a {
