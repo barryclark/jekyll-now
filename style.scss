@@ -27,8 +27,8 @@ body {
 .container {
   margin: 0 auto;
   max-width: 100%;
-  padding: 0 10px;
-  width: 90%;
+  padding: 10px 10px;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -159,7 +159,7 @@ img {
 
 .masthead {   
    position: fixed;
-   padding: 20px 0;
+   padding: 20px 20px;
    top: 0;
    border-bottom: 1px solid #f2f3f3;
    -webkit-animation: intro 0.3s both;
