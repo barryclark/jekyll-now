@@ -26,8 +26,8 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 100%;
-  padding: 10px 10px;
+  max-width: 1100px;
+  padding: 0 10px;
   width: 100%;
 }
 
@@ -155,26 +155,20 @@ img {
   margin-bottom: 50px;
 }
 
+// .masthead {
+  padding: 20px 20px;
+  border-bottom: 1px solid $lightGray;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;  // set a color to hide content that may appear below masthead
+  height: 85px; // need a magic number here which may break in different viewports
 
-
-.masthead {   
-   position: fixed;
-   padding: 20px 20px;
-   top: 0;
-   border-bottom: 1px solid #f2f3f3;
-   -webkit-animation: intro 0.3s both;
-   animation: intro 0.3s both;
-   -webkit-animation-delay: 0.15s;
-   animation-delay: 0.15s;
-   z-index: 20;
-   width: 100%;
-   background: white;  // set a color to hide content that may appear below masthead
-   height: 85px; // need a magic number here which may break in different viewports
-
-   @include mobile {
+  @include mobile {
     text-align: center;
   }
 }
+
 
 .site-avatar {
   float: left;
