@@ -475,6 +475,20 @@ footer {
 }
 
 
+.research-img-wrapper {
+    width: 100%;
+    height: 400px;
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include mobile {
+    height: 100%;
+  }
+}
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
