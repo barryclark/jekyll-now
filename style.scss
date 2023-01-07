@@ -442,7 +442,7 @@ footer {
 
 .bio-research-hero {
     position: relative;
-    height: 600px;
+    height: 700px;
     overflow: hidden;
     background-size: cover;
     background-position: center;
@@ -505,7 +505,7 @@ footer {
   line-height: 1.7;
   margin: 15px 0 15px;
   padding: 0 20px;
-  top: 50px;
+  top: 0;
 
   @include mobile {
     line-height: 1.4;
