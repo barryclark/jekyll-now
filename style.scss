@@ -477,7 +477,7 @@ footer {
 
 
 .research-img-wrapper {
-    // padding: 90px 0 0;
+    padding: 90px 0 0;
     width: 100%;
     height: 400px;
     z-index: 0;
@@ -488,6 +488,20 @@ footer {
 
     @include mobile {
     height: 100%;
+  }
+}
+
+.research-hero-page-content{
+  font-family: $helveticaNeue;
+  color: white;
+  font-weight: bold;
+
+  line-height: 1.7;
+  margin: 15px 0 15px;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
   }
 }
 
