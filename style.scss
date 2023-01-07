@@ -500,11 +500,11 @@ footer {
   font-size: 30px; 
   font-family: $helveticaNeue;
   color: #fff;
-  font-weight: bold;
+  font-weight: heavy;
 
   line-height: 1.7;
   margin: 15px 0 15px;
-  padding: 20px 20px;
+  padding: 50px 20px;
   top: 0;
   position: absolute;
 
@@ -514,10 +514,10 @@ footer {
 }
 
 .research-hero-page-content{
-  font-size: 25px;
+  font-size: 20px;
   font-family: $helveticaNeue;
   color: #fff;
-  // font-weight: bold;
+  font-weight: thin;
 
   line-height: 1.7;
   margin: 15px 0 15px;
