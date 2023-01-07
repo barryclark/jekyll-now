@@ -442,11 +442,14 @@ footer {
 
 .bio-research-hero {
     position: relative;
-    height: 700px;
+    height: 500px;
     overflow: hidden;
     background-size: cover;
     background-position: center;
-    background-image: url('https://raw.githubusercontent.com/f-hamidlab/f-hamidlab.github.io/master/images/25761.jpg'); 
+    background-image: url('https://raw.githubusercontent.com/f-hamidlab/f-hamidlab.github.io/master/images/25761.jpg');
+    @include mobile {
+    height: 700px;
+  } 
 }
 
 .flex-center {
@@ -504,12 +507,13 @@ footer {
 
   line-height: 1.7;
   margin: 15px 0 15px;
-  padding: 50px 20px;
+  padding: 50px 80px;
   top: 0;
   position: absolute;
 
   @include mobile {
     line-height: 1.4;
+    padding: 50px 20px; 
   }
 }
 
