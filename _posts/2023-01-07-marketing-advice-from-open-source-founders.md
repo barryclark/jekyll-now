@@ -15,9 +15,9 @@ Who is your target?
 
 If you don’t know this, how can you speak to your audience?
 
-Mikael Nida from Lotus, an open-source tool that lets you [optimize, test and deploy new pricing packaging models](https://www.uselotus.io/; target=_blank) said,  
+Mikael Nida from Lotus, an open-source tool that lets you <a href="[http://example.com/](https://www.uselotus.io/)" target="_blank">optimize, test and deploy new pricing packaging models</a> said,  
 
-*“Take more time than you think you should to properly understand your positioning.* <a href="http://example.com/" target="_blank">Hello, world!</a>
+*“Take more time than you think you should to properly understand your positioning.*
 
 *This aspect is so important because it helps you iterate on who your true customer is, which in turn helps you build a better product.*
 
