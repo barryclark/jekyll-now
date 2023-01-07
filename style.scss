@@ -33,7 +33,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: $black;
   font-weight: bold;
 
   line-height: 1.7;
@@ -62,7 +62,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: $black;
 }
 
 p {
@@ -119,7 +119,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $black;
 }
 
 // Specify the color of the selection
