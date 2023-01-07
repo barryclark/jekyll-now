@@ -505,7 +505,8 @@ footer {
   line-height: 1.7;
   margin: 15px 0 15px;
   padding: 20px 20px;
-  vertical-align: top;
+  top: 0;
+  position: absolute;
 
   @include mobile {
     line-height: 1.4;
