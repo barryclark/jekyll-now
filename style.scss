@@ -442,7 +442,7 @@ footer {
 
 .bio-research-hero {
     position: relative;
-    height: 800px;
+    height: 600px;
     overflow: hidden;
     background-size: cover;
     background-position: center;
@@ -496,6 +496,20 @@ footer {
   }
 }
 
+.research-hero-page-title{
+  font-family: $helveticaNeue;
+  color: #fff;
+  font-weight: bold;
+
+  line-height: 1.7;
+  margin: 15px 0 15px;
+  padding: 0 20px;
+
+  @include mobile {
+    line-height: 1.4;
+  }
+}
+
 .research-hero-page-content{
   font-family: $helveticaNeue;
   color: #fff;
@@ -503,7 +517,7 @@ footer {
 
   line-height: 1.7;
   margin: 15px 0 15px;
-  padding: 0;
+  padding: 0 20px;
 
   @include mobile {
     line-height: 1.4;
