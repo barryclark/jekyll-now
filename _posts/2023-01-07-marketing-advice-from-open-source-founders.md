@@ -49,7 +49,7 @@ The goal is to figure out what makes your product special and repeat that experi
 
 If you have big plans for your open-source project, it needs a way to survive.
 
-A recent letter by open-source Kite founder, Adam Smith, illustrates this perfectly.
+<a href="https://www.kite.com/blog/product/kite-is-saying-farewell/" target="_blank">A recent letter</a> by open-source Kite founder, Adam Smith, illustrates this perfectly.
 
 With a user base of over 500k developers, the product failed to generate the necessary revenue needed.
 
@@ -71,9 +71,9 @@ Technical audiences are the ones most likely to see the benefit of open-source a
 
 This makes Hacker News an important channel for you to launch on.
 
-I spoke with Shri Sukhani from Metlo, they are an open-source security API platform that lets you inventory, test and secure your API.
+I spoke with Shri Sukhani from Metlo, they are an <a href="https://metlo.com" target="_blank">open-source security API platform</a> that lets you inventory, test and secure your API.
 
-Shri highlighted the importance of launching correctly on this channel and shared the YC Launch HN instructions which helped them prepare.
+Shri highlighted the importance of launching correctly on this channel and shared the <a href="https://news.ycombinator.com/yli.html" target="_blank">YC Launch HN instructions</a> which helped them prepare.
 
 **Key takeaways from this guide:**
 
@@ -100,7 +100,7 @@ This doesn’t work when marketing open-source tools.
 
 The majority of the time, you are targeting a technical audience, so you need to write things of value.
 
-Jan Cizmar from Tolgee, an open-source app localization tool, gave some insights into their content strategy,
+Jan Cizmar from Tolgee, an <a href="https://tolgee.io" target="_blank">open-source app localization tool</a>, gave some insights into their content strategy,
 
 “What has worked best for us is to build the product publicly and share content about that. 
 
@@ -120,7 +120,7 @@ When it comes to open-source tools, developers are going to be a big influence o
 
 You’ll need to think outside traditional marketing channels to get your tool in front of the right audience.
 
-Jannis Gebauer who solo-founded and eventually sold his open-source tool Pyup.io took a very interesting approach to get his product in front of developers.
+<a href="https://gebauer.dev" target="_blank">Jannis Gebauer</a> who solo-founded and eventually sold his open-source tool pyup.io took a very interesting approach.
 
 “When thinking about how to get this in front of a technical audience, I came up with an idea that was actually helpful and able to get the tool in front of other developers interacting with projects.
 
@@ -134,7 +134,7 @@ When marketing to developers, think about how you can bring value, rather than t
 
 The popularity of open-source continues to grow and now organizations are beginning to truly see how important it is to global operations.
 
-Countries like Germany are pledging to have their own software development be done in open-source
+Countries like Germany are even pledging to <a href="https://joinup.ec.europa.eu/collection/open-source-observatory-osor/news/open-source-be-norm-german-public-procurement" target="_blank">open source have their own software development.</a>
 
 A deciding factor for many development teams when it comes to choosing to build on an open-source tool is the longevity of the project. 
 
