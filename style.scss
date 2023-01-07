@@ -504,6 +504,7 @@ footer {
   line-height: 1.7;
   margin: 15px 0 15px;
   padding: 0 20px;
+  top: 50px;
 
   @include mobile {
     line-height: 1.4;
@@ -513,11 +514,11 @@ footer {
 .research-hero-page-content{
   font-family: $helveticaNeue;
   color: #fff;
-  font-weight: bold;
+  // font-weight: bold;
 
   line-height: 1.7;
   margin: 15px 0 15px;
-  padding: 0 20px;
+  // padding: 0 20px;
 
   @include mobile {
     line-height: 1.4;
