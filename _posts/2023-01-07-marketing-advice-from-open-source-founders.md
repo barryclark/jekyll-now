@@ -33,12 +33,12 @@ Be specific in your questions.
 
 Avoid asking questions that can be answered with yes or no.
 
-~~Do you find our product useful?~~
- 
+_**~~Do you find our product useful?~~**
+_ 
 What feature of our product did you find most useful?
 
-~~Did our product save you time during your work day?~~
-
+**_~~Did our product save you time during your work day?~~_
+**
 What task did [product name] save you the most time on?
 
 Think of these like icebreaking questions and then dive deeper depending on the answers you receive. 
