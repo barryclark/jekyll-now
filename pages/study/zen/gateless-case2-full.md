@@ -8,14 +8,14 @@ permalink: /pages/study/zen/gateless-case2-/
 
 ## Notes on the text of this case
 
-You can find the a version in the ["prompt-only" version of this page](./gateless-case2.md).
+You can find a version in the ["prompt-only" version of this page](./gateless-case2.md).
 
 The story of Paichang/Baizhang/Hyakujo and the Fox can be found in multiple collections of koans with some variations:
 - Case 2 of the Gateless Barrier (_Mumonkan_),
 - Case 8 of Book of Serenity (_Shōyōroku_),
 - Case 102 of Dogen's Shinji Shobogenzo.
 
-Central to the case, the question and response is rendered different ways according to translators:
+Central to the case, the main question and response is rendered different ways according to translators:
 
 Robert Aitken, The Gateless Barrier, 1990:
 > \- Does an enlightened person fall under the law of cause and effect or not?  
@@ -145,19 +145,23 @@ One interesting exercise is to look for, in the text and between the lines, wher
 
 > Once when Paichang gave a series of talks, a certain old man was always there listening together with the monks. When they left, he would leave too. One day, however, he remained behind.
 
-"**One day, however, he remained behind.**" - This sentence alone can raise so many questions. What happened **that** day? Why is that day different from the day before? Was Hyakujo teaching on a specific topic? Or did the old man feel he needed to ask a question that day? Why wouldn't he ask that question the day before? What is the cause leading to this old man asking the most pressing question of his existence on that particular day? This day will be important. We're talking about the day of the old man's enlightenment. Conditions on that day seemed more favorable for him than the day before. Why and how? Does that even make sense to ask this question?
+"**One day, however, he remained behind.**" - This sentence alone can raise so many questions. What happened **that** day? Why is that day different from the day before? Was Hyakujo teaching on a specific topic? Or did the old man feel he needed to ask a question that day? Why wouldn't he ask that question the day before? What is the cause leading to this old man asking the most pressing question of his existence on that particular day? This day will be important. We're talking about the day of the old man's enlightenment. Conditions on that day seemed more favorable for him than the day before. Why and how?
 
 Once you deep dive like this, reading from the beginning again brings a lot more opportunities to contemplate causality.
 
-"**Once when...**" - When was this exaclty? What happened before? Why was this series of teachings more favorable for the old man to show up? Is this story only about karmic law applying to the old man? Or is it also about karmic law applying to Hyakujo? Are those two meeting here as the fruit of a process relating both?
+"**Once when...**" - When was this exaclty? What happened before?
 
-"**was always there...**" - Was the old man literally **always** there since the beginning of time? Probably not, so he must have entered the teaching hall at some point for the first time. What happened then? Why at that time? Was it just ok for him to show up like this?
+"**Paichang gave a series of talks..**"- Why was this series of teachings more favorable for the old man to show up? Is this story only about how karmic law applies to the old man? Or is it also about how karmic law applies to Hyakujo? Are those two meeting here as the fruit of a process binding both together?
 
-"**When they left, he would leave too.**" - He was going with the stream. Maybe that can explain why nobody noticed or interacted with him before "that day". Why did nobody notice him or interact with him before? Did Hyakujo notice him only when he started asking questions?
+"**a certain old man was always there...**" - Was the old man literally **always** there? Like since the beginning of time? Probably not, so he must have entered the teaching hall at some point in the past for the first time. At what point? What happened then? Why at that time?
+
+"**listening together with the monks...**" - Was it just ok for him to just show up like this? Why did nobody notice him or interact with him before?
+
+"**When they left, he would leave too.**" - He was going with the stream. Maybe that can explain why nobody noticed or interacted with him before that day". Did Hyakujo notice him only when he started asking questions?
 
 "**One day, however..** - There the stream meets a boulder, causing the water to stop for a moment. Now, if the old man had never asked any question to Hyakujo, would he still be reborn as a fox again and again? 
 
-
+### But what is it?
 
 > "Not falling under the law of cause and effect." Why should __this__ prompt five hundred lives as a fox? "Not evading the law of cause and effect." Why should __this__ prompt a return a human life? If you have the single eye of realization, you will appreciate how old Paichang lived five hundred lives as a fox as lives of grace.
 
