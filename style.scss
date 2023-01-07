@@ -517,11 +517,11 @@ footer {
   font-size: 20px;
   font-family: $helvetica;
   color: #fff;
-  font-weight: thin;
+  font-weight: 100;
 
   line-height: 1.7;
   margin: 15px 0 15px;
-  // padding: 0 20px;
+  padding: 20px 0;
 
   @include mobile {
     line-height: 1.4;
