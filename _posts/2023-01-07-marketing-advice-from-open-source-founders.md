@@ -15,7 +15,7 @@ Who is your target?
 
 If you don’t know this, how can you speak to your audience?
 
-Mikael Nida from Lotus, an open-source tool that lets you <a href="[(https://www.uselotus.io/)" target="_blank">optimize, test and deploy new pricing packaging models</a> said,  
+Mikael Nida from Lotus, an open-source tool that lets you <a href="https://www.uselotus.io/" target="_blank">optimize, test and deploy new pricing packaging models</a> said,  
 
 *“Take more time than you think you should to properly understand your positioning.*
 
