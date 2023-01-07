@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 Face it, if you want to make your open-source project your day job, you’re going to have to put some effort into marketing it.
 
@@ -33,13 +33,13 @@ Be specific in your questions.
 
 Avoid asking questions that can be answered with yes or no.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~~Do you find our product useful?~~
+~~Do you find our product useful?~~
  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What feature of our product did you find most useful?
+What feature of our product did you find most useful?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~~Did our product save you time during your work day?~~
- 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What task did [product name] save you the most time on?
+~~Did our product save you time during your work day?~~
+
+What task did [product name] save you the most time on?
 
 Think of these like icebreaking questions and then dive deeper depending on the answers you receive. 
 
