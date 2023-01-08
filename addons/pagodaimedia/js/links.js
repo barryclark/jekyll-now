@@ -14,7 +14,7 @@
   /*<![CDATA[*/
   /* ShortLink settings */
   var shrtSet = {
-    apiKey: b64.dec('QUl6YVN5QjduNXlYenptR3ZyRDhiMEtnX3p2b3hXeGxxS2lFcmxN'),
+    apiKey: 'AIzaSyB7n5yXzzmGvrD8b0Kg_zvoxWxlqKiErlM',
     pageLink: 'https://x.pmlink.my.id',
     siteKey: "6LfOp3sjAAAAAPILzEkhjNuXYuxJOvI-zHg3VNjg",
     succNtf: "<i class='check'></i>Tautan Disingkat, Klik Salin",
@@ -28,7 +28,7 @@ function _0x3e9a(u,t){var f=_0x15bd();return(_0x3e9a=function(t,n){var e=f[t=+t]
   /*<![CDATA[*/
   /* ShortLink + SafeLink settings */
   var sSafeSet = {
-    apiKey: b64.dec('QUl6YVN5QjduNXlYenptR3ZyRDhiMEtnX3p2b3hXeGxxS2lFcmxN'),
+    apiKey: 'AIzaSyB7n5yXzzmGvrD8b0Kg_zvoxWxlqKiErlM',
     pageLink: 'https://x.pmlink.my.id',
     sSafePar: "?url",
     siteKey: "6LfOp3sjAAAAAPILzEkhjNuXYuxJOvI-zHg3VNjg",
