@@ -1,0 +1,42 @@
+---
+layout: post
+title: Books Read in 2022
+---
+
+# Books Read in 2022
+
+## Non-Fiction
+
+* Raising Good Humans, Hunter Clarke Fields
+* The Subtle Art of Not Giving a F*ck, Mark Manson
+* Biased, Jennifer L. Eberhardt, PhD
+* Rework, Jason Fried
+* A very Stable Genius, Philip Rucker
+* I Alone Can Fix It, Carol Leonnig
+* No Drama Discipline, Daniel J. Siegel
+* 13 Things Mentally Strong People Do, Amy Morin
+* Evil Geniuses, Kurt Andersen
+* I know Why the Caged Bird sings, Maya Angelou
+* Good to Great, Jim Collins
+* Longitude, Dava Sobel
+* I Didn't Do the Thing Today, MAdeleine Dore
+* The New Jim Crow, Michelle Alexander
+* Between the World and Me, Ta-Nehisi Coates
+* Start With Why, Simon Sinek
+* Happiness, Thich Nhat Hanh
+
+## Fiction
+
+* I Am Legend and Other Stories, Richard Matheson
+* The Broken Earth Trilogy, N.K. Jemisin
+* Good Omens, Neil Gaiman
+* The Lathe of Heaven, Ursula K. Le Guin
+* Project Hail Mary, Andy Weir
+* Remote Control, Nnedi Okorafor
+* Artemis, Andy Weir
+* Children of God, Mary Doria Russell
+* The Sparrow, Mary Doria Russell
+* Johnny Got His Gun, Dalton Trumbo
+* I Have No Mouth & I Must Scream, Harlan Ellison
+* Sand, Hugh Howey
+* Earthseed Series, Octavia E. Butler
