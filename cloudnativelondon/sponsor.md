@@ -6,6 +6,7 @@ redirect_from: /cnl-sponsor
 ---
 
 > "At Sysdig, developers are an important audience and we know the way to reach them is through high quality educational content. The Cloud Native London meetup is a great audience, events always run smoothly and need very little input from us. What we really appreciate about Cheryl and Cloud Native London is the consistency of monthly meetups, which allows us to plan ahead and commit to a whole year upfront. It's been a great partnership and we're looking forward to 2023."
+>
 > Jonthan Munn, Senior Field & Channel Marketing Manager, Sysdig
 
 You’re interested in sponsoring the ​Cloud Native London meetup​? Awesome! It’s a great way to support the Kubernetes and cloud native community, and increase awareness.
