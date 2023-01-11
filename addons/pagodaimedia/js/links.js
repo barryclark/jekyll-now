@@ -15,7 +15,7 @@
   /* ShortLink settings */
   var shrtSet = {
     apiKey: 'AIzaSyB7n5yXzzmGvrD8b0Kg_zvoxWxlqKiErlM',
-    pageLink: 'https://x.pmlink.my.id',
+    pageLink: 'https://go.pmlink.my.id',
     siteKey: "6LfOp3sjAAAAAPILzEkhjNuXYuxJOvI-zHg3VNjg",
     succNtf: "<i class='check'></i>Tautan Disingkat, Klik Salin",
     entrNtf: "<i class='warn'></i>Masukkan Tutan untuk Disingkat!",
@@ -29,7 +29,7 @@ function _0x3e9a(u,t){var f=_0x15bd();return(_0x3e9a=function(t,n){var e=f[t=+t]
   /* ShortLink + SafeLink settings */
   var sSafeSet = {
     apiKey: 'AIzaSyB7n5yXzzmGvrD8b0Kg_zvoxWxlqKiErlM',
-    pageLink: 'https://x.pmlink.my.id',
+    pageLink: 'https://go.pmlink.my.id',
     sSafePar: "?url",
     siteKey: "6LfOp3sjAAAAAPILzEkhjNuXYuxJOvI-zHg3VNjg",
     succNtf: "<i class='check'></i>Tautan Terproteksi, Klik Salin",
