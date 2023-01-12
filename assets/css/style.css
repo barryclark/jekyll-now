@@ -125,12 +125,12 @@
 
 body {
   color: #333;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* body {
   color: black;
-  font-size: 16px;
+  font-size: 18px;
 } */
 
 /* main a -- links */
@@ -140,7 +140,7 @@ body {
 } */
 
 a {
-  color: #7177f0;
+  color: #004d40;
 }
 
 /* main blockqoute */
