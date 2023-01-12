@@ -68,7 +68,7 @@
 }
 
 .linkedin:hover {
-  background-color: #0077b5;
+  background-color: #b9c2fa;
 }
 
 .angellist:hover {
@@ -85,7 +85,7 @@
   position: relative;
   padding: 11px 35px;
   background: #fff;
-  color: #00796b;
+  color: #b9c2fa;
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
@@ -116,7 +116,7 @@
 }
 
 .contactme:hover{
-  color: #00796b;
+  color: #b9c2fa;
   background-color: white;
 }
 /* main body */
@@ -125,7 +125,7 @@
 
 body {
   color: #333;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 /* body {
@@ -136,17 +136,17 @@ body {
 /* main a -- links */
 
 /* a {
-  color: #009688;
+  color: #b9c2fa;
 } */
 
 a {
-  color: #004d40;
+  color: #4505e8;
 }
 
 /* main blockqoute */
 
 /* blockquote {
-  border-left: 5px solid #795548;
+  border-left: 5px solid #633105;
   color: #795548;
   font-size: 125%;
   font-weight: 400;
@@ -155,8 +155,8 @@ a {
 } */
 
 blockquote {
-  border-left: 5px solid #795548;
-  color: #795548;
+  border-left: 5px solid #4505e8;
+  color: #4505e8;
   font-size: 125%;
   font-weight: 400;
   margin: 20px 0;
@@ -320,7 +320,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #a7ffeb repeat;
+  background: #9bcefa repeat;
   position: relative;
 }
 
@@ -473,7 +473,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-  border-bottom: 3px solid #004d40 !important;
+  border-bottom: 3px solid #1e013b !important;
 }
 
 #skills .card.large {
@@ -602,7 +602,7 @@ small {
     position: absolute;
   }
   nav a.button-collapse, nav a.button-collapse i {
-    color: #009688;
+    color: #9691fa;
     height: 56px;
     line-height: 56px;
   }
