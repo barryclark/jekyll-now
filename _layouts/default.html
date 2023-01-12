@@ -4,13 +4,13 @@
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {%- if site.favicon %}
-      <link rel="apple-touch-icon" sizes="180x180" href="{{ site.favicon | relative_url }}apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon | relative_url }}favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="{{ site.favicon | relative_url }}favicon-16x16.png">
-      <link rel="manifest" href="{{ site.favicon | relative_url }}site.webmanifest">
-      <link rel="shortcut icon" href="{{ site.favicon | relative_url }}favicon.ico">
+      <link rel="apple-touch-icon" sizes="180x180" href="/imsges/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+      <link rel="manifest" href="/images/site.webmanifest">
+      <link rel="shortcut icon" href="/images/favicon.ico">
       <meta name="msapplication-TileColor" content="#da532c">
-      <meta name="msapplication-config" content="{{ site.favicon | relative_url }}browserconfig.xml">
+      <meta name="msapplication-config" content="/images/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
     {%- endif %}
     {% include meta.html %}
