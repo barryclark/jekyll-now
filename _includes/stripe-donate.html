@@ -1,4 +1,4 @@
-<button class="stripe" id="checkout-button-sku_Ft4pViL0XBDlaL" role="link">
+<button class="stripe" id="checkout-button-sku_N9iYC9uM3ZNLNQ" role="link">
   Donate
 </button>
 
@@ -6,12 +6,12 @@
 (function() {
   var stripe = Stripe('pk_live_gRovPiGzsmDnzUPZlDt4mR6U00q124AvQ7');
 
-  var checkoutButton = document.getElementById('checkout-button-sku_Ft4pViL0XBDlaL');
+  var checkoutButton = document.getElementById('checkout-button-sku_N9iYC9uM3ZNLNQ');
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      items: [{sku: 'sku_Ft4pViL0XBDlaL', quantity: 1}],
+      items: [{sku: 'sku_N9iYC9uM3ZNLNQ', quantity: 1}],
 
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
