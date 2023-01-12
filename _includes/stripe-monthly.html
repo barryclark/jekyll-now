@@ -8,12 +8,12 @@
 (function() {
   var stripe = Stripe('pk_live_gRovPiGzsmDnzUPZlDt4mR6U00q124AvQ7');
 
-  var checkoutButton = document.getElementById('checkout-button-plan_FskXiPL7dHz7vb');
+  var checkoutButton = document.getElementById('checkout-button-price_1MPOwBCusvZ9h2abeNiC8lR4');
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      items: [{plan: 'plan_FskXiPL7dHz7vb', quantity: 1}],
+      items: [{plan: 'price_1MPOwBCusvZ9h2abeNiC8lR4', quantity: 1}],
 
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
