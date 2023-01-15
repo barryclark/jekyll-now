@@ -14,6 +14,12 @@ title: Jekyll blog
 
 [Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll) 
 
+### include
+
+[include](https://jekyllrb.com/docs/includes/)
+
+include태그를 사용하면 _includes폴더 에 저장된 다른 파일의 콘텐츠를 포함할 수 있습니다 .
+
 ## Markdown
 
 [기초 문법](https://www.markdownguide.org/basic-syntax/#code)
@@ -51,7 +57,7 @@ pre.highlight{
 
 <center><div markdown="1">
 
-![Image](/images/404.jpg){: width="300" height="300"}
+![Image](/images/404.jpg)
 
 </div></center>
 
