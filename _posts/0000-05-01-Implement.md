@@ -9,3 +9,6 @@ title: Implement
 ## Graphics
 
 * [Wiper effect](/posts_implement/WiperEffect)
+
+{% include_relative test.md %}
+{% include_relative shared_block/test.md %}
