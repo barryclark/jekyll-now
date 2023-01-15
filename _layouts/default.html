@@ -30,6 +30,11 @@
             <a href="{{ site.baseurl }}/"> &#128187;Blog</a>
              <a href="{{ site.baseurl }}/resume"> &#128188;Resume</a>
             <a href="{{ site.baseurl }}/about"> &#128522;About me</a>
+            <button id="dark-mode-button">Toggle Dark Mode</button>
+            <script>
+              var button = document.getElementById("dark-mode-button");
+              button.addEventListener("click", function() {document.body.classList.toggle("dark-mode");});
+            </script>
           </nav>
         </header>
       </div>
