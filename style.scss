@@ -245,6 +245,10 @@ nav {
 //
 // .main
 //
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
 
 .posts > .post {
   padding-bottom: 2em;
