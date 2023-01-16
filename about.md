@@ -11,16 +11,16 @@ permalink: /about/
               
 
 
-- 📝 Connect with me TELEGRAM https://t.me/vhae04
+📝 Connect with me TELEGRAM https://t.me/vhae04
   
   
-- 🌻 My hobby is forensics and web security
-  
-
-- 📫 How to reach me **vuhoanganh.dev@gmail.com**
+🌻 My hobby is forensics and web security
   
 
-- ⚡ Fun fact **There are 24 hours in a day?**
+📫 How to reach me **vuhoanganh.dev@gmail.com**
+  
+
+⚡ Fun fact **There are 24 hours in a day?**
   
   
 
