@@ -4,12 +4,26 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+<h1 align="center">Hi 🌱, I'm VHAE <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50"></h2></h1>
+<div>
 
-### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+              
+
+
+- 📝 Connect with me TELEGRAM https://t.me/vhae04
+  
+- 🌻 My hobby is forensics and web security
+
+- 📫 How to reach me **vuhoanganh.dev@gmail.com**
+
+- ⚡ Fun fact **There are 24 hours in a day?**
+
+```
+Donate ủng hộ vha mua bàn phím mới ;((
+19035767600010 : TECHCOMBANK
+```
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[email@domain.com](mailto:vuhoanganh.dev@gmail.com)
