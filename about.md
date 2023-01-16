@@ -33,4 +33,4 @@ Donate ủng hộ vha mua bàn phím mới ;((
 ### Contact me
   
 
-[email@domain.com](mailto:vuhoanganh.dev@gmail.com)
+[vuhoanganh@gmail.com](mailto:vuhoanganh.dev@gmail.com)
