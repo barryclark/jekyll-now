@@ -11,9 +11,6 @@ redirect_from: /cnl-sponsor
 
 The community members are architects, SREs and DevOps engineers. Each event is 50/50 new and returning attendees.
 
-![](/images/cloud-native-lon-job-titles.png)
-![](/images/2020-04-08-cloud-native-london-april-2020.jpg)
-
 ### Sponsorship Benefits ([Download as PDF](/cloudnativelondon/sponsorshippdf))
 
 > "At Sysdig, developers are an important audience and we know the way to reach them is through high quality educational content. The Cloud Native London meetup is a great audience, events always run smoothly and need very little input from us. What we really appreciate about Cheryl and Cloud Native London is the consistency of monthly meetups, which allows us to plan ahead and commit to a whole year upfront. It's been a great partnership and we're looking forward to 2023."
