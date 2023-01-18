@@ -31,7 +31,7 @@ This happens automatically in Cognito's backend involving no public APIs. Due to
 
 ### The custom solution 
 
-* Block undesired calls towards the Cognito public API using AWS WAF rules. Basically you need to block API calls using the *x-amz-target* header containing the "AWSCognitoIdentityProviderService.API_ACTION" string. A list of all APIs can be found here: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operationshtml#user-pool-apis-auth-unauth-token-auth 
+* Block undesired calls towards the Cognito public API using AWS WAF rules. Basically you need to block API calls using the *x-amz-target* header containing the "AWSCognitoIdentityProviderService.API_ACTION" string. A list of all APIs can be found here: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html#user-pool-apis-auth-unauth-token-auth 
 
 You can read more about AWS WAF and Cognito here: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-waf.html
 
