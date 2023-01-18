@@ -15,13 +15,13 @@ AWS Cognito is an identity management service for users who sign-up directly and
 
 The user handling is being done via the [**User Pools**](http://docs.aws.amazon.com/cognito/latest/developerguide/getting-started-with-cognito-user-pools.html) while the identities and assign permissions for users is being configured inside [**Identity Pools**](http://docs.aws.amazon.com/cognito/latest/developerguide/getting-started-with-identity-pools.html)
 
-While performing security reviews for our AWS infrastructure, we found out that some Cognito userpools were deployed in their default configuration, making them possible honeypots.
+Over the course of time, we found out that some of the Cognito userpools were deployed in their default configuration, making them possible honeypots.
 
 ## Updating users via the public Cognito API:
 
-We discovered that the [**app client configuration**](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-client-apps.html) attributes are writable by default, meaning that if a user obtains a token with the *aws.cognito.signin.user.admin* scope, they can modify a local user's attributes via the Cognito public endpoint (cognito-idp.eu-central-1.amazonaws.com, X-Amz-Target: CognitoIdentityProvider.UpdateUserAttributes). Even more, a user can also delete its own attributes or its own account using the same approach.
+We discovered that the [**app client configuration**](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-client-apps.html) attributes are writable by default. As a result if a user obtains a token with the *aws.cognito.signin.user.admin* scope, they can modify a local user's attributes via the Cognito public endpoint (https://cognito-idp.<region>.amazonaws.com, X-Amz-Target: CognitoIdentityProvider.UpdateUserAttributes). Going further, a user can also delete its own attributes or its own account using the same approach.
 
-Imagine that some developers are not aware of this fact and use custom attributes for tenant separation or RBAC, an attacker can breach the tenant separation, access foreign user data, etc. by modifying these attributes (e.g. by changing attribute "custom:tenant: companyA" to "custom:tenant: companyB")
+Imagine that some developers are not aware of this fact and use custom attributes for tenant separation or RBAC. An attacker can breach the tenant separation, access foreign user data, etc. by modifying these attributes (e.g. by changing attribute "custom:tenant: companyA" to "custom:tenant: companyB")
 
 ### The solution 
 
