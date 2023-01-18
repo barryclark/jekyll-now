@@ -26,7 +26,7 @@ Imagine that some developers are not aware of this fact and use custom attribute
 ### The generic solution 
 
 * Remove the *aws.cognito.signin.user.admin* from the app client scopes. Keep in mind that this does not solve the issue for public clients: when authenticating directly against the Cognito public endpoint (initiateAuth) with a user & password flow (or others), you always get a token with the *aws.cognito.signin.user.admin* scope.
-* Remove the write-access permission in the app client configuration. Consider that this breaks federation with an external IdP because when a user signs in, Amazon Cognito updates the mapped attributes with the latest information from the IdP, even if its current value already matches the latest information.
+* Remove the write-access permission in the app client configuration. Consider that this breaks federation with an external IdP because when a user signs in, Cognito updates the mapped attributes with the latest information from the IdP, even if its current value already matches the latest information.
 This happens automatically in Cognito's backend involving no public APIs. Due to this nature, your SAML logins won't be affected by blocking the below discussed API calls.
 
 ### The custom solution 
@@ -35,7 +35,7 @@ This happens automatically in Cognito's backend involving no public APIs. Due to
 
 You can read more about AWS WAF and Cognito here: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-waf.html
 
-You might be thinking how do you know which API call should you allow and which should you block. Well, you're in luck because we also faced this issue. Our suggestion is to initially create a WAF rule in count mode which tracks all API calls made by your Cognito userpool towards the public endpoint, centralize the data and afterwards build a new WAF rule which blocks all API calls except the ones tracked by the first rule.
+You might be thinking how do you know which API call should you allow and which should you block. You're in luck because we also faced the same issue. Our suggestion is to initially create a WAF rule in count mode which tracks all API calls made by your Cognito userpool towards the public endpoint, centralize the data and afterwards build a new WAF rule which blocks all API calls except the ones tracked by the first rule.
 
 Below is an example of a WAF rule which counts all the *AWSCognitoIdentityProviderService* calls via the "x-amz-target" header:
 
