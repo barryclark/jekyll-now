@@ -19,49 +19,129 @@ Over the course of time, we found out that some of the Cognito userpools were de
 
 ## Updating users via the public Cognito API:
 
-We discovered that the [**app client configuration**](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-client-apps.html) attributes are writable by default. As a result if a user obtains a token with the *aws.cognito.signin.user.admin* scope, they can modify a local user's attributes via the Cognito public endpoint (https://cognito-idp.<region>.amazonaws.com, X-Amz-Target: CognitoIdentityProvider.UpdateUserAttributes). Going further, a user can also delete its own attributes or its own account using the same approach.
+We discovered that the [**app client configuration**](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-client-apps.html) attributes are writable by default. As a result if a user obtains a token with the *aws.cognito.signin.user.admin* scope, they can modify a local user's attributes via the Cognito public endpoint (https://cognito-idp.<region>.amazonaws.com) using the "x-amz-target" header with the "CognitoIdentityProvider.UpdateUserAttributes" value. Going further, a user can also delete its own attributes or its own account using the same approach.
 
-Imagine that some developers are not aware of this fact and use custom attributes for tenant separation or RBAC. An attacker can breach the tenant separation, access foreign user data, etc. by modifying these attributes (e.g. by changing attribute "custom:tenant: companyA" to "custom:tenant: companyB")
+Imagine that some developers are not aware of this fact and use custom attributes for tenant separation or RBAC. An attacker can breach the tenant separation, access foreign user data, etc. by modifying these attributes (e.g. by changing attribute "custom:tenant: companyA" to "custom:tenant: companyB").
 
-### The solution 
+### The generic solution 
 
-* Remove the *aws.cognito.signin.user.admin* from the app client scopes. Keep in mind that this does not solve the issue for public clients: when authenticating directly against the Cognito public endpoint (initiateAuth) with a user & password flow (or others), one can always get a token with the *aws.cognito.signin.user.admin* scope.
+* Remove the *aws.cognito.signin.user.admin* from the app client scopes. Keep in mind that this does not solve the issue for public clients: when authenticating directly against the Cognito public endpoint (initiateAuth) with a user & password flow (or others), you always get a token with the *aws.cognito.signin.user.admin* scope.
 * Remove the write-access permission in the app client configuration. Consider that this breaks federation with external IDPs because (some) attributes need to be modified when logging in via federated IDP (attribute mapping).
-* Block undesired calls towards the Cognito public API using AWS WAF (Header: "X-Amz-Target", String: "AWSCognitoIdentityProviderService.<api_action>") - [Cognito API reference](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_Operations.html)
 
-Below is an example of a WAF rule which blocks the *AWSCognitoIdentityProviderService.UpdateUserAttributes* action
+### The custom solution 
+
+* Block undesired calls towards the Cognito public API using AWS WAF (header: "x-amz-target", string: "AWSCognitoIdentityProviderService.<api_action>"): [list of Cognito APIs](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html#user-pool-apis-auth-unauth-token-auth)
+
+You can read more about AWS WAF and Cognito here: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-waf.html
+
+You might be thinking how do you know which API call you should allow and which should you block. Well, you're in luck because we also faced this issue. Our suggestion is to initially create a WAF rule in count mode which tracks all API calls made by your Cognito userpool towards the public endpoint, centralize the data and afterwards build a new WAF rule which blocks all API calls except the ones tracked by the first rule.
+
+Below is an example of a WAF rule which counts all the *AWSCognitoIdentityProviderService* calls via the "x-amz-target" header:
 
 ```yaml
 
 {
-    "Name": "BlockCognitoUpdateUserAttributes",
-    "Priority": 1,
-    "Statement": {
-        "ByteMatchStatement": {
-            "SearchString": "AWSCognitoIdentityProviderService.UpdateUserAttributes",
-            "FieldToMatch": {
-                "SingleHeader": {
-                    "Name": "x-amz-target"
-                }
-            },
-            "TextTransformations": [{
-                "Priority": 1,
-                "Type": "NONE"
-            }],
-            "PositionalConstraint": "EXACTLY"
+  "Name": "Cognito-counting-calls-to-public-api",
+  "Priority": 0,
+  "Statement": {
+    "ByteMatchStatement": {
+      "SearchString": "AWSCognitoIdentityProviderService",
+      "FieldToMatch": {
+        "SingleHeader": {
+          "Name": "x-amz-target"
         }
-    },
-    "Action": {
-        "Block": {}
-    },
-    "VisibilityConfig": {
-        "SampledRequestsEnabled": true,
-        "CloudWatchMetricsEnabled": true,
-        "MetricName": "BlockCognitoUpdateUserAttributes"
+      },
+      "TextTransformations": [
+        {
+          "Priority": 0,
+          "Type": "NONE"
+        }
+      ],
+      "PositionalConstraint": "CONTAINS"
     }
+  },
+  "Action": {
+    "Count": {}
+  },
+  "VisibilityConfig": {
+    "SampledRequestsEnabled": true,
+    "CloudWatchMetricsEnabled": true,
+    "MetricName": "Cognito-counting-calls-to-public-api"
+  }
 }
 
 ```  
+
+The next step is to create a WAF Regex pattern set where you define the allowed calls tracked with the above rule. For this example we allowed only the *^AWSCognitoIdentityProviderService.InitiateAuth$* and *^AWSCognitoIdentityProviderService.GetUser$* patterns:
+
+{:.center}
+![]( /images/aws-cognito-security/waf_regex.png){:style="width:100%"} 
+
+Further you create the WAF rule which blocks all API calls initiated by your userpool towards the public API, except the patterns defined in the regex:
+
+```yaml
+
+{
+  "Name": "BLOCK-all-public-apis",
+  "Priority": 1,
+  "Statement": {
+    "AndStatement": {
+      "Statements": [
+        {
+          "NotStatement": {
+            "Statement": {
+              "RegexPatternSetReferenceStatement": {
+                "ARN": "arn:aws:wafv2:eu-central-1:143338761663:regional/regexpatternset/cognito-block-all-public-api-calls/bc6fdf9b-2525-4c69-8cdb-44517a543a4a",
+                "FieldToMatch": {
+                  "SingleHeader": {
+                    "Name": "x-amz-target"
+                  }
+                },
+                "TextTransformations": [
+                  {
+                    "Priority": 0,
+                    "Type": "NONE"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "SizeConstraintStatement": {
+            "FieldToMatch": {
+              "SingleHeader": {
+                "Name": "x-amz-target"
+              }
+            },
+            "ComparisonOperator": "GT",
+            "Size": 0,
+            "TextTransformations": [
+              {
+                "Priority": 0,
+                "Type": "NONE"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "Action": {
+    "Block": {}
+  },
+  "VisibilityConfig": {
+    "SampledRequestsEnabled": true,
+    "CloudWatchMetricsEnabled": true,
+    "MetricName": "BLOCK-all-public-apis"
+  }
+}
+
+```  
+
+Besides the regex reference statement we added an AND condition using the "Field to match" for the *x-amz-target* header
+grater than 0. This is useful for scenarios where the *x-amz-target* header is missing, allowing the calls to bypass our
+WAF block rule (example: SAML login where the Hosted UI is used).
 
 ## Account takeover via unverified email/phone
 
