@@ -19,7 +19,7 @@ Over the course of time, we found out that some of the Cognito userpools were de
 
 ## Updating users via the public Cognito API:
 
-We discovered that the [**app client configuration**](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-client-apps.html) attributes are writable by default. As a result if a user obtains a token with the *aws.cognito.signin.user.admin* scope, they can modify a local user's attributes via the Cognito public endpoint (https://cognito-idp.REGION.amazonaws.com) using the "x-amz-target" header with the "CognitoIdentityProvider.UpdateUserAttributes" value. Going further, a user can also delete its own attributes or its own account using the same approach.
+We discovered that the [**app client configuration**](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-client-apps.html) attributes are writable by default. As a result if a user obtains a token with the *aws.cognito.signin.user.admin* scope, they can modify a local user's attributes via the Cognito public endpoint (https://cognito-idp.REGION.amazonaws.com) using the *x-amz-target* header with the "CognitoIdentityProvider.UpdateUserAttributes" value. Going further, a user can also delete its own attributes or its own account using the same approach.
 
 Imagine that some developers are not aware of this fact and use custom attributes for tenant separation or RBAC. An attacker can breach the tenant separation, access foreign user data, etc. by modifying these attributes (e.g. by changing attribute "custom:tenant: companyA" to "custom:tenant: companyB").
 
