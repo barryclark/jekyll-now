@@ -9,7 +9,7 @@ author_email: patianl@haufe.com, martin.birtel@haufe-lexware.com
 header-img: "images/aws-cognito-security/green-background.jpg"
 ---
 
-# A call for debate on how to secure AWS Cognito
+# A call for debate on how to better secure AWS Cognito
 
 AWS Cognito is an identity management service for users who sign-up directly and for federated users who sign-in with external identity providers. It grants the ability to control access to web and mobile applications.
 
