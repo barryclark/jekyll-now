@@ -5,11 +5,11 @@ description: Frequently asked questions for sponsors at Cloud Native London
 redirect_from: /cnl-sponsor
 ---
 
-![](/images/2022-09-07-cloud-native-london-september-2022.jpeg)
-
 [Cloud Native London](https://www.meetup.com/Cloud-Native-London/) is a strong, open, diverse developer community dedicated to the Cloud Native platform and technologies in London. Run by Cheryl since 2017, it has over 7000 members and monthly events with 200-300 attendees, including streaming to Youtube and Twitch.
 
 The community members are architects, SREs and DevOps engineers. Each event is 50/50 new and returning attendees.
+
+![](/images/2022-09-07-cloud-native-london-september-2022.jpeg)
 
 ### Sponsorship Benefits ([Download as PDF](/cloudnativelondon/sponsorshippdf))
 
@@ -22,9 +22,7 @@ The community members are architects, SREs and DevOps engineers. Each event is 5
 * You are welcome to [send a speaker](/cloudnativelondon/speak), but please no sales pitches. There is a typical waiting time of 6 months. 
 * Sponsors who commit for at least twelve months are listed on [https://www.meetup.com/Cloud-Native-London​](https://www.meetup.com/Cloud-Native-London).
 
-### Cost
-
-£700 (no VAT) per event
+Sponsorship costs £700 (no VAT) per event.
 
 <button onclick="location.href='/cloudnativelondon/sponsorship'" type="button">
          Sponsor event(s)</button>
