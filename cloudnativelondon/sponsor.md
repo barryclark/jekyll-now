@@ -7,6 +7,8 @@ redirect_from: /cnl-sponsor
 
 ### What is Cloud Native London?
 
+![](/images/2022-10-12-cloud-native-london-october-2022.jpeg)
+
 [Cloud Native London](https://www.meetup.com/Cloud-Native-London/) is a strong, open, diverse developer community dedicated to the Cloud Native platform and technologies in London. Run by Cheryl since 2017, it has over 7000 members and monthly events with 200-300 attendees, including streaming to Youtube and Twitch.
 
 The community members are architects, SREs and DevOps engineers. Each event is 50/50 new and returning attendees.
