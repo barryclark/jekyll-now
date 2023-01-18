@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AWS Cognito security
-subtitle: a call for debate
+title: Improving security in AWS Cognito 
+subtitle:
 category: dev
 tags: [cloud, aws]
 author: Lucian Patian, Martin Birtel
