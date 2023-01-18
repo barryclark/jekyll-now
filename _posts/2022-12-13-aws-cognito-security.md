@@ -31,11 +31,11 @@ This happens automatically in Cognito's backend involving no public APIs. Due to
 
 ### The custom solution 
 
-* Block undesired calls towards the Cognito public API using AWS WAF (header: "x-amz-target", string: "AWSCognitoIdentityProviderService.<api_action>"): [list of Cognito APIs](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html#user-pool-apis-auth-unauth-token-auth)
+* Block undesired calls towards the Cognito public API using AWS WAF rules. Basically you need to block API calls using the *x-amz-target* header containing the "AWSCognitoIdentityProviderService.API_ACTION" string. A list of all APIs can be found here: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operationshtml#user-pool-apis-auth-unauth-token-auth 
 
 You can read more about AWS WAF and Cognito here: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-waf.html
 
-You might be thinking how do you know which API call you should allow and which should you block. Well, you're in luck because we also faced this issue. Our suggestion is to initially create a WAF rule in count mode which tracks all API calls made by your Cognito userpool towards the public endpoint, centralize the data and afterwards build a new WAF rule which blocks all API calls except the ones tracked by the first rule.
+You might be thinking how do you know which API call should you allow and which should you block. Well, you're in luck because we also faced this issue. Our suggestion is to initially create a WAF rule in count mode which tracks all API calls made by your Cognito userpool towards the public endpoint, centralize the data and afterwards build a new WAF rule which blocks all API calls except the ones tracked by the first rule.
 
 Below is an example of a WAF rule which counts all the *AWSCognitoIdentityProviderService* calls via the "x-amz-target" header:
 
