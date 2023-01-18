@@ -1,2 +1,2 @@
 ## 정리해야할 목록
-* [ ] [Spine](https://velog.io/@gold715/spine)
+* [ ] [Unity 2D 프로젝트 ](https://velog.io/@gold715/spine)
