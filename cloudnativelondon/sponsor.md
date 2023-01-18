@@ -5,15 +5,20 @@ description: Frequently asked questions for sponsors at Cloud Native London
 redirect_from: /cnl-sponsor
 ---
 
+### What is Cloud Native London?
+
+[Cloud Native London](https://www.meetup.com/Cloud-Native-London/) is a strong, open, diverse developer community dedicated to the Cloud Native platform and technologies in London. Run by Cheryl since 2017, it has over 7000 members and monthly events with 200-300 attendees, including streaming to Youtube and Twitch.
+
+The community members are architects, SREs and DevOps engineers. Each event is 50/50 new and returning attendees.
+
+![](/images/cloud-native-lon-job-titles.png)
+![](/images/2020-04-08-cloud-native-london-april-2020.jpg)
+
+### Sponsorship Benefits ([Download as PDF](/cloudnativelondon/sponsorshippdf))
+
 > "At Sysdig, developers are an important audience and we know the way to reach them is through high quality educational content. The Cloud Native London meetup is a great audience, events always run smoothly and need very little input from us. What we really appreciate about Cheryl and Cloud Native London is the consistency of monthly meetups, which allows us to plan ahead and commit to a whole year upfront. It's been a great partnership and we're looking forward to 2023."
 >
 > Jonthan Munn, Senior Field & Channel Marketing Manager, Sysdig
-
-You’re interested in sponsoring the ​Cloud Native London meetup​? Awesome! It’s a great way to support the Kubernetes and cloud native community, and increase awareness.
-
-Each event has 200-300 attendees across in-person events, YouTube and Twitch.
-
-### Benefits ([Download as PDF](/cloudnativelondon/sponsorshippdf))
 
 * A 30 second introduction at the beginning of the event by your representative (or Cheryl or other host.)
 * Your logo and company information in emails to group members, blog posts and tweets
@@ -26,11 +31,6 @@ Each sponsor contributes £700 (no VAT) per event.
          Sponsor event(s)</button>
 
 ## Frequently asked questions
-
-#### Who is the audience at Cloud Native London?
-
-![](/images/cloud-native-lon-job-titles.png)
-![](/images/2020-04-08-cloud-native-london-april-2020.jpg)
 
 #### Can we host an event at our office?
 
