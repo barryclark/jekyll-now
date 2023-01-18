@@ -9,7 +9,7 @@ author_email: patianl@haufe.com, martin.birtel@haufe-lexware.com
 header-img: "images/aws-cognito-security/green-background.jpg"
 ---
 
-# A call for debate on how secure is actually Cognito
+# A call for debate on how to secure AWS Cognito
 
 AWS Cognito is an identity management service for users who sign-up directly and for federated users who sign-in with external identity providers. It grants the ability to control access to web and mobile applications.
 
@@ -19,14 +19,15 @@ Over the course of time, we found out that some of the Cognito userpools were de
 
 ## Updating users via the public Cognito API:
 
-We discovered that the [**app client configuration**](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-client-apps.html) attributes are writable by default. As a result if a user obtains a token with the *aws.cognito.signin.user.admin* scope, they can modify a local user's attributes via the Cognito public endpoint (https://cognito-idp.<region>.amazonaws.com) using the "x-amz-target" header with the "CognitoIdentityProvider.UpdateUserAttributes" value. Going further, a user can also delete its own attributes or its own account using the same approach.
+We discovered that the [**app client configuration**](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-client-apps.html) attributes are writable by default. As a result if a user obtains a token with the *aws.cognito.signin.user.admin* scope, they can modify a local user's attributes via the Cognito public endpoint (https://cognito-idp.REGION.amazonaws.com) using the "x-amz-target" header with the "CognitoIdentityProvider.UpdateUserAttributes" value. Going further, a user can also delete its own attributes or its own account using the same approach.
 
 Imagine that some developers are not aware of this fact and use custom attributes for tenant separation or RBAC. An attacker can breach the tenant separation, access foreign user data, etc. by modifying these attributes (e.g. by changing attribute "custom:tenant: companyA" to "custom:tenant: companyB").
 
 ### The generic solution 
 
 * Remove the *aws.cognito.signin.user.admin* from the app client scopes. Keep in mind that this does not solve the issue for public clients: when authenticating directly against the Cognito public endpoint (initiateAuth) with a user & password flow (or others), you always get a token with the *aws.cognito.signin.user.admin* scope.
-* Remove the write-access permission in the app client configuration. Consider that this breaks federation with external IDPs because (some) attributes need to be modified when logging in via federated IDP (attribute mapping).
+* Remove the write-access permission in the app client configuration. Consider that this breaks federation with an external IdP because when a user signs in, Amazon Cognito updates the mapped attributes with the latest information from the IdP, even if its current value already matches the latest information.
+This happens automatically in Cognito's backend involving no public APIs. Due to this nature, your SAML logins won't be affected by blocking the below discussed API calls.
 
 ### The custom solution 
 
