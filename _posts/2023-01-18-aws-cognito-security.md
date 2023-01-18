@@ -35,7 +35,7 @@ This happens automatically in Cognito's backend involving no public APIs. Due to
 
 You can read more about AWS WAF and Cognito here: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-waf.html
 
-You might be thinking how do you know which API call should you allow and which should you block. You're in luck because we also faced the same issue. Our suggestion is to initially create a WAF rule in count mode which tracks all API calls made by your Cognito userpool towards the public endpoint, centralize the data and afterwards build a new WAF rule which blocks all API calls except the ones tracked by the first rule.
+You might be thinking how do you know which API calls should you allow and which should you block. You're in luck because we also faced the same issue. Our suggestion is to initially create a WAF rule in count mode which tracks all API calls made by your Cognito userpool towards the public endpoint, centralize the data and afterwards build a new WAF rule which blocks all API calls except the ones tracked by the first rule.
 
 Below is an example of a WAF rule which counts all the *AWSCognitoIdentityProviderService* calls via the "x-amz-target" header:
 
