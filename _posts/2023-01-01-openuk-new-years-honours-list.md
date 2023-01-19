@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "I'm honoured to be featured on the OpenUK 2023 Honours List for the second year"
-description: "Cheryl Hung celebrates being one of the UK's top open source influencers"
+title: "Cheryl Hung listed on the OpenUK 2023 Honours List for the second year"
+description: "Cheryl Hung is one of the UK's top open source influencers"
 image: https://openuk.uk/wp-content/uploads/2022/12/Honours-List-Banner_large.png
 tags:
   - Article
