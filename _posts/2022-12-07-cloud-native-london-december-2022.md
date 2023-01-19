@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud Native London December 2022: Seldon and solo.io"
+title: "Cloud Native London December 2022: Seldon and solo.io, and thank you!"
 description: "speakers from Seldon and solo.io join us at the Cloud Native London meetup December 2022, hosted by Cheryl Hung, Senior Director, Ecosystem at Arm"
 location: London, UK
 image: /images/2022-12-07-cloud-native-london-december-2022.jpeg
