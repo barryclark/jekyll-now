@@ -1,0 +1,168 @@
+# Strings
+# =======================================================================================
+# This file contains all soft-coded strings of the theme.
+# You can edit them here if you want to change the wording of certain phrases,
+# e.g. maybe you prefer "Fetching…" to "Loading…", etc.
+#
+# You can also use this to "translate" the theme into different langauges,
+# but note that this may not work in all situations,
+# especially for languages that differ significantly from English.
+
+# Free version
+# ---------------------------------------------------------------------------------------
+home:                  Home
+pages:                 Pages
+posts:                 Posts
+about:                 About
+related_posts:         Related Posts
+other_projects:        Other Projects
+comments:              Comments
+jump_to:               Jump to
+navigation:            Navigation
+social:                Social
+links:                 Links
+links_icon:            'icon-link'
+pagination:            Pagination
+newer:                 Newer
+older:                 Older
+forward:               Forward
+back:                  Back
+permalink:             Permalink
+permalink_icon:        'content-hash'
+templates:             Templates (for web app)
+present:               present
+toc:                   Table of Contents
+note:                  Note
+description:           Description
+search:                Search
+search_placeholder:    Type something…
+
+loading:               Loading…
+redirecting:           Redirecting…
+
+continue_reading:      >
+  Continue reading <!--post_title-->
+
+cookies_banner:
+  text:                >
+    This site uses cookies. [Cookies Policy](/cookies-policy/).
+  okay:                Okay
+
+not_found:
+  title:               '404: Page Not Found'
+  message:             |
+    Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.
+    <!--home_link--> to try finding it again.
+  home_link:           Head back home
+
+offline:
+  title:               'You are Offline'
+  message:             |
+    Sorry, but you appear to be offline and this page has not been prepared for offline viewing.
+    <!--home_link--> to try finding another page.
+  home_link:           Head back home
+
+error:
+  title:               Error
+  message:             |
+    Sorry, an error occurred while loading <!--link-->.
+
+# Separators
+# ---------------------------------------------------------------------------------------
+posted:                'Posted'
+last_modified_at:      'Last modified at'
+last_modified_at_icon: 'icon-history'
+colon:                 ':'
+separator:             '|'
+category_start:        'in '
+category_spearator:    ' / '
+tag_start:             'on '
+tag_separator:         ', '
+from_to_separator:     '–'
+breadcrumbs_home:      'home'
+breadcrumbs_separator: '/'
+
+# Date formats
+# ---------------------------------------------------------------------------------------
+date_formats:
+  post:                '%d %b %Y'
+  last_modified_at:    '%Y-%m-%d'
+  related_post:        '%d %b %Y'
+  list_group_by:       '%Y'
+  list_entry:          '%d %b'
+  project:             '%Y'
+  projects_group_by:   '%Y'
+  resume:              '%b %Y'
+
+
+# PRO Version
+# ---------------------------------------------------------------------------------------
+# If you don't own the PRO version of Hydejack, modifying these will have no effect.
+
+tinyletter:
+  title:               Commercial break
+  label:               Email
+  placeholder:         Enter your email address
+  button:              Subscribe
+  message:             |
+    Pay the *iron price* for this theme by adding yourself to the mailing list.
+    Receive development updates, advanced tutorials,
+    and anything else I can come up with as it relates to **Hydejack**.
+
+    <!--form-->
+
+    No 3rd party products, no spam. Emails handled by [Tinyletter](https://tinyletter.com/)
+    {:.faded}
+
+welcome:
+  more_projects:       See <!--projects_title--> for more
+  more_posts:          See <!--posts_title--> for more
+
+resume:
+  location:            Location
+  location_separator:  ', '
+  email:               Email
+  phone:               Phone
+  website:             Website
+  work:                Experience
+  work_title:          <!--position--> at <!--company-->
+  highlights:          Highlights
+  volunteer:           Volunteer
+  volunteer_title:     <!--position--> at <!--organization-->
+  education:           Education
+  education_title:     <!--study_type--> in <!--area--> from <!--institution--> with GPA of <!--gpa-->
+  courses:             Courses
+  awards:              Awards
+  awards_title:        <!--title--> from <!--awarder-->
+  publications:        Publications
+  publications_title:  <!--name--> by <!--publisher-->
+  references:          References
+  languages:           Languages
+  fluency:             Fluency
+  skills:              Skills
+  level:               Level
+  interests:           Interests
+  summary:             Summary
+  keywords:            Keywords
+  print:               Print
+  download_pdf:        PDF
+  download_vcf:        vCard
+  download_json:       JSON
+  icons:
+    fallback:          icon-link
+    location:          icon-location
+    born:              icon-quill
+    citizenship:       icon-flag
+    maritalStatus:     icon-man-woman
+    email:             icon-envelop
+    phone:             icon-phone
+    website:           icon-home3
+    work:              icon-briefcase
+    volunteer:         icon-earth
+    education:         icon-library
+    awards:            icon-trophy
+    publications:      icon-book
+    references:        icon-quotes-right
+    languages:         icon-bubbles
+    skills:            icon-wrench
+    interests:         icon-heart

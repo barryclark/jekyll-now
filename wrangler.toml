@@ -1,0 +1,20 @@
+# Follow this guide to publish Hydejack on Cloudflare Worker Sites: 
+#
+# https://workers.cloudflare.com/sites
+#
+# You can skip the `wrangler generate --site my-site` step, 
+# as this `wranger.toml` file, and the `workers-site` directory
+# have already been shipped with Hydejack. 
+#
+# Fill out the information below:
+
+name = "my-hydejack-site" # Change name
+type = "webpack"
+account_id = "{{ ACCOUNT_ID }}" # Replace with your Cloudflare account id
+workers_dev = true # Change when using custom domain
+route = ""
+zone_id = ""
+
+[site]
+bucket = "./_site"
+entry-point = "workers-site"

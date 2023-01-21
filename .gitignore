@@ -1,10 +1,54 @@
+# Ignore docs files
+_gh_pages
 _site
+_drafts
+.ruby-version
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+
+# OS or Editor folders
 .DS_Store
-.jekyll
-.jekyll-metadata
-.bundle
-.sass-cache
-Gemfile
-Gemfile.lock
+._*
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime-project
+*.sublime-workspace
+.idea
+
+# Komodo
+*.komodoproject
+.komodotools
+
+# grunt-html-validation
+validation-status.json
+validation-report.json
+
+# Folders to ignore
 node_modules
-package.json
+package*.json
+vendor
+.sass-cache
+.jekyll-metadata
+.jekyll-cache
+*.gem
+_zip
+/stats.json
+/dist
+/build
+
+/assets/js/*hydejack-*
+/_sass/*/__*__/*
