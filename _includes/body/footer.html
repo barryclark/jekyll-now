@@ -1,0 +1,19 @@
+{% if site.copyright.size > 0 or site.legal.size > 0 or site.hydejack.advertise %}
+<footer class="content" role="contentinfo">
+  <hr/>
+  {% if site.copyright.size > 0 %}
+    <p><small class="copyright">{{ site.copyright | markdownify | replace:'<p>','' | replace:'</p>','' }}</small></p>
+  {% endif %}
+  {% if site.legal.size > 0 %}
+    <nav class="legal"><small>
+    {% for node in site.legal %}
+      {% assign url = node.url | default: node.href %}
+      <a class="heading flip-title" href="{% include_cached smart-url url=url %}">{{ node.name | default:node.title }}</a>
+      {% unless forloop.last %}{{ site.data.strings.separator | default:'|' }}{% endunless %}
+    {% endfor %}
+    </small></nav>
+  {% endif %}
+    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.1.6</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+{% endif %}

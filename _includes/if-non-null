@@ -1,0 +1,7 @@
+{% capture maybe %}{% include {{ include.try }} %}{% endcapture %}
+{% assign  maybe = maybe | strip_newlines %}
+{% if maybe.size > 0 %}
+  {{ maybe }}
+{% elsif include.fallback %}
+  {% include {{ include.fallback }} %}
+{% endif %}

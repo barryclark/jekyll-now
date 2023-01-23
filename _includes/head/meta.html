@@ -1,0 +1,22 @@
+{% if page.noindex or page.no_index or page.sitemap == false %}
+  <meta name="robots" content="noindex">
+{% endif %}
+
+{% unless page.redirect %}
+  {% if plugins contains 'jekyll-seo-tag' %}
+    {% include head/seo-tag.html %}
+  {% else %}
+    {% include head/seo-fallback.html %}
+  {% endif %}
+
+  {% if site.keywords.size > 0 or page.keywords.size > 0 %}
+    <meta name="keywords" content="{{ page.keywords | default:site.keywords | join:',' }}">
+  {% endif %}
+{% else %}
+  <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
+  <title>{{ site.data.strings.redirecting | default:"Redirecting..." }}</title>
+{% endunless %}
+
+{% unless site.hydejack.no_theme_color %}
+  <meta name="theme-color" content="{{ theme_color | default:'rgb(8,46,57)' }}">
+{% endunless %}

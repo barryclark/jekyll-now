@@ -1,0 +1,83 @@
+// Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+* {
+  box-sizing: border-box; // inline
+  // -webkit-tap-highlight-color: transparent; // link
+}
+
+// <<< INLINE
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-family);
+  font-size: var(--root-font-size);
+  line-height: var(--root-line-height);
+}
+
+body {
+  @extend .color-transition;
+  color: var(--body-color);
+  background-color: var(--body-bg);
+  font-weight: var(--font-weight);
+  overflow-y: scroll;
+}
+
+p {
+  @extend .color-transition;
+}
+
+.content img, .img,
+.content video, .video {
+  max-width: 100%;
+  height: auto;
+}
+
+.lead {
+  @extend .border-radius;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-bottom: 1.5rem;
+}
+
+img, video {
+  &.lead {
+    display: block;
+    max-width: calc(100% + 2rem);
+    width: calc(100% + 2rem);
+    height: auto;
+  }
+}
+// >>> INLINE
+
+// <<< LINK
+@media (display-mode: standalone) {
+  body {
+    overscroll-behavior-y: contain;
+  }
+}
+
+:focus {
+  outline-color: var(--accent-color)!important;
+}
+
+::selection {
+  background: var(--accent-color-faded);
+}
+// >>> LINK

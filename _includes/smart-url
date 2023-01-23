@@ -1,0 +1,10 @@
+{%- assign url = include.url -%}
+{%- assign ch1 = url | slice:0 -%}
+{%- if url contains '://' -%}
+  {{ url }}
+{%- elsif ch1 == '/' -%}
+  {%- assign url = url | remove_first:site.baseurl -%}
+  {{ url | relative_url }}
+{%- else -%}
+  {{ url }}
+{%- endif -%}

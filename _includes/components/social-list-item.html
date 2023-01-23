@@ -1,0 +1,40 @@
+{% assign platform = include.platform | downcase %}
+{% assign username = include.username %}
+
+{% if username.size > 0 %}
+  {% assign = data_social = site.data.social[platform] | default:site.data_social[platform] %}
+
+  {% assign name = data_social.name | default:include.platform %}
+  {% assign icon = data_social.icon | default:'icon-link' %}
+  {% assign app = data_social.append %}
+  {% assign prep = data_social.prepend %}
+
+  {% unless data_social %}
+    {% if platform == "email" %}
+      {% assign name = "Email" %}
+      {% assign icon = "icon-mail" %}
+      {% assign prep = "mailto:" %}
+    {% elsif platform == "twitter" %}
+      {% assign name = "Twitter" %}
+      {% assign icon = "icon-twitter" %}
+      {% assign prep = "https://twitter.com/" %}
+    {% elsif platform == "github" %}
+      {% assign name = "GitHub" %}
+      {% assign icon = "icon-github" %}
+      {% assign prep = "https://github.com/" %}
+    {% endif %}
+  {% endunless %}
+
+  {% if username contains "//" or username contains "mailto:" %}
+    {% assign url = username %}
+  {% else %}
+    {% assign url = username | prepend:prep | append:app %}
+  {% endif %}
+
+  <li>
+    <a href="{{ url }}" title="{{ name }}" class="no-mark-external">
+      <span class="{{ icon }}"></span>
+      <span class="sr-only">{{ name }}</span>
+    </a>
+  </li>
+{% endif %}

@@ -1,0 +1,31 @@
+{% if plugins contains 'jekyll-feed' %}{% include head/feed-tag.html %}{% endif %}
+
+<link rel="shortcut icon"    href="{{ site.favicon          | default:'/assets/icons/favicon.ico'       | relative_url }}">
+<link rel="apple-touch-icon" href="{{ site.apple_touch_icon | default:'/assets/icons/icon-192x192.png'  | relative_url }}">
+
+<link rel="manifest" href="{{ '/assets/site.webmanifest' | relative_url }}">
+
+{% if site.google_fonts %}
+  {%- capture google_fonts_url %}{{ site.google_fonts_url | default:'https://fonts.googleapis.com' }}{%- endcapture -%}
+  <link rel="dns-prefetch" href="{{ google_fonts_url }}">
+  {%- if google_fonts_url == 'https://fonts.googleapis.com' -%}
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  {%- endif -%}
+{% endif %}
+
+{% if site.google_analytics %}
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+{% endif %}
+
+<link rel="preload" href="{{ '/assets/img/swipe.svg' | relative_url }}" as="image" id="_hrefSwipeSVG">
+
+{% if site.kramdown.math_engine == 'katex' %}
+  {% capture katex_url %}{{ 'assets/bower_components/katex/dist/katex.min.css' | relative_url }}{% endcapture %}
+  <link rel="dns-prefetch" href="{{ katex_url }}" id="_katexPreload">
+  <noscript><link rel="stylesheet" href="{{ katex_url }}"></noscript>
+{% endif %}
+
+{% assign disqus = site.disqus | default:site.disqus_shortname %}
+{% if disqus %}
+<link rel="dns-prefetch" href="https://{{ disqus }}.disqus.com" id="_hrefDisqus">
+{% endif %}

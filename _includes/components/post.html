@@ -1,0 +1,78 @@
+{% assign post             = include.post             %}
+{% assign no_link_title    = include.no_link_title    %}
+{% assign no_excerpt       = include.no_excerpt       %}
+{% assign hide_image       = include.hide_image       %}
+{% assign hide_description = include.hide_description %}
+
+<article id="post{{ post.id | replace:'/','-' }}" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title flip-project-title">
+      {% unless no_link_title %}<a href="{{ post.url | relative_url }}" class="flip-title">{% endunless %}
+        {{ post.title }}
+      {% unless no_link_title %}</a>{% endunless %}
+    </h1>
+
+    <div class="post-date">
+      {% capture foobar %}
+        {%- unless site.hydejack.hide_dates -%}
+          {%- assign post_format = site.data.strings.date_formats.post | default:"%d %b %Y" -%}
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:post_format }}</time>
+        {%- else -%}
+          {{- site.data.strings.posted | default:"Posted" -}}
+        {%- endunless -%}
+        {{ ' ' }}
+        {%- assign category_start     = site.data.strings.category_start     | default:"in " -%}
+        {%- assign category_separator = site.data.strings.category_separator | default:" / " -%}
+        {%- include components/tag-list.html tags=post.categories meta=site.featured_categories start_with=category_start separator=category_separator -%}
+        {{ ' ' }}
+        {%- assign tag_start          = site.data.strings.tag_start          | default:"on " -%}
+        {%- assign tag_separator      = site.data.strings.tag_separator      | default:", "  -%}
+        {%- include components/tag-list.html tags=post.tags meta=site.featured_tags start_with=tag_start separator=tag_separator -%}
+      {% endcapture %}
+      <span class="ellipsis mr1">
+        {{ foobar }}
+      </span>
+      {% unless site.hydejack.hide_dates or site.hydejack.hide_last_modified or post.hide_last_modified %}
+        {% if post.last_modified_at %}
+          {% assign d1 = post.date             | date:"%Y-%m-%d" %}
+          {% assign d2 = post.last_modified_at | date:"%Y-%m-%d" %}
+          {% if d1 != d2 %}
+            {% assign label = site.data.strings.last_modified_at | default:"Last modified at" %}
+            {% assign last_modified_at_format = site.data.strings.date_formats.last_modified_at | default:"%Y-%m-%d" %}
+            <span class="ellipsis" data-tippy-content="{{ label }}{{ site.data.strings.colon }} {{ post.last_modified_at | date:post_format }}">
+              <span class="sr-only">{{ label }}{{ site.data.strings.colon }}</span>
+              <span class="{{ site.data.strings.last_modified_icon | default:'icon-history' }}"></span>
+              <time datetime="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date:last_modified_at_format }}</time>
+            </span>
+          {% endif %}
+        {% endif %}
+      {% endunless %}
+    </div>
+
+    {% assign alt = false %}
+    {% unless hide_image %}{% if post.image %}
+      {% unless no_link_title %}<a href="{{ post.url | relative_url }}" class="no-hover no-print-link {% unless post.hide_image %}flip-project{% endunless %}" tabindex="-1">{% endunless %}
+        <div class="img-wrapper lead aspect-ratio sixteen-nine flip-project-img">
+          {% include_cached components/hy-img.html img=post.image alt=post.title width=864 height=486 %}
+        </div>
+      {% unless no_link_title %}</a>{% endunless %}
+      {% assign alt = '' %}
+    {% endif %}{% endunless %}
+
+    {% include components/message.html text=post.description hide=hide_description alt=alt %}
+  </header>
+
+  {% if no_excerpt %}
+    {{ post.content }}
+  {% else %}
+    {{ post.excerpt }}
+
+    {% capture post_title %}<a class="heading flip-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>{% endcapture %}
+    {% assign text = site.data.strings.continue_reading | default:"Continue reading <!--post_title-->" %}
+    <footer>
+      <p class="read-more">
+        {{ text | replace:"<!--post_title-->", post_title }}
+      </p>
+    </footer>
+  {% endif %}
+</article>

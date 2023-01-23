@@ -1,0 +1,71 @@
+// Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+// <<<<< LINK
+// Footnote number within body text
+a[href^="#fn:"],
+// Back to footnote link
+a[href^="#fnref:"] {
+  margin-left: .1rem;
+  font-weight: var(--font-weight-bold);
+
+  @media screen and (max-width: $break-point-4) {
+    font-weight: normal;
+    &::before { content: "["; }
+    &::after  { content: "]"; }
+  }
+}
+
+sup {
+  line-height: 1;
+
+  &[id^="fnref"] {
+    @media screen and (max-width: $break-point-4) {
+      vertical-align: baseline;
+      font-size: inherit;
+    }
+  }
+}
+
+// List of footnotes
+.footnotes {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  > ol {
+    color: var(--gray);
+
+    > li {
+      padding: .5rem;
+      margin-left: .5rem;
+      > p { margin: 0; }
+      &:focus {
+        outline: none;
+        color: var(--gray-text);
+        background: var(--gray-bg);
+      }
+    }
+  }
+
+  &::before {
+    @extend .color-transition;
+    content: "";
+    display: block;
+    margin: 1rem 0;
+    border: 0;
+    border-top: 1px solid var(--border-color);
+  }
+}
+// >>>>> LINK

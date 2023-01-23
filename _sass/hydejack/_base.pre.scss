@@ -1,0 +1,92 @@
+// Copyright (c) 2021 Florian Klampfer <https://qwtel.com/>
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+// <<< LINK
+body {
+  /* Prevent side-scrolling on mobile */
+  display: block;
+  position: relative;
+  overflow-x: hidden;
+}
+
+hy-push-state, hy-drawer {
+  display: block;
+  overflow: hidden;
+}
+// >>>
+// <<< INLINE
+body::before {
+  @media screen {
+    content: '';
+    width: .5rem;
+    background: var(--gray-bg);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  @media (min-width: $break-point-3) {
+    width: $sidebar-width;
+  }
+
+  @media (min-width: $break-point-dynamic) {
+    width: calc(50% - #{$half-content});
+  }
+}
+
+html {
+  @media screen and (min-width: $break-point-1) {
+    font-size: var(--root-font-size-medium);
+  }
+
+  @media screen and (min-width: $break-point-font-large) {
+    font-size: var(--root-font-size-large);
+  }
+}
+
+#breadcrumbs {
+  > ul {
+    @extend .ellipsis;
+    height: 1rem;
+    margin: -1.5rem 0 .5rem;
+    padding: 0;
+    font-size: .667rem;
+    color: var(--menu-text);
+    text-transform: uppercase;
+    width: 100%;
+    list-style: none;
+    > li { 
+      display: inline; 
+      a {
+        color: var(--gray);
+        text-decoration: none;
+        border-bottom: none;
+      }
+    }
+  }
+}
+// >>>
+// <<< LINK
+@media print { 
+  html { 
+    font-size: var(--root-font-size-print);
+  } 
+}
+
+@page { 
+  margin: 16mm;
+} 
+// >>>

@@ -1,0 +1,40 @@
+---
+# Copyright (c) 2018 Florian Klampfer <https://qwtel.com/>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+layout: page
+---
+
+{{ content }}
+
+{% assign posts = site.categories[page.slug] | default:site.tags[page.slug] | default:site.posts %}
+
+{% assign date_formats  = site.data.strings.date_formats               %}
+{% assign list_group_by = date_formats.list_group_by | default:"%Y"    %}
+{% assign list_entry    = date_formats.list_entry    | default:"%d %b" %}
+
+{% assign prev_date = 0 %}
+{% if page.no_groups %}<ul class="related-posts">{% endif %}
+{% for post in posts %}
+  {% assign current_date = post.date | date:list_group_by %}
+  {% unless page.no_groups %}{% if current_date != prev_date %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h2 id="{{ list_group_by | slugify }}-{{ current_date | slugify }}" class="hr-bottom">{{ current_date }}</h2>
+    <ul class="related-posts">
+    {% assign prev_date = current_date %}
+  {% endif %}{% endunless %}
+  {% include_cached components/post-list-item.html post=post format=list_entry %}
+  {% if forloop.last %}</ul>{% endif %}
+{% endfor %}

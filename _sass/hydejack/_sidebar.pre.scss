@@ -1,0 +1,225 @@
+// Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+hy-drawer {
+  width: 100%; // inline
+  position: relative; // inline
+  overflow: hidden; // inline
+  display: block; // inline
+  z-index: 4; // inline
+
+  @media screen {
+    // <<< link
+    --hy-drawer-width: 100%;
+    --hy-drawer-peek-width: .5rem;
+    --hy-drawer-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+    // >>>
+  }
+
+  @media screen and (min-width: $break-point-3) {
+    // <<< inline
+    position: fixed;
+    width: $sidebar-width;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-left: 0;
+
+    &.cover {
+      position: relative;
+      width: 100%;
+    }
+    // >>>
+
+    // <<< link
+    --hy-drawer-peek-width: #{$sidebar-width};
+    // >>>
+  }
+
+  @media screen and (min-width: $break-point-dynamic) {
+    width: calc(50% - #{$half-content});
+
+    // <<< link
+    --hy-drawer-peek-width: calc(50% - #{$half-content});
+    // >>>
+  }
+
+  // <<< link
+  @media screen {
+    &.loaded {
+      position: static;
+    }
+  }
+  // >>>
+}
+
+.sidebar {
+  // <<< inline
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, .75);
+  text-align: center;
+  min-height: 100vh;
+  &.invert { color: rgba(32, 32, 32, .75) }
+  // >>>
+
+  a {
+    // <<< inline
+    color: #fff; 
+    border-bottom-color: rgba(255, 255, 255, 0.2); 
+    text-decoration-color: rgba(255, 255, 255, 0.2); 
+    // >>>
+    // <<< link
+    &:hover { 
+      border-bottom-color: #fff;
+      text-decoration-color: #fff;
+    }
+    // >>>
+  }
+
+  &.invert a {
+    // <<< inline
+    color: #222;
+    border-bottom-color: rgba(32, 32, 32, 0.2); 
+    text-decoration-color: rgba(32, 32, 32, 0.2); 
+    // >>>
+    // <<< link
+    &:hover { 
+      border-bottom-color: #222;
+      text-decoration-color: #222;
+    }
+    // >>>
+  }
+}
+
+// <<< link
+hy-drawer.loaded .sidebar {
+  min-height: 100%;
+}
+// >>>
+
+.sidebar-bg {
+  // <<< inline
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  width: 100vw;
+  height: 100%;
+  background: #202020 center / cover;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.05);
+  }
+  // >>>
+
+  &.sidebar-overlay::after {
+    background: -moz-linear-gradient(top, rgba(32,32,32,0) 0%, rgba(32,32,32,0.5) 50%, rgba(32,32,32,0) 100%); // link
+    background: -webkit-linear-gradient(top, rgba(32,32,32,0) 0%,rgba(32,32,32,0.5) 50%, rgba(32,32,32,0) 100%); // link
+    background: linear-gradient(to bottom, rgba(32,32,32,0) 0%,rgba(32,32,32,0.5) 50%, rgba(32,32,32,0) 100%); // inline
+  }
+}
+
+// <<<<< INLINE
+.sidebar-sticky {
+  position: relative;
+  z-index: 3;
+  max-width: $sidebar-width;
+  padding: 1.5rem;
+  contain: content;
+}
+
+.sidebar-about {
+  .avatar {
+    margin-bottom: 1.5rem
+  }
+
+  > a.sidebar-title {
+    text-decoration: none;
+    > h2 {
+      margin: 0;
+      padding-bottom: .5rem;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      border-bottom: 2px solid;
+      margin: 0 auto .5rem;
+      width: 4rem;
+      border-color: rgba(255, 255, 255, 0.2);
+      transition: border-color 250ms;
+    }
+
+    &:hover::after {
+      border-color: rgba(255, 255, 255, 1);
+      transition: border-color 50ms;
+    }
+  }
+}
+
+.sidebar.invert .sidebar-about > a.sidebar-title{
+  &::after { border-color: rgba(32, 32, 32, 0.2) }
+  &:hover::after { border-color: #222 }
+}
+
+.sidebar-nav > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar-nav-item {
+  @extend .f4;
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+#_main.no-drawer {
+  @media (min-width: $break-point-3) {
+    #_menu { display: none }
+    .nav-btn-bar > :nth-child(2) { border: none }
+  }
+}
+// >>>
+
+// <<< LINK
+@media print {
+  .sidebar {
+    display: none;
+  }
+}
+
+#_swipe {
+  position: absolute;
+  z-index: 4;
+  opacity: 0.33;
+  top: 5vw;
+  right: 5vw;
+  transform: scale(0.67);
+
+  @media screen and (min-width: $break-point-1) {
+    top: calc(50% - 48px);
+    right: 10vw;
+    transform: scale(1);
+  }
+}
+// >>>

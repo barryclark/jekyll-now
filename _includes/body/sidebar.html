@@ -1,0 +1,14 @@
+<hy-drawer
+  id="_drawer"
+  class="{% if include.cover %}cover{% endif %}"
+  side="left"
+  threshold="10"
+  noscroll
+  {% if include.cover %}opened{% endif %}
+>
+  <header id="_sidebar" class="sidebar{% if include.invert %} invert{% endif %}" role="banner">
+    {% include_cached body/sidebar-bg.html image=include.image color=include.color theme_color=include.theme_color %}
+    {% include_cached body/sidebar-sticky.html %}
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />

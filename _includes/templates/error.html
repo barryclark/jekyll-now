@@ -1,0 +1,10 @@
+<template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">{{ strings.error.title | default:"Error" }}</h1>
+    {% capture link %}<a class="this-link" href=""></a>{% endcapture %}
+    {% assign text = strings.error.message | default:"Sorry, an error occurred while loading: <!--link-->." %}
+    <p class="lead">
+      {{ text | replace:"<!--link-->",link }}
+    </p>
+  </div>
+</template>

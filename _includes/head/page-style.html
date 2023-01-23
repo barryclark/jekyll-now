@@ -1,0 +1,4 @@
+<style id="_pageStyle">
+{% capture page_style %}{% include_cached styles/page-style.scss color=include.color theme_color=include.theme_color %}{% endcapture %}
+{{ page_style | scssify }}
+</style>

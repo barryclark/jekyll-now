@@ -1,0 +1,7 @@
+<!--[if gt IE 10]><!---->
+  <script nomodule>{% include scripts/nomodule.min.js %}</script>
+  <script src="{{ '/assets/js/hydejack-9.1.6.js' | relative_url }}" type="module"></script>
+  <script src="{{ '/assets/js/LEGACY-hydejack-9.1.6.js' | relative_url }}" nomodule defer></script>
+  {% include my-scripts.html %}
+  {% include body/analytics.html %}
+<!--<![endif]-->

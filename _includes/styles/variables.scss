@@ -1,0 +1,66 @@
+// Copyright (c) 2020 Florian Klampfer <https://qwtel.com/>
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+// {% assign vars         = site.data.variables %}
+// {% assign ui_font      = 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif' %}
+// {% assign ui_font_code = 'ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace' %}
+
+$font-family:         {{ vars.font         | default:site.font         | default:ui_font        }};
+$font-family-heading: {{ vars.font_heading | default:site.font_heading | default:ui_font        }};
+$code-font-family:    {{ vars.font_code    | default:site.font_code    | default:ui_font_code   }};
+$theme-color:         {{ vars.theme_color  | default:site.theme_color  | default:'rgb(8,46,57)' }};
+
+$root-font-size:        {{ vars.root_font_size        | default:15 }}px;
+$root-font-size-medium: {{ vars.root_font_size_medium | default:16 }}px;
+$root-font-size-large:  {{ vars.root_font_size_large  | default:17 }}px;
+$root-font-size-print:  {{ vars.root_font_size_print  | default:8  }}pt;
+$root-line-height:      {{ vars.root_line_height      | default:1.75 }};
+
+$font-weight:         {{ vars.font_weight         | default:400 }};
+$font-weight-bold:    {{ vars.font_weight_bold    | default:700 }};
+$font-weight-heading: {{ vars.font_weight_heading | default:700 }};
+
+$content-width:   {{ vars.content_width   | default:42 }}rem;
+$content-width-2: {{ vars.content_width_2 | default:48 }}rem;
+$content-width-5: {{ vars.content_width_5 | default:54 }}rem;
+
+$content-padding: {{ vars.content_padding | default:1 }}rem;
+
+$sidebar-width: {{ vars.sidebar_width | default:21 }}rem;
+
+$break-point-1: {{ vars.break_point_1 | default:42 }}em;
+$break-point-2: {{ vars.break_point_2 | default:54 }}em;
+$break-point-3: {{ vars.break_point_3 | default:64 }}em;
+$break-point-4: {{ vars.break_point_4 | default:72 }}em;
+$break-point-5: {{ vars.break_point_5 | default:86 }}em;
+
+$border-radius: {{ vars.border_radius | default:0.5 }}rem;
+
+$break-point-font-large: {{ vars.break_point_font_large | default:124 }}em;
+
+$content-margin-3: 3rem;
+$content-margin-5: 4rem;
+
+// TODO: doc
+$half-content: ($content-width-5 / 2) + $content-margin-5;
+
+// The sidebar width starts adjusting dynamically when the content is at the center of the window.
+// This is the case when the window size has a `min-width` of content area + twice the sidebar (left, right):
+//
+// $break-point-dynamic: $content-width-5 + (2 * $content-margin-5) + (2 * $sidebar-width); // = 104rem
+//
+// HACK: Since Chrome doesn't treat rem values in media queries correctly,
+// we hard-code the pixel value for the values above.
+$break-point-dynamic: ({{ vars.content_width_5 | default:54 }} + (2 * {{ vars.content_margin_5 | default:4 }}) + (2 * {{ vars.sidebar_width | default:21 }})) * {{ vars.root_font_size_medium | default:16 }}px;

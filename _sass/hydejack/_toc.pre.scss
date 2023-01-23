@@ -1,0 +1,65 @@
+// Copyright (c) 2020 Florian Klampfer <https://qwtel.com/>
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+#markdown-toc {
+  // <<< inline
+  @extend .note-sm;
+  margin: 2rem -1rem 2rem calc(-1rem + 1px);
+  padding-left: 2.5rem;
+  padding-bottom: .5rem;
+  // >>>
+  transition: opacity 300ms ease, transform 300ms ease, border-color 1s ease; // link
+  &:before { left: 1rem; }
+}
+
+body:not(.no-toc) #markdown-toc {
+  @media screen and (min-width: $break-point-dynamic) {
+    // <<< inline
+    position: absolute;
+    z-index: 4;
+    width: 20.5rem;
+    right: 0;
+    margin: auto;
+    overflow: auto;
+    // >>>
+    // <<< link
+    overscroll-behavior: contain;
+
+    &.toc-hide {
+      opacity: 0;
+      transform: translateX(-2rem);
+    }
+
+    &.toc-show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    &.affix {
+      position: fixed;
+      top: 1rem;
+      max-height: calc(100vh - 1rem);
+    }
+    // >>>
+  }
+}
+
+// <<< inline
+body.no-break-layout:not(.no-toc) #markdown-toc {
+  @media screen and (min-width: $break-point-dynamic) {
+    width: calc(50% - #{$half-content});
+  }
+}
+// >>>

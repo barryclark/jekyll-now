@@ -1,0 +1,77 @@
+// Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+hy-push-state a {
+  color: var(--body-color); // inline
+
+  // <<< inline
+  @supports not ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
+    text-decoration: none; 
+    border-bottom: 2px solid;
+  }
+
+  @supports ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
+    text-decoration-style: solid;
+    text-underline-offset: .35rem;
+    text-decoration-thickness: 2px;
+  }
+  // >>>
+
+  // <<< link
+  transition: color 250ms, text-decoration-color 250ms, border-color 250ms;
+  &:hover {
+    transition: color 50ms, text-decoration-color 50ms, border-color 50ms;
+  }
+  // >>>
+
+  // <<< inline
+  &.no-hover {
+    border-bottom: none;
+    text-decoration-thickness: unset;
+    text-underline-offset: unset;
+  }
+  // >>>
+}
+
+.content a:not(.btn):not(.no-hover) {
+  // <<< inline
+  @supports ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
+    text-decoration-color: var(--accent-color-faded);
+  }
+  border-color: var(--accent-color-faded);
+  // >>>
+  // <<< link
+  &:hover {
+    @supports ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
+      text-decoration-color: var(--accent-color);
+    }
+    border-color: var(--accent-color);
+  }
+  // >>>
+}
+
+// <<< link
+a.btn {
+  text-decoration: none;
+}
+
+@media print {
+  a:not(.no-print-link)::after {
+    content: " (" attr(href) ") ";
+    color: var(--gray);
+    font-size: 62%;
+  }
+}
+// >>>

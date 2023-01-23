@@ -1,0 +1,44 @@
+$namespace-prefix: 'tippy';
+
+@import "tippyjs/index";
+
+[data-tippy-root] {
+  --body-color: var(--inv-body-color);
+  --body-bg: var(--inv-body-bg);
+}
+
+.tippy-box {
+  color: var(--body-color)!important;
+  background-color: var(--body-bg)!important;
+} 
+
+.tippy-content {
+  font-family: $font-family!important;
+  font-weight: normal!important;
+  a { 
+    @extend .heading; 
+    text-decoration: none;
+    border: none;
+    &:after  {
+      color: var(--body-color)!important;
+    }
+  }
+}
+
+.tippy-arrow {
+  color: var(--body-bg)!important;
+}
+
+.dark-mode {
+  .tippy-content {
+    -webkit-font-smoothing: initial;
+    -moz-osx-font-smoothing: initial;
+  }
+}
+
+.light-mode {
+  .tippy-content {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}

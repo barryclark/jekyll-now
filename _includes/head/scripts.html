@@ -1,0 +1,19 @@
+<script>{% include scripts/load-js.min.js %}{% include scripts/loadCSS.min.js %}{% include scripts/cssrelpreload.min.js %}!function(w) {
+  w._baseURL = '{{    "/"           | relative_url }}';
+  w._publicPath = '{{ "/assets/js/" | relative_url }}';
+  w._noPushState = {{ site.hydejack.no_push_state | default:site.disable_push_state | default:false }};
+  w._noDrawer = {{    site.hydejack.no_drawer     | default:site.disable_drawer     | default:false }};
+  w._noNavbar = {{    site.hydejack.no_navbar     | default:false }};
+  w._noToc = {{       site.hydejack.no_toc        | default:false }};
+  w._noSearch = {{    site.hydejack.no_search     | default:false }};
+  w._search = {
+    DATA_URL: '{{ "/assets/sitedata.json?no-cache" | relative_url }}',
+    STORAGE_KEY: 'mini-search{{ "/" | relative_url }}',
+    INDEX_KEY: 'index--{{ site.time | date_to_xmlschema }}',
+  };
+  w._clapButton = {% if site.clap_button or jekyll.environment != 'production' %}true{% else %}false{% endif %};
+}(window);</script>
+
+{% if site.kramdown.math_engine == 'mathjax' %}
+<script async src="{{ 'assets/bower_components/MathJax/es5/tex-mml-chtml.js' | relative_url }}" id="_MathJax"></script>
+{% endif %}

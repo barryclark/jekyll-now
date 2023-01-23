@@ -1,0 +1,36 @@
+html {
+  --font-family: #{$font-family};
+  --font-family-heading: #{$font-family-heading};
+  --code-font-family: #{$code-font-family};
+
+  @include light-mode();
+
+  --root-font-size: #{$root-font-size};
+  --root-font-size-medium: #{$root-font-size-medium};
+  --root-font-size-large: #{$root-font-size-large};
+  --root-font-size-print: #{$root-font-size-print};
+  --root-line-height: #{$root-line-height};
+
+  --font-weight: #{$font-weight};
+  --font-weight-bold: #{$font-weight-bold};
+  --font-weight-heading: #{$font-weight-heading};
+
+  // --content-width: #{$content-width};
+  // --content-width-2: #{$content-width-2};
+  --content-width-5: #{$content-width-5};
+
+  // --content-margin-3: #{$content-margin-3};
+  --content-margin-5: #{$content-margin-5};
+
+  --sidebar-width: #{$sidebar-width};
+  --half-content: #{$half-content};
+
+  // --break-point-1: #{$break-point-1};
+  // --break-point-2: #{$break-point-2};
+  --break-point-3: #{$break-point-3};
+  // --break-point-4: #{$break-point-4};
+  --break-point-5: #{$break-point-5};
+  // --break-point-font-large: #{$break-point-font-large};
+
+  --break-point-dynamic: #{$break-point-dynamic};
+}

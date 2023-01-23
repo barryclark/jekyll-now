@@ -1,0 +1,90 @@
+@import './_vars.scss';
+@import './animations/fade.scss';
+
+$color: #333;
+
+[data-#{$namespace-prefix}-root] {
+  max-width: calc(100vw - 10px);
+}
+
+.#{$namespace-prefix}-box {
+  position: relative;
+  background-color: $color;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.4;
+  outline: 0;
+  transition-property: transform, visibility, opacity;
+
+  &[data-placement^='top'] > .#{$namespace-prefix}-arrow {
+    bottom: 0;
+
+    &::before {
+      bottom: -7px;
+      left: 0;
+      border-width: 8px 8px 0;
+      border-top-color: initial;
+      transform-origin: center top;
+    }
+  }
+
+  &[data-placement^='bottom'] > .#{$namespace-prefix}-arrow {
+    top: 0;
+
+    &::before {
+      top: -7px;
+      left: 0;
+      border-width: 0 8px 8px;
+      border-bottom-color: initial;
+      transform-origin: center bottom;
+    }
+  }
+
+  &[data-placement^='left'] > .#{$namespace-prefix}-arrow {
+    right: 0;
+
+    &::before {
+      border-width: 8px 0 8px 8px;
+      border-left-color: initial;
+      right: -7px;
+      transform-origin: center left;
+    }
+  }
+
+  &[data-placement^='right'] > .#{$namespace-prefix}-arrow {
+    left: 0;
+
+    &::before {
+      left: -7px;
+      border-width: 8px 8px 8px 0;
+      border-right-color: initial;
+      transform-origin: center right;
+    }
+  }
+
+  &[data-inertia][data-state='visible'] {
+    transition-timing-function: cubic-bezier(0.54, 1.5, 0.38, 1.11);
+  }
+}
+
+.#{$namespace-prefix}-arrow {
+  & {
+    width: $arrow-size;
+    height: $arrow-size;
+    color: $color;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    border-color: transparent;
+    border-style: solid;
+  }
+}
+
+.#{$namespace-prefix}-content {
+  position: relative;
+  padding: 5px 9px;
+  z-index: 1;
+}

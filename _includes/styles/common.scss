@@ -1,0 +1,18 @@
+.note:before {
+  content: "{{ site.data.strings.note | default:'Note' }}";
+}
+.page > header > .note-sm:before {
+  content: "{{ site.data.strings.description | default:'Description' }}";
+}
+#markdown-toc:before {
+  content: "{{ site.data.strings.toc | default:'Table of Contents' }}";
+}
+.layout-resume .note-sm:before {
+  content: "{{ site.data.strings.resume.summary | default:'Summary' }}";
+}
+
+{% if site.hydejack.no_page_style %}
+  {% assign color       = site.accent_color | default:'rgb(79,177,186)' %}
+  {% assign theme_color = site.theme_color  | default:'rgb(8,46,57)' %}
+  {% include_cached styles/page-style.scss color=color theme_color=theme_color %}
+{% endif %}

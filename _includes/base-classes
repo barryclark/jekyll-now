@@ -1,0 +1,9 @@
+{%- capture classes -%}
+{% if site.hydejack.dark_mode.always %}dark-mode{% endif %}
+{% if site.hydejack.no_toc %} no-toc{% endif %}
+{% if site.hydejack.no_break_layout %} no-break-layout{% endif %}
+{% if site.hydejack.no_large_headings %} no-large-headings{% endif %}
+{% if site.hydejack.no_third_column %} no-third-column{% endif %}
+{% if site.hydejack.no_drawer %} no-drawer{% endif %}
+{%- endcapture -%}
+{{- classes | strip_newlines | strip -}}

@@ -1,0 +1,64 @@
+// Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+.content {
+  // <<< inline
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8rem $content-padding 12rem;
+
+  @media screen {
+    padding-left: $content-padding + .5rem;
+    min-height: 100vh;
+  }
+
+  @media screen and (min-width: $break-point-1) {
+    max-width: $content-width;
+  }
+
+  @media screen and (min-width: $break-point-2) {
+    max-width: $content-width-2;
+  }
+
+  @media screen and (min-width: $break-point-3) {
+    padding-left: $content-padding;
+    margin-left: $sidebar-width + $content-margin-3;
+    margin-right: $content-margin-3;
+  }
+
+  @media screen and (min-width: $break-point-5) {
+    padding-top: 9rem;
+    margin-left: $sidebar-width + $content-margin-5;
+    margin-right: $content-margin-5;
+    max-width: $content-width-5;
+  }
+
+  @media screen and (min-width: $break-point-dynamic) {
+    margin: auto;
+  }
+  // >>>
+  // <<< link
+  @media print {
+    padding: 1rem;
+  }
+  // >>>
+}
+
+.large-only {
+  display: none;
+  @media screen and (min-width: $break-point-dynamic) {
+    display: block;
+  }
+}

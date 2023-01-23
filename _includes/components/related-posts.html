@@ -1,0 +1,35 @@
+{% assign post = page %}
+
+{% if page.related_posts %}
+  {% if major >= 4 and minor >= 1 %}
+    {% assign related_posts = site.posts | where_exp:"post", "page.related_posts contains post.path or page.related_posts contains post.url" %}
+  {% else %}
+    {% assign related_posts_1 = site.posts | where_exp:"post", "page.related_posts contains post.path" %}
+    {% assign related_posts_2 = site.posts | where_exp:"post", "page.related_posts contains post.url" %}
+    {% assign related_posts = related_posts_1 | concat:related_posts_2 %}
+  {% endif %}
+{% elsif site.hydejack.use_lsi or site.use_lsi %}
+  {% assign related_posts = site.related_posts %}
+{% elsif post.categories.first %}
+  {% assign related_posts = site.categories[post.categories.first] | where_exp:"post", "post.url != page.url" %}
+{% elsif post.tags.first %}
+  {% assign related_posts = site.tags[post.tags.first] | where_exp:"post", "post.url != page.url" %}
+{% else %}
+  {% assign related_posts = site.related_posts %}
+{% endif %}
+
+{% if related_posts.size > 0 %}
+<aside class="related mb4" role="complementary">
+  <h2 class="hr-bottom">{{ site.data.strings.related_posts | default:"Related Posts" }}</h2>
+
+  <ul class="related-posts">
+    {% for post in related_posts limit:3 %}
+      {% if post %}
+        {% include_cached components/post-list-item.html post=post %}
+      {% else %}
+        <li>Post with path <code>{{ post_path }}</code> not found.</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</aside>
+{% endif %}

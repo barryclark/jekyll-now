@@ -1,0 +1,19 @@
+<nav id="breadcrumbs" class="screen-only"><ul>
+  {% assign crumbs = include.url | remove:'/index.html' | split: '/' %}
+  {% if crumbs.size > 1 %}
+    <li><a href="{{ '/' | relative_url }}">{{ site.data.strings.breadcrumbs_home | default:'home' }}</a></li>
+    {% for crumb in crumbs offset: 1 %}
+      <li>
+        {% unless forloop.last %}
+          <span>{{ site.data.strings.breadcrumbs_separator | default:'/' }}</span>
+          {% assign crumb_limit = forloop.index | plus: 1 %}
+          {% capture href %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}{% endcapture %}
+          <a href="{{ href | relative_url }}">{{ crumb | url_decode }}</a>
+        {% else %}
+          <span>{{ site.data.strings.breadcrumbs_separator | default:'/' }}</span>
+          <span>{{ crumbs | reverse | first | url_decode }}</span>
+        {% endunless %}
+      </li>
+    {% endfor %}
+  {% endif %}
+</ul></nav>

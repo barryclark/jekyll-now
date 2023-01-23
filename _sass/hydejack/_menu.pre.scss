@@ -1,0 +1,143 @@
+// Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+$navbar-height: 5rem;
+
+// <<< inline
+.fixed-common {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.fixed-top {
+  @extend .fixed-common;
+  top: 0;
+}
+
+.fixed-bottom {
+  @extend .fixed-common;
+  bottom: 0;
+}
+// >>>
+
+.navbar {
+  @extend .color-transition; // inline
+
+  > .content {
+    // <<< inline
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 0;
+    max-height: $navbar-height;
+    // >>>
+
+    // <<< link
+    $shadow-padding: 3rem;
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: calc(100% - #{$shadow-padding * 2});
+      height: $navbar-height;
+      left: $shadow-padding;
+      margin: auto;
+      box-shadow: 0 0 2rem rgba(0,0,0,0.25);
+      z-index: -1;
+    }
+    // >>>
+  }
+
+  // <<< link
+  &.fixed-top {
+    > .content {
+      &::before {
+        bottom: 1px;
+      }
+    }
+  }
+
+  &.fixed-bottom {
+    > .content {
+      &::before {
+        top: 1px;
+      }
+    }
+  }
+  // >>>
+}
+
+// <<< inline
+.nav-btn-bar {
+  @extend .color-transition;
+  margin: 0 -1rem;
+  background-color: white; // IE11
+  background-color: var(--body-bg);
+  height: $navbar-height;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  > :first-child, > :last-child {
+    border: none;
+  }
+}
+
+.nav-btn {
+  @extend .color-transition;
+  background: none;
+  border: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: $navbar-height;
+  color: var(--menu-text);
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  margin-left: -1px;
+}
+// >>>
+
+// <<< link
+a.nav-btn, button.nav-btn {
+  cursor: pointer;
+  &:hover, &:focus {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  }
+}
+
+.nav-span {
+  flex: 1;
+}
+
+.animation-main {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#_navbar {
+  z-index: 3;
+  background-color: var(--body-bg);
+}
+
+.navbar {
+  .loading { display: none; }
+  @media print { display: none; }
+}
+// >>>

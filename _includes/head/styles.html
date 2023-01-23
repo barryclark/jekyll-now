@@ -1,0 +1,12 @@
+<!--[if gt IE 8]><!---->
+{% if site.hydejack.no_inline_css or jekyll.environment == 'development' %}
+  {% include_cached head/styles-no-inline.html %}
+{% else %}
+  {% include_cached head/styles-layout.html layout=include.layout %}
+  {% include_cached head/styles-inline.html %}
+{% endif %}
+
+{% unless site.hydejack.no_page_style %}
+  {% include_cached head/page-style.html color=include.color theme_color=include.theme_color %}
+{% endunless %}
+<!--<![endif]-->

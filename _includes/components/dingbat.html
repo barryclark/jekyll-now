@@ -1,0 +1,6 @@
+{% if site.clap_button %}
+  <clap-button class="mb6" {% if include.hidden == true %}hidden{% endif %}></clap-button>
+  {% if include.hidden == true %}<hr class="dingbat related mb6" />{% endif %}
+{% else %}
+  <hr class="dingbat related mb6" />
+{% endif %}

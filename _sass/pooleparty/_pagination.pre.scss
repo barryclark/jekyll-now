@@ -1,0 +1,82 @@
+// Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+// <<< LINK
+.pagination {
+  @extend .color-transition;
+  width: calc(100% + 2rem);
+  margin: 0 -1rem 1rem;
+  color: var(--gray);
+  text-align: center;
+
+  > ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+// Pagination items can be `span`s or `a`s
+.pagination-item {
+  > * {
+    display: block;
+    padding: .25rem 1rem;
+    border: solid var(--border-color);
+    border-width: 1px 0;
+    transition: border-color 1s ease;
+  }
+
+  > a, > a:hover, > a:focus {
+    border-color: var(--border-color)!important;
+    text-decoration: none;
+  }
+
+  &:first-child > * {
+    margin-bottom: -1px;
+  }
+
+  // Only provide a hover state for linked pagination items
+  > a:hover, > a:focus {
+    background-color: var(--gray-bg);
+    border-bottom: 1px solid var(--border-color);
+  }
+}
+
+@media (min-width: 23.5em) {
+  .pagination {
+    width: 100%;
+    margin: 3rem 0;
+  }
+
+  .pagination-item {
+    > * {
+      float: left;
+      width: 50%;
+      border-width: 1px;
+    }
+
+    &:first-child > * {
+      margin-bottom: 0;
+      border-top-left-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+    }
+
+    &:last-child > * {
+      margin-left: -1px;
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+    }
+  }
+}
+// >>> LINK

@@ -1,0 +1,143 @@
+@mixin lightmode-syntax() {
+  .highlight,
+  pre.highlight {
+    // background: #fafafa;
+    color: #383a42;
+  }
+  // .highlight pre {
+  //   background: #fafafa;
+  // }
+  .highlight .ge {
+    font-style: italic;
+  }
+  .highlight .gs {
+    font-weight: 700;
+  }
+  .highlight .ow {
+    font-weight: 700;
+  }
+  .highlight .n,
+  .highlight .nf,
+  .highlight .nn,
+  .highlight .o,
+  .highlight .p {
+    color: #383a42;
+  }
+  .highlight .c,
+  .highlight .c1,
+  .highlight .cm,
+  .highlight .cp,
+  .highlight .cs {
+    color: #a0a1a7;
+    font-style: italic;
+  }
+  .highlight .sr,
+  .highlight .ss {
+    color: #0184bc;
+  }
+  .highlight .k,
+  .highlight .kc,
+  .highlight .kd,
+  .highlight .kn,
+  .highlight .kp,
+  .highlight .kr,
+  .highlight .kt {
+    color: #a626a4;
+  }
+  .highlight .l,
+  .highlight .ld,
+  .highlight .s,
+  .highlight .s1,
+  .highlight .s2,
+  .highlight .sb,
+  .highlight .sc,
+  .highlight .sd,
+  .highlight .se,
+  .highlight .sh,
+  .highlight .si,
+  .highlight .sx {
+    color: #50a14f;
+  }
+  .highlight .nt,
+  .highlight .nx,
+  .highlight .vi {
+    color: #e45649;
+  }
+  .highlight .il,
+  .highlight .m,
+  .highlight .mf,
+  .highlight .mh,
+  .highlight .mi,
+  .highlight .mo,
+  .highlight .na {
+    color: #986801;
+  }
+  .highlight .bp,
+  .highlight .nb,
+  .highlight .nc,
+  .highlight .nd,
+  .highlight .ne,
+  .highlight .ni,
+  .highlight .nl,
+  .highlight .no,
+  .highlight .nv,
+  .highlight .py,
+  .highlight .vc,
+  .highlight .vg {
+    color: #c18401;
+  }
+  // .highlight .err {
+  //   color: #fff;
+  //   background-color: #ff1414;
+  // }
+  .highlight .gd {
+    color: #ff1414;
+  }
+  .highlight .gi {
+    color: #2db448;
+  }
+  .highlight .w {
+    color: #f8f8f2;
+  }
+  .highlight .cpf {
+    color: navy;
+  }
+  .highlight .gu {
+    color: #75715e;
+  }
+  .highlight .lineno {
+    color: #9d9d9f;
+    user-select: none;
+  }
+  .highlight .ln {
+    color: #9d9d9f;
+    user-select: none;
+  }
+  .highlight .ln:after {
+    content: " ";
+  }
+  .highlight .hll {
+    color: #383a42;
+    background-color: #e5e5e6;
+  }
+  .highlight .hl {
+    color: #383a42;
+    background-color: #e5e5e6;
+  }
+  .highlight .language-json .w + .s2 {
+    color: #e45649;
+  }
+  .highlight .language-json .kc {
+    color: #0184bc;
+  }
+}
+
+body {
+  @include lightmode-syntax();
+}
+
+@media screen {
+  body.light-mode {
+    @include lightmode-syntax();
+  }
+}

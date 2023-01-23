@@ -1,0 +1,57 @@
+// Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+// <<< INLINE
+.message {
+  @extend .color-transition;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: var(--gray-text);
+  background-color: var(--gray-bg);
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.note-sm {
+  @extend .message;
+  background: transparent;
+  color: var(--body-color);
+  font-size: smaller;
+  border-left: 1px solid var(--border-color);
+  padding: 1.2rem 1rem 0 1rem;
+  margin: 1rem -1rem;
+  position: relative;
+
+  &:before {
+    font-size: 0.667rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: .025rem;
+    text-transform: uppercase;
+    color: var(--menu-text);
+    position: absolute;
+    top: 0;
+  }
+
+  &[title]:before {
+    content: attr(title)!important;
+  }
+}
+
+.note {
+  @extend .note-sm;
+  font-size: 1rem;
+}
+// >>>

@@ -1,0 +1,13 @@
+{% assign image       = include.image       %}
+{% assign color       = include.color       %}
+{% assign theme_color = include.theme_color %}
+
+{% if image.background %}
+  {% capture bg_style %}background:{{ image.background }}{% endcapture %}
+  {% capture bg_class %}sidebar-bg {% if image.overlay %}sidebar-overlay{% endif %}{% endcapture %}
+{% else %}
+  {% assign bg_color = theme_color | default:site.theme_color | default:color %}
+  {% capture bg_style %}background-color:{{ bg_color }};{% if image != 'none' %}background-image:url({% include_cached smart-url url=image %}){% endif %}{% endcapture %}
+  {% capture bg_class %}sidebar-bg {% if image != 'none' %}sidebar-overlay{% endif %}{% endcapture %}
+{% endif %}
+<div class="{{ bg_class }}" style="{{ bg_style }}"></div>

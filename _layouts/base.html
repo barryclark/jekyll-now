@@ -1,0 +1,34 @@
+---
+# Copyright (c) 2019 Florian Klampfer <https://qwtel.com/>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+layout: compress
+---
+
+{% assign plugins = site.plugins | default:site.gems %}
+
+{% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] | default:site.author %}
+
+{% assign image       = page.accent_image | default:site.accent_image | default:'/assets/img/sidebar-bg.jpg' %}
+{% assign color       = page.accent_color | default:site.accent_color | default:'rgb(79,177,186)' %}
+{% assign theme_color = page.theme_color  | default:site.theme_color  | default:'rgb(8,46,57)' %}
+
+<head>
+  {% include head/index.html %}
+</head>
+
+<body class="{% include_cached base-classes %}">
+  {% include body/index.html %}
+</body>

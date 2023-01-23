@@ -1,0 +1,13 @@
+{% assign strings = site.data.strings %}
+{% capture title %}
+  {% if page.url == "/" %}
+    {{ site.title }}{% if site.tagline %} {{ strings.separator | default:"|" }} {{ site.tagline }}{% endif %}
+  {% elsif page.title.size > 0 %}
+    {{ page.title }} {{ strings.separator | default:"|" }} {{ site.title }}
+  {% else %}
+    {{ site.title }}
+  {% endif %}
+{% endcapture %}
+<title>{{ title | strip }}</title>
+<meta name="description" content="{{ page.description | default:page.excerpt | default:site.description | markdownify | strip_html }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">

@@ -1,0 +1,167 @@
+// Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+// <<<<< LINK
+table:not(.rouge-table) {
+  @extend .figure-base;
+  border-collapse: collapse;
+  border-radius: 0!important;
+  display: block;
+  margin-bottom: 1.5rem;
+
+  td, th {
+    @extend .color-transition;
+    padding: .5em .75em;
+
+    &:first-child {
+      padding-left: 1rem;
+      border-left: 1px solid var(--border-color);
+    }
+
+    &:last-child {
+      padding-right: 1rem;
+      border-right: 1px solid var(--border-color);
+    }
+  }
+
+  > *:first-child {
+    border-top: 1px solid var(--border-color);
+  }
+
+  > *:last-child {
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  thead {
+    @extend .color-transition;
+    background-color: var(--body-bg);
+  }
+
+  thead + tbody,
+  tbody + tbody,
+  tfoot {
+    @extend .color-transition;
+    border-top: 1px solid var(--border-color);
+  }
+
+  tbody tr:nth-child(even) td,
+  tbody tr:nth-child(even) th {
+    @extend .color-transition;
+    background-color: var(--body-bg);
+  }
+
+  tbody tr:nth-child(odd) td,
+  tbody tr:nth-child(odd) th {
+    @extend .color-transition;
+    background-color: var(--gray-bg);
+  }
+}
+
+// CSS only Responsive Tables
+// http://dbushell.com/2016/03/04/css-only-responsive-tables/
+// by David Bushell
+@mixin scroll-table() {
+  white-space: nowrap; // optional - looks better for small cell values
+}
+
+@mixin flip-table() {
+  display: flex;
+  overflow: hidden;
+
+  thead, tbody {
+    display: flex;
+  }
+
+  thead {
+    flex-shrink: 0;
+    min-width: min-content;
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+
+    th {
+      padding-left: 1em;
+    }
+  }
+
+  tbody {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+    min-width: min-content;
+    flex-shrink: 0;
+
+    &:last-child {
+      border-right: 1px solid var(--border-color);
+      td {
+        padding-right: 1em;
+      }
+    }
+  }
+
+  td, th {
+    display: block;
+
+    &:first-child {
+      padding-left: .5em;
+      border-left: none;
+    }
+
+    &:last-child {
+      padding-right: .5em;
+      border-right: none;
+    }
+  }
+}
+
+table.stretch-table {
+  display: table;
+  width: 100% !important;
+  width: calc(100% + 2em) !important;
+  // @media screen and (max-width: $break-point-4) {
+  //   display: block!important;
+  //   @include scroll-table();
+  // }
+}
+
+table.scroll-table {
+  @include scroll-table();
+}
+
+table.flip-table {
+  @include flip-table();
+}
+
+@media screen and (max-width: $break-point-4) {
+  table.scroll-table-small {
+    @include scroll-table();
+  }
+
+  table.flip-table-small {
+    @include flip-table();
+  }
+}
+
+@media print {
+  table:not(.rouge-table) {
+    width: 100%!important;
+  }
+}
+// >>>>> LINK

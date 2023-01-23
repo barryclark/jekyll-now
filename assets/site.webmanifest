@@ -1,0 +1,65 @@
+---
+# https://developer.mozilla.org/en-US/docs/Web/Manifest
+---
+{
+  {% if site.lang %}"lang": "{{ site.lang }}",{% endif %}
+  "name": "{{ site.title }}",
+  "short_name": "{{ site.short_title | default:site.title }}",
+  "description": "{{ site.description | markdownify | strip_html | strip_newlines }}",
+  "start_url": "{{ '/' | relative_url }}?utm_source=homescreen",
+  "theme_color": "{{ site.theme_color | default:site.accent_color | default:'rgb(8,46,57)' }}",
+  "background_color": "{{ site.background_color | default:'#fff' }}",
+  "orientation": "portrait",
+  "display": "minimal-ui",
+  "scope": "{{ '/' | relative_url }}",
+  "icons": [
+    {
+      "src": "{{ 'assets/icons/icon-72x72.png' | relative_url }}",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable" 
+    },
+    {
+      "src": "{{ 'assets/icons/icon-96x96.png' | relative_url }}",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable" 
+    },
+    {
+      "src": "{{ 'assets/icons/icon-128x128.png' | relative_url }}",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable" 
+    },
+    {
+      "src": "{{ 'assets/icons/icon-144x144.png' | relative_url }}",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable" 
+    },
+    {
+      "src": "{{ 'assets/icons/icon-152x152.png' | relative_url }}",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable" 
+    },
+    {
+      "src": "{{ 'assets/icons/icon-192x192.png' | relative_url }}",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable" 
+    },
+    {
+      "src": "{{ 'assets/icons/icon-384x384.png' | relative_url }}",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable" 
+    },
+    {
+      "src": "{{ 'assets/icons/icon-512x512.png' | relative_url }}",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable" 
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "hydejack-assets",
+  "homepage": "https://hydejack.com/",
+  "author": "Florian Klampfer <mail@qwtel.com> (https://qwtel.com/)",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "html5shiv": "^3.7.3",
+    "katex": "^0.11.1",
+    "MathJax": "^3.1.2"
+  }
+}

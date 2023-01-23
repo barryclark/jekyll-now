@@ -1,0 +1,210 @@
+// Copyright (c) 2020 Florian Klampfer <https://qwtel.com/>
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+// <<<<< LINK
+code, pre {
+  font-family: var(--code-font-family);
+}
+
+code {
+  @extend .color-transition;
+  padding: .25em .5em;
+  background-color: var(--gray-bg);
+  font-size: smaller;
+}
+
+.figure-base {
+  @include border-radius();
+  @extend .color-transition;
+  margin-left: -1rem;
+  margin-right: -1rem;
+
+  // Prevent code linebreaks and allow side-scrolling for better readability on mobile
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pre-base {
+  @extend .figure-base;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--gray-bg);
+
+  // HACK: prevents painting for some reason
+  backface-visibility: hidden;
+
+  @media print {
+    width: 100%!important;
+    page-break-inside: avoid;
+    break-inside: avoid-page;
+  }
+}
+
+pre {
+  @extend .pre-base;
+  margin-top: 0;
+  display: block;
+  font-size: .83em;
+  line-height: 1.5em;
+  position: relative;
+}
+
+pre > code {
+  display: inline-block;
+  position: relative;
+  min-width: 100%;
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  font-size: 1em;
+
+  // .__hl {
+  //   @extend .color-transition;
+  //   display: inline-block;
+  //   position: absolute;
+  //   left: -1rem;
+  //   right: -1rem;
+  //   background: var(--accent-color-highlight);
+  //   border-left: .25rem solid var(--accent-color-faded);
+  //   z-index: -1;
+  // }
+}
+
+.pre-header-common {
+  @extend .color-transition;
+  height: 2rem;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+div.highlight {
+  position: relative;
+
+  > .pre-header {
+    @extend .figure-base;
+    @extend .pre-header-common;
+    display: block;
+    color: var(--gray)!important;
+    background-color: var(--gray-bg);
+
+    > span {
+      font-size: smaller;
+    }
+
+    > * {
+      display: inline-block;
+      padding: .3rem 1rem .2rem;
+    }
+  }
+
+  > button {
+    @extend .pre-header-common;
+    position: absolute;
+    top: 0;
+    right: -1rem;
+    color: var(--menu-text);
+    background: none;
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-top-left-radius: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 300ms;
+
+    &:hover {
+      background: var(--gray-bg);
+    }
+
+    &.copy-success {
+      > .icon-copy {
+        animation-name: icon-copy;
+        animation-duration: 1.5s;
+        animation-timing-function: ease;
+      }
+      > .icon-checkmark {
+        animation-name: icon-checkmark;
+        animation-duration: 1.5s;
+        animation-timing-function: ease;
+      }
+    }
+    > .icon-copy { 
+      display: inline-block;
+    }
+    > .icon-checkmark {
+      position: absolute;
+
+      top: 50%;
+      margin-top: -3em;
+
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+  }
+
+  &:hover > button {
+    opacity: 1;
+    transition: opacity 100ms;
+  }
+
+  > .pre-header ~ pre.highlight {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-top: .65rem;
+  }
+
+  > .pre-header ~ button {
+    opacity: 1;
+  }
+}
+
+body.no-break-layout {
+  div.highlight > button {
+    border-right: none;
+  }
+}
+
+@keyframes icon-checkmark {
+  0% {
+    transform: translateY(0);
+  }
+  15%, 85% {
+    transform: translateY(2.5em);
+  }
+  100% {
+    transform: translateY(5em);
+  }
+}
+
+@keyframes icon-copy {
+  0% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(2.5em);
+  }
+  15.01%, 85% {
+    transform: translateY(-2.5em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+// >>>>> LINK

@@ -1,0 +1,9 @@
+<div hidden>
+  {% assign strings = site.data.strings %}
+  <h2 class="sr-only">{{ strings.templates | default: "Templates"}}{{ strings.colon | default:":" }}</h2>
+
+  {% include templates/animation.html %}
+  {% include templates/loading.html %}
+  {% include templates/error.html %}
+  {% include templates/permalink.html %}
+</div>

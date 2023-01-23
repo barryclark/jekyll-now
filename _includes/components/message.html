@@ -1,0 +1,14 @@
+{% assign alt = include.alt %}
+{% unless alt %}{% capture alt %}<div class="hr pb0"></div>{% endcapture %}{% endunless %}
+
+{% if include.text.size > 0 %}
+  {% unless include.hide %}
+    <p class="{{ include.class | default:'note-sm' }}" {% if include.property %}property="{{ include.property }}"{% endif %}>
+      {{ include.text | markdownify | replace:"<p>","" | replace:"</p>","" }}
+    </p>
+  {% else %}
+    {{ alt }}
+  {% endunless %}
+{% else %}
+  {{ alt }}
+{% endif %}

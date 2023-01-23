@@ -1,0 +1,72 @@
+// Copyright (c) 2021 Florian Klampfer <https://qwtel.com/>
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+@mixin light-mode() {
+  --body-color: #{$body-color};
+  --body-bg: #{$body-bg};
+  --border-color: #{$border-color};
+  --gray: #{$gray};
+  --gray-bg: #{$gray-bg};
+  --gray-text: #{$gray-text};
+  --menu-text: #{$menu-text};
+  --inv-body-color: #ccc;
+  --inv-body-bg: #282828;
+
+  .content {
+    -webkit-font-smoothing: initial;
+    -moz-osx-font-smoothing: initial;
+  }
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.color-transition {
+  transition: none;
+}
+
+@mixin fallback-image() {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjkwIiB2aWV3Qm94PSIwIDAgMTYwIDkwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxnIHRyYW5zZm9ybT0ibWF0cml4KDAuMDQ4ODI4LCAwLCAwLCAwLjA0Nzk5MSwgNTQuOTk5OTczLCAyMC40MjgxNDgpIj4KICAgIDxwYXRoIHN0eWxlPSJmaWxsOnJnYmEoMTI4LDEyOCwxMjgsLjMzKSIgZD0iTTk1OS44ODQgMTI4YzAuMDQwIDAuMDM0IDAuMDgyIDAuMDc2IDAuMTE2IDAuMTE2djc2Ny43N2MtMC4wMzQgMC4wNDAtMC4wNzYgMC4wODItMC4xMTYgMC4xMTZoLTg5NS43N2MtMC4wNDAtMC4wMzQtMC4wODItMC4wNzYtMC4xMTQtMC4xMTZ2LTc2Ny43NzJjMC4wMzQtMC4wNDAgMC4wNzYtMC4wODIgMC4xMTQtMC4xMTRoODk1Ljc3ek05NjAgNjRoLTg5NmMtMzUuMiAwLTY0IDI4LjgtNjQgNjR2NzY4YzAgMzUuMiAyOC44IDY0IDY0IDY0aDg5NmMzNS4yIDAgNjQtMjguOCA2NC02NHYtNzY4YzAtMzUuMi0yOC44LTY0LTY0LTY0djB6Ii8+CiAgICA8cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDEyOCwxMjgsMTI4LC4zMykiIGQ9Ik04MzIgMjg4YzAgNTMuMDIwLTQyLjk4IDk2LTk2IDk2cy05Ni00Mi45OC05Ni05NiA0Mi45OC05NiA5Ni05NiA5NiA0Mi45OCA5NiA5NnoiLz4KICAgIDxwYXRoIHN0eWxlPSJmaWxsOnJnYmEoMTI4LDEyOCwxMjgsLjMzKSIgZD0iTTg5NiA4MzJoLTc2OHYtMTI4bDIyNC0zODQgMjU2IDMyMGg2NGwyMjQtMTkyeiIvPgogIDwvZz4KPC9zdmc+');
+}
+
+@mixin border-radius() {
+  @media (min-width: $break-point-1) {
+    border-radius: $border-radius;
+  }
+}
