@@ -13,4 +13,3 @@ permalink: /about/
 
 Email： [xianyin.shi@gmail.com](mailto:xianyin.shi@gmail.com)
 
-微信号：Yuqianyi1002
