@@ -22,5 +22,6 @@ end
 ### Render camera
 
 ### Render texture asset
+[Render texture](https://docs.unity3d.com/Manual/class-RenderTexture.html)
 
 ### Raw image component
