@@ -17,8 +17,9 @@ subgraph "Render camera"
   
   Output(Camera의 Output설정에 Render texture asset을 할당) --> RenderTexture
 end
-
 ```
+* RenderTexture당 
+
 ### Render camera
 
 ### Render texture asset
