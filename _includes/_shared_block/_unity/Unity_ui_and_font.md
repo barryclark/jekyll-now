@@ -1,7 +1,12 @@
 ## Unity ui and font
 ### Unity UI
 * Prefab을 UI 프리팹으로 만들기 위해서는, Canvas나 Canvas Renderer를 추가할 수 있습니다.
+* 하이어라키 좌측의 눈 아이콘을 클릭하여, 에디터에서 보이지않게 할 수 있습니다.
 
+### Unity GUI(Graphical user interface, UGUI)
+[Unity UI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIBasicLayout.html)
+
+Unity UI는 게임 및 애플리케이션용 사용자 인터페이스를 개발하기 위한 UI 툴킷입니다. 구성 요소 및 게임 보기를 사용하여 사용자 인터페이스를 정렬, 배치 및 스타일 지정하는 GameObject 기반 UI 시스템입니다. Unity UI를 사용하여 Unity 에디터에서 사용자 인터페이스를 생성하거나 변경할 수 없습니다.
 
 ### UI Event
 [Namespace UnityEngine.EventSystems](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEngine.EventSystems.html)
