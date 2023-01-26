@@ -14,6 +14,6 @@ ChatGPT(Chat Generative Pre-trained Transformer)는 OpenAI 가 2022년 11월에 
 <br>
 <center><div markdown="1">
 
-![Chat GPT](/_includes/_shared_block/_HowToLife/_ChatGPT.png)
+![Chat GPT](/_includes/_shared_block/_HowToLife/EffectiveSearch_ChatGPT.png)
 
 </div></center>
