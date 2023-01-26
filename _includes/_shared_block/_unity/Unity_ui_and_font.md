@@ -1,8 +1,10 @@
 ## Unity ui and font
+### Unity UI
+* Prefab을 UI 프리팹으로 만들기 위해서는, Canvas나 Canvas Renderer를 추가할 수 있습니다.
+
 
 ### UI Event
 [Namespace UnityEngine.EventSystems](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEngine.EventSystems.html)
-
 
 ### Font
 #### 배경지식
