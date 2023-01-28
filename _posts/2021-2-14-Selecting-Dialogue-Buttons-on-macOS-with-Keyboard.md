@@ -21,9 +21,9 @@ Several dialogue windows will allow you to simply press `⌘` + `first_letter_of
 
 #### macOS Ventura and newer
 
-1. Go to **System Preferences**
+1. Go to **System Settings**
 
-1. Got to Keyboard settings.
+1. Got to **Keyboard** settings.
 
 1. Toggle the **Keyboard navigation** option.
     
