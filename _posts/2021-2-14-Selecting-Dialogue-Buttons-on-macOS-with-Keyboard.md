@@ -43,7 +43,7 @@ Several dialogue windows will allow you to simply press `⌘` + `first_letter_of
     
     <img src="../images/2021-2-14/sys_prefs_keyboard.png" alt="drawing" width="350"/>
 
-1. Now, you should be able to `⇥` between dialogue buttons and use `space` to select the button.
+Now, you should be able to `⇥` between dialogue buttons and use `space` to select the button.
 
-    <img src="../images/2021-2-14/select_button_example.png" alt="drawing" width="200"/>
+<img src="../images/2021-2-14/select_button_example.png" alt="drawing" width="200"/>
     
