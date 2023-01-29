@@ -72,3 +72,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+remote_theme: rundocs/jekyll-rtd-theme
