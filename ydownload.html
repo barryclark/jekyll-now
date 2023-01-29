@@ -1,0 +1,11 @@
+<html>
+<script>
+    function downloadVideo(link) {
+        var downloadButton = document.createElement("a");
+        downloadButton.href = link;
+        downloadButton.download = "video.mp4";
+        downloadButton.innerHTML = "Download Video";
+        document.body.appendChild(downloadButton);
+    }
+</script>
+</html>
