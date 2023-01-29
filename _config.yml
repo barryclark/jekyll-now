@@ -6,7 +6,7 @@
 name: Matt Wilson
 
 # Short bio or description (displayed in the header)
-description: Apple, MDM, Coding ...
+description: Apple, MDM, coding, automation...
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars3.githubusercontent.com/u/13476520?s=400&u=85a9da54105c66d0631ed75551a9edbc247553f9&v=4
@@ -19,9 +19,9 @@ avatar: https://avatars3.githubusercontent.com/u/13476520?s=400&u=85a9da54105c66
 footer-links:
   email:
   github: captam3rica
-  linkedin:
+  linkedin: captam3rica
   twitter: captam3rica
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: captam3rica # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
