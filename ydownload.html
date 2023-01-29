@@ -1,11 +1,19 @@
 <html>
+<form>
+  <label for="videoLink">Enter video link:</label>
+  <input type="text" id="videoLink" name="videoLink">
+  <button type="button" onclick="downloadVideo()">Download</button>
+</form>
+
 <script>
-    function downloadVideo(link) {
-        var downloadButton = document.createElement("a");
-        downloadButton.href = link;
-        downloadButton.download = "video.mp4";
-        downloadButton.innerHTML = "Download Video";
-        document.body.appendChild(downloadButton);
-    }
+  function downloadVideo() {
+    var link = document.getElementById("videoLink").value;
+    var downloadLink = document.createElement("a");
+    downloadLink.href = link;
+    downloadLink.download = "video.mp4";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  }
 </script>
 </html>
