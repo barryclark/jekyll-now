@@ -25,7 +25,7 @@ code {
 .highlight .g { color: #7970A9 } /* Generic */
 .highlight .k { color: #8AFF80 } /* Keyword */
 .highlight .l { color: #FFFF80 } /* Literal */
-.highlight .n { color: #93A1A1 } /* Name */
+.highlight .n { color: #ddd } /* Name */
 .highlight .o { color: #FF80BF } /* Operator */
 .highlight .x { color: #CB4B16 } /* Other */
 .highlight .p { color: #FF80BF } /* Punctuation */
@@ -34,13 +34,13 @@ code {
 .highlight .c1 { color: #7970A9 } /* Comment.Single */
 .highlight .cs { color: #7970A9 } /* Comment.Special */
 .highlight .gd { color: #2AA198 } /* Generic.Deleted */
-.highlight .ge { color: #93A1A1; font-style: italic } /* Generic.Emph */
+.highlight .ge { color: #ddd; font-style: italic } /* Generic.Emph */
 .highlight .gr { color: #FF9580 } /* Generic.Error */
 .highlight .gh { color: #CB4B16 } /* Generic.Heading */
 .highlight .gi { color: #859900 } /* Generic.Inserted */
 .highlight .go { color: #ddd } /* Generic.Output */
-.highlight .gp { color: #93A1A1 } /* Generic.Prompt */
-.highlight .gs { color: #93A1A1; font-weight: bold } /* Generic.Strong */
+.highlight .gp { color: #ddd } /* Generic.Prompt */
+.highlight .gs { color: #ddd; font-weight: bold } /* Generic.Strong */
 .highlight .gu { color: #CB4B16 } /* Generic.Subheading */
 .highlight .gt { color: #ddd } /* Generic.Traceback */
 .highlight .kc { color: #ddd } /* Keyword.Constant */
@@ -52,7 +52,7 @@ code {
 .highlight .ld { color: #FFFF80 } /* Literal.Date */
 .highlight .m { color: #9580FF } /* Literal.Number */
 .highlight .s { color: #FFFF80 } /* Literal.String */
-.highlight .na { color: #93A1A1 } /* Name.Attribute */
+.highlight .na { color: #ddd } /* Name.Attribute */
 .highlight .nb { color: #B58900 } /* Name.Builtin */
 .highlight .nc { color: #8AFF80 } /* Name.Class */
 .highlight .no { color: #ddd } /* Name.Constant */
@@ -60,8 +60,8 @@ code {
 .highlight .ni { color: #CB4B16 } /* Name.Entity */
 .highlight .ne { color: #CB4B16 } /* Name.Exception */
 .highlight .nf { color: #8AFF80 } /* Name.Function */
-.highlight .nl { color: #93A1A1 } /* Name.Label */
-.highlight .nn { color: #93A1A1 } /* Name.Namespace */
+.highlight .nl { color: #ddd } /* Name.Label */
+.highlight .nn { color: #ddd } /* Name.Namespace */
 .highlight .nx { color: #555 } /* Name.Other */
 .highlight .py { color: #8AFF80 } /* Name.Property */
 .highlight .nt { color: #8AFF80 } /* Name.Tag */
