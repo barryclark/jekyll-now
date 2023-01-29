@@ -9,3 +9,4 @@ A little biased towards  products and the tools used to manage them. Code i
 ### Contact me
 
 [jmattwilson1@gmail.com](mailto:jmattwilson1@gmail.com)
+captam3rica on macadmins slack
