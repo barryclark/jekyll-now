@@ -2,7 +2,7 @@
 .highlight {
   background-color: #22212C;
   padding: 7px 7px 7px 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #22212C;
   -moz-box-shadow: 3px 3px rgb(34,
     33,
     44);
@@ -56,7 +56,7 @@ code {
 .highlight .nb { color: #B58900 } /* Name.Builtin */
 .highlight .nc { color: #268BD2 } /* Name.Class */
 .highlight .no { color: #ddd } /* Name.Constant */
-.highlight .nd { color: #268BD2 } /* Name.Decorator */
+.highlight .nd { color: #ddd } /* Name.Decorator */
 .highlight .ni { color: #CB4B16 } /* Name.Entity */
 .highlight .ne { color: #CB4B16 } /* Name.Exception */
 .highlight .nf { color: #8AFF80 } /* Name.Function */
