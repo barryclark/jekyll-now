@@ -28,7 +28,7 @@ To reset all Notification Alerts
 
 The commands below should be executed in order.
 
-```shell
+```
 # delete the notifications settings plist
 rm ~/Library/Preferences/com.apple.ncprefs.plist
 
@@ -44,7 +44,7 @@ killall usernoted
 
 #### Oneliner version
 
-```shell
+```
 rm ~/Library/Preferences/com.apple.ncprefs.plist && \
     killall cfprefsd && \
     killall NotificationCenter && \
