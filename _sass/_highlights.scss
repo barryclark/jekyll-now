@@ -9,6 +9,14 @@
 
 code {
   font-family:'Fira Code','Bitstream Vera Sans Mono','Courier', monospace;
+  
+  &.highlighter-rouge {
+    font-size: $code-font-size;
+    padding: 3px 5px;
+    word-break: break-word;
+    border-radius: 4px;
+    background-color: var(--inline-code-bg);
+  }
 }
 
 .highlight .c { color: #7970A9 } /* Comment */
