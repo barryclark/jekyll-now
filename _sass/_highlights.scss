@@ -35,8 +35,8 @@ code {
 .highlight .gu { color: #9580FF } /* Generic.Subheading */
 .highlight .gt { color: #F8F8F2 } /* Generic.Traceback */
 .highlight .kc { color: #F8F8F2 } /* Keyword.Constant */
-.highlight .kd { color: #F8F8F2 } /* Keyword.Declaration */
-.highlight .kn { color: #FF80BF } /* Keyword.Namespace */
+.highlight .kd { color: #8AFF80 } /* Keyword.Declaration */
+.highlight .kn { color: #FF80BF } /* Keyword.Namespace - ex - py import*/
 .highlight .kp { color: #FF80BF } /* Keyword.Pseudo */
 .highlight .kr { color: #FF80BF } /* Keyword.Reserved */
 .highlight .kt { color: #DC322F } /* Keyword.Type */
@@ -52,7 +52,7 @@ code {
 .highlight .ne { color: #CB4B16 } /* Name.Exception */
 .highlight .nf { color: #8AFF80 } /* Name.Function */
 .highlight .nl { color: #FF80BF } /* Name.Label */
-.highlight .nn { color: #F8F8F2 } /* Name.Namespace - ex py module imports*/
+.highlight .nn { color: #F8F8F2 } /* Name.Namespace - ex - py module imports*/
 .highlight .nx { color: #8AFF80 } /* Name.Other */
 .highlight .py { color: #FF80BF } /* Name.Property */
 .highlight .nt { color: #FF80BF } /* Name.Tag */
