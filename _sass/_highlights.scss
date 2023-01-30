@@ -38,7 +38,7 @@ code {
 .highlight .kd { color: #8AFF80 } /* Keyword.Declaration */
 .highlight .kn { color: #FF80BF } /* Keyword.Namespace - ex - py import*/
 .highlight .kp { color: #FF80BF } /* Keyword.Pseudo */
-.highlight .kr { color: #FF80BF } /* Keyword.Reserved */
+.highlight .kr { color: #FF80BF } /* Keyword.Reserved - ex - python keywords*/
 .highlight .kt { color: #DC322F } /* Keyword.Type */
 .highlight .ld { color: #FFFF80 } /* Literal.Date */
 .highlight .m { color: #9580FF } /* Literal.Number */
@@ -48,7 +48,7 @@ code {
 .highlight .nc { color: #8AFF80 } /* Name.Class */
 .highlight .no { color: #F8F8F2 } /* Name.Constant */
 .highlight .nd { color: #F8F8F2 } /* Name.Decorator */
-.highlight .ni { color: #8AFF80 } /* Name.Entity */
+.highlight .ni { color: #8AFF80 } /* Name.Entity - just changed*/
 .highlight .ne { color: #CB4B16 } /* Name.Exception */
 .highlight .nf { color: #8AFF80 } /* Name.Function */
 .highlight .nl { color: #FF80BF } /* Name.Label */
@@ -74,7 +74,7 @@ code {
 .highlight .sr { color: #FFFF80 } /* Literal.String.Regex */
 .highlight .s1 { color: #FFFF80 } /* Literal.String.Single */
 .highlight .ss { color: #FFFF80 } /* Literal.String.Symbol */
-.highlight .bp { color: #FF80BF } /* Name.Builtin.Pseudo */
+.highlight .bp { color: #9580FF } /* Name.Builtin.Pseudo - ex - py booleans*/
 .highlight .vc { color: #F8F8F2 } /* Name.Variable.Class */
 .highlight .vg { color: #F8F8F2 } /* Name.Variable.Global */
 .highlight .vi { color: #F8F8F2 } /* Name.Variable.Instance */
