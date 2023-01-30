@@ -1,10 +1,24 @@
 
 .highlight {
   background-color: #22212C;
-  padding: 7px 7px 7px 10px;
   border: 1px solid #22212C;
   margin: 20px 0 20px 0;
-  overflow: scroll;
+  overflow: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  
+  pre {
+    margin-bottom: 0;
+    font-size: 16;
+    line-height: 1.4rem;
+    word-wrap: normal; /* Fixed Safari overflow-x */
+
+    /* set the dollar sign to non-selectable */
+    >.gp:first-child {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
 }
 
 code {
