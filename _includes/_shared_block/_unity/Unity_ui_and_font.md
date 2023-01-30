@@ -1,10 +1,19 @@
 ## Unity UI
-[Unity UI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIBasicLayout.html)
+[Unity Manual : UI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIBasicLayout.html)    
+[Unity Documentation : 기본 레이아웃](https://docs.unity3d.com/kr/2022.1/Manual/UIBasicLayout.html) 
 
 Unity UI는 게임 및 애플리케이션용 사용자 인터페이스를 개발하기 위한 UI 툴킷입니다. 구성 요소 및 게임 보기를 사용하여 사용자 인터페이스를 정렬, 배치 및 스타일 지정하는 GameObject 기반 UI 시스템입니다. Unity UI를 사용하여 Unity 에디터에서 사용자 인터페이스를 생성하거나 변경할 수 없습니다.
 
 * Prefab을 UI 프리팹으로 만들기 위해서는, Canvas나 Canvas Renderer를 추가할 수 있습니다.
 * 하이어라키 좌측의 눈 아이콘을 클릭하여, 해당 게임 오브젝트가 에디터에서 보이지않게 할 수 있습니다.
+
+[Unity Documentation : 자동 레이아웃](https://docs.unity3d.com/kr/2022.1/Manual/UIAutoLayout.html)
+
+레이아웃 요소가 제공하는 정보를 사용하는 Layout Controller 컴포넌트의 예로는 Content Size Fitter 및 다양한 Layout Group 컴포넌트가 있습니다. 레이아웃 그룹의 레이아웃 요소 크기가 정해지는 기본 원리는 다음과 같습니다.
+
+1. 우선 최소 크기가 할당됩니다.
+2. 충분히 사용 가능한 공간이 있으면 선호 크기가 할당됩니다.
+3. 추가 사용 가능한 공간이 있으면 가변 크기가 할당됩니다
 
 ### GUI(Graphical user interface, UGUI)
 GUI는 그래픽 사용자 인터페이스를 나타냅니다. 사용자가 아이콘, 버튼 및 창과 같은 그래픽 요소를 통해 컴퓨터 또는 기타 전자 장치와 상호 작용할 수 있도록 하는 일종의 사용자 인터페이스입니다. GUI는 이해하고 사용하기 쉬운 방식으로 사용자에게 정보와 옵션을 제공합니다.
@@ -21,8 +30,20 @@ GUI는 일반적으로 그래픽, 텍스트 및 입력 컨트롤의 조합을 �
 
 GUI는 컴퓨터 운영 체제, 소프트웨어 애플리케이션, 모바일 앱 및 비디오 게임을 포함하여 다양한 유형의 애플리케이션에서 널리 사용됩니다. 사용자가 보다 직관적이고 사용자 친화적인 방식으로 컴퓨터 또는 장치와 상호 작용할 수 있는 방법을 제공합니다.
 
-### UI Event
+### Event
 [Namespace UnityEngine.EventSystems](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEngine.EventSystems.html)
+
+Unity에서 UI 이벤트는 사용자가 버튼이나 텍스트 필드와 같은 UI 요소와 상호 작용할 때 트리거되는 이벤트입니다. 이러한 이벤트는 특정 작업을 수행하거나 게임 또는 애플리케이션에서 다른 이벤트를 트리거하는 데 사용할 수 있습니다.
+
+Unity는 UnityEngine.EventSystems.EventSystem이라는 UI 이벤트를 처리하기 위한 내장 시스템을 제공합니다. 이 시스템은 마우스 클릭 및 터치 이벤트와 같은 입력 이벤트를 처리하고 적절한 UI 요소로 라우팅하는 역할을 합니다.
+
+Unity에서 UI 이벤트를 사용하려면 버튼과 같은 UI 요소에 EventTrigger 구성 요소를 추가하면 됩니다. EventTrigger 구성 요소를 사용하면 사용자가 UI 요소와 상호 작용할 때 트리거될 수 있는 포인터 입력, 포인터 종료, 포인터 아래로 및 포인터 위로와 같은 다양한 이벤트를 지정할 수 있습니다.
+
+각 이벤트는 UnityEngine.Events.UnityAction 델리게이트 목록의 컨테이너인 UnityEngine.Events.UnityEvent에 링크될 수 있습니다. 이러한 대리자는 이벤트가 트리거될 때 특정 작업을 실행하는 데 사용할 수 있습니다.
+
+예를 들어 버튼의 "OnClick" 이벤트에 UnityEvent를 추가한 다음 버튼을 클릭할 때 특정 기능을 실행할 UnityEvent에 UnityAction을 추가할 수 있습니다.
+
+이벤트 시스템이 UI에 국한되지 않고 다른 개체에도 사용할 수 있다는 점은 주목할 가치가 있습니다. 또한 내장 이벤트에 국한되지 않고 자체 이벤트를 생성하고 트리거할 수도 있습니다.
 
 ### Navigation
 Unity의 UI 탐색은 게임 또는 애플리케이션 내에서 서로 다른 UI 요소 또는 화면 사이를 탐색하는 프로세스를 나타냅니다. 탐색을 위해 버튼이나 다른 형태의 입력을 사용하는 대신 사용자가 보다 직관적이고 사용자 친화적인 방식으로 UI와 상호 작용할 수 있습니다.
@@ -51,27 +72,38 @@ Unity는 개발자가 원활하고 끊김 없는 탐색 환경을 만드는 데 
 2. [폰트 교체 없이 현지화](https://opchacha.tistory.com/m/11)
 3. [Korean, Japanes localize issue](https://forum.unity.com/threads/korean-japanese-and-chinese-localization-issues.663991/)
 
-#### TMP 태그
+### TMP(Text mesh pro)
 [TMP doc](http://digitalnativestudios.com/textmeshpro/docs/rich-text/#mark)
 
 Unity에서 Text Mesh Pro(TMP)를 사용하면 텍스트 내에서 태그를 사용하여 풍부한 서식 옵션을 추가할 수 있습니다. 이러한 태그는 <b> 굵은 텍스트 </b> 또는 <i> 기울임꼴 텍스트 </i> 와 같은 꺾쇠 괄호로 묶여 있습니다 .
 
-TMP에서 지원하는 기본 태그는 다음과 같습니다.
+* Text Alignment
+* Color
+* Bold and Italic
+* Character Spacing
+* Font
+* Indentation
+* Line Height
+* Line Indentation
+* Text Link
+* Lowercase, Uppercase, and Smallcaps
+* Margin
+* Mark
+* Monospacing
+* Nopars
+* Non-breaking Spaces
+* Page Break
+* Horizontal Position
+* Font size
+* Horizontal Space
+* Sprite
+* Strikethrough and Underline
+* Style
+* Subscript and Superscript
+* Vertical Offset
+* Text Width
 
-```
-<b> 굵은 텍스트 </b>
-<i> 기울임꼴 텍스트 </i>
-<u> 밑줄이 있는 텍스트 </u>
-<s> 취소선 텍스트 </s>
-<size=20>크기가 20인 텍스트 </size>
-<color=red>빨간색 텍스트 </color>
-<material=matname>특정 재료가 있는 텍스트 </material>
-<quad material=matname size=10> 특정 재질과 크기의 쿼드를 삽입합니다. </quad>
-```
-
-"ITextTagProcessor" 인터페이스를 구현하고 TMP 텍스트 구성 요소에 등록하는 스크립트를 생성하여 TMP에서 사용자 지정 태그를 사용할 수도 있습니다.
-
-다음은 C#을 사용하여 Unity에서 Text Mesh Pro 텍스트 개체에 태그를 추가하는 방법의 예입니다.
+#### 다음은 C#을 사용하여 Unity에서 Text Mesh Pro 텍스트 개체에 태그를 추가하는 방법의 예입니다.
 
 ```c#
 using UnityEngine;
@@ -104,3 +136,20 @@ textObject.SetText("This is a <color=red>red</color> text with <size=20>big size
 ```
 
 위의 코드는 예시일 뿐이며 구현을 위한 시작점으로 사용할 수 있습니다.
+
+#### "ITextTagProcessor" 인터페이스를 구현하고 TMP 텍스트 구성 요소에 등록하는 스크립트를 생성하여 TMP에서 사용자 지정 태그를 사용할 수도 있습니다.
+
+ITextTagProcessor는 개발자가 사용자 지정 텍스트 태그를 만들고 특정 방식으로 처리할 수 있도록 하는 Unity의 UI 텍스트 시스템의 인터페이스입니다. 다음은 사용 방법의 예입니다.
+
+1. "MyTextTagProcessor.cs"라는 새 C# 스크립트를 만들고 ITextTagProcessor 인터페이스를 구현합니다.
+2. MyTextTagProcessor 클래스에서 "Process"라는 새 공용 메서드를 추가합니다. 이 메소드는 사용자 정의 텍스트 태그가 텍스트에서 발견될 때 호출됩니다.
+3. Process 메서드에서 사용자 지정 텍스트 태그를 처리하는 논리를 추가할 수 있습니다. 예를 들어 텍스트 색상을 변경하거나 글꼴 크기를 변경하거나 새 UI 요소를 텍스트에 삽입할 수도 있습니다.
+4. 텍스트에 사용자 지정 텍스트 태그를 추가합니다. 예를 들어 텍스트 필드에 "[custom]" 태그를 추가할 수 있습니다.
+5. 스크립트에 사용자 지정 텍스트 태그 프로세서를 등록합니다. 예를 들어 다음 코드를 사용할 수 있습니다.
+    ```c#
+    TextTagProcessorRegistry.Register("custom", new MyTextTagProcessor());
+    ```
+6. Unity 편집기에서 텍스트 구성 요소를 선택하고 사용자 지정 텍스트 태그를 텍스트 필드에 추가합니다.
+7. 장면을 실행하면 사용자 지정 텍스트 태그가 MyTextTagProcessor 클래스에 의해 처리되고 텍스트는 프로세스 메서드에서 정의한 색상, 글꼴 크기 또는 기타 특수 효과로 표시됩니다.
+
+이것은 기본적인 예이며 구현은 프로젝트의 특정 요구 사항에 따라 달라집니다. 위의 단계는 가이드일 뿐이며 ITextTagProcessor가 구현되는 방식은 특정 사용 사례에 따라 다릅니다.
