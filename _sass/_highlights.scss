@@ -48,7 +48,7 @@ code {
 .highlight .nc { color: #8AFF80 } /* Name.Class */
 .highlight .no { color: #F8F8F2 } /* Name.Constant */
 .highlight .nd { color: #F8F8F2 } /* Name.Decorator */
-.highlight .ni { color: #8AFF80 } /* Name.Entity - just changed*/
+.highlight .ni { color: #8AFF80 } /* Name.Entity */
 .highlight .ne { color: #CB4B16 } /* Name.Exception */
 .highlight .nf { color: #8AFF80 } /* Name.Function */
 .highlight .nl { color: #FF80BF } /* Name.Label */
@@ -63,13 +63,14 @@ code {
 .highlight .mh { color: #9580FF } /* Literal.Number.Hex */
 .highlight .mi { color: #9580FF } /* Literal.Number.Integer */
 .highlight .mo { color: #9580FF } /* Literal.Number.Oct */
+.highlight .sa { color: #FFFF80 } /* Literal.String.format - ex - py f-string*/
 .highlight .sb { color: #FFFF80 } /* Literal.String.Backtick */
 .highlight .sc { color: #FFFF80 } /* Literal.String.Char */
 .highlight .sd { color: #FFFF80 } /* Literal.String.Doc */
 .highlight .s2 { color: #FFFF80 } /* Literal.String.Double */
 .highlight .se { color: #FFFF80 } /* Literal.String.Escape */
 .highlight .sh { color: #FFFF80 } /* Literal.String.Heredoc */
-.highlight .si { color: #FFFF80 } /* Literal.String.Interpol */
+.highlight .si { color: #FF80BF } /* Literal.String.Interpol */
 .highlight .sx { color: #FFFF80 } /* Literal.String.Other */
 .highlight .sr { color: #FFFF80 } /* Literal.String.Regex */
 .highlight .s1 { color: #FFFF80 } /* Literal.String.Single */
