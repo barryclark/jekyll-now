@@ -141,12 +141,12 @@ Further you create the WAF rule which blocks all API calls initiated by your use
 ```  
 
 Besides the regex reference statement we added an AND condition using the "Field to match" for the *x-amz-target* header
-grater than 0. This is useful for scenarios where the *x-amz-target* header is missing, allowing the calls to bypass our
+greater than 0. This is useful for scenarios where the *x-amz-target* header is missing, allowing the calls to bypass our
 WAF block rule (example: SAML login where the Hosted UI is used).
 
 ## Account takeover via unverified email/phone
 
-Most of the user pools are configured with multiple login options, including email, username or phone. By default, the user pool option "Keep original attribute value active when an update is pending" is turned off.
+Most of the user pools are configured with multiple login options, including email, username or phone. By default, the user pool option "Keep original attribute value active when an update is pending" is turned on. Make sure it stays like this to be protected.
 
 If your application consuming a cognito-issued token does not check the *email_verified* attribute but uses it directly to load the data/identify of a user, it will be exposed to a possbile takeover.
 
