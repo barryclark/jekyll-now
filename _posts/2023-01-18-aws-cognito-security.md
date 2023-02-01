@@ -156,7 +156,7 @@ An attacker can change the email attribute value of its own user to impersonate 
 
 * Make sure the *Keep original attribute value active when an update is pending* setting is on in all Cognito userpools.
 * Modify your applications to respect the *email_verified* and *phone_number_verified* claims.
-* If possible, modify your applications not to rely on modifiable attributes like email, username, etc. [**Instead use the combination of immutable subject (sub) and issuer (iss) claims to identify a user.**](https://openid.net/specs/openid-connect-core-1_0.html#ClaimStability). You can find extra details about the Cognito ID Token Payload [**here**](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-using-the-id-token.html)
+* If possible, modify your applications not to rely on modifiable attributes like email, username, etc. [**Instead use the combination of immutable subject (sub) and issuer (iss) claims to identify a user**](https://openid.net/specs/openid-connect-core-1_0.html#ClaimStability). You can find extra details about the Cognito ID Token Payload [**here**](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-using-the-id-token.html)
 
 
 ### Did you face any of the scenarios above? How did you mitigate the issues? What else got your attention when it comes to securing Cognito? 
