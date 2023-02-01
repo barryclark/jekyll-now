@@ -40,3 +40,7 @@
   date: "December 31, 2022"
   description: "The Independent Fallout Wiki exits early access and opens up to the public."
   url: "https://gamingwikinetwork.org/fallout-open/"
+- event:
+  date: "February 1, 2023"
+  description: "RayWiki joins the GWN as a member."
+  url: "https://gamingwikinetwork.org/raywiki/"
