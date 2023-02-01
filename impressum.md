@@ -6,7 +6,7 @@ navigation_weight: 5
 permalink: /impressum/
 ---
 
-Andreas Plaul (verantwortlich i.S.d. § 55 Abs. 2 RStV)
+Andreas Plau (verantwortlich i.S.d. § 55 Abs. 2 RStV)
 
 ### Anschrift:
 
