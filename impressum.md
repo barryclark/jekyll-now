@@ -6,7 +6,7 @@ navigation_weight: 5
 permalink: /impressum/
 ---
 
-Holger Reinhardt (verantwortlich i.S.d. § 55 Abs. 2 RStV)
+Andreas Plaul (verantwortlich i.S.d. § 55 Abs. 2 RStV)
 
 ### Anschrift:
 
@@ -27,7 +27,7 @@ Komplementäre: Haufe-Lexware Services Verwaltungs GmbH,
 
 Sitz und Registergericht Freiburg, HRB 704660; Martin Laqua
 
-Geschäftsführung: Birte Hackenjos, Mirza Hayit, Jürgen Spegel, Harald Wagner
+Geschäftsführung: Sebastian Engelhardt, Mirza Hayit, Andreas Plaul, Matthias Schätzle, Jürgen Spegel
 
 ### Public Relations:
 
