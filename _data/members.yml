@@ -61,13 +61,6 @@
   twitter: "MediEvilWiki"
   instagram: "MediEvilWiki"
 - member:
-  id: "raywiki"
-  name: "RayWiki"
-  description: "RayWiki is a collaborative Rayman encyclopedia based on the MediaWiki software. It was founded on January 4, 2008 by Hunchman801. It is widely considered as the most complete source for Rayman knowledge."
-  logo: "/images/logos/raywiki.png"
-  url: "https://raymanpc.com/wiki/en/"
-  mainpage: "Main_Page"
-- member:
   id: "rarewiki"
   name: "Rare Wiki"
   description: "Rare Wiki is a wiki dedicated to covering Rare Ltd. and their franchises (except for Banjo-Kazooie and Conker, as in-depth coverage of these two franchises can be found at Jiggywikki and Conker Wiki respectively)."
@@ -75,6 +68,13 @@
   url: "https://rarewiki.com/"
   mainpage: "Main_Page"
   discord: "https://discord.com/invite/WdP7aXN"
+- member:
+  id: "raywiki"
+  name: "RayWiki"
+  description: "RayWiki is a collaborative Rayman encyclopedia based on the MediaWiki software. It was founded on January 4, 2008 by Hunchman801. It is widely considered as the most complete source for Rayman knowledge."
+  logo: "/images/logos/raywiki.png"
+  url: "https://raymanpc.com/wiki/en/"
+  mainpage: "Main_Page"
 - member:
   id: "sagawiki"
   name: "SaGa Wiki"
