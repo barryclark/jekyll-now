@@ -148,15 +148,16 @@ WAF block rule (example: SAML login where the Hosted UI is used).
 
 Most of the user pools are configured with multiple login options, including email, username or phone. By default, the user pool option "Keep original attribute value active when an update is pending" is turned on. Make sure it stays like this to be protected.
 
-If your application consuming a cognito-issued token does not check the *email_verified* attribute but uses it directly to load the data/identify of a user, it will be exposed to a possbile takeover.
+In case the option "Keep original attribute value active when an update is pending" is not turned on and your application consuming a cognito-issued token does not check the *email_verified* attribute but uses it directly to load the data/identify of a user, it will be exposed to a possbile takeover.
 
 An attacker can change the email attribute value of its own user to impersonate a victim's email address, then login into an application using an alternative login option like username. The application processing the cognito-issued token will see the victim's email address and use the unverified email attribute to load data/identify of the user.
 
 ### The solution 
 
-* Enable by default in all Cognito userpools the *Keep original attribute value active when an update is pending* setting.
+* Make sure the *Keep original attribute value active when an update is pending* setting is on in all Cognito userpools.
 * Modify your applications to respect the *email_verified* and *phone_number_verified* claims.
-* If possible, modify your applications not to rely on modifiable attributes like email, username, etc.
+* If possible, modify your applications not to rely on modifiable attributes like email, username, etc. [**Instead use the combination of immutable subject (sub) and issuer (iss) claims to identify a user.**](https://openid.net/specs/openid-connect-core-1_0.html#ClaimStability). You can find extra details about the Cognito ID Token Payload [**here**](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-using-the-id-token.html)
+
 
 ### Did you face any of the scenarios above? How did you mitigate the issues? What else got your attention when it comes to securing Cognito? 
 &nbsp;  
