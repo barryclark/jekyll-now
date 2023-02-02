@@ -27,7 +27,7 @@ Komplementäre: Haufe-Lexware Services Verwaltungs GmbH,
 
 Sitz und Registergericht Freiburg, HRB 704660; Martin Laqua
 
-Geschäftsführung: Sebastian Engelhardt, Andreas Plaul, Matthias Schätzle, Jürgen Spegel
+Geschäftsführung: Sebastian Engelhardt, Andreas Plaul, Matthias Schätzle, Jürgen Spegel 
 
 ### Public Relations:
 
