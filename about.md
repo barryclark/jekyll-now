@@ -10,13 +10,16 @@ First and foremost I am a programmer and an engineer at heart, even when I am no
 
 ---------------------------------
 
-### My Resume
+### Work Histroy
 
-<object data="https://drive.google.com/file/d/1Fhh_jAejh7c0XCKhoJ7xlcNbQbYiTR3K/view?usp=share_link" type="application/pdf" width="700px" height="700px">
-    <embed src="https://drive.google.com/file/d/1Fhh_jAejh7c0XCKhoJ7xlcNbQbYiTR3K/view?usp=share_link">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/1Fhh_jAejh7c0XCKhoJ7xlcNbQbYiTR3K/view?usp=share_link">Download PDF</a>.</p>
-    </embed>
-</object>
+<ul>
+    <li><I>2022-Present, </I><b>Senior Machine Learning Engineer, QuantumBlack</b></li>
+    <li><I>2021-2022, </I><b>Machine Learning Engineer/Product Owner, GSK</b></li>
+    <li><I>2019-2021, </I><b>Machine Learning Engineer, Wells Fargo</b></li>
+    <li><I>2022-Present, </I><b>Engineer, CGI</b></li>
+</ul>
+
+--------------------------------------------------
 
 ### Contact me
 
