@@ -16,7 +16,7 @@ First and foremost I am a programmer and an engineer at heart, even when I am no
     <li><I>2022-Present, </I><b>Senior Machine Learning Engineer, QuantumBlack</b></li>
     <li><I>2021-2022, </I><b>Machine Learning Engineer/Product Owner, GSK</b></li>
     <li><I>2019-2021, </I><b>Machine Learning Engineer, Wells Fargo</b></li>
-    <li><I>2022-Present, </I><b>Engineer, CGI</b></li>
+    <li><I>2017-2019, </I><b>Engineer, CGI</b></li>
 </ul>
 
 --------------------------------------------------
