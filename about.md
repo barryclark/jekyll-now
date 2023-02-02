@@ -13,7 +13,7 @@ First and foremost I am a programmer and an engineer at heart, even when I am no
 ### My Resume
 
 <object data="https://drive.google.com/file/d/1Fhh_jAejh7c0XCKhoJ7xlcNbQbYiTR3K/view?usp=share_link" type="application/pdf" width="700px" height="700px">
-    <embed src="http://yoursite.com/the.pdf">
+    <embed src="https://drive.google.com/file/d/1Fhh_jAejh7c0XCKhoJ7xlcNbQbYiTR3K/view?usp=share_link">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/1Fhh_jAejh7c0XCKhoJ7xlcNbQbYiTR3K/view?usp=share_link">Download PDF</a>.</p>
     </embed>
 </object>
