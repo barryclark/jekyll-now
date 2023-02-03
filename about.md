@@ -9,9 +9,9 @@ Some information about me!
 
 ### More Information
 
-YJQ
+This is a UoL Y2(2023) stu post blog here.
 
 ### Contact me
 
-Wechat:longitudinal-axis
+(+44)07899039617
 
