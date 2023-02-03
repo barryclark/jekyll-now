@@ -1,0 +1,14 @@
+# lec1&2
+## 信号的过程
+
+Components
+
+- Source encoder converts message into message signal.
+- Transmitter converts message signal or bits into format appropriate for channel transmission (analog/digital signal).
+- Channel introduces distortion, noise, and interference.
+- Receiver decodes received signal back to message signal.
+- Source decoder decodes message signal back into original message.
+
+## Communication System
+
+![Screen Shot 2023-02-03 at 8.03.57 AM.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/200fce8b-d256-4e0b-a0c6-9769f0d84ec7/Screen_Shot_2023-02-03_at_8.03.57_AM.jpg)
