@@ -2,6 +2,8 @@
 layout: post
 title: PlistBuddy Guide
 ---
+In the blog, learn a little bit about the macOS command line tool PlistBuddy, how to use it, and some examples to get you started. The associated git repo can be found [here](https://github.com/captam3rica/plistbuddy-guide).
+
 With the `defaults` command showing some weird behaviors, I wanted to learn another command-line tool that I could work into my workflows.
 
 I put this doc together because I was finding it difficult to locate anything out on the Internet related to `PlistBuddy` that was easy to following or understand. 
@@ -9,7 +11,6 @@ I put this doc together because I was finding it difficult to locate anything ou
 Also because I am more of a visual learner (actually seeing the "cause" and "effect" of a given command) so hopefully some of the examples below will make it easier for others to see how they can apply `PlistBuddy` to their workflows as well.
 
 It should be noted that this is not an extensive guide to using `PlistBuddy` but it should get you moving in the right direction. I will try to update it as I find new ways to use `PlistBuddy` that I think might be useful for others as well. 😊
-
 
 ## What is PlistBuddy?
 
