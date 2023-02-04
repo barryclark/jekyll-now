@@ -19,8 +19,8 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  font: 16px/1.4 $helvetica;
+  color: $gray;
 }
 
 .container {
@@ -32,7 +32,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: $darkGray;
   font-weight: bold;
 
   line-height: 1.7;
@@ -69,11 +69,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $purple;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $darkerPurple;
   }
 }
 
