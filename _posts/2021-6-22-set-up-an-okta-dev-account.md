@@ -22,3 +22,7 @@ In this post we learn how to create an Okta developer account that can be used t
 2. Enter the **Dev Organization ID** that you copied earlier into the **mycompany** field, and ensure that the primary domain is set to **okta.com** in the dropdown menu. Then, click **Next**
 3. Enter your username and password. Then, click **Sign In**
 4. Now you are back in your Dev Okta instance!
+
+Or if you want to go straight to your admin port, just use the admin URL you compied earlier.
+
+    <https://dev-53595132-admin.okta.com/>
