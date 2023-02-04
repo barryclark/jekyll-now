@@ -2,10 +2,11 @@
 layout: post
 title: jekyll-dracula-syntax
 ---
+A dark theme for syntax highlighting in your Jekyll blog.
 
-The examples below use the [jekyll-dracula-syntax](https://github.com/captam3rica/jekyll-dracula-syntax) for code syntax highlighting. I created this theme based on the [draculatheme.com](https://draculatheme.com/) color palette.
+The examples below use the [jekyll-dracula-syntax](https://github.com/captam3rica/jekyll-dracula-syntax) for code syntax highlighting. This theme was created based on the [draculatheme](https://draculatheme.com/) color palette.
 
-**Python example**
+**Python**
 
 ```py
 #!/usr/bin/env python3
@@ -20,6 +21,8 @@ The examples below use the [jekyll-dracula-syntax](https://github.com/captam3ric
 #       - xcode releases api - https://xcodereleases.com/data.json
 #       - ruby gem example - https://github.com/xcpretty/xcode-install/blob/master/lib/xcode/install/list.rb
 #       - https://github.com/fastlane/fastlane
+#
+
 
 import argparse
 import sys
@@ -71,7 +74,7 @@ if __name__ == "__main__":
     main()
 ```
 
-**zshell example**
+**zshell**
 
 ```sh
 #!/usr/bin/env zsh
