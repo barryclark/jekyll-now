@@ -3,7 +3,7 @@ layout: post
 title: jekyll-dracula-syntax
 ---
 
-The examples below use the [jekyll-dracula-syntax](https://github.com/captam3rica/jekyll-dracula-syntax) for code fence syntax highlighting. I created this theme based on the [draculatheme.com](https://draculatheme.com/) color pallet.
+The examples below use the [jekyll-dracula-syntax](https://github.com/captam3rica/jekyll-dracula-syntax) for code syntax highlighting. I created this theme based on the [draculatheme.com](https://draculatheme.com/) color palette.
 
 **Python example**
 
