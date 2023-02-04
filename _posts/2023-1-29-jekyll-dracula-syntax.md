@@ -4,7 +4,7 @@ title: jekyll-dracula-syntax
 ---
 A dark theme for syntax highlighting in your Jekyll blog.
 
-The examples below use the [jekyll-dracula-syntax](https://github.com/captam3rica/jekyll-dracula-syntax) for code syntax highlighting. This theme was created based on the [draculatheme](https://draculatheme.com/) color palette.
+This theme was created based on the [draculatheme](https://draculatheme.com/) color palette. The examples below use [jekyll-dracula-syntax](https://github.com/captam3rica/jekyll-dracula-syntax.
 
 **Python**
 
