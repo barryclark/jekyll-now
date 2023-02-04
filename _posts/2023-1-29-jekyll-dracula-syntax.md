@@ -1,7 +1,11 @@
 ---
 layout: post
-title: code highlight test
+title: jekyll-dracula-syntax
 ---
+
+The examples below use the [jekyll-dracula-syntax](https://github.com/captam3rica/jekyll-dracula-syntax) for code fence syntax highlighting. I created this theme based on the [draculatheme.com](https://draculatheme.com/) color pallet.
+
+**Python example**
 
 ```py
 #!/usr/bin/env python3
@@ -49,49 +53,7 @@ def prog_args():
     parser.add_argument("--version", action="version", help="Show this tools version.")
 
     return parser.parse_args()
-
-
-def download_version_information():
-    """List avaialbe XCode versions."""
-    url = "https://xcodereleases.com/data.json"
-    response = requests.get(url, timeout=30)
-    return response.json()
-
-
-def list_released_versions():
-    """List the available versions."""
-    data = download_version_information()
-
-    for key in data:
-        if (
-            key["date"]["year"] >= (datetime.today().year - 1)
-            and "release" in key["version"]["release"]
-        ):
-            print(f"{key['version'].get('number')} ({key['version'].get('build')})")
-
-
-def list_beta_versions():
-    """List the available versions."""
-    data = download_version_information()
-
-    for key in data:
-
-        if (
-            key["date"]["year"] >= (datetime.today().year - 1)
-            and "beta" in key["version"]["release"]
-        ):
-            print(
-                f"{key['version'].get('number')} ({key['version'].get('build')}) (beta {key['version']['release'].get('beta')})"
-            )
-
-
-def get_installed_xcode_version():
-    """Return installed xcode version."""
-    # xcodebuild -version
-    # Xcode 14.2
-    # Build version 14C18
-    pass
-
+    
 
 def main():
     """Do the main function."""
@@ -107,4 +69,21 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
+
+**zshell example**
+
+```sh
+#!/usr/bin/env zsh
+
+delcare -a ITEMS_ARRAY
+
+# store the contents of ls in a var
+ITEMS_ARRAY=("$(ls /Users/captam3rica/Desktop)")
+
+# loop over the contents of the var to display each item to stdout
+for dir in "${ITEMS_ARRAY[@]}"; do
+    echo "$dir"
+done
+
 ```
