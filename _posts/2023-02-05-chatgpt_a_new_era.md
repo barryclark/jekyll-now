@@ -3,7 +3,7 @@ layout: post
 title: ChatGPT - A New Era
 ---
 
-<h3><I>AI apocalypse or a the next in chapter in human advancements</h3></I>
+<h3><I>AI apocalypse or a the next in chapter in human advancements</I></h3>
 
 
 ---------------------------------------------------------------
