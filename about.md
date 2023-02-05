@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /about/
+permalink: /website/alvianproject.js
 ---
 <p align="center">
   <b>About</b></p>
