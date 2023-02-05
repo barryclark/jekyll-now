@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Presenting Machine Learning Model Results as Business Insights
+title: ChatGPT - A New Era
 ---
 
 <h3><I>AI apocalypse or a the next in chapter in human advancements?</h3></I>
