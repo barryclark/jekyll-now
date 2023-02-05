@@ -18,8 +18,9 @@ html {
 }
 
 body {
-	background:#c8cfdf;border:0;border-radius:20px
-	background: $white;
+	background:#c8cfdf;
+	order:0;
+	border-radius:20px;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
