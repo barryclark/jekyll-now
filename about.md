@@ -12,5 +12,4 @@ permalink: /about/
 <p align="center"><b>Contact me</b></p>
 <p align="center">
 <a style='onclick="alert("CONTACT ADMIN NOW");' href="mailto:help@alvianproject.eu.org">CONCTACT ADMIN</a>
-  
 </p>
