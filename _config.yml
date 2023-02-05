@@ -9,7 +9,7 @@ name: ALVIAN PROJECT CO., Ltd.
 description: OFFICIAL
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/terlama/iconblogap/android-icon-512x512.png
+avatar: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIIDhZnUqqZy_A6OBwMqHFN7EtVIlnEkVywgS1iJ0VnzU0o5mz6lC1MEHuZiKFWJpGv5xrjfPlzDcyvx_F2ltZT3i73UFJ8hzxqeGp9hLY-EGu09CFDbEmL3VoI8VAVMbXOVGxOLCTEyuFaiSw-hmoUBDbN_VVWZSROnBUNg1IXU0uDNd4EL6I_bMh/s200/20230119_092039.png
 
 #
 # Flags below are optional
@@ -19,16 +19,16 @@ avatar: https://raw.githubusercontent.com/terlama/iconblogap/android-icon-512x51
 footer-links:
   dribbble:
   email:
-  facebook:
+  facebook: Alvian.Project
   flickr:
   github: terlama/ALVIANPROJECT
-  instagram:
+  instagram: alvian_project_tiktok
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: Alviantiktok
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
+  youtube: # /<@alvian_project_tiktok> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
