@@ -5,9 +5,9 @@ permalink: /about/
 ---
 
 this is to save my projects 
-<p align="center">
+<p align="center"></p>
 ### More Information
-</p>
+
 IS A DEVELOPER & WEB DEVELOPER FROM INDONESIAN
 text-center: ### Contact me
 
