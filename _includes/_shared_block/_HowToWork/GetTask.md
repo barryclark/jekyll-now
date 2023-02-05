@@ -5,7 +5,7 @@ graph TD
 
 subgraph Prepare
     PrepareMeeting(<div align=left><b>회의 준비</b><br>회의 전에 기획서 및 회의 자료를 읽고 질문사항을 정리합니다.</div>)
-    GetTask(<div align=left><b>일을 받기</b><br>일이 동시에 여러개를 받을 때 역량을 파악해야합니다.<br>동시에 업무를 진행할 수 없다면 보고한 후 우선순위를 받아야 합니다.</div>)
+    GetTask(<div align=left><b>일을 받기</b><br>일이 동시에 여러개를 받을 때 역량을 파악해야합니다.<br>동시에 업무를 진행할 수 없다면 보고한 후 우선순위를 받아야 합니다.<br>말하지 않으면 할 수 있는 것으로 보며, 나중에 문제가 됩니다.</div>)
 end
 
 subgraph Working
