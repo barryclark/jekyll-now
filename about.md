@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+this is to save my projects 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
-
+IS A DEVELOPER & WEB DEVELOPER FROM INDONESIAN
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[help@alvianproject.eu.org](mailto:help@alvianproject.eu.org)
