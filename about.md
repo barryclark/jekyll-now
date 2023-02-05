@@ -11,6 +11,6 @@ permalink: /about/
 <p align="center">IS A DEVELOPER & WEB DEVELOPER FROM INDONESIAN</p>
 <p align="center"><b>Contact me</b></p>
 <p align="center">
-<style='alert("Contact admin now")'><a href="mailto:help@alvianproject.eu.org">CONCTACT ADMIN</a>
-  </style>
+<a style='onclick="alert("CONTACT ADMIN NOW");' href="mailto:help@alvianproject.eu.org">CONCTACT ADMIN</a>
+  
 </p>
