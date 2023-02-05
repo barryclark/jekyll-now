@@ -5,6 +5,7 @@ title: ChatGPT - A New Era
 
 <h3><I>AI apocalypse or a the next in chapter in human advancements</h3></I>
 
+
 ---------------------------------------------------------------
 
 <img title="The Red Vineyard by Vincent van Gogh" src="../images/posts/post_3/oil_painting_by_ai.png" alt="Oi Painting By DALL-E 2">
@@ -21,6 +22,7 @@ With the hype that ChatGPT has generated, one could be forgiven to fear an AI ap
 
 ---------------------------------------------------
 
+
 ## From the Horse's Mouth.
 It's the late 19th century and automobiles are a rising trend all around the globe, but still, most of the world depends on horses for transportation, let's hear what is mood among the horses association about this new magic machine.
 
@@ -32,6 +34,7 @@ The third group is more worried than anyone else and is not taken seriously by m
 
 ---------------------------------------------------
 
+
 ## Don't be a Luddite.
 The Luddites were a secret oath-based organization of English textile workers in the 19th century who formed a radical faction that destroyed textile machinery. They feared that the machines would eliminate the job markets and leave them and their families starving.
 When cranes were adopted across ports the workers went on strike to stop them from taking over their jobs. Similar strikes happened across India when computers were introduced into government services.
@@ -40,12 +43,14 @@ When cranes were adopted across ports the workers went on strike to stop them fr
 
 ---------------------------------------------------
 
+
 ## What is ChatGPT
 It is a very powerful and well-trained language model. It is trained on a lot of data and can combine that learning to provide custom answers to our questions. As it has been trained on multiple forms of text data like songs, stories, code, wiki, and virtually all forms of text available on the internet it can combine this information to generate custom solutions to our questions.
 
 As powerful and all-knowing as it might feel, it has its limitations. For one, it has no or very limited knowledge of the world after its training and therefore it is not something you want to use for your morning news. Everything it produces is plagiarized because it's all derived from data it was trained on, it only combines it in a useful way to maximize the reward function.
 
 ---------------------------------------------------
+
 
 ## The Possibilities
 Never in human history has a new tool caused the total number of jobs to go down. Yes, when the telephone came the telegram industry became extinct when the automobile came horse carriages became a decoration on the wall, but it did not reduce the total number of jobs in the world, it only accelerated the pace of human expansion. Turning itself into the factory of the world allowed China to raise billions of people out of poverty and when manufacturing moved out of the USA it turned itself into the hub of innovation and entrepreneurship creating some of the biggest industries in the world.
@@ -62,11 +67,13 @@ We would need people to build these models, which would consume a gargantuan amo
 
 ---------------------------------------------------
 
+
 ## Space: The Final Frontier
 Imagine being a miner on an asteroid, with a drill trying to extract Deuterium for fusion reactors on mars, how horrible that experience would be. If you think oil drillers in the middle of the ocean, feel alone and deal with danger, boy this would be on a whole new level (literally). These are the kind of jobs AI would take over one day, did you want that job in the first place, I hope not.
 Space is vast and dangerous and filled with uncertain environments; the current generation of robots is not good enough to explore them. We need a smarter machine that is better at taking decisions and this could be a step in that direction, imagine a ChatGPT-like system onboard an unmanned probe evaluating sensor data on a planet before deciding on whether to explore it or move on. It would require combining a lot of existing knowledge like geography, in a sensible way to make a decision. If you are not already aware of The Von Neumann Probe it might be a good time to jump into that rabbit hole.
 
 ---------------------------------------------------
+
 
 ## Conclusion
 I must say this again, never in human history has a new technology caused a reduction in the total number of jobs in the world.
