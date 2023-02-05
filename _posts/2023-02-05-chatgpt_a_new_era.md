@@ -39,7 +39,7 @@ The third group is more worried than anyone else and is not taken seriously by m
 The Luddites were a secret oath-based organization of English textile workers in the 19th century who formed a radical faction that destroyed textile machinery. They feared that the machines would eliminate the job markets and leave them and their families starving.
 When cranes were adopted across ports the workers went on strike to stop them from taking over their jobs. Similar strikes happened across India when computers were introduced into government services.
 
-><b><I>"The real problem of humanity is the following: We have paleolithic emotions, medieval institutions, and godlike technology. And it is terrifically dangerous, and it is now approaching a point of crisis overall." - Edward O. Wilson</b></I>
+><b><I>"The real problem of humanity is the following: We have paleolithic emotions, medieval institutions, and godlike technology. And it is terrifically dangerous, and it is now approaching a point of crisis overall." - Edward O. Wilson</I></b>
 
 ---------------------------------------------------
 
@@ -78,7 +78,7 @@ Space is vast and dangerous and filled with uncertain environments; the current 
 ## Conclusion
 I must say this again, never in human history has a new technology caused a reduction in the total number of jobs in the world.
 
-><b><I>"Give me a firm place to stand and a lever and I can move the Earth." - Archimedes</b></I>
+><b><I>"Give me a firm place to stand and a lever and I can move the Earth." - Archimedes</I></b>
 
 Maybe this breakthrough in AI/ML is the lever that would finally allow us to make humanity an interplanetary species and secure our future.
 
