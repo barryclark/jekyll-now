@@ -39,12 +39,12 @@ disqus:
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Your website URL (e.g. http://alvianproject.eu.org or http://www.alvianproject.eu.org)
 # Used for Sitemap.xml and your RSS feed
-url:
+url:http://alvianproject.eu.org
 
 # If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
+# (http://terlama.github.io/cdn.alvianproject.eu.org)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
