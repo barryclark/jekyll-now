@@ -6,9 +6,9 @@ permalink: /about/
 
 this is to save my projects 
 
-### More Information
+<center>### More Information</center>
 
-IS A DEVELOPER & WEB DEVELOPER FROM INDONESIAN
-### Contact me
+<center>IS A DEVELOPER & WEB DEVELOPER FROM INDONESIAN</center>
+<center>### Contact me</center>
 
-[help@alvianproject.eu.org](mailto:help@alvianproject.eu.org)
+[center][help@alvianproject.eu.org][/center](mailto:help@alvianproject.eu.org)
