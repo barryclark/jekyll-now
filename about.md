@@ -1,6 +1,5 @@
 ---
 layout: page
-title: 
 permalink: /about/
 ---
 <p align="center">
