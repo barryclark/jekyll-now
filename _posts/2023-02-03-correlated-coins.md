@@ -16,3 +16,5 @@ $H(x_{n+1}\vert x_{n}) = \frac{1}{2}ln(2) + \frac{1}{2}(-pln(p) - (1-p)ln(1-p))$
 
 $H(x_{1}, x_{2}, ......., x_{n}) = ln(2) + \frac{n-1}{2}ln(2) + \frac{n-1}{2}(-pln(p) - (1-p)ln(1-p))$
 
+The dependence decreaces the entropy of the row of coins. 
+
