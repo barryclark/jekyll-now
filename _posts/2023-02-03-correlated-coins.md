@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Corrlated n coins
+date: 2023-02-03
 ---
 This is a problem from Leonard Susskind first Stanford's lecture on statistical mechanincs.
 You have a collection of $n$ coins laid out in a row. If you meassure one of them and it is up, then the first neighbors
