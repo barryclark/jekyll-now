@@ -17,13 +17,17 @@ permalink: /Publications/
 
 5. [**Lat PK**, Sen D (2018) (C2G4)n repeat expansion sequences from the C9orf72 gene form an unusual DNA higher-order structure in the pH range of 5-6. **_PLoS ONE_** 13(6): e0198418](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0198418)
 
-6. Huang FY, **Lat PK**, Sen D (2022) Socket-Plug Complementarity: a Distinctive DNA-DNA Binding Logic that is Sensitive to Na+ versus K+ as Counterions. (in review **_JACS_**)
+6. [Huang FY, **Lat PK**, Sen D (2023) Unusual Paradigm for DNA–DNA Recognition and Binding: “Socket-Plug” Complementarity. **_JACS_** 145, 5, 3146–3157](https://pubs.acs.org/doi/10.1021/jacs.2c12514)
+
 
 **_Conference Publications_**
 
 1. S Arthur, B Grande, A Jiang, R Cojocaru, M Alcaide, C Rushton, **PK Lat** et al., (2019) Identification and characterization of 3'UTR mutations affecting NFKBIZ in non-Hodgkin lymphoma. **_EUROPEAN JOURNAL OF HUMAN GENETICS_**  27, 577-578
 
 2. SE Arthur, A Mottok, R Cojocaru, A Jiang, BM Grande, M Alcaide, C Rushton, D Ennishi, **P Kumar Lat** et al., (2019) FUNCTIONAL CHARACTERIZATION OF NFKBIZ 3′ UTR MUTATIONS IN DIFFUSE LARGE B‐CELL LYMPHOMA. **_Hematological Oncology_**  37, 74-75
+
+**_PhD Thesis_**
+[**Lat PK** (2021) Novel secondary structures of DNA; and development of a sensitive methodology for capturing DNA/RNA G-quadruplexes from living Drosophila salivary glands](https://summit.sfu.ca/item/34682)
 
 **_bioRxiv_**
 
