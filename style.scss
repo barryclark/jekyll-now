@@ -25,9 +25,7 @@ body {
 
 .container {
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 800px;
+  max-width: 740px;
   padding: 0 10px;
   width: 100%;
 }
