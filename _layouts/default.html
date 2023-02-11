@@ -43,6 +43,13 @@
         <footer class="footer">
           {% include svg-icons.html %}
         </footer>
+        <li class="p-name">
+          {%- if site.author -%}
+          &copy; {{ site.time | date: '%Y' }}  {{ site.author | escape }}
+          {%- else -%}
+          &copy; {{ site.time | date: '%Y' }}  {{ site.title | escape }}
+          {%- endif -%}
+        </li>
       </div>
     </div>
 

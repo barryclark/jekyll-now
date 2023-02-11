@@ -21,16 +21,20 @@ footer-links:
   email: n0bml@arrl.net
   facebook:
   flickr:
-  github: n0bml/jekyll-now
-  instagram: n0bml
+  github: n0bml
+  #instagram: n0bml
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: n0bml_CN87vh
+  #twitter: n0bml_CN87vh
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
+# mastodon instances
+mastodon:
+- username: n0bml
+  instance: mastodon.radio
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
