@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Hello, and welcome to my hub for all my blog posts on DS, ML, DL and more!!'
+title: Decision Trees and Random Forests
 published: true
 ---
 
