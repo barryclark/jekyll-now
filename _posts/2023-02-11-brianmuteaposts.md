@@ -1,6 +1,6 @@
 ---
 layout: post
-title: _post/2022-12-06-Decision Trees and Random Forests
+title: _posts/2022-12-06-Decision Trees and Random Forests
 published: true
 ---
 
