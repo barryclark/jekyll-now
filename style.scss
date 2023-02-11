@@ -29,7 +29,19 @@ body {
   padding: 0 10px;
   width: 100%;
 }
+.posts{
+	
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+	
+  @include mobile {	  
+  display:block;
+  max-width:800px;
+  width:100%;
+  margin:0 auto;
+  }
 
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
