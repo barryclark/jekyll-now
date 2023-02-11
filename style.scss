@@ -25,11 +25,23 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 800px;
   padding: 0 10px;
   width: 100%;
 }
-
+#grid_content{
+  display: grid;
+  max-width: 800px;
+  grid-template-columns: repeat(2, 1fr);
+		
+  @include mobile {
+  width: 100%;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 10px;
+  }
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
