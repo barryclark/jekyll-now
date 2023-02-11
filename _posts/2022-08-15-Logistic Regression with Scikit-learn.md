@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ![Logistic.png]({{site.baseurl}}/_posts/Logistic.png)
 
