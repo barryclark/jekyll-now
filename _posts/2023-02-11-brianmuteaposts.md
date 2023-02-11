@@ -4,14 +4,9 @@ title: 'Hello, and welcome to my hub for all my blog posts on DS, ML, DL and mor
 published: true
 ---
 
-{% if user %}
-  Hello, {{ user.name }}!
-{% endif %}
+![Decision Trees and Random Forests feat img3.png]({{site.baseurl}}/_posts/Decision Trees and Random Forests feat img3.png)
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.https://www.machinelearningnuggets.com/decision-trees-and-random-forests/ }}">{{ post.Decision Trees and Random Forests(Building and optimizing decision tree and random forest models) }}</a>
-    </li>
-  {% endfor %}
-</ul>
+In the modern world, so much data is present on the internet. Organizations need efficient and rigorous algorithms to handle these huge chunks of data, make practical analyses, and provide appropriate decisions relevant to maximizing their profits and market presence. There are such algorithms commonly used today for decision-making processes. They are:
+
+Decision Trees.
+Random Forests.
