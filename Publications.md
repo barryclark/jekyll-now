@@ -26,7 +26,9 @@ permalink: /Publications/
 
 2. SE Arthur, A Mottok, R Cojocaru, A Jiang, BM Grande, M Alcaide, C Rushton, D Ennishi, **P Kumar Lat** et al., (2019) FUNCTIONAL CHARACTERIZATION OF NFKBIZ 3′ UTR MUTATIONS IN DIFFUSE LARGE B‐CELL LYMPHOMA. **_Hematological Oncology_**  37, 74-75
 
+
 **_PhD Thesis_**
+
 [**Lat PK** (2021) Novel secondary structures of DNA; and development of a sensitive methodology for capturing DNA/RNA G-quadruplexes from living Drosophila salivary glands](https://summit.sfu.ca/item/34682)
 
 **_bioRxiv_**
