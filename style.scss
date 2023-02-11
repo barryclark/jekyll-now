@@ -29,7 +29,7 @@ body {
   padding: 0 10px;
   width: 100%;
 }
-#grid_content{
+#main {
   display: grid;
   max-width: 800px;
   grid-template-columns: repeat(2, 1fr);
