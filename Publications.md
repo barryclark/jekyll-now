@@ -29,7 +29,8 @@ permalink: /Publications/
 
 **_PhD Thesis_**
 
-[**Lat PK** (2021) Novel secondary structures of DNA; and development of a sensitive methodology for capturing DNA/RNA G-quadruplexes from living Drosophila salivary glands](https://summit.sfu.ca/item/34682)
+* [**Lat PK** (2021) Novel secondary structures of DNA; and development of a sensitive methodology for capturing DNA/RNA G-quadruplexes from living Drosophila salivary glands](https://summit.sfu.ca/item/34682)
+
 
 **_bioRxiv_**
 
