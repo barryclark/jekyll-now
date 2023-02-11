@@ -6,24 +6,15 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ post.https://www.machinelearningnuggets.com/decision-trees-and-random-forests/ }}">{{ post.Decision Trees and Random Forests(Building and optimizing decision tree and random forest models) }}</a></h1>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.Decision Trees and Random Forests(Building and optimizing decision tree and random forest models) }}</a></h1>
 
       <div class="entry">
         {{ post.excerpt }}
       </div>
       
-      <a href="https://www.machinelearningnuggets.com/decision-trees-and-random-forests" class="read-more">Learn More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Learn More 💨{{ post.title }}</a>
+      
     </article>
   
-   <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.https://www.machinelearningnuggets.com/decision-trees-and-random-forests/ }}">{{ post.Decision Trees and Random Forests(Building and optimizing decision tree and random forest models) }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ post.https://www.machinelearningnuggets.com/decision-trees-and-random-forests/ }}" class="read-more">Learn More</a>
-    </article>
   {% endfor %}
 </div>
