@@ -4,6 +4,9 @@ title: 'Hello, and welcome to my hub for all my blog posts on DS, ML, DL and mor
 published: true
 ---
 
+{% if user %}
+  Hello, {{ user.name }}!
+{% endif %}
 
 <ul>
   {% for post in site.posts %}
