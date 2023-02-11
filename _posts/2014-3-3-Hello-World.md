@@ -5,6 +5,10 @@ published: true
 ---
 
 
-## This site contains links to all my blog post on DS, ML, DL. 
-
-**Feel free to learn from all the topics I have covered.**
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.https://www.machinelearningnuggets.com/decision-trees-and-random-forests/ }}">{{ post.Decision Trees and Random Forests(Building and optimizing decision tree and random forest models) }}</a>
+    </li>
+  {% endfor %}
+</ul>
