@@ -20,31 +20,16 @@ Prefabs/Rooms/RoomComponent/Room…의 폴더구조에서 Rooms의 Prefab은 Roo
 </div></details>
 
 ## Prefab
+### Prefab
+{% include _shared_block/_unity/Unity_Prefab_01_Default.md %}
 
-- [ ]  어떻게 관리할 것인가?
-- [ ]  Prefab connection이란?
+### Nested Prefab
+{% include _shared_block/_unity/Unity_Prefab_02_NestedPrefab.md %}
 
-[프리팹](https://docs.unity3d.com/kr/2020.3/Manual/Prefabs.html)
-
-Unity의 프리팹 시스템을 이용하면 게임 오브젝트를 생성, 설정 및 저장할 수 있으며, 해당 게임 오브젝트의 모든 컴포넌트, 프로퍼티 값, 자식 게임 오브젝트를 재사용 가능한 에셋으로 만들 수 있습니다. 
-
-* 프리팹 에셋은 씬에 새로운 프리팹 인스턴스를 만들기 위한 템플릿 역할을 합니다.
-* 프리팹안에 프리팹이 있을 경우, 굉장히 복잡해 집니다.
-
-<details><summary>프리팹</summary>
-<div markdown="1">
-
-[프리팹](https://docs.unity3d.com/kr/current/Manual/Prefabs.html)
-
-https://noahstory.tistory.com/26
-
-</div></details>
-
-* Enum은 정수로 저장됩니다. 
-  * Enum의 수를 늘리거나 줄일 경우, 예를 들어 { A, B ... }에서 { B ... }로 변경할 경우, 기존에 있던 A값이 B로 변경됩니다.  
+### Prefab Variants
+{% include _shared_block/_unity/Unity_Prefab_03_PrefabVariants.md %}
 
 ## Package
-
 - [ ]  패키지
     - 패키지를 내보낼 수 있으며, 당연하게 패키지를 불러올 수 있다.
 - [ ] Asset을 구매하면 Unity의 PackageManager에서 Asset을 볼 수 있습니다.
