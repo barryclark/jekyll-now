@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am a {Software Engineer | Data Scientist | Machine Learning} with a palpable passion and keen eye for building models that fix problems and sharing knowledge. 
+I am a ** Software Engineer | Data Scientist | Machine Learning Engineer** with a palpable passion and keen eye for building models that fix problems and sharing knowledge. 
 
 I am eager to join new Data Science, and Machine Learning challenges to learn and use my expertise to solve problems and help companies achieve their goals.
 
