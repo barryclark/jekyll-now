@@ -32,7 +32,7 @@ body {
 .posts{
 	
   display: grid;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
 	
   @include mobile {	  
@@ -41,6 +41,10 @@ body {
   width:100%;
   margin:0 auto;
   }
+
+}
+.post{
+  max-width: fit-content;
 
 }
 h1, h2, h3, h4, h5, h6 {
