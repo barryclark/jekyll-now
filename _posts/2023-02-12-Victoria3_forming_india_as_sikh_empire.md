@@ -48,7 +48,7 @@ Now let’s go over the strategy I used.
 
 8. At this stage we can launch a naval invasion of British isles, remember to launch two seperate invasion at the same time, as the AI would only defend one and let the other pass. If your military is big enough you would easily be able to take over British Isles in not time, keep a few units on defence against EIC, not need to take any more land from them for now.
 
-<h3><I>Empire Under the Pun</I><h3>
+<h3><I>Empire Under the Pun</I></h3>
 
 9. With British defeated its colonies are for the taking, especially EIC which we can now puppet along with its own puppets, note at this stage due to your infamy you might have a few nations taking EIC's side to defeat you. But as you now have British forces as well to support you it should not be a big challenge.
 
