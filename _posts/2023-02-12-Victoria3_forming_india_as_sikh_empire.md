@@ -54,12 +54,13 @@ Now let’s go over the strategy I used.
 
 10. Once you have made EIC your vassal try to push out French from madras port and Portugal from goa to unite rest of Indian territory, at this stage you can form INDIA.
 
-<h3></I>Celebrate/I></h3>
+<h3><I>Celebrate</I></h3>
 
 -----------------------------------------------------------------------------------------------------------------
 
 <img title="Victory!!" src="../images/posts/post_4/ss_1.png" alt="Victoria 3 cover.">
 
 -----------------------------------------------------------------------------------------------------------------
+
 
 <I>btw its the sun coming up, you should go sleep now</I>
