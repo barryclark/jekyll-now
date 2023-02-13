@@ -92,7 +92,7 @@ Further you create the WAF rule which blocks all API calls initiated by your use
           "NotStatement": {
             "Statement": {
               "RegexPatternSetReferenceStatement": {
-                "ARN": "arn:aws:wafv2:eu-central-1:143338761663:regional/regexpatternset/cognito-block-all-public-api-calls/bc6fdf9b-2525-4c69-8cdb-44517a543a4a",
+                "ARN": "arn:aws:wafv2:REGION:ACCOUNT_NUMBER:regional/regexpatternset/REGEX_NAME/REGEX_ID",
                 "FieldToMatch": {
                   "SingleHeader": {
                     "Name": "x-amz-target"
@@ -154,7 +154,7 @@ An attacker can change the email attribute value of its own user to impersonate 
 
 ### The solution 
 
-* Make sure the *Keep original attribute value active when an update is pending* setting is on in all Cognito userpools.
+* Make sure the *Keep original attribute value active when an update is pending* setting is on in all your Cognito userpools.
 * Modify your applications to respect the *email_verified* and *phone_number_verified* claims.
 * If possible, modify your applications not to rely on modifiable attributes like email, username, etc. [**Instead use the combination of immutable subject (sub) and issuer (iss) claims to identify a user**](https://openid.net/specs/openid-connect-core-1_0.html#ClaimStability). You can find extra details about the Cognito ID Token Payload [**here**](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-using-the-id-token.html)
 
