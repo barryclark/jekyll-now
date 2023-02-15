@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Awesome start that you shouldn't do
+title: Nothing 
 published: true
 ---
 
