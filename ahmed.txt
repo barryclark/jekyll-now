@@ -1,0 +1,5 @@
+todo:
+-watch andrew overfitting (done)
+-add the write date to the blog
+-
+
