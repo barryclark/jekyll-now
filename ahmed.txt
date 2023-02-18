@@ -1,5 +1,7 @@
 todo:
 -watch andrew overfitting (done)
 -add the write date to the blog
--
+-see what are the correct words for the terminologies 
+used in the post
+-delete readme file
 
