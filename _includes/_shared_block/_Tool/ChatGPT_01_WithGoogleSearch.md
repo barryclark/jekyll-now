@@ -1,0 +1,1 @@
+Chrome Web store에서 `ChatGPT for search engines`를 이용하여 구글 검색과 Chat GPT에 질문하는 것을 동시에 할 수 있습니다.
