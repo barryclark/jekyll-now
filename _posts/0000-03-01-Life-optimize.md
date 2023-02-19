@@ -20,6 +20,7 @@ title: Life optimize
 **생각하지 않기 위하여**
 
 * [Who am I](/posts_optimize_life/WhoAmI)
+* [How to search](/posts_optimize_life/HowToSearch)
 * [How to blog](/posts_optimize_life/HowToBolg)
 * [How to study](/posts_optimize_life/HowToStudy)
 * [How to work](/posts_optimize_life/HowToWork)
