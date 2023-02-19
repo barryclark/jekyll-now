@@ -53,8 +53,3 @@ title: Life optimize
 
 * [UI Development](/posts_optimize_life/UI_Development)
 * [VR Development](/posts_optimize_life/VR_Development)
-
-**정리하기 위하여**
-
-* [지킬 블로그](/posts_optimize_life/Jekyll_blog)
-    - Jekyll

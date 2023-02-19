@@ -3,15 +3,29 @@ layout: post
 title: How to blog
 ---
 
-## 블로그 작성
-> 블로그는 기억의 궁전입니다.
-> 그림으로 기억합니다.
-> 글은 연결로 기억합니다.
 
-### 프로그래밍 언어의 정리
-1. 공식 문서의 **링크**를 중심으로 정리합니다.
-2. 블로그에는 기억하거나, 유용한, 경험적인 내용을 정리합니다.
+## Blog의 목적
 
-### 엔진 사용법의 정리
-1. 공식 문서의 **링크**를 중심으로 정리합니다.
-2. 이를 이용한, **간단한** 구현 예제를 토글로 정리합니다.
+{% include _shared_block/_Blog/Blog_01_Purpose.md %}
+
+## Workflow
+
+{% include _shared_block/_Blog/Blog_02_Workflow.md %}
+
+## Jekyll and Liquid
+
+{% include _shared_block/_Blog/Blog_03_JekyllAndLiquid.md %}
+
+## Post
+### SharedBlock
+
+{% include _shared_block/_Blog/Blog_Post_SharedBlock.md %}
+
+## Rule
+### Organize Official Documents
+
+{% include _shared_block/_Blog/Blog_Rule_OrganizeOfficialDocuments.md %}
+
+### Paper And Translation
+
+{% include _shared_block/_Blog/Blog_Rule_PaperAndTranslation.md %}
