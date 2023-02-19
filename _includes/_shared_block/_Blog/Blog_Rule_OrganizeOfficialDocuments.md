@@ -1,6 +1,4 @@
-<center><div markdown="1">
-
-```mermaid
+<center><div class="mermaid">
 flowchart TD
 
 subgraph 공식문서를 정리하기
@@ -17,8 +15,6 @@ UnderstandDocumentPurpose-->CheckPriority
 CheckPriority-->SummarizeInformation
 SummarizeInformation-->MakeListAndVisualization
 MakeListAndVisualization-->AddSample
-```
-
 </div></center>
 
 * 엔진의 공식문서는 도구모음과 도구를 사용하는 설명집으로 생각하고 정리합니다. 따라서 도구들이 뭐가 있고, 사용한 예시들을 모아 정리합니다.

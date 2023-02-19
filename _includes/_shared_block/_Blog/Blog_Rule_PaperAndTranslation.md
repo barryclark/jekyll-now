@@ -1,6 +1,4 @@
-<center><div markdown="1">
-
-```mermaid
+<center><div class="mermaid">
 flowchart TD
 
 ReadFirst(논문의 전체적인 내용을 이해하기 위해 원문을 철저하게 읽어야 합니다.)
@@ -14,6 +12,4 @@ ReadFirst--영어 논문이 아닌 경우-->Understand
 Translate-->ReviewTranslation
 ReviewTranslation-->Understand
 Understand-->Divide
-```
-
 </div></center>
