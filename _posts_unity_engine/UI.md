@@ -3,7 +3,7 @@ layout: post
 title: UI
 ---
 ## GUI
-{% include _shared_block/_Concept/Concept_GUI.md %}
+{% include _shared_block/_Concept/GUI.md %}
 
 ## UI
 {% include _shared_block/_unity/Unity_UI.md %}
