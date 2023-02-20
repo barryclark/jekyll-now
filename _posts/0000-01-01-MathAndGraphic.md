@@ -3,25 +3,11 @@ layout: post
 title: Math & Graphic
 ---
 
-> 이페이지는
+> "수학은 대상을 보다 명확하게 이해하고, 문제를 보다 정확하게 해결하는 데 도움을 준다."는 수학의 중요성을 강조하는 격언입니다.
 > 
-> 1. 엔진을 이미 능숙하게 사용할 줄 알며
-> 2. 수학식이나 구현방법이 기억이 안날 경우 참고
+> 수학은 현실 세계를 모델링하고, 문제 해결에 필요한 분석과 추론을 수행하는 데에 매우 유용한 도구입니다. 예를 들어, 수학을 사용하여 공학, 물리학, 경제학 등 다양한 분야에서 문제를 해결할 수 있습니다. 또한, 수학은 추상적인 개념을 이해하고, 문제를 더욱 정확하게 분석할 수 있도록 도와줍니다.
 > 
-> 하는 것을 목적으로 만들어졌습니다.
-
-## Math
-<details><summary>Books</summary>
-<div markdown="1">
-
-- [ ] [선형대수학 Linear Algebra](http://matrix.skku.ac.kr/2015-Album/BigBook-LinearAlgebra-2015.pdf)
-- [ ] [수치해석](http://www.ktword.co.kr/word/abbr_view.php?nav=&m_temp1=1064&id=751)
-- [ ] [NumericalRecipesinC](http://www.grad.hr/nastava/gs/prg/NumericalRecipesinC.pdf)
-- [ ] GamePhysicsCookbook (game-physics-cookbook_compress)
-- [ ] [LIBIGL](https://libigl.github.io/tutorial/)
-- [ ] [Interactive Mesh Processing with libigl in Unreal Engine 4.24](http://www.gradientspace.com/tutorials/2020/1/2/libigl-in-unreal-engine)
-
-</div></details>
+> 따라서, 수학은 더 나은 사고력과 문제 해결 능력을 갖추기 위한 필수적인 학문 중 하나입니다. 수학적 사고력을 기르고 수학을 잘 이해하는 것은 다양한 분야에서 성공적인 경력을 쌓는 데에도 매우 중요합니다.
 
 백터와 선형공간
 * [Vector](/posts_math/Vector)
