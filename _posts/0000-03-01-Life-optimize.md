@@ -3,6 +3,9 @@ layout: post
 title: Life optimize
 ---
 
+> 조급함에 눈 앞에서만 물건을 찾으려 하면 바로 옆에 있음에도 물건을 찾지 못합니다.
+> 조급하면, 오히려 한걸음 물러서서 더 넓은 시야로 바라보도록 합니다.
+
 **생각하지 않기 위하여**
 
 * [Who am I](/posts_optimize_life/WhoAmI)
