@@ -13,7 +13,7 @@ These are some of the articles I wrote and collaborated on with colleagues over 
 ### <a href="https://docs.cohere.ai/intro-to-llms/">Intro to Large Language Models with Cohere</a>
 <div class="row two-column-text">
     <div class="col-md-6 col-xs-12">
-  <a href="https://docs.cohere.ai/intro-to-llms/"><img src="https://docs.cohere.ai/img/intro-llms/text-to-text-or-embedding-language-model.png" class="small-image"/></a>
+  <a href="https://docs.cohere.ai/intro-to-llms/"><img src="https://files.readme.io/0a9715d-IntroToLLM_Visual_1.svg" class="small-image"/></a>
     </div>
     <div class="col-md-6 col-xs-12">
     <p>This is a high-level intro to large language models to people who are new to them. It establishes the difference between generative (GPT-like) and representation (BERT-like) models and examples use cases for them.</p>
@@ -25,7 +25,7 @@ These are some of the articles I wrote and collaborated on with colleagues over 
 
 <div class="row two-column-text">
     <div class="col-md-6 col-xs-12">
-  <a href="https://docs.cohere.ai/prompt-engineering-wiki/"><img src="/images/cohere/language-model-input-prompt.png" class="small-image"/></a>
+  <a href="https://docs.cohere.ai/prompt-engineering-wiki/"><img src="https://files.readme.io/db285b8-PromptEngineering_Visual_2.svg" class="small-image"/></a>
     </div>
     <div class="col-md-6 col-xs-12">
         <p>Massive GPT models open the door for a new way of programming. If you structure the input text in the right way, you can useful (and often fascinating) results for a lot of taasks (e.g. text classification, copy writing, summarization...etc).
@@ -39,7 +39,7 @@ These are some of the articles I wrote and collaborated on with colleagues over 
 
 <div class="row two-column-text">
     <div class="col-md-6 col-xs-12">
-  <a href="https://docs.cohere.ai/text-summarization-example/"><img src="https://github.com/cohere-ai/notebooks/raw/main/notebooks/images/summarization.png" class="small-image"/></a>
+  <a href="https://docs.cohere.ai/text-summarization-example/"><img src="https://files.readme.io/296454c-TextSummarization_Visual_1.svg" class="small-image"/></a>
     </div>
     <div class="col-md-6 col-xs-12">
     <p>This is a walkthrough of creating a simple summarization system. It links to a jupyter notebook which includes the code to start experimenting with text generation and summarization.</p>
@@ -52,7 +52,7 @@ These are some of the articles I wrote and collaborated on with colleagues over 
 
 <div class="row two-column-text">
     <div class="col-md-6 col-xs-12">
-  <a href="https://docs.cohere.ai/semantic-search/"><img src="https://github.com/cohere-ai/notebooks/raw/main/notebooks/images/basic-semantic-search-overview.png?3" class="small-image"/></a>
+  <a href="https://docs.cohere.ai/semantic-search/"><img src="https://files.readme.io/4ec00e1-SemanticSearch_Visual_1.svg" class="small-image"/></a>
     </div>
     <div class="col-md-6 col-xs-12">
     <p>Semantic search has to be one of the most exciting applications of sentence embedding models. This tutorials implements a "similar questions" functionality using sentence embeddings and a a vector search library.</p>
@@ -65,7 +65,7 @@ These are some of the articles I wrote and collaborated on with colleagues over 
 
 <div class="row two-column-text">
     <div class="col-md-6 col-xs-12">
-  <a href="https://docs.cohere.ai/finetuning-representation-models/"><img src="https://docs.cohere.ai/img/finetuning-rep/semantic-embed-labeled.png" class="small-image"/></a>
+  <a href="https://docs.cohere.ai/docs/training-a-representation-model"><img src="https://files.readme.io/699aead-TrainingRepModels_Visual_4.svg" class="small-image"/></a>
     </div>
     <div class="col-md-6 col-xs-12">
     <p>Finetuning tends to lead to the best results language models can achieve. This article explains the intuitions around finetuning representation/sentence embedding models. I've added a couple more visuals to the <a href="https://twitter.com/JayAlammar/status/1490712428686024705">Twitter thread</a>.</p>
@@ -78,7 +78,7 @@ These are some of the articles I wrote and collaborated on with colleagues over 
 
 <div class="row two-column-text">
     <div class="col-md-6 col-xs-12">
-  <a href="https://docs.cohere.ai/token-picking/"><img src="https://docs.cohere.ai/img/token-picking/language-model-probability-distribution-output-tokens.png" class="small-image"/></a>
+  <a href="https://docs.cohere.ai/token-picking/"><img src="https://files.readme.io/ab291f6-Top-KTop-P_Visual_4.svg" class="small-image"/></a>
     </div>
     <div class="col-md-6 col-xs-12">
         <p>This one is a little bit more technical. It explains the parameters you tweak to adjust a GPT's <i>decoding strategy</i> -- the method with which the system picks output tokens. 
@@ -91,7 +91,7 @@ These are some of the articles I wrote and collaborated on with colleagues over 
 
 <div class="row two-column-text">
     <div class="col-md-6 col-xs-12">
-  <a href="https://docs.cohere.ai/text-classification-embeddings/"><img src="https://github.com/cohere-ai/notebooks/raw/main/notebooks/images/simple-classifier-embeddings.png" class="small-image"/></a>
+  <a href="https://docs.cohere.ai/text-classification-embeddings/"><img src="https://files.readme.io/ee56264-Controlling_Generation_with_Top-K__Top-P_Visual_1.svg" class="small-image"/></a>
     </div>
     <div class="col-md-6 col-xs-12">
         <p>
