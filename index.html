@@ -2,17 +2,41 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<div class="row">
+  <div class="column" style="background-color:rgb(229, 228, 228);">
+    <h2>简体版</h2>
+    
+    <p>
+      <div class="posts">
+        <ol>
+        {% for post in site.posts %}
+        {% if post.url contains "zh-tw" %}
 
-      <div class="entry">
-        {{ post.excerpt }}
+          {% else %}
+          <li><a href="{{ site.baseurl }}{{ post.url }}" class="read-more">{{ post.title }}</a><br></li>
+          {% endif %}
+        {% endfor %}
+        </ol>
       </div>
+    </p>
+  </div>
+  <div class="column" style="background-color:rgb(221, 221, 221);">
+    <h2>繁體版</h2>
+    <p>
+      <div class="posts">
+        <ol>
+        {% for post in site.posts %}
+          {% if post.url contains "zh-tw" %}
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+
+          <li><a href="{{ site.baseurl }}{{ post.url }}" class="read-more">{{ post.title }}</a><br></li>
+          {% endif %}
+        {% endfor %}
+        </ol>
+      </div>
+    </p>
+  </div>
 </div>
+
+
