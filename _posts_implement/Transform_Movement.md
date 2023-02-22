@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Move parent
+title: Movement
 ---
 
 ## Move parent
@@ -10,3 +10,7 @@ title: Move parent
 {% include _shared_block/_unity/Unity_Transform_MoveParent_TransformTo.md %}
 
 {% include _shared_block/_unity/Unity_Transform_MoveParent.md %}
+
+## Pivot
+
+{% include _shared_block/_implement/Pivot.md %}
