@@ -80,7 +80,7 @@ Most systems have a few extra dependencies hiding in the crevices. Is your CI bu
 ### Examples
 
 | Score  | Description                                                                                                                    |
-|---|---------------------------------------------------------------|
+|:-:|---------------------------------------------------------------|
 | A | dependabot sends an automerge PR for every updated dependency |
 | B | dependabot sends a PR but a human reviews and approves        |
 | F | we use Python 2.7 to automate the release process             |
@@ -92,7 +92,7 @@ Details vary widely between system. A good question to start with is "How do we 
 ### Examples
 
 | Score  | Description                                                                                                                    |
-|---|-------------------------------------------------------------------------|
+|:-:|-------------------------------------------------------------------------|
 | B | We get paged when things go wrong.                                      |
 | D | Ops has learned to watch for out-of-memory errors and reboot the server.|
 | F | We find out that the site is down when our users complain.              |
