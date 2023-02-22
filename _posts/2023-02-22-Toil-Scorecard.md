@@ -5,18 +5,10 @@ title: The Toil Scorecard
 
 When a developer makes a code change to the software system, how long will it take to validate that the change is correct? What about rotating credentials or ensuring that all 3rd-party dependencies are up to date? How do we observe that production is healthy and operating correctly? The Toil Scorecard gives teams a way to measure these costs and make toil visible to the organization.
 
-# Measure time and decisions
-
-Measure both **how long** it takes to do these activities and how many **decisions** are required, because executive function is a limited resource for everyone. 
-
-Aggregate per month. In the Toil Scorecard we don't need to differentiate between "fast + frequent" vs. "slow + seldom".
-
-A single digit of precision is plenty. Even order-of-magnitude is good enough, especially at the beginning.
-
 # Grade the automation maturity
 
 | Score | Description                                                                           |
-|-------|---------------------------------------------------------------------------------------|
+|:-----:|---------------------------------------------------------------------------------------|
 | A     | Fully automated; a human does not need to be involved.                                |
 | B     | Automated but a human needs to know how to wield or interpret the automation.         |
 | C     | The process is thorougly documented in a playbook that a non-expert human can follow. |
@@ -26,6 +18,14 @@ A single digit of precision is plenty. Even order-of-magnitude is good enough, e
 Give a separate score for each area.
 
 There is no partial credit within an area. For example, if some parts are written down in a playbook but other parts are in the expert's head, then score a `D`.
+
+# Measure time and decisions
+
+Measure both **how long** it takes to do these activities and how many **decisions** are required, because executive function is a limited resource for everyone. 
+
+Aggregate per month. In the Toil Scorecard we don't need to differentiate between "fast + frequent" vs. "slow + seldom".
+
+A single digit of precision is plenty. Even order-of-magnitude is good enough, especially at the beginning.
 
 # The Areas
 
@@ -64,14 +64,16 @@ Details vary widely between systems. A good question to start with is "If the hu
 ### Examples
 
 | Score  | Description                                                                                                                    |
-|---|---------------------------------------------------------------------|
+|:-:|---------------------------------------------------------------------|
 | A | SSL certificates are automatically updated well before they expire. |
+| D | Every Monday you clear out the old logs so we don't run out of disk space. |
 
 ## Dependencies
 
 Are we using the latest version of every 3rd-party dependency?
 How do we know when a new version becomes available?
 How do we know if it contains an urgent security fix?
+What is the process for updating?
 
 Most systems have a few extra dependencies hiding in the crevices. Is your CI build using the latest version of the OS? Is your build system using the latest version of Maven/CMake/Bazel/Gradle? Be sure to include these in your assesment.
 
