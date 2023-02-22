@@ -29,14 +29,13 @@ There is no partial credit within an area. For example, if some parts are writte
 
 # The Areas
 
-
 ## Validation
 
 Test that an *arbitrary* code change works correctly and does not break existing behaviors, without relying on a mental model of the system.
 
 ### Examples
 
-|   |                                                                                                                     |
+| Score  | Description                                                                                                                    |
 |:-:|---------------------------------------------------------------------------------------------------------------------|
 | A | Automated tests cover everything and automatically run in CI with every change.                                     |
 | B | A human executes the automated tests and interprets the results.                                                    |
@@ -52,7 +51,7 @@ If additional validation is necessary to release ("hardening sprint" or "manual 
 
 ### Examples
 
-|    |                                                                                                                                   |
+| Score  | Description                                                                                                                    |
 |:--:|-----------------------------------------------------------------------------------------------------------------------------------|
 | A  | Every time a PR is merged to `main` it is automatically deployed to production.                                                   |
 | C  | We have a release playbook. Both the experienced team members and the person that joined yesterday can follow it in the same way. |
@@ -64,7 +63,7 @@ Details vary widely between systems. A good question to start with is "If the hu
 
 ### Examples
 
-|   |                                                                     |
+| Score  | Description                                                                                                                    |
 |---|---------------------------------------------------------------------|
 | A | SSL certificates are automatically updated well before they expire. |
 
@@ -78,7 +77,7 @@ Most systems have a few extra dependencies hiding in the crevices. Is your CI bu
 
 ### Examples
 
-|   |                                                               |
+| Score  | Description                                                                                                                    |
 |---|---------------------------------------------------------------|
 | A | dependabot sends an automerge PR for every updated dependency |
 | B | dependabot sends a PR but a human reviews and approves        |
@@ -89,7 +88,8 @@ Most systems have a few extra dependencies hiding in the crevices. Is your CI bu
 Details vary widely between system. A good question to start with is "How do we know that production is healthy?"
 
 ### Examples
-|   |                                                                         |
+
+| Score  | Description                                                                                                                    |
 |---|-------------------------------------------------------------------------|
 | B | We get paged when things go wrong.                                      |
 | D | Ops has learned to watch for out-of-memory errors and reboot the server.|
