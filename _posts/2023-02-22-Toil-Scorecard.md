@@ -41,7 +41,7 @@ Test that an *arbitrary* code change works correctly and does not break existing
 | B | A human executes the automated tests and interprets the results.                                                    |
 | C | There's a document that says "if you change the Payments module, you must manually verify that payments still work" |
 | D | The dev who wrote the Payments module knows how to test it and watches for PRs that touch that area.                |
-| E | We don't know that the Payments module requires special treatment, because the dev who wrote Payments has moved on. |
+| F | We don't know that the Payments module requires special treatment, because the dev who wrote Payments has moved on. |
 
 ## Release
 
