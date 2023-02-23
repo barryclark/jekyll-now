@@ -88,3 +88,9 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - environment.yml
+  - poetry.lock
+  - pyproject.toml
+  - _code/*
+  - .devcontainer/*
+  - .vim/*

@@ -1,8 +1,0 @@
-jupyterlab==2.1.2
-jupytext==1.4.2
-matplotlib==3.2.1
-nbconvert==5.6.1
-numpy==1.18.4
-pandas==1.0.3
-seaborn==0.10.1
-

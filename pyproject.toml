@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "beekill95-github-io"
+version = "0.1.0"
+description = ""
+authors = ["Bao Quan <nguyenmbquan95@gmail.com>"]
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.10"
+matplotlib = "^3.7.0"
+numpy = "^1.24.2"
+pandas = "^1.5.3"
+seaborn = "^0.12.2"
+numpyro = "^0.11.0"
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^3.6.1"
+jupytext = "^1.14.4"
+nbconvert = "^7.2.9"
+autopep8 = "^2.0.1"
+pylint = "^2.16.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
