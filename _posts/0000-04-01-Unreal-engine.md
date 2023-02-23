@@ -3,21 +3,6 @@ layout: post
 title: Unreal engine
 ---
 
-- [ ] Level, Actor, Component
-- [ ] AutomationTool, UnrealBuildTool... 그리고 이를 이용한 배치파일
-
-# Unreal engine
-## 엔진코드 보고 공부하기
-엔진코드를 보면 설계, 패턴, 개념 등 많은 것을 배울 수 있습니다. 왜 라는 질물을 계속해야하며, 엔진코드에서 왜 저렇게 했는지 모를때는, Git blame을 볼 수 있습니다. 설계의 의도를 보면 자신이 얼마나 많은 것을 모르는지 알 수 있습니다.
-
-## Links
-
-|링크|설명|
-|:--|---|
-|[넥슨의 NDC](http://ndcreplay.nexon.com/index.html#)|모범 사례들|
-|[TA 업무 파해치기](https://www.unrealengine.com/ko/tech-blog/jobs-in-unreal-engine---technical-artist)|TA에 대한 이해|
-|[수까락의 프로그래밍 이야기](http://egloos.zum.com/sweeper/v/3208657)|언리얼 참고 사이트|
-
 # Development
 * [Understand Code](/posts_unreal_engine/UnderstandCode)
 * [Log and debug](/posts_unreal_engine/Log-Debug-Console)
