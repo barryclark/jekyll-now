@@ -79,3 +79,7 @@ transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);
 ## Component
 ### GetComponent
 부모단이나 자식단에서 Component를 가져오는 것은 관리가 어려워지는 문제가 있습니다. 주로 해당 Object 내에서만 GetComponent하는 식으로 사용합니다.
+
+### MonoBehaviour
+
+{% include _shared_block/_unity/Unity_MonoBehaviour.md %}
