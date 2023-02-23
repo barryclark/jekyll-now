@@ -35,13 +35,13 @@ Test that an *arbitrary* code change works correctly and does not break existing
 
 ### Examples
 
-| Score  | Description                                                                                                                    |
-|:-:|---------------------------------------------------------------------------------------------------------------------|
-| A | Automated tests cover everything and automatically run in CI with every change.                                     |
-| B | A human executes the automated tests and interprets the results.                                                    |
-| C | There's a document that says "if you change the Payments module, you must manually verify that payments still work" |
-| D | The dev who wrote the Payments module knows how to test it and watches for PRs that touch that area.                |
-| F | We don't know that the Payments module requires special treatment, because the dev who wrote Payments has moved on. |
+| Score | Description                                                                                                         |
+|:-----:|---------------------------------------------------------------------------------------------------------------------|
+| A     | Automated tests cover everything and automatically run in CI with every change.                                     |
+| B     | A human executes the automated tests and interprets the results.                                                    |
+| C     | There's a document that says "if you change the Payments module, you must manually verify that payments still work" |
+| D     | The dev who wrote the Payments module knows how to test it and watches for PRs that touch that area.                |
+| F     | We don't know that the Payments module requires special treatment, because the dev who wrote Payments has moved on. |
 
 ## Release
 
@@ -51,11 +51,11 @@ If additional validation is necessary to release ("hardening sprint" or "manual 
 
 ### Examples
 
-| Score  | Description                                                                                                                    |
-|:--:|-----------------------------------------------------------------------------------------------------------------------------------|
-| A  | Every time a PR is merged to `main` it is automatically deployed to production.                                                   |
-| C  | We have a release playbook. Both the experienced team members and the person that joined yesterday can follow it in the same way. |
-| D  | Each person "knows" how to release but they each do it differently.                                                               |
+| Score | Description                                                                                                                       |
+|:-----:|-----------------------------------------------------------------------------------------------------------------------------------|
+| A     | Every time a PR is merged to `main` it is automatically deployed to production.                                                   |
+| C     | We have a release playbook. Both the experienced team members and the person that joined yesterday can follow it in the same way. |
+| D     | Each person "knows" how to release but they each do it differently.                                                               |
 
 ## Maintenance
 
@@ -63,10 +63,10 @@ Details vary widely between systems. A good question to start with is "If the hu
 
 ### Examples
 
-| Score  | Description                                                                                                                    |
-|:-:|---------------------------------------------------------------------|
-| A | SSL certificates are automatically updated well before they expire. |
-| D | Every Monday you clear out the old logs so we don't run out of disk space. |
+| Score | Description                                                                |
+|:-----:|----------------------------------------------------------------------------|
+| A     | SSL certificates are automatically updated well before they expire.        |
+| D     | Every Monday you clear out the old logs so we don't run out of disk space. |
 
 ## Dependencies
 
@@ -79,11 +79,11 @@ Most systems have a few extra dependencies hiding in the crevices. Is your CI bu
 
 ### Examples
 
-| Score  | Description                                                                                                                    |
-|:-:|---------------------------------------------------------------|
-| A | dependabot sends an automerge PR for every updated dependency |
-| B | dependabot sends a PR but a human reviews and approves        |
-| F | we use Python 2.7 to automate the release process             |
+| Score | Description                                                   |
+|:-----:|---------------------------------------------------------------|
+| A     | dependabot sends an automerge PR for every updated dependency |
+| B     | dependabot sends a PR but a human reviews and approves        |
+| F     | we use Python 2.7 to automate the release process             |
 
 ## Observability
 
