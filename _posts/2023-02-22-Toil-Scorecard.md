@@ -38,10 +38,12 @@ Test that an *arbitrary* code change works correctly and does not break existing
 | Score | Description                                                                                                         |
 |:-----:|---------------------------------------------------------------------------------------------------------------------|
 | A     | Automated tests cover everything and automatically run in CI with every change.                                     |
-| B     | A human executes the automated tests and interprets the results.                                                    |
+| B     | A human executes the automated tests and/or interprets the results.                                                 |
 | C     | There's a document that says "if you change the Payments module, you must manually verify that payments still work" |
 | D     | The dev who wrote the Payments module knows how to test it and watches for PRs that touch that area.                |
 | F     | We don't know that the Payments module requires special treatment, because the dev who wrote Payments has moved on. |
+
+If you have dedicated testers, include their activity in this assessment.
 
 ## Release
 
@@ -54,8 +56,10 @@ If additional validation is necessary to release ("hardening sprint" or "manual 
 | Score | Description                                                                                                                       |
 |:-----:|-----------------------------------------------------------------------------------------------------------------------------------|
 | A     | Every time a PR is merged to `main` it is automatically deployed to production.                                                   |
+| B | (TBD) |
 | C     | We have a release playbook. Both the experienced team members and the person that joined yesterday can follow it in the same way. |
 | D     | Each person "knows" how to release but they each do it differently.                                                               |
+| F | (TBD) |
 
 ## Maintenance
 
@@ -66,7 +70,10 @@ Details vary widely between systems. A good question to start with is "If the hu
 | Score | Description                                                                |
 |:-----:|----------------------------------------------------------------------------|
 | A     | SSL certificates are automatically updated well before they expire.        |
+| B | (TBD) |
+| C | (TBD) |
 | D     | Every Monday you clear out the old logs so we don't run out of disk space. |
+| F | (TBD) |
 
 ## Dependencies
 
@@ -83,17 +90,23 @@ Most systems have a few extra dependencies hiding in the crevices. Is your CI bu
 |:-----:|---------------------------------------------------------------|
 | A     | dependabot sends an automerge PR for every updated dependency |
 | B     | dependabot sends a PR but a human reviews and approves        |
+| C | (TBD) |
+| D | (TBD) |
 | F     | we use Python 2.7 to automate the release process             |
 
 ## Observability
 
 Details vary widely between system. A good question to start with is "How do we know that production is healthy?"
 
+If you have dedicated SysOps or DevOps folks, include their activity in this assessment.
+
 ### Examples
 
 | Score  | Description                                                                                                                    |
 |:-:|-------------------------------------------------------------------------|
+| A | (TBD) |
 | B | We get paged when things go wrong.                                      |
+| C | (TBD) |
 | D | Ops has learned to watch for out-of-memory errors and reboot the server.|
 | F | We find out that the site is down when our users complain.              |
 
@@ -126,12 +139,13 @@ Assemble the answers to these questions into a scorecard, which might look like:
 
 # What's not covered
 
-Lots!
+Lots! For example:
 
 * What is the wall-clock latency in these areas?
-* How important is it to the business that this system has high quality and uptime?
-* Time spent reading and understanding code?
-* Time spent doing code reviews or revising changes in response to review feedback?
-* Time spent fixing defects or modifying features that aren't quite what customers want?
+* How important is it to the business that this system has high quality and uptime.?
+* Time spent reading and understanding code. (This is probably huge!)
+* Time spent doing code reviews or revising changes in response to review feedback.
+* Time spent fixing defects.
+* Time spent building the wrong feature because we didn't get feedback earlier.
 
-These are important concerns, but I'm deliberately not including them in the toil scorecard. Maybe they'll show up in some other diagnostic system?
+These are important concerns, but I'm deliberately not including them in the Toil Scorecard. Maybe they'll show up in some other diagnostic system?
