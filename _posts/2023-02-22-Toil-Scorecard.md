@@ -120,4 +120,18 @@ Assemble the answers to these questions into a scorecard, which might look like:
 
 * Use Arlo's Belshee's Automation-as-a-Process ([video](https://www.youtube.com/watch?v=ydq-KjGDRJg), [article](https://digdeeproots.substack.com/p/when-should-i-automate)) to quickly get to `B`.
 
+* We all have blind spots. We may think the tests are complete but then a defect slips through and shows us what we didn't account for. In these cases, lower the score appropriately, then do [Safeguarding](/Safeguarding) to address the hazard.
+
 * Extend this system to measure what is important in your context.
+
+# What's not covered
+
+Lots!
+
+* What is the wall-clock latency in these areas?
+* How important is it to the business that this system has high quality and uptime?
+* Time spent reading and understanding code?
+* Time spent doing code reviews or revising changes in response to review feedback?
+* Time spent fixing defects or modifying features that aren't quite what customers want?
+
+These are important concerns, but I'm deliberately not including them in the toil scorecard. Maybe they'll show up in some other diagnostic system?
