@@ -12,9 +12,11 @@ package.json
 
 # Python
 .venv
+__pycache__
 
 # doit stuffs
 .doit.db*
+
 
 # Jupyter notebook
 .ipynb_checkpoints
