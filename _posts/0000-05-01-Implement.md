@@ -14,6 +14,7 @@ title: Implement
 
 * [Movement](/posts_implement/Transform_Movement)
 
-## Graphics
+## Object
 
-* [Wiper effect](/posts_implement/WiperEffect)
+* [Cable](/posts_implement/Cable)
+* [Wiper](/posts_implement/Wiper)

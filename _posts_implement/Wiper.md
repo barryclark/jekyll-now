@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Wiper effect
+title: Wiper
 ---
 
 # Wiper effect
