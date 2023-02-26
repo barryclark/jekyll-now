@@ -2,6 +2,7 @@ arange
 axlabel
 Binh
 chunkify
+Constructocat
 dataframe
 distplot
 figsize
@@ -19,6 +20,8 @@ mathbb
 mathbf
 mathcal
 matplotlib
+Minh
+nguyenmbquan
 numpy
 Numpyro
 pyplot

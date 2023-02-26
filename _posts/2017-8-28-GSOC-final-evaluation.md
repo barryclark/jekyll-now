@@ -8,7 +8,7 @@ Here is some information about me. If you already know me, you can skip this par
 
 My name is Quan Nguyen. I'm currently a fourth year student. I'm in the process of doing my final project and after that I'll be thrown out of my school :((.
 
-Speaking of my school, it's located in Tan Binh district, Hochiminh city, Vietnam. The school's name is [Hochiminh University of Technology](http://www.hcmut.edu.vn/en), or HCMUT for short.
+Speaking of my school, it's located in Tan Binh district, Ho Chi Minh city, Vietnam. The school's name is [Ho Chi Minh University of Technology](http://www.hcmut.edu.vn/en), or HCMUT for short.
 
 And did I mention I originally from Vietnam? It's a great country with friendly people, great food and crazy traffic. It has many tourist attractions and some of them are world heritages. You should pay a visit to my country and experience its beauty.
 
@@ -16,7 +16,7 @@ Here comes the main subject of this blog post.
 
 # My GSOC Project
 
-I've heard about GSOC project since my second year. It is a great program to let students participate in open source projects and organizations. Ever since I knew about the program, I've wanted to take part in it. However, due to school projects and summer internship, I couldn't sign up in second and third year. Fortunately, my last student year allows for relatively more leasure time. Therefore, I can have free time to participate and contribute to the Mozilla organization and specifically the Firefox project.
+I've heard about GSOC project since my second year. It is a great program to let students participate in open source projects and organizations. Ever since I knew about the program, I've wanted to take part in it. However, due to school projects and summer internship, I couldn't sign up in second and third year. Fortunately, my last student year allows for relatively more leisure time. Therefore, I can have free time to participate and contribute to the Mozilla organization and specifically the Firefox project.
 
 Speaking of Mozilla, I've been a Firefox user for a very long time, maybe since I was in third grade. Back then, I didn't think that that some day, I'd be contributing to Firefox and making it a better browser for everyone. Now after a few months of working for Mozilla and having solved a number of bugs, I feel proud of myself for doing something useful for the Mozilla community.
 
@@ -56,7 +56,7 @@ However, there was a problem with my implementation of the second case: I set up
 Sessionstore collects the data entered in form input fields of web pages. If an input node doesn't have a unique ID, an xpath query is generated to uniquely identify that node in the form. Using the profile results from [Gecko Profiler](https://developer.mozilla.org/en-US/docs/Mozilla/Performance/Profiling_with_the_Built-in_Profiler), there are two culprits that make the form data collection really slow:
 
 * Form data collection depends on xpath query to filter out unwanted input nodes. The query is complicated and therefore slows down the process by a lot.
-* Eventhough there is a C++ helper to generate xpath for an input node, if the xpath query returns with a large amount of nodes, the data collection speed will suffer. It will make Firefox smoother if we can break the loop into chunks and execute those chunks in asynchronous fashion so that content thread has a chance to process users interactions.
+* Even though there is a C++ helper to generate xpath for an input node, if the xpath query returns with a large amount of nodes, the data collection speed will suffer. It will make Firefox smoother if we can break the loop into chunks and execute those chunks in asynchronous fashion so that content thread has a chance to process users interactions.
 
 Therefore, I filed the next two bugs to deal with each issue.
 
@@ -112,7 +112,7 @@ To recap, here is the list of bugs I've been working on during this year GSOC.
 | [1386206](https://bugzilla.mozilla.org/show_bug.cgi?id=1386206) | Breaking FormData's collect loop into chunks to be executed in idle dispatch |
 
 # Wrap up
-This has been a great experience for me to work with Mike and Dão, and all other engineers and developers at the Mozilla organization. At first, it was weird to work alone, from home and interact with other people through monitor screen. But after talking to Mike about the problem, he had taught me a lot about getting motives to keep working and deliver patches to the community. It does really help, but now I'm just getting more lazy. Sorry Mike!!! :)) Mike also teached me a lot about the tools, test suites, build configuration, etc. He also reviewed my code in great detailed and was helpful when I was in trouble. It was a pleasure to work with him and have had him as my mentor. Thank Mike for letting me work with you during the summer!!
+This has been a great experience for me to work with Mike and Dão, and all other engineers and developers at the Mozilla organization. At first, it was weird to work alone, from home and interact with other people through monitor screen. But after talking to Mike about the problem, he had taught me a lot about getting motives to keep working and deliver patches to the community. It does really help, but now I'm just getting more lazy. Sorry Mike!!! :)) Mike also taught me a lot about the tools, test suites, build configuration, etc. He also reviewed my code in great detailed and was helpful when I was in trouble. It was a pleasure to work with him and have had him as my mentor. Thank Mike for letting me work with you during the summer!!
 
 GSOC has been a great journey into the open source world. It allows students to participate in software projects and get to know development tools: version control, testing framework, IRC, etc. I'm sure we, students, have earned an invaluable experience during the summer. Thanks Google!!
 
