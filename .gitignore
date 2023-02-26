@@ -13,6 +13,9 @@ package.json
 # Python
 .venv
 
+# doit stuffs
+.doit.db*
+
 # Jupyter notebook
 .ipynb_checkpoints
 
