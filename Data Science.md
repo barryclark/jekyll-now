@@ -4,12 +4,12 @@ title: Data Science
 permalink: /Data Science/
 ---
 
-Github: [Github_Prince](https://github.com/princeklat03)
+Github: [Github_Prince](https://github.com/princeklat03){:target="_blank" rel="noopener"}
 
 ## Project 1: Reinforcement Learning
 <img src="/images/Reinforcement_learning.png" height="800" align="center"/>
 
-[Solution](https://github.com/princeklat03/Reinforcement-Learning/blob/main/Reinforcement%20Learning.ipynb)
+[Solution](https://github.com/princeklat03/Reinforcement-Learning/blob/main/Reinforcement%20Learning.ipynb){:target="_blank" rel="noopener"}
 
 ## Project 2: Unsupervised Image Seqmentation
 <p><b>Objective</b>:<br>
@@ -21,7 +21,7 @@ Find out the dimensions of the image and convert it in to a two-dimensional arra
 Use kmeans clustering with k set to 5 and cluster the image<br>
 Predict the cluster label of every pixel in the image and plot it back as an image<br>
 Find out the five dominant color in the image</p>
-[Solution](https://github.com/princeklat03/Unsupervised_Learning/blob/main/Unsupervised%20Learning.ipynb)
+[Solution](https://github.com/princeklat03/Unsupervised_Learning/blob/main/Unsupervised%20Learning.ipynb){:target="_blank" rel="noopener"}
 
 ## Project 3: Time Series Analysis
 <p>Domain – SEA Transportation focus – <b>forecast demand Business challenge/requirement</b> <br><br>
@@ -46,7 +46,7 @@ Month: Month in which traffic data was recorded<br>
 <b>Business benefits</b><br>
 Better utilization of planes will lead to decrease in cost and hence better bottom line</p>
 
-[Solution](https://github.com/princeklat03/Time-Series-Analysis/blob/main/Time%20Series%20Analysis.ipynb)
+[Solution](https://github.com/princeklat03/Time-Series-Analysis/blob/main/Time%20Series%20Analysis.ipynb){:target="_blank" rel="noopener"}
 
 ## Project 4: Association Rule Mining
 <p><b>Market Basket Analysis</b> There is an online transactional data of a retail store containing the information of different items sold in different countries<br><br>
@@ -54,7 +54,7 @@ Better utilization of planes will lead to decrease in cost and hence better bott
 
 <b>Strategy</b> Deploy apriori algorithm </p>
 
-[Solution](https://github.com/princeklat03/Association-Rules-Mining/blob/main/Association_Rules.ipynb)
+[Solution](https://github.com/princeklat03/Association-Rules-Mining/blob/main/Association_Rules.ipynb){:target="_blank" rel="noopener"}
 
 ## Project 5: Breast Cancer Prediction
 <br>
@@ -72,5 +72,5 @@ Missing attribute values: none<br><br>
 
 Class distribution: 357 benign, 212 malignant.</p>
 
-[Solution](https://github.com/princeklat03/Breast-Cancer/blob/main/BreastCancerPrediction.ipynb)
+[Solution](https://github.com/princeklat03/Breast-Cancer/blob/main/BreastCancerPrediction.ipynb){:target="_blank" rel="noopener"}
 
