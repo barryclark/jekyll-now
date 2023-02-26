@@ -13,6 +13,7 @@ numpy = "^1.24.2"
 pandas = "^1.5.3"
 seaborn = "^0.12.2"
 numpyro = "^0.11.0"
+doit = "^0.36.0"
 
 [tool.poetry.group.dev.dependencies]
 jupyterlab = "^3.6.1"
