@@ -1,0 +1,31 @@
+name: Spell Check
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v3.6.0
+    - name: Setup Poetry
+      uses: Gr1N/setup-poetry@v8
+    - name: Install dependencies
+      run: poetry install
+    - name: Install cspell
+      run: npm install -g cspell
+    - name: Spell Check
+      run: poetry run doit spellcheck
+

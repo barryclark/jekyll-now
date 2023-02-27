@@ -94,3 +94,5 @@ exclude:
   - _code/*
   - .devcontainer/*
   - .vim/*
+  - dodo.py
+  - .cspell/*
