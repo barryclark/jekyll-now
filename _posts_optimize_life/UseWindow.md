@@ -1,15 +1,20 @@
 ---
 layout: post
-title: Use window
+title: Use Window
 ---
 
-## Window
+## DarkNamer
 
-<details><summary>빠른 캡쳐</summary>
-<div markdown="1">
+{% include _shared_block/_Tool/Window_DarkNamer.md %}
 
-**Window + Shift + S**로 윈도우 기능을 이용해서 캡쳐할 수 있습니다.
+## DesktopCal
 
-**ctrl + v**로 붙여넣기 할 수 있습니다.
+{% include _shared_block/_Tool/Window_DesktopCal.md %}
 
-</div></details>
+## Snipping tool
+
+{% include _shared_block/_Tool/Window_SnippingTool.md %}
+
+## Sticky notes
+
+{% include _shared_block/_Tool/Window_Sticky_Notes.md %}
