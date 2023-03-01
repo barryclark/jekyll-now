@@ -31,3 +31,5 @@ title: Algorithm and data struct
 
 * [ShortestPath](/posts_algorithm_and_data_struct/ShortestPath)
     - Floyd-Warshall
+
+* [FABRIK](/posts_algorithm_and_data_struct/FABRICK)
