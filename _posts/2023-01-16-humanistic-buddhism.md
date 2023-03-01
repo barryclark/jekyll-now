@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 什么是人间佛教 | 为什么要推崇人间佛教
+title: 什么是人间佛教 | 为什么推崇人间佛教
 ---
 
 ![](../images/humanistic-buddhism-s.jpeg)
