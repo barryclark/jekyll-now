@@ -61,6 +61,16 @@
   twitter: "MediEvilWiki"
   instagram: "MediEvilWiki"
 - member:
+  id: "mdfw"
+  name: "Mystery Dungeon Franchise Wiki"
+  description: "The Mystery Dungeon Franchise Wiki (MDFW) is a publicly accessible and editable website for gathering useful information related to the Mystery Dungeon franchise. The wiki is a flexible web-based database of information made up entirely of user contributions, utilizing MediaWiki software."
+  logo: "/images/logos/mysterydungeon.jpg"
+  url: "https://mysterydungeonwiki.com/wiki/"
+  mainpage: "Mystery_Dungeon_Franchise_Wiki"
+  discord: "https://discord.com/invite/4dKnfpW"
+  twitter: "MDFW_EN"
+  instagram: "mysterydungeonwiki"
+- member:
   id: "rarewiki"
   name: "Rare Wiki"
   description: "Rare Wiki is a wiki dedicated to covering Rare Ltd. and their franchises (except for Banjo-Kazooie and Conker, as in-depth coverage of these two franchises can be found at Jiggywikki and Conker Wiki respectively)."
