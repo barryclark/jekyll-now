@@ -1,0 +1,45 @@
+Title: When mocks are OK
+
+Mocks are bad. But not always. Mocks are OK in the Three L's and TDA.
+
+You may not agree with me that mocks are bad. I'm delegating that topic to [Arlo's posts on the topic](https://arlobelshee.com/tag/no-mocks/).
+
+# Learning
+
+I want to refactor this code to make the mock go away but I can't think of a good way to do it.
+
+Yet. Maybe later on I'll learn about some design technique that I can apply. When I do, I can come back and refactor to eliminate the mock.
+
+In the meantime, we'll ship the mock.
+
+# Late
+
+I want to refactor this code to make the mock go away, but it would take too long.
+
+Maybe there's an emergency and we need this bugfix to be shipped ASAP, or maybe the company's cash flow is negative and we're about to go broke unless we can sell this new feature. Or maybe the stakeholders will cancel the project if we can't show progress. We can make a business decision to keep the current design + test around it with mocks. Next time we come back to this code we can make it a bit better.
+
+In the meantime, we'll ship the mock.
+
+# Legacy
+
+We have inherited (perhaps from ourselves) code that is so gnarly that we just can't untangle it all right now. 
+
+If we were to stop all feature development to clean up all the gnarly mess, the company would go out of business before we would finish. Instead, we'll untangle a bit today. Next time we touch this code we'll untangle a bit more.
+
+In the meantime, we'll ship the mock.
+
+# TDA - Tell, Don't Ask
+
+The original conception of object-oriented programming was around "message passing", not "function calls". An object can send a message to another object, but it can't demand information back. (In C#/Java/C++-type languages, this means that member functions don't have return values or `out` parameters.)
+
+Organizing code this way forces decoupling between classes, and makes it safe (and necessary) for classes to contain mutable state.
+
+The only way to test this kind of class is with a mock: "When I send message `X` to the class under test, verify that it sends message `Y`."
+
+Programs organized this way are extremely rare, although my understanding is it is the norm in SmallTalk. If you want to see more of this, check out the [GOOS Book](http://www.growing-object-oriented-software.com/).
+
+# Name the coupling
+
+As Arlo describes it, a great thing about unit tests is that they make coupling visible, and the evil thing about mocks that they suppress that critical signal.
+
+Except for TDA cases, we can make mocks less harmful by renaming them to append `_BecauseTheCodeIsBadlyCoupled`. Now the signal stays visible.
