@@ -92,7 +92,7 @@ theme: jekyll-theme-slate
 collections:
 - posts_math
 - posts_language
-- posts_CS_And_IT
+- posts_study
 - posts_algorithm_and_data_struct
 - posts_optimize_life
 - posts_unreal_engine
@@ -104,7 +104,7 @@ collections:
     output: true
   posts_language:
     output: true
-  posts_CS_And_IT:
+  posts_study:
     output: true
   posts_algorithm_and_data_struct:
     output: true
