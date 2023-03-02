@@ -1,14 +1,17 @@
-Title: When mocks are OK
+---
+layout: post
+title: When Mocks are OK
+---
 
-Mocks are bad. But not always. Mocks are OK in the Three L's and TDA.
+Mocks are bad. Except for the Three L's and TDA.
 
-You may not agree with me that mocks are bad. I'm delegating that topic to [Arlo's posts on the topic](https://arlobelshee.com/tag/no-mocks/).
+You may not agree that mocks are bad. I'm delegating that topic to [Arlo's posts on the topic](https://arlobelshee.com/tag/no-mocks/)).
 
 # Learning
 
 I want to refactor this code to make the mock go away but I can't think of a good way to do it.
 
-Yet. Maybe later on I'll learn about some design technique that I can apply. When I do, I can come back and refactor to eliminate the mock.
+Yet. Later on maybe I'll learn about some design technique that I can apply. When I do, I can come back and refactor to eliminate the mock.
 
 In the meantime, we'll ship the mock.
 
