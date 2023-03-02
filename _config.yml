@@ -83,9 +83,11 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
+  # ATTENTION: if either of that stops working it's 
+  # because we need to rename gems: to plugins: to accomodate 
+  # the jekyll version on gh-pages
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-plugins:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
 # Exclude these files from your production _site
