@@ -29,3 +29,9 @@ title: Universal Render Pipeline
 ## Post Process
 
 {% include _shared_block/_unity/Unity_URP_PostProcess.md %}
+
+## Shader
+
+{% include _shared_block/_unity/Unity_URP_Shader.md %}
+
+{% include _shared_block/_unity/Unity_URP_ShaderGraph.md %}
