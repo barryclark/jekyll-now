@@ -2,6 +2,7 @@
 layout: post
 title: UI
 ---
+
 ## GUI
 {% include _shared_block/_Concept/GUI.md %}
 
