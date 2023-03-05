@@ -3,7 +3,7 @@ layout: post
 title: Programming Paradigm
 ---
 
-{% include _shared_block/_concept/ProgrammingParadigm.md %}
+{% include _shared_block/_concept/Paradigm.md %}
 
 ## 객체지향 프로그래밍
 
