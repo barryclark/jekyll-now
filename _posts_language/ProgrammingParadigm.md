@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Programming Paradigm
+title: Programming paradigm
 ---
 
 {% include _shared_block/_concept/Paradigm.md %}
