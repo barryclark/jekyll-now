@@ -34,3 +34,11 @@ title: UI
 ### TMP Custom Tag
 
 {% include _shared_block/_unity/Unity_UI_TMP_02_CustomTag.md %}
+
+### Font
+
+{% include _shared_block/_unity/Unity_UI_TMP_03_Font.md %}
+
+### Font Asset
+
+{% include _shared_block/_unity/Unity_UI_TMP_04_FontAsset.md %}
