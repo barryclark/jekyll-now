@@ -4,7 +4,7 @@ title: UI
 ---
 
 ## GUI
-{% include _shared_block/_Concept/GUI.md %}
+{% include _shared_block/_concept/GUI.md %}
 
 ## UI
 {% include _shared_block/_unity/Unity_UI.md %}
