@@ -5,8 +5,8 @@ title: Use LINER
 
 ## LINER
 
-{% include _shared_block/_Tool/LINER.md %}
+{% include _shared_block/_tool/LINER.md %}
 
 ### LINER AI
 
-{% include _shared_block/_Tool/LINER_AI.md %}
+{% include _shared_block/_tool/LINER_AI.md %}
