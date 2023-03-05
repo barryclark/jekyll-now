@@ -39,11 +39,13 @@ greet_pet(kitty);
 ```
 and generate this output
 ```
-You: Hello, Kitty!
+You: Hello Kitty!
 Kitty: Woof!
 ```
 which indicates that something is very peculiar is going on 
-with our cat, because clearly it should go `"Meow!"` and not `"Woof!"`.
+with our cat, because clearly it should go `"Meow!"` and not `"Woof!"`. The
+reason we snuck a `mut` in front of the kitty will become apparent when
+we work our black magic. But first let's take a step back.
 
 
 # Dynamic Polymorphism: Meowing Cats and Barking Dogs
@@ -59,21 +61,22 @@ _Dynamic_ polymorphism is the kind of polymorphism that happens at runtime, in c
 to e.g. static polymorphism with generics that happens at compile time. There are
 different ways of achieving dynamic polymorphism, but for this article I am interested
 in the kind of dynamic polymorphism that works with pointers.
-
 In a more object-oriented language [^oo_lang] like C++ (or Java), arguably the most famous variant of dynamic 
 dispatch let's us call the methods of a derived class via a pointer
 (or reference) to base. Inheritance in C++ is one classic way of enabling dynamic 
-dispatch in C++. In Rust we don't have inheritance but we have traits and 
+dispatch in C++.
+
+In Rust we don't have inheritance but we have traits and 
 [trait objects](https://doc.rust-lang.org/book/ch17-02-trait-objects.html).
 Let's look at a silly example that will carry us through the rest of the post.
-We have a `Pet` trait and implementors `Cat` and `Dog` like so. Feel free
+We have a `Pet` trait and an implementor `Cat` like so. Feel free
 to skim the next part, because it's all just boilerplate and none of that
 will surprise you if you've ever implemented a trait.
 
 ```rust
 trait Pet {
   fn name(&self) -> String;
-  fn make_sound(&self) -> String;
+  fn sound(&self) -> String;
 }
 
 struct Cat {
@@ -96,35 +99,43 @@ impl Pet for Cat {
   fn name(&self) -> String {
     &self.name
   }
-  fn make_sound(&self) -> String {
+  fn sound(&self) -> String {
     "Meow!".into()
   }
 }
-
-struct Dog {
-  name : String,
-  age : u8,
-}
-
-impl Dog {
-  pub fn new(name : impl Into<String>) -> Self {
-    Self {
-      name: name.into(),
-      age : 0,
-    }
-  }
-}
-
-impl Pet for Dog {
-  fn name(&self) -> String {
-    &self.name
-  }
-  fn make_sound(&self) -> String {
-    "Woof!".into()
-  }
-}
 ```
-Okay with this boilerplate out of the way we can 
+We could also implement all kinds of other pet types, like `Dog`, `Bird`, and
+so on, but you get the idea. Finally, with this boilerplate out
+of the way we can implement a function to greet a `Pet`-trait object of like so:
+
+```rust
+fn greet_pet(pet : Box<dyn Pet>) {
+  println!("You: Hello {}", pet.name());
+  println!("{}: {}", pet.name(), pet.sound());
+```
+
+This way we can pass in the `kitty` instance from above and get a completely
+expected output:
+
+```
+You: Hello Kitty!
+Kitty: Meow!
+```
+
+Dynamic polymorphism using trait objects is what makes this code work. If we passed
+in a dog instance (assuming we have coded a `Dog` type), we would get an output
+such as `Woof!` upon greeting a the dog or any other implementor of `Pet`.
+The `greet_pet` function calls the correct `sound(...)` member function of
+either the cat or the dog.
+
+How does it know which `sound(...)` member function
+to call _at runtime_? Because remember, this will even work for a vector of 
+random instances of types implementing the `Pet` trait. So the compiler has no
+way using compile time code generation for dispatching to the correct 
+method calls as would be the case when using generics. So what's the magic here?
+
+## A Peek Behind the Curtain: vtables
+
 
 # !!Bullet Points!!
 - cpp stores vtable pointer in instance, that means taking another
@@ -132,8 +143,6 @@ pointer or ref to instance will point to changed pointer if vtable pointer was
 changed
 - 
 
-For a very generic motivating example let's look at an `Animal` trait with two
-actual animals `Cat` and `Dog` implementing it
 
 # Endnotes
 [^oo_lang]: I mean that C++ is a _more_ object-oriented (OO) language than Rust, not that C++ is a purely an OO language.
