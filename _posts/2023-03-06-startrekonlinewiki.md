@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2023-03-02
+date: 2023-03-06
 title: The Star Trek Online Wiki joins the GWN
 published: true
 ---
