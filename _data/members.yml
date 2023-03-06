@@ -110,6 +110,14 @@
   mainpage: "Main_Page"
   discord: "https://discord.com/invite/c4F2rRc"
 - member:
+  id: "stowiki"
+  name: "Star Trek Online Wiki"
+  description: "The STO Wiki is an independent player-ran encyclopedia for Star Trek Online, the MMORPG developed by Cryptic Studios and published by Gearbox Interactive."
+  logo: "/images/logos/stowiki.png"
+  url: "https://stowiki.net/"
+  mainpage: "Main_Page"
+  discord: "https://discord.com/invite/hJ98RgJ"
+- member:
   id: "triforcewiki"
   name: "Triforce Wiki"
   description: "Triforce Wiki is a The Legend of Zelda wiki made to directly complement the Super Mario Wiki in both layout and design. Triforce Wiki welcomes any form of constructive editing, both big and small."
