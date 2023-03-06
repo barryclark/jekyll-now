@@ -4,7 +4,7 @@
 
 </div></center>
 
-다음은 유니티에서 FABRICK에서 forward reaching만 이용한 구현입니다.
+다음은 유니티에서 FABRIK에서 forward reaching만 이용한 구현입니다.
 
 ```c#
 [DisallowMultipleComponent]
