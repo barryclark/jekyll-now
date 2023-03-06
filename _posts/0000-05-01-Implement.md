@@ -13,7 +13,7 @@ title: Implement
 ## Basic
 
 * [Spline](/posts_implement/Spline)
-* [FABRICK](/posts_implement/FABRICK)
+* [FABRIK](/posts_implement/FABRIK)
 
 ## Transform
 
