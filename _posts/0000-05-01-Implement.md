@@ -13,6 +13,7 @@ title: Implement
 ## Basic
 
 * [Spline](/posts_implement/Spline)
+* [Simple Math](/posts_implement/SimpleMath)
 * [FABRIK](/posts_implement/FABRIK)
 
 ## Transform
