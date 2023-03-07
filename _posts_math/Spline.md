@@ -3,7 +3,7 @@ layout: post
 title: Spline
 ---
 
-{% include _shared_block/_knowledge/Mathematics_Spline.md %}
+{% include _shared_block/_knowledge/Mathmatics_Spline.md %}
 
 ## Bezier curve
 
