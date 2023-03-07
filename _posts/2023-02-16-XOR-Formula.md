@@ -86,7 +86,7 @@ So getting back to TrevNet, the main idea was to use the XOR function to determi
 
 ![_config.yml]({{ site.baseurl }}/images/XOR/network.jpg){: width="550"}
 
-_Figure 2: A handcrafted XOR network (with ReLU activation), with I1 and I2 serving and inputs and O serving as output_
+_Figure 2: A handcrafted XOR network (with ReLU activation), with I1 and I2 representing the inputs and O as the output_
 
 This network can be evaluated as follows (note that ReLU converts negative values to 0):
 
