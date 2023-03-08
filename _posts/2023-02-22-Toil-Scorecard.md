@@ -3,7 +3,7 @@ layout: post
 title: The Toil Scorecard
 ---
 
-When a developer makes a code change to the software system, how long will it take to validate that the change is correct? What about rotating credentials or ensuring that all 3rd-party dependencies are up to date? How do we observe that production is healthy and operating correctly? The Toil Scorecard gives teams a way to measure these costs and make toil visible to the organization.
+Technical debt is hard to measure, but there is a subcategory we *can* measure: activities that consume our human capacity, but could be automated away. When a developer makes a code change to the software system, how long will it take to validate that the change is correct? What about rotating credentials or ensuring that all 3rd-party dependencies are up to date? How do we observe that production is healthy and operating correctly? The Toil Scorecard gives teams a way to measure these costs and make toil visible to the organization.
 
 # Grade the automation maturity
 
