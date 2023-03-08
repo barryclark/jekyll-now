@@ -13,4 +13,6 @@ title: Movement
 
 ## Pivot
 
+{% include _shared_block/_concept/Pivot.md %}
+
 {% include _shared_block/_implement/Pivot.md %}
