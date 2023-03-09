@@ -7,7 +7,7 @@ But what a coincidence that the day after we launch an <a href="https://sorbay.i
 
 Now I’m not going to sit here and bash Loom as a company because I think that they handled it very well.
 
-Vinay Hiremath, their CTO, was quite transparent on the issue and communicated the problem in under 4 hours of detecting it.
+Vinay Hiremath, their CTO, was quite transparent on the issue and communicated the problem in under 24 hours of detecting it.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">At approx. 10:21am PST yesterday <a href="https://twitter.com/loom?ref_src=twsrc%5Etfw">@loom</a> went through a security incident. This situation sucks. We&#39;ve let our users down. But we&#39;ve root caused and remediated. This is a technical overview of what happened.</p>&mdash; Vinay Hiremath (@vhmth) <a href="https://twitter.com/vhmth/status/1633631115113103362?ref_src=twsrc%5Etfw">March 9, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
