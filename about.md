@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I have been fascinated by data analytics and data science during my three-and-a-half-year Ph.D. study and research. To sharpen my business analytics and model-building skills, I enrolled in Social Data Analytics and Research and Business Analytics, two master's programs at UTD. 
+I have been fascinated by data analytics and data science during my four-year Ph.D. study and research. To sharpen my business analytics and model-building skills, I enrolled in Social Data Analytics and Research and Business Analytics, two master's programs at UTD. 
 
 During the study journey in the data world, I feel absorbed in them. I am enchanted by the beauty of data and enjoy the time spent exploring data and finding insights by utilizing multiple tools. All my wonderful experience with data leads me to target myself as a future data analyst/data scientist. 
 
