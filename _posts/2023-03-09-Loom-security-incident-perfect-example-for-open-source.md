@@ -3,7 +3,7 @@ published: true
 ---
 I swear it wasn’t us!
 
-But what a coincidence that the day after we launch an open source alternative to Loom, they have a security incident.
+But what a coincidence that the day after we launch an <a href="https://sorbay.io" target="_blank">open source alternative to Loom</a>, they have a security incident.
 
 Now I’m not going to sit here and bash Loom as a company because I think that they handled it very well.
 
