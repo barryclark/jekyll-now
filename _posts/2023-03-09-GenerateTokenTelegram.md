@@ -1,4 +1,7 @@
-# Gen Chat_id Telegram
+---
+layout: post
+title: Gen Chat_id Telegram
+---
 
-### URL:
+#### URL:
 >https://api.telegram.org/bot<YourBOTToken>/getUpdates
