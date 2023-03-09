@@ -17,10 +17,14 @@ However, knowing that customers had access to other peoples videos is a major re
 
 Loom and its proprietary competitors are great for marketing, sales and information that is not sensitive. But when it comes to private and internal communication, not being in control of your recordings is a major concern.
 
-Imagine you're a company that deals with cryptocurrency and while reporting a bug via a screen recorder a public key is shown. Now in the case of a breach and someone external exposes your public key, blockchain analytic companies could go to town and start trying to uncover more information about your transaction patterns.
+Imagine you're a company that deals with cryptocurrency and while reporting a bug via a screen recorder a public key is shown. 
 
-Another instance, more on the social engineering side, would be if your style of communication and inside jokes with colleagues were exposed via a recording you had stored externally. This could be enough information to make contact from a malicious party seem more believable.
+Now in the case of a breach and you have someone external exposing your public key, blockchain analytic companies could go to town and start trying to uncover more information about your transaction patterns.
+
+Another instance, more on the social engineering side, would be if your style of communication and inside jokes with colleagues were exposed via a recording you had stored externally. 
+
+This could be enough information to make contact from a malicious party seem more believable.
 
 I could go on, but I think you get my drift.
 
-While of course I am bias in this article, the idea of secure internal video messaging can only be achieved when your videos are hosted on your own storage.
+While of course I am bias, the idea of secure internal video messaging can only be achieved when your videos are hosted on your own storage.
