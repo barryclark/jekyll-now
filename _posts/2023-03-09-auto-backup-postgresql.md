@@ -24,7 +24,7 @@ cd /var/lib/postgresql && pg_dumpall > backup_file
 ### _Step 03: Grant permission user postgres_
 
 >$ chown postgres:postgres /usr/share/postgresql/backup_postgresql.sh\
-$ chmod 755 /usr/share/postgresql/backup_postgresql.sh
+$ chmod 755 /usr/share/postgresql/backup_postgresql.sh/
 
 # Restore data postgresql
 
