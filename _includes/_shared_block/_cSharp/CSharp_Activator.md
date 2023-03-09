@@ -1,0 +1,1 @@
+`Activator`클래스는 .NET Framework에서 제공하는 클래스로, 실행 시간(runtime)에 동적으로 인스턴스를 생성하는 데 사용됩니다. 이 클래스의 `CreateInstance`메서드를 사용하여 클래스 또는 구조체의 인스턴스를 만들 수 있습니다.
