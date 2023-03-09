@@ -19,9 +19,9 @@ Loom and its proprietary competitors are great for marketing, sales and informat
 
 Imagine you're a company that deals with cryptocurrency and while reporting a bug via a screen recorder a public key is shown. 
 
-Now in the case of a breach and you have someone external exposing your public key, blockchain analytic companies could go to town and start trying to uncover more information about your transaction patterns.
+Now in the case of a breach, you could have someone external exposing that public key. Blockchain analytic companies could then go to town and start trying to uncover more information about your transaction patterns.
 
-Another instance, more on the social engineering side, would be if your style of communication and inside jokes with colleagues were exposed via a recording you had stored externally. 
+Another instance, more on the social engineering side, would be if your style of communication and inside jokes with colleagues were exposed via a recording that you had stored externally. 
 
 This could be enough information to make contact from a malicious party seem more believable.
 
