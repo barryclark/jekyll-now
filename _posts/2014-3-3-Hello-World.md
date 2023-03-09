@@ -9,7 +9,7 @@ title: nguyenhung log!
 
 ```bash
 #!/bin/bash
-BOT_TOKEN=5914125474:AAEcEaGH70y7Mvo3AOyo5leNP6AP6vdliBo
+BOT_TOKEN=<YourBOTToken>
 if [ "$1" == "-h" ]; then
 echo "Usage: `basename $0` \"text message\""
 exit 0
@@ -26,7 +26,7 @@ echo "You can pass only one argument. For string with spaces put it on quotes"
 exit 0
 fi
 
-curl -s --data "text=$1" --data "chat_id=5434140366" 'https://api.telegram.org/bot5914125474:AAEcEaGH70y7Mvo3AOyo5leNP6AP6vdliBo/sendMessage' > /dev/null
+curl -s --data "text=$1" --data "chat_id=<yourchat_id>" 'https://api.telegram.org/bot<YourBOTToken>/sendMessage' > /dev/null
 ```
 ##Step 02: Grant permission and mv file /usr/bin
 > chmod +x telegram-send.sh \
