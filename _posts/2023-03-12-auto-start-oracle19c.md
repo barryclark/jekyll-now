@@ -49,7 +49,7 @@ $ ln -s /etc/init.d/dbora /etc/rc3.d/S99dbora
 
 # Step05: 
 
-$ chmod 755 /data/app/oracle/product/19.0.0/network/log/listener.log /data/app/oracle/product/19.0.0/rdbms/log/shutdown.log 
+$ chmod 755 /data/app/oracle/product/19.0.0/network/log/listener.log /data/app/oracle/product/19.0.0/rdbms/log/shutdown.log \
 $ chown oracle:oracle /data/app/oracle/product/19.0.0/network/log/listener.log /data/app/oracle/product/19.0.0/rdbms/log/shutdown.log /data/app/oracle/product/19.0.0/rdbms/log/startup.log
 
 # Step06: Disable SE
