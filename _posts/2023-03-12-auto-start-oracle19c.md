@@ -1,5 +1,5 @@
 ---
-layout=post
+layout:post
 title: Auto start oracle19c  when server restart ( Step by step )
 ---
 
