@@ -64,5 +64,5 @@ SELINUXTYPE=targeted
 \
 \
 \
-<code style="color:Blue">_reference material_ :</code>\
+<code style="color:Blue">Reference material:</code>\
 https://docs.oracle.com/en/database/oracle/oracle-database/19/unxar/stopping-and-starting-oracle-software.html#GUID-CA969105-B62B-4F5B-B35C-8FB64EC93FAA
