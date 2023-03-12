@@ -11,14 +11,13 @@ title: Physics
 
 {% include _shared_block/_unity/Unity_Collision_01_MergeCollider.md %}
 
-### Force mode
-
-{% include _shared_block/_unity/Unity_Collision_02_ForceMode.md %}
-
-
 ## Rigidbody
 
 {% include _shared_block/_unity/Unity_Rigidbody.md %}
+
+### Force mode
+
+{% include _shared_block/_unity/Unity_RigidBody_01_ForceMode.md %}
 
 ## Joint
 
