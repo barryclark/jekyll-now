@@ -16,13 +16,13 @@ avatar: https://fastly.picsum.photos/id/10/200/300.jpg?hmac=94QiqvBcKJMHpneU69KY
 #
 
 # Includes an icon in the footer for each username you enter
-#footer-links:
+footer-links:
 #  dribbble:
 #  email:
 #  facebook:
 #  flickr:
 #  github: barryclark/jekyll-now
-#  instagram:
+  instagram: ng_hung26
 #  linkedin:
 #  pinterest:
 #  rss: # just type anything here for a working RSS icon
