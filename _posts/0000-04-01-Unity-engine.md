@@ -12,22 +12,25 @@ title: Unity engine
 > 
 > 이러한 철학을 바탕으로 유니티는 개발자들이 더욱 쉽게 게임과 소프트웨어를 만들 수 있도록 다양한 도구와 리소스를 제공하며, 이를 통해 게임과 소프트웨어 개발의 민주화를 실현하고자 노력하고 있습니다.
 
+## 사용법에 대해서
+
 * [UnityEngine](/posts_unity_engine/UnityEngine)
-* [Interaction](/posts_unity_engine/Interaction)
 * [Folder & Prefab & Package](/posts_unity_engine/FolderPrefabPackage)
 * [UI](/posts_unity_engine/UI)
 
-문법에 대해서
+## 문법에 대해서
 
 * [InvokeAndRepeating & Coroutine](/posts_unity_engine/InvokeAndRepeatingCoroutine)
 * [Physics](/posts_unity_engine/Physics)
 * [Particle & Shader](/posts_unity_engine/ParticleShader)
 * [Delegate & Event & Action](/posts_unity_engine/DelegateEventAction)
 
-좀더 효율적으로
+## 그래픽에 대해서
+
+* [Unity Universal Render Pipeline](/posts_unity_engine/Package_URP)
+
+## 좀더 효율적으로
 
 * [Inspector](/posts_unity_engine/Inspector)
 * [DebugTest](/posts_unity_engine/DebugTest)
 * [Editor](/posts_unity_engine/Editor)
-
-* [Unity Universal Render Pipeline](/posts_unity_engine/Package_URP)
