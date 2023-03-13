@@ -1,0 +1,29 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ffi (1.15.5)
+    jekyll-watch (2.2.1)
+      listen (~> 3.0)
+    kramdown (2.4.0)
+      rexml
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
+    listen (3.8.0)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
+    rb-fsevent (0.11.2)
+    rb-inotify (0.10.1)
+      ffi (~> 1.0)
+    rexml (3.2.5)
+    webrick (1.8.1)
+
+PLATFORMS
+  arm64-darwin-22
+
+DEPENDENCIES
+  jekyll-watch
+  kramdown-parser-gfm
+  webrick
+
+BUNDLED WITH
+   2.3.26
