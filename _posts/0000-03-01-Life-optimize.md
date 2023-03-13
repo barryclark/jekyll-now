@@ -22,6 +22,7 @@ title: Life optimize
 * [How to blog](/posts_optimize_life/HowToBolg)
 * [How to study](/posts_optimize_life/HowToStudy)
 * [How to work](/posts_optimize_life/HowToWork)
+* [How to Programming](/posts_optimize_life/HowToProgramming)
 
 ## 사용하는 도구들에 대한 관심
 
