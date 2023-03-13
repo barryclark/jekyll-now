@@ -28,5 +28,6 @@ title: Unity engine
 
 * [Inspector](/posts_unity_engine/Inspector)
 * [DebugTest](/posts_unity_engine/DebugTest)
+* [Editor](/posts_unity_engine/Editor)
 
 * [Unity Universal Render Pipeline](/posts_unity_engine/Package_URP)
