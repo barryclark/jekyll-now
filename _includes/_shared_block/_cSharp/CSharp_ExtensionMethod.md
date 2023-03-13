@@ -20,3 +20,28 @@ int mySquaredNumber = myNumber.ToSquare(); // mySquaredNumber = 25
 ```
 
 위 예제에서 ToSquare 메서드는 int 형식에 새로운 기능을 추가하기 위해 정의되었습니다. 이렇게 확장 메서드를 사용하면, 기존 클래스나 구조체를 수정하지 않고도 새로운 기능을 추가할 수 있습니다.
+
+다음은 Extention Method를 활용하여 MonoBehaviour에 추가한 코드입니다.
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ExtentionMethod : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        this.Test();   
+    }
+}
+
+public static class Extensions
+{
+    public static void Test(this ExtentionMethod extentionMethod)
+    {
+        Debug.Log("Hellow world");
+    }
+}
+```

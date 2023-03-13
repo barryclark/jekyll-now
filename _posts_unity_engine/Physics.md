@@ -3,10 +3,6 @@ layout: post
 title: Physics
 ---
 
-## Rigidbody
-
-{% include _shared_block/_unity/Unity_Rigidbody.md %}
-
 ## collider
 
 {% include _shared_block/_unity/Unity_Collision.md %}
@@ -15,10 +11,18 @@ title: Physics
 
 {% include _shared_block/_unity/Unity_Collision_01_MergeCollider.md %}
 
+## Rigidbody
+
+{% include _shared_block/_unity/Unity_Rigidbody.md %}
+
 ### Force mode
 
-{% include _shared_block/_unity/Unity_Collision_02_ForceMode.md %}
+{% include _shared_block/_unity/Unity_RigidBody_01_ForceMode.md %}
 
 ## Joint
 
 {% include _shared_block/_unity/Unity_Joint.md %}
+
+## ArticulationBody
+
+{% include _shared_block/_unity/Unity_ArticulationBody.md %}

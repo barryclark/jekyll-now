@@ -1,4 +1,4 @@
-[Collider](https://docs.unity3d.com/kr/current/Manual/CollidersOverview.html)
+[Collider](https://docs.unity3d.com/kr/current/Manual/CollidersOverview.html), [Collider API](https://docs.unity3d.com/ScriptReference/Collider.html)
 
 Collider 컴포넌트는 물리적 충돌을 위해 게임 오브젝트의 모양을 정의합니다. 보이지 않는 콜라이더는 게임 오브젝트의 메시와 완전히 똑같을 필요는 없습니다. 메시의 대략적인 근사치로도 효율적일 때가 많으며, 게임플레이에서 구별하기 어렵습니다.
 
