@@ -14,6 +14,8 @@ PasswordAuthentication no
 UsePAM no
 ```
 
+$ systemctl restart sshd
+
 ![images](/images/turn_off_ssh_password.jpg )
 
 # Using ansible-play book as a tool add ssh-key for users who need access
