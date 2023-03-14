@@ -37,11 +37,14 @@ worker ansible_host=192.168.2.6
 worker ansible_host=192.168.2.7 
 #DR_API_03
 worker ansible_host=192.168.2.8 
+
+[master]
+master1 ansible_host=192.168.2.9
 ```
 
 ### Step02: Create file to store data
 
-> vi key_client
+> vi /opt/ssh_key_pair/key_client
 
 ```shell
 ssh-rsa "Key01"
@@ -52,7 +55,7 @@ ssh-rsa "Key04"
 
 ### Step03: Create file ansible playbook
 
-> vi ssh_key_pair.yml
+> vi /opt/ssh_key_pair/ssh_key_pair.yml
 
 ```shell
 ---
@@ -61,13 +64,20 @@ ssh-rsa "Key04"
   tasks:
     - name: copy key to server
       copy:
-      src: ~./ssh_key_pair/key_client
+      src: /opt/ssh_key_pair/key_client
       dest: /root/.ssh/key_client
     - name: append text to end of file
       args:
       chdir: "/root/.ssh"
       shell: cat key_client >> /root/.ssh/authorized_keys
     - name: delete key_client
-      file: path=/root/.ssh/key_client state=absent 
+      file: path=/root/.ssh/key_client state=absent
+- hosts: master
+  become: yes
+  tasks:
+    - name: clear data file key_client
+      args:
+        chdir: "/opt/ssh_key_pair"
+      shell: "truncate -s 0  key_client" 
 ```
 
