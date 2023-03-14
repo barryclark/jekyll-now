@@ -29,3 +29,13 @@ title: How to blog
 ### Paper And Translation
 
 {% include _shared_block/_Blog/Blog_Rule_PaperAndTranslation.md %}
+
+## How
+
+### Mermaid
+
+{% include _shared_block/_Blog/Blog_How_01_Mermaid.md %}
+
+### MathJaxs
+
+{% include _shared_block/_Blog/Blog_How_02_MathJax.md %}
