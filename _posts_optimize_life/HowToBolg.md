@@ -31,7 +31,6 @@ title: How to blog
 {% include _shared_block/_Blog/Blog_Rule_PaperAndTranslation.md %}
 
 ## How
-
 ### Mermaid
 
 {% include _shared_block/_Blog/Blog_How_01_Mermaid.md %}
@@ -39,3 +38,7 @@ title: How to blog
 ### MathJaxs
 
 {% include _shared_block/_Blog/Blog_How_02_MathJax.md %}
+
+### HTML
+
+{% include _shared_block/_Blog/Blog_How_03_HTML.md %}
