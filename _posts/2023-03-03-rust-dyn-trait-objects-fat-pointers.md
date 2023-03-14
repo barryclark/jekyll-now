@@ -25,7 +25,7 @@ of some sand that we tricked into thinking.
 
 # Inspiration and Motivation
 
-This post was inspired by the [similarly titled video](https://www.youtube.com/watch?v=HClSfuT2bFA) on
+This post was inspired by [this brilliantly titled video](https://www.youtube.com/watch?v=HClSfuT2bFA) on
 the always entertaining and instructive [Creel](https://www.youtube.com/@WhatsACreel) YouTube channel.
 In that video, the author shows how dynamic dispatch with inheritance works in C++ and how we 
 can break it in interesting ways. We are going to take a look at how a similar 
@@ -34,7 +34,7 @@ the end of the post we're going to make this piece of code work:
 
 ```rust
 let mut kitty: Box<dyn Pet> = Box::new(Cat::new("Kitty"));
-// ... some dark magic ...
+// ... some magic ...
 greet_pet(kitty);
 ```
 and generate this output
@@ -45,7 +45,7 @@ Kitty: Woof!
 which indicates that something is very peculiar is going on 
 with our cat, because clearly it should go `"Meow!"` and not `"Woof!"`. The
 reason we snuck a `mut` in front of the kitty will become apparent when
-we work our black magic. But first let's take a step back.
+we work our evil magic. But first let's take a step back.
 
 
 # Dynamic Polymorphism: Meowing Cats and Barking Dogs
@@ -177,7 +177,7 @@ of this vtable and refer to it through pointers. Both the Rust compiler and the 
 C++ compilers do it like that, but there is a crucial difference in how they
 keep track of the _pointer_ to the vtable. In C++, [it is common](https://en.wikipedia.org/wiki/Virtual_method_table)
 to make the pointer to the vtable a hidden member of each instance of a class or struct
-[^cpp-first-member]. Rust goes a different route and uses so called _fat pointers_ [^why-fat-ptr].
+[^cpp-first-member]. Rust goes a different route and uses so called [fat pointers](https://doc.rust-lang.org/std/ptr/trait.Pointee.html#pointer-metadata) [^why-fat-ptr].
 
 ## Fat Pointers
 
@@ -195,20 +195,205 @@ vtable (the `Trait`-vtable for type `T`).
 ## (Fat) Pointer and Vtable Memory Layout
 We now have all the pieces together to understand how pointers to trait
 objects work and how to mess with them. Before we start doing that though, let
-me summarize what we saw so far in a figure:
+me summarize what we saw so far in a graphic:
 
 <figure>
  <img src="/blog/images/trait-objects/trait-vtable.svg" alt="Visualization of the FT and DTFT" style="width:100%">
  <figcaption>Figure 1. TODO RUST VTABLE AND REFERENCE LEVIEN</figcaption>
 </figure>
 
-TODO 
+We see that the vtable contains a function pointer to the destructor, then
+`usize` fields for size and alignment, respectively, and finally the pointers 
+for the member functions [^size-align].
+Some words of caution: this figure is accurate enough at the time of writing
+but it does not show the full picture. If supertraits get involved, the vtable 
+gets more complicated to accomodate the planned [trait upcasting](https://doc.rust-lang.org/beta/unstable-book/language-features/trait-upcasting.html)
+feature. The most comprehensive documentation on the current vtable layout I could
+find is [here](https://rust-lang.github.io/rfcs/3324-dyn-upcasting.html). But
+it also pays to look at the [rustc source code](https://github.com/rust-lang/rust/blob/1.68.0/compiler/rustc_middle/src/ty/vtable.rs)
+along with [this helpful answer](https://www.reddit.com/r/rust/comments/11okz75/comment/jbt969m/?utm_source=share&utm_medium=web2x&context=3)
+on a [reddit thread](https://www.reddit.com/r/rust/comments/11okz75/vtable_layout_documentation/) on the topic. 
+So much for the nitty-gritty details, now let's try to get our hands dirty and 
+venture even deeper into don't-try-this-in-prod territory.
 
 
-IMPORTANT LINK
-https://rust-lang.github.io/dyn-upcasting-coercion-initiative/design-discussions/vtable-layout.html
+# Fun With Vtables
+It's time to revisit the code from above and see if we can't make our kitty
+go woof. Let's first create a structure for our vtable so that we can manipulate
+it with some more finesse.
 
-*decaying from normal pointers to fait pointers etc
+```rust
+#[repr(C)]
+#[derive(Copy, Clone)]
+struct PetVtable {
+    drop : fn(*mut c_void),
+    size : usize,
+    align : usize,
+    sound : fn(*const c_void) -> String,
+    name : fn(*const c_void) -> String,
+}
+```
+By making the struct `#[repr(C)]`, we make sure that it has the same memory layout as the `Pet`-vtable.
+For the function pointers we have basically copied the signature of the member functions,
+with one important difference. We have made the `&self` parameter a pointer to void,
+so that we can reuse the structure for any implementor of `Pet`. Still, we have 
+_some_ degree of type safety by chosing appropriate integer and function pointer types
+for the members. Now let's revisit the code from above and see how to mess
+with the vtable.
+
+```rust
+const POINTER_SIZE : usize = std::mem::size_of::<usize>();
+
+fn main() {
+    unsafe {
+        // (1)
+        let mut kitty : Box<dyn Pet> = Box::new(Cat::new("Kitty"));
+        // (2)
+        let addr_of_data_ptr = &mut kitty as *mut _ as *mut c_void as usize;
+        // (3)
+        let addr_of_pointer_to_vtable = addr_of_data_ptr + POINTER_SIZE;
+        // (4)
+        let ptr_to_ptr_to_vtable = addr_of_pointer_to_vtable as *mut *const PetVtable;
+        // (5)
+        let mut new_vtable = **ptr_to_ptr_to_vtable; 
+        // (6)
+        new_vtable.sound = bark;
+        // (7)
+        *ptr_to_ptr_to_vtable = &new_vtable;
+
+        greet_pet(kitty);
+    }
+}
+
+fn bark(_this : *const c_void) -> String {
+    "Woof!".to_string()
+}
+```
+This will produce a barking cat as teased above. [Try this example](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=e8e10e5cb43791812cf574e7d1e957a9)
+on the playground.
+
+```
+You: Hello, Kitty!
+Kitty: Woof!
+```
+
+Okay, now let's take this step by step. &#9312; We create a pointer to a `Pet`
+trait object with a cat instance. From the section above we know that `kitty`
+consists of two elements right next to each other in memory: the pointer to the
+data and the pointer to the vtable. &#9313; Now we find out the address of
+`kitty` and store it as an integer (because we can, since the value of a pointer
+is just an address). It's important to note that we really care about the address
+of `kitty` and _not_ the address of the cat instance that it points to. The
+address of `kitty` is also the address of the data pointer.
+&#9314; Now we add one pointer size in bytes
+to this value, which will give us the address of the pointer to the vtable.
+&#9315; Finally we cast this address into a pointer. Note that the type we now
+have is a _pointer to pointer_ to `PetVtable`. If you are confused why we
+need two pointer indirections, bear with me. I'll explain later. &#9316; Here, we
+copy the vtable into a stack variable, which is possible because our vtable derives
+`Copy`. Since we have two pointer indirections, we have to dereference twice.
+&#9317; Next, we make the function pointer for the sound member function
+point to the `bark` function, which is just a free function that obeys the correct signature.
+It takes a void pointer as its first argument, which is the reference
+to `self`, aka the pointer-to-data part of the fat pointer.
+&#9318; Finally we make the pointer to the vtable point to the newly
+created vtable. When passed to the `greet_pet` function the kitty will now bark.
+
+## References or Boxes
+
+The code above works just the same if we had used references instead of boxes.
+The memory layout for both pointer types is the same. The only difference is 
+where the pointed to element is stored.
+
+## (Im)mutable Vtables
+
+In the code above, we used two pointer indirections to manipulate the vtable. We
+copied the existing vtable into a new one, manipulated the new vtable and then
+set the pointer-to-vtable to point to the new vtable. Couldn't we just grab 
+a mutable pointer to the vtable itself and make the `sound` function point
+somewhere else?
+
+Let's think about what it would mean if we could do that. We could change the vtable
+for all `Cat` instances in our program present and future, because only one vtable is created
+for the `Cat` type and all trait object instances point to the same vtable. If this was possible
+then this could turn into all kinds of nightmares quickly (debugging, security, you
+name it). This is why the compiler places all vtables into a special _read only_
+section of the program binary, which will make it a runtime error to write to
+it. That's a good thing.
+
+## We're Not in Kansas Anymore
+For our final section let's try and break the whole thing some more. In the 
+code above, we have made the function pointer members type safe. Granted,
+we did use pointers to void, but we _have_ restricted the function signatures
+to which we can make those pointers point. Very reasonable, but why would we
+restrict ourselves like that? We've already been naughty and treated pointers
+as numbers, so let's alter our vtable structure a bit and remove any semblance
+of typesafety from it.
+
+```rust
+#[repr(C)]
+#[derive(Copy, Clone)]
+struct RawPetVtable {
+    drop : usize,
+    size : usize,
+    align : usize,
+    sound : usize,
+    name : usize,
+}
+```
+
+Now we can stick any address (any number really) into the function pointers. Let's
+now create two functions that do not obey the expected signature at all:
+
+```rust
+fn bark2() -> String {
+    "Woof!".to_string()
+}
+
+fn add(a : usize, b : usize) -> String {
+    format!("{} + {} = {}", a, b, a + b)
+}
+```
+
+The `bark2` function barks but it takes no arguments. We
+expect the `sound` member function to be called with exactly one argument, which is
+the address of `self`. The `add` function is even wackier in this context. It takes not one but
+two arguments. The first argument is the address of self surely, but where does 
+the second argument come from? Well, as Darth Vader once said to poor Lando: 
+"I am altering the deal. Pray I don't alter it any further..."
+At least we give the program the expected return value!
+
+I've got a [link to the playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=e7dc5ca98054c3693504eee06b59b9cd)
+with the code here. There's no new surprises in there, so feel free to
+explore the code for yourself. Let's take a look at the outputs. If we assign
+the `bark2` function address to the `sound` member of the vtable we get the 
+following output:
+
+```
+You: Hello, Kitty!
+Kitty: Woof!
+```
+That's surprising, isn't it? Not the `"Woof!"`, we're already used to that. However,
+the fact that the program even runs without crashing might surprise us.
+The code just works even though the function signature is missing an argument.
+Now let's look at what happens if we put the `add` function address into the `sound`
+member. This output is not deterministic but it will look something like this:
+
+```
+You: Hello, Kitty!
+Kitty: 93842120210704 + 93842100797168 = 187684221007872
+```
+
+We learn two things. Our kitty is surprisingly good at math and the program
+still runs. Good grief, why? Well the thing is: function pointers are just
+addresses to code and code is just ones and zeros. Typesafety is an illusion that
+exists while the program is compiled but not after. The CPU just executes the
+code that it was told to jump to. That code will just run and operate on the 
+data that it finds at the location of the function arguments, whether someone
+put something useful in there or not.
+
+# Conclusion
+This was a deep dive into trait object !!!!!!!!!!!!
 
 # Endnotes
 [^oo_lang]: I mean that C++ is a _more_ object-oriented (OO) language than Rust, not that C++ is a purely an OO language. Further, I don't want to imply that Rust is an OO language _at all_.
@@ -220,3 +405,4 @@ https://rust-lang.github.io/dyn-upcasting-coercion-initiative/design-discussions
 [^why-fat-ptr]: I'm not going to pretend to understand _why_ Rust chose fat pointers over thin ones, but if you are interested, [here](https://www.reddit.com/r/rust/comments/8ckfdb/were_fat_pointers_a_good_idea/) and [here](https://tratt.net/laurie/blog/2019/a_quick_look_at_trait_objects_in_rust.html) are some insightful discussions on the topic.
 [^just-pointers]: It's true, those things really are just pointers, albeit with a hefty amount of compile time enforced rules and guarantees.
 [^twople]: A _twople_,... get it? Sorry about that...
+[^size-align]: If you're wondering why a vtable contains size and alignment, [you're not alone](https://stackoverflow.com/questions/52011247/why-do-trait-object-vtables-contain-size-and-alignment/52011460). Let me also link a [nifty crate](https://crates.io/crates/simple-ref-fn) that takes on the very niche problem of providing `&dyn Fn` but without the vtable.
