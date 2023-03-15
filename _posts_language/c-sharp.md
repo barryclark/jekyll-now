@@ -3,6 +3,8 @@ layout: post
 title: C# sharp
 ---
 
+{% include _shared_block/_collection/CSharp_StudySite.md %}
+
 ## Use Class
 ### Extension Method
 
