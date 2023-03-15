@@ -41,7 +41,7 @@ body {
 
 code {
   font-family: $Monospace;
-  font-size: 0.83em;
+  font-size: 0.78em;
 }
 
 .highlight {
@@ -301,7 +301,8 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $separatorColor;
+  // no line separator between posts on front page
+  //border-bottom: 1px solid $separatorColor;
 }
 
 .posts > .archive-link {
