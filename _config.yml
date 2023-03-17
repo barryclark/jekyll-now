@@ -1,6 +1,7 @@
 #
 # This file contains configuration flags to customize your site
 #
+theme: minima
 
 # Name of your site (displayed in the header)
 name: Kavu Maithri Rao
