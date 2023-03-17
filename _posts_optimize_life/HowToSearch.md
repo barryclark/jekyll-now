@@ -19,3 +19,7 @@ title: How to search
 {% include _shared_block/_tool/ChatGPT_02_SummaryYoutube.md %}
 
 {% include _shared_block/_tool/ChatGPT_03_WithCoding.md %}
+
+## Bing Chat
+
+{% include _shared_block/_tool/Bing_ChatAI.md %}
