@@ -1,9 +1,9 @@
 ---
 layout: post
-tags: rust errors c++ bugs safety
+tags: rust trait vtable pointers
 #categories: []
 date: 2023-03-15
-last_updated: 
+last_updated: 2023-03-18
 #excerpt: ''
 #description:
 #permalink:
@@ -220,6 +220,7 @@ We see that the vtable contains a function pointer to the destructor, then
 to the member functions in order of declaration [^size-align].
 
 Some words of warning: this figure is accurate enough at the time of writing
+with the Rust compiler version 1.68.0,
 but it does not show the full picture. If supertraits get involved, the vtable 
 gets more complicated to accomodate the planned [trait upcasting](https://doc.rust-lang.org/beta/unstable-book/language-features/trait-upcasting.html)
 feature. The most comprehensive documentation on the current vtable layout I could
