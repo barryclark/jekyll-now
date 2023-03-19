@@ -3,6 +3,8 @@ layout: post
 title: Geometry
 ---
 
+{% include _shared_block/_concept/Geometry.md %}
+
 ## Shape
 
 {% include _shared_block/_knowledge/Geometry_Icosahedron.md %}
