@@ -11,6 +11,10 @@ title: UI
 
 {% include _shared_block/_unity/Unity_UI.md %}
 
+### Canvas
+
+{% include _shared_block/_unity/Unity_UI_Canvas.md %}
+
 ### Basic layout
 
 {% include _shared_block/_unity/Unity_UI_Layout_01_BasicLayout.md %}
