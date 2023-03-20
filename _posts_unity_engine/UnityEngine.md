@@ -83,3 +83,16 @@ transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);
 ## Mesh
 
 {% include _shared_block/_unity/Unity_CombinedMesh.md %}
+
+## Other Package
+### Mesh Backer
+
+{% include _shared_block/_unity/_package/Unity_Package_MeshBacker.md %}
+
+### Spline Mesh
+
+{% include _shared_block/_unity/_package/Unity_Package_SplineMesh.md %}
+
+### XR
+
+{% include _shared_block/_unity/_package/Unity_Package_XR.md %}
