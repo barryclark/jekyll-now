@@ -1,5 +1,6 @@
 <center><div markdown="1">
 
+![UI Animation](/images/Unity_UI_Animation_01.png)
 ![UI Animation](/images/Unity_UI_Animation.png)
 
 </div></center>

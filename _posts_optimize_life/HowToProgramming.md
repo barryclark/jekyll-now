@@ -19,3 +19,12 @@ title: How to programming
 #### 자동화 요령
 
 {% include _shared_block/_concept/DevelopmentTool_04_HowToAutomation.md %}
+
+## Other Tools
+### Microsoft Copilot
+
+{% include _shared_block/_tool/VisualStudio_GitHubCopilot.md %}
+
+### ChatGPT
+
+{% include _shared_block/_tool/ChatGPT_03_WithCoding.md %}
