@@ -96,3 +96,7 @@ transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);
 ### XR
 
 {% include _shared_block/_unity/_package/Unity_Package_XR.md %}
+
+### Asset Management
+
+{% include _shared_block/_unity/_package/Unity_Package_AssetManagement.md %}
