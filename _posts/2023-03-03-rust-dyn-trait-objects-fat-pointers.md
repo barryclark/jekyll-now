@@ -189,7 +189,7 @@ where a slice is really just a tuple of two elements [^twople]: the first elemen
 the pointer to the beginning of the data and the second element is the length of the slice.
 But if you're like me you will be (or already were) surprised to
 learn that the pointer types `Box<T>`, `&T`, and `&mut T` are different
-from from the pointer types `Box<dyn Trait>`, `&dyn Trait`, and `&mut dyn Trait`. While
+from the pointer types `Box<dyn Trait>`, `&dyn Trait`, and `&mut dyn Trait`. While
 the former are really just pointers [^just-pointers], the latter are also fat
 pointers. They, again, consist of two elements: their first element is the pointer
 to the actual data (the `T` instance) and the second is the pointer to the associated
