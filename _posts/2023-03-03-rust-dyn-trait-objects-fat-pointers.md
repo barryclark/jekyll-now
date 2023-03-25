@@ -3,7 +3,7 @@ layout: post
 tags: rust trait vtable pointers
 #categories: []
 date: 2023-03-15
-last_updated: 2023-03-18
+last_updated: 2023-03-25
 #excerpt: ''
 #description:
 #permalink:
