@@ -12,6 +12,10 @@ title: The Illustrated Stable Diffusion
 
 AI image generation is the most recent AI capability blowing people's minds (mine included). The ability to create striking visuals from text descriptions has a magical quality to it and points clearly to a shift in how humans create art. The release of [Stable Diffusion](https://stability.ai/blog/stable-diffusion-public-release) is a clear milestone in this development because it made a high-performance model available to the masses (performance in terms of image quality, as well as speed and relatively low resource/memory requirements).
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MXmacOUJUaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="
+ width: 100%;
+ max-width: 560px;" allowfullscreen></iframe>
+
 After experimenting with AI image generation, you may start to wonder how it works. 
 
 This is a gentle introduction to how Stable Diffusion works.
