@@ -4,7 +4,7 @@ published: True
 title: The Illustrated Stable Diffusion
 ---
 
-<span class="discussion">Translations: <a href="https://trituenhantao.io/kien-thuc/minh-hoa-stable-diffusion/">Vietnamese</a>.
+<span class="discussion">Translations: <a href="https://blog.csdn.net/yujianmin1990/article/details/129143157">Chinese</a>, <a href="https://trituenhantao.io/kien-thuc/minh-hoa-stable-diffusion/">Vietnamese</a>.
 </span>
 
 
