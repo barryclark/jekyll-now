@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  display: block;
+  padding: 0.5em 1em;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+figure {
+  margin: 1em;
+}
+
+footer {
+  text-align: center;
+}

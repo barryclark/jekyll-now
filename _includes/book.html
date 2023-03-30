@@ -1,0 +1,9 @@
+<article>
+  <header>
+    <h2>{{ page.title }}</h2>
+  </header>
+  <figure>
+    <img src="{{ "images/midjourney/{{ page.image }}" | relative_url }}" alt="{{ page.title }}">
+  </figure>
+  {{ content }}
+</article>
