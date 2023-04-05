@@ -8,7 +8,7 @@ description: "Cheryl Hung's biography, photo and contact details"
 
 Cheryl brings engineers together to build the future of infrastructure, especially cloud native and open source.
 
-As Senior Director at Arm, Cheryl leads the ecosystem strategy to drive the adoption of Arm across cloud, 5G and networking. She also founded the Cloud Native London meetup and runs events for 7000 architects, SREs and DevOps engineers monthly.
+As Senior Director at Arm, Cheryl leads ecosystem strategy to drive adoption across cloud, 5G and networking. She also founded the Cloud Native London meetup and runs events for 7000 architects, SREs and DevOps engineers monthly.
 
 Previously Cheryl was VP Ecosystem at the Cloud Native Computing Foundation / Linux Foundation, bringing Spotify, Apple and Airbnb into the End User Community. She was a C++ engineer on Google Maps and and engineering manager at Apple, and holds a Masters Computer Science from the University of Cambridge.
 
