@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 타이틀!
+
+---
 # 대제목
 ## 중제목
 ### 소제목
@@ -15,10 +17,6 @@ title: 타이틀!
 \pi
 |pi
 ans
-
----
-
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
