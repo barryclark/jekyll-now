@@ -14,7 +14,16 @@ tags:
 
 Three fantastic speakers from Mia-Platform, CBRE, and Vodafone joined us at our April Cloud Native London meetup at the Just Eat Takeaway offices, and virtual attendees via the YouTube/Twitch livestreams. 
 
-We are immensely grateful to [Sysdig](https://sysdig.com/) and [Styra](https://www.styra.com/) for your generous support and sponsorship.
+We are immensely grateful to [Sysdig](https://sysdig.com/) for their generous support and sponsorship. 
+
+In addition, we have an exclusive offer for our members:
+_[**WTF is SRE?**](https://www.cloud-native-sre.wtf/) is a highly-rated, very-tweeted-about, ridiculously-fun, wildly-insightful two-day conference designed to improve the world of Site Reliability Engineering and DevOps. It will take place in [CodeNode, London](https://www.google.com/maps?ll=51.518934,-0.085426&z=16&t=m&hl=en&gl=GR&mapclient=embed&q=10+South+Pl+London+EC2M+7EB+UK) on **4-5 May 2023**.
+
+Last year, we had three world-class tracks: Observability, Reliability and DevSecOps. In our third and in-person edition of the conference, we're adding another! Get ready for next-level insights into the world of DevEx (Developer Experience).
+
+WTF is SRE? is by the Community and for the Community, that's why we are very happy to provide all the Cloud Native London members with a generous 25% off. Make sure to use [this link](https://ti.to/container-solutions/wtf-is-sre-2023/with/3al7wujcoky) for your exclusive discount! 
+
+Have you recently lost your job? We are also giving away free tickets to members of the Community who might need some extra help to get back in the market. Reach out to [events@container-solutions.com](events@container-solutions.com)_
 
 ### Overview
 
