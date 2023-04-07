@@ -156,8 +156,8 @@ yat:
 # Page default value
 # defaults:
 #   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
+#     heading: "We need to go deeper"
+#     subheading: ""
 #     banner: "Your image url"
 
 # Banner default settings
