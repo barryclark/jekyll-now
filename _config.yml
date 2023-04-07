@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: gndldl's git blog
+title: gndldl's AI-learning blog
 email: jhl9804@naver.com
 author: gndldl
 
