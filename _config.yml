@@ -116,7 +116,7 @@ yat:
 # Default brand colors as below:
 # orangered: #ff5100
 # greatgold: #f2cb05
-# greenblue: #389092
+ greenblue: #389092
 #
  brand_color: greenblue
 #
@@ -144,14 +144,14 @@ yat:
 #   background_color: "#ff4e00"
 #   text_transform: "uppercase"  # ("uppercase", "lowercase", "capitalize")
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-# header_pages:
-#   - index.html
-#   - archives.html
-#   - categories.html
-#   - tags.html
-#   - about.md
+ If you want to link only specific pages in your header, uncomment
+ this and add the path to the pages in order as they should show up
+ header_pages:
+   - index.html
+   - archives.html
+   - categories.html
+   - tags.html
+   - about.md
 
  Page default value
  defaults:
