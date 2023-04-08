@@ -118,7 +118,7 @@ yat:
 # greatgold: #f2cb05
 # greenblue: #389092
 #
-# brand_color: greenblue
+ brand_color: greenblue
 #
 # Custom color as below:
 # brand_color: "#1a8e42"
@@ -154,10 +154,10 @@ yat:
 #   - about.md
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "gndldl"
-#     subheading: ""
+ defaults:
+   home:
+     heading: "gndldl"
+     subheading: ""
 #     banner: "Your image url"
 
 # Banner default settings
