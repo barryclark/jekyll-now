@@ -118,7 +118,7 @@ yat:
 # greatgold: #f2cb05
 # greenblue: #389092
 #
-# brand_color: orangered
+# brand_color: greenblue
 #
 # Custom color as below:
 # brand_color: "#1a8e42"
@@ -188,7 +188,7 @@ yat:
 
 # Gitment comments
 # gitment:
-#   username: "Your GitHub username"
+#   username: "gndldl"
 #   repo: "The repo to store comments"
 #   client_id: "Your client ID"
 #   client_secret: "Your client secret"
