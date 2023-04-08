@@ -157,7 +157,7 @@ yat:
 defaults:
   home:
     heading: "gndldl"
-#     subheading: ""
+     subheading: ""
 #     banner: "Your image url"
 
 # Banner default settings
