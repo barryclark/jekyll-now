@@ -116,9 +116,9 @@ yat:
 # Default brand colors as below:
 # orangered: #ff5100
 # greatgold: #f2cb05
- greenblue: #389092
+greenblue: #389092
 #
- brand_color: greenblue
+brand_color: greenblue
 #
 # Custom color as below:
 # brand_color: "#1a8e42"
@@ -154,9 +154,9 @@ yat:
    - about.md
 
  #Page default value
- defaults:
-   home:
-     heading: "gndldl"
+defaults:
+  home:
+    heading: "gndldl"
 #     subheading: ""
 #     banner: "Your image url"
 
