@@ -26,7 +26,11 @@
 
 title: gndldl's AI-learning blog
 email: jhl9804@naver.com
-author: gndldl
+author:
+  name      : 'gndldl'
+  bio       : 'gndldl의 블로그 입니다.'
+  location  : 'Busan, South Korea'
+  email     : 'jhl9804@naver.com'
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -118,7 +122,7 @@ yat:
 # greatgold: #f2cb05
 # greenblue: #389092
 #
-# brand_color: greenblue
+brand_color: #389092
 #
 # Custom color as below:
 # brand_color: "#1a8e42"
