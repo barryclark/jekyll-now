@@ -2,7 +2,6 @@
 title: Rio's birth 
 layout: post
 ---
-# Rio’s birth
 
 Titled along the lines of birth stories shared in Ina May’s book “Guide to childbirth”. It’s a great book if you are looking for information about natural birth.
 
