@@ -3,7 +3,7 @@ layout: post
 tags: rust trait vtable pointers
 #categories: []
 date: 2023-03-15
-last_updated: 2023-03-25
+last_updated: 2023-04-23
 #excerpt: ''
 #description:
 #permalink:
@@ -189,8 +189,7 @@ where a slice is really just a tuple of two elements [^twople]: the first elemen
 the pointer to the beginning of the data and the second element is the length of the slice.
 But if you're like me you will be (or already were) surprised to
 learn that the pointer types `Box<T>`, `&T`, and `&mut T` are different
-from the pointer types `Box<dyn Trait>`, `&dyn Trait`, and `&mut dyn Trait`. While
-the former are really just pointers [^just-pointers], the latter are also fat
+from the pointer types `Box<dyn Trait>`, `&dyn Trait`, and `&mut dyn Trait`. The latter are fat
 pointers. They, again, consist of two elements: their first element is the pointer
 to the actual data (the `T` instance) and the second is the pointer to the associated
 vtable instance (the `Trait`-vtable for type `T`).
@@ -425,7 +424,6 @@ some fun was had while reading this. I sure had fun writing it.
 [^rust-compiler]: It's also important that vtables aren't really a _language feature_ but an _implementation detail_ of the compiler, as reddit user [u/myrrlyn](https://www.reddit.com/user/myrrlyn/) pointed out [here](https://www.reddit.com/r/rust/comments/11okz75/vtable_layout_documentation/). It might change in future versions of rustc and might be even different in other rust compilers, once they become available. 
 [^cpp-first-member]: The vtable pointer in C++ may e.g. be placed at the beginning of an object. This is why you [must not rely](http://www.catb.org/esr/structure-packing/#C-like) on the fact that the address of an object is also the address of its first member in C++.
 [^why-fat-ptr]: I'm not going to pretend to understand _why_ Rust chose fat pointers over thin ones, but if you are interested, [here](https://www.reddit.com/r/rust/comments/8ckfdb/were_fat_pointers_a_good_idea/) and [here](https://tratt.net/laurie/blog/2019/a_quick_look_at_trait_objects_in_rust.html) are some insightful discussions on the topic.
-[^just-pointers]: It's true, those things really are just pointers, albeit with a hefty amount of compile time enforced rules and guarantees.
 [^twople]: A _twople_,... get it? Sorry about that...
 [^size-align]: If you're wondering why a vtable contains size and alignment, [you're not alone](https://stackoverflow.com/questions/52011247/why-do-trait-object-vtables-contain-size-and-alignment/52011460). Let me also link a [nifty crate](https://crates.io/crates/simple-ref-fn) that takes on the very niche problem of providing `&dyn Fn` but without the vtable.
 [^one-zero]: Even those ones and zeros are abstractions the physical realities involving electrons.
