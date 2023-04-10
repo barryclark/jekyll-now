@@ -6,7 +6,7 @@
 name: Sushma Chetak
 
 # Short bio or description (displayed in the header)
-description: New mom, proudct owner by profession and artist at heart
+description: New mom, Engineer by profession and an artist at heart
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://github.com/diyachetak.png
@@ -21,12 +21,12 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: diyachetak/diyachetak.gitbuh.io
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
