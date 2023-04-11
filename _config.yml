@@ -85,3 +85,7 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+collections:
+  team:
+    people: true
