@@ -10,7 +10,7 @@ permalink: /team/
     {% assign mod = forloop.index | modulo: 3 %}
     {% if mod == 1 %}
       <div>
-        <div class="profilepic">{{ member.image }}</div>
+        <div class="profilepic"><img src={{ member.image }}></div>
         <h2>{{ member.name }}</h2>
         <p>{{ member.position }}</p>
       </div>
