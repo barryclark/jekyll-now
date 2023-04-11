@@ -6,8 +6,8 @@ permalink: /team/
 
 <div class="grid-flow">
   {% for member in site.team %}
-      <div class="profilepic">
-        <img src={{ member.image }}>
+      <div class="profilegrid">
+        <img src={{ member.image }} style="width:188px;height:188px;">
         <h2>{{ member.name }}</h2>
         <p>{{ member.position }}</p>
       </div>

@@ -562,10 +562,11 @@ footer {
 }
 
 .profilegrid {
-  float: left;
+  display: inline-block;
+  text-align: center;
   width: 300px;
   height: 300px;
-  margin-right: 30px;
+  margin-left: 30px;
   margin-right: 30px;
 
   @include mobile {
