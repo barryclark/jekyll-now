@@ -7,9 +7,8 @@ permalink: /team/
 <div class="grid-flow">
   {% for member in site.team %}
       <div class="profilepic"><img src={{ member.image }}></div>
-        <h2>{{ member.name }}</h2>
-        <p>{{ member.position }}</p>
-    </div>
+      <h2>{{ member.name }}</h2>
+      <p>{{ member.position }}</p>
   {% endfor %}
 </div>
 
