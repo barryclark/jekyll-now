@@ -4,32 +4,14 @@ title: Team
 permalink: /team/
 ---
 
-<div class="posts">
-  <div class="post">
+<div class="flex-row-container">
   {% for member in site.team %}
-    {% assign mod = forloop.index | modulo: 3 %}
-    {% if mod == 1 %}
-      <div>
-        <div class="profilepic"><img src={{ member.image }}></div>
+    <div class="flex-row-item">
+      <div class="profilepic"><img src={{ member.image }}></div>
         <h2>{{ member.name }}</h2>
         <p>{{ member.position }}</p>
-      </div>
-    {% elsif mod == 2 %}
-      <div class="middle">
-        <p>{{ member.content | markdownify }}</p>
-        <h2>{{ member.name }}</h2>
-        <p>{{ member.position }}</p>
-      </div>
-    {% else %}
-      <div>
-        <p>{{ member.content | markdownify }}</p>
-        <h2>{{ member.name }}</h2>
-        <p>{{ member.position }}</p>
-      </div>
-      <hr>
-    {% endif %}
+    </div>
   {% endfor %}
-  </div>
 </div>
 
 
