@@ -4,8 +4,13 @@ title: Team
 permalink: /team/
 ---
 
-{% for member in site.team %}
+<div class="posts">
+  <h1><a href="{{ site.baseurl }}{{ post.url }}">News</a></h1>
+  {% for member in site.team %}
   <h2>{{ member.name }} - {{ member.position }}</h2>
   <p>{{ member.content | markdownify }}</p>
 {% endfor %}
+
+</div>
+
 
