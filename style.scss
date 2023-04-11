@@ -442,13 +442,13 @@ footer {
 
 .bio-research-hero {
     position: relative;
-    height: 500px;
+    height: 350px;
     overflow: hidden;
     background-size: cover;
     background-position: center;
     background-image: url('https://raw.githubusercontent.com/f-hamidlab/f-hamidlab.github.io/master/images/25761.jpg');
     @include mobile {
-    height: 700px;
+    height: 550px;
   } 
 }
 
