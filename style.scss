@@ -532,6 +532,35 @@ footer {
   }
 }
 
+.middle {
+      position: relative;
+      z-index: 1;
+
+      &:before {
+          content: '';
+          width: 32px;
+          height: 100%;
+          position: absolute;
+          left: -24px;
+          top: 0;
+          display: block;
+          z-index: -1;
+          box-shadow: 32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, 32px 32px 0 0 #fff, 32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15);
+      }
+
+      &:after {
+          content: '';
+          width: 32px;
+          height: 100%;
+          position: absolute;
+          right: -24px;
+          top: 0;
+          display: block;
+          z-index: -1;
+          box-shadow: -32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, -32px 32px 0 0 #fff, -32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15);
+      }
+  }
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
