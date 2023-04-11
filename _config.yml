@@ -89,3 +89,5 @@ exclude:
 collections:
   team:
     people: true
+  alumni:
+    people: true
