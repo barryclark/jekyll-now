@@ -575,6 +575,13 @@ footer {
 
 }
 
+.grid-flow {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
 .flex-row-container {
     background: #aaa;
     display: flex;
