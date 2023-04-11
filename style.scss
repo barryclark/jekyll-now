@@ -67,7 +67,7 @@ h4 {
 }
 
 p {
-  margin: 15px 0;
+  margin: 0 0;
 }
 
 a {
@@ -584,23 +584,24 @@ footer {
     grid-template-rows: repeat(2, 1fr);
 }
 
-.flex-row-container {
-    background: #aaa;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-.flex-row-container > .flex-row-item {
-    flex: 1 1 30%; /*grow | shrink | basis */
-    height: 100px;
+profile.head {
+  font-family: $helveticaNeue;
+  color: $darkerGray;
+  font-weight: bold;
+  font-size: 24px;
+
+  line-height: 1.7;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
 }
 
-.flex-row-item {
-  background-color: #fff4e6;
-  border: 1px solid #f76707;
-}
 
+profile.p {
+  margin: 15px 0;
+}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
