@@ -23,3 +23,8 @@ title: C# sharp
 {% include _shared_block/_cSharp/CSharp_Activator.md %}
 
 {% include _shared_block/_cSharp/CSharp_Activator_CreateInstance.md %}
+
+## Use Function
+### Named parameter
+
+{% include _shared_block/_cSharp/CSharp_NamedParameter.md %}
