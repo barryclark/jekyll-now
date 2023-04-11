@@ -65,7 +65,7 @@ It’s from doula and midwives I learned that my belly was dropping low. It was 
 
 Thanks to regular yoga practices, walks and physiotherapy exercises, I had no back pain or any sort of problems. For those of you who are interested in knowing more about yoga, I have added a list of yoga practices I did during pregnancy and postpartum below. I  recommend contacting a teacher before practicing any exercises. I also did yoga nidra which helped me relax well. I used the [Insight timer](https://insighttimer.com/) app on my mobile for practicing the same. During my yoga practice and relaxation, I always prayed (“sankalpa”) for a healthy natural birth. I thought that it would be the first gift for my son.
 
- 
+![_config.yml]({{ site.baseurl }}/images/Books.jpg)
 
 Knowledge is power. I was hungry for information. As soon as I knew I was pregnant, I spent a lot of time reading about pregnancy,  natural birth and child care. I took some inspiration talking to people. I had a chance meeting a nurse from the USA while in Bengaluru. She introduced me to books written by Ina May and recommended that I read them. So I did. My goal was to have a healthy natural birth. I did my best to educate myself and prepare for it. There are many things that can go wrong during childbirth that are not in one's control. But I believe the best we can do is to keep ourselves informed and prepare as best as we can. I recommend, if not all, reading “Guide to childbirth” from Ina May.
 
