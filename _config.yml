@@ -87,9 +87,9 @@ exclude:
   - CNAME
 
 collections:
-  - pubs:
+  pubs:
     output: true
-  - team:
+  team:
     people: true
-  - alumni:
+  alumni:
     people: true
