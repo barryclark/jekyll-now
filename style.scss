@@ -256,9 +256,13 @@ nav {
 //
 
 .posts > .post {
+  margin: 50px 100px;
   padding: 0 30px;
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
+  @include mobile {
+    margin: 50px 0;
+  } 
 }
 
 .posts > .post:last-child {
