@@ -24,8 +24,6 @@ When it came to the regular gynecology check-up, we had to drive for about 15-20
 
 Here are a few things I would like to share from my pregnancy diary. Everything in moderation is the key.
 
-
-
 * Regular and mild workouts. I recommend doing yoga. You need to learn it from a professional who specializes in teaching yoga for pregnant women.
 * Regular walks to keep yourself active and ensure good blood flow for the growing baby
 * Maintaining a balanced diet. Including vegetables (mostly cooked), fruits, legumes and other proteins in your diet is good. Avoid deep fried food. Reduce the quantity of salt and sugar. Drink lots of water (min of 2-3 ltrs per day). I had soaked almonds(5-6) and yogurt regularly.
@@ -43,11 +41,10 @@ My family wanted me to stay back in India for delivery. After thinking a lot abo
 
 Few reasons why I considered going back to CZ are,
 
-
-
-1. The Czech Republic is known for good healthcare with advanced facilities for childbirth and neonatal care. This is one of the countries with the lowest infant mortality rate in the world. 
-2. I am a tax payer of this country. I have health insurance coverage for all medical expenses.
-3. I used to notice healthy and happy mothers walking around. I always wondered how beautiful they look with their belly and then get back in shape after delivery. I used to think if I ever get a chance to be a mother, I wanted to be one like them. 
+* The Czech Republic is known for good healthcare with advanced facilities for childbirth and neonatal care. This is one of the countries with the lowest infant mortality rate in the world.
+* The CZ provides good maternity benefits and supports parents with good facilities. Mothers get 28 weeks of maternity benefit. One of the parent can take parental leave upto 3 or 4 years of the child. If you are working, company is obliged to keep your post until 3rd year of your child.
+* I am a tax payer of this country. I have health insurance coverage for all medical expenses.
+* I used to notice healthy and happy mothers walking around. I always wondered how beautiful they look with their belly and then get back in shape after delivery. I used to think if I ever get a chance to be a mother, I wanted to be one like them. 
 
 Once we were back in the Czech Republic, the first thing I did was to look for a doula. In the meantime, my husband and I attended a prenatal course at a maternity hospital (Obilní trh in Brno, CZ) to get some overview of hospital facilities, when and how to check-in and what to do during an emergency. 
 
