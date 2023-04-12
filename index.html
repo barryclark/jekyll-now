@@ -12,8 +12,8 @@ layout: default
 
 
 <div class="posts">
-  <h1><a href="{{ site.baseurl }}{{ post.url }}" style="margin:0 10px">News</a></h1>
-  {% for post in site.posts %}
+  <h1><a href="{{ site.baseurl }}{{ post.url }}" style="margin:0 25px">News</a></h1>
+  {% for post in site.posts reversed %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
