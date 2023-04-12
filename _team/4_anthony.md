@@ -1,5 +1,5 @@
 ---
 name: Anthony Booker
 position: Undergraduate intern
-image: chengxuan.jpeg
+image: anthony.jpeg
 ---
