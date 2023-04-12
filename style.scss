@@ -286,6 +286,43 @@ nav {
   }
 }
 
+
+.pubs > .pub {
+  margin: 50px 100px;
+  padding: 0 30px;
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
+  @include mobile {
+    margin: 50px 0;
+  } 
+}
+
+.pubs > .pub:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.pub {
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
@@ -564,15 +601,16 @@ footer {
 .profilegrid {
   display: inline-block;
   text-align: center;
-  width: 300px;
-  height: 300px;
-  margin-left: 15px;
-  margin-right: 15px;
+  width: 250px;
+  height: 400px;
+  margin-left: 0em;
+  margin-right: 0em;
 
   @include mobile {
     float: none;
     display: inline-block;
     margin: 0 0;
+    align-items: center;
   }
 
 }
@@ -580,14 +618,18 @@ footer {
 .grid-flow {
     display: grid;
     grid-auto-flow: row;
-    grid-gap:75px;
-    margin: 45px 45px;
+    grid-gap:1em;
+    margin: 6em 6em;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr auto;
 
     @include mobile {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto 1fr auto;
+    display: grid;
+    margin: 5em 1em;
+    align-items: center;
+    justify-items: center;
   }
 }
 
