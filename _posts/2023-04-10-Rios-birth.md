@@ -68,6 +68,8 @@ Knowledge is power. I was hungry for information. As soon as I knew I was pregna
 
 I started preparing my hospital bag around the 36th week. And by the end of the 37th week I was mostly set with everything I needed. I also went around to check the maternity wards in the hospitals I was considering. It is good to check it out and be familiar with the hospital facilities so that you aren’t surprised or shocked during the delivery. I needed a calm environment which I found in the [Vyškov hospital](https://www.nemvy.cz/) which is known for natural births and VBACs. Terezie accompanied us for the tour and helped us with the registration process.
 
+I used the app Pregnancy+ for checking week on week progress. What I liked most about it is the 3D image of the baby with the updates about growth of the foetus week on week, tips for the changes to expect during that week of pregnancy and some simple ways to overcome some of the common issues or discomforts and I could track my weight changes. If you would like to use the birth plan or contraction timer from this app you have to pay. I referred the birth plan to get an idea and created it on a google doc on my own and used a free contraction timer app.
+
 On top of all, keeping the mind nourished with good thoughts and exchanging positivity over conversations helped me keep a calm and happy state of mind. This is very important for both the mother and the baby for maintaining good health.
 
 
