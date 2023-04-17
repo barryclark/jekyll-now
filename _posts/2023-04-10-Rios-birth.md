@@ -41,7 +41,7 @@ My family wanted me to stay back in India for delivery. After thinking a lot abo
 
 Few reasons why I considered going back to CZ are,
 
-* The Czech Republic is known for good healthcare with advanced facilities for childbirth and neonatal care. This is one of the countries with the lowest infant mortality rate in the world.
+* The Czech Republic is known for good healthcare with advanced facilities for childbirth and neonatal care. This is the country with the lowest infant mortality rate in the world.
 * The CZ provides good maternity benefits and supports parents with good facilities. Mothers get 28 weeks of maternity benefit. One of the parent can take parental leave upto 3 or 4 years of the child. If you are working, company is obliged to keep your post until 3rd year of your child.
 * I am a tax payer of this country. I have health insurance coverage for all medical expenses.
 * I used to notice healthy and happy mothers walking around. I always wondered how beautiful they look with their belly and then get back in shape after delivery. I used to think if I ever get a chance to be a mother, I wanted to be one like them. 
