@@ -21,8 +21,11 @@ layout: default
   </div>
 
   <hr />
-{% if page.author %}Written by: {{page.author}}{% endif %}
+{% if page.author %}
+  {% include author/{{page.author}}.html %}
+{% endif %}
   <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  add this
   <div class="addthis_inline_share_toolbox"></div>
 
 <ul class="tags">
