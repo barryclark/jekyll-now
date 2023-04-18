@@ -13,7 +13,7 @@ layout: default
 		{% assign author = site.data.authors[page.author] %}
 		{% if author %}
 		 &bull; 
-		<span class="glyphicon glyphicon-user"></span> Written by <a href="{{ author.web }}">{{ author.name }}</a>
+		<span class="glyphicon glyphicon-user"></span> <a href="{{ author.web }}">{{ author.name }}</a>
 		{% endif %}
 	</p>
 	<ul class="tags">
