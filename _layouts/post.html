@@ -8,24 +8,23 @@ layout: default
 	<h1>
 		<a href="{{ page.url }}">{{ page.title }}</a>
 	</h1>
-	<p><span class="glyphicon glyphicon-time"></span> {{ page.date | date_to_string }}</p>
+	<p>
+		<span class="glyphicon glyphicon-time"></span> {{ page.date | date_to_string }}
+		{% assign author = site.data.authors[page.author] %}
+		{% if author %}
+		 &bull; 
+		<span class="glyphicon glyphicon-user"></span> Written by <a href="{{ author.web }}">{{ author.name }}</a>
+		{% endif %}
+	</p>
 	<ul class="tags">
 		{% for tag in page.tags %}
 		<li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
 		{% endfor %}
-		
-		{% assign author = site.data.authors[page.author] %}
-		{% if author %}
-		<li>
-			Written by <a href="{{ author.web }}">{{ author.name }}</a>
-		</li>
-		{% endif %}
 	</ul>
 	<hr>
 	<div class="entry">
 		{{ content }}
 	</div>
-	<hr />
 	{% if page.comments %}
 	{% endif %}	
 	{% if page.comments %}
