@@ -1,7 +1,5 @@
 ---
 layout: default
-comments: true
-author: 'Author Name'
 ---
 
 
@@ -21,7 +19,7 @@ author: 'Author Name'
 		{{ content }}
 	</div>
 	<hr />
-	{% if comments %}
+	{% if page.comments %}
 	<div id="disqus_thread"></div>
 	<script>
 	    (function() { // DON'T EDIT BELOW THIS LINE
