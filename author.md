@@ -3,4 +3,4 @@ layout: author
 title: About the Author
 ---
 
-This is a page zabout the author
+this is the page about the author
