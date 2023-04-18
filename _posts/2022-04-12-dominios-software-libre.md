@@ -16,7 +16,7 @@ tags:
   - gnuchile
   - fsf
 comments: true
-author: 'Author Name'
+author: oscarvalenzuelab
 ---
 
 Si has llegado a este post es probablemente porque estas buscando un sitio web relacionado con alguno de mis antiguos proyectos, lamentablemente el proyecto que buscas ya no se encuentra activo, y este dominio ahora esta disponible para ser usado en proyectos relacionados con Software Libre.

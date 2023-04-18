@@ -13,12 +13,21 @@ layout: default
 		{% for tag in page.tags %}
 		<li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
 		{% endfor %}
+		
+		{% assign author = site.data.authors[page.author] %}
+		{% if author %}
+		<li>
+			Written by <a href="{{ author.web }}">{{ author.name }}</a>
+		</li>
+		{% endif %}
 	</ul>
 	<hr>
 	<div class="entry">
 		{{ content }}
 	</div>
 	<hr />
+	{% if page.comments %}
+	{% endif %}	
 	{% if page.comments %}
 	<div id="disqus_thread"></div>
 	<script>
