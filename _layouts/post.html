@@ -23,11 +23,7 @@ author: 'Author Name'
   </div>
 
   <hr />
-{% if page.author %}
-  {% include author/{{page.author}}.html %}
-{% endif %}
-
-{% if page.comments %}
+  
 <div id="disqus_thread"></div>
 <script>
     (function() { // DON'T EDIT BELOW THIS LINE
@@ -38,7 +34,6 @@ author: 'Author Name'
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}
 
   <!-- Go to www.addthis.com/dashboard to customize your tools -->
   add this
