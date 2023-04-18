@@ -1,69 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
-    {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
-
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/tags">Tags</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+	<head>
+		<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+		{% include meta.html %}
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+		<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+		<!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+	</head>
+	<body>
+	<div class="wrapper-masthead">
+		<div class="container">
+			<header class="masthead clearfix">
+				<a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+				<div class="site-info">
+				<h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+				<p class="site-description">{{ site.description }}</p>
+				</div>
+				<nav>
+					<a href="{{ site.baseurl }}/tags">Tags</a>
+					<a href="{{ site.baseurl }}/tags">Tagsss</a>
+				</nav>
+			</header>
+		</div>
+	</div>
 
 
-  <!-- Page Content -->
-  <div class="container">
+	<!-- Page Content -->
+	<div class="container">
 
-      <div class="row">
+	<div class="row">
 
-          {{ content }}
+	{{ content }}
 
-      </div>
-      <!-- /.row -->
+	</div>
+	<!-- /.row -->
 
-  </div>
-  <!-- /.container -->
+	</div>
+	<!-- /.container -->
+	<div class="wrapper-footer">
+	<div class="container">
+	<footer class="footer">
+	{% include svg-icons.html %}
+	</footer>
+	</div>
+	</div>
+	{% include analytics.html %}
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script id="dsq-count-scr" src="//ovalenzuela-com.disqus.com/count.js" async></script>
 
-  <div class="wrapper-footer">
-    <div class="container">
-      <footer class="footer">
-        {% include svg-icons.html %}
-      </footer>
-    </div>
-  </div>
-
-  {% include analytics.html %}
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.js"></script>
-
-  <!-- Go to www.addthis.com/dashboard to customize your tools -->
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57d1d73564a8b9c0"></script>
-  <script id="dsq-count-scr" src="//ovalenzuela-com.disqus.com/count.js" async></script>
-  
-
-  </body>
-
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57d1d73564a8b9c0"></script>
+	</body>
 </html>
