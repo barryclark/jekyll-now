@@ -26,3 +26,5 @@ Si buscas usar el dominio temporalmente, por favor escríbeme un email a mí dir
 
 
 Ten en cuenta que no puedo ofrecer hosting o asignar la titularidad del dominio. Solo puedo ofrecer redireccionamiento del dominio, subdominio o alias.
+
+xx
