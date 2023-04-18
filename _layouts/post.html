@@ -7,41 +7,39 @@ author: 'Author Name'
 
 <article class="post">
 
-  <h1>
-      <a href="{{ page.url }}">{{ page.title }}</a>
-  </h1>
-  <p><span class="glyphicon glyphicon-time"></span> {{ page.date | date_to_string }}</p>
-  <ul class="tags">
-  {% for tag in page.tags %}
-    <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
-  {% endfor %}
-  </ul>
-  <hr>
+	<h1>
+		<a href="{{ page.url }}">{{ page.title }}</a>
+	</h1>
+	<p><span class="glyphicon glyphicon-time"></span> {{ page.date | date_to_string }}</p>
+	<ul class="tags">
+		{% for tag in page.tags %}
+		<li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
+		{% endfor %}
+	</ul>
+	<hr>
+	<div class="entry">
+		{{ content }}
+	</div>
+	<hr />
+	{% if page.comments %}
+	<div id="disqus_thread"></div>
+	<script>
+	    (function() { // DON'T EDIT BELOW THIS LINE
+	    var d = document, s = d.createElement('script');
+	    s.src = 'https://ovalenzuela-com.disqus.com/embed.js';
+	    s.setAttribute('data-timestamp', +new Date());
+	    (d.head || d.body).appendChild(s);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	{% endif %}
 
-  <div class="entry">
-    {{ content }}
-  </div>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<div class="addthis_inline_share_toolbox"></div>
 
-  <hr />
-  
-<div id="disqus_thread"></div>
-<script>
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://ovalenzuela-com.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-  <!-- Go to www.addthis.com/dashboard to customize your tools -->
-  add this
-  <div class="addthis_inline_share_toolbox"></div>
-
-<ul class="tags">
-{% for tag in post.tags %}
-  <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
-{% endfor %}
-</ul>
+	<ul class="tags">
+	{% for tag in post.tags %}
+		<li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
+	{% endfor %}
+	</ul>
 </article>
