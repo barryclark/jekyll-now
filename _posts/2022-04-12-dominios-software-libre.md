@@ -3,7 +3,6 @@ published: true
 id: 120422
 title: Dominios para proyectos de Software Libre
 date: 2022-04-12T00:00:00.000Z
-author: ovalenzuela
 layout: post
 guid: 'http://ovalenzuela.com/?p=120422'
 permalink: /2022/04/dominios-para-proyectos-de-software-libre.html

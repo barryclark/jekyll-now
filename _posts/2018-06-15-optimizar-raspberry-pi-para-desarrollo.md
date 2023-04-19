@@ -1,18 +1,17 @@
 ---
 published: true
 id: 150618
-title: 'Optimizar RPI para Desktop'
+title: Optimize RPI for real use
 date: 2018-06-15T00:00:00+00:00
-author: ovalenzuela
 layout: post
-guid: http://ovalenzuela.com/?p=090517
+guid: 'http://ovalenzuela.com/?p=150618'
 permalink: /2018/06/optimizar-raspberry-pi-para-desarrollo.html
-categories:
-  - General
 tags:
-  - linux
-  - raspberry
   - development
+  - raspberry
+  - linux
+comments: true
+author: oscarvalenzuelab
 ---
 
 This is the set of configurations I use more frequently when setting up a RaspberryPI as desktop enviroment. Probably there's better options and solutions, but I like to use this simple steps to improve the performance of my RaspberryPI setup for the kind of work I do.
