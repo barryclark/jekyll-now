@@ -9,15 +9,13 @@ permalink: /2016/05/costos-de-desarrollo-con-ucp.html
 dsq_thread_id:
   - 4842478946
 categories:
-  - Desarrollo
+  - Development
+  - Software
   - General
-  - Noticias Destacadas
-  - Opinión
 tags:
-  - apps
-  - desarrollador
-  - ingenieria
-  - profesional
+  - development
+  - software
+  - general
 ---
 <p align="justify">
   En la actualidad, existen diversas técnicas y métodos que se pueden utilizar para calcular el esfuerzo, costo y tiempo necesario para el desarrollo de un software. Algunas técnicas pertenecen a la rama tradicional, otras a la ágil y otras son más, por así decirlo, abstractas. Usar la técnica correcta es en realidad una tarea difícil, puesto que existen demasiadas variables a considerar. Sin embargo con práctica y experiencia, es posible ajustar las técnicas a los diferentes proyectos y las necesidades específicas del mismo.
@@ -164,7 +162,7 @@ tags:
 </p>
 
 <p align="justify">
-  <img class="aligncenter wp-image-772 size-full" src="http://www.ovalenzuela.com/wp-content/uploads/2016/05/factor_tecnico.png" alt="factor_tecnico" width="332" height="215" sizes="(max-width: 332px) 100vw, 332px" />
+  <img class="aligncenter wp-image-772 size-full" src="http://www.ovalenzuela.com/images/posts/oldwp/factor_tecnico.png" alt="factor_tecnico" width="332" height="215" sizes="(max-width: 332px) 100vw, 332px" />
 </p>
 
 <p align="justify">
@@ -176,7 +174,7 @@ tags:
 </p>
 
 <p align="justify">
-  <img class="aligncenter wp-image-773 size-full" src="http://www.ovalenzuela.com/wp-content/uploads/2016/05/factor_ambiente.png" alt="factor_ambiente" width="292" height="153" />
+  <img class="aligncenter wp-image-773 size-full" src="http://www.ovalenzuela.com/images/posts/oldwp/factor_ambiente.png" alt="factor_ambiente" width="292" height="153" />
 </p>
 
 <p align="justify">
@@ -383,7 +381,7 @@ tags:
 </p>
 
 <p align="justify">
-  <img class="aligncenter wp-image-774 size-full" src="http://www.ovalenzuela.com/wp-content/uploads/2016/05/casos_uso.png" alt="casos_uso" width="304" height="129" sizes="(max-width: 304px) 100vw, 304px" />
+  <img class="aligncenter wp-image-774 size-full" src="http://www.ovalenzuela.com/images/posts/oldwp/casos_uso.png" alt="casos_uso" width="304" height="129" sizes="(max-width: 304px) 100vw, 304px" />
 </p>
 
 <p align="justify">
@@ -403,7 +401,7 @@ tags:
 </p>
 
 <p align="justify">
-  <img class="aligncenter wp-image-775 size-full" src="http://www.ovalenzuela.com/wp-content/uploads/2016/05/resultados_final.png" alt="resultados_final" width="594" height="184" sizes="(max-width: 594px) 100vw, 594px" />
+  <img class="aligncenter wp-image-775 size-full" src="http://www.ovalenzuela.com/images/posts/oldwp/resultados_final.png" alt="resultados_final" width="594" height="184" sizes="(max-width: 594px) 100vw, 594px" />
 </p>
 
 <p align="justify">
