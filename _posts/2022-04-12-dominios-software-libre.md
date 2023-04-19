@@ -11,7 +11,7 @@ tags:
   - gnuchile
   - fsf
   - multidata
-comments: true
+comments: false
 author: oscarvalenzuelab
 ---
 

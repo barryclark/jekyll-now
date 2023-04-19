@@ -1,22 +1,19 @@
 ---
-id: 716
+published: true
+id: 20160519
 title: Costos de desarrollo con UCP
 date: 2016-05-19T23:09:03+00:00
-author: ovalenzuela
 layout: post
-guid: http://ovalenzuela.com/?p=716
+guid: 'http://ovalenzuela.com/?p=20160519'
 permalink: /2016/05/costos-de-desarrollo-con-ucp.html
-dsq_thread_id:
-  - 4842478946
-categories:
-  - Development
-  - Software
-  - General
 tags:
   - development
   - software
   - general
+comments: true
+author: oscarvalenzuelab
 ---
+
 <p align="justify">
   En la actualidad, existen diversas técnicas y métodos que se pueden utilizar para calcular el esfuerzo, costo y tiempo necesario para el desarrollo de un software. Algunas técnicas pertenecen a la rama tradicional, otras a la ágil y otras son más, por así decirlo, abstractas. Usar la técnica correcta es en realidad una tarea difícil, puesto que existen demasiadas variables a considerar. Sin embargo con práctica y experiencia, es posible ajustar las técnicas a los diferentes proyectos y las necesidades específicas del mismo.
 </p>
