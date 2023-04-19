@@ -12,6 +12,7 @@ categories:
 tags:
   - linux
   - raspberry
+  - development
 ---
 
 This is the set of configurations I use more frequently when setting up a RaspberryPI as desktop enviroment. Probably there's better options and solutions, but I like to use this simple steps to improve the performance of my RaspberryPI setup for the kind of work I do.
