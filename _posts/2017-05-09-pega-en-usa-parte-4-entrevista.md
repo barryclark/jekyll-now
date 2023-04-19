@@ -12,8 +12,8 @@ categories:
   - Noticias Destacadas
   - Opinión
 tags:
-  - amazon
-  - google
+  - mentoring
+  - laboral
   - linkedin
   - profesional
   - trabajo
