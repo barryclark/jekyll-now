@@ -14,10 +14,6 @@ tags:
   - mentoring
   - laboral
   - linkedin
-  - profesional
-  - trabajo
-  - usa
-  - visa
 comments: true
 author: oscarvalenzuelab
 ---
