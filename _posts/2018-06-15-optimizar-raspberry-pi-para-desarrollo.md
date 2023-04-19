@@ -21,6 +21,7 @@ This is the set of configurations I use more frequently when setting up a Raspbe
 The RPI memory is very limited, anf for certain cases we would fall short. There's two main options I use to set specific memory limitations for RPI desktop setups.
 
 ''' Using dphys-swapfile'''
+`nano`
 sudo dphys-swapfile setup
 sudo /etc/init.d/dphys-swapfile stop
 sudo /etc/init.d/dphys-swapfile start
