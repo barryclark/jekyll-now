@@ -1,11 +1,11 @@
 ---
 published: true
-id: 11216
+id: 20161201
 title: 'Cómo conseguir una pega en USA - Parte 2: La triste realidad chilena'
 date: 2016-12-01T00:00:00+00:00
 author: ovalenzuela
 layout: post
-guid: http://ovalenzuela.com/?p=11216
+guid: http://ovalenzuela.com/?p=20161201
 permalink: /2016/12/pega-en-usa-parte-2-triste-realidad-chilena.html
 categories:
   - General
