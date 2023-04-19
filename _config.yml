@@ -19,7 +19,7 @@ avatar: https://avatars3.githubusercontent.com/u/12322852?s=460&v=4
 footer-links:
   facebook:
   github: oscarvalenzuelab/
-  linkedin:
+  linkedin: alkamod
   rss: rss # just type anything here for a working RSS icon
   twitter: alkamodz
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -52,7 +52,7 @@ permalink: /:title/
 version: v1.2.0
 
 #Pagination
-paginate: 3
+paginate: 5
 paginate_path: "/blog/page:num/"
 
 # Jekyll 3 now only supports Kramdown for Markdown
