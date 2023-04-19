@@ -10,9 +10,7 @@ categories:
   - General
   - Opinión
 tags:
-  - gnu
   - gnuchile
-  - fsf
 comments: false
 author: oscarvalenzuelab
 ---

@@ -7,9 +7,7 @@ layout: post
 guid: 'http://ovalenzuela.com/?p=20220412'
 permalink: /2022/04/dominios-para-proyectos-de-software-libre.html
 tags:
-  - gnu
   - gnuchile
-  - fsf
   - multidata
 comments: false
 author: oscarvalenzuelab
