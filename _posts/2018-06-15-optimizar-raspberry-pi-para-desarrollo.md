@@ -9,16 +9,21 @@ guid: http://ovalenzuela.com/?p=090517
 permalink: /2018/06/optimizar-raspberry-pi-para-desarrollo.html
 categories:
   - General
-  - Noticias Destacadas
-  - Opinión
 tags:
   - linux
   - raspberry
-  - profesional
 ---
 
-Primero que todo, no doy soporte. Si decides seguir las instrucciones que escribo a continuacion es tu problema.
-Esto es solo una recoleccion de ideas y tips que he ido encontrando en Internet.
+This is the set of configurations I use more frequently when setting up a RaspberryPI as desktop enviroment. Probably there's better options and solutions, but I like to use this simple steps to improve the performance of my RaspberryPI setup for the kind of work I do.
+
+## Increase SWAP memory
+
+The RPI memory is very limited, anf for certain cases we would fall short. There's two main options I use to set specific memory limitations for RPI desktop setups.
+
+''' Using dphys-swapfile'''
+sudo dphys-swapfile setup
+sudo /etc/init.d/dphys-swapfile stop
+sudo /etc/init.d/dphys-swapfile start
 
 ## Aumentar la memoria SWAP
 
