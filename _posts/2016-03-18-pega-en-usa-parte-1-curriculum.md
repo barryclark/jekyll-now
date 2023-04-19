@@ -1,4 +1,5 @@
 ---
+published: true
 id: 20160318
 title: 'Cómo conseguir una pega en USA &#8211; Parte 1: El curriculum'
 date: 2016-03-18T22:24:42+00:00
@@ -17,7 +18,7 @@ tags:
   - trabajo
   - usa
   - visa
-comments: false
+comments: true
 author: oscarvalenzuelab
 ---
 <p style="text-align: justify;">
@@ -98,17 +99,3 @@ author: oscarvalenzuelab
 <p style="text-align: justify;">
   Finalmente y lo más importante, <strong>todo en Ingles</strong>. Si no hablas inglés perfectamente no importa, pero consigue a alguien que te ayude con tu CV. Si tienes que pagar, entonces hazlo, tomalo como algo en serio, una inversión, valdrá la pena.
 </p>
-
-<p style="text-align: justify;">
-  Próximamente:
-</p>
-
-<li style="text-align: justify;">
-  <a href="/2016/12/pega-en-usa-parte-2-triste-realidad-chilena.html">Parte 2: La triste realidad chilena</a>
-</li>
-<li style="text-align: justify;">
-  <a href="/2017/04/pega-en-usa-parte-3-entrevista.html">Parte 3: Cómo conseguir una entrevista</a>
-</li>
-<li style="text-align: justify;">
-  Parte 4: Lo que debes hacer antes, durante y después de una entrevista.
-</li>

@@ -1,11 +1,10 @@
 ---
 published: true
-id: 150417
+id: 20170415
 title: 'Cómo conseguir una pega en USA - Parte 3: Conseguir una entrevista'
 date: 2017-04-15T00:00:00+00:00
-author: ovalenzuela
 layout: post
-guid: http://ovalenzuela.com/?p=150417
+guid: http://ovalenzuela.com/?p=20170415
 permalink: /2017/04/pega-en-usa-parte-3-entrevista.html
 categories:
   - General
@@ -19,6 +18,8 @@ tags:
   - trabajo
   - usa
   - visa
+comments: true
+author: oscarvalenzuelab
 ---
 
 Al fin llegamos al tercer post relacionado con trabajar en el extranjero. En esta oportunidad quiero compartir algunos tips para conseguir una entrevista.
@@ -133,8 +134,3 @@ desde servicios de traslado en avión/barco para tus cosas hasta abogados dedica
 
 * Parte 4: Lo que debes hacer antes, durante y después de una entrevista:
 Expondré algo más de detalle respecto a qué libros leer, cómo prepararte para la entrevista técnica y que hacer durante la misma. No te pierdas mi próximo post.
-
-## Anteriores
-
-* <a href="/2016/03/pega-en-usa-parte-1-curriculum.html">Parte 1: El curriculum</a>
-* <a href="/2016/12/pega-en-usa-parte-2-triste-realidad-chilena.html">Parte 2: La triste realidad chilena</a>
