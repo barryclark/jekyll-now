@@ -83,7 +83,7 @@ author: oscarvalenzuelab
 </p>
 
 <p style="text-align: justify;">
-  En general, para llenar esta descripción debes seguir esta pauta:<img class="size-medium wp-image-742 alignright" src="http://www.ovalenzuela.com/images/posts/wpold/star.jpeg" alt="Metodología Star" width="300" height="284" sizes="(max-width: 300px) 100vw, 300px" />
+  En general, para llenar esta descripción debes seguir esta pauta:<img class="size-medium wp-image-742 alignright" src="images/posts/oldwp/star.jpeg" alt="Metodología Star" width="300" height="284"/>
 </p>
 
   * Situación: Contexto general, donde, cuando, quien participaba, cual era el problema,etc.
