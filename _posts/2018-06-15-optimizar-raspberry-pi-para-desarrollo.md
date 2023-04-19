@@ -20,20 +20,16 @@ This is the set of configurations I use more frequently when setting up a Raspbe
 
 The RPI memory is very limited, anf for certain cases we would fall short. There's two main options I use to set specific memory limitations for RPI desktop setups.
 
-***Using dphys-swapfile***
-
-`
-\# sudo dphys-swapfile setup
-\# sudo /etc/init.d/dphys-swapfile stop
-\# sudo /etc/init.d/dphys-swapfile start
-`
+`\# sudo dphys-swapfile setup`
+`\# sudo /etc/init.d/dphys-swapfile stop`
+`\# sudo /etc/init.d/dphys-swapfile start`
 
 ## Enable Turbo Mode
 
 In order to increase performance, we can enable the Turbo Mode by using the appropiated options in the config.txt file:
 
-force_turbo=1 # Esta opcion fuerza el modo turbo. Activar este modo puede eliminar tu garantia.
-boot_delay=1 # Es necesario activar cuando se activa el modo turbo, para evitar corrupcion de la tarjeta SDCARD.
+`force_turbo=1`
+`boot_delay=1`
 
 Los parametros a continuacion son para Overcloclear una RPI3 a 1.35GHZ
 arm_freq=1350
