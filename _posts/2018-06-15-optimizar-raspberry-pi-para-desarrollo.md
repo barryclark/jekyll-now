@@ -1,11 +1,11 @@
 ---
 published: true
-id: 150618
-title: Optimize RPI for real use
+id: 20180615
+title: Optimize RPI for software development
 date: 2018-06-15T00:00:00+00:00
 layout: post
-guid: 'http://ovalenzuela.com/?p=150618'
-permalink: /2018/06/optimizar-raspberry-pi-para-desarrollo.html
+guid: 'http://ovalenzuela.com/?p=20180615'
+permalink: /2018/06/optimize-rpi-for-software-development.html
 tags:
   - development
   - raspberry

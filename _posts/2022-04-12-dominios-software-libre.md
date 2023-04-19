@@ -1,15 +1,16 @@
 ---
 published: true
-id: 120422
+id: 20220412
 title: Dominios para proyectos de Software Libre
 date: 2022-04-12T00:00:00.000Z
 layout: post
-guid: 'http://ovalenzuela.com/?p=120422'
+guid: 'http://ovalenzuela.com/?p=20220412'
 permalink: /2022/04/dominios-para-proyectos-de-software-libre.html
 tags:
   - gnu
   - gnuchile
   - fsf
+  - multidata
 comments: true
 author: oscarvalenzuelab
 ---
