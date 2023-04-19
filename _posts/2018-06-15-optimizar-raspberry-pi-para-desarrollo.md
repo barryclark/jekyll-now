@@ -28,8 +28,9 @@ The RPI memory is very limited, anf for certain cases we would fall short. There
 \# sudo /etc/init.d/dphys-swapfile start
 `
 
-## Modo Turbo
-Cambiar en el archivo config.txt:
+## Enable Turbo Mode
+
+In order to increase performance, we can enable the Turbo Mode by using the appropiated options in the config.txt file:
 
 force_turbo=1 # Esta opcion fuerza el modo turbo. Activar este modo puede eliminar tu garantia.
 boot_delay=1 # Es necesario activar cuando se activa el modo turbo, para evitar corrupcion de la tarjeta SDCARD.
