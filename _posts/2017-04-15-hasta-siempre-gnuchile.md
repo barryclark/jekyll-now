@@ -11,10 +11,11 @@ categories:
   - General
   - Opinión
 tags:
+  - gnu
   - gnuchile
   - fsf
 ---
-
+  
 Hace ya algun tiempo queria escribir sobre este tema, sobre lo que paso con GNUCHILE y como termino todo, no con la idea de ventilar lo sucedido, sino más bien para darle algo como un cierre.
 
 Desilusiones, engaños, aprovechamiento... tantas cosas que podría describir, pero en realidad, sería simplemente abrir la puerta a que lo sucedido siga causando daño, ruido y molestia. En vez, intentaré ser algo más concreto y simple.
