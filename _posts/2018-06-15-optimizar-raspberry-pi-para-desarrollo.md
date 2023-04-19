@@ -28,16 +28,6 @@ The RPI memory is very limited, anf for certain cases we would fall short. There
 \# sudo /etc/init.d/dphys-swapfile start
 `
 
-## Aumentar la memoria SWAP
-
-### Opcion 1:
-sudo dphys-swapfile setup
-
-### Opcion 2:
-sudo /etc/init.d/dphys-swapfile stop
-sudo /etc/init.d/dphys-swapfile start
-
-
 ## Modo Turbo
 Cambiar en el archivo config.txt:
 
