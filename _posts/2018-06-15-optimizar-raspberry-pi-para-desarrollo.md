@@ -71,6 +71,6 @@ For cases where UI is used, you should increase the memory to 32mb.
 Follow the options to activate the autologin on "Boot option"->"Desktop / CLI"->"Desktop autologin"`
 
 ### Useful links
-* https://www.makeuseof.com/tag/raspberry-pi-performance-tips/
-* https://www.makeuseof.com/tag/make-raspberry-pi-3-boot-usb/
-* https://github.com/Hexxeh/rpi-update
+* [https://www.makeuseof.com/tag/raspberry-pi-performance-tips/](https://www.makeuseof.com/tag/raspberry-pi-performance-tips/)
+* [https://github.com/Hexxeh/rpi-update](https://github.com/Hexxeh/rpi-update)
+* [https://www.makeuseof.com/tag/make-raspberry-pi-3-boot-usb/](https://www.makeuseof.com/tag/make-raspberry-pi-3-boot-usb/)

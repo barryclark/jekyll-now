@@ -6,8 +6,6 @@ author: ovalenzuela
 layout: post
 guid: http://www.ovalenzuela.com/?p=736
 permalink: /2016/03/pega-en-usa-parte-1-curriculum.html
-dsq_thread_id:
-  - 4675044869
 categories:
   - General
   - Noticias Destacadas
