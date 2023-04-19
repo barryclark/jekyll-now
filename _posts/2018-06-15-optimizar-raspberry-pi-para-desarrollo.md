@@ -20,51 +20,57 @@ This is the set of configurations I use more frequently when setting up a Raspbe
 
 The RPI memory is very limited, anf for certain cases we would fall short. There's two main options I use to set specific memory limitations for RPI desktop setups.
 
-`\# sudo dphys-swapfile setup`
-`\# sudo /etc/init.d/dphys-swapfile stop`
-`\# sudo /etc/init.d/dphys-swapfile start`
+`# sudo dphys-swapfile setup`
+
+`# sudo /etc/init.d/dphys-swapfile stop`
+
+`# sudo /etc/init.d/dphys-swapfile start`
 
 ## Enable Turbo Mode
 
 In order to increase performance, we can enable the Turbo Mode by using the appropiated options in the config.txt file:
 
 `force_turbo=1`
+
 `boot_delay=1`
 
-Los parametros a continuacion son para Overcloclear una RPI3 a 1.35GHZ
-arm_freq=1350
-core_freq=500
-over_voltage=4
-disable_splash=1
+The parameters below are used to overclock the RPI3 CPU to 1.35ghz. Your CPU or settings could be different, please check what parameters are supported by your RPI.
 
-## Ajustes de memoria compartida para cuando tu RPI corre en sin UI
-gpu_mem=16
+`arm_freq=1350`
 
-Para cuando corre en UI, es mejor optimizar la memoria de la siguiente forma
-gpu_mem=320
+`core_freq=500`
 
+`over_voltage=4`
 
-## Instalacion de GUI (desde Debian Stretch Lite)
-sudo apt-get update
-sudo apt full-upgrade -y
-sudo apt-get install -y raspberrypi-ui-mods rpi-chromium-mods
-sudo reboot
-sudo apt-get install lightdm
-raspi-config > "Boot option"->"Desktop / CLI"->"Desktop autologin"
+`disable_splash=1`
 
-### Opcional
-#### startx
-sudo apt-get install --no-install-recommends xinit
+## Shared Memory for GPU
 
-#### Algunos cambios adicionales para mejorar el performance
-Optimizar chromium
-sudo apt-get install -y rpi-chromium-mods
-sudo apt-get install -y python-sense-emu python3-sense-emu
+The settings below are recommended for cases where the RPI don't use the UI.
 
-Instalar Midori
-sudo apt install midori
+`gpu_mem=16`
 
-## Otros interesantes
-https://www.makeuseof.com/tag/raspberry-pi-performance-tips/
-https://www.makeuseof.com/tag/make-raspberry-pi-3-boot-usb/
-https://github.com/Hexxeh/rpi-update
+For cases where UI is used, you should increase the memory to 32mb.
+
+`gpu_mem=32`
+
+## GUI installation (Debian Stretch Lite)
+
+`sudo apt-get update && sudo apt full-upgrade -y`
+
+`sudo apt-get install -y raspberrypi-ui-mods rpi-chromium-mods`
+
+`sudo reboot`
+
+`sudo apt-get install lightdm`
+
+***Enable GUI and autologin ***
+
+`raspi-config`
+
+Follow the options to activate the autologin on "Boot option"->"Desktop / CLI"->"Desktop autologin"`
+
+### Useful links
+* https://www.makeuseof.com/tag/raspberry-pi-performance-tips/
+* https://www.makeuseof.com/tag/make-raspberry-pi-3-boot-usb/
+* https://github.com/Hexxeh/rpi-update
