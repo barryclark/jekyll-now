@@ -1,10 +1,9 @@
 ---
-id: 736
+id: 20160318
 title: 'Cómo conseguir una pega en USA &#8211; Parte 1: El curriculum'
 date: 2016-03-18T22:24:42+00:00
-author: ovalenzuela
 layout: post
-guid: http://www.ovalenzuela.com/?p=736
+guid: http://www.ovalenzuela.com/?p=20160318
 permalink: /2016/03/pega-en-usa-parte-1-curriculum.html
 categories:
   - General
@@ -18,6 +17,8 @@ tags:
   - trabajo
   - usa
   - visa
+comments: false
+author: oscarvalenzuelab
 ---
 <p style="text-align: justify;">
   Siempre he pensado que es bueno devolver la mano a aquellos que te apoyaron, y aunque en ocasiones no tuviste el privilegio que otros tuvieron como un apellido que les permite robar o atropellar y matar gente impunemente, un pituto para una pega o simplemente más recursos y que los papitos le pagaron la U, siempre es bueno apreciar lo que uno tiene, lo que ha logrado y quienes han estado en tu camino. Y aunque no tengas como devolver a todos y cada uno los favores y ese granito de arena que aportaron a tu vida, en ocasiones lograr una posición en la que puedes ayudar a otros a llegar donde tu has llegado, lejos o cerca, porque el que tu estes en un lugar ¨privilegiado¨no es una razón para mirar a otros en menos, sino una oportunidad y una obligación de tender la mano y ayudar a otros a llegar donde estás tú. Es por esto y porque he visto cómo las cosas están en Chile que me atrevo a escribir este post que espero ayude a algunos talentosos desarrolladores a conseguir una mejor calidad de vida.
@@ -62,7 +63,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <img class="size-medium wp-image-744 alignleft" src="http://www.ovalenzuela.com/images/posts/wpold/resume-sample.jpeg" alt="resume-sample" width="300" height="204" sizes="(max-width: 300px) 100vw, 300px" />Listo, ahora que tenemos claro que tenemos que poner estudios y experiencia primero, entonces ahora viene el cómo:
+  <img class="size-medium wp-image-744 alignleft" src="images/posts/oldwp/resume_sample.jpeg" alt="resume-sample" width="300" height="204" />Listo, ahora que tenemos claro que tenemos que poner estudios y experiencia primero, entonces ahora viene el cómo:
 </p>
 
 <p style="text-align: justify;">
