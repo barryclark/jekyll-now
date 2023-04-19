@@ -22,11 +22,11 @@ The RPI memory is very limited, anf for certain cases we would fall short. There
 
 ***Using dphys-swapfile***
 
-`nano`
-
-sudo dphys-swapfile setup
-sudo /etc/init.d/dphys-swapfile stop
-sudo /etc/init.d/dphys-swapfile start
+`
+\# sudo dphys-swapfile setup
+\# sudo /etc/init.d/dphys-swapfile stop
+\# sudo /etc/init.d/dphys-swapfile start
+`
 
 ## Aumentar la memoria SWAP
 
