@@ -64,7 +64,7 @@ For cases where UI is used, you should increase the memory to 32mb.
 
 `sudo apt-get install lightdm`
 
-*** Enable GUI and autologin ***
+***Enable GUI and autologin***
 
 `raspi-config`
 
