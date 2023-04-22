@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: Dictum
 ---
 
-Knowledge is a city to the building of which every human being brought a stone.-- Emerson
+*Knowledge is a city to the building of which every human being brought a stone.*-- Emerson
