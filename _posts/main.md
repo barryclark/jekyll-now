@@ -15,7 +15,7 @@ the reference point. In the figure below, case I shows a network that is
 robust at the reference point while case II shows a network that is not
 robust at the reference point.
 
-<img src="images/neural_network_verification_using_linear_programming/images/motivating example.png" alt="image" />
+<img src="../images/neural_network_verification_using_linear_programming/images/motivating example.png" alt="image" />
 
 Ensuring robustness of networks is important because neural networks are
 vulnerable to adversarial examples produced by small perturbations in
