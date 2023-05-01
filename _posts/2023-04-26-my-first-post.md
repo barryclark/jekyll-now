@@ -7,7 +7,7 @@ This is the first post on my blog!
 $$\mathcal{H}_{l > i} := \{y \in \mathbb{R}^K : y_l > y_i\}$$
 
 <p align="center">
-  <img src="../images/Goursat_Polynomial.png" width="350" title="Goursat polynomial">
+  <img src="../images/neural_network_verification_using_linear_programming/Goursat_Polynomial.png" width="350" title="Goursat polynomial">
 </p>
 
 ```python
