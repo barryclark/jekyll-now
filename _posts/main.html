@@ -1,0 +1,654 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Preamble &#8212; Creating Mathematical Content For Your Blog With Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'main';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Creating Mathematical Content For Your Blog With Jupyter Book</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Preamble
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/main.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Preamble</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Preamble</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-content">Adding content</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equations">Equations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions-theorems-and-proofs">Definitions, Theorems and Proofs</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="preamble">
+<h1>Preamble<a class="headerlink" href="#preamble" title="Permalink to this heading">#</a></h1>
+<p>If your posts contain lots of math along with code (e.g. writing about a new machine learning or robotics research paper), you may find this post useful. On the other hand, if your posts are mostly about code (e.g. writing about how to use an existing package / library), this post may be overkill for you. Okay, let’s get started.</p>
+<p>The beautiful and powerful <a class="reference external" href="https://jupyterbook.org/en/stable/start/overview.html">Jupyter Book</a> ecosystem is meant for writing online books with publication quality content. However, we will be using this ecosystem to write a short blog post, a.k.a. <em>an article</em> in Jupyter Book parlance. Jupyter book offers tremendous functionality and flexibility, but we will focus on getting up-and-running quickly by creating a post from a single markdown file.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="setup">
+<h1>Setup<a class="headerlink" href="#setup" title="Permalink to this heading">#</a></h1>
+<p>Following steps:</p>
+<ol class="arabic simple">
+<li><p>Each blog post (or article) must have its own directory, referred to as the project root directory. This root directory will eventually be turned into a github repository. If you intend to write multiple posts, it may be a good idea to create a parent directory to conain all your project root direrctories.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">parent</span><span class="o">/</span><span class="n">directory</span><span class="o">/</span>
+
+<span class="n">mkdir</span> <span class="n">myblogpost</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Create a python virtual environment to install required dependencies for Jupyter Book to work properly.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">venv</span>
+
+<span class="n">virtualenv</span> <span class="o">-</span><span class="n">p</span> <span class="n">python3</span> <span class="o">./</span><span class="n">venv</span>
+
+<span class="o">.</span> <span class="o">./</span><span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Insall <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code></p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">jupyter</span><span class="o">-</span><span class="n">book</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Next we install the <code class="docutils literal notranslate"><span class="pre">sphinx-proof</span></code> package for supporting theorem/proof like constructs in our post.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">proof</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Change directory to the project root directory</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">myblogpost</span>
+</pre></div>
+</div>
+<ol class="arabic" start="6">
+<li><p>Each project root directory must have at least three files:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> for configuring the content of the post</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> for configuring the structure of the post</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;main&gt;.md</span></code> contains the content to be rendered as HTML / PDF.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code> can create a full HTML website from multiple content files of type <code class="docutils literal notranslate"><span class="pre">*.md</span></code> or <code class="docutils literal notranslate"><span class="pre">*.ipynb</span></code>. We will keep things simple here and use a single <code class="docutils literal notranslate"><span class="pre">.md</span></code> file.</p>
+</div>
+</li>
+<li><p>Create the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> file</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">touch</span> <span class="n">_config</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+<p>and add the following content to it</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># In _config.yml</span>
+<span class="n">title</span><span class="p">:</span> <span class="n">My</span> <span class="n">First</span> <span class="n">Blog</span> <span class="n">Post</span>
+<span class="n">author</span><span class="p">:</span> <span class="n">Your</span> <span class="n">Name</span>
+<span class="c1"># logo: logo.png</span>
+<span class="n">execute</span><span class="p">:</span>
+  <span class="n">execute_notebooks</span><span class="p">:</span> <span class="n">force</span>
+
+<span class="c1"># Add a bibtex file so that we can create citations</span>
+<span class="c1"># bibtex_bibfiles:</span>
+  <span class="c1"># - references.bib</span>
+
+<span class="n">parse</span><span class="p">:</span>
+  <span class="n">myst_enable_extensions</span><span class="p">:</span>
+    <span class="c1"># don&#39;t forget to list any other extensions you want enabled,</span>
+    <span class="c1"># including those that are enabled by default!</span>
+    <span class="o">-</span> <span class="n">amsmath</span>
+    <span class="o">-</span> <span class="n">dollarmath</span>
+    <span class="o">-</span> <span class="n">linkify</span>
+    <span class="o">-</span> <span class="n">colon_fence</span>
+    <span class="o">-</span> <span class="n">html_image</span>
+
+<span class="n">sphinx</span><span class="p">:</span>
+  <span class="n">extra_extensions</span><span class="p">:</span>
+    <span class="o">-</span> <span class="n">sphinx_proof</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="8">
+<li><p>Create the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">touch</span> <span class="n">_toc</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+<p>and add the following content to it</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># In _toc.yml</span>
+<span class="nb">format</span><span class="p">:</span> <span class="n">jb</span><span class="o">-</span><span class="n">article</span>
+<span class="c1"># format: jb-book</span>
+<span class="c1"># root: main</span>
+<span class="c1"># chapters:</span>
+<span class="c1"># - file: mardown</span>
+<span class="c1"># - file: notebooks</span>
+<span class="c1"># - file: markdown-notebooks</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="9">
+<li><p>Create the main content file for the post</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">touch</span> <span class="n">main</span><span class="o">.</span><span class="n">md</span>
+</pre></div>
+</div>
+<p>and add the following meta data at the top</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---</span>
+<span class="n">jupytext</span><span class="p">:</span>
+  <span class="n">text_representation</span><span class="p">:</span>
+    <span class="n">extension</span><span class="p">:</span> <span class="o">.</span><span class="n">md</span>
+    <span class="n">format_name</span><span class="p">:</span> <span class="n">myst</span>
+<span class="n">kernelspec</span><span class="p">:</span>
+  <span class="n">display_name</span><span class="p">:</span> <span class="n">Python</span> <span class="mi">3</span>
+  <span class="n">language</span><span class="p">:</span> <span class="n">python</span>
+  <span class="n">name</span><span class="p">:</span> <span class="n">python3</span>
+<span class="o">---</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">format_name:</span> <span class="pre">myst</span></code> refers to <a class="reference external" href="https://jupyterbook.org/en/stable/content/myst.html">MYST markdown</a>, a fancier flavor of markdown which supports more math-heavy content.</p>
+</div>
+<ol class="arabic simple" start="10">
+<li><p>Now we are ready to build our bare-bones, content-less blog post. Run the below build command</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jb</span> <span class="n">build</span> <span class="n">main</span><span class="o">.</span><span class="n">md</span>
+</pre></div>
+</div>
+<p>Once the execution completes, you should see the following message on the command line</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=======================================================</span>
+
+<span class="n">Page</span> <span class="n">build</span> <span class="n">finished</span><span class="o">.</span>
+    <span class="n">Your</span> <span class="n">page</span> <span class="n">folder</span> <span class="ow">is</span><span class="p">:</span> <span class="n">_build</span><span class="o">/</span><span class="n">_page</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="n">html</span><span class="o">/</span>
+    <span class="n">Open</span> <span class="n">your</span> <span class="n">page</span> <span class="n">at</span><span class="p">:</span> <span class="n">_build</span><span class="o">/</span><span class="n">_page</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="n">html</span><span class="o">/</span><span class="n">main</span><span class="o">.</span><span class="n">html</span>
+
+<span class="o">=======================================================</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="11">
+<li><p>View <code class="docutils literal notranslate"><span class="pre">_build/_page/main/html/main.html</span></code> in the browser of your choice. It should look something like this:</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/bare_bones_post.png"><img alt="_images/bare_bones_post.png" src="_images/bare_bones_post.png" style="width: 500px;" /></a>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="adding-content">
+<h1>Adding content<a class="headerlink" href="#adding-content" title="Permalink to this heading">#</a></h1>
+<section id="equations">
+<h2>Equations<a class="headerlink" href="#equations" title="Permalink to this heading">#</a></h2>
+<p>Jupyter Book supports multiple ways to write equations. Most LaTex-like functionality is supported via Mathjax (read more <a class="reference external" href="https://jupyterbook.org/en/stable/content/math.html#math-and-equations">here</a>). Most environments such as <code class="docutils literal notranslate"><span class="pre">equation</span></code>, <code class="docutils literal notranslate"><span class="pre">equation*</span></code>, <code class="docutils literal notranslate"><span class="pre">align</span></code>, etc. work as expected.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The syntax for labeling equations differs from the standard LaTex syntax. The standard <code class="docutils literal notranslate"><span class="pre">\label</span></code> command is not recognized in the current version (details at the link above).</p>
+</div>
+<p>Inline math <code class="docutils literal notranslate"><span class="pre">$ax</span> <span class="pre">=</span> <span class="pre">b$</span></code> will look like this <span class="math notranslate nohighlight">\(ax = b\)</span>. While</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$$Ax = b$$
+</pre></div>
+</div>
+<p>will produce the following block:</p>
+<div class="math notranslate nohighlight">
+\[Ax = b\]</div>
+<p>Alternatively, you can directly use the <code class="docutils literal notranslate"><span class="pre">equation*</span></code> or <code class="docutils literal notranslate"><span class="pre">align*</span></code> environments in your markdown file. e.g.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">begin</span><span class="p">{</span><span class="n">equation</span><span class="o">*</span><span class="p">}</span>
+<span class="n">Ax</span> <span class="o">=</span> <span class="n">b</span>
+\<span class="n">end</span><span class="p">{</span><span class="n">equation</span><span class="o">*</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>will produce</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+Ax = b
+\end{equation*}\]</div>
+<p>If you want the equation to be numbered, add a label like this <code class="docutils literal notranslate"><span class="pre">$$Ax</span> <span class="pre">=</span> <span class="pre">b$$(eq1)</span></code>. This will result in:</p>
+<div class="math notranslate nohighlight" id="equation-eq1">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eq1" title="Permalink to this equation">#</a></span>\[Ax = b\]</div>
+<p>You can also use the <code class="docutils literal notranslate"><span class="pre">{math}</span></code> directive to declare a math block like this.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{math}
+:label: eq2
+\begin{equation}
+\begin{split}
+   Ax = b\\
+   Cx = d
+\end{split}
+\end{equation}
+```
+</pre></div>
+</div>
+<p>The above block will produce:</p>
+<div class="math notranslate nohighlight" id="equation-eq2">
+<span class="eqno">(2)<a class="headerlink" href="#equation-eq2" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{equation}
+\begin{split}
+   Ax = b\\
+   Cx = d
+\end{split}
+\end{equation}\end{split}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Adding a label to the math block (like above) produces a numbered math block. If you want an un-numbered equation, use the <code class="docutils literal notranslate"><span class="pre">$$</span> <span class="pre">$$</span></code> block or use the <code class="docutils literal notranslate"><span class="pre">equation*</span></code> environment directly in your markdown file (without the math block). e.g.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">begin</span><span class="p">{</span><span class="n">equation</span><span class="o">*</span><span class="p">}</span>
+	<span class="n">Ax</span> <span class="o">=</span> <span class="n">b</span>
+\<span class="n">end</span><span class="p">{</span><span class="n">equation</span><span class="o">*</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>will produce:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+	Ax = b
+\end{equation*}\]</div>
+</div>
+<p>You can also reference equations easily. Use <code class="docutils literal notranslate"><span class="pre">{eq}`eq1`</span> </code> to reference <a class="reference internal" href="#equation-eq1">(1)</a> and <code class="docutils literal notranslate"><span class="pre">{eq}`eq2`</span> </code> to reference <a class="reference internal" href="#equation-eq2">(2)</a>.</p>
+</section>
+<section id="definitions-theorems-and-proofs">
+<h2>Definitions, Theorems and Proofs<a class="headerlink" href="#definitions-theorems-and-proofs" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Preamble</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-content">Adding content</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equations">Equations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions-theorems-and-proofs">Definitions, Theorems and Proofs</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Ayush Bharadwaj
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
