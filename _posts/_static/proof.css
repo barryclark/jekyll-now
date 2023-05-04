@@ -1,0 +1,196 @@
+/*********************************************
+* Variables *
+*********************************************/
+:root {
+  --note-title-color: rgba(68,138,255,.1);
+  --note-border-color: #007bff;
+  --warning-title-color: rgba(220,53,69,.1);
+  --warning-border-color: #dc3545;
+  --hint-title-color: rgba(255,193,7,.2);
+  --hint-border-color: #ffc107;
+  --caution-title-color: rgba(253,126,20,.1);
+  --caution-border-color: #fd7e14;
+  --grey-title-color: rgba(204,204,204,.2);
+  --grey-border-color: #ccc;
+}
+
+/*********************************************
+* Main body *
+*********************************************/
+
+/* Remove content box */
+div.proof p.admonition-title::before {
+	content: none;
+}
+
+/*********************************************
+* Proof *
+*********************************************/
+div#proof{
+	padding: .4rem .6rem .4rem 2rem !important;
+	border-color: var(--grey-border-color);
+	background-color: none;
+}
+
+/*********************************************
+* Theorem *
+*********************************************/
+div.theorem {
+	border-color: var(--note-border-color);
+	background-color: var(--note-title-color);
+}
+
+div.theorem p.admonition-title {
+	background-color: var(--note-title-color);
+}
+
+/*********************************************
+* Axiom *
+*********************************************/
+div.axiom {
+	border-color: var(--hint-border-color);
+	background-color: var(--hint-title-color);
+}
+
+div.axiom p.admonition-title {
+	background-color: var(--hint-title-color);
+}
+
+/*********************************************
+* Criterion *
+*********************************************/
+div.criterion {
+	border-color: var(--caution-border-color);
+	background-color: var(--caution-title-color);
+}
+
+div.criterion p.admonition-title {
+	background-color: var(--caution-title-color);
+}
+
+/*********************************************
+* Lemma *
+*********************************************/
+div.lemma {
+	border-color: var(--hint-border-color);
+	background-color: var(--hint-title-color);
+}
+
+div.lemma p.admonition-title {
+	background-color: var(--hint-title-color);
+}
+
+/*********************************************
+* Definition *
+*********************************************/
+div.definition {
+	border-color: var(--note-border-color);
+	background-color: var(--note-title-color);
+}
+
+div.definition p.admonition-title {
+	background-color: var(--note-title-color);
+}
+
+/*********************************************
+* Remark *
+*********************************************/
+div.remark {
+	border-color: var(--warning-border-color);
+	background-color: var(--warning-title-color);
+}
+
+div.remark p.admonition-title {
+	background-color: var(--warning-title-color);
+}
+
+/*********************************************
+* Conjecture *
+*********************************************/
+div.conjecture {
+	border-color: var(--hint-border-color);
+	background-color: var(--hint-title-color);
+}
+
+div.conjecture p.admonition-title {
+	background-color: var(--hint-title-color);
+}
+
+/*********************************************
+* Corollary *
+*********************************************/
+div.corollary {
+	border-color: var(--caution-border-color);
+	background-color: var(--caution-title-color);
+}
+
+div.corollary p.admonition-title {
+	background-color: var(--caution-title-color);
+}
+
+/*********************************************
+* Algorithm *
+*********************************************/
+div.algorithm {
+	border: none;
+	background-color: none;
+}
+
+div.algorithm p.admonition-title {
+	background-color: transparent;
+	border-top: .15rem solid var(--grey-border-color);
+	border-bottom: .15rem solid var(--grey-border-color);
+}
+
+div.algorithm div.section {
+	font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+	font-size: .85rem;
+}
+
+/*********************************************
+* Example *
+*********************************************/
+div.example {
+	border-color: var(--hint-border-color);
+	background-color: none;
+}
+
+div.example p.admonition-title {
+	background-color: transparent;
+}
+
+/*********************************************
+* Property *
+*********************************************/
+div.property {
+	border-color: var(--caution-border-color);
+	background-color: var(--caution-title-color);
+}
+
+div.property p.admonition-title {
+	background-color: var(--caution-title-color);
+}
+
+/*********************************************
+* Observation *
+*********************************************/
+div.observation {
+	border-color: var(--hint-border-color);
+	background-color: var(--hint-title-color);
+}
+
+div.observation p.admonition-title {
+	background-color: var(--hint-title-color);
+}
+
+/*********************************************
+* Proposition *
+*********************************************/
+div.proposition {
+	border-color: var(--note-border-color);
+	background-color: var(--note-title-color);
+}
+
+div.proposition p.admonition-title {
+	background-color: var(--note-title-color);
+}
