@@ -130,16 +130,16 @@ I managed to sleep well two times a day during pregnancy. Thanks to Yoga and the
 
 After birth, I was ready to care for my son. Many people recommend the mother to sleep when the baby sleeps. It’s a good suggestion though not practically possible every time. I slept whenever I could and tried yoga nidra whenever I needed to relax. 
 
-During the first 3 months, I ensured he had milk every 2 or 3 hours during the night. This meant waking up to check on him. If he is fast asleep and it’s not more than 2 hours, I would wait. Otherwise, I slowly take him to my side and feed him. We were using cloth diapers during nights as well initially which woke him up whenever he wet his nappy or wanted to pee. We then started using disposables during the night which helped him sleep without interruptions and nights got better for us too. Since we co-sleep, I could feed my son whenever he wanted. From the 3rd month or so, we managed to sleep through the night without any issues.
+During the first 3 months, I ensured he had milk every 2 or 3 hours even during the nights. This meant waking up to check on him. If he is fast asleep and it’s not more than 2 hours, I would wait. Otherwise, I slowly take him to my side, talk to him and feed him. We were using cloth diapers during nights which woke him up whenever he wet his nappy or wanted to pee. We then started using disposables during the night which helped him sleep without interruptions and nights got better for us too. Thanks to co-sleeping, I could feed my son whenever he wanted and we managed to sleep through the night without any issues.
 
 **Other formalities**
 
-Fathers are busy after birth with legal and administrative formalities soon after birth. Brno expat center provides detailed information about it in their article [having a baby](https://www.brnoexpatcentre.eu/im-an-expat/having-a-baby/). 
+Fathers are busy after birth with legal and administrative formalities soon after birth. Brno expat center provides detailed information about all such formalities and how-to in their article [having a baby](https://www.brnoexpatcentre.eu/im-an-expat/having-a-baby/). 
 
-Few pointers that I would like to share from our experience which can be of help.
+Knowing is half the battle. Here are a few tips that we gathered When we were at it.
 
 * Hospital where you give birth will help with required documents for Birth registration at Matrika (registry office in the Czech Republic). 
-* Within 60 days of birth, you have to apply for the passport, residence card at MOI and health insurance.
+* Within 60 days of birth, you have to apply for the passport, residence card at MOI(Ministry of Internal Affairs) and health insurance.
     * Health insurance companies will need the residence card or equivalent ID of the baby for processing.
 * Generally the Indian embassy requires the baby to be present to apply for the passport. Traveling and sitting for hours on the train was unimaginable for me and I believe it would be the same for any mother right after birth. I discussed it with my gynecologist and she gave me a letter explaining that I can’t travel. My husband shared it with the counselor at the embassy over email and spoke to the official on the phone. We got confirmation that he can go alone to submit the application and for collecting the passport.
 * MOI will need the passport of the baby for processing the residence card. It is important to apply for it within the first 60 days of birth, clarifying the status of the passport. We got help from the Czech Relocate with all the formalities.
