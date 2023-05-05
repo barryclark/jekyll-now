@@ -10,7 +10,7 @@ date: 2023-04-28 07:29:51 +07:00
 **Modernvet** are revolutionizing veterinary care.
 ![logo modern pet indonesia]({{ site.baseurl }}/images/logo-modernvet.png)
 
-**Modernvet** Offering the highest medical standards at our fully-equipped animal hospital in Jakarta - alongside exceptional hospitality, price transparency and tech-enabled convenience - we are on a mission to transform the veterinary experience.
+**Modernvet** offering the highest medical standards at our fully-equipped animal hospital in Jakarta - alongside exceptional hospitality, price transparency and tech-enabled convenience - we are on a mission to transform the veterinary experience.
 
 Profil perusahaan selengkapnya, baca [di sini](https://www.modernvet.co/id/about-us).
 
