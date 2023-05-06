@@ -94,12 +94,6 @@ months_short:
   - Nov
   - Des
 
-jekyll-archives:
-  layout:
-    category: category-archive
-  permalinks:
-    category: '/category/:name/'
-
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
@@ -122,7 +116,6 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-paginate # Create a paginate using the official Jekyll paginate gem
-  - jekyll-archives # Create Automatically generate post archives by dates, tags, and categories
 
 # Exclude these files from your production _site
 exclude:
