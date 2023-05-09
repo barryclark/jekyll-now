@@ -274,12 +274,12 @@ We can upload it to DALL-E's outpainting editor and over a number of generations
 </div>
 
 
-The outpainting workflow is different from the text2image in that the prompt has to be changed to describe the portion you're describing at each portion of the image.
+The outpainting workflow is different from the text2image in that the prompt has to be changed to describe the portion you're crafting at each portion of the image.
 
 
 ## My Current Impressions of Commercial AI Image Generation Tools
 
-It's been a few months since the vast majority of people started having broad access to AI image generation tools. The major milestone here is the open source release of Stable Diffusion (although some people had access to DALL-E before, and models like [OpenAI GLIDE](https://github.com/openai/glide-text2im) were publicly available but slower and less capable). In this time, I've gotten to use three of these image generation services.
+It's been a few months since the vast majority of people started having broad access to AI image generation tools. The major milestone here is the open source release of Stable Diffusion (although some people had access to DALL-E before, and models like [OpenAI GLIDE](https://github.com/openai/glide-text2im) were publicly available but slower and less capable). During this time, I've gotten to use three of these image generation services.
 
 ### Dream Studio by Stability AI
 
