@@ -21,7 +21,7 @@ Profil perusahaan selengkapnya, baca [di sini](https://www.simp.co.id/AboutSIMP/
 
 Berdasarkan informasi di laman [Alumni UGM](https://alumni.ugm.ac.id/2023/05/09/pt-salim-ivomas-pratama-tbk/), terdapat lowongan kerja sebagai berikut:
 
-# Operator Electric
+# Management Development Program
 
 ![loker SIMP]({{ site.baseurl }}/images/MDP-PT-Salim-Ivomas-Pratama-Tbk-1448x2048.png)
 
