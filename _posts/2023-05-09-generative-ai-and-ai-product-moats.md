@@ -20,8 +20,9 @@ max-width: 560px;" title="YouTube video player" frameborder="0" allow="accelerom
 
 
 Article: [AI is Eating The World](https://txt.cohere.com/ai-is-eating-the-world/)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AeW9r3lopp0" style="
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oTqG2DbXl2Y" tyle="
 width: 100%;
 max-width: 560px;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 
