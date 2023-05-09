@@ -8,7 +8,6 @@ date: 2023-05-09 07:07:51 +07:00
 ---
 
 **PT Salim Ivomas Pratama Tbk (Grup SIMP)** merupakan grup agribisnis yang terdiversifikasi serta terintegrasi secara vertikal di Indonesia.
-
 ![logo SIMP]({{ site.baseurl }}/images/logo-simp.jpg)
 
 Kegiatan utama Grup SIMP meliputi seluruh mata rantai pasokan dari penelitian dan pengembangan, pemuliaan benih bibit, pembudidayaan dan pengolahan kelapa sawit hingga produksi serta pemasaran produk minyak goreng, margarin dan shortening. Sebagai grup agribisnis yang terdiversifikasi, Grup SIMP juga melakukan pembudidayaan komoditas tebu, karet dan tanaman lainnya.
