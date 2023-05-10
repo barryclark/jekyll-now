@@ -6,7 +6,7 @@ category: dev
 tags: [cloud, aws]
 author: Lucian Patian, Martin Birtel
 author_email: patianl@haufe.com, martin.birtel@haufe-lexware.com
-header-img: "images/aws-cognito-security/green-background.jpg"
+header-img: "images/purple_bg.png"
 ---
 
 # A call for debate on how to better secure AWS Cognito
