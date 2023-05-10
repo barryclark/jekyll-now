@@ -28,4 +28,4 @@ Berdasarkan informasi di laman [Alumni UGM](https://alumni.ugm.ac.id/2023/04/26/
 
 ![loker raksaonline]({{ site.baseurl }}/images/3-Poster-MA-66-1086x1536.jpeg)
 
-<div class="apply"><a href="bit.ly/RegistrasiMA66">Lamar posisi ini</a></div>
+<div class="apply"><a href="https://bit.ly/RegistrasiMA66">Lamar posisi ini</a></div>
