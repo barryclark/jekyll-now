@@ -496,9 +496,9 @@ footer {
 .herobanner {
     position: relative;
     height: 350px;
-    object-fit: scale-down;
     overflow: hidden;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     @include mobile {
     height: 350px;
