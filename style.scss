@@ -497,8 +497,7 @@ footer {
     position: relative;
     height: 350px;
     overflow: hidden;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: auto 100%;
     background-position: center;
     @include mobile {
     height: 350px;
