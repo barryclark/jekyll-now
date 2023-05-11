@@ -653,6 +653,12 @@ footer {
 
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
