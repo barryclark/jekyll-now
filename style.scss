@@ -493,6 +493,18 @@ footer {
   } 
 }
 
+.bio-research-hero-post {
+    position: relative;
+    height: 350px;
+    object-fit: contain;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    @include mobile {
+    height: 350px;
+  } 
+}
+
 .flex-center {
     justify-content: center;
 }
