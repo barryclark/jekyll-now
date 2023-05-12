@@ -121,6 +121,11 @@ img {
   font-style: italic;
   color: $gray;
   font-size: 14px;
+  text-align: right; 
+  padding: 0 200px;
+  @include mobile{
+    padding: 0 20px;
+  }
 }
 
 // Specify the color of the selection
@@ -264,6 +269,12 @@ nav {
   } 
 }
 
+.entry{
+  padding: 50px 130px;
+  @include mobile {
+    padding: 20px 0px;
+  } 
+}
 
 .posts > .post {
   margin: 50px 150px;
