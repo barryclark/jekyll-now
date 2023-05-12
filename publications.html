@@ -2,10 +2,14 @@
 layout: default
 title: Publications
 permalink: /publications/
+image: pub-banner.jpeg
 ---
 
+<div class="herobanner flex-wrapper flex-center" style="background-image: url('{{ site.baseurl }}/images/{{ page.image }}');">
+</div>
+
 <div class="posts">
-	<h1 style="margin:0 25px">Publications</h1>	
+	<h1 class="entry">Publications</h1>	
   {% for pub in site.pubs reversed %}
     <article class="post">
       <p>

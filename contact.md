@@ -2,8 +2,11 @@
 layout: default
 title: Contact
 permalink: /contact/
+image: nhh.jpeg
 ---
 
+<div class="herobanner flex-wrapper flex-center" style="background-image: url('{{ site.baseurl }}/images/{{ page.image }}');">
+</div>
 
 <div style="margin: 0 20px">
 
