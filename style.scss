@@ -564,6 +564,8 @@ footer {
   top: 0;
   position: absolute;
 
+  text-align:center;
+
   @include mobile {
     line-height: 1.4;
     padding: 10px 20px; 
