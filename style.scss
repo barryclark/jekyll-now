@@ -522,7 +522,21 @@ footer {
     background-color:#080D2D;
     background-position: center;
     @include mobile {
-    height: 350px;
+    height: 250px;
+  } 
+}
+
+.heroresearchbanner {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-color:#080D2D;
+    background-position: center;
+    @include mobile {
+    background-size: auto 100%;
+    height: 140px;
   } 
 }
 
