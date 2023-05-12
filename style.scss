@@ -256,8 +256,17 @@ nav {
 // .main
 //
 
+.secttitle{
+  margin: 50px 150px;
+  padding: 0 30px;
+  @include mobile {
+    margin: 50px 0;
+  } 
+}
+
+
 .posts > .post {
-  margin: 50px 100px;
+  margin: 50px 150px;
   padding: 0 30px;
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
