@@ -2,7 +2,7 @@
 layout: post
 title: KERJA REMOTE - Admin Media Sosial [019] di PT. Kirim Email Indonesia
 author: Pak Budi
-date: 2022-11-15 10:40:30 +07:00
+date: 2022-11-15 10:43:30 +07:00
 ---
 
 Saat ini ada lebih dari 28.000 perusahaan menggunakan layanan di KIRIM.EMAIL dan Insya Allah akan bertambah lagi tahun ini.
