@@ -15,7 +15,7 @@ avatar: /images/logo-siapkerjo.png
 assets: '2022-12-13T08:19:00Z'
 
 # Paginate home
-paginate: 10
+paginate: 20
 paginate_path: "/loker/:num/"
 
 #
