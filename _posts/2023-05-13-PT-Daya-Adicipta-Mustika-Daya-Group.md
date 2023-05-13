@@ -27,10 +27,14 @@ Mengumpulkan data flow-process dan dokumen-dokumen yang diperlukan dari setiap d
 ### Minimum qualification
 
 • S1 Teknik / Manajemen, IPK min. 3,00
+
 • Memiliki kemampuan analisa yang baik
+
 • Teliti, tekun dan dapat memotivasi diri sendiri
+
 • Mampu menjalin relasi sosial dengan baik
-• Penempatan : Bandung
+
+• Penempatan: Bandung
 
 <div class="apply"><a href="https://www.daya-group.co.id/career-detail/DGITBA2023">Lamar posisi ini</a></div>
 
@@ -43,12 +47,18 @@ Membuat rekap data keluhan konsumen mengenai aplikasi Daya Auto. Melakukan anali
 ### Minimum qualification
 
 • S1 Teknik / Administrasi Bisnis / Manajemen, IPK min 3,00
+
 • Memiliki semangat bekerja di dunia aplikasi
+
 • Memiliki kemampuan analisa data yang baik
+
 • Mahir menggunakan Microsoft Excel
+
 • Memiliki daya tahan yang kuat dalam lingkungan yang penuh tekanan
+
 • Memiliki semangat "memberikan pelayanan" dan semangat "Follow Up"
-• Penempatan : Bandung
+
+• Penempatan: Bandung
 
 <div class="apply"><a href="https://www.daya-group.co.id/career-detail/DAYAUTOCS2023">Lamar posisi ini</a></div>
 
@@ -61,10 +71,14 @@ Mengerjakan pembuatan aplikasi sesuai FSD (Functional Specification Document) da
 ### Minimum qualification
 
 • D3 / S1 Teknik Informatika / Sistem Informasi / Manajemen Informatika, IPK minimal 3.00
+
 • FRESH GRADUATE
+
 • Memahami mengenai mobile programming (Hybrid atau Native)
+
 • Dapat bekerja mandiri & bekerjasama tim dengan baik
-• Penempatan : Bandung
+
+• Penempatan: Bandung
 
 <div class="apply"><a href="https://www.daya-group.co.id/career-detail/DGITPGMR">Lamar posisi ini</a></div>
 
@@ -77,11 +91,17 @@ Melakukan rekap data serta dokumentasi berkas. Membuat laporan harian/mingguan/b
 ### Minimum qualification
 
 • FRESH GRADUATE D3, IPK 3.20
+
 • Memahami rumus-rumus Ms. Excel dengan baik
+
 • Teliti, tekun dan dapat memotivasi diri sendiri
+
 • Dapat bertahan di lingkungan kerja yang cepat berubah
+
 • Memiliki kesehatan fisik yang baik
+
 • Memiliki kemampuan komunikasi yang baik & semangat "Follow Up" yang tinggi
-• Penempatan : Bandung
+
+• Penempatan: Bandung
 
 <div class="apply"><a href="https://www.daya-group.co.id/career-detail/DGSTAFF">Lamar posisi ini</a></div>
