@@ -2,6 +2,7 @@
 layout: post
 title: AI For Online Child Safety
 date: 2022-11-07
+comments: true
 ---
 
 The internet is not a safe place, especially not for kids. The amount of distateful content--sexually explicit material, hate speech, graphic violence, profanity, and cyber bullying, to name a few--available online today makes it really hard for any well-meaning adult to let a child browse the internet without supervision.
