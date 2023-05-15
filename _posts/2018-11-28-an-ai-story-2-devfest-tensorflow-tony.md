@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An AI Story — Part 2: Google DevFest, TensorFlow and Tony
+title: "An AI Story — Part 2: Google DevFest, TensorFlow and Tony"
 date: 2018-11-28
 ---
 
