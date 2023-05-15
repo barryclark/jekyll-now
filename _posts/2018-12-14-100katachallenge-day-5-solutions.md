@@ -2,6 +2,7 @@
 layout: post
 title: 100KataChallenge — Day 5 Solutions
 date: 2018-12-14
+comments: true
 ---
 
 ![Declarative Programming Challenge Flyer](https://miro.medium.com/max/1100/0*y2nro5tmOphWECO8.png)
