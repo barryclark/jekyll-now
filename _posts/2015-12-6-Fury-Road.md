@@ -1,17 +1,18 @@
 ---
 layout: post
-title:  Fury Road I
+title: Fury Road I
 titledesc: ... we travel again!
 author: dactrtr
 feature: http://screenrant.com/wp-content/uploads/Mad-Max-Fury-Road-explosion.jpg
+lang: eng
 ---
 
- *disclaimer: this isn't about Mad Max Fury Road, it's about the road trip through the south island, mini review of mad max, it's like Caffeine for the eyes, just amazing.*
+_disclaimer: this isn't about Mad Max Fury Road, it's about the road trip through the south island, mini review of mad max, it's like Caffeine for the eyes, just amazing._
 
 ## We laugh, we die, and we laugh again
- 
- First I want to start with this video that's pretty much what was all this epic journey...
- 
+
+First I want to start with this video that's pretty much what was all this epic journey...
+
  <iframe width="560" height="315" src="https://www.youtube.com/embed/NGF6Z4Z5jMA" frameborder="0" allowfullscreen></iframe>
  
  I have to confess that I have **no frickin idea** of which places we visit, I was only a picture-asian-monkey, and also I'm really *bad with names*. So I can't be specific saying *tinkukurapomimu* it's an amazing place, also because that place doesn't exist, I think.
@@ -25,21 +26,22 @@ Jure - me - Jeremy
 </figcaption>
 </figure>
 
-In the eternal randomness of life we meet in **Blenheim**, with **Jeremy** working at the *pine trees* and he introduces **Jure** to the party (yeah like the *RPG parties*) at the beginning wasn't part of my plans to travel, not even now, at that point was, staying in Blenheim till they say me: 
+In the eternal randomness of life we meet in **Blenheim**, with **Jeremy** working at the _pine trees_ and he introduces **Jure** to the party (yeah like the _RPG parties_) at the beginning wasn't part of my plans to travel, not even now, at that point was, staying in Blenheim till they say me:
 
 > Sebastian we don't need you anymore
 
 My thoughs
 
-But one day at the **best place of Blenheim**, Domino's Pizza , this couple of *pseudo humans* told me... *You can come with us in our ROAD TRIP, it will be really funny travel with you*
+But one day at the **best place of Blenheim**, Domino's Pizza , this couple of _pseudo humans_ told me... _You can come with us in our ROAD TRIP, it will be really funny travel with you_
 
-So yes, it's not because I'm a good person or my *amazing survival skills* (in [Don't Starve](https://www.kleientertainment.com/games/dont-starve)), was only because **I CAN MAKE FUCKIN PEOPLE LAUGH**...
+So yes, it's not because I'm a good person or my _amazing survival skills_ (in [Don't Starve](https://www.kleientertainment.com/games/dont-starve)), was only because **I CAN MAKE FUCKIN PEOPLE LAUGH**...
 
 fair enough, also it's true.
 
 ### DA TRIP
 
 **Kiss kiss, good bye Blenheim** and we depart to **Nelson**, one of the Highlights of our self called **fury** road **trip** besides doing it fast, was, **Gold searching**
+
 ### Nelson
 
 In **Nelson**, **Nelson** like the real **Nelson**, nothing happen so let's move to the important... the gold.
@@ -53,14 +55,13 @@ Forget about working, we will be RICH.
 
 So you are into the gold searching? well you can't miss this amazing lesson about Goldfinding with the Young goldpadawan **Jeremy** and the master GoldJedi **Jure** and me as the cameraman, this is your first step into the big world of being rich only waving a plate.
 
-*This is a really lame edition of the video, I will Blame Canada as always.*
+_This is a really lame edition of the video, I will Blame Canada as always._
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8GzP3N_dlZ0" frameborder="0" allowfullscreen></iframe>
 
 Of course we didn't find anything beside Sheeps, Lambs, Cows, and roads, a lot of damn long roads, well and Chicken in a can the best food you can buy for ~3 dollars.
 
-After **Nelson** we went to **Greymouth**, or this it's what the *gps data* of my pictures says, and we stay for the first night in the **wilderness**, 3 guys in one tent for... 2 persons...
-
+After **Nelson** we went to **Greymouth**, or this it's what the _gps data_ of my pictures says, and we stay for the first night in the **wilderness**, 3 guys in one tent for... 2 persons...
 
 <figure class="figimg">
 <img src="http://i.imgur.com/PmUBoov.jpg" alt="The Tent">
@@ -76,4 +77,3 @@ ohh all the luxuries.
 This was our first stop were we behave like monkeys without any kind of technology, we went out of the car and start to plug our cellphones, and everything that uses a battery, also we had a little **FREE WIFI SPOT** so me and Jeremy ended playing **Hearthstone** in the middle of the cafe.
 
 Brace yourselves! cuz there still more adventures to tell, in the **next post**...
-

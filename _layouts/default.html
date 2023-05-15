@@ -52,14 +52,9 @@
     
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml" />
-      <!-- <script src="/node_modules/swup/dist/swup.min.js"></script>
-      <script>
-        const swup = new Swup()
-      </script> -->
-    <!-- Based on Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
-  <body>
+  <body class="landing-dactrtr">
     <header class="main-header">
        <span class="gradient"></span>
         <div class="header-inner">
@@ -75,14 +70,13 @@
       {{ content }}
     </div>       
    </div>
-    <div class="wrapper-footer">
+    <footer class="wrapper-footer">
       <div class="container">
         <footer class="footer">
         Dactrtr @ 2015
         </footer>
       </div>
-    </div>
+    </footer>
     {% include analytics.html %}
   </body>
-   
 </html>

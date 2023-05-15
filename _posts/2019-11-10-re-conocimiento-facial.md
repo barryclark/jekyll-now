@@ -4,23 +4,24 @@ layout: post
 author: dactrtr
 titledesc: Como burlar a los robots
 feature: https://media.giphy.com/media/rQG7d0Tzau6wo/source.gif
+lang: spa
 ---
 
 ## Nos estan mirando
 
 ---
 
-**disclaimer:** *este post probablemente tenga un montón de información ñoña, **jargon** y **mumbo jumbo**, pero el conocimiento es lo necesario para poder entender y **burlar** algunas cosas.*
+**disclaimer:** _este post probablemente tenga un montón de información ñoña, **jargon** y **mumbo jumbo**, pero el conocimiento es lo necesario para poder entender y **burlar** algunas cosas._
 
 ---
 
-A estas alturas del partido todos sabemos que es el reconocimiento facial, lo hemos visto en series, películas, usado en nuestras cámaras e incluso usado para desbloquear nuestro teléfono. *¿Me dices que mi teléfono reconoce mi cara o que la detecta?* ah! muy buena pregunta.
+A estas alturas del partido todos sabemos que es el reconocimiento facial, lo hemos visto en series, películas, usado en nuestras cámaras e incluso usado para desbloquear nuestro teléfono. _¿Me dices que mi teléfono reconoce mi cara o que la detecta?_ ah! muy buena pregunta.
 
-## ¿Detección o Reconocimiento? 
+## ¿Detección o Reconocimiento?
 
 **Si**, **no** es lo mismo, pero una es fundamental para la otra. Lo que hace nuestra cámara al momento de sacar una foto es **detectar** un rostro, esto significa que busca **patrones reconocibles** como ojos, nariz, boca en todo ese espacio negativo en tu rostro, mediante una serie de pruebas, en una especie de arbol de desiciones, en la que se van buscando estos patrones en rectangulos de zonas definidas, hasta decir, si, esta es una cara. Este proceso es un algoritmo conocido como 📼[Algoritmo Viola Jones](https://www.youtube.com/watch?v=uEJ71VlUmMQ) y es tan efectivo que se sigue usando por sobre usar **Deep Learning** o **Machine Learning** o alguna otra **Cosa Learning**.
 
- Una vez que se ha detectado una cara empieza el proceso de **reconocimiento**, les suena común, obvio es lo que hacemos siempre para reconocer a nuestros amigos. Al fin del día los algoritmos son las versiones *matematizadas* de los procesos que hacemos día a día, la habilidad de reconocer y ver rostros es algo que como humanos llevamos <s>años</s> siglos haciendo, como esa tostada que me comí en la mañana que tenía la cara de <s>Karol Dance</s> Kike Morandé (chúpalo).
+Una vez que se ha detectado una cara empieza el proceso de **reconocimiento**, les suena común, obvio es lo que hacemos siempre para reconocer a nuestros amigos. Al fin del día los algoritmos son las versiones _matematizadas_ de los procesos que hacemos día a día, la habilidad de reconocer y ver rostros es algo que como humanos llevamos <s>años</s> siglos haciendo, como esa tostada que me comí en la mañana que tenía la cara de <s>Karol Dance</s> Kike Morandé (chúpalo).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/t4DT3tQqgRM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -29,8 +30,6 @@ A estas alturas del partido todos sabemos que es el reconocimiento facial, lo he
 HP COMPUTERS ARE RACIST
 
 Al día de hoy esta tecnología a avanzado mucho desde sus inicios y esta full integrada a nuestras vidas. No, [no voy](https://www.welivesecurity.com/la-es/2015/08/27/tecnologia-de-reconocimiento-facial/) a [hacer un post](https://medium.com/@spot_blog/una-breve-historia-del-reconocimiento-facial-vision-blog-5a76fdfe4865) latero con la historia del reconocimiento facial, ya mucha gente lo ha hecho, pero si una leve explicación de como funciona esta técnologia y como burlarla, solo porque me da una razón para escribir y usar gifs, **2** de mis **3** cosas favoritas.
-
-
 
 **Aprendizaje** Si no pueden detectar tu cara no la pueden reconocer (obvio) y los gifs son bkns.
 
@@ -47,7 +46,7 @@ Cada cara tiene rasgos distintivos, digamos que parte de nuestro cerebro ha esta
 </figcaption>
 </figure>
 
-El software de reconocimiento facial reconoce estos rasgos, al igual que nosotros, solo que de una manera mucho más... si, lo adivinaste, **Matemáticas** esa cosa que juraste nunca mas usar después de cuarto medio y que **pensaste que era inútil**, hasta que te toco calcular el sueldo bruto, el líquido y el porcentaje de la isapre y otros robos con *fancy names*. El software reconoce ciertas carácteristicas como:
+El software de reconocimiento facial reconoce estos rasgos, al igual que nosotros, solo que de una manera mucho más... si, lo adivinaste, **Matemáticas** esa cosa que juraste nunca mas usar después de cuarto medio y que **pensaste que era inútil**, hasta que te toco calcular el sueldo bruto, el líquido y el porcentaje de la isapre y otros robos con _fancy names_. El software reconoce ciertas carácteristicas como:
 
 - Distancia entre los **ojos**.
 - Ancho de la **nariz**.
@@ -55,7 +54,7 @@ El software de reconocimiento facial reconoce estos rasgos, al igual que nosotro
 - La forma de las **mejillas**.
 - El largo de la **mandídubla**.
 
-Y un largo etcetéra, entre 60 a 80, rasgos faciales, lo se, estas pensando en ese filtro de **instagram** tan chistoso que hace que te veas como **Felipito** o te pone una **corona de flores**, eso es detección facial, lo que hace es "detectar una cara" no "detectar **tu** cara" (reconocimiento). 
+Y un largo etcetéra, entre 60 a 80, rasgos faciales, lo se, estas pensando en ese filtro de **instagram** tan chistoso que hace que te veas como **Felipito** o te pone una **corona de flores**, eso es detección facial, lo que hace es "detectar una cara" no "detectar **tu** cara" (reconocimiento).
 
 Estas distancias son transformadas en una formula matemática y, si hay una base de datos, **las hay**, se hace una comparación y pum, según el poder de las matématicas, no es primera vez que pasas por este aeropuerto.
 
@@ -63,14 +62,13 @@ Cuando digo que hay **bases de datos** no es para volverse loco, pero, [Facebook
 
 ### El futuro es TRI-DI
 
-Actualmente la moda, es el 3D, en vez de usar imágenes 2D se usan modelos 3D de la superficie de la cara, principalmente es como funciona **FaceId de Apple**, esta es la parte donde pelo el cable ya que es básicamente una 📼[Xbox Kinect](https://www.youtube.com/watch?v=uq9SEJxZiUg) en miniatura que usa cientos de *mini lasers* para generar un modelo 3D de tu rostro lo cual es mucho más preciso y *wow la wea bkn*.
+Actualmente la moda, es el 3D, en vez de usar imágenes 2D se usan modelos 3D de la superficie de la cara, principalmente es como funciona **FaceId de Apple**, esta es la parte donde pelo el cable ya que es básicamente una 📼[Xbox Kinect](https://www.youtube.com/watch?v=uq9SEJxZiUg) en miniatura que usa cientos de _mini lasers_ para generar un modelo 3D de tu rostro lo cual es mucho más preciso y _wow la wea bkn_.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/g4m6StzUcOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-El **reconocimiento facial con 3D**, támbien se puede hacer a base de videos y funciona a tráves del analísis cuadro por cuadro de las facciones, básicamente es un analisis 2D muchas veces. 
+El **reconocimiento facial con 3D**, támbien se puede hacer a base de videos y funciona a tráves del analísis cuadro por cuadro de las facciones, básicamente es un analisis 2D muchas veces.
 
 Ambos sistemas funcionan a base de contrastes y bueno detección de ciertas carácteristicas faciales, **podría haber ahorrado todo lo anterior solo diciendo que el reconocimiento facial funciona a base de contrastes**, pero me gusta dar un poco más de detalles, lo cual nos lleva a la parte divertida.
-
 
 ## ¿Me ves? ya no! 👀
 
@@ -81,7 +79,7 @@ TIN FOIL HAT ALWAYS DO THE JOB.
 </figcaption>
 </figure>
 
-Y sabemos básicamente como funcionan la detección facial y el reconocimiento facial, como no somos un grupo de hackers que puede destruir las bases de datos de caras en el mundo, solo podemos apelar a evitar que detecten nuestras caras. 
+Y sabemos básicamente como funcionan la detección facial y el reconocimiento facial, como no somos un grupo de hackers que puede destruir las bases de datos de caras en el mundo, solo podemos apelar a evitar que detecten nuestras caras.
 
 #### Survivor Starter Kit
 
@@ -143,7 +141,7 @@ DAT STYLE.
 
 No, no es una excusa para vestirse de chaqueta amarilla, pero si para usar unos lentes **ridículos**, pero altamente efectivos, funciona de la misma manera que las **tecno-antiparras** sobre cargando los sensores de luz.
 
-Hay otros métodos como usar detectores de cámaras y otros artilugios dignos de <s>James Bond</s> Snake y que van mas de la onda de evadir en vez de burlar, onda muy paranoia *me leí todos los libros de [Mitnick](https://www.youtube.com/watch?v=K-96JmC2AkE)*.
+Hay otros métodos como usar detectores de cámaras y otros artilugios dignos de <s>James Bond</s> Snake y que van mas de la onda de evadir en vez de burlar, onda muy paranoia _me leí todos los libros de [Mitnick](https://www.youtube.com/watch?v=K-96JmC2AkE)_.
 
 Ahora les dejo la <s>discografía</s> **Bibliografía** y marcados con una pizza los articulos o videos interesantes.
 
@@ -164,4 +162,4 @@ Ahora les dejo la <s>discografía</s> **Bibliografía** y marcados con una pizza
 
 La sección de comentarios queda abierta para que dejen su odio, digan todas las tildes que no use y esas cosas clásicas del internet.
 
-*siempre pienso en que debería tener alguna especie de despedida a lo truman show*
+_siempre pienso en que debería tener alguna especie de despedida a lo truman show_

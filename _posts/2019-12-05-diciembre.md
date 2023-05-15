@@ -3,7 +3,7 @@ title: Diciembre
 layout: post
 author: dactrtr
 titledesc: Updates
-feature: 
+lang: spa
 ---
 
 ## The end is nigh
@@ -15,6 +15,3 @@ A pesar de que hace poco no tenía sentido tener un blog, [los acontecimientos r
 Hablando de hacer cosas, ayer terminé un curso de [Grid & Layouts](https://designcode.io/courses) de Design+Code, aprendí un par de cosas nuevas pero en verdad fue un trámite, espero que el de Swift no sea tan malo.
 
 He estado avanzando en mi **portafolio**, y creo que como MVP lo dejaré estático, luego lo integraré con Jekyll para poder administrar... no se que podría administrar si casi nunca me quedo con los archivos de los clientes, pero de todas formas me gusta ir upgradeando el portafolio, aunque ahora que recuerdo [swup](https://github.com/swup/swup) no me funcionaba con [jekyll](https://jekyllrb.com/), y prefiero tener animaciones que cms, estos mismos posts los escribo desde [Vscode](https://code.visualstudio.com/) así que no es nada terrible.
-
-
-

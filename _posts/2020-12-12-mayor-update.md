@@ -1,9 +1,10 @@
 ---
-layout:  post
-title:  Mayor Update
+layout: post
+title: Mayor Update
 titledesc: 2.0
 author: dactrtr
 feature: https://media1.giphy.com/media/d7HWDCV6t72iRm9vPh/giphy.gif?cid=ecf05e474dzbhwjkn39x1cwk4j59xe95vqmbiqnyrpi63bl5&rid=giphy.gif
+lang: eng
 ---
 
 # 2020 what a year!
@@ -19,7 +20,7 @@ The 2021 goal is set all of this in a digital way, maybe make an app or keep eve
 </figcaption>
 </figure>
 
-The last 3 months during 2019 I was in Orlando with my family, sounds like fun, but most of the time I was just at home working, and just that, like everyone. I didn’t see my nephews so often, and slowly started to get drained in this *lost in time* feeling, so started a **bullet journal**. I’ve always had a sketchbook next to me, and this idea of writing down daily, was nothing weird, so was really easy to adopt, gotta say that already been doing this during a year, and *maaaan* this helps a lot when you are at home **24/7**. So we can say that I was in a "pandemic camp" during the last 3 months of 2019. Lately haven’t writing a lot but that’s caused by my **new job**. 
+The last 3 months during 2019 I was in Orlando with my family, sounds like fun, but most of the time I was just at home working, and just that, like everyone. I didn’t see my nephews so often, and slowly started to get drained in this _lost in time_ feeling, so started a **bullet journal**. I’ve always had a sketchbook next to me, and this idea of writing down daily, was nothing weird, so was really easy to adopt, gotta say that already been doing this during a year, and _maaaan_ this helps a lot when you are at home **24/7**. So we can say that I was in a "pandemic camp" during the last 3 months of 2019. Lately haven’t writing a lot but that’s caused by my **new job**.
 
 ## Started coding 4 real
 
@@ -46,4 +47,4 @@ The quarantine got me into just staying at home, so what you can do to besides p
 
 With my new position I also change to a new Job, as usual most of the jobs are in Santiago so came back to home, I’ve been in this new position for a few weeks so not much to talk about it yet, but it’s a cool place with cool ppl.
 
-That’s pretty much my mayor update about the **good things** of this year, I want to write more entries as seems to be blogs will return to be a good source of info and expression, still getting up to date with all this **woke** thing and everything else in the *exterior world*.
+That’s pretty much my mayor update about the **good things** of this year, I want to write more entries as seems to be blogs will return to be a good source of info and expression, still getting up to date with all this **woke** thing and everything else in the _exterior world_.

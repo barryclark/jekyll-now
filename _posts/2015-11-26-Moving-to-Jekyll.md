@@ -1,14 +1,15 @@
 ---
 layout: post
-title:  Moving to Jekyll
+title: Moving to Jekyll
 titledesc: Fight against Sass
 author: dactrtr
-
+lang: eng
 ---
 
 ## Blogging is hard
 
-This is actually *my first* post in the blog, at the beggining I was **thinking** about write about which *plugins* I used, or *how I migrate all the post* from [Ghost](http://ghost.org) to [Jekyll Now](https://github.com/barryclark/jekyll-now) but of course, not everything went out as I *expected*.
+This is actually _my first_ post in the blog, at the beggining I was **thinking** about write about which _plugins_ I used, or _how I migrate all the post_ from [Ghost](http://ghost.org) to [Jekyll Now](https://github.com/barryclark/jekyll-now) but of course, not everything went out as I _expected_.
+
 <figure class="figimg">
    <img src="http://i.giphy.com/adhuPKADfzrDG.gif" alt="handle">
 <figcaption>
@@ -26,14 +27,14 @@ Me now, after 3 hours of trying to fix the things, 3 commit/merge mistakes, and 
 </figure>
 Besides my dumbness, when I was looking at the `json` file, that makes [Ghost](http://ghost.org) when you use the export option in *labs*, **surprise** it's totally non human readable, yes, I'm a human and not able to read that kind of **shit**...
 
-So playing the *smart guy*, mounted back my **local Ghost** and manually copy paste the content of each post, wasn't the best idea ever but at least sound like a exit to the problem...
+So playing the _smart guy_, mounted back my **local Ghost** and manually copy paste the content of each post, wasn't the best idea ever but at least sound like a exit to the problem...
 
 One thing kids, when you are using features that are under the category **labs** it's pretty common that... well... FAIL, yep, I get and error from the `json`so I "LOST" all my previous post, nothing important really. Now I must **CSSING** the blog for mobile and fix another couple of things...
 
-But seems that from now on, will be quite *easy*.
-Later in a next *amazing* post maybe I will speak more about this wilderness that's making a blog.
+But seems that from now on, will be quite _easy_.
+Later in a next _amazing_ post maybe I will speak more about this wilderness that's making a blog.
 
->"Patience you must have, Young padawan"
+> "Patience you must have, Young padawan"
 
 yoda
 

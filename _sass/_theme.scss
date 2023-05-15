@@ -29,13 +29,32 @@ $font-path-file-name: /assets/fonts/Akula-webfont;
   flex-flow: row wrap;
 }
 
+/// Landing grid layout
+.landing-dactrtr {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-rows: 1fr;
+
+  .main-header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .container {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 100vh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+  }
+}
+
 /// header main
 .main-header {
   position: relative;
   width: 100%;
-  height: 70%;
+  height: 100%;
   overflow: hidden;
-  background: url(http://i.imgur.com/Jo4q5Gl.jpg) no-repeat center center; //  Find a more sutile way to do this
+  background: url(http://i.imgur.com/Jo4q5Gl.jpg) no-repeat center center; //  Find a more subtle way to do this
   background-size: cover;
   display: flex;
   @include mobile-small {
@@ -152,11 +171,11 @@ ul.rs {
 /// Posts
 #main article.post {
   background: #000000;
-  height: 200px;
+  height: 112px;
   align-self: auto;
   overflow: hidden;
   padding: 0px;
-  flex: 1 0 25%;
+  flex: 1 0 100%;
   @include mobile-small {
     flex: 1 0 100%;
   }
@@ -171,10 +190,8 @@ ul.rs {
     height: 200px;
   }
   h1 {
-    margin-top: 120px;
     font-size: 5rem;
     @include mobile-small {
-      margin-top: 70px;
       font-size: 4rem;
     }
   }
@@ -192,7 +209,7 @@ ul.rs {
   border: 0px solid rgba(0, 0, 0, 0);
 }
 #main article.post a:hover {
-  border: 10px solid rgba(252, 30, 134, 1);
+  border: 4px solid rgba(252, 30, 134, 1);
   transition: all ease-in 0.3s;
 }
 #main article.post a:hover h1.title {
@@ -207,26 +224,10 @@ ul.rs {
   opacity: 0.4;
   transition: all ease-in 0.3s;
 }
-.gradient {
-  background-image: linear-gradient(
-    45deg,
-    rgba(252, 30, 134, 0.5) 0%,
-    rgba(41, 173, 235, 0.5) 100%
-  );
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  top: 0px;
+#main article.post a:hover .language {
+  transition: all ease-in 0.3s;
 }
-.gradient:before {
-  background: url(../images/coolpattern80.png) repeat;
-  content: " ";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 0.5;
-}
+
 .cover {
   background: url(../images/coolpattern80.png) repeat;
   position: absolute;
@@ -241,11 +242,26 @@ article.post .data-post {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  height: 100%;
+  gap: 0;
   @include mobile-small {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  span.language {
+    border: 1px solid white;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-family: "Open sans";
+    font-weight: bold;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    text-transform: uppercase;
   }
 }
 h1.title {
@@ -254,7 +270,6 @@ h1.title {
   position: relative;
   font-size: 4rem;
   text-align: center;
-  margin-top: 70px;
   margin-bottom: 0px;
   width: 100%;
   float: left;
@@ -283,6 +298,7 @@ h3.date {
   text-align: center;
   font-size: 1rem;
   font-weight: normal;
+  margin: 0;
 }
 article.post a img.feat {
   top: 0px;
@@ -511,6 +527,7 @@ article.post a img.feat {
 .wrapper-footer {
   background: #a8a5a5;
   width: 100%;
+  display: none;
 }
 .footer {
   font-family: $body;
