@@ -2,6 +2,7 @@
 layout: post
 title: 100KataChallenge — Day 4 Solutions
 date: 2018-12-13
+comments: true
 ---
 
 ![Mathematics Challenge Flyer](https://miro.medium.com/max/1100/0*1LLAomfWm9zj5kTe.png)
