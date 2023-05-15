@@ -43,8 +43,7 @@ Published in [Cities](https://doi.org/10.1016/j.cities.2022.103857)
 ---
 
 ### Website Safety Analyzer
-
-<img src="images/img-thumb.png?raw=true"/>
+![website-safety-analyzer](https://github.com/KayO-GH/kayo-gh.github.io/assets/18174012/2898e504-656c-4b9a-91b1-f6400bb11851)
 
 Fine-tuned an image classifier for detecting explicit sexual coontent. The model is wrapped in a script that scrapes every image from a given website and assesses the safety of the site for young visitors.
 
