@@ -2,6 +2,7 @@
 layout: post
 title: "An AI Story — Part 3: Python notebooks in the cloud"
 date: 2019-04-03
+comments: true
 ---
 
 ![Machine Learning](https://miro.medium.com/max/1100/0*0IEhIk5IAuerFeg_.jpg)
