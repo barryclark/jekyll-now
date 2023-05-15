@@ -2,6 +2,7 @@
 layout: post
 title: 100KataChallenge — Day 2 Solutions
 date: 2018-12-11
+comments: true
 ---
 
 ![Data Types Challenge Flyer](https://miro.medium.com/max/1100/1*9NDi8OIw7d6DJ4FgjIXJpw.png)
