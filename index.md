@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 ---
 
 ## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35px"/> Hi, I’m Kwadwo. My friends call me KayO.   
