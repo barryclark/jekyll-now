@@ -2,6 +2,7 @@
 layout: post
 title: "An AI Story — Part 2: Google DevFest, TensorFlow and Tony"
 date: 2018-11-28
+comments: true
 ---
 
 ![Machine Learning](https://miro.medium.com/max/1100/0*0IEhIk5IAuerFeg_.jpg)
