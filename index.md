@@ -9,7 +9,7 @@ I’m an engineer with an interest in AI & Software Engineering
 <img src="https://i.redd.it/8lfied3ohyp11.jpg" alt="reddit ML joke" width="500px"/>
 
 * ⌛ Over the last 5 years I have focused on Data Science and Machine Learning, building on a foundation of 9 years of experience in Software Engineering.<br/>I have worked, <i>and played</i>, with programming stacks and technologies from microcontrollers through mobile and web app development to cloud systems.
-* 👨‍💻 I currently work as an Engineer building cool stuff @[Hence.ai](https://hence.ai/)
+* 👨‍💻 I currently work as an Engineer, building cool stuff @[Hence.ai](https://hence.ai/)
 
 ---
 I write about tech on my GitHub Blog, but if you're interested, I run two other blogs with different focus points:
