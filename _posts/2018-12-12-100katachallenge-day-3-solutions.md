@@ -2,6 +2,7 @@
 layout: post
 title: 100KataChallenge — Day 3 Solutions
 date: 2018-12-12
+comments: true
 ---
 
 ![Algorithmss Challenge Flyer](https://miro.medium.com/max/1100/0*o7PVSeWlmAAwHvBO.png)
