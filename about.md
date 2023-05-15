@@ -7,6 +7,8 @@ permalink: /about/
 ## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35px"/> Hi, I’m Kwadwo. My friends call me KayO.   
 I’m an engineer with an interest in AI & Software Engineering
 
+<img src="https://i.redd.it/8lfied3ohyp11.jpg" alt="reddit ML joke"/>
+
 <table>
 <tr>
   <td>
@@ -18,9 +20,6 @@ I’m an engineer with an interest in AI & Software Engineering
       I’m looking to collaborate on projects geared towards making the internet safer for kids. ☺️</li>
       <li>📫 You can reach me via <a href="https://www.linkedin.com/in/kwadwo-agyapon-ntra/">LinkedIn</a></li>
     </ul>
-  </td>
-  <td>
-    <img src="https://i.redd.it/8lfied3ohyp11.jpg" alt="reddit ML joke"/>
   </td>
 </tr>
 </table>
