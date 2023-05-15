@@ -18,4 +18,4 @@ Berdasarkan informasi di laman [Alumni UGM](https://alumni.ugm.ac.id/2023/05/15/
 
 ![loker harian jogja]({{ site.baseurl }}/images/LOWONGAN-Account-Executive-PT-Aksara-Dinamika-Jogja.jpeg)
 
-<div class="apply"><a href="mailto:sdm@harianjogja.com?cc=sdmharianjogja@gmail.com?subject=AE - NAMA">Lamar posisi ini</a></div>
+<div class="apply"><a href="mailto:sdm@harianjogja.com?cc=sdmharianjogja@gmail.com&subject=AE - NAMA">Lamar posisi ini</a></div>
