@@ -1,9 +1,10 @@
 ---
+layout: post
 title: "An AI Story — Part 1"
 date: 2018-11-01
 ---
 
-# Technological Consumerism
+## Technological Consumerism
 
 ![Machine Learning](https://miro.medium.com/max/1100/0*0IEhIk5IAuerFeg_.jpg)
 

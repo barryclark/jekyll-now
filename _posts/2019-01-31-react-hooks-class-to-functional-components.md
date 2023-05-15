@@ -1,9 +1,8 @@
 ---
+layout: post
 title: React Hooks — Migrating from Class to Functional Components — A Tutorial
 date: 2019-01-31
 ---
-
-# React Hooks — Migrating from Class to Functional Components — A Tutorial
 
 ![React Hooks — Migrating from Class to Functional Components](https://miro.medium.com/max/1100/0*sVfrdcQ75wmuwJjQ.jpg)
 
