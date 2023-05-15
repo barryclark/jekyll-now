@@ -4,10 +4,6 @@ title: Projects
 permalink: /projects/
 ---
 
-## Projects
-
----
-
 ### Document Semantic Search
 
 <img width="1509" alt="Screenshot 2023-04-21 at 05 26 46" src="https://user-images.githubusercontent.com/18174012/233534016-13342fe5-2067-4497-a4ec-0123fa034c86.png">
