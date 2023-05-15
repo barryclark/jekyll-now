@@ -2,6 +2,7 @@
 layout: post
 title: 100KataChallenge — Day 10 A Quick Intro to Matplotlib
 date: 2018-12-21
+comments: true
 ---
 
 ![Matplotlib Challenge Flyer](https://miro.medium.com/max/1100/0*cdsWxmW68QHdtH5i.png)
