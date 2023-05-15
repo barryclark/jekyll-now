@@ -12,7 +12,7 @@ I’m an engineer with an interest in AI & Software Engineering
 - 👨‍💻 I currently work as an Engineer, building cool stuff @[Hence.ai](https://hence.ai/)
 
 ---
-I write about tech on my GitHub Blog, but if you're interested, I run two other blogs with different focus points:
+I write about tech on my [GitHub Blog](https://kayo-gh.github.io/blog), but if you're interested, I run two other blogs with different focus points:
 - [Chopbox Life](https://chopboxlife.com/): A fictional blog based just in part on my life in high school
 - [Medium](https://medium.com/@kayogh): My Medium blog is dedicated to things that are a little more real and have to do with life
 
