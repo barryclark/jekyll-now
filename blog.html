@@ -7,7 +7,7 @@ layout: page
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <i>{{post.date}}</i>
+      <i>{{post.date | date: "%-d %B %Y" }}</i>
       <div class="entry">
         {{ post.excerpt }}
       </div>
