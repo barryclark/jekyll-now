@@ -6,14 +6,17 @@ $font-path-file-name: /assets/fonts/blog;
 // font_name font
 @font-face {
   font-family: $font-name;
-  src: url($font-path-file-name+'.eot'); /* IE9 Compat Modes */
-  src: url($font-path-file-name+'.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-//       url($font-path-file-name+'.woff2') format('woff2'), /* Super Modern Browsers */
-       url($font-path-file-name+'.woff') format('woff'), /* Pretty Modern Browsers */
-       url($font-path-file-name+'.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url($font-path-file-name+'.svg#font_name') format('svg'); /* Legacy iOS */
+  src: url($font-path-file-name + ".eot"); /* IE9 Compat Modes */
+  src: url($font-path-file-name + ".eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+      //       url($font-path-file-name+'.woff2') format('woff2'), /* Super Modern Browsers */
+    url($font-path-file-name + ".woff") format("woff"),
+    /* Pretty Modern Browsers */ url($font-path-file-name + ".ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url($font-path-file-name + ".svg#font_name")
+      format("svg"); /* Legacy iOS */
 }
-
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Inter:wght@300;400;900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
 
 [data-icon]:before {
   font-family: "blog" !important;
@@ -87,11 +90,11 @@ $font-path-file-name: /assets/fonts/blog;
   content: "o";
 }
 .icons-pin:before {
-    content: "p";
+  content: "p";
 }
 .icons-about:before {
   content: "r";
-    margin-right: 5px;
+  margin-right: 5px;
 }
 .icons-cup:before {
   content: "s";

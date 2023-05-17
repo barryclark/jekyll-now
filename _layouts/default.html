@@ -2,12 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
-    <title>{% if page.title %}{{ page.title }}  {% endif %}{{ site.name }}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>
+      {% if page.title %}{{ page.title }} {% endif %}{{ site.name }}
+    </title>
 
     <meta name="author" content=" = D A C T R T R = " />
-    <meta name="description" content="{{ site.description }}"/>
+    <meta name="description" content="{{ site.description }}" />
     <!--
     TAKE THIS FOR INSPECTING MY CODE :)
               // ""--.._
@@ -20,61 +25,152 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!-- the amazing gallery is SLICK -> http://kenwheeler.github.io/slick/ -->
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../assets/apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/apple-touch-icon-144x144.png" />
-<link rel="apple-touch-icon-precomposed" sizes="60x60" href="../assets/apple-touch-icon-60x60.png" />
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../assets/apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon-precomposed" sizes="76x76" href="../assets/apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../assets/apple-touch-icon-152x152.png" />
-<link rel="icon" type="image/png" href="../assets/favicon-196x196.png" sizes="196x196" />
-<link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/png" href="../assets/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="../assets/favicon-16x16.png" sizes="16x16" />
-<link rel="icon" type="image/png" href="../assets/favicon-128.png" sizes="128x128" />
-<meta name="application-name" content="&nbsp;"/>
-<meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta name="msapplication-TileImage" content="mstile-144x144.png" />
-<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
-<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
-<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
-<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="../assets/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="../assets/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="../assets/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="../assets/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="../assets/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="../assets/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="../assets/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="../assets/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/favicon-128.png"
+      sizes="128x128"
+    />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
-<!--    Facebook metas   -->
-    
-<meta property="og:url" content= "http://dactrtr.rocks" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Dactrtr Blog" />
-<meta property="og:description" content="With great power comes a great blog, I don't have any power so this blog is kinda regular" />
-<meta property="og:image" content="https://cdn.dribbble.com/users/77294/screenshots/9444795/media/e1424efc545ba662eadf283f7cc33abb.png" />
+    <!--    Facebook metas   -->
 
-    
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml" />
+    <meta property="og:url" content="http://dactrtr.rocks" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dactrtr Blog" />
+    <meta
+      property="og:description"
+      content="With great power comes a great blog, I don't have any power so this blog is kinda regular"
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.dribbble.com/users/77294/screenshots/9444795/media/e1424efc545ba662eadf283f7cc33abb.png"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ site.baseurl }}/style.css"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ site.name }}"
+      href="{{ site.baseurl }}/feed.xml"
+    />
   </head>
 
   <body class="landing-dactrtr">
     <header class="main-header">
-       <span class="gradient"></span>
-        <div class="header-inner">
-            <div class="logo-holder">
-            <img class="logo" src="../assets/logo.png" alt="dactrtr"/>
+      <div class="header-inner">
+        <div class="logo">
+          <h1>dactrtr</h1>
+          <h2>Sebastian Zúñiga Rivas</h2>
+          <p class="what">... what</p>
+          <p class="mind">Don’t mind just call me Seba</p>
+        </div>
+        <div class="illustration">
+          <img class="illu-me" src="../assets/img.png" alt="ME" />
+          <img
+            class="illu-code"
+            src="../assets/coding.png"
+            alt="some random code"
+          />
+          <div class="float-window">
+            <span class="controls">
+              <span class="red"></span>
+              <span class="yellow"></span>
+              <span class="green"></span>
+            </span>
+            <div class="links">
+              <a href="" class="icon-code"></a>
+              <a href="" class="icon-ig"></a>
+              <a href="" class="icon-pizza"></a>
             </div>
-            <ul class="rs">
-                <li><a href="{{ site.baseurl }}/project" class="about">Portafolio</a></li>
-            </ul>
-       </div>
+          </div>
+          <p class="who-iam">
+            I’m <span class="blinkypinky">UI Designer</span>,
+            <span class="purpleback">Illustrator</span> and
+            <span class="cyantyrant">Developer</span> (HTML/CSS/SwiftUI) located
+            anywhere is a power outlet and a Internet connection.
+          </p>
+        </div>
+      </div>
     </header>
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>       
-   </div>
+    <div id="main" role="main" class="container">{{ content }}</div>
     <footer class="wrapper-footer">
       <div class="container">
-        <footer class="footer">
-        Dactrtr @ 2015
-        </footer>
+        <footer class="footer">Dactrtr @ 2015</footer>
       </div>
     </footer>
     {% include analytics.html %}

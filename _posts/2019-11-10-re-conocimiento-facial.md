@@ -5,6 +5,7 @@ author: dactrtr
 titledesc: Como burlar a los robots
 feature: https://media.giphy.com/media/rQG7d0Tzau6wo/source.gif
 lang: spa
+about: tutorial
 ---
 
 ## Nos estan mirando

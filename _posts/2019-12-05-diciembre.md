@@ -4,6 +4,7 @@ layout: post
 author: dactrtr
 titledesc: Updates
 lang: spa
+about: life
 ---
 
 ## The end is nigh

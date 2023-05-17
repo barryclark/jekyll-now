@@ -5,6 +5,7 @@ titledesc: 2.0
 author: dactrtr
 feature: https://media1.giphy.com/media/d7HWDCV6t72iRm9vPh/giphy.gif?cid=ecf05e474dzbhwjkn39x1cwk4j59xe95vqmbiqnyrpi63bl5&rid=giphy.gif
 lang: eng
+about: life
 ---
 
 # 2020 what a year!

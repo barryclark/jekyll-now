@@ -5,6 +5,7 @@ titledesc: combo breaker
 author: dactrtr
 feature: https://i.imgur.com/z4cwciH.jpg
 lang: spa
+about: blog
 ---
 
 ## Posteando como un campion

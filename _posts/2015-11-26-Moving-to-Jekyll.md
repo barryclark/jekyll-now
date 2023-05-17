@@ -4,6 +4,7 @@ title: Moving to Jekyll
 titledesc: Fight against Sass
 author: dactrtr
 lang: eng
+about: life
 ---
 
 ## Blogging is hard

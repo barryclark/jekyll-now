@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap");
 // Font variables
 $font-name: "akularegular";
-$font-path-file-name: /assets/fonts/Akula-webfont;
+$font-path-file-name: /assets/fonts/Shnobel-Regular;
 
-// Akula - Regular
+// Shnobel - Regular
 @font-face {
   font-family: $font-name;
   src: url($font-path-file-name + ".eot"); /* IE9 Compat Modes */
@@ -47,125 +47,155 @@ $font-path-file-name: /assets/fonts/Akula-webfont;
     scroll-behavior: smooth;
   }
 }
-
+// font color utility
+.blinkypinky {
+  color: $blinkyPinky;
+}
+.cyantyrant {
+  color: $cyanTyrant;
+}
+.purpleback {
+  color: $purpleBack;
+}
 /// header main
 .main-header {
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: url(http://i.imgur.com/Jo4q5Gl.jpg) no-repeat center center; //  Find a more subtle way to do this
+  background-color: $bonedThrone;
   background-size: cover;
   display: flex;
   @include mobile-small {
     height: 50%;
   }
-}
-.portfolio {
-  position: absolute;
-}
-.header-inner {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @include mobile-small {
+  .header-inner {
     width: 100%;
+    margin: 0 auto;
+    display: grid;
+    background-color: $bonedThrone;
+    grid-template-rows: 20% 1fr 1fr 20%;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    @include mobile-small {
+      width: 100%;
+    }
   }
-}
-.logo-holder {
-  position: relative;
-  margin: 0 auto;
-  height: 200px;
-  text-align: center;
-  @include mobile-small {
-    margin-top: 20%;
+  .illustration {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr 1fr 32px auto;
+    @include mobile-small {
+    }
+    .illu-me {
+      grid-column: 1/4;
+      grid-row: 1/4;
+      z-index: 2;
+      align-self: center;
+      justify-self: center;
+    }
+    .illu-code {
+      grid-column: 2/4;
+      grid-row: 2/4;
+      align-self: center;
+      justify-self: center;
+    }
+    p.who-iam {
+      grid-column: 1/5;
+      grid-row: 4/6;
+      margin: 0;
+      margin-top: 24px;
+      span {
+        font-weight: 900;
+      }
+    }
   }
-}
-.logo {
-  width: 300px;
-  height: auto;
-  position: relative;
-  z-index: 3;
-  @include mobile-small {
-    width: 200px;
-  }
-}
-.main-header .img-header {
-  width: 100%;
-  height: auto;
-}
-ul.rs {
-  list-style: none;
-  bottom: 0px;
-  right: 50px;
-  position: absolute;
-  z-index: 3;
-  @include mobile-small {
-    width: 100%;
-    padding: 0;
+  .logo {
+    grid-column: 2/3;
+    grid-row: 2/3;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    right: 0;
-    margin-bottom: 10px;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    @include mobile-small {
+    }
+    h1 {
+      font-family: Inter;
+      text-shadow: 2px 2px 0px #f95ba7, -2px -2px 0px #06d2ff;
+      text-transform: uppercase;
+      margin: 0;
+      transform: rotate(-2deg);
+    }
+    h2 {
+      font-size: 12px;
+      font-family: Inter;
+      font-weight: normal;
+      margin: 0;
+      letter-spacing: 0.008rem; // yeah I know
+    }
+    .what {
+      font-family: Inter;
+      font-weight: 900;
+      margin: 0;
+    }
+    .mind {
+      font-family: $font-name;
+    }
   }
-}
-.rs li {
-  float: left;
-  margin: 5px;
-  list-style: none;
-}
-.rs li a {
-  float: left;
-  list-style: none;
-  padding: 5px 6px 0px 6px;
-  overflow: hidden;
-  transition: all ease 0.3s;
-  text-decoration: none;
-  color: #fff;
-  width: 30px;
-  height: 30px;
-  @include mobile-small {
-    font-size: 3rem;
-    overflow: visible;
-    border: none;
-    margin: 10px;
+  .float-window {
+    display: flex;
+    width: 56px;
+    background-color: $blackestNight;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 4px;
+    padding: 8px 8px 16px 8px;
+    grid-column: 4/5;
+    grid-row: 1/4;
+    align-self: center;
+    justify-self: center;
+    .controls {
+      display: flex;
+      width: 100%;
+      gap: 4px;
+
+      span {
+        display: flex;
+        height: 8px;
+        width: 8px;
+        border-radius: 16px;
+        &.red {
+          background-color: #dd4b4b;
+        }
+        &.yellow {
+          background-color: #fce412;
+        }
+        &.green {
+          background-color: #50f475;
+        }
+      }
+    }
+    .links {
+      gap: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a {
+        width: 24px;
+        height: 24px;
+        &.icon-code {
+          background-image: url("../assets/icons/Icon-code.svg");
+        }
+        &.icon-ig {
+          background-image: url("../assets/icons/Icon-ig.svg");
+        }
+        &.icon-pizza {
+          background-image: url("../assets/icons/Icon-pizza.svg");
+        }
+      }
+    }
   }
-}
-.rs li a:hover {
-  transition: all ease-in 0.3s;
-}
-.rs a.icons-about {
-  font-size: 2.5rem;
-  height: 36px;
-  transition: all ease-out 0.2s;
-}
-.rs a.icons-about:hover {
-  color: rgb(41, 173, 235);
-  transition: all ease-in 0.3s;
-}
-.rs a.icons-twitter:hover {
-  color: $tw;
-}
-.rs a.icons-instagram:hover {
-  color: $ig;
-}
-.rs a.icons-behance:hover {
-  color: $be;
-}
-.rs a.icons-linkedin:hover {
-  color: $ln;
-}
-.rs a.about {
-  font-family: akularegular;
-  font-size: 2rem;
-  width: 80px;
-}
-.rs a.about:hover {
-  color: $pink;
-  font-size: 2rem;
 }
 
 /// Posts
@@ -250,7 +280,8 @@ article.post .data-post {
     align-items: center;
     flex-direction: column;
   }
-  span.language {
+  span.language,
+  span.content {
     border: 1px solid white;
     color: white;
     padding: 2px 4px;
@@ -258,10 +289,14 @@ article.post .data-post {
     font-size: 10px;
     font-family: "Open sans";
     font-weight: bold;
-    position: absolute;
+    text-transform: uppercase;
+  }
+  .tags-holder {
     top: 4px;
     right: 4px;
-    text-transform: uppercase;
+    position: absolute;
+    display: flex;
+    gap: 6px;
   }
 }
 h1.title {
@@ -439,8 +474,6 @@ article.post a img.feat {
     url(../images/coolpattern80.png) repeat;
   background-attachment: fixed;
   display: flex;
-  .gradient {
-  }
   .container-project {
     width: 100%;
     height: 100%;

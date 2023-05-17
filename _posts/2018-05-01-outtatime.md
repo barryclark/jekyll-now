@@ -5,6 +5,7 @@ titledesc: actualizaciones
 author: dactrtr
 feature: https://media.giphy.com/media/l0IyiKbiDdEalPyes/giphy-downsized.gif
 lang: spa
+about: life
 ---
 
 ## Abandonado

@@ -9,6 +9,12 @@ $ig: #a03eb5;
 $tw: #1da1f2;
 $be: #3b5998;
 $ln: #0077b5;
+// -- new vars
+$blackestNight: #20171f;
+$bonedThrone: #fbfbf7;
+$purpleBack: #463780;
+$blinkyPinky: #f95ba7;
+$cyanTyrant: #06d2ff;
 
 // Grays
 $black: #000;
@@ -24,6 +30,7 @@ $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 $body: "Open Sans";
 // $headings:;
+
 // Mobile breakpoints
 @mixin border {
   border-radius: 5px;

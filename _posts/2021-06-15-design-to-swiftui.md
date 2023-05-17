@@ -5,6 +5,7 @@ titledesc: SwiftUI to Design
 author: dactrtr
 feature: https://i.giphy.com/media/jkSvCVEXWlOla/source.gif
 lang: eng
+about: Swiftui
 ---
 
 # Design to SwiftUI

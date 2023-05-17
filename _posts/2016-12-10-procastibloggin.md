@@ -5,6 +5,7 @@ titledesc: f*ck off FB
 author: dactrtr
 feature: http://i.imgur.com/44WuWbA.jpg
 lang: eng
+about: life
 ---
 
 ## Other day, other page

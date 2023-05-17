@@ -5,6 +5,7 @@ titledesc: Inktober fail
 author: dactrtr
 feature: http://i.imgur.com/44WuWbA.jpg
 lang: eng
+about: life
 ---
 
 ## Inktober, Dinovember and the next one.

@@ -5,6 +5,7 @@ titledesc: MELTED
 author: dactrtr
 feature: http://media.bestofmicro.com/MacBook-Shot-Israeli,8-L-233589-13.jpg
 lang: eng
+about: HDD
 ---
 
 ## Dealing with OSX

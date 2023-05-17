@@ -5,6 +5,7 @@ titledesc: funnier than in reality
 author: dactrtr
 feature: https://media.giphy.com/media/803T2bGtFmSg8/giphy.gif
 lang: eng
+about: games
 ---
 
 # Making boring chores fun stuff to do
@@ -26,9 +27,9 @@ I had been lucky enough not just to help my friends move (_fuck_ these ppl are w
 	"Just throw everything inside"
 </video>
 
-This game is from the creators of **"Overcooked"** a game that has just 2 outputs, you became the strongest and best team with your friends or your friendship ends becoming a firetrash. This game is eactly the same kind of game, you have an _easy_ task, move everything from a house to a truck. One thing that amaze me from this game and overcooked (also had the luck of working in a kitchen) that are incredible real, the main issues of this two jobs are tackled in those silly funny games, a big part of this game isn't moving things, is getting them fast into the truck and organizing the truck (the hardest part in every level).
+This game is from the creators of **"Overcooked"** a game that has just 2 outputs, you became the strongest and best team with your friends or your friendship ends becoming a trash fire. This game is exactly the same kind of game, you have an _easy_ task, move everything from a house to a truck. One thing that amaze me from this game and overcooked (also had the luck of working in a kitchen) that are incredible real, the main issues of this two jobs are tackled in those silly funny games, a big part of this game isn't moving things, is getting them fast into the truck and organizing the truck (the hardest part in every level).
 
-There'sn't much more to say about the game, it's super fun, has a stupidly **over the top humor**, and really random **jokes**, and every character of the game is a delight to the eyes, very funny models, very custommizable, and also with funny quirky details, like the toaster that throws some bread every once in a while.
+There isn't much more to say about the game, it's super fun, has a stupidly **over the top humor**, and really random **jokes**, and every character of the game is a delight to the eyes, very funny models, very customizable, and also with funny quirky details, like the toaster that throws some bread every once in a while.
 
 ## SCORE
 
@@ -36,7 +37,6 @@ Overcooked with boxes is a really fun experience, the game is very hard, and has
 
 <figure class="figimg">
    <img src="https://i.imgur.com/ZKIo5YS.png" alt="im feeling generous">
-
 </figure>
 
 If you like this review (hardly believe that someone in his/her full sanity would enjoy this) leave a comment so I would make more reviews and maybe with some time be more serious about this reviews
