@@ -43,19 +43,76 @@ $body: "Open Sans";
 @mixin ghost-btn {
   border: none;
 }
+
 @mixin mobile-small {
   @media screen and (max-width: 529px) {
     @content;
   }
 }
 // Mobile tablet
-@mixin mobile-tablet {
-  @media only screen and (min-width: 530px) and (max-width: 949px) {
+
+// responsive mixins
+@mixin media-xsmall {
+  @media (min-width: 425px) {
     @content;
   }
 }
-@mixin mobile-small-land {
-  @media only screen and (max-width: 529px) and (orientation: landscape) {
+
+@mixin media-small {
+  @media (min-width: 576px) {
     @content;
+  }
+}
+
+@mixin media-medium {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-large {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin media-xlarge {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media-xxlarge {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+@mixin media-xxxlarge {
+  @media (min-width: 2560px) {
+    @content;
+  }
+}
+@mixin debug {
+  border: 5px solid red;
+  @include media-xsmall {
+    border-color: yellow;
+  }
+  @include media-small {
+    border-color: orange;
+  }
+  @include media-medium {
+    border-color: green;
+  }
+  @include media-large {
+    border-color: turquoise;
+  }
+  @include media-xlarge {
+    border-color: blue;
+  }
+  @include media-xxlarge {
+    border-color: purple;
+  }
+  @include media-xxxlarge {
+    border-color: black;
   }
 }

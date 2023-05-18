@@ -8,7 +8,7 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
   font-family: $font-name;
   src: url($font-path-file-name + ".eot"); /* IE9 Compat Modes */
   src: url($font-path-file-name + ".eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url($font-path-file-name + ".woff2") format("woff2"),
+    // /* IE6-IE8 */ url($font-path-file-name + ".woff2") format("woff2"),
     /* Super Modern Browsers */ url($font-path-file-name + ".woff")
       format("woff"),
     /* Pretty Modern Browsers */ url($font-path-file-name + ".ttf")
@@ -31,20 +31,31 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
 
 /// Landing grid layout
 .landing-dactrtr {
-  display: grid;
-  grid-template-columns: 1fr 400px;
-  grid-template-rows: 1fr;
-
+  display: flex;
+  flex-direction: column;
+  // height: 100dvh;
+  @include media-small {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 1fr;
+  }
   .main-header {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    overflow: auto;
+    @include media-small {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
   }
   .container {
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 1/2;
-    height: 100vh;
+    height: 30vh;
     overflow: scroll;
     scroll-behavior: smooth;
+    @include media-small {
+      grid-column: 2/3;
+      height: 100vh;
+    }
   }
 }
 // font color utility
@@ -61,23 +72,25 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
 .main-header {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 70vh;
   overflow: hidden;
   background-color: $bonedThrone;
   background-size: cover;
   display: flex;
-  @include mobile-small {
-    height: 50%;
+  @include media-small {
+    height: 100%;
   }
   .header-inner {
+    @include debug();
     width: 100%;
     margin: 0 auto;
     display: grid;
     background-color: $bonedThrone;
-    grid-template-rows: 20% 1fr 1fr 20%;
+    grid-template-rows: 8px 1fr 1fr 8px;
     grid-template-columns: 10% 1fr 1fr 10%;
-    @include mobile-small {
-      width: 100%;
+    @include media-small {
+      grid-template-rows: 20% 1fr 1fr 20%;
+      grid-template-columns: 10% 1fr 1fr 10%;
     }
   }
   .illustration {
@@ -86,20 +99,21 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 3fr 1fr 1fr 32px auto;
-    @include mobile-small {
-    }
     .illu-me {
       grid-column: 1/4;
       grid-row: 1/4;
       z-index: 2;
       align-self: center;
       justify-self: center;
+      width: 80%;
+      display: none;
     }
     .illu-code {
       grid-column: 2/4;
       grid-row: 2/4;
       align-self: center;
       justify-self: center;
+      display: none;
     }
     p.who-iam {
       grid-column: 1/5;
@@ -118,8 +132,6 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
     flex-direction: column;
     text-align: center;
     align-self: center;
-    @include mobile-small {
-    }
     h1 {
       font-family: Inter;
       text-shadow: 2px 2px 0px #f95ba7, -2px -2px 0px #06d2ff;
@@ -145,7 +157,7 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
   }
   .float-window {
     display: flex;
-    width: 56px;
+    width: 200px;
     background-color: $blackestNight;
     flex-direction: column;
     gap: 16px;
@@ -155,6 +167,9 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
     grid-row: 1/4;
     align-self: center;
     justify-self: center;
+    @include media-small {
+      width: 56px;
+    }
     .controls {
       display: flex;
       width: 100%;
@@ -179,8 +194,11 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
     .links {
       gap: 32px;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
+      @include media-small {
+        flex-direction: column;
+      }
       a {
         width: 24px;
         height: 24px;
@@ -206,27 +224,23 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
   overflow: hidden;
   padding: 0px;
   flex: 1 0 100%;
-  @include mobile-small {
+  @include media-large {
     flex: 1 0 100%;
-  }
-  @include mobile-tablet {
-    flex: 1 0 50%;
   }
 }
 #main article.post:first-child {
-  flex: 1 0 100%;
-  height: 300px;
-  @include mobile-small {
-    height: 200px;
-  }
-  h1 {
-    font-size: 5rem;
-    @include mobile-small {
-      font-size: 4rem;
+  @include media-xsmall {
+    flex: 1 0 100%;
+    height: 300px;
+    h1 {
+      font-size: 5rem;
+      @include mobile-small {
+        font-size: 4rem;
+      }
     }
-  }
-  a:hover h1.title {
-    font-size: 4.9rem;
+    a:hover h1.title {
+      font-size: 4.9rem;
+    }
   }
 }
 #main article.post a {
@@ -348,6 +362,7 @@ article.post a img.feat {
   margin-top: 5px;
   margin-bottom: 5px;
   height: 30px;
+  display: none;
 }
 .pagination span {
   width: 50%;
@@ -590,9 +605,6 @@ header.single-header {
   clip-path: polygon(100% 0, 100% 69%, 0 100%, 0 0);
   @include mobile-small {
     height: 40%;
-  }
-  @include mobile-small-land {
-    height: 55%;
   }
 }
 header.single-header img {
