@@ -36,6 +36,11 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
   height: auto;
   @include media-small {
     display: grid;
+    grid-template-columns: 1fr 360px;
+    grid-template-rows: 1fr;
+    height: 100dvh;
+  }
+  @include media-medium {
     grid-template-columns: 1fr 400px;
     grid-template-rows: 1fr;
   }
@@ -70,14 +75,17 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
 }
 /// header main
 .main-header {
+  // @include debug();
   position: relative;
   width: 100%;
-  // height: 80vh;
+  height: 85dvh;
   overflow: hidden;
   background-color: $bonedThrone;
   background-size: cover;
   display: flex;
   @include media-small {
+  }
+  @include media-medium {
     height: 100%;
   }
   .header-inner {
@@ -86,7 +94,7 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
     display: grid;
     background-color: $bonedThrone;
     grid-template-rows: 8px 3fr 1fr 1fr 8px;
-    grid-template-columns: 8px 1fr 9px;
+    grid-template-columns: 8px 1fr 8px;
     @include media-small {
       grid-template-rows: 20% 1fr 1fr 20%;
       grid-template-columns: 10% 1fr 1fr 10%;
@@ -97,7 +105,7 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
     grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 3fr 1fr 1fr 32px auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     @include media-small {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 3fr 1fr 1fr 32px auto;
@@ -117,20 +125,24 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
     }
     .illu-code {
       grid-column: 2/4;
-      grid-row: 2/4;
+      grid-row: 3/5;
       align-self: center;
       justify-self: center;
+      @include media-small {
+        grid-row: 2/4;
+      }
     }
   }
   p.who-iam {
     grid-column: 1/5;
     grid-row: 4/6;
     margin: 0;
-    margin-top: 24px;
+    margin-top: 16px;
     text-align: center;
     span {
       font-weight: 900;
       text-align: left;
+      margin-top: 24px;
     }
   }
   .logo {
@@ -179,7 +191,7 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
     border-radius: 4px;
     padding: 8px 8px 16px 8px;
     grid-column: 4/5;
-    grid-row: 3/4;
+    grid-row: 3/5;
     align-self: center;
     justify-self: center;
     @include media-small {
@@ -245,7 +257,7 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
   }
 }
 #main article.post:first-child {
-  @include media-xsmall {
+  @include media-small {
     flex: 1 0 100%;
     height: 300px;
     h1 {
