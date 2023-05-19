@@ -33,7 +33,7 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
 .landing-dactrtr {
   display: flex;
   flex-direction: column;
-  // height: 100dvh;
+  height: auto;
   @include media-small {
     display: grid;
     grid-template-columns: 1fr 400px;
@@ -49,12 +49,12 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
   .container {
     grid-column: 1/2;
     grid-row: 1/2;
-    height: 30vh;
-    overflow: scroll;
+    height: 40vh;
     scroll-behavior: smooth;
     @include media-small {
       grid-column: 2/3;
       height: 100vh;
+      overflow: scroll;
     }
   }
 }
@@ -72,7 +72,7 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
 .main-header {
   position: relative;
   width: 100%;
-  height: 70vh;
+  // height: 80vh;
   overflow: hidden;
   background-color: $bonedThrone;
   background-size: cover;
@@ -81,57 +81,69 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
     height: 100%;
   }
   .header-inner {
-    @include debug();
     width: 100%;
     margin: 0 auto;
     display: grid;
     background-color: $bonedThrone;
-    grid-template-rows: 8px 1fr 1fr 8px;
-    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-rows: 8px 3fr 1fr 1fr 8px;
+    grid-template-columns: 8px 1fr 9px;
     @include media-small {
       grid-template-rows: 20% 1fr 1fr 20%;
       grid-template-columns: 10% 1fr 1fr 10%;
     }
   }
   .illustration {
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 3fr 1fr 1fr 32px auto;
+    @include media-small {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 3fr 1fr 1fr 32px auto;
+      grid-column: 3/4;
+      grid-row: 2/3;
+    }
     .illu-me {
       grid-column: 1/4;
       grid-row: 1/4;
       z-index: 2;
       align-self: center;
       justify-self: center;
-      width: 80%;
-      display: none;
+      width: 100%;
+      @include media-small {
+        width: 80%;
+      }
     }
     .illu-code {
       grid-column: 2/4;
       grid-row: 2/4;
       align-self: center;
       justify-self: center;
-      display: none;
     }
-    p.who-iam {
-      grid-column: 1/5;
-      grid-row: 4/6;
-      margin: 0;
-      margin-top: 24px;
-      span {
-        font-weight: 900;
-      }
+  }
+  p.who-iam {
+    grid-column: 1/5;
+    grid-row: 4/6;
+    margin: 0;
+    margin-top: 24px;
+    text-align: center;
+    span {
+      font-weight: 900;
+      text-align: left;
     }
   }
   .logo {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 3/4;
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-self: center;
+    @include media-small {
+      align-self: center;
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
     h1 {
       font-family: Inter;
       text-shadow: 2px 2px 0px #f95ba7, -2px -2px 0px #06d2ff;
@@ -153,22 +165,26 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
     }
     .mind {
       font-family: $font-name;
+      margin: 0px;
+      @include media-small {
+      }
     }
   }
   .float-window {
     display: flex;
-    width: 200px;
+    width: 160px;
     background-color: $blackestNight;
     flex-direction: column;
     gap: 16px;
     border-radius: 4px;
     padding: 8px 8px 16px 8px;
     grid-column: 4/5;
-    grid-row: 1/4;
+    grid-row: 3/4;
     align-self: center;
     justify-self: center;
     @include media-small {
       width: 56px;
+      grid-row: 1/4;
     }
     .controls {
       display: flex;
