@@ -70,7 +70,7 @@ A utility for generating word clouds from multiple documents at a go, cutting do
 
 A TensorFlow project from 2020 using a modified UNet autoencoder architecture with MobileNetV2 weights to perform transfer learning for foreground image segmentation. The original usecase was polyp segmentation from colonoscopy images, but this was repurposed for foreground segmentation of everyday objects.
 
-![](https://img.shields.io/badge/Python-white?logo=Python) ![](https://img.shields.io/badge/TensorFlow-white?logo=TensorFlow) ![]
+![](https://img.shields.io/badge/Python-white?logo=Python) ![](https://img.shields.io/badge/TensorFlow-white?logo=TensorFlow)
 
 [Github Repo](https://github.com/KayO-GH/foreground-image-segmentation)
 
