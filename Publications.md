@@ -42,9 +42,9 @@ permalink: /Publications/
 1. [Interview Biopatrika](https://biopatrika.com/2022/10/24/dna-a-next-generation-material-for-digital-data-storage/){:target="_blank" rel="noopener"}
 <img src="/images/Screenshot 2022-10-27 at 12.35.16 PM.png" align="center"/>
 <br>
+<br>
 
-
-2. [Americanhhm: Magazine Article](https://www.pharmafocusamerica.com/articles/advances-in-mrna-therapeutics-and-vccines){:target="_blank" rel="noopener"}
+2. <b>Advances in mRNA Therapeutics and Vaccines</b> [Americanhhm: Magazine Article](https://www.pharmafocusamerica.com/articles/advances-in-mrna-therapeutics-and-vccines){:target="_blank" rel="noopener"}
 <img src="/images/Nucleic Acids.png" width="550" align="center"/>
 <br>
 <br>
