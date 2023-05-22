@@ -39,17 +39,17 @@ permalink: /Publications/
 
 **_Interviews/Media Highlights_**
 
-[Interview Biopatrika](https://biopatrika.com/2022/10/24/dna-a-next-generation-material-for-digital-data-storage/){:target="_blank" rel="noopener"}
+1. [Interview Biopatrika](https://biopatrika.com/2022/10/24/dna-a-next-generation-material-for-digital-data-storage/){:target="_blank" rel="noopener"}
 <img src="/images/Screenshot 2022-10-27 at 12.35.16 PM.png" align="center"/>
 <br>
 
 
-[Americanhhm: Magazine Article](https://www.pharmafocusamerica.com/articles/advances-in-mrna-therapeutics-and-vccines){:target="_blank" rel="noopener"}
+2. [Americanhhm: Magazine Article](https://www.pharmafocusamerica.com/articles/advances-in-mrna-therapeutics-and-vccines){:target="_blank" rel="noopener"}
 <img src="/images/Nucleic Acids.png" width="550" align="center"/>
 <br>
 <br>
 
-[Lecture: DNA Nanotechnology](https://transcripts.gotomeeting.com/#/s/78c52387f42b7f5091dba3bbd4b80e9aba45c5d9fc4a059ca081e3007fd8afae){:target="_blank" rel="noopener"}
+3. [Lecture: DNA Nanotechnology](https://transcripts.gotomeeting.com/#/s/78c52387f42b7f5091dba3bbd4b80e9aba45c5d9fc4a059ca081e3007fd8afae){:target="_blank" rel="noopener"}
 <img src="/images/DNA Nanotech.png" align="center"/>
                                             
                                      
