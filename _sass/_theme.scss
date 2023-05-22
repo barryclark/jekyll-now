@@ -300,6 +300,13 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
       }
     }
   }
+  span.dots {
+    width: 500px;
+    height: 500px;
+    background-image: url("../assets/dots.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 /// Posts
