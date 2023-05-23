@@ -189,6 +189,10 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
       grid-row: 3/4;
       margin: 32px 0 0 0;
     }
+    @include media-xxlarge {
+      margin-bottom: 7rem;
+      align-self: end;
+    }
     span {
       font-weight: 900;
       text-align: left;
@@ -214,6 +218,9 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
     @include media-xlarge {
       grid-row: 2/4;
     }
+    @include media-xxlarge {
+      transform: scale(1.5);
+    }
     h1 {
       font-family: Inter;
       text-shadow: 2px 2px 0px #f95ba7, -2px -2px 0px #06d2ff;
@@ -232,11 +239,17 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
       font-family: Inter;
       font-weight: 900;
       margin: 0;
+      display: none;
+      @include media-medium {
+        display: block;
+      }
     }
     .mind {
       font-family: $font-name;
       margin: 0px;
-      @include media-small {
+      display: none;
+      @include media-medium {
+        display: block;
       }
     }
   }
@@ -301,11 +314,34 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
     }
   }
   span.dots {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     background-image: url("../assets/dots.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    grid-row: 3/4;
+    align-self: center;
+    justify-self: center;
+    grid-column: 2/3;
+    display: none;
+    opacity: 0.2;
+    @include media-xsmall {
+    }
+    @include media-small {
+      grid-row: 2/4;
+      width: 100%;
+      height: 100%;
+    }
+    @include media-medium {
+      grid-row: 3/4;
+      display: flex;
+    }
+    @include media-large {
+    }
+    @include media-xlarge {
+      width: 500px;
+      height: 500px;
+    }
   }
 }
 
