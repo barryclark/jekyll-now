@@ -1,9 +1,9 @@
 ---
-published: false
-title: 'Bridge of Reflections - Suite for Two Pianos Release - June , 2023'
+published: true
+title: 'Bridge of Reflections - Suite for Two Pianos Release - June 1st, 2023'
 ---
 ![Bridge of Reflections]({{taylorjhawkins.com}}/images/bridge-of-reflections.png)
-I'm releasing a piano suite, **Bridge of Reflections**, as **Taylor J Hawkins**, on **June , 2023**. 
+I'm releasing a piano suite, **Bridge of Reflections**, as **Taylor J Hawkins**, on **June 1st, 2023**. 
 It will be available on Spotify, ITunes, and other digital distribution platforms. 
 The material was composed this year (2023), with [Musescore](https://musescore.org/) and [Reaper](https://www.reaper.fm/), my current DAW, in my home studio.
 
