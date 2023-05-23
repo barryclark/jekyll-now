@@ -22,12 +22,6 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
 .container {
   width: 100%;
 }
-.posts {
-  display: flex;
-  width: 100%;
-  justify-content: flex-start;
-  flex-flow: row wrap;
-}
 
 /// Landing grid layout
 .landing-dactrtr {
@@ -346,6 +340,22 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
 }
 
 /// Posts
+.blog-title {
+  // text-shadow: 2px 2px 0px #f95ba7, -2px -2px 0px #06d2ff;
+  font-family: $font-name;
+  margin: 0;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+}
+.posts {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  padding: 2px;
+}
 #main article.post {
   background: #000000;
   height: 112px;
@@ -353,6 +363,8 @@ $font-path-file-name: /assets/fonts/Shnobel-Regular;
   overflow: hidden;
   padding: 0px;
   flex: 1 0 100%;
+  border-radius: 8px;
+  margin: 1px 0px;
   @include media-large {
     flex: 1 0 100%;
   }
