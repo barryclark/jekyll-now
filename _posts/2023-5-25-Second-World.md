@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Second World!!
+title: 그럴듯한 깃 블로그 만들어가기.....(1)
 ---
 
-Second post!!
+
