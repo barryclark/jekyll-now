@@ -7,8 +7,14 @@ Unity에서 Gizmo는 에디터에서 Scene View 또는 Game View에서 표시되
 Unity의 기즈모는 게임 개발자들이 게임을 만드는 데 필수적인 도구 중 하나입니다. 기즈모를 사용하면 개발자는 게임 오브젝트의 위치, 회전, 크기 등을 쉽게 확인할 수 있으며, 게임 오브젝트의 상태를 모니터링하여 게임을 디버깅할 수 있습니다.
 
 다음은 기즈모에서 텍스트를 출력하기 위한 방법입니다.
+* Handles는 
 ```c#
-GUIStyle guiStyle = new GUIStyle();
-guiStyle.normal.textColor = Color.magenta;
-Handles.Label(transform.position + (Vector3.up * 0.05f), gameObject.name, guiStyle);
+#if UNITY_EDITOR
+  if ( (Camera.current.transform.position - transform.position).magnitude < 3.0f )
+  {
+    GUIStyle guiStyle = new GUIStyle();
+    guiStyle.normal.textColor = Color.magenta;
+    Handles.Label(transform.position + (Vector3.up * 0.05f), gameObject.name, guiStyle);
+  }
+#endif
 ```
