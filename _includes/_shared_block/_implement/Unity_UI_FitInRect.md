@@ -19,6 +19,7 @@
 다음은 이를 이용한 예시입니다.
 
 * `OnRectTransformDimensionsChange`는 주어진 사각형의 크기가 변경될 때 이미지를 다시 맞추기 위해서 호출됩니다.
+* GameObject의 Width 및 Height를 비활성화 하기 위해서는 `ContentSizeFitter`를 참고할 수 있습니다.
 
 ```c#
 using UnityEngine;
