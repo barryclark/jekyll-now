@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FABRICK
+title: FABRIK
 ---
 
-{% include _shared_block/_implement/FABRIK.md %}
+{% include _shared_block/_implement/Unity_FABRIK.md %}
