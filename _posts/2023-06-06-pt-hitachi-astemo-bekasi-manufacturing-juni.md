@@ -1,10 +1,8 @@
 ---
-
 layout: post
 title: PT Hitachi Astemo Bekasi Manufacturing
 author: Pak Budi
 date: 2023-06-06 07:19:51 +07:00
-
 ---
 
 **PT. Hitachi Astemo Bekasi Manufacturing** merupakan salah satu perusahaan Group Hitachi & Astra yang bergerak dalam bidang industri komponen otomotif (shock absorber & streering system) untuk kendaraan roda 2 dan roda 4.
