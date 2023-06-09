@@ -2,7 +2,7 @@
 layout: post
 title: PT Smartfren Telecom Tbk
 author: Pak Budi
-date: 2023-06-09 07:16:30 +07:00
+date: 2023-06-10 07:16:30 +07:00
 ---
 
 **PT Smartfren Telecom Tbk** adalah salah satu perusahaan telekomunikasi dengan perkembangan tercepat di Indonesia. Perusahaan ini termasuk pionir layanan internet 4G LTE dan layanan VoLTE.
