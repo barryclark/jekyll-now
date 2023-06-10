@@ -10,4 +10,4 @@ My research interest are in representation learning, computer vision, and natura
 
 
 ### Contact me
-soa2wg [at] virginia.edu
+(email@domain.com)
