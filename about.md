@@ -6,12 +6,8 @@ permalink: /about/
 
 I am a machine learning scientist at Microsoft working on optimization algorithms. I am also an adjunct professor at the University of Virginia School of Data Science where I teach graduate level deep learning course.
 
-My research interest are in representation learning, computer vision, and natural language processing. I also have keen interest in general machine learning and computational intelligence.
+My research interest are in representation learning, computer vision, and natural language processing. I also have keen interest in general machine learning and computational intelligence with applications across multiple domains.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
-
 soa2wg [at] virginia.edu
