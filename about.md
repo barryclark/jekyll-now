@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am a machine learning scientist at Microsoft working on optimization algorithms. I am also an adjunct professor at the University of Virginia School of Data Science where I teach graduate level deep learning course.
+
+My research interest are in representation learning, computer vision, and natural language processing. I also have keen interest in general machine learning and computational intelligence.
 
 ### More Information
 
@@ -12,4 +14,4 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+soa2wg [at] virginia.edu
