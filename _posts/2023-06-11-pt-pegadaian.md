@@ -22,7 +22,8 @@ Berdasarkan laman [Karir Pegadaian](https://www.pegadaian.co.id/karir), terdapat
 - Memvalidasi dan memastikan kualitas dari pipeline dan permodelan data.
 - Membuat dan mempresentasikan laporan hasil pengembangan pipeline dan permodelan data kepada stakeholder data.
 - Memberikan ide atau solusi untuk improvement performance data system.
-"Batas akhir submit CV untuk apply pekerjaan paling lambat tanggal 16 JUNI 2023"
+
+**"Batas akhir submit CV untuk apply pekerjaan paling lambat tanggal 16 JUNI 2023"**
 
 ### Kualifikasi Minimum:
 - Pendidikan minimal S1 dari Jurusan TI atau program studi lainnya yang sederajat.
