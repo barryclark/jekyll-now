@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Note to Self: Mail Sender Authentication Protocols, and an Overview of SPF, DKIM, DMARC and others  
+title: Note to Self - Mail Sender Authentication Protocols, and an Overview of SPF, DKIM, DMARC and others  
 ---
 
-Building a modern mail server on the internet typically involves tweaking DNS entries. Hyper-scalers often provide step-by-step instructions on how to handle your domain, often coupled with screenshots from popular control panels. For self-hosted solutions, you might come across acronyms such as SPF, Sender ID, DKIM, DMARC, and DANE. These technologies form the basis of mail sender authentication. But why do we need to use DKIM and DMARC alongside SPF? And why are some vendors starting to adopt DANE? Each of these technologies plays a unique role in the email authentication and security process, offering a comprehensive solution when used collectively. Here's a quick overview:
+Building a modern mail server on the internet typically involves, beside other activity on exposed server,  tweaking DNS entries. Hyper-scalers often provide step-by-step instructions on how to handle your domain, often coupled with screenshots from popular control panels. For self-hosted solutions, you might come across acronyms such as SPF, Sender ID, DKIM, DMARC, and DANE. These technologies form the basis of mail sender authentication. 
+
+But why do we need to use DKIM and DMARC alongside SPF? And why are some vendors starting to adopt DANE? Each of these technologies plays a unique role in the email authentication and security process, offering a comprehensive solution when used collectively. Here's a quick overview:
 
 - [SPF (Sender Policy Framework)](https://tools.ietf.org/html/rfc7208): SPF is a protocol used to prevent spammers from sending emails on behalf of your domain. It allows an organization to publish authorized mail servers in DNS records, enabling receiving mail servers to verify if incoming mail originates from an authorized server.
 - [DKIM (DomainKeys Identified Mail)](https://tools.ietf.org/html/rfc6376): Unlike SPF, which is focused on sender verification, DKIM uses an encryption key and digital signature to confirm that an email message hasn't been tampered with. It ties the email message to the sender's domain. DKIM records are also published in DNS.
@@ -27,4 +29,4 @@ To summarize, these mechanisms offer multiple layers of security, each addressin
 
 In my upcoming posts, I aim to delve deeper into the basics of each of these technologies, shedding more light on their individual functionality and benefits.
 
-DISCLAIMER: mart of that text was generated using Chat GPT 4, but all was proofreaded and manualy verifed. 
+**DISCLAIMER: mart of that text was generated using Chat GPT 4, but all was proofreaded and manualy verifed.**
