@@ -5,7 +5,7 @@ author: Pak Budi
 date: 2023-06-13 07:17:31 +07:00
 ---
 
-Established in 1953 by Go Soei Kie (Dasuki Angkosubroto) as a commodities trading business, Gunung Sewu has grown to become one of Indonesia’s premier diversified business groups, with a workforce of approximately 30,000 professionals encompassing operations in the food, insurance, property, manufacturing and other emerging businesses. We believe that Indonesia is a market that can be developed involving ecosystems that are sustainable, whilst aiming to lead by example.
+Established in 1953 by Go Soei Kie (Dasuki Angkosubroto) as a commodities trading business, **Gunung Sewu** has grown to become one of Indonesia’s premier diversified business groups, with a workforce of approximately 30,000 professionals encompassing operations in the food, insurance, property, manufacturing and other emerging businesses. We believe that Indonesia is a market that can be developed involving ecosystems that are sustainable, whilst aiming to lead by example.
 ![logo gunung sewu]({{ site.baseurl }}/images/logo-gunungsewu.png)
 
 We take pride in our humble beginnings, and have grown over the years by placing Passion, Purpose, and Progress as the cornerstone of our activities and focus on creating value in a sustainable manner, as we believe these are the keys to our long-term success. We nurture new businesses, but also work on expanding our existing ones and to develop close relationships with our partners and stakeholders to preserve brand equity across generations.
