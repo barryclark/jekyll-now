@@ -1,4 +1,4 @@
-  ---
+---
 layout: post
 title: PT Jade Karya Cemerlang
 author: Pak Budi
