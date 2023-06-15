@@ -2,7 +2,7 @@
 layout: post
 title: PT Indonesia Weda Bay Industrial Park
 author: Pak Budi
-date: 2023-06-14 09:27:31 +07:00
+date: 2023-06-15 09:27:31 +07:00
 ---
 
 **PT Indonesia Weda Bay Industrial Park (IWIP)** merupakan Kawasan Industri terpadu untuk pengolahan logam berat yang berlokasi di Desa Lelilef, Kecamatan Weda, Kabupaten Halmahera Tengah, Provinsi Maluku Utara.
