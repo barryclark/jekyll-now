@@ -15,7 +15,7 @@ This study employed an acceptability judgment survey which was designed to test 
 
 This research project served as my Senior Honors Thesis at NYU in 2022 and received High Honors. The full text is available <a href="https://as.nyu.edu/content/dam/nyu-as/linguistics/documents/Winship%20(2022)%20Honors%20Thesis.pdf">here</a>.
 
-## Variation in the use of (h)ain't in Appalachian English
+## Variation in the use of (h)ain't in Appalachian English 
 ???
 
 ## Possession in Southern Uto-Aztecan varieties: A possible reanalysis of affixes as clitics
