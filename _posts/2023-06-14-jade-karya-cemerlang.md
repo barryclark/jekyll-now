@@ -72,4 +72,4 @@ Berdasarkan informasi di laman [Alumni UGM](https://alumni.ugm.ac.id/2023/06/15/
 
 ![loker jade]({{ site.baseurl }}/images/LOWONGAN-DIGITAL-MARKETING.jpeg)
 
-<div class="apply"><a href="mailto:terry.purnomo@gmail.com?subject=BD Soxoo" target="_blank" rel="noopener noreferrer">Lamar posisi ini</a></div>
+<div class="apply"><a href="mailto:terry.purnomo@gmail.com?subject=DM Soxoo" target="_blank" rel="noopener noreferrer">Lamar posisi ini</a></div>
