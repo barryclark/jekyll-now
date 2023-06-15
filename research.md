@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-# Past Projects
+# Past Projects 
 
 ## Mixing and Matching Gender: The interaction of gender assignment rules in Spanish-English bilingual speech
 
