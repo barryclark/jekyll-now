@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research
-permalink: /blog/
+permalink: /research/
 ---
 
 ##Past Projects
