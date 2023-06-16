@@ -2,7 +2,7 @@
 layout: post
 title: PT Cahaya Hasil Cemerlang Multi Manufaktur
 author: Pak Budi
-date: 2023-06-16 07:07:31 +07:00
+date: 2023-06-16 07:17:31 +07:00
 ---
 
 **PT Cahaya Hasil Cemerlang Multi Manufaktur** yang berkantor di Cikarang Bekasi pada saat ini tengah membuka lowongan kerja dengan berbagai formasi.
