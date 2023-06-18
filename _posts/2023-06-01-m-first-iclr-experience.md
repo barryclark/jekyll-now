@@ -28,4 +28,11 @@ That's a whopping **1,631% increase**!
 
 Now that that shocker is out of the way, here's my actual experience:
 
+<img width="800" alt="Name Tag" src="https://github.com/KayO-GH/kayo-gh.github.io/assets/18174012/86e300ed-4e66-4b09-9d94-6db4870e6b07"/>
+
+The first thing you will notice is that my tag says Thursday and Friday. I completely skipped Monday to Wednesday for three main reasons:
+1. The prices, my friend, the prices. (Many of the people who attend these conferences are sponsored by their institutions. I was there as an individual.)
+2. I got a pass for those days through my [IndabaX Rwanda](https://indabaxrwanda.github.io/) participation.
+3. I still had to go to work 😂
+
 
