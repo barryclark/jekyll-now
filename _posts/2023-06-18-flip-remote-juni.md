@@ -2,7 +2,7 @@
 layout: post
 title: KERJA REMOTE - FLIP
 author: Pak Budi
-date: 2023-06-18 07:09:30 +07:00
+date: 2023-06-18 07:13:30 +07:00
 ---
 
 **Flip** adalah fintech berbasis platform pembayaran di Indonesia. Sampai hari ini, Flip sudah melayani lebih dari 7 juta pengguna dan ratusan perusahaan serta UKM.
