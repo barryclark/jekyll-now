@@ -26,7 +26,9 @@ That's a whopping **1,631% increase**!
 |:--:| 
 | Photo credit: [David Adelani](https://dadelani.github.io/) |
 
-Now that that shocker is out of the way, here's my actual experience:
+Now that that shocker is out of the way... 
+
+#### My actual experience:
 
 <img width="800" alt="Name Tag" src="https://github.com/KayO-GH/kayo-gh.github.io/assets/18174012/86e300ed-4e66-4b09-9d94-6db4870e6b07"/>
 
