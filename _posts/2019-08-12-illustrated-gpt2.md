@@ -222,7 +222,7 @@ In the next step, we add the output from the first step to our input sequence, a
   <br />
 </div>
 
-Notice that the second path is the only that's active in this calculation. Each layer of GPT-2 has retained its own interpretation of the first token and will use it in processing the second token (we'll get into more detail about this in the following section about self-attention). GPT-2 does not re-interpret the first token in light of the second token.
+Notice that the second path is the only one that's active in this calculation. Each layer of GPT-2 has retained its own interpretation of the first token and will use it in processing the second token (we'll get into more detail about this in the following section about self-attention). GPT-2 does not re-interpret the first token in light of the second token.
 
 ### A Deeper Look Inside
 
@@ -353,7 +353,7 @@ I'd like to note a few oversimplifications in this post:
 * I used "words" and "tokens" interchangeably. But in reality, GPT2 uses Byte Pair Encoding to create the tokens in its vocabulary. This means the tokens are usually parts of words.
 * The example we showed runs GPT2 in its inference/evaluation mode. That's why it's only processing one word at a time. At training time, the model would be trained against longer sequences of text and processing multiple tokens at once. Also at training time, the model would process larger batch sizes (512) vs. the batch size of one that evaluation uses.
 * I took liberties in rotating/transposing vectors to better manage the spaces in the images. At implementation time, one has to be more precise.
-* Transformers use a lot of layer normalization, which is pretty important. We've noted a few of these in the Illustrated Transformer, but focused more on self-attentionin this post.
+* Transformers use a lot of layer normalization, which is pretty important. We've noted a few of these in the Illustrated Transformer, but focused more on self-attention in this post.
 * There are times when I needed to show more boxes to represent a vector. I indicate those as "zooming in". For example:
 
 <div class="img-div-any-width" markdown="0">
@@ -469,7 +469,7 @@ What this scores table means is the following:
 Let's get into more detail on GPT-2's masked attention.
 
 #### Evaluation Time: Processing One Token at a Time
-We can make the GPT-2 operate exactly as masked self-attention works. But during evaluation, when our model is only adding one new word after each iteration, it would be inefficient to recalculate self-attention along earlier paths for tokens which have already been processed.
+We can make the GPT-2 operate exactly as masked self-attention works. But during evaluation, when our model is only adding one new word after each iteration, it would be inefficient to recalculate self-attention along earlier paths for tokens that have already been processed.
 
 In this case, we process the first token (ignoring `<s>` for now).
 
