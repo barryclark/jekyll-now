@@ -1,6 +1,4 @@
----
-layout: default
----
+
 <!-- This page is cached by the Hummingbird Performance plugin v2.1.1 - https://wordpress.org/plugins/hummingbird-performance/. --><!doctype html>
 <html amp lang="en-US">
     <head>
