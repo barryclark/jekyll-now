@@ -7,30 +7,8 @@ permalink: /amp/
         <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 <link rel="canonical" href="https://medizaaindonesia.biz.id/" />
-	<!-- This site is optimized with the Yoast SEO Premium plugin v18.4 (Yoast SEO v18.6) - https://yoast.com/wordpress/plugins/seo/ -->
+	
 	<title>Medizaa Indonesia Official - Beranda</title>
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CreativeWorkSeries",
-    "url": "https://medizaaindonesia.biz.id/",
-    "name": "Medizaa Indonesia Official",
-    "alternateName": "Medizaa Indonesia Official",
-    "description": "Medizaa memberikan Peluang Usaha dan Kerja dengan memberikan peluang kerjasama dengan Perusahaan dan mendapatkan Pendapatan Harian dan dapat dikerjakan di Rumah.",
-    "inLanguage": "id",
-    "aggregateRating": {
-    	"@type": "AggregateRating",
-    	"ratingValue": "4.8",
-    	"bestRating": "5",
-    	"worstRating": "0",
-   	"ratingCount": "279098",
-    	"reviewCount": "2790100"
-  },
-    "author": {"@type": "Person", "name": "Medizaa"},
-    "publisher": {"@type": "Organization", "name": "Medizaa Indonesia Official"}
-    }
-  }
-</script>
 <meta content="Medizaa, Medizaa Indonesia Official, investasi aman, cara investasi, bisnis online, bisnis yang menjanjikan, bisnis masa depann, peluang usaha, bisnis, gaji harian, cara daftar medizaa, cara gabung medizaa, medizaa aman, peluang usaha, peluang kerja, testimoni medizaa," name="keywords" />
 <meta content="Medizaa memberikan Peluang Usaha dan Kerja dengan memberikan peluang kerjasama dengan Perusahaan dan mendapatkan Pendapatan Harian dan dapat dikerjakan di Rumah." name="description" />
 	<link rel="icon" type="image/png" href="/favicon.png" />
