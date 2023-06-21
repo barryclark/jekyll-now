@@ -3,6 +3,7 @@ layout: post
 title: PT Fata Organa Solusi
 author: Pak Budi
 date: 2023-06-19 07:23:30 +07:00
+thumbnail: http://siapkerjo.com/source/siapkerjocom/files/logo-fata-organa.jpeg
 ---
 
 **PT Fata Organa Solusi** yang bergerak di bidang teknologi Audio Visual AI saat ini tengah membuka lowongan pekerjaan Full-Time.
