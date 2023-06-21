@@ -47,7 +47,7 @@ There were a number of talks, but I'll comment on the ones I remember:
 I sat through Sara Hooker's talk on the state of LLM research, and a very insightful talk on the pitfalls to avoid in data collection, by Kathleen Siminyu. (Key takeaway from that was to read data terms and conditions before scraping a site... there can be horror stories otherwise.) Samuel Rutunda (CTO at Digital Umuganda) and Isaac Manzi (Mbaza NLP) also gave talks on AI/NLP efforts and communities growing in Rwanda. They were inspiring, to say the least. People really do be trying 😊.
 
 The highlight of the day for me was the poster session. A few months ago, I published [my first first-author paper](https://www.nature.com/articles/s41598-023-31709-2) in Nature Scientific Reports. It was a big deal for me. I compressed the facts into a one-pager and that became my first-ever poster presentation. And guess who won first place? Yup! Yours truly! * takes a bow *  
-<img width="400" alt="poster" src="https://github.com/KayO-GH/kayo-gh.github.io/assets/18174012/294340ae-eaf4-4b0f-babe-084468668a62"/>
+<img width="400" alt="poster" src="https://github.com/KayO-GH/kayo-gh.github.io/assets/18174012/294340ae-eaf4-4b0f-babe-084468668a62"/>  
 I also met one Jonathan from Meta who, it turns out, worked on the Canadian subset of the dataset we analyzed in our paper. I'd never seen anyone that interested in something I'd written before.
 
 ##### Day 5 (Africa NLP)
