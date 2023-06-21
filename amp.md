@@ -10,8 +10,8 @@ layout: default
 	<title>Medizaa Indonesia Official - Beranda</title>
 <meta content="Medizaa, Medizaa Indonesia Official, investasi aman, cara investasi, bisnis online, bisnis yang menjanjikan, bisnis masa depann, peluang usaha, bisnis, gaji harian, cara daftar medizaa, cara gabung medizaa, medizaa aman, peluang usaha, peluang kerja, testimoni medizaa," name="keywords" />
 <meta content="Medizaa memberikan Peluang Usaha dan Kerja dengan memberikan peluang kerjasama dengan Perusahaan dan mendapatkan Pendapatan Harian dan dapat dikerjakan di Rumah." name="description" />
-	<link  rel="icon" type="image/png" href="./favicon.png">
-          <link  rel="apple-touch-icon-precomposed" href="./favicon.png">
+	<link  rel="icon" type="image/png" href="/favicon.png">
+          <link  rel="apple-touch-icon-precomposed" href="/favicon.png">
         <meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Home" />
