@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: amp
 ---
 <html amp lang="en-US">
     <head>
