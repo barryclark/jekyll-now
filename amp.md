@@ -9,6 +9,21 @@ permalink: /amp/
 <link rel="canonical" href="https://medizaaindonesia.biz.id/" />
 	<!-- This site is optimized with the Yoast SEO Premium plugin v18.4 (Yoast SEO v18.6) - https://yoast.com/wordpress/plugins/seo/ -->
 	<title>Medizaa Indonesia Official - Beranda</title>
+	    <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org/",
+      "@type": "EmployerAggregateRating",
+      "itemReviewed": {
+        "@type": "Organization",
+        "name" : "Medizaa Indonesia Official",
+        "sameAs" : "https://medizaaindonesia.biz.id/"
+      },
+      "ratingValue": "98",
+      "bestRating": "100",
+      "worstRating": "1",
+      "ratingCount" : "90561"
+    }
+    </script>
 <meta content="Medizaa, Medizaa Indonesia Official, investasi aman, cara investasi, bisnis online, bisnis yang menjanjikan, bisnis masa depann, peluang usaha, bisnis, gaji harian, cara daftar medizaa, cara gabung medizaa, medizaa aman, peluang usaha, peluang kerja, testimoni medizaa," name="keywords" />
 <meta content="Medizaa memberikan Peluang Usaha dan Kerja dengan memberikan peluang kerjasama dengan Perusahaan dan mendapatkan Pendapatan Harian dan dapat dikerjakan di Rumah." name="description" />
 	<link rel="icon" type="image/png" href="/favicon.png" />
