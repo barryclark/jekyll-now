@@ -5,7 +5,7 @@ author: Pak Budi
 date: 2023-06-19 07:23:30 +07:00
 ---
 
-**PT Fata Organa Solusi** saat ini tengah membuka lowongan pekerjaan.
+**PT Fata Organa Solusi** yang bergerak di bidang teknologi Audio Visual AI saat ini tengah membuka lowongan pekerjaan Full-Time.
 ![logo fata organa](http://siapkerjo.com/source/siapkerjocom/files/logo-fata-organa.jpeg)
 
 Berdasarkan laman [Alumni UGM](https://alumni.ugm.ac.id/2023/06/19/pt-fata-organa-solusi-7/), terdapat lowongan kerja sebagai berikut:
