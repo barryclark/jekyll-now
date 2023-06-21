@@ -50,7 +50,7 @@ amp-accordion .menu, .footer .inner { max-width: 600px; margin: 0 auto;}#main .i
                     <h4 class="accordion-header hamburger text-button">
                         Menu                    </h4>
                     <div class="main-navigation">
-                        <div class="menu"><ul> <li class="page_item page-item-193 menu-item"><a target="_blank" href="https://medizaa.github.io/mediza/" class="menu-link">Daftar</a></li> <li class="page_item page-item-1027 current_page_item menu-item current-menu-item"><a target="_blank" href="https://medizaaindonesia.biz.id/" aria-current="page" class="menu-link">Home</a></li> </ul></div>                     </div>
+                        <div class="menu"><ul> <li class="page_item page-item-193 menu-item"><a target="_blank" href="/daftar/" class="menu-link">Daftar</a></li> <li class="page_item page-item-1027 current_page_item menu-item current-menu-item"><a target="_blank" href="https://medizaaindonesia.biz.id/" aria-current="page" class="menu-link">Home</a></li> </ul></div>                     </div>
                 </section>
             </amp-accordion>
             </div>        </nav>
@@ -73,7 +73,7 @@ amp-accordion .menu, .footer .inner { max-width: 600px; margin: 0 auto;}#main .i
         </div>
         <div class="footer">
             <div class="inner">
-                                                    <div class="menu"><ul> <li class="page_item page-item-193 menu-item"><a target="_blank" href="https://medizaa.github.io/mediza/" class="menu-link">Daftar</a></li> <li class="page_item page-item-1027 current_page_item menu-item current-menu-item"><a target="_blank" href="https://medizaaindonesia.biz.id/" aria-current="page" class="menu-link">Home</a></li> </ul></div>                                                                                     <div class="scrolltop-btn"><a target="_blank" href="#top">Back to top</a></div>
+                                                    <div class="menu"><ul> <li class="page_item page-item-193 menu-item"><a target="_blank" href="/daftar/" class="menu-link">Daftar</a></li> <li class="page_item page-item-1027 current_page_item menu-item current-menu-item"><a target="_blank" href="https://medizaaindonesia.biz.id/" aria-current="page" class="menu-link">Home</a></li> </ul></div>                                                                                     <div class="scrolltop-btn"><a target="_blank" href="#top">Back to top</a></div>
                     
                             </div>
         </div>
