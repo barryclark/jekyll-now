@@ -37,4 +37,9 @@ The first thing you will notice is that my tag says Thursday and Friday. I compl
 2. I got a pass for those days through my [IndabaX Rwanda](https://indabaxrwanda.github.io/) participation.
 3. I still had to go to work 😂
 
+##### Day 4 (IndabaX Rwanda)
+<a href="https://slideslive.com/embed/39001088"><img width="400" alt="Day 4 Summary" src="https://github.com/KayO-GH/kayo-gh.github.io/assets/18174012/f7571968-f1d3-4bc1-b57b-0356306b62bf"/></a>
 
+
+##### Day 5 (Africa NLP)
+<a href="https://slideslive.com/embed/39001091/"><img width="400" alt="Day 5 Summary" src="https://github.com/KayO-GH/kayo-gh.github.io/assets/18174012/5444b80f-791e-4be5-a89b-be113e5ce660"/></a>
