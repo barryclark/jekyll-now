@@ -149,7 +149,7 @@ var sitemayaClients = {"clientinfo":{"iloggedin":false},"api":{"nonce":"241e20dc
 				ajaxurl: '/cdn/wp-admin/admin-ajax.php'
 			};
 		</script>
-<link rel='amphtml' href='https://medizaaindonesia.biz.id/amp/' /><style type="text/css" id="branda-admin-bar-logo">
+<link rel='amphtml' href='https://medizaaindonesia.biz.id/amp{% if page.permalink %}{{ page.permalink }}{% endif %}' /><style type="text/css" id="branda-admin-bar-logo">
 body #wpadminbar #wp-admin-bar-wp-logo > .ab-item {
     background-image: url(https://cdn.sitemaya.com/wp-content/uploads/2021/10/25155719/logo-sitemaya-275.png);
     background-repeat: no-repeat;
