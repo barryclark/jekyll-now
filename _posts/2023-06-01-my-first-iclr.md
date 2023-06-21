@@ -57,6 +57,7 @@ There are a lot of efforts by all kinds of groups, like Masakhane, Ghana NLP, Le
 This is a good segue to what, in my opinion, was the most interesting talk I heard during my time at the conference: 
 
 ##### NLP systems for low resource languages: hype vs reality
+
 | ![panel](https://pbs.twimg.com/media/FvcLLgPXwAAKqT_?format=jpg) | 
 |:--:| 
 | Photo credit: Paul Azunre on [Twitter](https://twitter.com/pazunre/status/1654804269420236800) |
