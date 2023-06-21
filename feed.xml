@@ -9,8 +9,8 @@
 	>
 <channel>
 	<title>medizaa indonesia</title>
-	<atom:link href="https://medizaa.github.io/medizaa/feed.xml" rel="self" type="application/rss+xml" />
-	<link>https://medizaa.github.io/medizaa/</link>
+	<atom:link href="https://medizaaindonesia.biz.id/feed.xml" rel="self" type="application/rss+xml" />
+	<link>https://medizaaindonesia.biz.id/</link>
 	<description>Medizaa memberikan Peluang Usaha dan Kerja dengan memberikan peluang kerjasama dengan Perusahaan dan mendapatkan Pendapatan Harian dan dapat dikerjakan di Rumah.</description>
 	<lastBuildDate>Wed, 31 May 2023 14:04:25 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -18,6 +18,6 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://medizaa.github.io/medizaa?v=5.8.3</generator>
+	<generator>https://medizaaindonesia.biz.id?v=5.8.3</generator>
 </channel>
 </rss>
