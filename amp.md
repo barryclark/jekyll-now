@@ -9,12 +9,12 @@ permalink: /amp/
 <link rel="canonical" href="https://medizaaindonesia.biz.id/" />
 	<!-- This site is optimized with the Yoast SEO Premium plugin v18.4 (Yoast SEO v18.6) - https://yoast.com/wordpress/plugins/seo/ -->
 	<title>Medizaa Indonesia Official - Beranda</title>
-	   <script type="application/ld+json">
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CreativeWorkSeries",
-    "url": "<data:blog.url/>",
-    "name": "https://medizaaindonesia.biz.id/",
+    "url": "https://medizaaindonesia.biz.id/",
+    "name": "Medizaa Indonesia Official",
     "alternateName": "Medizaa Indonesia Official",
     "description": "Medizaa memberikan Peluang Usaha dan Kerja dengan memberikan peluang kerjasama dengan Perusahaan dan mendapatkan Pendapatan Harian dan dapat dikerjakan di Rumah.",
     "inLanguage": "id",
@@ -23,8 +23,8 @@ permalink: /amp/
     	"ratingValue": "4.8",
     	"bestRating": "5",
     	"worstRating": "0",
-   	"ratingCount": "980613",
-    	"reviewCount": "980613"
+   	"ratingCount": "279098",
+    	"reviewCount": "2790100"
   },
     "author": {"@type": "Person", "name": "Medizaa"},
     "publisher": {"@type": "Organization", "name": "Medizaa Indonesia Official"}
