@@ -39,6 +39,8 @@ The first thing you will notice is that my tag says Thursday and Friday. I compl
 
 There were many [summary videos](https://iclr.cc/virtual/2023/index.html), for all 5 days, but stick with me as I walk you through days 4 and 5.
 
+---
+
 ##### Day 4 (IndabaX Rwanda)
 <a href="https://slideslive.com/embed/39001088"><img width="400" alt="Day 4 Summary" src="https://github.com/KayO-GH/kayo-gh.github.io/assets/18174012/f7571968-f1d3-4bc1-b57b-0356306b62bf"/></a>
 This was not my first IndabaX. In fact, I was a speaker at the first IndabaX Ghana in 2019. However, the colocation of IndabaX Rwanda with ICLR made it bigger and better. Plus, there just seemed to be a lot more excitement about our return from the 'exile' of COVID-19.
@@ -49,6 +51,8 @@ I sat through Sara Hooker's talk on the state of LLM research, and a very insigh
 The highlight of the day for me was the poster session. A few months ago, I published [my first first-author paper](https://www.nature.com/articles/s41598-023-31709-2) in Nature Scientific Reports. It was a big deal for me. I compressed the facts into a one-pager and that became my first-ever poster presentation. And guess who won first place? Yup! Yours truly! * takes a bow *  
 <img width="400" alt="poster" src="https://github.com/KayO-GH/kayo-gh.github.io/assets/18174012/294340ae-eaf4-4b0f-babe-084468668a62"/>  
 I also met one Jonathan from Meta who, it turns out, worked on the Canadian subset of the dataset we analyzed in our paper. I'd never seen anyone that interested in something I'd written before.
+
+---
 
 ##### Day 5 (Africa NLP)
 <a href="https://slideslive.com/embed/39001091/"><img width="400" alt="Day 5 Summary" src="https://github.com/KayO-GH/kayo-gh.github.io/assets/18174012/5444b80f-791e-4be5-a89b-be113e5ce660"/></a>
