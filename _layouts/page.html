@@ -9,7 +9,7 @@ layout: default
 
 	
 	<title>{% if page.title %}{{ page.title }} – {% endif %}Medizaa Indonesia Official</title>
-<meta content="{% if page.title %}{{ page.title }}{% endif %},Medizaa, Medizaa Indonesia Official, investasi aman, cara investasi, bisnis online, bisnis yang menjanjikan, bisnis masa depann, peluang usaha, bisnis, gaji harian, cara daftar medizaa, cara gabung medizaa, medizaa aman, peluang usaha, peluang kerja, testimoni medizaa," name="keywords" />
+<meta content="{% if page.title %}{{ page.title }}{% endif %},{% if page.keyword %}{{ page.keyword }}{% endif %},Medizaa, Medizaa Indonesia Official, investasi aman, cara investasi, bisnis online, bisnis yang menjanjikan, bisnis masa depann, peluang usaha, bisnis, gaji harian, cara daftar medizaa, cara gabung medizaa, medizaa aman, peluang usaha, peluang kerja, testimoni medizaa," name="keywords" />
 <meta content="{% if page.description %}{{ page.description }}{% endif %}" name="description" />
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
@@ -74,9 +74,8 @@ amp-accordion .menu, .footer .inner { max-width: 600px; margin: 0 auto;}#main .i
         <div id="main">
             <div class="inner home-page">                
 <div class="amphtml-content  amphtml-single-page">
-
+<h2>{% if page.title %}{{ page.title }}{% endif %}</h2>
 {{ content }}
-
 </div>
       
       
