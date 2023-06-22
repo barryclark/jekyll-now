@@ -30,7 +30,7 @@ layout: default
     }
   }
 </script>	
-<meta content="{% if page.title %}{{ page.title }}{% endif %},Medizaa, Medizaa Indonesia Official, investasi aman, cara investasi, bisnis online, bisnis yang menjanjikan, bisnis masa depann, peluang usaha, bisnis, gaji harian, cara daftar medizaa, cara gabung medizaa, medizaa aman, peluang usaha, peluang kerja, testimoni medizaa," name="keywords" />
+<meta content="{% if page.title %}{{ page.title }}{% endif %},{% if page.keyword %}{{ page.keyword }}{% endif %},Medizaa, Medizaa Indonesia Official, investasi aman, cara investasi, bisnis online, bisnis yang menjanjikan, bisnis masa depann, peluang usaha, bisnis, gaji harian, cara daftar medizaa, cara gabung medizaa, medizaa aman, peluang usaha, peluang kerja, testimoni medizaa," name="keywords" />
 <meta content="{% if page.description %}{{ page.description }}{% endif %}" name="description" />	
 <link rel="canonical" href="https://medizaaindonesia.biz.id{% if page.permalink %}{{ page.permalink }}{% endif %}"/>
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -320,7 +320,7 @@ Click the help icon above to learn more.
 				<article
 class="post-1027 page type-page status-publish ast-article-single" id="post-1027" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
 		<header class="entry-header ast-header-without-markup">
-		
+			<h2>{% if page.title %}{{ page.title }}{% endif %}</h2>
 			</header><!-- .entry-header -->
 
 	<div class="entry-content clear" 
