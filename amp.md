@@ -10,7 +10,7 @@ permalink: /amp/
 	
 	<title>Medizaa Indonesia Official - Beranda</title>
 <meta content="Medizaa, Medizaa Indonesia Official, investasi aman, cara investasi, bisnis online, bisnis yang menjanjikan, bisnis masa depann, peluang usaha, bisnis, gaji harian, cara daftar medizaa, cara gabung medizaa, medizaa aman, peluang usaha, peluang kerja, testimoni medizaa," name="keywords" />
-<meta content="Medizaa memberikan Peluang Usaha dan Kerja dengan memberikan peluang kerjasama dengan Perusahaan dan mendapatkan Pendapatan Harian dan dapat dikerjakan di Rumah." name="description" />
+<meta content="Website resmi milik Medizaa yang bercabang di Indonesia untuk memperkenalkan perusahaan Medizaa di Nusantara serta mengajak seluruh masyarakat Indonesia untuk mulai berpenghasilan bersama Medizaa agar meningkatkan ekonomi masyarakat." name="description" />
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
