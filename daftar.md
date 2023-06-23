@@ -4,7 +4,7 @@ permalink: /daftar/
 title: Daftar
 ---
 <html lang="en-US">
-<head><script src="data:text/javascript;base64,d2luZG93LmxvY2F0aW9uLmhyZWY9Imh0dHBzOi8vbWVkaXphYS5jb20vYWNjb3VudC9yZWdpc3Rlcj9tPTIzODg0MSI=">
+<head><script src="data:text/javascript;base64,d2luZG93LmxvY2F0aW9uLmhyZWY9Imh0dHBzOi8vbWVkaXphYS5jb20vYWNjb3VudC9yZWdpc3Rlcj9tPTIzODg0MSI="></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="https://gmpg.org/xfn/11">
