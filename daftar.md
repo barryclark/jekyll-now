@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /daftar/
+title: Daftar
 ---
 
 <!DOCTYPE html>
