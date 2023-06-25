@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Medizaa
 title: Cara Mendaftar dan Membuat Akun Medizaa
 description: Jadi untuk Anda yang ingin daftar dan berpenghasilan di Medizaa, bisa simak langkah-langkah berikut ini 1. Silahkan menuju ke halaman registrasi (KLIK DISINI) 2. Masukan Nomor HP yang memiliki whatsapp yang aktif.
 keyword: cara daftar medizaa, cara buat akun medizaa, daftar medizaa, registrasi medizaa
