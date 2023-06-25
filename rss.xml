@@ -1,16 +1,36 @@
 ---
 layout: null
 ---
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
+   <title>Medizaa Indonesia Official</title>
+	<atom:link href="{{ "/rss.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
+	<link>{{ site.url }}{{ site.baseurl }}</link>
+	<description>{{ site.description | xml_escape }}</description>
+	<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+	<language>id</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1	</sy:updateFrequency>
+	<generator>Jekyll v{{ jekyll.version }}</generator>
+
+<image>
+	<url>{{ site.avatar }}</url>
+	<title>Medizaa Indonesia Official</title>
+	<link>{{ site.url }}{{ site.baseurl }}</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+     
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
