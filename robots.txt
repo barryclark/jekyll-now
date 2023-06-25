@@ -4,3 +4,4 @@ Allow: /
 Allow: /search/label/%E1%8E%AAuthor%20
  
 Sitemap: https://medizaaindonesia.biz.id/feed.xml
+Sitemap: https://medizaaindonesia.biz.id/sitemap
