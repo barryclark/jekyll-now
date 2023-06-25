@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id-ID" ⚡>
 <head>
@@ -86,13 +85,13 @@
         "@type": "ListItem",
         "position": 1,
         "name": "Medizaa Indonesia Official",
-        "item": "https://finance.detik.com/"
+        "item": "https://medizaaindonesia.biz.id/"
     },
     {
         "@type": "ListItem",
         "position": 2,
-        "name": "properti",
-        "item": "https://finance.detik.com/properti"
+        "name": "Post",
+        "item": "https://medizaaindonesia.biz.id/feed/"
     }
 ]}
 </script>
@@ -129,7 +128,7 @@
 			},
 			"publisher": {
 				"@type": "Organization",
-				"name": "detikcom",
+				"name": "Medizaa Indonesia",
 				"logo": {
 					"@type": "ImageObject",
 					"url": "https://medizaaindonesia.biz.id/android-icon-192x192.png"
@@ -294,67 +293,6 @@ z-index: 4;
 </head>
 <body [class]="menushow ? 'menu-open' : ''">
 
-    <amp-analytics type="googleanalytics" config="https://finance.detik.com/assets/ga4.json" data-credentials="include">
-    <script type="application/json">
-        {
-            "vars": {
-                "GA4_MEASUREMENT_ID": "G-CY42M5S751",
-                "GA4_ENDPOINT_HOSTNAME": "www.google-analytics.com",
-                "DEFAULT_PAGEVIEW_ENABLED": true,
-                "GOOGLE_CONSENT_ENABLED": false,
-                "WEBVITALS_TRACKING": false,
-                "PERFORMANCE_TIMING_TRACKING": false,
-                "SEND_DOUBLECLICK_BEACON": false,
-                "documentLocation": "$IF($EQUALS($MATCH(SOURCE_URL, \\?, 0),?),SOURCE_URL&utm_source=${SOURCE_AMP}&utm_medium=${MEDIUM_AMP},SOURCE_URL?utm_source=${SOURCE_AMP}&utm_medium=${MEDIUM_AMP})",
-                "SOURCE_AMP":"AMP%20Page",
-                "MEDIUM_AMP":"organic",
-                "gaContainerId": "${sessionId}.${sessionCount}.0.${lastHit}.60.0.0",
-                "sessionId": "$CALC(SESSION_TIMESTAMP, 1000, divide, true)",
-                "lastHit": "$CALC(TIMESTAMP, 1000, divide, true)",
-                "sessionCount": "SESSION_COUNT"
-            },
-            "extraUrlParams": {
-                "event__str_kanalid": "1016",
-                "event__str_articleid": "6791502",
-                "user__str_client_id": "${clientId}."
-            },
-            "linkers": {
-                "_gl": {
-                    "enabled": true,
-                    "ids": {
-                        "_ga": "${clientId}",
-                        "_ga_CY42M5S751": "${gaContainerId}"
-                    },
-                    "proxyOnly": false,
-                    "destinationDomains":["*detik.com*","*news.detik.com*","*finance.detik.com*","*hot.detik.com*","*sport.detik.com*","*oto.detik.com*","*travel.detik.com*","*food.detik.com*","*health.detik.com*","*wolipop.detik.com*","*20.detik.com*"]
-                }
-            }
-        }
-    </script>
-</amp-analytics>
-
-<amp-analytics type="googleanalytics" config="https://www.googletagmanager.com/amp.json?id=GTM-W6WTK25&gtm.url=SOURCE_URL" data-credentials="include" id="analytics">
-    <script type="application/json">{
-    "vars": {
-        "originalTitle": "{% if page.title %}{{ page.title }} – {% endif %}Medizaa Indonesia Officia",
-        "articleid": "6791502",
-        "articletype": "singlepage",
-        "keyword": "{% if page.title %}{{ page.title }}{% endif %},{% if page.keyword %}{{ page.keyword }},{% endif %} Medizaa, Medizaa Indonesia Official, Medizaa Indonesia, investasi aman, cara investasi, bisnis online, bisnis yang menjanjikan, bisnis masa depann, peluang usaha, bisnis, gaji harian, cara daftar medizaa, cara gabung medizaa, medizaa aman, peluang usaha, peluang kerja, testimoni medizaa,medizaa login, medizaa international equipment limited, kode undangan medizaa, cara kerja medizaa, medizaa adalah,medizaa itu apa, medizaa company, medizaa com,cara main medizaa, download medizaa,investasi medizza, apa itu medizaa.com, bisnis medizaa, perusahaan medizaa, mediza robot, medizaa investasi,tentang medizaa,kode undangan medizaa,perusahaan medizza,bisnis medizaa.com,bisnis medizza,daftar medizaa,robot medizaa,medisaa,medizaa.com,legalitas medizaa, mezidaa,investasi medizaa.com,info@medizaa.com,medizza robot,apa itu bisnis medizaa,medizaaa,logo medizaa,robot mediza,apa itu mediza,	medzaa,cara mendaftar medizaa,apa medizaa,medizaa apa,medizza international,medizzaa",
-        "createdate": "2023/06/25 14:17:56",
-        "publishdate": "2023/06/25 14:22:35",
-        "contenttype": "singlepagenews",
-        "tag": "{% if page.title %}{{ page.title }}{% endif %},{% if page.keyword %}{{ page.keyword }},{% endif %} Medizaa, Medizaa Indonesia Official, Medizaa Indonesia, investasi aman, cara investasi, bisnis online, bisnis yang menjanjikan, bisnis masa depann, peluang usaha, bisnis, gaji harian, cara daftar medizaa, cara gabung medizaa, medizaa aman, peluang usaha, peluang kerja, testimoni medizaa,medizaa login, medizaa international equipment limited, kode undangan medizaa, cara kerja medizaa, medizaa adalah,medizaa itu apa, medizaa company, medizaa com,cara main medizaa, download medizaa,investasi medizza, apa itu medizaa.com, bisnis medizaa, perusahaan medizaa, mediza robot, medizaa investasi,tentang medizaa,kode undangan medizaa,perusahaan medizza,bisnis medizaa.com,bisnis medizza,daftar medizaa,robot medizaa,medisaa,medizaa.com,legalitas medizaa, mezidaa,investasi medizaa.com,info@medizaa.com,medizza robot,apa itu bisnis medizaa,medizaaa,logo medizaa,robot mediza,apa itu mediza,	medzaa,cara mendaftar medizaa,apa medizaa,medizaa apa,medizza international,medizzaa",
-        "kanalid": "2-3-1016"
-    },
-    "triggers": {
-        "trackPageview": {
-            "on": "visible",
-            "request": "pageview"
-        }
-    }
-}</script>
-</amp-analytics>
-
     <!-- S:megabillboard --><div align="center">
 
 
@@ -382,7 +320,7 @@ z-index: 4;
             <nav class="navbar-first navbar--scroll">
                 <ul class="nav">
                                             <li class="nav__item ">
-                                                            <a href="https://finance.detik.com/">
+                                                            <a href="https://medizaaindonesia.biz.id/">
                                     Home                                </a>
                                                     </li>
                                             <li class="nav__item ">
@@ -398,7 +336,7 @@ z-index: 4;
                                     Infrastruktur                                </a>
                                                     </li>
                                             <li class="nav__item nav__item--active">
-                                                            <a href="https://finance.detik.com/properti">
+                                                            <a href="https://medizaaindonesia.biz.id/feed/">
                                     Properti                                </a>
                                                     </li>
                                             <li class="nav__item ">
@@ -512,522 +450,24 @@ z-index: 4;
       </div>
 
         
-
-        <div class="detail__body-tag">
-            <div class="nav">
-                				<a class="nav__item"  href="https://www.detik.com/tag/lelang-rumah">lelang rumah</a>				<a class="nav__item"  href="https://www.detik.com/tag/djkn">djkn</a>				<a class="nav__item"  href="https://www.detik.com/tag/rumah-murah">rumah murah</a>            </div>
-        </div>
-
-        <!-- S:newstag --> <!-- E:newstag -->
-        <!-- S:staticbanner1 -->
-      <div class="box-ads text-center">
-
-
-
-</div>
 <!-- E:staticbanner1 -->
     </div>
 
-    <div class="detail__share mgb-16">
-	 BAGIKAN &nbsp;
-	<amp-social-share
-		id="facebook"
-		data-param-app_id="187960271237149"
-		height="35px"
-		width="35px"
-		type="facebook"
-		class="fb icon-item icon-item--light icon-item__fb">
-		<i class="icon icon-facebook"></i>
-	</amp-social-share>
-	<amp-social-share
-		id="twitter"
-		type="twitter"
-		height="35px"
-		width="35px"
-		class="tw icon-item icon-item--light icon-item__tw">
-		<i class="icon icon-twitter"></i>
-	</amp-social-share>
-	<amp-social-share
-		id="whatsapp"
-		type="whatsapp"
-		height="35px"
-		width="35px"
-		class="whatsap icon-item icon-item__wa">
-		<i class="icon icon-whatsapp"></i>
-	</amp-social-share>
-	
-
-	
-</div>
-
-<div class="text-center mgb-8" id="komentar">
-				<a href="https://medizaaindonesia.biz.id{% if page.permalinkcanonical %}{{ page.permalinkcanonical }}{% endif %}/komentar" rel="nofollow"
-						class="btn btn--default btn--sm mgb-12 clickto_comment sh-komentar">
-					<i class="icon icon-comment icon--sm"></i>
-			<span>Komentar</span>
-			</a>
-	</div>
+    
 
 </article>
-
-
-
-    <!-- S:staticbanner2 --><div class="box-ads text-center">
-
-
-
-</div><!-- E:staticbanner2 -->
-    <!-- S:partner_box --> <!-- E:partner_box -->
-        <div class="box">
-        <div class="box__header">
-            <div class="box__title">Berita Terkait</div>
-        </div>
-        <div class="list-content list-content--bordered">
-                            <article class="list-content__item">
-                    <h3 class="list-content__title">
-                        <a href="https://finance.detik.com/properti/d-6727994/pengembang-curhat-capek-garap-rumah-subsidi-kenapa" class="media__link">
-                            Pengembang Curhat Capek Garap Rumah Subsidi, Kenapa?                        </a>
-                    </h3>
-                </article>
-                            <article class="list-content__item">
-                    <h3 class="list-content__title">
-                        <a href="https://finance.detik.com/properti/d-6713753/daftar-lelang-rumah-murah-di-dki-jakarta-mulai-rp-250-juta" class="media__link">
-                            Daftar Lelang Rumah Murah di DKI Jakarta, Mulai Rp 250 Juta!                        </a>
-                    </h3>
-                </article>
-                            <article class="list-content__item">
-                    <h3 class="list-content__title">
-                        <a href="https://finance.detik.com/properti/d-6578822/ada-lelang-rumah-murah-di-jakarta-harga-mulai-rp-250-juta" class="media__link">
-                            Ada Lelang Rumah Murah di Jakarta, Harga Mulai Rp 250 Juta!                        </a>
-                    </h3>
-                </article>
-                            <article class="list-content__item">
-                    <h3 class="list-content__title">
-                        <a href="https://travel.detik.com/travel-news/d-6782362/mau-pindah-ke-irlandia-uang-miliaran-menunggu" class="media__link">
-                            Mau Pindah ke Irlandia, Uang Miliaran Menunggu                        </a>
-                    </h3>
-                </article>
-                            <article class="list-content__item">
-                    <h3 class="list-content__title">
-                        <a href="https://travel.detik.com/international-destination/d-6756650/kisah-kota-hantu-di-inggris-ditinggal-penghuni-rumah-diobral-murah" class="media__link">
-                            Kisah Kota Hantu di Inggris: Ditinggal Penghuni, Rumah Diobral Murah                        </a>
-                    </h3>
-                </article>
-                            <article class="list-content__item">
-                    <h3 class="list-content__title">
-                        <a href="https://news.detik.com/foto-news/d-6631432/saat-warga-papua-geruduk-kantor-sri-mulyani" class="media__link">
-                            Saat Warga Papua Geruduk Kantor Sri Mulyani                        </a>
-                    </h3>
-                </article>
-                            <article class="list-content__item">
-                    <h3 class="list-content__title">
-                        <a href="https://news.detik.com/foto-news/d-6090326/gelar-turnamen-golf-sambil-nyumbang-7200-pohon" class="media__link">
-                            Gelar Turnamen Golf Sambil Nyumbang 7200 Pohon                        </a>
-                    </h3>
-                </article>
-                    </div>
-    </div>
-
-    <!-- S:mmr -->
-    <div class="box">
-    <div class="box__header">
-        <div class="box__title">Berita detikcom Lainnya</div>
-    </div>
-    <div class="list-content">
-                    <article class="list-content__item">
-                <div class="media">
-                    <div class="media__text">
-                        <div class="media__title">
-                            <a href="https://hot.detik.com/celeb/d-6791837/jeje-govinda-asyik-main-bareng-anak-sosok-syahnaz-tak-terlihat" class="media__link">
-                                Jeje Govinda Asyik Main Bareng Anak, Sosok Syahnaz Tak Terlihat                            </a>
-                        </div>
-                        <div class="media__date">detikHot | Minggu, 25 Jun 2023 20:00 WIB</div>
-                    </div>
-                </div>
-            </article>
-                    <article class="list-content__item">
-                <div class="media">
-                    <div class="media__text">
-                        <div class="media__title">
-                            <a href="https://sport.detik.com/sepakbola/foto-sepakbola/d-6792157/gol-riko-simanjuntak-menangkan-persija-atas-ratchaburi" class="media__link">
-                                Gol Riko Simanjuntak Menangkan Persija Atas Ratchaburi                            </a>
-                        </div>
-                        <div class="media__date">Sepakbola | Senin, 26 Jun 2023 00:02 WIB</div>
-                    </div>
-                </div>
-            </article>
-                    <article class="list-content__item">
-                <div class="media">
-                    <div class="media__text">
-                        <div class="media__title">
-                            <a href="https://finance.detik.com/infrastruktur/d-6791999/andai-kereta-cepat-jakarta-bandung-mogok-di-perlintasan-bagaimana" class="media__link">
-                                Andai Kereta Cepat Jakarta-Bandung Mogok di Perlintasan, Bagaimana?                            </a>
-                        </div>
-                        <div class="media__date">detikFinance | Minggu, 25 Jun 2023 22:00 WIB</div>
-                    </div>
-                </div>
-            </article>
-                    <article class="list-content__item">
-                <div class="media">
-                    <div class="media__text">
-                        <div class="media__title">
-                            <a href="https://oto.detik.com/otosport/d-6791700/jadwal-dan-link-live-streaming-motogp-belanda-malam-ini" class="media__link">
-                                Jadwal dan Link Live Streaming MotoGP Belanda Malam Ini                            </a>
-                        </div>
-                        <div class="media__date">detikOto | Minggu, 25 Jun 2023 17:07 WIB</div>
-                    </div>
-                </div>
-            </article>
-                    <article class="list-content__item">
-                <div class="media">
-                    <div class="media__text">
-                        <div class="media__title">
-                            <a href="https://sport.detik.com/moto-gp/d-6792071/marc-marquez-dalam-momen-paling-berat" class="media__link">
-                                Marc Marquez dalam Momen Paling Berat                            </a>
-                        </div>
-                        <div class="media__date">detikSport | Minggu, 25 Jun 2023 21:45 WIB</div>
-                    </div>
-                </div>
-            </article>
-                    <article class="list-content__item">
-                <div class="media">
-                    <div class="media__text">
-                        <div class="media__title">
-                            <a href="https://health.detik.com/sexual-health/d-6791950/tak-perlu-operasi-ini-7-makanan-yang-ampuh-mengencangkan-payudara" class="media__link">
-                                Tak Perlu Operasi, Ini 7 Makanan yang Ampuh Mengencangkan Payudara                            </a>
-                        </div>
-                        <div class="media__date">detikHealth | Minggu, 25 Jun 2023 22:00 WIB</div>
-                    </div>
-                </div>
-            </article>
-            </div>
-</div>
-    <div class="box cb cb-mostpop">
-    <div class="box__header">
-        <div class="box__title">Berita Terpopuler</div>
-    </div>
-    <div class="list-content">
-                                <article class="list-content__item">
-                <div class="media">
-                    <div class="media__text text-list">
-                        <span class="text-list__data">#1</span>
-                        <h3 class="media__title">
-                            <a href="https://finance.detik.com/infrastruktur/d-6792087/nyambung-ka-feeder-naik-kereta-cepat-ke-bandung-hanya-45-menit"
-                                class="media__link">
-                                Nyambung KA Feeder, Naik Kereta Cepat ke Bandung Hanya 45 Menit                            </a>
-                        </h3>
-                    </div>
-                    <div class="media__date">detikFinance | Minggu, 25 Jun 2023 23:02 WIB</div>
-                </div>
-            </article>
-                                <article class="list-content__item">
-                <div class="media">
-                    <div class="media__text text-list">
-                        <span class="text-list__data">#2</span>
-                        <h3 class="media__title">
-                            <a href="https://finance.detik.com/infrastruktur/d-6791999/andai-kereta-cepat-jakarta-bandung-mogok-di-perlintasan-bagaimana"
-                                class="media__link">
-                                Andai Kereta Cepat Jakarta-Bandung Mogok di Perlintasan, Bagaimana?                            </a>
-                        </h3>
-                    </div>
-                    <div class="media__date">detikFinance | Minggu, 25 Jun 2023 22:00 WIB</div>
-                </div>
-            </article>
-                                <article class="list-content__item">
-                <div class="media">
-                    <div class="media__text text-list">
-                        <span class="text-list__data">#3</span>
-                        <h3 class="media__title">
-                            <a href="https://finance.detik.com/moneter/d-6791912/bank-sentral-ramai-ramai-naikkan-suku-bunga-ada-apa"
-                                class="media__link">
-                                Bank Sentral Ramai-ramai Naikkan Suku Bunga, Ada Apa?                            </a>
-                        </h3>
-                    </div>
-                    <div class="media__date">detikFinance | Minggu, 25 Jun 2023 20:32 WIB</div>
-                </div>
-            </article>
-                                <article class="list-content__item">
-                <div class="media">
-                    <div class="media__text text-list">
-                        <span class="text-list__data">#4</span>
-                        <h3 class="media__title">
-                            <a href="https://finance.detik.com/infrastruktur/d-6791894/heboh-koin-tak-jatuh-saat-kereta-cepat-melaju-300-kmjam-begini-faktanya"
-                                class="media__link">
-                                Heboh Koin Tak Jatuh saat Kereta Cepat Melaju 300 Km/Jam, Begini Faktanya                            </a>
-                        </h3>
-                    </div>
-                    <div class="media__date">detikFinance | Minggu, 25 Jun 2023 20:02 WIB</div>
-                </div>
-            </article>
-                                <article class="list-content__item">
-                <div class="media">
-                    <div class="media__text text-list">
-                        <span class="text-list__data">#5</span>
-                        <h3 class="media__title">
-                            <a href="https://finance.detik.com/infrastruktur/d-6791930/stafsus-erick-thohir-kereta-cepat-beroperasi-agustus-2023"
-                                class="media__link">
-                                Stafsus Erick Thohir: Kereta Cepat Beroperasi Agustus 2023                            </a>
-                        </h3>
-                    </div>
-                    <div class="media__date">detikFinance | Minggu, 25 Jun 2023 21:04 WIB</div>
-                </div>
-            </article>
-                         </div>
-</div>
-    <!-- S:staticbanner3 --><div class="box-ads text-center">
-
-</div><!-- E:staticbanner3 -->
-    <div class="box cb cb-video">
-    <div class="box__header">
-        <h2 class="box__title">Video</h2>
-    </div>
-    <div class="list-content list-content--column grid-row">
-                                <article class="list-content__item column-6">
-                <div class="media media--image-radius">
-                    <div class="media__image">
-                        <a href="https://finance.detik.com/video/230622109/kejar-tayang-kerek-harga-rumah-subsidi"
-                            class="media__link">
-                            <span class="ratiobox ratiobox--16-9">
-                                 <amp-img src="https://cdnv.detik.com/videoservice/AdminTV/2023/06/22/dmentor_rumah_subsidi-20230622174023-custom.jpg?w=200&q=80" alt="Kejar Tayang Kerek Harga Rumah Subsidi" title="Kejar Tayang Kerek Harga Rumah Subsidi" class="" layout="responsive" width="650" height="360"></amp-img>                            </span>
-                        </a>
-                        <div class="media__icon media__icon--top-right">
-                            <i class="icon icon--xs icon-play-bg"></i>
-                            54:31                        </div>
-                    </div>
-                    <div class="media__text">
-                        <h3 class="media__title">
-                            <a href="https://finance.detik.com/video/230622109/kejar-tayang-kerek-harga-rumah-subsidi"
-                                class="media__link">
-                                Kejar Tayang Kerek Harga Rumah Subsidi                            </a>
-                        </h3>
-                        <div class="media__date">Kamis, 22 Jun 2023 17:35 WIB</div>
-                    </div>
-                </div>
-            </article>
-                                <article class="list-content__item column-6">
-                <div class="media media--image-radius">
-                    <div class="media__image">
-                        <a href="https://finance.detik.com/video/230621072/konglomerat-pakistan-bersama-anaknya-jadi-penumpang-kapal-selam-titanic-yang-hilang"
-                            class="media__link">
-                            <span class="ratiobox ratiobox--16-9">
-                                 <amp-img src="https://cdnv.detik.com/videoservice/AdminTV/2023/06/21/Konglomerat_Pakistan_Bersama_Anakn_U5fmX82-20230621123019-custom.jpg?w=200&q=80" alt="Konglomerat Pakistan Bersama Anaknya Jadi Penumpang Kapal Selam Titanic yang Hilang" title="Konglomerat Pakistan Bersama Anaknya Jadi Penumpang Kapal Selam Titanic yang Hilang" class="" layout="responsive" width="650" height="360"></amp-img>                            </span>
-                        </a>
-                        <div class="media__icon media__icon--top-right">
-                            <i class="icon icon--xs icon-play-bg"></i>
-                            01:16                        </div>
-                    </div>
-                    <div class="media__text">
-                        <h3 class="media__title">
-                            <a href="https://finance.detik.com/video/230621072/konglomerat-pakistan-bersama-anaknya-jadi-penumpang-kapal-selam-titanic-yang-hilang"
-                                class="media__link">
-                                Konglomerat Pakistan Bersama Anaknya Jadi Penumpang Kapal Selam Titanic yang Hilang                            </a>
-                        </h3>
-                        <div class="media__date">Rabu, 21 Jun 2023 12:45 WIB</div>
-                    </div>
-                </div>
-            </article>
-                                <article class="list-content__item column-6">
-                <div class="media media--image-radius">
-                    <div class="media__image">
-                        <a href="https://finance.detik.com/video/230620143/sandiaga-uno-heran-sirkuit-mandalika-justru-merugi"
-                            class="media__link">
-                            <span class="ratiobox ratiobox--16-9">
-                                 <amp-img src="https://cdnv.detik.com/videoservice/AdminTV/2023/06/20/d25ced928e7d46e4bf2b41fea88d35b3-20230620221735-0s.jpg?w=200&q=80" alt="Sandiaga Uno Heran Sirkuit Mandalika Justru Merugi" title="Sandiaga Uno Heran Sirkuit Mandalika Justru Merugi" class="" layout="responsive" width="650" height="360"></amp-img>                            </span>
-                        </a>
-                        <div class="media__icon media__icon--top-right">
-                            <i class="icon icon--xs icon-play-bg"></i>
-                            01:25                        </div>
-                    </div>
-                    <div class="media__text">
-                        <h3 class="media__title">
-                            <a href="https://finance.detik.com/video/230620143/sandiaga-uno-heran-sirkuit-mandalika-justru-merugi"
-                                class="media__link">
-                                Sandiaga Uno Heran Sirkuit Mandalika Justru Merugi                            </a>
-                        </h3>
-                        <div class="media__date">Selasa, 20 Jun 2023 22:16 WIB</div>
-                    </div>
-                </div>
-            </article>
-                                <article class="list-content__item column-6">
-                <div class="media media--image-radius">
-                    <div class="media__image">
-                        <a href="https://finance.detik.com/video/230620113/wanti-wanti-kemenkes-untuk-jemaah-haji-yang-menderita-sakit-jantung"
-                            class="media__link">
-                            <span class="ratiobox ratiobox--16-9">
-                                 <amp-img src="https://cdnv.detik.com/videoservice/AdminTV/2023/06/20/Wanti-wanti_Kemenkes_untuk_Jemaah__8myASZI-20230620171902-custom.jpg?w=200&q=80" alt="Wanti-wanti Kemenkes untuk Jemaah Haji yang Menderita Sakit Jantung" title="Wanti-wanti Kemenkes untuk Jemaah Haji yang Menderita Sakit Jantung" class="" layout="responsive" width="650" height="360"></amp-img>                            </span>
-                        </a>
-                        <div class="media__icon media__icon--top-right">
-                            <i class="icon icon--xs icon-play-bg"></i>
-                            01:12                        </div>
-                    </div>
-                    <div class="media__text">
-                        <h3 class="media__title">
-                            <a href="https://finance.detik.com/video/230620113/wanti-wanti-kemenkes-untuk-jemaah-haji-yang-menderita-sakit-jantung"
-                                class="media__link">
-                                Wanti-wanti Kemenkes untuk Jemaah Haji yang Menderita Sakit Jantung                            </a>
-                        </h3>
-                        <div class="media__date">Selasa, 20 Jun 2023 17:40 WIB</div>
-                    </div>
-                </div>
-            </article>
-                         </div>
-</div>
-
-    <div class="box cb cb-foto">
-    <div class="box__header">
-        <h2 class="box__title">Foto</h2>
-    </div>
-    <div class="list-content list-content--column grid-row">
-                    <article class="list-content__item column-6">
-                <div class="media media--image-radius">
-                    <div class="media__image">
-                        <a href="https://finance.detik.com/foto-bisnis/d-6783502/before-after-rumah-adat-sulawesi-yang-diguyur-rp-58-m" class="media__link">
-                            <span class="ratiobox ratiobox--16-9">
-                                 <amp-img src="https://akcdn.detik.net.id/community/media/visual/2023/06/20/before-after-rumah-adat-sulawesi-yang-diguyur-rp-58-m_169.gif?w=200&q=80" alt="Before-After Rumah Adat Sulawesi yang Diguyur Rp 5,8 M" title="Before-After Rumah Adat Sulawesi yang Diguyur Rp 5,8 M" class="" layout="responsive" width="160" height="90"></amp-img>                            </span>
-                        </a>
-                        <div class="media__icon media__icon--top-right">
-                            <i class="icon icon--xs icon-camera-bg"></i> 5 Foto
-                        </div>
-                    </div>
-                    <div class="media__text">
-                        <h3 class="media__title">
-                            <a href="https://finance.detik.com/foto-bisnis/d-6783502/before-after-rumah-adat-sulawesi-yang-diguyur-rp-58-m" class="media__link">Before-After Rumah Adat Sulawesi yang 'Diguyur' Rp 5,8 M</a>
-                        </h3>
-                        <div class="media__date">Rabu, 21 Jun 2023 10:05 WIB</div>
-                    </div>
-                </div>
-            </article>
-                    <article class="list-content__item column-6">
-                <div class="media media--image-radius">
-                    <div class="media__image">
-                        <a href="https://finance.detik.com/foto-bisnis/d-6783832/momen-mendag-buka-2-bazar-murah-di-bali" class="media__link">
-                            <span class="ratiobox ratiobox--16-9">
-                                 <amp-img src="https://akcdn.detik.net.id/community/media/visual/2023/06/20/momen-mendag-buka-2-bazar-murah-di-bali_169.jpeg?w=200&q=80" alt="Momen Mendag Buka 2 Bazar Murah di Bali" title="Momen Mendag Buka 2 Bazar Murah di Bali" class="" layout="responsive" width="160" height="90"></amp-img>                            </span>
-                        </a>
-                        <div class="media__icon media__icon--top-right">
-                            <i class="icon icon--xs icon-camera-bg"></i> 4 Foto
-                        </div>
-                    </div>
-                    <div class="media__text">
-                        <h3 class="media__title">
-                            <a href="https://finance.detik.com/foto-bisnis/d-6783832/momen-mendag-buka-2-bazar-murah-di-bali" class="media__link">Momen Mendag Buka 2 Bazar Murah di Bali</a>
-                        </h3>
-                        <div class="media__date">Selasa, 20 Jun 2023 21:01 WIB</div>
-                    </div>
-                </div>
-            </article>
-            </div>
-</div>
-
-    <div class="box">
-    <div class="box__header">
-        <div class="box__title">detikNetwork</div>
-    </div>
-    <div class="list-content">
-                            <article class="list-content__item">
-                <div class="media">
-                    <div class="media__text">
-
-                                                    <div class="media__subtitle">CNBC Indonesia</div>
-                        
-                        <div class="media__title">
-                            <a href="https://www.cnbcindonesia.com/news/20230625183416-4-449080/dukung-rusia-korut-buka-suara-soal-kudeta-tentara-wagner" class="media__link">
-                                Dukung Rusia! Korut Buka Suara Soal 'Kudeta' Tentara Wagner                            </a>
-                        </div>
-                        <div class="media__date">
-                            Minggu, 25 Jun 2023 21:15 WIB                        </div>
-                    </div>
-                </div>
-            </article>
-                                <article class="list-content__item">
-                <div class="media">
-                    <div class="media__text">
-
-                                                    <div class="media__subtitle">CNN Indonesia</div>
-                        
-                        <div class="media__title">
-                            <a href="https://www.cnnindonesia.com/olahraga/20230625234916-158-966411/foto-gaya-bagnaia-berjaya-di-motogp-belanda" class="media__link">
-                                FOTO: Gaya Bagnaia Berjaya di MotoGP Belanda                            </a>
-                        </div>
-                        <div class="media__date">
-                            Senin, 26 Jun 2023 00:45 WIB                        </div>
-                    </div>
-                </div>
-            </article>
-                                <article class="list-content__item">
-                <div class="media">
-                    <div class="media__text">
-
-                                                    <div class="media__subtitle">Beautynesia</div>
-                        
-                        <div class="media__title">
-                            <a href="https://beautynesia.id/life/ciri-ciri-perempuan-cerdas-finansial-kamu-termasuk/b-276527" class="media__link">
-                                Ciri-ciri Perempuan Cerdas Finansial. Kamu Termasuk?                            </a>
-                        </div>
-                        <div class="media__date">
-                            Minggu, 25 Jun 2023 23:30 WIB                        </div>
-                    </div>
-                </div>
-            </article>
-                                <article class="list-content__item">
-                <div class="media">
-                    <div class="media__text">
-
-                                                    <div class="media__subtitle">Female Daily</div>
-                        
-                        <div class="media__title">
-                            <a href="https://editorial.femaledaily.com/blog/2023/06/25/cha-eun-woo-menjadi-regional-brand-ambassador-skechers-di-asia-pasifik/" class="media__link">
-                                Cha Eun Woo Kini Resmi Menjadi Regional Brand Ambassador Skechers di Asia Pasifik!                            </a>
-                        </div>
-                        <div class="media__date">
-                            Minggu, 25 Jun 2023 13:00 WIB                        </div>
-                    </div>
-                </div>
-            </article>
-                                <article class="list-content__item">
-                <div class="media">
-                    <div class="media__text">
-
-                                                    <div class="media__subtitle">HaiBunda</div>
-                        
-                        <div class="media__title">
-                            <a href="https://haibunda.com/trending/20230203153732-93-296399/suami-peggy-melati-sukma-punya-850-hektare-tanah-di-selandia-baru-ini-kisahnya" class="media__link">
-                                Suami Peggy Melati Sukma Punya 850 Hektare Tanah di Selandia Baru, Ini Kisahnya                            </a>
-                        </div>
-                        <div class="media__date">
-                            Minggu, 25 Jun 2023 23:02 WIB                        </div>
-                    </div>
-                </div>
-            </article>
-                                <article class="list-content__item">
-                <div class="media">
-                    <div class="media__text">
-
-                                                    <div class="media__subtitle">InsertLive</div>
-                        
-                        <div class="media__title">
-                            <a href="https://insertlive.com/hot-gossip/20230625224654-7-313080/jeje-habiskan-waktu-bersama-anak-di-mana-syahnaz" class="media__link">
-                                Jeje Habiskan Waktu Bersama Anak, di Mana Syahnaz?                             </a>
-                        </div>
-                        <div class="media__date">
-                            Minggu, 25 Jun 2023 23:10 WIB                        </div>
-                    </div>
-                </div>
-            </article>
-                        </div>
-</div>
 
 </div>
 
 <footer class="footer" id="footer">
 	<div class="footer__border"></div>
 	<div class="container">
-		<a href="https://www.detik.com" class="footer__logo">
-			<amp-img src="https://cdn.detik.net.id/assets/images/amp/logo_detikcom.webp?v=202306260072" width="160" height="30" layout="fixed" alt="detikcom logo" title="detikcom logo"></amp-img>
+		<a href="https://medizaaindonesia.biz.id/" class="footer__logo">
+			<amp-img src="https://medizaa.com/img/sticky-logo.png?v=202306260072" width="160" height="30" layout="fixed" alt="Medizaa Indonesia Official" title="Medizaa Indonesia Official"></amp-img>
 		</a>
 		<div class="footer-title footer-title__partof">
             part of
-            <amp-img src="https://cdn.detik.net.id/assets/images/amp/logo_detiknetwork.webp?v=202306260072" class="mgl-4" width="80" height="29.48" layout="fixed" alt="detiknetwork logo" title="detiknetwork logo"></amp-img>
+            <amp-img src="https://cdn.detik.net.id/assets/images/amp/logo_detiknetwork.webp?v=202306260072" class="mgl-4" width="80" height="29.48" layout="fixed" alt="Medizaa Indonesia Bussiness" title="Medizaa Indonesia Bussiness"></amp-img>
         </div>
 		<nav>
 			<ul class="nav nav--center">
