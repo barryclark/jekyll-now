@@ -10,7 +10,7 @@
     	<meta property="og:type" content="article" />
     	<meta property="og:site_name" content="Medizaa Indonesia Official" />
     	<meta property="og:title" content="{% if page.title %}{{ page.title }} – {% endif %}Medizaa Indonesia Officia" />
-    	<meta property="og:image" content="https://akcdn.detik.net.id/api/wm/2021/10/20/deretan-rumah-di-komplek-elit-ini-dijual-di-masa-pandemi-tertarik-beli-8_169.jpeg?wid=54&w=650&v=1&t=jpeg" />
+    	<meta property="og:image" content="{% if page.gambar %}{{ page.gambar }}{% endif %}" />
     	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% endif %}" />
     	<meta property="og:url" content="https://medizaaindonesia.biz.id{% if page.permalinkcanonical %}{{ page.permalinkcanonical }}{% endif %}" />
     	<meta property="fb:app_id" content="187960271237149" />
