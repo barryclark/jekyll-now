@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Medizaa
 title: Cara Memulai Bisnis Online di Medizaa
 description: Cara Memulai Bisnis Online di Medizaa yaitu Setelah mendaftar dan ѕudah memiliki akun, langkah berikutnya adalah top up saldo minimal sebesar 188.000 rupiah, untuk menyewa alat kesehatan berupa...
 keyword: cara berpenghasilan online, cara berbisnis online, cara berpenghasilan
