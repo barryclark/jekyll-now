@@ -233,7 +233,7 @@ z-index: 4;
     <link rel="preload" href="https://cdn.detik.net.id/assets/fonts/montserrat/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <!-- profile_ad:detik_finance-->
 </head>
-<body [class]="menushow ? 'menu-open' : ''">
+<body [class]="menushow?'menu-open':''">
 
     <!-- S:megabillboard --><div align="center">
 
