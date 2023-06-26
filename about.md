@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hello! I made this blog to upload my algorithm study matriels.
+For now, here is nothing special yet 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Please wait for next step!
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[jkhy1006@gmail.com](mailto:jkhy1006@gmail.com)
