@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: /amp/
 ---
   <html amp="" lang="en-US">
     <head>
