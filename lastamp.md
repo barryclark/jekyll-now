@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /amp/
+
 ---
 <html lang="id-ID">
 <head>
