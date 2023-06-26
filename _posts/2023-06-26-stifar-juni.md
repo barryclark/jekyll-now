@@ -2,7 +2,7 @@
 layout: post
 title: Sekolah Tinggi Ilmu Farmasi Semarang
 author: Pak Budi
-date: 2023-01-06 08:17:51 +07:00
+date: 2023-06-26 08:17:51 +07:00
 ---
 
 **Sekolah Tinggi Ilmu Farmasi (Stifar) Yayasan Pharmasi Semarang** di­di­ri­kan pada tanggal 10 Agustus 2000 dengan SK Dirjen Dikti No. 153/D­/O/­2000.
