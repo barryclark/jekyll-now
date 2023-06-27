@@ -1,6 +1,5 @@
 ---
 ayout: page
-author: Medizaa
 title: Medizaa Peduli: Medizaa Beri Bantuan untuk Anak Yatim di Banjarbaru
 description: Bantuan yang diberikan ѕendiri berupa bahan ѕembako. Seperti beras, tepung, minyak goreng dan lainnya. Sasaran bantuannya ѕendiri juga random. Tapi terkhusus untuk masyarakat kurang mampu atau lansia.
 keyword: Medizaa Peduli, bantuan anak yatim, medizaa banjarbaru, bantuan medizaa
