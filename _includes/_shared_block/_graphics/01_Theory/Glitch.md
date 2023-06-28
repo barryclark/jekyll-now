@@ -1,4 +1,4 @@
-* [ ] [Glitch Effect](https://www.google.com/search?q=glitch+effect&tbm=isch&ved=2ahUKEwjl4tWt6d_-AhWRg1YBHcnwCxIQ2-cCegQIABAA&oq=glitch+effect&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEIoFEENQ3wNYiwxgiA1oAHAAeACAAYwBiAGHB5IBAzAuN5gBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=L9NVZKWPNpGH2roPyeGvkAE&bih=929&biw=1920) 이미지 추가하기
+[Glitch Effect](https://www.google.com/search?q=glitch+effect&tbm=isch&ved=2ahUKEwjl4tWt6d_-AhWRg1YBHcnwCxIQ2-cCegQIABAA&oq=glitch+effect&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEIoFEENQ3wNYiwxgiA1oAHAAeACAAYwBiAGHB5IBAzAuN5gBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=L9NVZKWPNpGH2roPyeGvkAE&bih=929&biw=1920)
 
 Glitch 효과는 전자기기, 소프트웨어, 혹은 디지털 시스템에서 예상치 못한 오류 혹은 결함으로 인해 발생하는 현상을 뜻합니다.
 
