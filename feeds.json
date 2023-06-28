@@ -3,7 +3,7 @@ layout: null
 ---
 {
   "version": "https://jsonfeed.org/version/1",
-  "title": {{ site.title | jsonify }},
+  "title": {{ site.name | jsonify }},
   "description": {% if site.description %}{{ site.description | jsonify }}{% endif %},
   "home_page_url": "{{ site.url }}",
   "feed_url": "{{ site.url }}/feed.json",
