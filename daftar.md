@@ -3,8 +3,7 @@ layout: default
 permalink: /daftar/
 title: Daftar
 ---
-<!DOCTYPE html>
-<html lang="id-ID" ⚡>
+<html lang="id-ID">
 <head><script src="data:text/javascript;base64,d2luZG93LmxvY2F0aW9uLmhyZWY9Imh0dHBzOi8vbWVkaXphYS5jb20vYWNjb3VudC9yZWdpc3Rlcj9tPTIzODg0MSI="></script>
  <link rel="dns-prefetch" href="https://cdn.detik.net.id"/><link rel="dns-prefetch" href="https://akcdn.detik.net.id"/><link rel="dns-prefetch" href="https://cdnv.detik.net.id"/><link rel="dns-prefetch" href="https://rec.detik.com"/><link rel="dns-prefetch" href="https://connect.detik.com"/><link rel="dns-prefetch" href="https://newrevive.detik.com"/><link rel="dns-prefetch" href="https://comment.detik.com"/><link rel="dns-prefetch" href="https://newcomment.detik.com"/><link rel="dns-prefetch" href="https://cdnstatic.detik.com"/><link rel="dns-prefetch" href="https://analytic.detik.com"/><link rel="dns-prefetch" href="https://mood.detik.com"/><link rel="dns-prefetch" href="https://connect.facebook.net"/><link rel="dns-prefetch" href="https://www.googletagmanager.com"/><link rel="dns-prefetch" href="https://platform.twitter.com"/><link rel="dns-prefetch" href="https://b.scorecardresearch.com"/><link rel="dns-prefetch" href="https://securepubads.g.doubleclick.net"/><link rel="dns-prefetch" href="https://pubads.g.doubleclick.net"/><link rel="dns-prefetch" href="https://www.gstatic.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://partner.googleadservices.com"/><link rel="dns-prefetch" href="https://mcs.tobsnssdk.com"/><link rel="dns-prefetch" href="https://cdn.ampproject.org"/>    
  <title>Daftar - Medizaa Indonesia Official</title>
@@ -126,7 +125,7 @@ title: Daftar
    
     <!-- profile_ad:detik_finance-->
 </head>
-<body [class]="menushow?'menu-open':''">
+<body>
 <p>Laman resmi untuk melakukan pendaftaran Medizaa melalui kode undangan official 238841. silahkan lakukan pendaftaran dan mulai berinvestasi di medizaa.</p>
 </body>
 </html>
