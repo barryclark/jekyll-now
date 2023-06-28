@@ -74,62 +74,24 @@ Reproduction in done with the following functions.
 
 **Evolutionary Process**
 
->     def evolvePrey(self):
-        self.rankFitness()
-        dna_pool = []
-        added = 0
-        for i in range(0, int(len(self.prey) / 5)): # keep top 20%
-            dna_pool.append(self.prey[i].DNA)
-            added += 1
-        successful = self.prey[0:int(len(self.prey)/4)] # choose top 25% for reproduction
-        while added < self.prey_count:
-            m1 = successful[(random.randrange(len(successful)))]
-            m2 = successful[(random.randrange(len(successful)))]
-            dna_pool += self.reproduce(m1, m2)
-            added += 1
-        for i in range(int(len(self.prey) / 5), len(dna_pool)):
-            dna_pool[i] = self.mutate(dna_pool[i]) # apply mutations only to offspring created by reproduction
-        self.prey.clear()
-        self.genPrey(dna_list=dna_pool)
+![evolvprey.PNG]({{site.baseurl}}/_posts/evolvprey.PNG)
+
 
 **DNA Combination**
 
->     def reproduce(self, m1, m2):
-        # splice dna at random point and generate two new offspring
-        dna1 = m1.DNA
-        dna2 = m2.DNA
-        splice_location = random.randint(5,  len(dna1) - 5)
-        new_dna1 = dna1[0: splice_location] + dna2[splice_location:]
-        new_dna2 = dna2[0: splice_location] + dna1[splice_location:]
-        return [new_dna1, new_dna2]
+![reproduce.PNG]({{site.baseurl}}/_posts/reproduce.PNG)
 
 
 **Fitness Function f()**
 
->     def rankFitness(self):
-        self.prey.sort(key=lambda x: x.score, reverse=True)
-        
+![fitness.PNG]({{site.baseurl}}/_posts/fitness.PNG)
+
         
 **Mutation**
 
->  def mutate(self, DNA, trapper=False):
-        ret = ""
-        num = 3
-        if trapper:
-            num += 1
-        for i in range(len(DNA)):
-            mutate = random.random() < self.mutation_rate
-            if mutate:
-                new_action = random.randint(0, num)
-                ret += f"{new_action}"
-            else:
-                ret += DNA[i]
-        return ret
+![mutate.PNG]({{site.baseurl}}/_posts/mutate.PNG)
 
-
-
-
-             
+          
 Reproduction of the trapper and predator entities was done in a similar fashion but with their own parameters. 
 Full code for this blog post is located at https://github.com/ColeStrickler/DarwinWasWrong.
 
