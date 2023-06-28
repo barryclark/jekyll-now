@@ -1246,10 +1246,7 @@ jumpToTopTimer = setTimeout( hideShowTbJumpToTop, 150 );
 
 
 <ul class="wp-block-rss">
-<li class='wp-block-rss__item'>
-<div class='wp-block-rss__item-title'>
-<a href='https://medizaaindonesia.biz.id/cara-menghasilkan-uang-dari-bisnis-online-medizaa/'>
-Cara Menghasilkan Uang dari Bisnis Online Medizaa</a></div></li><li class='wp-block-rss__item'><div class='wp-block-rss__item-title'><a href='https://medizaaindonesia.biz.id/cara-mendaftar-dan-membuat-akun-medizaa/'>Cara Mendaftar dan Membuat Akun Medizaa</a></div></li></ul></div>
+{% for post in site.posts limit:10 %}<li class='wp-block-rss__item'><div class='wp-block-rss__item-title'><a href='{{ post.url | prepend: site.baseurl | prepend: site.url }}'>{{ post.title}}</a></div></li>{% endfor %}</ul></div>
 
 
 <footer class="wp-block-template-part">
