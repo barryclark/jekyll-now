@@ -1,12 +1,12 @@
 Chameleon PostProcess입니다.
 
-![image](https://github.com/kbmhansungb/ourHome/assets/56149613/0736b241-53d5-4736-a978-e89fca2d4157)
+![image](https://github.com/kbmhansungb/kbmhansungb.github.io/assets/56149613/8af42e2c-3a29-451c-b6c0-a37cc4a80ada)
 
-![image](https://github.com/kbmhansungb/ourHome/assets/56149613/657625ac-db68-42db-b123-16002bf1fff6)
+![image](https://github.com/kbmhansungb/kbmhansungb.github.io/assets/56149613/7d65f0af-8bad-43d8-b290-88b58b014f14)
 
 1. 누적된 빛을 구합니다.
 
-![image](https://github.com/kbmhansungb/ourHome/assets/56149613/689a8640-4136-4b28-97ba-3d6bb0425496)
+![image](https://github.com/kbmhansungb/kbmhansungb.github.io/assets/56149613/d5328607-ab0c-4270-8d86-bd544003df0b)
 
 ```hlsl
 int tIndex = 14;
@@ -45,4 +45,4 @@ return OutColor;
 
 2. 원래 화면과 누적된 빛 화면을 블렌드합니다.
 
-![image](https://github.com/kbmhansungb/ourHome/assets/56149613/1bf29819-215c-4edd-9110-f3aaca71e477)
+![image](https://github.com/kbmhansungb/kbmhansungb.github.io/assets/56149613/1cf29201-a363-46ef-87f8-9abe40a2ed41)
