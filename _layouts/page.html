@@ -157,6 +157,7 @@
         <link rel="preload" href="{% if page.gambar %}{{ page.gambar }}{% endif %}?w=650&q=80" as="image">
     
     <!-- S:taghead -->
+<script async='async' custom-element='amp-install-serviceworker' src='https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js'></script>
 <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
 <script async custom-element="amp-fx-flying-carpet" src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js"></script><!-- E:taghead -->
@@ -567,7 +568,7 @@ z-index: 4;
     "status": "1"
 }</script>
 </amp-state>
-
+<amp-install-serviceworker data-iframe-src='/amp/offline/' layout='nodisplay' src='/serviceworker.js'></amp-install-serviceworker>
 </body>
 </html>
 <!--replaced--><!--0-->
