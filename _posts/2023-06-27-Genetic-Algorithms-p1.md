@@ -42,7 +42,7 @@ Once a base implementation has been formulated, there is often a need to greatly
 
 Here is a graphical overview of everything that was just covered.
 
-![gaflowchart.png]({{site.baseurl}}/_posts/gaflowchart.png)
+![gaflowchart.png]({{site.baseurl}}/images/gaflowchart.png)
 
 
 ## Implementation
@@ -74,22 +74,22 @@ Reproduction in done with the following functions.
 
 **Evolutionary Process**
 
-![evolvprey.PNG]({{site.baseurl}}/_posts/evolvprey.PNG)
+![evolvprey.PNG]({{site.baseurl}}/images/evolvprey.PNG)
 
 
 **DNA Combination**
 
-![reproduce.PNG]({{site.baseurl}}/_posts/reproduce.PNG)
+![reproduce.PNG]({{site.baseurl}}/images/reproduce.PNG)
 
 
 **Fitness Function f()**
 
-![fitness.PNG]({{site.baseurl}}/_posts/fitness.PNG)
+![fitness.PNG]({{site.baseurl}}/images/fitness.PNG)
 
         
 **Mutation**
 
-![mutate.PNG]({{site.baseurl}}/_posts/mutate.PNG)
+![mutate.PNG]({{site.baseurl}}/images/mutate.PNG)
 
           
 Reproduction of the trapper and predator entities was done in a similar fashion but with their own parameters. 
@@ -99,11 +99,11 @@ Full code for this blog post is located at https://github.com/ColeStrickler/Darw
 
 Here we can see a mostly randomized process going on in the first generation
 
-![]({{site.baseurl}}/_posts/g1.gif)
+![]({{site.baseurl}}/images/g1.gif)
 
 After 20 generation the magic can be seen in action. The prey are going out of their way to avoid the predators, while the predators are attempting to spread out and hunt the prey in a pack-like fashion. Due to the small number of trappers and a lack of genetic diversity have caused the offspring to become nearly identical. This would be a case where we would want to modify the parameters of the trapper's evolutionary process. 
 
-![]({{site.baseurl}}/_posts/g2.gif)
+![]({{site.baseurl}}/images/g2.gif)
 
 
 In the next part of this blog series I plan to cover a less trivial implementation of a genetic algorithm.
