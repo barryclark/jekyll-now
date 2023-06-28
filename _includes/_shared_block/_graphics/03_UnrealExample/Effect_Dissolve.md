@@ -1,3 +1,6 @@
+
+[Dissolve tutorial](https://www.youtube.com/watch?v=CWJ-If9-r1E)을 참고했습니다.
+
 ![image](https://github.com/kbmhansungb/kbmhansungb.github.io/assets/56149613/0d92abce-fe0c-4092-b3fc-083d8d503e75)
 
 ![image](https://github.com/kbmhansungb/kbmhansungb.github.io/assets/56149613/3504067c-c0a4-4ebd-9dc0-46378d04efad)
