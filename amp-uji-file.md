@@ -12,27 +12,45 @@ gambar: https://apahabar.s3.ap-southeast-1.amazonaws.com/storage/20230627/153100
 <script>
 $(function() {
     $.ajax({
-        url: 'https://medizaaindonesia.biz.id/feed.json',
+        url: 'https://medizaaindonesia.biz.id/feed',
         type: 'get',
-        dataType: 'jsonp',
-        success: function(data) {
+        success: function(xml) {
             var link, title, skeleton = '',
-                content = data.feed.entry;
+                content = $(xml).find('entry');
             if (content !== undefined) {
                 skeleton = "<ol>";
-                for (var i = 0; i < content.length; i++) {
-                    title = content[i].title.$t;
-                    for (var j = 0; j < content[i].link.length; j++) {
-                        if (content[i].link[j].rel == "alternate") {
-                            link = content[i].link[j].href;
-                            break;
-                        }
-                    }
-                    skeleton += '<li><a href="' + link + '">' + title + '</a></li>';
-                }
-                skeleton += '</ol>';
+                
+              
+              
+             $(xml).find('entry').each(function(){
+               
+                    $(this).find("titile").each(function(){
+                         title = $(this).text();
+                       
+                    });
+               
+                $(this).find("name").each(function(){
+                  
+                         link = $(this).text();
+                    });
+               
+               
+               skeleton += '<li><a href="' + link + '">' + title + '</a></li>';
+                });
+              
+              
+               
+              
+              
+              
+              
+              
+              skeleton += '</ol>';
                 $('#result').html(skeleton);
-            } else {
+            } 
+          
+          
+          else {
                 $('#result').html('<span>No result!</span>');
             }
         },
