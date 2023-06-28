@@ -10,25 +10,25 @@ layout: null
     ],
     "updated": "{{ site.time | date_to_rfc822 }}",
     "id": "{{ site.url }}/feed.json",
-    "title": "{{ site.name | jsonify }}",
-    "subtitle": "{% if site.description %}{{ site.description | jsonify }}{% endif %}",
+    "title": {{ site.name | jsonify }},
+    "subtitle": {% if site.description %}{{ site.description | jsonify }}{% endif %},
     "entry": [
    {% for post in site.posts limit:10 %}
       {
-        "title": "{{ post.title | jsonify }}",
+        "title": {{ post.title | jsonify }},
         "link": "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
         "published": "{{ post.date | date_to_rfc822 }}",
         "updated": "{{ post.date | date_to_rfc822 }}",
         "id": "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
         "content": [
-          "{{ post.content | jsonify  }}",
+          {{ post.content | jsonify  }},
           ""
         ],
         "author": {
-          "name": "{{ post.author | jsonify  }}"
+          "name": {{ post.author | jsonify  }}
         },
-        "summary": "{{ post.content | jsonify  }}",
-        "thumbnail": "{{ post.image| jsonify }}"
+        "summary": {{ post.content | jsonify  }},
+        "thumbnail": {{ post.image| jsonify }}
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
     ]
