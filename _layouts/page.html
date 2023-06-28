@@ -451,17 +451,18 @@ z-index: 4;
         <div class="detail__body-text">
           
         {{ content }}
-      
-      </div>
 
-        
-<!-- E:staticbanner1 -->
 <h3>BACA ARTIKEL LAINNYA DARI KAMI:</h3>
 <ul style="text-align: left;">
  {% for post in site.posts limit:10 %}
   <li><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" target="_blank"><b>{{ post.title}}</b></a></li>
 {% endfor %}
 </ul>  
+		
+      </div>
+
+<!-- E:staticbanner1 -->
+
     </div>
 
 
