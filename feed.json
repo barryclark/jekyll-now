@@ -27,7 +27,7 @@ layout: null
         "author": {
           "name": {{ post.author | jsonify  }}
         },
-        "summary": {{ post.content | jsonify  }},
+        "summary": {{ post.description | jsonify  }},
         "thumbnail": {{ post.image| jsonify }}
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
