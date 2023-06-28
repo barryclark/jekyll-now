@@ -42,7 +42,7 @@ Once a base implementation has been formulated, there is often a need to greatly
 
 Here is a graphical overview of everything that was just covered.
 
-![gaflowchart.png]({{site.baseurl}}/images/gaflowchart.png)
+![gaflowchart.png]({{site.baseurl}}/images/gaflowchart.jpg)
 
 
 ## Implementation
