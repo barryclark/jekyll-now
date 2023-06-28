@@ -348,7 +348,12 @@ var actionbardata = {"siteID":"220510622","siteURL":"http:\/\/idmedizaaindonesia
 <div class="entry-content alignfull wp-block-post-content has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
 
 {{ content }}
-  
+
+<h3>BACA ARTIKEL LAINNYA DARI KAMI:</h3>
+<ul class="wp-block-rss">
+ {% for post in site.posts limit:10 %}
+<li class='wp-block-rss__item'><div class='wp-block-rss__item-title'><a href='{{ post.url | prepend: site.baseurl | prepend: site.url }}'>{{ post.title}}</a></div></li>
+</ul>
 </div>
 
 <footer class="wp-block-template-part">
