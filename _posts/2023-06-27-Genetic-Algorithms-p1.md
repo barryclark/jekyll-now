@@ -5,12 +5,12 @@ published: true
 
 ### What are genetic algorithms?
 
-Genetic programming is a a programming paradigm that is motivated by the concept of natural selection. Selection is both a cyclic and stochastic process where the individuals who are most "fit" are used to generate the offspring of the next generation. Due to the self organizing behavior of the system, the results are often beautiful and surprising.
+Genetic programming is a programming paradigm that is motivated by the concept of natural selection. Selection is both a cyclic and stochastic process where the individuals who are most "fit" are used to generate the offspring of the next generation. Due to the self-organizing behavior of the system, the results are often beautiful and surprising.
 
 
 ### Modeling
 
-Darwin's theory of natural selection described how beneficial traits are selected for through natural processes. Later in the 19th century, Gregor Mendel formulated a probabilistic model that showed how these traits are passed on from parents to offspring. The structure of DNA was not discovered until much later in 1953. In carbon based life forms, DNA is the fundamental "code" that gives rise to structure and complexity. DNA is composed of 4 major components often abbreviated as ACTG(adenine, guanine, thymine, and cytosine). We can take note of the self organizing behavior of DNA use similar methods to model a computer program.
+Darwin's theory of natural selection described how beneficial traits are selected for through natural processes. Later in the 19th century, Gregor Mendel formulated a probabilistic model that showed how these traits are passed on from parents to offspring. The structure of DNA was not discovered until much later in 1953. In carbon based life forms, DNA is the fundamental "code" that gives rise to structure and complexity. DNA is composed of 4 major components often abbreviated as ACTG(adenine, guanine, thymine, and cytosine). We can take note of the self organizing behavior of DNA and use similar methods to model a computer program.
 
 For example, let letters a-z model function n1-n26. We can compose a string of arbitray length with the letters a-z which will represent a series of function calls. To make this concrete let a = Snap(), b = Crackle(), and c = Pop(). The string "aaabcccb" when parsed will result in the following series of calls:
 
