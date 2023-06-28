@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Genetic Algorithm Part 1
 
