@@ -69,7 +69,7 @@ When predator consumes prey, or when prey consumes food they will grow larger by
 
 ### Reproduction
 
-Reproduction in done with the following functions.
+Reproduction is done with the following functions.
 
 
 **Evolutionary Process**
