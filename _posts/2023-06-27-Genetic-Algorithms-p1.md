@@ -67,6 +67,8 @@ When predator consumes prey, or when prey consumes food they will grow larger by
 - The predator entity f() function will count how many prey objects that the predator has consumed
 - The trapper entity f() function will count how many predator or prey that were snared by traps laid by the entity. 
 
+Additionally, if the entity has been killed by another, the evaluation function will return zero.
+
 ### Reproduction
 
 Reproduction is done with the following functions.
