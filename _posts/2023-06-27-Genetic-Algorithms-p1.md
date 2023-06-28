@@ -10,7 +10,7 @@ Genetic programming is a a programming paradigm that is motivated by the concept
 
 ### Modeling
 
-Darwin's theory of natural selection described how beneficial traits are selected for through natural processes. Later in the 19th century, Gregor Mendel formulated a probabilistic model about how these traits are passed on from parents to offspring. The structure of DNA was not discovered until much later in 1953. In carbon based life forms, DNA is the fundamental "code" that gives rise to structure and complexity. DNA is composed of 4 major components often abbreviated as ACTG(adenine, guanine, thymine, and cytosine). We can take note of the self organizing behavior of DNA use similar methods to model a computer program.
+Darwin's theory of natural selection described how beneficial traits are selected for through natural processes. Later in the 19th century, Gregor Mendel formulated a probabilistic model that showed how these traits are passed on from parents to offspring. The structure of DNA was not discovered until much later in 1953. In carbon based life forms, DNA is the fundamental "code" that gives rise to structure and complexity. DNA is composed of 4 major components often abbreviated as ACTG(adenine, guanine, thymine, and cytosine). We can take note of the self organizing behavior of DNA use similar methods to model a computer program.
 
 For example, let letters a-z model function n1-n26. We can compose a string of arbitray length with the letters a-z which will represent a series of function calls. To make this concrete let a = Snap(), b = Crackle(), and c = Pop(). The string "aaabcccb" when parsed will result in the following series of calls:
 
@@ -22,7 +22,7 @@ That was easy. Now let's think about reproduction.
 
 To choose which entities from the current generation will be passed onto the next generation, we must rank the individuals based on a fitness function that we will call f(). Depending on what we are trying to optimize, we will either prefer the maximum or the minimum output.
 
-Now we can choose which individuals from the current population will reproduce. There are many ways this can be done but the most popular ways is to select individuals based on a probability proportional to their fitness score. Another option is to select a cutoff point that will not be picked from, such as a rank or some f().
+Now we can choose which individuals from the current population will reproduce. There are many ways this can be done but the most popular way is to select individuals based on a probability proportional to their fitness score. Another option is to select a cutoff point where individuals are not picked from beyond, such as a maximimum rank or some f().
 
 
 ### Reproduction
@@ -33,7 +33,7 @@ Now that we have decided which individuals will be used to produce the next gene
 - Mutation Rate -> this a probability value that determines how often a value in the DNA will be randomly flipped to a different value
 - Elitism -> The practice of always including some number of individuals with the best f() value. This ensures that results will never get worse over time.
 
-There is room for endless play in how reproduction is carried out and some variations will perform much better than others. Taking another not from the real world, series of useful actions could be grouped together into "genes". Depending on the structure of the problem, a useful series of actions can be helpful in reaching many different solutions. 
+There is room for endless play in how reproduction is carried out and some variations will perform much better than others. Taking another note from the real world, series of useful actions could be grouped together into "genes". Depending on the structure of the problem, a useful series of actions can be helpful in reaching many different solutions. 
 
 Once a base implementation has been formulated, there is often a need to greatly tune a number of parameters so that the model will converge to an acceptable solution. 
 
