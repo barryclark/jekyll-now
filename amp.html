@@ -563,10 +563,11 @@ z-index: 4;
   <p>gimana mudah bukan? semoga dengan hadirnya Medizaa di Indonesia dapat memperbaiki perekonomian masyarakat Indonesia.</p> 
 
 <h3>BACA ARTIKEL LAINNYA DARI KAMI:</h3>
-  <ul style="text-align: left;">
-  <li><a href="https://medizaaindonesia.biz.id/cara-mendaftar-dan-membuat-akun-medizaa/" target="_blank"><b>Cara Mendaftar dan Membuat Akun Medizaa</b></a></li>
-  <li><a href="https://medizaaindonesia.biz.id/cara-memulai-bisnis-online-di-medizaa/" target="_blank"><b>Cara Menghasilkan Uang dari Bisnis Online Medizaa</b></a></li></ul>
-
+<ul style="text-align: left;">
+ {% for post in site.posts limit:10 %}
+  <li><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" target="_blank"><b>{{ post.title}}</b></a></li>
+{% endfor %}
+</ul>
 
 </article>
 
