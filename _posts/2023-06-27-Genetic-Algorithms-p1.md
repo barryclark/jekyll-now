@@ -101,7 +101,7 @@ Here we can see a mostly randomized process going on in the first generation
 
 ![]({{site.baseurl}}/images/g1.gif)
 
-After 20 generation the magic can be seen in action. The prey are going out of their way to avoid the predators, while the predators are attempting to spread out and hunt the prey in a pack-like fashion. Due to the small number of trappers and a lack of genetic diversity have caused the offspring to become nearly identical. This would be a case where we would want to modify the parameters of the trapper's evolutionary process. 
+After 20 generation the magic can be seen in action. The prey are going out of their way to avoid the predators, while the predators are attempting to spread out and hunt the prey in a pack-like fashion. The small number of trappers and a corresponding lack of genetic diversity have caused the offspring to become nearly identical. This would be a case where we would want to modify the parameters of the trapper's evolutionary process. 
 
 ![]({{site.baseurl}}/images/g2.gif)
 
