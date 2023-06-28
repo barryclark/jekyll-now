@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-## Genetic Algorithm Part 1
+## Genetic Algorithms Part 1
 
 ### What are genetic algorithms?
 
