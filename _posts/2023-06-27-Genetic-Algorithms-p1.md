@@ -99,7 +99,8 @@ Full code for this blog post is located at https://github.com/ColeStrickler/Darw
 
 ### Visualization
 
-Here we can see a mostly randomized process going on in the first generation
+Here we can see a mostly randomized process going on in the first generation.
+(green=prey,red=predator,blue=trapper,black=trap)
 
 ![]({{site.baseurl}}/images/g1.gif)
 
