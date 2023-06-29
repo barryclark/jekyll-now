@@ -7,3 +7,13 @@
 컬러 그레이딩은 주로 전문적인 영상 편집 소프트웨어나 컬러 그레이딩 전용 도구를 사용하여 수행됩니다. 이를 통해 색상 보정, 색조 밸런스 조정, 그라데이션 처리 등 다양한 작업을 수행할 수 있습니다.
 
 * 컬러 그레이딩은 PBR 기반에서 충분하게 작업을 마친 후, 부족한 약간의 무언가, 혹은 프로젝트에서 보여 주고 싶은 그래픽적 특징이 되는 무언가를 마지막으로 보여줘야 하는 수단이여야 합니다.
+
+[커브를 이용한 기초 컬러 수정](https://www.premiumbeat.com/blog/color-grading-with-curves/)
+
+[핑크스카이 컬러그레이딩 팁](https://www.premiumbeat.com/blog/color-correcting-tips-pink-sky/)
+
+[달빛이 푸른 이유](https://www.premiumbeat.com/blog/why-color-grade-moonlight-blue/)
+
+[모션그래픽을 위한 색상 이론](https://www.rocketstock.com/blog/color-theory-for-motion-design/)
+
+[색에 의한 관중의 감정](https://www.premiumbeat.com/blog/manipulate-emotions-with-color-in-film/)
