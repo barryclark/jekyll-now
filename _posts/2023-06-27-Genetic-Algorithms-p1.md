@@ -5,7 +5,7 @@ published: true
 
 ### What are genetic algorithms?
 
-Genetic programming is a programming paradigm that is motivated by the concept of natural selection. Selection is both a cyclic and stochastic process where the individuals who are most "fit" are used to generate the offspring of the next generation. Due to the self-organizing behavior of the system, the results are often beautiful and surprising.
+Genetic programming is a programming paradigm that is motivated by the concept of natural selection. Selection is both a cyclic and stochastic process where the individuals who are most "fit" are used to generate the offspring of the next generation. Due to the self-organizing behavior of the system, the results are often beautiful and surprising. Genetic algorithms are specifically useful in solving problems without relying on mathematical formalisms that accompany other optimization algorithms, or applied to cases when mathematical derivation is not possible or difficult to do. 
 
 
 ### Modeling
