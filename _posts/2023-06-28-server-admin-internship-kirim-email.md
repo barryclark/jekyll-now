@@ -37,9 +37,9 @@ PT. Kirim Email Indonesia melalui laman [kerjaremote.id](https://kerjaremote.id/
   * Data diri lengkap (CV.)
   * Ceritakan tentang kelebihan dan kekurangan Anda.
   * Karya-karya yang pernah Anda buat sebelumnya.
-    * Jika dikerjakan secara tim, ceritakan bagian mana yang Anda kerjakan.
-    * Jika dikerjakan sendiri, ceritakan motivasi Anda untuk mengerjakan.
-    * Kalau tidak ada, ceritakan pengalaman kerja sebelumnya.
+    ** Jika dikerjakan secara tim, ceritakan bagian mana yang Anda kerjakan.
+    ** Jika dikerjakan sendiri, ceritakan motivasi Anda untuk mengerjakan.
+    ** Kalau tidak ada, ceritakan pengalaman kerja sebelumnya.
   * Screenshoot hasil test kecepatan mengetik Anda di sini, lalu lampirkan ke dalam email lamaran Anda
 3. Email yang tidak sesuai persyaratan di atas akan diabaikan.
 
