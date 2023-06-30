@@ -2,7 +2,7 @@
 layout: post
 title: KERJA REMOTE - [Internship] Server Admin di PT. Kirim Email Indonesia
 author: Pak Budi
-date: 2023-06-28 08:00:00 +07:00
+date: 2023-06-28 18:00:00 +07:00
 ---
 
 **PT. Kirim Email Indonesia (KIRIM.EMAIL)** merupakan satu-satunya perusahaan di dunia yang memiliki layanan email marketing, transactional email, email validation, dan email hosting dalam satu tempat. KIRIM.EMAIL berkantor pusat di Bandung dan melebarkan sayap ke pasar internasional dengan berkantor di New Castle, Amerika Serikat.
