@@ -32,15 +32,15 @@ PT. Kirim Email Indonesia melalui laman [kerjaremote.id](https://kerjaremote.id/
 1. Kirimkan lamaran Anda ke recruit@krm.email, dengan format subjek:
   * Contoh: [Intership] Web Developer
 2. Emailnya berisi:
-  * Perkenalan dan gambarkan tentang diri Anda.
-  * Kenapa ingin Internship di KIRIM.EMAIL.
-  * Data diri lengkap (CV.)
-  * Ceritakan tentang kelebihan dan kekurangan Anda.
-  * Karya-karya yang pernah Anda buat sebelumnya.
-    ** Jika dikerjakan secara tim, ceritakan bagian mana yang Anda kerjakan.
-    ** Jika dikerjakan sendiri, ceritakan motivasi Anda untuk mengerjakan.
-    ** Kalau tidak ada, ceritakan pengalaman kerja sebelumnya.
-  * Screenshoot hasil test kecepatan mengetik Anda di sini, lalu lampirkan ke dalam email lamaran Anda
+    - Perkenalan dan gambarkan tentang diri Anda.
+    - Kenapa ingin Internship di KIRIM.EMAIL.
+    - Data diri lengkap (CV.)
+    - Ceritakan tentang kelebihan dan kekurangan Anda.
+    - Karya-karya yang pernah Anda buat sebelumnya.
+        - Jika dikerjakan secara tim, ceritakan bagian mana yang Anda kerjakan.
+        - Jika dikerjakan sendiri, ceritakan motivasi Anda untuk mengerjakan.
+        - Kalau tidak ada, ceritakan pengalaman kerja sebelumnya.
+    - Screenshoot hasil test kecepatan mengetik Anda [di sini](https://10fastfingers.com/typing-test/indonesian), lalu lampirkan ke dalam email lamaran Anda.
 3. Email yang tidak sesuai persyaratan di atas akan diabaikan.
 
 <div class="apply"><a href="mailto:recruit@krm.email?subject=Application%20via%20%5BInternship%5D%20Server%20Admin%20listing%20on%20https%3A%2F%2Fsiapkerjo.com" target="_blank" rel="noopener noreferrer">Lamar posisi ini</a></div>
