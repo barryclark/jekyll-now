@@ -35,7 +35,7 @@ Berdasarkan informasi di laman [Karir Astra](https://career.astra.co.id/lowongan
 4. Memiliki interpersonal skill
 5. Berambisi dalam pencapaian target
 6. Dapat bekerjasama dalam tim
-7. Bersedia ditempatkan di seluruh cabang di Indonesia (Jakarta, Bandung, Semarang, Surabaya)?
+7. Bersedia ditempatkan di seluruh cabang di Indonesia (Jakarta, Bandung, Semarang, Surabaya)
 8. Berpengalaman dalam dunia Commercial Vehicle
 
 <div class="apply"><a href="https://career.astra.co.id/lowongan/lowongan-detail-page/10220/Sales%20Consultant" target="_blank" rel="noopener noreferrer">Lamar posisi ini</a></div>
@@ -87,7 +87,7 @@ Menganalisis dan melakukan aktivitas Project Digitalisasi, Network Development, 
 - Batas Lamar: 01 Maret 2025
 
 ### Deskripsi Pekerjaan
-Menganalisa, menyimpulkan dan mengusulkan system atau laporan berkaitan dengan General Affair, Security, EHS dan Social Responsibility serta mendukung kegiatan operasional Perusahaan (Kantor Pusat & Cabang)
+Menganalisa, menyimpulkan dan mengusulkan sistem atau laporan berkaitan dengan General Affair, Security, EHS dan Social Responsibility serta mendukung kegiatan operasional Perusahaan (Kantor Pusat & Cabang)
 
 ### Persyaratan
 
@@ -109,7 +109,7 @@ Menganalisa, menyimpulkan dan mengusulkan system atau laporan berkaitan dengan G
 
 1. Melakukan analisa forecasting penjualan spare part
 2. Memonitor aktivitas penjualan dan proses administrasi penjualan part di cabang
-3. Bertanggung jawab untuk membuat improvement proses bisnis sparepart sehingga tercapai proses bisnis yang efektif dan efisien
+3. Bertanggung jawab untuk membuat improvement proses bisnis spare part sehingga tercapai proses bisnis yang efektif dan efisien
 
 ### Persyaratan
 
