@@ -12,7 +12,7 @@ In part one of this blog series we covered the basics of genetic algorithms and 
 The TSP has many real world applications. Think scheduling, logistics, microchip manufacturing, and even DNA sequencing. The genetic algorithm solution to the TSP is the same as any other, the only major hurdle is devising a suitable genotype to phenotype mapping and then all other considerations will follow relatively easily. 
 
 We will use this map in our problem example 
-![]({{site.baseurl}}/images/us.png)
+![]({{site.baseurl}}/images/us.PNG)
 
 The distances between cities are held in a dictionary. 
 A = New York, B = Los Angeles, C = Chicago, D = Minneapolis, E = Denver, F = Dallas, G = Seattle, H = Boston, I = San Franscisco, J = St. Louis, K = Houston, L = Phoenix, M = Salt Lake City
