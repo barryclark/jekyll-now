@@ -214,4 +214,3 @@ A = New York, B = Los Angeles, C = Chicago, D = Minneapolis, E = Denver, F = Dal
         "M": 0,
     },
 }
-
