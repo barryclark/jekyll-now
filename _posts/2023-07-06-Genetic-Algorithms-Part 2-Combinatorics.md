@@ -15,7 +15,7 @@ If you could no tell by the title of this blog post we will not be using heurist
 
 The TSP has many real world applications. Think scheduling, logistics, microchip manufacturing, and even DNA sequencing. The genetic algorithm solution to the TSP is the same as any other, the only major hurdle is devising a suitable genotype to phenotype mapping and then all other considerations will follow relatively easily. 
 
-We will use this map in our problem example 
+We will use the following map in our problem example. This specific problem is from here: https://developers.google.com/optimization/routing/tsp. Having a predefined problems is good because it lets us validate the convergence of our algorithms since we already know the global optima.
 ![]({{site.baseurl}}/images/us.PNG)
 
 The distances between cities are held in a dictionary. 
@@ -23,7 +23,8 @@ A = New York, B = Los Angeles, C = Chicago, D = Minneapolis, E = Denver, F = Dal
 
 ### Representation
 
-DNA 
+We can represent DNA as a list of cities in the order that we will visit them. A trip from New York to Chicago to Dallas and then back to New York would be represented as the string "ACFA". We will init the starting population with the following function.
+![popinit_tsp.PNG]({{site.baseurl}}/images/popinit_tsp.PNG)
 
 
 
