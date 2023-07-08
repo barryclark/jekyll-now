@@ -51,7 +51,16 @@ We also will see the expected characters make another appearance as well.
 
 With hyperparameter values of mutation_rate=0.12 and population_number=10000 we converge to the global optima in just 20 generations!
 
+Solution: "IGMEDCHAJFKLBI"
+
+![fullpath_tsp.png]({{site.baseurl}}/images/fullpath_tsp.png)
+
+
 ![tsp_solved.PNG]({{site.baseurl}}/images/tsp_solved.PNG)
+
+
+
+
 
 
 
