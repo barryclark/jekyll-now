@@ -20,7 +20,7 @@ Profil perusahaan selengkapnya, baca [di sini](https://www.indofoodcbp.com/).
 
 Berdasarkan informasi di laman [CDC UI](https://cdc.ui.ac.id/), terdapat lowongan kerja terbaru sebagai berikut:
 
-## I-Fuel/Management Trainee Manufacturing
+## 1. I-Fuel/Management Trainee Manufacturing
 
 - Fulltime
 - Deadline Loker: 22/07/2023
@@ -41,7 +41,7 @@ Berdasarkan informasi di laman [CDC UI](https://cdc.ui.ac.id/), terdapat lowonga
 
 <div class="apply"><a href="https://cdc.ui.ac.id/job/1625730/i-fuel-management-trainee-manufacturing/" target="_blank" rel="noopener noreferrer">Lamar posisi ini</a></div>
 
-## I-Fuel/Management Trainee HR
+## 2. I-Fuel/Management Trainee HR
 
 - Fulltime
 - Deadline Loker: 22/07/2023
