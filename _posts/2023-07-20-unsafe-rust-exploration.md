@@ -163,11 +163,9 @@ border when transitioning back to safe language constructs. I've found the ergon
 of using unsafe constructs (such as pointers) much more cumbersome than using 
 safe language constructs (such as references) and that makes it very tempting
 to cross the border prematurely and write broken code. Let's take a look how
-all of this applies to our in place mapping problem.
+all of this applies to our in place transformation problem.
 
 # The Transformative Unsafe Journey
-
-
 
 
 # Further Reading
