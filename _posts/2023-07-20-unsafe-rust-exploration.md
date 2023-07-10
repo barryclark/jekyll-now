@@ -64,8 +64,6 @@ borrow checker, e.g. _unsafe Rust is not about circumventing the borrow checker_
 That's not necessarily wrong, but it's not constructive. Because clearly
 you _can_ use `unsafe` to make the compiler accept programs that you could
 not formulate in safe Rust only. Some of those programs are sound, some are not.
-So what I want to explore a bit more in depth
-when to use unsafe code and how to think about it.
 
 ## Unsafe Is Not About Circumventing Anything
 
@@ -113,12 +111,13 @@ unsafe {
 
 This compiles, so we have just circumvented Rust's Borrow Checker using `unsafe`,
 haven't we? In a way yes, but that is not a helpful way to think about it. The 
-problem is not that we have circumvented the borrow checker, because there are
-completely sound ways of using unsafe that could be circumventing the borrow
-checker as well. The problem is that we have broken a promise to the compiler when we used the 
+problem is not that we have circumvented the borrow checker. Indeed there are
+completely sound ways of using `unsafe` that could be considered circumventing the borrow
+checker. The problem is that we have broken a promise to the compiler when we used the 
 powers bestowed upon us via the `unsafe` keyword. We should have upheld the 
-fundamental rules of the language and we did not. The compiler still assumes that the
-usual language rules (link !!!!ALIASING RULES!!!!)
+fundamental rules of the language and we did not.
+
+The compiler always assumes that the language rules (link !!!!ALIASING RULES!!!!)
 apply and subsequently that two mutable references can never point to the same memory.
 It is allowed to optimize our program as if that assumption is always true and that will,
 in turn, result in the dreaded _undefined behavior_. Meaning anything can happen.
@@ -130,11 +129,11 @@ call unsafe functions [^unsafe-powers]. The language rules that apply to referen
 are not enforced on raw pointers. That is not an accident but one of the defining
 _features_ of pointers. We are able to use them to write correct programs that the borrow
 checker would reject because it errs on the side of caution. We still have to make sure
-that the language rules are obeyed everywhere in the code. One place where it is 
-very easy to make mistakes is when transitioning from unsafe constructs to safe constructs, 
+that the language rules are obeyed everywhere in the code. It is especially
+easy to make mistakes is when transitioning from unsafe constructs to safe constructs, 
 like we did above transitioning from pointers to references. 
 
-In unsafe lang we are able to express things that we cannot in safe Rust, such
+In unsafe land we are able to express things that we cannot in safe Rust, such
 as _I need multiple mutable accesses to one piece of memory_. For those problems,
 pointers are exactly what we should use, because
 there is no way[^no-way-arc-mutex] to express the same in safe Rust.
@@ -154,7 +153,9 @@ be very helpful to frame this as circumventing the borrow checker, because the s
 thing could be said about the broken code futher above. We have now stepped into unsafe land
 and there is things we can do in unsafe land that we cannot simply do in safe
 land. If you only think of the part where we are "circumventing" the borrow 
-checker both code snippets would be equivalent, but they are not. It makes 
+checker both code snippets would be equivalent, but they are not. So unsafe code
+should not be judged on whether it circumvents the borrow checker, which is actually
+the major use case of unsafe in this article . It makes 
 sense to see as unsafe as a gateway into a special part of the language where
 we have to be very careful how to interact with the safe part of the language.
 
