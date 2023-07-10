@@ -107,17 +107,16 @@ Contact Center PT. PELNI (Persero) **(021) 162** atau **[infopelni162@pelni.
 
 ### Kualifikasi:
 
-· Diutamakan Pria
-· Usia maksimal 45 tahun
-· Freshgraduate diperbolehkan
-· Disiplin, jujur, siap bekerja keras dan bertanggungjawab
-· Sehat Jasmani dan Rohani
-· Masa Berlaku dokumen / sertifikat minimal 1 tahun terhitung dari bulan July 2023
-· Bersedia menaati aturan yang berlaku di perusahaan.
-· Bersedia ditempatkan di seluruh kapal perintis
-· Bersedia ditempatkan di seluruh Indonesia
-· Memiliki dokumen / sertifikat sebagai berikut:
-
+- Diutamakan Pria
+- Usia maksimal 45 tahun
+- Freshgraduate diperbolehkan
+- Disiplin, jujur, siap bekerja keras dan bertanggungjawab
+- Sehat Jasmani dan Rohani
+- Masa Berlaku dokumen / sertifikat minimal 1 tahun terhitung dari bulan July 2023
+- Bersedia menaati aturan yang berlaku di perusahaan.
+- Bersedia ditempatkan di seluruh kapal perintis
+- Bersedia ditempatkan di seluruh Indonesia
+- Memiliki dokumen / sertifikat sebagai berikut:
     1. Memiliki COC Electric Technical Rating (ETR)
     2. BST
     3. MFA
