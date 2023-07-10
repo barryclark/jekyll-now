@@ -107,7 +107,7 @@ Contact Center PT. PELNI (Persero) **(021) 162** atau **[infopelni162@pelni.
 
 ### Kualifikasi:
 
-- Diutamakan Pria
+- Diutamakan Pria
 - Usia maksimal 45 tahun
 - Freshgraduate diperbolehkan
 - Disiplin, jujur, siap bekerja keras dan bertanggungjawab
@@ -137,13 +137,10 @@ Contact Center PT. PELNI (Persero) **(021) 162** atau **[infopelni162@pelni.
 
 **CATATAN:**
 
-o Persyaratan administrasi wajib **diupload** di website rekrutmen pada kolom COC & COP
-
-o Memiliki COC / COP sesuai STCW Amandemen Manila 2010, sertifikat minimal masih berlaku 1 tahun terhitung sejak Januari 2020
-
-o Pelamar rekrutmen **wajib** mengisi nomor sertifikat, tanggal penerbitan sertifikat dan tanggal berakhir sertifikat pada saat mengisi data di website
-
-o Hanya Pelamar yang sesuai kualifikasi dan mengirimkan / mengupload sertifikat yang berhak diproses ke tahap selanjutnya
+- Persyaratan administrasi wajib **diupload** di website rekrutmen pada kolom COC & COP
+- Memiliki COC / COP sesuai STCW Amandemen Manila 2010, sertifikat minimal masih berlaku 1 tahun terhitung sejak Januari 2020
+- Pelamar rekrutmen **wajib** mengisi nomor sertifikat, tanggal penerbitan sertifikat dan tanggal berakhir sertifikat pada saat mengisi data di website
+- Hanya Pelamar yang sesuai kualifikasi dan mengirimkan / mengupload sertifikat yang berhak diproses ke tahap selanjutnya
 
 Registrasi dibuka pada tanggal 04 s/d 16 Juli 2023 melalui situs resmi **[https://rekrutmen.pelni.co.id](https://rekrutmen.pelni.co.id/)**. Seluruh proses rekrutmen PT. PELNI (Persero) tidak dipungut biaya dan berhati-hatilah terhadap **PENIPUAN** yang mengatasnamakan rekrutmen PT. PELNI (Persero). Keputusan panitia bersifat mutlak dan tidak dapat diganggu gugat.
 
