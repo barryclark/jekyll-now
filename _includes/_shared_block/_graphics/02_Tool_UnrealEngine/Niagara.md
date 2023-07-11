@@ -29,10 +29,3 @@ Niagara에서 Avoid Distance Field Surface_GPU를 통해 근처 표면에서 멀
 
 1. 나비의 움직임을 구현합니다.
 2. 나비의 버텍스 애니메이션을 구현합니다.
-
-
-[Blender 3.4 Manual](https://docs.blender.org/manual/ko/3.4/)
-
-[Vertex Animation Script for Blender 3D Users](https://forums.unrealengine.com/t/vertex-animation-script-for-blender-3d-users/85580)
-
-블렌더로 버텍스 애니메이션을 만들려고 했으나 실행이 안되는 관계로 하루정도 테스트할 필요 있음.
