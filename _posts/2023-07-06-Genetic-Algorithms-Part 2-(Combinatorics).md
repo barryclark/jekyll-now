@@ -132,19 +132,4 @@ Achieved Solution: [['A', 'H', 'A'], ['I', 'B', 'L', 'M', 'E', 'D', 'C', 'J', 'F
 I will let the reader decide which one makes the most sense in the real world.
 
 
-In the next post in these series I will cover a solution to the n-queens problem and describe how genetic algorithms can be applied to constraint satisfaction problems.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+In the next post of this series I will describe how genetic algorithms can be applied to constraint satisfaction problems and give an implementation that leads to a solution for the n-queens problem.
