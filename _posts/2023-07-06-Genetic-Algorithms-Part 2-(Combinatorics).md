@@ -105,8 +105,38 @@ Here are the implementations of the other operators:
 
 **Reproduction**
 
+This ones a doozy - embrace my glue code.
+
 ![vrp_repr1.PNG]({{site.baseurl}}/images/vrp_repr1.PNG)
 ![vrp_repr2.PNG]({{site.baseurl}}/images/vrp_repr2.PNG)
+
+
+With hyperparameter values of mutation_rate=0.22 and population_number=10000 we converge to the following solutions:
+
+
+**Optimizing for minimal average delivery driver distance**
+
+Achieved Solution: [['D', 'J', 'C', 'A', 'H', 'D'], ['E', 'M', 'F', 'K', 'E'], ['L', 'B', 'I', 'G', 'L']],
+Longest Drive: 1,654 miles
+
+![vrp_solution.png]({{site.baseurl}}/images/vrp_solution.png)
+
+
+**Optimizing for minimal total driver distance**
+
+Achieved Solution: [['A', 'H', 'A'], ['I', 'B', 'L', 'M', 'E', 'D', 'C', 'J', 'F', 'K', 'I'], ['G', 'G']], Total Route Length: 3,971 miles
+
+![vrp_solution2.png]({{site.baseurl}}/images/vrp_solution2.png)
+
+
+I will let the reader decide which one makes the most sense in the real world.
+
+
+In the next post in these series I will cover a solution to the n-queens problem and describe how genetic algorithms can be applied to constraint satisfaction problems.
+
+
+
+
 
 
 
