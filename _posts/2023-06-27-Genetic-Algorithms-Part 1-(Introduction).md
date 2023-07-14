@@ -8,6 +8,17 @@ published: true
 Genetic programming is a programming paradigm that is motivated by the concept of natural selection. Selection is both a cyclic and stochastic process where the individuals who are most "fit" are used to generate the offspring of the next generation. Due to the self-organizing behavior of the system, the results are often beautiful and surprising. Genetic algorithms are specifically useful for solving problems without relying on mathematical formalisms that accompany other optimization algorithms, or applied to cases when mathematical derivation is not possible or difficult to do. 
 
 
+### Series Overview
+These series will cover the many applications of genetic algorithms. Additionally, all implementations will be done from scratch without the help of any libraries or frameworks. This is not optimal, but I believe it is necessary in order to grasp the material. If you are looking for a tutorial on how to use a framework, look elsewhere. Throughout this series I will show how to apply genetic algorithms to the following types of problems:
+
+- Combinatorial Optimization
+- Constraint Satisfaction Problems
+- Continous Function Optimization
+- Hyperparameter optimization of machine learning models
+- Reinforcement Learning
+
+
+
 ### Modeling
 
 Darwin's theory of natural selection described how beneficial traits are selected for through natural processes. Later in the 19th century, Gregor Mendel formulated a probabilistic model that showed how these traits are passed on from parents to offspring. The structure of DNA was not discovered until much later in 1953. In carbon based life forms, DNA is the fundamental "code" that gives rise to structure and complexity. DNA is composed of 4 major components often abbreviated as ACTG(adenine, guanine, thymine, and cytosine). We can take note of the self organizing behavior of DNA and use similar methods to model a computer program.
@@ -109,4 +120,4 @@ After 20 generation the magic can be seen in action. The prey are going out of t
 ![]({{site.baseurl}}/images/g2.gif)
 
 
-In the next part of this blog series I plan to cover a less trivial implementation of a genetic algorithm.
+In the next part of this blog series I plan to cover a less trivial implementation of a genetic algorithm that will be used to solve some of the most notorious problems in all of computer science.
