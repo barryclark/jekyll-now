@@ -30,50 +30,57 @@ Be warned that most (possibly all) the examples in this post contain
 unsafe code with bugs of varying subtlety. _Do not_ blindly copy code
 from here. If you read till the end you'll learn why you will likely
 never have to bother with the code within this post... and also that you've 
-been using it already (probably without knowing it).
+been using it already, maybe unknowingly.
 
 # The Task At Hand: In Place Mapping
 
 The task we're trying to tackle here is to transform a `Vec<T>` into a `Vec<U>` 
-in place, given that types `T` and `U` have the same memory layout. Transforming
-_in place_ means we are reusing the storage of the initial vector. This is what
-our function will look like:
+in place, given that types `T` and `U` have the same memory layout, i.e. size and 
+alignment. Transforming _in place_ means we are reusing the storage of the
+initial vector. Our mapping function will look something like this:
 
 ```rust
-fn map_in_place<T,U,F>(v: Vec<T>, f: F) -> Vec<U> 
-    where F :FnMut(T) -> U {
+fn map_in_place<T,U,F>(v: Vec<T>, mut f: F) -> Vec<U> 
+    where F: FnMut(T) -> U {
     assert_eq!(std::alloc::Layout::<T>::new(), std::alloc::Layout::<U>::new());
 
     todo!()
 }
 ```
 
-`Vec<T>` does not expose an obvious high level and safe API to accomplish what
+`Vec<T>` does not expose an obvious, high level, and safe API to accomplish what
 we want [^safeapi], so we have to dive into unsafe. The rest of this article is 
-concerned with replacing the `todo()` with somehting more useful,
-but let's take a higher level look at `unsafe` first.
+concerned with replacing the `todo!()`, but let's take a step back first.
 
 # Unsafe Rust Confusion
 
 I've struggled a lot with understanding when and how to use unsafe Rust. Part
 of the reason is that there is a (very justified) hesitation to use unsafe code
 within the Rust ecosystem and it's a clear plus when a crate advertises
-itself as _written in 100% safe Rust_ [^safe-rust]. But add to that some overly
-simplistic semtiments swirling around about the relation of `unsafe` and the
-borrow checker, e.g. _unsafe Rust is not about circumventing the borrow checker_.
-That's not necessarily wrong, but it's not constructive. Because clearly
-you _can_ use `unsafe` to make the compiler accept programs that you could
-not formulate in safe Rust only. Some of those programs are sound, some are not.
+itself as _written in 100% safe Rust_ [^safe-rust]. Then add to that some overly
+simplistic semtiments I've come across such as _unsafe Rust is not about circumventing the borrow checker_.
+I think this implanted the idea in my head that I could spot incorrect
+usage of unsafe code by the mere fact that it was "circumventing the borrow
+checker", whatever that meant. That didn't help me to accomplish
+that and I needed a better mental model.
 
 ## Unsafe Is Not About Circumventing Anything
 
-A very important realization for me was to get rid of the mental model of
+A very important realization for me was to get rid of the notion of 
 circumventing the borrow checker with unsafe Rust. I'll try to reframe it
-in this section. Let's look at the following example:
+in this section. The first thing to realize is that the interaction between
+the borrow checker and `unsafe` is too narrow of a view. It's about the interaction
+of the fundamental language Rules of Rust with unsafe code. The borrow checker
+is a well known part of the Rust language because it enforces the [aliasing rules](https://doc.rust-lang.org/rust-by-example/scope/borrow/alias.html). It's an
+important part of what makes safe Rust memory safe, but it's only a part of 
+what gives the language its safety guarantees.
+
+The second thing to realize is that `unsafe` does not change any fundamental
+rules of the language and so it also does not, for example,
+turn off the borrow checker. Take a look at this invalid Rust code:
 
 ```rust
-// borrow checker will
-// reject this
+// does not compile
 let x = 10;
 let r1 = &mut x;
 let r2 = &mut x;
@@ -82,8 +89,10 @@ let r2 = &mut x;
 
 The compiler will reject this code because we are violating one of Rust's
 basic assumptions by trying to take two mutable references to one piece of 
-data [^mutref]. It's also a well known fact that the compiler will
-reject the code even if we place it inside an unsafe block like so:
+data [^mutref]. Merely placing the same code into an `unsafe` block does not
+make it valid Rust code. The aliasing rules for references apply everywhere,
+so the compiler will _always_ assume they are true and optimize accordingly.
+It will stop you from violating them wherever it can.
 
 ```rust
 unsafe {
@@ -95,9 +104,8 @@ unsafe {
 }
 ```
 
-So in that sense we cannot simply use `unsafe` to turn off fundamental language
-rules. I think that's a well known fact and The Book !!!!!!!!!! does mention it, too.
-Now look at this example:
+Now let's look at this example, where we use unsafe to eventually obtain
+two mutable references:
 
 ```rust
 let mut x = 10;
@@ -109,18 +117,21 @@ unsafe {
 }
 ```
 
-This compiles, so we have just circumvented Rust's Borrow Checker using `unsafe`,
+This code compiles, so we have just circumvented Rust's Borrow Checker using `unsafe`,
 haven't we? In a way yes, but that is not a helpful way to think about it. The 
-problem is not that we have circumvented the borrow checker. Indeed there are
-completely sound ways of using `unsafe` that could be considered circumventing the borrow
-checker. The problem is that we have broken a promise to the compiler when we used the 
-powers bestowed upon us via the `unsafe` keyword. We should have upheld the 
-fundamental rules of the language and we did not.
+problem is not that we have done something that the borrow checker would
+The problem is that we have broken a promise to the compiler when we used the 
+powers bestowed upon us via the `unsafe` keyword. The compiler lets us work
+with raw pointers (which do not have aliasing rules) but it expects us
+to still obey the rules of the language. In this case we have created two 
+mutable references to one piece of data, which breaks a rule of the language. 
 
-The compiler always assumes that the language rules (link !!!!ALIASING RULES!!!!)
+The compiler always assumes that the language rules 
 apply and subsequently that two mutable references can never point to the same memory.
 It is allowed to optimize our program as if that assumption is always true and that will,
-in turn, result in the dreaded _undefined behavior_. Meaning anything can happen.
+in turn, result in the dreaded _undefined behavior_... even in an unsafe block because
+--and I know I am belaboring this point-- unsafe Rust still assume the Rules of safe Rust are
+unbroken.
 
 ## Unsafe as a Gateway
 
@@ -128,15 +139,18 @@ Among other things, `unsafe` gives us the power to dereference raw pointers and 
 call unsafe functions [^unsafe-powers]. The language rules that apply to references
 are not enforced on raw pointers. That is not an accident but one of the defining
 _features_ of pointers. We are able to use them to write correct programs that the borrow
-checker would reject because it errs on the side of caution. We still have to make sure
-that the language rules are obeyed everywhere in the code. It is especially
-easy to make mistakes is when transitioning from unsafe constructs to safe constructs, 
-like we did above transitioning from pointers to references. 
+checker would reject because it errs on the side of caution. A famous example
+is implementing [doubly linked lists](https://rust-unofficial.github.io/too-many-lists/).
 
-In unsafe land we are able to express things that we cannot in safe Rust, such
-as _I need multiple mutable accesses to one piece of memory_. For those problems,
-pointers are exactly what we should use, because
-there is no way[^no-way-arc-mutex] to express the same in safe Rust.
+In unsafe Rust it is now our responsibility to enforce the language rules.
+It is especially easy to make mistakes when transitioning from unsafe
+constructs to safe constructs, like we did above transitioning from pointers to
+references [^unsafe-constructs]. In unsafe land we are able to express things that we cannot in safe Rust, such
+as _I need multiple mutable references to one piece of data_. You must never actually
+use two mutable references (even if you trick the compiler) but it is perfectly
+fine to use two pointers to the same data. In fact, pointers are exactly the
+language construct we should use for that particular problem, because there
+is no way to express the same intent in safe Rust [^no-way-arc-mutex].
 
 ```rust
 let mut x = 10;
@@ -147,24 +161,24 @@ unsafe {
 }
 ```
 
-This is perfectly fine Rust code and the compiler will not break our code simply by making
-assumptions about what the pointers can and can't point to. Again, it would not
+This is perfectly fine Rust code and the compiler will not break our code by making
+assumptions about what the pointers can or can't point to. Again, it would not
 be very helpful to frame this as circumventing the borrow checker, because the same
 thing could be said about the broken code futher above. We have now stepped into unsafe land
 and there is things we can do in unsafe land that we cannot simply do in safe
 land. If you only think of the part where we are "circumventing" the borrow 
-checker both code snippets would be equivalent, but they are not. So unsafe code
-should not be judged on whether it circumvents the borrow checker, which is actually
-the major use case of unsafe in this article . It makes 
-sense to see as unsafe as a gateway into a special part of the language where
-we have to be very careful how to interact with the safe part of the language.
+checker both code snippets would be equivalent, but they are not. Using unsafe
+code to express things we cannot express in safe Rust is one of the major
+usecases of unsafe. Using unsafe code to make safe language constructs behave
+in ways that they are not allowed to is an abuse.
 
-While we can surely write broken code inside the unsafe block above, one particular danger is at the
-border when transitioning back to safe language constructs. I've found the ergonomics
-of using unsafe constructs (such as pointers) much more cumbersome than using 
-safe language constructs (such as references) and that makes it very tempting
-to cross the border prematurely and write broken code. Let's take a look how
-all of this applies to our in place transformation problem.
+So one of the lessons for me was to learn to use unsafe constructs more comfortably
+and not try to weasel my way back into safe constructs as soon as possible.
+However, I've found the ergonomics of using unsafe constructs (such as pointers)
+much more cumbersome than using safe language constructs (such as references)
+and that makes it very tempting to cross the border prematurely and write
+broken code. Let's take a look how all of this applies to our in place
+mapping problem.
 
 # The Transformative Unsafe Journey
 
@@ -179,8 +193,9 @@ which provides a thorough treatise of unsafe Rust.
 # Endnotes
 
 [^mutref]: As a matter of fact, even if `r2` had merely been an immutable reference, this code would have been rejected by the compiler.
-[^safeapi]: It will turn out that there is, in fact, a high-level API to achieve this. Well... it turns out the API is pretty obvious but the fact that it does what I want it to do is not.
+[^safeapi]: It will turn out that there is, in fact, a high-level API to achieve this. It'll even turn out that the API itself is pretty obvious but the fact that it does the transformation in place is not.
 [^unsafe-powers]: There's a couple more things that `unsafe` lets us do, the Rust Book lovingly calls them _unsafe  superpowers_.
 [^ub-unsafe]: To be clear, we can still introduce all kinds of UB ourselves by not being careful.
 [^no-way-arc-mutex]: Of course there are safe wrappers, like `Arc<Mutex<T>>` that serve a conceptually similar, but very different use case. If we want to manipulate data on a low level, pointers are what we want.
-[^safe-rust]: I also see this as an advantage because it means I can trust that someone's code is free of many classes of bugs. That's great.
+[^safe-rust]: I also see this as an advantage because it means I can trust that someone else's code is free of many classes of bugs. That's great.
+[^unsafe-constructs]: Yes, I am referring to pointers as unsafe constructs. Yes, I know that you can _create_ them in safe code but you can't _use_ them so for all intents and purposes they are a language construct in unsafe land.
