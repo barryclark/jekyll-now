@@ -88,7 +88,7 @@ The first way will try to optimize the solution such that drivers from each dist
 
 ![vrp_similar_dist_calcfitness.PNG]({{site.baseurl}}/images/vrp_similar_dist_calcfitness.PNG)
 
-The second way way will try to optimize for the least amount of total distance in order to save the company the maximum amount of money.
+The second way way will try to optimize for the least amount of total distance in order to save the company the maximum1. amount of money.
 
 ![vrp_maxSaved_calcFitness.PNG]({{site.baseurl}}/images/vrp_maxSaved_calcFitness.PNG)
 
