@@ -60,7 +60,7 @@ Solution: "IGMEDCHAJFKLBI"
 
 
 ## The Vehicle Routing Problem (VRP)
-For this problem, imagine that you are charged with designing a distribution network for a company. The company has a budget for 3 locations, and will need to cover all the same cities used in the previous problem. Assume again we can travel as the crow flies. How can we select cities for the distribution centers such that every city will be delivered to in the least amount of total miles? 
+For this problem, imagine that you are charged with designing a distribution network for a company. The company has a budget for three distribution centers, and the routes will need to visit all the same cities used in the previous problem. Assume again we can travel as the crow flies. How can we select locations for the distribution centers such that every city will be delivered to in the least amount of total miles? 
 
 So you don't have to scroll up, here is the orginal map and the letter-city mappings: 
 
@@ -74,7 +74,7 @@ A = New York, B = Los Angeles, C = Chicago, D = Minneapolis, E = Denver, F = Dal
 This problem requires a slightly different approach due to the unique constraints of the problem. We cannot go about genotype to phenotype mapping in the same way as the previous problem because the DNA does not represent a single course of actions, but rather three separate action sequences. For this problem we will model the genotype/DNA as a list of three lists, while placing certain constraints on the construction of these lists to make sure that their make up does not violate the nature of the problem. 
 
 The constraints are as follows:
-- If a location exists in one internal list, it should not exist in the other internal lists
+- If a location exists in one internal list, it should not exist in the other internal lists(No city will be visited by drivers headquarted in two different distribution centers)
 - An internal list must start and end with the same location(The delivery drivers must return back to their warehouses after they have delivered their payloads)
 
 The starting population will be initialized with the following function: 
@@ -84,11 +84,11 @@ The starting population will be initialized with the following function:
 
 I will also introduce two different ways to calculate fitness.
 
-The first way will try to optimize the solution such that drivers from each distribution center will travel a similar distance. 
+The first way will try to optimize the solution such that drivers from each distribution center will travel the minimum average distance.
 
 ![vrp_similar_dist_calcfitness.PNG]({{site.baseurl}}/images/vrp_similar_dist_calcfitness.PNG)
 
-The second way way will try to optimize for the least amount of distance total in order to save the company the max amount of money.
+The second way way will try to optimize for the least amount of total distance in order to save the company the maximum amount of money.
 
 ![vrp_maxSaved_calcFitness.PNG]({{site.baseurl}}/images/vrp_maxSaved_calcFitness.PNG)
 
