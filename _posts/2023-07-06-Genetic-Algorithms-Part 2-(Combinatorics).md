@@ -13,7 +13,7 @@ If you could not tell by the title of this blog post we will not be using heuris
 Full code for this blog post is located here: https://github.com/ColeStrickler/DarwinWasWrong.
 
 ## The Traveling Salesman Problem (TSP)
-"Given a list of cities and the distances between each of them, determine the shortest path that visits each of the cities and then returns to the starting city"
+"Given a list of cities and the distances between each of them, determine the shortest path that visits each of the cities and then returns to the starting city". Additionally, assume we can travel as the crow flies
 
 The TSP has many real world applications. Think scheduling, logistics, microchip manufacturing, and even DNA sequencing. The genetic algorithm implementation for the TSP is the same as any other, the only major hurdle is devising a suitable genotype to phenotype mapping and then all other considerations will follow relatively easily. 
 
@@ -60,3 +60,61 @@ Solution: "IGMEDCHAJFKLBI"
 
 
 ## The Vehicle Routing Problem (VRP)
+For this problem, imagine that you are charged with designing a distribution network for a company. The company has a budget for 3 locations, and will need to cover all the same cities used in the previous problem. Assume again we can travel as the crow flies. How can we select cities for the distribution centers such that every city will be delivered to in the least amount of total miles? 
+
+So you don't have to scroll up, here is the orginal map and the letter-city mappings: 
+
+![]({{site.baseurl}}/images/us.PNG)
+
+The distances between cities are held in a dictionary. 
+A = New York, B = Los Angeles, C = Chicago, D = Minneapolis, E = Denver, F = Dallas, G = Seattle, H = Boston, I = San Franscisco, J = St. Louis, K = Houston, L = Phoenix, M = Salt Lake City
+
+### Representation
+
+This problem requires a slightly different approach due to the unique constraints of the problem. We cannot go about genotype to phenotype mapping in the same way as the previous problem because the DNA does not represent a single course of actions, but rather three separate action sequences. For this problem we will model the genotype/DNA as a list of three lists, while placing certain constraints on the construction of these lists to make sure that their make up does not violate the nature of the problem. 
+
+The constraints are as follows:
+- If a location exists in one internal list, it should not exist in the other internal lists
+- An internal list must start and end with the same location(The delivery drivers must return back to their warehouses after they have delivered their payloads)
+
+The starting population will be initialized with the following function: 
+
+![]({{site.baseurl}}/images/init_pop_vrp.PNG)![init_pop_vrp.PNG]({{site.baseurl}}/images/init_pop_vrp.PNG)
+
+
+I will also introduce two different ways to calculate fitness.
+
+The first way will try to optimize the solution such that drivers from each distribution center will travel a similar distance. 
+
+![vrp_similar_dist_calcfitness.PNG]({{site.baseurl}}/images/vrp_similar_dist_calcfitness.PNG)
+
+The second way way will try to optimize for the least amount of distance total in order to save the company the max amount of money.
+
+![vrp_maxSaved_calcFitness.PNG]({{site.baseurl}}/images/vrp_maxSaved_calcFitness.PNG)
+
+Here are the implementations of the other operators:
+
+**Selection**
+
+![vrp_selection.PNG]({{site.baseurl}}/images/vrp_selection.PNG)
+
+
+**Mutation**
+
+![vrp_mutate.PNG]({{site.baseurl}}/images/vrp_mutate.PNG)
+
+**Reproduction**
+
+![vrp_repr1.PNG]({{site.baseurl}}/images/vrp_repr1.PNG)
+![vrp_repr2.PNG]({{site.baseurl}}/images/vrp_repr2.PNG)
+
+
+
+
+
+
+
+
+
+
+
