@@ -114,7 +114,7 @@ This ones a doozy - embrace my glue code.
 With hyperparameter values of mutation_rate=0.22 and population_number=10000 we converge to the following solutions:
 
 
-**Optimizing for minimal average delivery driver distance**
+**Optimizing for minimal average delivery driver distance:**
 
 Achieved Solution: [['D', 'J', 'C', 'A', 'H', 'D'], ['E', 'M', 'F', 'K', 'E'], ['L', 'B', 'I', 'G', 'L']],
 Longest Drive: 1,654 miles
@@ -122,7 +122,7 @@ Longest Drive: 1,654 miles
 ![vrp_solution.png]({{site.baseurl}}/images/vrp_solution.png)
 
 
-**Optimizing for minimal total driver distance**
+**Optimizing for minimal total driver distance:**
 
 Achieved Solution: [['A', 'H', 'A'], ['I', 'B', 'L', 'M', 'E', 'D', 'C', 'J', 'F', 'K', 'I'], ['G', 'G']], Total Route Length: 3,971 miles
 
