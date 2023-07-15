@@ -1,5 +1,6 @@
 ---
 published: true
+tags: technical
 ---
 ## Genetic Algorithms Part 2 - Combinatorics
 
