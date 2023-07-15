@@ -1,11 +1,9 @@
 ---
 layout: page
-title: Book Recommendations
+title: Book Recommendations by Topic
 permalink: /books/
 published: true
 ---
-
-# Book Recommendations by Topic
 
 ### Popular Science
 
