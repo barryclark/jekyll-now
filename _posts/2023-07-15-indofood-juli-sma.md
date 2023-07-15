@@ -76,14 +76,14 @@ Proporsional body, Min 165 cm, sehat jasmani rohani, Menguasai bela diri, mempun
 
 ### Persyaratan Pekerjaan
 
-a. Lulusan SMK: IPA, Teknik Mesin,Teknik Elektro, Analis Kimia, Teknik Komputer dan Jaringan, Teknik Kendaraan Ringan, Teknik Sepeda Motor, Teknik Grafika.
-b. Usia Maksimum 21 tahun.
-c. Tinggi badan min. 165 cm dengan berat badan proporsional.
-d. Nilai raport rata-rata adalah 7.0.
-e. Bebas Narkoba dan bersedia tidak merokok selama berada di lingkungan pabrik.
-f. Bersedia mengikuti program hingga selesai.
-g. Bersedia ditempatkan di seluruh unit plant perusahaan (Jakarta, Tangerang, Purwakarta).
-h. Sudah melakukan Vaksin Booster.
+- Lulusan SMK: IPA, Teknik Mesin,Teknik Elektro, Analis Kimia, Teknik Komputer dan Jaringan, Teknik Kendaraan Ringan, Teknik Sepeda Motor, Teknik Grafika.
+- Usia Maksimum 21 tahun.
+- Tinggi badan min. 165 cm dengan berat badan proporsional.
+- Nilai raport rata-rata adalah 7.0.
+- Bebas Narkoba dan bersedia tidak merokok selama berada di lingkungan pabrik.
+- Bersedia mengikuti program hingga selesai.
+- Bersedia ditempatkan di seluruh unit plant perusahaan (Jakarta, Tangerang, Purwakarta).
+- Sudah melakukan Vaksin Booster.
 
 ### Deskripsi Pekerjaan
 
