@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: books.md
 permalink: /books/
 published: true
 ---
