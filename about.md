@@ -1,6 +1,6 @@
 ---
 layout: page
-title: books.md
+title: Book Recommendations
 permalink: /books/
 published: true
 ---
@@ -34,7 +34,3 @@ published: true
 
 ### Computer Science
 The Rootkit Arsenal: Escape and Evasion in the Dark Corners of the System, Bill Blunden
-
-
-
-
