@@ -26,7 +26,7 @@ Berdasarkan laman [Alumni UGM](https://alumni.ugm.ac.id/2023/07/14/pt-midi-utama
 
 ## Posisi: Buyer
 
-![loker MIDI UTAMA](http://siapkerjo.com/source/siapkerjocom/files/buyer-202306-Alfamidi-15-819x1024)
+![loker MIDI UTAMA](http://siapkerjo.com/source/siapkerjocom/files/buyer-202306-Alfamidi-15-819x1024.jpg)
 
 <div class="apply"><a href="https://bit.ly/ALFAMIDIKARIR_REGULER" target="_blank" rel="noopener noreferrer">Lamar posisi ini</a></div>
 
