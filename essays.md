@@ -5,11 +5,16 @@ layout: page
 ---
 <h1><b><u>Essays</u></b></h1>
 <div class="posts">
- {% assign essay_files = site.static_files | where: "essay", true %}
-  {% for essay in essay_files %}
-    {{ essay.path }}
+  {% for essay in site.static_files %}
+  	{% if essay.path contains '_essays' %}
+  		<p>{{ essay.path }} swag</p>
+  	{% endif %}
   {% endfor %}
 </div>
+
+
+
+
 ###Testing 123
 
 
