@@ -10,7 +10,7 @@ Genetic programming is a programming paradigm that is motivated by the concept o
 
 
 ### Series Overview
-These series will cover the many applications of genetic algorithms. Additionally, all implementations will be done from scratch without the help of any libraries or frameworks. This is not optimal, but I believe it is necessary in order to grasp the material. If you are looking for a tutorial on how to use a framework, look elsewhere. Throughout this series I will show how to apply genetic algorithms to the following types of problems:
+This series will cover the many applications of genetic algorithms. Additionally, all implementations will be done from scratch without the help of any libraries or frameworks. This is not optimal, but I believe it is necessary in order to grasp the material. If you are looking for a tutorial on how to use a framework, look elsewhere. Throughout this series I will show how to apply genetic algorithms to the following types of problems:
 
 - Combinatorial Optimization
 - Constraint Satisfaction Problems
