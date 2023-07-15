@@ -9,6 +9,7 @@ published: true
 
 - **Technical Blog** ~ I cover topics in mathematics and computer science, as well as project implementations in those domains
 - **Essays** ~ In depth explanation of my thoughts on certain issues or topics
+- **Books** ~ A list of books I recommend in a variety of different topics
 
 
 ### Contact me
