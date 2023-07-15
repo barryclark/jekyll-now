@@ -4,7 +4,6 @@ published: true
 layout: page
 ---
 ---
-permalink: /essays
 ---
 
 
