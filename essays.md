@@ -11,11 +11,3 @@ layout: page
   	{% endif %}
   {% endfor %}
 </div>
-
-
-
-
-###Testing 123
-
-
-please work lmao
