@@ -7,7 +7,7 @@ layout: page
 <div class="posts">
   {% for essay in site.static_files %}
   	{% if essay.path contains 'Essays' %}
-  		<p>{{ essay.path }} swag</p>
+  	<a href="{{ site.baseurl }}{{ essay.path }}">{{essay.name}}</a>
   	{% endif %}
   {% endfor %}
 </div>
