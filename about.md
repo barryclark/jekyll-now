@@ -2,14 +2,15 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+### Site Overview
 
-### More Information
+- Technical Blog ~ I cover topics in mathematics and computer science, as well as project implementations in those domains
+- Essays ~ In depth explanation of my thoughts on certain issues or topics
 
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Email: colestrickler@gmail.com
