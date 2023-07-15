@@ -31,4 +31,4 @@ published: true
 - Strategic Vision: America and the Crisis of Global Power, Zbigniew Brzeziński
 
 ### Computer Science
-The Rootkit Arsenal: Escape and Evasion in the Dark Corners of the System, Bill Blunden
+- The Rootkit Arsenal: Escape and Evasion in the Dark Corners of the System, Bill Blunden
