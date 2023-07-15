@@ -84,5 +84,5 @@ exclude:
   - README.md
   - CNAME
 collections:
-	essays:
-		output: true
+  essays:
+    output: true
