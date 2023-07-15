@@ -5,7 +5,7 @@ published: true
 
 <h1><b><u>Posts</u></b></h1>
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in site.tags.technical %}
     <article class="post">
 
       <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
