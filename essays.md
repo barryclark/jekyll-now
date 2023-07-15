@@ -6,7 +6,7 @@ layout: page
 <h1><b><u>Essays</u></b></h1>
 <div class="posts">
   {% for essay in site.static_files %}
-  	{% if essay.path contains '_essays' %}
+  	{% if essay.path contains 'Essays' %}
   		<p>{{ essay.path }} swag</p>
   	{% endif %}
   {% endfor %}
