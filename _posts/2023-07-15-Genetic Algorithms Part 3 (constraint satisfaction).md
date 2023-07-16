@@ -1,6 +1,7 @@
 ---
 published: false
 ---
-## A New Post
+## Genetic Algorithms Part 3 - Constraint Satisfaction Problems
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+### Part 3
+In part 3, I will demonstrate how to apply a genetic algorithm to solve constraint satisfaction problems by implementing a solution for the n-queens problem. Additionally, I will show how these problems can be solved using traditional methods and compare/contrast the relative utility of the different implementations. 
