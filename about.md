@@ -8,7 +8,7 @@ My name is Quan Nguyen.
 I'm a software engineer and a machine learning engineer.
 As a software engineer, I enjoy programming and learning new programming languages.
 Currently, I'm into functional programming languages,
-such as [Haskell](https://github.com/beekill95/cis_194_intro_to_haskell) and Purescript.
+such as [Haskell](https://github.com/beekill95/cis_194_intro_to_haskell) and PureScript.
 Later on, I might try learning other web technologies like WebGL, WebGPU, Wasm,
 or new languages such as Rust, Go, Scheme, or Smalltalk.
 As a machine learning engineer, I'm interested in
