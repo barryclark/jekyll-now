@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 tags: technical
 ---
 ## Genetic Algorithms Part 3 - Constraint Satisfaction Problems
