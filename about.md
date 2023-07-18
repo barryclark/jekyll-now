@@ -10,6 +10,7 @@ published: true
 - Behave: The Biology of Humans at Our Best and Worst, Robert Sapolsky
 
 ### Philosophy/Political Thought
+- Public Opinion, Walter Lippman
 
 ### European History
 
