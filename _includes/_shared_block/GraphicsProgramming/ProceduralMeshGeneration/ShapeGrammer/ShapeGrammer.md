@@ -1,3 +1,5 @@
+[Introduction To Shape Grammars I](https://ocw.mit.edu/courses/4-540-introduction-to-shape-grammars-i-fall-2018/pages/course-texts/)
+
 [Shape Grammer](https://en.wikipedia.org/wiki/Shape_grammar)
 
 Shape Grammar은 형태 분석과 생성을 위한 형식적인 접근 방법입니다. Shape Grammar은 기호적인 표기법을 사용하여 형태를 표현하고, 이를 기반으로 형태 구조의 생성과 변형을 가능하게 합니다. 이 방법은 문법 규칙을 사용하여 형태의 구성 요소와 구조를 정의하고, 이를 결합하고 변형함으로써 새로운 형태를 생성합니다. Shape Grammar은 주로 건축, 도시 계획, 제품 디자인 등의 분야에서 사용되며, 형태의 구조와 상호 작용을 추상화하고 형식화하여 디자인 과정을 자동화하거나 형태의 다양성을 탐색하는 데 활용됩니다.
