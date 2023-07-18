@@ -1,4 +1,4 @@
-[Introduction To Shape Grammars I](https://ocw.mit.edu/courses/4-540-introduction-to-shape-grammars-i-fall-2018/pages/course-texts/)
+[MIT OPEN COURSE WARE : Introduction To Shape Grammars I](https://ocw.mit.edu/courses/4-540-introduction-to-shape-grammars-i-fall-2018/pages/course-texts/)
 
 [Shape Grammer](https://en.wikipedia.org/wiki/Shape_grammar)
 
