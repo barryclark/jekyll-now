@@ -17,7 +17,7 @@ Lot -> extrude(10) Mass
 2. ```Mass -> FaceSplit{ slides: Facade }``` 에서 Mass에서 Face들을 분리하여 Facade로 설정합니다.
 3. ```Facade -> Split("y"){ 3: FirstFloor, ~1: TopFloors }```에서 Facade를 y축 기준으로 처음 3만큼을 FirstFloor로 설정하고 나머지를 TopFloor로 설정합니다.
 4. ```TopFloors -> Repeat("y"){ 1: Floor }```에서 TopFloors를 y축 기준으로 1만큼씩 나누고 이를 Floor로 설정합니다.
-5. ```Floor -> Repeat("x"){ 1: Window }```에서 x축 기준으로 1만큼씩 나누고 이를 Window로 설정하빈다.
-6. ```Window -> insert("window.obj")에서 window에 window.obj를 삽입합니다.
+5. ```Floor -> Repeat("x"){ 1: Window }```에서 x축 기준으로 1만큼씩 나누고 이를 Window로 설정합니다.
+6. ```Window -> insert("window.obj")```에서 window에 window.obj를 삽입합니다.
 
 이 과정을 통해 절차적으로 건물을 만드는 예시를 볼 수 있습니다.
