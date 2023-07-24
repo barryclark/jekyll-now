@@ -154,7 +154,7 @@ the compiled binary, so running your whole test suite or program might not be
 feasible. Furthermore it works by _running_ your code through the interpreter 
 and in this sense it works _at runtime_. That means even if it is theoretically
 able to detect a source of undefined behavior (UB), you must actually hit the
-of UB during a run. This is all the more reason to have an exhaustive test
+UB during a run. This is all the more reason to have an exhaustive test
 suite for your unsafe code and keep in mind that are certain classes of UB that Miri
 does not detect regardless.
 
