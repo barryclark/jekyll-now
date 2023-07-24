@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Building Distributed Architectures: Creating a Blueprint for Success
+title: "Building Distributed Architectures: Creating a Blueprint for Success"
 ---
 
 Welcome to the first installment of our blog series, "Building Distributed Architectures." In this series, we embark on a journey to explore the fascinating world of distributed systems and delve into the intricacies of developing a robust and scalable software infrastructure. If you're a developer, engineer, or tech enthusiast curious about how modern applications are designed to handle massive loads and ensure fault tolerance, this series is tailor-made for you.
