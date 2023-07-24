@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Building Distributed Architectures: Creating a Blueprint for Success"
 ---
 
