@@ -2,7 +2,7 @@
 layout: post
 tags: rust unsafe
 #categories: []
-date: 2023-07-20
+date: 2023-07-24
 last_updated:
 #excerpt: ''
 #description:
@@ -11,16 +11,16 @@ title: 'Learn Unsafe Rust From My Mistakes'
 #
 #
 # Make sure this image is correct !!!
-og_image:
+og_image: unsafe-rust-mistakes.png
 #
 #
 # Make sure comments are enabled !!!	
-comments_id:
+comments_id: 49
 ---
 
 A project of mine required me to dive into unsafe Rust and
-when I finished the project I had understood something that I wanted to share.
-However, since I do have a healthy dose of humility I did ask the community to
+when I was done with it, I had understood something that I wanted to share.
+However, since I wasn't sure if I made any subtle mistakes, I did ask the community to
 review my code and _oh boy_ did it turn out that I had missed some vital things. 
 Bear with me and hopefully you'll gather something useful, too.
 
@@ -29,24 +29,25 @@ Bear with me and hopefully you'll gather something useful, too.
 Be warned that most (possibly all) the examples in this post contain
 unsafe code with bugs of varying subtlety. _Do not_ blindly copy code
 from here. If you read till the end you'll learn why you will likely
-never have to bother with the code within this post... and also that you've 
+never have to bother with the particular code in this post... and also that you've 
 been using it already, maybe unknowingly.
 
 If you spot errors in this article please do reach out either via the
-commentary function on this page or shoot me a mail using the link at
+commentary on this page or shoot me a mail using the link at
 the bottom of this page.
 
 # The Task At Hand: In Place Mapping
 
 The task we're trying to tackle here is to transform a `Vec<T>` into a `Vec<U>` 
-in place, given that types `T` and `U` have the same memory layout, i.e. size and 
-alignment. Transforming _in place_ means we are reusing the storage of the
+in place, given that types `T` and `U` have the same memory layout, i.e. the same
+size and alignment. Transforming _in place_ means we are reusing the storage of the
 initial vector. Our mapping function will look something like this:
 
 ```rust
 fn map_in_place<T,U,F>(v: Vec<T>, mut f: F) -> Vec<U> 
     where F: FnMut(T) -> U {
-    assert_eq!(std::alloc::Layout::<T>::new(), std::alloc::Layout::<U>::new());
+    assert_eq!(std::alloc::Layout::<T>::new(), 
+        std::alloc::Layout::<U>::new());
 
     todo!()
 }
@@ -65,17 +66,17 @@ itself as _written in 100% safe Rust_ [^safe-rust]. Then add to that some overly
 simplistic semtiments I've come across such as _unsafe Rust is not about circumventing the borrow checker_.
 I think this implanted the idea in my head that I could spot incorrect
 usage of unsafe code by the mere fact that it was "circumventing the borrow
-checker", whatever that meant. That didn't help me to accomplish
+checker", whatever that meant. It turned out that this wasn't much of a help
 that and I needed a better mental model.
 
 ## Unsafe Is Not About Circumventing Anything
 
-A very important realization for me was to get rid of the notion of 
-circumventing the borrow checker with unsafe Rust. I'll try to reframe it
+A very important realization for me was to stop thinking about whether or not I
+was circumventing the borrow checker with unsafe Rust. I'll try to reframe it
 in this section. The first thing to realize is that the interaction between
 the borrow checker and `unsafe` is too narrow of a view. It's about the interaction
-of the fundamental language Rules of Rust with unsafe code. The borrow checker
-is a well known part of the Rust language because it enforces the [aliasing rules](https://doc.rust-lang.org/rust-by-example/scope/borrow/alias.html). It's an
+of the fundamental language rules of Rust with unsafe code. The borrow checker
+is a well known part of the Rust language and it enforces the [aliasing rules](https://doc.rust-lang.org/rust-by-example/scope/borrow/alias.html). It's an
 important part of what makes safe Rust memory safe, but it's only a part of 
 what gives the language its safety guarantees.
 
@@ -95,8 +96,8 @@ The compiler will reject this code because we are violating one of Rust's
 basic assumptions by trying to take two mutable references to one piece of 
 data [^mutref]. Merely placing the same code into an `unsafe` block does not
 make it valid Rust code. The aliasing rules for references apply everywhere,
-so the compiler will _always_ assume they are true and optimize accordingly.
-It will stop you from violating them wherever it can.
+so the compiler will _always_ assume they are true. It will stop you from 
+violating them wherever it can.
 
 ```rust
 unsafe {
@@ -123,19 +124,20 @@ unsafe {
 
 This code compiles, so we have just circumvented Rust's Borrow Checker using `unsafe`,
 haven't we? In a way yes, but that is not a helpful way to think about it. The 
-problem is not that we have done something that the borrow checker would
-The problem is that we have broken a promise to the compiler when we used the 
-powers bestowed upon us via the `unsafe` keyword. The compiler lets us work
+problem is not that we have done something that the borrow checker would not
+allow us to do, the problem is that we have violated the aliasing rules of 
+the language when we used the powers bestowed upon us via the `unsafe` keyword. 
+In unsafe Rust, the compiler lets us work
 with raw pointers (which do not have aliasing rules) but it expects us
-to still obey the rules of the language. In this case we have created two 
-mutable references to one piece of data, which breaks a rule of the language. 
+to still adhere to the rules of the language. In this case we have created two 
+mutable references to one piece of data, which breaks the aliasing rules.
 
 The compiler always assumes that the language rules 
 apply and subsequently that two mutable references can never point to the same memory.
 It is allowed to optimize our program as if that assumption is always true and that will,
 in turn, result in the dreaded _undefined behavior_... even in an unsafe block because
---and I know I am belaboring this point-- unsafe Rust still assume the Rules of safe Rust are
-unbroken.
+--and I know I am belaboring this point-- unsafe Rust still assumes the rules of 
+safe Rust are unbroken.
 
 
 ### Detecting Rule Violations
@@ -151,10 +153,10 @@ there are some caveats. Because Miri is an interpreter it is much slower than
 the compiled binary, so running your whole test suite or program might not be 
 feasible. Furthermore it works by _running_ your code through the interpreter 
 and in this sense it works _at runtime_. That means even if it is theoretically
-able to detect a source of undefined behavior (UB), you must actually hit the source
-of UB during a run. This is all the more reason to have a very exhaustive test
+able to detect a source of undefined behavior (UB), you must actually hit the
+of UB during a run. This is all the more reason to have an exhaustive test
 suite for your unsafe code and keep in mind that are certain classes of UB that Miri
-does not detect, regardless.
+does not detect regardless.
 
 ## Unsafe as a Gateway
 
@@ -167,7 +169,7 @@ is implementing [doubly linked lists](https://rust-unofficial.github.io/too-many
 
 In unsafe Rust it is now our responsibility to enforce the language rules.
 It is especially easy to make mistakes when transitioning from unsafe
-constructs to safe constructs, like we did above transitioning from pointers to
+constructs to safe constructs, like we did above when transitioning from pointers to
 references [^unsafe-constructs]. In unsafe land we are able to express things that we cannot in safe Rust, such
 as _I need multiple mutable references to one piece of data_. You must never actually
 use two mutable references (even if you trick the compiler) but it is perfectly
@@ -192,8 +194,8 @@ and there is things we can do in unsafe land that we cannot simply do in safe
 land. If you only think of the part where we are "circumventing" the borrow 
 checker both code snippets would be equivalent, but they are not. Using unsafe
 code to express things we cannot express in safe Rust is one of the major
-usecases of unsafe. Using unsafe code to make safe language constructs behave
-in ways that they are not allowed to is an abuse.
+usecases of unsafe. On the other hand, using unsafe code to make safe language
+constructs behave in forbidden ways is an abuse.
 
 So one of the lessons for me was to learn to use unsafe constructs more comfortably
 and not try to weasel my way back into safe constructs as soon as possible.
@@ -217,7 +219,7 @@ violating Rust's aliasing rules and does quite a few things correctly.
 
 ```rust
 fn map_in_place<T,U,F>(v: Vec<T>, mut f: F) -> Vec<U> 
-where F: FnMut(T) -> U{
+where F: FnMut(T) -> U {
     assert_eq!(Layout::new::<T>(), Layout::new::<U>());
     unsafe {
         // (1)
@@ -237,17 +239,18 @@ where F: FnMut(T) -> U{
 }
 ```
 I should mention that the latest stable Rust version at the time of writing is
-Rust 1.17.0, which is probably not terribly important. The code above
-uses the unstable [Vec::into_raw_parts](https://github.com/rust-lang/rust/issues/65816) API
-just for clarity, because the effect can be very easily replicated in stable Rust.
+Rust 1.71, which is probably not terribly important but it should be noted
+nonetheless. The code above uses the unstable 
+[Vec::into_raw_parts](https://github.com/rust-lang/rust/issues/65816) API
+just for clarity. The effect can be very easily replicated in stable Rust.
 
 Let's pretend that this was my first draft of the code [^it-wasnt]. Before we go
 into the problems with this function let's look at the code line by line. After making
-sure the memory layout of the types `T` and `U` have the same memory layout, 
-&#9312; we consume the vector and obtain its raw parts: The pointer `pstart` to the
+sure the types `T` and `U` have the same memory layout, 
+&#9312; we destructure the vector to obtain its raw parts: The pointer `pstart` to the
 first element, the number of elements `len`, and the capacity `cap`. 
 &#9313; Then we iterate through the elements of the vector via the pointer `pt`
-of type `T`. &#9314; Now we read the element into our stack variable `t` and
+of type `*mut T`. &#9314; Now we read the element into our stack variable `t` and
 transform it into an element `u` of type `U`. Using `pt.read()` makes this work 
 even for non-`Copy` elements because it will just perform a simple memory copy.
 &#9315; Then we obtain a second pointer to the element that we are iterating over.
@@ -268,8 +271,8 @@ and yet the logic is still broken. Let's see why.
 ## Panic Safety
 
 Yes, panic safety. Coming from a C++ background it's something that I should
-be much more mindful of but I usually forget to take it into account. The reason
-is that panics in Rust semantically are [very different](https://doc.rust-lang.org/std/panic/fn.catch_unwind.html)
+be much more mindful of, but I usually forget to take it into account. The reason
+is that panics in Rust are semantically [very different](https://doc.rust-lang.org/std/panic/fn.catch_unwind.html)
 from exceptions and the general advice is not to just catch them as you would
 catch exceptions in C++. And while by default a panic will unwind the stack and
 call destructors in an orderly fashion, that behavior can be changed to 
@@ -278,7 +281,7 @@ In essence, this is what makes it easy (at least for me) to  forget that code sh
 behave correctly even in case of a panic, whether or not a user relies on it or not.
 
 When the function `f` panics at some point during the loop there are three things
-we need to make sure [^forum-drop]: Firstly, need to call the destructors of all elements 
+we need to make sure [^forum-drop]: Firstly, we need to call the destructors of all elements 
 that have been transformed to type `U`. Secondly, we need to call the destructors
 of all the remaining elements of type `T` and thirdly we need to deallocate the
 storage of the vector to prevent a memory leak [^memleak]. One solution to do 
@@ -299,8 +302,10 @@ struct TransitioningVec<T, U> {
 }
 ```
 
-The union type is so that we can refer to an element as either of type `T` or
-`U`, but since we can't know which type it is we have to keep track of the number
+The union type is our way of allowing us to store the elements in a vector
+regardless of whether they are of type `T` or `U`. Then, when `vector` is dropped it
+will free the storage correctly, but it cannot call the destructors. We have to
+do that ourselves and for that we have to keep track of the number
 of elements `u_len` that have been transformed from `T` to `U`. The reason that
 we enclosed the types of the union fields in a `ManuallyDrop` is that the compiler
 cannot know which variant a union holds (since they are not tagged, like enums),
@@ -387,17 +392,17 @@ impl<T, U> TransitioningVec<T, U> {
     }
 }
 ```
-&#9312; This loop is the same as the one we had previously with the addition
-that we now keep track of the number of elements we have transformed. If 
+&#9312; This loop is conceptually identical to the one we had previously, but
+now we keep track of the number of elements we have transformed. If 
 the function `f` panics at any point, the destructor of our `TransitioningVec`
 instance will get invoked and destroy the elements appropriately and free
-the allocated storage allocated by the vector. &#9313; Here all elements
+the allocated storage allocated by dropping its `vector` field. &#9313; Here all elements
 have completed their transformation, so we
 are making sure that the destructor of our instance does not get called anymore
 and we return a `Vec<U>` that is now the sole owner of the transformed elements
 and the allocated storage.
 
-Since we don't want to expose this helper vector publicly, we hide it in the
+Since we don't want to expose this helper type publicly, we hide it in the
 `map_in_place` free function like so:
 
 ```rust
@@ -415,9 +420,9 @@ And voilà we're done... or are we?
 
 No. For example, we haven't handled [zero sized types](https://doc.rust-lang.org/beta/nomicon/exotic-sizes.html#zero-sized-types-zsts)
 yet. The code above implicitly assumes that the elements of the vector have a 
-nonzero size in memory. Read till the very end for a solution. And please 
-do reach out if there is more unsound code in my examples or mistakes in 
-my explanations. 
+nonzero size in memory. I think that is the last piece of the puzzle 
+to make this sound, but please do reach out if there is more 
+unsound code in my examples or mistakes in my explanations. 
 
 # Further Reading
 
@@ -426,7 +431,7 @@ me give you some reading recommendations if you want to dive deaper.
 If you've been following along with the endnotes you've already seen the 
 [forum post](https://users.rust-lang.org/t/is-my-highly-unsafe-code-correct-in-place-mapping-a-vector/96078)
 I made in which many helpful individuals were kind enough to point out mistakes
-and give helpful suggestions. And if you want to dive more into unsafe Rust
+and give helpful suggestions. I owe all of them a big thank-you. And if you want to dive more into unsafe Rust
 there is [this brilliant series](https://rust-unofficial.github.io/too-many-lists/)
 and of course [the Rustonomicon](https://doc.rust-lang.org/nomicon/) which provides
 a thorough treatise of unsafe Rust. Also a long time ago there used to exist 
@@ -448,7 +453,7 @@ v.into_iter().map(f).collect()
 
 Don't take my word for it, [try it on godbolt](https://rust.godbolt.org/z/KEGrT1Tjb).
 And yes, I know: you're not getting the 15 minutes of your life back (unless you
-scrolled ahead in which case shame on you). 
+scrolled ahead in which case shame on you &#128518;). 
 
 The iterator implementations are smart enough below the hood to specialize 
 implementations in case the types `T` and `U` have the same
@@ -465,7 +470,7 @@ This is truly a zero cost abstraction if I ever saw one.
 [^ub-unsafe]: To be clear, we can still introduce all kinds of UB ourselves by not being careful.
 [^no-way-arc-mutex]: Of course there are safe wrappers, like `Arc<Mutex<T>>` that serve a conceptually similar, but very different use case. If we want to manipulate data on a low level, pointers are what we want.
 [^safe-rust]: I also see this as an advantage because it means I can trust that someone else's code is free of many classes of bugs. That's great.
-[^unsafe-constructs]: Yes, I am referring to pointers as unsafe constructs. Yes, I know that you can _create_ them in safe code but you can't _use_ them so for all intents and purposes they are a language construct in unsafe land.
+[^unsafe-constructs]: Yes, I am referring to pointers as unsafe constructs. Yes, I know that you can _create_ them in safe code but you can't truly _use_ them, so for all intents and purposes they are a language construct in unsafe land.
 [^it-wasnt]: It was not. I'll link the full story further below.
 [^cast-mutability]: As pointed out by Rust forum member `H2CO3` [here](https://users.rust-lang.org/t/is-my-highly-unsafe-code-correct-in-place-mapping-a-vector/96078/9).
 [^drop-leak]: As pointed out by forum members `H2CO3` and `kpreid` independently [here](https://users.rust-lang.org/t/is-my-highly-unsafe-code-correct-in-place-mapping-a-vector/96078/5).
