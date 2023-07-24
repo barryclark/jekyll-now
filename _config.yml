@@ -9,7 +9,7 @@ name: Sebastian's architecture blog
 description: Software architecture, distributed systems, Kubernetes and other geekey stuff
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://github.com/nseba/nseba.github.io/blob/31d6cb2f961003829c99ff1c3aeef69fe1a6cac9/images/profile.png
+avatar: images/profile.png
 
 #
 # Flags below are optional
