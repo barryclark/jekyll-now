@@ -142,7 +142,7 @@ safe Rust are unbroken.
 
 ### Detecting Rule Violations
 
-At this point you might be wondering if there is any tools to help you detect rule
+At this point you might be wondering if there are any tools to help you detect rule
 violations and the answer is [Miri](https://github.com/rust-lang/miri). It is an
 analysis tool that can run your program or test suite and detect [certain kinds](https://github.com/rust-lang/miri#miri)
 of undefined behavior by using an interpreter for Rust's [mid-level IR](https://github.com/rust-lang/rfcs/blob/master/text/1211-mir.md).
@@ -263,7 +263,7 @@ must drop the value behind the pointer before assigning to it to avoid possible
 memory leaks [^drop-leak]. This would be a giant problem because the contained
 value would be dropped as if it was of type `U`, but is actually of type `T` [^drop-T].
 If we use `write` the pointed-to value does intentionally not get dropped. &#9316;
-Finally we piece a new vector of type `U` together from the transformed storage.
+Finally we piece a new `Vec<U>` together from the transformed storage.
 
 You can see that we already took care of a lot of details that are easy to miss
 and yet the logic is still broken. Let's see why.
@@ -278,7 +278,7 @@ catch exceptions in C++. And while by default a panic will unwind the stack and
 call destructors in an orderly fashion, that behavior can be changed to 
 [just abort](https://doc.rust-lang.org/book/ch09-01-unrecoverable-errors-with-panic.html).
 In essence, this is what makes it easy (at least for me) to  forget that code should
-behave correctly even in case of a panic, whether or not a user relies on it or not.
+behave correctly even in case of a panic, whether or not a user relies on it.
 
 When the function `f` panics at some point during the loop there are three things
 we need to make sure [^forum-drop]: Firstly, we need to call the destructors of all elements 
@@ -307,10 +307,10 @@ regardless of whether they are of type `T` or `U`. Then, when `vector` is droppe
 will free the storage correctly, but it cannot call the destructors. We have to
 do that ourselves and for that we have to keep track of the number
 of elements `u_len` that have been transformed from `T` to `U`. The reason that
-we enclosed the types of the union fields in a `ManuallyDrop` is that the compiler
+we enclosed the types of the union variants in a `ManuallyDrop` is that the compiler
 cannot know which variant a union holds (since they are not tagged, like enums),
 so it cannot call the appropriate destructors. Hence we are not allowed to use types that
-have nontrivial destructors as union fields. To create this helper structure
+have nontrivial destructors as union variants. To create this helper structure
 from our initial `Vec<T>` instance we write this constructor:
 
 ```rust
@@ -427,7 +427,7 @@ unsound code in my examples or mistakes in my explanations.
 # Further Reading
 
 Before we come to the long overdue end of this long winded article, let
-me give you some reading recommendations if you want to dive deaper. 
+me give you some reading recommendations if you want to dive deeper. 
 If you've been following along with the endnotes you've already seen the 
 [forum post](https://users.rust-lang.org/t/is-my-highly-unsafe-code-correct-in-place-mapping-a-vector/96078)
 I made in which many helpful individuals were kind enough to point out mistakes
@@ -435,16 +435,17 @@ and give helpful suggestions. I owe all of them a big thank-you. And if you want
 there is [this brilliant series](https://rust-unofficial.github.io/too-many-lists/)
 and of course [the Rustonomicon](https://doc.rust-lang.org/nomicon/) which provides
 a thorough treatise of unsafe Rust. Also a long time ago there used to exist 
-an unstable standard library API with the exact same purpose. You can look
-at it's long removed implementation
+an unstable standard library API with the exact same purpose (and name) as our
+`map_in_place`. You can look at it's long removed implementation
 [here](https://github.com/rust-lang/rust/blob/9a92aaf19a64603b02b4130fe52958cc12488900/src/libcollections/vec.rs#L787).
 
 # How To Do It Safely
 
-Okay. In the introduction I did mention that there was a better way of doing
+Okay. Somewhere further above I alluded to the fact that there was a better way of doing
 all this. One that does not require us to deal with the unsafe details first hand.
-But didn't I say that functionality was never stabilized and removed? Not quite,
-it just got subsumed somewhere else. So the way to do the in-place transformation
+But didn't I just write that `map_in_place` was never stabilized and the whole
+functionality got removed? Not quite,
+the magic happens somewhere else now. The way to do the in-place transformation
 of a vector in today's Rust (1.71 at the time of writing) is:
 
 ```rust
