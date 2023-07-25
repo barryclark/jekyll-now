@@ -16,6 +16,6 @@ Berdasarkan informasi di laman [Alumni UGM](https://alumni.ugm.ac.id/2023/07/20/
 
 ## Tutor Freelance
 
-![loker gama inovasi](http://siapkerjo.com/source/siapkerjocom/files/Poster-Loker-Radian-Edu-Solution_.jpg)
+![loker radian edu](http://siapkerjo.com/source/siapkerjocom/files/Poster-Loker-Radian-Edu-Solution_.jpg)
 
 <div class="apply"><a href="https://bit.ly/GuruRadian" target="_blank" rel="noopener noreferrer">Lamar posisi ini</a></div>
