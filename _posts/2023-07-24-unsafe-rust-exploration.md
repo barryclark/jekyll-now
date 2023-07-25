@@ -3,7 +3,7 @@ layout: post
 tags: rust unsafe
 #categories: []
 date: 2023-07-24
-last_updated:
+last_updated: 2023-07-24
 #excerpt: ''
 #description:
 #permalink:
@@ -128,7 +128,7 @@ problem is not that we have done something that the borrow checker would not
 allow us to do, the problem is that we have violated the aliasing rules of 
 the language when we used the powers bestowed upon us via the `unsafe` keyword. 
 In unsafe Rust, the compiler lets us work
-with raw pointers (which do not have aliasing rules) but it expects us
+with raw pointers (who are outside the scope of the borrow checker) but it expects us
 to still adhere to the rules of the language. In this case we have created two 
 mutable references to one piece of data, which breaks the aliasing rules.
 
@@ -423,6 +423,41 @@ yet. The code above implicitly assumes that the elements of the vector have a
 nonzero size in memory. I think that is the last piece of the puzzle 
 to make this sound, but please do reach out if there is more 
 unsound code in my examples or mistakes in my explanations. 
+
+### Update: More Mistakes
+
+What follows is a collection of additional problems pointed out by readers.
+
+#### Panic Double Drop 
+
+This one was pointed out by reddit user [u/MaxVerevkin](https://www.reddit.com/user/MaxVerevkin/)
+[here](https://www.reddit.com/r/rust/comments/158za7v/comment/jtcxkrb/?utm_source=share&utm_medium=web2x&context=3).
+Say the function `f` panics when we transform the element at index `n`. This
+means the `u_len` will hold the index `n` at which the panic occurred, since it would
+get incremented only after `f` returns. The element at this index will get
+dropped twice: once when the scope of the mapping function
+ends and once when we drop the slice of `T`s in the destructor. That's a problem.
+Their solution is to replace this line in the destructor
+
+```rust
+let t_slice: &mut [T] = std::slice::from_raw_parts_mut(
+    start.add(self.u_len).cast(),
+    self.vector.len() - self.u_len,
+);
+```
+with 
+
+```rust
+let t_slice: &mut [T] = std::slice::from_raw_parts_mut(
+    start.add(self.u_len + 1).cast(),
+    self.vector.len() - self.u_len - 1,
+);
+```
+
+This makes sense to me since the element at position `u_len` will have 
+been dropped as a `T` when the mapping function unwound its stack. Further,
+we can only enter the destructor of our helper when `vector.len() >= 1`
+and `u_len < len`.
 
 # Further Reading
 
