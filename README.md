@@ -5,7 +5,7 @@
 From admin command prompt:
 
 - `choco install jekyll` -- this failed with an error installing jekyll but did seem to install its dependencies
-- `gem install github-pages`
+- `gem install github-pages jemoji wdm`
 
 Open a regular command prompt, and type `jekyll -v` to check that it worked.
 

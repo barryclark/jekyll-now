@@ -6,7 +6,7 @@
 name: Avik De
 
 # Short bio or description (displayed in the header)
-description: Student for Life
+description: Roboticist
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/head.jpg
@@ -18,14 +18,14 @@ avatar: /images/head.jpg
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble: 
-  email: avikde@gmail.com
-  facebook: deavik
-  flickr: 
+  # email: avikde@gmail.com
+  # facebook: deavik
+  # flickr: 
   github: avikde
   instagram: deavik
   linkedin: avikde
-  pinterest: 
-  rss: blah # just type anything here for a working RSS icon, make sure you set the "url" above!
+  # pinterest: 
+  # rss: blah # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: avkde
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
