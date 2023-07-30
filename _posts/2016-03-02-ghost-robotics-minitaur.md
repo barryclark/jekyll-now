@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ghost Robotics and Minitaur
-categories: robots
+categories: ghost minitaur
 ---
 
 Part of the reason for the long hiatus from posting is that I've been supremely busy with a few things. One of them is that I've cofounded a robotics company!

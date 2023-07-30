@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Jerboa design paper - IROS 2018
-categories: [papers, travel]
+title: Jerboa design (IROS 2018)
+categories: papers travel jerboa
 ---
 
 What did we do here [Jerboa design paper](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=m-A4ZdEAAAAJ&citation_for_view=m-A4ZdEAAAAJ:HtS1dXgVpQUC)

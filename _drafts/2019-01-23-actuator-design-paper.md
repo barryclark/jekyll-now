@@ -1,7 +1,7 @@
 ---
 layout: post
-title: New paper - Task-based actuator design - ICRA/RAL 2019
-categories: [papers, travel]
+title: Task-based actuator design (ICRA/RAL 2019)
+categories: papers travel hardware
 ---
 
 Explain the paper

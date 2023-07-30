@@ -1,7 +1,7 @@
 ---
 layout: post
 title: IMU filtering on an STM32 + MPU6000
-categories: robots stm32
+categories: hardware
 ---
 
 For making [balancing robots](https://www.youtube.com/watch?v=XFXj81mvInc) (disclaimer: not my robot), you certainly need a good sense of the robot's orientation in the world. I had a disastrous experience a few months ago of trying to use a [$1500+ IMU](http://www.microstrain.com/inertial/3DM-GX3-25-OEM) which *breaks if your robot moves too fast*. Like, 300 degrees/sec, which is nothing for a relatively small, agile robot.

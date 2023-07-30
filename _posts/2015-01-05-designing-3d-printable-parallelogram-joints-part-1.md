@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Designing 3D-printable parallelogram joints&#58; part 1
-categories: robots mechanical
+categories: hardware
 ---
 
 To take full advantage of increasingly ubiquitous rapid-prototyping hardware (laser-cutter, 3D printer), you really need to know how to design your hardware in a way that plays to their strengths and weaknesses. 

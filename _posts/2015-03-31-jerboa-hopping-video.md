@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jerboa, a tailed bipedal hopping robot
-categories: robots
+categories: jerboa
 ---
 
 New robot video!

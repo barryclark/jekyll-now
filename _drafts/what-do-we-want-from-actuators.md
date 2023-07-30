@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What do we want from actuators?
-categories: robots
+categories: hardware
 ---
 
 Federer slide
