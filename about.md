@@ -4,11 +4,10 @@ title: About
 permalink: /about/
 ---
 
-I’m currently a postdoc at Harvard, as well as CTO at [Ghost Robotics](https://www.ghostrobotics.io/).
+I’m currently CTO at [Ghost Robotics](https://www.ghostrobotics.io/).
 
 ### More information
 
-My [lab homepage](https://scholar.harvard.edu/avikde) has more information about the work I do.
 
 Outside of lab (*...riiight*), I enjoy playing ultimate frisbee with [PADA](http://pada.org/), [fostering tiny kittens](/tags/#cats) and volunteering at [PAWS](http://phillypaws.org/). Please get in touch with me if you want to adopt a kitty friend!
 
@@ -16,10 +15,10 @@ I used to have pretty good (musical) keyboard chops (as much as you can without 
 
 ### Contact me
 
-Links are in the footer. :point_down:
+Links are in the footer.
 
 ### Travels
 
-I have traveled a fair amount in my life (perk of being a graduate student :wink:) and I decided to start documenting, because it reminds of the stories involved. 
+I have traveled a fair amount in my life (perk of being a graduate student) and I decided to start documenting, because it reminds of the stories involved. 
 
 <iframe src="https://mapsengine.google.com/map/embed?mid=zlxSfKtAshHA.kE_e2uZN5mTo" width="640" height="480"></iframe>

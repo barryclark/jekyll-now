@@ -9,8 +9,8 @@
 @import "_variables";
 // Syntax highlighting @import is at the bottom of this file
 
-@import url(http://fonts.googleapis.com/css?family=Lato);
-@import url(http://fonts.googleapis.com/css?family=PT+Mono);
+@import url(http://fonts.googleapis.com/css?family=Inter);
+@import url(http://fonts.googleapis.com/css?family=JetBrains+Mono);
 
 /**************/
 /* BASE RULES */
@@ -22,7 +22,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 12pt $helvetica;
   color: $darkGray;
 }
 
@@ -73,6 +73,8 @@ h4 {
 
 p {
   margin: 15px 0;
+  line-height: 1.5em;
+  text-align: justify;
 }
 
 a {
@@ -81,6 +83,9 @@ a {
 	cursor: pointer;
   &:hover, &:active {
     color: $blue;
+    background-color: $yellow;
+    text-decoration: underline;
+    text-underline-offset: 5px;
   }
 }
 

@@ -2,17 +2,30 @@
 layout: default
 ---
 
+<article class="post">
+  
+  <h1>Hello</h1>
+
+  <div class="entry">
+    Welcome to my website. The <a href="{{ site.baseurl }}/about">about</a> page talks more about me, updates will appear below:
+  </div>
+  
+  <h1>Updates</h1>
+</article>
+
+
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">    
       
-      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      {% for category in post.categories %}
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <!-- {% for category in post.categories %}
       <a class="tag_box" href="/tags/#{{ category }}">#{{ category }}</a>
-      {% endfor %}</h3>
+      {% endfor %} -->
+      </h2>
 
       <div class="entry">
-        <!-- {{ post.content | truncatewords:40 }} -->
+        <!-- {{ post.content | truncatewords:200 }} -->
         {{ post.excerpt }}
 
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
