@@ -34,6 +34,9 @@ I have also given a number of invited talks separate from conference paper prese
 - 2021/02 [IFRR quadruped robotics colloquium](http://ifrr.org/quadruped-robotics) - [State of the art in quadrupedal robotics](ifrr-colloquium)
 - 2020/07 [RSS contact workshop](http://mlab.ri.cmu.edu/reacting_contact_workshop/) - [Reacting to contact](https://youtu.be/al8xvj2-YLY)
 - 2020/07 [ICRA legged workshop](https://sites.google.com/view/leggedrobotworkshop2020) - [Designing power-efficient quadrupedal robots for commercial applications at Ghost Robotics](https://youtu.be/30kZT3RTFpI)
+- 2019/09 GRASP 40 year celebration - [Perspective on Academia vs. Industry](/academia-industry)
+- 2019/07 ACC templates workshop - Optimal Control Synthesis via Compositions of Reduced-Order Models (Templates)
+- 2019/05 [ICRA legged workshop](https://icra2019wslocomotion.wordpress.com/) - Connecting Today’s Applications for Commercial Legged Robots to their Design and Control
 
 Lastly, one thing I try to be proud of is my service to the reviewer community. Peer review isn't a perfect system, but it's the best system we have, and we all need to take pride in our efforts there to justify the time we volunteer to it.
 

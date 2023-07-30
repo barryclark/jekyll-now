@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Perspective on Academia vs. Industry
-categories: talk
+categories: academia talk
 ---
 
 Everyone thought I was going to be a professor.
