@@ -37,6 +37,7 @@ I have also given a number of invited talks separate from conference paper prese
 - 2019/09 GRASP 40 year celebration - [Perspective on Academia vs. Industry](/academia-industry)
 - 2019/07 ACC templates workshop - Optimal Control Synthesis via Compositions of Reduced-Order Models (Templates)
 - 2019/05 [ICRA legged workshop](https://icra2019wslocomotion.wordpress.com/) - Connecting Today’s Applications for Commercial Legged Robots to their Design and Control
+- 2018/10 [IROS templates workshop](https://iros18wsdll.netlify.app/talks/) - [Template Composition for Synthesis of New Behaviors from Simpler Constituents](https://speakerdeck.com/avikde/template-composition-for-synthesis-of-new-behaviors-from-simpler-constituents)
 
 Lastly, one thing I try to be proud of is my service to the reviewer community. Peer review isn't a perfect system, but it's the best system we have, and we all need to take pride in our efforts there to justify the time we volunteer to it.
 
