@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Task-based actuator design (ICRA/RAL 2019)
-categories: papers travel hardware
+categories: papers travel hardware talk
 ---
 
 Link to paper: [Task-based control and design of a BLDC actuator for robotics](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=m-A4ZdEAAAAJ&sortby=pubdate&citation_for_view=m-A4ZdEAAAAJ:bKqednn6t2AC)
