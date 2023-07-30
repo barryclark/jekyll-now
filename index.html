@@ -4,7 +4,7 @@ layout: default
 
 <article class="post">
   
-  <h1>Hello</h1>
+  <h1>🏠 Hello</h1>
 
   <div class="entry">
     <p>Welcome to my website.</p>
@@ -14,7 +14,7 @@ layout: default
     <p>The <a href="{{ site.baseurl }}/tags">all posts</a> page lists all the posts by topic.</p>
   </div>
   
-  <h1>Latest Updates</h1>
+  <h1>📰 Latest Posts</h1>
 </article>
 
 
@@ -22,14 +22,12 @@ layout: default
   {% for post in site.posts limit:5 %}
     <article class="post">    
       
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </h2>
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
       <div class="entry">
         <!-- {{ post.content | truncatewords:200 }} -->
         {{ post.excerpt }}
 
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
       </div>
       
       <div class="date">
@@ -38,7 +36,14 @@ layout: default
         {% for category in post.categories %}
         <a class="tag_box" href="/tags/#{{ category }}">#{{ category }}</a>
         {% endfor %}
+
+        
+        <a href="{{ site.baseurl }}{{ post.url }}">Read more 🡒</a>
       </div>
     </article>
   {% endfor %}
 </div>
+
+<article class="post">    
+<h2><a href="{{ site.baseurl }}/tags" class="read-more">Older Posts...</a></h2>
+</article>

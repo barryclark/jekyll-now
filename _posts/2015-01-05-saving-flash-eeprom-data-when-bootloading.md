@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Saving EEPROM data when bootloading on STM32
-categories: stm32
+categories: hardware
 ---
 
 TL;DR: This [modified version of stm32loader.py](https://github.com/avikde/koduino/blob/master/stm32/system/stm32loader.py) takes extra parameters for EEPROM location and can automatically save and reload EEPROM data when reprogramming the microcontroller!
