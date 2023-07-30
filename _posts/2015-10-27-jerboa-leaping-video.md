@@ -1,8 +1,10 @@
 ---
 layout: post
-title: Jerboa leaping video
-categories: jerboa
+title: Jerboa leaping paper (IROS 2015)
+categories: jerboa papers
 ---
+
+[paper](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=m-A4ZdEAAAAJ&sortby=pubdate&citation_for_view=m-A4ZdEAAAAJ:IRz6iEL74y4C)
 
 After dabbling at some [boom-assisted steady-state hopping]({% post_url 2015-03-31-jerboa-hopping-video %}), Jerboa is now trying out transitional behaviors in 3D!
 

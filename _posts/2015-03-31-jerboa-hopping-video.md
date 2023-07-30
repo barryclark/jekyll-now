@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Jerboa, a tailed bipedal hopping robot
+title: Jerboa parallel composition paper (ICRA 2015)
 categories: jerboa
 ---
 
-New robot video!
+New robot video and [paper](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=m-A4ZdEAAAAJ&sortby=pubdate&citation_for_view=m-A4ZdEAAAAJ:_5tno0g5mFcC)!
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/wvYthkpRFfk" frameborder="0" allowfullscreen></iframe>
 

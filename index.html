@@ -7,21 +7,22 @@ layout: default
   <h1>Hello</h1>
 
   <div class="entry">
-    Welcome to my website. The <a href="{{ site.baseurl }}/about">about</a> page talks more about me, updates will appear below:
+    <p>Welcome to my website.</p>
+    
+    <p>The <a href="{{ site.baseurl }}/about">about</a> page talks more about me.</p>
+    
+    <p>The <a href="{{ site.baseurl }}/tags">all posts</a> page lists all the posts by topic.</p>
   </div>
   
-  <h1>Updates</h1>
+  <h1>Latest Updates</h1>
 </article>
 
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:5 %}
     <article class="post">    
       
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      <!-- {% for category in post.categories %}
-      <a class="tag_box" href="/tags/#{{ category }}">#{{ category }}</a>
-      {% endfor %} -->
       </h2>
 
       <div class="entry">
@@ -33,6 +34,10 @@ layout: default
       
       <div class="date">
         {{ post.date | date: "%B %e, %Y" }}
+        
+        {% for category in post.categories %}
+        <a class="tag_box" href="/tags/#{{ category }}">#{{ category }}</a>
+        {% endfor %}
       </div>
     </article>
   {% endfor %}
