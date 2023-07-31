@@ -6,7 +6,7 @@ permalink: /about/
 
 ![Avik De](/images/Avik-De.jpg)
 
-I'm a co-founder and CTO of [Ghost Robotics](https://www.ghostrobotics.io/), a startup company commercializing legged robotics in Philadelphia. The company currently has two products, a 45kg quadruped aimed at industrial applications, and a 12kg quadruped aimed at research applications. 
+I'm a co-founder and CTO of [Ghost Robotics](https://www.ghostrobotics.io/) ([YouTube](https://www.youtube.com/channel/UCG4Xp4nghgyWK4ud5Xbo-4g), [Twitter](https://twitter.com/Ghost_Robotics)), a startup company commercializing legged robotics in Philadelphia. The company currently has two products, a 45kg quadruped aimed at industrial applications, and a 12kg quadruped aimed at research applications. 
 
 Previously, I completed a postdoc at [Harvard's microrobotics lab](https://www.micro.seas.harvard.edu/) advised by Rob Wood, where I researched design of micro-scale flapping robots, as well as strategies for their control. 
 
@@ -33,8 +33,8 @@ For a more complete list of papers, see [my Google scholar page](https://scholar
 ### 🏢 Work experience excluding teaching
 
 - Ghost Robotics Corp. Co-founder & CTO. Co-founded a company commercializing legged robots. Responsibilities include 
-assembling an engineering team starting from the two co-founders to 30+, mobility algorithms for robust deployment, architecting
-and implementing the electrical/computing subsystem (comprised of mass-manufacturable custom electronics), firmware and low-level software. [YouTube](https://www.youtube.com/channel/UCG4Xp4nghgyWK4ud5Xbo-4g), [Twitter](https://twitter.com/Ghost_Robotics).
+assembling an engineering team starting from the two co-founders to 45+, mobility algorithms for robust deployment, architecting
+and implementing the electrical/computing subsystem (comprised of mass-manufacturable custom electronics), firmware and low-level software.
 2015--now
 - LIMBS lab (Noah Cowan), JHU. Undergrad research assistant: neuromechanical control of juggling; SLAM on graphs. This part-time research resulted in a conference paper (WAFR 2008), a master’s thesis, and a 3rd author journal paper.
 2007--10 
@@ -88,7 +88,7 @@ I have also given a number of invited talks separate from conference paper prese
 - UPenn guest lecturer. ESE 512 (graduate dynamical systems), MEAM 517 (Control and Optimization with Applications in
 Robotics), MEAM 520 (Intro to Robotics)
 2017--now 
-- UPenn/Coursera instructor. Robotics specialization instructor for Mobility, Capstone courses; developed curriculum 
+- UPenn/Coursera instructor. Robotics specialization instructor for [Mobility](https://www.coursera.org/learn/robotics-mobility?specialization=robotics), [Capstone](https://www.coursera.org/learn/robotics-capstone?specialization=robotics) courses; developed curriculum 
 including topics like how animals and robots are designed and how they move, linearized control and balancing a 
 mobile inverted pendulum
 2016
@@ -97,7 +97,7 @@ mobile inverted pendulum
 - Animal welfare. Volunteer at Philadelphia Animal Welfare Society (PAWS); cat fostering 2014--now 
 - [Hopkins Baja, JHU](https://baja.jhu.edu/). Team captain of an engineering design team creating a single-seat offroad vehicle for an SAE-organized collegiate competition; suspension and steering design lead
 2006--10 
-- JH Math Club, JHU. Part of JHU Putnam team; contributed problems to JH math tournament for HS students 2006--09
+- JH Math Club, JHU. Part of JHU [Putnam](https://www.maa.org/math-competitions/william-lowell-putnam-mathematical-competition) team; contributed problems to JH math tournament for HS students 2006--09
 ASME chapter, JHU. Secretary/treasurer 2006--10
 
 ### ⚙️ Engineering skills
