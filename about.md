@@ -14,13 +14,15 @@ I received my PhD in Sep 2017, at the GRASP laboratory ([Kodlab](https://kodlab.
 
 The main thread tying all of my work has been bio-inspired design and control strongly anchored in empirical robotics. My research has focused on examining the strengths and weaknesses of modular and hierarchical control strategies, as well as demonstrating efficient and effective control of dynamic locomotion in a way that generalizes across platforms (quadruped, tailed biped, …) and behaviors (hopping, running, …).
 
-### 🎓 Academia
+## 🎓 CV
 
 I talk a bit about some of my academic work on this website - see [all the posts on papers](/tags#papers).
 
 In the posts on this website, I try to communicate some of the content of the papers in simpler intuitive language with the hope that it will help and inspire readers. 
 
 For a more complete list of papers, see [my Google scholar page](https://scholar.google.com/citations?user=m-A4ZdEAAAAJ&hl=en).
+
+### Invited talks
 
 I have also given a number of invited talks separate from conference paper presentations, some of which I've written posts about:
 
@@ -39,12 +41,15 @@ I have also given a number of invited talks separate from conference paper prese
 - 2019/05 [ICRA legged workshop](https://icra2019wslocomotion.wordpress.com/) - Connecting Today’s Applications for Commercial Legged Robots to their Design and Control
 - 2018/10 [IROS templates workshop](https://iros18wsdll.netlify.app/talks/) - [Template Composition for Synthesis of New Behaviors from Simpler Constituents](https://speakerdeck.com/avikde/template-composition-for-synthesis-of-new-behaviors-from-simpler-constituents)
 
-Lastly, one thing I try to be proud of is my service to the reviewer community. Peer review isn't a perfect system, but it's the best system we have, and we all need to take pride in our efforts there to justify the time we volunteer to it.
+### Activities, teaching, and service
 
+- Lastly, one thing I try to be proud of is my service to the reviewer community. Peer review isn't a perfect system, but it's the best system we have, and we all need to take pride in our efforts there to justify the time we volunteer to it.
 
 ![reviewer_awards](/images/reviewer_awards.png)
 
-### ⚽ Hobbies
+- **Mentoring**
+
+## ⚽ Hobbies
 
 It is pretty tough to keep up with all my hobbies, but I'm doing my best.
 
@@ -62,6 +67,6 @@ I have traveled a fair amount in my life (perk of being a graduate student) and 
 
 <iframe src="https://mapsengine.google.com/map/embed?mid=zlxSfKtAshHA.kE_e2uZN5mTo" width="640" height="480"></iframe> -->
 
-### 📞 Contact me
+## 📞 Contact me
 
 Links are in the footer. If you'd like to get in touch with me, feel free to DM me on Twitter/X.
