@@ -70,6 +70,19 @@ I have also given a number of invited talks separate from conference paper prese
 - 2019/05 [ICRA legged workshop](https://icra2019wslocomotion.wordpress.com/) - Connecting Today’s Applications for Commercial Legged Robots to their Design and Control
 - 2018/10 [IROS templates workshop](https://iros18wsdll.netlify.app/talks/) - [Template Composition for Synthesis of New Behaviors from Simpler Constituents](https://speakerdeck.com/avikde/template-composition-for-synthesis-of-new-behaviors-from-simpler-constituents)
 
+Tail design and control for a tail- and hip-energized and -stabilized bipedal hopping robot -- RSS 2018 workshop on "[Unusual appendages: novel, multi-modal, or multi-functional uses for limbs, tails, and other body parts](https://www.cmu.edu/me/robomechanicslab/ws/rss2018.html)"
+July 2018
+[Toward robust locomotion subject to variations in robot scale, mass, payload, and environmental conditions](https://kodlab.seas.upenn.edu/wp-content/uploads/2018/06/icra18_multilegged_workshop.pdf) -- [ICRA 2018 multilegged robots workshop](https://research.csiro.au/robotics/multilegged-robots-workshop-icra2018/)
+May 2018
+[Platform design using dynamic motor, electronics, and transmission models](https://kodlab.seas.upenn.edu/wp-content/uploads/2018/06/icra18_actuator_workshop.pdf) -- [ICRA 2018 actuator workshop](https://torquecontrolledactuatorcriteria.wordpress.com/invited-speakers/) May 2018
+Modular hopping and running (for biologists and engineers). UC Berkeley biomechanics seminar Oct 2017
+Stable hopping and running from compositions of dynamical primitives. UMichigan, JHU Jun 2017
+Anchored Behaviors from Template Compositions. CMU bipedal seminar; UW seminar Feb 2017
+Mechanically Simple, Behaviorally Versatile Quadrupeds. (with G. Kenneally) TRI (Palo Alto, CA), Google (Mountain View) Feb 2017
+Sequential, Parallel and Symbolic Compositions. UPenn ESE PhD Colloquium (Fall 2015) 2015
+Anchor synthesis via template composition. AMAM 2015 in Boston, MA. 2015
+
+
 ### 🧑‍🏫 Activities, teaching, and service
 
 - Lastly, one thing I try to be proud of is my service to the reviewer community. Peer review isn't a perfect system, but it's the best system we have, and we all need to take pride in our efforts there to justify the time we volunteer to it.
