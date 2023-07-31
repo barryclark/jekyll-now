@@ -270,6 +270,18 @@ nav {
 		color: white;
 		background-color: $color;
 	}
+	* {
+		display: none;
+	}
+	.prev,
+	.next,
+	.truncate,
+	span,
+	span + a,
+	a:last-child(-1),
+	a:last-child(-2) {
+		display: inline-block;
+	}
 }
 
 .banner-below-header {
