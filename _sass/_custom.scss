@@ -258,7 +258,7 @@ nav {
 		margin-right: .25rem;
 		margin-bottom: .5rem;
 	}
-	a {
+	a, .truncate {
 		color: $darkGray;
 		background-color: $lightGray;
 		&:hover {
@@ -270,11 +270,9 @@ nav {
 		color: white;
 		background-color: $color;
 	}
-	.prev,
-	.next,
-	.truncate,
-	span,
-	span + a {
+	.prev, .next, .truncate,
+	span, span + a,
+	a:nth-last-child(2), a:nth-last-child(3) {
 		display: inline-block;
 	}
 }
