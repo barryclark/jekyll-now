@@ -272,6 +272,7 @@ nav {
 	}
 	.truncate {
 		pointer-events: none;
+		margin-left: 5px;
 	}
 	.prev, .next, .truncate,
 	span, span:not(.truncate) + a,
