@@ -44,6 +44,7 @@ and implementing the electrical/computing subsystem (comprised of mass-manufactu
 
 ### 🏆 Honors and awards
 
+- Outstanding reviewer awards: [RAL](/assets/best_reviewer_award_icra18.pdf), [Bioinspriation & Biomimetics](/assets/outstanding_reviewer_bb.pdf), [IOP publishing](/assets/J-VAR-CE-0920-Trusted-Reviewer-1405.pdf)
 - Best Doctoral Dissertation Award for the 2017-2018 Academic Year. UPenn Electrical and Systems Engineering dept. 2018
 - James S. McDonnell Postdoctoral Fellowship Winner. $200,000 award for 2-3 years. 2017
 - Robert George Gerstmeyer Award. For academic achievement (JHU Mech. Engg. Department) 2008--09 
@@ -69,28 +70,20 @@ I have also given a number of invited talks separate from conference paper prese
 - 2019/07 ACC templates workshop -- Optimal Control Synthesis via Compositions of Reduced-Order Models (Templates)
 - 2019/05 [ICRA legged workshop](https://icra2019wslocomotion.wordpress.com/) -- Connecting Today’s Applications for Commercial Legged Robots to their Design and Control
 - 2018/10 [IROS templates workshop](https://iros18wsdll.netlify.app/talks/) -- [Template Composition for Synthesis of New Behaviors from Simpler Constituents](https://speakerdeck.com/avikde/template-composition-for-synthesis-of-new-behaviors-from-simpler-constituents)
-
-Tail design and control for a tail- and hip-energized and -stabilized bipedal hopping robot -- RSS 2018 workshop on "[Unusual appendages: novel, multi-modal, or multi-functional uses for limbs, tails, and other body parts](https://www.cmu.edu/me/robomechanicslab/ws/rss2018.html)"
-July 2018
-[Toward robust locomotion subject to variations in robot scale, mass, payload, and environmental conditions](https://kodlab.seas.upenn.edu/wp-content/uploads/2018/06/icra18_multilegged_workshop.pdf) -- [ICRA 2018 multilegged robots workshop](https://research.csiro.au/robotics/multilegged-robots-workshop-icra2018/)
-May 2018
-[Platform design using dynamic motor, electronics, and transmission models](https://kodlab.seas.upenn.edu/wp-content/uploads/2018/06/icra18_actuator_workshop.pdf) -- [ICRA 2018 actuator workshop](https://torquecontrolledactuatorcriteria.wordpress.com/invited-speakers/) May 2018
-Modular hopping and running (for biologists and engineers). UC Berkeley biomechanics seminar Oct 2017
-Stable hopping and running from compositions of dynamical primitives. UMichigan, JHU Jun 2017
-Anchored Behaviors from Template Compositions. CMU bipedal seminar; UW seminar Feb 2017
-Mechanically Simple, Behaviorally Versatile Quadrupeds. (with G. Kenneally) TRI (Palo Alto, CA), Google (Mountain View) Feb 2017
-Sequential, Parallel and Symbolic Compositions. UPenn ESE PhD Colloquium (Fall 2015) 2015
-Anchor synthesis via template composition. AMAM 2015 in Boston, MA. 2015
-
+- 2018/06 [RSS 2018 tails workshop](https://www.cmu.edu/me/robomechanicslab/ws/rss2018.html) -- Tail design and control for a tail- and hip-energized and -stabilized bipedal hopping robot
+- 2018/05 [ICRA actuator workshop](https://torquecontrolledactuatorcriteria.wordpress.com/) -- Platform design using dynamic motor, electronics, and transmission models
+- 2018/05 [ICRA 2018 multilegged robots workshop](https://research.csiro.au/robotics/multilegged-robots-workshop-icra2018/) -- [Toward robust locomotion subject to variations in robot scale, mass, payload, and environmental conditions](https://kodlab.seas.upenn.edu/wp-content/uploads/2018/06/icra18_multilegged_workshop.pdf)
+- 2017/10 UC Berkeley biomechanics seminar -- Modular hopping and running (for biologists and engineers)
+- 2017/06 UMichigan, JHU seminar series -- Stable hopping and running from compositions of dynamical primitives
+- 2017/02 CMU bipedal seminar; UW seminar -- Anchored Behaviors from Template Compositions
+- 2017/02 TRI (Palo Alto, CA), Google (Mountain View) -- Mechanically Simple, Behaviorally Versatile Quadrupeds
+- 2017/01 Neuroscience meeting (Tulane) -- [Reactive coordination: stabilizing common quadrupedal gaits without CPGs](https://speakerdeck.com/avikde/reactive-coordination-stabilizing-common-quadrupedal-gaits-without-cpgs)
+- 2015/10 Fall UPenn ESE PhD Colloquium -- Sequential, Parallel and Symbolic Compositions
+- 2015/06 AMAM 2015 (Cambridge, MA) -- [Anchor synthesis via template composition](/amam-2015-talk)
 
 ### 🧑‍🏫 Activities, teaching, and service
 
-- Lastly, one thing I try to be proud of is my service to the reviewer community. Peer review isn't a perfect system, but it's the best system we have, and we all need to take pride in our efforts there to justify the time we volunteer to it.
-
-![reviewer_awards](/images/reviewer_awards.png)
-
-Reviewer. IJRR, Bioinspiration & Biomimetics, Automatica, T/RO, RA/L, European Journal of Physics, Control Engineering 
-Practice, ICAR, ICHR, ICRA, IFACWC, IROS, SYROCO, WAFR, MCA, Autonomous Robots
+- Reviewer. IJRR, Bioinspiration & Biomimetics, Automatica, T/RO, RA/L, European Journal of Physics, Control Engineering Practice, ICAR, ICHR, ICRA, IFACWC, IROS, SYROCO, WAFR, MCA, Autonomous Robots. Peer review isn't a perfect system, but it's the best system we have, and we all need to take pride in our efforts there to justify the time we volunteer to it. 
 - Mentoring. Mentored undergraduate, masters, and junior PhD students to write papers accepted to ICRA/IROS 2013--18
 - UPenn guest lecturer. ESE 512 (graduate dynamical systems), MEAM 517 (Control and Optimization with Applications in
 Robotics), MEAM 520 (Intro to Robotics)
@@ -102,23 +95,21 @@ mobile inverted pendulum
 - UPenn TA. TA for ESE 201 (undergraduate dynamical systems), ESE 512 (graduate dynamical systems) 2011--12 
 - Outreach. Two-time volunteer / judge at Penn First Lego League (FLL) 2014--16 
 - Animal welfare. Volunteer at Philadelphia Animal Welfare Society (PAWS); cat fostering 2014--now 
-- Hopkins Baja, JHU. Team captain of an engineering design team creating a single-seat offroad vehicle for an SAEorganized collegiate competition; suspension and steering design lead
+- [Hopkins Baja, JHU](https://baja.jhu.edu/). Team captain of an engineering design team creating a single-seat offroad vehicle for an SAE-organized collegiate competition; suspension and steering design lead
 2006--10 
 - JH Math Club, JHU. Part of JHU Putnam team; contributed problems to JH math tournament for HS students 2006--09
 ASME chapter, JHU. Secretary/treasurer 2006--10
 
 ### ⚙️ Engineering skills
 
-- Electrical. PCB schematic&layout (2/4-layer boards); high-power electronics including brushless motor controllers capable of 1.5KW 
+- Electrical. PCB schematic&layout; high-power electronics including brushless motor controllers capable of 1.5KW 
 (continuous), >10KW (peak); versatile Cortex A53/M7 hybrid architecture mainboards for robot control 
 - Firmware. Experience designing and implementing multi-processor real-time robotic control systems; created an Arduino-like set of libraries for 
-STM32F3/4 microcontrollers (open-source “Koduino” repository); extensive experience with Cortex-M4/M7 microcontrollers; communication 
+STM32F3/4 microcontrollers (open-source [Koduino repository](https://github.com/avikde/koduino)); extensive experience with Cortex-M4/M7 microcontrollers; communication 
 protocols (EtherCAT, Ethernet, USB, RS485 9-bit addressing multiprocessor communication, USART, SPI, I2C); RT Linux; advanced motor control 
 (FOC, field-weakening, etc.).
-- Software. Architecture and implementation of Ghost Robotics robot and mobility software and SDK; simulation environments
-- Mechanical. CAD (SolidWorks); overall design of the Penn Jerboa and Delta Hopper robots; designed a lightweight 2DOF spherical joint for 
-Jerboa tail using parallel motors at the base and a linkage; designed a 3DOF parallel leg for Delta hopper; designed chassis, suspension, and steering 
-for a single-seat 200 kg Baja SAE offroad vehicle
+- Software. Architecture and implementation of [Ghost Robotics](https://www.ghostrobotics.io/) robot and mobility software and SDK; high-performance concurrent C++ running on embedded platforms for real-time control; physics simulation with [Bullet physics](https://github.com/bulletphysics/bullet3)
+- Mechanical. Overall design of the Penn Jerboa and Delta Hopper robots, high-level design of Ghost Robotics robots; chassis, suspension, and steering design for a single-seat 200 kg Baja SAE offroad vehicle
 
 ## ⚽ Hobbies
 

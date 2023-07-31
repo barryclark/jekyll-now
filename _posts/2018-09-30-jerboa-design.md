@@ -4,7 +4,9 @@ title: Jerboa design (IROS 2018)
 categories: papers travel jerboa
 ---
 
-What did we do here [Jerboa design paper](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=m-A4ZdEAAAAJ&citation_for_view=m-A4ZdEAAAAJ:HtS1dXgVpQUC)
+Paper link [Jerboa design paper](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=m-A4ZdEAAAAJ&citation_for_view=m-A4ZdEAAAAJ:HtS1dXgVpQUC)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8Vz-5esao7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Traveling in Spain
 
