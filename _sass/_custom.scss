@@ -274,9 +274,7 @@ nav {
 	.next,
 	.truncate,
 	span,
-	span + a,
-	a:last-child(1),
-	a:last-child(2) {
+	span + a {
 		display: inline-block;
 	}
 }
