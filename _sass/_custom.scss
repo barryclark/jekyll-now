@@ -252,7 +252,7 @@ nav {
 		text-align: left;
 	}
 	a, span {
-		display: inline-block;
+		display: none;
 		padding: .5rem 1rem;
 		border-radius: .5rem;
 		margin-right: .25rem;
@@ -270,16 +270,13 @@ nav {
 		color: white;
 		background-color: $color;
 	}
-	* {
-		display: none;
-	}
 	.prev,
 	.next,
 	.truncate,
 	span,
 	span + a,
-	a:last-child(-1),
-	a:last-child(-2) {
+	a:last-child(1),
+	a:last-child(2) {
 		display: inline-block;
 	}
 }
