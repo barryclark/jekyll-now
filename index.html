@@ -122,15 +122,21 @@ layout: default
   </div>
   <script>
   	document.querySelectorAll('.pagination').forEach(item => {
-  		let total = item.querySelectorAll('*').length
-  			truncate = item.querySelector('span:not(.truncate)+a')
-  			span = document.createElement('span')
-  			span.classList.add('truncate')
-  			span.innerHTML = '...'
-  		if ( total >= 6 ) {
-  			truncate.insertAdjacentElement('afterend',span)
-  		}
-  	})
+    	let total = item.querySelectorAll('*').length
+    		position = item.querySelectorAll('span:not(.truncate)~a').length
+    		targetBefore = item.querySelector('span:not(.truncate)')
+    		targetAfter = item.querySelector('span:not(.truncate)+a')
+    		span = document.createElement('span')
+    		span.classList.add('truncate')
+    		span.innerHTML = '...'
+    	if ( total >= 6 ) {
+    		if ( position <= 3 ) {
+    			targetBefore.insertAdjacentElement('beforebegin',span)
+    		} else {
+    			targetAfter.insertAdjacentElement('afterend',span)
+    		}
+    	}
+    })
   </script>
   {% endif %}
 </div>
