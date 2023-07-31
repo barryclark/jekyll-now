@@ -42,25 +42,25 @@ layout: default
       e.preventDefault()
       if ( document.getElementById('search-input').value !== '' ) {
         sjs.search(document.getElementById('search-input').value)
+        document.getElementById('search-banner').style.display = 'inline'
+        document.getElementById('main-banner').style.display = 'none'
         if ( document.getElementById('search-result').querySelectorAll('.post').length > 0 ) {
           document.getElementById('posts').style.display = 'none'
           document.getElementById('search-count').style.display = 'block'
           document.getElementById('search-count').querySelector('span').innerText = document.getElementById('search-result').querySelectorAll('.post').length
           document.getElementById('search-result').style.marginTop = '0'
-          document.getElementById('search-banner').style.display = 'inline'
-          document.getElementById('main-banner').style.display = 'none'
         } else {
           document.getElementById('posts').style.display = 'none'
           document.getElementById('search-count').style.display = 'none'
           document.getElementById('search-result').style.marginTop = '2rem'
-          document.getElementById('search-banner').style.display = 'none'
-          document.getElementById('main-banner').style.display = 'inline'
         }
       } else {
         document.getElementById('posts').style.display = 'block'
         document.getElementById('search-count').style.display = 'none'
         document.getElementById('search-result').style.marginTop = '0'
         document.getElementById('search-result').innerHTML = ''
+        document.getElementById('search-banner').style.display = 'none'
+        document.getElementById('main-banner').style.display = 'inline'
       }
     })
 
