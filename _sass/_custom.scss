@@ -270,6 +270,9 @@ nav {
 		color: white;
 		background-color: $color;
 	}
+	.truncate {
+		pointer-events: none;
+	}
 	.prev, .next, .truncate,
 	span, span:not(.truncate) + a,
 	a:nth-last-child(2), a:nth-last-child(3) {
