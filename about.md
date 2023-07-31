@@ -24,51 +24,51 @@ For a more complete list of papers, see [my Google scholar page](https://scholar
 
 ### 🎓 Education
 
-- Postdoctoral fellow. Harvard University, Cambridge, MA. Advisor: Dr. Rob Wood. 2019—2020.
-- Postdoctoral fellow. University of Pennsylvania, Philadelphia, PA. Advisor: Dr. Daniel E. Koditschek. 2017—2018.
-- Ph.D. University of Pennsylvania, Philadelphia, PA. Advisor: Dr. Daniel E. Koditschek. Ph.D. thesis: [Modular Hopping and Running via Parallel Composition](http://repository.upenn.edu/ese_papers/794/). 2010—2017.
+- Postdoctoral fellow. Harvard University, Cambridge, MA. Advisor: Dr. Rob Wood. 2019--2020.
+- Postdoctoral fellow. University of Pennsylvania, Philadelphia, PA. Advisor: Dr. Daniel E. Koditschek. 2017--2018.
+- Ph.D. University of Pennsylvania, Philadelphia, PA. Advisor: Dr. Daniel E. Koditschek. Ph.D. thesis: [Modular Hopping and Running via Parallel Composition](http://repository.upenn.edu/ese_papers/794/). 2010--2017.
 - M.S. (Mech Engg), B.S. (Engg Mech), B.S. (Appl Math). Johns Hopkins Univ, Baltimore, MD. Advisors: Dr. Noah J. Cowan
-(research), Dr. Alison Okamura (academic); GPA: 3.96/4.00; M.S. thesis: [Neuromechanical Control of Paddle Juggling](https://jscholarship.library.jhu.edu/handle/1774.2/34135). 2006—2010.
+(research), Dr. Alison Okamura (academic); GPA: 3.96/4.00; M.S. thesis: [Neuromechanical Control of Paddle Juggling](https://jscholarship.library.jhu.edu/handle/1774.2/34135). 2006--2010.
 
 ### 🏢 Work experience excluding teaching
 
 - Ghost Robotics Corp. Co-founder & CTO. Co-founded a company commercializing legged robots. Responsibilities include 
 assembling an engineering team starting from the two co-founders to 30+, mobility algorithms for robust deployment, architecting
 and implementing the electrical/computing subsystem (comprised of mass-manufacturable custom electronics), firmware and low-level software. [YouTube](https://www.youtube.com/channel/UCG4Xp4nghgyWK4ud5Xbo-4g), [Twitter](https://twitter.com/Ghost_Robotics).
-2015—now
+2015--now
 - LIMBS lab (Noah Cowan), JHU. Undergrad research assistant: neuromechanical control of juggling; SLAM on graphs. This part-time research resulted in a conference paper (WAFR 2008), a master’s thesis, and a 3rd author journal paper.
-2007—10 
-- Advanced Academic Programs, JHU. Web/database developer (Coldfusion/SQL). 2006—10 
-- Academic Advising, JHU. Tutor (Physics I/II, Calculus I/II/III). 2007—08
+2007--10 
+- Advanced Academic Programs, JHU. Web/database developer (Coldfusion/SQL). 2006--10 
+- Academic Advising, JHU. Tutor (Physics I/II, Calculus I/II/III). 2007--08
 - Residential Life, JHU. Resident advisor
 
 ### 🏆 Honors and awards
 
 - Best Doctoral Dissertation Award for the 2017-2018 Academic Year. UPenn Electrical and Systems Engineering dept. 2018
 - James S. McDonnell Postdoctoral Fellowship Winner. $200,000 award for 2-3 years. 2017
-- Robert George Gerstmeyer Award. For academic achievement (JHU Mech. Engg. Department) 2008—09 
-- Provost’s Undergraduate Research Award. For summer research (JHU) 2008—09 
+- Robert George Gerstmeyer Award. For academic achievement (JHU Mech. Engg. Department) 2008--09 
+- Provost’s Undergraduate Research Award. For summer research (JHU) 2008--09 
 - Tau Beta Pi, Pi Tau Sigma Engg. honor societies. Inductee (JHU) 2008
-- International Scholarship. Merit-based full-tuition scholarship (JHU) 2006—10 
+- International Scholarship. Merit-based full-tuition scholarship (JHU) 2006--10 
 
 ### 🎤 Invited talks
 
 I have also given a number of invited talks separate from conference paper presentations, some of which I've written posts about:
 
-- 2022/06 GRASP Industry Day - Introduction to Ghost Robotics
-- 2022/05 [ICRA impulsive workshop](https://impulsivemuri.com/workshop2022.html) - Design and control of insect-scale bees and dog-scale quadrupeds
-- 2022/05 [Kodfest](https://kodlab.seas.upenn.edu/kodfest/) - [Kodlab 2010-2017](/kodfest)
-- 2021/09 [IROS actuator workshop](https://www.ram.eemcs.utwente.nl/gears-direct-drive-recent-trends-and-opportunities-actuation) - [Operating at force, power, and thermal limits in electrically-actuated commercial legged robots](https://youtu.be/724g-ZmK0G8)
-- 2021/06 [ICRA legged robot workshop](http://leggedrobots.put.poznan.pl/program/) - [Perception-aided control and planning with reduced order models](/icra-legged-ws-2021)
-- 2021/05 [ICRA teleoperation workshop](https://softmanbot.eu/?p=591) - [Shared autonomy and user interaction in commercial legged robots](/shared-autonomy-ui)
-- 2021/04 [CMU RI Seminar](https://www.ri.cmu.edu/event/ri-seminar-avik-de-co-founder-cto-ghost-robotics-2021-04-23/) - [Design and control of insect-scale bees and dog-scale quadrupeds](ri-seminar)
-- 2021/02 [IFRR quadruped robotics colloquium](http://ifrr.org/quadruped-robotics) - [State of the art in quadrupedal robotics](ifrr-colloquium)
-- 2020/07 [RSS contact workshop](http://mlab.ri.cmu.edu/reacting_contact_workshop/) - [Reacting to contact](https://youtu.be/al8xvj2-YLY)
-- 2020/07 [ICRA legged workshop](https://sites.google.com/view/leggedrobotworkshop2020) - [Designing power-efficient quadrupedal robots for commercial applications at Ghost Robotics](https://youtu.be/30kZT3RTFpI)
-- 2019/09 GRASP 40 year celebration - [Perspective on Academia vs. Industry](/academia-industry)
-- 2019/07 ACC templates workshop - Optimal Control Synthesis via Compositions of Reduced-Order Models (Templates)
-- 2019/05 [ICRA legged workshop](https://icra2019wslocomotion.wordpress.com/) - Connecting Today’s Applications for Commercial Legged Robots to their Design and Control
-- 2018/10 [IROS templates workshop](https://iros18wsdll.netlify.app/talks/) - [Template Composition for Synthesis of New Behaviors from Simpler Constituents](https://speakerdeck.com/avikde/template-composition-for-synthesis-of-new-behaviors-from-simpler-constituents)
+- 2022/06 GRASP Industry Day -- Introduction to Ghost Robotics
+- 2022/05 [ICRA impulsive workshop](https://impulsivemuri.com/workshop2022.html) -- Design and control of insect-scale bees and dog-scale quadrupeds
+- 2022/05 [Kodfest](https://kodlab.seas.upenn.edu/kodfest/) -- [Kodlab 2010-2017](/kodfest)
+- 2021/09 [IROS actuator workshop](https://www.ram.eemcs.utwente.nl/gears-direct-drive-recent-trends-and-opportunities-actuation) -- [Operating at force, power, and thermal limits in electrically-actuated commercial legged robots](https://youtu.be/724g-ZmK0G8)
+- 2021/06 [ICRA legged robot workshop](http://leggedrobots.put.poznan.pl/program/) -- [Perception-aided control and planning with reduced order models](/icra-legged-ws-2021)
+- 2021/05 [ICRA teleoperation workshop](https://softmanbot.eu/?p=591) -- [Shared autonomy and user interaction in commercial legged robots](/shared-autonomy-ui)
+- 2021/04 [CMU RI Seminar](https://www.ri.cmu.edu/event/ri-seminar-avik-de-co-founder-cto-ghost-robotics-2021-04-23/) -- [Design and control of insect-scale bees and dog-scale quadrupeds](ri-seminar)
+- 2021/02 [IFRR quadruped robotics colloquium](http://ifrr.org/quadruped-robotics) -- [State of the art in quadrupedal robotics](ifrr-colloquium)
+- 2020/07 [RSS contact workshop](http://mlab.ri.cmu.edu/reacting_contact_workshop/) -- [Reacting to contact](https://youtu.be/al8xvj2-YLY)
+- 2020/07 [ICRA legged workshop](https://sites.google.com/view/leggedrobotworkshop2020) -- [Designing power-efficient quadrupedal robots for commercial applications at Ghost Robotics](https://youtu.be/30kZT3RTFpI)
+- 2019/09 GRASP 40 year celebration -- [Perspective on Academia vs. Industry](/academia-industry)
+- 2019/07 ACC templates workshop -- Optimal Control Synthesis via Compositions of Reduced-Order Models (Templates)
+- 2019/05 [ICRA legged workshop](https://icra2019wslocomotion.wordpress.com/) -- Connecting Today’s Applications for Commercial Legged Robots to their Design and Control
+- 2018/10 [IROS templates workshop](https://iros18wsdll.netlify.app/talks/) -- [Template Composition for Synthesis of New Behaviors from Simpler Constituents](https://speakerdeck.com/avikde/template-composition-for-synthesis-of-new-behaviors-from-simpler-constituents)
 
 Tail design and control for a tail- and hip-energized and -stabilized bipedal hopping robot -- RSS 2018 workshop on "[Unusual appendages: novel, multi-modal, or multi-functional uses for limbs, tails, and other body parts](https://www.cmu.edu/me/robomechanicslab/ws/rss2018.html)"
 July 2018
@@ -91,21 +91,21 @@ Anchor synthesis via template composition. AMAM 2015 in Boston, MA. 2015
 
 Reviewer. IJRR, Bioinspiration & Biomimetics, Automatica, T/RO, RA/L, European Journal of Physics, Control Engineering 
 Practice, ICAR, ICHR, ICRA, IFACWC, IROS, SYROCO, WAFR, MCA, Autonomous Robots
-- Mentoring. Mentored undergraduate, masters, and junior PhD students to write papers accepted to ICRA/IROS 2013—18
+- Mentoring. Mentored undergraduate, masters, and junior PhD students to write papers accepted to ICRA/IROS 2013--18
 - UPenn guest lecturer. ESE 512 (graduate dynamical systems), MEAM 517 (Control and Optimization with Applications in
 Robotics), MEAM 520 (Intro to Robotics)
-2017—now 
+2017--now 
 - UPenn/Coursera instructor. Robotics specialization instructor for Mobility, Capstone courses; developed curriculum 
 including topics like how animals and robots are designed and how they move, linearized control and balancing a 
 mobile inverted pendulum
 2016
-- UPenn TA. TA for ESE 201 (undergraduate dynamical systems), ESE 512 (graduate dynamical systems) 2011—12 
-- Outreach. Two-time volunteer / judge at Penn First Lego League (FLL) 2014—16 
-- Animal welfare. Volunteer at Philadelphia Animal Welfare Society (PAWS); cat fostering 2014—now 
+- UPenn TA. TA for ESE 201 (undergraduate dynamical systems), ESE 512 (graduate dynamical systems) 2011--12 
+- Outreach. Two-time volunteer / judge at Penn First Lego League (FLL) 2014--16 
+- Animal welfare. Volunteer at Philadelphia Animal Welfare Society (PAWS); cat fostering 2014--now 
 - Hopkins Baja, JHU. Team captain of an engineering design team creating a single-seat offroad vehicle for an SAEorganized collegiate competition; suspension and steering design lead
-2006—10 
-- JH Math Club, JHU. Part of JHU Putnam team; contributed problems to JH math tournament for HS students 2006—09
-ASME chapter, JHU. Secretary/treasurer 2006—10
+2006--10 
+- JH Math Club, JHU. Part of JHU Putnam team; contributed problems to JH math tournament for HS students 2006--09
+ASME chapter, JHU. Secretary/treasurer 2006--10
 
 ### ⚙️ Engineering skills
 
