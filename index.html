@@ -18,6 +18,15 @@ layout: default
     Ditemukan <strong><span></span> lowongan kerja</strong>
     <small>Reset</small>
   </div>
+  <a href="{{ site.url }}/subscribe" class="banner-below-header">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+      </svg>
+      <strong>Klik Disini</strong>
+    </div>
+    <img src="{{ site.url }}/images/dapetin-info-loker-terbaru.png" alt="Dapetin Info Loker Terbaru" width="700" height="210" style="margin-bottom:0" />
+  </a>
   <div class="posts" id="search-result"></div>
   <script src="{{ site.url }}/search/simple-jekyll-search.min.js"></script>
   <script>
@@ -38,10 +47,12 @@ layout: default
           document.getElementById('search-count').style.display = 'block'
           document.getElementById('search-count').querySelector('span').innerText = document.getElementById('search-result').querySelectorAll('.post').length
           document.getElementById('search-result').style.marginTop = '0'
+          document.getElementById('main-banner').style.display = 'none'
         } else {
           document.getElementById('posts').style.display = 'none'
           document.getElementById('search-count').style.display = 'none'
           document.getElementById('search-result').style.marginTop = '2rem'
+          document.getElementById('main-banner').style.display = 'inline'
         }
       } else {
         document.getElementById('posts').style.display = 'block'
@@ -66,7 +77,7 @@ layout: default
   </style>
 </section>
 
-<a href="{{ site.url }}/subscribe" class="banner-below-header">
+<a href="{{ site.url }}/subscribe" class="banner-below-header" id="main-banner">
   <div>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
