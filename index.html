@@ -103,7 +103,7 @@ layout: default
   {% if paginator.total_pages > 1 %}
   <div class="pagination">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | relative_url }}">&lt;</a>
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">&lt;</a>
     {% endif %}
 
     {% for page in (1..paginator.total_pages) %}
@@ -117,7 +117,7 @@ layout: default
     {% endfor %}
 
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | relative_url }}">&gt;</a>
+      <a href="{{ paginator.next_page_path | relative_url }}" class="next">&gt;</a>
     {% endif %}
   </div>
   {% endif %}
