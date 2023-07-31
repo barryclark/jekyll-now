@@ -120,5 +120,17 @@ layout: default
       <a href="{{ paginator.next_page_path | relative_url }}" class="next">&gt;</a>
     {% endif %}
   </div>
+  <script>
+  	document.querySelectorAll('.pagination').forEach(item => {
+  		let total = item.querySelectorAll('*').length
+  			truncate = item.querySelector('span:not(.truncate)+a')
+  			span = document.createElement('span')
+  			span.classList.add('truncate')
+  			span.innerHTML = '...'
+  		if ( total >= 6 ) {
+  			truncate.insertAdjacentElement('afterend',span)
+  		}
+  	})
+  </script>
   {% endif %}
 </div>
