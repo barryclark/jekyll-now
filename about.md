@@ -131,4 +131,4 @@ I have traveled a fair amount in my life (perk of being a graduate student) and 
 
 ## 📞 Contact me
 
-Links are in the footer. If you'd like to get in touch with me, feel free to DM me on Twitter/X.
+Links are in the footer. If you'd like to get in touch with me, feel free to DM me on Twitter.
