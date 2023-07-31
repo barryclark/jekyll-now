@@ -14,7 +14,7 @@ I received my PhD in Sep 2017, at the GRASP laboratory ([Kodlab](https://kodlab.
 
 The main thread tying all of my work has been bio-inspired design and control strongly anchored in empirical robotics. My research has focused on examining the strengths and weaknesses of modular and hierarchical control strategies, as well as demonstrating efficient and effective control of dynamic locomotion in a way that generalizes across platforms (quadruped, tailed biped, …) and behaviors (hopping, running, …).
 
-## 🎓 CV
+## 📜 Curriculum Vitae (CV)
 
 I talk a bit about some of my academic work on this website - see [all the posts on papers](/tags#papers).
 
