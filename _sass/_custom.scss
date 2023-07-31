@@ -271,7 +271,7 @@ nav {
 		background-color: $color;
 	}
 	.prev, .next, .truncate,
-	span, span + a,
+	span, span:not(.truncate) + a,
 	a:nth-last-child(2), a:nth-last-child(3) {
 		display: inline-block;
 	}
