@@ -44,4 +44,4 @@ Both the n-queens problem can be solved by the backtrack search algorithm. Pseud
 
 This algorithm will explore every possible state that does not violate the initial constraint. It is likely, however, that because it operates in a DFS manner that the algorithm will wade deep into the search space before realizing that it made an error that results in many wasted CPU cycles.
 
-![]({{site.baseurl}}/images/sudoku_backtrack.GIF)
+![]({{site.baseurl}}/images/sudoku_backtrack.gif)
