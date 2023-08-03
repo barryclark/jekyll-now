@@ -4,12 +4,16 @@ Mesh Baker는 Unity에서 제공하는 기본 기능을 확장하여 다양한 M
 
 ![image](https://github.com/kbmhansungb/kbmhansungb.github.io/assets/56149613/5b978c16-12c6-41ac-9cdf-8b8d5c8edc4f)
 
+관절에 따라 따로 회전하는 메시를 만들기 위해서 적절한 단위로 나누어 베이크 한 후, 결과물을 합쳐 베이크합니다.
+
 * 원본 소스 ---> 결과물
     * Mesh Bake ( 소스 ---> 프리팹 )
     * Mesh Bake ( 소스 ---> 프리팹 )
     * ...       
 
 ![image](https://github.com/kbmhansungb/kbmhansungb.github.io/assets/56149613/03ba4cc6-b66e-4e96-b72c-2833ec62a556)
+
+이를 위해 베이크하는 과정은 다음과 같습니다.
 
 1. MeshBaker를 관리하기 위한 씬을 생성합니다.
 2. AddingObjectsTool Window로 오브젝트를 선택 후, MeshBaker에 적용합니다.
