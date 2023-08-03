@@ -21,4 +21,6 @@ Unity는 Unity 에디터에서 제작된 애플리케이션과 Unity 에디터�
 
 RectTransform의 로컬 포지션은 화면상에서 그려지는 Pivot의 위치가 부모 Pivot으로 부터 얼만큼 떨어져 있는지 결정됩니다. 이 화면상에 보이는 Pivot의 프로퍼티의 Anchor, AnchoredPosition, Pivot에 의해 결정됩니다.
 
+RectTransform의 Rect.Size는 Rect의 크기를 반환합니다. 이는 SizeDelta 및 앵커와는 다르게 ScreenSpace에서의 크기를 반환합니다.
+
 UI 개발을 위한 클래스들로 [RectTransformUtility](https://docs.unity3d.com/ScriptReference/RectTransformUtility.html)가 있습니다.
