@@ -1,4 +1,3 @@
-```c#
 /// <summary>
 /// 렉트의 크기를 조절하는 확장입니다.
 /// </summary>
@@ -58,4 +57,3 @@ public static partial class RectExtension
         return newSize * CalculateFitInRatio(targetRect, newSize);
     }
 }
-```
