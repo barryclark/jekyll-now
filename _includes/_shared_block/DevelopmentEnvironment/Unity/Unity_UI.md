@@ -18,3 +18,7 @@ Unity는 Unity 에디터에서 제작된 애플리케이션과 Unity 에디터�
 
 * 어떤 요소가 다른 요소의 위에 겹쳐지는지 여부를 변경하고 싶으면 간단히 드래그하여 계층 구조에서 요소의 순서를 변경하면 됩니다.
 * 이 순서는 Transform 컴포넌트에서 SetAsFirstSibling, SetAsLastSibling, SetSiblingIndex 메서드를 사용하여 스크립팅을 통해 제어할 수도 있습니다.
+
+알고 있어야 하는 것들
+
+* [RectTransformUtility](https://docs.unity3d.com/ScriptReference/RectTransformUtility.html)
