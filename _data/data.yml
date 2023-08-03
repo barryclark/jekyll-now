@@ -54,14 +54,6 @@
   location_gr: Αθήνα, Αττική, Ελλάδα
   location_en: Athens, Attica, Greece
 
-- company_gr: Ταβέρνα Άγγελος
-  company_en: Aggelos Tavern
-  url: https://www.facebook.com/tavernagelos
-  category_gr: Ταβέρνα. <a href="https://www.google.gr/webhp?ion=1&espv=2&ie=UTF-8#q=bitcoin%20%CF%84%CE%B1%CE%B2%CE%AD%CF%81%CE%BD%CE%B1%20%CE%86%CE%B3%CE%B3%CE%B5%CE%BB%CE%BF%CF%82">Άρθρα στον Τύπο</a>.
-  category_en: Tavern
-  location_gr: Χαϊδάρι, Αττική, Ελλάδα
-  location_en: Haidari, Attica, Greece
-
 - company_gr: Bike Lounge
   company_en: Bike Lounge
   url: http://www.bikelounge.gr
@@ -1291,6 +1283,14 @@
   url: https://www.snif.gr/
   category_gr: Ευρετήριο ιστοτόπων
   category_en: Web directory
+  location_gr: Online, Ελλάδα
+  location_en: Online, Greece
+
+- company_gr: TPL
+  company_en: TPL
+  url: https://tpl.gr
+  category_gr: E-commerce
+  category_en: E-commerce
   location_gr: Online, Ελλάδα
   location_en: Online, Greece
   
