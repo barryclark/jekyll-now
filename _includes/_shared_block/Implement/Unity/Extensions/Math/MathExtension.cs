@@ -218,7 +218,7 @@ public static partial class MathExtention
     /// <param name="p2"></param>
     /// <param name="p3"></param>
     /// <returns></returns>
-    public static (Vector3 center, float radius, Vector3 normal) GetCircumcenter(this Vector3 p1, Vector3 p2, Vector3 p3)
+    public static (Vector3 center, float radius, Vector3 normal) CalculateCircumcenter(this Vector3 p1, Vector3 p2, Vector3 p3)
     {
         var p1p2Size = (p2 - p1).magnitude;
         var p2p3Size = (p3 - p2).magnitude;
