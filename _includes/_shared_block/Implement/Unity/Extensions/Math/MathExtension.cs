@@ -1,4 +1,4 @@
-public static partial class MathExtentions
+public static partial class MathExtention
 {
     /// TODO : <see cref="RealSenseCameraDevice.CalculateLocalPosition"/>와 <see cref="RealSenseCameraDevice.CalculateScreenPosition"/>를 아래 확장으로 대체하여 통합합해야함. 이때 DeprojectPixelToPoint에서 y축의 반환이 다르니 주의할것.
     /// <see cref="Intrinsics"/>와 <see cref="Extrinsics"/>의 확장 메서드
