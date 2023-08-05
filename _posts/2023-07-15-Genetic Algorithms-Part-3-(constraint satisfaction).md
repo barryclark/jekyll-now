@@ -23,7 +23,6 @@ All code for this post and series, including for the following animations, is in
 Both the n-queens problem can be solved by the backtrack search algorithm. Pseudocode for this algorithm in these contexts would look like
 
 > 
-
     def Backtrack(state):
       for v in state.variables.not_set:
           for p in possible_values:
