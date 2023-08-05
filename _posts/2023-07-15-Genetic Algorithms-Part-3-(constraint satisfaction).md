@@ -22,27 +22,19 @@ All code for this post and series, including for the following animations, is in
 ### Brute Force Solution
 Both the n-queens problem can be solved by the backtrack search algorithm. Pseudocode for this algorithm in these contexts would look like
 
-> def Backtrack(state):
-
-	for v in state.variables.not_set:
-    
-    	for p in possible_values:
-        
-        	if p == v does not violate constraint:
-            
-            	old_v = v
-                
-            	v = p
-                
-                if Backtrack(state):
-                
-                	return True
-                    
-                else:
-                
-                	v = old_v
-                    
-   		return False
+> 
+	
+    def Backtrack(state):
+      for v in state.variables.not_set:
+          for p in possible_values:
+              if p == v does not violate constraint:
+                  old_v = v
+                  v = p
+                  if Backtrack(state):
+                      return True
+                  else:
+                      v = old_v
+          return False
                 	
                 
 
