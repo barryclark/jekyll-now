@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-Hi i'm Ali,I Have Graduated From Tanta University,Studied Business Information System. i'm looking forward to be skilled in IT Field
+I am a highly motivated and results-oriented Cybersecurity Professional with 1+ years of experience in the tech industry. I am skilled in bug hunting, vulnerability assessment, and incident response. I have experience with a variety of technologies, including Kali Linux, Metasploit, Python3, Linux and Splunk and alot of blue team and red team tools and softwares.
 
 ### More Information
 Cyber Security Enthuasiast 
