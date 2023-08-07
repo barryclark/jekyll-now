@@ -3,7 +3,7 @@ layout: post
 tags: rust unsafe
 #categories: []
 date: 2023-07-24
-last_updated: 2023-07-24
+last_updated: 2023-08-07
 #excerpt: ''
 #description:
 #permalink:
@@ -180,13 +180,13 @@ is no way to express the same intent in safe Rust [^no-way-arc-mutex].
 ```rust
 let mut x = 10;
 let p1: *mut i32 = &mut x;
-let p2: *mut i32 = &mut x;
+let p2 = p1;
 unsafe {
   // ...
 }
 ```
 
-This is perfectly fine Rust code and the compiler will not break our code by making
+This is perfectly fine Rust code [^pointer-clone] and the compiler will not break our code by making
 assumptions about what the pointers can or can't point to. Again, it would not
 be very helpful to frame this as circumventing the borrow checker, because the same
 thing could be said about the broken code futher above. We have now stepped into unsafe land
@@ -514,3 +514,4 @@ This is truly a zero cost abstraction if I ever saw one.
 [^memleak]: If nobody catches the panic and the program terminates, an operating system (if present) will take care of freeing the allocated storage, but it won't call the destructors. The destructors might perform important logic like communicating with external processes or hardware.
 [^forum-drop]: All of this was pointed out to me by forum user `scottmcm` [here](https://users.rust-lang.org/t/is-my-highly-unsafe-code-correct-in-place-mapping-a-vector/96078/10).
 [^drop-slices]: This was pointed out to me by forum users `H2CO3` and `steffahn` [here](https://users.rust-lang.org/t/is-my-highly-unsafe-code-correct-in-place-mapping-a-vector/96078/19)
+[^pointer-clone]: It wasn't always. Perfectly fine code, that is. See the comments from [@GoldsteinE](https://github.com/GoldsteinE) below.
