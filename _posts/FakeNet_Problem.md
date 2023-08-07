@@ -1,3 +1,8 @@
+
+---
+layout: post
+title: FAKENET-NG DNS SERVER ERROR 
+---
 # Problem with Starting DNS Server in FAKENET-ng Tool due to the ISC Service
 ![](https://3.bp.blogspot.com/-8_40rc32mMI/WgA7NeFpGJI/AAAAAAAALF8/qVmjvMGr0UAMc39l1L35HPiM6yefy-xXgCLcBGAs/w1200-h630-p-k-no-nu/FakeNet.jpg)
 
