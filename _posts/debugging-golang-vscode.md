@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Error Debug golang on VScode
-----
+---
 
 # Understanding the "i don't have a statement use a line has a statement" Error in Go Debugging
 ![](https://vscode-debug-specs.github.io/go/docs/inline_unit_test.png)
