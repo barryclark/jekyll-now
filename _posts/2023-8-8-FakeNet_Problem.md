@@ -3,8 +3,11 @@ layout: post
 title: FAKENET-NG DNS SERVER ERROR 
 excerpt: Debugging Golang In VScode
 ---
+
 ![](https://3.bp.blogspot.com/-8_40rc32mMI/WgA7NeFpGJI/AAAAAAAALF8/qVmjvMGr0UAMc39l1L35HPiM6yefy-xXgCLcBGAs/w1200-h630-p-k-no-nu/FakeNet.jpg)
 # Problem with Starting DNS Server in FAKENET-ng Tool due to the ISC Service
+
+
 ## Overview
 
 FAKENET-ng is a powerful tool used for network simulation and testing. It allows users to create a virtual network environment and simulate various network services, including DNS (Domain Name System) servers. However, in some cases, users have encountered issues when starting the DNS server component of FAKENET-ng due to conflicts with the ISC (Internet Systems Consortium) service.
