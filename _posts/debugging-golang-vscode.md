@@ -1,5 +1,9 @@
+---
+layout : post
+title : Error Debug golang on VScode
+----
 # Understanding the "i don't have a statement use a line has a statement" Error in Go Debugging
-
+![](https://vscode-debug-specs.github.io/go/docs/inline_unit_test.png)
 ## Introduction
 
 Debugging is a critical skill for software developers, enabling them to identify and fix issues in their code. When using Visual Studio Code to debug Go programs, you might encounter the perplexing error message "i don't have a statement use a line has a statement." In this guide, we delve into the reasons behind this error, explore its occurrence, and provide detailed steps to resolve it.
