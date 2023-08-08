@@ -17,14 +17,14 @@ avatar: https://avatars.githubusercontent.com/u/44702744?v=4
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
+  dribbble: #
   email: pchabermann@gmail.com
-  facebook:
-  flickr:
+  facebook: #
+  flickr: #
   github: pchabermann
-  instagram:
+  instagram: #
   linkedin: in/pchabccna/
-  pinterest:
+  pinterest: #
   rss: # just type anything here for a working RSS icon
   twitter: h4ck4un3
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
@@ -34,14 +34,14 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: #
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: G-ZDPVZK4WL0 
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: https://cloudnetworkguru.net/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -70,7 +70,7 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: :compressed # You might prefer to minify using :compressed
 
 # Use the following plug-ins
 gems:
