@@ -6,20 +6,20 @@ title: How to search
 # Chrome 확장 툴
 ## LINER
 
-{% include _shared_block/_tool/LINER.md %}
+{% include _shared_block/Tool/LINER.md %}
 
-{% include _shared_block/_tool/LINER_AI.md %}
+{% include _shared_block/Tool/LINER_AI.md %}
 
 ## ChatGPT
 
-{% include _shared_block/_tool/ChatGPT.md %}
+{% include _shared_block/Tool/ChatGPT.md %}
 
-{% include _shared_block/_tool/ChatGPT_01_WithGoogleSearch.md %}
+{% include _shared_block/Tool/ChatGPT_01_WithGoogleSearch.md %}
 
-{% include _shared_block/_tool/ChatGPT_02_SummaryYoutube.md %}
+{% include _shared_block/Tool/ChatGPT_02_SummaryYoutube.md %}
 
-{% include _shared_block/_tool/ChatGPT_03_WithCoding.md %}
+{% include _shared_block/Tool/ChatGPT_03_WithCoding.md %}
 
 ## Bing Chat
 
-{% include _shared_block/_tool/Bing_ChatAI.md %}
+{% include _shared_block/Tool/Bing_ChatAI.md %}
