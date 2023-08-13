@@ -16,7 +16,7 @@ title: Universal Render Pipeline
 
 ### URP Render pass
 
-{% include _shared_block/DevelopmentEnvironment/Unity/unity_URP_01_RenderPass.md %}
+{% include _shared_block/DevelopmentEnvironment/Unity/Unity_URP_RenderPass.md %}
 
 ## Camera
 
