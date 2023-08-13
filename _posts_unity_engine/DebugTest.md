@@ -13,11 +13,11 @@ title: Debug, Test
 
 ## Automation Test
 
-{% include _shared_block/DevelopmentEnvironment/Unity/_package/Unity_Package_TestRunner_01.md %}
+{% include _shared_block/DevelopmentEnvironment/Unity/Package/Unity_Package_TestRunner_01.md %}
 
 ### Test Example 
 
-{% include _shared_block/DevelopmentEnvironment/Unity/_package/Unity_Package_TestRunner_02.md %}
+{% include _shared_block/DevelopmentEnvironment/Unity/Package/Unity_Package_TestRunner_02.md %}
 
 ### Get Serialized Object
 

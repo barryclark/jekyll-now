@@ -3,7 +3,7 @@ layout: post
 title: Universal Render Pipeline
 ---
 
-{% include _shared_block/DevelopmentEnvironment/Unity/unity_URP_00.md %}
+{% include _shared_block/DevelopmentEnvironment/Unity/Unity_URP.md %}
 
 ## Rendering pipeline
 
