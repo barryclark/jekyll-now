@@ -3,22 +3,22 @@ layout: post
 title: Geometry
 ---
 
-{% include _shared_block/_concept/Geometry.md %}
+{% include _shared_block/Concept/Geometry.md %}
 
 ## Shape
 
-{% include _shared_block/_knowledge/Geometry_Icosahedron.md %}
+{% include _shared_block/Graphic/Geometry/Icosahedron.md %}
 
-{% include _shared_block/_knowledge/Geometry_Voronoi.md %}
+{% include _shared_block/Graphic/Geometry/Voronoi.md %}
 
 ## Sphere
 
-{% include _shared_block/_knowledge/Geometry_IcoSphere.md %}
+{% include _shared_block/Graphic/Geometry/IcoSphere.md %}
 
-{% include _shared_block/_knowledge/Geometry_GeodesicSphere.md %}
+{% include _shared_block/Graphic/Geometry/GeodesicSphere.md %}
 
 ## Polygon
 
-{% include _shared_block/_knowledge/Geometry_Subdivision.md %}
+{% include _shared_block/Graphic/Geometry/Subdivision.md %}
 
-{% include _shared_block/_knowledge/Geometry_Truncation.md %}
+{% include _shared_block/Graphic/Geometry/Truncation.md %}

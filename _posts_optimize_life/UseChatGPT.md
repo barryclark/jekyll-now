@@ -5,12 +5,12 @@ title: Use ChatGPT
 
 ## ChatGPT
 
-{% include _shared_block/_tool/ChatGPT.md %}
+{% include _shared_block/Tool/ChatGPT.md %}
 
 ### With google search
 
-{% include _shared_block/_tool/ChatGPT_01_WithGoogleSearch.md %}
+{% include _shared_block/Tool/ChatGPT_01_WithGoogleSearch.md %}
 
 ### Summary Youtube
 
-{% include _shared_block/_tool/ChatGPT_02_SummaryYoutube.md %}
+{% include _shared_block/Tool/ChatGPT_02_SummaryYoutube.md %}

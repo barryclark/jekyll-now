@@ -18,7 +18,7 @@ title: Implement
 
 * [Spline](/posts_implement/Spline)
 * [Simple Math](/posts_implement/SimpleMath)
-* [FABRIK](/posts_implement/FABRIK)
+* [FABRIK](/posts_implement/Unity_FABRIK)
 
 ## Transform
 

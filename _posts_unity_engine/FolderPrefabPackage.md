@@ -21,13 +21,13 @@ Prefabs/Rooms/RoomComponent/Room…의 폴더구조에서 Rooms의 Prefab은 Roo
 
 ## Prefab
 ### Prefab
-{% include _shared_block/_unity/Unity_Prefab_01_Default.md %}
+{% include _shared_block/DevelopmentEnvironment/Unity/Unity_Prefab_01_Default.md %}
 
 ### Nested Prefab
-{% include _shared_block/_unity/Unity_Prefab_02_NestedPrefab.md %}
+{% include _shared_block/DevelopmentEnvironment/Unity/Unity_Prefab_02_NestedPrefab.md %}
 
 ### Prefab Variants
-{% include _shared_block/_unity/Unity_Prefab_03_PrefabVariants.md %}
+{% include _shared_block/DevelopmentEnvironment/Unity/Unity_Prefab_03_PrefabVariants.md %}
 
 ## Package
 - [ ]  패키지
