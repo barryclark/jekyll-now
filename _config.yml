@@ -76,6 +76,7 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-remote-theme
 
 # Exclude these files from your production _site
 exclude:
@@ -85,4 +86,5 @@ exclude:
   - README.md
   - CNAME
 
-theme: jekyll-theme-hacker
+remote_theme: pages-themes/hacker@v0.2.0
+
