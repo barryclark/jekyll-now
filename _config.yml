@@ -18,7 +18,7 @@ avatar: https://avatars.githubusercontent.com/u/70377134?v=4
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: 
   facebook: Ali.E.Emara
   flickr:
   github: hithmast/hithmast.github.io
@@ -26,9 +26,9 @@ footer-links:
   linkedin: alieemara
   pinterest: 
   rss: # just type anything here for a working RSS icon
-  twitter: Mast1rkraj3
+  twitter: 0xHithmast
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
+  youtube: channel/UCntrpAfeylCuT6YzEANd72A # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
@@ -41,7 +41,7 @@ google_analytics: G-M6LNLQD1L3
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: hithmast.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
