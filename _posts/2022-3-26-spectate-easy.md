@@ -4,8 +4,9 @@ title: spectate Zain CTF Network-Security (Easy)
 excerpt: Analyis pcap file with wireshark
 ---
 
-![](https://website-cybertalents.s3.us-west-2.amazonaws.com/Competitions/Zain+CTF+2022+Cover+(1).jpg)
+
 .pcap File Analysiz 
+![](https://website-cybertalents.s3.us-west-2.amazonaws.com/Competitions/Zain+CTF+2022+Cover+(1).jpg)
 
 [Challenge Link](https://github.com/hithmast/hithmast.github.io/raw/master/zAinCTF/spectate.pcap)
 # At First
