@@ -1,5 +1,8 @@
-# The Chronicles of a Cross-Site Scripting (XSS) Vulnerability: Unearthing the Payload on https://redacted.com
+---
 
+---
+# The Chronicles of a Cross-Site Scripting (XSS) Vulnerability: Unearthing the Payload on https://redacted.com
+![](https://hithmast.github.io/images/xss.jpg)
 ## Prelude to Discovery
 
 As a curious security enthusiast, I set out on a digital expedition to explore the inner workings of **https://redacted.com**. Little did I anticipate that this journey would unveil a hidden treasure trove - a vulnerability that could potentially compromise user data and tarnish the application's integrity. The vulnerability, a Cross-Site Scripting (XSS) flaw, revealed a critical oversight that begged for attention.
