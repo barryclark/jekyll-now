@@ -53,6 +53,6 @@ Armed with this newfound knowledge, I have alerted Nokia's security team to the 
 In the tapestry of digital security, every discovered vulnerability serves as a catalyst for growth, learning, and a resolute commitment to shield our online realms from harm.
 
 ## Resources
-(eva function)[https://www.w3schools.com/jsref/jsref_eval.asp]
-(atob function)[https://www.w3schools.com/jsref/met_win_atob.asp]
-(Cyber Chef)[https://gchq.github.io/CyberChef]
+[eval function](https://www.w3schools.com/jsref/jsref_eval.asp)
+[atob function](https://www.w3schools.com/jsref/met_win_atob.asp)
+[Cyber Chef](https://gchq.github.io/CyberChef)
