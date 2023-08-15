@@ -1,6 +1,9 @@
 ---
-
+layout: post
+title: Nokia XSS WriteUP
+excerpt: The Chronicles of a Cross-Site Scripting (XSS) Vulnerability
 ---
+
 # The Chronicles of a Cross-Site Scripting (XSS) Vulnerability: Unearthing the Payload on https://redacted.com
 ![](https://hithmast.github.io/images/xss.jpg)
 ## Prelude to Discovery
