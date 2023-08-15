@@ -1,7 +1,6 @@
 ---
 layout: post
 title: spectate Zain CTF Network-Security (Easy)
-excerpt: Analyis pcap file with wireshark
 ---
 
 
