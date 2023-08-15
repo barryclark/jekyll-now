@@ -1,9 +1,8 @@
 #
 # This file contains configuration flags to customize your site
 #
-
+title: VigilCypher
 # Name of your site (displayed in the header)
-name: l0nSec
 
 # Short bio or description (displayed in the header)
 description: CTF Write-Up - Challenges Writeup - POC 
@@ -86,5 +85,5 @@ exclude:
   - README.md
   - CNAME
 
-remote_theme: /pages-themes/hacker@v0.2.0
+remote_theme: pages-themes/hacker@v0.2.0
 
