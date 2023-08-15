@@ -51,3 +51,8 @@ To quell this vulnerability's menacing potential, several strategic measures are
 Armed with this newfound knowledge, I have alerted Nokia's security team to the presence of this vulnerability. My aim is to contribute to the safeguarding of user data and the fortification of the application's defenses. Through this narrative, I hope to underscore the urgency of addressing XSS vulnerabilities and fostering a safer digital landscape for all.
 
 In the tapestry of digital security, every discovered vulnerability serves as a catalyst for growth, learning, and a resolute commitment to shield our online realms from harm.
+
+## Resources
+(eva function)[https://www.w3schools.com/jsref/jsref_eval.asp]
+(atob function)[https://www.w3schools.com/jsref/met_win_atob.asp]
+(Cyber Chef)[https://gchq.github.io/CyberChef]
