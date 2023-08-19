@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<title>YouTube Downloader</title>
+<form>
+  <label for="videoLink">Enter video link:</label>
+  <input type="text" id="videoLink" name="videoLink">
+  <button type="button" onclick="downloadVideo()">Download</button>
+</form>
+
+<script>
+  function downloadVideo() {
+    var link = document.getElementById("videoLink").value;
+    var downloadLink = document.createElement("a");
+    downloadLink.href = link;
+    downloadLink.download = "video.mp4";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  }
+</script>
+</html>
