@@ -50,10 +50,11 @@ size.
 
 ## Today's Problem: Same Size for Two Types
 
-For this article I will simplify the problem. I just want to make sure two types `T` and
-`U` have the same size and I won't bother with the alignment. This is just to keep the
-examples concise, because once we figure out how to check for size, adding an
-alignment requirement is trivial. So what we want is this:
+For this post, let's consider a slightly simplified problem and just
+check that the two types `T` and `U` have the same size and not bother with
+the alignment. This is just to keep the examples concise, because once we 
+know out how to check for size, adding an alignment requirement is trivial.
+So what we want is this:
 
 ```rust
 fn do_somehting<T,U>() 
@@ -73,6 +74,56 @@ do_something<u8,u32>();
 The compiler knows the sizes of the types `T` and `U` at compile time so it 
 should be simple enough to find a solution to enforce identical size at compile time,
 right? Right?
+
+# Using Const Generics
+
+My first intuition was that Const Generics would help me elegantly enforce trait bounds
+that allow me to restrict my `do_something` to types with same size.
+Const Generics did not exist before [Rust 1.51](https://blog.rust-lang.org/2021/03/25/Rust-1.51.0.html),
+but I thought it would be simple enough to get it to work, so that was my
+first try.
+
+There are many ways to skin this cat and my ideas were definitely influenced
+by how metaprogramming in C++ uses associated types and compile time constants
+to give us metafunctions. I married this with a more Rusty idea of 
+trait bounds and I came up with the following.
+
+```rust
+pub trait SameSizeAs<T> {
+    const VALUE: bool;
+}
+
+impl<T,U> SameSizeAs<T> for U {
+    const VALUE: bool = 
+        std::mem::size_of::<T>() == std::mem::size_of::<U>();
+}
+```
+So what we do is implement a trait `SameSizeAs<T>` for every type `U`, which
+indicates whether `T` and `U` have the same size via an associated constant. That's
+not too bad. We can use the trait like so:
+
+```rust
+pub fn do_something<T,U>() 
+where U: SameSizeAs<T,VALUE=true>
+
+{
+    // do something
+}
+```
+I find this pretty elegant and concise and it turns out the error messages are
+very readable if we try to call the function with two types of different size.
+There's just one problem with this: it does not compile on stable Rust. Current stable Rust 
+(1.71.1 at the time of writing) does not allow us to compare associated
+constants for equality. We need the feature
+[`associated_const_equality`](https://github.com/rust-lang/rust/issues/92827)
+to compile it which is unfortunate because I really would want my solution to work
+on stable Rust. 
+
+For completeness let me mention another [known way](https://github.com/rust-lang/rfcs/issues/3162)
+of using compile time booleans in where clauses via a clever combination of 
+Const Generics and Traits. However, it requires the unstable feature
+[`generic_const_exprs`](https://github.com/rust-lang/rust/issues/76560). I won't 
+go into detail here but we will see this feature pop up in a different context.
 
 # Using Associated Types
 
