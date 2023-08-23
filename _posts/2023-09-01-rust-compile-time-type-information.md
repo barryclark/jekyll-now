@@ -127,16 +127,14 @@ go into detail here but we will see this feature pop up in a different context.
 
 # Using Associated Types
 
-So before [Rust 1.51](https://blog.rust-lang.org/2021/03/25/Rust-1.51.0.html) there
-was no Const Generics feature in Rust and any form of metaprogramming (not involving
-macros) had to work with types only. So I thought I'd try it this way and see how
-far I can push it. Coming from C++ I know that metaprogramming with types can
+There was a time when there was no Const Generics in Rust all metaprogramming
+(not involing macros) had to be done with types only. So that's what I tried next.
+Coming from C++ I know that metaprogramming with types can
 get a bit hairy at times, but I was pretty confident that I could find a solution.
 Because after all I was only trying to make the compiler enforce something 
-that it already knows! Let's see how that turned out. For reference, I am using
-the current stable Rust version, which is 1.71.1 at the time of writing.
+that it already knows! 
 
-Okay, since we cannot use actual boolean values at compile time (without const
+Now, since we cannot use actual boolean values at compile time (without const
 generics) we have to translate the concept of booleans into types:
 
 ```rust
@@ -147,19 +145,21 @@ trait BoolType {}
 impl BoolType for TrueType;
 impl BoolType for FalseType;
 ```
-Arguably, the whole `BoolType` trait is not necessary but I feel it makes the
-downstream code easier to read. Now what we can do is define a trait that
-tells use whether the type it is implemented for has the same size as 
-another type `T`:
+
+Strictly speaking, the whole `BoolType` trait is not necessary but I feel it makes the
+downstream code easier to read. Now we can define a trait that 
+tells us whether a type `T` that implements it has the same size as another
+type `U`:
 
 ```rust
 pub trait SameSizeAs<U> {
     type Value : BoolType;
 }
 ```
-I like the `BoolType` trait because it mirrors the syntax we would use to define
-the type of a struct fields. So at compile time traits are for types what types
-are for values. Kind of... anyways, we can now put a nice where clause into
+
+You can see why I like the `BoolType` trait here: it mirrors the syntax we would use to define
+the type of a struct field. So at compile time, traits are for types what types
+are for values at runtime. Kind of... anyways, we can now put a nice `where` clause into
 our function definition:
 
 ```rust
@@ -170,6 +170,75 @@ where T: SameSizeAs<U,Value=TrueType>
     true
 }
 ```
+
+This reads very similar to the enum code above but here it is fine to write in stable Rust
+`Value=TrueType` in the `where` clause because we are testing for equality
+of an associated _type_ and not a compile time constant _value_. Now there is just
+one thing missing and that is to write a blanket implementation for `SameSizeAs`
+that serves our purpose. That is where the trouble lies, because any way we slice
+it we need to have some way to go from a compile time known condition (a `const bool`)
+to a type. Although I did not want to I saw no other way than using Const 
+Generics again, although the way I use them here is very different from how
+I used them above. So I want a metafunction that goes from a compile time known
+condition `const C: bool` to a type depending on the condition. In C++ we would
+use a templated struct with boolean template parameters and associated types for
+that and in Rust we can to a very similar thing when we bring traits into the
+mix:
+
+```rust
+pub struct Condition<const B: bool>;
+
+pub trait TruthType {
+    type ValueType : BoolType;
+}
+
+impl TruthType for Condition<true> {
+    type ValueType = TrueType;
+}
+
+impl TruthType for Condition<false> {
+    type ValueType = FalseType;
+}
+```
+
+We can use the struct and the trait together to go from a compile time
+known condition to a type. Unfortunately, as of the time of writing
+we cannot simply use it as `Condition<Cond>::ValueType` but we have to use
+the fully qualified type so that the compiler can understand the associated
+type, even if it should be unambiguous. That means we must use it as
+!!!!!!!!!!!!!!!!1111111
+
+
+```rust
+impl<T,U> SameSizeAs<U> for T 
+where Condition<{core::mem::size_of::<T>() 
+        == core::mem::size_of::<U>()}>: TruthType
+{
+    type Value = <Condition<{core::mem::size_of::<T>() 
+        == core::mem::size_of::<U>()}> as TruthType>::ValueType;
+}
+```
+
+We have now created a metafunction that transforms a compile time known
+boolean into a type. To restrict the generic types passed to our `do_something`
+function we can use it like so:
+
+```rust
+pub fn do_something<T,U>() -> bool
+where T: SameSizeAs<U,Value=TrueType> 
+{
+    println!("T and U are the same size");
+    true
+}
+```
+
+# Mutually Exclusive Traits and Specialization
+
+!!! all the stuff we did only gives us compiler errors on failure but does not
+!!! allow us to specify a fallback on error
+
+!!! different for the first enum version: mutually disjoint see comment in tracking issue
+
 As an aside, if you are wondering whether we can add a second variant
 of the function that restricts on `T: SameSizeAs<U, Value=FalseType>`, I can recommend
 my article on [mutually exclusive traits](/blog/2021/mutually-exclusive-traits-rust/).
