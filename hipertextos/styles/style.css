@@ -523,7 +523,7 @@ section footer + nav,
 dialog > nav {border-top: var(--one-pixel) solid currentColor;border-bottom: var(--one-pixel) solid transparent;padding: var(--twenty-pixel);text-align: right;}
 
 #site-nav {background: var(--color-nav) !important;border-bottom: none;font-size: 17px;color: rgba(20,20,20,1) ;text-align:right!important;padding-top:8px;padding-bottom:6px;}
-.nav-logo {padding:1px 1px 1px 1px!important;margin-right:8px;min-width:40px;height:40px;filter: invert(33%);}
+.nav-logo {padding:1px 1px 1px 1px!important;margin-right:8px;min-width:40px;height:40px;filter: invert(80%);}
 #site-nav a {font-weight: 400;border: none;-webkit-transition: all .1s ease;-moz-transition: all .1s ease;-ms-transition: all .1s ease;-o-transition: all .1s ease;transition: all .1s ease;}
 #site-nav a:visited {color: var(--color-hard-grey);text-decoration: none;}
 #site-nav a:hover, #site-nav a b:hover {color: var(--color-hard-grey) !important;opacity:.69;text-decoration: none;}
