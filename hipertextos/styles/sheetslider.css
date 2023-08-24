@@ -1,12 +1,12 @@
 /*! Sheet Slider v2.2.0 | Copyright: 2018 zkreations | Licensed under MIT | github.com/zkreations/SheetSlider/blob/master/LICENSE */
 .sheetSlider {
-    background: #000!important;
+    background: #000 !important;
     font-size: 8px;
     line-height: 1.5;
     position: relative;
     width: 100%;
-    min-height:95vh!important;
-    padding-top:0px!important;
+    min-height: 95vh !important;
+    padding-top: 0 !important;
     overflow: hidden;
     -webkit-font-smoothing:antialiased
 }
@@ -72,7 +72,12 @@
     color: #fff;
     display:block
 }
-
+.sh__meta.blackon h4, .sh__meta.blackon span {
+    color: #000;
+    display:block
+}
+.sh__meta a {color:#fff!important;background:#ff0000;padding:2px 6px 2px 6px;border-radius:5px;}
+.blackon a {color:#ff0000!important;background:transparent;padding:0px;}
 .sh__meta a {
     font-weight: 500;
     transition:color .5s
@@ -111,13 +116,19 @@
     transition: transform .3s;
     box-shadow:0 1px 1px rgba(0, 0, 0, .15)
 }
-.sh-control {position:absolute;top:0;right:0;}
+
+.sh-control {
+    position: absolute;
+    top: 0;
+    right:0
+}
+
 .sh__arrows:hover, .sheetSlider:hover .sh-control, .sheetSlider:hover .sh__arrows {
     transform:translate3d(0, 0, 0)
 }
 
 .sh-control, .sh__arrows label {
-    background-color: rgba(210,210,210,.3);
+    background-color: rgba(210, 210, 210, .3);
     background-repeat: no-repeat;
     background-position: 50%;
     cursor:pointer
@@ -130,7 +141,7 @@
     height:50px
 }
 
-.sh__arrows label:hover, .sh-control:hover {
+.sh-control:hover, .sh__arrows label:hover {
     background-color:rgba(255, 255, 255, .5)
 }
 
@@ -139,7 +150,7 @@
     width: 45px;
     height: 45px;
     bottom: 50px;
-    background-color: rgba(210,210,210,.3);
+    background-color:rgba(210, 210, 210, .3)
 }
 
 .sh-control.is-active {
