@@ -14,7 +14,7 @@
     line-height: 1.5;
     position: relative;
     width: 100%;
-    min-height: 95vh !important;
+    min-height: 95vh;
     padding-top: 0 !important;
     overflow: hidden;
     -webkit-font-smoothing:antialiased
@@ -90,7 +90,7 @@
 
 .sh__meta a {
     color: #fff !important;
-    background: red;
+    background: #333;
     padding: 2px 6px;
     border-radius: 5px;
     font-weight: 500;
