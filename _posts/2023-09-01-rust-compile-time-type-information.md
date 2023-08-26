@@ -19,9 +19,9 @@ comments_id:
 ---
 
 This article is a deep(ish) dive into how to use traits for some special 
-applications that require conditional compilation. I'll try to explore some
-limitations of Rust's current metaprogramming capabilities using the example
-of making sure at compile time that two types have the size in memory.
+applications that require conditional compilation. I try to enforce that
+tho types have the same size at compile time and by doing that we'll explore 
+the limits of Rust's current metaprogramming capabilities .
 
 # Motivation
 
@@ -345,7 +345,7 @@ still unstable.
 
 # Final Thoughts
 
-First of all, I'm happy to hear all things I got wrong in this article
+First of all, I'm happy to hear all the things I got wrong in this article
 because this is indeed a complex topic. Secondly, I would be interested in other 
 ways to solve this problem that I missed here, especially ones that work on stable.
 
