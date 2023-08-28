@@ -11,6 +11,14 @@ title: Algorithm and data struct
 > 
 > 따라서 "프로그래머는 바퀴를 다시 발명할 필요가 없다"는 말은 기존에 개발된 기술이나 지식을 잘 활용하되, 필요한 경우 새로운 기술을 개발하는 것도 중요하다는 것을 알리는 것입니다.
 
+## 문제해결
+
+{% include _shared_block/Collection/ProblemSolving.md %}
+
+* [Operating system](/posts_language/cs-OperatingSystem)
+* [Program, Process, Thread](/posts_language/cs-Program-Process-Thread)
+* [Assembly, Register, Calling convention](/posts_language/cs-Assembly-Register-CallingConvention)
+
 ## 알고리즘을 푸는 법
 * 알고리즘 문제 풀 때, 풀이방법을 정의하고 해결방법을 찾는게 아니라 문제를 명확히 이해하고, 적용할 수 있는 방법을 찾아야 합니다.
 
