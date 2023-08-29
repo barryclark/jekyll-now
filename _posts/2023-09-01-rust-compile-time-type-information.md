@@ -6,8 +6,6 @@ date: 2023-07-24
 last_updated: 2023-08-07
 #excerpt: ''
 #description:
-#permalink:
-title: 'Conditional Compilation xxxxxxxxxxxxx'
 #
 #
 # Make sure this image is correct !!!
@@ -18,10 +16,10 @@ og_image:
 comments_id: 
 ---
 
-This article is a deep(ish) dive into how to use traits for some special 
-applications that require conditional compilation. I try to enforce that
-tho types have the same size at compile time and by doing that we'll explore 
-the limits of Rust's current metaprogramming capabilities .
+The moment that spawned this article was when I asked myself _how hard
+can it be to make sure two types have the same size at compile time_? Well,
+it's complicated. This article does a deep dive into the limits of compile
+time metaprogamming in today's (and tonight's) Rust.
 
 # Motivation
 
@@ -35,18 +33,17 @@ fn map_in_place<T,U,F>(v: Vec<T>, mut f: F) -> Vec<U>
     where F: FnMut(T) -> U {
     assert_eq!(std::alloc::Layout::<T>::new(), 
         std::alloc::Layout::<U>::new());
-
     // loads of unsafe code here
 }
 ```
 I won't go into the unsafe code here because that was the topic of the aforementioned
 article. The one thing that bugged me was that I had to have this `assert_eq!` in there.
-Not the fact that it was in there but it was a condition that would be checked at runtime.
+Not the fact that it was in there, but that it was a condition that would be checked at runtime.
 As a die-hard metaprogramming fan it felt weird to check a condition at runtime
 that we can clearly check at compile time. It would be great if we
-can stick this condition into the function signature using Rust's trait system 
+can stick this condition into the function signature maybe using traits
 to make it blatantly obvious that we want the types `T` and `U` to have the same
-size. 
+size and alignment. 
 
 ## Today's Problem: Same Size for Two Types
 
@@ -57,33 +54,35 @@ know out how to check for size, adding an alignment requirement is trivial.
 So what we want is this:
 
 ```rust
-fn do_somehting<T,U>() 
+fn do_somehting<T,U>(t: T, u: U) 
     // where: T and U have same size 
 {
     // do something
 }
 
 // this compiles
-do_something<u8,u8>();
+do_something<u8,u8>(1,2);
 // this also compiles
-do_somehting<f32,i32>();
+do_somehting<f32,i32>(1.,2);
 // this must not compile
-do_something<u8,u32>();
+do_something<u8,u32>(1,2);
 ```
 
-The compiler knows the sizes of the types `T` and `U` at compile time so it 
+Our goal is to make the compiler emit an error message if the types
+`T` and `U` don't have the same size and otherwise let the code compile just fine.
+The compiler knows the sizes of the types `T` and `U` so it
 should be simple enough to find a solution to enforce identical size at compile time,
 right? Right?
 
 # Using Associated Constants
 
-My first intuition was that associated constants would help me elegantly enforce trait bounds
-that allow me to restrict my `do_something` to types with same size.
+My first intuition was that associated constants would help us to elegantly enforce trait bounds
+that allow us to restrict our `do_something` to types with same size.
 
 There are many ways to skin this cat and my ideas were definitely influenced
 by how metaprogramming in C++ uses associated types and compile time constants
 to give us metafunctions. I married this with a more Rusty idea of 
-trait bounds and I came up with the following.
+trait bounds and I came up with the following, which is pretty straightforward.
 
 ```rust
 pub trait SameSizeAs<T> {
@@ -95,15 +94,14 @@ impl<T,U> SameSizeAs<T> for U {
         std::mem::size_of::<T>() == std::mem::size_of::<U>();
 }
 ```
+
 So what we do is implement a trait `SameSizeAs<T>` for every type `U`, which
 indicates whether `T` and `U` have the same size via an associated constant. That's
 not too bad. We can use the trait like so:
 
 ```rust
-pub fn do_something<T,U>() 
-where U: SameSizeAs<T,VALUE=true>
-
-{
+pub fn do_something<T,U>(t: T, u: U) 
+where U: SameSizeAs<T,VALUE=true> {
     // do something
 }
 ```
@@ -111,10 +109,10 @@ where U: SameSizeAs<T,VALUE=true>
 I find this pretty elegant and concise and it turns out the error messages are
 very readable if we try to call the function with two types of different size.
 There's just one problem with this: it does not compile on stable Rust. Current stable Rust 
-(1.71.1 at the time of writing) does not allow us to compare associated
+(1.72 at the time of writing) does not allow us to compare associated
 constants for equality. We need the feature
 [`associated_const_equality`](https://github.com/rust-lang/rust/issues/92827)
-to compile it which is unfortunate because I really would want my solution to work
+to compile it which is unfortunate because I really would this solution to work
 on stable Rust. 
 
 For completeness let me mention another [known way](https://github.com/rust-lang/rfcs/issues/3162)
@@ -125,7 +123,13 @@ go into detail here but we will see this feature pop up in a different context.
 
 # Using Associated Types
 
-There was a time (before [Rust 1.51](https://blog.rust-lang.org/2021/03/25/Rust-1.51.0.html))
+So the problem with the solution above was that we cannot yet compare 
+associated constants for equality in trait bounds. But we definitely can
+compare types for equality in trait bounds and so that is the core of the
+next approach I took. Translate the boolean _values_ into _types_ and do the
+equality comparison on the types rather than the values.
+
+There was a time (before )
 when there was no Const Generics in Rust and all metaprogramming
 (not invoking macros) had to be done with types only. So that's what I tried next.
 Coming from C++ I know that metaprogramming with types can
@@ -133,7 +137,7 @@ get a bit hairy at times, but I was pretty confident that I could find a solutio
 Because after all I was only trying to make the compiler enforce something 
 that it already knows! 
 
-Now, since I did not intend to use actual boolean values at compile time 
+Now, since I didn't want to use actual boolean values at compile time 
 I had to translate the idea of booleans into types:
 
 ```rust
@@ -162,7 +166,7 @@ are for values at runtime. Kind of... anyways, we can now put a nice `where` cla
 our function definition:
 
 ```rust
-pub fn do_something<T,U>() -> bool
+pub fn do_something<T,U>(t: T, u: U) -> bool
 where T: SameSizeAs<U,Value=TrueType> {
     println!("T and U are the same size");
     true
@@ -175,14 +179,12 @@ we are testing for equality of an associated _type_ and not a compile time
 constant _value_. 
 
 Now there is just one thing missing and that is to write a blanket implementation for `SameSizeAs`
-that serves our purpose. That is where the trouble lies, because any way we slice
-it we need to have some way to go from a compile time known condition (a `const bool`)
-to a type. Although I did not want to initially, I saw no other way than using Const 
-Generics. So I want a metafunction that goes from a compile time known
-condition `const C: bool` to a type depending on the condition. In C++ we would
-use a templated struct with boolean template parameters and associated types for
-that and in Rust we can to a very similar thing when we bring traits into the
-mix:
+that serves our purpose.  We need to have some way to go from a compile time known condition (a `const bool`)
+to a type. Since [Rust 1.51](https://blog.rust-lang.org/2021/03/25/Rust-1.51.0.html) we
+have Const Generics to help us make this transition. That's the only way I saw
+how to do that. In C++ we would use a templated struct with boolean template
+parameters and associated types for that and in Rust we can to a very similar
+thing when we bring traits into the mix:
 
 ```rust
 pub struct Condition<const B: bool>;
@@ -204,7 +206,7 @@ We can use the struct and the trait together to go from a compile time
 known condition to a type. Unfortunately, as of the time of writing
 we cannot simply use it as `Condition<Cond>::ValueType` but we have to use
 the fully qualified type so that the compiler can understand the associated
-type, even if it should be unambiguous. That means we must use it as
+type, even if it is actually unambiguous. That means we must use it as
 `<Condition<Cond> as TruthType>::ValueType` which is a bit cumbersome but
 does the trick [^where-clause]:
 
@@ -222,25 +224,25 @@ boolean into a type. We can use it to find out whether two given types are of
 the same size. That's great and all, but we again have to use an unstable feature
 for that. This where the feature [`generic_const_exprs`](https://github.com/rust-lang/rust/issues/76560)
 pops up again. We need this to use generic parameters `T` and `U` as part of
-the condition that checks that the size is equal. It's a bit unfortunate since
+the Const Generic parameter. It's a bit unfortunate since
 the whole exercise was to go from a compile time boolean to a type and it seems to me
-we need an unstable feature to accomplish that. I would be happy to be proven
+we need an unstable feature to accomplish that now. I would be happy to be proven
 wrong here.
 
 Be that as it may, we can now use our type and trait to restrict the generic 
 types passed to our `do_something` function:
 
 ```rust
-pub fn do_something<T,U>() 
+pub fn do_something<T,U>(t: T, u: U) 
 where T: SameSizeAs<U,Value=TrueType> {
     // do something 
 }
 ```
 
-Now the compiler will only let us invoke `do_something` with types of the
+Now the compiler will let us invoke `do_something` with types of the
 same size and will give an error otherwise. I find it hard to compare which
 unsafe feature has a better chance of making it to stable soon, but it is
-worth noting that at the time of writing, `generic_const_exprs` is still
+worth noting that as of now, `generic_const_exprs` is still
 described as "highly experimental" in the [associated tracking issue](https://github.com/rust-lang/rust/issues/76560)
 and that the compiler issues a dedicated warning when it is used.
 
@@ -265,7 +267,7 @@ Here, `Cond` needs to be a compile time known condition. So now we might just
 try this in our function:
 
 ```rust
-fn do_something<T,U>() {
+fn do_something<T,U>(t: T, u: U) {
     const ASSERTION : () = assert!(core::mem::size_of::<T>()
                             ==core::mem::size_of::<U>(),
                            "T and U must have the same size");
@@ -282,14 +284,14 @@ function in the `const` item `ASSERTION`. But there is a way around it. Let's
 make `ASSERTION` an associated constant of a struct:
 
 ```rust
-struct SameLayout<T, U> {
+struct SameSize<T, U> {
     phantom: std::marker::PhantomData<(T, U)>,
 }
 
-impl<T,U> SameLayout<T,U> {
-    const ASSERTION: () = assert!(std::mem::size_of::<T>() == std::mem::size_of::<U>() 
-                && std::mem::align_of::<T>() == std::mem::align_of::<U>()
-                ,"types do not have the same size");
+impl<T,U> SameSize<T,U> {
+    const ASSERTION: () = assert!(std::mem::size_of::<T>() 
+                           == std::mem::size_of::<U>(),
+                          "types do not have the same size");
 }
 ```
 
@@ -297,18 +299,18 @@ Now what we have to do is force the creation of that constant inside the
 function. But we can't just use another `const` item to do that inside the function
 because that would, again, not allow us to access the types `T` and `U` for the
 reasons stated above. However, we _can_ do it in a context that is not `const`
-evaluated and whose only purpose force the [monomorphization](https://en.wikipedia.org/wiki/Monomorphization)
+evaluated and whose only purpose is to force the [monomorphization](https://en.wikipedia.org/wiki/Monomorphization)
 of the compile time assertion we are interested in.
 
 ```rust
-pub fn do_something<T,U>() {
-    _ = SameLayout::<T,U>::ASSERTION;
+pub fn do_something<T,U>(t: T, u: U) {
+    _ = SameSize::<T,U>::ASSERTION;
     // do something
 }
 ```
 
 Now when we try to invoke `do_something` with types of different sizes 
-the compiler will print an error message. Also this works on stable Rust, which
+the compiler will print an error message. This one finally works on stable Rust, which
 is pretty satisfying. However, while it is nice that this does work at compile
 time, there is no indication in the function signature that we require
 `T` and `U` to be of the same size. We must relegate this fact to the documentation.
@@ -316,30 +318,30 @@ time, there is no indication in the function signature that we require
 # Providing Fallback Implementations
 
 The stated goal of this article was to enforce that `T` and `U` have the same
-size at compile time and we have achieved that in different ways, only one of
+size at compile time and we have achieved that in different ways, one of
 which works on stable. But what if we did not want to issue a compile error in 
-case `T` and `U` have different sizes but rather provide a fallback function?
+case `T` and `U` have different sizes but rather provide a fallback implementation?
 Let's go very briefly through the presented solutions starting with the last one:
 
 I see no way of using compile time assertions for branching in code generation
-because its only purpose is to emit a compile error. So that one is out. The case
+because its only purpose is to emit a compile error. So that one is out, I think. The case
 is different when using associated types in traits, because in principle we could
 write two incarnations of `do_something`: one where `T: SameSizeAs<U,Value=TrueType>`
 and one where `T: SameSizeAs<U,Value=FalseType>`. However, currently the
 trait solver in Rust does not recognize these two things as disjoint cases so
-that one won't work yet. There's some clever ways around those current limitations,
+that one won't work yet. There's some clever ways around those limitations,
 but I am not sure they'll work for this case. You can read all about it --shameless
 plug incoming-- in my article on [mutually exclusive traits in Rust](/blog/2021/mutually-exclusive-traits-rust/).
-Lastly, using associated constants. Again we could in theory write two implementations,
+Lastly, using associated constants: again, we could in theory write two implementations,
 but as of now the cases `U: SameSizeAs<T,VALUE=true>` and `U: SameSizeAs<T,VALUE=false>`
-are not recognized as disjoint although it is stated as a [future goal](https://github.com/rust-lang/rust/issues/92827#issuecomment-1260486226)
+are not recognized as disjoint.  However, it is stated as a [future goal](https://github.com/rust-lang/rust/issues/92827#issuecomment-1260486226)
 in the associated tracking issue.
 
 If you are aware of [specialization](https://github.com/rust-lang/rust/issues/31844)
-you'll recognize that this would offer another way of going about providing
+you'll recognize that this would offer another way of providing
 a fallback implementation. It does not work quite like the solutions outlined 
-above but it can be used to achieve something like the same effect in spirit. Specialization
-is a big complex of features that is as of the time of this writing unsound
+above but it can be used to achieve something to that effect. Specialization
+is a big complex of features that is, as of the time of writing, unsound
 and even [a minimal subset](https://github.com/rust-lang/rust/pull/68970) is
 still unstable.
 
@@ -351,10 +353,10 @@ ways to solve this problem that I missed here, especially ones that work on stab
 
 While this writeup has been fun, it has demonstrated to me that metaprogramming
 in Rust is not straightforward and that the trait system still has some rough 
-edges [^rough]. Not trying to say that it sucks or anything because when it works
+edges. Not trying to say that it sucks or anything because when it works
 (which is most of the time) it works _amazingly_, but this whole exercise would
 have been a oneliner in Modern C++&trade; [^cpp]. 
 
 # Endnotes
 [^where-clause]: If it strikes you as odd that we have to repeat the exact same condition in the where clause that we used in the body, you are not alone. In principle the compiler should know that `TruthType` is implemented for all incarnations of `Condition<C>`. It also does not help if we write `where Condition<true>: TruthType, Condition<false>:TruthType`. I suspect those are limitations in the current trait solver.
-[^cpp]: I _know_ C++ has massive problems and I will choose Rust over it any time but the (non macro based) metaprogramming and compile time programming is as of yet stronger in C++. Though for normal (non-meta) usecases traits beat concepts so brutally its not even funny.
+[^cpp]: I _know_ C++ has massive problems and I will choose Rust over it any time but the (non macro based) metaprogramming and compile time programming is currently stronger in C++. Though for normal (non-meta) usecases traits beat concepts so brutally its not even funny.
