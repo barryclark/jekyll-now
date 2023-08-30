@@ -5,8 +5,8 @@ permalink: /about/
 ---
 ![Me](https://raw.githubusercontent.com/Njoselson/Njoselson.github.io/master/images/profile_cleaveland_chair.jpg)
 
-I am a techno-optimist in my late twenties currently residing in Malmö, Sweden. 
-I try to be a radical and I am passionate about Data, Privacy, Artificial Intelligence, Mathematical Statistics, and Data Journalism. 
+I am a techno-optimist in NYC.
+I try to be thoughtful and am passionate about Data, Privacy, Artificial Intelligence, Mathematical Statistics, and Data Journalism. 
 I currently work as a Data Scientist at a small healthtech startup, and look forward to working towards a technological future that supports empathy, equality, democracy, and innovation.
 
 However, I realize that my optimistic vision of the future can seem naive given the surveillance capitalistic reality of modern day Silicon valley.
