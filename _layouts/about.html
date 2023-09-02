@@ -39,8 +39,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- Page content -->
 	<div class="page cover-page" id="page">
 	{% include partials/navigation/nav-about.html %}
-	{% include partials/head-about.html %}
 		<main id="page-main">
+	{% include partials/head-about.html %}
 			<div>
 			<div itemscope itemtype="http://schema.org/Person">
 				<section class="anm-moveFromBottomFade delay-200">
@@ -49,12 +49,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<span itemprop="name">Isard Miralles </span></h1>
 					{{ content }}
 					<br>
-						<h4 class="anm-scaleUp delay-400"><a href="mailto:isardmt@gmail.com" itemprop="email">isardmt@gmail.com</a></h4>
 					<strong>
+						<em class="anm-scaleUp delay-400"><a href="mailto:isardmt@gmail.com" itemprop="email">isardmt@gmail.com</a></em>
 						<span itemprop="telephone"><em class="anm-scaleUp delay-600"><a href="tel:+34 {{ site.phone }}"><i class="icon-mobile"></i>658973617</a></em></span>
 					</strong>
 					<br>
 				</section>
+				<hr>
 				<aside class="anm-moveFromBottomFade delay-1000">
 					<figure>
 						<p>Últims treballs</p>
