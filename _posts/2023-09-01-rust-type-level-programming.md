@@ -113,8 +113,7 @@ There's just one problem with this: it does not compile on stable Rust. Current 
 (1.72 at the time of writing) does not allow us to compare associated
 constants for equality. We need the feature
 [`associated_const_equality`](https://github.com/rust-lang/rust/issues/92827)
-to compile it which is unfortunate because I really would this solution to work
-on stable Rust. 
+to compile it which I found a bit disappointing because I liked the simplicity of the solution and I would like this to work on stable Rust.
 
 For completeness let me mention another [known way](https://github.com/rust-lang/rfcs/issues/3162)
 of using compile time booleans in `where` clauses via a clever combination of 
