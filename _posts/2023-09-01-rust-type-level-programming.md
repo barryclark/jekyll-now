@@ -51,7 +51,7 @@ size and alignment.
 For this post, let's consider a slightly simplified problem and just
 check that the two types `T` and `U` have the same size and not bother with
 the alignment. This is just to keep the examples concise, because once we 
-know out how to check for size, adding an alignment requirement is trivial.
+figure out how to check for size, adding an alignment requirement is trivial.
 So what we want is this:
 
 ```rust
