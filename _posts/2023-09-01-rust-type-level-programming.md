@@ -10,7 +10,7 @@ title: 'Curiously Cumbersome Rust: Type-level Programming'
 #
 #
 # Make sure this image is correct !!!
-og_image: 
+og_image: cumbersome-rust-meta.png
 #
 #
 # Make sure comments are enabled !!!	
@@ -354,7 +354,7 @@ the trait system still has some rough edges, where stuff that
 intuitively should work does not [^chalk]. That's a compliment
 to Rust because it is surprising to run into these problems in such a well designed
 language. I'm also not trying to say that the current trait system is badly implemented because when it works
-(which is almost all of the time) it works _amazingly_, but this whole exercise would
+(which is almost all of the time) it works _amazingly_, but this exercise would
 have been a oneliner in _Modern C++_&trade; [^cpp]. 
 
 # Endnotes

@@ -2,23 +2,23 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="600"
    height="315"
    viewBox="0 0 158.75 83.34375"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="1.2.2 (1:1.2.2+202212051552+b0a8486541)"
    sodipodi:docname="rust-template.svg"
    inkscape:export-filename="/media/envision/TOSHIBA/par-iter.png"
    inkscape:export-xdpi="192"
-   inkscape:export-ydpi="192">
+   inkscape:export-ydpi="192"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -29,22 +29,24 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="143.5717"
-     inkscape:cy="276.44958"
+     inkscape:cx="300.52038"
+     inkscape:cy="227.7894"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
-     inkscape:window-width="2493"
-     inkscape:window-height="1376"
-     inkscape:window-x="1987"
-     inkscape:window-y="27"
+     inkscape:window-width="2560"
+     inkscape:window-height="1362"
+     inkscape:window-x="0"
+     inkscape:window-y="41"
      inkscape:window-maximized="1"
      inkscape:pagecheckerboard="true"
      inkscape:bbox-nodes="true"
-     inkscape:snap-bbox-edge-midpoints="true">
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:showpageshadow="0"
+     inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        type="xygrid"
        id="grid838" />
@@ -73,23 +75,23 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:'Dela Gothic One';-inkscape-font-specification:'Dela Gothic One';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;line-height:1.25;font-family:'Dela Gothic One';-inkscape-font-specification:'Dela Gothic One';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="55.871964"
        y="251.44806"
        id="text828"><tspan
          sodipodi:role="line"
-         id="tspan826"
          x="55.871964"
          y="251.44806"
-         style="font-size:16.93333333px;stroke-width:0.26458332">Parallel </tspan><tspan
+         style="font-size:12.7px;stroke-width:0.264583"
+         id="tspan830">Curiously</tspan><tspan
          sodipodi:role="line"
          x="55.871964"
-         y="272.61472"
-         style="font-size:16.93333333px;stroke-width:0.26458332"
-         id="tspan830">Iterators</tspan></text>
+         y="267.32306"
+         style="font-size:12.7px;stroke-width:0.264583"
+         id="tspan1016">Cumbersome</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:'Dela Gothic One';-inkscape-font-specification:'Dela Gothic One';letter-spacing:0px;word-spacing:0px;fill:#4671ac;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;line-height:1.25;font-family:'Dela Gothic One';-inkscape-font-specification:'Dela Gothic One';letter-spacing:0px;word-spacing:0px;fill:#4671ac;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="56.670929"
        y="230.73491"
        id="text836"><tspan
@@ -97,10 +99,10 @@
          id="tspan834"
          x="56.670929"
          y="230.73491"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.28888893px;font-family:'EB Garamond';-inkscape-font-specification:'EB Garamond';fill:#4671ac;fill-opacity:1;stroke-width:0.26458332">how to write</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'EB Garamond';-inkscape-font-specification:'EB Garamond';fill:#4671ac;fill-opacity:1;stroke-width:0.264583">metaprogramming</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:'Dela Gothic One';-inkscape-font-specification:'Dela Gothic One';letter-spacing:0px;word-spacing:0px;fill:#4671ac;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;line-height:1.25;font-family:'Dela Gothic One';-inkscape-font-specification:'Dela Gothic One';letter-spacing:0px;word-spacing:0px;fill:#4671ac;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="111.92845"
        y="287.47003"
        id="text836-3"><tspan
@@ -108,6 +110,6 @@
          id="tspan834-6"
          x="111.92845"
          y="287.47003"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.28888893px;font-family:'EB Garamond';-inkscape-font-specification:'EB Garamond';fill:#4671ac;fill-opacity:1;stroke-width:0.26458332">for rayon</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'EB Garamond';-inkscape-font-specification:'EB Garamond';fill:#4671ac;fill-opacity:1;stroke-width:0.264583">with types</tspan></text>
   </g>
 </svg>
