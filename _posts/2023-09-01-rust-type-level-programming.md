@@ -3,7 +3,7 @@ layout: post
 tags: rust unstable traits const
 #categories: []
 date: 2023-09-01
-last_updated: 
+last_updated: 2023-09-03
 title: 'Curiously Cumbersome Rust: Type-level Programming'
 #excerpt: ''
 #description:
@@ -40,9 +40,9 @@ fn map_in_place<T,U,F>(v: Vec<T>, mut f: F) -> Vec<U>
 I won't go into the unsafe code here because that was the topic of the aforementioned
 article. The thing that bugged me was that `assert_eq!` in there.
 Not the fact that it was in there at all, but that it was a condition that would be checked at runtime.
-As a die-hard metaprogramming fan it felt weird to check a condition at runtime
+As a die-hard metaprogramming fan, it felt weird to check a condition at runtime
 that we can clearly check at compile time. It would be great if we
-can stick this condition into the function signature maybe using traits
+can stick this condition into the function signature, possibly using traits
 to make it blatantly obvious that we want the types `T` and `U` to have the same
 size and alignment. 
 
@@ -69,11 +69,10 @@ do_somehting(1f32,2i32);
 do_something(1u8,2u32);
 ```
 
-Our goal is to make the compiler compile the code only if our two types
-`T` and `U` have the same size and otherwise emit an error message. 
-The compiler knows the sizes of the types `T` and `U` so it
-should be simple enough to find a solution to enforce identical size at compile time,
-right? Right?
+Our goal is to make the compiler accept the code only if our two types
+`T` and `U` have the same size and emit an error message otgerwise. 
+The compiler knows the size of a (sized) type at compiletime. That's why it
+should be simple enough to find a solution that enforces identical size at compile time,right? Right?
 
 # Using Associated Constants
 
@@ -111,11 +110,11 @@ I find this pretty elegant and concise and it turns out the error messages are
 very readable if we try to call the function with two types of different size.
 There's just one problem with this: it does not compile on stable Rust. Current stable Rust 
 (1.72 at the time of writing) does not allow us to compare associated
-constants for equality. We need the feature
+constants for equality; we need the feature
 [`associated_const_equality`](https://github.com/rust-lang/rust/issues/92827)
-to compile it which I found a bit disappointing because I liked the simplicity of the solution and I would like this to work on stable Rust.
+to compile it. I found that a bit disappointing because I liked the simplicity of the solution and I would like this to work on stable Rust.
 
-For completeness let me mention another [known way](https://github.com/rust-lang/rfcs/issues/3162)
+For completeness let me link to another [known way](https://github.com/rust-lang/rfcs/issues/3162)
 of using compile time booleans in `where` clauses via a clever combination of 
 Const Generics and Traits. However, it requires the unstable feature
 [`generic_const_exprs`](https://github.com/rust-lang/rust/issues/76560). I won't 
@@ -129,8 +128,8 @@ compare types for equality in trait bounds and so that is the core of the
 next approach I took. Translate the boolean _values_ into _types_ and do the
 equality comparison on the types rather than the values. So that's what I tried next.
 
-Coming from C++ I know that metaprogramming with types can
-get a bit hairy at times, but I was pretty confident that I could find a solution.
+Coming from C++, I know that metaprogramming with types can
+get a bit hairy at times. However, I was pretty confident that I could find a solution.
 Because after all I was only trying to make the compiler enforce something 
 that it already knows! 
 
@@ -158,29 +157,27 @@ pub trait SameSizeAs<U> {
 ```
 
 You can see why I like the `BoolType` trait here: it mirrors the syntax we would use to define
-the type of a struct field. So at compile time, traits are for types what types
-are for values at runtime. Kind of... anyways, we can now put a nice `where` clause into
+the type of a struct field or an associated constant. Compare this implementation with the way we did it above. Finally, we can add a nice `where` clause into
 our function definition:
 
 ```rust
 pub fn do_something<T,U>(t: T, u: U) 
 where T: SameSizeAs<U,Value=TrueType> {
-    println!("T and U are the same size");
-    // code
+    // do something
 }
 ```
 
-This reads very similar to the enum code above but now it is fine to write 
+This reads very similar to the constant based code above but now it is fine to write 
 `Value=TrueType`  in the `where` clause in stable Rust. The reason is that
 we are testing for equality of an associated _type_ and not a compile time 
 constant _value_. 
 
-Now there is just one thing missing and that is to write a blanket implementation for `SameSizeAs`
+Finally, there is just one thing missing and that is to write a blanket implementation for `SameSizeAs`
 that serves our purpose.  We need to have some way to go from a compile time known condition (a `const bool`)
 to a type. Since [Rust 1.51](https://blog.rust-lang.org/2021/03/25/Rust-1.51.0.html) we
 have Const Generics to help us make this transition. That's the only way I saw
 how to do that. In C++ we would use a templated struct with boolean template
-parameters and associated types for that and in Rust we can to a very similar
+parameters and associated typed. In Rust we can to a similar
 thing when we bring traits into the mix:
 
 ```rust
@@ -223,7 +220,7 @@ for that. This where the feature [`generic_const_exprs`](https://github.com/rust
 pops up again. We need this to use generic parameters `T` and `U` as part of
 the Const Generic parameter for `Condition`. It's a bit unfortunate since
 the whole exercise was to go from a compile time boolean to a type and it seems to me
-we need an unstable feature to accomplish that now. I would be happy to be proven
+we need an unstable feature to accomplish that in our particular case. I would be happy to be proven
 wrong here.
 
 Be that as it may, we can now use our type and trait to restrict the generic 
@@ -250,7 +247,7 @@ traits. [For a while](https://github.com/rust-lang/rust/pull/89508) stable Rust
 has offered the possibility of panicking in `const` evaluated contexts. A
 panic in `const` context will produce a compile error, though
 I can't find the exact Rust version that stabilized it. Framing the problem like
-this makes it something like a `static_assert` in C++, though it is not quite 
+this makes it conceptually similar to a `static_assert` in C++, though it is not quite 
 as straightforward.
 
 What we need to do to invoke a `const` panic is to force the compiler to 
@@ -260,7 +257,7 @@ constant evaluate the panic. What we do is:
 const ASSERTION : () = assert!(Cond,"condition was not satisfied");
 ```
 
-Here, `Cond` needs to be a compile time known condition. This code produces a 
+Here, `Cond` needs to be a compile time known boolean. This code produces a 
 compile error if and only if `Cond` evaluates to `false`. 
 So now we might just try to replace the runtime assertion in our function
 by a compile time assertion like so:
@@ -354,10 +351,10 @@ While this writeup has been fun, it has demonstrated to me that interacting with
 types in nontrivial ways during metaprogramming in Rust is hard, especially in
 the context of conditional compilation. Furthermore,
 the trait system still has some rough edges, where stuff that 
-intuitively should work does not [^chalk]. Maybe that is even a compliment
+intuitively should work does not [^chalk]. That's a compliment
 to Rust because it is surprising to run into these problems in such a well designed
-language. I'm also not trying to say that the trait system sucks or anything because when it works
-(which is most of the time) it works _amazingly_, but this whole exercise would
+language. I'm also not trying to say that the current trait system is badly implemented because when it works
+(which is almost all of the time) it works _amazingly_, but this whole exercise would
 have been a oneliner in _Modern C++_&trade; [^cpp]. 
 
 # Endnotes
