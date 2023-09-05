@@ -34,3 +34,5 @@ https://github.com/kbmhansungb/kbmhansungb.github.io/assets/56149613/9d0a52ec-1f
 
 * [두 벡터사이의 교점 구하기](https://math.stackexchange.com/questions/270767/find-intersection-of-two-3d-lines)
 * [씬 캡쳐의 클리핑 평면을 이용하기 위한 설정](https://forums.unrealengine.com/t/scenecapturecomponent-custom-frustumstartdist/391684/3)
+* [샘플 파일 Mirror.zip](https://github.com/kbmhansungb/kbmhansungb.github.io/files/12520169/Mirror.zip)
+
