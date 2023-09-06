@@ -3,7 +3,7 @@ layout: post
 tags: rust unstable traits const
 #categories: []
 date: 2023-09-01
-last_updated: 2023-09-03
+last_updated: 2023-09-07
 title: 'Curiously Cumbersome Rust: Type-level Programming'
 #excerpt: ''
 #description:
@@ -39,8 +39,9 @@ fn map_in_place<T,U,F>(v: Vec<T>, mut f: F) -> Vec<U>
 ```
 I won't go into the unsafe code here because that was the topic of the aforementioned
 article. The thing that bugged me was that `assert_eq!` in there.
-Not the fact that it was in there at all, but that it was a condition that would be checked at runtime.
-As a die-hard metaprogramming fan, it felt weird to check a condition at runtime
+Not the fact that it was in there at all, but that the panic would only occur
+at runtime [^runtime-panic]. As a die-hard metaprogramming fan, 
+it felt weird to check a condition at runtime
 that we can clearly check at compile time. It would be great if we
 can stick this condition into the function signature, possibly using traits
 to make it blatantly obvious that we want the types `T` and `U` to have the same
@@ -70,7 +71,7 @@ do_something(1u8,2u32);
 ```
 
 Our goal is to make the compiler accept the code only if our two types
-`T` and `U` have the same size and emit an error message otgerwise. 
+`T` and `U` have the same size and emit an error message otherwise. 
 The compiler knows the size of a (sized) type at compiletime. That's why it
 should be simple enough to find a solution that enforces identical size at compile time,right? Right?
 
@@ -341,6 +342,31 @@ is a big complex of features that is, as of the time of writing, unsound
 and even [a minimal subset](https://github.com/rust-lang/rust/pull/68970) is
 still unstable.
 
+## Fallback Implementations without Specialization
+
+This section is an idea that was posted by reddit user `u/Dragon-Hatcher`
+[here](https://www.reddit.com/r/rust/comments/168zdh6/comment/jyz2pfx/?utm_source=share&utm_medium=web2x&context=3)
+that has to be one of the most brilliant applications of the KISS principle
+I have seen. Let's just do the obvious thing and stick an `if` inside the
+function like so:
+
+```rust
+fn do_stuff<T,U>(t: T, u: U) {
+    use std::mem::size_of;
+    if size_of::<T>() == size_of::<U>() {
+        // do one thing
+    } else {
+        // do another thing
+    }
+}
+```
+
+What happens here is that the compiler will evaluate the condition
+at compile time and just optimize out the branch that is not taken. Don't believe
+me? [Try it on godbolt](https://godbolt.org/z/EqzM35qha). The one thing I don't
+know is that the compiler will always evaluate a `const fn` at compile time when
+it can [^const-fn], but here it clearly works.
+
 # Final Thoughts
 
 First of all, I'm happy to hear all the things I got wrong in this article
@@ -357,7 +383,16 @@ language. I'm also not trying to say that the current trait system is badly impl
 (which is almost all of the time) it works _amazingly_, but this exercise would
 have been a oneliner in _Modern C++_&trade; [^cpp]. 
 
+## Other Solutions
+I'll collect some other solutions that people send me here:
+
+* I already added a section on fallbacks without specialization above. (thanks again [u/Dragon-Hatcher](https://www.reddit.com/user/Dragon-Hatcher/))
+* [Another nightly solution](https://www.reddit.com/r/rust/comments/168zdh6/comment/jz44fgs/?utm_source=share&utm_medium=web2x&context=3)
+that works entirely inside a `where` clause. (thanks [u/matthieum](https://www.reddit.com/user/matthieum/), thanks [u/Dragon-Hatcher](https://www.reddit.com/user/Dragon-Hatcher/))
+
 # Endnotes
 [^where-clause]: If it strikes you as odd that we have to repeat the exact same condition in the where clause that we used in the body, you are not alone. In principle the compiler should know that `TruthType` is implemented for all incarnations of `Condition<C>`. It also does not help if we write `where Condition<true>: TruthType, Condition<false>:TruthType`. I suspect those are limitations in the current trait solver.
-[^chalk]: There are efforts to implement [a new trait solver](https://rustc-dev-guide.rust-lang.org/traits/chalk.html) called Chalk with the aim of massively improving the current situation.
+[^chalk]: There are efforts to implement [a new trait solver](https://blog.rust-lang.org/inside-rust/2023/07/17/trait-system-refactor-initiative.html) with the aim of improving the current situation. Thanks to reddit user `u/Sharlinator` for pointing it out [here](https://www.reddit.com/r/rust/comments/168zdh6/comment/jyz37s3/?utm_source=share&utm_medium=web2x&context=3) that this was not Chalk, as I had stated in a previous version of this endnote.
 [^cpp]: I _know_ C++ has massive problems and I will choose Rust over it any time but the (non macro based) metaprogramming and conditional compilation is currently stronger in C++. Though for normal (non-meta) usecases Traits beat Concepts any day of the week.
+[^const-fn]: Meaning when we don't force the evaluation in a `const` context.
+[^runtime-panic]: The actual condition inside the assert is likely evaluated at compile time and the code is optimized accordingly, but the panic will occur only at runtime. Thanks `Shnatsel` for pointing that out [here](https://www.reddit.com/r/rust/comments/168zdh6/comment/jz08b6o/?utm_source=share&utm_medium=web2x&context=3).
