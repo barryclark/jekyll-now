@@ -2,6 +2,8 @@
 
 https://github.com/kbmhansungb/kbmhansungb.github.io/assets/56149613/9d0a52ec-1f09-44f5-b5fb-a045ee17e1ec
 
+- [ ] 측면으로 갈수록 텍스쳐의 좌표가 왜곡되어 확대되어 보이는 문제
+
 ![image](https://github.com/kbmhansungb/kbmhansungb.github.io/assets/56149613/0edec30c-acc4-4b24-a145-1369496769d4)
 
 1. 거울이 정면을 바라보도록 맞춘 후, 텍스쳐의 좌우가 반전되어 그려지도록 합니다.
