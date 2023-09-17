@@ -33,26 +33,6 @@ title: Character Animation
 
 </div></details>
 
-## Bone Space & Indicies
-
-* Bone space는 부모 본으로 부터의 상대적입니다.
-* Component space는 컴포넌트로 부터 상대적입니다.
-* WorldSpace는 월드상의 절대 공간을 의미합니다.
-
-[본 인디시스를 이해하기](https://www.unrealengine.com/en-US/tech-blog/demystifying-bone-indices)
-
-* Mesh Bone Index
-
-메시 본 익덱스는 계층 구조의 순서대로 인덱싱 되어 있으며 렌더링에 사용됩니다. 메시 본 인덱스를 이용해서 스켈레탈 메시의 ComponentSpaceTransforms(Old : SpaceBase)또는 BoneSpaceTransforms(Old : LocalAtom)에 접근합니다.
-
-* Skeleton Bone Index
-
-USkeletalMesh의 모든 본에 대한 인덱스입니다. UAnimSequence 내부에는 내부 트랙 인덱스와 일치하는 스켈레톤 본 인덱스간의 맵핑이 있습니다. 따라서 스켈레톤이 변경되면 애니메이션 데이터를 업데이트 해야합니다.
-
-* FCompact Pose Bone Index
-
-FCompactPose에서만 사용할 수 있는 인덱스입니다. FCompactPoseBoneIndex를 이용하여 여러 LOD를 가지는 Skelton Bone Index를 통합할 수 있습니다. 모든 애니메이션 코드는 FCompactPose를 이용합니다. SkeletalMesh와 Skelton간의 대부분의 변환은 USkeleton에서 차즐 수 있습니다.
-
 ## 스켈레탈 메쉬와 캐릭터
 
 <details><summary>TPose vs APose</summary>
