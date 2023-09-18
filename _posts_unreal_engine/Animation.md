@@ -49,35 +49,6 @@ APose는 리타겟팅이 힘든 면이 있습니다. 이는 기본 APose의 모�
 
 </div></details>
 
-## 애니메이션 몽타주
-
-* 몽타주는 따로 촬영된 화면을 떼어 붙이면서 새로운 장면이나 내용을 만드는 기법이다. 일반적으로 영화나 사진의 편집 구성의 한 수법으로 간주됩니다.
-
-<details><summary>루프가 있는 몽타주의 활용</summary>
-<div markdown="1">
-
-게임 캐릭터가 주문을 외운다고 합니다. 캐릭터가 주문을 외우는 모션이 많을 때, 애님 블루프린트로 구현하면, 안그래도 복잡한 애님 블루프린트를 더욱 복잡하게 만들게 됩니다.
-
-<center><div markdown="1">
-
-|---|---|---|
-|Start|Loop|End|
-|Anim1|Anim2|Anim3|
-|주문 외울 준비|주문을 외움|주문 종료|
-
-</div></center>
-
-1. 몽타주에서 우클릭으로 섹션 추가, Start, Loop, End를 추가해줍니다.
-2. 몽타주 섹션에서 섹션의 끝에 다른 섹션을 연결함으로써 루프를 만들 수 있습니다.
-    - 몽타주 섹션 플레이에서 플레이를 눌러보고 확인해 봅니다. 
-    - 참고로 UI가 상당히 별루입니다.
-3. Anim Blueprint에서 몽타주를 재생 시킬 수 있도록 설정해야 합니다.
-    - [애니메이션 몽타주 사용법](https://docs.unrealengine.com/4.27/ko/AnimatingObjects/SkeletalMeshAnimation/AnimMontage/UserGuide/)을 참고할 수 있습니다.
-4. 키입력에 반응하는 몽타주 재생에서 입력했을 때 Start Section을 재생하고, 끝날때 End Section을 재생합니다. 이러면, Start로 시작해서, 루프에 있다가, End로 종료되는 몽타주 애니메이션을 만들 수 있습니다.
-    - PlayAnimMongtague 메서드를 보면 Start Section Name 파라메터가 있습니다.
-
-</div></details>
-
 ## Anim Bluepirnt (애님 블루프린트)
 
 * **Anim Instance에서 Anim Instance를 불러올 수도 있습니다.**
