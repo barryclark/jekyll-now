@@ -19,6 +19,10 @@ Animation Montage (애니메이션 몽타주, 또는 줄여서 몽타주) 를 �
 
 * 몽타주 섹션의 루프는 Preview 및 Default 버튼 옆에 있는 "Pick the next section' 버튼을 선태갛고 블렌드 시간 값 변경할 필요 없이 루프를 선택하면 됩니다. 루프의 종료는 블루프린트에서 몽타지를 시작할 때, Starting Section 파라미터 값으로 다음 섹션을 재생시켜야 합니다.
 
+![image](https://github.com/kbmhansungb/kbmhansungb.github.io/assets/56149613/fdd6021e-b582-4c85-9194-bb07e0f249eb)
+
+* Loop상태에서 End 섹션으로 몽타주를 재생하면, Loop가 끝나고 End가 재생되는게 아니라 현재 Loop중인 애니메이션에서 End의 시작 애니메이션으로 블렌드 되어 재생됩니다.
+ 
 [Unreal Doc : 레이어 애니메이션 사용하기](https://docs.unrealengine.com/4.27/ko/AnimatingObjects/SkeletalMeshAnimation/AnimHowTo/AdditiveAnimations/)
 
 애니메이션 블렌딩이란, 개념상 단순히 하나의 캐릭터 또는 스켈레탈 메시에 둘 이상의 애니메이션이 부드럽게 전환되도록 만드는 것을 말합니다. 언리얼 엔진 4 에는 그러한 블렌딩을 적용할 수 있는 방법이 여러가지 있는데, 블렌드 스페이스 를 통하거나, 애디티브 메서드 즉 말 그대로 가중 편향치나 알파값에 따라 두 애니메이션을 조합하거나, 심지어 기존 포즈를 직접 덮어쓰는 방법도 있습니다.
