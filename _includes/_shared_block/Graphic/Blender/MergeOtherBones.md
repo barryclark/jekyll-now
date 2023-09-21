@@ -3,6 +3,7 @@
     * 임포트할때 옵션에서 Force Connect를 이용해 Bone의 Head와 tail이 연결되게 합니다.
 2. 변경해야 하는 본들의 이름을 기준이 되는 본으로 변경하고, 계층 구조가 다를 경우 병합합니다.
     * 본을 그냥 삭제할 경우 버텍스 웨이트가 적용되지 않으므로, GitHub에서 blender-bones-merger를 찾아 AddOn을 설치합니다.
+    * [Github : vr-voyage blender_bones_merger](https://github.com/vr-voyage/blender_bones_merger)
 3. 두 본을 비교할 수 있게 본이 보이는 설정을 변경합니다.
     * 본의 이름을 변경하면 Vertex Group의 이름도 같이 변경됩니다.
 4. 기준이 되는 본과, 변경해야 하는 본의 위치가 다를 수 있습니다. 이때 포즈모드로 들어가 본들을 일치시킵니다.
