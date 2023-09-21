@@ -4,11 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+
+I am a data scientist and I love this field.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I study M1 Data science in University of Lille
 
 ### Contact me
 
