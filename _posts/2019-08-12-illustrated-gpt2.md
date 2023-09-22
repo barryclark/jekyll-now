@@ -9,7 +9,7 @@ title: The Illustrated GPT-2 (Visualizing Transformer Language Models)
 <a href="https://news.ycombinator.com/item?id=20677411" class="hn-link">Hacker News (64 points, 3 comments)</a>, <a href="https://www.reddit.com/r/MachineLearning/comments/cp8prq/p_the_illustrated_gpt2_visualizing_transformer/" class="">Reddit r/MachineLearning (219 points, 18 comments)</a>
 </span>
 
-<span class="discussion">Translations: <a href="https://lolitasian.blog.csdn.net/article/details/125529598">Simplified Chinese</a>, <a href="https://lbourdois.github.io/blog/nlp/GPT2/">French</a>, <a href="https://chloamme.github.io/2021/12/08/illustrated-gpt2-korean.html">Korean</a>, <a href="https://habr.com/ru/post/490842/">Russian</a></span>
+<span class="discussion">Translations: <a href="https://lolitasian.blog.csdn.net/article/details/125529598">Simplified Chinese</a>, <a href="https://lbourdois.github.io/blog/nlp/GPT2/">French</a>, <a href="https://chloamme.github.io/2021/12/08/illustrated-gpt2-korean.html">Korean</a>, <a href="https://habr.com/ru/post/490842/">Russian</a>, <a href="https://devrimdanyal.medium.com/gpt-2-transformat%C3%B6r-dil-modellerinin-g%C3%B6rselle%C5%9Ftirilmesi-fc4bfd510223">Turkish</a></span>
 
 
 
