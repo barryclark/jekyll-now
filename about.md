@@ -4,8 +4,6 @@ title: Acerca de
 permalink: /about/
 ---
 
-### Acerca de mi
-
 Mi nombre es Wilsson Dubon, soy un guatemalteco común, trabajador asalariado, un hombre de familia y valores, de ideología liberal clásica y conservadora. Me considero una persona en constante aprendizaje, nunca experto, siempre aprendiz y admiro a todo aquel es capaz de enseñar pero también de aprender y desaprender si es necesario, mi meta es colaborar para construir una mejor sociedad para todos los guatemaltecos y construir una Guatemala mejor para las generaciones venideras.
 
 ### Sobre este blog
