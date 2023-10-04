@@ -13,6 +13,10 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+    <style>
+    {% include mystyles.css %}
+    </style>
   </head>
 
   <body>
@@ -22,9 +26,9 @@
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
           <div class="site-info">
-            <h1 class="site-name" style="margin-top: -10px;"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <h1 class="site-name blog-title-mt-10"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
-            <p sytle="font-size: 12px;">por Wilsson Dubon</p>
+            <p class="autor-text">por Wilsson Dubon</p>
           </div>
 
           <nav>
