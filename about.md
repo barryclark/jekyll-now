@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+DevOps Engineer @ SEVIMA, Very interested in Cloud Native & Cloud Computing, and currently learning Chaos Engineering.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
+Thank you for your attention.
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[nurulyakin79@gmail.com](mailto:nurulyakin79@gmail.com)
