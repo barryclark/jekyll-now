@@ -18,11 +18,11 @@ avatar: https://avatars.githubusercontent.com/u/145866021?s=400&u=45b0441270ee63
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:Qjiang188@outlook.com
+  email: Qjiang188@outlook.com
   facebook:
   flickr:
   github: barryclark/jekyll-now
-  instagram:soloveld188
+  instagram: soloveld188
   linkedin:
   pinterest:
   rss: fox
@@ -34,14 +34,14 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:vivi
+disqus: vivi
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:188-soloveld-com
+google_analytics: 188-soloveld-com
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:https://Soloveld-vivi.github.io
+url: https://Soloveld-vivi.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
