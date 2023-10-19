@@ -4,9 +4,11 @@
 
 # Name of your site (displayed in the header)
 name: Taylor J Hawkins
+title: Taylor J Hawkins
 
 # Short bio or description (displayed in the header)
 description: 🎶🖤 Leather-Clad Composer Unchaining Musical Alchemy 🖤🎶
+tagline: 🎶🖤 Leather-Clad Composer Unchaining Musical Alchemy 🖤🎶
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars1.githubusercontent.com/u/2531760?v=3&s=400
@@ -69,6 +71,12 @@ kramdown:
     css_class: 'highlight'
 
 remote_theme: ItsPatrq/minimal-categorized
+pagination:
+  enabled: true
+  per_page: 4
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed
@@ -78,11 +86,21 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-seo-tag 
-
+  
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+  
 # Exclude these files from your production _site
 exclude:
+  - CHANGELOG.md
+  - CNAME
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
-  - CNAME
+  - screenshot.png
+  - docs/
+  - node_modules
