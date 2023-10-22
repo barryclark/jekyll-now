@@ -14,4 +14,4 @@ Berdasarkan informasi di laman [Alumni UGM](https://alumni.ugm.ac.id/2023/10/13/
 
 ![loker astraworld](http://siapkerjo.com/source/siapkerjocom/files/202310_-_lowonga_Astra_World_1.png)
 
-<div class="apply"><a href="mailto:astrini.yudityapurnomo@ai.astra.co.id?Subject=GA2023_Full Name" target="_blank" rel="noopener noreferrer">Lamar posisi ini</a></div>
+<div class="apply"><a href="mailto:astrini.yudityapurnomo@ai.astra.co.id?subject=GA2023_Full Name" target="_blank" rel="noopener noreferrer">Lamar posisi ini</a></div>
