@@ -28,7 +28,7 @@ Berdasarkan informasi di laman [Instagram AqiqahPedia](https://www.instagram.com
 7. Mahir Berkomunikasi & Mudah Bergaul
 8. Diutamakan Domisili Pekalongan & Sekitarnya
 
-Silahkan kirim lamaran via Email
+### Silahkan kirim lamaran via Email
 
 **Kepada : cvmenara85@gmail.com**
 
@@ -37,6 +37,7 @@ Silahkan kirim lamaran via Email
 **Wajib Melampirkan : Ijazah Terakhir, CV, KTP, SIM C, SKCK, dan Pas Foto Terbaru (discan & dijadikan 1 File)**
 
 SELEKSI KETAT
+
 PENEMPATAN DI PEKALONGAN
 
 <div class="apply"><a href="mailto:cvmenara85@gmail.com?subject=LAMARAN STAFF CUSTOMER SERVICE" target="_blank" rel="noopener noreferrer">Lamar posisi ini</a></div>
