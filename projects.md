@@ -23,7 +23,7 @@ This project won **1st place** in the [\#CohereAIHack](https://devpost.com/softw
 
 CYI is a Christian youth development organization based in Accra, Ghana, with branches across Africa and Europe. I lead development on a number of WordPress projects and JS projects linked by a central API built from the ground up. 
 
-![](https://img.shields.io/badge/Wordpress?logo=Wordpress) ![](https://img.shields.io/badge/Django-green?logo=Django)
+![](https://img.shields.io/badge/Wordpress-blue?logo=Wordpress) ![](https://img.shields.io/badge/Django-green?logo=Django)
 
 [GitHub Org](https://github.com/CYI-IT)
 
