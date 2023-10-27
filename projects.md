@@ -8,7 +8,7 @@ permalink: /projects/
 
 <img width="800" alt="Screenshot 2023-04-21 at 05 26 46" src="https://user-images.githubusercontent.com/18174012/233534016-13342fe5-2067-4497-a4ec-0123fa034c86.png"/>
 
-Used multilingual embeddings embeddings to build a tool for running semantic searches across multiple documents in order to answer questions based on the said documents with compatibility for 100+ languages.  
+Used multilingual embeddings to build a tool for running semantic searches across multiple documents in order to answer questions based on the said documents with compatibility for 100+ languages.  
 This project won **1st place** in the [\#CohereAIHack](https://devpost.com/software/language-agnostic-document-semantic-search)
 
 ![](https://img.shields.io/badge/Python-white?logo=Python) ![](https://img.shields.io/badge/Streamlit-white?logo=Streamlit) ![](https://img.shields.io/badge/Cohere-white?logo=Cohere)
