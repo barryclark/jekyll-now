@@ -2,7 +2,7 @@
 layout: post
 title: BPR Restu Klepu Makmur
 author: Pak Budi
-date: 2023-07-07 13:17:51 +07:00
+date: 2023-10-27 08:17:51 +07:00
 ---
 
 **BPR Restu Klepu Makmur** adalah salah satu lembaga keuangan terkemuka yang berpusat di Kabupaten Semarang. BPR Restu Klepu Makmur menyediakan beragam jasa dan layanan perbankan, dengan produk utama yaitu kredit, tabungan dan deposito berjangka.
