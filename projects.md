@@ -17,6 +17,18 @@ This project won **1st place** in the [\#CohereAIHack](https://devpost.com/softw
 
 ---
 
+### CYI IT Projects (Tech Lead)
+
+<img width="800" alt="Screenshot 2023-10-27 at 11 57 39" src="https://github.com/KayO-GH/kayo-gh.github.io/assets/18174012/a8216128-694f-4af0-8d75-a9ad4747468b">
+
+CYI is a Christian youth development organization based in Accra, Ghana, with branches across Africa and Europe. I lead development on a number of WordPress projects and JS projects linked by a central API built from the ground up. 
+
+![](https://img.shields.io/badge/Wordpress-white?logo=Wordpress) ![](https://img.shields.io/badge/Django-white?logo=Django)
+
+[GitHub Org](https://github.com/CYI-IT)
+
+---
+
 ### COVID-19 Policy Effectiveness Analysis
 
 <img width="800" alt="COVID-19 trends" src="https://user-images.githubusercontent.com/18174012/233095176-b3ba5157-f145-4055-82aa-dce8c0a6a93f.png"/>
