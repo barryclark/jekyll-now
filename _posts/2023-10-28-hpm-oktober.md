@@ -2,7 +2,7 @@
 layout: post
 title: PT Honda Prospect Motor
 author: Pak Budi
-date: 2023-10-28 07:17:51 +07:00
+date: 2023-10-28 07:19:51 +07:00
 ---
 
 **PT Honda Prospect Motor** merupakan Agen Tunggal Pemegang Merek Mobil Honda di Indonesia. Sebagai agen tunggal, PT Honda Prospect Motor merupakan satu-satunya perusahaan yang berhak mengimpor, merakit dan membuat kendaraan bermerk Honda di Indonesia.
