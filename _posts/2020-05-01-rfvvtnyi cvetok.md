@@ -7,6 +7,8 @@ categories: blog
 
 04-11-2023 -- 00-55  
 
+Уже -- больше!  
+
 
 Пробую через *VS Code* загонять на [ГитХаб странички](https://dvesti.github.io/minimal-mistakes/) -- не идут: не влезают.
 <!--more-->
