@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Первое сообщение блога!
-date: 2018-02-19 19:47:20 +0200
+date: 2023-10-27 23:34:05 +n0200
 categories: blog
 ---
 
-Обновим своё имя и прочие настройки в файле -  `_config.yml` . Восклицательный (!), наверно, читать дальше. А дальше картинка
+04-11-2023 -- 00-00  
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+Обновим своё имя и прочие настройки в файле -  `_config.yml` . Восклицательный (!), наверно, читать дальше. А дальше картинка  
 
-The easiest way to make your first post is to edit this one. Go into `/_posts/` and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/dvesti/jekyll) on GitHub.
+<!--more-->![_config.yml]({{ site.baseurl }}/images/config.png)  
