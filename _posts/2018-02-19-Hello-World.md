@@ -1,45 +1,10 @@
 ---
 layout: post
 title: Первое сообщение блога!
-date: 2018-02-19 19:47:20 +0200
+date: 2023-10-27 23:34:05 +n0200
 categories: blog
 ---
 
 Обновим своё имя и прочие настройки в файле -  `_config.yml` . Восклицательный (!), наверно, читать дальше. А дальше картинка  
 
 <!--more-->![_config.yml]({{ site.baseurl }}/images/config.png)  
-
-<<<<<< HEAD  
-The easiest way to make your first post is to edit this one.  
-Go into `/_posts/` and update the Hello World markdown file.  
-For more instructions head over to the [Jekyll Now repository](https://github.com/dvesti/jekyll) on GitHub. 
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```  
-Это -- простой путь, чтобы создать Ваше первое Сообщение -The easiest way to make your first post is to edit this one. Go into `/_posts/` and update the Hello World markdown file
-{% highlight html %}
-<nav class="nav nav-primary">
-  <ul>
-    <li class="tab-conversation active">
-      <a href="#" data-role="post-count" class="publisher-nav-color" data-nav="conversation">
-        <span class="comment-count">0 комментариев</span>
-        <span class="comment-count-placeholder">Комментарии</span>
-      </a>
-    </li>
-    <li class="dropdown user-menu" data-role="logout">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <span class="dropdown-toggle-wrapper">
-          <span>
-            Войти
-          </span>
-        </span>
-        <span class="caret"></span>
-      </a>
-    </li>
-  </ul>
-</nav>
-{% endhighlight %}
