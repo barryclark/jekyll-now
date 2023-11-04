@@ -13,5 +13,7 @@ layout: default
     Дата: {{ page.date | date: "%d-%m-%Y г." }}
   </div>
 
-  {% include disqus.html %}
+  <div class="comments">
+  {% include disqus.html disqus_identifier=page.disqus_identifier %}
+</div>
 </article>

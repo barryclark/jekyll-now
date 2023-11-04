@@ -18,8 +18,8 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
-  facebook:
+  email: dvesti@hot.ee
+  facebook: vladimir.dmitrijev.9
   flickr:
   github: dvesti/jekyll
   instagram:
@@ -86,4 +86,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - jekyll-theme-awesome
 excerpt_separator: <!--more-->
