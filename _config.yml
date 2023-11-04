@@ -18,8 +18,8 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: #dvesti@hot.ee
-  facebook: vladimir.dmitrijev.9
+  email: 
+  facebook: 
   flickr:
   github: dvesti/jekyll
   instagram:
@@ -74,12 +74,17 @@ sass:
 
 # Use the following plug-ins
 # gems:
-gem:
-  - jekyll-paginate
+#gem:
+#  - jekyll-paginate
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+
+ # - jekyll-paginate
+#  - jekyll-seo-tag
+#  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+#  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   
 
 # theme: "mmistakes/minimal-mistakes@4.19.1"
@@ -93,4 +98,3 @@ exclude:
   - CNAME
   - jekyll-theme-awesome
 excerpt_separator: <!--more-->
-paginate: 5
