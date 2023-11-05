@@ -5,6 +5,8 @@ _site
 .bundle
 .sass-cache
 Gemfile
+jekyll-jacman
 Gemfile.lock
 node_modules
 package.json
+jekyll-theme-awesome

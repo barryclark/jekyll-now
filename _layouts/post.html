@@ -10,8 +10,9 @@ layout: default
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    Дата: {{ page.date | date: "%d-%m-%Y г." }}
   </div>
 
-  {% include disqus.html %}
+{% include disqus.html %}
+
 </article>

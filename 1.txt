@@ -1,0 +1,16 @@
+https://github.com/dvesti/jekyll.git
+
+
+git clone git@github.com:github.io/dvesti//jekyll.git
+
+git clone git@github.com:dvesti.github.io/jekyll.git
+
+
+git remote add origin https://github.com/dvesti/jekyll.git
+git push -u origin master
+
+C:\\Program Files\Git\bin\bash.exe
+
+F:\\Program Files\\Git\\bin\\bash.exe
+
+C:\\WINDOWS\\System32\\cmd.exe
