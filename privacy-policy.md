@@ -19,14 +19,17 @@ Dengan menggunakan informasi yang terdapat pada situs **SiapKerjo.com** ini, mak
 • Informasi pribadi yang dikumpulkan secara online akan dikelola untuk kepentingan internal **SiapKerjo.com**, informasi pribadi yang **SiapKerjo.com** kumpulkan meliputi:
     
     1. Nama
-    
+
     2. Alamat Surat Elektronik / Email
 
 • Informasi yang **SiapKerjo.com** kumpulkan dari Anda akan digunakan untuk hal-hal sebagai berikut :
 
     ◦ mengirimkan informasi lowongan kerja secara rutin kepada Anda
+
     ◦ mengirimkan bonus sesuai program yang Anda ikuti di web **SiapKerjo.com**
+    
     ◦ menginformasikan kepada Anda tentang produk atau jasa yang relevan kepada Anda
+    
     ◦ melayani komunikasi tanya-jawab melalui email dari Anda kepada **SiapKerjo.com**
 
 Demikan beberapa ketentuan yang perlu diperhatikan secara seksama, terima kasih telah berkunjung di situs **SiapKerjo.com**.
