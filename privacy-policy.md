@@ -14,22 +14,22 @@ Dengan menggunakan informasi yang terdapat pada situs **SiapKerjo.com** ini, mak
 
 ### Pengumpulan Informasi Pribadi :
 
-• **SiapKerjo.com** mengadakan pengumpulan informasi pribadi untuk keperluan internal. **SiapKerjo.com** tidak akan memberikan, membagi atau memperjualbelikan informasi pribadi Anda yang dikumpulkan secara online di situs ini kepada pihak ketiga yang tidak berkepentingan, dan berpotensi disalahgunakan.
+1. **SiapKerjo.com** mengadakan pengumpulan informasi pribadi untuk keperluan internal. **SiapKerjo.com** tidak akan memberikan, membagi atau memperjualbelikan informasi pribadi Anda yang dikumpulkan secara online di situs ini kepada pihak ketiga yang tidak berkepentingan, dan berpotensi disalahgunakan.
 
-• Informasi pribadi yang dikumpulkan secara online akan dikelola untuk kepentingan internal **SiapKerjo.com**, informasi pribadi yang **SiapKerjo.com** kumpulkan meliputi:
+2. Informasi pribadi yang dikumpulkan secara online akan dikelola untuk kepentingan internal **SiapKerjo.com**, informasi pribadi yang **SiapKerjo.com** kumpulkan meliputi:
+
+    - Nama
     
-    1. Nama
+    - Alamat Surat Elektronik / Email
 
-    2. Alamat Surat Elektronik / Email
+3. Informasi yang **SiapKerjo.com** kumpulkan dari Anda akan digunakan untuk hal-hal sebagai berikut :
 
-• Informasi yang **SiapKerjo.com** kumpulkan dari Anda akan digunakan untuk hal-hal sebagai berikut :
-
-    ◦ mengirimkan informasi lowongan kerja secara rutin kepada Anda
-
-    ◦ mengirimkan bonus sesuai program yang Anda ikuti di web **SiapKerjo.com**
+    - mengirimkan informasi lowongan kerja secara rutin kepada Anda
     
-    ◦ menginformasikan kepada Anda tentang produk atau jasa yang relevan kepada Anda
+    - mengirimkan bonus sesuai program yang Anda ikuti di web **SiapKerjo.com**
     
-    ◦ melayani komunikasi tanya-jawab melalui email dari Anda kepada **SiapKerjo.com**
+    - menginformasikan produk atau jasa yang relevan kepada Anda
+    
+    - melayani komunikasi tanya-jawab melalui email dari Anda kepada **SiapKerjo.com**
 
 Demikan beberapa ketentuan yang perlu diperhatikan secara seksama, terima kasih telah berkunjung di situs **SiapKerjo.com**.
