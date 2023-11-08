@@ -32,4 +32,4 @@ Dengan menggunakan informasi yang terdapat pada situs **SiapKerjo.com** ini, mak
     
     - melayani komunikasi tanya-jawab melalui email dari Anda kepada **SiapKerjo.com**
 
-Demikan beberapa ketentuan yang perlu diperhatikan secara seksama, terima kasih telah berkunjung di situs **SiapKerjo.com**.
+Demikian beberapa ketentuan yang perlu diperhatikan secara seksama, terima kasih telah berkunjung di situs **SiapKerjo.com**.
