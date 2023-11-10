@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
   <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5443164496410180"
+     crossorigin="anonymous"></script>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
@@ -8,44 +10,106 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
+    <link rel="icon" type="image/png" href="{{ site.avatar }}" />
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css?v={{ site.assets }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+    <!-- Start - MailerLite Universal -->
+    <script>
+        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        ml('account', '224385');
+    </script>
+    <!-- End - MailerLite Universal -->
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+    <header class="wrapper-masthead">
+      <section class="container">
+        <div class="masthead">
+          <div class="header">
+            <div class="brand">
+              <a href="{{ site.baseurl }}/" class="site-avatar">
+                <img width="70" height="70" src="{{ site.avatar }}" alt="{{ site.name }}" />
+              </a>
+              <div class="site-info">
+                <div class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></div>
+                <p class="site-description">{{ site.description }}</p>
+              </div>
+            </div>
+            <div class="toggle">
+              <button type="button" class="toggle-search">
+                <svg viewBox="0 0 20 20" width="20" height="20">
+                  <path d="M16.72 17.78a.75.75 0 1 0 1.06-1.06l-1.06 1.06ZM9 14.5A5.5 5.5 0 0 1 3.5 9H2a7 7 0 0 0 7 7v-1.5ZM3.5 9A5.5 5.5 0 0 1 9 3.5V2a7 7 0 0 0-7 7h1.5ZM9 3.5A5.5 5.5 0 0 1 14.5 9H16a7 7 0 0 0-7-7v1.5Zm3.89 10.45 3.83 3.83 1.06-1.06-3.83-3.83-1.06 1.06ZM14.5 9a5.48 5.48 0 0 1-1.61 3.89l1.06 1.06A6.98 6.98 0 0 0 16 9h-1.5Zm-1.61 3.89A5.48 5.48 0 0 1 9 14.5V16a6.98 6.98 0 0 0 4.95-2.05l-1.06-1.06Z" />
+                </svg>
+                <span class="sr-only">Cari</span>
+              </button>
+              <button type="button" class="toggle-nav">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="3" y1="12" x2="21" y2="12" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+                <span class="sr-only">Menu</span>
+              </button>
+            </div>
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/">Home</a>
+            <a href="{{ site.baseurl }}/blog">Blog</a>
+            <a href="{{ site.baseurl }}/download">Download</a>
             <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/privacy-policy">Privacy Policy</a>
           </nav>
-        </header>
+        </div>
+      </section>
+      <script>
+        document.querySelector('.toggle-nav').onclick = () => {
+          document.querySelector('header nav').classList.toggle('open')
+        }
+        document.querySelector('.toggle-search').onclick = () => {
+          {% if page.url == "/" %}
+            window.scrollTo(0,0)
+            document.querySelector('#search-input').focus()
+          {% else %}
+            window.location.href = '/?search'
+          {% endif %}
+        }
+        if ( window.location.href.indexOf('?search') > -1 ) {
+          let searchDOM = setInterval(() => {
+            let searchDOMready = document.querySelector('#search-input')
+            if ( searchDOMready ) {
+              document.querySelector('#search-input').focus()
+              clearInterval(searchDOM)
+            }
+          },100)
+        }
+      </script>
+    </header>
+
+    <main>
+      <div id="main" class="container">
+        {{ content }}
       </div>
-    </div>
+    </main>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
+    <footer class="wrapper-footer">
       <div class="container">
-        <footer class="footer">
+        <div class="footer">
           {% include svg-icons.html %}
-        </footer>
+        </div>
       </div>
-    </div>
+    </footer>
 
-    {% include analytics.html %}
+    <slot>
+      {% include analytics.html %}
+    </slot>
   </body>
 </html>

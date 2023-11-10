@@ -5,12 +5,46 @@ layout: default
 <article class="post">
   <h1>{{ page.title }}</h1>
 
+  <br>
+  <center>
+  <a href="{{ site.url }}/subscribe" class="banner-below-header" target="_blank" rel="noopener noreferrer">
+  <div>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+    </svg>
+    <strong>Klik Disini</strong>
+  </div>
+  <img src="{{ site.url }}/images/dapetin-info-loker-terbaru.png" alt="Dapetin Info Loker Terbaru" width="700" height="100%" />
+</a>
+  </center>
+  
   <div class="entry">
     {{ content }}
   </div>
+  
+  <br>
+  <center>
+  <a href="https://siapkerjo.com/jalur-karir/">
+  <img src="{{ site.url }}/images/header-siapkerjocom-ilmu.gif" alt="Career Path" width="700" height="100%" target="_blank" rel="noopener noreferrer" />
+  </a>
+  </center>
+
+  <div class="mailerlite">
+    <hr>
+    <div class="ml-embedded" data-form="OJcQpQ"></div>
+  </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    <hr>
+    <span>
+      Dipublikasikan pada 
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%-d" }}
+        {% assign m = page.date | date: "%-m" | minus: 1 %}
+        {{ site.months[m] }}
+        {{ page.date | date: "%Y" }}
+      </time>
+    </span>
   </div>
 
   {% include disqus.html %}

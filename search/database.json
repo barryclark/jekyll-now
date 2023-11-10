@@ -1,0 +1,15 @@
+---
+layout: none
+---
+[
+  {% for post in site.posts %}
+    {
+      "title"    : "{{ post.title | escape }}",
+      "category" : "{{ post.category }}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date | date: "%-d" }} {% assign m = post.date | date: "%-m" | minus: 1 %}{{ site.months_short[m] }} {{ post.date | date: "%Y" }}",
+      "content"  : "{{ post.excerpt | strip_html | strip_newlines }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

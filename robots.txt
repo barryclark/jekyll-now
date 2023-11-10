@@ -1,0 +1,5 @@
+Sitemap: https://siapkerjo.com/sitemap.xml
+
+User-agent: *
+
+Allow: /

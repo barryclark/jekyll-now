@@ -2,17 +2,157 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<!-- https://github.com/christian-fei/Simple-Jekyll-Search -->
+<section id="search">
+  <form spellcheck="false" autocomplete="off">
+    <input type="text" id="search-type" style="display:none">
+    <input type="text" id="search-input" placeholder="Cari lowongan...">
+    <button type="submit">
+      <svg viewBox="0 0 20 20" width="20" height="20">
+        <path d="M16.72 17.78a.75.75 0 1 0 1.06-1.06l-1.06 1.06ZM9 14.5A5.5 5.5 0 0 1 3.5 9H2a7 7 0 0 0 7 7v-1.5ZM3.5 9A5.5 5.5 0 0 1 9 3.5V2a7 7 0 0 0-7 7h1.5ZM9 3.5A5.5 5.5 0 0 1 14.5 9H16a7 7 0 0 0-7-7v1.5Zm3.89 10.45 3.83 3.83 1.06-1.06-3.83-3.83-1.06 1.06ZM14.5 9a5.48 5.48 0 0 1-1.61 3.89l1.06 1.06A6.98 6.98 0 0 0 16 9h-1.5Zm-1.61 3.89A5.48 5.48 0 0 1 9 14.5V16a6.98 6.98 0 0 0 4.95-2.05l-1.06-1.06Z"/>
+      </svg>
+      <span class="sr-only">Cari</span>
+    </button>
+  </form>
+  <div id="search-count" style="display:none">
+    Ditemukan <strong><span></span> lowongan kerja</strong>
+    <small>Reset</small>
+  </div>
+  <p />
+  <a href="{{ site.url }}/subscribe" class="banner-below-header" id="search-banner" style="display:none">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+      </svg>
+      <strong>Klik Disini</strong>
+    </div>
+    <img src="{{ site.url }}/images/dapetin-info-loker-terbaru.png" alt="Dapetin Info Loker Terbaru" width="700" height="210" />
+  </a>
+  <div class="posts" id="search-result"></div>
+  <script src="{{ site.url }}/search/simple-jekyll-search.min.js"></script>
+  <script>
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('search-type'),
+      resultsContainer: document.getElementById('search-result'),
+      json: '{{ site.url }}/search/database.json',
+      searchResultTemplate: '<article class="post"><div class="date" style="margin:2rem 0 -1rem">{date}</div><a href="{{ site.url }}{url}"><h2>{title}</h2></a><div class="entry"><p>{content}</p></div><a href="{{ site.url }}{url}" class="read-more"><b>Baca selengkapnya</b> <span class="sr-only">tentang {title}</span></a></article>',
+      noResultsText: 'Tidak ditemukan lowongan yang Anda cari'
+    })
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    document.querySelector('#search form').addEventListener('submit', function(e) {
+      e.preventDefault()
+      if ( document.getElementById('search-input').value !== '' ) {
+        sjs.search(document.getElementById('search-input').value)
+        document.getElementById('search-banner').style.display = 'inline'
+        document.getElementById('main-banner').style.display = 'none'
+        if ( document.getElementById('search-result').querySelectorAll('.post').length > 0 ) {
+          document.getElementById('posts').style.display = 'none'
+          document.getElementById('search-count').style.display = 'block'
+          document.getElementById('search-count').querySelector('span').innerText = document.getElementById('search-result').querySelectorAll('.post').length
+          document.getElementById('search-result').style.marginTop = '0'
+        } else {
+          document.getElementById('posts').style.display = 'none'
+          document.getElementById('search-count').style.display = 'none'
+          document.getElementById('search-result').style.marginTop = '2rem'
+        }
+      } else {
+        document.getElementById('posts').style.display = 'block'
+        document.getElementById('search-count').style.display = 'none'
+        document.getElementById('search-result').style.marginTop = '0'
+        document.getElementById('search-result').innerHTML = ''
+        document.getElementById('search-banner').style.display = 'none'
+        document.getElementById('main-banner').style.display = 'inline'
+      }
+    })
+
+    document.querySelector('#search-count small').addEventListener('click', function(e) {
+      document.getElementById('search-input').value = ''
+      document.getElementById('search-result').innerHTML = ''
+      document.getElementById('posts').style.display = 'block'
+      document.getElementById('search-count').style.display = 'none'
+      document.getElementById('search-result').style.marginTop = '0'
+      document.getElementById('search-banner').style.display = 'none'
+      document.getElementById('main-banner').style.display = 'inline'
+    })
+  </script>
+  <style>
+    .masthead {
+      border-bottom: none;
+    }
+  </style>
+</section>
+
+<a href="{{ site.url }}/subscribe" class="banner-below-header" id="main-banner">
+  <div>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+    </svg>
+    <strong>Klik Disini</strong>
+  </div>
+  <img src="{{ site.url }}/images/dapetin-info-loker-terbaru.png" alt="Dapetin Info Loker Terbaru" width="700" height="210" />
+</a>
+
+<h1 class="sr-only">{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</h1>
+
+<div class="posts" id="posts">
+  {% for post in paginator.posts %}
+    <article class="post">
+      <div class="date" style="margin:2rem 0 -1rem">
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%-d" }}
+          {% assign m = post.date | date: "%-m" | minus: 1 %}
+          {{ site.months_short[m] }}
+          {{ post.date | date: "%Y" }}
+        </time>
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
 
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><b>Baca selengkapnya</b> <span class="sr-only">tentang {{ post.title }}</span></a>
     </article>
   {% endfor %}
+  
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">&lt;</a>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <span>{{ page }}</span>
+      {% elsif page == 1 %}
+        <a href="{{ '/' | relative_url }}">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}" class="next">&gt;</a>
+    {% endif %}
+  </div>
+  <script>
+  	document.querySelectorAll('.pagination').forEach(item => {
+    	let total = item.querySelectorAll('*').length
+    		position = item.querySelectorAll('span:not(.truncate)~a').length
+    		targetBefore = item.querySelector('span:not(.truncate)')
+    		targetAfter = item.querySelector('span:not(.truncate)+a')
+    		span = document.createElement('span')
+    		span.classList.add('truncate')
+    		span.innerHTML = '...'
+    	if ( total >= 6 ) {
+    		if ( position <= 3 ) {
+    			targetBefore.insertAdjacentElement('beforebegin',span)
+    		} else {
+    			targetAfter.insertAdjacentElement('afterend',span)
+    		}
+    	}
+    })
+  </script>
+  {% endif %}
 </div>

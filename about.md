@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+SiapKerjo.com adalah penyedia informasi lowongan kerja dan tips untuk berkarir di dunia kerja.
 
-### More Information
+### Visi Misi
 
-A place to include any other types of information that you'd like to include about yourself.
+Membantu lulusan _fresh graduate_ untuk segera mendapat kerja dan membantu karyawan mampu mengoptimalkan produktifitasnya.
 
-### Contact me
+### Hubungi kami via email
 
-[email@domain.com](mailto:email@domain.com)
+[pakbudi@siapkerjo.com](mailto:pakbudi@siapkerjo.com)
