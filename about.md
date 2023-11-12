@@ -6,7 +6,6 @@ published: true
 ---
 
 ### Popular Science
-
 - Behave: The Biology of Humans at Our Best and Worst, Robert Sapolsky
 
 ### Literature
@@ -16,7 +15,6 @@ published: true
 - Public Opinion, Walter Lippman
 
 ### European History
-
 - From Dawn to Decadence: 500 Years of Western Cultural Life, 1500 to the Present, Jacques Barzun
 
 ### Modern History
@@ -24,7 +22,6 @@ published: true
 - The Rise and Fall of the Third Reich: A History of Nazi Germany, William L. Shirer
 
 ### American History
-
 - Washington: A Life, Ron Chernow
 - Skunk Works: A Personal Memoir of My Years at Lockheed, Ben Rich
 
