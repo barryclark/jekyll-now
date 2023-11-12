@@ -9,6 +9,9 @@ published: true
 
 - Behave: The Biology of Humans at Our Best and Worst, Robert Sapolsky
 
+### Literature
+- War and Peace, Leo Tolstoy
+
 ### Philosophy/Political Thought
 - Public Opinion, Walter Lippman
 
