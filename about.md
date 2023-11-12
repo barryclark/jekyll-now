@@ -24,6 +24,7 @@ published: true
 ### American History
 - Washington: A Life, Ron Chernow
 - Skunk Works: A Personal Memoir of My Years at Lockheed, Ben Rich
+- From Colony to Superpower: US Foreign Relations Since 1776, George C. Herring
 
 ### Geopolitics
 - Diplomacy, Henry Kissinger
