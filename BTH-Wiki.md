@@ -15,6 +15,7 @@ If you would like to support this project please email me at colestrickler@gmail
 - Byte Scanner
 - Embedded Python Interpreter with an exposed orchestration API
 - User friendly GUI supported by open source ImGui
+- Use of Modern C++ 20 for easy extension and hackability
 
 
 # Hex Editor
@@ -36,10 +37,30 @@ If you would like to support this project please email me at colestrickler@gmail
 
 
 # Embedded Python Interpreter
+The embedded Python interpreter currently uses Python 3.12 and is able to be accessed in the top right when in HexDump view. The Python interpreter loads the mgr module that supports the orchestration API. Much of the power of BTH comes from the fact that it exposes low level analysis methods to a high level language where automated analysis can be more easily performed. The details from the orchestration API are described below.
+
+The embedded interpreter will access your local Python Path by its environment variable. To include Python modules that are not already included in a default Python installation, you must make sure they are put where your other Python modules are on disk.
 
 
 # Orchestration API
+The orchestration API is implemented in the mgr module. To get started import the mgr module at the top of your script.
 
+## Basic Information
+
+### GetLoadFileSize()
+- This function takes no parameters and will return the number of bytes that are currently loaded. This is not the size of the file on disk, but just the number of bytes that are currently loaded in memory. By default, the file system manager only loads 200,000 bytes at a time to avoid using too much memory.
+
+### GetFileSize()
+- This function takes no parameters and returns the total file size on disk.
+
+## Raw Data Access
+
+
+
+###
+
+# API Extension
+The Orchestration API can be easily extended by editing or adding to the methods
 
 # Upcoming
 
