@@ -136,9 +136,6 @@ This function takes in four parameters:
 - Upon error an empty list is returned
 
 
-
-###
-
 # API Extension
 The Orchestration API can be easily extended by editing or adding to the methods inside of PYBIND11_EMBEDDED_MODULE(mgr, m) function.
 
