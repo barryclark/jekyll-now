@@ -139,7 +139,15 @@ ByteScan(list bytes)
 
 
 # API Extension
-The Orchestration API can be easily extended by editing or adding to the methods inside of PYBIND11_EMBEDDED_MODULE(mgr, m) function.
+The Orchestration API can be easily extended by editing or adding to the methods inside of PYBIND11_EMBEDDED_MODULE(mgr, m) function. 
+
+A new method can be defined like so:
+
+m.def("MethodName", \[](std::string name) {
+	printf("Hello %s", name.c_str());
+});
+
+The whole point of BTH is to make it as hackable as possible. Adding new methods and functionality will enhance your experience and is greatly encouraged. 
 
 # **Upcoming**
 
