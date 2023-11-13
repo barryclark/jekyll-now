@@ -63,6 +63,9 @@ The orchestration API is implemented in the mgr module. To get started import th
 
 
 ### LoadFile(string path)
+- This function takes in an absolute or relative path and will attempt to load that file from offset 0
+- If the selected file is already loaded or if there is an error this method will return -1
+- If the selected file is successfully loaded 0 is returned
 
 
 ## Raw Data Access
