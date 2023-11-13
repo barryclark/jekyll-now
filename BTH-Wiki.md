@@ -43,15 +43,27 @@ The embedded interpreter will access your local Python Path by its environment v
 
 
 # Orchestration API
-The orchestration API is implemented in the mgr module. To get started import the mgr module at the top of your script.
+The orchestration API is implemented in the mgr module. To get started import the mgr module at the top of your script. 
 
-## Basic Information
+## File System
 
 ### GetLoadFileSize()
 - This function takes no parameters and will return the number of bytes that are currently loaded. This is not the size of the file on disk, but just the number of bytes that are currently loaded in memory. By default, the file system manager only loads 200,000 bytes at a time to avoid using too much memory.
 
 ### GetFileSize()
-- This function takes no parameters and returns the total file size on disk.
+- This function takes no parameters and returns the total file size on disk of the currently selected file.
+
+### GetFileLoadOffset()
+- This function takes no parameters and returns the offset of the current file load. This offset indicates where the currently loaded bytes are sampled from.
+
+### SetFileLoadOffset(string offset)
+- This function takes in an offset as a hex string and sets the current global offset to this value.
+- The hex string must be entered like "ff4d"
+- The hex string is allowed a maximum length of 8 characters, this should be sufficient for nearly all cases
+
+
+### LoadFile(string path)
+
 
 ## Raw Data Access
 
@@ -60,7 +72,7 @@ The orchestration API is implemented in the mgr module. To get started import th
 ###
 
 # API Extension
-The Orchestration API can be easily extended by editing or adding to the methods
+The Orchestration API can be easily extended by editing or adding to the methods inside of PYBIND11_EMBEDDED_MODULE(mgr, m) function.
 
 # Upcoming
 
