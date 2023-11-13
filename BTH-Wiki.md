@@ -48,16 +48,17 @@ The orchestration API is implemented in the mgr module. To get started import th
 
 ## File System
 
-### GetLoadFileSize()
+GetLoadFileSize()
 - This function takes no parameters and will return the number of bytes that are currently loaded. This is not the size of the file on disk, but just the number of bytes that are currently loaded in memory. By default, the file system manager only loads 200,000 bytes at a time to avoid using too much memory.
 
-### GetFileSize()
+GetFileSize()
 - This function takes no parameters and returns the total file size on disk of the currently selected file.
 
-### GetFileLoadOffset()
+GetFileLoadOffset()
 - This function takes no parameters and returns the offset of the current file load. This offset indicates where the currently loaded bytes are sampled from.
 
-### SetFileLoadOffset(string offset)
+
+SetFileLoadOffset(string offset)
 - This function takes in an offset as a hex string and sets the current global offset to this value.
 - The hex string must be entered like "ff4d"
 - The hex string is allowed a maximum length of 8 characters, this should be sufficient for nearly all cases
@@ -69,35 +70,35 @@ The orchestration API is implemented in the mgr module. To get started import th
 - If the selected file is successfully loaded 0 is returned
 
 
-### GetByte(int offset)
+GetByte(int offset)
 - This function takes in an offset from the current load offset and will attempt to return the byte at that location in the format '1f'
 - If the byte at that offset does not exist or the offset is invalid an empty string will be returned
 
 
-### SetByte(int offset, string val)
+SetByte(int offset, string val)
 - This function takes in an offset from the current load offset and attempts to set the byte value at that location to the parameter val
 - If the offset or input value is invalid -1 is returned
 - The input value must be within the range 00-ff
 - On success 0 will be returned
 
 
-### SaveFile()
+SaveFile()
 - tbd
 
 
 ## Structure Editor
 
-### NewStructure(string name)
+NewStructure(string name)
 - This function takes in a name and adds a new structure with that name to the structure editor
 - The return value from this function is a Structure ID value that uniquely identifies this structure, this value will be used for calls to other structure API calls
 
 
-### GetStructId(string name)
+GetStructId(string name)
 - This function takes in the name of a structure and returns the ID of the structure if it exists
 - If this call fails to find the structure -1 is returned
 
 
-### AddStructMember(int struct_id, string member_name, int size, int display_type)
+AddStructMember(int struct_id, string member_name, int size, int display_type)
 This function takes in four parameters:
 1. struct_id -> This parameter uniquely identifies the structure and can be obtained when creating the structure with NewStructure(), or by using GetStructId()
 2. member_name -> This parameter is what the new member variable will be named
@@ -113,24 +114,24 @@ This function takes in four parameters:
 - 7 = BOOL
 
 
-### SaveStructure(int struct_id)
+SaveStructure(int struct_id)
 - This function takes in a struct_id that can be obtained when the structure is created with NewStructure() or through GetStructId() and saves it to the database
 - Saving a structure to the database will make the structure available for use everytime you run BTH
 
 
-### DeleteStructure(int struct_id)
+DeleteStructure(int struct_id)
 - This function takes in a struct_id that can be obtained when the structure is created with NewStructure() or through GetStructId() and deletes it and all of its member variables from the database
 
 
 ## Scanning
 
-### StringScan(int min_string_length)
+StringScan(int min_string_length)
 - This function takes in a min_string_length parameter that dictates the minimum length of strings you want to extract
 - This function returns a list of all strings, both ASCII and Unicode, that are of atleast minimum_string_length
 - If min_string_length is negative or another error occurs an empty list is returned
 
 
-### ByteScan(list bytes)
+ByteScan(list bytes)
 - This function takes in a list of bytes(i.e. call this function like: ByteScan(\['4d', '5a','ff', '41'])) and will return a list of absolute offsets in the form of integers(unsigned long long in C++)
 - The input byte list cannot exceed 16 in size
 - Bytes must be of the format 'f1'
