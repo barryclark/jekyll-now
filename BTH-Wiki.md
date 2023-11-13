@@ -44,7 +44,7 @@ The embedded interpreter will access your local Python Path by its environment v
 
 
 # **Orchestration API**
-The orchestration API is implemented in the mgr module. To get started import the mgr module at the top of your script. To see some basic examples of using this API please see https://github.com/ColeStrickler/BTH/tree/main/ScriptExamples
+BTH exposes an orchestration API that allows much of its functionality to be accessed through Python methods. The orchestration API is implemented in the mgr module. To get started import the mgr module at the top of your script. To see some basic examples of using this API please see https://github.com/ColeStrickler/BTH/tree/main/ScriptExamples
 
 ## File System
 
