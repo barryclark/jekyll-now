@@ -43,7 +43,7 @@ The embedded interpreter will access your local Python Path by its environment v
 
 
 # Orchestration API
-The orchestration API is implemented in the mgr module. To get started import the mgr module at the top of your script. 
+The orchestration API is implemented in the mgr module. To get started import the mgr module at the top of your script. To see some basic examples of using this API please see https://github.com/ColeStrickler/BTH/tree/main/ScriptExamples
 
 ## File System
 
@@ -66,6 +66,51 @@ The orchestration API is implemented in the mgr module. To get started import th
 - This function takes in an absolute or relative path and will attempt to load that file from offset 0
 - If the selected file is already loaded or if there is an error this method will return -1
 - If the selected file is successfully loaded 0 is returned
+
+
+### GetByte(int offset)
+- This function takes in an offset from the current load offset and will attempt to return the byte at that location in the format '1f'
+- If the byte at that offset does not exist or the offset is invalid an empty string will be returned
+
+
+### SetByte(int offset, string val)
+- This function takes in an offset from the current load offset and attempts to set the byte value at that location to the parameter val
+- If the offset or input value is invalid -1 is returned
+- The input value must be within the range 00-ff
+- On success 0 will be returned
+
+
+### SaveFile()
+- tbd
+
+
+## Structure Editor
+
+### NewStructure(string name)
+- This function takes in a name and adds a new structure with that name to the structure editor
+- The return value from this function is a Structure ID value that uniquely identifies this structure, this value will be used for calls to other structure API calls
+
+
+### GetStructId(string name)
+- This function takes in the name of a structure and returns the ID of the structure if it exists
+- If this call fails to find the structure -1 is returned
+
+
+### AddStructMember(int struct_id, string member_name, int size, int display_type)
+This function takes in four parameters:
+1. struct_id -> This parameter uniquely identifies the structure and can be obtained when creating the structure with NewStructure(), or by using GetStructId()
+2. member_name -> This parameter is what the new member variable will be named
+3. size -> This parameter identifies the size of the new variable. If the given size is larger than the datatype given in display type, the memdump component will attempt to display the data as an array of that datatype. If the size is not divisable by the size of the data type(i.e. size%sizeof(data type) != 0) then you will not receive any displayed output in the structure overlay
+4. display_type -> display_type is the data type of the member variable. The type options are as follows:
+- 0 = INT
+- 1 = LONG_INT
+- 2 = UNSIGNED_INT
+- 3 = UNSIGNED_LONGLONG
+- 4 = ASCII
+- 5 = UNICODE
+- 6 = HEX
+- 7 = BOOL
+
 
 
 ## Raw Data Access
