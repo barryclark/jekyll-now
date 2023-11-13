@@ -150,6 +150,8 @@ m.def("MethodName", \[](std::string name) {
 The whole point of BTH is to make it as hackable as possible. Adding new methods and functionality will enhance your experience and is greatly encouraged. 
 
 # **Upcoming**
+A list of upcoming features:
+
 
 
 
