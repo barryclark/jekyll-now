@@ -64,7 +64,7 @@ SetFileLoadOffset(string offset)
 - The hex string is allowed a maximum length of 8 characters, this should be sufficient for nearly all cases
 
 
-### LoadFile(string path)
+LoadFile(string path)
 - This function takes in an absolute or relative path and will attempt to load that file from offset 0
 - If the selected file is already loaded or if there is an error this method will return -1
 - If the selected file is successfully loaded 0 is returned
