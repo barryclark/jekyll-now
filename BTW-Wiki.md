@@ -1,3 +1,0 @@
-## BTH WIKI
-
-test
