@@ -112,8 +112,28 @@ This function takes in four parameters:
 - 7 = BOOL
 
 
+### SaveStructure(int struct_id)
+- This function takes in a struct_id that can be obtained when the structure is created with NewStructure() or through GetStructId() and saves it to the database
+- Saving a structure to the database will make the structure available for use everytime you run BTH
 
-## Raw Data Access
+
+### DeleteStructure(int struct_id)
+- This function takes in a struct_id that can be obtained when the structure is created with NewStructure() or through GetStructId() and deletes it and all of its member variables from the database
+
+
+## Scanning
+
+### StringScan(int min_string_length)
+- This function takes in a min_string_length parameter that dictates the minimum length of strings you want to extract
+- This function returns a list of all strings, both ASCII and Unicode, that are of atleast minimum_string_length
+- If min_string_length is negative or another error occurs an empty list is returned
+
+
+### ByteScan(list bytes)
+- This function takes in a list of bytes(i.e. call this function like: ByteScan(\['4d', '5a','ff', '41'])) and will return a list of absolute offsets in the form of integers(unsigned long long in C++)
+- The input byte list cannot exceed 16 in size
+- Bytes must be of the format 'f1'
+- Upon error an empty list is returned
 
 
 
