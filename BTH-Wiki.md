@@ -20,15 +20,57 @@ If you would like to support this project please email me at colestrickler@gmail
 
 
 # **Hex Editor**
+The Hex Editor is a dump of bytes from the current file load offset. Each byte can be clicked on and edited. There are two view options: hex and ASCII
 
+Hex View
+![]({{site.baseurl}}/images/hexdump.png)
 
-# **PE File Format Parser**
+ASCII View
+![]({{site.baseurl}}/images/asciidump.png)
 
 
 # **Structure Overlay/Editor**
+The structure overlay feature allows for overlaying custom structures over regions in a file. This feature is particular useful for memory dump analysis as it allows deciphering in memory structures by viewing their data and navigating their pointers. For Windows use cases Microsoft keeps descriptions of process and thread structures here https://learn.microsoft.com/en-us/windows/win32/procthread/process-and-thread-structures. These can easily be added with the structure editor or with the orchestration API.
+
+The structure editor feature allows for adding user defined structures. The ability to add user defined structures can greatly assist in reverse engineering tasks. To see how to add and edit structures via the orchestration API please see that section further down.
+
+![]({{site.baseurl}}/images/memorydumpview.png)
+
+
 
 
 # **Disassembler**
+The disassembler works for x86/x86-64 binaries only
+
+![]({{site.baseurl}}/images/disassembler.png)
+
+
+# **PE File Format Parser**
+The PE File Format parser will handle any loaded files that are detected to be of this format and display the data. If you need information about a particular field please see: https://learn.microsoft.com/en-us/windows/win32/debug/pe-format
+
+Dos Header
+![]({{site.baseurl}}/images/dosHeader.png)
+
+Rich Header
+![]({{site.baseurl}}/images/richHeader.png)
+
+File Header
+![]({{site.baseurl}}/images/fileHeader.png)
+
+Optional Header
+![]({{site.baseurl}}/images/optionalHeader.png)
+
+Data Directories
+![]({{site.baseurl}}/images/dataDirectories.png)
+
+Section Headers
+![]({{site.baseurl}}/images/sectionHeaders.png)
+
+Imports
+![]({{site.baseurl}}/images/imports.png)
+
+Exports
+tba
 
 
 # **Color Customization**
@@ -41,6 +83,8 @@ If you would like to support this project please email me at colestrickler@gmail
 The embedded Python interpreter currently uses Python 3.12 and is able to be accessed in the top right when in HexDump view. The Python interpreter loads the mgr module that supports the orchestration API. Much of the power of BTH comes from the fact that it exposes low level analysis methods to a high level language where automated analysis can be more easily performed. The details from the orchestration API are described below.
 
 The embedded interpreter will access your local Python Path by its environment variable. To include Python modules that are not already included in a default Python installation, you must make sure they are put where your other Python modules are on disk.
+
+![]({{site.baseurl}}/images/interpreter.png)
 
 
 # **Orchestration API**
@@ -151,9 +195,3 @@ The whole point of BTH is to make it as hackable as possible. Adding new methods
 
 # **Upcoming**
 A list of upcoming features:
-
-
-
-
-
-
