@@ -23,10 +23,10 @@ If you would like to support this project please email me at colestrickler@gmail
 The Hex Editor is a dump of bytes from the current file load offset. Each byte can be clicked on and edited. There are two view options: hex and ASCII
 
 Hex View
-![]({{site.baseurl}}/images/hexdump.png)
+![]({{site.baseurl}}/images/hexdump.PNG)
 
 ASCII View
-![]({{site.baseurl}}/images/asciidump.png)
+![]({{site.baseurl}}/images/asciidump.PNG)
 
 
 # **Structure Overlay/Editor**
@@ -34,7 +34,7 @@ The structure overlay feature allows for overlaying custom structures over regio
 
 The structure editor feature allows for adding user defined structures. The ability to add user defined structures can greatly assist in reverse engineering tasks. To see how to add and edit structures via the orchestration API please see that section further down.
 
-![]({{site.baseurl}}/images/memorydumpview.png)
+![]({{site.baseurl}}/images/memorydumpview.PNG)
 
 
 
@@ -42,32 +42,32 @@ The structure editor feature allows for adding user defined structures. The abil
 # **Disassembler**
 The disassembler works for x86/x86-64 binaries only
 
-![]({{site.baseurl}}/images/disassembler.png)
+![]({{site.baseurl}}/images/disassembler.PNG)
 
 
 # **PE File Format Parser**
 The PE File Format parser will handle any loaded files that are detected to be of this format and display the data. If you need information about a particular field please see: https://learn.microsoft.com/en-us/windows/win32/debug/pe-format
 
 Dos Header
-![]({{site.baseurl}}/images/dosHeader.png)
+![]({{site.baseurl}}/images/dosHeader.PNG)
 
 Rich Header
-![]({{site.baseurl}}/images/richHeader.png)
+![]({{site.baseurl}}/images/richHeader.PNG)
 
 File Header
-![]({{site.baseurl}}/images/fileHeader.png)
+![]({{site.baseurl}}/images/fileHeader.PNG)
 
 Optional Header
-![]({{site.baseurl}}/images/optionalHeader.png)
+![]({{site.baseurl}}/images/optionalHeader.PNG)
 
 Data Directories
-![]({{site.baseurl}}/images/dataDirectories.png)
+![]({{site.baseurl}}/images/dataDirectories.PNG)
 
 Section Headers
-![]({{site.baseurl}}/images/sectionHeaders.png)
+![]({{site.baseurl}}/images/sectionHeaders.PNG)
 
 Imports
-![]({{site.baseurl}}/images/imports.png)
+![]({{site.baseurl}}/images/imports.PNG)
 
 Exports
 tba
@@ -78,7 +78,7 @@ tba
 ### Color Settings
 Nearly every color in BTH can be customized.
 
-![]({{site.baseurl}}/images/settings.png)
+![]({{site.baseurl}}/images/settings.PNG)
 
 
 ### Performance Settings
@@ -94,7 +94,7 @@ The embedded Python interpreter currently uses Python 3.12 and is able to be acc
 
 The embedded interpreter will access your local Python Path by its environment variable. To include Python modules that are not already included in a default Python installation, you must make sure they are put where your other Python modules are on disk.
 
-![]({{site.baseurl}}/images/interpreter.png)
+![]({{site.baseurl}}/images/interpreter.PNG)
 
 
 # **Orchestration API**
