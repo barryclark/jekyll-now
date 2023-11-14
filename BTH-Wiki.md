@@ -73,7 +73,17 @@ Exports
 tba
 
 
-# **Color Customization**
+# **Settings**
+
+### Color Settings
+Nearly every color in BTH can be customized.
+
+![]({{site.baseurl}}/images/settings.png)
+
+
+### Performance Settings
+tba
+
 
 
 # **String and Byte Scanner**
@@ -90,7 +100,7 @@ The embedded interpreter will access your local Python Path by its environment v
 # **Orchestration API**
 BTH exposes an orchestration API that allows much of its functionality to be accessed through Python methods. The orchestration API is implemented in the mgr module. To get started import the mgr module at the top of your script. To see some basic examples of using this API please see https://github.com/ColeStrickler/BTH/tree/main/ScriptExamples
 
-## File System
+### File System
 
 GetLoadFileSize()
 - This function takes no parameters and will return the number of bytes that are currently loaded. This is not the size of the file on disk, but just the number of bytes that are currently loaded in memory. By default, the file system manager only loads 200,000 bytes at a time to avoid using too much memory.
@@ -130,7 +140,7 @@ SaveFile()
 - tbd
 
 
-## Structure Editor
+### Structure Editor
 
 NewStructure(string name)
 - This function takes in a name and adds a new structure with that name to the structure editor
@@ -167,7 +177,7 @@ DeleteStructure(int struct_id)
 - This function takes in a struct_id that can be obtained when the structure is created with NewStructure() or through GetStructId() and deletes it and all of its member variables from the database
 
 
-## Scanning
+### Scanning
 
 StringScan(int min_string_length)
 - This function takes in a min_string_length parameter that dictates the minimum length of strings you want to extract
