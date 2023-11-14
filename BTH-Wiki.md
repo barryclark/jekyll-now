@@ -195,6 +195,12 @@ SaveStructure(int struct_id)
 DeleteStructure(int struct_id)
 - This function takes in a struct_id that can be obtained when the structure is created with NewStructure() or through GetStructId() and deletes it and all of its member variables from the database
 
+### Colors
+
+ChangeColor(string component, float r, float g, float b)
+- This function takes in a component name. This is one of the components listed in the color settings.
+- r,g,b must all be in the range 0.00-1.00
+- This function returns 0 on success and -1 on an error
 
 ### Scanning
 
