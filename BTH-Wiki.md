@@ -85,6 +85,10 @@ Nearly every color in BTH can be customized.
 ![]({{site.baseurl}}/images/settings.PNG)
 
 
+Color Settings are also scriptable
+![]({{site.baseurl}}/images/colorchange_script.gif)
+
+
 ### Performance Settings
 tba
 
@@ -103,6 +107,8 @@ The String Scanner displays 250 strings by default but all strings can be dumped
 The embedded Python interpreter currently uses Python 3.12 and is able to be accessed in the top right when in HexDump view. The Python interpreter loads the mgr module that supports the orchestration API. Much of the power of BTH comes from the fact that it exposes low level analysis methods to a high level language where automated analysis can be more easily performed. The details from the orchestration API are described below.
 
 The embedded interpreter will access your local Python Path by its environment variable. To include Python modules that are not already included in a default Python installation, you must make sure they are put where your other Python modules are on disk.
+
+There is currently one interpreter thread that runs at a time. Running a script with an infinite loop will lock up this thread for the remainder of the application runtime. There is not an option for multiple threads at the moment because we pybind11 does not currently support this.
 
 ![]({{site.baseurl}}/images/interpreter.PNG)
 
