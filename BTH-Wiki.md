@@ -146,8 +146,11 @@ SetByte(int offset, string val)
 - On success 0 will be returned
 
 
-SaveFile()
-- tbd
+SaveFile(string path)
+- This function takes in an absolute path and attempts to save the file there
+- All edits will be done to the file during the save process
+- On success 0 is returned
+- On failure -1 is returned
 
 
 ### Structure Editor
