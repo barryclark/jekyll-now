@@ -17,6 +17,11 @@ If you would like to support this project please email me at colestrickler@gmail
 - User friendly GUI supported by open source ImGui
 - Use of Modern C++ 20 for easy extension and hackability
 
+# **Loading Files**
+You can load a file into BTH by clicking 'Select File' in the top left. This will bring up a navigation tab where files and directories can be browsed through and selected. When a file is selected it is automatically loaded from offset 0. The default max load size is 200,000 bytes.
+
+![]({{site.baseurl}}/images/filebrowser.PNG)
+
 
 # **Hex Editor**
 The Hex Editor is a dump of bytes from the current file load offset. Each byte can be clicked on and edited. There are two view options: hex and ASCII
@@ -86,6 +91,12 @@ tba
 
 
 # **String and Byte Scanner**
+
+The Byte Scanner supports a maximum pattern size of 16 bytes
+![]({{site.baseurl}}/images/bytescan.PNG)
+
+The String Scanner displays 250 strings by default but all strings can be dumped
+![]({{site.baseurl}}/images/stringscan.PNG)
 
 
 # **Embedded Python Interpreter**
