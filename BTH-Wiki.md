@@ -3,7 +3,9 @@ BTH is a swiss-army knife tool that incorporates numerous functionalities that m
 
 The goal of this project is to overcome the shortcomings of the current selection of file analysis tools and to amalgamate functionality from disparate tools into a single suite. 
 
-If you would like to support this project please email me at colestrickler@gmail.com. 
+If you would like to support this project please email me at colestrickler@gmail.com.
+
+For compiled binaries see: https://github.com/ColeStrickler/BTH/releases/tag/v1.0
 
 # Features
 - Hex Editor
@@ -293,7 +295,7 @@ SectionHeaders()
 
 
 # API Extension
-The Orchestration API can be easily extended by editing or adding to the methods inside of PYBIND11_EMBEDDED_MODULE(mgr, m) function. 
+The Orchestration API can be easily extended by editing or adding to the methods inside of PYBIND11_EMBEDDED_MODULE(mgr, m) function in main.cpp. 
 
 A new method can be defined like so:
 
@@ -303,5 +305,3 @@ m.def("MethodName", \[](std::string name) {
 
 The whole point of BTH is to make it as hackable as possible. Adding new methods and functionality will enhance your experience and is greatly encouraged. 
 
-# **Upcoming**
-A list of upcoming features:
