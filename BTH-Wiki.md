@@ -132,6 +132,7 @@ SetFileLoadOffset(string offset)
 - This function takes in an offset as a hex string and sets the current global offset to this value.
 - The hex string must be entered like "ff4d"
 - The hex string is allowed a maximum length of 8 characters, this should be sufficient for nearly all cases
+- In order for this to actually change you must set the offset atleast 200,000 bytes after the current offset, or anywhere before the current offset
 
 
 LoadFile(string path)
