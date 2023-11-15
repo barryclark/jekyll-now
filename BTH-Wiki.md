@@ -260,6 +260,15 @@ RichHeader()
   3. UseCount
 - Access these variables like so: RichHeader.ProductId
 
+
+DataDirectories()
+- This method returns a list of DataDirectoryEntry structurees with the following components
+	1. Name
+    2. Size
+    3. VirtualAddress
+- Access these variables like so: DataDirectoryEntry.Name
+
+
 # API Extension
 The Orchestration API can be easily extended by editing or adding to the methods inside of PYBIND11_EMBEDDED_MODULE(mgr, m) function. 
 
