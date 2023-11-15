@@ -227,6 +227,32 @@ GetOpcode(int offset)
 - On success return = \[opcode_string, relative_offset_from_load_pos, opcode_size]
 
 
+### PE Format
+NOTE: almost all data is returned in an integer format. Use hex(value) to view the data in byte format
+
+rvaToRaw(unsigned int rva)
+- This functions takes in a relative virtual address and will output a raw offset into the file
+- On error this function returns 0
+
+
+DosHeader()
+- This method will return a DosHeader structure with members accessible with the following: DosHeader.e_lfanew
+
+
+FileHeader()
+- This method will return a FileHeader structure with members accessible with the following:
+FileHeader.NumberOfSymbols
+
+OptionalHeader64()
+- This method will return an OptionalHeader64 structure with members accessible with the following: OptionalHeader64.SizeOfImage
+- If the currently loaded file is 32bit, or if there is an error, a zeroed out structure is returned
+
+
+OptionalHeader32()
+- This method will return an OptionalHeader32 structure with members accessible with the following: OptionalHeader32.SizeOfImage
+- If the currently loaded file is 64bit, or if there is an error, a zeroed out structure is returned
+
+
 # API Extension
 The Orchestration API can be easily extended by editing or adding to the methods inside of PYBIND11_EMBEDDED_MODULE(mgr, m) function. 
 
