@@ -253,6 +253,13 @@ OptionalHeader32()
 - If the currently loaded file is 64bit, or if there is an error, a zeroed out structure is returned
 
 
+RichHeader()
+- This method will return a RichHeader struct with the following components:
+  1. ProductId
+  2. VsVersion
+  3. UseCount
+- Access these variables like so: RichHeader.ProductId
+
 # API Extension
 The Orchestration API can be easily extended by editing or adding to the methods inside of PYBIND11_EMBEDDED_MODULE(mgr, m) function. 
 
