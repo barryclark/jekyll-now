@@ -274,6 +274,22 @@ ImportData()
 - Each Import entry structure has the following components:
 	1. Library
     2. FunctionImports -> this is a list of lists containing [ImportFunctionName, FunctionRva]
+    
+
+SectionHeaders()
+- This method returns a list of IMAGE_SECTION_HEADER structures
+- IMAGE_SECTION_HEADER has the following components
+	1. Name
+    2. Misc_PhysicalAddress
+    3. Misc_VirtualSize
+    4. VirtualAddress
+    5. SizeOfRawData
+    6. PointerToRawData
+    7. PointerToRelocations
+    8. PointerToLineNumbers
+    9. NumberOfRelocations
+    10. NumberOfLineNumbers
+    11. Characteristics
 
 
 # API Extension
