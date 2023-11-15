@@ -218,6 +218,15 @@ ByteScan(list bytes)
 - Upon error an empty list is returned
 
 
+### Disassembler
+
+GetOpcode(int offset)
+- This function takes in an offset from the current load position and returns data about the opcode located there.
+- The opcode retrieved will be the opcode that falls in the range of \[opcode_start : opcode_start+opcode_size]
+- On error an empty list is returned
+- On success return = \[opcode_string, relative_offset_from_load_pos, opcode_size]
+
+
 # API Extension
 The Orchestration API can be easily extended by editing or adding to the methods inside of PYBIND11_EMBEDDED_MODULE(mgr, m) function. 
 
