@@ -262,11 +262,18 @@ RichHeader()
 
 
 DataDirectories()
-- This method returns a list of DataDirectoryEntry structurees with the following components
+- This method returns a list of DataDirectoryEntry structures with the following components
 	1. Name
     2. Size
     3. VirtualAddress
 - Access these variables like so: DataDirectoryEntry.Name
+
+
+ImportData()
+- This methods returns a list of ImportEntry structures
+- Each Import entry structure has the following components:
+	1. Library
+    2. FunctionImports -> this is a list of lists containing [ImportFunctionName, FunctionRva]
 
 
 # API Extension
