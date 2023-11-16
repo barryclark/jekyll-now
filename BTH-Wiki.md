@@ -120,7 +120,7 @@ BTH exposes an orchestration API that allows much of its functionality to be acc
 
 ### File System
 
-GetLoadFileSize()
+GetFileLoadSize()
 - This function takes no parameters and will return the number of bytes that are currently loaded. This is not the size of the file on disk, but just the number of bytes that are currently loaded in memory. By default, the file system manager only loads 200,000 bytes at a time to avoid using too much memory.
 
 GetFileSize()
@@ -303,5 +303,4 @@ m.def("MethodName", \[](std::string name) {
 	printf("Hello %s", name.c_str());
 });
 
-The whole point of BTH is to make it as hackable as possible. Adding new methods and functionality will enhance your experience and is greatly encouraged. 
-
+The whole point of BTH is to make it as hackable as possible. Adding new methods and functionality will enhance your experience and is greatly encouraged.
