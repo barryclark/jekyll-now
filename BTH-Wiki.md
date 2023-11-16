@@ -275,7 +275,7 @@ ImportData()
 - This methods returns a list of ImportEntry structures
 - Each Import entry structure has the following components:
 	1. Library
-    2. FunctionImports -> this is a list of lists containing [ImportFunctionName, FunctionRva]
+    2. FunctionImports -> this is a list of lists containing [ImportFunctionName, Thunk Address]
     
 
 SectionHeaders()
