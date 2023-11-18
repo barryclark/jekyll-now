@@ -1,0 +1,8 @@
+Cómo crear un entorno desde cero en Anaconda.
+Nos permiten aislar diferentes versiones de Python y sus librerías
+
+Facilitan el despliegue de aplicaciones
+
+Gestionan las incompatibilidades entre librerías
+https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+https://protostar.space/why-you-need-python-environments-and-how-to-manage-them-with-conda
