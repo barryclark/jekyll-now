@@ -44,10 +44,10 @@ google_analytics:
 url:
 
 # If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
+# (https://SANTONLA/github.io/ML-REGRESION-CLASSIFICATION)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "https://SANTONLA/github.io/ML-REGRESION-CLASSIFICATION"
+baseurl: "/ML-REGRESION-CLASSIFICATION"
 
 #
 # !! You don't need to change any of the configuration flags below !!
