@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+¡Algo de información sobre mi!
 
 ### More Information
 ---
@@ -12,8 +12,6 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-Some information about you!
 
 ### More Information
 
