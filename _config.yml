@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: THE DATA CRAFTERY SHOP ON GITHUB
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: DARE TO BE A DATACRAFTER ALSO IN GITHUB
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://raw.githubusercontent.com/santonla/santonla.github.io/blog/images/the data craftery shop.jpg
 
 #
 # Flags below are optional
@@ -21,13 +21,13 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: santonla/santonla.github.io
   instagram:
-  linkedin:
+  linkedin: www.linkedin.com/in/santonla
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  twitter: @AntnSilvia
+  stackoverflow: https://stackoverflow.com/users/22941691/santonla
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
@@ -44,10 +44,10 @@ google_analytics:
 url:
 
 # If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
+# (https://santonla/github.io/ML-REGRESION-CLASSIFICATION)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+baseurl: "santonla/santonla.github.io"
 
 #
 # !! You don't need to change any of the configuration flags below !!
