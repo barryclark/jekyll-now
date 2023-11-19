@@ -1,4 +1,3 @@
-> March, 2016: If you're on an old version of Jekyll Now and run into a) build warnings or b) syntax highlighting issues caused by [Jekyll 3 and GitHub Pages updates](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0), just :sparkles:[update your _config.yml](https://github.com/barryclark/jekyll-now/pull/445/files):sparkles: and you'll be set!
 
 # Jekyll Now
 
@@ -22,7 +21,7 @@ In a few minutes you'll be set up with a minimal, responsive blog like the one b
 
 Fork this repo, then rename the repository to yourgithubusername.github.io.
 
-Your Jekyll blog will often be viewable immediately at <https://yourgithubusername.github.io> (if it's not, you can often force it to build by completing step 2)
+Your Jekyll blog will often be viewable immediately at <https://santonla.github.io> (if it's not, you can often force it to build by completing step 2)
 
 ![Step 1](/images/step1.gif "Step 1")
 
