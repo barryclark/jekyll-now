@@ -10,7 +10,7 @@ comments: true
 > "Django is not a framework, it's a community."  
 > [_Mark Smith_](https://www.linkedin.com/in/bedmondmark/?originalSubdomain=uk)
 
-Before covid I was deeply engaged in the world of developer communities, especially the Python developer community in Ghana. It was both fun and impactful 😊.
+Before covid I was deeply engaged with local developer communities, especially the Python developer community in Ghana. It was both fun and impactful 😊.
 It was such a joy to find people willing to share knowledge and opportunities for growth. I gave a few talks at DevFest, IndabaX Ghana, Pycon Africa, and Ashesi University.
 I was a Django Girls coach twice, and I actually spent a little time writing tutorials on some of the tech stacks I was using.
 
@@ -40,7 +40,7 @@ There's a link to the slides at the bottom.
 
 Since it happened in Zanzibar, you're probably thinking I should say more about the beach and weather. It rained most of the time 😔.
 Not aaaaall the time, but enough to make you realise you should probably reserch the weather before you plan a trip to Zanzibar.
-Nevertheless, fun was had, and I'll probably share more details in my [other blog](https://medium.com/@kayogh) in due time.
+Nevertheless, fun was had and I ate street food to my heart's content. I'll probably share more details in my [other blog](https://medium.com/@kayogh) in due time.
 
 ### Takeaways
 Here's what I learnt from Djangocon. It's not all technical... in fact, the technical things are probably not the most important things here:  
