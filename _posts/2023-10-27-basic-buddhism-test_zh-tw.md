@@ -11,7 +11,7 @@ title: 基礎佛學測試題，歡迎自評
 
 以下是測試題，礙於本人水平十分有限，其結果隻供參考了，也歡迎提供改進這份測試題的建議。
 
-在線測試題鏈接：https://forms.office.com/r/Re4upKAjFf  
+在線測試題鏈接：https://forms.office.com/r/Re4upKAjFf  （測試題是簡體中文）
 
 1.  佛陀的本名是什麼？
 2.  佛教起源於哪個國家？
