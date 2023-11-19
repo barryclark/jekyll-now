@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Django is NOT [just] a Framework"
+title: "Django is not [just] a Framework"
 date: 2023-11-19
 comments: true
 ---
