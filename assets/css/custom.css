@@ -1,0 +1,37 @@
+.footnote {
+    /* display: none; */
+}
+
+iframe {
+    pointer-events: none !important;
+}
+
+a:hover {
+    color: var(--link-color) !important;
+    transition: 0.1s ease-in-out;
+}
+
+.sidebar a:hover, .post-title a:hover {
+    text-decoration: none;
+}
+
+.bullet {
+    text-decoration: none !important;
+}
+
+.brand a h1 {
+    font-family: Roboto-Medium;
+    font-weight: 500;
+}
+
+/* Set font families */
+
+@font-face {
+    font-family: LilitaOne-Regular;
+    src: url('/fonts/LilitaOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url('/fonts/Roboto-Medium.ttf');
+}
