@@ -18,7 +18,8 @@ title: Tag index
         {% if post.tags contains tag %}
           <li>
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }} ({{ post.date | date: "%Y-%m-%d" }})</a>
-            {% for post_tag in post.tags | sort %}
+            {%assign post_tags = post.tags | sort %}
+            {% for post_tag in post_tags%}
               {% unless post_tag == tag %}
                 <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ post_tag | slugify: 'pretty' | uri_escape }}" class="post-tag">{{ post_tag | slugify: 'pretty' | escape }}</a>
               {% endunless %}
