@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Diagonalización de Proyectores e Involuciones
+tags: ["programming", "jekyll"]
 ---
 
 <p align= "justify"> En esta entrada estudiaremos dos tipos básicos de transformaciones lineales y probaremos que
