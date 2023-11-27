@@ -424,10 +424,10 @@ To implement `From<T>` for our type `U` we must implement the function `from(val
 which transforms a type `T` to type `U`. To implement `Into<U>` for a type `T`,
 we must implement the function `into(self) -> U`, which also transforms `T` to `U`.
 If this seems like both traits are just reduntant ways to define a transformation
-`T -> U`, bear with me. The distinction will become clearer soon.
+`T -> U`, bear with me, we'll revisit this very soon.
 
 As an important aside, note that if we don't want to take ownership of the value,
-we can also implement the traits on references, e.g. implement `Into<T> for &U` and so on.
+we can also implement the traits on references, e.g. implement `From<&T> for U` and so on [^from-ref].
 
 For an example let's pretend we're working on a `BigInteger` type that can store 
 large integer numbers. Naturally, we want to offer a converting constructor from
@@ -476,13 +476,14 @@ As a matter of fact, it's true that if we implement `From<T> for U`, then
 the type `T` will get a so called [blanket implementation](https://doc.rust-lang.org/std/convert/trait.Into.html)
 of `Into<U>`, courtesy of the standard library. That's why it is 
 [recommended](https://doc.rust-lang.org/std/convert/trait.Into.html)
-to implement `From<T> for U` rather than `Into<U> for T`, if possible. The reason
+to implement `From<T> for U` rather than `Into<U> for T`. As a matter of fact,
+for Rust versions greater or equal 1.41, it's [not necessary](https://doc.rust-lang.org/std/convert/trait.From.html)
+to actually implement `Into`, ever [^from-into-reddit]. The reason
 is that we get the `Into` implementation for free when implementing 
-`From` but not the other way round[^from-into-blanket]. If we cannot implement 
-`From<T> for U`, we are still free to implement `Into<U> for T`.
+`From` but not the other way round[^from-into-blanket]. 
 
 In contrast to the recommendation on _implementing_ conversion traits, if we 
-want to _constrait_ on them the advice is flipped around. That is, if we want to accept 
+want to _constrain_ on them the advice is flipped around. That is, if we want to accept 
 a type `U` that can be made into a `T`, we should constrain the type on 
 `U: Into<T>` rather than `T: From<U>`, because there are 
 possibly more types implementing the first trait bound than the latter.
@@ -536,3 +537,5 @@ back to C++ now, I often find myself adhering to these more Rusty idioms.
 [^Self]: In an `impl` block, `Self` refers to the type itself. For our `Rectangle` we could just have written out `Rectangle`, but for more complex types involving generics it becomes tedious quickly.
 [^clone-image]: This is just to serve as an illustration of explicit cloning. I'm not saying this is the best API for that particular problem.
 [^from-into-blanket]: The standard library implementors could just as well have chosen to do the blanket implementation the other way round. It's just the way they chose to do it at the time.
+[^from-ref]: Reddit user u/quxfoo pointed out [here](https://www.reddit.com/r/rust/comments/183srgf/comment/kattz80/?utm_source=share&utm_medium=web2x&context=3) that it might not be generally good advice to implement `From` (or `Into`) on references.
+[^from-into-reddit]: The reason is that with Rust 1.41 the orphan rules changed and made manual implementations of `Into` unnecessary. Thanks to reddit user u/Zde-G for pointing that out [here](https://www.reddit.com/r/rust/comments/183srgf/comment/kb0ld3l/?utm_source=share&utm_medium=web2x&context=3).
