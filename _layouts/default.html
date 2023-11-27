@@ -36,6 +36,12 @@
 
     <div id="main" role="main" class="container">
       {{ content }}
+          <p>
+      Tagged 
+      {% for tag in page.tags %}
+      <a class="post" href="/tag/{{tag}}">#{{tag}}</a>{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+          </p>
     </div>
 
     <div class="wrapper-footer">
