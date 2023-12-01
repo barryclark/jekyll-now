@@ -1257,10 +1257,18 @@
 - company_gr: Vinos
   company_en: Vinos
   url: https://www.winebarvinos.com
-  category_gr: Wine bar restaurent
-  category_en: Wine bar restaurent
+  category_gr: Wine bar restaurant
+  category_en: Wine bar restaurant
   location_gr: Μύκονος, Ελλάδα
   location_en: Mykonos, Greece
+
+- company_gr: Wise Monkey
+  company_en: Wise Monkey
+  url: https://maps.app.goo.gl/V3Nw2RPdrYWerXU28
+  category_gr: Καφέ
+  category_en: Cafe
+  location_gr: Λάρισα, Θεσσαλία, Ελλάδα
+  location_en: Larisa, Thessaly, Greece
 
 - company_gr: Τσικολάτας εκπαιδευτικά σεμινάρια
   company_en: Tsikolatas training seminars
