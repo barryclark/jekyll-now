@@ -13,3 +13,32 @@ When a computer is powered on the BIOS, which resides in read only memory(ROM) o
 When an x86 processory first powers on it is operating in 16 bit real mode and we must operate in this environment when we our in our bootloader. This mode primarily exists for backwards compatibility reasons, and it is much less powerful than the other processor execution modes available in modern processors. The design of our bootloader takes this into consideration and attempts to get to real mode as soon as possible. Below you can see a simplified finite state machine of a modern x86 processor. As you can see, we will need to set the PE bit in the control register zero(CR0) to enter protected mode.
 
 ![]({{site.baseurl}}/images/wheel_x86executionmodes.jpg)
+
+Before entering into protected mode, we must also set up a Global Descriptor Table(GDT) and load its address into the Global Descriptor Table Register(GDTR). The Global Descriptor table holds segment descriptors that are used when in Protected Mode. Segmentation was originally created as a method by which system software could isolate software processes (tasks), and the data used by those processes, from one another in an effort to increase the reliability of systems running multiple processes simultaneously. The AMD64 architecture is designed to support all forms of legacy segmentation. However, most modern system software does not use the segmentation features available in the legacy x86 architecture. Regardless, it still must be set up. 
+
+In our design we will take advantage of the Flat Segmentation model. In this design we set the base address of all segments to zero and set the limits to 4GB(the maximum addressable memory in 32bit addressing 2^32). x86 automatically uses the Flat Segmentation model in 64bit mode, but we must manually set it up for protected mode. 
+
+Our to do list for the assembly section of our bootloader is as follows:
+1. Set up and load a GDT that enables the Flat segmentation model
+2. Set CR0.PE to 1 to enable protected mode
+3. Jump to the portion of the bootloader written in C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
