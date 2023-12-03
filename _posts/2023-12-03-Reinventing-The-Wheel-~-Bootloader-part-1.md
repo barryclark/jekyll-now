@@ -61,7 +61,7 @@ From here we just need to initialize new segment and stack registers and then we
 
 
 
-The initial bootmain method is quite simple. We will simply write the character 'Z' to the physical address 0xb8000. 
+The initial bootmain method is quite simple. We will simply write the character 'Z' to the physical address 0xb8000 and set its color to red(0x4).
 
 ![]({{site.baseurl}}/images/wheel_bootloader_bootmain1.PNG)
 
