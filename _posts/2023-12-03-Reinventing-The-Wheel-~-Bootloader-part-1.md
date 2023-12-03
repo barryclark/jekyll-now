@@ -28,6 +28,8 @@ The following assembly snippets are following NASM syntax which we will use to b
 
 I will walk through each line step by step for the bootloader. 
 
+We first issue a couple of directives. The first specifies that the symbol bootmain is located in another file. This will be the first bit of C code that we will call into once we're in protected mode. The next directive says that start is a global symbol which is needed to make our linker script work later on. Next we have the start label, which is just used in NASM to mark memory locations in a more human readable way. The start label marks the memory location 0x7c00, where the BIOS loaded us into memory. The directive \[bits 16] tells NASM to emit 16bit code. The instruction 'cli' clears the interrupt flag in the FLAGS register to disable interrupts. We do not want to encounter any interrupts during bootloader execution as this could cause serious issues. Next we load the GDT descriptor(described further down) into the GDTR. Now we are ready to set the PE by in CR0 which is the first bit of the register. 
+
 ![]({{site.baseurl}}/images/wheel_bootloader_enablePE.PNG)
 
 
