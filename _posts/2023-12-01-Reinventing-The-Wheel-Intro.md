@@ -10,6 +10,10 @@ I will begin writing this project for x86 but hopefully will add support for RIS
 
 In the the next post I will go over project setup, build tools, and get a simple bootloader rolled so we can start programming in a high level language. 
 
+### Project Repo
+https://github.com/ColeStrickler/TheWheel
+
+
 ### Project Directory
 [Bootloader Part 1](https://colestrickler.github.io/Reinventing-The-Wheel-~-Bootloader-part-1/)
 
