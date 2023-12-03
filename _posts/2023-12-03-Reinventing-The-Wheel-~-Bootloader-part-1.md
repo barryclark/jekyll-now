@@ -23,6 +23,18 @@ Our to do list for the assembly section of our bootloader is as follows:
 2. Set CR0.PE to 1 to enable protected mode
 3. Jump to the portion of the bootloader written in C
 
+The following assembly snippets are following NASM syntax which we will use to build all assembly snippets through out the series.
+
+
+I will walk through each line step by step for the bootloader. 
+
+![]({{site.baseurl}}/images/wheel_bootloader_enablePE.PNG)
+
+
+
+
+
+
 
 
 
