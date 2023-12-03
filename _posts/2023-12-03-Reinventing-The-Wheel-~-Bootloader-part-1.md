@@ -58,7 +58,7 @@ Now that we have set CR0.PE to 1, we want to ensure that protected mode is actua
 
 
 
-
+![]({{site.baseurl}}/images/wheel_bootloader_initpm.PNG)
 
 
 
