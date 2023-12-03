@@ -43,6 +43,10 @@ NASM also lets us define structures. Here we define a minimal GDT that uses the 
 
 
 
+Here we also compose the GDT descriptor. The GDT descriptor is made up of two components: size and start address. We can calculate size with a little address(label) arithmetic and the start address we defined with a label we saw above. 
+
+![]({{site.baseurl}}/images/wheel_bootloader_gdt_descriptor.PNG)
+
 
 
 
