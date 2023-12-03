@@ -60,17 +60,40 @@ From here we just need to initialize new segment and stack registers and then we
 ![]({{site.baseurl}}/images/wheel_bootloader_initpm.PNG)
 
 
-
 The initial bootmain method is quite simple. We will simply write the character 'Z' to the physical address 0xb8000 and set its color to red(0x4).
 
 ![]({{site.baseurl}}/images/wheel_bootloader_bootmain1.PNG)
 
 
+Now we have to build all of this code in a way that it will actually boot. I will not go into the details of Makefiles as this post is already running quite long. The entire Makefile is included in the project Github repo for your viewing. I will only cover the steps that are needed to build what we have so far. 
+
+To assemble our boot.asm file into an object file we issue the following command
+- nasm boot.asm -f elf32 -o boot.bin
 
 
+When we compile our C code need to to instruct GCC to include no dependencies. We do not have access to the C run time(CRT) or to the C standard libary when doing this type of programming. We issue a few flags so GCC knows this:
+- gcc -m32 -fno-pie -ffreestanding -c bootmain.c -o bootmain.o
 
 
+Now we will link these two together into a single binary file using a very simple linker script that will put all of the data we use into the .text section:
 
+- ld -m elf_i386 --entry=start -Ttext 0x7c00 -T ./os/boot/bootlink.ld -o $@ $^
+
+-----LINKER SCRIPT bootlink.ld START-----
+ENTRY(start)
+
+SECTIONS {
+    /* The bootloader starts at address 0x7C00 */
+    . = 0x7C00;
+
+    /* Section containing the bootloader code */
+    .text : {
+    }
+}
+----- LINKER SCRIPT bootlink.ld END -----
+
+
+Now to build the final bootsector we will dump the .text section from the elf file we created and then pad the ending and add the magic identifier so it is exactly 512 bytes and in the format the BIOS expects.
 
 
 
