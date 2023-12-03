@@ -10,7 +10,10 @@ I will begin writing this project for x86 but hopefully will add support for RIS
 
 In the the next post I will go over project setup, build tools, and get a simple bootloader rolled so we can start programming in a high level language. 
 
-Get ready to reinvent the WheelOS.
+### Project Directory
+[Bootloader Part 1](https://colestrickler.github.io/Reinventing-The-Wheel-~-Bootloader-part-1/)
+
+
 
 ![]({{site.baseurl}}/images/wheel_os.png)
 Yes, this was AI generated.
