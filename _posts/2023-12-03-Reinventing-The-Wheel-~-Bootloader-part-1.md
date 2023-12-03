@@ -79,14 +79,7 @@ Now we will link these two together into a single binary file using a very simpl
 
 - ld -m elf_i386 --entry=start -Ttext 0x7c00 -T ./os/boot/bootlink.ld -o $@ $^
 
->-----LINKER SCRIPT bootlink.ld START-----
->ENTRY(start)
-SECTIONS {
-    . = 0x7C00;
-    .text : {
-    }
-}
------ LINKER SCRIPT bootlink.ld END -----
+![]({{site.baseurl}}/images/wheel_bootloader_bootlinkld.PNG)
 
 
 Now to build the final bootsector we will dump the .text section from the elf file we created and then pad the ending and add the magic identifier so it is exactly 512 bytes and in the format the BIOS expects. The easiest way I found to do this was with a simple python script that calculates how much padding is needed and then adds it. We can also add some easy error checking in the python script to make sure we do not exceed 512 bytes in size.
@@ -94,22 +87,7 @@ Now to build the final bootsector we will dump the .text section from the elf fi
 - objcopy -S -O binary -j .text bootsector.elf bootsector.bin
 - python3 pad_bootsector.py
 
-
-
-> -----pad_bootsector.py START-----
-import os
-size = os.stat('./bootsector.bin').st_size
-if size > 510:
-    printf(f"FAILED TO BUILD BOOTSECTOR. OVERSIZED: {size} bytes\n")
-    exit(-1)
-with open('./bootsector.bin', 'ab') as f:
-    for i in range(510-size):
-        f.write(b'\x00')
-    f.write(b'\x55\xaa')
-size = os.stat('./bootsector.bin').st_size
-if size != 512:
-    print(F"FAILED TO BUILD BOOTSECTOR. END SIZE: {size}")
------ pad_bootsector.py END -----
+![]({{site.baseurl}}/images/wheel_bootloader_padbootsector.PNG)
 
 
 To run and test our implementation we will use qemu. We can do this with the following command:
