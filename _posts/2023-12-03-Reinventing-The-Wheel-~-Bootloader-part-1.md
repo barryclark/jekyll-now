@@ -90,7 +90,7 @@ SECTIONS {
 ----- LINKER SCRIPT bootlink.ld END -----
 
 
-Now to build the final bootsector we will dump the .text section from the elf file we created and then pad the ending and add the magic identifier so it is exactly 512 bytes and in the format the BIOS expects. The easiest way I found to do this was with a simple python script that calculates how much padding is needed and then adds it. We can also add some easy error checking in the python script to make sure we do not exceed the 512byte limit for the bootloader.
+Now to build the final bootsector we will dump the .text section from the elf file we created and then pad the ending and add the magic identifier so it is exactly 512 bytes and in the format the BIOS expects. The easiest way I found to do this was with a simple python script that calculates how much padding is needed and then adds it. We can also add some easy error checking in the python script to make sure we do not exceed 512 bytes in size.
 
 - objcopy -S -O binary -j .text bootsector.elf bootsector.bin
 - python3 pad_bootsector.py
