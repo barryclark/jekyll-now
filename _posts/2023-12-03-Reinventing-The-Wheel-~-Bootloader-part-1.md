@@ -43,9 +43,12 @@ NASM also lets us define structures. Here we define a minimal GDT that uses the 
 
 
 
-Here we also compose the GDT descriptor. The GDT descriptor is made up of two components: size and start address. We can calculate size with a little address(label) arithmetic and the start address we defined with a label we saw above. 
+Here we also compose the GDT descriptor. The GDT descriptor is made up of two components: size and start address. We can calculate size with a little address(label) arithmetic and the start address we defined with a label we saw above. Below this we define some constants that we will use for FAR addressing(https://en.wikipedia.org/wiki/Far_pointer) which will immediately come in handy.
 
 ![]({{site.baseurl}}/images/wheel_bootloader_gdt_descriptor.PNG)
+
+
+
 
 
 
