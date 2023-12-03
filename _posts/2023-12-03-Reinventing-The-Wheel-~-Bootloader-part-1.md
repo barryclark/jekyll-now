@@ -14,6 +14,7 @@ When an x86 processory first powers on it is operating in 16 bit real mode and w
 
 ![]({{site.baseurl}}/images/wheel_x86executionmodes.jpg)
 
+
 Before entering into protected mode, we must also set up a Global Descriptor Table(GDT) and load its address into the Global Descriptor Table Register(GDTR). See https://en.wikipedia.org/wiki/Global_Descriptor_Table. The Global Descriptor table holds segment descriptors that are used when in Protected Mode. Segmentation was originally created as a method by which system software could isolate software processes (tasks), and the data used by those processes, from one another in an effort to increase the reliability of systems running multiple processes simultaneously. The AMD64 architecture is designed to support all forms of legacy segmentation. However, most modern system software does not use the segmentation features available in the legacy x86 architecture. Regardless, it still must be set up. 
 
 In our design we will take advantage of the Flat Segmentation model. In this design we set the base address of all segments to zero and set the limits to 4GB(the maximum addressable memory in 32bit addressing 2^32). x86 automatically uses the Flat Segmentation model in 64bit mode, but we must manually set it up for protected mode. 
@@ -48,7 +49,11 @@ Here we also compose the GDT descriptor. The GDT descriptor is made up of two co
 ![]({{site.baseurl}}/images/wheel_bootloader_gdt_descriptor.PNG)
 
 
-Now that we have set CR0.PE to 1, we want to ensure that protected mode is actually enabled. Think about what has to occur for an instruction to be executed. The instruction must be fetched, the operand must be fetched, the instruction must be decoded, the steps(may be more than 1) to actually execute the instruction must be done, and finally the result is written. To take advantage the various steps that take place in a single instruction modern CPUs use instruction pipelining. Instruction pipelining allows for a certain amount of instruction level parallelism(ILP) and increases instructions per cycle(IPC). The instructions we issued to enable protected mode may be anywhere in the fetch/decode/execute cycle and may not actually be all the way executed, there is no guarantee. To ensure that we are for sure in protected mode we will issue a FAR jump, which on x86 will always flush the CPU pipeline. 
+
+Now that we have set CR0.PE to 1, we want to ensure that protected mode is actually enabled. Think about what has to occur for an instruction to be executed. The instruction must be fetched, the operand must be fetched, the instruction must be decoded, the steps(may be more than 1) to actually execute the instruction must be done, and finally the result is written. To take advantage the various steps that take place in a single instruction modern CPUs use instruction pipelining. Instruction pipelining allows for a certain amount of instruction level parallelism(ILP) and increases instructions per cycle(IPC). The instructions we issued to enable protected mode may be anywhere in the fetch/decode/execute cycle and may not actually be all the way executed, there is no guarantee. To ensure that we are for sure in protected mode we will issue a FAR jump, which on x86 will always flush the CPU pipeline. We use CODE_SEG:address to select our segment descriptor that will be used for real mode segment addressing, which because we are using 0x0 as the base address this really has extra effect compared to a regular jmp besides flushing the CPU pipeline.
+
+![]({{site.baseurl}}/images/wheel_bootloader_farjump.PNG)
+
 
 
 
