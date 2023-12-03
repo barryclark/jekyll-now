@@ -37,7 +37,7 @@ We first issue a couple of directives. The first specifies that the symbol bootm
 ![]({{site.baseurl}}/images/wheel_bootloader_enablePE.PNG)
 
 
-NASM also lets us define structures. Here we define a minimal GDT that uses the flat segmentation model. You can see that we set we set the base to 0x0 and the limit to 0xfffff. Segment descriptors are quite unwieldy in the way they are implemented as the base and limits are not described contiguously. If you use NASM to describe these structures, make sure that bytes defined with db are 8bits in length other wise you will run into issues. I had this problem as I was trying to divide the separate fields onto their own lines. The code and data segment descriptors are the same except for a few type flags. 
+NASM also lets us define structures. Here we define a minimal GDT that uses the flat segmentation model. First we must define a 16 byte null descriptor which is mandatory from the spec. You can see that we set we set the base to 0x0 and the limit to 0xfffff. Segment descriptors are quite unwieldy in the way they are implemented as the base and limits are not described contiguously. If you use NASM to describe these structures, make sure that bytes defined with db are 8bits in length other wise you will run into issues. I had this problem as I was trying to divide the separate fields onto their own lines. The code and data segment descriptors are the same except for a few type flags. 
 
 ![]({{site.baseurl}}/images/wheel_bootloader_gdt.PNG)
 
@@ -46,6 +46,10 @@ NASM also lets us define structures. Here we define a minimal GDT that uses the 
 Here we also compose the GDT descriptor. The GDT descriptor is made up of two components: size and start address. We can calculate size with a little address(label) arithmetic and the start address we defined with a label we saw above. Below this we define some constants that we will use for FAR addressing(https://en.wikipedia.org/wiki/Far_pointer) which will immediately come in handy.
 
 ![]({{site.baseurl}}/images/wheel_bootloader_gdt_descriptor.PNG)
+
+
+Now that we have set CR0.PE to 1, we want to ensure that protected mode is actually enabled. Think about what has to occur for an instruction to be executed. The instruction must be fetched, the operand must be fetched, the instruction must be decoded, the steps(may be more than 1) to actually execute the instruction must be done, and finally the result is written. To take advantage the various steps that take place in a single instruction modern CPUs use instruction pipelining. Instruction pipelining allows for a certain amount of instruction level parallelism(ILP) and increases instructions per cycle(IPC). The instructions we issued to enable protected mode may be anywhere in the fetch/decode/execute cycle and may not actually be all the way executed, there is no guarantee. To ensure that we are for sure in protected mode we will issue a FAR jump, which on x86 will always flush the CPU pipeline. 
+
 
 
 
