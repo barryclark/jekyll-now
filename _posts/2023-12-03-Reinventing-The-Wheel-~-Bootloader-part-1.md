@@ -14,7 +14,7 @@ When an x86 processory first powers on it is operating in 16 bit real mode and w
 
 ![]({{site.baseurl}}/images/wheel_x86executionmodes.jpg)
 
-Before entering into protected mode, we must also set up a Global Descriptor Table(GDT) and load its address into the Global Descriptor Table Register(GDTR). The Global Descriptor table holds segment descriptors that are used when in Protected Mode. Segmentation was originally created as a method by which system software could isolate software processes (tasks), and the data used by those processes, from one another in an effort to increase the reliability of systems running multiple processes simultaneously. The AMD64 architecture is designed to support all forms of legacy segmentation. However, most modern system software does not use the segmentation features available in the legacy x86 architecture. Regardless, it still must be set up. 
+Before entering into protected mode, we must also set up a Global Descriptor Table(GDT) and load its address into the Global Descriptor Table Register(GDTR). See https://en.wikipedia.org/wiki/Global_Descriptor_Table. The Global Descriptor table holds segment descriptors that are used when in Protected Mode. Segmentation was originally created as a method by which system software could isolate software processes (tasks), and the data used by those processes, from one another in an effort to increase the reliability of systems running multiple processes simultaneously. The AMD64 architecture is designed to support all forms of legacy segmentation. However, most modern system software does not use the segmentation features available in the legacy x86 architecture. Regardless, it still must be set up. 
 
 In our design we will take advantage of the Flat Segmentation model. In this design we set the base address of all segments to zero and set the limits to 4GB(the maximum addressable memory in 32bit addressing 2^32). x86 automatically uses the Flat Segmentation model in 64bit mode, but we must manually set it up for protected mode. 
 
@@ -33,10 +33,9 @@ We first issue a couple of directives. The first specifies that the symbol bootm
 ![]({{site.baseurl}}/images/wheel_bootloader_enablePE.PNG)
 
 
+NASM also lets us define structures. Here we define a minimal GDT that uses the flat segmentation model. You can see that we set we set the base to 0x0 and the limit to 0xfffff. Segment descriptors are quite unwieldy in the way they are implemented as the base and limits are not described contiguously. If you use NASM to describe these structures, make sure that bytes defined with db are 8bits in length other wise you will run into issues. I had this problem as I was trying to divide the separate fields onto their own lines. The code and data segment descriptors are the same except for a few type flags. 
 
-
-
-
+![]({{site.baseurl}}/images/wheel_bootloader_gdt.PNG)
 
 
 
