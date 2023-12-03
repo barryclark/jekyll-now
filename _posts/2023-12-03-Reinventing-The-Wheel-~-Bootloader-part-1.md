@@ -55,8 +55,7 @@ Now that we have set CR0.PE to 1, we want to ensure that protected mode is actua
 ![]({{site.baseurl}}/images/wheel_bootloader_farjump.PNG)
 
 
-
-
+From here we just need to initialize new segment and stack registers and then we are good to call into bootmain(). We will not be using ss or es so we can just set the selector in these registers to the ds selector. At this point we will not make use of fs or gs. These two registers are used to hold operating system specific data structures in modern implementations. For example on 64bit Windows the gs register holds the address of the Thread Information Block. We may make use of these two registers later on. We are setting the initial stack to address 0x9000 and we need to keep in mind that the stack grows downward to lower memory addresses. Finally we can call into bootmain. The last instruction 'jmp $' is just an infinite loop that should only be hit if bootmain returns, which should not happen under expected circumstances.
 
 ![]({{site.baseurl}}/images/wheel_bootloader_initpm.PNG)
 
