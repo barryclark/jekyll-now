@@ -11,4 +11,4 @@ Amely Su is feeling very happy at the moment, but isn't the happiest person in t
 
 ### Contact Me (Or Don't, It's Entirely Up To You)
 
-[amely.su@student.tdsb.on.ca](mailto:amely.su@student.tdsb.on.ca)
+[amelydotsu@gmail.com](mailto:amelydotsu@gmail.com)
