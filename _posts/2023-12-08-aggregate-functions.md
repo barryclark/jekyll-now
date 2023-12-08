@@ -1,5 +1,3 @@
-# Aggregate Functions
-
 > An aggregate function reduces **multiple inputs** to a **single output**
 
 There are two types of aggregate functions where:
