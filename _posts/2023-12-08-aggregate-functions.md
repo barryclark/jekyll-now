@@ -5,8 +5,7 @@ There are two types of aggregate functions where:
 - order of inputs is **required** and they are called *ordered-set aggregate functions*
 
 For the purpose of this post let's define a table like below:
-<pre>
-    <code>
+```
 create table user_t
 (
     first_name varchar,
@@ -27,8 +26,7 @@ Flark      Stalinsky 6
 George     Smith     7     
 Hannah     Doe       8     
 Isabelle   Belle     9 
-    </code>
-</pre>
+```
 
 ## Aggregate functions with *optional* order
 
