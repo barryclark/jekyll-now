@@ -1,4 +1,7 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+
 
 public static partial class SaveHelper
 {
@@ -13,7 +16,28 @@ public static partial class SaveHelper
         string filePath = path + "/" + fileName;
 
         System.IO.File.WriteAllText(filePath, data);
-        Debug.Log($"File is saved. \n Path : {path} \n Data : {data}");
+        //Debug.Log($"File is saved. \n Path : {path} \n Data : {data}");
+    }
+
+    /// <summary>
+    /// 파일을 읽습니다.
+    /// </summary>
+    /// <param name="path"></param>
+    /// <param name="fileName"></param>
+    /// <returns></returns>
+    public static string LoadFile(string path, string fileName)
+    {
+        string filePath = path + "/" + fileName;
+
+        if (System.IO.File.Exists(filePath))
+        {
+            return System.IO.File.ReadAllText(filePath);
+        }
+        else
+        {
+            Debug.LogError($"File is not exist. \n Path : {path}");
+            return null;
+        }
     }
 
     /// <summary>
