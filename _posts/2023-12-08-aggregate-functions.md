@@ -123,7 +123,7 @@ percentile_cont
 
 ## Filtering out input rows
 
-Unlike *distinct* the *filter* operation can be applied to bot types of aggregate functions
+Unlike *distinct* the *filter* operation can be applied to both types of aggregate functions
 
 When we filter the results the aggregation function is called once per filter evaluated to true: 
 ```
