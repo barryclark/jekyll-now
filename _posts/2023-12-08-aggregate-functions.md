@@ -140,7 +140,7 @@ filtered_list
 ```
 
 # References:  
-- https://www.postgresql.org/docs/16/sql-expressions.html#SYNTAX-AGGREGATES
+- <https://www.postgresql.org/docs/16/sql-expressions.html#SYNTAX-AGGREGATES>
 
 
 
