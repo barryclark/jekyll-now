@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Amely Su is feeling very happy at the moment, but isn't the happiest person in the world.
 
-### Contact me
+### Contact Me (Or Don't, It's Entirely Up To You)
 
-[email@domain.com](mailto:email@domain.com)
+[amelydotsu@gmail.com](mailto:amelydotsu@gmail.com)

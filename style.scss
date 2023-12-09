@@ -14,13 +14,17 @@
 /**************/
 
 html {
-  font-size: 100%;
+  font-family: Open Sans, sans-serif;
+  color: rgba(#000, .87);
+  line-height: 1.5;
+  font-size: calc(1em + .25vw);
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  margin: 2rem;
+  overflow-x: hidden;
+  padding: 0 10px;
+  background: $white;
 }
 
 .container {
@@ -31,11 +35,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: Oswald, sans-serif;
   color: $darkerGray;
   font-weight: bold;
 
-  line-height: 1.7;
+  line-height: 1.5;
   margin: 1em 0 15px;
   padding: 0;
 
@@ -154,8 +158,15 @@ img {
   margin-bottom: 50px;
 }
 
+// Masthead scroll
+div.wrapper-masthead {
+  background-color: $white;
+  position: sticky;
+  top: 0;
+}
+
 .masthead {
-  padding: 20px 0;
+  padding: 50px 0;
   border-bottom: 1px solid $lightGray;
 
   @include mobile {
@@ -165,8 +176,8 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   margin-right: 15px;
 
   @include mobile {
@@ -196,7 +207,7 @@ img {
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 40px;
   letter-spacing: 1px;
 }
 
@@ -271,8 +282,21 @@ nav {
   }
 }
 
+// Archive
+.archive {
+  a {
+    color: $darkGray;
+  }
+  time {
+    color: $lightGray;
+    font-size: 10px;
+    font-weight: 300;
+    margin-left: 3px;
+  }
+}
+
 .wrapper-footer {
-  margin-top: 50px;
+  margin-top: 30px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
