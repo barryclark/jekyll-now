@@ -28,7 +28,7 @@ postgres=# select * from employee;
 
 The task we are given is to create a query that will return employee's name, salary and minimum, maximum and average salary across a department.
 
-Sounds simple, we have built-in methods for max(), min() and avg() so the only thing we need to do is to aggregate the salary by department and select name and salary in the query, right?
+Sounds simple, we have built-in methods for [max()](https://www.postgresql.org/docs/16/functions-aggregate.html#FUNCTIONS-AGGREGATE-TABLE), [min()](https://www.postgresql.org/docs/16/functions-aggregate.html#FUNCTIONS-AGGREGATE-TABLE) and [avg()](https://www.postgresql.org/docs/16/functions-aggregate.html#FUNCTIONS-AGGREGATE-TABLE) so the only thing we need to do is to aggregate the salary by department and select name and salary in the query, right?
 
 ```
 postgres=# select name, salary, avg(salary), min(salary), max(salary) from employee group by department;
@@ -37,7 +37,7 @@ LINE 1: select name, salary, avg(salary), min(salary), max(salary) f...
 ```
 
 We cannot simply query the fields when using aggregate functions and they must be used either in aggregate function or *GROUP BY* clause...
-Since we do not want to use them in aggregate function lets add them to the GROUP BY - what could go wrong?
+Since we do not want to use them in aggregate function lets add them to the `GROUP BY` - what could go wrong?
 
 ```
 postgres=# select name, department, salary, avg(salary), min(salary), max(salary) from employee group by name, salary, department;
