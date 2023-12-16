@@ -11,7 +11,7 @@ title: 基础佛学测试题，欢迎自评
 
 以下是测试题，碍于本人水平十分有限，其结果只供参考了，也欢迎提供改进这份测试题的建议。
 
-在线测试题链接：https://forms.office.com/r/Re4upKAjFf  
+在线测试题链接：https://forms.office.com/r/Re4upKAjFf
 
 1.  佛陀的本名是什么？
 2.  佛教起源于哪个国家？
