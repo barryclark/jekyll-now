@@ -31,11 +31,11 @@ public sealed class Pivot : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawSphere(transform.position, 0.01f);
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.blue;
         Gizmos.DrawLine(transform.position, transform.position + transform.forward * 0.1f);
         Gizmos.color = Color.green;
         Gizmos.DrawLine(transform.position, transform.position + transform.up * 0.1f);
-        Gizmos.color = Color.blue;
+        Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + transform.right * 0.1f);
 
         Gizmos.color = Color.gray;
