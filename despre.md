@@ -2,12 +2,20 @@
 layout: page
 title: Despre
 permalink: /despre
----
-![CoderDojo Alba Iulia](https://scontent.fomr1-1.fna.fbcdn.net/v/t31.0-8/25487200_941569579345931_8463191297036680664_o.jpg?oh=a24e008a3156262c8c416dc74ada657f&oe=5ADC80CE)
-## Bine ati venit!
+[CoderDojo Alba Iulia](https://www.facebook.com/coderdojoalbaiulia) este parte a unei [inițiative globale](https://coderdojo.com/en/) de a crea cluburi de programare pentru copii și adolescenți în care copiii ("ninjas" - între 7 și 17 ani) învață programare de la voluntari ("mentors") din comunitatea locală.
 
-Aceasta este pagina de web a comunitatii CoderDojo Alba Iulia. Grupul oficial aferent acestui site se gaseste [aici](https://zen.coderdojo.com/dojos/ro/alba-iulia-alba-county/alba-iulia-directia-programe-primaria-alba-iulia) si [aici gasiti grupul de Facebook](https://www.facebook.com/groups/1609746875954975/)
+Dojo-ul din Alba Iulia este o inițiativă a [AI3](https://ai3.ro), primul cluster de IT din județul Alba.
 
-Pe scurt, CoderDojo este o comunitate a copiilor intre 7 si 17 ani ("ninja") dornici sa invete programare de la mentori care ii ajuta voluntar (nu costa nimic).
+## Bine ai venit!
 
-Dojo-ul se gaseste in Alba Iulia, [strada Bucovinei numarul 6](https://goo.gl/maps/Q7Yfzi5x54B2) si se organizeaza in fiecare Sambata intre 13:00-17:00 cu exceptiile anuntate in prealabil pe grup.
+Dojo-ul are loc în fiecare Joi de la ora 16:00 pe [strada Gladiolelor numărul 3A](https://maps.app.goo.gl/rguUaLxb9ctmKuMg6), dar asigură-te că urmărești [grupul de facebook](https://www.facebook.com/groups/1609746875954975/) pentru modificări de program.
+
+Să ai la tine un sandwich și o sticlă de apă și doza necesară de curiozitate. Avem și niște [reguli de bază](/regulament) de urmat și vrem să ne mândrim cu tine, deci avem nevoie de un [acord GDPR](/privacy).
+
+## Cum te înscrii?
+
+Roagă tutorele tău să [completeze formularul](https://forms.gle/4fqArMANeztCBgSr7) și asigură-te că ai citit [regulamentul](/regulament). Dacă ai un laptop, adu-l, dacă nu încercăm să îți găsim noi un calculator.
+
+## Cum devii mentor?
+
+Poți să devii mentor dacă ai fost ninja la vreun CoderDojo existent sau dacă ești [membru AI3](https://ai3.ro). Contactează-ne la <a href="mailto:salut+coderdojo@ai3.ro?subject=Doresc să devin mentor CoderDojo">salut@ai3.ro</a>.
