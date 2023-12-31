@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Despre
-permalink: /despre.html
+permalink: /despre
 ---
 
 [CoderDojo Alba Iulia](https://www.facebook.com/coderdojoalbaiulia) este parte a unei [inițiative globale](https://coderdojo.com/en/) de a crea cluburi de programare pentru copii și adolescenți în care copiii ("ninjas" - între 7 și 17 ani) învață programare de la voluntari ("mentors") din comunitatea locală.
@@ -12,7 +12,7 @@ Dojo-ul din Alba Iulia este o inițiativă a [AI3](https://ai3.ro), primul clust
 
 Dojo-ul are loc în fiecare Joi de la ora 16:00 pe [strada Gladiolelor numărul 3A](https://maps.app.goo.gl/rguUaLxb9ctmKuMg6), dar asigură-te că urmărești [grupul de facebook](https://www.facebook.com/groups/1609746875954975/) pentru modificări de program.
 
-Să ai la tine un sandwich și o sticlă de apă și doza necesară de curiozitate. Avem și niște [reguli de bază](/regulament) de urmat și vrem să ne mândrim cu tine, deci avem nevoie de un [acord GDPR](https://ai3.ro/privacy).
+Să ai la tine un sandwich și o sticlă de apă și doza necesară de curiozitate. Avem și niște [reguli de bază](/regulament) de urmat și vrem să ne mândrim cu tine, deci avem nevoie de un [acord GDPR](/privacy).
 
 ## Cum te înscrii?
 
