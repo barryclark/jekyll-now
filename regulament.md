@@ -30,7 +30,7 @@ plăcute atât pentru copil căt și pentru restul participanților. Ne referim 
 4. asigurarea celor necesare unui comfort fizic și psihic adecvat șederii copilului la activitate, inclusiv suficientă mâncare și apâ pentru perioada activității, dar și
    alte materiale, precum cele de igienă personală sau pentru alte situații care se pot ivi
 6. îndrumarea copilului să trateze cu grijă baza materială comună a Dojo-ului
-7. încurajarea copilului să se adreseze menorului și tutorelui pentru orice situație neobișnuită
+7. încurajarea copilului să se adreseze mentorului și tutorelui pentru orice situație neobișnuită
 
 ## 3. Angajamentul ninja-ului
 
