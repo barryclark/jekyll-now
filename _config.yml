@@ -18,10 +18,10 @@ avatar: https://avatars2.githubusercontent.com/u/36167439?s=200&v=4
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
-  facebook:
+  email: salut+coderdojo@ai3.ro
+  facebook: https://www.facebook.com/coderdojoalbaiulia
   flickr:
-  github: 
+  github: https://github.com/CoderDojoAlbaIulia
   instagram:
   linkedin:
   pinterest:
@@ -41,7 +41,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: https://coderdojoalbaiulia.github.io
+url: https://coderdojo.ai3.ro
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
