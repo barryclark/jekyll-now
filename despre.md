@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Despre
-permalink: /despre
+permalink: /despre.html
 ---
 
 [CoderDojo Alba Iulia](https://www.facebook.com/coderdojoalbaiulia) este parte a unei [inițiative globale](https://coderdojo.com/en/) de a crea cluburi de programare pentru copii și adolescenți în care copiii ("ninjas" - între 7 și 17 ani) învață programare de la voluntari ("mentors") din comunitatea locală.
