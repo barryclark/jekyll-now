@@ -18,7 +18,7 @@ Mentorii vor face și precizările de siguranță legate de desfășurarea activ
 ## 2. Angajamentul părinților/tutorilor
 
 Părinții/tutorii se angajează să asigure toate condițiile care țin de îndrumarea copilului astfel încât activitatea de club să se desfășoare în împrejurări sigure, comfortabile și
-plăcute atât pentru copil căt și pentru restul participanților. Ne referim aici, prinre altele. la:
+plăcute atât pentru copil cât și pentru restul participanților. Ne referim aici, printre altele. la:
 
 1. îndrumarea copilului să aibă un comportament politicos și prietenos față de ceilalți participanți
 2. îndrumarea copilului să asculte de sfatul mentorilor
@@ -26,15 +26,15 @@ plăcute atât pentru copil căt și pentru restul participanților. Ne referim 
    - să nu alerge în spații înguste unde existâ riscuri de accidentare
    - să nu atingă sau opereze echipamente electrice/electronice fără supraveghere și altcumva decât la indicația expresă a mentorului
    - să nu intre în niciun fel de altercații și să apeleze cu încredere la mentori pentru rezolvarea oricărei situații dificile sau necunoscute
-   - să nu părăsească spațiul destinat activității fără înștiințarea mentorului sau al tutorelui
-4. asigurarea celor necesare unui comfort fizic și psihic adecvat șederii copilului la activitate, inclusiv suficientă mâncare și apâ pentru perioada activității, dar și
+   - să nu părăsească spațiul destinat activității fără înștiințarea mentorului sau a tutorelui
+4. asigurarea celor necesare unui comfort fizic și psihic adecvat șederii copilului la activitate, inclusiv suficientă mâncare și apă pentru perioada activității, dar și
    alte materiale, precum cele de igienă personală sau pentru alte situații care se pot ivi
 6. îndrumarea copilului să trateze cu grijă baza materială comună a Dojo-ului
 7. încurajarea copilului să se adreseze mentorului și tutorelui pentru orice situație neobișnuită
 
 ## 3. Angajamentul ninja-ului
 
-Ninja-ul este respectuos, prietenos, curios și dornic să descopere alătur de ceilalți ninja și de mentori lucruri noi, provocatoare și interesante.
+Ninja-ul este respectuos, prietenos, curios și dornic să descopere alături de ceilalți ninja și de mentori lucruri noi, provocatoare și interesante.
 
 ## Cui se pot adresa mentorii și ninja
 
