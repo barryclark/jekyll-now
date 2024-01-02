@@ -43,4 +43,4 @@ Păstrăm datele dvs. cu caracter personal strict pe o durată de 10 ani.
   - (vii) dreptul de a depune o plângere la autoritatea de supraveghere: Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter
     Personal – cu sediul în Bd. Gheorghe Magheru nr. 28-30, București, România.
 
-Pentru exercitarea drepturilor dvs. față de Operator, vă rugăm să ne contactați folosind următoarele detalii de contact: salut+privacyt@ai3.ro.
+Pentru exercitarea drepturilor dvs. față de Operator, vă rugăm să ne contactați folosind următoarele detalii de contact: salut+privacy@ai3.ro.
