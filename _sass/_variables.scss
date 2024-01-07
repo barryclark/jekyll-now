@@ -5,14 +5,58 @@
 
 // Colors
 $blue: #4183C4;
+$lightBlue: #31A2DA;
+$pink: #EC008C;
+$yellow: #F8CA00;
+$activationYellow: #d3b533;
+$darkYellow: #cab900; //c8a300;
+$weightGreen: #4db755;
+$biasPurple: #6761c5;
+$invisibleUFO: #00A0B0;
+
 
 // Grays
 $black: #000;
 $darkerGray: #222;
 $darkGray: #333;
 $gray: #666;
+$lighterGray: #999;
 $lightGray: #eee;
 $white: #fff;
+
+$chartBackground: #fbfbfb;
+$chartLabel: #aaa;
+
+//Neural network graph parameters
+$nnInputNode: #e7b7f3;
+$nnInputNodeText: #af80bb;
+$nnWeightNode: #a8e7ad;
+$nnWeightNodeText: #81c086;
+$nnBiasNode: #ccc9fa;
+$nnBiasNodeText: #8c84ec;
+$nnOutputNode: #f2afc7;
+$nnOutputNodeText: #c8849c;
+$nnSoftmaxNode: #faf6c9;
+$nnStrokeWidth: 2px;
+$nnNodeStrokeWidth: 1px;
+
+$inputOutlineColor: #d18fe2;
+$inputNodeFillColor: #fae9ff;
+$biasOutlineColor: #b2aef4; //#a19cf0;
+$biasNodeFillColor: #f0efff;
+$weightNodeFillColor: #f2fff3;
+$outputOutlineColor: #f2afc7;
+$outputNodeFillColor: #fff3f7;
+$softmaxOutlineColor: #ebe79f;
+$softmaxNodeFillColor: #fffef1;
+
+$weightLayerInput: #3d8b42 ; /*#7ac680;*/
+$biasLayerInput: #504b9c;
+
+$nnGrapherStrokeWidth: 3px;
+$lighterOutlinedNodeStrokeWidth: 3px;
+$outlinedNodeStrokeWidth: 4px;
+$outlinedNodeStrokeWidthHover: 8px;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;

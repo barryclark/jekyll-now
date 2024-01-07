@@ -1,0 +1,187 @@
+
+.ecco{
+    font-size: 14px;
+    line-height: 20px;
+}
+.fig{
+    margin-bottom:15px;
+    float:left;
+}
+#text-explorable {
+    position: relative;
+    margin: 10px;
+    font-size: 14px;
+    line-height: 1;
+
+    font-family: 'Roboto Mono', monospace;
+}
+
+.exp-btn {
+    width: 200px;
+    height: 50px;
+}
+
+.layer-activations-text {
+    margin: 15px 2px;
+    border: 1px solid #bbb;
+    padding: 5px;
+}
+
+.token {
+    float:left;
+    margin: 2px 1px;
+    padding: 0px 1px 0px 0px;
+    /*border: 1px solid #e6e6e6;*/
+    font-family: 'Roboto Mono', monospace;
+    background-color: #e7e7e7;
+}
+.factor{
+    width:100%
+}
+/* Special case: need less spacing when showing factors */
+.factor .token{
+    margin: 0px 1px;
+    padding: 2px 0;
+}
+
+.factor .sequence-indicator {
+padding-bottom:0px;
+}
+
+.token span{
+    margin-top:3px;
+    display: inline-block;
+    line-height: 90%;
+    /*mix-blend-mode: difference !important; /* Added as an attempt to force contrast between
+    the text and its background. Led to different colors of text, not always better than black text.
+    */
+
+}
+
+dt-article figcaption li{
+    margin-bottom:auto;
+}
+
+dt-article figcaption p{
+    margin-bottom:auto;
+
+}
+
+.layer-title {
+    font-weight: 900;
+    font-size: 18pt;
+    text-align: center;
+    margin: 5px 5px 15px 5px;
+}
+
+.new-line {
+    /*display: block !important;*/
+    /*width: 2em*/
+}
+.new-line + div{
+    clear:both;
+}
+
+.token-part {
+    margin-left: -2px !important;
+}
+
+svg.scrollable{
+    overflow-y: scroll !important;
+}
+
+.sequence-indicator{
+    display:inline-block;
+    float:left;
+    font-weight:bold;
+    /*font-size:7px;*/
+    font-family: 'Roboto Mono', monospace;
+    text-align: right;
+    /*margin-top: 10px;*/
+    margin:  0 5px;
+    padding: 0px 3px 0px 2px;
+}
+
+.position_in_seq{
+    text-align: center;
+    font-size: 8px;
+    line-height: 100%;
+    padding: 0;
+    margin: 2px 0 0 0;
+    color:#ccc;
+}
+.inputs-indicator{
+    color:#7CB342;
+    width: 67px;
+    text-align:left;
+}
+
+.outputs-indicator{
+    color:#F48FB1;
+    /*margin-left: 10px;*/
+    /*clear:left;*/
+}
+
+.input-token{
+    /*color:#444;*/
+    /*font-weight:bold;*/
+    /*color: #999 !important;*/
+}
+
+.output-token span{
+
+    font-weight:bold;
+}
+
+
+
+.attn-hoverable-token{
+    background-color:#00d0ff20
+}
+
+.attn-highlighted-token{
+    background-color: #00d0ff90; /*#E1BEE7;*/
+
+}
+
+
+.attn-hoverable-layer{
+    fill: rgb(250, 230, 240);
+    stroke-width: 3px;
+    stroke: rgb(140, 148, 160);
+}
+
+
+.attn-highlighted-layer{
+    fill: rgb(255, 196, 226);
+    stroke-width: 3px;
+    stroke: rgb(83, 88, 96);
+}
+
+
+.minimal .token{
+    border: 0;
+    margin:0 0 0 0;
+    border-bottom: 4px solid #0000;
+}
+
+
+.minimal .token.selected {
+    border-bottom: 4px solid #333;
+}
+
+
+.minimal .input-token span{
+    color: #000;
+    /*padding:1px;*/
+    /*font-weight:bold;*/
+
+}
+
+.minimal .token span{
+    white-space: pre;
+}
+
+.minimal .token-part{
+    margin:0 !important;
+}

@@ -7,6 +7,9 @@
 
 @import "reset";
 @import "variables";
+
+@import "weight_inputrange";
+@import "bias_inputrange";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -18,14 +21,14 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: $darkerGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 960px; /* originally 740 */
   padding: 0 10px;
   width: 100%;
 }
@@ -60,8 +63,7 @@ h3 {
 }
 
 h4 {
-  font-size: 18px;
-  color: $gray;
+  color: #666666;
 }
 
 p {
@@ -102,6 +104,619 @@ em, i {
   font-style: italic;
 }
 
+
+.prediction table{
+  font-size: 80% ;
+  border-collapse: collapse;
+  margin: 40px auto;
+}
+.prediction table tr{  padding: 1px 10px;  }
+.prediction table th{
+  padding: 4px 5px;
+  font-weight: bold;
+  font-size: 80%;
+}
+.prediction table td{
+  padding: 4px 5px;
+  /*border-top: 1px solid #333;*/
+}
+
+/* ==============================================
+  Features/Labeles Formatted table
+*/
+.prediction table.features-table{
+  font-size: 90% ;
+  border-collapse: collapse;
+  /*border: 1px solid #bbb;*/
+  margin: 40px auto;
+}
+
+.prediction table.features-table th.inactive_cell,
+.prediction table.features-table td.inactive_cell{
+  border: 0px solid #bbb;
+}
+
+.prediction table.features-table th{
+  font-size: 90% ;
+  text-align:center;
+  border: 1px solid #bbb;
+  padding:10px;
+}
+.prediction table.features-table td{
+  text-align:center;
+  border: 1px solid #bbb;
+}
+
+.prediction table.features td.feature{
+
+}
+
+.prediction .grad-descent-one{
+  background-image: linear-gradient(90deg, #86F38E, #EFF532)
+}
+
+/* ============================================== */
+
+.middle-aligned{
+  vertical-align:middle !important;
+}
+span.middle-aligned{
+  vertical-align: middle;
+}
+
+td.slider-value{
+  min-width: 70px;
+  font-weight: bold;
+}
+span.slider-value{
+  display:inline-block;
+  min-width: 45px;
+  font-weight: bold;
+  text-align:center;
+}
+
+td.slider-value .weight {  color: $weightGreen; opacity: 0.7 ;}
+span.slider-value .weight {  color: $weightGreen; opacity: 0.7 ;}
+td.slider-value .bias {  color: $biasPurple;  opacity: 0.7; }
+.explicit-slider-weight-value{
+  min-width: 55px;
+  font-weight: bold;
+  color: $weightGreen;
+  opacity: 0.7 ;
+  vertical-align: middle;
+  text-align:center;
+}
+.explicit-activation-output-value {
+  min-width: 130px;
+  font-weight: bold;
+  color: $activationYellow;
+  opacity: 0.7;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.explicit-relu-activation-output-value {
+  min-width: 55px;
+  font-weight: bold;
+  color: $activationYellow;
+  opacity: 0.7;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.prediction .img-div {
+  max-width: 600px;
+  margin: auto;
+  font-size: 85%;
+  color: #999;
+}
+
+.discussion{
+  font-size: 75%;
+  opacity:0.7;
+}
+
+.discussion a.hn-link{
+  // color:#FF742B;
+}
+
+.prediction .img-div img{
+  border: 1px solid $lightGray;
+}
+
+.prediction .img-div-any-width {
+  font-size: 85%;
+  color: #999;
+  text-align: center;
+}
+.prediction .img-div-any-width img{
+  // border: 1px solid $lightGray;
+}
+
+td span#error-value {
+  color: $darkYellow;
+  font-weight: bold;
+}
+
+.prediction .error-value{
+  color: $darkYellow;
+}
+
+td.error-cell{  text-align:center;  }
+
+
+.prediction .graphs{
+  width:380px;
+  margin: 0 auto;
+}
+
+.prediction .container{
+  padding: 0 !important;
+}
+
+.prediction .col-sm-6{
+  padding: 0 !important;
+}
+
+
+.prediction .row {
+  margin: 0 !important;
+}
+
+.prediction .gd-buttons{
+  text-align: center;
+}
+
+.prediction table.training-table{
+  margin: 0 auto;
+  width: 380px;
+}
+.prediction table.training-table td{
+  border-top:0
+}
+
+#error-value-message{
+  color:$lightBlue;
+  font-weight: bold;
+}
+
+.prediction .training-chart{  text-align:center;  }
+
+.prediction .training-chart svg{  background: #fbfbfb;  }
+.prediction svg .axis line{  stroke:#aaa;  }
+.prediction svg .axis path{  stroke:#aaa;  }
+/*.prediction svg .axis text{  fill:#aaa;  }*/
+
+.prediction #training-one-gd-heatmap svg text.chart-title{
+  font-size: 9pt;
+  fill: $chartLabel;
+}
+
+.prediction #training-one-gd-error-chart svg text.chart-title{
+  font-size: 9pt;
+  fill: $chartLabel;
+}
+.prediction #training-one-gd-heatmap svg text.weight-axis-label{
+  font-size: 9pt;
+  fill: $weightGreen;
+}
+.prediction #training-one-gd-error-chart svg text.error-axis-label{
+  font-size: 9pt;
+  fill: #F8CA00;
+}
+
+.prediction #training-one-gd-heatmap svg text.bias-axis-label{
+  font-size: 9pt;
+  fill: $biasPurple;
+}
+
+.prediction #neural-network-two-graph svg{
+  border: 0px solid #bbb;
+}
+
+.prediction .mini-charts{
+  width: 350px;
+  margin-left: -10px;
+}
+.prediction .error-chart svg{  background: $chartBackground;  }
+
+.prediction .error-chart .error-history-line{
+  stroke: $yellow;
+  stroke-width: 2;
+  fill: none;
+}
+
+.prediction .error-chart .error-history-line{
+  stroke: $yellow;
+  stroke-width: 2;
+  fill: none;
+}
+
+.prediction .error-chart svg g.axis--x g text{  fill: #bbb;  }
+
+
+.prediction #training-one-gd-heatmap svg g.axis--x g text{  fill: $weightGreen;  }
+.prediction #training-one-gd-heatmap svg g.axis--y g text{  fill: $biasPurple;  }
+
+.prediction .dot{  fill:$lightBlue;  }
+
+.prediction .line{
+  stroke: $pink;
+  stroke-width: 3;
+}
+
+.prediction .error-line{
+  stroke: $yellow;
+  stroke-width: 3;
+}
+
+.prediction .prediction-dot{  fill: $pink;  }
+.prediction .y_{  color: $lightBlue;  }
+.prediction .y {  color: $pink;  }
+.prediction .one_variable td:nth-child(4), .prediction .one_variable td:nth-child(5) {  color: $darkYellow;  }
+.prediction .one_variable td:nth-child(2) {  color: $lightBlue;  }
+.prediction .one_variable td:nth-child(3) {  color: $pink;  }
+.prediction .one_variable td:nth-child(4), .prediction .one_variable td:nth-child(5) {  color: $darkYellow;  }
+
+.prediction .two_variables td:nth-child(3) {  color: $lightBlue;  }
+.prediction .two_variables td:nth-child(4) {  color: $pink;  }
+.prediction .two_variables td:nth-child(5), .prediction .two_variables td:nth-child(6) {  color: $yellow;  }
+
+
+
+.prediction .total{
+  color:$gray;
+}
+
+.post blockquote.subtle{
+  font-size:14px;
+  color: #aaa;
+  border-left: 2px solid #aaa;
+}
+
+code.plain_code{
+  background-color:inherit;
+}
+
+.prediction code.small_code{
+  font-size:14px;
+}
+
+div.nn-tooltip {
+  position: absolute;
+  text-align: center;
+  /*width: 60px;
+  height: 28px;*/
+  padding: 15px;
+  font: 12px sans-serif;
+  background: white;
+  border: 1px solid #666;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+
+
+
+.gif_space{
+  margin-top: 80px;
+}
+
+.gif-space-half {
+  margin-top: 40px;
+}
+
+.prediction .viz-line {
+  color: #EC008C;
+}
+
+/*           Neural Netowrk graph    */
+.nn-graph-area{
+  text-align: center;
+}
+
+.nn-graph-area svg{
+  border: 0px solid $gray;
+}
+.input-node{
+  fill: $nnInputNode;
+  stroke: $darkGray;
+  stroke-width: $nnNodeStrokeWidth;
+}
+
+.weightNode{
+  fill: $nnWeightNode;
+  stroke: $darkGray;
+  stroke-width: $nnNodeStrokeWidth;
+}
+.biasNode{
+  fill: $nnBiasNode;
+  stroke: $darkGray;
+  stroke-width: $nnNodeStrokeWidth;
+}
+
+.softmaxNode{
+  fill: $nnSoftmaxNode;
+  stroke: $darkGray;
+  stroke-width: $nnNodeStrokeWidth;
+}
+
+.output-node{
+  fill: $nnOutputNode;
+  stroke: $darkGray;
+  stroke-width: $nnNodeStrokeWidth;
+}
+.arrow{
+  stroke-width:$nnStrokeWidth;
+  stroke:$darkGray;
+}
+
+#arrow{
+  stroke-width:1;
+  stroke-dasharray:0;
+}
+
+
+// Neural Network Grapher
+.grapherWeightNode{
+  fill: $nnWeightNode;
+  stroke: $darkGray;
+  stroke-width: $nnStrokeWidth;
+}
+
+.grapherWeightNodeText{  font-size: 9px  }
+.grapher-node-text{  font-size: 12px;  fill: #666;  }
+
+// Neural Network Calculation Viz
+#neural-network-calculation-viz{  text-align:center;  }
+
+.nn-node{  fill: white;  stroke-width: $lighterOutlinedNodeStrokeWidth;  }
+.nn-node:hover{ stroke: $lighterGray; }
+.nn-node-highlighted{ stroke: $lighterGray !important; }
+.layer-input-value{font-size: 11px;  opacity:0.5;}
+g text.layer-input-value-highlighted{font-size: 11px;  opacity:1 !important ; /*fill:$gray !important;*/}
+.layer-input-value-from-input{fill: $weightLayerInput}
+//.layer-input-value-from-input{fill: #a8e7ad}
+.layer-input-value-from-bias{fill: $biasLayerInput}
+.input-group text{   pointer-events: none;  }
+.output-group text.node-text{   pointer-events: none; fill:$nnOutputNodeText !important;   }
+.layer-group text.node-text{   pointer-events: none; fill:$nnOutputNodeText !important;   }
+
+.outlined-input-node{  stroke: $inputOutlineColor; fill: $inputNodeFillColor}
+.outlined-weight-node{  stroke: $nnWeightNode; fill: $weightNodeFillColor }
+.outlined-bias-node{  stroke: $biasOutlineColor; fill: $biasNodeFillColor;}
+.outlined-output-node{  stroke: $outputOutlineColor; fill: $outputNodeFillColor}
+
+.outlined-activation-node{  stroke: $softmaxOutlineColor;}
+.outlined-softmax-node{  stroke: $softmaxOutlineColor; fill: $softmaxNodeFillColor}
+.outlined-sigmoid-node{  stroke: $softmaxOutlineColor; fill: $softmaxNodeFillColor}
+
+g.activation text{ pointer-events: none; }
+g.softmax text{   pointer-events: none;  }
+
+.input-node-text{ color:$nnInputNodeText}
+.weight-node-text{ color:$nnWeightNodeText}
+.bias-node-text{ color:$nnBiasNodeText}
+.output-node-text{ color:$nnOutputNodeText}
+
+
+.nn-arrow{
+  stroke-width:$nnStrokeWidth;
+  stroke:$lighterGray;
+}
+
+
+line.nn-arrow-highlighted{
+  stroke: $darkGray !important;
+}
+
+.arrowHead{  stroke:$lighterGray;  }
+
+#neural-network-calculation-viz .weightNodeText{  font-size: 9px; fill: #999;  pointer-events: none;}
+#neural-network-calculation-viz .weightNodeText-highlighted{  fill: $gray; }
+#neural-network-calculation-viz {  font-size: 14px;  fill: #666;  }
+#neural-network-calculation-viz .outlined-weight-node:hover{  stroke: $lighterGray;  }
+#neural-network-calculation-viz  .outlined-weight-node:hover .weightNodeText{  font-size: 12px;  fill: $gray;  }
+#neural-network-calculation-viz .highlighted-softmax-output{ fill:#333}
+#neural-network-calculation-viz .dim-softmax-output{ fill:#ccc}
+#neural-network-calculation-viz .sigmoid-output{ fill:$activationYellow}
+
+
+
+.prediction table.input-calculation{  font-size: 100% ;  border-collapse: collapse;  margin: 8px;  color: #888;  }
+.prediction table.input-calculation tr{  padding: 1px 10px;  }
+.prediction table.input-calculation th{  padding: 4px 5px;  font-weight: bold;  font-size: 90%;  }
+.prediction table.input-calculation td{  padding: 4px 5px;  border-top: 0px solid #333; ;  }
+
+.prediction table.input-calculation td.importance-10{ color: #aaa; }
+.prediction table.input-calculation td.importance-20{ color: #999; }
+.prediction table.input-calculation td.importance-30{ color: #333; }
+.prediction table.input-calculation td.number{ text-align:left; }
+
+.prediction table.input-calculation tr.total-row{ border-top:1px dashed #ccc; }
+.prediction table.input-calculation td.sum-value{ color:$nnOutputNodeText; }
+.prediction table.input-calculation td.weight-layer-input{color: $weightLayerInput}
+.prediction table.input-calculation td.bias-layer-input{color: $biasLayerInput}
+
+
+.prediction table.softmax-calculation{  font-size: 100% ;  border-collapse: collapse;  margin: 8px;  color: #888;  }
+
+.prediction table.softmax-calculation, .prediction table.softmax-calculation th,
+.prediction table.softmax-calculation td{  border: 1px solid #ddd;}
+
+.prediction table.softmax-calculation tr{  padding: 1px 5px;  }
+.prediction table.softmax-calculation th{  font-weight:bold; font-size: 90%; text-align: center; padding:12px 12px;}
+.prediction table.softmax-calculation td{  padding: 4px 5px;  border-top: 0px solid #333;  text-align: center;  }
+.prediction table.softmax-calculation .input{  color:$nnOutputNodeText; }
+.prediction table.softmax-calculation td.calculation{  font-size: 150% ; padding: 8px 8px; }
+.prediction table.softmax-calculation td.class-name{  vertical-align: middle; font-size: 90%;}
+.prediction table.softmax-calculation td.highlighted{ font-weight: bold}
+
+.prediction table.softmax-calculation td.importance-10{ color: #aaa; }
+.prediction table.softmax-calculation td.importance-20{ color: #999; }
+.prediction table.softmax-calculation td.importance-30{ color: #333; }
+
+.prediction table.softmax-calculation  tr.total-row{ border-top:1px dashed #ccc; }
+
+
+table.collapsed-style{font-size: 90%;  border-collapse: collapse;  margin: 8px;  color: #333;  }
+
+.prediction table.collapsed-style, .prediction table.collapsed-style th,
+.prediction table.collapsed-style td{  border: 1px solid #ddd;}
+.prediction table.collapsed-style tbody tr:hover{  background-color: #f4e5f8}
+.prediction table.collapsed-style td, .prediction table.collapsed-style th{  padding: 8px 8px; text-align: center;  }
+table.collapsed-style th{  }
+
+.prediction .titanic-dataset table{   color:#666;  }
+.prediction .titanic-dataset table td{  font-size: 90%; border: 1px solid #ddd; }
+.prediction .titanic-dataset table th{  font-size: 90%; border: 1px solid #ddd; }
+.prediction .titanic-dataset table td:nth-child(2), .prediction .titanic-dataset table th:nth-child(2)
+{  color: #b2aef4; font-weight:bold;  }
+.prediction .titanic-dataset table td:nth-child(5), .prediction .titanic-dataset table th:nth-child(5),
+.prediction .titanic-dataset table td:nth-child(6), .prediction .titanic-dataset table th:nth-child(6)
+{  color: #d18fe2; font-weight:bold;  }
+
+#sigmoid-label{font-size: 30px; font-family: serif; dominant-baseline:central; fill:#888}
+
+
+.prediction table.activation-graph-slider{  margin:0; font-size:100% }
+.prediction table.activation-graph-slider td{  border:0;  }
+
+
+// Sigmoid graph
+
+.activation-graph .y-axis text{fill: $activationYellow;}
+.activation-graph .x-axis text{fill: $nnWeightNodeText;}
+.sigmoid-value-dot{  stroke: #666;  stroke-width: 1px;  fill: #fffef1;}
+.sigmoid-value-text{fill: $activationYellow;}
+.sigmoid-line{stroke: $invisibleUFO; fill:none; stroke-linejoin: round; stroke-linecap: round; stroke-width: 1.5;}
+
+#sigmoid-formula-input{  width:60px;  display: inline-block;  text-align:left;  }
+#sigmoid-formula-input .sigmoid-value-input-number {  color: $weightGreen;  opacity: 0.7  }
+#sigmoid-result{ color: $activationYellow;}
+
+
+// Relu graph
+
+.activation-graph .y-axis text{fill: $activationYellow;}
+.activation-graph .x-axis text{fill: $nnWeightNodeText;}
+.activation-value-dot{  stroke: #666;  stroke-width: 1px;  fill: #fffef1;}
+.activation-value-text{fill: $activationYellow;}
+.activation-line-straight{stroke: $invisibleUFO; fill:none; stroke-width: 1.5;}
+
+#relu-formula-input{  width:45px;  display: inline-block;  text-align:center;  }
+#relu-formula-input .relu-value-input-number {  color: $weightGreen;  opacity: 0.7  }
+#relu-result{ color: $activationYellow;}
+
+
+// Quick guide to neurons
+
+.prediction div.neuron-expo{
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.prediction div.neuron-expo .small-column{
+  text-align: center;
+}
+
+
+.prediction div.neuron-expo .side-column{
+  font-size: 80%;
+  color: #888;
+}
+
+.prediction div.neuron-expo .side-column code{
+  font-size: 80%;
+  color: #666;
+}
+
+.prediction .faded_text{
+  opacity:0.6;
+}
+
+
+
+
+// attention
+.prediction .encoder{
+  color:#70BF41
+}
+
+.prediction .decoder{
+  color:#B36AE2
+}
+
+.prediction .context{
+  color:#F39019
+}
+
+.prediction .embedding{
+  color:#00882B
+}
+
+
+.prediction .step_no{
+  color:#5CBCE9
+}
+
+.prediction .ffnn{
+  color:#EC5D57
+}
+
+.prediction .logits_output{
+  color:#DF5F91
+}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+pre{
+  padding:8px;
+}
+pre code{
+  font-size:90%;
+}
+
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+// ============
+
 strong, b {
   font-weight: bold;
 }
@@ -120,15 +735,6 @@ img {
   color: $gray;
 }
 
-// Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-::selection {
-  color: $black;
-  background: $lightGray;
-}
 
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
@@ -283,7 +889,90 @@ footer {
   text-align: center;
 }
 
+cite{
+  font-size:70%;
+  color: steelblue;
+  margin:0 2px;
+}
+.hover-box{
+  position: absolute;
+  background-color: white;
+  border:2px solid #666;
+  padding:20px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px #999;
+  font-size:80%
+}
+
+figure{
+  margin:40px 0;
+}
+
+figcaption{
+  font-size:70%;
+  color:#666;
+  margin-top:10px;
+}
+
+references{
+  color:#777;
+  font-size:80%;
+}
+
+
+@media (min-width:768px){
+  .aside{
+
+    clear: both;
+    float: right;
+    margin-top: 0;
+    margin-left: 48px;
+    width:220px;
+  }
+
+  .wide-aside{
+    clear: both;
+    float: right;
+    margin-top: 0;
+    margin-left: 48px;
+    width:350px;
+  }
+}
+
+.prediction table.graphs-table {
+  font-size:100%
+}
+
+.graphs-table td{
+  vertical-align: middle;
+}
+
+
+.cite{
+  padding: 10px;
+  background-color:#eeeeee;
+  margin: 10px;
+  border: 1px solid #ddd;
+  color: #777;
+  font-size:80%;
+}
+.small-image{
+  max-width: 450px;
+}
+
+.two-column-text{
+  margin-bottom:50px;
+  font-size: 16px;
+  color: #666;
+}
+
+.mdc-text-red{color:#f44336}a.mdc-text-red:hover,a.mdc-text-red:focus{color:#e53935}.mdc-text-red-50{color:#ffebee}a.mdc-text-red-50:hover,a.mdc-text-red-50:focus{color:#ffcdd2}.mdc-text-red-100{color:#ffcdd2}a.mdc-text-red-100:hover,a.mdc-text-red-100:focus{color:#ef9a9a}.mdc-text-red-200{color:#ef9a9a}a.mdc-text-red-200:hover,a.mdc-text-red-200:focus{color:#e57373}.mdc-text-red-300{color:#e57373}a.mdc-text-red-300:hover,a.mdc-text-red-300:focus{color:#ef5350}.mdc-text-red-400{color:#ef5350}a.mdc-text-red-400:hover,a.mdc-text-red-400:focus{color:#f44336}.mdc-text-red-500{color:#f44336}a.mdc-text-red-500:hover,a.mdc-text-red-500:focus{color:#e53935}.mdc-text-red-600{color:#e53935}a.mdc-text-red-600:hover,a.mdc-text-red-600:focus{color:#d32f2f}.mdc-text-red-700{color:#d32f2f}a.mdc-text-red-700:hover,a.mdc-text-red-700:focus{color:#c62828}.mdc-text-red-800{color:#c62828}a.mdc-text-red-800:hover,a.mdc-text-red-800:focus{color:#b71c1c}.mdc-text-red-900{color:#b71c1c}a.mdc-text-red-900:hover,a.mdc-text-red-900:focus{color:#8b1515}.mdc-text-red-A100{color:#ff8a80}a.mdc-text-red-A100:hover,a.mdc-text-red-A100:focus{color:#ff5b4d}.mdc-text-red-A200{color:#ff5252}a.mdc-text-red-A200:hover,a.mdc-text-red-A200:focus{color:#ff1f1f}.mdc-text-red-A400{color:#ff1744}a.mdc-text-red-A400:hover,a.mdc-text-red-A400:focus{color:#e3002c}.mdc-text-red-A700{color:#d50000}a.mdc-text-red-A700:hover,a.mdc-text-red-A700:focus{color:#a20000}.mdc-bg-red{background-color:#f44336}a.mdc-bg-red:hover,a.mdc-bg-red:focus{background-color:#e53935}.mdc-bg-red-50{background-color:#ffebee}a.mdc-bg-red-50:hover,a.mdc-bg-red-50:focus{background-color:#ffcdd2}.mdc-bg-red-100{background-color:#ffcdd2}a.mdc-bg-red-100:hover,a.mdc-bg-red-100:focus{background-color:#ef9a9a}.mdc-bg-red-200{background-color:#ef9a9a}a.mdc-bg-red-200:hover,a.mdc-bg-red-200:focus{background-color:#e57373}.mdc-bg-red-300{background-color:#e57373}a.mdc-bg-red-300:hover,a.mdc-bg-red-300:focus{background-color:#ef5350}.mdc-bg-red-400{background-color:#ef5350}a.mdc-bg-red-400:hover,a.mdc-bg-red-400:focus{background-color:#f44336}.mdc-bg-red-500{background-color:#f44336}a.mdc-bg-red-500:hover,a.mdc-bg-red-500:focus{background-color:#e53935}.mdc-bg-red-600{background-color:#e53935}a.mdc-bg-red-600:hover,a.mdc-bg-red-600:focus{background-color:#d32f2f}.mdc-bg-red-700{background-color:#d32f2f}a.mdc-bg-red-700:hover,a.mdc-bg-red-700:focus{background-color:#c62828}.mdc-bg-red-800{background-color:#c62828}a.mdc-bg-red-800:hover,a.mdc-bg-red-800:focus{background-color:#b71c1c}.mdc-bg-red-900{background-color:#b71c1c}a.mdc-bg-red-900:hover,a.mdc-bg-red-900:focus{background-color:#8b1515}.mdc-bg-red-A100{background-color:#ff8a80}a.mdc-bg-red-A100:hover,a.mdc-bg-red-A100:focus{background-color:#ff5b4d}.mdc-bg-red-A200{background-color:#ff5252}a.mdc-bg-red-A200:hover,a.mdc-bg-red-A200:focus{background-color:#ff1f1f}.mdc-bg-red-A400{background-color:#ff1744}a.mdc-bg-red-A400:hover,a.mdc-bg-red-A400:focus{background-color:#e3002c}.mdc-bg-red-A700{background-color:#d50000}a.mdc-bg-red-A700:hover,a.mdc-bg-red-A700:focus{background-color:#a20000}.mdc-text-pink{color:#e91e63}a.mdc-text-pink:hover,a.mdc-text-pink:focus{color:#d81b60}.mdc-text-pink-50{color:#fce4ec}a.mdc-text-pink-50:hover,a.mdc-text-pink-50:focus{color:#f8bbd0}.mdc-text-pink-100{color:#f8bbd0}a.mdc-text-pink-100:hover,a.mdc-text-pink-100:focus{color:#f48fb1}.mdc-text-pink-200{color:#f48fb1}a.mdc-text-pink-200:hover,a.mdc-text-pink-200:focus{color:#f06292}.mdc-text-pink-300{color:#f06292}a.mdc-text-pink-300:hover,a.mdc-text-pink-300:focus{color:#ec407a}.mdc-text-pink-400{color:#ec407a}a.mdc-text-pink-400:hover,a.mdc-text-pink-400:focus{color:#e91e63}.mdc-text-pink-500{color:#e91e63}a.mdc-text-pink-500:hover,a.mdc-text-pink-500:focus{color:#d81b60}.mdc-text-pink-600{color:#d81b60}a.mdc-text-pink-600:hover,a.mdc-text-pink-600:focus{color:#c2185b}.mdc-text-pink-700{color:#c2185b}a.mdc-text-pink-700:hover,a.mdc-text-pink-700:focus{color:#ad1457}.mdc-text-pink-800{color:#ad1457}a.mdc-text-pink-800:hover,a.mdc-text-pink-800:focus{color:#880e4f}.mdc-text-pink-900{color:#880e4f}a.mdc-text-pink-900:hover,a.mdc-text-pink-900:focus{color:#5a0934}.mdc-text-pink-A100{color:#ff80ab}a.mdc-text-pink-A100:hover,a.mdc-text-pink-A100:focus{color:#ff4d89}.mdc-text-pink-A200{color:#ff4081}a.mdc-text-pink-A200:hover,a.mdc-text-pink-A200:focus{color:#ff0d5f}.mdc-text-pink-A400{color:#f50057}a.mdc-text-pink-A400:hover,a.mdc-text-pink-A400:focus{color:#c20045}.mdc-text-pink-A700{color:#c51162}a.mdc-text-pink-A700:hover,a.mdc-text-pink-A700:focus{color:#960d4b}.mdc-bg-pink{background-color:#e91e63}a.mdc-bg-pink:hover,a.mdc-bg-pink:focus{background-color:#d81b60}.mdc-bg-pink-50{background-color:#fce4ec}a.mdc-bg-pink-50:hover,a.mdc-bg-pink-50:focus{background-color:#f8bbd0}.mdc-bg-pink-100{background-color:#f8bbd0}a.mdc-bg-pink-100:hover,a.mdc-bg-pink-100:focus{background-color:#f48fb1}.mdc-bg-pink-200{background-color:#f48fb1}a.mdc-bg-pink-200:hover,a.mdc-bg-pink-200:focus{background-color:#f06292}.mdc-bg-pink-300{background-color:#f06292}a.mdc-bg-pink-300:hover,a.mdc-bg-pink-300:focus{background-color:#ec407a}.mdc-bg-pink-400{background-color:#ec407a}a.mdc-bg-pink-400:hover,a.mdc-bg-pink-400:focus{background-color:#e91e63}.mdc-bg-pink-500{background-color:#e91e63}a.mdc-bg-pink-500:hover,a.mdc-bg-pink-500:focus{background-color:#d81b60}.mdc-bg-pink-600{background-color:#d81b60}a.mdc-bg-pink-600:hover,a.mdc-bg-pink-600:focus{background-color:#c2185b}.mdc-bg-pink-700{background-color:#c2185b}a.mdc-bg-pink-700:hover,a.mdc-bg-pink-700:focus{background-color:#ad1457}.mdc-bg-pink-800{background-color:#ad1457}a.mdc-bg-pink-800:hover,a.mdc-bg-pink-800:focus{background-color:#880e4f}.mdc-bg-pink-900{background-color:#880e4f}a.mdc-bg-pink-900:hover,a.mdc-bg-pink-900:focus{background-color:#5a0934}.mdc-bg-pink-A100{background-color:#ff80ab}a.mdc-bg-pink-A100:hover,a.mdc-bg-pink-A100:focus{background-color:#ff4d89}.mdc-bg-pink-A200{background-color:#ff4081}a.mdc-bg-pink-A200:hover,a.mdc-bg-pink-A200:focus{background-color:#ff0d5f}.mdc-bg-pink-A400{background-color:#f50057}a.mdc-bg-pink-A400:hover,a.mdc-bg-pink-A400:focus{background-color:#c20045}.mdc-bg-pink-A700{background-color:#c51162}a.mdc-bg-pink-A700:hover,a.mdc-bg-pink-A700:focus{background-color:#960d4b}.mdc-text-purple{color:#9c27b0}a.mdc-text-purple:hover,a.mdc-text-purple:focus{color:#8e24aa}.mdc-text-purple-50{color:#f3e5f5}a.mdc-text-purple-50:hover,a.mdc-text-purple-50:focus{color:#e1bee7}.mdc-text-purple-100{color:#e1bee7}a.mdc-text-purple-100:hover,a.mdc-text-purple-100:focus{color:#ce93d8}.mdc-text-purple-200{color:#ce93d8}a.mdc-text-purple-200:hover,a.mdc-text-purple-200:focus{color:#ba68c8}.mdc-text-purple-300{color:#ba68c8}a.mdc-text-purple-300:hover,a.mdc-text-purple-300:focus{color:#ab47bc}.mdc-text-purple-400{color:#ab47bc}a.mdc-text-purple-400:hover,a.mdc-text-purple-400:focus{color:#9c27b0}.mdc-text-purple-500{color:#9c27b0}a.mdc-text-purple-500:hover,a.mdc-text-purple-500:focus{color:#8e24aa}.mdc-text-purple-600{color:#8e24aa}a.mdc-text-purple-600:hover,a.mdc-text-purple-600:focus{color:#7b1fa2}.mdc-text-purple-700{color:#7b1fa2}a.mdc-text-purple-700:hover,a.mdc-text-purple-700:focus{color:#6a1b9a}.mdc-text-purple-800{color:#6a1b9a}a.mdc-text-purple-800:hover,a.mdc-text-purple-800:focus{color:#4a148c}.mdc-text-purple-900{color:#4a148c}a.mdc-text-purple-900:hover,a.mdc-text-purple-900:focus{color:#320e5f}.mdc-text-purple-A100{color:#ea80fc}a.mdc-text-purple-A100:hover,a.mdc-text-purple-A100:focus{color:#e24efb}.mdc-text-purple-A200{color:#e040fb}a.mdc-text-purple-A200:hover,a.mdc-text-purple-A200:focus{color:#d80efa}.mdc-text-purple-A400{color:#d500f9}a.mdc-text-purple-A400:hover,a.mdc-text-purple-A400:focus{color:#a900c6}.mdc-text-purple-A700{color:#a0f}a.mdc-text-purple-A700:hover,a.mdc-text-purple-A700:focus{color:#80c}.mdc-bg-purple{background-color:#9c27b0}a.mdc-bg-purple:hover,a.mdc-bg-purple:focus{background-color:#8e24aa}.mdc-bg-purple-50{background-color:#f3e5f5}a.mdc-bg-purple-50:hover,a.mdc-bg-purple-50:focus{background-color:#e1bee7}.mdc-bg-purple-100{background-color:#e1bee7}a.mdc-bg-purple-100:hover,a.mdc-bg-purple-100:focus{background-color:#ce93d8}.mdc-bg-purple-200{background-color:#ce93d8}a.mdc-bg-purple-200:hover,a.mdc-bg-purple-200:focus{background-color:#ba68c8}.mdc-bg-purple-300{background-color:#ba68c8}a.mdc-bg-purple-300:hover,a.mdc-bg-purple-300:focus{background-color:#ab47bc}.mdc-bg-purple-400{background-color:#ab47bc}a.mdc-bg-purple-400:hover,a.mdc-bg-purple-400:focus{background-color:#9c27b0}.mdc-bg-purple-500{background-color:#9c27b0}a.mdc-bg-purple-500:hover,a.mdc-bg-purple-500:focus{background-color:#8e24aa}.mdc-bg-purple-600{background-color:#8e24aa}a.mdc-bg-purple-600:hover,a.mdc-bg-purple-600:focus{background-color:#7b1fa2}.mdc-bg-purple-700{background-color:#7b1fa2}a.mdc-bg-purple-700:hover,a.mdc-bg-purple-700:focus{background-color:#6a1b9a}.mdc-bg-purple-800{background-color:#6a1b9a}a.mdc-bg-purple-800:hover,a.mdc-bg-purple-800:focus{background-color:#4a148c}.mdc-bg-purple-900{background-color:#4a148c}a.mdc-bg-purple-900:hover,a.mdc-bg-purple-900:focus{background-color:#320e5f}.mdc-bg-purple-A100{background-color:#ea80fc}a.mdc-bg-purple-A100:hover,a.mdc-bg-purple-A100:focus{background-color:#e24efb}.mdc-bg-purple-A200{background-color:#e040fb}a.mdc-bg-purple-A200:hover,a.mdc-bg-purple-A200:focus{background-color:#d80efa}.mdc-bg-purple-A400{background-color:#d500f9}a.mdc-bg-purple-A400:hover,a.mdc-bg-purple-A400:focus{background-color:#a900c6}.mdc-bg-purple-A700{background-color:#a0f}a.mdc-bg-purple-A700:hover,a.mdc-bg-purple-A700:focus{background-color:#80c}.mdc-text-deep-purple{color:#673ab7}a.mdc-text-deep-purple:hover,a.mdc-text-deep-purple:focus{color:#5e35b1}.mdc-text-deep-purple-50{color:#ede7f6}a.mdc-text-deep-purple-50:hover,a.mdc-text-deep-purple-50:focus{color:#d1c4e9}.mdc-text-deep-purple-100{color:#d1c4e9}a.mdc-text-deep-purple-100:hover,a.mdc-text-deep-purple-100:focus{color:#b39ddb}.mdc-text-deep-purple-200{color:#b39ddb}a.mdc-text-deep-purple-200:hover,a.mdc-text-deep-purple-200:focus{color:#9575cd}.mdc-text-deep-purple-300{color:#9575cd}a.mdc-text-deep-purple-300:hover,a.mdc-text-deep-purple-300:focus{color:#7e57c2}.mdc-text-deep-purple-400{color:#7e57c2}a.mdc-text-deep-purple-400:hover,a.mdc-text-deep-purple-400:focus{color:#673ab7}.mdc-text-deep-purple-500{color:#673ab7}a.mdc-text-deep-purple-500:hover,a.mdc-text-deep-purple-500:focus{color:#5e35b1}.mdc-text-deep-purple-600{color:#5e35b1}a.mdc-text-deep-purple-600:hover,a.mdc-text-deep-purple-600:focus{color:#512da8}.mdc-text-deep-purple-700{color:#512da8}a.mdc-text-deep-purple-700:hover,a.mdc-text-deep-purple-700:focus{color:#4527a0}.mdc-text-deep-purple-800{color:#4527a0}a.mdc-text-deep-purple-800:hover,a.mdc-text-deep-purple-800:focus{color:#311b92}.mdc-text-deep-purple-900{color:#311b92}a.mdc-text-deep-purple-900:hover,a.mdc-text-deep-purple-900:focus{color:#231367}.mdc-text-deep-purple-A100{color:#b388ff}a.mdc-text-deep-purple-A100:hover,a.mdc-text-deep-purple-A100:focus{color:#9255ff}.mdc-text-deep-purple-A200{color:#7c4dff}a.mdc-text-deep-purple-A200:hover,a.mdc-text-deep-purple-A200:focus{color:#561aff}.mdc-text-deep-purple-A400{color:#651fff}a.mdc-text-deep-purple-A400:hover,a.mdc-text-deep-purple-A400:focus{color:#4900eb}.mdc-text-deep-purple-A700{color:#6200ea}a.mdc-text-deep-purple-A700:hover,a.mdc-text-deep-purple-A700:focus{color:#4d00b7}.mdc-bg-deep-purple{background-color:#673ab7}a.mdc-bg-deep-purple:hover,a.mdc-bg-deep-purple:focus{background-color:#5e35b1}.mdc-bg-deep-purple-50{background-color:#ede7f6}a.mdc-bg-deep-purple-50:hover,a.mdc-bg-deep-purple-50:focus{background-color:#d1c4e9}.mdc-bg-deep-purple-100{background-color:#d1c4e9}a.mdc-bg-deep-purple-100:hover,a.mdc-bg-deep-purple-100:focus{background-color:#b39ddb}.mdc-bg-deep-purple-200{background-color:#b39ddb}a.mdc-bg-deep-purple-200:hover,a.mdc-bg-deep-purple-200:focus{background-color:#9575cd}.mdc-bg-deep-purple-300{background-color:#9575cd}a.mdc-bg-deep-purple-300:hover,a.mdc-bg-deep-purple-300:focus{background-color:#7e57c2}.mdc-bg-deep-purple-400{background-color:#7e57c2}a.mdc-bg-deep-purple-400:hover,a.mdc-bg-deep-purple-400:focus{background-color:#673ab7}.mdc-bg-deep-purple-500{background-color:#673ab7}a.mdc-bg-deep-purple-500:hover,a.mdc-bg-deep-purple-500:focus{background-color:#5e35b1}.mdc-bg-deep-purple-600{background-color:#5e35b1}a.mdc-bg-deep-purple-600:hover,a.mdc-bg-deep-purple-600:focus{background-color:#512da8}.mdc-bg-deep-purple-700{background-color:#512da8}a.mdc-bg-deep-purple-700:hover,a.mdc-bg-deep-purple-700:focus{background-color:#4527a0}.mdc-bg-deep-purple-800{background-color:#4527a0}a.mdc-bg-deep-purple-800:hover,a.mdc-bg-deep-purple-800:focus{background-color:#311b92}.mdc-bg-deep-purple-900{background-color:#311b92}a.mdc-bg-deep-purple-900:hover,a.mdc-bg-deep-purple-900:focus{background-color:#231367}.mdc-bg-deep-purple-A100{background-color:#b388ff}a.mdc-bg-deep-purple-A100:hover,a.mdc-bg-deep-purple-A100:focus{background-color:#9255ff}.mdc-bg-deep-purple-A200{background-color:#7c4dff}a.mdc-bg-deep-purple-A200:hover,a.mdc-bg-deep-purple-A200:focus{background-color:#561aff}.mdc-bg-deep-purple-A400{background-color:#651fff}a.mdc-bg-deep-purple-A400:hover,a.mdc-bg-deep-purple-A400:focus{background-color:#4900eb}.mdc-bg-deep-purple-A700{background-color:#6200ea}a.mdc-bg-deep-purple-A700:hover,a.mdc-bg-deep-purple-A700:focus{background-color:#4d00b7}.mdc-text-indigo{color:#3f51b5}a.mdc-text-indigo:hover,a.mdc-text-indigo:focus{color:#3949ab}.mdc-text-indigo-50{color:#e8eaf6}a.mdc-text-indigo-50:hover,a.mdc-text-indigo-50:focus{color:#c5cae9}.mdc-text-indigo-100{color:#c5cae9}a.mdc-text-indigo-100:hover,a.mdc-text-indigo-100:focus{color:#9fa8da}.mdc-text-indigo-200{color:#9fa8da}a.mdc-text-indigo-200:hover,a.mdc-text-indigo-200:focus{color:#7986cb}.mdc-text-indigo-300{color:#7986cb}a.mdc-text-indigo-300:hover,a.mdc-text-indigo-300:focus{color:#5c6bc0}.mdc-text-indigo-400{color:#5c6bc0}a.mdc-text-indigo-400:hover,a.mdc-text-indigo-400:focus{color:#3f51b5}.mdc-text-indigo-500{color:#3f51b5}a.mdc-text-indigo-500:hover,a.mdc-text-indigo-500:focus{color:#3949ab}.mdc-text-indigo-600{color:#3949ab}a.mdc-text-indigo-600:hover,a.mdc-text-indigo-600:focus{color:#303f9f}.mdc-text-indigo-700{color:#303f9f}a.mdc-text-indigo-700:hover,a.mdc-text-indigo-700:focus{color:#283593}.mdc-text-indigo-800{color:#283593}a.mdc-text-indigo-800:hover,a.mdc-text-indigo-800:focus{color:#1a237e}.mdc-text-indigo-900{color:#1a237e}a.mdc-text-indigo-900:hover,a.mdc-text-indigo-900:focus{color:#111754}.mdc-text-indigo-A100{color:#8c9eff}a.mdc-text-indigo-A100:hover,a.mdc-text-indigo-A100:focus{color:#5973ff}.mdc-text-indigo-A200{color:#536dfe}a.mdc-text-indigo-A200:hover,a.mdc-text-indigo-A200:focus{color:#2042fe}.mdc-text-indigo-A400{color:#3d5afe}a.mdc-text-indigo-A400:hover,a.mdc-text-indigo-A400:focus{color:#0a2ffe}.mdc-text-indigo-A700{color:#304ffe}a.mdc-text-indigo-A700:hover,a.mdc-text-indigo-A700:focus{color:#0127fa}.mdc-bg-indigo{background-color:#3f51b5}a.mdc-bg-indigo:hover,a.mdc-bg-indigo:focus{background-color:#3949ab}.mdc-bg-indigo-50{background-color:#e8eaf6}a.mdc-bg-indigo-50:hover,a.mdc-bg-indigo-50:focus{background-color:#c5cae9}.mdc-bg-indigo-100{background-color:#c5cae9}a.mdc-bg-indigo-100:hover,a.mdc-bg-indigo-100:focus{background-color:#9fa8da}.mdc-bg-indigo-200{background-color:#9fa8da}a.mdc-bg-indigo-200:hover,a.mdc-bg-indigo-200:focus{background-color:#7986cb}.mdc-bg-indigo-300{background-color:#7986cb}a.mdc-bg-indigo-300:hover,a.mdc-bg-indigo-300:focus{background-color:#5c6bc0}.mdc-bg-indigo-400{background-color:#5c6bc0}a.mdc-bg-indigo-400:hover,a.mdc-bg-indigo-400:focus{background-color:#3f51b5}.mdc-bg-indigo-500{background-color:#3f51b5}a.mdc-bg-indigo-500:hover,a.mdc-bg-indigo-500:focus{background-color:#3949ab}.mdc-bg-indigo-600{background-color:#3949ab}a.mdc-bg-indigo-600:hover,a.mdc-bg-indigo-600:focus{background-color:#303f9f}.mdc-bg-indigo-700{background-color:#303f9f}a.mdc-bg-indigo-700:hover,a.mdc-bg-indigo-700:focus{background-color:#283593}.mdc-bg-indigo-800{background-color:#283593}a.mdc-bg-indigo-800:hover,a.mdc-bg-indigo-800:focus{background-color:#1a237e}.mdc-bg-indigo-900{background-color:#1a237e}a.mdc-bg-indigo-900:hover,a.mdc-bg-indigo-900:focus{background-color:#111754}.mdc-bg-indigo-A100{background-color:#8c9eff}a.mdc-bg-indigo-A100:hover,a.mdc-bg-indigo-A100:focus{background-color:#5973ff}.mdc-bg-indigo-A200{background-color:#536dfe}a.mdc-bg-indigo-A200:hover,a.mdc-bg-indigo-A200:focus{background-color:#2042fe}.mdc-bg-indigo-A400{background-color:#3d5afe}a.mdc-bg-indigo-A400:hover,a.mdc-bg-indigo-A400:focus{background-color:#0a2ffe}.mdc-bg-indigo-A700{background-color:#304ffe}a.mdc-bg-indigo-A700:hover,a.mdc-bg-indigo-A700:focus{background-color:#0127fa}.mdc-text-blue{color:#2196f3}a.mdc-text-blue:hover,a.mdc-text-blue:focus{color:#1e88e5}.mdc-text-blue-50{color:#e3f2fd}a.mdc-text-blue-50:hover,a.mdc-text-blue-50:focus{color:#bbdefb}.mdc-text-blue-100{color:#bbdefb}a.mdc-text-blue-100:hover,a.mdc-text-blue-100:focus{color:#90caf9}.mdc-text-blue-200{color:#90caf9}a.mdc-text-blue-200:hover,a.mdc-text-blue-200:focus{color:#64b5f6}.mdc-text-blue-300{color:#64b5f6}a.mdc-text-blue-300:hover,a.mdc-text-blue-300:focus{color:#42a5f5}.mdc-text-blue-400{color:#42a5f5}a.mdc-text-blue-400:hover,a.mdc-text-blue-400:focus{color:#2196f3}.mdc-text-blue-500{color:#2196f3}a.mdc-text-blue-500:hover,a.mdc-text-blue-500:focus{color:#1e88e5}.mdc-text-blue-600{color:#1e88e5}a.mdc-text-blue-600:hover,a.mdc-text-blue-600:focus{color:#1976d2}.mdc-text-blue-700{color:#1976d2}a.mdc-text-blue-700:hover,a.mdc-text-blue-700:focus{color:#1565c0}.mdc-text-blue-800{color:#1565c0}a.mdc-text-blue-800:hover,a.mdc-text-blue-800:focus{color:#0d47a1}.mdc-text-blue-900{color:#0d47a1}a.mdc-text-blue-900:hover,a.mdc-text-blue-900:focus{color:#093272}.mdc-text-blue-A100{color:#82b1ff}a.mdc-text-blue-A100:hover,a.mdc-text-blue-A100:focus{color:#4f91ff}.mdc-text-blue-A200{color:#448aff}a.mdc-text-blue-A200:hover,a.mdc-text-blue-A200:focus{color:#116aff}.mdc-text-blue-A400{color:#2979ff}a.mdc-text-blue-A400:hover,a.mdc-text-blue-A400:focus{color:#005cf5}.mdc-text-blue-A700{color:#2962ff}a.mdc-text-blue-A700:hover,a.mdc-text-blue-A700:focus{color:#0041f5}.mdc-bg-blue{background-color:#2196f3}a.mdc-bg-blue:hover,a.mdc-bg-blue:focus{background-color:#1e88e5}.mdc-bg-blue-50{background-color:#e3f2fd}a.mdc-bg-blue-50:hover,a.mdc-bg-blue-50:focus{background-color:#bbdefb}.mdc-bg-blue-100{background-color:#bbdefb}a.mdc-bg-blue-100:hover,a.mdc-bg-blue-100:focus{background-color:#90caf9}.mdc-bg-blue-200{background-color:#90caf9}a.mdc-bg-blue-200:hover,a.mdc-bg-blue-200:focus{background-color:#64b5f6}.mdc-bg-blue-300{background-color:#64b5f6}a.mdc-bg-blue-300:hover,a.mdc-bg-blue-300:focus{background-color:#42a5f5}.mdc-bg-blue-400{background-color:#42a5f5}a.mdc-bg-blue-400:hover,a.mdc-bg-blue-400:focus{background-color:#2196f3}.mdc-bg-blue-500{background-color:#2196f3}a.mdc-bg-blue-500:hover,a.mdc-bg-blue-500:focus{background-color:#1e88e5}.mdc-bg-blue-600{background-color:#1e88e5}a.mdc-bg-blue-600:hover,a.mdc-bg-blue-600:focus{background-color:#1976d2}.mdc-bg-blue-700{background-color:#1976d2}a.mdc-bg-blue-700:hover,a.mdc-bg-blue-700:focus{background-color:#1565c0}.mdc-bg-blue-800{background-color:#1565c0}a.mdc-bg-blue-800:hover,a.mdc-bg-blue-800:focus{background-color:#0d47a1}.mdc-bg-blue-900{background-color:#0d47a1}a.mdc-bg-blue-900:hover,a.mdc-bg-blue-900:focus{background-color:#093272}.mdc-bg-blue-A100{background-color:#82b1ff}a.mdc-bg-blue-A100:hover,a.mdc-bg-blue-A100:focus{background-color:#4f91ff}.mdc-bg-blue-A200{background-color:#448aff}a.mdc-bg-blue-A200:hover,a.mdc-bg-blue-A200:focus{background-color:#116aff}.mdc-bg-blue-A400{background-color:#2979ff}a.mdc-bg-blue-A400:hover,a.mdc-bg-blue-A400:focus{background-color:#005cf5}.mdc-bg-blue-A700{background-color:#2962ff}a.mdc-bg-blue-A700:hover,a.mdc-bg-blue-A700:focus{background-color:#0041f5}.mdc-text-light-blue{color:#03a9f4}a.mdc-text-light-blue:hover,a.mdc-text-light-blue:focus{color:#039be5}.mdc-text-light-blue-50{color:#e1f5fe}a.mdc-text-light-blue-50:hover,a.mdc-text-light-blue-50:focus{color:#b3e5fc}.mdc-text-light-blue-100{color:#b3e5fc}a.mdc-text-light-blue-100:hover,a.mdc-text-light-blue-100:focus{color:#81d4fa}.mdc-text-light-blue-200{color:#81d4fa}a.mdc-text-light-blue-200:hover,a.mdc-text-light-blue-200:focus{color:#4fc3f7}.mdc-text-light-blue-300{color:#4fc3f7}a.mdc-text-light-blue-300:hover,a.mdc-text-light-blue-300:focus{color:#29b6f6}.mdc-text-light-blue-400{color:#29b6f6}a.mdc-text-light-blue-400:hover,a.mdc-text-light-blue-400:focus{color:#03a9f4}.mdc-text-light-blue-500{color:#03a9f4}a.mdc-text-light-blue-500:hover,a.mdc-text-light-blue-500:focus{color:#039be5}.mdc-text-light-blue-600{color:#039be5}a.mdc-text-light-blue-600:hover,a.mdc-text-light-blue-600:focus{color:#0288d1}.mdc-text-light-blue-700{color:#0288d1}a.mdc-text-light-blue-700:hover,a.mdc-text-light-blue-700:focus{color:#0277bd}.mdc-text-light-blue-800{color:#0277bd}a.mdc-text-light-blue-800:hover,a.mdc-text-light-blue-800:focus{color:#01579b}.mdc-text-light-blue-900{color:#01579b}a.mdc-text-light-blue-900:hover,a.mdc-text-light-blue-900:focus{color:#013b68}.mdc-text-light-blue-A100{color:#80d8ff}a.mdc-text-light-blue-A100:hover,a.mdc-text-light-blue-A100:focus{color:#4dc8ff}.mdc-text-light-blue-A200{color:#40c4ff}a.mdc-text-light-blue-A200:hover,a.mdc-text-light-blue-A200:focus{color:#0db4ff}.mdc-text-light-blue-A400{color:#00b0ff}a.mdc-text-light-blue-A400:hover,a.mdc-text-light-blue-A400:focus{color:#008dcc}.mdc-text-light-blue-A700{color:#0091ea}a.mdc-text-light-blue-A700:hover,a.mdc-text-light-blue-A700:focus{color:#0071b7}.mdc-bg-light-blue{background-color:#03a9f4}a.mdc-bg-light-blue:hover,a.mdc-bg-light-blue:focus{background-color:#039be5}.mdc-bg-light-blue-50{background-color:#e1f5fe}a.mdc-bg-light-blue-50:hover,a.mdc-bg-light-blue-50:focus{background-color:#b3e5fc}.mdc-bg-light-blue-100{background-color:#b3e5fc}a.mdc-bg-light-blue-100:hover,a.mdc-bg-light-blue-100:focus{background-color:#81d4fa}.mdc-bg-light-blue-200{background-color:#81d4fa}a.mdc-bg-light-blue-200:hover,a.mdc-bg-light-blue-200:focus{background-color:#4fc3f7}.mdc-bg-light-blue-300{background-color:#4fc3f7}a.mdc-bg-light-blue-300:hover,a.mdc-bg-light-blue-300:focus{background-color:#29b6f6}.mdc-bg-light-blue-400{background-color:#29b6f6}a.mdc-bg-light-blue-400:hover,a.mdc-bg-light-blue-400:focus{background-color:#03a9f4}.mdc-bg-light-blue-500{background-color:#03a9f4}a.mdc-bg-light-blue-500:hover,a.mdc-bg-light-blue-500:focus{background-color:#039be5}.mdc-bg-light-blue-600{background-color:#039be5}a.mdc-bg-light-blue-600:hover,a.mdc-bg-light-blue-600:focus{background-color:#0288d1}.mdc-bg-light-blue-700{background-color:#0288d1}a.mdc-bg-light-blue-700:hover,a.mdc-bg-light-blue-700:focus{background-color:#0277bd}.mdc-bg-light-blue-800{background-color:#0277bd}a.mdc-bg-light-blue-800:hover,a.mdc-bg-light-blue-800:focus{background-color:#01579b}.mdc-bg-light-blue-900{background-color:#01579b}a.mdc-bg-light-blue-900:hover,a.mdc-bg-light-blue-900:focus{background-color:#013b68}.mdc-bg-light-blue-A100{background-color:#80d8ff}a.mdc-bg-light-blue-A100:hover,a.mdc-bg-light-blue-A100:focus{background-color:#4dc8ff}.mdc-bg-light-blue-A200{background-color:#40c4ff}a.mdc-bg-light-blue-A200:hover,a.mdc-bg-light-blue-A200:focus{background-color:#0db4ff}.mdc-bg-light-blue-A400{background-color:#00b0ff}a.mdc-bg-light-blue-A400:hover,a.mdc-bg-light-blue-A400:focus{background-color:#008dcc}.mdc-bg-light-blue-A700{background-color:#0091ea}a.mdc-bg-light-blue-A700:hover,a.mdc-bg-light-blue-A700:focus{background-color:#0071b7}.mdc-text-cyan{color:#00bcd4}a.mdc-text-cyan:hover,a.mdc-text-cyan:focus{color:#00acc1}.mdc-text-cyan-50{color:#e0f7fa}a.mdc-text-cyan-50:hover,a.mdc-text-cyan-50:focus{color:#b2ebf2}.mdc-text-cyan-100{color:#b2ebf2}a.mdc-text-cyan-100:hover,a.mdc-text-cyan-100:focus{color:#80deea}.mdc-text-cyan-200{color:#80deea}a.mdc-text-cyan-200:hover,a.mdc-text-cyan-200:focus{color:#4dd0e1}.mdc-text-cyan-300{color:#4dd0e1}a.mdc-text-cyan-300:hover,a.mdc-text-cyan-300:focus{color:#26c6da}.mdc-text-cyan-400{color:#26c6da}a.mdc-text-cyan-400:hover,a.mdc-text-cyan-400:focus{color:#00bcd4}.mdc-text-cyan-500{color:#00bcd4}a.mdc-text-cyan-500:hover,a.mdc-text-cyan-500:focus{color:#00acc1}.mdc-text-cyan-600{color:#00acc1}a.mdc-text-cyan-600:hover,a.mdc-text-cyan-600:focus{color:#0097a7}.mdc-text-cyan-700{color:#0097a7}a.mdc-text-cyan-700:hover,a.mdc-text-cyan-700:focus{color:#00838f}.mdc-text-cyan-800{color:#00838f}a.mdc-text-cyan-800:hover,a.mdc-text-cyan-800:focus{color:#006064}.mdc-text-cyan-900{color:#006064}a.mdc-text-cyan-900:hover,a.mdc-text-cyan-900:focus{color:#002f31}.mdc-text-cyan-A100{color:#84ffff}a.mdc-text-cyan-A100:hover,a.mdc-text-cyan-A100:focus{color:#51ffff}.mdc-text-cyan-A200{color:#18ffff}a.mdc-text-cyan-A200:hover,a.mdc-text-cyan-A200:focus{color:#00e4e4}.mdc-text-cyan-A400{color:#00e5ff}a.mdc-text-cyan-A400:hover,a.mdc-text-cyan-A400:focus{color:#00b7cc}.mdc-text-cyan-A700{color:#00b8d4}a.mdc-text-cyan-A700:hover,a.mdc-text-cyan-A700:focus{color:#008ca1}.mdc-bg-cyan{background-color:#00bcd4}a.mdc-bg-cyan:hover,a.mdc-bg-cyan:focus{background-color:#00acc1}.mdc-bg-cyan-50{background-color:#e0f7fa}a.mdc-bg-cyan-50:hover,a.mdc-bg-cyan-50:focus{background-color:#b2ebf2}.mdc-bg-cyan-100{background-color:#b2ebf2}a.mdc-bg-cyan-100:hover,a.mdc-bg-cyan-100:focus{background-color:#80deea}.mdc-bg-cyan-200{background-color:#80deea}a.mdc-bg-cyan-200:hover,a.mdc-bg-cyan-200:focus{background-color:#4dd0e1}.mdc-bg-cyan-300{background-color:#4dd0e1}a.mdc-bg-cyan-300:hover,a.mdc-bg-cyan-300:focus{background-color:#26c6da}.mdc-bg-cyan-400{background-color:#26c6da}a.mdc-bg-cyan-400:hover,a.mdc-bg-cyan-400:focus{background-color:#00bcd4}.mdc-bg-cyan-500{background-color:#00bcd4}a.mdc-bg-cyan-500:hover,a.mdc-bg-cyan-500:focus{background-color:#00acc1}.mdc-bg-cyan-600{background-color:#00acc1}a.mdc-bg-cyan-600:hover,a.mdc-bg-cyan-600:focus{background-color:#0097a7}.mdc-bg-cyan-700{background-color:#0097a7}a.mdc-bg-cyan-700:hover,a.mdc-bg-cyan-700:focus{background-color:#00838f}.mdc-bg-cyan-800{background-color:#00838f}a.mdc-bg-cyan-800:hover,a.mdc-bg-cyan-800:focus{background-color:#006064}.mdc-bg-cyan-900{background-color:#006064}a.mdc-bg-cyan-900:hover,a.mdc-bg-cyan-900:focus{background-color:#002f31}.mdc-bg-cyan-A100{background-color:#84ffff}a.mdc-bg-cyan-A100:hover,a.mdc-bg-cyan-A100:focus{background-color:#51ffff}.mdc-bg-cyan-A200{background-color:#18ffff}a.mdc-bg-cyan-A200:hover,a.mdc-bg-cyan-A200:focus{background-color:#00e4e4}.mdc-bg-cyan-A400{background-color:#00e5ff}a.mdc-bg-cyan-A400:hover,a.mdc-bg-cyan-A400:focus{background-color:#00b7cc}.mdc-bg-cyan-A700{background-color:#00b8d4}a.mdc-bg-cyan-A700:hover,a.mdc-bg-cyan-A700:focus{background-color:#008ca1}.mdc-text-teal{color:#009688}a.mdc-text-teal:hover,a.mdc-text-teal:focus{color:#00897b}.mdc-text-teal-50{color:#e0f2f1}a.mdc-text-teal-50:hover,a.mdc-text-teal-50:focus{color:#b2dfdb}.mdc-text-teal-100{color:#b2dfdb}a.mdc-text-teal-100:hover,a.mdc-text-teal-100:focus{color:#80cbc4}.mdc-text-teal-200{color:#80cbc4}a.mdc-text-teal-200:hover,a.mdc-text-teal-200:focus{color:#4db6ac}.mdc-text-teal-300{color:#4db6ac}a.mdc-text-teal-300:hover,a.mdc-text-teal-300:focus{color:#26a69a}.mdc-text-teal-400{color:#26a69a}a.mdc-text-teal-400:hover,a.mdc-text-teal-400:focus{color:#009688}.mdc-text-teal-500{color:#009688}a.mdc-text-teal-500:hover,a.mdc-text-teal-500:focus{color:#00897b}.mdc-text-teal-600{color:#00897b}a.mdc-text-teal-600:hover,a.mdc-text-teal-600:focus{color:#00796b}.mdc-text-teal-700{color:#00796b}a.mdc-text-teal-700:hover,a.mdc-text-teal-700:focus{color:#00695c}.mdc-text-teal-800{color:#00695c}a.mdc-text-teal-800:hover,a.mdc-text-teal-800:focus{color:#004d40}.mdc-text-teal-900{color:#004d40}a.mdc-text-teal-900:hover,a.mdc-text-teal-900:focus{color:#001a16}.mdc-text-teal-A100{color:#a7ffeb}a.mdc-text-teal-A100:hover,a.mdc-text-teal-A100:focus{color:#74ffdf}.mdc-text-teal-A200{color:#64ffda}a.mdc-text-teal-A200:hover,a.mdc-text-teal-A200:focus{color:#31ffce}.mdc-text-teal-A400{color:#1de9b6}a.mdc-text-teal-A400:hover,a.mdc-text-teal-A400:focus{color:#13c095}.mdc-text-teal-A700{color:#00bfa5}a.mdc-text-teal-A700:hover,a.mdc-text-teal-A700:focus{color:#008c79}.mdc-bg-teal{background-color:#009688}a.mdc-bg-teal:hover,a.mdc-bg-teal:focus{background-color:#00897b}.mdc-bg-teal-50{background-color:#e0f2f1}a.mdc-bg-teal-50:hover,a.mdc-bg-teal-50:focus{background-color:#b2dfdb}.mdc-bg-teal-100{background-color:#b2dfdb}a.mdc-bg-teal-100:hover,a.mdc-bg-teal-100:focus{background-color:#80cbc4}.mdc-bg-teal-200{background-color:#80cbc4}a.mdc-bg-teal-200:hover,a.mdc-bg-teal-200:focus{background-color:#4db6ac}.mdc-bg-teal-300{background-color:#4db6ac}a.mdc-bg-teal-300:hover,a.mdc-bg-teal-300:focus{background-color:#26a69a}.mdc-bg-teal-400{background-color:#26a69a}a.mdc-bg-teal-400:hover,a.mdc-bg-teal-400:focus{background-color:#009688}.mdc-bg-teal-500{background-color:#009688}a.mdc-bg-teal-500:hover,a.mdc-bg-teal-500:focus{background-color:#00897b}.mdc-bg-teal-600{background-color:#00897b}a.mdc-bg-teal-600:hover,a.mdc-bg-teal-600:focus{background-color:#00796b}.mdc-bg-teal-700{background-color:#00796b}a.mdc-bg-teal-700:hover,a.mdc-bg-teal-700:focus{background-color:#00695c}.mdc-bg-teal-800{background-color:#00695c}a.mdc-bg-teal-800:hover,a.mdc-bg-teal-800:focus{background-color:#004d40}.mdc-bg-teal-900{background-color:#004d40}a.mdc-bg-teal-900:hover,a.mdc-bg-teal-900:focus{background-color:#001a16}.mdc-bg-teal-A100{background-color:#a7ffeb}a.mdc-bg-teal-A100:hover,a.mdc-bg-teal-A100:focus{background-color:#74ffdf}.mdc-bg-teal-A200{background-color:#64ffda}a.mdc-bg-teal-A200:hover,a.mdc-bg-teal-A200:focus{background-color:#31ffce}.mdc-bg-teal-A400{background-color:#1de9b6}a.mdc-bg-teal-A400:hover,a.mdc-bg-teal-A400:focus{background-color:#13c095}.mdc-bg-teal-A700{background-color:#00bfa5}a.mdc-bg-teal-A700:hover,a.mdc-bg-teal-A700:focus{background-color:#008c79}.mdc-text-green{color:#4caf50}a.mdc-text-green:hover,a.mdc-text-green:focus{color:#43a047}.mdc-text-green-50{color:#e8f5e9}a.mdc-text-green-50:hover,a.mdc-text-green-50:focus{color:#c8e6c9}.mdc-text-green-100{color:#c8e6c9}a.mdc-text-green-100:hover,a.mdc-text-green-100:focus{color:#a5d6a7}.mdc-text-green-200{color:#a5d6a7}a.mdc-text-green-200:hover,a.mdc-text-green-200:focus{color:#81c784}.mdc-text-green-300{color:#81c784}a.mdc-text-green-300:hover,a.mdc-text-green-300:focus{color:#66bb6a}.mdc-text-green-400{color:#66bb6a}a.mdc-text-green-400:hover,a.mdc-text-green-400:focus{color:#4caf50}.mdc-text-green-500{color:#4caf50}a.mdc-text-green-500:hover,a.mdc-text-green-500:focus{color:#43a047}.mdc-text-green-600{color:#43a047}a.mdc-text-green-600:hover,a.mdc-text-green-600:focus{color:#388e3c}.mdc-text-green-700{color:#388e3c}a.mdc-text-green-700:hover,a.mdc-text-green-700:focus{color:#2e7d32}.mdc-text-green-800{color:#2e7d32}a.mdc-text-green-800:hover,a.mdc-text-green-800:focus{color:#1b5e20}.mdc-text-green-900{color:#1b5e20}a.mdc-text-green-900:hover,a.mdc-text-green-900:focus{color:#103613}.mdc-text-green-A100{color:#b9f6ca}a.mdc-text-green-A100:hover,a.mdc-text-green-A100:focus{color:#8cf0a8}.mdc-text-green-A200{color:#69f0ae}a.mdc-text-green-A200:hover,a.mdc-text-green-A200:focus{color:#3beb95}.mdc-text-green-A400{color:#00e676}a.mdc-text-green-A400:hover,a.mdc-text-green-A400:focus{color:#00b35c}.mdc-text-green-A700{color:#00c853}a.mdc-text-green-A700:hover,a.mdc-text-green-A700:focus{color:#00953e}.mdc-bg-green{background-color:#4caf50}a.mdc-bg-green:hover,a.mdc-bg-green:focus{background-color:#43a047}.mdc-bg-green-50{background-color:#e8f5e9}a.mdc-bg-green-50:hover,a.mdc-bg-green-50:focus{background-color:#c8e6c9}.mdc-bg-green-100{background-color:#c8e6c9}a.mdc-bg-green-100:hover,a.mdc-bg-green-100:focus{background-color:#a5d6a7}.mdc-bg-green-200{background-color:#a5d6a7}a.mdc-bg-green-200:hover,a.mdc-bg-green-200:focus{background-color:#81c784}.mdc-bg-green-300{background-color:#81c784}a.mdc-bg-green-300:hover,a.mdc-bg-green-300:focus{background-color:#66bb6a}.mdc-bg-green-400{background-color:#66bb6a}a.mdc-bg-green-400:hover,a.mdc-bg-green-400:focus{background-color:#4caf50}.mdc-bg-green-500{background-color:#4caf50}a.mdc-bg-green-500:hover,a.mdc-bg-green-500:focus{background-color:#43a047}.mdc-bg-green-600{background-color:#43a047}a.mdc-bg-green-600:hover,a.mdc-bg-green-600:focus{background-color:#388e3c}.mdc-bg-green-700{background-color:#388e3c}a.mdc-bg-green-700:hover,a.mdc-bg-green-700:focus{background-color:#2e7d32}.mdc-bg-green-800{background-color:#2e7d32}a.mdc-bg-green-800:hover,a.mdc-bg-green-800:focus{background-color:#1b5e20}.mdc-bg-green-900{background-color:#1b5e20}a.mdc-bg-green-900:hover,a.mdc-bg-green-900:focus{background-color:#103613}.mdc-bg-green-A100{background-color:#b9f6ca}a.mdc-bg-green-A100:hover,a.mdc-bg-green-A100:focus{background-color:#8cf0a8}.mdc-bg-green-A200{background-color:#69f0ae}a.mdc-bg-green-A200:hover,a.mdc-bg-green-A200:focus{background-color:#3beb95}.mdc-bg-green-A400{background-color:#00e676}a.mdc-bg-green-A400:hover,a.mdc-bg-green-A400:focus{background-color:#00b35c}.mdc-bg-green-A700{background-color:#00c853}a.mdc-bg-green-A700:hover,a.mdc-bg-green-A700:focus{background-color:#00953e}.mdc-text-light-green{color:#8bc34a}a.mdc-text-light-green:hover,a.mdc-text-light-green:focus{color:#7cb342}.mdc-text-light-green-50{color:#f1f8e9}a.mdc-text-light-green-50:hover,a.mdc-text-light-green-50:focus{color:#dcedc8}.mdc-text-light-green-100{color:#dcedc8}a.mdc-text-light-green-100:hover,a.mdc-text-light-green-100:focus{color:#c5e1a5}.mdc-text-light-green-200{color:#c5e1a5}a.mdc-text-light-green-200:hover,a.mdc-text-light-green-200:focus{color:#aed581}.mdc-text-light-green-300{color:#aed581}a.mdc-text-light-green-300:hover,a.mdc-text-light-green-300:focus{color:#9ccc65}.mdc-text-light-green-400{color:#9ccc65}a.mdc-text-light-green-400:hover,a.mdc-text-light-green-400:focus{color:#8bc34a}.mdc-text-light-green-500{color:#8bc34a}a.mdc-text-light-green-500:hover,a.mdc-text-light-green-500:focus{color:#7cb342}.mdc-text-light-green-600{color:#7cb342}a.mdc-text-light-green-600:hover,a.mdc-text-light-green-600:focus{color:#689f38}.mdc-text-light-green-700{color:#689f38}a.mdc-text-light-green-700:hover,a.mdc-text-light-green-700:focus{color:#558b2f}.mdc-text-light-green-800{color:#558b2f}a.mdc-text-light-green-800:hover,a.mdc-text-light-green-800:focus{color:#33691e}.mdc-text-light-green-900{color:#33691e}a.mdc-text-light-green-900:hover,a.mdc-text-light-green-900:focus{color:#204113}.mdc-text-light-green-A100{color:#ccff90}a.mdc-text-light-green-A100:hover,a.mdc-text-light-green-A100:focus{color:#b5ff5d}.mdc-text-light-green-A200{color:#b2ff59}a.mdc-text-light-green-A200:hover,a.mdc-text-light-green-A200:focus{color:#9aff26}.mdc-text-light-green-A400{color:#76ff03}a.mdc-text-light-green-A400:hover,a.mdc-text-light-green-A400:focus{color:#5ecf00}.mdc-text-light-green-A700{color:#64dd17}a.mdc-text-light-green-A700:hover,a.mdc-text-light-green-A700:focus{color:#4faf12}.mdc-bg-light-green{background-color:#8bc34a}a.mdc-bg-light-green:hover,a.mdc-bg-light-green:focus{background-color:#7cb342}.mdc-bg-light-green-50{background-color:#f1f8e9}a.mdc-bg-light-green-50:hover,a.mdc-bg-light-green-50:focus{background-color:#dcedc8}.mdc-bg-light-green-100{background-color:#dcedc8}a.mdc-bg-light-green-100:hover,a.mdc-bg-light-green-100:focus{background-color:#c5e1a5}.mdc-bg-light-green-200{background-color:#c5e1a5}a.mdc-bg-light-green-200:hover,a.mdc-bg-light-green-200:focus{background-color:#aed581}.mdc-bg-light-green-300{background-color:#aed581}a.mdc-bg-light-green-300:hover,a.mdc-bg-light-green-300:focus{background-color:#9ccc65}.mdc-bg-light-green-400{background-color:#9ccc65}a.mdc-bg-light-green-400:hover,a.mdc-bg-light-green-400:focus{background-color:#8bc34a}.mdc-bg-light-green-500{background-color:#8bc34a}a.mdc-bg-light-green-500:hover,a.mdc-bg-light-green-500:focus{background-color:#7cb342}.mdc-bg-light-green-600{background-color:#7cb342}a.mdc-bg-light-green-600:hover,a.mdc-bg-light-green-600:focus{background-color:#689f38}.mdc-bg-light-green-700{background-color:#689f38}a.mdc-bg-light-green-700:hover,a.mdc-bg-light-green-700:focus{background-color:#558b2f}.mdc-bg-light-green-800{background-color:#558b2f}a.mdc-bg-light-green-800:hover,a.mdc-bg-light-green-800:focus{background-color:#33691e}.mdc-bg-light-green-900{background-color:#33691e}a.mdc-bg-light-green-900:hover,a.mdc-bg-light-green-900:focus{background-color:#204113}.mdc-bg-light-green-A100{background-color:#ccff90}a.mdc-bg-light-green-A100:hover,a.mdc-bg-light-green-A100:focus{background-color:#b5ff5d}.mdc-bg-light-green-A200{background-color:#b2ff59}a.mdc-bg-light-green-A200:hover,a.mdc-bg-light-green-A200:focus{background-color:#9aff26}.mdc-bg-light-green-A400{background-color:#76ff03}a.mdc-bg-light-green-A400:hover,a.mdc-bg-light-green-A400:focus{background-color:#5ecf00}.mdc-bg-light-green-A700{background-color:#64dd17}a.mdc-bg-light-green-A700:hover,a.mdc-bg-light-green-A700:focus{background-color:#4faf12}.mdc-text-lime{color:#cddc39}a.mdc-text-lime:hover,a.mdc-text-lime:focus{color:#c0ca33}.mdc-text-lime-50{color:#f9fbe7}a.mdc-text-lime-50:hover,a.mdc-text-lime-50:focus{color:#f0f4c3}.mdc-text-lime-100{color:#f0f4c3}a.mdc-text-lime-100:hover,a.mdc-text-lime-100:focus{color:#e6ee9c}.mdc-text-lime-200{color:#e6ee9c}a.mdc-text-lime-200:hover,a.mdc-text-lime-200:focus{color:#dce775}.mdc-text-lime-300{color:#dce775}a.mdc-text-lime-300:hover,a.mdc-text-lime-300:focus{color:#d4e157}.mdc-text-lime-400{color:#d4e157}a.mdc-text-lime-400:hover,a.mdc-text-lime-400:focus{color:#cddc39}.mdc-text-lime-500{color:#cddc39}a.mdc-text-lime-500:hover,a.mdc-text-lime-500:focus{color:#c0ca33}.mdc-text-lime-600{color:#c0ca33}a.mdc-text-lime-600:hover,a.mdc-text-lime-600:focus{color:#afb42b}.mdc-text-lime-700{color:#afb42b}a.mdc-text-lime-700:hover,a.mdc-text-lime-700:focus{color:#9e9d24}.mdc-text-lime-800{color:#9e9d24}a.mdc-text-lime-800:hover,a.mdc-text-lime-800:focus{color:#827717}.mdc-text-lime-900{color:#827717}a.mdc-text-lime-900:hover,a.mdc-text-lime-900:focus{color:#574f0f}.mdc-text-lime-A100{color:#f4ff81}a.mdc-text-lime-A100:hover,a.mdc-text-lime-A100:focus{color:#f0ff4e}.mdc-text-lime-A200{color:#eeff41}a.mdc-text-lime-A200:hover,a.mdc-text-lime-A200:focus{color:#e9ff0e}.mdc-text-lime-A400{color:#c6ff00}a.mdc-text-lime-A400:hover,a.mdc-text-lime-A400:focus{color:#9ecc00}.mdc-text-lime-A700{color:#aeea00}a.mdc-text-lime-A700:hover,a.mdc-text-lime-A700:focus{color:#88b700}.mdc-bg-lime{background-color:#cddc39}a.mdc-bg-lime:hover,a.mdc-bg-lime:focus{background-color:#c0ca33}.mdc-bg-lime-50{background-color:#f9fbe7}a.mdc-bg-lime-50:hover,a.mdc-bg-lime-50:focus{background-color:#f0f4c3}.mdc-bg-lime-100{background-color:#f0f4c3}a.mdc-bg-lime-100:hover,a.mdc-bg-lime-100:focus{background-color:#e6ee9c}.mdc-bg-lime-200{background-color:#e6ee9c}a.mdc-bg-lime-200:hover,a.mdc-bg-lime-200:focus{background-color:#dce775}.mdc-bg-lime-300{background-color:#dce775}a.mdc-bg-lime-300:hover,a.mdc-bg-lime-300:focus{background-color:#d4e157}.mdc-bg-lime-400{background-color:#d4e157}a.mdc-bg-lime-400:hover,a.mdc-bg-lime-400:focus{background-color:#cddc39}.mdc-bg-lime-500{background-color:#cddc39}a.mdc-bg-lime-500:hover,a.mdc-bg-lime-500:focus{background-color:#c0ca33}.mdc-bg-lime-600{background-color:#c0ca33}a.mdc-bg-lime-600:hover,a.mdc-bg-lime-600:focus{background-color:#afb42b}.mdc-bg-lime-700{background-color:#afb42b}a.mdc-bg-lime-700:hover,a.mdc-bg-lime-700:focus{background-color:#9e9d24}.mdc-bg-lime-800{background-color:#9e9d24}a.mdc-bg-lime-800:hover,a.mdc-bg-lime-800:focus{background-color:#827717}.mdc-bg-lime-900{background-color:#827717}a.mdc-bg-lime-900:hover,a.mdc-bg-lime-900:focus{background-color:#574f0f}.mdc-bg-lime-A100{background-color:#f4ff81}a.mdc-bg-lime-A100:hover,a.mdc-bg-lime-A100:focus{background-color:#f0ff4e}.mdc-bg-lime-A200{background-color:#eeff41}a.mdc-bg-lime-A200:hover,a.mdc-bg-lime-A200:focus{background-color:#e9ff0e}.mdc-bg-lime-A400{background-color:#c6ff00}a.mdc-bg-lime-A400:hover,a.mdc-bg-lime-A400:focus{background-color:#9ecc00}.mdc-bg-lime-A700{background-color:#aeea00}a.mdc-bg-lime-A700:hover,a.mdc-bg-lime-A700:focus{background-color:#88b700}.mdc-text-yellow{color:#ffeb3b}a.mdc-text-yellow:hover,a.mdc-text-yellow:focus{color:#fdd835}.mdc-text-yellow-50{color:#fffde7}a.mdc-text-yellow-50:hover,a.mdc-text-yellow-50:focus{color:#fff9c4}.mdc-text-yellow-100{color:#fff9c4}a.mdc-text-yellow-100:hover,a.mdc-text-yellow-100:focus{color:#fff59d}.mdc-text-yellow-200{color:#fff59d}a.mdc-text-yellow-200:hover,a.mdc-text-yellow-200:focus{color:#fff176}.mdc-text-yellow-300{color:#fff176}a.mdc-text-yellow-300:hover,a.mdc-text-yellow-300:focus{color:#ffee58}.mdc-text-yellow-400{color:#ffee58}a.mdc-text-yellow-400:hover,a.mdc-text-yellow-400:focus{color:#ffeb3b}.mdc-text-yellow-500{color:#ffeb3b}a.mdc-text-yellow-500:hover,a.mdc-text-yellow-500:focus{color:#fdd835}.mdc-text-yellow-600{color:#fdd835}a.mdc-text-yellow-600:hover,a.mdc-text-yellow-600:focus{color:#fbc02d}.mdc-text-yellow-700{color:#fbc02d}a.mdc-text-yellow-700:hover,a.mdc-text-yellow-700:focus{color:#f9a825}.mdc-text-yellow-800{color:#f9a825}a.mdc-text-yellow-800:hover,a.mdc-text-yellow-800:focus{color:#f57f17}.mdc-text-yellow-900{color:#f57f17}a.mdc-text-yellow-900:hover,a.mdc-text-yellow-900:focus{color:#d06609}.mdc-text-yellow-A100{color:#ffff8d}a.mdc-text-yellow-A100:hover,a.mdc-text-yellow-A100:focus{color:#ffff5a}.mdc-text-yellow-A200{color:#ff0}a.mdc-text-yellow-A200:hover,a.mdc-text-yellow-A200:focus{color:#cc0}.mdc-text-yellow-A400{color:#ffea00}a.mdc-text-yellow-A400:hover,a.mdc-text-yellow-A400:focus{color:#cb0}.mdc-text-yellow-A700{color:#ffd600}a.mdc-text-yellow-A700:hover,a.mdc-text-yellow-A700:focus{color:#ccab00}.mdc-bg-yellow{background-color:#ffeb3b}a.mdc-bg-yellow:hover,a.mdc-bg-yellow:focus{background-color:#fdd835}.mdc-bg-yellow-50{background-color:#fffde7}a.mdc-bg-yellow-50:hover,a.mdc-bg-yellow-50:focus{background-color:#fff9c4}.mdc-bg-yellow-100{background-color:#fff9c4}a.mdc-bg-yellow-100:hover,a.mdc-bg-yellow-100:focus{background-color:#fff59d}.mdc-bg-yellow-200{background-color:#fff59d}a.mdc-bg-yellow-200:hover,a.mdc-bg-yellow-200:focus{background-color:#fff176}.mdc-bg-yellow-300{background-color:#fff176}a.mdc-bg-yellow-300:hover,a.mdc-bg-yellow-300:focus{background-color:#ffee58}.mdc-bg-yellow-400{background-color:#ffee58}a.mdc-bg-yellow-400:hover,a.mdc-bg-yellow-400:focus{background-color:#ffeb3b}.mdc-bg-yellow-500{background-color:#ffeb3b}a.mdc-bg-yellow-500:hover,a.mdc-bg-yellow-500:focus{background-color:#fdd835}.mdc-bg-yellow-600{background-color:#fdd835}a.mdc-bg-yellow-600:hover,a.mdc-bg-yellow-600:focus{background-color:#fbc02d}.mdc-bg-yellow-700{background-color:#fbc02d}a.mdc-bg-yellow-700:hover,a.mdc-bg-yellow-700:focus{background-color:#f9a825}.mdc-bg-yellow-800{background-color:#f9a825}a.mdc-bg-yellow-800:hover,a.mdc-bg-yellow-800:focus{background-color:#f57f17}.mdc-bg-yellow-900{background-color:#f57f17}a.mdc-bg-yellow-900:hover,a.mdc-bg-yellow-900:focus{background-color:#d06609}.mdc-bg-yellow-A100{background-color:#ffff8d}a.mdc-bg-yellow-A100:hover,a.mdc-bg-yellow-A100:focus{background-color:#ffff5a}.mdc-bg-yellow-A200{background-color:#ff0}a.mdc-bg-yellow-A200:hover,a.mdc-bg-yellow-A200:focus{background-color:#cc0}.mdc-bg-yellow-A400{background-color:#ffea00}a.mdc-bg-yellow-A400:hover,a.mdc-bg-yellow-A400:focus{background-color:#cb0}.mdc-bg-yellow-A700{background-color:#ffd600}a.mdc-bg-yellow-A700:hover,a.mdc-bg-yellow-A700:focus{background-color:#ccab00}.mdc-text-amber{color:#ffc107}a.mdc-text-amber:hover,a.mdc-text-amber:focus{color:#ffb300}.mdc-text-amber-50{color:#fff8e1}a.mdc-text-amber-50:hover,a.mdc-text-amber-50:focus{color:#ffecb3}.mdc-text-amber-100{color:#ffecb3}a.mdc-text-amber-100:hover,a.mdc-text-amber-100:focus{color:#ffe082}.mdc-text-amber-200{color:#ffe082}a.mdc-text-amber-200:hover,a.mdc-text-amber-200:focus{color:#ffd54f}.mdc-text-amber-300{color:#ffd54f}a.mdc-text-amber-300:hover,a.mdc-text-amber-300:focus{color:#ffca28}.mdc-text-amber-400{color:#ffca28}a.mdc-text-amber-400:hover,a.mdc-text-amber-400:focus{color:#ffc107}.mdc-text-amber-500{color:#ffc107}a.mdc-text-amber-500:hover,a.mdc-text-amber-500:focus{color:#ffb300}.mdc-text-amber-600{color:#ffb300}a.mdc-text-amber-600:hover,a.mdc-text-amber-600:focus{color:#ffa000}.mdc-text-amber-700{color:#ffa000}a.mdc-text-amber-700:hover,a.mdc-text-amber-700:focus{color:#ff8f00}.mdc-text-amber-800{color:#ff8f00}a.mdc-text-amber-800:hover,a.mdc-text-amber-800:focus{color:#ff6f00}.mdc-text-amber-900{color:#ff6f00}a.mdc-text-amber-900:hover,a.mdc-text-amber-900:focus{color:#cc5900}.mdc-text-amber-A100{color:#ffe57f}a.mdc-text-amber-A100:hover,a.mdc-text-amber-A100:focus{color:#ffdb4c}.mdc-text-amber-A200{color:#ffd740}a.mdc-text-amber-A200:hover,a.mdc-text-amber-A200:focus{color:#ffcc0d}.mdc-text-amber-A400{color:#ffc400}a.mdc-text-amber-A400:hover,a.mdc-text-amber-A400:focus{color:#cc9d00}.mdc-text-amber-A700{color:#ffab00}a.mdc-text-amber-A700:hover,a.mdc-text-amber-A700:focus{color:#cc8900}.mdc-bg-amber{background-color:#ffc107}a.mdc-bg-amber:hover,a.mdc-bg-amber:focus{background-color:#ffb300}.mdc-bg-amber-50{background-color:#fff8e1}a.mdc-bg-amber-50:hover,a.mdc-bg-amber-50:focus{background-color:#ffecb3}.mdc-bg-amber-100{background-color:#ffecb3}a.mdc-bg-amber-100:hover,a.mdc-bg-amber-100:focus{background-color:#ffe082}.mdc-bg-amber-200{background-color:#ffe082}a.mdc-bg-amber-200:hover,a.mdc-bg-amber-200:focus{background-color:#ffd54f}.mdc-bg-amber-300{background-color:#ffd54f}a.mdc-bg-amber-300:hover,a.mdc-bg-amber-300:focus{background-color:#ffca28}.mdc-bg-amber-400{background-color:#ffca28}a.mdc-bg-amber-400:hover,a.mdc-bg-amber-400:focus{background-color:#ffc107}.mdc-bg-amber-500{background-color:#ffc107}a.mdc-bg-amber-500:hover,a.mdc-bg-amber-500:focus{background-color:#ffb300}.mdc-bg-amber-600{background-color:#ffb300}a.mdc-bg-amber-600:hover,a.mdc-bg-amber-600:focus{background-color:#ffa000}.mdc-bg-amber-700{background-color:#ffa000}a.mdc-bg-amber-700:hover,a.mdc-bg-amber-700:focus{background-color:#ff8f00}.mdc-bg-amber-800{background-color:#ff8f00}a.mdc-bg-amber-800:hover,a.mdc-bg-amber-800:focus{background-color:#ff6f00}.mdc-bg-amber-900{background-color:#ff6f00}a.mdc-bg-amber-900:hover,a.mdc-bg-amber-900:focus{background-color:#cc5900}.mdc-bg-amber-A100{background-color:#ffe57f}a.mdc-bg-amber-A100:hover,a.mdc-bg-amber-A100:focus{background-color:#ffdb4c}.mdc-bg-amber-A200{background-color:#ffd740}a.mdc-bg-amber-A200:hover,a.mdc-bg-amber-A200:focus{background-color:#ffcc0d}.mdc-bg-amber-A400{background-color:#ffc400}a.mdc-bg-amber-A400:hover,a.mdc-bg-amber-A400:focus{background-color:#cc9d00}.mdc-bg-amber-A700{background-color:#ffab00}a.mdc-bg-amber-A700:hover,a.mdc-bg-amber-A700:focus{background-color:#cc8900}.mdc-text-orange{color:#ff9800}a.mdc-text-orange:hover,a.mdc-text-orange:focus{color:#fb8c00}.mdc-text-orange-50{color:#fff3e0}a.mdc-text-orange-50:hover,a.mdc-text-orange-50:focus{color:#ffe0b2}.mdc-text-orange-100{color:#ffe0b2}a.mdc-text-orange-100:hover,a.mdc-text-orange-100:focus{color:#ffcc80}.mdc-text-orange-200{color:#ffcc80}a.mdc-text-orange-200:hover,a.mdc-text-orange-200:focus{color:#ffb74d}.mdc-text-orange-300{color:#ffb74d}a.mdc-text-orange-300:hover,a.mdc-text-orange-300:focus{color:#ffa726}.mdc-text-orange-400{color:#ffa726}a.mdc-text-orange-400:hover,a.mdc-text-orange-400:focus{color:#ff9800}.mdc-text-orange-500{color:#ff9800}a.mdc-text-orange-500:hover,a.mdc-text-orange-500:focus{color:#fb8c00}.mdc-text-orange-600{color:#fb8c00}a.mdc-text-orange-600:hover,a.mdc-text-orange-600:focus{color:#f57c00}.mdc-text-orange-700{color:#f57c00}a.mdc-text-orange-700:hover,a.mdc-text-orange-700:focus{color:#ef6c00}.mdc-text-orange-800{color:#ef6c00}a.mdc-text-orange-800:hover,a.mdc-text-orange-800:focus{color:#e65100}.mdc-text-orange-900{color:#e65100}a.mdc-text-orange-900:hover,a.mdc-text-orange-900:focus{color:#b33f00}.mdc-text-orange-A100{color:#ffd180}a.mdc-text-orange-A100:hover,a.mdc-text-orange-A100:focus{color:#ffbf4d}.mdc-text-orange-A200{color:#ffab40}a.mdc-text-orange-A200:hover,a.mdc-text-orange-A200:focus{color:#ff950d}.mdc-text-orange-A400{color:#ff9100}a.mdc-text-orange-A400:hover,a.mdc-text-orange-A400:focus{color:#cc7400}.mdc-text-orange-A700{color:#ff6d00}a.mdc-text-orange-A700:hover,a.mdc-text-orange-A700:focus{color:#cc5700}.mdc-bg-orange{background-color:#ff9800}a.mdc-bg-orange:hover,a.mdc-bg-orange:focus{background-color:#fb8c00}.mdc-bg-orange-50{background-color:#fff3e0}a.mdc-bg-orange-50:hover,a.mdc-bg-orange-50:focus{background-color:#ffe0b2}.mdc-bg-orange-100{background-color:#ffe0b2}a.mdc-bg-orange-100:hover,a.mdc-bg-orange-100:focus{background-color:#ffcc80}.mdc-bg-orange-200{background-color:#ffcc80}a.mdc-bg-orange-200:hover,a.mdc-bg-orange-200:focus{background-color:#ffb74d}.mdc-bg-orange-300{background-color:#ffb74d}a.mdc-bg-orange-300:hover,a.mdc-bg-orange-300:focus{background-color:#ffa726}.mdc-bg-orange-400{background-color:#ffa726}a.mdc-bg-orange-400:hover,a.mdc-bg-orange-400:focus{background-color:#ff9800}.mdc-bg-orange-500{background-color:#ff9800}a.mdc-bg-orange-500:hover,a.mdc-bg-orange-500:focus{background-color:#fb8c00}.mdc-bg-orange-600{background-color:#fb8c00}a.mdc-bg-orange-600:hover,a.mdc-bg-orange-600:focus{background-color:#f57c00}.mdc-bg-orange-700{background-color:#f57c00}a.mdc-bg-orange-700:hover,a.mdc-bg-orange-700:focus{background-color:#ef6c00}.mdc-bg-orange-800{background-color:#ef6c00}a.mdc-bg-orange-800:hover,a.mdc-bg-orange-800:focus{background-color:#e65100}.mdc-bg-orange-900{background-color:#e65100}a.mdc-bg-orange-900:hover,a.mdc-bg-orange-900:focus{background-color:#b33f00}.mdc-bg-orange-A100{background-color:#ffd180}a.mdc-bg-orange-A100:hover,a.mdc-bg-orange-A100:focus{background-color:#ffbf4d}.mdc-bg-orange-A200{background-color:#ffab40}a.mdc-bg-orange-A200:hover,a.mdc-bg-orange-A200:focus{background-color:#ff950d}.mdc-bg-orange-A400{background-color:#ff9100}a.mdc-bg-orange-A400:hover,a.mdc-bg-orange-A400:focus{background-color:#cc7400}.mdc-bg-orange-A700{background-color:#ff6d00}a.mdc-bg-orange-A700:hover,a.mdc-bg-orange-A700:focus{background-color:#cc5700}.mdc-text-deep-orange{color:#ff5722}a.mdc-text-deep-orange:hover,a.mdc-text-deep-orange:focus{color:#f4511e}.mdc-text-deep-orange-50{color:#fbe9e7}a.mdc-text-deep-orange-50:hover,a.mdc-text-deep-orange-50:focus{color:#ffccbc}.mdc-text-deep-orange-100{color:#ffccbc}a.mdc-text-deep-orange-100:hover,a.mdc-text-deep-orange-100:focus{color:#ffab91}.mdc-text-deep-orange-200{color:#ffab91}a.mdc-text-deep-orange-200:hover,a.mdc-text-deep-orange-200:focus{color:#ff8a65}.mdc-text-deep-orange-300{color:#ff8a65}a.mdc-text-deep-orange-300:hover,a.mdc-text-deep-orange-300:focus{color:#ff7043}.mdc-text-deep-orange-400{color:#ff7043}a.mdc-text-deep-orange-400:hover,a.mdc-text-deep-orange-400:focus{color:#ff5722}.mdc-text-deep-orange-500{color:#ff5722}a.mdc-text-deep-orange-500:hover,a.mdc-text-deep-orange-500:focus{color:#f4511e}.mdc-text-deep-orange-600{color:#f4511e}a.mdc-text-deep-orange-600:hover,a.mdc-text-deep-orange-600:focus{color:#e64a19}.mdc-text-deep-orange-700{color:#e64a19}a.mdc-text-deep-orange-700:hover,a.mdc-text-deep-orange-700:focus{color:#d84315}.mdc-text-deep-orange-800{color:#d84315}a.mdc-text-deep-orange-800:hover,a.mdc-text-deep-orange-800:focus{color:#bf360c}.mdc-text-deep-orange-900{color:#bf360c}a.mdc-text-deep-orange-900:hover,a.mdc-text-deep-orange-900:focus{color:#8f2809}.mdc-text-deep-orange-A100{color:#ff9e80}a.mdc-text-deep-orange-A100:hover,a.mdc-text-deep-orange-A100:focus{color:#ff774d}.mdc-text-deep-orange-A200{color:#ff6e40}a.mdc-text-deep-orange-A200:hover,a.mdc-text-deep-orange-A200:focus{color:#ff470d}.mdc-text-deep-orange-A400{color:#ff3d00}a.mdc-text-deep-orange-A400:hover,a.mdc-text-deep-orange-A400:focus{color:#cc3100}.mdc-text-deep-orange-A700{color:#dd2c00}a.mdc-text-deep-orange-A700:hover,a.mdc-text-deep-orange-A700:focus{color:#a20}.mdc-bg-deep-orange{background-color:#ff5722}a.mdc-bg-deep-orange:hover,a.mdc-bg-deep-orange:focus{background-color:#f4511e}.mdc-bg-deep-orange-50{background-color:#fbe9e7}a.mdc-bg-deep-orange-50:hover,a.mdc-bg-deep-orange-50:focus{background-color:#ffccbc}.mdc-bg-deep-orange-100{background-color:#ffccbc}a.mdc-bg-deep-orange-100:hover,a.mdc-bg-deep-orange-100:focus{background-color:#ffab91}.mdc-bg-deep-orange-200{background-color:#ffab91}a.mdc-bg-deep-orange-200:hover,a.mdc-bg-deep-orange-200:focus{background-color:#ff8a65}.mdc-bg-deep-orange-300{background-color:#ff8a65}a.mdc-bg-deep-orange-300:hover,a.mdc-bg-deep-orange-300:focus{background-color:#ff7043}.mdc-bg-deep-orange-400{background-color:#ff7043}a.mdc-bg-deep-orange-400:hover,a.mdc-bg-deep-orange-400:focus{background-color:#ff5722}.mdc-bg-deep-orange-500{background-color:#ff5722}a.mdc-bg-deep-orange-500:hover,a.mdc-bg-deep-orange-500:focus{background-color:#f4511e}.mdc-bg-deep-orange-600{background-color:#f4511e}a.mdc-bg-deep-orange-600:hover,a.mdc-bg-deep-orange-600:focus{background-color:#e64a19}.mdc-bg-deep-orange-700{background-color:#e64a19}a.mdc-bg-deep-orange-700:hover,a.mdc-bg-deep-orange-700:focus{background-color:#d84315}.mdc-bg-deep-orange-800{background-color:#d84315}a.mdc-bg-deep-orange-800:hover,a.mdc-bg-deep-orange-800:focus{background-color:#bf360c}.mdc-bg-deep-orange-900{background-color:#bf360c}a.mdc-bg-deep-orange-900:hover,a.mdc-bg-deep-orange-900:focus{background-color:#8f2809}.mdc-bg-deep-orange-A100{background-color:#ff9e80}a.mdc-bg-deep-orange-A100:hover,a.mdc-bg-deep-orange-A100:focus{background-color:#ff774d}.mdc-bg-deep-orange-A200{background-color:#ff6e40}a.mdc-bg-deep-orange-A200:hover,a.mdc-bg-deep-orange-A200:focus{background-color:#ff470d}.mdc-bg-deep-orange-A400{background-color:#ff3d00}a.mdc-bg-deep-orange-A400:hover,a.mdc-bg-deep-orange-A400:focus{background-color:#cc3100}.mdc-bg-deep-orange-A700{background-color:#dd2c00}a.mdc-bg-deep-orange-A700:hover,a.mdc-bg-deep-orange-A700:focus{background-color:#a20}.mdc-text-brown{color:#795548}a.mdc-text-brown:hover,a.mdc-text-brown:focus{color:#6d4c41}.mdc-text-brown-50{color:#efebe9}a.mdc-text-brown-50:hover,a.mdc-text-brown-50:focus{color:#d7ccc8}.mdc-text-brown-100{color:#d7ccc8}a.mdc-text-brown-100:hover,a.mdc-text-brown-100:focus{color:#bcaaa4}.mdc-text-brown-200{color:#bcaaa4}a.mdc-text-brown-200:hover,a.mdc-text-brown-200:focus{color:#a1887f}.mdc-text-brown-300{color:#a1887f}a.mdc-text-brown-300:hover,a.mdc-text-brown-300:focus{color:#8d6e63}.mdc-text-brown-400{color:#8d6e63}a.mdc-text-brown-400:hover,a.mdc-text-brown-400:focus{color:#795548}.mdc-text-brown-500{color:#795548}a.mdc-text-brown-500:hover,a.mdc-text-brown-500:focus{color:#6d4c41}.mdc-text-brown-600{color:#6d4c41}a.mdc-text-brown-600:hover,a.mdc-text-brown-600:focus{color:#5d4037}.mdc-text-brown-700{color:#5d4037}a.mdc-text-brown-700:hover,a.mdc-text-brown-700:focus{color:#4e342e}.mdc-text-brown-800{color:#4e342e}a.mdc-text-brown-800:hover,a.mdc-text-brown-800:focus{color:#3e2723}.mdc-text-brown-900{color:#3e2723}a.mdc-text-brown-900:hover,a.mdc-text-brown-900:focus{color:#1d1211}.mdc-bg-brown{background-color:#795548}a.mdc-bg-brown:hover,a.mdc-bg-brown:focus{background-color:#6d4c41}.mdc-bg-brown-50{background-color:#efebe9}a.mdc-bg-brown-50:hover,a.mdc-bg-brown-50:focus{background-color:#d7ccc8}.mdc-bg-brown-100{background-color:#d7ccc8}a.mdc-bg-brown-100:hover,a.mdc-bg-brown-100:focus{background-color:#bcaaa4}.mdc-bg-brown-200{background-color:#bcaaa4}a.mdc-bg-brown-200:hover,a.mdc-bg-brown-200:focus{background-color:#a1887f}.mdc-bg-brown-300{background-color:#a1887f}a.mdc-bg-brown-300:hover,a.mdc-bg-brown-300:focus{background-color:#8d6e63}.mdc-bg-brown-400{background-color:#8d6e63}a.mdc-bg-brown-400:hover,a.mdc-bg-brown-400:focus{background-color:#795548}.mdc-bg-brown-500{background-color:#795548}a.mdc-bg-brown-500:hover,a.mdc-bg-brown-500:focus{background-color:#6d4c41}.mdc-bg-brown-600{background-color:#6d4c41}a.mdc-bg-brown-600:hover,a.mdc-bg-brown-600:focus{background-color:#5d4037}.mdc-bg-brown-700{background-color:#5d4037}a.mdc-bg-brown-700:hover,a.mdc-bg-brown-700:focus{background-color:#4e342e}.mdc-bg-brown-800{background-color:#4e342e}a.mdc-bg-brown-800:hover,a.mdc-bg-brown-800:focus{background-color:#3e2723}.mdc-bg-brown-900{background-color:#3e2723}a.mdc-bg-brown-900:hover,a.mdc-bg-brown-900:focus{background-color:#1d1211}.mdc-text-grey{color:#9e9e9e}a.mdc-text-grey:hover,a.mdc-text-grey:focus{color:#757575}.mdc-text-grey-50{color:#fafafa}a.mdc-text-grey-50:hover,a.mdc-text-grey-50:focus{color:#f5f5f5}.mdc-text-grey-100{color:#f5f5f5}a.mdc-text-grey-100:hover,a.mdc-text-grey-100:focus{color:#eee}.mdc-text-grey-200{color:#eee}a.mdc-text-grey-200:hover,a.mdc-text-grey-200:focus{color:#e0e0e0}.mdc-text-grey-300{color:#e0e0e0}a.mdc-text-grey-300:hover,a.mdc-text-grey-300:focus{color:#bdbdbd}.mdc-text-grey-400{color:#bdbdbd}a.mdc-text-grey-400:hover,a.mdc-text-grey-400:focus{color:#9e9e9e}.mdc-text-grey-500{color:#9e9e9e}a.mdc-text-grey-500:hover,a.mdc-text-grey-500:focus{color:#757575}.mdc-text-grey-600{color:#757575}a.mdc-text-grey-600:hover,a.mdc-text-grey-600:focus{color:#616161}.mdc-text-grey-700{color:#616161}a.mdc-text-grey-700:hover,a.mdc-text-grey-700:focus{color:#424242}.mdc-text-grey-800{color:#424242}a.mdc-text-grey-800:hover,a.mdc-text-grey-800:focus{color:#212121}.mdc-text-grey-900{color:#212121}a.mdc-text-grey-900:hover,a.mdc-text-grey-900:focus{color:#080808}.mdc-bg-grey{background-color:#9e9e9e}a.mdc-bg-grey:hover,a.mdc-bg-grey:focus{background-color:#757575}.mdc-bg-grey-50{background-color:#fafafa}a.mdc-bg-grey-50:hover,a.mdc-bg-grey-50:focus{background-color:#f5f5f5}.mdc-bg-grey-100{background-color:#f5f5f5}a.mdc-bg-grey-100:hover,a.mdc-bg-grey-100:focus{background-color:#eee}.mdc-bg-grey-200{background-color:#eee}a.mdc-bg-grey-200:hover,a.mdc-bg-grey-200:focus{background-color:#e0e0e0}.mdc-bg-grey-300{background-color:#e0e0e0}a.mdc-bg-grey-300:hover,a.mdc-bg-grey-300:focus{background-color:#bdbdbd}.mdc-bg-grey-400{background-color:#bdbdbd}a.mdc-bg-grey-400:hover,a.mdc-bg-grey-400:focus{background-color:#9e9e9e}.mdc-bg-grey-500{background-color:#9e9e9e}a.mdc-bg-grey-500:hover,a.mdc-bg-grey-500:focus{background-color:#757575}.mdc-bg-grey-600{background-color:#757575}a.mdc-bg-grey-600:hover,a.mdc-bg-grey-600:focus{background-color:#616161}.mdc-bg-grey-700{background-color:#616161}a.mdc-bg-grey-700:hover,a.mdc-bg-grey-700:focus{background-color:#424242}.mdc-bg-grey-800{background-color:#424242}a.mdc-bg-grey-800:hover,a.mdc-bg-grey-800:focus{background-color:#212121}.mdc-bg-grey-900{background-color:#212121}a.mdc-bg-grey-900:hover,a.mdc-bg-grey-900:focus{background-color:#080808}.mdc-text-blue-grey{color:#607d8b}a.mdc-text-blue-grey:hover,a.mdc-text-blue-grey:focus{color:#546e7a}.mdc-text-blue-grey-50{color:#eceff1}a.mdc-text-blue-grey-50:hover,a.mdc-text-blue-grey-50:focus{color:#cfd8dc}.mdc-text-blue-grey-100{color:#cfd8dc}a.mdc-text-blue-grey-100:hover,a.mdc-text-blue-grey-100:focus{color:#b0bec5}.mdc-text-blue-grey-200{color:#b0bec5}a.mdc-text-blue-grey-200:hover,a.mdc-text-blue-grey-200:focus{color:#90a4ae}.mdc-text-blue-grey-300{color:#90a4ae}a.mdc-text-blue-grey-300:hover,a.mdc-text-blue-grey-300:focus{color:#78909c}.mdc-text-blue-grey-400{color:#78909c}a.mdc-text-blue-grey-400:hover,a.mdc-text-blue-grey-400:focus{color:#607d8b}.mdc-text-blue-grey-500{color:#607d8b}a.mdc-text-blue-grey-500:hover,a.mdc-text-blue-grey-500:focus{color:#546e7a}.mdc-text-blue-grey-600{color:#546e7a}a.mdc-text-blue-grey-600:hover,a.mdc-text-blue-grey-600:focus{color:#455a64}.mdc-text-blue-grey-700{color:#455a64}a.mdc-text-blue-grey-700:hover,a.mdc-text-blue-grey-700:focus{color:#37474f}.mdc-text-blue-grey-800{color:#37474f}a.mdc-text-blue-grey-800:hover,a.mdc-text-blue-grey-800:focus{color:#263238}.mdc-text-blue-grey-900{color:#263238}a.mdc-text-blue-grey-900:hover,a.mdc-text-blue-grey-900:focus{color:#11171a}.mdc-bg-blue-grey{background-color:#607d8b}a.mdc-bg-blue-grey:hover,a.mdc-bg-blue-grey:focus{background-color:#546e7a}.mdc-bg-blue-grey-50{background-color:#eceff1}a.mdc-bg-blue-grey-50:hover,a.mdc-bg-blue-grey-50:focus{background-color:#cfd8dc}.mdc-bg-blue-grey-100{background-color:#cfd8dc}a.mdc-bg-blue-grey-100:hover,a.mdc-bg-blue-grey-100:focus{background-color:#b0bec5}.mdc-bg-blue-grey-200{background-color:#b0bec5}a.mdc-bg-blue-grey-200:hover,a.mdc-bg-blue-grey-200:focus{background-color:#90a4ae}.mdc-bg-blue-grey-300{background-color:#90a4ae}a.mdc-bg-blue-grey-300:hover,a.mdc-bg-blue-grey-300:focus{background-color:#78909c}.mdc-bg-blue-grey-400{background-color:#78909c}a.mdc-bg-blue-grey-400:hover,a.mdc-bg-blue-grey-400:focus{background-color:#607d8b}.mdc-bg-blue-grey-500{background-color:#607d8b}a.mdc-bg-blue-grey-500:hover,a.mdc-bg-blue-grey-500:focus{background-color:#546e7a}.mdc-bg-blue-grey-600{background-color:#546e7a}a.mdc-bg-blue-grey-600:hover,a.mdc-bg-blue-grey-600:focus{background-color:#455a64}.mdc-bg-blue-grey-700{background-color:#455a64}a.mdc-bg-blue-grey-700:hover,a.mdc-bg-blue-grey-700:focus{background-color:#37474f}.mdc-bg-blue-grey-800{background-color:#37474f}a.mdc-bg-blue-grey-800:hover,a.mdc-bg-blue-grey-800:focus{background-color:#263238}.mdc-bg-blue-grey-900{background-color:#263238}a.mdc-bg-blue-grey-900:hover,a.mdc-bg-blue-grey-900:focus{background-color:#11171a}.mdc-text-white-lighter{color:rgba(255,255,255,.12)}a.mdc-text-white-lighter:hover,a.mdc-text-white-lighter:focus{color:rgba(255,255,255,.3)}.mdc-text-white-light{color:rgba(255,255,255,.3)}a.mdc-text-white-light:hover,a.mdc-text-white-light:focus{color:rgba(255,255,255,.7)}.mdc-text-white-dark{color:rgba(255,255,255,.7)}a.mdc-text-white-dark:hover,a.mdc-text-white-dark:focus{color:#fff}.mdc-text-white-darker{color:#fff}a.mdc-text-white-darker:hover,a.mdc-text-white-darker:focus{color:white}.mdc-text-white-lighter{color:rgba(255,255,255,.12)}a.mdc-text-white-lighter:hover,a.mdc-text-white-lighter:focus{color:rgba(255,255,255,.3)}.mdc-text-white-light{color:rgba(255,255,255,.3)}a.mdc-text-white-light:hover,a.mdc-text-white-light:focus{color:rgba(255,255,255,.7)}.mdc-text-white-dark{color:rgba(255,255,255,.7)}a.mdc-text-white-dark:hover,a.mdc-text-white-dark:focus{color:#fff}.mdc-text-white-darker{color:#fff}a.mdc-text-white-darker:hover,a.mdc-text-white-darker:focus{color:white}.mdc-text-black-lighter{color:rgba(0,0,0,.12)}a.mdc-text-black-lighter:hover,a.mdc-text-black-lighter:focus{color:rgba(0,0,0,.26)}.mdc-text-black-light{color:rgba(0,0,0,.26)}a.mdc-text-black-light:hover,a.mdc-text-black-light:focus{color:rgba(0,0,0,.54)}.mdc-text-black-dark{color:rgba(0,0,0,.54)}a.mdc-text-black-dark:hover,a.mdc-text-black-dark:focus{color:rgba(0,0,0,.87)}.mdc-text-black-darker{color:rgba(0,0,0,.87)}a.mdc-text-black-darker:hover,a.mdc-text-black-darker:focus{color:black}.mdc-text-black-lighter{color:rgba(0,0,0,.12)}a.mdc-text-black-lighter:hover,a.mdc-text-black-lighter:focus{color:rgba(0,0,0,.26)}.mdc-text-black-light{color:rgba(0,0,0,.26)}a.mdc-text-black-light:hover,a.mdc-text-black-light:focus{color:rgba(0,0,0,.54)}.mdc-text-black-dark{color:rgba(0,0,0,.54)}a.mdc-text-black-dark:hover,a.mdc-text-black-dark:focus{color:rgba(0,0,0,.87)}.mdc-text-black-darker{color:rgba(0,0,0,.87)}a.mdc-text-black-darker:hover,a.mdc-text-black-darker:focus{color:black}
+
+
+
+
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
+@import "default_highlights";
 @import "svg-icons";
