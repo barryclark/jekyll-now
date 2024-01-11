@@ -1,7 +1,7 @@
 ---
-layout: page
-title: About
-permalink: /about
+layout: default
+title: Nathaniel Joselson
+permalink: /
 ---
 ![Me]({{ site.baseurl }}/images/profilepic.jpeg)
 

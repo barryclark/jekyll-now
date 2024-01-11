@@ -7,7 +7,7 @@ name: Nathaniel Joselson
 author: Nathaniel Joselson
 
 # Short bio or description (displayed in the header)
-description: Meditations on Inclusive Statistics 
+description: Inclusive technology now!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/Njoselson/Njoselson.github.io/master/images/iStock_000011954591Small.jpg
@@ -26,9 +26,9 @@ footer-links:
   instagram:
   linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: njoselson # just type anything here for a working RSS icon
   twitter: Natejoselson
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: users/5625977/nathaniel-joselson # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
@@ -38,7 +38,7 @@ footer-links:
 disqus: www-njoselson-github-io
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-86653162-1
+google_analytics: # UA-86653162-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
@@ -74,7 +74,7 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-seo-tag
