@@ -1094,22 +1094,6 @@
   location_gr: Αττική, Ελλάδα
   location_en: Attica, Greece
   
-- company_gr: Cardia Cafe ⚡
-  company_en: Cardia Cafe ⚡
-  url: https://www.facebook.com/cardia.cafe/
-  category_gr: Καφέ
-  category_en: Coffee shop
-  location_gr: Αθήνα, Αττική, Ελλάδα
-  location_en: Athens, Attica, Greece
-  
-- company_gr: Dastart ⚡
-  company_en: Dastart ⚡
-  url: http://www.dastart.com
-  category_gr: Cafe
-  category_en: Cafe
-  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
-  location_en: Thessaloniki, Macedonia, Greece
-  
 - company_gr: Σπιτικό
   company_en: Spitiko
   url: https://www.facebook.com/pita.thessaloniki/
