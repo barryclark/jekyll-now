@@ -5,7 +5,7 @@ title: Πως αγοράζω, πουλάω, ξοδεύω και δεχόμαι B
 
 ![](/images/Bitcoin_4_year_cycle.jpeg)
 
-Ελάτε στην επόμενη συνάντησή μας στην [Αθήνα](https://www.meetup.com/BlockchainGreece-0/), στη Θεσσαλονίκη [#1](https://www.meetup.com/BlockchainGreece-1/) [#2](https://www.meetup.com/Greek-Cryptocurrency-community/), στη [Λευκωσία](https://www.meetup.com/nicosia-bitcoin/) ή στην [Πάφο](https://www.meetup.com/Paphos-Bitcoin-Cryptocurrency-Meetup). Γραφτείτε στο [Discord online chat μας](https://discord.gg/9J9dQVhG3v). Διαβάστε το [BitcoinTalk](https://bitcointalk.org/gr) forum.
+Ελάτε στην επόμενη συνάντησή μας στην [Αθήνα](https://www.meetup.com/BlockchainGreece-0/)([+social](https://www.meetup.com/athens-bitcoin-meetup-group/),[+BitDevs](https://bitdevs-athens.com)), στη Θεσσαλονίκη [#1](https://www.meetup.com/BlockchainGreece-1/) [#2](https://www.meetup.com/Greek-Cryptocurrency-community/), στη [Λευκωσία](https://www.meetup.com/nicosia-bitcoin/), στη [Λεμεσό](https://www.meetup.com/bitcoin-meet-up-sponsored-by-portfolium/) ή στην [Πάφο](https://www.meetup.com/Paphos-Bitcoin-Cryptocurrency-Meetup). Γραφτείτε στο [Discord online chat μας](https://discord.gg/9J9dQVhG3v). Διαβάστε το [BitcoinTalk](https://bitcointalk.org/gr) forum.
 
 - [Ποιες εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;](#merchant-table)
 - [Ποιες γνωστές εταιρείες του εξωτερικού δέχονται Bitcoin;](#bluechips)
@@ -333,7 +333,7 @@ ii) στο πλαίσιο των Ε.Λ.Π. αποτιμάται στο αποσ�
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Hellenic Blockchain Hub](http://blockchain.org.gr)
 - Ο Μη-Κερδοσκοπικός Οργανισμός [Cyprus Blockchain Technologies](http://cybt.eu)
 
-Τελευταία ενημέρωση: 2023-12-01
+Τελευταία ενημέρωση: 2024-01-12
 
 <!-- <div class="posts">
   {% for post in site.posts %}
