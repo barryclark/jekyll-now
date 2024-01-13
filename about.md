@@ -12,18 +12,22 @@ published: true
 
 ### Literature
 - War and Peace, Leo Tolstoy
+- Notes from the Underground, Fyodor Dostoevsky
 
-### Philosophy/Political Thought
+
+### Political Philosophy
 - Public Opinion, Walter Lippman
+- The Origins of Political Order, Francis Fukuyama
+- Political Order and Political Decay, Francis Fukuyama 
 
-### European History
+### Philosophy
+- The Abolition of Man, C.S. Lewis
+- Modern Man in Search of a Soul, Carl Jung
+
+### History
 - From Dawn to Decadence: 500 Years of Western Cultural Life, 1500 to the Present, Jacques Barzun
-
-### Modern History
 - Churchill: Walking with Destiny, Andrew Roberts
 - The Rise and Fall of the Third Reich: A History of Nazi Germany, William L. Shirer
-
-### American History
 - Washington: A Life, Ron Chernow
 - Skunk Works: A Personal Memoir of My Years at Lockheed, Ben Rich
 - From Colony to Superpower: US Foreign Relations Since 1776, George C. Herring
