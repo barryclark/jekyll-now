@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ChrisClarkson.org</title>
-    <link>/posts/</link>
-    <description>Recent content on ChrisClarkson.org</description>
+    <title>Introduction on ChrisClarkson.org</title>
+    <link>/tags/introduction/</link>
+    <description>Recent content in Introduction on ChrisClarkson.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Oct 2018 16:52:02 +0100</lastBuildDate>
-    <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Jan 2024 20:00:00 +0100</lastBuildDate>
+    <atom:link href="/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Relaunch</title>
       <link>/posts/relaunch/</link>

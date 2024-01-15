@@ -1,196 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Chris Clarkson</title>
-    <link>https://chrisclarkson.org/</link>
-    <description>Recent content on Chris Clarkson</description>
+    <title>ChrisClarkson.org</title>
+    <link>/</link>
+    <description>Recent content on ChrisClarkson.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Jun 2022 20:00:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://chrisclarkson.org/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Relaunch</title>
-      <link>https://chrisclarkson.org/posts/first/</link>
-      <pubDate>Tue, 14 Jun 2022 20:00:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/posts/first/</guid>
-      <description>And so, With the help of Hugo the site has been relaunched.
-Look out for posts on:
- Hacking The Cloud Coding Security Tutorials Random musings  </description>
-    </item>
-    
-    <item>
-      <title>CCSP</title>
-      <link>https://chrisclarkson.org/courses/ccsp/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/courses/ccsp/</guid>
-      <description>The Gold standard for Cloud security professionals, I would advise anybody working in Cloud Security to do this course. Its benefit lies in understanding, as a techie I gained a deeper understanding and appreciation of how the Policy and process side of Cloud Security works.</description>
-    </item>
-    
-    <item>
-      <title>CISSP</title>
-      <link>https://chrisclarkson.org/courses/cissp/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/courses/cissp/</guid>
-      <description>The Gold standard for information security professionals, I would advise anybody working in IT Security to do this course. Its benefit lies in understanding, as a techie I gained a deeper understanding and appreciation of how the Policy and process side of Security works.</description>
-    </item>
-    
-    <item>
-      <title>Hack The Box</title>
-      <link>https://chrisclarkson.org/others/hackthebox/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/others/hackthebox/</guid>
-      <description>HackTheBox - More sharpening of skills, but with challenges to test a particular area as well such as RE, crypto etc.</description>
-    </item>
-    
-    <item>
-      <title>The IDAPro Book</title>
-      <link>https://chrisclarkson.org/books/the_ida_pro_book/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/books/the_ida_pro_book/</guid>
-      <description>The IDA Pro Book V2.
- The IDAPro Book</description>
-    </item>
-    
-    <item>
-      <title>AWS Solutions Architect - Professional</title>
-      <link>https://chrisclarkson.org/courses/awssolpro/</link>
-      <pubDate>Fri, 05 Jul 2019 09:25:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/courses/awssolpro/</guid>
-      <description>Obtained a much deeper understanding of AWS and especially its capabilities and limitations with respect to securing cloud workloads. A much deeper dive into the services offered by AWS and how a broad collection of those services come together to form solution stacks. It also provides the students with much needed detail on migrating workloads to the cloud, where there is still high demand at present with regards to cloud projects.</description>
-    </item>
-    
-    <item>
-      <title>Root Me</title>
-      <link>https://chrisclarkson.org/others/root-me/</link>
-      <pubDate>Fri, 05 Jul 2019 09:25:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/others/root-me/</guid>
-      <description>Root-Me - Wargaming and challenges to practice a wide range of skills</description>
-    </item>
-    
-    <item>
-      <title>AWS Solutions Architect - Associate</title>
-      <link>https://chrisclarkson.org/courses/awssolassoc/</link>
-      <pubDate>Fri, 05 Jul 2019 09:20:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/courses/awssolassoc/</guid>
-      <description>Excellent course to learn the intricacies of AWS and round out the knowledge gained on the Job. Using AWS day to day for a number of years on mainly development oriented projects its easy to overlook the more infrastructure targeted services. This course gives an understanding of those offerings and places them in context to aid in their understanding.</description>
-    </item>
-    
-    <item>
-      <title>Reversing: The Secrets of Reverse Engineering</title>
-      <link>https://chrisclarkson.org/books/reversing_secrets_of_re/</link>
-      <pubDate>Fri, 05 Jul 2019 09:20:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/books/reversing_secrets_of_re/</guid>
-      <description>Introductory Text on Reverse Engineering
- Reversing: Secrets of Reverse Engineering</description>
-    </item>
-    
-    <item>
-      <title>Vulnhub</title>
-      <link>https://chrisclarkson.org/others/vulnhub/</link>
-      <pubDate>Fri, 05 Jul 2019 09:20:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/others/vulnhub/</guid>
-      <description>VulnHub - To support my PWK/OSCP course and generally sharpen those offensive security skills I have been working through some of the machines on here.</description>
-    </item>
-    
-    <item>
-      <title>CEH - Certified Ethical Hacker</title>
-      <link>https://chrisclarkson.org/courses/ceh/</link>
-      <pubDate>Fri, 05 Jul 2019 09:15:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/courses/ceh/</guid>
-      <description>An excellent introduction to the ways a hacker works to compromise a system. Despite it being widely disparaged by the Cybersecurity community, I found it to be insightful and good all-round introductory course. There are some questions around the dubious title and the format of the exam, but content is valid and useful especially for someone without a background in offensive security.</description>
-    </item>
-    
-    <item>
-      <title>Over The Wire</title>
-      <link>https://chrisclarkson.org/others/overthewire/</link>
-      <pubDate>Fri, 05 Jul 2019 09:15:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/others/overthewire/</guid>
-      <description>OverTheWire Wargaming site to practice exploitation skills</description>
-    </item>
-    
-    <item>
-      <title>CHFI - Certified Hacking Forensics Investigator</title>
-      <link>https://chrisclarkson.org/courses/chfi/</link>
-      <pubDate>Fri, 05 Jul 2019 09:10:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/courses/chfi/</guid>
-      <description>A very insightful course into art of computer forensics and the techniques that are used to catch hackers. Very interesting to take the knowledge gained here and work out ways to evade them, excellent course to take that stage further and develop the adversarial mindset.</description>
-    </item>
-    
-    <item>
-      <title>Practical Reverse Engineering: x86, x64, ARM, Windows Kernel, Reversing Tools, and Obfuscation</title>
-      <link>https://chrisclarkson.org/books/practical_reverse_engineering/</link>
-      <pubDate>Fri, 05 Jul 2019 09:10:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/books/practical_reverse_engineering/</guid>
-      <description>Advanced reversed engineering topics.
- Practical Reverse Engineering: x86, x64, ARM, Windows Kernel, Reversing Tools, and Obfuscation</description>
-    </item>
-    
-    <item>
-      <title>Attacking Network Protocols: A Hacker&#39;s Guide to Capture, Analysis, and Exploitation</title>
-      <link>https://chrisclarkson.org/books/attacking_network_protocols/</link>
-      <pubDate>Fri, 05 Jul 2019 09:00:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/books/attacking_network_protocols/</guid>
-      <description>Deep Dive into the process of attacking a network communications protocol.
- Attacking Network Protocols: A Hacker&amp;rsquo;s Guide to Capture, Analysis, and Exploitation</description>
-    </item>
-    
-    <item>
-      <title>Coming Soon</title>
-      <link>https://chrisclarkson.org/tutorials/coming_soon/</link>
-      <pubDate>Wed, 03 Jul 2019 16:22:49 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/tutorials/coming_soon/</guid>
-      <description>Its always better to give rather than receive, so as time allows I will be writing some tutorials on various topics.</description>
-    </item>
-    
+    <lastBuildDate>Sun, 14 Jan 2024 20:00:00 +0100</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
-      <link>https://chrisclarkson.org/personal/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chrisclarkson.org/personal/</guid>
-      <description>Hi, I&amp;rsquo;m Chris. I am a Hacker, Engineer and Geek. I have a passion for all things Cyber Security, but my main areas of interest are in Purple teaming and the Cloud. You can never know everything, but knowledge is power; so I always strive to learn something new as often as family, life and work allow.
-I am also a motorcyclist and boulderer when not chasing around after 2 kids and my darling wife.</description>
+      <link>/personal/</link>
+      <pubDate>Sun, 14 Jan 2024 20:00:00 +0100</pubDate>
+      <guid>/personal/</guid>
+      <description>Chris Clarkson: Engineer, Architect, Maker, and Breaker</description>
     </item>
-    
     <item>
-      <title>My Study List</title>
-      <link>https://chrisclarkson.org/study/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chrisclarkson.org/study/</guid>
-      <description>The home of my collected learning; past, present and future. Here I document the courses &amp;amp; certifications, blogs, books and other resources I have used since I got onto the Cyber Security path
- Courses (upcoming and in Progress)  Certified Kubernetes Adminstrator - Time to learn how to use this tech properly before I can secure it.  Completed Sites  Pentester Academy - Always striving to improve my skills, I am using the content here to supplement my other training.</description>
+      <title>Relaunch</title>
+      <link>/posts/relaunch/</link>
+      <pubDate>Sun, 14 Jan 2024 20:00:00 +0100</pubDate>
+      <guid>/posts/relaunch/</guid>
+      <description>Welcome Back to the New Era of Cybersecurity Insights!</description>
     </item>
-    
-    <item>
-      <title>Resources</title>
-      <link>https://chrisclarkson.org/resources/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chrisclarkson.org/resources/</guid>
-      <description> Pages Just some links to pages I have found useful across the internet.
- PentesterAcademy HackTheBox The Many Hats Club Blackroomsec 0x00sec Pentesterlabs Hacksplaining BrightTalk Azeria Labs CodeArcana Radare2 Gitbook Cheatography   Github Repos Useful Repos from Github
- Awesome Hacking Reverse Engineering Ninja Admins Awesome CyberSkills [Ropper](sashs / Ropper) JohnTheRipper  </description>
-    </item>
-    
   </channel>
 </rss>

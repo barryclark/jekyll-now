@@ -1,60 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Chris Clarkson</title>
-    <link>https://chrisclarkson.org/categories/</link>
-    <description>Recent content in Categories on Chris Clarkson</description>
+    <title>Categories on ChrisClarkson.org</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on ChrisClarkson.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Jun 2022 20:00:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://chrisclarkson.org/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 14 Jan 2024 20:00:00 +0100</lastBuildDate>
+    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Posts</title>
-      <link>https://chrisclarkson.org/categories/posts/</link>
-      <pubDate>Tue, 14 Jun 2022 20:00:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/categories/posts/</guid>
+      <link>/categories/posts/</link>
+      <pubDate>Sun, 14 Jan 2024 20:00:00 +0100</pubDate>
+      <guid>/categories/posts/</guid>
       <description></description>
     </item>
-    
-    <item>
-      <title>Books</title>
-      <link>https://chrisclarkson.org/categories/books/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/categories/books/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Courses</title>
-      <link>https://chrisclarkson.org/categories/courses/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/categories/courses/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Others</title>
-      <link>https://chrisclarkson.org/categories/others/</link>
-      <pubDate>Fri, 05 Jul 2019 09:30:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/categories/others/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorials</title>
-      <link>https://chrisclarkson.org/categories/tutorials/</link>
-      <pubDate>Wed, 03 Jul 2019 16:22:49 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/categories/tutorials/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

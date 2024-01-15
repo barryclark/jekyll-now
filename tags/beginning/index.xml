@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Beginning on Chris Clarkson</title>
-    <link>https://chrisclarkson.org/tags/beginning/</link>
-    <description>Recent content in Beginning on Chris Clarkson</description>
+    <title>Beginning on ChrisClarkson.org</title>
+    <link>/tags/beginning/</link>
+    <description>Recent content in Beginning on ChrisClarkson.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Jun 2022 20:00:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://chrisclarkson.org/tags/beginning/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 14 Jan 2024 20:00:00 +0100</lastBuildDate>
+    <atom:link href="/tags/beginning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Relaunch</title>
-      <link>https://chrisclarkson.org/posts/first/</link>
-      <pubDate>Tue, 14 Jun 2022 20:00:00 +0100</pubDate>
-      
-      <guid>https://chrisclarkson.org/posts/first/</guid>
-      <description>And so, With the help of Hugo the site has been relaunched.
-Look out for posts on:
- Hacking The Cloud Coding Security Tutorials Random musings  </description>
+      <link>/posts/relaunch/</link>
+      <pubDate>Sun, 14 Jan 2024 20:00:00 +0100</pubDate>
+      <guid>/posts/relaunch/</guid>
+      <description>Welcome Back to the New Era of Cybersecurity Insights!</description>
     </item>
-    
   </channel>
 </rss>
