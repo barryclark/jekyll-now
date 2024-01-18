@@ -1,0 +1,34 @@
+---
+import { getCollection, CollectionEntry } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+type Props = {
+  post: CollectionEntry<"posts">;
+};
+
+const { post } = Astro.props;
+
+export const getStaticPaths = async () => {
+  const posts = await getCollection("posts");
+  const paths = posts.map((post) => {
+    return {
+      params: {
+        slug: post.slug,
+      },
+      props: {
+        post,
+      },
+    };
+  });
+  return paths;
+};
+
+const { Content } = await post.render();
+---
+
+<Layout title={post.data.title}>
+  <div class="prose max-w-7xl mx-auto py-48">
+    <img src="https://placehold.co/1000x400" />
+    <Content />
+  </div>
+</Layout>

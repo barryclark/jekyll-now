@@ -1,0 +1,44 @@
+---
+import { sponsors } from "../data";
+---
+
+<div class="bg-white py-24 sm:py-32">
+  <div
+    class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3"
+  >
+    <ul
+      role="list"
+      class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+    >
+      {
+        sponsors.map((sponsor) => (
+          <a href={sponsor.link}>
+            <li>
+              <div class="flex flex-col items-center gap-y-2">
+                <img
+                  class="h-24 w-24 rounded-full shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+                  src={sponsor.image}
+                  alt=""
+                />
+                <div>
+                  <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                    {sponsor.sponsor}
+                  </h3>
+                </div>
+              </div>
+            </li>
+          </a>
+        ))
+      }
+    </ul>
+    <div class="max-w-2xl">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        Parteneri
+      </h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse,
+        provident!
+      </p>
+    </div>
+  </div>
+</div>

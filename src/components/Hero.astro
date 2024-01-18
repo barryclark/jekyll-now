@@ -1,0 +1,54 @@
+---
+import Button from "./Button.astro";
+---
+
+<div class="bg-white">
+  <div class="relative">
+    <div class="mx-auto max-w-7xl">
+      <div class="relative z-10 pt-14 lg:w-full lg:max-w-2xl">
+        <svg
+          class="absolute inset-y-0 right-8 hidden h-full w-80 translate-x-1/2 transform fill-white lg:block"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <polygon points="0,0 90,0 50,100 0,100"></polygon>
+        </svg>
+        <div class="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
+          <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
+            <div class="hidden sm:mb-10 sm:flex">
+              <div
+                class="relative rounded-full px-4 py-2 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10"
+              >
+                Comunitatea micilor programatori
+              </div>
+            </div>
+            <h1
+              class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
+            >
+              Coder Dojo Alba Iulia
+            </h1>
+            <p class="mt-6 text-lg leading-8 text-gray-800">
+              Dojo-ul are loc în fiecare Joi de la ora 16:00 pe <a
+                href="https://maps.app.goo.gl/rguUaLxb9ctmKuMg6"
+                >strada Gladiolelor numărul 3A</a
+              >, dar asigură-te că urmărești grupul de facebook pentru
+              modificări de program.
+            </p>
+            <Button
+              href="https://forms.gle/4fqArMANeztCBgSr7"
+              text="Înscrie-te"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <img
+        class="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
+        src="/hero-img.jpeg"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
