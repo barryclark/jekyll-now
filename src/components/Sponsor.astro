@@ -1,0 +1,32 @@
+---
+import { sponsors } from "../data";
+---
+
+<ul
+  role="list"
+  class="grid grid-cols-2 gap-x-24 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-3"
+>
+  {
+    sponsors.map((sponsor) => (
+      <a
+        href={sponsor.link}
+        class="text-center"
+      >
+        <li>
+          <div class="flex flex-col items-center gap-y-2">
+            <img
+              class="h-12 w-12 md:h-24 md:w-24 rounded-full shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+              src={sponsor.image}
+              alt=""
+            />
+            <div>
+              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                {sponsor.sponsor}
+              </h3>
+            </div>
+          </div>
+        </li>
+      </a>
+    ))
+  }
+</ul>
