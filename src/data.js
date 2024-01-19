@@ -27,3 +27,36 @@ export const sponsors = [
     link: "https://www.whitecitycode.com/",
   },
 ];
+
+export const mentors = [
+  {
+    image: "/mentor.jpg/",
+    name: "Adrian Roșian",
+    role: "Șef din ăla",
+  },
+  {
+    image: "/mentor.jpg/",
+    name: "Claudiu Ceia",
+    role: "Șef",
+  },
+  {
+    image: "/mentor.jpg/",
+    name: "George",
+    role: "Șef",
+  },
+  {
+    image: "/mentor.jpg/",
+    name: "Alin Munteanu",
+    role: "Șef",
+  },
+  {
+    image: "/mentor.jpg/",
+    name: "Alin Munteanu",
+    role: "Șef",
+  },
+  {
+    image: "/mentor.jpg/",
+    name: "Alin Munteanu",
+    role: "Șef",
+  },
+];
