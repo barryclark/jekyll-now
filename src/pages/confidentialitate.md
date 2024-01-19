@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/Layout2.astro
+layout: ../layouts/OtherLayout.astro
 title: Politica de confidențialitate a CoderDojo Alba Iulia
 permalink: /confidentialitate
 ---

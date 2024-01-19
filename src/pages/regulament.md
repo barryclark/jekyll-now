@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/Layout2.astro
+layout: ../layouts/OtherLayout.astro
 title: Regulament CoderDojo Alba Iulia
 permalink: /regulament
 ---
