@@ -31,13 +31,9 @@ const { title } = Astro.props;
       content={Astro.generator}
     />
     <title>{title}</title>
-    <link
-      href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css"
-      rel="stylesheet"
-    />
   </head>
-  <body>
-    <Navbar position="absolute" />
+  <body class="max-w-7xl mx-auto prose">
+    <Navbar position="block" />
     <slot />
     <Footer />
   </body>
