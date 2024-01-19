@@ -6,6 +6,8 @@ const posts = await getCollection("posts");
 type Props = {
   post: CollectionEntry<"posts">;
 };
+
+const { post } = Astro.props;
 ---
 
 <div class="bg-white py-24 sm:py-32">
