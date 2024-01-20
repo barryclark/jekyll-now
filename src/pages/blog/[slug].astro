@@ -1,6 +1,7 @@
 ---
 import { getCollection, CollectionEntry } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
+import BackButton from "../../components/BackButton.astro";
 
 type Props = {
   post: CollectionEntry<"posts">;
@@ -28,6 +29,7 @@ const { Content } = await post.render();
 
 <Layout title={post.data.title}>
   <div class="prose max-w-7xl mx-auto py-48">
+    <BackButton/>
     <img src="https://placehold.co/1000x400" />
     <Content />
   </div>

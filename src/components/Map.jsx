@@ -16,16 +16,8 @@ export default function MyMap() {
       style={{ width: 600, height: 600 }}
       mapStyle="mapbox://styles/razvan42/clrj101eb00oo01qththo326l"
     >
-      {" "}
-      <Marker
-        longitude={longitude}
-        latitude={latitude}
-        anchor="bottom"
-      >
-        <img
-          src="/logo.png"
-          className="w-12 h-12"
-        />
+      <Marker longitude={longitude} latitude={latitude} anchor="bottom">
+        <img src="/logo.png" className="w-12 h-12" />
       </Marker>
     </Map>
   );

@@ -4,7 +4,6 @@ import Post from "./Post.astro";
 
 const posts = await getCollection("posts");
 ---
-
 <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
   {posts.map((post) => <Post post={post} />)}
 </div>
