@@ -1,4 +1,4 @@
-[AStar wiki](https://en.wikipedia.org/wiki/A*_search_algorithm)
+[wiki: AStar](https://en.wikipedia.org/wiki/A*_search_algorithm)
 
 A* 알고리즘은 그래프 탐색 알고리즘의 하나로, 주어진 그래프에서 출발점에서 목표점까지의 최단 경로를 찾는 데 사용됩니다. A* 알고리즘은 Dijkstra 알고리즘과 유사하며, Dijkstra 알고리즘의 개선된 버전이라고 볼 수 있습니다.
 
