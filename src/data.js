@@ -7,9 +7,9 @@ export const navLinks = [
 
 export const sponsors = [
   {
-    image: "/academia-doamnelor.webp",
-    sponsor: "Academia Doamnelor",
-    link: "https://ro-ro.facebook.com/academiadoamneloralba/",
+    image: "/ai3.png",
+    sponsor: "AI3",
+    link: "https://ai3.ro/",
   },
   {
     image: "/primaria.png",
@@ -17,14 +17,14 @@ export const sponsors = [
     link: "https://www.apulum.ro/",
   },
   {
-    image: "/xplication.jpeg",
-    sponsor: "Xplication",
-    link: "https://xplication.ro/",
+    image: "/academia-doamnelor.webp",
+    sponsor: "Academia Doamnelor",
+    link: "https://ro-ro.facebook.com/academiadoamneloralba/",
   },
   {
-    image: "/cea-mai-tare-firma.svg",
-    sponsor: "White City: Code",
-    link: "https://www.whitecitycode.com/",
+    image: "/educlick.png",
+    sponsor: "Edu Click",
+    link: "https://www.educlick.ro/",
   },
 ];
 
