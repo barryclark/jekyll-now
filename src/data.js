@@ -17,7 +17,7 @@ export const sponsors = [
     link: "https://www.apulum.ro/",
   },
   {
-    image: "/academia-doamnelor.webp",
+    image: "/academia-doamnelor.jpg",
     sponsor: "Academia Doamnelor",
     link: "https://ro-ro.facebook.com/academiadoamneloralba/",
   },
