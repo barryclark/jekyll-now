@@ -8,10 +8,10 @@ type Props = {
 const { position } = Astro.props;
 ---
 
-<div class="mx-auto max-w-7xl relative z-50">
-  <div class={`px-6 pt-6 lg:max-w-2xl lg:pl-8 lg:pr-0 ${position}`}>
+<div class="mx-auto max-w-7xl relative z-50 flex md:block justify-center items-center">
+  <div class={`px-6 pt-6 lg:max-w-2xl lg:pl-8 lg:pr-0 block lg:${position}`}>
     <nav
-      class="flex items-center justify-between lg:justify-start"
+      class="flex flex-col md:flex-row items-center justify-between lg:justify-start "
       aria-label="Global"
     >
       <a
@@ -25,9 +25,9 @@ const { position } = Astro.props;
           height="200"
           src="/logo.png"
         />
-        <span class="sr-only">Open main menu</span>
+        
       </a>
-      <div class="lg:ml-12 lg:flex lg:gap-x-14">
+      <div class="flex gap-x-4 lg:ml-12 lg:flex lg:gap-x-14">
         <a
           href="/blog"
           class="text-sm font-semibold leading-6 text-gray-900"
@@ -50,5 +50,6 @@ const { position } = Astro.props;
         >
       </div>
     </nav>
+    
   </div>
 </div>
