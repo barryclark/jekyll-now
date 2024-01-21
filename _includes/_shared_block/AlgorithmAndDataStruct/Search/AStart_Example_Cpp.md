@@ -20,6 +20,11 @@ struct Node {
     bool operator<(const Node& other) const {
         return g + h > other.g + other.h;
     }
+
+    // 노드 객체를 해제하는 함수
+    ~Node() {
+        delete parent; // 부모 노드도 해제
+    }
 };
 
 // 노드가 유효한지 확인하는 함수
@@ -57,6 +62,9 @@ vector<pair<int, int>> astar(vector<vector<int>>& grid, pair<int, int> start, pa
             }
             path.push_back({start.first, start.second});
             reverse(path.begin(), path.end());
+
+            // 노드 해제
+            delete startNode;
             return path;
         }
 
@@ -81,6 +89,7 @@ vector<pair<int, int>> astar(vector<vector<int>>& grid, pair<int, int> start, pa
     }
 
     // 목적지에 도달하지 못한 경우 빈 경로 반환
+    delete startNode;
     return vector<pair<int, int>>();
 }
 
