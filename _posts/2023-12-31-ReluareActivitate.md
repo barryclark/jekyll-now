@@ -9,9 +9,8 @@ Vești grozave de sfârșit de 2023: CoderDojo Alba Iulia își reia activitatea
 Activitatea se reia de Joi, 4 ianuarie 2024 de la ora 16 la [noul sediu de pe strada Gladiolelor](https://maps.app.goo.gl/rguUaLxb9ctmKuMg6). Detalii despre înscriere
 și termeni și condiții [găsiți aici](/despre).
 
-Activitatea s-a reluat ca urmare a unui parteneriat dintre Primăria Alba Iulia și [WhiteCity Code](https://whitecitycode.com) pentru aplicarea la
-proiectul [EduClick](https://www.educlick.ro/despre-educlick) "Dăm click pe România" sesiunea 2022. Sala și calculatoarele venite din proiect sunt asigurate de către
-Primaria Alba Iulia iar voluntariatul pentru organizare este asigurat de către AI3 la care WhiteCity Code este membru fondator.
+Activitatea s-a reluat ca urmare a unui parteneriat dintre Primăria Alba Iulia, Asociația Aven Şavale și [WhiteCity Code](https://whitecitycode.com) în cadrul proiectului *Assoclic* având ca grup țintă copii în situții vulnerabile din comunitatea rromă și constând în aplicarea la
+proiectul [EduClick](https://www.educlick.ro/despre-educlick) "Dăm click pe România" sesiunea 2022. Sala este oferită de către Primăria Alba Iulia,  calculatoarele sunt primite în gestiunea Asociației Aven Șavale iar voluntariatul pentru organizare este asigurat de către AI3 la care WhiteCity Code este membru fondator.
 
 Avem astfel o structură mai durabilă pentru continuitatea Dojo-ului prin intermediul AI3, de unde sperăm să avem o implicare cât mai numeroasă pentru a forma cât
 mai multe grupe de ninjas doritori să învețe calculatoare.
