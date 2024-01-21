@@ -5,6 +5,7 @@
 #include <vector>
 #include <queue>
 #include <cmath>
+#include <memory>
 
 using namespace std;
 
@@ -12,18 +13,13 @@ struct Node {
     int x, y; // 노드의 좌표
     int g; // 시작 노드에서 현재 노드까지의 비용 (실제 이동 거리)
     int h; // 현재 노드에서 목적지까지의 예상 비용 (휴리스틱 추정값)
-    Node* parent; // 경로 추적을 위한 부모 노드
+    shared_ptr<Node> parent; // 경로 추적을 위한 부모 노드
 
     Node(int x, int y) : x(x), y(y), g(0), h(0), parent(nullptr) {}
 
     // A* 알고리즘에서 우선순위 큐에서 노드 비교를 위한 연산자 오버로딩
     bool operator<(const Node& other) const {
         return g + h > other.g + other.h;
-    }
-
-    // 노드 객체를 해제하는 함수
-    ~Node() {
-        delete parent; // 부모 노드도 해제
     }
 };
 
@@ -41,7 +37,7 @@ vector<pair<int, int>> astar(vector<vector<int>>& grid, pair<int, int> start, pa
     vector<vector<bool>> visited(rows, vector<bool>(cols, false));
 
     // 시작 노드 생성 및 초기화
-    Node* startNode = new Node(start.first, start.second);
+    shared_ptr<Node> startNode = make_shared<Node>(start.first, start.second);
     startNode->h = abs(start.first - end.first) + abs(start.second - end.second);
 
     // 우선순위 큐를 사용하여 노드를 관리
@@ -62,9 +58,6 @@ vector<pair<int, int>> astar(vector<vector<int>>& grid, pair<int, int> start, pa
             }
             path.push_back({start.first, start.second});
             reverse(path.begin(), path.end());
-
-            // 노드 해제
-            delete startNode;
             return path;
         }
 
@@ -79,17 +72,16 @@ vector<pair<int, int>> astar(vector<vector<int>>& grid, pair<int, int> start, pa
             int newY = current.y + dy[i];
 
             if (isValid(newX, newY, rows, cols) && !visited[newX][newY] && grid[newX][newY] == 0) {
-                Node* neighbor = new Node(newX, newY);
+                shared_ptr<Node> neighbor = make_shared<Node>(newX, newY);
                 neighbor->g = current.g + 1;
                 neighbor->h = abs(newX - end.first) + abs(newY - end.second);
-                neighbor->parent = &current;
+                neighbor->parent = make_shared<Node>(current);
                 pq.push(*neighbor);
             }
         }
     }
 
     // 목적지에 도달하지 못한 경우 빈 경로 반환
-    delete startNode;
     return vector<pair<int, int>>();
 }
 
