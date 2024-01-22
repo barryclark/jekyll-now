@@ -1,11 +1,11 @@
 ---
 title: Jocuri Steam
-date: "2019-07-23"
-categories: ["Engineering", "Startup Technology"]
-tags: ["GUI Programming", "Software Development", "Functional Programming"]
-author: "Claudiu Ceia"
-description: "Continuing from our exploration of GUI programming challenges, this article delves deeper into Functional Reactive Programming (FRP), analyzing its evolution and impact on GUI development, with a focus on its methodologies and their effectiveness in improving composability, type safety, and simplifying complex GUI tasks."
-image: "img2.jpg"
+date: "2018-02-05"
+tags: ["Jocuri Steam", "Steam"]
+author: Claudiu Ceia
+profilepic: /claudiu.jpg
+description: Pentru cei mai "jucăuși" dintre voi, în ultima vreme au început să apară niște jocuri educaționale foarte fun și foarte eficiente. Din cele pe care le cunosc eu, majoritatea fac trimitere la limbaje assembler, arhitectură de procesoare și în general ramuri teoretice ale informaticii.
+image: "/steam.jpeg"
 ---
 
 Pentru cei mai "jucăuși" dintre voi, în ultima vreme au început să apară niște jocuri educaționale foarte fun și foarte eficiente. Din cele pe care le cunosc eu, majoritatea fac trimitere la limbaje assembler, arhitectură de procesoare și în general ramuri teoretice ale informaticii.
