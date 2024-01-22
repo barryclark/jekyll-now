@@ -2,7 +2,9 @@
 import { type CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 
-const posts = await getCollection("posts");
+const posts = (await getCollection("posts")).sort(
+  (a, b) => Date.parse(b.data.date) - Date.parse(a.data.date)
+);
 type Props = {
   post: CollectionEntry<"posts">;
 };
