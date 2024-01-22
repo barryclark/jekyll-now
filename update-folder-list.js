@@ -16,6 +16,6 @@ fs.readdir(folderPath, (err, files) => {
     .map((file) => `- ${file}`)
     .join('\n');
 
-  fs.writeFileSync(outputPath, fileList, 'utf-8');
+  fs.writeFile(outputPath, fileList, 'utf-8');
   console.log('Folder list updated successfully.');
 });
