@@ -3,7 +3,7 @@ name: Update Folder List
 on:
   push:
     branches:
-      - main  # 또는 원하는 브랜치로 변경
+      - master  # 또는 원하는 브랜치로 변경
 
 jobs:
   update:
