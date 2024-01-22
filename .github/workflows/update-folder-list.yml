@@ -2,7 +2,7 @@ name: Update Folder List
 
 on:
   push:
-    branches:
+    branches-ignore:
       - master
 
 jobs:
