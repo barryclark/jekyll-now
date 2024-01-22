@@ -1,367 +1,313 @@
-# _includes/_shared_block/AlgorithmAndDataStruct
-- _includes/_shared_block/AlgorithmAndDataStruct/AlgorithmAndDataStruct.md
-# _includes/_shared_block/AlgorithmAndDataStruct/Graphics
-- _includes/_shared_block/AlgorithmAndDataStruct/Graphics/BooleanOperation.md
-# _includes/_shared_block/AlgorithmAndDataStruct/InverseKinematics
-- _includes/_shared_block/AlgorithmAndDataStruct/InverseKinematics/CCDIK.md
-- _includes/_shared_block/AlgorithmAndDataStruct/InverseKinematics/CCDIK_Example_Unity.md
-- _includes/_shared_block/AlgorithmAndDataStruct/InverseKinematics/CCDIK_Example_Unreal.md
-- _includes/_shared_block/AlgorithmAndDataStruct/InverseKinematics/FABRIK.md
-- _includes/_shared_block/AlgorithmAndDataStruct/InverseKinematics/FABRIK_Example_Unity.md
-- _includes/_shared_block/AlgorithmAndDataStruct/Links.md
-# _includes/_shared_block/AlgorithmAndDataStruct/Search
-- _includes/_shared_block/AlgorithmAndDataStruct/Search/AStar.md
-- _includes/_shared_block/AlgorithmAndDataStruct/Search/AStart_Example_Cpp.md
-# _includes/_shared_block/Blog
-- _includes/_shared_block/Blog/Blog_01_Purpose.md
-- _includes/_shared_block/Blog/Blog_02_Workflow.md
-- _includes/_shared_block/Blog/Blog_03_JekyllAndLiquid.md
-- _includes/_shared_block/Blog/Blog_How_01_Mermaid.md
-- _includes/_shared_block/Blog/Blog_How_02_MathJax.md
-- _includes/_shared_block/Blog/Blog_How_03_HTML.md
-- _includes/_shared_block/Blog/Blog_Post_SharedBlock.md
-- _includes/_shared_block/Blog/Blog_Rule_FollowList.md
-- _includes/_shared_block/Blog/Blog_Rule_OrganizeOfficialDocuments.md
-- _includes/_shared_block/Blog/Blog_Rule_PaperAndTranslation.md
-# _includes/_shared_block/BrainScience
-- _includes/_shared_block/BrainScience/RewardCircuit.md
-# _includes/_shared_block/Collection
-- _includes/_shared_block/Collection/Communication.md
-- _includes/_shared_block/Collection/Experience_LatentBug.md
-- _includes/_shared_block/Collection/Habit_Carefully.md
-- _includes/_shared_block/Collection/Habit_FocusNow.md
-- _includes/_shared_block/Collection/HowTo_Communication.md
-- _includes/_shared_block/Collection/HowTo_TaskAllocation.md
-- _includes/_shared_block/Collection/HowTo_Work.md
-- _includes/_shared_block/Collection/LegendaryDeveloperWordsCollection.md
-- _includes/_shared_block/Collection/LegendaryDeveloperWordsCollection_JohnCarmack.md
-- _includes/_shared_block/Collection/Mind_ExpertBeginner.md
-- _includes/_shared_block/Collection/Mind_Knowledge.md
-- _includes/_shared_block/Collection/ProblemSolving.md
-- _includes/_shared_block/Collection/Programming_CodeHierarchy.md
-# _includes/_shared_block/Concept
-- _includes/_shared_block/Concept/.Net.md
-- _includes/_shared_block/Concept/Abstract.md
-- _includes/_shared_block/Concept/Agile.md
-- _includes/_shared_block/Concept/AgileRetrospective.md
-- _includes/_shared_block/Concept/Bandwidth.md
-- _includes/_shared_block/Concept/CMake.md
-- _includes/_shared_block/Concept/Camera.md
-- _includes/_shared_block/Concept/Camera_Infrared.md
-- _includes/_shared_block/Concept/Chache.md
-- _includes/_shared_block/Concept/Complexity.md
-- _includes/_shared_block/Concept/Concept_DebugAndException.md
-- _includes/_shared_block/Concept/DBDesigne.md
-- _includes/_shared_block/Concept/DevelopmentTool_00.md
-- _includes/_shared_block/Concept/DevelopmentTool_01_WhyDevelopingDevelopmentTools.md
-- _includes/_shared_block/Concept/DevelopmentTool_04_HowToAutomation.md
-- _includes/_shared_block/Concept/Digitalization.md
-- _includes/_shared_block/Concept/Dll_Marshalling.md
-- _includes/_shared_block/Concept/FrameWork.md
-- _includes/_shared_block/Concept/FuzzyAlgorithm.md
-- _includes/_shared_block/Concept/GUI.md
-- _includes/_shared_block/Concept/Geometry.md
-- _includes/_shared_block/Concept/Kanban.md
-- _includes/_shared_block/Concept/Kanban.png
-- _includes/_shared_block/Concept/KanbanBoard.md
-- _includes/_shared_block/Concept/NVR.md
-- _includes/_shared_block/Concept/Packet.md
-- _includes/_shared_block/Concept/Pivot.md
-- _includes/_shared_block/Concept/ProgramSolving.md
-- _includes/_shared_block/Concept/RTSP.md
-- _includes/_shared_block/Concept/RenderPass.md
-- _includes/_shared_block/Concept/Repactoring.md
-- _includes/_shared_block/Concept/Scrum.md
-- _includes/_shared_block/Concept/Segmentation.md
-- _includes/_shared_block/Concept/ThreeJS.md
-- _includes/_shared_block/Concept/TroubleShooting.md
-- _includes/_shared_block/Concept/Variables.md
-- _includes/_shared_block/Concept/WrapperDll.md
-# _includes/_shared_block/DevelopmentEnvironment
-# _includes/_shared_block/DevelopmentEnvironment/HOLOLENS
-- _includes/_shared_block/DevelopmentEnvironment/HOLOLENS/BuildSetting.md
-# _includes/_shared_block/DevelopmentEnvironment/Unity
-- _includes/_shared_block/DevelopmentEnvironment/Unity/ContentSizeSetter.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Controller_FirstPerson_01.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/EventHandler.md
-# _includes/_shared_block/DevelopmentEnvironment/Unity/Package
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Package/Unity_Package_AssetManagement.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Package/Unity_Package_MeshBacker.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Package/Unity_Package_NaughtyAttributes.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Package/Unity_Package_SplineMesh.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Package/Unity_Package_TestRunner_01.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Package/Unity_Package_TestRunner_02.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Package/Unity_Package_TestRunner_03.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Package/Unity_Package_XR.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Package.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Profiling.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Render_pipeline.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/SceneSwitch.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_ArticulationBody.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_AssemblyDefinition.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Attributes_FormerlySerializedAs.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Attributes_SerializeReference.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Batching.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Collision.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Collision_01_MergeCollider.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_CombinedMesh.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Compiler_IL2CPP.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Debug.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Editor_Coroutines.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Editor_Field.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Editor_Gizmo.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Inspector.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Joint.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Light_BakedLight.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Light_BakedMode.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Light_LightMapUV.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Light_Mobile.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_MonoBehaviour.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Occulusion.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Prefab_01_Default.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Prefab_02_NestedPrefab.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Prefab_03_PrefabVariants.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_RigidBody_01_ForceMode.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Rigidbody.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Transform_MoveParent.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Transform_MoveParent_MoveTo.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_Transform_MoveParent_TransformTo.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_UI.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_UI_Canvas.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_UI_Event_01.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_UI_Layout_01_BasicLayout.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_UI_Layout_02_AutoLayout.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_UI_TMP.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_UI_TMP_01_Tag.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_UI_TMP_02_CustomTag.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_UI_TMP_03_Font.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_UI_TMP_04_FontAsset.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_URP.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_URP_Camera.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_URP_Camera_RenderTextureRendering.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_URP_Camera_Stack.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_URP_PostProcess.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_URP_RenderPass.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_URP_RenderingPipeline.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_URP_Shader.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_URP_ShaderGraph.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_UnityMessage_IEnumerator.md
-- _includes/_shared_block/DevelopmentEnvironment/Unity/Unity_WebGL.md
-# _includes/_shared_block/DevelopmentEnvironment/Unreal
-# _includes/_shared_block/DevelopmentEnvironment/Unreal/Animation
-- _includes/_shared_block/DevelopmentEnvironment/Unreal/Animation/ModuleSkeletalMesh.md
-- _includes/_shared_block/DevelopmentEnvironment/Unreal/Animation/Montage.md
-- _includes/_shared_block/DevelopmentEnvironment/Unreal/BoneSpaceAndIndicies.md
-# _includes/_shared_block/DevelopmentEnvironment/VR
-- _includes/_shared_block/DevelopmentEnvironment/VR/VRUnrealFullBodyIK.md
-# _includes/_shared_block/GameDesign
-# _includes/_shared_block/GameDesign/Genre
-# _includes/_shared_block/GameDesign/Genre/Idle
-- _includes/_shared_block/GameDesign/Genre/Idle/Element.md
-# _includes/_shared_block/GameDesign/Idea
-- _includes/_shared_block/GameDesign/Idea/BuildingUpgrade.md
-- _includes/_shared_block/GameDesign/Idea/Proposal.md
-# _includes/_shared_block/GameDesign/Sample
-# _includes/_shared_block/GameDesign/Sample/IdleFactoryTycoon
-- _includes/_shared_block/GameDesign/Sample/IdleFactoryTycoon/Production.md
-# _includes/_shared_block/GameDesign/Sample/PixelStarship
-- _includes/_shared_block/GameDesign/Sample/PixelStarship/ElementsOfPlay.md
-- _includes/_shared_block/GameDesign/Sample/PixelStarship/Play.md
-- _includes/_shared_block/GameDesign/Sample/PixelStarship/Quest.md
-# _includes/_shared_block/GameDesign/Sample/SegaOfSurvival
-- _includes/_shared_block/GameDesign/Sample/SegaOfSurvival/Production.md
-# _includes/_shared_block/Graphic
-- _includes/_shared_block/Graphic/Billobard.md
-# _includes/_shared_block/Graphic/Blender
-- _includes/_shared_block/Graphic/Blender/ExportAndImportUnrealSkeletalMeshWithMorph.md
-- _includes/_shared_block/Graphic/Blender/MergeOtherBones.md
-- _includes/_shared_block/Graphic/ColorGrading.md
-- _includes/_shared_block/Graphic/DepthOfField.md
-- _includes/_shared_block/Graphic/Dissolve.md
-# _includes/_shared_block/Graphic/Effect
-- _includes/_shared_block/Graphic/Effect/Dissolve.md
-- _includes/_shared_block/Graphic/Effect/FakeMirrorEffect.md
-- _includes/_shared_block/Graphic/Effect/ReflectionMirror.md
-- _includes/_shared_block/Graphic/Effect/SceneCapture2DMirror.md
-- _includes/_shared_block/Graphic/Effect/ShowerSteam.md
-- _includes/_shared_block/Graphic/FieldOfView.md
-- _includes/_shared_block/Graphic/FieldOfView_In_Unity.md
-- _includes/_shared_block/Graphic/FloodFill.md
-- _includes/_shared_block/Graphic/FocalLength.md
-# _includes/_shared_block/Graphic/Geometry
-- _includes/_shared_block/Graphic/Geometry/GeodesicSphere.md
-- _includes/_shared_block/Graphic/Geometry/IcoSphere.md
-- _includes/_shared_block/Graphic/Geometry/Icosahedron.md
-- _includes/_shared_block/Graphic/Geometry/Subdivision.md
-- _includes/_shared_block/Graphic/Geometry/Truncation.md
-- _includes/_shared_block/Graphic/Geometry/Voronoi.md
-- _includes/_shared_block/Graphic/Glitch.md
-- _includes/_shared_block/Graphic/GodRay.md
-- _includes/_shared_block/Graphic/GraphicsLinkCollection.md
-# _includes/_shared_block/Graphic/Material
-- _includes/_shared_block/Graphic/Material/Glass.md
-- _includes/_shared_block/Graphic/NPBR_Sample1.md
-- _includes/_shared_block/Graphic/Niagara.md
-- _includes/_shared_block/Graphic/Occulusion.md
-# _includes/_shared_block/Graphic/PostProcess
-- _includes/_shared_block/Graphic/PostProcess/2DTransform.md
-- _includes/_shared_block/Graphic/PostProcess/Alcohol.md
-- _includes/_shared_block/Graphic/PostProcess/AnamorphicLensFlares.md
-- _includes/_shared_block/Graphic/PostProcess/BleachByPass.md
-- _includes/_shared_block/Graphic/PostProcess/Blur.md
-- _includes/_shared_block/Graphic/PostProcess/CameraShake.md
-- _includes/_shared_block/Graphic/PostProcess/ColoredAO.md
-- _includes/_shared_block/Graphic/PostProcess/CustomDepthHighlighter.md
-- _includes/_shared_block/Graphic/PostProcess/EdgeDetect.md
-- _includes/_shared_block/Graphic/PostProcess/Emboss.md
-- _includes/_shared_block/Graphic/PostProcess/Frost.md
-- _includes/_shared_block/Graphic/PostProcess/GridCell.md
-# _includes/_shared_block/Graphic/ProceduralMeshGeneration
-# _includes/_shared_block/Graphic/ProceduralMeshGeneration/Procedural_Modeling_of_Buildings
-- _includes/_shared_block/Graphic/ProceduralMeshGeneration/Procedural_Modeling_of_Buildings/Procedural_Modeling_of_Buildings.pdf
-- _includes/_shared_block/Graphic/ProceduralMeshGeneration/Procedural_Modeling_of_Buildings/Procedural_Modeling_of_Buildings_0_Abstract.md
-- _includes/_shared_block/Graphic/ProceduralMeshGeneration/Procedural_Modeling_of_Buildings/Procedural_Modeling_of_Buildings_1_1_RelatedWork.md
-- _includes/_shared_block/Graphic/ProceduralMeshGeneration/Procedural_Modeling_of_Buildings/Procedural_Modeling_of_Buildings_1_2_Overview.md
-- _includes/_shared_block/Graphic/ProceduralMeshGeneration/Procedural_Modeling_of_Buildings/Procedural_Modeling_of_Buildings_1_Introduction.md
-- _includes/_shared_block/Graphic/ProceduralMeshGeneration/Procedural_Modeling_of_Buildings/Procedural_Modeling_of_Buildings_2_AShapeGrammarForCGArchitecture.md
-- _includes/_shared_block/Graphic/ProceduralMeshGeneration/Procedural_Modeling_of_Buildings/Procedural_Modeling_of_Buildings_Figure_01.md
-- _includes/_shared_block/Graphic/ProceduralMeshGeneration/Procedural_Modeling_of_Buildings/Procedural_Modeling_of_Buildings_Figure_01.png
-- _includes/_shared_block/Graphic/ProceduralMeshGeneration/Procedural_Modeling_of_Buildings/Procedural_Modeling_of_Buildings_Figure_02.md
-- _includes/_shared_block/Graphic/ProceduralMeshGeneration/Procedural_Modeling_of_Buildings/Procedural_Modeling_of_Buildings_Figure_02.png
-- _includes/_shared_block/Graphic/ProceduralMeshGeneration/Reference.md
-# _includes/_shared_block/Graphic/ProceduralMeshGeneration/ShapeGrammer
-- _includes/_shared_block/Graphic/ProceduralMeshGeneration/ShapeGrammer/ProceduralGeneration.md
-- _includes/_shared_block/Graphic/ProceduralMeshGeneration/ShapeGrammer/Shape.md
-- _includes/_shared_block/Graphic/ProceduralMeshGeneration/ShapeGrammer/ShapeGrammer.md
-- _includes/_shared_block/Graphic/RayMarching.md
-# _includes/_shared_block/Graphic/Resource
-- _includes/_shared_block/Graphic/Resource/README.md
-- _includes/_shared_block/Graphic/Resource/T_CircleGradient.PNG
-- _includes/_shared_block/Graphic/Resource/T_black_map_BC.PNG
-- _includes/_shared_block/Graphic/Resource/T_blue_map_D.PNG
-- _includes/_shared_block/Graphic/Resource/T_noise_small_D.PNG
-- _includes/_shared_block/Graphic/Resource/T_noise_small_N.PNG
-- _includes/_shared_block/Graphic/Resource/T_white_map_D.PNG
-- _includes/_shared_block/Graphic/SignedDistanceField.md
-- _includes/_shared_block/Graphic/Spline.md
-- _includes/_shared_block/Graphic/Subsurface.md
-- _includes/_shared_block/Graphic/TextureBleeding.md
-# _includes/_shared_block/Graphic/Unreal
-- _includes/_shared_block/Graphic/Unreal/IKRetargeting.md
-- _includes/_shared_block/Graphic/Unreal/SceneCapture.md
-- _includes/_shared_block/Graphic/UnrealColorGrading.md
-- _includes/_shared_block/Graphic/UnrealMaterial.md
-- _includes/_shared_block/Graphic/UseMarketplace.md
-- _includes/_shared_block/Graphic/VertexAnimation.md
-- _includes/_shared_block/Graphic/VirtualCamera.md
-- _includes/_shared_block/Graphic/ZFighting.md
-# _includes/_shared_block/Implement
-- _includes/_shared_block/Implement/Bezier_curve.md
-- _includes/_shared_block/Implement/Cable_01.md
-- _includes/_shared_block/Implement/DesignPattern_SingleTon.md
-# _includes/_shared_block/Implement/Effect
-- _includes/_shared_block/Implement/Effect/GlareEffect.md
-- _includes/_shared_block/Implement/Euler_ClampAngle.md
-- _includes/_shared_block/Implement/Math_Ratio.md
-- _includes/_shared_block/Implement/Math_Remap.md
-- _includes/_shared_block/Implement/Pivot.md
-# _includes/_shared_block/Implement/Unity
-# _includes/_shared_block/Implement/Unity/Extensions
-# _includes/_shared_block/Implement/Unity/Extensions/Convert
-- _includes/_shared_block/Implement/Unity/Extensions/Convert/Extention_StructToByte.cs
-- _includes/_shared_block/Implement/Unity/Extensions/Convert/README.md
-# _includes/_shared_block/Implement/Unity/Extensions/GizmoUtil
-- _includes/_shared_block/Implement/Unity/Extensions/GizmoUtil/GizmoUtil.cs
-# _includes/_shared_block/Implement/Unity/Extensions/Inspector
-- _includes/_shared_block/Implement/Unity/Extensions/Inspector/SubclassSelector.md
-- _includes/_shared_block/Implement/Unity/Extensions/Inspector/Unity_InspectableType.md
-- _includes/_shared_block/Implement/Unity/Extensions/Inspector/Unity_Inspector_DerivedClass.md
-# _includes/_shared_block/Implement/Unity/Extensions/Math
-- _includes/_shared_block/Implement/Unity/Extensions/Math/MathExtension.cs
-- _includes/_shared_block/Implement/Unity/Extensions/Math/RectExtension.cs
-# _includes/_shared_block/Implement/Unity/Extensions/SaveHelper
-- _includes/_shared_block/Implement/Unity/Extensions/SaveHelper/SaveHelper.cs
-- _includes/_shared_block/Implement/Unity/Extensions/SaveHelper/SaveHelper.md
-# _includes/_shared_block/Implement/Unity/MenuAction
-- _includes/_shared_block/Implement/Unity/MenuAction/AssetMenuItem.md
-# _includes/_shared_block/Implement/Unity/Multithread
-- _includes/_shared_block/Implement/Unity/Multithread/Multithread.zip
-# _includes/_shared_block/Implement/Unity/UI
-- _includes/_shared_block/Implement/Unity/UI/AdjustRectSize.md
-- _includes/_shared_block/Implement/Unity_ETC_ArrowAndDistance.md
-- _includes/_shared_block/Implement/Unity_ETC_ShowFPS.md
-- _includes/_shared_block/Implement/Unity_Graphics_ComputeShader_01.md
-- _includes/_shared_block/Implement/Unity_Inspector_Interface_Custom.md
-- _includes/_shared_block/Implement/Unity_Inspector_Interface_InOculusPackage.md
-- _includes/_shared_block/Implement/Unity_Inspector_SetAutomatic.md
-- _includes/_shared_block/Implement/Unity_Test_GetSerializedObject.md
-- _includes/_shared_block/Implement/Unity_UI_Animation.md
-- _includes/_shared_block/Implement/Unity_UI_FitInRect.md
-# _includes/_shared_block/Programming
-# _includes/_shared_block/Programming/ConfigurationManagement
-# _includes/_shared_block/Programming/ConfigurationManagement/SVN
-- _includes/_shared_block/Programming/ConfigurationManagement/SVN/blame.md
-- _includes/_shared_block/Programming/ConfigurationManagement/SVN/blame.png
-# _includes/_shared_block/Programming/Language
-# _includes/_shared_block/Programming/Language/CSharp
-- _includes/_shared_block/Programming/Language/CSharp/CSharp_Activator.md
-- _includes/_shared_block/Programming/Language/CSharp/CSharp_Activator_CreateInstance.md
-- _includes/_shared_block/Programming/Language/CSharp/CSharp_Attribute.md
-- _includes/_shared_block/Programming/Language/CSharp/CSharp_BoxingUnboxing.md
-- _includes/_shared_block/Programming/Language/CSharp/CSharp_ExtensionMethod.md
-- _includes/_shared_block/Programming/Language/CSharp/CSharp_HideConstructor.md
-- _includes/_shared_block/Programming/Language/CSharp/CSharp_IEnumerator.md
-- _includes/_shared_block/Programming/Language/CSharp/CSharp_IntPtr.md
-- _includes/_shared_block/Programming/Language/CSharp/CSharp_NamedParameter.md
-- _includes/_shared_block/Programming/Language/CSharp/CSharp_StudySite.md
-- _includes/_shared_block/Programming/Language/CSharp/CSharp_StyleCop.md
-- _includes/_shared_block/Programming/Language/CSharp/CSharp_using.md
-# _includes/_shared_block/Programming/Language/Markdown
-- _includes/_shared_block/Programming/Language/Markdown/Markdown.md
-- _includes/_shared_block/Programming/Language/Markdown/Markdown_AddDownloadLink.md
-- _includes/_shared_block/Programming/Language/Markdown/Markdown_AddImage_00.md
-- _includes/_shared_block/Programming/Language/Markdown/Markdown_AddImage_01_GoogleDrive.md
-- _includes/_shared_block/Programming/Language/ProgrammingLanguage.md
-# _includes/_shared_block/Programming/Paradigm
-- _includes/_shared_block/Programming/Paradigm/ConcurrencyAndParallel.md
-- _includes/_shared_block/Programming/Paradigm/ConcurrencyProgramming_00.md
-- _includes/_shared_block/Programming/Paradigm/DataOrientiedProgramming_00.md
-- _includes/_shared_block/Programming/Paradigm/FunctionalProgramming_00.md
-- _includes/_shared_block/Programming/Paradigm/FunctionalProgramming_01_PureFunction.md
-- _includes/_shared_block/Programming/Paradigm/FunctionalProgramming_02_Immutability.md
-- _includes/_shared_block/Programming/Paradigm/FunctionalProgramming_03_HighOrderFunction.md
-- _includes/_shared_block/Programming/Paradigm/FunctionalProgramming_04_LambdaExpression.md
-- _includes/_shared_block/Programming/Paradigm/ObjectOrientedProgramming_00.md
-- _includes/_shared_block/Programming/Paradigm/ObjectOrientedProgramming_01_MyEffort.md
-- _includes/_shared_block/Programming/Paradigm/ObjectOrientedProgramming_02_IsAHasA.md
-- _includes/_shared_block/Programming/Paradigm/ObjectOrientedProgramming_03_Dependency.md
-- _includes/_shared_block/Programming/Paradigm/ObjectOrientedProgramming_04_01_Inheritance.md
-- _includes/_shared_block/Programming/Paradigm/ObjectOrientedProgramming_04_02_Abstraction.md
-- _includes/_shared_block/Programming/Paradigm/ObjectOrientedProgramming_04_03_Encapsulation.md
-- _includes/_shared_block/Programming/Paradigm/ObjectOrientedProgramming_04_04_Polymorphism.md
-- _includes/_shared_block/Programming/Paradigm/ObjectOrientedProgramming_05_00_RDD.md
-- _includes/_shared_block/Programming/Paradigm/ObjectOrientedProgramming_05_01_Collaboration.md
-- _includes/_shared_block/Programming/Paradigm/ObjectOrientedProgramming_05_02_Responsibility.md
-- _includes/_shared_block/Programming/Paradigm/ObjectOrientedProgramming_05_02_Role.md
-- _includes/_shared_block/Programming/Paradigm/Paradigm.md
-- _includes/_shared_block/Programming/Paradigm/ParallelProgramming_00.md
-# _includes/_shared_block/Tool
-- _includes/_shared_block/Tool/Bing_ChatAI.md
-- _includes/_shared_block/Tool/ChatGPT.md
-- _includes/_shared_block/Tool/ChatGPT_01_WithGoogleSearch.md
-- _includes/_shared_block/Tool/ChatGPT_02_SummaryYoutube.md
-- _includes/_shared_block/Tool/ChatGPT_03_WithCoding.md
-- _includes/_shared_block/Tool/Chrome_Naver_English_Dictionary.md
-- _includes/_shared_block/Tool/Chrome_Shortcuts.md
-- _includes/_shared_block/Tool/LINER.md
-- _includes/_shared_block/Tool/LINER_AI.md
-- _includes/_shared_block/Tool/Postman.md
-- _includes/_shared_block/Tool/ProcessExplorer.md
-- _includes/_shared_block/Tool/VisualStudio_GitHubCopilot.md
-- _includes/_shared_block/Tool/Window.md
-- _includes/_shared_block/Tool/Window_DarkNamer.md
-- _includes/_shared_block/Tool/Window_DesktopCal.md
-- _includes/_shared_block/Tool/Window_RemoteDesktop.md
-- _includes/_shared_block/Tool/Window_SnippingTool.md
-- _includes/_shared_block/Tool/Window_Sticky_Notes.md
-- _includes/_shared_block/test.md
+AlgorithmAndDataStruct.md
+BooleanOperation.md
+CCDIK.md
+CCDIK_Example_Unity.md
+CCDIK_Example_Unreal.md
+FABRIK.md
+FABRIK_Example_Unity.md
+Links.md
+AStar.md
+AStart_Example_Cpp.md
+Blog_01_Purpose.md
+Blog_02_Workflow.md
+Blog_03_JekyllAndLiquid.md
+Blog_How_01_Mermaid.md
+Blog_How_02_MathJax.md
+Blog_How_03_HTML.md
+Blog_Post_SharedBlock.md
+Blog_Rule_FollowList.md
+Blog_Rule_OrganizeOfficialDocuments.md
+Blog_Rule_PaperAndTranslation.md
+RewardCircuit.md
+Communication.md
+Experience_LatentBug.md
+Habit_Carefully.md
+Habit_FocusNow.md
+HowTo_Communication.md
+HowTo_TaskAllocation.md
+HowTo_Work.md
+LegendaryDeveloperWordsCollection.md
+LegendaryDeveloperWordsCollection_JohnCarmack.md
+Mind_ExpertBeginner.md
+Mind_Knowledge.md
+ProblemSolving.md
+Programming_CodeHierarchy.md
+.Net.md
+Abstract.md
+Agile.md
+AgileRetrospective.md
+Bandwidth.md
+CMake.md
+Camera.md
+Camera_Infrared.md
+Chache.md
+Complexity.md
+Concept_DebugAndException.md
+DBDesigne.md
+DevelopmentTool_00.md
+DevelopmentTool_01_WhyDevelopingDevelopmentTools.md
+DevelopmentTool_04_HowToAutomation.md
+Digitalization.md
+Dll_Marshalling.md
+FrameWork.md
+FuzzyAlgorithm.md
+GUI.md
+Geometry.md
+Kanban.md
+Kanban.png
+KanbanBoard.md
+NVR.md
+Packet.md
+Pivot.md
+ProgramSolving.md
+RTSP.md
+RenderPass.md
+Repactoring.md
+Scrum.md
+Segmentation.md
+ThreeJS.md
+TroubleShooting.md
+Variables.md
+WrapperDll.md
+BuildSetting.md
+ContentSizeSetter.md
+Controller_FirstPerson_01.md
+EventHandler.md
+Unity_Package_AssetManagement.md
+Unity_Package_MeshBacker.md
+Unity_Package_NaughtyAttributes.md
+Unity_Package_SplineMesh.md
+Unity_Package_TestRunner_01.md
+Unity_Package_TestRunner_02.md
+Unity_Package_TestRunner_03.md
+Unity_Package_XR.md
+Package.md
+Profiling.md
+Render_pipeline.md
+SceneSwitch.md
+Unity_ArticulationBody.md
+Unity_AssemblyDefinition.md
+Unity_Attributes_FormerlySerializedAs.md
+Unity_Attributes_SerializeReference.md
+Unity_Batching.md
+Unity_Collision.md
+Unity_Collision_01_MergeCollider.md
+Unity_CombinedMesh.md
+Unity_Compiler_IL2CPP.md
+Unity_Debug.md
+Unity_Editor_Coroutines.md
+Unity_Editor_Field.md
+Unity_Editor_Gizmo.md
+Unity_Inspector.md
+Unity_Joint.md
+Unity_Light_BakedLight.md
+Unity_Light_BakedMode.md
+Unity_Light_LightMapUV.md
+Unity_Light_Mobile.md
+Unity_MonoBehaviour.md
+Unity_Occulusion.md
+Unity_Prefab_01_Default.md
+Unity_Prefab_02_NestedPrefab.md
+Unity_Prefab_03_PrefabVariants.md
+Unity_RigidBody_01_ForceMode.md
+Unity_Rigidbody.md
+Unity_Transform_MoveParent.md
+Unity_Transform_MoveParent_MoveTo.md
+Unity_Transform_MoveParent_TransformTo.md
+Unity_UI.md
+Unity_UI_Canvas.md
+Unity_UI_Event_01.md
+Unity_UI_Layout_01_BasicLayout.md
+Unity_UI_Layout_02_AutoLayout.md
+Unity_UI_TMP.md
+Unity_UI_TMP_01_Tag.md
+Unity_UI_TMP_02_CustomTag.md
+Unity_UI_TMP_03_Font.md
+Unity_UI_TMP_04_FontAsset.md
+Unity_URP.md
+Unity_URP_Camera.md
+Unity_URP_Camera_RenderTextureRendering.md
+Unity_URP_Camera_Stack.md
+Unity_URP_PostProcess.md
+Unity_URP_RenderPass.md
+Unity_URP_RenderingPipeline.md
+Unity_URP_Shader.md
+Unity_URP_ShaderGraph.md
+Unity_UnityMessage_IEnumerator.md
+Unity_WebGL.md
+ModuleSkeletalMesh.md
+Montage.md
+BoneSpaceAndIndicies.md
+VRUnrealFullBodyIK.md
+Element.md
+BuildingUpgrade.md
+Proposal.md
+Production.md
+ElementsOfPlay.md
+Play.md
+Quest.md
+Production.md
+Billobard.md
+ExportAndImportUnrealSkeletalMeshWithMorph.md
+MergeOtherBones.md
+ColorGrading.md
+DepthOfField.md
+Dissolve.md
+Dissolve.md
+FakeMirrorEffect.md
+ReflectionMirror.md
+SceneCapture2DMirror.md
+ShowerSteam.md
+FieldOfView.md
+FieldOfView_In_Unity.md
+FloodFill.md
+FocalLength.md
+GeodesicSphere.md
+IcoSphere.md
+Icosahedron.md
+Subdivision.md
+Truncation.md
+Voronoi.md
+Glitch.md
+GodRay.md
+GraphicsLinkCollection.md
+Glass.md
+NPBR_Sample1.md
+Niagara.md
+Occulusion.md
+2DTransform.md
+Alcohol.md
+AnamorphicLensFlares.md
+BleachByPass.md
+Blur.md
+CameraShake.md
+ColoredAO.md
+CustomDepthHighlighter.md
+EdgeDetect.md
+Emboss.md
+Frost.md
+GridCell.md
+Procedural_Modeling_of_Buildings.pdf
+Procedural_Modeling_of_Buildings_0_Abstract.md
+Procedural_Modeling_of_Buildings_1_1_RelatedWork.md
+Procedural_Modeling_of_Buildings_1_2_Overview.md
+Procedural_Modeling_of_Buildings_1_Introduction.md
+Procedural_Modeling_of_Buildings_2_AShapeGrammarForCGArchitecture.md
+Procedural_Modeling_of_Buildings_Figure_01.md
+Procedural_Modeling_of_Buildings_Figure_01.png
+Procedural_Modeling_of_Buildings_Figure_02.md
+Procedural_Modeling_of_Buildings_Figure_02.png
+Reference.md
+ProceduralGeneration.md
+Shape.md
+ShapeGrammer.md
+RayMarching.md
+README.md
+T_CircleGradient.PNG
+T_black_map_BC.PNG
+T_blue_map_D.PNG
+T_noise_small_D.PNG
+T_noise_small_N.PNG
+T_white_map_D.PNG
+SignedDistanceField.md
+Spline.md
+Subsurface.md
+TextureBleeding.md
+IKRetargeting.md
+SceneCapture.md
+UnrealColorGrading.md
+UnrealMaterial.md
+UseMarketplace.md
+VertexAnimation.md
+VirtualCamera.md
+ZFighting.md
+Bezier_curve.md
+Cable_01.md
+DesignPattern_SingleTon.md
+GlareEffect.md
+Euler_ClampAngle.md
+Math_Ratio.md
+Math_Remap.md
+Pivot.md
+Extention_StructToByte.cs
+README.md
+GizmoUtil.cs
+SubclassSelector.md
+Unity_InspectableType.md
+Unity_Inspector_DerivedClass.md
+MathExtension.cs
+RectExtension.cs
+SaveHelper.cs
+SaveHelper.md
+AssetMenuItem.md
+Multithread.zip
+AdjustRectSize.md
+Unity_ETC_ArrowAndDistance.md
+Unity_ETC_ShowFPS.md
+Unity_Graphics_ComputeShader_01.md
+Unity_Inspector_Interface_Custom.md
+Unity_Inspector_Interface_InOculusPackage.md
+Unity_Inspector_SetAutomatic.md
+Unity_Test_GetSerializedObject.md
+Unity_UI_Animation.md
+Unity_UI_FitInRect.md
+blame.md
+blame.png
+CSharp_Activator.md
+CSharp_Activator_CreateInstance.md
+CSharp_Attribute.md
+CSharp_BoxingUnboxing.md
+CSharp_ExtensionMethod.md
+CSharp_HideConstructor.md
+CSharp_IEnumerator.md
+CSharp_IntPtr.md
+CSharp_NamedParameter.md
+CSharp_StudySite.md
+CSharp_StyleCop.md
+CSharp_using.md
+Markdown.md
+Markdown_AddDownloadLink.md
+Markdown_AddImage_00.md
+Markdown_AddImage_01_GoogleDrive.md
+ProgrammingLanguage.md
+ConcurrencyAndParallel.md
+ConcurrencyProgramming_00.md
+DataOrientiedProgramming_00.md
+FunctionalProgramming_00.md
+FunctionalProgramming_01_PureFunction.md
+FunctionalProgramming_02_Immutability.md
+FunctionalProgramming_03_HighOrderFunction.md
+FunctionalProgramming_04_LambdaExpression.md
+ObjectOrientedProgramming_00.md
+ObjectOrientedProgramming_01_MyEffort.md
+ObjectOrientedProgramming_02_IsAHasA.md
+ObjectOrientedProgramming_03_Dependency.md
+ObjectOrientedProgramming_04_01_Inheritance.md
+ObjectOrientedProgramming_04_02_Abstraction.md
+ObjectOrientedProgramming_04_03_Encapsulation.md
+ObjectOrientedProgramming_04_04_Polymorphism.md
+ObjectOrientedProgramming_05_00_RDD.md
+ObjectOrientedProgramming_05_01_Collaboration.md
+ObjectOrientedProgramming_05_02_Responsibility.md
+ObjectOrientedProgramming_05_02_Role.md
+Paradigm.md
+ParallelProgramming_00.md
+Bing_ChatAI.md
+ChatGPT.md
+ChatGPT_01_WithGoogleSearch.md
+ChatGPT_02_SummaryYoutube.md
+ChatGPT_03_WithCoding.md
+Chrome_Naver_English_Dictionary.md
+Chrome_Shortcuts.md
+LINER.md
+LINER_AI.md
+Postman.md
+ProcessExplorer.md
+VisualStudio_GitHubCopilot.md
+Window.md
+Window_DarkNamer.md
+Window_DesktopCal.md
+Window_RemoteDesktop.md
+Window_SnippingTool.md
+Window_Sticky_Notes.md
+test.md
