@@ -32,30 +32,37 @@ export const mentors = [
   {
     image: "/adrian.jpg",
     name: "Adrian Roșian",
+    worksAt: "WhiteCity Code",
+    website: "https://whitecitycode.com/",
   },
   {
     image: "/claudiu.jpg",
     name: "Claudiu Ceia",
-    role: "Șef",
+    worksAt: "WhiteCity Code",
+    website: "https://whitecitycode.com/",
   },
   {
     image: "/george.jpg",
     name: "George Cosma",
-    role: "Șef",
+    worksAt: "WhiteCity Code",
+    website: "https://whitecitycode.com/",
   },
   {
     image: "/alin.jpg",
     name: "Alin Munteanu",
-    role: "Șef",
+    worksAt: "WhiteCity Code",
+    website: "https://whitecitycode.com/",
   },
   {
     image: "/florina.jpg",
     name: "Florina Păcurar",
-    role: "Șef",
+    worksAt: "WhiteCity Code",
+    website: "https://whitecitycode.com/",
   },
   {
     image: "/razvan.jpg",
     name: "Răzvan Balota",
-    role: "Șef",
+    worksAt: "WhiteCity Code",
+    website: "https://whitecitycode.com/",
   },
 ];
