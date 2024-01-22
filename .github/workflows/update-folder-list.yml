@@ -2,8 +2,6 @@ name: Update Folder List
 
 on:
   push:
-    branches:
-      - master  # 또는 원하는 브랜치로 변경
 
 jobs:
   update:
