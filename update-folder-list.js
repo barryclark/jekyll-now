@@ -29,7 +29,7 @@ fs.readdir(folderPath, (err, files) => {
       if (processedFiles === files.length) {
         const fileContent = fileList.join('\n');
         
-        // 비동기 방식으로 파일 작성
+        // 파일 작성
         fs.writeFile(outputPath, fileContent, 'utf-8', (writeErr) => {
           if (writeErr) {
             console.error(writeErr);
