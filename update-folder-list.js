@@ -12,7 +12,7 @@ fs.readdir(folderPath, (err, files) => {
 
   const fileList = [];
 
-  // 비동기 방식으로 파일 상태를 확인하고 목록을 생성
+  // 파일 상태를 확인하고 목록을 생성
   let processedFiles = 0;
   files.forEach((file) => {
     const filePath = path.join(folderPath, file);
