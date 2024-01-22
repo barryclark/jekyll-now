@@ -5,4 +5,4 @@ const folderPath = '_includes/_shared_block/'; // 업데이트하려는 폴더�
 const outputPath = '_includes/_generated/tag.md'; // 결과를 저장할 Markdown 파일 경로
 
 const fsPromises = require('fs').promises
-await fsPromises.writeFile('/path/to/file.txt', 'data to write')
+fsPromises.writeFile('/path/to/file.txt', 'data to write')
