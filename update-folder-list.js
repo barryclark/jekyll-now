@@ -21,6 +21,6 @@ fs.readdir(folderPath, (err, files) => {
       console.error(err);
       process.exit(1);
     }
-    console.log('Folder list updated successfully.');
+  console.log('Folder list updated successfully. \n' + fileList);
   });
 });
