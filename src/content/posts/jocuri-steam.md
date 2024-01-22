@@ -5,7 +5,7 @@ tags: ["Jocuri Steam", "Steam"]
 author: Claudiu Ceia
 profilepic: /claudiu.jpg
 description: Pentru cei mai "jucăuși" dintre voi, în ultima vreme au început să apară niște jocuri educaționale foarte fun și foarte eficiente. Din cele pe care le cunosc eu, majoritatea fac trimitere la limbaje assembler, arhitectură de procesoare și în general ramuri teoretice ale informaticii.
-image: "/steam.jpeg"
+image: "/jocuri-steam.avif"
 ---
 
 Pentru cei mai "jucăuși" dintre voi, în ultima vreme au început să apară niște jocuri educaționale foarte fun și foarte eficiente. Din cele pe care le cunosc eu, majoritatea fac trimitere la limbaje assembler, arhitectură de procesoare și în general ramuri teoretice ale informaticii.

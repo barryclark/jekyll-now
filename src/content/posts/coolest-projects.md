@@ -4,7 +4,7 @@ profilepic: /claudiu.jpg
 title: Coolest Projects
 description: Așa cum vă spuneam la deschidere, din când în când apar oportunități pentru ninja să participe la evenimente naționale sau internaționale. Sunt mai multe beneficii în participarea la aceste evenimente, pe lângă bucuria de a călători și a cunoaște alți ninja.
 date: "2018-02-05"
-image: /coolest-projects.png
+image: /coolest-projects.avif
 tags: ["Coolest Projects"]
 ---
 
