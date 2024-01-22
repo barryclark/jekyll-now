@@ -2,6 +2,8 @@ name: Update Folder List
 
 on:
   push:
+    branches:
+      - master
 
 jobs:
   update:
@@ -21,3 +23,5 @@ jobs:
 
       - name: Update Folder List
         run: node update-folder-list.js
+          git add .
+          git commit -m "Update Folder List"
