@@ -16,6 +16,11 @@ fs.readdir(folderPath, (err, files) => {
     .map((file) => `- ${file}`)
     .join('\n');
 
-  fs.writeFile(outputPath, fileList, 'utf-8');
-  console.log('Folder list updated successfully.');
+  fs.writeFile(outputPath, fileList, 'utf-8', (err) => {
+    if (err) {
+      console.error(err);
+      process.exit(1);
+    }
+    console.log('Folder list updated successfully.');
+  });
 });
