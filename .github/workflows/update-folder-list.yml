@@ -1,0 +1,25 @@
+name: Update Folder List
+
+on:
+  push:
+    branches:
+      - main  # 또는 원하는 브랜치로 변경
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14  # 원하는 Node.js 버전으로 변경
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Update Folder List
+        run: node update-folder-list.js
