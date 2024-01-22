@@ -25,7 +25,7 @@ function readFilesInDirectory(dir) {
       fileList.push(...readFilesInDirectory(filePath));
     } else {
       // 파일이름에서 확장자를 제거하고 파일 목록에 추가
-      const fileName = file.split('.')[0];
+      const file = file.split('.')[0];
       fileList.push(file);
     }
   });
