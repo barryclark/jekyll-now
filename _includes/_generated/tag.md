@@ -1,4 +1,5 @@
 AlgorithmAndDataStruct
+DivideAndConquer
 BooleanOperation
 CCDIK
 CCDIK_Example_Unity
@@ -8,6 +9,11 @@ FABRIK_Example_Unity
 Links
 AStar
 AStart_Example_Cpp
+BubbleSort
+InsertSort
+MergeSort
+QuickSort
+SelectionSort
 Blog_01_Purpose
 Blog_02_Workflow
 Blog_03_JekyllAndLiquid
@@ -310,4 +316,3 @@ Window_DesktopCal
 Window_RemoteDesktop
 Window_SnippingTool
 Window_Sticky_Notes
-test
