@@ -10,17 +10,19 @@ const outputPath = '_includes/_generated/tag.md'; // 결과를 저장할 Markdow
 
 /**
  * folderPath아래의 모든 폴더를 탐색하며 파일 목록을 반환하는 함수
- * 디렉토리를 포함하지 않고 파일의 이름만 반환함
+ * 디렉토리와 파일의 확장자를 포함하지 않고 파일의 이름만 반환함
  */
 function readFilesInDirectory(dir) {
   const files = fs.readdirSync(dir);
   const fileList = [];
+
+  // 폴더 아래의 모든 파일을 탐색
   files.forEach(file => {
     const filePath = path.join(dir, file);
     const stat = fs.statSync(filePath);
     if (stat.isDirectory()) {
-      fileList.push(...readFilesInDirectory(filePath));
-    } else {
+      // 파일이름에서 확장자를 제거하고 파일 목록에 추가
+      const fileName = file.split('.')[0];
       fileList.push(file);
     }
   });
