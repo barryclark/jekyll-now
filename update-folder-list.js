@@ -12,7 +12,7 @@ fs.readdir(folderPath, (err, files) => {
   }
 
   const fileList = files
-    .filter((file) => fs.statSync(path.join(folderPath, file)).isFile())
+    .filter((file) => fs.stat(path.join(folderPath, file)).isFile())
     .map((file) => `- ${file}`)
     .join('\n');
 
