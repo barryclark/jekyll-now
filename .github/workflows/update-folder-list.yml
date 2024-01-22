@@ -23,5 +23,11 @@ jobs:
 
       - name: Update Folder List
         run: node update-folder-list.js
+
+      - name: Commit and Push Changes
+        run:
           git add .
+
           git commit -m "Update Folder List"
+          
+          git push
