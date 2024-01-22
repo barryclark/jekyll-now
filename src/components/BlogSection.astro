@@ -17,7 +17,8 @@ const { post } = Astro.props;
         Blogul nostru
       </h2>
       <p class="mt-2 text-lg leading-8 text-gray-600">
-        Blogul nostru reprezintă un spațiu în care împărtășim călătoria noastră prin lumea ingineriei. 
+        Blogul nostru reprezintă un spațiu în care împărtășim călătoria noastră
+        prin lumea ingineriei.
       </p>
     </div>
     <div
@@ -27,7 +28,7 @@ const { post } = Astro.props;
         posts.slice(0, 3).map((post) => (
           <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
             <img
-              src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
+              src={post.data.image}
               alt=""
               class="absolute inset-0 -z-10 h-full w-full object-cover"
             />

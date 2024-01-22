@@ -30,33 +30,32 @@ export const sponsors = [
 
 export const mentors = [
   {
-    image: "/mentor.jpg/",
+    image: "/adrian.jpg",
     name: "Adrian Roșian",
-    role: "Șef din ăla",
   },
   {
-    image: "/mentor.jpg/",
+    image: "/claudiu.jpg",
     name: "Claudiu Ceia",
     role: "Șef",
   },
   {
-    image: "/mentor.jpg/",
-    name: "George",
+    image: "/george.jpg",
+    name: "George Cosma",
     role: "Șef",
   },
   {
-    image: "/mentor.jpg/",
+    image: "/alin.jpg",
     name: "Alin Munteanu",
     role: "Șef",
   },
   {
-    image: "/mentor.jpg/",
-    name: "Alin Munteanu",
+    image: "/florina.jpg",
+    name: "Florina Păcurar",
     role: "Șef",
   },
   {
-    image: "/mentor.jpg/",
-    name: "Alin Munteanu",
+    image: "/razvan.jpg",
+    name: "Răzvan Balota",
     role: "Șef",
   },
 ];

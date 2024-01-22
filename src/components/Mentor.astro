@@ -7,13 +7,13 @@ import { mentors } from "../data";
     <li class="w-42">
       <img
         class="mx-auto h-24 w-24 rounded-full"
-        src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+        src={mentor.image}
         alt=""
       />
       <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
         {mentor.name}
       </h3>
-      <p class="text-sm leading-6 text-gray-600">{mentor.role}</p>
+      <!-- <p class="text-sm leading-6 text-gray-600">{mentor.role}</p> --->
     </li>
   ))
 }
