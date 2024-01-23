@@ -37,10 +37,9 @@ function readFilesInDirectory(dir) {
  * 폴더 목록을 업데이트하고 결과를 출력하는 함수
  */
 try {
-    const fileList = readFilesInDirectory(folderPath).join('   \n');
-
     //fileList를 json형태로 저장합니다.
-    const json = JSON.stringify(fileList);
+    const fileList = readFilesInDirectory(folderPath);
+    const json = JSON.stringify(fileList, null, 2);
     fs.writeFileSync(outputPath, json);
 
     console.log('Folder list updated successfully. \n' + fileList);
