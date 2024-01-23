@@ -1,7 +1,7 @@
 ---
 title: Reluare activitate
 author: Adrian Roșian
-profilepic: adrian.jpg
+profilepic: /adrian.jpg
 date: "2023-12-31"
 description: "Vești grozave de sfârșit de 2023: CoderDojo Alba Iulia își reia activitatea într-un format mai sustenabil sub egida
 asociației AI3 cu sprijinul Primariei Alba Iulia."

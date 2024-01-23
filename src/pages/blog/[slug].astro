@@ -1,7 +1,8 @@
 ---
-import { getCollection, CollectionEntry } from "astro:content";
+import { getCollection, type CollectionEntry } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import BackButton from "../../components/BackButton.astro";
+import Blogs from "../../components/Blogs.astro";
 
 type Props = {
   post: CollectionEntry<"posts">;
@@ -28,8 +29,107 @@ const { Content } = await post.render();
 ---
 
 <Layout title={post.data.title}>
-  <div class="prose max-w-7xl mx-auto py-10 md:py-48 px-4 md:px-0">
+  <div class="max-w-7xl mx-auto py-10 md:py-48 px-4 md:px-0">
     <BackButton />
-    <Content />
+    <div class="overflow-hidden bg-white">
+      <div class="relative mx-auto max-w-7xl px-6 py-16 lg:px-8">
+        <div
+          class="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-gray-50 lg:block"
+        >
+        </div>
+        <div
+          class="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8"
+        >
+          <div>
+            <h3
+              class="mt-2 mb-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl"
+            >
+              {post.data.title}
+            </h3>
+            {
+              post.data.tags.map((tag) => (
+                <span class="relative z-10 rounded-full bg-gray-50 px-2 py-1.5 text-sm text-gray-600 hover:bg-gray-100">
+                  {tag}
+                </span>
+              ))
+            }
+            <div class="mt-6 flex border-t border-gray-900/5 pt-6">
+              <div class="relative flex items-center gap-x-4">
+                <img
+                  src={post.data.profilepic}
+                  alt=""
+                  class="h-10 w-10 rounded-full bg-gray-50"
+                />
+                <div class="text-sm leading-6">
+                  <p class="font-semibold text-gray-900">
+                    <span class="absolute inset-0"></span>
+                    de {post.data.author} - {post.data.date}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+          <div class="relative lg:col-start-2 lg:row-start-1">
+            <svg
+              class="absolute right-0 top-0 -mr-20 -mt-20 hidden lg:block"
+              width="404"
+              height="384"
+              fill="none"
+              viewBox="0 0 404 384"
+              aria-hidden="true"
+            >
+              <defs>
+                <pattern
+                  id="de316486-4a29-4312-bdfc-fbce2132a2c1"
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect
+                    x="0"
+                    y="0"
+                    width="4"
+                    height="4"
+                    class="text-gray-200"
+                    fill="currentColor"
+                  ></rect>
+                </pattern>
+              </defs>
+              <rect
+                width="404"
+                height="384"
+                fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
+              ></rect>
+            </svg>
+            <div class="relative mx-auto max-w-prose text-base lg:max-w-none">
+              <figure>
+                <div class="aspect-h-7 aspect-w-12 lg:aspect-none">
+                  <img
+                    class="rounded-lg object-cover object-center shadow-lg"
+                    src={post.data.image}
+                    alt="Whitney leaning against a railing on a downtown street"
+                    width="1184"
+                    height="1376"
+                  />
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="mt-8 lg:mt-0">
+            <div
+              class="prose prose-indigo mx-auto mt-5 text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none"
+            >
+              <Content />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <Blogs post={post} />
   </div>
 </Layout>
