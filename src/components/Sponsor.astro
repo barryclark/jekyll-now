@@ -2,14 +2,22 @@
 import { sponsors } from "../data";
 ---
 
-<div class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
+<div
+  class="mx-auto grid w-full max-w-xl grid-cols-3 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8"
+>
   {
     sponsors.map((sponsor) => (
       <a
         href={sponsor.link}
         class="text-center"
       >
-      <img class=" max-h-24 w-full object-contain md:object-left " src={sponsor.image} alt={sponsor.sponsor}>
+        <img
+          class={`col-span-2  w-full object-contain lg:col-span-1 ${
+            sponsor.height ? sponsor.height : "max-h-20"
+          }`}
+          src={sponsor.image}
+          alt={sponsor.sponsor}
+        />
       </a>
     ))
   }

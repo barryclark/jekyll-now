@@ -27,6 +27,35 @@ export const sponsors = [
     sponsor: "Edu Click",
     link: "https://www.educlick.ro/",
   },
+  {
+    image: "/cea-mai-tare-firma.svg",
+    sponsor: "WhiteCity Code",
+    link: "https://whitecitycode.com/",
+    height: "max-h-14",
+  },
+  {
+    image: "/echipa-de-digitalizare.jpeg",
+    sponsor: "Echipa De Digitalizare",
+    link: "https://echipadedigitalizare.ro/",
+  },
+  {
+    image: "/xplication.jpeg",
+    sponsor: "Xplication",
+    link: "https://xplication.com/",
+    height: "max-h-14",
+  },
+  {
+    image: "/acidartstudio.png",
+    sponsor: "Acid Art Studio",
+    link: "https://www.acidartstudio.com/",
+    height: "max-h-14",
+  },
+  {
+    image: "/cos.svg",
+    sponsor: "Creators of Human Spaces",
+    link: "https://cos.ro/",
+    height: "max-h-14",
+  },
 ];
 
 export const mentors = [
