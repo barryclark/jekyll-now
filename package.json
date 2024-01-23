@@ -2,10 +2,10 @@
     {
         "name": "updateSharedBlockAutomation",
         "version": "1.0.0",
-        "scripts": {
-            "start": "updateSharedBlockTag.js"
+        "scripts": [
+            "start": "updateSharedBlockTag.js",
             "start": "updateSharedBlockBlock.js"
-        },
+        ],
         "dependencies": {},
         "devDependencies": {}
     }
