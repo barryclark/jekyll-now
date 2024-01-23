@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 
 const folderPath = '_includes/_shared_block/'; // 업데이트하려는 폴더의 경로
-const outputPath = '_includes/_generated/tag.md'; // 결과를 저장할 Markdown 파일 경로
+const outputPath = '_includes/_generated/tag.json'; // 결과를 저장할 Markdown 파일 경로
 
 /**
  * folderPath아래의 모든 폴더를 탐색하며 파일 목록을 반환하는 함수
@@ -38,7 +38,11 @@ function readFilesInDirectory(dir) {
  */
 try {
     const fileList = readFilesInDirectory(folderPath).join('   \n');
-    fs.writeFileSync(outputPath, fileList, 'utf-8');
+
+    //fileList를 json형태로 저장합니다.
+    const json = JSON.stringify(fileList);
+    fs.writeFileSync(outputPath, json);
+
     console.log('Folder list updated successfully. \n' + fileList);
 } catch (err) {
     console.error(err);
