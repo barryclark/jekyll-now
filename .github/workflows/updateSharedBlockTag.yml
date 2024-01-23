@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Update Folder List
-        run: node update-folder-list.js
+        run: node updateSharedBlockTag.js
 
       - name: Commit and Push Changes
         run:
