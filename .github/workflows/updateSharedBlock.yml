@@ -1,4 +1,4 @@
-name: Update Folder List
+name: updateSharedBlockAutomation
 
 on:
   push:
