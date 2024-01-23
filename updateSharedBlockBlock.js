@@ -31,7 +31,11 @@ function makeBlockData(path) {
 
     // 모든 디렉토리를 가져옵니다.
     tag = path.split('/');
-    tag = tag.slice(2, tag.length - 2);
+    // 0, 1 디렉토리를 제거합니다.
+    tag.shift();
+    tag.shift();
+    // 마지막 디렉토리를 제거합니다.
+    tag.pop();
 
     dataList.push({
         Name: fileName,
