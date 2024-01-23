@@ -1,10 +1,12 @@
 ---
 layout: default
+permalink: /archive/
+category: archive
 ---
 
 <div class="posts">
   {% for post in site.posts %}
-    {% if post.category != archive %}
+    {% if post.category == category %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
