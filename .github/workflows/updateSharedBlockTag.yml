@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Update Folder List
-        run: node update-folder-list.js
+        run: node updateSharedBlockTag.js
 
       - name: Commit and Push Changes
         run:
@@ -32,6 +32,6 @@ jobs:
 
           git add .
 
-          git commit -m "Update Folder List"
+          git commit -m "Update updateSharedBlockTag"
 
           git push
