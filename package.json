@@ -3,7 +3,7 @@
         "name": "updateSharedBlockTag",
         "version": "1.0.0",
         "scripts": [
-            "start": "updateSharedBlockTag.js",
+            "start": "updateSharedBlockTag.js"
         ],
         "dependencies": {},
         "devDependencies": {}
