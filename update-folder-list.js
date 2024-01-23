@@ -38,8 +38,10 @@ function readFilesInDirectory(dir) {
  */
 try {
     //fileList를 json형태로 저장합니다.
+    //json 데이터의 이름은 Tag
     const fileList = readFilesInDirectory(folderPath);
     const json = JSON.stringify(fileList, null, 2);
+    json.key = 'Tag';
     fs.writeFileSync(outputPath, json);
 
     console.log('Folder list updated successfully. \n' + fileList);
