@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const folderPath = '_includes/_shared_block/'; // 업데이트하려는 폴더의 경로
+const folderPath = '_includes/_shared_block'; // 업데이트하려는 폴더의 경로
 const outputPath = '_includes/_generated/Block.json'; // 결과를 저장할 Markdown 파일 경로
 
 // 결과를 저장할 배열
