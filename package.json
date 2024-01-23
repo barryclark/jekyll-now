@@ -1,8 +1,8 @@
 {
-  "name": "github-actions-folder-list",
+  "name": "updateSharedBlockTag",
   "version": "1.0.0",
   "scripts": {
-    "start": "node update-folder-list.js"
+    "start": "updateSharedBlockTag.js"
   },
   "dependencies": {},
   "devDependencies": {}
