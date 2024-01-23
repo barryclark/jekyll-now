@@ -1,17 +1,13 @@
 ---
-import { Image } from "astro:assets";
-
-type Props = {
-  position: string;
-};
-
-const { position } = Astro.props;
+import NavLinks from "./NavLinks.astro";
 ---
 
-<div class="mx-auto max-w-7xl relative z-50 flex md:block justify-center items-center">
-  <div class={`px-6 pt-6 lg:max-w-2xl lg:pl-8 lg:pr-0 block lg:${position}`}>
+<div
+  class="mx-auto md:max-w-7xl relative z-50 flex md:block justify-between md:justify-center items-center"
+>
+  <div class="px-6 pt-6 lg:max-w-3xl lg:pl-8 lg:pr-0 block lg:absolute">
     <nav
-      class="flex flex-col md:flex-row items-center justify-between lg:justify-start "
+      class="flex flex-col md:flex-row items-center lg:justify-start"
       aria-label="Global"
     >
       <a
@@ -19,37 +15,13 @@ const { position } = Astro.props;
         class="-m-1.5 p-1.5"
       >
         <span class="sr-only">CoderDojo Alba Iulia</span>
-        <Image
+        <img
           alt=""
-          width="200"
-          height="200"
           src="/logo.png"
+          class="w-32"
         />
-        
       </a>
-      <div class="flex gap-x-4 lg:ml-12 lg:flex lg:gap-x-14">
-        <a
-          href="/blog"
-          class="text-sm font-semibold leading-6 text-gray-900"
-          >Blog</a
-        >
-        <a
-          href="/despre"
-          class="text-sm font-semibold leading-6 text-gray-900"
-          >Despre</a
-        >
-        <a
-          href="/regulament"
-          class="text-sm font-semibold leading-6 text-gray-900"
-          >Regulament</a
-        >
-        <a
-          href="/confidentialitate"
-          class="text-sm font-semibold leading-6 text-gray-900"
-          >Confidențialitate</a
-        >
-      </div>
+      <NavLinks />
     </nav>
-    
   </div>
 </div>

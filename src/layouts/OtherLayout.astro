@@ -32,8 +32,10 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <Navbar position="block" />
-    <div class="max-w-4xl mx-auto prose bg-white px-6 md:px-0 py-32 pb-16 pt-4">
+    <Navbar />
+    <div
+      class="max-w-4xl mx-auto prose bg-white px-6 md:px-0 py-32 pb-16 pt-12 md:pt-48"
+    >
       <slot />
     </div>
     <Footer />
@@ -71,4 +73,8 @@ const { title } = Astro.props;
     padding: 0;
     box-sizing: border-box;
   }
+  a {
+    text: #d946ef;
+  }
 </style>
+../components/Navbar.jsx

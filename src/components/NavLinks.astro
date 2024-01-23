@@ -1,0 +1,20 @@
+---
+import { navLinks } from "../data";
+
+const currentPath = new URL(Astro.url).pathname;
+---
+
+<div class="flex gap-x-4 lg:ml-12 lg:flex lg:gap-x-12">
+  {
+    navLinks.map((link) => (
+      <a
+        href={link.href}
+        class={`text-sm font-semibold leading-6 hover:text-hover transition-all ${
+          currentPath === link.href ? "text-accent" : "text-gray-600"
+        }`}
+      >
+        {link.name}
+      </a>
+    ))
+  }
+</div>
