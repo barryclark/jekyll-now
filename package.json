@@ -1,17 +1,9 @@
 [
     {
-        "name": "updateSharedBlockTag",
+        "name": "updateSharedBlockAutomation",
         "version": "1.0.0",
         "scripts": {
             "start": "updateSharedBlockTag.js"
-        },
-        "dependencies": {},
-        "devDependencies": {}
-    },
-    {
-        "name": "updateSharedBlockBlock",
-        "version": "1.0.0",
-        "scripts": {
             "start": "updateSharedBlockBlock.js"
         },
         "dependencies": {},
