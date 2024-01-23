@@ -3,7 +3,7 @@ const fs = require('fs');
 const folderPath = '_includes/_shared_block/'; // 업데이트하려는 폴더의 경로
 const outputPath = '_includes/_generated/Block.json'; // 결과를 저장할 Markdown 파일 경로
 
-const dataList;
+const dataList = []; // 결과를 저장할 배열
 
 /**
  * 디렉토리를 순환하며 파일의 경우 콜벡을 호출합니다.
