@@ -26,15 +26,15 @@ function circuitDirectory(curruntPath, callback) {
  */
 function makeBlockData(path) {
     // path에서 마지막 '/'를 찾아 뒤의 문자를 반환하고, 확장자를 제거합니다.
-    const name = path.substring(path.lastIndexOf('/') + 1);
-    name = name.substring(0, name.lastIndexOf('.'));
+    fileName = path.substring(path.lastIndexOf('/') + 1);
+    fileName = fileName.substring(0, fileName.lastIndexOf('.'));
 
     // 모든 디렉토리를 가져옵니다.
-    const tag = path.split('/');
+    tag = path.split('/');
     tag = tag.slice(2, tag.length - 2);
 
     dataList.push({
-        Name: name,
+        Name: fileName,
         Tag: tag,
         Path: path,
     });
