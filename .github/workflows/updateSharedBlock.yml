@@ -21,9 +21,12 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Update Folder List
+      - name: Run updateSharedBlockTag
         run: node updateSharedBlockTag.js
 
+      - name: Run updateSharedBlockBlock
+        run: node updateSharedBlockBlock.js
+        
       - name: Commit and Push Changes
         run:
           git config --local user.name actions-user
