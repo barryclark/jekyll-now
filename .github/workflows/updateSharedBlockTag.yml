@@ -32,6 +32,6 @@ jobs:
 
           git add .
 
-          git commit -m "Update Folder List"
+          git commit -m "Update updateSharedBlockTag"
 
           git push
