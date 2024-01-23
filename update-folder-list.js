@@ -10,36 +10,37 @@ const outputPath = '_includes/_generated/tag.md'; // 결과를 저장할 Markdow
 
 /**
  * folderPath아래의 모든 폴더를 탐색하며 파일 목록을 반환하는 함수
- * 디렉토리와 파일의 확장자를 포함하지 않고 파일의 이름만 반환함
+ * 디렉토리들의 이름을 반환합니다.
  */
 function readFilesInDirectory(dir) {
-  const files = fs.readdirSync(dir);
-  const fileList = [];
+    const files = fs.readdirSync(dir);
+    const fileList = [];
 
-  // 폴더 아래의 모든 파일을 탐색
-  files.forEach(file => {
-    const filePath = path.join(dir, file);
-    const stat = fs.statSync(filePath);
+    // 폴더 아래의 모든 파일을 탐색
+    files.forEach(file => {
+        const filePath = path.join(dir, file);
+        const stat = fs.statSync(filePath);
 
-    if (stat.isDirectory()) {
-      fileList.push(...readFilesInDirectory(filePath));
-    } else {
-      // 파일이름에서 확장자를 제거하고 파일 목록에 추가
-      const fileName = file.split('.')[0];
-      fileList.push(fileName);
-    }
-  });
-  return fileList;
+        // 디렉토리의 이름을 fileList에 추가합니다
+        if (stat.isDirectory()) {
+            fileList.push(file);
+
+            // 디렉토리 아래의 파일들을 재귀적으로 탐색합니다.
+            const subFiles = readFilesInDirectory(filePath);
+            fileList.push(...subFiles.map(subFile => subFile));
+        }
+    });
+    return fileList;
 }
 
 /**
  * 폴더 목록을 업데이트하고 결과를 출력하는 함수
- */ 
+ */
 try {
-  const fileList = readFilesInDirectory(folderPath).join('\n');
-  fs.writeFileSync(outputPath, fileList, 'utf-8');
-  console.log('Folder list updated successfully. \n' + fileList);
+    const fileList = readFilesInDirectory(folderPath).join('   \n');
+    fs.writeFileSync(outputPath, fileList, 'utf-8');
+    console.log('Folder list updated successfully. \n' + fileList);
 } catch (err) {
-  console.error(err);
-  process.exit(1);
+    console.error(err);
+    process.exit(1);
 }
