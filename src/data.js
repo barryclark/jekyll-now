@@ -72,16 +72,41 @@ export const mentors = [
     website: "https://whitecitycode.com/",
   },
   {
+    image: "/alex-bala.jpeg",
+    name: "Alex Băla",
+    worksAt: "Xplication",
+    website: "https://xplication.com/",
+  },
+
+  {
+    image: "/traian-simedru.jpeg",
+    name: "Traian Simedru",
+    worksAt: "Echipa de Digitalizare",
+    website: "https://echipadedigitalizare.ro/",
+  },
+  {
     image: "/george.jpg",
     name: "George Cosma",
     worksAt: "WhiteCity Code",
     website: "https://whitecitycode.com/",
   },
   {
+    image: "/rares-urban.jpeg",
+    name: "Rareș Urban",
+    worksAt: "Acid Art Studio",
+    website: "https://acidartstudio.com/",
+  },
+  {
     image: "/alin.jpg",
-    name: "Alin Munteanu",
+    name: "Alin Muntean",
     worksAt: "WhiteCity Code",
     website: "https://whitecitycode.com/",
+  },
+  {
+    image: "/claudiu-neamtu.jpeg",
+    name: "Claudiu Neamțu",
+    worksAt: "3SS",
+    website: "https://www.3ss.tv/",
   },
   {
     image: "/florina.jpg",
