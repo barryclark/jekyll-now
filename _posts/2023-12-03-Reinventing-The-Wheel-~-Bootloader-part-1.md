@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 tags: technical
 ---
 This post will cover the design and implementation of a very basic bootloader for x86 BIOS. Additionally, the build tools that I will use throughout this project will be introduced. BIOS is so 1990, and eventually I will roll a UEFI bootloader, but that would take longer, and delay the time when we can actually begin writing the kernel.
@@ -96,8 +96,3 @@ To run and test our implementation we will use qemu. We can do this with the fol
 If everything was done correctly, you will see a red character being printed to the top left of the display.
 
 ![]({{site.baseurl}}/images/wheel_bootloader_redchar.PNG)
-
-
-
-
-
