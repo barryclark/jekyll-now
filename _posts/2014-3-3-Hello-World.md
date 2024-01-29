@@ -1,8 +1,6 @@
 ---
-layout: a？
+layout: 你好
 title: 阿米诺斯!
 ---
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+阿团长你就是个寄吧，记住我说滴奥，来沈阳必须打你脸，头套给你薅一地
