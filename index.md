@@ -11,7 +11,7 @@ I’m an engineer with an interest in AI & Software Engineering
 </center>
 
 - ⌛ Over the last 5 years I have focused on Data Science and Machine Learning, building on a foundation of 9 years of experience in Software Engineering.<br/>I have worked, <i>and played</i>, with programming stacks and technologies from microcontrollers through mobile and web app development to cloud systems.
-- 👨‍💻 I currently work as an Engineer, building cool stuff @[Hence.ai](https://hence.ai/)
+- 👨‍💻 I currently work as a Data Scientist @[World Data Lab](https://worlddata.io/)
 
 ---
 I write about tech on my [GitHub Blog](https://kayo-gh.github.io/blog), but if you're interested, I run two other blogs with different focus points:
