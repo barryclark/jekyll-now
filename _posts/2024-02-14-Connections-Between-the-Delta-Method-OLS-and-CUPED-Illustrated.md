@@ -15,18 +15,18 @@ In this post, we will empirically demonstrate the folllowing things:
    2. The CUPED variance reduction can be achieved (and is equivalent to) using OLS (both one and two steps!)
    3. How to use the CUPED approach with multiple covariates via OLS.
    4. How to use CUPED when the randomization unit does not equal the unit of analysis (i.e., Appendix B of [Deng et. al](https://www.exp-platform.com/Documents/2013-02-CUPED-ImprovingSensitivityOfControlledExperiments.pdf).)
-Implicitly, this post assumes you know that standard OLS is equivalent to a $t$-test when properly setup. If you are not sure of this, convince yourself of this by considering regressing $Y\sim d$ where $d$ is a binary indicator of being in the treatment and $Y$ is our variable of interest.
+Implicitly, this post assumes you know that standard OLS is equivalent to a $$t$$-test when properly setup. If you are not sure of this, convince yourself of this by considering regressing $$Y\sim d$$ where $$d$$ is a binary indicator of being in the treatment and $$Y$$ is our variable of interest.
 
 ## Motivation
 
-A basic $t$ test assumes analysis unit (usually users) equals your randomization unit (also users, as treatments are sticky per users in most cases). The problem is many of our units have mismatched units. A common unit is the click through rate (CTR), commonly defined as 
-$$\frac{clicks}{sessions},$$ where sessions can be thought of as page views for this discussion. Right here, we have a mismatch in units as these are both at the session level and not the user level. We can fix this by writing each as a "per user" metric, by dividing top and bottom by the number of users:
+A basic $$t$$ test assumes analysis unit (usually users) equals your randomization unit (also users, as treatments are sticky per users in most cases). The problem is many of our units have mismatched units. A common unit is the click through rate (CTR), commonly defined as 
+$$$$\frac{clicks}{sessions},$$$$ where sessions can be thought of as page views for this discussion. Right here, we have a mismatch in units as these are both at the session level and not the user level. We can fix this by writing each as a "per user" metric, by dividing top and bottom by the number of users:
 
-$$\frac{clicks}{sessions} = \frac{\frac{clicks}{N}}{\frac{sessions}{N}}=\frac{clicks\ per\ user}{sessions\ per\ user}.$$
+$$$$\frac{clicks}{sessions} = \frac{\frac{clicks}{N}}{\frac{sessions}{N}}=\frac{clicks\ per\ user}{sessions\ per\ user}.$$$$
 
 Simple enough-- now our numerator and denominator have the same units, but now when we try to calculate the variance of this term, using `np.var` will underestimate the variance. This underestimate leads to a higher false positive rate. In fact, if you perform simulated A/A tests, the p-values will not be uniformly distributed but instead have a slight bump on the left hand side of your plot, near 0.  
 
-To avoid this and to regain a flat p-value distribution, the guidance in the A/B testing community is to use the [delta method](https://alexdeng.github.io/public/files/kdd2018-dm.pdf). The delta method uses a Taylor expansion (more or less) to find an approximation to the variance which is "close enough" when the number of users $N$ becomes large. I'll spare you the formula, but it's in the paper linked.
+To avoid this and to regain a flat p-value distribution, the guidance in the A/B testing community is to use the [delta method](https://alexdeng.github.io/public/files/kdd2018-dm.pdf). The delta method uses a Taylor expansion (more or less) to find an approximation to the variance which is "close enough" when the number of users $$N$$ becomes large. I'll spare you the formula, but it's in the paper linked.
 
 However, if you come from a stats background, you may be thinking that you should be able to just use Ordinary Least Squares (OLS) with [clustered standard errors](https://en.wikipedia.org/wiki/Clustered_standard_errors). For awhile, there was no official document linking these two techniques, the delta method from A/B testing and OLS with cluster robust standard errors. Until Deng et al., published a [proof](https://arxiv.org/abs/2105.14705) they are equivalent. But, interestingly the idea of clustered standard errors were well understood in economics and other fields, but had not been connected to the A/B testing literature until 2021.
 
@@ -34,15 +34,15 @@ With that said, it's one thing to understand the techniques individually and the
 
 ## Structure of Each Example
 
-In each example, I will simulate the true variance (and know the effect size by definition) and then aim to recover the proper variance through various techniques. I will also comment on when things go awry to hopefully help others in the same position. Each example will illustrate how to use a $t$-test for the calculation, as that method is the most scalable. 
+In each example, I will simulate the true variance (and know the effect size by definition) and then aim to recover the proper variance through various techniques. I will also comment on when things go awry to hopefully help others in the same position. Each example will illustrate how to use a $$t$$-test for the calculation, as that method is the most scalable. 
 
-### $t$-test calculation
+### $$t$$-test calculation
 
-As a refresher and to set notation, assume we have two groups $A$ and $B$ are associated with random variables $X$ and $Y$. We define their sample means as $\bar{X}$ and $\bar{Y}$ respectively, their variances $\text{var}(X):=\sigma_X^2$ and $\text{var}(Y):=\sigma_Y^2$, and their user counts as $n_A$ and $n_B$. The simplest formula for the $t$-score, which for large $n$ is equivalent approximately to the $z$-score, is
-$$\frac{\bar{X}-\bar{Y}}{ \sqrt{ \frac{\sigma_X^2}{n_A} + \frac{\sigma_Y^2}{n_B} }}.$$
+As a refresher and to set notation, assume we have two groups $$A$$ and $$B$$ are associated with random variables $$X$$ and $$Y$$. We define their sample means as $$\bar{X}$$ and $$\bar{Y}$$ respectively, their variances $$\text{var}(X):=\sigma_X^2$$ and $$\text{var}(Y):=\sigma_Y^2$$, and their user counts as $$n_A$$ and $$n_B$$. The simplest formula for the $$t$$-score, which for large $$n$$ is equivalent approximately to the $$z$$-score, is
+$$$$\frac{\bar{X}-\bar{Y}}{ \sqrt{ \frac{\sigma_X^2}{n_A} + \frac{\sigma_Y^2}{n_B} }}.$$$$
 
-Note, because the two groups are independent, then $X$ and $Y$ are independent, and the denominator comes from the observation that
-$$\text{var}(\bar{X}-\bar{Y}) = \text{var}(\bar{X}) + \text{var}(\bar{Y}) = \frac{\text{var}(X)}{n_X}+\frac{\text{var}(Y)}{n_Y}.$$
+Note, because the two groups are independent, then $$X$$ and $$Y$$ are independent, and the denominator comes from the observation that
+$$$$\text{var}(\bar{X}-\bar{Y}) = \text{var}(\bar{X}) + \text{var}(\bar{Y}) = \frac{\text{var}(X)}{n_X}+\frac{\text{var}(Y)}{n_Y}.$$$$
 
 
 ```python
@@ -165,12 +165,12 @@ np.sqrt(_delta_method(gbd.clicks[A], gbd.views.values[A])+_delta_method(gbd.clic
 
 
 
-### Note: Mind the size of $n$!
-The delta method only applies when $n$ is large, and so for small $n$, the approximation may not hold. In fact, if you rerun this when $n<1000$, the delta method isn't a good approximation.
+### Note: Mind the size of $$n$$!
+The delta method only applies when $$n$$ is large, and so for small $$n$$, the approximation may not hold. In fact, if you rerun this when $$n<1000$$, the delta method isn't a good approximation.
 
 # 2. The CUPED procedure is equivalent to just using OLS with a covariate
 
-In particular, consider $\hat Y_{cv}=Y-\theta (X-\mathbb{E}X)$ from the CUPED paper, where $\theta = \text{cov}(X,Y)/\text{var}(X)$. Then, $\theta$ and the proper variance reduction can be gained by constructing the OLS formula $Y\sim X+d+c$ where $X$ is your pre-experiment covariate, $d$ is your treatment indicator, and $c$ is a constant.
+In particular, consider $$\hat Y_{cv}=Y-\theta (X-\mathbb{E}X)$$ from the CUPED paper, where $$\theta = \text{cov}(X,Y)/\text{var}(X)$$. Then, $$\theta$$ and the proper variance reduction can be gained by constructing the OLS formula $$Y\sim X+d+c$$ where $$X$$ is your pre-experiment covariate, $$d$$ is your treatment indicator, and $$c$$ is a constant.
 
 
 ```python
@@ -397,11 +397,11 @@ np.sqrt((1-var_redux)*standard_error_none**2) # close !
 
 # CUPED when the randomization units are not equal to the analysis unit
 
-This situation occurs for session or page level metrics like the click through rate $\left ( \frac{clicks}{sessions} \right )$ when typically the A/B split occurs on users (i.e., you hash the user ID, the treatment is sticky by user, etc.) yet the metric does not contain users at all. As seen in the first example, this is a common situation to use the delta method. However, it's unclear at first glance how to do this with CUPED. In the paper by Deng et al., Appendix B sketches how to combine the delta method with CUPED.
+This situation occurs for session or page level metrics like the click through rate $$\left ( \frac{clicks}{sessions} \right )$$ when typically the A/B split occurs on users (i.e., you hash the user ID, the treatment is sticky by user, etc.) yet the metric does not contain users at all. As seen in the first example, this is a common situation to use the delta method. However, it's unclear at first glance how to do this with CUPED. In the paper by Deng et al., Appendix B sketches how to combine the delta method with CUPED.
 
-However, it is complicated, and it could be confusing to implement. In this case, you don't apply the delta method like in the typical $t$-test, but rather Deng et al. applies the delta method (i.e., Taylor's theorem) to linearize the terms in the variance and covariance and then passes $n\to\infty$ to get an approximation. This is the same process as deriving the normal delta method, but this time they use it to get a formula in terms of several user level metrics. So, at the end of the day, you don't calculate the traditional delta method at all for the variances, but rather you use their new formula given in Appendix B which I have recreated below.
+However, it is complicated, and it could be confusing to implement. In this case, you don't apply the delta method like in the typical $$t$$-test, but rather Deng et al. applies the delta method (i.e., Taylor's theorem) to linearize the terms in the variance and covariance and then passes $$n\to\infty$$ to get an approximation. This is the same process as deriving the normal delta method, but this time they use it to get a formula in terms of several user level metrics. So, at the end of the day, you don't calculate the traditional delta method at all for the variances, but rather you use their new formula given in Appendix B which I have recreated below.
 
-# $\theta$ calculation
+# $$\theta$$ calculation
 
 
 ```python
@@ -433,9 +433,9 @@ def calculate_theta(V):
     return theta
 ```
 
-# What is the variance of $\hat{Y}_{cv}$?
+# What is the variance of $$\hat{Y}_{cv}$$?
 
-By the definition of variance, $var(\hat{Y}_{cv})= var(Y/N) + \theta^2 \cdot var(X/M)-2\theta cov(Y/N, X/M)$. Each term has to be calculated via the delta method and summed together... unless we can use OLS!
+By the definition of variance, $$var(\hat{Y}_{cv})= var(Y/N) + \theta^2 \cdot var(X/M)-2\theta cov(Y/N, X/M)$$. Each term has to be calculated via the delta method and summed together... unless we can use OLS!
 
 
 
