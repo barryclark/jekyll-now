@@ -39,10 +39,10 @@ In each example, I will simulate the true variance (and know the effect size by 
 ### $$t$$-test calculation
 
 As a refresher and to set notation, assume we have two groups $$A$$ and $$B$$ are associated with random variables $$X$$ and $$Y$$. We define their sample means as $$\bar{X}$$ and $$\bar{Y}$$ respectively, their variances $$\text{var}(X):=\sigma_X^2$$ and $$\text{var}(Y):=\sigma_Y^2$$, and their user counts as $$n_A$$ and $$n_B$$. The simplest formula for the $$t$$-score, which for large $$n$$ is equivalent approximately to the $$z$$-score, is
-$$$$\frac{\bar{X}-\bar{Y}}{ \sqrt{ \frac{\sigma_X^2}{n_A} + \frac{\sigma_Y^2}{n_B} }}.$$$$
+$$\begin{equation}\frac{\bar{X}-\bar{Y}}{ \sqrt{ \frac{\sigma_X^2}{n_A} + \frac{\sigma_Y^2}{n_B} }}.\end{equation}$$
 
 Note, because the two groups are independent, then $$X$$ and $$Y$$ are independent, and the denominator comes from the observation that
-$$$$\text{var}(\bar{X}-\bar{Y}) = \text{var}(\bar{X}) + \text{var}(\bar{Y}) = \frac{\text{var}(X)}{n_X}+\frac{\text{var}(Y)}{n_Y}.$$$$
+$$\begin{equation}\text{var}(\bar{X}-\bar{Y}) = \text{var}(\bar{X}) + \text{var}(\bar{Y}) = \frac{\text{var}(X)}{n_X}+\frac{\text{var}(Y)}{n_Y}.\end{equation}$$$$
 
 
 ```python
