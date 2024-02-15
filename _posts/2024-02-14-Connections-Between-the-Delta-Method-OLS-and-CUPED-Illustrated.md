@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Connections between the delta method, OLS and CUPED, illustrated
+title: Connections Between the Delta Method, OLS and CUPED, Illustrated
 tags:
 - Statistics
 - A/B Testing
