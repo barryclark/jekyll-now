@@ -8,12 +8,13 @@ tags:
 summary: Empirical evidence of the equivalence of OLS and CUPED, plus special considerations for page-level metrics.
 ---
 
-In the past decade, there have been many advancements to enable A/B testing at (sometimes even small!) scale. Thankfully, many A/B testing practitioners have come forward and written [books](https://experimentguide.com/) and [papers](https://www.kdd.org/kdd2016/papers/files/adf0853-dengA.pdf) on the finer details. Even with the deluge blog posts on the subject-- there's one topic that does not get a lot of attention, and specifically a lot of code related to it: the connection between OLS, the delta method, and how those techniques connect to CUPED. Understanding their connection is critical when trying to apply more advanced techniques like [CUPED](https://www.exp-platform.com/Documents/2013-02-CUPED-ImprovingSensitivityOfControlledExperiments.pdf) (said "Cupid") with session level metrics. In this post, we will empirically demonstrate the folllowing things:
+In the past decade, there have been many advancements to enable A/B testing at (sometimes even small!) scale. Thankfully, many A/B testing practitioners have come forward and written [books](https://experimentguide.com/) and [papers](https://www.kdd.org/kdd2016/papers/files/adf0853-dengA.pdf) on the finer details. Even with the deluge blog posts on the subject-- there's one topic that does not get a lot of attention, and specifically a lot of code related to it: the connection between OLS, the delta method, and how those techniques connect to CUPED. Understanding their connection is critical when trying to apply more advanced techniques like [CUPED](https://www.exp-platform.com/Documents/2013-02-CUPED-ImprovingSensitivityOfControlledExperiments.pdf) (said "Cupid") with session level metrics. 
+
+In this post, we will empirically demonstrate the folllowing things:
    1. The variance from the delta method equals the OLS variance with cluster robust standard errors.
    2. The CUPED variance reduction can be achieved (and is equivalent to) using OLS (both one and two steps!)
    3. How to use the CUPED approach with multiple covariates via OLS.
    4. How to use CUPED when the randomization unit does not equal the unit of analysis (i.e., Appendix B of [Deng et. al](https://www.exp-platform.com/Documents/2013-02-CUPED-ImprovingSensitivityOfControlledExperiments.pdf).)
-   
 Implicitly, this post assumes you know that standard OLS is equivalent to a $t$-test when properly setup. If you are not sure of this, convince yourself of this by considering regressing $Y\sim d$ where $d$ is a binary indicator of being in the treatment and $Y$ is our variable of interest.
 
 ## Motivation
