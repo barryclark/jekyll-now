@@ -22,7 +22,7 @@ Implicitly, this post assumes you know that standard OLS is equivalent to a $$t$
 A basic $$t$$ test assumes analysis unit (usually users) equals your randomization unit (also users, as treatments are sticky per users in most cases). The problem is many of our units have mismatched units. A common unit is the click through rate (CTR), commonly defined as 
 $$$$\frac{clicks}{sessions},$$$$ where sessions can be thought of as page views for this discussion. Right here, we have a mismatch in units as these are both at the session level and not the user level. We can fix this by writing each as a "per user" metric, by dividing top and bottom by the number of users:
 
-$$$$\frac{clicks}{sessions} = \frac{\frac{clicks}{N}}{\frac{sessions}{N}}=\frac{clicks\ per\ user}{sessions\ per\ user}.$$$$
+$$\begin{equation}\frac{clicks}{sessions} = \frac{\frac{clicks}{N}}{\frac{sessions}{N}}=\frac{clicks\ per\ user}{sessions\ per\ user}.\end{equation}$$
 
 Simple enough-- now our numerator and denominator have the same units, but now when we try to calculate the variance of this term, using `np.var` will underestimate the variance. This underestimate leads to a higher false positive rate. In fact, if you perform simulated A/A tests, the p-values will not be uniformly distributed but instead have a slight bump on the left hand side of your plot, near 0.  
 
