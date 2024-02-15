@@ -42,7 +42,7 @@ As a refresher and to set notation, assume we have two groups $$A$$ and $$B$$ ar
 $$\begin{equation}\frac{\bar{X}-\bar{Y}}{ \sqrt{ \frac{\sigma_X^2}{n_A} + \frac{\sigma_Y^2}{n_B} }}.\end{equation}$$
 
 Note, because the two groups are independent, then $$X$$ and $$Y$$ are independent, and the denominator comes from the observation that
-$$\begin{equation}\text{var}(\bar{X}-\bar{Y}) = \text{var}(\bar{X}) + \text{var}(\bar{Y}) = \frac{\text{var}(X)}{n_X}+\frac{\text{var}(Y)}{n_Y}.\end{equation}$$$$
+$$\begin{equation}\text{var}(\bar{X}-\bar{Y}) = \text{var}(\bar{X}) + \text{var}(\bar{Y}) = \frac{\text{var}(X)}{n_X}+\frac{\text{var}(Y)}{n_Y}.\end{equation}$$
 
 
 ```python
@@ -435,7 +435,7 @@ def calculate_theta(V):
 
 # What is the variance of $$\hat{Y}_{cv}$$?
 
-By the definition of variance, $$var(\hat{Y}_{cv})= var(Y/N) + \theta^2 \cdot var(X/M)-2\theta cov(Y/N, X/M)$$. Each term has to be calculated via the delta method and summed together... unless we can use OLS!
+By the definition of variance, $$var(\hat{Y}_{cv})= var(Y/N) + \theta^2 var(X/M)-2\theta cov(Y/N, X/M)$$. Each term has to be calculated via the delta method and summed together... unless we can use OLS!
 
 
 
