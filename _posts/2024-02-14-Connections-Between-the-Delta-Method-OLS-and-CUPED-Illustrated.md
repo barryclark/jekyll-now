@@ -296,21 +296,30 @@ pd.DataFrame(
 
 <div>
 <style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+        border: 1px solid;
+
     }
 
+   .dataframe tbody td {
+        border: 1px solid;
+
+    }
     .dataframe thead th {
-        text-align: right;
+        text-align: center;
+        border: 1px solid;
+
     }
 </style>
-<table border="1" class="dataframe">
+<table class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>method</th>
       <th>estimated effect</th>
@@ -582,16 +591,25 @@ pd.DataFrame(
 
 <div>
 <style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+        border: 1px solid;
+
     }
 
+   .dataframe tbody td {
+        border: 1px solid;
+
+    }
     .dataframe thead th {
-        text-align: right;
+        text-align: center;
+        border: 1px solid;
+
     }
 </style>
 <table border="1" class="dataframe">
