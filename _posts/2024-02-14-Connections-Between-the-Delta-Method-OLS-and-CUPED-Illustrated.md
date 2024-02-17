@@ -20,7 +20,10 @@ Implicitly, this post assumes you know that standard OLS is equivalent to a $$t$
 ## Motivation
 
 A basic $$t$$ test assumes analysis unit (usually users) equals your randomization unit (also users, as treatments are sticky per users in most cases). The problem is many of our units have mismatched units. A common unit is the click through rate (CTR), commonly defined as 
-$$$$\frac{clicks}{sessions},$$$$ where sessions can be thought of as page views for this discussion. Right here, we have a mismatch in units as these are both at the session level and not the user level. We can fix this by writing each as a "per user" metric, by dividing top and bottom by the number of users:
+
+$$\begin{equation}\frac{clicks}{sessions},\end{equation}$$ 
+
+where sessions can be thought of as page views for this discussion. Right here, we have a mismatch in units as these are both at the session level and not the user level. We can fix this by writing each as a "per user" metric, by dividing top and bottom by the number of users:
 
 $$\begin{equation}\frac{clicks}{sessions} = \frac{\frac{clicks}{N}}{\frac{sessions}{N}}=\frac{clicks\ per\ user}{sessions\ per\ user}.\end{equation}$$
 
@@ -28,7 +31,7 @@ Simple enough-- now our numerator and denominator have the same units, but now w
 
 To avoid this and to regain a flat p-value distribution, the guidance in the A/B testing community is to use the [delta method](https://alexdeng.github.io/public/files/kdd2018-dm.pdf). The delta method uses a Taylor expansion (more or less) to find an approximation to the variance which is "close enough" when the number of users $$N$$ becomes large. I'll spare you the formula, but it's in the paper linked.
 
-However, if you come from a stats background, you may be thinking that you should be able to just use Ordinary Least Squares (OLS) with [clustered standard errors](https://en.wikipedia.org/wiki/Clustered_standard_errors). For awhile, there was no official document linking these two techniques, the delta method from A/B testing and OLS with cluster robust standard errors. Until Deng et al., published a [proof](https://arxiv.org/abs/2105.14705) they are equivalent. But, interestingly the idea of clustered standard errors were well understood in economics and other fields, but had not been connected to the A/B testing literature until 2021.
+However, if you come from a stats background, you may be thinking that you should be able to just use Ordinary Least Squares (OLS) with [clustered standard errors](https://en.wikipedia.org/wiki/Clustered_standard_errors). For awhile, there was no official document linking these two techniques, the delta method from A/B testing and OLS with cluster robust standard errors (implemented via the sandwich estimator in the `statsmodels` package). Until Deng et al., published a [proof](https://arxiv.org/abs/2105.14705) they are equivalent. But, interestingly the idea of clustered standard errors were well understood in economics and other fields, but had not been connected to the A/B testing literature until 2021.
 
 With that said, it's one thing to understand the techniques individually and their connections at a high level and quite another thing to understand them in practice. I speak from experience because althought I _knew_ the theory behind the contents of this post, it took me much longer than I'd like to admit to write it down coherently with simulated examples. And, that is the point of this-- to present empirical evidence of the aforementioned claims.
 
@@ -492,7 +495,7 @@ def cuped_exp(user_click_means, user_assignment, treatment_effect, views=150000)
     
     df = pd.DataFrame({"resids" : Y_hat, "d": d.treatment.values})
     results = ols('resids ~ d', df).fit()
-    results.params['d'], results.pvalues['d']/2 # divide by 2 for single tai;
+    results.params['d'], results.pvalues['d']/2 # divide by 2 for single tail
     
     A = d.treatment == 0
         
@@ -656,10 +659,17 @@ pd.DataFrame(
 
 # Discussion
 
-So, now we have seen the myriad of ways that CUPED and OLS tie together with the delta method sprinkled in for good measure. The question remaining is why use the delta method at all, or the CUPED calculation, if OLS with cluster robust standard errors (i.e., the sandwich estimator) can do it for you. It's a good question, and the answer lies in performance. The full OLS calculation is more computationally expensive and cannot as easily be parallelized, and so scaling OLS to very large datasets could prove challenging. It's a similar reason as to why practitioners prefer to use the delta method instead of bootstrapping for a variance estimate. Both would yield a correct variance approximation, but one takes a much longer time to compute.
+## Why use Delta/CUPED at all?
+
+So, now we have seen the myriad of ways that CUPED and OLS tie together with the delta method sprinkled in for good measure. The question remaining is why use the delta method at all, or the CUPED calculation, if OLS with situationally using cluster robust standard errors can do it for you. It's a good question, and the answer lies in performance. The full OLS calculation is more computationally expensive and cannot as easily be parallelized, and so scaling OLS to very large datasets could prove challenging. It's a similar reason as to why practitioners prefer to use the delta method instead of bootstrapping for a variance estimate. Both would yield a correct variance approximation, but one takes a much longer time to compute.
 
 I have also specifically avoided the questions of the validity of possibly non-IID data. This topic is covered at length in this [paper](https://alexdeng.github.io/public/files/wsdm2017-rup.pdf) from Deng et al. and may be a topic for a later post.
 
+## Multiple Covariates
+
+In the CUPED paper, Deng et al. states "[t]he single control variate case can be easily generalized to include multiple variables." Although this may be true, I don't know if the solution is obvious if you are not currently well-versed in the mathematical background required-- specifically if you would like to have a formula for the variance. However, it is very straightforward to see that you can add as many covariates as you'd like to the OLS formula and still have your variance estimated for you. Otherwise, you'd have to find the least squared solution to your multiple covariate formula and likely use bootstrapping for the variance. Maybe this is worth exploring in a later post.
+
+
 # Acknowledgements
 
-I have to extend a thank you to many people who discussed and simulated this problem along side me to get to a coherent post: Kevin Foley who introduced me to this connection and championed OLS and the formula API from `statsmodels`, Tianwen Chen for discussing the various approaches and reviewing my simulations, and Chiara Capuano for helping me with reference hunting and giving feedback.
+I have to extend a thank you to many people who discussed and simulated this problem along side me to get to a coherent post: Kevin Foley who introduced me to this connection and championed OLS and the formula API from `statsmodels`, Tianwen Chen for discussing the various approaches and reviewing my simulations, and Chiara Capuano for helping me with reference hunting, giving feedback, and proofreading.
