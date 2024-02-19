@@ -5,3 +5,12 @@ table.dataframe {
     padding: 0.5rem;
   }
 }
+
+.wrapper-masthead {
+  @include desktop {
+    position: sticky;
+    top: 0;
+    z-index: $navigation;
+  }
+  background: $white;
+}
