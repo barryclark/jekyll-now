@@ -48,7 +48,7 @@ A neural network makes a binary classification decision in a similar way to how 
 The decision boundary is the visual representation of the threshold where the model will predict 0 or 1. To enable this visualization to be possible, we set up our neural network to have a layer with 2 hidden units before a layer of 1 hidden unit and a sigmoid activation function. Then, we plot the points in 2-D (corresponding to the 2-hidden unit layer) which map to .5 in the final output. 
 
 Let's write the equation. Define $$x,y\in\mathbb{R}$$ to be the first and second component of the output of the 2-hidden unit layer. Then, let $$a,b,c\in\mathbb{R}$$ be the weights and bias of the last hidden layer. Then, the set of points in the $$(x,y)$$-plane for the decision line is:
-    $$\{ (x,y)\ | \ \text{sigmoid}(ax+by+x)=.5   \}.$$
+    $$\{ (x,y)\ | \ \text{sigmoid}(ax+by+c)=.5   \}.$$
     
 The strategy for doing this is to choose points of $$x$$ and then calculate $$y$$ from the equation with $$x$$ fixed. By plotting this set, we can visualize the decision boundary, and therefore visualize the training process. Indeed, if the line is able to completely separate the input points into classes, then we have a perfect classifier.
 
