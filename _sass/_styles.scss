@@ -6,6 +6,24 @@ table.dataframe {
   }
 }
 
+
+div.highlighter-rouge {
+  font-size: .9rem;
+  &.language-python {
+    code {
+      border: 1px solid #ccc;
+      background-color: rgb(245,245,245);
+    }
+  }
+  &.language-plaintext {
+    code {
+      border: none;
+      padding-top: .15em;
+    }
+  }
+}
+
+
 .wrapper-masthead {
   @include desktop {
     position: sticky;
