@@ -10,7 +10,7 @@ published: true
 latex test
 $$
 \oint x^2\iint_{z}^{z^2}
-$4
+$$
 ### Popular Science
 - Behave: The Biology of Humans at Our Best and Worst, Robert Sapolsky
 
