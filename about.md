@@ -7,6 +7,9 @@ published: true
 [Add me on Goodreads](https://www.goodreads.com/user/show/139515600-cole-strickler)
 
 
+latex test
+\oint x^2\iint_{z}^{z^2}
+
 ### Popular Science
 - Behave: The Biology of Humans at Our Best and Worst, Robert Sapolsky
 
