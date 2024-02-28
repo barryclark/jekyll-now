@@ -5,11 +5,12 @@ permalink: /books/
 published: true
 ---
 [Add me on Goodreads](https://www.goodreads.com/user/show/139515600-cole-strickler)
-
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 latex test
+$$
 \oint x^2\iint_{z}^{z^2}
-
+$4
 ### Popular Science
 - Behave: The Biology of Humans at Our Best and Worst, Robert Sapolsky
 
