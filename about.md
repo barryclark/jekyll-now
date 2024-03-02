@@ -3,13 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
+I am amirsiahchal, I am interested in computer security and coding, and strongly a combination of both, with a bit of rap 😉. 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[send an email to me](mailto:Cyber.Ostad@gmail.com)
