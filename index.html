@@ -1,18 +1,42 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <script>
+      // Function to change the image source
+      function changeImage() {
+        var image = document.getElementById("pfp");
+        // Check current image source
+        if (image.src.match("img/jerry.jpg")) {
+          // Change to the new image
+          image.src = "img/jerryeats.gif";
+          image.alt = "Jerry eats a big cheese";
+        } else {
+          // Change back to the original image
+          image.src = "img/jerry.jpg";
+          image.alt = "Cheeky Jerry";
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css" />
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+    <title>hi, i'm suhail</title>
+  </head>
+  <body>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <div class="container">
+      <md-block src="home.md"> </md-block>
+    </div>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+    <footer>
+      <p>&copy; 2024 Suhail Jawahardeen ❤️ All rights reserved.</p>
+    </footer>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+  </body>
+</html>

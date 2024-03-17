@@ -1,0 +1,54 @@
+/* Reset and basic styling */
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: serif; /* Default font */
+}
+
+body {
+    cursor: url("img/32CheeseCursor.png"), default; /* Custom cursor */
+}
+
+/* Container styles */
+.container {
+    width: 0%; /* or max-width for a specific size */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+}
+
+/* Center text within sections */
+.text-center {
+    text-align: center;
+}
+
+/* Centered content */
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.centered img {
+    margin: 0 2px; /* Add space between images */
+}
+
+/* Fill remaining space */
+.empty-element {
+    flex-grow: 1;
+}
+
+/* Profile picture size */
+#pfp {
+    width: 25%;
+}
+ footer{
+    font-family: Public Sans;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
