@@ -1,42 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
-    <script>
-      // Function to change the image source
-      function changeImage() {
-        var image = document.getElementById("pfp");
-        // Check current image source
-        if (image.src.match("img/jerry.jpg")) {
-          // Change to the new image
-          image.src = "img/jerryeats.gif";
-          image.alt = "Jerry eats a big cheese";
-        } else {
-          // Change back to the original image
-          image.src = "img/jerry.jpg";
-          image.alt = "Cheeky Jerry";
-        }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  <script>
+    // Function to change the image source
+    function changeImage() {
+      var image = document.getElementById("pfp");
+      // Check current image source
+      if (image.src.match("img/jerry.jpg")) {
+        // Change to the new image
+        image.src = "img/jerryeats.gif";
+        image.alt = "Jerry eats a big cheese";
+      } else {
+        // Change back to the original image
+        image.src = "img/jerry.jpg";
+        image.alt = "Cheeky Jerry";
       }
-    </script>
-    <link rel="stylesheet" href="styles.css" />
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
 
-    <title>hi, i'm suhail</title>
-  </head>
-  <body>
+  <title>hi, i'm suhail</title>
+</head>
 
-    <div class="container">
-      <md-block src="home.md"> </md-block>
-    </div>
+<body>
+  <div class="container">
+    <img src="img/jerry.jpg" alt="Cheeky Jerry" id="pfp" onclick="changeImage()">
 
-    <footer>
-      <p>&copy; 2024 Suhail Jawahardeen ❤️ All rights reserved.</p>
-    </footer>
 
-  </body>
+    <md-block>
+      # Hi I'm Suhail
+
+      Full stack web developer currently working on *B2B SaaS @ Capital One.* Learning about computers,
+      products, and people.
+      Writing about it sometimes. <img src="img/undercon.gif" alt="Under Construction">
+      <img src="img/digging.gif" alt="Digging">
+    </md-block>
+  </div>
+  <hr>
+  <div class="container">
+    <a href="https://www.linkedin.com/in/suhailj/" target="_blank" rel="noopener noreferrer" class="test">LinkedIn</a>
+
+  </div>
+
+
+
+
+  <center><img src="img/workers.gif" alt="Workers"></img></center>
+
+  <div class="centered">
+    <img src="img/ie.gif" alt="Internet Explorer"></img>
+    <img src="img/css3.gif" alt="CSS3"></img>
+    <img src="img/got_html.gif" alt="Got HTML"></img>
+    <img src="img/geocities.gif" alt="Geocities"></img>
+    <img src="img/netscape.gif" alt="Netscape"></img>
+  </div>
+
+
+  <footer>
+    <p>&copy; 2024 Suhail Jawahardeen ❤️ All rights reserved.</p>
+  </footer>
+
+
+
+
+</body>
+
 </html>

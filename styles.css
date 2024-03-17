@@ -4,25 +4,23 @@ html, body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: serif; /* Default font */
+    font-family: serif;
 }
 
 body {
-    cursor: url("img/32CheeseCursor.png"), default; /* Custom cursor */
+    cursor: url("img/32CheeseCursor.png"), default;
 }
 
 /* Container styles */
 .container {
-    width: 0%; /* or max-width for a specific size */
-    margin: 0 auto; /* Center the container horizontally */
+    width: 50%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content horizontally */
 }
 
-/* Center text within sections */
-.text-center {
-    text-align: center;
+.container img {
+    width: min-content;
 }
 
 /* Centered content */
@@ -30,25 +28,54 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
-.centered img {
-    margin: 0 2px; /* Add space between images */
+    flex-wrap: wrap; /* Allows images to wrap to the next line if not enough space */
+
 }
 
-/* Fill remaining space */
-.empty-element {
-    flex-grow: 1;
+.centered img {
+    margin: 0 2px;
+}
+
+hr {
+    display: block;
+    margin: 0.5em auto;
+    border-style: inset;
+    border-width: 1px;
+    max-width: 50%;
 }
 
 /* Profile picture size */
 #pfp {
-    width: 25%;
+    width: 20%;
+    padding-top: 2rem;
 }
- footer{
+
+footer {
     font-family: Public Sans;
     font-size: small;
     display: flex;
     justify-content: center;
     align-items: center;
- }
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .centered img {
+        width: auto;
+        height: auto;
+        max-width: 20%;
+        margin: 4px;
+    }
+
+    #pfp {
+        width: 40%;
+    }
+
+    hr {
+        max-width: 90%;
+    }
+}
