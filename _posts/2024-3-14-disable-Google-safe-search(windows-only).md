@@ -3,9 +3,7 @@
  
 
 To start, you must first clone the script with the following command 
-```
-git clone https://github.com/amirsiahchal/google-safe-search-disabler
-```
+`git clone https://github.com/amirsiahchal/google-safe-search-disabler`
 ## then go to google-safe-search-disabler folder and run the script as Administrator  
 **And enjoy it**
  
