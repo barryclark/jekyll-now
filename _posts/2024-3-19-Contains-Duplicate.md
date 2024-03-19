@@ -12,7 +12,7 @@ title: Neetcode Challenge Day 1
 > > Input: nums = [1,2,3,1]
 > > Output: true
 
-[Contains Duplicate](https://leetcode.com/submissions/detail/1208353109/) was a pretty easy algorithm to take on as the first one.
+[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) was a pretty easy algorithm to take on as the first one.
 
 For this problem, the first thing that came to mind was brute forcing it. I quickly discarded this solution because of the time complexity O(n^2), I would have to iterate through the whole array n^2 of times with two nested for loops.
 
