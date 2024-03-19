@@ -14,12 +14,12 @@ title: Neetcode Challenge Day 1
 
 [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) was a pretty easy algorithm to take on as the first one.
 
-For this problem, the first thing that came to mind was brute forcing it. I quickly discarded this solution because of the time complexity O(n^2), I would have to iterate through the whole array n^2 of times with two nested for loops.
+For this problem, the first thing that came to mind was brute forcing it. I quickly discarded this solution because of the time complexity O(n^2), I would have to iterate through the whole array n^2 times using two nested for loops.
 
 ![brute force example]({{ site.baseurl }}/images/brute_alg1.png)
 
-Then, I thought of a faster way of doing things. I could iterate only once while checking at another list if that number had already appeared. So I created another array called _viewed_ that would entail all the numbers that appeared on the original nums array. So I basically was saying _is this number from the nums array on my \*\*\_viewed_\*\* array?_ if so, there's a duplicate and I would return True. If not, I would append that number to \_viewed_.
-This would have a complexity of O(n) because at most, I need to iterate through the list once. Also, there is a space complexity of O(n) because in the worst case, I will need to add all the n elements of _nums_ to _viewed_.
+Then, I thought of a faster way of doing things. I could iterate through nums once while checking at another list if that number had appeared before. So I created another array called _viewed_ that would have all the numbers that previously appeared on the original nums array. I was basically asking: "Is this number, from the nums array, on my _viewed_ array?" If so, that number has already appeard and there's a duplicate. Return True. If not, I would append that number to _viewed_.
+This has a time complexity of O(n) because at most, I need to iterate through the entire list once. Also, the space complexity is of O(n) because at worst, I need to append all the elements that _nums_ has to _viewed_.
 
 ![optimal example]({{ site.baseurl }}/images/optimal_alg1.png)
 
