@@ -5,20 +5,15 @@ title: Neetcode Challenge Day 1
 
 ## Contains Duplicate
 
-#### Arrays & Hashing
-
-> Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
->
-> > Input: nums = [1,2,3,1]
-> > Output: true
-
 [Contains Duplicate](https://leetcode.com/submissions/detail/1208353109/) was a pretty easy algorithm to take on as the first one.
+
+![problem description from leetcode]({{ site.baseurl }}/images/alg1/description.png)
 
 For this problem, the first thing that came to mind was brute forcing it. I quickly discarded this solution because of the time complexity O(n^2), I would have to iterate through the whole array n^2 of times with two nested for loops.
 
 ![brute force example]({{ site.baseurl }}/images/alg1/brute_alg1.png)
 
-Then, I thought of a faster way of doing things. I could iterate only once while checking at another list if that number had already appeared. So I created another array called _viewed_ that would entail all the numbers that appeared on the original nums array. So I basically was saying _is this number from the nums array on my **_viewed_** array?_ if so, there's a duplicate and I would return True. If not, I would append that number to _viewed_.
+Then, I thought of a faster way of doing things. I could iterate only once while checking at another list if that number had already appeared. So I created another array called _viewed_ that would entail all the numbers that appeared on the original nums array. So I basically was saying _is this number from the nums array on my _viewed_ array?_ if so, there's a duplicate and I would return True. If not, I would append that number to _viewed_.
 This would have a complexity of O(n) because at most, I need to iterate through the list once. Also, there is a space complexity of O(n) because in the worst case, I will need to add all the n elements of _nums_ to _viewed_.
 
 ![optimal example]({{ site.baseurl }}/images/alg1/optimal_alg1.png)

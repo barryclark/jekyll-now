@@ -2,14 +2,11 @@
 layout: post
 title: Neetcode Challenge Day 2
 ---
-
 ## Valid Anagram
-Arrays & Hashing
-
-![problem description from leetcode]({{ site.baseurl }}/images/alg2/description.png)
 
 [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) was a pretty simple problem.
 
+![problem description from leetcode]({{ site.baseurl }}/images/alg2/description.png)
 
 For this problem, the first thing that came to mind was the easiest solution of all. Sort the two strings and compare them. If they are equal, t is an anagram of s. Simple. This is obviously not the intended way of solving this.
 
