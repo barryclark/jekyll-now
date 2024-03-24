@@ -9,7 +9,7 @@ category: post
 
 _Hypothesis: It is possible, in at least in some straightforward cases, to populate a CNN-like structure with a state that is intelligible from an analysis point of view._
 
-## 1. Introduction ##
+## 1 Introduction ##
 
 Currently, the state-of-the-art (SOTA) approach for image classification is Convolutional Neural Networks (CNN) [[10]](#li2021survey). Unfortunately, the impressive performance of a CNN comes at a cost; its underlying model is essentially a black box [[11]](#liang2021explaining) (meaning that it is generally unintelligible to humans). This makes it challenging to evaluate CNN systems for correctness. It can also be quite difficult to reuse, debug, or update the models of CNN systems.
 
@@ -19,7 +19,7 @@ Naturally, the critical focus of _our_ solution will be on its transparency (a s
 
 Finally, it should be pointed out that this article often refers to the notion of a *feature* in images. In this context, a feature is _some_ sub-patterns within images. This can be a small _local pattern_, such as a corner, or something more complex and abstract, such as the pixels of high response when a software frequency filter is applied to the image data.
 
-## 2. Problem Description ##
+## 2 Problem Description ##
 <a name="sec_problem_definition"></a>
 
 In this work, it was decided to focus on image classification problems. While many different problem types are suitable, we chose the problem of discriminating between images of triangles and images of squares (with no real rationale other than that corner features seemed intuitive to focus on, and both squares and triangles have corners). It was decided to make the images "black and white" to avoid extra complexity around color. To add variety, the images were rotated about the center and scaled (with a variance of about 10 pixels) to have subtly different sizes (both choices were arbitrary). The images were $210 \times 210$ pixels (again, this number was arbitrarily selected).
@@ -32,7 +32,7 @@ In this work, it was decided to focus on image classification problems. While ma
 
 Several approaches exist to solving such a problem (using traditional computer vision techniques). One approach would be a "whole image" template matching with rotation invariance [[5]](#fredriksson2001rotation). Other strategies involve discovering _features_ within images such as edges [[15]](#ziou1998edge) or corners [[13]](#mehrotra1990corner) and using the feature count as a discriminator.
 
-## 3. Methodology ##
+## 3 Methodology ##
  
 <a name="fig_cnn"></a>
 ![_config.yml]({{ site.baseurl }}/images/Intelligible-1/CNN.jpg){: width="550"}\
@@ -104,8 +104,103 @@ In template matching, the template is equivalent to the convolutional filter. Ho
 
 The first part of the CNN is a set of convolutional filter layers that transform an image into a feature-based image descriptor. In the previous section [section 3.1.1](#subsubsec_convolution), we proposed replacing this set of convolutional filters with layers of template matching to have a more intelligible state in the network. The next part of the network uses the image descriptor to classify the image. A standard Artificial Neural Network (ANN) is the usual tool for achieving this. However, the fact that an ANN is a "black box" goes against the spirit of this work. Fortunately, there exists a set of more transparent machine-learning algorithms, including Bayesian Learning [[4]](#ch1997bayesian), Rule-base learning [[6]](#furnkranz2015brief) and Decision Trees [[8]](#kamiran2010discrimination). The downside of these approaches is that they are often too simplistic to encode complicated models. However, concerning the problem, it is felt that these approaches should serve the purpose.  
 
+### 3.2 Setting up the state ###
+<a name="subsec_state"></a>
 
-## Reference ##
+In the [section 3.1](#subsec_explainable), modifications to the traditional CNN were introduced to make the internal state more explainable. A disadvantage of the new formulation is that it is less straightforward to fit models to data (something we will address in future work). In the case of a CNN, this is typically achieved by stochastic gradient descent [[1]](#amari1993backpropagation).
+
+Concerning the problem of shape detection, it was felt that the state was intuitive enough to assemble a solution "by hand". The most notable _feature_ of the two shapes (square and triangle) is the notion of a corner. As per [section 3.1.1](#subsubsec_convolution), we have adjusted our formulation of a feature to be able to represent a corner explicitly - simply as an image of a corner. Scores can be calculated using cross-correlation. [Figure 8](#fig_tempMatch) shows an example of calculating a response image of a triangle, given a corner feature. In this example, we used the SSD cost function (instead of pure cross-correlation) and a color inversion to improve the response image's visual intuition further.  
+
+![_config.yml]({{ site.baseurl }}/images/Intelligible-1/tempMatch.png){: width="500"}\
+<span style="font-size: x-small">Figure 8: On the left, a corner feature is matched (in the red block) to the image of a triangle. On the right is a ``heat map'' containing match scores, with black indicating a low score and white indicating a good match.</span>
+<a name="fig_tempMatch"></a>
+
+Of course, as seen in [figure 8](#fig_tempMatch), the single-corner feature is only helpful in detecting one of the shape's corners. So, to account for the fact that a triangle has three corners, and the dataset consists of an entire array of orientations, the same corner was added to a _filter bank_ $360$ times, with each rotated to a different angle in the discrete $360^{\circ}$ range. A visualization of this can be seen in [figure 9](fig_features).
+
+![_config.yml]({{ site.baseurl }}/images/Intelligible-1/features.png){: width="500"}\
+<span style="font-size: x-small">Figure 9: A sampling of corner features at different orientations, used in the filter bank.</span>
+<a name="fig_features"></a>
+
+![_config.yml]({{ site.baseurl }}/images/Intelligible-1/Activation.png){: width="200"}\
+<span style="font-size: x-small">Figure 10: The final activation map from a feature bank of $360$ corner images containing the best responses. SSD scoring was used, and the values were inverted. The score $s$ was remapped to $s' = e^{- \alpha s}$ to emphasize the areas of high response. Here $\alpha$ is a scaling factor.</span>
+<a name="fig_activation"></a>
+
+Matching the $360$ corner features to a single image in the problem dataset produces $360$ response images. These responses can then be combined into a single image. This is achieved by setting each pixel to the best score for that pixel from the entire set of activation images. The result can be visualized, as shown in [figure 10](#fig_activation).
+
+![_config.yml]({{ site.baseurl }}/images/Intelligible-1/parts.png){: width="300"}\
+<span style="font-size: x-small">Figure 11: On the left is the final activation map, with an overlaid grid of $9$ cells. The best value is then selected, making a $9$ value descriptor of the image, visualized on the right as a $3 \times 3$ grid with the intensity of the best response coloring the corresponding cell.</span>
+<a name="fig_parts"></a>
+
+To compress this into an image descriptor, the next step was to divide the final activation map into a grid of $9$ cells. Each cell represents a variable and is populated with the value of the best response in that cell. The process is illustrated in [figure 11](#fig_parts).
+
+![_config.yml]({{ site.baseurl }}/images/Intelligible-1/descriptors.png){: width="500"}\
+<span style="font-size: x-small">Figure 12: The final activation map and corresponding image descriptor vector.</span>
+<a name="fig_descriptor"></a>
+
+Note that, as the problem being solved is relatively simple, only a single layer of filters is sufficient. However, "real-world" CNN systems that solve challenging problems typically consist of several layers of filters.
+
+As a final step, a rule-based is used to classify the image description. The rules for this were evolved using my genetic programmer, rule-based classifier [[7]](#wildboardevGeneratingSimple).
+
+## 4 Results ##
+
+### 4.1 Timing ###
+
+Given a $210 \times 210$ image with $360$ $10 \times 10$ features on a **i7** processor $3.00 \ GHz$, with $16.0 \ GB$ RAM. My implementation was a non-optimized C++ application that made use of OpenCV [[2]](#bradski2000opencv) library (version 4.20), which included the _cv::matchTemplate()_ function. Testing was done using the Ubuntu 22.04 operating system.
+
+Processing time per image was $0.48 \ ms$ with a standard deviation of $0.09 \ ms$.
+
+### 4.2 Rule-Base classifier ###
+<a name="subsec_rule_based_classifier"></a>
+
+![_config.yml]({{ site.baseurl }}/images/Intelligible-1/map.png){: width="150"}\
+<span style="font-size: x-small">Figure 13: A map showing the indices of the variables of the index descriptor.</span>
+<a name="fig_image_descriptor"></a>
+
+As mentioned at the bottom of [section 3.2](subsec_state), a rule-based classifier was generated using Genetic Programming (GP). The classifier was trained to take an image descriptor as an input and produce a class ("triangle" [true] or "not triangle" [false]) as an output. 
+
+The above image, [figure 13](#fig_image_descriptor), indicates the numbering(indexes) variables in the image descriptor. As a convention, the index $i$ will be represented as ⓘ in our rule formation.  
+
+After training with $200$ training image descriptors (half in each class), the resultant rule model learned was as follows: 
+
+$$
+class = ⑤ > 50  \ \ \ \ [3]
+$$
+
+<a name="eqn_rule_1"></a>
+
+The above rule model essentially learned that if the middle value ⑤ contained a matching value of above $50$, then the class was "true" (triangle); otherwise, it was "false" (square). This rule exploited the fact that the centered squares were usually large enough to have no feature in the middle (hence the low match score), while all the triangles typically had at least one edge in the middle, resulting in a higher match score. This can be visually verified in [figure 13](#fig_image_descriptor).
+
+While this rule has utility, another test was performed to see if the algorithm could "learn" a rule considering the corner features. Attribute ⑤ was removed from contention, and the algorithm was rerun. The resultant rule is as follows:
+
+$$
+class = ① > 200 \lor ② > 200 \lor ③ > 200  \ \ \ \ [4]
+$$
+
+<a name="eqn_rule_2"></a>
+
+In this context, if one of the attributes ①, ② or ③ had a high response (above $200$), then the class was "true" (triangle); otherwise, it was "false" (square). The "explanation" of this rule starts with the fact that triangle corners give a higher response than square corners (triangle ones are above $200$ while square corners are below). Given the triangle shape, it is noted that _every_ configuration should have at least one corner on the top row. 
+
+So, in summary, two rules were generated by the GP training. Both rules were "transparent" models with clear explanations that are verifiable in the context of the problem.
+
+### 4.3 Accuracy ###
+
+Several accuracy tests were conducted with [equation 3](#eqn_rule_1) and [equation 4](#eqn_rule_2) with $5$ iterations of sets of $200$ "unseen" images. The final result was $100\%$ accuracy. This is not a surprising result, given the simplicity of the problem. 
+
+## 5 Conclusions ##
+
+This work has focused on the internal state of Convolutional Neural Networks (CNN), which are notoriously unintelligible. The goal of this work was a first attempt to generate a CNN-like system with an intelligible internal state. 
+
+To achieve this, some modifications to the typical structure of a CNN were made. These were swapping out the convolutional filters, replacing template matching ``filters'', and replacing the Neural Network with a GP-learned rule-based model. The internal state, with regards to the filters, was manually set. 
+
+A classification problem chosen for the CNN approach (the classification triangle and square images) was deliberately chosen to be simple to facilitate the focus on an intelligible state.
+
+The result of this work was successful. It is possible to formulate, given a simple enough problem, to create a CNN-like classifier with an internal state that could give technical users a clear insight into how the classifier operates. This was in the filtering phase and the subsequent classification phase.
+
+## 6 Future Work ##
+
+This work is the first step in developing a system as effective as a CNN but with a more intelligible internal state. However, this solution does not scale to more challenging problems with complicated, noisy features. The next step of our journey is to investigate ideas around finding and matching complex features using an intelligible approach. 
+
+## 7 Reference ##
 
 <a name="amari1993backpropagation"></a> [1] Amari, Shun-ichi. 1993. "Backpropagation and Stochastic Gradient Descent Method." *Neurocomputing* 5 (4-5): 185--96.
 
