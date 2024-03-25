@@ -15,14 +15,16 @@ Currently, the state-of-the-art (SOTA) approach for image classification is Conv
 
 This article is the first in a series of investigations to discover the qualities that make CNN systems such an effective tool for classification. If some (or all)  of the CNN "secret sauce" is found, the next challenge could be to transfer this into a significantly more intelligible system. Our approach (across multiple articles) will involve implementing increasingly complicated CNN explanatory models that can then be compared to the performance of actual CNN systems to determine their validity. If high performance can be achieved using an explanatory model, this will go a long way towards achieving the goal of a high-quality intelligible state machine learning system.
 
-Naturally, the critical focus of _our_ solution will be on its transparency (a solution with intelligible internal states), with the idea that this will be useful for formulating clear explanations as to why the proposed ideas are working or failing.
+Naturally, the core focus of _our_ solution will be on its transparency (a solution with intelligible internal states), with the idea that this will be useful for formulating clear explanations as to why the proposed ideas are working or failing.
 
 Finally, it should be pointed out that this article often refers to the notion of a *feature* in images. In this context, a feature is _some_ sub-pattern within images. This can be a small _local pattern_, such as a corner, or something more complex and abstract, such as the pixels of high response when a software frequency filter is applied to the image data.
 
 ## 2 Problem Description ##
 <a name="sec_problem_definition"></a>
 
-As the focus of this article is on image classification CNN systems, it was necessary to choose a suitable problem. A key attribute of this problem would be its simplicity, as the goal of the work is analysis and complexity hampers analysis. While there are many options, the problem of discriminating between images of triangles and images of squares was chosen (with the main rationale being that corner features seemed intuitive to focus on, and both squares and triangles have corners). It was decided to make the images "black and white" to avoid extra complexity around color. To add variety, the images were rotated about the center and scaled (with a variance of about 10 pixels) to have subtly different sizes (both choices were arbitrary). The images were $210 \times 210$ pixels (again, this number was arbitrarily selected).
+As the focus of this article is on image classification CNN systems, it was necessary to choose a suitable problem. A key attribute of this problem was its simplicity, as the goal of this work is analysis and complexity hampers analysis. 
+
+While there are many viable options, the problem of discriminating between images of triangles and images of squares was the one that was selected for this work (with the main rationale being that corner features seemed intuitive to focus on, and both squares and triangles have corners). It was decided to make the images "black and white" to avoid extra complexity around color. To add variety, the images were rotated about the center and scaled (with a variance of about 10 pixels) to have subtly different sizes (both choices were arbitrary). The images were $210 \times 210$ pixels (again, this number was arbitrarily selected).
 
 ![_config.yml]({{ site.baseurl }}/images/Intelligible-1/triangle.jpg){: width="550"}\
 <span style="font-size: x-small">Figure 1: A selection of the various triangle images within the database.</span>
@@ -57,7 +59,7 @@ This section covers modifications we made to the typical CNN structure to make t
 
 #### 3.1.1 Convolution Filtering ####
 
-[Figure 3](#fig_cnn) shows that the first layers of the classifier are banks of convolution filters [[14]](#stein2011fourier). What is convolution? It is a mathematical operation. The operation "applies" a filter $F$ to a signal $S$, and has the effect of boosting some frequency signals and dampening others. The filter $F$ is called a __filter__ because its traditional context is _signal processing_, where it is used to "filter out" some of the frequency range, for example, __high-pass filters__ and __low-pass filters__. Convolution also has become popular in __image processing__ [[9]](#kim2013applications), where the image $I$ data is viewed as a 2D signal, in which a spatial dimension has been substituted as the time dimension. Since images $I$ are discrete entities (indexed by discrete pixels), the formulation for convolution in image processing is typically converted to a discrete form, such as
+[Figure 3](#fig_cnn) shows that the first layers of the classifier are banks of convolution filters [[14]](#stein2011fourier). What is convolution? It is a mathematical operation. The operation "applies" a filter $F$ to a signal $S$, and has the effect of boosting some frequency signals and dampening others. The filter $F$ is called a __filter__ because its traditional context is _signal processing_, where it is used to "filter out" some of the frequency range, for example, __high-pass filters__ and __low-pass filters__. Convolution also has become popular in __image processing__ [[9]](#kim2013applications), where the image $I$ data is viewed as a 2D signal, in which spatial dimensions have been substituted for time dimensions. Since images $I$ are discrete entities (indexed by discrete pixels), the formulation for convolution in image processing is typically converted to a discrete form, such as
 
 $$
    [F * I](u,v) = \sum_{i=-k}^k \sum_{j=-k}^k F(i,j)I(u-i,v-j) \ \ \ \ [1]
@@ -77,7 +79,9 @@ In image processing, the $F$ resembles a small "image" (a single channel 2D arra
 <span style="font-size: x-small">Figure 5: An example of the x-direction Sobel filter response after convolution. The image on the left is the original, the center shows the filter, and the right shows the response.</span>
 <a name="fig_sobel"></a>
 
-The main problem with convolution filters is that the filter's effect is not always immediately apparent from the filter $F$ itself (see [figure 6](#fig_sinc)). Naturally, there are ways of establishing the impact, such as applying the filter $F$ to the image $I$ to see what "it does". Or one could determine the response in the _frequency domain_ by calculating the Fourier Transform [[12]](#lu1989algorithms). However, it would be great to achieve this by observing the filter $F$, which is usually unnatural unless the observer has seen enough filters to start using their experience to predict outcomes.
+The main problem with convolution filters is that the filter's effect is not always immediately apparent from the filter $F$ itself (see [figure 6](#fig_sinc)). Naturally, there are ways of establishing the impact, such as applying the filter $F$ to the image $I$ to see what "it does". Or one could determine the response in the _frequency domain_ by calculating the Fourier Transform [[12]](#lu1989algorithms). 
+
+However, it would be great to achieve this by observing the filter $F$, which is often unclear unless the observer has seen enough filters to start using their experience to predict outcomes.
 
 ![_config.yml]({{ site.baseurl }}/images/Intelligible-1/sinc.png){: width="500"}\
 <span style="font-size: x-small">Figure 6: The sinc function ($sinc(x) = sin(x) / x$), in the context of convolution, this filter is called the "box filter". In the figure, the sinc function is plotted at the top, and its response in the frequency domain is plotted at the bottom. When applied to a convolution signal, the frequencies are only retained in a particular range. However, this is typically not immediately obvious to the novice observer when looking at the function.</span>
@@ -102,11 +106,13 @@ Cross-correlation is also used in image processing. However, it is used in templ
 ![_config.yml]({{ site.baseurl }}/images/Intelligible-1/template_matching.png){: width="500"}\
 <span style="font-size: x-small">Figure 7: An illustration of template matching. Here, the "template" is an image of a diamond. Each pixel within the image is systematically checked to see how well the template "fits" in that location. Areas of good fit are recorded as matches.</span>
 
-In template matching, the template is equivalent to the convolutional filter. However, this article proposes templates because they are more intuitive since they "look" like the feature to match. Of course, cross-correlation is one _scoring_ scheme commonly used to compare templates; others are the Sum of Square Differences (SSD) and the Sum of Absolute Differences (SAD).  
+In template matching, the template has a similar form to the convolutional filter. However, here they are preferred since they "look" like the feature they match. Note that cross-correlation can be considered to be one type of cost function used for template matching; others are the Sum of Square Differences (SSD) and the Sum of Absolute Differences (SAD).  
 
 #### 3.1.2 Classification Logic ####
 
-The first part of the CNN is a set of convolutional filter layers that transform an image into a feature-based image descriptor. In the previous section [section 3.1.1](#subsubsec_convolution), we proposed replacing this set of convolutional filters with layers of template matching. The next part of the network uses the extracted image descriptor to classify the image. A standard Artificial Neural Network (ANN) is the usual tool for achieving this. However, the fact that an ANN is a "black box" goes against the spirit of this work. Fortunately, there exists a set of more transparent machine-learning algorithms, including Bayesian Learning [[4]](#ch1997bayesian), Rule-base learning [[6]](#furnkranz2015brief) and Decision Trees [[8]](#kamiran2010discrimination). The downside of these approaches is that they are often too simplistic to encode complicated models. However, for the problem at hand, it is felt that at least one of these approaches should be able to serve the purpose.  
+As previously noted, the first part of the CNN is a set of convolutional filter layers that transform an image into a feature-based image descriptor. In the previous section [section 3.1.1](#subsubsec_convolution), we proposed replacing this set of convolutional filters with layers of template matching. 
+
+The next part of the network uses the extracted image descriptor to classify the image. A standard Artificial Neural Network (ANN) is the usual tool for achieving this. However, the fact that an ANN is a "black box" goes against the spirit of this work. Fortunately, there exists a set of more transparent machine-learning algorithms, including Bayesian Learning [[4]](#ch1997bayesian), Rule-base learning [[6]](#furnkranz2015brief) and Decision Trees [[8]](#kamiran2010discrimination). The downside of these approaches is that they are often too simplistic to encode complicated models. However, for the problem at hand, it is felt that at least one of these approaches should be able to serve the purpose.  
 
 <a name="subsec_state"></a>
 
@@ -114,7 +120,7 @@ The first part of the CNN is a set of convolutional filter layers that transform
 
 In [section 3.1](#subsec_explainable), modifications to the traditional CNN were introduced to make the internal state more explainable. A disadvantage of the new formulation is that it is less straightforward to fit models to data (something we will address in future work). In the case of a CNN, this is typically achieved by stochastic gradient descent [[1]](#amari1993backpropagation).
 
-Concerning the problem of shape detection, it was felt that the state was intuitive enough to assemble a solution "by hand". The most notable _feature_ of the two shapes (square and triangle) is the notion of a corner. As per [section 3.1.1](#subsubsec_convolution), we have adjusted our formulation of a feature to be able to represent a corner explicitly - simply as an image of a corner. Scores can be calculated using cross-correlation. [Figure 8](#fig_tempMatch) shows an example of calculating a response image of a triangle, given a corner feature. In this example, we used the SSD cost function (instead of pure cross-correlation) and a color inversion to improve the response image's visual intuition further.  
+Concerning the problem of shape detection, it was felt that the state was intuitive enough to assemble a solution "by hand". The most notable _feature_ of the two shapes (square and triangle) is the notion of a corner. As per [section 3.1.1](#subsubsec_convolution), we have adjusted our formulation of a feature to be able to represent a corner explicitly - simply as an image of a corner. Scores can be calculated using cross-correlation. [Figure 8](#fig_tempMatch) shows an example of calculating a response image of a triangle, given a corner feature. In this example, we used the SSD cost function (instead of pure cross-correlation) and a color inversion (swap light and dark colors) to improve the response image's visual intuition further.  
 
 <a name="fig_tempMatch"></a>
 
@@ -147,9 +153,9 @@ To compress this into an image descriptor, the next step was to divide the final
 ![_config.yml]({{ site.baseurl }}/images/Intelligible-1/descriptors.png){: width="500"}\
 <span style="font-size: x-small">Figure 12: The final activation map and corresponding image descriptor vector.</span>
 
-Note that, as the problem being solved is relatively simple, only a single layer of filters is sufficient. However, "real-world" CNN systems that solve challenging problems typically consist of several layers of filters.
+Note that, as the problem being solved is relatively simple, only a single layer of filters is sufficient. However, "real-world" CNN systems that solve challenging problems typically contain several layers of filters.
 
-As a final step, a rule-based is used to classify the image description. The rules for this were evolved using my genetic programmer, rule-based classifier [[7]](#wildboardevGeneratingSimple).
+As a final step, a rule-based is used to classify the image description. The rules for this were evolved using my Genetic Programming(GP), rule-based classifier [[7]](#wildboardevGeneratingSimple).
 
 ## 4 Results ##
 
@@ -162,33 +168,34 @@ Processing time per image was $0.48 \ ms$ with a standard deviation of $0.09 \ m
 ### 4.2 Rule-Base classifier ###
 <a name="subsec_rule_based_classifier"></a>
 
+<a name="fig_image_descriptor"></a>
+
 ![_config.yml]({{ site.baseurl }}/images/Intelligible-1/map.png){: width="150"}\
 <span style="font-size: x-small">Figure 13: A map showing the indices of the variables of the index descriptor.</span>
-<a name="fig_image_descriptor"></a>
 
 As mentioned at the bottom of [section 3.2](subsec_state), a rule-based classifier was generated using Genetic Programming (GP). The classifier was trained to take an image descriptor as an input and produce a class ("triangle" [true] or "not triangle" [false]) as an output. 
 
-The above image, [figure 13](#fig_image_descriptor), indicates the numbering(indexes) variables in the image descriptor. As a convention, the index $i$ will be represented as ⓘ in our rule formation.  
+The above image, [figure 13](#fig_image_descriptor), indicates the numbering(indexes) variables in the image descriptor. As a convention, the index $i$ will be represented as ⓘ in our rule notion.  
 
 After training with $200$ training image descriptors (half in each class), the resultant rule model learned was as follows: 
+
+<a name="eqn_rule_1"></a>
 
 $$
 class = ⑤ > 50  \ \ \ \ [3]
 $$
 
-<a name="eqn_rule_1"></a>
-
 The above rule model essentially learned that if the middle value ⑤ contained a matching value of above $50$, then the class was "true" (triangle); otherwise, it was "false" (square). 
 
-This rule exploited the fact that the centered images of squares were usually large enough to have no feature in the middle (hence the low match score in the middel), while all the triangles typically had at least one edge in the middle, resulting in a higher match score. This can be visually verified in [figure 13](#fig_image_descriptor).
+This rule exploited the fact that the center cell of images with squares was usually empty enough to have no feature in the middle (hence the low match score in the middle), while all the triangles typically had at least one edge overlapping the center cell, resulting in a higher match score. This can be visually verified in [figure 12](#fig_descriptor).
 
 While this rule has utility, there was interest in whether the classifier could learn a rule that exploited the corner features more directly. Therefore another test was performed to see if the algorithm could "learn" a rule considering the corner features. Attribute ⑤ was removed from contention, and the algorithm was rerun. The resultant rule is as follows:
+
+<a name="eqn_rule_2"></a>
 
 $$
 class = ① > 200 \lor ② > 200 \lor ③ > 200  \ \ \ \ [4]
 $$
-
-<a name="eqn_rule_2"></a>
 
 In this context, if one of the attributes ①, ② or ③ had a high response (above $200$), then the class was "true" (triangle); otherwise, it was "false" (square). The "explanation" of this rule starts with the fact that triangle corners give a higher response than square corners (triangle ones are above $200$ while square corners are below). Given the triangle shape, it is noted that _every_ configuration should have at least one corner on the top row. 
 
@@ -204,7 +211,7 @@ This work has focused on the internal state of Convolutional Neural Networks (CN
 
 To achieve this, some modifications to the typical structure of a CNN were made. These were swapping out the convolutional filters, replacing them with template-matching "filters", and replacing the Neural Network with a GP-learned rule-based model. The internal state, with regards to the filters, was manually set. 
 
-A classification problem was chosen for the proposed approach that was deliberately simple to facilitate the focus on an intelligible state.
+A classification problem was chosen for testing that was deliberately simple to facilitate the focus on an intelligible state.
 
 The result of this work demonstrates that it is possible to formulate, given a simple enough problem, a CNN-like classifier with an internal state that could give technical users a clear insight into how the classifier operates. This intelligibility was maintained in both the filtering phase and the subsequent classification phase.
 
