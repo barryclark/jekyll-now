@@ -19,8 +19,9 @@ Naturally, the core focus of _our_ solution will be on its transparency (a solut
 
 Finally, it should be pointed out that this article often refers to the notion of a *feature* in images. In this context, a feature is _some_ sub-pattern within images. This can be a small _local pattern_, such as a corner, or something more complex and abstract, such as the pixels of high response when a software frequency filter is applied to the image data.
 
-## 2 Problem Description ##
 <a name="sec_problem_definition"></a>
+
+## 2 Problem Description ##
 
 As the focus of this article is on image classification CNN systems, it was necessary to choose a suitable problem. A key attribute of this problem was its simplicity, as the goal of this work is analysis and complexity hampers analysis. 
 
@@ -49,7 +50,7 @@ Our implementation aims to attempt to maintain the structure of the CNN depicted
 
 This section has been split into two subsections: [Section 3.1](#subsec:explainable) outlines the steps that we have made to make our model intelligible. [Section 3.2](#subsec_state) then outlines how the state was configured to perform classification.
 
-<a name="subsec:explainable"></a>
+<a name="subsec_explainable"></a>
 
 ### 3.1 Make it Explainable ### 
 
@@ -61,31 +62,34 @@ This section covers modifications we made to the typical CNN structure to make t
 
 [Figure 3](#fig_cnn) shows that the first layers of the classifier are banks of convolution filters [[14]](#stein2011fourier). What is convolution? It is a mathematical operation. The operation "applies" a filter $F$ to a signal $S$, and has the effect of boosting some frequency signals and dampening others. The filter $F$ is called a __filter__ because its traditional context is _signal processing_, where it is used to "filter out" some of the frequency range, for example, __high-pass filters__ and __low-pass filters__. Convolution also has become popular in __image processing__ [[9]](#kim2013applications), where the image $I$ data is viewed as a 2D signal, in which spatial dimensions have been substituted for time dimensions. Since images $I$ are discrete entities (indexed by discrete pixels), the formulation for convolution in image processing is typically converted to a discrete form, such as
 
+<a name="eqn_convolution"></a>
+
 $$
    [F * I](u,v) = \sum_{i=-k}^k \sum_{j=-k}^k F(i,j)I(u-i,v-j) \ \ \ \ [1]
 $$
-
-<a name="eqn_convolution"></a>
 
 The symbol for the convolution operation is $*$. [Equation 1](#eqn_convolution) specifies that given the convolution $F * I$ between filter $F$ and image $I$, the response at pixel $[u,v]^{\top}$ is the sum of the weights in filter $F$ at location $[i,j]^{\top}$ multiplied by corresponding pixels $[u-i, v-j]^{\top}$ in the image $I$ in the range of $[-k,k]$ for both $i$ and $j$. 
 
 In image processing, the $F$ resembles a small "image" (a single channel 2D array of weights), and the chosen weights determine the filter's filtering effect on the image $I$. For example, one such filter $F$ is called the Sobel filter $F_s$ (see [figure 4](#tab_sobel)).
 
+<a name="tab_sobel"></a>
+
 ![_config.yml]({{ site.baseurl }}/images/Intelligible-1/sobel.png){: width="150"}\
 <span style="font-size: x-small">Figure 4: A Sobel filter for detecting high-frequency changes in the x-direction within an image. It is formulated as a 2D array of weights.</span>
-<a name="tab_sobel"></a>
+
+<a name="fig_sobel"></a>
 
 ![_config.yml]({{ site.baseurl }}/images/Intelligible-1/sobel_gx.png){: width="500"}\
 <span style="font-size: x-small">Figure 5: An example of the x-direction Sobel filter response after convolution. The image on the left is the original, the center shows the filter, and the right shows the response.</span>
-<a name="fig_sobel"></a>
 
 The main problem with convolution filters is that the filter's effect is not always immediately apparent from the filter $F$ itself (see [figure 6](#fig_sinc)). Naturally, there are ways of establishing the impact, such as applying the filter $F$ to the image $I$ to see what "it does". Or one could determine the response in the _frequency domain_ by calculating the Fourier Transform [[12]](#lu1989algorithms). 
 
 However, it would be great to achieve this by observing the filter $F$, which is often unclear unless the observer has seen enough filters to start using their experience to predict outcomes.
 
-![_config.yml]({{ site.baseurl }}/images/Intelligible-1/sinc.png){: width="500"}\
-<span style="font-size: x-small">Figure 6: The sinc function ($sinc(x) = sin(x) / x$), in the context of convolution, this filter is called the "box filter". In the figure, the sinc function is plotted at the top, and its response in the frequency domain is plotted at the bottom. When applied to a convolution signal, the frequencies are only retained in a particular range. However, this is typically not immediately obvious to the novice observer when looking at the function.</span>
 <a name="fig_sinc"></a>
+
+![_config.yml]({{ site.baseurl }}/images/Intelligible-1/sinc.png){: width="500"}\
+<span style="font-size: x-small">Figure 6: The sinc function ($sinc(x) = sin(x) / x$). In the context of convolution, this filter is called the "box filter". In the figure, the sinc function is plotted at the top, and its response in the frequency domain is plotted at the bottom. When applied to a convolution signal, the frequencies are only retained in a particular range. However, this is typically not immediately obvious to the novice observer when looking at the function.</span>
 
 The solution proposed in this article is to try and find an alternative approach to filtering that achieves the same goal. The convolutional filters' operation in a CNN is postulated to be feature extraction (features are defined in [section 2](#sec_problem_definition)). Therefore, we are looking for an alternative "filtering" approach that extracts features from images but operates in the image domain rather than the frequency domain (convolution filters are obscure because they operate in a "different" domain).
 
@@ -127,7 +131,7 @@ Concerning the problem of shape detection, it was felt that the state was intuit
 ![_config.yml]({{ site.baseurl }}/images/Intelligible-1/tempMatch.png){: width="500"}\
 <span style="font-size: x-small">Figure 8: On the left, a corner feature is matched (in the red block) to the image of a triangle. On the right is a "heat map" containing match scores, with black indicating a low score and white indicating a good match.</span>
 
-Of course, as seen in [figure 8](#fig_tempMatch), the single-corner feature is only helpful in detecting one of the shape's corners. So, to account for the fact that a triangle has three corners, and the dataset consists of an entire array of orientations, the same corner was added to a _filter bank_ $360$ times, with each rotated to a different angle in the discrete $360^{\circ}$ range. A visualization of this can be seen in [figure 9](fig_features).
+Of course, as seen in [figure 8](#fig_tempMatch), the single-corner feature is only helpful in detecting one of the shape's corners. So, to account for the fact that a triangle has three corners, and the dataset consists of an entire array of orientations, the same corner was added to a _filter bank_ $360$ times, with each rotated to a different angle in the discrete $360^{\circ}$ range. A visualization of this can be seen in [figure 9](#fig_features).
 
 <a name="fig_features"></a>
 
@@ -144,14 +148,14 @@ Matching the $360$ corner features to a single image in the problem dataset prod
 <a name="fig_parts"></a>
 
 ![_config.yml]({{ site.baseurl }}/images/Intelligible-1/parts.png){: width="300"}\
-<span style="font-size: x-small">Figure 11: On the left is the final activation map, with an overlaid grid of $9$ cells. The best value is then selected, making a $9$ value descriptor of the image, visualized on the right as a $3 \times 3$ grid with the intensity of the best response coloring the corresponding cell.</span>
+<span style="font-size: x-small">Figure 11: On the left is the final activation map, with an overlaid grid of $9$ cells. The best value is then selected from each cell, making a $9$ value descriptor of the image, visualized on the right as a $3 \times 3$ grid with the intensity of the best response coloring the corresponding cell.</span>
 
 To compress this into an image descriptor, the next step was to divide the final activation map into a grid of $9$ cells. Each cell represents a variable and is populated with the value of the best response in that cell. The process is illustrated in [figure 11](#fig_parts).
 
 <a name="fig_descriptor"></a>
 
 ![_config.yml]({{ site.baseurl }}/images/Intelligible-1/descriptors.png){: width="500"}\
-<span style="font-size: x-small">Figure 12: The final activation map and corresponding image descriptor vector.</span>
+<span style="font-size: x-small">Figure 12: The final activation map and corresponding image descriptor vector for two triangle images and two square images.</span>
 
 Note that, as the problem being solved is relatively simple, only a single layer of filters is sufficient. However, "real-world" CNN systems that solve challenging problems typically contain several layers of filters.
 
@@ -171,9 +175,9 @@ Processing time per image was $0.48 \ ms$ with a standard deviation of $0.09 \ m
 <a name="fig_image_descriptor"></a>
 
 ![_config.yml]({{ site.baseurl }}/images/Intelligible-1/map.png){: width="150"}\
-<span style="font-size: x-small">Figure 13: A map showing the indices of the variables of the index descriptor.</span>
+<span style="font-size: x-small">Figure 13: A map showing the indices of the attributes making up the index descriptor.</span>
 
-As mentioned at the bottom of [section 3.2](subsec_state), a rule-based classifier was generated using Genetic Programming (GP). The classifier was trained to take an image descriptor as an input and produce a class ("triangle" [true] or "not triangle" [false]) as an output. 
+As mentioned at the bottom of [section 3.2](#subsec_state), a rule-based classifier was generated using Genetic Programming (GP). The classifier was trained to take an image descriptor as an input and produce a class ("triangle" [true] or "not triangle" [false]) as an output. 
 
 The above image, [figure 13](#fig_image_descriptor), indicates the numbering(indexes) variables in the image descriptor. As a convention, the index $i$ will be represented as ⓘ in our rule notion.  
 
