@@ -153,11 +153,10 @@
       <section class="text-center max-w-2xl px-4 pt-10">
         <h2 class="text-2xl font-bold mb-2">About Me</h2>
         <p class="text-gray-700">
-          I work in Security Operations as an Information Security Analyst at TaxSlayer. I handle alert triage through 
-          remediation across CrowdStrike, Microsoft Defender, Netskope, and FortiDLP, including incident scoping, containment,
-          and evidence-driven resolution. Alongside SecOps work, I own Jamf Pro and Intune operations, focusing on endpoint compliance, 
-          patching workflows, and security control rollouts. My current interests include automation, cloud security posture management 
-          in Azure, and improving detection-to-remediation efficiency.
+          I'm a Security Analyst at TaxSlayer specializing in vulnerability and exposure management, security automation,
+          and endpoint security. I'm currently building production SOAR workflows in Tines that integrate CrowdStrike,
+          Axonius, Intune, and Jira via REST APIs to automate remediation, asset hygiene, and GLBA/IRS audit evidence
+          collection.
         </p>
       </section>
 
@@ -178,8 +177,18 @@
               </li>
               <li class="flex items-center space-x-4">
                 <span class="text-2xl">•</span>
-                <img class="w-14 h-14 hover-spin clicky" src="/images/200Jamf.png" alt="Jamf 200">
-                <span class="text-lg font-medium">Jamf 200</span>
+                <img class="w-14 h-14 hover-spin clicky" src="/images/200Jamf.png" alt="Jamf Certified Tech">
+                <span class="text-lg font-medium">Jamf Certified Tech</span>
+              </li>
+              <li class="flex items-center space-x-4">
+                <span class="text-2xl">•</span>
+                <img class="w-14 h-14 hover-spin clicky" src="/images/tines.png" alt="Tines Advanced">
+                <span class="text-lg font-medium">Tines Advanced</span>
+              </li>
+              <li class="flex items-center space-x-4">
+                <span class="text-2xl">•</span>
+                <img class="w-14 h-14 hover-spin clicky" src="/images/tines.png" alt="Tines Core">
+                <span class="text-lg font-medium">Tines Core</span>
               </li>
             </ul>
           </div>
@@ -213,16 +222,28 @@
             <div>
               <h3 class="flex items-center text-lg font-semibold space-x-2">
                 <img class="w-6 h-6 clicky" src="/images/taxslayer.png" alt="TaxSlayer Logo">
+                <span>Security Analyst I &ndash; Exposure &amp; Asset Intelligence at TaxSlayer LLC</span>
+              </h3>
+              <p class="text-sm text-gray-500 mb-3">May 2026 &ndash; Present &middot; Augusta, Georgia</p>
+              <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Developing workflows to automate GLBA and IRS audit evidence collection by correlating vulnerability history, asset details, SLAs, remediation status, and Jira ticket history.</li>
+                <li>Built custom detection logic in Tines correlating CrowdStrike and Axonius data to flag applications outside the approved software list, closing shadow-IT and software compliance gaps.</li>
+                <li>Designed and implemented vulnerability management automation in Tines integrating CrowdStrike Spotlight, Jira, Axonius, Intune, and other asset sources through REST API workflows.</li>
+                <li>Developed SOAR workflows in Tines utilizing CrowdStrike, Axonius, and Intune to identify unmanaged, orphaned, and stale workstations and servers for remediation prioritization based on asset criticality.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="flex items-center text-lg font-semibold space-x-2">
+                <img class="w-6 h-6 clicky" src="/images/taxslayer.png" alt="TaxSlayer Logo">
                 <span>Information Security Analyst at TaxSlayer LLC</span>
               </h3>
-              <p class="text-sm text-gray-500 mb-3">September 2025 &ndash; Present &middot; Augusta, Georgia</p>
+              <p class="text-sm text-gray-500 mb-3">September 2025 &ndash; May 2026 &middot; Augusta, Georgia</p>
               <ul class="list-disc list-inside space-y-2 text-gray-700">
-                <li>Take ownership of alerts, scope impact, quarantine devices, document evidence, and close remediation across CrowdStrike, Microsoft Defender, Netskope, FortiDLP, and Abnormal Security.</li>
-                <li>Partner with engineering to roll out Seraphic and Netskope through Jamf and Intune. Created browser controls that block risky extensions, downloads, file URLs, and malicious JavaScript.</li>
-                <li>Collaborate with IT when incidents involve identity, conditional access, or app permissions and work with the CISO to update policies when changes are needed.</li>
-                <li>Review roles and groups on a schedule. Remove stale access and close over-privileged accounts to reduce attack vectors using Axonius connectors and CrowdStrike Identity for detection.</li>
-                <li>Review CSPM alerts for Azure resources such as NSGs, Kubernetes clusters, VMs, and VM scale sets; partnered with DevOps to remediate misconfigurations after verification.</li>
-                <li>Optimized patch automation trigger logic utilizing SOAR workflows within CrowdStrike boosting SLA performance from 62% to 87%.</li>
+                <li>Led the migration from Jamf Pro to Microsoft Intune for macOS as sole technical contributor, authoring custom configuration profiles and plist-level modifications for application management, compliance enforcement, and endpoint hardening across the production rollout.</li>
+                <li>Reviewed and implemented Conditional Access policies in Entra ID and deployed Zero Trust Network Access via Netskope and Zscaler to endpoints.</li>
+                <li>Served as sole acting analyst for security alert triage, incident response, and remediation across CrowdStrike, Microsoft Defender, Netskope, FortiDLP, Azure, and CrowdStrike Falcon NG-SIEM.</li>
+                <li>Managed vulnerability prioritization and remediation coordination for 5,000+ endpoints, using risk severity, asset exposure, and business context to drive SLA-based remediation.</li>
               </ul>
             </div>
 
@@ -233,12 +254,10 @@
               </h3>
               <p class="text-sm text-gray-500 mb-3">September 2024 &ndash; September 2025 &middot; Augusta, Georgia</p>
               <ul class="list-disc list-inside space-y-2 text-gray-700">
-                <li>Administer enterprise endpoint management with Microsoft Intune, Jamf Pro, and ConnectWise Automate; deploy security patches, compliance policies, configuration profiles, and scripts to maintain a secure fleet.</li>
-                <li>Developed and deployed custom ADMX templates to automate BIOS updates, reducing Tier 1 patching tickets and improving compliance.</li>
-                <li>Update legacy Bash and PowerShell scripts deployed through MDM platforms.</li>
+                <li>Administered enterprise endpoint management with Microsoft Intune, Jamf Pro, and ConnectWise Automate; responsible for security patches, compliance policies, configuration profiles, and scripts.</li>
+                <li>Updated legacy Bash and PowerShell scripts deployed through MDM platforms.</li>
                 <li>Automated user onboarding/offboarding for 200+ seasonal staff with PowerShell, integrating Entra ID group assignment, E5 license provisioning, KnowBe4 training, and secure password distribution.</li>
-                <li>Created AD attribute workflow triggering KnowBe4 training by start date, eliminating manual assignment and ensuring 100% on-time training deployment.</li>
-                <li>Configure SSO integrations for SaaS platforms via Entra, ensuring secure authentication.</li>
+                <li>Created AD attribute-based workflow to trigger KnowBe4 training deployment, eliminating manual security awareness assignment.</li>
               </ul>
             </div>
           </div>
