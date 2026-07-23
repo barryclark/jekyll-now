@@ -25,7 +25,7 @@ This creates two significant advantages:
 
 This approach directly addresses both the time inefficiency of traditional coalition formation and the disruption caused by early elections. Rather than forcing complete governmental reorganization at fixed points or during crises, it enables organic political evolution.
 
-Instead of allowing vote recasts at any time, a minimum waiting period between individual votes can be used, both to reduce administrative costs and to control the speed at which voting outcomes change. Similarly, votes may be given a maximum validity time, to ensure old votes that were based outdated information do not pollute the voting outcome. Using the minimum and maximum voting time, it becomes possible to slowly migrate from the existing system of one day voting, to one with continuous voting.
+Instead of allowing vote recasts at any time, a minimum waiting period between individual votes can be used, both to reduce administrative costs and to control the speed at which voting outcomes change. Similarly, votes may be given a maximum validity time, to ensure old votes that were based on outdated information do not pollute the voting outcome. Using the minimum and maximum voting time, it becomes possible to slowly migrate from the existing system of one day voting, to one with continuous voting.
 
 #### Vote counting
 

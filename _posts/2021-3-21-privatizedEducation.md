@@ -104,10 +104,10 @@ Such factors can be included as part of the educational contract. The contract c
 -->
 
 ### How do we balance the needs of government, parents and student?
-How do we decide to which education provider to sell a student's education contract? The government, the parents and the students themself are all stakeholders.
+How do we decide to which education provider to sell a student's education contract? The government, the parents and the students themselves are all stakeholders.
 
 We propose that the government first filters the offerings of education providers, after which, depending on the student being of a minimal age, either the parents or the student must select one from the remaining list. 
-The government will likely filter out education providers that it does not trust to optimally use the contract, or that is fears might breach the contract.
+The government will likely filter out education providers that it does not trust to optimally use the contract, or that it fears might breach the contract.
 
 Education providers may offer more or less money to buy a contract, and in the case of a student with a learning disability may even ask for money to 'buy' the contract. 
 
