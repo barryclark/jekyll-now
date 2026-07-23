@@ -7,7 +7,7 @@ Multi-party democracies face a persistent challenge: the formation of governing 
 
 ### The Coalition Formation Dilemma
 
-During coalition formation periods, countries effectively operate without a fully functioning government. Since these negotiations determine future legislative agendas, parties are often reluctant to make interim decisions. Formation time can be significant: the Netherlands holds the European record with an average formation time of 90 days. This extended duration isn't necessarily a flaw – it reflects the complex optimization problem parties face: balancing the desire for favorable terms against the need to implement policies promptly.
+During coalition formation periods, countries effectively operate without a fully functioning government. Since these negotiations determine future legislative agendas, parties are often reluctant to make interim decisions. Formation time can be significant: since 2010, Dutch cabinet formations have averaged around 208 days, peaking at a national record of 299 days after the 2021 election. Belgium holds the wider European record, having gone 541 days without a government following its 2010 election. This extended duration isn't necessarily a flaw – it reflects the complex optimization problem parties face: balancing the desire for favorable terms against the need to implement policies promptly.
 The stakes are particularly high because:
 - Laws typically persist beyond new elections
 - Once formed, coalitions can enact legislation quickly
