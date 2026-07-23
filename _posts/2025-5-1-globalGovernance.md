@@ -39,7 +39,7 @@ Under our combined system, the bottom 50% of income earners would see their form
 
 Addressing existential challenges like climate change, AI risks, and armed conflict requires effective global governance. Our current fragmented international system consistently fails to coordinate responses to planetary-scale threats. The power system outlined here—an equal baseline vote combined with tax contributions as an additional, transparent metric—offers a viable path to global governance by creating natural incentives for political integration. By formalizing the relationship between resource contribution and political influence without discarding equal citizenship as a floor, it enables nations to merge their governance structures voluntarily, knowing their interests will be represented proportionally to their contributions while every citizen retains a guaranteed baseline voice. Unlike idealized democratic systems that ignore power realities, this transparent approach acknowledges and channels existing power dynamics constructively. The stakes could not be higher—humanity's continued flourishing depends on our ability to coordinate at global scale. This system doesn't promise utopian equality, but it does offer something more valuable: a practical path toward the unified governance we desperately need to face our greatest challenges.
 
-## Appendix: Formalizing Protest Power
+## Appendix: Additional Power Metrics
 
 Beyond the baseline vote and tax contributions, our system could benefit from a third mechanism to measure and incorporate the power of collective action and protest more directly than a flat per-adult baseline does. We propose two potential frameworks:
 
