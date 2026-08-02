@@ -11,10 +11,6 @@ permalink: /about/
 
 <img src="/images/cv.png" alt="CV timeline" style="max-width: 100%; height: auto;" />
 
-
-### Complete CV
-<p style="text-align:justify;"> <a href = "https://servicios.uns.edu.ar/intrauns/consultas/personal/curriculum/cvitae_ingles/ver_curri.asp?docu=C14214.pdf%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20&nombre=CHIALVA%20%20%20%20%20%20%20%20%20%20%20%20%20,%20ULISES">Complete CV</a> (in spanish)</p>
-
 ### Contact
 
 [uchialva@gmail.com](mailto:uchialva@gmail.com)
