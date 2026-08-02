@@ -7,11 +7,9 @@ permalink: /publications/
 
 <ul>
 
-<li><p style="text-align:justify;">Capobianco, G., Chialva, U. & Rotstein, H. "Data-Based Dynamical Systems Reconstruction: An Adequacy/Reliability Test" <it>(Submitted).<\it></p></li>
+<li><p style="text-align:justify;">Capobianco, G., Chialva, U. & Rotstein, H. "Data-Based Dynamical Systems Reconstruction: An Adequacy/Reliability Test" <it>(Submitted).</it></p></li>
 
 <li><p style="text-align:justify;">Chialva, U. & Rotstein, H. "Interaction of segregated mechanisms of resonance due non-uniform voltage distributions across the neuron: interplay between ionic currents and the spatial structure of cell".</p></li>
-
-
 </ul>
 
 <strong>Publications and Proceedings:</strong>
