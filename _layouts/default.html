@@ -1,53 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="es" class="no-js">
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Roberto Chasipanta</title>
+    <title>{{ site.title | default: "Roberto Chasipanta" }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <meta name="description" content="Resume / CV "/>
-    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio"/>
-    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="description" content="{{ site.description | default: 'Arquitecto empresarial y desarrollador de software' }}"/>
+    <meta name="keywords" content="Roberto Chasipanta, arquitectura de software, desarrollo, portfolio, Ecuador"/>
+    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
 
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/animations.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/perfect-scrollbar.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/carrousel.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/glitch.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" type="text/css">
 
-    <link rel="stylesheet" href="css/reset.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
-    <link rel="stylesheet" href="css/animations.css" type="text/css">
-    <link rel="stylesheet" href="css/perfect-scrollbar.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/carrousel.css" type="text/css">
-    <link rel="stylesheet" href="css/glitch.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-
-    <script src="js/modernizr.custom.js"></script>
-    <script>
-        function enviarEmail() {
-            const email = document.getElementById("form_email").value;
-            console.log(email)
-            const asunto = document.getElementById("form_subject").value;
-            console.log(asunto)
-            const mensaje = document.getElementById("form_message").value;
-            console.log(mensaje)
-
-            // Verifica si el email es válido
-            if (!email) {
-                alert("Por favor, introduce un correo electrónico válido.");
-                return;
-            }
-
-            // Construir el enlace mailto
-            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(mensaje)}`;
-
-            // Abrir el cliente de correo
-            window.location.href = mailtoLink;
-        }
-    </script>
+    <script src="{{ site.baseurl }}/js/modernizr.custom.js"></script>
 </head>
 
 <body>
 <!-- Animated Background -->
-<div class="lm-animated-bg" style="background-image: url(img/main_bg.png);"></div>
+<div class="lm-animated-bg" style="background-image: url({{ site.baseurl }}/img/main_bg.png);"></div>
 <!-- /Animated Background -->
 
 <!-- Loading animation -->
@@ -65,7 +41,7 @@
         <header id="site_header" class="header mobile-menu-hide">
             <div class="header-content">
                 <div class="header-photo">
-                    <img src="img/main_photo.png" alt="Roberto Chasipanta">
+                    <img src="{{ site.baseurl }}/img/main_photo.png" alt="Roberto Chasipanta">
                 </div>
                 <div class="header-titles">
                     <h2>Roberto Chasipanta</h2>
@@ -115,16 +91,16 @@
             </div>
 
             <div class="header-buttons">
-                <a href="#resume" class="btn btn-primary">Descargar CV</a>
+                <a href="#resume" class="btn btn-primary">Ver trayectoria</a>
             </div>
 
 
             <div class="header-content">
-                <img class="header-photo" src="img/portfolio/qr-code.png" alt="Roberto Chasipanta">
+                <img class="header-photo" src="{{ site.baseurl }}/img/portfolio/qr-code.png" alt="Código QR de contacto">
             </div>
 
 
-            <div class="copyrights">© 2025 All rights reserved.</div>
+            <div class="copyrights">© 2026 Roberto Chasipanta</div>
         </header>
 
         <!-- Mobile Navigation -->
@@ -205,26 +181,14 @@
                             <div class="col-xs-12 col-sm-5">
                                 <div class="info-list">
                                     <ul>
-                                        <li style="display: none">
-                                            <span class="title">Edad</span>
-                                            <span class="value">39</span>
-                                        </li>
-
                                         <li>
                                             <span class="title">Residencia</span>
                                             <span class="value">Ecuador</span>
                                         </li>
-
-                                        <li style="display: none">
-                                            <span class="title">Dirección</span>
-                                            <span class="value">Quito</span>
-                                        </li>
-
                                         <li>
                                             <span class="title">e-mail</span>
                                             <span class="value">maniac787@gmail.com</span>
                                         </li>
-
                                         <li>
                                             <span class="title">whatsapp</span>
                                             <span class="value">+1 225 910 6814</span>
@@ -241,8 +205,7 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-12">
                                 <div class="block-title">
-                                    <h3><span>Arquitectura</span> y desarrollo de software </h3>
-                                    <h2></h2>
+                                    <h3><span>Arquitectura</span> y desarrollo de software</h3>
                                 </div>
                             </div>
                         </div>
@@ -302,150 +265,7 @@
                         </div>
                         <!-- End of Services -->
 
-                        <div class="white-space-30"></div>
-
-                        <!-- Testimonials -->
-                        <div class="row" style="display: none">
-                            <div class="col-xs-12 col-sm-12">
-                                <div class="block-title">
-                                    <h3>Testimonials</h3>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row" style="display: none">
-                            <div class="col-xs-12 col-sm-12">
-                                <div class="testimonials owl-carousel">
-                                    <!-- Testimonial 1 -->
-                                    <div class="testimonial">
-                                        <div class="img">
-                                            <img src="img/testimonials/testimonial-1.jpg" alt="Roberto Chasipanta">
-                                        </div>
-                                        <div class="text">
-                                            <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor.
-                                                Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id
-                                                ligula pellentesque, at vehicula dui ultrices.</p>
-                                        </div>
-
-                                        <div class="author-info">
-                                            <h4 class="author">Julia Hickman</h4>
-                                            <h5 class="company">Omni Source</h5>
-                                            <div class="icon">
-                                                <i class="fas fa-quote-right"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End of Testimonial 1 -->
-
-                                    <!-- Testimonial 2 -->
-                                    <div class="testimonial">
-                                        <div class="img">
-                                            <img src="img/testimonials/testimonial-2.jpg" alt="Roberto Chasipanta">
-                                        </div>
-                                        <div class="text">
-                                            <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor.
-                                                Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id
-                                                ligula pellentesque, at vehicula dui ultrices.</p>
-                                        </div>
-
-                                        <div class="author-info">
-                                            <h4 class="author">Robert Watkins</h4>
-                                            <h5 class="company">Endicott Shoes</h5>
-                                            <div class="icon">
-                                                <i class="fas fa-quote-right"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End of Testimonial 2 -->
-
-                                    <!-- Testimonial 3 -->
-                                    <div class="testimonial">
-                                        <div class="img">
-                                            <img src="img/testimonials/testimonial-3.jpg" alt="Roberto Chasipanta">
-                                        </div>
-                                        <div class="text">
-                                            <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor.
-                                                Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id
-                                                ligula pellentesque, at vehicula dui ultrices.</p>
-                                        </div>
-
-                                        <div class="author-info">
-                                            <h4 class="author">Kristin Carroll</h4>
-                                            <h5 class="company">Helping Hand</h5>
-                                            <div class="icon">
-                                                <i class="fas fa-quote-right"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End of Testimonial 3 -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End of Testimonials -->
-
-                        <div class="white-space-50" style="display: none"></div>
-
-                        <!-- Clients -->
-                        <div class="row" style="display: none">
-                            <div class="col-xs-12 col-sm-12">
-                                <div class="block-title">
-                                    <h3>Marcos de trabajo y <span>tecnología</span></h3>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row" style="display: none">
-                            <div class="col-xs-12 col-sm-12">
-                                <div class="clients owl-carousel">
-
-                                    <div class="client-block">
-                                        <a href="#" target="_blank" title="Logo">
-                                            <img src="img/clients/client-1.png" alt="Logo">
-                                        </a>
-                                    </div>
-
-                                    <div class="client-block">
-                                        <a href="#" target="_blank" title="Logo">
-                                            <img src="img/clients/client-2.png" alt="Logo">
-                                        </a>
-                                    </div>
-
-                                    <div class="client-block">
-                                        <a href="#" target="_blank" title="Logo">
-                                            <img src="img/clients/client-3.png" alt="Logo">
-                                        </a>
-                                    </div>
-
-                                    <div class="client-block">
-                                        <a href="#" target="_blank" title="Logo">
-                                            <img src="img/clients/client-4.png" alt="Logo">
-                                        </a>
-                                    </div>
-
-                                    <div class="client-block">
-                                        <a href="#" target="_blank" title="Logo">
-                                            <img src="img/clients/client-5.png" alt="Logo">
-                                        </a>
-                                    </div>
-
-                                    <div class="client-block">
-                                        <a href="#" target="_blank" title="Logo">
-                                            <img src="img/clients/client-6.png" alt="Logo">
-                                        </a>
-                                    </div>
-
-                                    <div class="client-block">
-                                        <a href="#" target="_blank" title="Logo">
-                                            <img src="img/clients/client-7.png" alt="Logo">
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End of Clients -->
-
-                        <div class="white-space-10"></div>
+                        <div class="white-space-50"></div>
 
                         <!-- Fun Facts -->
                         <div class="row">
@@ -902,96 +722,82 @@
 
                                     <ul class="portfolio-filters">
                                         <li class="active">
-                                            <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
+                                            <a class="filter btn btn-sm btn-link" data-group="all">Todos</a>
                                         </li>
                                         <li>
-                                            <a class="filter btn btn-sm btn-link" data-group="category_soundcloud">Mobile</a>
+                                            <a class="filter btn btn-sm btn-link" data-group="mobile">Mobile</a>
                                         </li>
                                         <li>
-                                            <a class="filter btn btn-sm btn-link"
-                                               data-group="category_mockups">Frontend</a>
+                                            <a class="filter btn btn-sm btn-link" data-group="frontend">Frontend</a>
                                         </li>
                                         <li>
-                                            <a class="filter btn btn-sm btn-link" data-group="category_vimeo-videos">Backend</a>
+                                            <a class="filter btn btn-sm btn-link" data-group="backend">Backend</a>
                                         </li>
                                         <li>
-                                            <a class="filter btn btn-sm btn-link" data-group="category_youtube-videos">Unity</a>
+                                            <a class="filter btn btn-sm btn-link" data-group="unity">Unity</a>
                                         </li>
                                     </ul>
 
                                     <!-- Portfolio Grid -->
                                     <div class="portfolio-grid three-columns">
 
-                                        <figure class="item lbaudio"
-                                                data-groups='["category_all", "category_soundcloud"]'>
+                                        <figure class="item" data-groups='["all", "mobile"]'>
                                             <div class="portfolio-item-img">
-                                                <img src="img/portfolio/2.jpg" alt="Divisas" title=""/>
+                                                <img src="{{ site.baseurl }}/img/portfolio/2.jpg" alt="Divisas Flutter"/>
                                                 <a href="https://play.google.com/store/apps/details?id=com.nwi.flutter_moneda&pli=1"
                                                    target="_blank"
-                                                   title="Mobile"></a>
+                                                   title="Divisas | Flutter"></a>
                                             </div>
-
                                             <i class="fa fa-link"></i>
                                             <h4 class="name">Divisas | Flutter</h4>
                                             <span class="category">Mobile</span>
                                         </figure>
 
-                                        <figure class="item lbvideo"
-                                                data-groups='["category_all", "category_vimeo-videos"]'>
+                                        <figure class="item" data-groups='["all", "backend"]'>
                                             <div class="portfolio-item-img">
-                                                <img src="img/portfolio/3.jpg" alt="Vimeo Video 1" title=""/>
+                                                <img src="{{ site.baseurl }}/img/portfolio/3.jpg" alt="Divisas NestJS"/>
                                             </div>
-
                                             <h4 class="name">Divisas | NestJS</h4>
                                             <span class="category">Backend</span>
                                         </figure>
 
-                                        <figure class="item lbvideo"
-                                                data-groups='["category_all", "category_vimeo-videos"]'>
+                                        <figure class="item" data-groups='["all", "backend"]'>
                                             <div class="portfolio-item-img">
-                                                <img src="img/portfolio/4.jpg" alt="Vimeo Video 1" title=""/>
+                                                <img src="{{ site.baseurl }}/img/portfolio/4.jpg" alt="Little Shark Spring Boot"/>
                                             </div>
-
                                             <h4 class="name">Little Shark | SpringBoot 3</h4>
                                             <span class="category">Backend</span>
                                         </figure>
 
-                                        <figure class="item lbvideo"
-                                                data-groups='["category_all", "category_mockups"]'>
+                                        <figure class="item" data-groups='["all", "frontend"]'>
                                             <div class="portfolio-item-img">
-                                                <img src="img/portfolio/5.jpg" alt="Vimeo Video 1" title=""/>
+                                                <img src="{{ site.baseurl }}/img/portfolio/5.jpg" alt="Little Shark React"/>
                                             </div>
-
                                             <h4 class="name">Little Shark | React</h4>
                                             <span class="category">Frontend</span>
                                         </figure>
 
-                                        <figure class="item lbvideo"
-                                                data-groups='["category_all", "category_youtube-videos"]'>
+                                        <figure class="item" data-groups='["all", "unity", "mobile"]'>
                                             <div class="portfolio-item-img">
-                                                <img src="img/portfolio/1.jpg" alt="YouTube Video 1" title=""/>
+                                                <img src="{{ site.baseurl }}/img/portfolio/1.jpg" alt="Ecuavoley Unity"/>
                                                 <a href="https://play.google.com/store/apps/details?id=com.nwi.ecuavoley"
                                                    target="_blank"
                                                    title="Ecuavoley | Play Store"></a>
                                             </div>
-
                                             <i class="fa fa-link"></i>
                                             <h4 class="name">Ecuavoley | Unity 3D</h4>
-                                            <span class="category">Mobile</span>
+                                            <span class="category">Unity / Mobile</span>
                                         </figure>
 
-
-                                        <figure class="item lbvideo"
-                                                data-groups='["category_all", "category_vimeo-videos"]'>
+                                        <figure class="item" data-groups='["all", "backend"]'>
                                             <div class="portfolio-item-img">
-                                                <img src="img/portfolio/6.jpg" title=""/>
+                                                <img src="{{ site.baseurl }}/img/portfolio/6.jpg" alt="Plugin IntelliJ"/>
                                                 <a href="https://plugins.jetbrains.com/plugin/26218-rch-spring-code-generation"
                                                    target="_blank"
-                                                   title="Intellij Plugin Store"></a>
+                                                   title="IntelliJ Plugin Store"></a>
                                             </div>
-
                                             <i class="fa fa-link"></i>
-                                            <h4 class="name">Plugin | Intellij</h4>
+                                            <h4 class="name">Plugin | IntelliJ</h4>
                                             <span class="category">Backend</span>
                                         </figure>
                                     </div>
@@ -1051,12 +857,11 @@
 
                             <!-- Contact Form -->
                             <div class="col-xs-12 col-sm-8">
-                                <!--                                <div id="map" class="map"></div>-->
                                 <div class="block-title">
-                                    <h3>Como puedo <span>ayudarte?</span></h3>
+                                    <h3>¿Cómo puedo <span>ayudarte?</span></h3>
                                 </div>
 
-                                <form id="contact_form" class="contact-form" action="contact_form/contact_form.php"
+                                <form id="contact_form" class="contact-form" action="https://formsubmit.co/ajax/maniac787@gmail.com"
                                       method="post">
 
                                     <div class="messages"></div>
@@ -1067,7 +872,7 @@
                                                 <div class="form-group form-group-with-icon">
                                                     <input id="form_name" type="text" name="name" class="form-control"
                                                            placeholder="" required="required"
-                                                           data-error="Name is required.">
+                                                           data-error="El nombre es obligatorio.">
                                                     <label>Nombre completo</label>
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
@@ -1076,7 +881,7 @@
                                                 <div class="form-group form-group-with-icon">
                                                     <input id="form_email" type="email" name="email"
                                                            class="form-control" placeholder="" required="required"
-                                                           data-error="Valid email is required.">
+                                                           data-error="Se requiere un correo válido.">
                                                     <label>Correo</label>
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
@@ -1085,7 +890,7 @@
                                                 <div class="form-group form-group-with-icon">
                                                     <input id="form_subject" type="text" name="subject"
                                                            class="form-control" placeholder="" required="required"
-                                                           data-error="Subject is required.">
+                                                           data-error="El asunto es obligatorio.">
                                                     <label>Asunto</label>
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
@@ -1095,7 +900,7 @@
                                                 <div class="form-group form-group-with-icon">
                                                     <textarea id="form_message" name="message" class="form-control"
                                                               placeholder="" rows="7" required="required"
-                                                              data-error="Please, leave me a message."></textarea>
+                                                              data-error="Por favor, déjame un mensaje."></textarea>
                                                     <label>Mensaje</label>
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
@@ -1103,11 +908,33 @@
                                             </div>
                                         </div>
 
-                                        <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"
-                                             data-theme="dark"></div>
+                                        <!-- Honeypot: oculto para humanos; los bots suelen rellenarlo -->
+                                        <div class="hp-field" aria-hidden="true">
+                                            <label for="form_website">Sitio web</label>
+                                            <input id="form_website" type="text" name="website" value="" tabindex="-1" autocomplete="off">
+                                        </div>
+                                        <input type="hidden" name="_honey" value="">
+                                        <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio">
+                                        <input type="hidden" name="_template" value="table">
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="form_started_at" id="form_started_at" value="">
 
-                                        <input type="submit" class="button btn-send" value="Enviar mensaje"
-                                               onclick="enviarEmail()"/>
+                                        <div class="form-captcha">
+                                            <p class="form-captcha-question" id="form_captcha_question">Verificación anti-spam: ¿cuánto es …?</p>
+                                            <div class="form-captcha-row">
+                                                <div class="form-group form-group-with-icon">
+                                                    <input id="form_captcha" type="text" name="captcha_answer" class="form-control"
+                                                           inputmode="numeric" autocomplete="off" required="required"
+                                                           data-error="Resuelve la verificación anti-spam.">
+                                                    <label>Tu respuesta</label>
+                                                    <div class="form-control-border"></div>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                                <button type="button" class="button btn-captcha-refresh" id="captcha_refresh" title="Nueva pregunta" aria-label="Nueva pregunta">↻</button>
+                                            </div>
+                                        </div>
+
+                                        <input type="submit" class="button btn-send" value="Enviar mensaje">
                                     </div>
                                 </form>
                             </div>
@@ -1123,35 +950,13 @@
     </div>
 </div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/modernizr.custom.js"></script>
-<script src="js/animating.js"></script>
-
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
-
-<script src='js/perfect-scrollbar.min.js'></script>
-<script src='js/jquery.shuffle.min.js'></script>
-<script src='js/masonry.pkgd.min.js'></script>
-<script src='js/owl.carousel.min.js'></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
-<script src="js/jquery.googlemap.js"></script>
-<script src="js/validator.js"></script>
-<script src="js/main.js"></script>
-<script>
-    $(document).ready(function () {
-        // Obtener la fecha de hoy
-        let hoy = new Date();
-
-        // Calcular la fecha de un año después
-        let experiencia = hoy.getFullYear() - 2011;
-
-
-        // Reemplazar el contenido del h1 con la fecha calculada
-        $('#mi-fecha').text(experiencia);
-    });
-</script>
+<script src="{{ site.baseurl }}/js/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/js/animating.js"></script>
+<script src="{{ site.baseurl }}/js/imagesloaded.pkgd.min.js"></script>
+<script src="{{ site.baseurl }}/js/perfect-scrollbar.min.js"></script>
+<script src="{{ site.baseurl }}/js/jquery.shuffle.min.js"></script>
+<script src="{{ site.baseurl }}/js/owl.carousel.min.js"></script>
+<script src="{{ site.baseurl }}/js/validator.js"></script>
+<script src="{{ site.baseurl }}/js/main.js"></script>
 </body>
 </html>

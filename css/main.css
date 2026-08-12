@@ -1451,8 +1451,47 @@ textarea.form-control, textarea.form-control:focus {
   float: right;
 }
 
-.g-recaptcha {
-  margin-bottom: 20px;
+.hp-field {
+  position: absolute !important;
+  left: -10000px !important;
+  top: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.form-captcha {
+  clear: both;
+  margin: 8px 0 16px;
+}
+
+.form-captcha-question {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: #54ca95;
+}
+
+.form-captcha-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.form-captcha-row .form-group {
+  flex: 1;
+  margin-bottom: 12px;
+}
+
+.form-captcha .btn-captcha-refresh {
+  flex: 0 0 auto;
+  min-width: 42px;
+  height: 42px;
+  margin-top: 0;
+  padding: 0 12px;
+  line-height: 40px;
+  font-size: 18px;
 }
 /* --- End of Contact Form --- */
 
