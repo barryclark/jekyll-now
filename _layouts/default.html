@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="es" class="no-js">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ site.title | default: "Roberto Chasipanta" }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <meta name="description" content="{{ site.description | default: 'Arquitecto empresarial y desarrollador de software' }}"/>
-    <meta name="keywords" content="Roberto Chasipanta, arquitectura de software, desarrollo, portfolio, Ecuador"/>
-    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
+    <meta name="description" content="{{ site.description | default: 'Enterprise architect and software developer' }}"/>
+    <meta name="keywords" content="Roberto Chasipanta, enterprise architecture, software development, portfolio, Ecuador"/>
+    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico?v=3">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon.png?v=3">
 
     <link rel="stylesheet" href="{{ site.baseurl }}/css/reset.css" type="text/css">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap-grid.min.css" type="text/css">
@@ -45,7 +46,7 @@
                 </div>
                 <div class="header-titles">
                     <h2>Roberto Chasipanta</h2>
-                    <h4>Arquitecto empresarial</h4>
+                    <h4 data-i18n="role.enterprise">Enterprise Architect</h4>
                 </div>
             </div>
 
@@ -53,50 +54,55 @@
                 <li class="active">
                     <a href="#home" class="nav-anim">
                         <span class="menu-icon lnr lnr-home"></span>
-                        <span class="link-text">Inicio</span>
+                        <span class="link-text" data-i18n="nav.home">Home</span>
                     </a>
                 </li>
                 <li>
                     <a href="#about-me" class="nav-anim">
                         <span class="menu-icon lnr lnr-user"></span>
-                        <span class="link-text">Yo</span>
+                        <span class="link-text" data-i18n="nav.about">About</span>
                     </a>
                 </li>
                 <li>
                     <a href="#resume" class="nav-anim">
                         <span class="menu-icon lnr lnr-graduation-hat"></span>
-                        <span class="link-text">Trayectoria</span>
+                        <span class="link-text" data-i18n="nav.resume">Career</span>
                     </a>
                 </li>
                 <li>
                     <a href="#portfolio" class="nav-anim">
                         <span class="menu-icon lnr lnr-briefcase"></span>
-                        <span class="link-text">Portafolio</span>
+                        <span class="link-text" data-i18n="nav.portfolio">Portfolio</span>
                     </a>
                 </li>
                 <li>
                     <a href="#contact" class="nav-anim">
                         <span class="menu-icon lnr lnr-envelope"></span>
-                        <span class="link-text">Contacto</span>
+                        <span class="link-text" data-i18n="nav.contact">Contact</span>
                     </a>
                 </li>
             </ul>
 
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+                <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+            </div>
+
             <div class="social-links">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/robertochasipanta/" target="_blank"><i
+                    <li><a href="https://www.linkedin.com/in/robertochasipanta/" target="_blank" rel="noopener" aria-label="LinkedIn"><i
                             class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://x.com/maniac787" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://x.com/maniac787" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-twitter"></i></a></li>
                 </ul>
             </div>
 
             <div class="header-buttons">
-                <a href="#resume" class="btn btn-primary">Ver trayectoria</a>
+                <a href="#resume" class="btn btn-primary" data-i18n="cta.resume">View career</a>
             </div>
 
 
             <div class="header-content">
-                <img class="header-photo" src="{{ site.baseurl }}/img/portfolio/qr-code.png" alt="Código QR de contacto">
+                <img class="header-photo" src="{{ site.baseurl }}/img/portfolio/qr-code.png" alt="Contact QR code" data-i18n-attr="alt:alt.qr">
             </div>
 
 
@@ -135,19 +141,19 @@
                                     </div>
                                     <div class="owl-carousel text-rotation">
                                         <div class="item">
-                                            <div class="sp-subtitle">Arquitecto empresarial</div>
+                                            <div class="sp-subtitle" data-i18n="role.enterprise">Enterprise Architect</div>
                                         </div>
 
                                         <div class="item">
-                                            <div class="sp-subtitle">Emprendedor</div>
+                                            <div class="sp-subtitle" data-i18n="role.entrepreneur">Entrepreneur</div>
                                         </div>
 
                                         <div class="item">
-                                            <div class="sp-subtitle">Arquitecto de software</div>
+                                            <div class="sp-subtitle" data-i18n="role.softwareArchitect">Software Architect</div>
                                         </div>
 
                                         <div class="item">
-                                            <div class="sp-subtitle">Desarrollador de software</div>
+                                            <div class="sp-subtitle" data-i18n="role.developer">Software Developer</div>
                                         </div>
                                     </div>
                                 </div>
@@ -161,28 +167,22 @@
                 <!-- About Me Subpage -->
                 <section data-id="about-me" class="animated-section">
                     <div class="page-title">
-                        <h2>Acerca de <span>Roberto</span></h2>
+                        <h2 data-i18n-html="about.title">About <span>Roberto</span></h2>
                     </div>
 
                     <div class="section-content">
                         <!-- Personal Information -->
                         <div class="row">
                             <div class="col-xs-12 col-sm-7">
-                                <p>Entregado a mi profesión y a las actividades a las cuales brindo apoyo, intentando
-                                    siempre poner el <span>cien por cien de mí</span> en cada proyecto.
-                                </p>
-
-                                <p>
-                                    Agradecido de cada lección aprendida, y con la firme intención de mejorar
-                                    continuamente.
-                                </p>
+                                <p data-i18n-html="about.p1">Committed to my profession and the work I support, always giving <span>one hundred percent</span> to every project.</p>
+                                <p data-i18n="about.p2">Grateful for every lesson learned, and firmly focused on continuous improvement.</p>
                             </div>
 
                             <div class="col-xs-12 col-sm-5">
                                 <div class="info-list">
                                     <ul>
                                         <li>
-                                            <span class="title">Residencia</span>
+                                            <span class="title" data-i18n="about.residence">Residence</span>
                                             <span class="value">Ecuador</span>
                                         </li>
                                         <li>
@@ -205,7 +205,7 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-12">
                                 <div class="block-title">
-                                    <h3><span>Arquitectura</span> y desarrollo de software</h3>
+                                    <h3 data-i18n-html="about.servicesTitle"><span>Architecture</span> and software development</h3>
                                 </div>
                             </div>
                         </div>
@@ -219,9 +219,8 @@
                                                 <i class="lnr lnr-cloud-sync"></i>
                                             </div>
                                             <div class="ci-text">
-                                                <h4>Arquitectura</h4>
-                                                <p>Diseño integral del proyecto; estructura, herramientas, puesta en
-                                                    marcha.</p>
+                                                <h4 data-i18n="about.architecture">Architecture</h4>
+                                                <p data-i18n="about.architectureDesc">End-to-end project design: structure, tools, and go-live.</p>
                                             </div>
                                         </div>
                                         <div class="info-block-w-icon">
@@ -229,8 +228,8 @@
                                                 <i class="lnr lnr-laptop-phone"></i>
                                             </div>
                                             <div class="ci-text">
-                                                <h4>Desarrollo de software</h4>
-                                                <p>Aplicaciones mobiles, escritorio, web, API's.</p>
+                                                <h4 data-i18n="about.dev">Software development</h4>
+                                                <p data-i18n="about.devDesc">Mobile, desktop, and web applications, and APIs.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -245,9 +244,8 @@
                                                 <i class="lnr lnr-pencil"></i>
                                             </div>
                                             <div class="ci-text">
-                                                <h4>Negocios</h4>
-                                                <p>Análisis del negocio, reportes para toma de decisiones y soluciones
-                                                    informáticas.</p>
+                                                <h4 data-i18n="about.business">Business</h4>
+                                                <p data-i18n="about.businessDesc">Business analysis, decision-support reporting, and IT solutions.</p>
                                             </div>
                                         </div>
                                         <div class="info-block-w-icon">
@@ -255,8 +253,8 @@
                                                 <i class="lnr lnr-flag"></i>
                                             </div>
                                             <div class="ci-text">
-                                                <h4>Administración</h4>
-                                                <p>Portales administrativos.</p>
+                                                <h4 data-i18n="about.admin">Administration</h4>
+                                                <p data-i18n="about.adminDesc">Administrative portals.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -272,7 +270,7 @@
                             <div class="col-xs-12 col-sm-12">
 
                                 <div class="block-title">
-                                    <h3>Estadísticas <span>laborales</span></h3>
+                                    <h3 data-i18n-html="about.statsTitle">Work <span>stats</span></h3>
                                 </div>
                             </div>
                         </div>
@@ -281,7 +279,7 @@
                             <div class="col-xs-12 col-sm-4">
                                 <div class="fun-fact gray-default">
                                     <i class="lnr lnr-heart"></i>
-                                    <h4>Clientes felices</h4>
+                                    <h4 data-i18n="about.happyClients">Happy clients</h4>
                                     <span class="fun-fact-block-value">100%</span>
                                     <span class="fun-fact-block-text"></span>
                                 </div>
@@ -317,7 +315,7 @@
                             <div class="col-xs-12 col-sm-4">
                                 <div class="fun-fact gray-default">
                                     <i class="lnr lnr-clock"></i>
-                                    <h4>Años en mi profesión </h4>
+                                    <h4 data-i18n="about.years">Years in the profession</h4>
                                     <span id="mi-fecha" class="fun-fact-block-value"></span>
                                     <span class="fun-fact-block-text"></span>
                                 </div>
@@ -331,7 +329,7 @@
                 <!-- Resume Subpage -->
                 <section data-id="resume" class="animated-section">
                     <div class="page-title">
-                        <h2>Mi trayectoria</h2>
+                        <h2 data-i18n="resume.title">My career</h2>
                     </div>
 
                     <div class="section-content">
@@ -340,7 +338,7 @@
                             <div class="col-xs-12 col-sm-7">
 
                                 <div class="block-title">
-                                    <h3>Educación</h3>
+                                    <h3 data-i18n="resume.education">Education</h3>
                                 </div>
 
                                 <div class="timeline timeline-second-style clearfix">
@@ -353,8 +351,8 @@
                                         </div>
                                         <div class="divider"></div>
                                         <div class="right-part">
-                                            <h4 class="item-title">Aplicaciones Horizontales</h4>
-                                            <p>Inteligencia de Negocios.</p>
+                                            <h4 class="item-title" data-i18n="edu.horizontalApps">Horizontal Applications</h4>
+                                            <p data-i18n="edu.horizontalAppsDesc">Business Intelligence applications.</p>
                                         </div>
                                     </div>
 
@@ -365,8 +363,8 @@
                                         </div>
                                         <div class="divider"></div>
                                         <div class="right-part">
-                                            <h4 class="item-title">Business Intelligence</h4>
-                                            <p>Inteligencia de Negocios.</p>
+                                            <h4 class="item-title" data-i18n="edu.bi">Master's in Business Intelligence</h4>
+                                            <p data-i18n="edu.biDesc">Business Intelligence specialization.</p>
                                         </div>
                                     </div>
 
@@ -377,8 +375,8 @@
                                         </div>
                                         <div class="divider"></div>
                                         <div class="right-part">
-                                            <h4 class="item-title">Ingeniería en Informática</h4>
-                                            <p>Especialidad en Desarrollo de software.</p>
+                                            <h4 class="item-title" data-i18n="edu.informatics">Computer Engineering</h4>
+                                            <p data-i18n="edu.informaticsDesc">Specialization in software development.</p>
                                         </div>
                                     </div>
 
@@ -388,93 +386,19 @@
                                 <div class="white-space-50"></div>
 
                                 <div class="block-title">
-                                    <h3>Experiencia</h3>
+                                    <h3 data-i18n="resume.experience">Experience</h3>
                                 </div>
 
                                 <div class="timeline timeline-second-style clearfix">
                                     <div class="timeline-item clearfix">
                                         <div class="left-part">
-                                            <h5 class="item-period">2010</h5>
-                                            <span class="item-company">JVC Sistemas</span>
+                                            <h5 class="item-period">2022</h5>
+                                            <span class="item-company">Globant</span>
                                         </div>
                                         <div class="divider"></div>
                                         <div class="right-part">
-                                            <h4 class="item-title">Desarrollo de software</h4>
-                                            <p>Sistema médico.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="timeline-item clearfix">
-                                        <div class="left-part">
-                                            <h5 class="item-period">2010</h5>
-                                            <span class="item-company">Bayteq</span>
-                                        </div>
-                                        <div class="divider"></div>
-                                        <div class="right-part">
-                                            <h4 class="item-title">Desarrollo de software</h4>
-                                            <p>Correciones / SQL - JavaScript</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="timeline-item clearfix">
-                                        <div class="left-part">
-                                            <h5 class="item-period">2011</h5>
-                                            <span class="item-company">Kruger corporation</span>
-                                        </div>
-                                        <div class="divider"></div>
-                                        <div class="right-part">
-                                            <h4 class="item-title">Lider de Proyecto</h4>
-                                            <p>Aplicaiones base para módulos / Componentes / Tareas Programadas /
-                                                Utilitarios.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="timeline-item clearfix">
-                                        <div class="left-part">
-                                            <h5 class="item-period">2015</h5>
-                                            <span class="item-company">Blue Lizard Games</span>
-                                        </div>
-                                        <div class="divider"></div>
-                                        <div class="right-part">
-                                            <h4 class="item-title">Desarrollo de software</h4>
-                                            <p>Desarrollo de interfaz para la simulación de construccion de aviones</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="timeline-item clearfix">
-                                        <div class="left-part">
-                                            <h5 class="item-period">2017</h5>
-                                            <span class="item-company">GreenIntegration</span>
-                                        </div>
-                                        <div class="divider"></div>
-                                        <div class="right-part">
-                                            <h4 class="item-title">Arquitecto de software</h4>
-                                            <p>Desarrollo de la arquitectura del proyecto y estructura del ambiente de
-                                                despliegue</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="timeline-item clearfix">
-                                        <div class="left-part">
-                                            <h5 class="item-period">2019</h5>
-                                            <span class="item-company">Servicio de Rentas Internas</span>
-                                        </div>
-                                        <div class="divider"></div>
-                                        <div class="right-part">
-                                            <h4 class="item-title">Desarrollo de software</h4>
-                                            <p>Desarrollo de módulos públicos</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="timeline-item clearfix">
-                                        <div class="left-part">
-                                            <h5 class="item-period">2020</h5>
-                                            <span class="item-company">Universidad Andina Simón Bolivar</span>
-                                        </div>
-                                        <div class="divider"></div>
-                                        <div class="right-part">
-                                            <h4 class="item-title">Desarrollo de software</h4>
-                                            <p>Arquitectura microservicios</p>
+                                            <h4 class="item-title" data-i18n="exp.softwareArch">Software architecture</h4>
+                                            <p data-i18n="exp.softwareArch">Software architecture</p>
                                         </div>
                                     </div>
 
@@ -485,20 +409,92 @@
                                         </div>
                                         <div class="divider"></div>
                                         <div class="right-part">
-                                            <h4 class="item-title">Arquitectura empresarial</h4>
-                                            <p>Arquitectura empresarial</p>
+                                            <h4 class="item-title" data-i18n="exp.enterprise">Enterprise architecture</h4>
+                                            <p data-i18n="exp.enterprise">Enterprise architecture</p>
                                         </div>
                                     </div>
 
                                     <div class="timeline-item clearfix">
                                         <div class="left-part">
-                                            <h5 class="item-period">2022</h5>
-                                            <span class="item-company">Globant</span>
+                                            <h5 class="item-period">2020</h5>
+                                            <span class="item-company">Universidad Andina Simón Bolivar</span>
                                         </div>
                                         <div class="divider"></div>
                                         <div class="right-part">
-                                            <h4 class="item-title">Arquitectura de software</h4>
-                                            <p>Arquitectura de software</p>
+                                            <h4 class="item-title" data-i18n="exp.dev">Software development</h4>
+                                            <p data-i18n="exp.microservices">Microservices architecture</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item clearfix">
+                                        <div class="left-part">
+                                            <h5 class="item-period">2019</h5>
+                                            <span class="item-company">Servicio de Rentas Internas</span>
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="right-part">
+                                            <h4 class="item-title" data-i18n="exp.dev">Software development</h4>
+                                            <p data-i18n="exp.publicModules">Public modules development</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item clearfix">
+                                        <div class="left-part">
+                                            <h5 class="item-period">2017</h5>
+                                            <span class="item-company">GreenIntegration</span>
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="right-part">
+                                            <h4 class="item-title" data-i18n="exp.architect">Software Architect</h4>
+                                            <p data-i18n="exp.architectDesc">Project architecture design and deployment environment structure</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item clearfix">
+                                        <div class="left-part">
+                                            <h5 class="item-period">2015</h5>
+                                            <span class="item-company">Blue Lizard Games</span>
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="right-part">
+                                            <h4 class="item-title" data-i18n="exp.dev">Software development</h4>
+                                            <p data-i18n="exp.avionics">UI development for aircraft construction simulation</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item clearfix">
+                                        <div class="left-part">
+                                            <h5 class="item-period">2011</h5>
+                                            <span class="item-company">Kruger corporation</span>
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="right-part">
+                                            <h4 class="item-title" data-i18n="exp.lead">Project Lead</h4>
+                                            <p data-i18n="exp.leadDesc">Base applications for modules / components / scheduled tasks / utilities.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item clearfix">
+                                        <div class="left-part">
+                                            <h5 class="item-period">2010</h5>
+                                            <span class="item-company">Bayteq</span>
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="right-part">
+                                            <h4 class="item-title" data-i18n="exp.dev">Software development</h4>
+                                            <p data-i18n="exp.fixes">Fixes / SQL - JavaScript</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item clearfix">
+                                        <div class="left-part">
+                                            <h5 class="item-period">2010</h5>
+                                            <span class="item-company">JVC Sistemas</span>
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="right-part">
+                                            <h4 class="item-title" data-i18n="exp.dev">Software development</h4>
+                                            <p data-i18n="exp.medical">Medical system.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -507,196 +503,213 @@
 
                             <!-- Skills & Certificates -->
                             <div class="col-xs-12 col-sm-5">
-                                <!-- Design Skills -->
                                 <div class="block-title">
-                                    <h3>Habilidades <span>Análisis</span></h3>
+                                    <h3 data-i18n-html="skills.front">Skills <span>Front</span></h3>
                                 </div>
-
                                 <div class="skills-info skills-second-style">
-                                    <!-- Skill 1 -->
-                                    <div class="skill clearfix">
-                                        <h4>PowerBI</h4>
-                                        <div class="skill-value">100%</div>
-                                    </div>
-                                    <div class="skill-container skill-1">
-                                        <div class="skill-percentage"></div>
-                                    </div>
-                                    <!-- End of Skill 1 -->
-
-                                    <!-- Skill 2 -->
-                                    <div class="skill clearfix">
-                                        <h4>Knime</h4>
-                                        <div class="skill-value">100%</div>
-                                    </div>
-                                    <div class="skill-container skill-1">
-                                        <div class="skill-percentage"></div>
-                                    </div>
-                                    <!-- End of Skill 2 -->
-
-                                </div>
-                                <!-- End of Design Skills -->
-
-
-                                <div class="white-space-10"></div>
-                                <div class="block-title">
-                                    <h3>Habilidades <span>Front</span></h3>
-                                </div>
-
-                                <div class="skills-info skills-second-style">
-                                    <!-- Skill 1 -->
-                                    <div class="skill clearfix">
-                                        <h4>Primefaces</h4>
-                                        <div class="skill-value">100%</div>
-                                    </div>
-                                    <div class="skill-container skill-1">
-                                        <div class="skill-percentage"></div>
-                                    </div>
-                                    <!-- End of Skill 1 -->
-
-                                    <!-- Skill 2 -->
                                     <div class="skill clearfix">
                                         <h4>React</h4>
                                         <div class="skill-value">100%</div>
                                     </div>
-                                    <div class="skill-container skill-1">
-                                        <div class="skill-percentage"></div>
-                                    </div>
-                                    <!-- End of Skill 2 -->
+                                    <div class="skill-container skill-1"><div class="skill-percentage"></div></div>
 
-                                    <!-- Skill 3 -->
                                     <div class="skill clearfix">
-                                        <h4>Flutter</h4>
-                                        <div class="skill-value">100%</div>
+                                        <h4>Zustand</h4>
+                                        <div class="skill-value">95%</div>
                                     </div>
-                                    <div class="skill-container skill-1">
-                                        <div class="skill-percentage"></div>
-                                    </div>
-                                    <!-- End of Skill 3 -->
+                                    <div class="skill-container skill-4"><div class="skill-percentage"></div></div>
 
-                                    <!-- Skill 4 -->
                                     <div class="skill clearfix">
-                                        <h4>Primereact</h4>
+                                        <h4>PrimeReact</h4>
                                         <div class="skill-value">90%</div>
                                     </div>
-                                    <div class="skill-container skill-1">
-                                        <div class="skill-percentage"></div>
+                                    <div class="skill-container skill-4"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4>PrimeFaces</h4>
+                                        <div class="skill-value">95%</div>
                                     </div>
-                                    <!-- End of Skill 4 -->
+                                    <div class="skill-container skill-1"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4>Flutter</h4>
+                                        <div class="skill-value">95%</div>
+                                    </div>
+                                    <div class="skill-container skill-1"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4>Qt6</h4>
+                                        <div class="skill-value">90%</div>
+                                    </div>
+                                    <div class="skill-container skill-4"><div class="skill-percentage"></div></div>
                                 </div>
-                                <!-- End of Design Skills -->
+
                                 <div class="white-space-10"></div>
 
-                                <!-- Coding Skills -->
                                 <div class="block-title">
-                                    <h3>Habilidades <span>Back</span></h3>
+                                    <h3 data-i18n-html="skills.back">Skills <span>Back</span></h3>
                                 </div>
-
                                 <div class="skills-info skills-second-style">
-                                    <!-- Skill 5 -->
                                     <div class="skill clearfix">
                                         <h4>Java</h4>
                                         <div class="skill-value">100%</div>
                                     </div>
-                                    <div class="skill-container skill-5">
-                                        <div class="skill-percentage"></div>
-                                    </div>
-                                    <!-- End of Skill 5 -->
+                                    <div class="skill-container skill-7"><div class="skill-percentage"></div></div>
 
-                                    <!-- Skill 6 -->
-                                    <div class="skill clearfix">
-                                        <h4>Python</h4>
-                                        <div class="skill-value">100%</div>
-                                    </div>
-                                    <div class="skill-container skill-1">
-                                        <div class="skill-percentage"></div>
-                                    </div>
-                                    <!-- End of Skill 6 -->
-
-                                    <!-- Skill 7 -->
-                                    <div class="skill clearfix">
-                                        <h4>Hibernate</h4>
-                                        <div class="skill-value">100%</div>
-                                    </div>
-                                    <div class="skill-container skill-7">
-                                        <div class="skill-percentage"></div>
-                                    </div>
-                                    <!-- End of Skill 7 -->
-
-                                    <!-- Skill 8 -->
                                     <div class="skill clearfix">
                                         <h4>Spring Boot</h4>
                                         <div class="skill-value">100%</div>
                                     </div>
-                                    <div class="skill-container skill-1">
-                                        <div class="skill-percentage"></div>
-                                    </div>
-                                    <!-- End of Skill 8 -->
+                                    <div class="skill-container skill-7"><div class="skill-percentage"></div></div>
 
-                                    <!-- Skill 9 -->
                                     <div class="skill clearfix">
-                                        <h4>R</h4>
+                                        <h4>NestJS</h4>
+                                        <div class="skill-value">95%</div>
+                                    </div>
+                                    <div class="skill-container skill-1"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4>Python</h4>
+                                        <div class="skill-value">95%</div>
+                                    </div>
+                                    <div class="skill-container skill-1"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4>Hibernate</h4>
+                                        <div class="skill-value">95%</div>
+                                    </div>
+                                    <div class="skill-container skill-1"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4 data-i18n="skills.microservices">Microservices</h4>
                                         <div class="skill-value">100%</div>
                                     </div>
-                                    <div class="skill-container skill-1">
-                                        <div class="skill-percentage"></div>
-                                    </div>
-                                    <!-- End of Skill 9 -->
+                                    <div class="skill-container skill-7"><div class="skill-percentage"></div></div>
 
-                                    <!-- Skill 9 -->
                                     <div class="skill clearfix">
-                                        <h4>Microservicios</h4>
-                                        <div class="skill-value">100%</div>
+                                        <h4 data-i18n="skills.reactive">Reactive paradigms</h4>
+                                        <div class="skill-value">95%</div>
                                     </div>
-                                    <div class="skill-container skill-5">
-                                        <div class="skill-percentage"></div>
-                                    </div>
-                                    <!-- End of Skill 9 -->
-
-                                    <!-- Skill 9 -->
-                                    <div class="skill clearfix">
-                                        <h4>Paradigmas reactivos</h4>
-                                        <div class="skill-value">100%</div>
-                                    </div>
-                                    <div class="skill-container skill-1">
-                                        <div class="skill-percentage"></div>
-                                    </div>
-                                    <!-- End of Skill 9 -->
-
-                                    <!-- Skill 9 -->
-                                    <div class="skill clearfix">
-                                        <h4>Kubernetes</h4>
-                                        <div class="skill-value">100%</div>
-                                    </div>
-                                    <div class="skill-container skill-1">
-                                        <div class="skill-percentage"></div>
-                                    </div>
-                                    <!-- End of Skill 9 -->
+                                    <div class="skill-container skill-1"><div class="skill-percentage"></div></div>
                                 </div>
-                                <!-- End of Coding Skills -->
 
                                 <div class="white-space-10"></div>
 
-                                <!-- Knowledges -->
                                 <div class="block-title">
-                                    <h3>Conocimientos</h3>
+                                    <h3 data-i18n-html="skills.cloud">Skills <span>Cloud / DevOps</span></h3>
+                                </div>
+                                <div class="skills-info skills-second-style">
+                                    <div class="skill clearfix">
+                                        <h4>AWS</h4>
+                                        <div class="skill-value">90%</div>
+                                    </div>
+                                    <div class="skill-container skill-4"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4>Kubernetes</h4>
+                                        <div class="skill-value">95%</div>
+                                    </div>
+                                    <div class="skill-container skill-1"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4>Jenkins</h4>
+                                        <div class="skill-value">90%</div>
+                                    </div>
+                                    <div class="skill-container skill-4"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4>GitHub Actions</h4>
+                                        <div class="skill-value">95%</div>
+                                    </div>
+                                    <div class="skill-container skill-1"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4>Control-M</h4>
+                                        <div class="skill-value">85%</div>
+                                    </div>
+                                    <div class="skill-container skill-6"><div class="skill-percentage"></div></div>
                                 </div>
 
+                                <div class="white-space-10"></div>
+
+                                <div class="block-title">
+                                    <h3 data-i18n-html="skills.data">Skills <span>Data / Observability</span></h3>
+                                </div>
+                                <div class="skills-info skills-second-style">
+                                    <div class="skill clearfix">
+                                        <h4>Redis</h4>
+                                        <div class="skill-value">90%</div>
+                                    </div>
+                                    <div class="skill-container skill-4"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4>Elasticsearch</h4>
+                                        <div class="skill-value">90%</div>
+                                    </div>
+                                    <div class="skill-container skill-4"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4>Kafka</h4>
+                                        <div class="skill-value">90%</div>
+                                    </div>
+                                    <div class="skill-container skill-4"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4>Conduktor</h4>
+                                        <div class="skill-value">85%</div>
+                                    </div>
+                                    <div class="skill-container skill-6"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4>OpenTelemetry</h4>
+                                        <div class="skill-value">90%</div>
+                                    </div>
+                                    <div class="skill-container skill-4"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4>Honeycomb</h4>
+                                        <div class="skill-value">85%</div>
+                                    </div>
+                                    <div class="skill-container skill-6"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4>k6</h4>
+                                        <div class="skill-value">85%</div>
+                                    </div>
+                                    <div class="skill-container skill-6"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4>PowerBI</h4>
+                                        <div class="skill-value">95%</div>
+                                    </div>
+                                    <div class="skill-container skill-1"><div class="skill-percentage"></div></div>
+
+                                    <div class="skill clearfix">
+                                        <h4>Knime</h4>
+                                        <div class="skill-value">90%</div>
+                                    </div>
+                                    <div class="skill-container skill-4"><div class="skill-percentage"></div></div>
+                                </div>
+
+                                <div class="white-space-10"></div>
+
+                                <div class="block-title">
+                                    <h3 data-i18n="skills.knowledges">Knowledges</h3>
+                                </div>
                                 <ul class="knowledges">
-                                    <li>Flask</li>
-                                    <li>Hibernate</li>
                                     <li>UX</li>
-                                    <li>Flutter</li>
                                     <li>Unity 3D</li>
-                                    <li>Net Core</li>
-                                    <li>Git / GitHub / Gitlab</li>
-                                    <li>Eclipse / Intellij Idea</li>
+                                    <li>.NET Core</li>
+                                    <li>Flask</li>
+                                    <li>R</li>
+                                    <li>Spring WebFlux</li>
+                                    <li>Git / GitHub / GitLab</li>
+                                    <li>Eclipse / IntelliJ IDEA</li>
                                     <li>Oracle</li>
-                                    <li>MongoDb</li>
+                                    <li>MongoDB</li>
                                     <li>PostgreSQL</li>
                                     <li>MySQL</li>
-                                    <li>Spring WebFlux</li>
                                 </ul>
-                                <!-- End of Knowledges -->
                             </div>
                             <!-- End of Skills & Certificates -->
                         </div>
@@ -710,7 +723,7 @@
                 <!-- Portfolio Subpage -->
                 <section data-id="portfolio" class="animated-section">
                     <div class="page-title">
-                        <h2>Portafolio | Personal</h2>
+                        <h2 data-i18n="portfolio.title">Portfolio | Personal</h2>
                     </div>
 
                     <div class="section-content">
@@ -722,7 +735,7 @@
 
                                     <ul class="portfolio-filters">
                                         <li class="active">
-                                            <a class="filter btn btn-sm btn-link" data-group="all">Todos</a>
+                                            <a class="filter btn btn-sm btn-link" data-group="all" data-i18n="portfolio.all">All</a>
                                         </li>
                                         <li>
                                             <a class="filter btn btn-sm btn-link" data-group="mobile">Mobile</a>
@@ -734,12 +747,27 @@
                                             <a class="filter btn btn-sm btn-link" data-group="backend">Backend</a>
                                         </li>
                                         <li>
+                                            <a class="filter btn btn-sm btn-link" data-group="desktop" data-i18n="portfolio.desktop">Desktop</a>
+                                        </li>
+                                        <li>
                                             <a class="filter btn btn-sm btn-link" data-group="unity">Unity</a>
                                         </li>
                                     </ul>
 
                                     <!-- Portfolio Grid -->
                                     <div class="portfolio-grid three-columns">
+
+                                        <figure class="item" data-groups='["all", "desktop"]'>
+                                            <div class="portfolio-item-img">
+                                                <img src="{{ site.baseurl }}/img/portfolio/7-qwbfs.png" alt="QWBFS Manager"/>
+                                                <a href="https://github.com/maniac787/qwbfsmanager/releases"
+                                                   target="_blank" rel="noopener"
+                                                   title="QWBFS Manager | Releases"></a>
+                                            </div>
+                                            <i class="fa fa-link"></i>
+                                            <h4 class="name" data-i18n="portfolio.qwbfs.name">QWBFS Manager | C++</h4>
+                                            <span class="category" data-i18n="portfolio.qwbfs.category">Desktop · Windows &amp; Linux releases</span>
+                                        </figure>
 
                                         <figure class="item" data-groups='["all", "mobile"]'>
                                             <div class="portfolio-item-img">
@@ -777,6 +805,18 @@
                                             <span class="category">Frontend</span>
                                         </figure>
 
+                                        <figure class="item" data-groups='["all", "mobile"]'>
+                                            <div class="portfolio-item-img">
+                                                <img src="{{ site.baseurl }}/img/portfolio/8-little-shark.jpg" alt="Little Shark Flutter"/>
+                                                <a href="https://play.google.com/store/apps/details?id=com.nwi.little_shark_flutter"
+                                                   target="_blank" rel="noopener"
+                                                   title="Little Shark | Play Store"></a>
+                                            </div>
+                                            <i class="fa fa-link"></i>
+                                            <h4 class="name" data-i18n="portfolio.littleSharkFlutter.name">Little Shark | Flutter</h4>
+                                            <span class="category" data-i18n="portfolio.littleSharkFlutter.category">Mobile · Google Play</span>
+                                        </figure>
+
                                         <figure class="item" data-groups='["all", "unity", "mobile"]'>
                                             <div class="portfolio-item-img">
                                                 <img src="{{ site.baseurl }}/img/portfolio/1.jpg" alt="Ecuavoley Unity"/>
@@ -812,7 +852,7 @@
                 <!-- Contact Subpage -->
                 <section data-id="contact" class="animated-section">
                     <div class="page-title">
-                        <h2>Contacto</h2>
+                        <h2 data-i18n="contact.title">Contact</h2>
                     </div>
 
                     <div class="section-content">
@@ -829,9 +869,9 @@
 
                                 <div class="lm-info-block gray-default">
                                     <i class="lnr lnr-phone-handset"></i>
-                                    <a
-                                            target="_blank"
-                                            href="https://api.whatsapp.com/send?phone=12259106814&text=Hola,%20que%20gusto,%20soy%20Roberto,%20te%20puedo%20ayudar%20con%20algun%20tema%20de%20desarrollo%20o%20arquitectura%20de%20Software?">
+                                    <a id="whatsapp_link"
+                                            target="_blank" rel="noopener"
+                                            href="https://api.whatsapp.com/send?phone=12259106814&text=Hi%2C%20nice%20to%20meet%20you.%20I%20am%20Roberto.%20Can%20I%20help%20you%20with%20software%20development%20or%20architecture%3F">
                                         <h4>+1 225 910 6814</h4></a>
                                     <span class="lm-info-block-value"></span>
                                     <span class="lm-info-block-text"></span>
@@ -846,7 +886,7 @@
 
                                 <div class="lm-info-block gray-default">
                                     <i class="lnr lnr-checkmark-circle"></i>
-                                    <h4>Freelance disponible</h4>
+                                    <h4 data-i18n="contact.available">Available for freelance</h4>
                                     <span class="lm-info-block-value"></span>
                                     <span class="lm-info-block-text"></span>
                                 </div>
@@ -858,7 +898,7 @@
                             <!-- Contact Form -->
                             <div class="col-xs-12 col-sm-8">
                                 <div class="block-title">
-                                    <h3>¿Cómo puedo <span>ayudarte?</span></h3>
+                                    <h3 data-i18n-html="contact.formTitle">How can I <span>help you?</span></h3>
                                 </div>
 
                                 <form id="contact_form" class="contact-form" action="https://formsubmit.co/ajax/maniac787@gmail.com"
@@ -872,8 +912,8 @@
                                                 <div class="form-group form-group-with-icon">
                                                     <input id="form_name" type="text" name="name" class="form-control"
                                                            placeholder="" required="required"
-                                                           data-error="El nombre es obligatorio.">
-                                                    <label>Nombre completo</label>
+                                                           data-error="Name is required." data-i18n-attr="data-error:contact.errorName">
+                                                    <label data-i18n="contact.name">Full name</label>
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
@@ -881,8 +921,8 @@
                                                 <div class="form-group form-group-with-icon">
                                                     <input id="form_email" type="email" name="email"
                                                            class="form-control" placeholder="" required="required"
-                                                           data-error="Se requiere un correo válido.">
-                                                    <label>Correo</label>
+                                                           data-error="A valid email is required." data-i18n-attr="data-error:contact.errorEmail">
+                                                    <label data-i18n="contact.email">Email</label>
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
@@ -890,8 +930,8 @@
                                                 <div class="form-group form-group-with-icon">
                                                     <input id="form_subject" type="text" name="subject"
                                                            class="form-control" placeholder="" required="required"
-                                                           data-error="El asunto es obligatorio.">
-                                                    <label>Asunto</label>
+                                                           data-error="Subject is required." data-i18n-attr="data-error:contact.errorSubject">
+                                                    <label data-i18n="contact.subject">Subject</label>
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
@@ -900,8 +940,8 @@
                                                 <div class="form-group form-group-with-icon">
                                                     <textarea id="form_message" name="message" class="form-control"
                                                               placeholder="" rows="7" required="required"
-                                                              data-error="Por favor, déjame un mensaje."></textarea>
-                                                    <label>Mensaje</label>
+                                                              data-error="Please leave me a message." data-i18n-attr="data-error:contact.errorMessage"></textarea>
+                                                    <label data-i18n="contact.message">Message</label>
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
@@ -914,27 +954,27 @@
                                             <input id="form_website" type="text" name="website" value="" tabindex="-1" autocomplete="off">
                                         </div>
                                         <input type="hidden" name="_honey" value="">
-                                        <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio">
+                                        <input type="hidden" name="_subject" value="New message from the portfolio" data-i18n-value="contact.mailSubject">
                                         <input type="hidden" name="_template" value="table">
                                         <input type="hidden" name="_captcha" value="false">
                                         <input type="hidden" name="form_started_at" id="form_started_at" value="">
 
                                         <div class="form-captcha">
-                                            <p class="form-captcha-question" id="form_captcha_question">Verificación anti-spam: ¿cuánto es …?</p>
+                                            <p class="form-captcha-question" id="form_captcha_question">Anti-spam check: what is …?</p>
                                             <div class="form-captcha-row">
                                                 <div class="form-group form-group-with-icon">
                                                     <input id="form_captcha" type="text" name="captcha_answer" class="form-control"
                                                            inputmode="numeric" autocomplete="off" required="required"
-                                                           data-error="Resuelve la verificación anti-spam.">
-                                                    <label>Tu respuesta</label>
+                                                           data-error="Solve the anti-spam check." data-i18n-attr="data-error:contact.errorCaptchaField">
+                                                    <label data-i18n="contact.answer">Your answer</label>
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
-                                                <button type="button" class="button btn-captcha-refresh" id="captcha_refresh" title="Nueva pregunta" aria-label="Nueva pregunta">↻</button>
+                                                <button type="button" class="button btn-captcha-refresh" id="captcha_refresh" title="New question" aria-label="New question" data-i18n-attr="title:contact.refreshCaptcha;aria-label:contact.refreshCaptcha">↻</button>
                                             </div>
                                         </div>
 
-                                        <input type="submit" class="button btn-send" value="Enviar mensaje">
+                                        <input type="submit" class="button btn-send" value="Send message" data-i18n-value="contact.send">
                                     </div>
                                 </form>
                             </div>
@@ -957,6 +997,7 @@
 <script src="{{ site.baseurl }}/js/jquery.shuffle.min.js"></script>
 <script src="{{ site.baseurl }}/js/owl.carousel.min.js"></script>
 <script src="{{ site.baseurl }}/js/validator.js"></script>
+<script src="{{ site.baseurl }}/js/i18n.js"></script>
 <script src="{{ site.baseurl }}/js/main.js"></script>
 </body>
 </html>

@@ -65,11 +65,17 @@
         var captchaExpected = null;
         var minFillMs = 3000;
 
+        function i18n(key, vars) {
+            return window.SiteI18n ? window.SiteI18n.t(key, vars) : key;
+        }
+
         function refreshCaptcha() {
             var a = Math.floor(Math.random() * 8) + 2;
             var b = Math.floor(Math.random() * 8) + 1;
             captchaExpected = a + b;
-            $("#form_captcha_question").text("Verificación anti-spam: ¿cuánto es " + a + " + " + b + "?");
+            $("#form_captcha_question").text(
+                i18n("contact.captchaQuestion", { a: a, b: b })
+            );
             $("#form_captcha").val("").parent(".form-group").removeClass("form-group-focus has-error");
             $("#form_captcha").siblings(".help-block").empty();
         }
@@ -83,11 +89,9 @@
         }
 
         function isSpamAttempt() {
-            // Honeypot visible para bots
             if ($.trim($("#form_website").val() || "") !== "") {
                 return true;
             }
-            // Envío demasiado rápido = bot
             var startedAt = parseInt($("#form_started_at").val(), 10);
             if (!startedAt || Date.now() - startedAt < minFillMs) {
                 return true;
@@ -102,6 +106,12 @@
             refreshCaptcha();
         });
 
+        document.addEventListener("site:langchange", function () {
+            refreshCaptcha();
+            $form.find(".btn-send").val(i18n("contact.send"));
+            $form.find('input[name="_subject"]').val(i18n("contact.mailSubject"));
+        });
+
         $form.validator();
 
         $form.on("submit", function (e) {
@@ -113,15 +123,16 @@
 
             var answer = parseInt($.trim($("#form_captcha").val()), 10);
             if (isNaN(answer) || answer !== captchaExpected) {
-                showFormError("La verificación anti-spam es incorrecta. Inténtalo de nuevo.");
+                showFormError(i18n("contact.errorCaptcha"));
                 refreshCaptcha();
                 return;
             }
 
             if (isSpamAttempt()) {
-                // Respuesta falsa de éxito para no ayudar a los bots
                 $form.find(".messages").html(
-                    '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Mensaje enviado. Te responderé pronto.</div>'
+                    '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' +
+                        i18n("contact.success") +
+                        "</div>"
                 );
                 $form[0].reset();
                 $("#form_started_at").val(String(Date.now()));
@@ -130,10 +141,9 @@
             }
 
             var $submit = $form.find(".btn-send");
-            var originalValue = $submit.val();
-            $submit.prop("disabled", true).val("Enviando...");
+            var originalValue = i18n("contact.send");
+            $submit.prop("disabled", true).val(i18n("contact.sending"));
 
-            // No enviar campos de control al correo
             var payload = $form.serializeArray().filter(function (field) {
                 return field.name !== "website" &&
                     field.name !== "captcha_answer" &&
@@ -150,7 +160,9 @@
                 },
                 success: function () {
                     $form.find(".messages").html(
-                        '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Mensaje enviado. Te responderé pronto.</div>'
+                        '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' +
+                            i18n("contact.success") +
+                            "</div>"
                     );
                     $form[0].reset();
                     $form.find(".form-group-focus").removeClass("form-group-focus");
@@ -158,7 +170,7 @@
                     refreshCaptcha();
                 },
                 error: function () {
-                    showFormError("No se pudo enviar el mensaje. Inténtalo de nuevo o escríbeme a maniac787@gmail.com.");
+                    showFormError(i18n("contact.errorSend"));
                     refreshCaptcha();
                 },
                 complete: function () {
@@ -187,6 +199,10 @@
         });
 
     $(document).ready(function () {
+        if (window.SiteI18n) {
+            window.SiteI18n.init();
+        }
+
         var years = new Date().getFullYear() - 2011;
         $("#mi-fecha").text(years);
 

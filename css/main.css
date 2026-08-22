@@ -445,6 +445,33 @@ input[type="submit"]:focus {
 }
 
 /* --- Social Links --- */
+.lang-switch {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: 0 0 18px;
+}
+
+.lang-switch .lang-btn {
+  min-width: 42px;
+  height: 32px;
+  padding: 0 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  background: transparent;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  line-height: 30px;
+}
+
+.lang-switch .lang-btn:hover,
+.lang-switch .lang-btn.is-active {
+  border-color: #54ca95;
+  color: #54ca95;
+}
+
 .social-links {
   margin: 20px 0;
 }
@@ -1557,9 +1584,13 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .portfolio-grid img {
-  position: relative;
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .portfolio-grid figure a,
@@ -1577,7 +1608,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .portfolio-grid figure:hover img {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .portfolio-grid figure a {
@@ -1592,6 +1623,10 @@ textarea.form-control, textarea.form-control:focus {
 .portfolio-item-img {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background-color: #111;
+  border-radius: 2px;
 }
 
 .portfolio-grid figure .portfolio-item-img:after {

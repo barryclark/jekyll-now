@@ -212,6 +212,14 @@ git pull origin master
 
 ---
 
+## Idioma (i18n)
+
+- Por defecto: **inglés (EN)**
+- Secundario: **español (ES)**
+- Selector en el menú lateral: `EN` / `ES`
+- La preferencia se guarda en `localStorage` (`site-lang`)
+- Traducciones: `js/i18n.js`
+
 ## Resumen rápido
 
 ```bash
