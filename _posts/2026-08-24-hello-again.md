@@ -37,10 +37,10 @@ Typing them up is a chore, and chores don't get done. So the fix had to remove t
 chore entirely: photograph the pages, and let a model do the transcription and the
 first structural pass.
 
-There's a tool in this repo now — `tools/notes2blog` — that does exactly that. Drop in
-photos of a notebook, it reads the handwriting, works out what the argument actually
-is, and writes a draft in my voice with suggested tags. Then it stops and shows me the
-rendered result.
+There's a tool for this now — `notes2blog`, which lives locally at `~/tools/notes2blog`
+(kept out of this repo). Drop in photos of a notebook, it reads the handwriting, works
+out what the argument actually is, and writes a draft in my voice with suggested tags.
+Then it stops and shows me the rendered result.
 
 The stopping matters. It is not allowed to publish anything I haven't read. I edit the
 draft in the browser, fix whatever it got wrong about my handwriting or my point, and

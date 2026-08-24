@@ -28,15 +28,19 @@ section and anchor on **/tags/** — there is nothing else to register.
 
 ## Writing a post from handwritten notes
 
-There's a local tool for this in `tools/notes2blog`. You photograph your notebook, it
-transcribes the handwriting with Claude, drafts the post in your voice with suggested
-tags, and shows you a rendered preview. Nothing is published until you click
-**Approve & Publish**.
+The primary path: **send photos of your notes (and any comments) on WhatsApp** to the
+Hermes agent. It transcribes the handwriting, drafts the post, shows you a rendered
+preview, and only opens a PR after you approve.
+
+Agent-free fallback: a local tool, `notes2blog`, kept *outside* this repo at
+`~/tools/notes2blog`. You photograph your notebook, it transcribes the handwriting
+with Claude, drafts the post in your voice with suggested tags, and shows you a
+rendered preview. Nothing is published until you click **Approve & Publish**.
 
 ### One-time setup
 
 ```bash
-cd tools/notes2blog
+cd ~/tools/notes2blog
 cp .env.example .env
 # open .env and paste your ANTHROPIC_API_KEY
 ```
@@ -51,7 +55,7 @@ git config user.email "jrajrohit33@gmail.com"
 ### Using it
 
 ```bash
-./tools/notes2blog/run.sh
+~/tools/notes2blog/run.sh
 ```
 
 First run builds a virtualenv and installs dependencies; after that it starts in a
@@ -78,7 +82,7 @@ see [Security model](#security-model) below. Open **http://127.0.0.1:8765** and:
 
 ### Configuration
 
-All optional, in `tools/notes2blog/.env`:
+All optional, in `~/tools/notes2blog/.env`:
 
 | Variable | Default | Meaning |
 |---|---|---|
@@ -130,7 +134,6 @@ _includes/     header, footer, post-list-item
 _posts/        the blog posts
 assets/        main.scss (all styling), site.js (theme toggle)
 tags.html      auto-generated tag index — no maintenance needed
-tools/notes2blog/   the handwritten-notes → blog tool
 ```
 
 Styling is one file, `assets/css/main.scss`, driven by CSS custom properties at the

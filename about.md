@@ -21,5 +21,5 @@ scribbles in a notebook that got photographed and turned into a post.
 ### About this site
 
 Built with Jekyll, hosted on GitHub Pages. Posts are tagged — browse them on the
-[tags page](/tags/). Many posts are drafted from handwritten notes using a small
-local tool that lives in `tools/notes2blog` in this repo.
+[tags page](/tags/). Many posts are drafted from handwritten notes using `notes2blog`,
+a small local tool kept at `~/tools/notes2blog` (outside this repo).
