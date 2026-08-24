@@ -413,6 +413,15 @@ async def transcribe(
     return JSONResponse(draft)
 
 
+# Attribution footer appended to every published post (and to the preview so it
+# matches). Defined once here so the model output, preview and published file
+# can never drift apart.
+DISCLAIMER = (
+    "\n\n---\n\n*This article was drafted with the assistance of an automated "
+    "Hermes agent and reviewed by the author before publishing.*\n"
+)
+
+
 @app.post("/api/render")
 async def render(payload: dict) -> dict:
     html = md.markdown(
@@ -420,7 +429,8 @@ async def render(payload: dict) -> dict:
         extensions=["fenced_code", "codehilite", "tables", "sane_lists"],
         extension_configs={"codehilite": {"noclasses": False, "css_class": "highlight"}},
     )
-    return {"html": html}
+    disclaimer_html = md.markdown(DISCLAIMER)
+    return {"html": html + disclaimer_html}
 
 
 @app.post("/api/publish")
@@ -431,6 +441,7 @@ async def publish(payload: dict) -> dict:
         raise HTTPException(400, "A title is required.")
     if not body:
         raise HTTPException(400, "The post body is empty.")
+    body += DISCLAIMER
 
     date_str = (payload.get("date") or dt.date.today().isoformat()).strip()
     try:
