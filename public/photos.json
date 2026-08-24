@@ -1,0 +1,146 @@
+[
+  {
+    "id": "1",
+    "name": "Mont-Tremblant, Quebec",
+    "lat": 46.1184,
+    "lng": -74.5970,
+    "photos": [
+      "/photos/Mont-Tremblant.jpg"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Montreal, Quebec",
+    "lat": 45.5017,
+    "lng": -73.5673,
+    "photos": [
+      "/photos/Montreal.jpg"
+    ]
+  },
+  {
+    "id": "2b",
+    "name": "Plateau Mont-Royal, Montreal",
+    "lat": 45.5200,
+    "lng": -73.5800,
+    "photos": [
+      "/photos/Montreal 2.jpg"
+    ]
+  },
+  {
+    "id": "2c",
+    "name": "Little Italy, Montreal",
+    "lat": 45.5350,
+    "lng": -73.6150,
+    "photos": [
+      "/photos/Little Italy, rosemont, Montreal.jpg"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Tadoussac, Quebec",
+    "lat": 48.1406,
+    "lng": -69.7139,
+    "photos": [
+      "/photos/Tadoussac.jpg"
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Mirabel, Quebec",
+    "lat": 45.6500,
+    "lng": -74.0833,
+    "photos": [
+      "/photos/Mirabel.jpg"
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Quebec City, Quebec",
+    "lat": 46.8139,
+    "lng": -71.2080,
+    "photos": [
+      "/photos/Quebec City.jpg"
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Laval, Quebec",
+    "lat": 45.6066,
+    "lng": -73.7124,
+    "photos": [
+      "/photos/Laval.jpg"
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Prince Edward County, Ontario",
+    "lat": 43.9667,
+    "lng": -77.2500,
+    "photos": [
+      "/photos/Prince Edward County.jpg"
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Norfolk, Virginia",
+    "lat": 36.8508,
+    "lng": -76.2859,
+    "photos": [
+      "/photos/Norfolk.jpg"
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Outer Banks, North Carolina",
+    "lat": 35.5585,
+    "lng": -75.4665,
+    "photos": [
+      "/photos/Outerbanks.jpeg"
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Ann Arbor, Michigan",
+    "lat": 42.2808,
+    "lng": -83.7430,
+    "photos": [
+      "/photos/AnnArbor.jpg"
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Virginia Beach, Virginia",
+    "lat": 36.8529,
+    "lng": -75.9780,
+    "photos": [
+      "/photos/Virginia Beach.jpg"
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Oxford, Maryland",
+    "lat": 38.6873,
+    "lng": -76.1702,
+    "photos": [
+      "/photos/Oxford, Maryland.jpg"
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Cincinnati, Ohio",
+    "lat": 39.1031,
+    "lng": -84.5120,
+    "photos": [
+      "/photos/Cincinnati.jpg"
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Sebastian, Florida",
+    "lat": 27.8164,
+    "lng": -80.4706,
+    "photos": [
+      "/photos/Sebastian Florida.jpg"
+    ]
+  }
+]

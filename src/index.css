@@ -1,0 +1,401 @@
+@import 'tailwindcss';
+@import "tw-animate-css";
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+}
+
+:root {
+  --background: oklch(0.98 0.005 85);
+  --foreground: oklch(0.25 0.02 150);
+  --card: oklch(0.99 0.002 85);
+  --card-foreground: oklch(0.25 0.02 150);
+  --popover: oklch(0.99 0.002 85);
+  --popover-foreground: oklch(0.25 0.02 150);
+  --primary: oklch(0.28 0.03 155);
+  --primary-foreground: oklch(0.98 0.005 85);
+  --secondary: oklch(0.93 0.01 85);
+  --secondary-foreground: oklch(0.25 0.02 150);
+  --muted: oklch(0.95 0.008 85);
+  --muted-foreground: oklch(0.48 0.015 150);
+  --accent: oklch(0.65 0.08 75);
+  --accent-foreground: oklch(0.98 0.005 85);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0.005 85);
+  --border: oklch(0.88 0.01 85);
+  --input: oklch(0.88 0.01 85);
+  --ring: oklch(0.65 0.08 75);
+  --radius: 0rem;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) * 0.5);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) * 1.5);
+  --radius-xl: calc(var(--radius) * 2);
+  --radius-2xl: calc(var(--radius) * 3);
+  --radius-full: 9999px;
+}
+
+.text-display {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+.text-display-bold {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.hero-pattern {
+  background-color: oklch(0.98 0.005 85);
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 79px,
+      oklch(0.92 0.01 85) 79px,
+      oklch(0.92 0.01 85) 80px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 79px,
+      oklch(0.92 0.01 85) 79px,
+      oklch(0.92 0.01 85) 80px
+    );
+}
+
+.elegant-border {
+  position: relative;
+}
+
+.elegant-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    oklch(0.65 0.08 75) 50%,
+    transparent
+  );
+}
+
+/* 80s Retro Theme */
+.retro-theme {
+  background: linear-gradient(
+    45deg,
+    #ff00ff 0%,
+    #00ffff 25%,
+    #ff00ff 50%,
+    #ffff00 75%,
+    #ff00ff 100%
+  );
+  background-size: 400% 400%;
+  animation: retroGradient 15s ease infinite;
+  position: relative;
+}
+
+.retro-theme::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 255, 255, 0.1) 2px,
+      rgba(0, 255, 255, 0.1) 4px
+    );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.retro-theme * {
+  font-family: 'Courier New', 'Courier', monospace !important;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff, 0 0 30px #ff00ff !important;
+  color: #00ffff !important;
+}
+
+.retro-theme h1,
+.retro-theme h2,
+.retro-theme h3,
+.retro-theme h4,
+.retro-theme h5,
+.retro-theme h6 {
+  font-weight: bold !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: neonPulse 2s ease-in-out infinite;
+}
+
+.retro-theme button,
+.retro-theme a {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.retro-theme .bg-background,
+.retro-theme .bg-card,
+.retro-theme .bg-secondary,
+.retro-theme .bg-muted,
+.retro-theme [class*="bg-"] {
+  background: transparent !important;
+}
+
+.retro-theme .hero-pattern {
+  background: transparent !important;
+  background-image: none !important;
+}
+
+.retro-theme button:hover,
+.retro-theme a:hover {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+@keyframes retroGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes neonPulse {
+  0%, 100% { 
+    filter: brightness(1);
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff, 0 0 30px #ff00ff;
+  }
+  50% { 
+    filter: brightness(1.5);
+    text-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff, 0 0 60px #ff00ff;
+  }
+}
+
+/* Explosion Animation */
+.explosion-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.explosion {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 0%, #ff00ff 25%, #00ffff 50%, #ffff00 75%, transparent 100%);
+  animation: explode 1.5s ease-out forwards;
+  box-shadow: 
+    0 0 50px #ff00ff,
+    0 0 100px #00ffff,
+    0 0 150px #ffff00,
+    0 0 200px #ff00ff;
+}
+
+@keyframes explode {
+  0% {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+  }
+  50% {
+    width: 2000px;
+    height: 2000px;
+    opacity: 0.8;
+  }
+  100% {
+    width: 4000px;
+    height: 4000px;
+    opacity: 0;
+  }
+}
+
+/* T-Rex Dinosaur Animation */
+.dino-container {
+  position: fixed;
+  left: -200px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100000;
+  animation: dinoWalk 4s ease-in-out forwards;
+}
+
+.trex {
+  font-size: 150px;
+  filter: drop-shadow(0 0 20px #00ff00) drop-shadow(0 0 40px #00ff00);
+  animation: dinoChomp 0.3s ease-in-out infinite, dinoGlow 2s ease-in-out infinite;
+}
+
+@keyframes dinoWalk {
+  0% {
+    left: -200px;
+  }
+  50% {
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+  70% {
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) scale(1.2);
+  }
+  100% {
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) scale(1.5);
+  }
+}
+
+@keyframes dinoChomp {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.9);
+  }
+}
+
+@keyframes dinoGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 20px #00ff00) drop-shadow(0 0 40px #00ff00);
+  }
+  50% {
+    filter: drop-shadow(0 0 40px #ff00ff) drop-shadow(0 0 80px #00ffff);
+  }
+}
+
+/* Hide Alex when dino appears */
+.retro-theme:has(.dino-container) *:is(h1, h2, h3, h4, h5, h6, p, span):not(.trex) {
+  animation: textShake 0.5s ease-in-out 2s forwards;
+}
+
+@keyframes textShake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+/* Disco Ball Button */
+.disco-ball-button-header {
+  font-size: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+@media (min-width: 769px) {
+  .disco-ball-button-header {
+    font-size: 50px;
+  }
+}
+
+.retro-theme .disco-ball-button-header {
+  animation: discoBallSpin 4s linear infinite;
+}
+
+.disco-ball-button-header:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+}
+
+@keyframes discoBallSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Party Hat on T-Rex */
+.party-hat {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-15deg);
+  font-size: 60px;
+  animation: hatBounce 0.5s ease-in-out infinite;
+}
+
+@keyframes hatBounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0) rotate(-15deg);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px) rotate(-15deg);
+  }
+}
+
+.trex {
+  position: relative;
+  display: inline-block;
+}
+
+
