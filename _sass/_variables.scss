@@ -3,16 +3,63 @@
 // VARIABLES
 //
 
-// Colors
-$blue: #4183C4;
+// Color theme: CSS custom properties so the site can switch to dark mode
+// automatically based on the reader's OS/browser preference.
+:root {
+  --bg: #ffffff;
+  --bg-secondary: #f5f8fc;
+  --text: #1c2733;
+  --text-secondary: #5b6b7d;
+  --heading: #131c26;
+  --border: #dce6f0;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-light: #dbeafe;
+  --selection-bg: #dbeafe;
+  --selection-text: #131c26;
 
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+  --masthead-bg-start: #1e3a8a;
+  --masthead-bg-end: #2563eb;
+  --masthead-text: #ffffff;
+  --masthead-text-secondary: #cfe0fb;
+  --masthead-shadow: rgba(30, 58, 138, 0.18);
+
+  --hl-bg: #f5f8fc;
+  --hl-border: #dce6f0;
+  --hl-shadow: rgba(30, 58, 138, 0.08);
+  --hl-fg: #5b6b7d;
+  --hl-comment: #7c8ea1;
+  --hl-other: #5b6b7d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1220;
+    --bg-secondary: #131b2c;
+    --text: #dbe4f0;
+    --text-secondary: #93a3b8;
+    --heading: #f0f4fa;
+    --border: #253248;
+    --accent: #60a5fa;
+    --accent-hover: #93c5fd;
+    --accent-light: #1e293b;
+    --selection-bg: #1e3a5f;
+    --selection-text: #f0f4fa;
+
+    --masthead-bg-start: #131b2c;
+    --masthead-bg-end: #1e3a8a;
+    --masthead-text: #f0f4fa;
+    --masthead-text-secondary: #93c5fd;
+    --masthead-shadow: rgba(0, 0, 0, 0.45);
+
+    --hl-bg: #131b2c;
+    --hl-border: #253248;
+    --hl-shadow: rgba(0, 0, 0, 0.4);
+    --hl-fg: #c3d0e0;
+    --hl-comment: #8fa0b8;
+    --hl-other: #c3d0e0;
+  }
+}
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
