@@ -11,7 +11,13 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    {% seo %}
+    
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
@@ -27,8 +33,12 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/">Home</a>
+            <a href="{{ site.baseurl }}/about">About Us</a>
+            <a href="{{ site.baseurl }}/members">Members</a>
+            <a href="{{ site.baseurl }}/affiliates">Affiliates</a>
+            <a href="{{ site.baseurl }}/join">Join Us</a>
+            <a href="https://wiki.gamingwikinetwork.org/wiki/Main_Page" target="_blank">GWN Wiki</a>
           </nav>
         </header>
       </div>
@@ -37,6 +47,22 @@
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
+    <!-- Pagination links -->
+    {% if page.layout == "default" %}
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="next">← Next</a>
+      {% else %}
+        <span class="previous">← Next</span>
+      {% endif %}
+      <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="previous">Prev →</a>
+      {% else %}
+        <span class="next ">Prev →</span>
+      {% endif %}
+    </div>
+    {% endif %}
 
     <div class="wrapper-footer">
       <div class="container">

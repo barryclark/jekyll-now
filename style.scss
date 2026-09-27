@@ -77,6 +77,10 @@ a {
   }
 }
 
+small {
+  font-size: small;	
+}
+
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
@@ -98,6 +102,16 @@ ul ul, ol ul {
   list-style-type: circle;
 }
 
+table {
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  vertical-align: middle;
+  padding: 15px;
+}
+
 em, i {
   font-style: italic;
 }
@@ -108,6 +122,22 @@ strong, b {
 
 img {
   max-width: 100%;
+}
+
+.button {
+  background-color: #ef4e63;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+a:hover.button, a:active.button {
+  color: white;
+  text-decoration: underline;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -140,6 +170,16 @@ img {
 
 .clearfix:after {
     clear: both;
+}
+
+//
+// Pagination
+//
+
+.pagination {
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 15px;  
 }
 
 /*********************/
@@ -211,7 +251,9 @@ img {
 }
 
 nav {
-  float: right;
+  text-align: center;
+  clear: both;
+  padding-top: 15px;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;

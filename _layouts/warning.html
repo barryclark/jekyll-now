@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<article class="page">
+
+  <h1>Mature Content Warning</h1>
+  <div class="entry">
+    <p>The wiki you're about to access covers subject matter which may include <b>mature</b> themes.</p>    
+    <a class="button" href="{{ page.link }}"><b>I'm {{ page.age | default: 18 }} or over</b></a> <a href="{{ page.fallback | default: 'https://gamingwikinetwork.org/members' }}" class="button"><b>I'm under {{ page.age | default: 18 }}</b></a>
+    <br><br>
+  </div>
+</article>
