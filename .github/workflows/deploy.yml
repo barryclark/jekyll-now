@@ -33,6 +33,8 @@ jobs:
 
       - run: npm ci
 
+      - run: npm test
+
       - name: Build site
         run: bundle exec jekyll build
         env:

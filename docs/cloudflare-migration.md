@@ -21,7 +21,9 @@ Serve today's Jekyll output from a Worker with static assets. No visible change.
 - `wrangler.jsonc`: Worker `mostlywrong`, assets from `_site`, custom domains for the
   apex and `www`.
 - `src/worker.js`: redirects `www` to the apex (GitHub Pages did this before) and serves
-  everything else from assets.
+  everything else from assets. It answers byte-range requests itself, because the assets
+  binding ignores `Range` and `<audio>` seeking needs it. Tests are in `test/`, run with
+  `npm test`.
 - `.github/workflows/deploy.yml`: builds Jekyll, deploys on push to `master`, deploys a
   Workers Preview (public URL) for each PR and deletes it when the PR closes.
 - `404.md` now builds to `/404.html`, which Workers' `404-page` handling expects.
@@ -43,10 +45,23 @@ Serve today's Jekyll output from a Worker with static assets. No visible change.
    - `/feed.xml` works
    - `www` returns a 301
    - `/nope` returns a 404 page
-   - MP3s play and seek (also check whether R2 range responses return a 206)
+   - MP3s play and seek (range requests return a 206)
 5. Turn off GitHub Pages in the repo settings and delete `CNAME`.
 
 Rollback: delete the Worker's custom domains and restore the DNS records from step 2.
+Snapshot taken 2026-10-24, all proxied with automatic TTL:
+
+| Type | Name | Content |
+| --- | --- | --- |
+| A | mostlywrong.net | 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153 |
+| AAAA | mostlywrong.net | 2606:50c0:8000::153, 2606:50c0:8001::153, 2606:50c0:8002::153, 2606:50c0:8003::153 |
+| CNAME | www.mostlywrong.net | ianchesal.github.io |
+
+The MX and TXT records (email forwarding, SPF, Keybase) aren't affected by the cutover.
+
+The Worker is also deployed at https://mostlywrong.mostlywrong.workers.dev, without
+custom domains, for testing before cutover. Every path, the feed, the 404 page and MP3
+range requests match production.
 
 ## Phase 2: rebuild
 
