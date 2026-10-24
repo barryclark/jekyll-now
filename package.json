@@ -1,0 +1,13 @@
+{
+  "name": "mostlywrong",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "dev": "bundle exec jekyll build && wrangler dev",
+    "deploy": "bundle exec jekyll build && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.152.0"
+  }
+}

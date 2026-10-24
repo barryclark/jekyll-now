@@ -72,3 +72,11 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - Rakefile
+  - vendor
+  - node_modules
+  - package.json
+  - package-lock.json
+  - src
+  - docs
+  - wrangler.jsonc

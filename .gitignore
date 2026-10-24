@@ -4,3 +4,6 @@
 .sass-cache
 _site
 vendor
+node_modules
+.wrangler
+.bundle

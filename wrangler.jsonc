@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mostlywrong",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./_site",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page",
+    // Needed so the Worker sees www requests and can redirect them; assets
+    // would otherwise be served directly without invoking the script.
+    "run_worker_first": true
+  },
+  "routes": [
+    { "pattern": "mostlywrong.net", "custom_domain": true },
+    { "pattern": "www.mostlywrong.net", "custom_domain": true }
+  ],
+  "observability": { "enabled": true }
+}
