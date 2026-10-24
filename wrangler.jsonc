@@ -1,8 +1,10 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "mostlywrong",
+  // Chesal Information Alliance, which owns the mostlywrong.net zone.
+  "account_id": "78cb27b13612bdfd2f39f6f61f2de40c",
   "main": "src/worker.js",
-  "compatibility_date": "2026-10-01",
+  "compatibility_date": "2026-10-24",
   "assets": {
     "directory": "./_site",
     "binding": "ASSETS",
@@ -16,5 +18,8 @@
     { "pattern": "mostlywrong.net", "custom_domain": true },
     { "pattern": "www.mostlywrong.net", "custom_domain": true }
   ],
-  "observability": { "enabled": true }
+  "observability": {
+    "enabled": true,
+    "traces": { "enabled": true }
+  }
 }

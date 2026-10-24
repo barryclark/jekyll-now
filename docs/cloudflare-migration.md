@@ -22,15 +22,17 @@ Serve today's Jekyll output from a Worker with static assets. No visible change.
   apex and `www`.
 - `src/worker.js`: redirects `www` to the apex (GitHub Pages did this before) and serves
   everything else from assets.
-- `.github/workflows/deploy.yml`: builds Jekyll, deploys on push to `master` and uploads
-  a preview version for PRs.
+- `.github/workflows/deploy.yml`: builds Jekyll, deploys on push to `master`, deploys a
+  Workers Preview (public URL) for each PR and deletes it when the PR closes.
 - `404.md` now builds to `/404.html`, which Workers' `404-page` handling expects.
 - `Gemfile` adds the stdlib gems that Ruby 4.0 unbundled.
 
 ### Cutover
 
-1. Create a Cloudflare API token from the "Edit Cloudflare Workers" template. Add it as
-   repo secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`.
+1. Create an account-owned API token in Chesal Information Alliance from the "Edit
+   Cloudflare Workers" template, scoped to that account and the `mostlywrong.net` zone. Add
+   it as the repo secret `CLOUDFLARE_API_TOKEN`. The account ID is pinned in
+   `wrangler.jsonc`.
 2. In the zone's DNS, delete the existing apex and `www` records that point at GitHub
    Pages. Worker custom domains won't attach while a conflicting record exists.
    **Note down the current values first, so you can roll back.**
