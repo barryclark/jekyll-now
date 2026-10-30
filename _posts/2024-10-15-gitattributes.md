@@ -34,3 +34,16 @@ Also, you may want to disable diffs for any binary files you add by appending so
 ```
 .png binary
 ```
+
+## .editorconfig
+
+LF is better than CRLF, but on Windows there are unfortunate edge cases. Put this in `.editorconfig`, which is a much better place to control line endings.
+
+```
+[*]
+end_of_line = lf
+
+# cmd.exe can mis-parse labels in batch files with LF-only endings
+[*.{bat,cmd}]
+end_of_line = crlf
+```
