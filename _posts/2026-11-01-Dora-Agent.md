@@ -6,9 +6,9 @@ date: 2026-11-01
 excerpt: "一张 S$63,094.46 的估税单，三个官方渠道互相踢皮球。我用两个 AI、两套身份认证和一个判例库，把它变成了 0.00。"
 ---
 
-<img src="/images/2026-11-01-Dora-Agent/cover.jpg" alt="Dora-Agent：17 天，追回 S$63,000" title="Dora-Agent 长程任务案例" width="1377" height="768" loading="eager" decoding="async">
+<img src="/images/2026-11-01-Dora-Agent/cover.jpg" alt="Dora-Agent：17 天，免除 S$63,000" title="Dora-Agent 长程任务案例" width="1377" height="768" loading="eager" decoding="async">
 
-十月的一个晚上，我点开新加坡的 Singpass，想查个别的东西。
+十月的一个晚上，我点开新加坡的 Singpass（当地的电子身份，相当于实名认证 App），想查个别的东西。
 
 首页跳出来一个数字：**S$63,094.46**，后面跟着一行小字：应缴税款。
 
@@ -40,7 +40,7 @@ excerpt: "一张 S$63,094.46 的估税单，三个官方渠道互相踢皮球。
 
 十月十一号，我开始自己处理。
 
-先问 IRAS 官网的在线 AI 客服：这种情况怎么申诉？它说：请用 myTax Portal 里的「Amend Tax Bill」。
+先问 IRAS 官网的在线 AI 客服：这种情况怎么申诉？它说：请用 myTax Portal 里的「修改税单」（Amend Tax Bill）服务——就是自己在网上改申报数字的入口。
 
 去了那个入口，页面上写：请通过邮件申诉。
 
@@ -108,7 +108,7 @@ excerpt: "一张 S$63,094.46 的估税单，三个官方渠道互相踢皮球。
 
 AI 打通人工电话的第二天，IRAS 的邮件来了。不是模板，是一个有名字的工作人员，问得很直接：**你的 concern 是什么？**
 
-我让 Agent 回。它没有马上写，而是先去查新加坡的 SSO 法条库，再查中国这边的税法，把两边的**税务居民身份认定**和**中新避免双重征税协定（DTA）**摊开对照，找到能支撑"这张单子本就不该被征收"的条款，然后逐条引用。
+我让 Agent 回。它没有马上写，而是先去查新加坡的 SSO 法条库，再查中国这边的税法，把两边的**税务居民身份认定**和**中新避免双重征税协定（DTA）**摊开对照——DTA 就是两国约定：同一笔收入不重复征税，找到能支撑"这张单子本就不该被征收"的条款，然后逐条引用。
 
 回信过去，对方的答复很克制：
 
@@ -155,7 +155,7 @@ Amended Estimated Assessment   −60,289.97
 
 <img src="/images/2026-11-01-Dora-Agent/ledger.png" alt="IRAS 账本：从 63,094.46 到 0.00" title="IRAS 账户流水" width="2284" height="1204" loading="lazy" decoding="async">
 
-*账本不会说谎。三行流水，把一张六万的单子归了零。*
+*账本不会说谎。三行流水，把一张六万的税单撤了。*
 
 <img src="/images/2026-11-01-Dora-Agent/fig5-flow.gif" alt="Dora-Agent 全流程交互动图" title="One task, nine parties" width="1000" height="720" loading="lazy" decoding="async">
 
@@ -169,7 +169,7 @@ Amended Estimated Assessment   −60,289.97
 
 换句话说，跟 IRAS 客服对话的，是一个**学会了像我一样讲话的模型**。
 
-这不是科幻，是我的本职工作。去年一整年我做的就是 **AI 外呼**：它每天要面对挂断、质问、沉默、拒绝，比打给税务局客服难得多。去年它带来的成交是 **10 亿元人民币**。
+这不是科幻，是我的本职工作。去年一整年我做的就是 **AI 外呼**——让 AI 自动拨号、跟人实时对话的系统。它每天要面对挂断、质问、沉默、拒绝，比打给税务局客服难得多。去年它带来的成交是 **10 亿元人民币**。
 
 那天晚上，我只是把跑通的能力换了个场景。
 
@@ -179,7 +179,7 @@ Amended Estimated Assessment   −60,289.97
 
 <img src="/images/2026-11-01-Dora-Agent/fig2-voice-agent.webp" alt="AI 电话模型的技术逻辑" title="What an AI phone call actually means" width="1000" height="700" loading="lazy" decoding="async">
 
-*它不是"聊天框开了语音"：语料来自我一个人。同一个底座，去年在卖东西，今年在谈税。*
+*它不是"聊天框开了语音"：语料来自我一个人。同一个底座，去年在卖广告，今年在谈税。*
 
 ---
 
@@ -243,7 +243,7 @@ Amended Estimated Assessment   −60,289.97
 
 ---
 
-如果你或你的公司也遇到过税务、法律、财务、保险方面类似的痛点，欢迎聊聊。
+如果你或你的公司也遇到过税务、法律、财务、保险上类似的痛点，欢迎聊聊。
 
 **Dora-Agent · 产品预约 / 咨询**：[sjsunwhhit2021@gmail.com](mailto:sjsunwhhit2021@gmail.com?subject=Dora-Agent%20%E5%92%A8%E8%AF%A2)
 
