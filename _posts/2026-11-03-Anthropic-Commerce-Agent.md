@@ -22,7 +22,7 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 这就是电商 Agent 的根本矛盾：**用户侧要连续的对话和共享的状态，工程侧却天然按业务域拆分——团队边界、权限、发布节奏都是按域划的。**
 
-## 架构设计：One-Agent not Sub-Agents
+## 架构设计：<span style="color:#2563eb">One-Agent</span> not Sub-Agents
 
 默认方案是一个主 Agent 保持对话所有权，按需加载 Skills。
 
