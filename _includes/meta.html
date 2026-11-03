@@ -1,18 +1,75 @@
     <meta charset="utf-8" />
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% if page.excerpt %}
-    <meta name="description" content="{{ page.excerpt| strip_html }}" />
-    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
-    {% else %}
-    <meta name="description" content="{{ site.description }}">
-    <meta property="og:description" content="{{ site.description }}" />
+    {% assign desc = page.excerpt | default: site.description | strip_html | strip_newlines | strip | truncate: 160 %}
+    <meta name="description" content="{{ desc }}" />
+    <meta name="author" content="Claire (QingYe-2026)" />
+    <meta name="google-site-verification" content="PP0VazRYvckafAyrUBad9F2z9_VRs3N7Raz1WprFdwA" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="{{ site.name }}" />
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}" />
+    <meta property="og:description" content="{{ desc }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:image" content="{{ site.url }}/images/my-logo.png" />
+    {% if page.layout == 'post' %}
+    <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
+    <meta property="article:author" content="Claire (QingYe-2026)" />
     {% endif %}
-    <meta name="author" content="{{ site.name }}" />
 
-    {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="twitter:title" content="{{ page.title }}" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}" />
+    <meta name="twitter:description" content="{{ desc }}" />
+    <meta name="twitter:image" content="{{ site.url }}/images/my-logo.png" />
+
+    {% if page.layout == 'post' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": {{ page.title | jsonify }},
+      "description": {{ desc | jsonify }},
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "dateModified": "{{ page.date | date_to_xmlschema }}",
+      "image": "{{ site.url }}/images/my-logo.png",
+      "author": {
+        "@type": "Person",
+        "name": "Claire (QingYe-2026)",
+        "url": "{{ site.url }}/about/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Claire-notes",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.url }}/images/my-logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+      }
+    }
+    </script>
+    {% endif %}
+
+    {% if page.url == '/' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{{ site.name }}",
+      "url": "{{ site.url }}/",
+      "description": {{ site.description | jsonify }},
+      "author": {
+        "@type": "Person",
+        "name": "Claire (QingYe-2026)",
+        "url": "{{ site.url }}/about/"
+      }
+    }
+    </script>
     {% endif %}

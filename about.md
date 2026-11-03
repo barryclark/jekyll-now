@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+AI Builder.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Do more. Know more. Be More.
+
+**OmniAgent**: <https://yeqing17-2026.github.io/OmniAgent/>   
+**AI blogs**: <https://claire-notes.github.io>
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[sjsunwhhit2021@gmail.com](mailto:sjsunwhhit2021@gmail.com)

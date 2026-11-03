@@ -1,0 +1,10 @@
+{% if include.series %}
+  {% case include.series %}
+    {% when "harnessed-rl" %}{% assign series_name = "Harnessed Agentic RL" %}
+    {% when "harness-rsi" %}{% assign series_name = "Harness 自进化" %}
+    {% when "agent-arch" %}{% assign series_name = "Agent 架构" %}
+    {% when "ai-product" %}{% assign series_name = "AI Product" %}
+    {% else %}{% assign series_name = include.series %}
+  {% endcase %}
+  <span class="series-tag series-tag--{{ include.series }}">{{ series_name }}</span>
+{% endif %}
