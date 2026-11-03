@@ -16,7 +16,7 @@ Anthropic: A guide to the anatomy of effective commerce agents
 >
 > *"One model in a standard agent loop, with skills for the long tail and tools that call the systems you already run. You decide this once."*
 
-> **02**　从端到端和感知两条线去打延迟，让缓存承担成本。**所有优化都不该拿智能去换。**
+> **02**　从端到端和感知两条线去打延迟，让缓存承担成本。**所有速度优化都不该拿问答质量去换。**
 >
 > *"Attack latency on two fronts, end-to-end and perceived, and let caching carry the cost. None of it should spend intelligence to get there."*
 
@@ -99,7 +99,7 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 ## 02 延迟打两条线，但不拿智能去换
 
-> **从端到端和感知两条线去打延迟，让缓存承担成本。所有优化都不该拿智能去换。**
+> **从端到端和感知两条线去打延迟，让缓存承担成本。所有速度优化都不该拿问答质量去换。**
 >
 > *"Attack latency on two fronts, end-to-end and perceived, and let caching carry the cost. None of it should spend intelligence to get there."*
 
