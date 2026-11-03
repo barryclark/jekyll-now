@@ -38,12 +38,6 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 > **一个模型，跑在标准的 agent loop 里；skills 覆盖长尾，tools 调用你已经运行的系统。One Agent。**
 
-原文紧接着把边界说死：
-
-> 前面没有 intent router 去切分对话，后面也没有一组领域专属的 subagent。
->
-> *"There is no intent router in front of it that segments the conversation and no set of domain specific agents behind it."*
-
 ### 为什么是 Skills，不是 Sub-Agents
 
 电商对话要覆盖很宽的品类和意图，按业务域拆成 subagent 是常见做法，但原文认为这在实践里次优：
