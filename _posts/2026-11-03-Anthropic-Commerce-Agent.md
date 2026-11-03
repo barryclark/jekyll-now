@@ -10,7 +10,7 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 <div id="toc-slot"></div>
 
-这篇指南的核心贡献不是「怎么做一个电商 Agent」，而是把电商 Agent 从模型能力问题重新定义为工程系统问题：**模型只负责判断，企业系统负责事实，Harness 负责约束，Evals 负责放行。**
+这篇指南的核心贡献不是「怎么做一个电商 Agent」，而是把电商 Agent 从模型能力问题重新定义为 Agent 架构设计问题：**模型只负责判断，企业系统负责事实，Harness 负责约束，Evals 负责放行。**
 
 ## 问题起点：电商 Agent 难在哪
 
