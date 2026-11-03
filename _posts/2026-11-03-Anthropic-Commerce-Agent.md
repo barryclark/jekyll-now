@@ -18,7 +18,7 @@ Anthropic: A guide to the anatomy of effective commerce agents
 >
 > *"Attack latency on two fronts, end-to-end and perceived, and let caching carry the cost. None of it should spend intelligence to get there."*
 
-> **03**　记忆、安全、Evals，以及在一个组织里推广——**它们决定一个 agent 能不能进生产、能不能留在生产。**
+> **03**　记忆、安全、Evals，以及跨组织的 Scaling——**它们决定一个 agent 能不能进生产、能不能留在生产。**
 >
 > *"Memory, safety, evals, and scaling the work across an organization: what gets an agent through production and keeps it there."*
 
@@ -56,7 +56,7 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 ### System Prompt 还是 Skill：按频率分
 
-原文的判据不是按照「重要性」，是**频率**：预计覆盖三分之一以上流量的指令放系统提示词，长尾流程做成 Skill 按需加载。但安全要求和关键事实不能因为低频就被省掉。
+原文的判据不是按照「重要性」，而是按照「**频率**」：预计覆盖三分之一以上流量的指令放系统提示词，长尾流程做成 Skill 按需加载。但安全要求和关键事实不能因为低频就被省掉。
 
 ### Tools 是业务系统的可信接口
 
@@ -111,11 +111,11 @@ Prompt caching 复用稳定请求前缀，优秀部署可达 **90–99% 命中�
 
 > 按「每个完成的任务」算成本，而不是按每次模型调用——一个更便宜的模型如果需要更多轮、或者更常失败，它并不便宜。
 
-> 本文补充：这也解释了为什么模型档位应该由 eval 决定，而不是由价目表决定。省下的单价，可能被多出来的轮次和失败率吃掉。
+> 模型档位应该由 eval 决定，而不是由价目表决定。省下的单价，可能被多出来的轮次和失败率吃掉。
 
 ## 03 能不能上线，看四件事
 
-> **记忆、安全、Evals，以及在一个组织里推广——它们决定一个 agent 能不能进生产、能不能留在生产。**
+> **记忆、安全、Evals，以及跨组织的 Scaling——它们决定一个 agent 能不能进生产、能不能留在生产。**
 
 ### 记忆：要跨会话活下来
 
@@ -165,9 +165,6 @@ Agent 是非确定性系统，不能只测 happy path：
 总结：**把确定性的部分留给代码，把不确定的部分交给模型，把不可逆的操作交给人工审查。**
 
 > 补充：电商 agent 和 coding agent 最不一样的地方在于：代码写错了能 diff、回滚、测试；电商错了，是钱扣错、券发错、订单下错，用户信任一次归零。所有 agent 都依赖上下文，但电商的需求还会随时空状态漂移——同一句「点杯饮料」，早上是咖啡，晚上可能是热可可。
-
-原文：<https://claude.com/resources/articles/the-anatomy-of-effective-commerce-agents>  
-开源：<https://github.com/anthropics/commerce-agents>
 
 ## Citation
 
