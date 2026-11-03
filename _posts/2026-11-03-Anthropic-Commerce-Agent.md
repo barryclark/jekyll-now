@@ -12,19 +12,29 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 这篇指南分三部分，每部分开头都有一句主张。原文用三句话把三部分各自的核心判断说完了：
 
-> **01**　"One model in a standard agent loop, with skills for the long tail and tools that call the systems you already run. **You decide this once.**"
+> **01**　一个模型，跑在标准的 agent loop 里；skills 覆盖长尾，tools 调用你已经运行的系统。**这件事只决定一次。**
 >
-> 一个模型，跑在标准的 agent loop 里；skills 覆盖长尾，tools 调用你已经运行的系统。**这件事只决定一次。**
+> *"One model in a standard agent loop, with skills for the long tail and tools that call the systems you already run. You decide this once."*
 
-> **02**　"Attack latency on two fronts, end-to-end and perceived, and let caching carry the cost. **None of it should spend intelligence to get there.**"
+> **02**　从端到端和感知两条线去打延迟，让缓存承担成本。**所有优化都不该拿智能去换。**
 >
-> 从端到端和感知两条线去打延迟，让缓存承担成本。**所有优化都不该拿智能去换。**
+> *"Attack latency on two fronts, end-to-end and perceived, and let caching carry the cost. None of it should spend intelligence to get there."*
 
-> **03**　"Memory, safety, evals, and scaling the work across an organization: **what gets an agent through production and keeps it there.**"
+> **03**　记忆、安全、Evals，以及在一个组织里推广——**它们决定一个 agent 能不能进生产、能不能留在生产。**
 >
-> 记忆、安全、Evals，以及在一个组织里推广——**它们决定一个 agent 能不能进生产、能不能留在生产。**
+> *"Memory, safety, evals, and scaling the work across an organization: what gets an agent through production and keeps it there."*
 
 下面按这三句展开。原文的判断照原样引用并直译；我们自己的推论单独标为「本文补充」。
+
+## 问题起点：电商 Agent 难在哪
+
+电商场景（零售、旅行、电信、票务）的 Agent 有一个共同特征：**对话是跨多意图的、状态紧密耦合的；意图是会随时空漂移的。**
+
+用户在一次会话里可能先问「帮我找两双不超过 $80 的跑鞋」，接着说「第二双换便宜点的」，再问「我上周那单退款到哪了」。购物车、偏好、订单、历史对话——所有这些状态交织在一起，缺一不可。
+
+如果按业务域拆成多个子 Agent（购物一个、退货一个、客服一个），每次交接都会丢状态、多花数倍 token、叠加数秒延迟。而且业务域本身很难彻底分开——退货流程同时依赖历史订单、当前购物车和商品目录。
+
+这就是电商 Agent 的根本矛盾：**用户侧要连续的对话和共享的状态，工程侧却天然按业务域拆分——团队边界、权限、发布节奏都是按域划的。**
 
 ## 01 架构只决定一次
 
