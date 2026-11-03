@@ -26,6 +26,10 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 ## 核心架构：四层边界
 
+<img src="/images/2026-11-03-Anthropic-Commerce-Guide/fig1-four-layers.webp" alt="四层边界" width="968" height="543" loading="eager" decoding="async">
+
+*四层各管一件事：模型判断、系统给事实、Harness 执行约束、Evals 决定放行。*
+
 这篇文章给出的不是「一个模型加一堆工具」的简单方案，而是一个四层分工明确的系统：
 
 | 层级 | 职责 | 关键原则 |
@@ -36,10 +40,6 @@ Anthropic: A guide to the anatomy of effective commerce agents
 | **Evals** | 放行验证 | 测最终状态，不锁死路径 |
 
 四层边界画清楚，系统才是可验证、可替换的。模型可以换，但 Tools、Skills、Harness 和 Evals 才是能持续积累的工程资产。
-
-<img src="/images/2026-11-03-Anthropic-Commerce-Guide/fig1-four-layers.webp" alt="四层边界" width="968" height="543" loading="eager" decoding="async">
-
-*四层各管一件事：模型判断、系统给事实、Harness 执行约束、Evals 决定放行。*
 
 ## 架构设计：Skills not Subagents
 
