@@ -3,7 +3,7 @@ layout: post
 title: "Anthropic 建议如何设计电商 Agent"
 date: 2026-11-03
 series: agent-arch
-excerpt: "把商业 Agent 从模型能力问题重新定义为工程系统问题：模型负责判断，企业系统负责事实，Harness 负责约束，Evals 负责放行。"
+excerpt: "把电商 Agent 从模型能力问题重新定义为工程系统问题：模型负责判断，企业系统负责事实，Harness 负责约束，Evals 负责放行。"
 ---
 
 Anthropic: A guide to the anatomy of effective commerce agents
@@ -12,17 +12,17 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 作者：Matthew Koen, Ali Shazal（Anthropic）· 2026.09.02 · 配套开源 `anthropics/commerce-agents`（Apache 2.0）
 
-这篇指南的核心贡献不是「怎么做一个电商 Agent」，而是把商业 Agent 从模型能力问题重新定义为工程系统问题：**模型只负责判断，企业系统负责事实，Harness 负责约束，Evals 负责放行。**
+这篇指南的核心贡献不是「怎么做一个电商 Agent」，而是把电商 Agent 从模型能力问题重新定义为工程系统问题：**模型只负责判断，企业系统负责事实，Harness 负责约束，Evals 负责放行。**
 
-## 问题起点：商业 Agent 难在哪
+## 问题起点：电商 Agent 难在哪
 
-商业场景（零售、旅行、电信、票务）的 Agent 有一个共同特征：对话是连续的、跨多意图的、状态紧密耦合的。
+电商场景（零售、旅行、电信、票务）的 Agent 有一个共同特征：对话是连续的、跨多意图的、状态紧密耦合的。
 
 用户在一次会话里可能先问「帮我找两双不超过 $80 的跑鞋」，接着说「第二双换便宜点的」，再问「我上周那单退款到哪了」。购物车、偏好、订单、历史对话——所有这些状态交织在一起，缺一不可。
 
 如果按业务域拆成多个子 Agent（购物一个、退货一个、客服一个），每次交接都会丢状态、多花数倍 token、叠加数秒延迟。而且业务域本身很难彻底分开——退货流程同时依赖历史订单、当前购物车和商品目录。
 
-这就是商业 Agent 的根本矛盾：**用户感知是一次连续对话，但工程实现上很容易把它切碎。**
+这就是电商 Agent 的根本矛盾：**用户感知是一次连续对话，但工程实现上很容易把它切碎。**
 
 ## 核心架构：四层边界
 
@@ -45,7 +45,7 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 默认方案是一个主 Agent 保持对话所有权，按需加载 Skills。
 
-为什么不用 Subagent：商业对话跨多意图强耦合，每次 handoff 都带来上下文损耗、额外 token 和延迟。Anthropic 在多个企业部署中的对比结果是：**单 Agent + Skills 在质量上持续优于「一个 prompt 包办全部」和 Subagent 方案。**
+为什么不用 Subagent：电商对话跨多意图强耦合，每次 handoff 都带来上下文损耗、额外 token 和延迟。Anthropic 在多个企业部署中的对比结果是：**单 Agent + Skills 在质量上持续优于「一个 prompt 包办全部」和 Subagent 方案。**
 
 两种值得拆的例外：
 
@@ -124,7 +124,7 @@ Agent 是非确定性系统，不能只测 happy path：
 
 ## 一句话总结
 
-这篇文章的本质是一份生产级商业 Agent 的工程蓝图——它把「AI 能不能做电商」的问题，转化成了「确定性留给代码、不确定性交给模型、不可逆操作必须过人工闸门」的分层工程体系。
+这篇文章的本质是一份生产级电商 Agent 的工程蓝图——它把「AI 能不能做电商」的问题，转化成了「确定性留给代码、不确定性交给模型、不可逆操作必须过人工闸门」的分层工程体系。
 
 背后的驱动力不是模型变强了，而是工程团队终于承认：**让一个 Agent 带着完整上下文做到底，比拆成一堆专家再传话更可靠。**
 
