@@ -39,7 +39,7 @@ System Prompt vs Skill 的划分：按使用频率决定。预计覆盖三分之
 
 *左边一份状态、一个循环；右边每次交接都在丢状态、多花 token、加延迟。*
 
-## 核心架构：四层边界
+## <span style="color:#2563eb">One-Agent</span>：四层边界
 
 <img src="/images/2026-11-03-Anthropic-Commerce-Guide/fig1-four-layers.webp" alt="四层边界" width="968" height="543" loading="eager" decoding="async">
 
