@@ -3,6 +3,7 @@ layout: post
 title: "为什么 Anthropic Commerce Agent 和 DS SuperAgent 设计差异这么大？"
 date: 2026-11-03
 series: agent-arch
+published: false
 excerpt: "两个架构看起来完全不同，其实都是 Router，只是在解决不同层的成本。用 I（输入同构性）和 M（模型路由难度）两个变量，可以推出它们为什么必然长成这样。"
 ---
 
