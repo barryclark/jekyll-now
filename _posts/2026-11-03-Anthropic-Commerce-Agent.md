@@ -24,7 +24,7 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 ## 架构设计：<span style="color:#2563eb">One-Agent</span> not Sub-Agents
 
-默认方案是一个主 Agent 保持对话所有权，按需加载 Skills。
+建议方案是一个主 Agent 保持对话所有权，按需加载 Skills。
 
 为什么不用 Subagent：电商对话跨多意图强耦合，每次 handoff 都带来上下文损耗、额外 token 和延迟。Anthropic 在多个企业部署中的对比结果是：**单 Agent + Skills 在质量上持续优于「一个 prompt 包办全部」和 Subagent 方案。**
 
