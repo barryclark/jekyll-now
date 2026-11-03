@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Anthropic 建议如何设计电商 Agent"
+title: "Anthropic 如何设计电商 Agent"
 date: 2026-11-03
 series: agent-arch
 excerpt: "把电商 Agent 从模型能力问题重新定义为工程系统问题：模型负责判断，企业系统负责事实，Harness 负责约束，Evals 负责放行。"
