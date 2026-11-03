@@ -101,7 +101,7 @@ Tools 不是 API 外壳，而是业务系统的可信接口：
 
 <img src="/images/2026-11-03-Anthropic-Commerce-Guide/fig4-safety.webp" alt="生产安全流程" width="968" height="456" loading="lazy" decoding="async">
 
-*建议 → 草稿 → 两次校验 → 人工闸门；不可逆操作永远卡在最后一关。*
+*建议 → 草稿 → 两次校验 → 人工审查；不可逆操作永远卡在最后一关。*
 
 ## Evals：测状态不测路径
 
@@ -122,11 +122,11 @@ Agent 是非确定性系统，不能只测 happy path：
 
 ## 一句话总结
 
-这篇文章的本质是一份生产级电商 Agent 的工程蓝图——它把「AI 能不能做电商」的问题，转化成了「确定性留给代码、不确定性交给模型、不可逆操作必须过人工闸门」的分层工程体系。
+这篇文章的本质是一份生产级电商 Agent 的工程蓝图——它把「AI 能不能做电商」的问题，转化成了「确定性留给代码、不确定性交给模型、不可逆操作必须过人工审查」的分层工程体系。
 
-所有 Agent 都依赖上下文，但电商 Agent 依赖得更重：<span style="color:#2563eb"><strong>用户的需求会随时空状态漂移</strong></span>。同一句「点杯饮料」，早上是咖啡，晚上可能是热可可——query 没变，意图变了。Coding Agent 很少遇到这种漂移，而且代码写错了能 diff、能回滚、能跑测试；电商错了，是钱扣错、券发错、订单顺错，很难挽回。
+所有 Agent 都依赖上下文，但电商 Agent 依赖得更重：<span style="color:#2563eb"><strong>用户的需求会随时空状态漂移</strong></span>。同一句「点杯饮料」，早上是咖啡，晚上可能是热可可——query 没变，意图变了。Coding Agent 很少遇到这种漂移，而且代码写错了能 diff、能回滚、能跑测试；电商错了，是钱扣错、券发错、订单下错，很难挽回。
 
-所以真正的解法不是「让模型记住更多」，而是分层：**对话由一个 Agent 统一持有，事实交给系统，约束交给 Harness，不可逆的操作过人工闸门。**
+所以真正的解法不是「让模型记住更多」，而是分层：**对话由一个 Agent 统一持有，事实交给系统，约束交给 Harness，不可逆的操作过人工审查。**
 
 原文：<https://claude.com/resources/articles/the-anatomy-of-effective-commerce-agents>  
 开源：<https://github.com/anthropics/commerce-agents>
