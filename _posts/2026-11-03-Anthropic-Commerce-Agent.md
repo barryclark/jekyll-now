@@ -11,15 +11,11 @@ Anthropic: A guide to the anatomy of effective commerce agents
 <div id="toc-slot"></div>
 
 > **01**　一个模型，跑在标准的 agent loop 里；skills 覆盖长尾，tools 调用你已经运行的系统。**One Agent。**
->
 > *"One model in a standard agent loop, with skills for the long tail and tools that call the systems you already run. You decide this once."*
 
 > **02**　从端到端和感知两条线去打延迟，让缓存承担成本。**所有速度优化都不该拿问答质量去换。**
->
-> *"Attack latency on two fronts, end-to-end and perceived, and let caching carry the cost. None of it should spend intelligence to get there."*
 
 > **03**　记忆、安全、Evals，以及在一个组织里推广——**它们决定一个 agent 能不能进生产、能不能留在生产。**
->
 > *"Memory, safety, evals, and scaling the work across an organization: what gets an agent through production and keeps it there."*
 
 ## 问题起点：电商 Agent 难在哪
@@ -56,7 +52,7 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 ### System Prompt 还是 Skill：按频率分
 
-原文的判据不是「重要性」，是**频率**：预计覆盖三分之一以上流量的指令放系统提示词，长尾流程做成 Skill 按需加载。但安全要求和关键事实不能因为低频就被省掉。
+原文的判据不是按照「重要性」，是**频率**：预计覆盖三分之一以上流量的指令放系统提示词，长尾流程做成 Skill 按需加载。但安全要求和关键事实不能因为低频就被省掉。
 
 ### Tools 是业务系统的可信接口
 
@@ -72,50 +68,31 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 ### 四层分工
 
-原文没有直接给这张表，但它的分工是清楚的，我们把它画成一张图（**本文归纳**）：
+模型判断、系统给事实、Harness 执行约束、Evals 决定放行。
 
 <img src="/images/2026-11-03-Anthropic-Commerce-Guide/fig1-four-layers.webp" alt="四层分工" width="968" height="543" loading="lazy" decoding="async">
 
-*模型判断、系统给事实、Harness 执行约束、Evals 决定放行。*
-
-| 层级 | 职责 | 关键原则 |
-|---|---|---|
-| **Model** | 判断与决策 | 理解目标、规划、解释取舍 |
-| **System** | 事实与执行 | 业务系统给出可信数据 |
-| **Harness** | 运行时约束 | 安全规则真正可执行 |
-| **Evals** | 放行验证 | 测最终状态，不锁死路径 |
-
-## 02 延迟打两条线，但不拿智能去换
+## 02 极致优化延迟，但不能拿智能换
 
 > **从端到端和感知两条线去打延迟，让缓存承担成本。所有速度优化都不该拿问答质量去换。**
->
-> *"Attack latency on two fronts, end-to-end and perceived, and let caching carry the cost. None of it should spend intelligence to get there."*
-
-这一部分里还有一段判断，是全文最反直觉、也最值得记住的：
 
 > **延迟在电商里很重要，消费者侧最不容忍等待。但在 agentic 界面上，我们反复看到推动留存、engagement 和购物车规模的是结果质量——回答是否相关、任务是否真的完成，比边际的延迟收益更关键。**
->
-> *"Latency matters in commerce, and consumer surfaces are the least forgiving. However, on agentic surfaces, what we have consistently seen move metrics like retention, engagement, and cart size is the quality of the outcome. Whether the answer was relevant and the task actually completed was more critical to those metrics as compared to marginal latency gains."*
 
-原文没有否认延迟，它把延迟放在「门槛」的位置：每个用户都有延迟预算，下面的手段只是让 agent 待在预算内。
-
-### 两条线
-
-**端到端**：
+**端到端延迟**：
 
 - 减少 agent turns：压缩完成一次任务所需的模型轮次
 - 并行工具调用：互不依赖的查询同一轮发出
 - Eager dispatch：参数就绪即派发，不等模型输出完
 - 模型与 effort 档位：由评测决定（见下）
 
-**感知**：
+**感知延迟**：
 
 - 流式输出：先给进度，再逐步给通过校验的结果
 - 让「看 agent 干活」本身读起来像进展
 
 ### 缓存扛成本
 
-Prompt caching 复用稳定请求前缀，原文提到优秀部署可达 **90–99% 命中率**。
+Prompt caching 复用稳定请求前缀，优秀部署可达 **90–99% 命中率**。
 
 ### 模型档位：先定指标，再扫一遍
 
@@ -130,8 +107,6 @@ Prompt caching 复用稳定请求前缀，原文提到优秀部署可达 **90–
 - prompt 是跟模型绑定的。用一套 prompt 去扫所有模型，会低估那些它没为之调过的模型
 - 更聪明的配置有时 p90/p99 更快，因为它工具调用规划得更好、轮次更少
 
-> "Measure cost per completed task rather than per model call, since a cheaper model that needs more turns, or fails more often, is not cheaper."
->
 > 按「每个完成的任务」算成本，而不是按每次模型调用——一个更便宜的模型如果需要更多轮、或者更常失败，它并不便宜。
 
 > 本文补充：这也解释了为什么模型档位应该由 eval 决定，而不是由价目表决定。省下的单价，可能被多出来的轮次和失败率吃掉。
@@ -139,8 +114,6 @@ Prompt caching 复用稳定请求前缀，原文提到优秀部署可达 **90–
 ## 03 能不能上线，看四件事
 
 > **记忆、安全、Evals，以及在一个组织里推广——它们决定一个 agent 能不能进生产、能不能留在生产。**
->
-> *"Memory, safety, evals, and scaling the work across an organization: what gets an agent through production and keeps it there."*
 
 ### 记忆：要跨会话活下来
 
@@ -150,9 +123,7 @@ Prompt caching 复用稳定请求前缀，原文提到优秀部署可达 **90–
 
 ### 安全：强制发生在 harness 里
 
-> "Safety: enforcement lives in the harness."
->
-> 强制执行住在 harness 里，靠 prompt 提醒不算数：
+强制执行发生在 harness 里，靠 prompt 提醒不算数：
 
 - 加购有来源检查——只有本次会话中搜索或订单工具真正返回过的商品 ID 才能加入
 - 有规格的商品必须先选清变体
