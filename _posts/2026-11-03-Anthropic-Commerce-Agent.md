@@ -41,7 +41,7 @@ Anthropic: A guide to the anatomy of effective commerce agents
 电商对话要覆盖很宽的品类和意图。在实践中，One Agent 优于按业务域拆分的 SubAgent：
 
 - 一次用户会话是**跨多意图、多轮**的紧耦合会话，需要大量共享上下文
-- 在 subagent 架构里，orchestrator 持有购物车、用户偏好、对话历史，**每次交接都是有损操作**
+- subagent 架构里，orchestrator 持有购物车、用户偏好、对话历史，**每次交接都是有损操作**
 - 每次交接还要多花数倍 token、叠加数秒延迟
 - 业务域本身也切不干净——退货要同时用到订单历史、当前购物车、商品目录
 
