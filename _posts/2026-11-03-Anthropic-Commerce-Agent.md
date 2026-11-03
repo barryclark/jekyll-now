@@ -22,7 +22,7 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 这就是电商 Agent 的根本矛盾：**用户感知是一次连续对话，但工程实现上很容易把它切碎。**
 
-## 架构设计：Skills not Subagents
+## 架构设计：One-Agent not Sub-Agents
 
 默认方案是一个主 Agent 保持对话所有权，按需加载 Skills。
 
