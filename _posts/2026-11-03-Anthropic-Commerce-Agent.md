@@ -38,7 +38,7 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 ## 01 架构只决定一次
 
-> **一个模型，跑在标准的 agent loop 里；skills 覆盖长尾，tools 调用你已经运行的系统。这件事只决定一次。**
+> **一个模型，跑在标准的 agent loop 里；skills 覆盖长尾，tools 调用你已经运行的系统。One Agent。**
 >
 > *"One model in a standard agent loop, with skills for the long tail and tools that call the systems you already run. You decide this once."*
 
