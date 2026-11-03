@@ -14,7 +14,7 @@ Anthropic: A guide to the anatomy of effective commerce agents
 >
 > *"One model in a standard agent loop, with skills for the long tail and tools that call the systems you already run. You decide this once."*
 
-> **02**　从端到端和感知两条线去打延迟，让缓存承担成本。**所有速度优化都不该拿问答质量去换。**
+> **02**　从端到端和感知两条线去优化延迟，让缓存承担成本。**所有速度优化都不该拿问答质量去换。**
 >
 > *"Attack latency on two fronts, end-to-end and perceived, and let caching carry the cost. None of it should spend intelligence to get there."*
 
@@ -78,9 +78,9 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 ## 02 极致优化延迟，但不能拿智能换
 
-> **从端到端和感知两条线去打延迟，让缓存承担成本。所有速度优化都不该拿问答质量去换。**
+> **从端到端和感知两条线去优化延迟，让缓存承担成本。所有速度优化都不该拿问答质量去换。**
 
-> **延迟在电商里很重要，消费者侧最不容忍等待。但在 agentic 界面上，我们反复看到推动留存、engagement 和购物车规模的是结果质量——回答是否相关、任务是否真的完成，比边际的延迟收益更关键。**
+> **延迟在电商里很重要，C 端用户最不愿等待。但在电商 Agent 上，我们反复看到推动留存、engagement 和购物车增长的是结果质量——回答是否相关、任务是否真的完成，比边际的延迟收益更关键。**
 
 **端到端延迟**：
 
@@ -149,11 +149,11 @@ Agent 是非确定性系统，不能只测 happy path：
 - 长上下文、冲突信息、prompt injection、timeout、空结果都单独做 case
 - 提示词改一点就可能翻车，所以要有自动化测试
 
-### 组织的 Scaling：多团队怎么一起改 Agent
+### 跨组织的 Scaling：多团队一起改 Agent
 
 事实：电商企业里，agent 由很多团队共建——搜索、结账、定价、营销、客服、目录平台各自拥有 agent 依赖的系统，各自按自己的节奏发布，每个团队都想加或改一个 tool、一个 skill、一条 prompt 规则。
 
-而 agent 不像服务那样有明确的模块边界：定价团队改的东西，会和结账共享同一个上下文窗口。
+而 agent 不像 App 那样有明确的模块边界：定价团队改的东西，会和结账共享同一个上下文窗口。
 
 协作做法：
 
