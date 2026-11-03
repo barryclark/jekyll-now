@@ -22,8 +22,6 @@ Anthropic: A guide to the anatomy of effective commerce agents
 >
 > *"Memory, safety, evals, and scaling the work across an organization: what gets an agent through production and keeps it there."*
 
-下面按这三句展开。原文的判断照原样引用并直译；我们自己的推论单独标为「本文补充」。
-
 ## 问题起点：电商 Agent 难在哪
 
 电商场景（零售、旅行、电信、票务）的 Agent 有一个共同特征：**对话是跨多意图的、状态紧密耦合的；意图是会随时空漂移的。**
