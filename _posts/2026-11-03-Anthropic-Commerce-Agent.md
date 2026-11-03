@@ -28,11 +28,15 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 ## 01 架构只决定一次
 
-这一部分是全文最硬的一句：**架构只决定一次**。原文紧接着把话说死：
-
-> "There is no intent router in front of it that segments the conversation and no set of domain specific agents behind it."
+> **一个模型，跑在标准的 agent loop 里；skills 覆盖长尾，tools 调用你已经运行的系统。这件事只决定一次。**
 >
+> *"One model in a standard agent loop, with skills for the long tail and tools that call the systems you already run. You decide this once."*
+
+原文紧接着把边界说死：
+
 > 前面没有 intent router 去切分对话，后面也没有一组领域专属的 subagent。
+>
+> *"There is no intent router in front of it that segments the conversation and no set of domain specific agents behind it."*
 
 ### 为什么是 Skills，不是 Sub-Agents
 
@@ -85,17 +89,17 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 ## 02 延迟打两条线，但不拿智能去换
 
-> 从端到端和感知两条线打延迟，让缓存扛住成本。**但这些都不该拿智能去换。**
-
-这一部分里有一段判断，是全文最反直觉、也最值得记住的：
-
-> "Latency matters in commerce, and consumer surfaces are the least forgiving. However, on agentic surfaces, what we have consistently seen move metrics like retention, engagement, and cart size is the quality of the outcome."
+> **从端到端和感知两条线去打延迟，让缓存承担成本。所有优化都不该拿智能去换。**
 >
-> "Whether the answer was relevant and the task actually completed was more critical to those metrics as compared to marginal latency gains."
->
-> 直译：延迟在电商里很重要，消费者侧最不容忍等待。但在 agentic 界面上，我们反复看到推动留存、engagement 和购物车规模的是**结果质量**；回答是否相关、任务是否真的完成，比边际的延迟收益更关键。
+> *"Attack latency on two fronts, end-to-end and perceived, and let caching carry the cost. None of it should spend intelligence to get there."*
 
-原文没有否认延迟，它把延迟放在「门槛」的位置：每个用户都有延迟预算，下面这些手段只是让 agent 待在预算内。
+这一部分里还有一段判断，是全文最反直觉、也最值得记住的：
+
+> **延迟在电商里很重要，消费者侧最不容忍等待。但在 agentic 界面上，我们反复看到推动留存、engagement 和购物车规模的是结果质量——回答是否相关、任务是否真的完成，比边际的延迟收益更关键。**
+>
+> *"Latency matters in commerce, and consumer surfaces are the least forgiving. However, on agentic surfaces, what we have consistently seen move metrics like retention, engagement, and cart size is the quality of the outcome. Whether the answer was relevant and the task actually completed was more critical to those metrics as compared to marginal latency gains."*
+
+原文没有否认延迟，它把延迟放在「门槛」的位置：每个用户都有延迟预算，下面的手段只是让 agent 待在预算内。
 
 ### 两条线
 
@@ -136,7 +140,9 @@ Prompt caching 复用稳定请求前缀，原文提到优秀部署可达 **90–
 
 ## 03 能不能上线，看四件事
 
-> 记忆、安全、Evals、以及在一个组织里推广——**决定一个 agent 能不能进生产、能不能留在生产。**
+> **记忆、安全、Evals，以及在一个组织里推广——它们决定一个 agent 能不能进生产、能不能留在生产。**
+>
+> *"Memory, safety, evals, and scaling the work across an organization: what gets an agent through production and keeps it there."*
 
 ### 记忆：要跨会话活下来
 
