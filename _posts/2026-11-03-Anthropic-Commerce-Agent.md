@@ -79,7 +79,7 @@ Tools 不是 API 外壳，而是业务系统的可信接口：
 - **Eager Dispatch**：参数就绪即派发，不必等模型输出完
 - **Prompt Caching**：复用稳定请求前缀，电商场景优秀部署可达 90–99% 命中率
 - **流式输出**：先显示进度，再逐步显示通过校验的结果，减少感知等待
-- **模型 Router**：后台分析重用 Opus，消费者端延迟敏感用 Sonnet
+- <span style="color:#2563eb"><strong>模型 Router</strong></span>：后台分析重用 Opus，消费者端延迟敏感用 Sonnet
 
 ## 生产安全：模型建议，系统校验，人工确认
 
