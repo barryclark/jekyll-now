@@ -12,7 +12,7 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 这篇指南分三部分，每部分开头都有一句主张。原文用三句话把三部分各自的核心判断说完了：
 
-> **01**　一个模型，跑在标准的 agent loop 里；skills 覆盖长尾，tools 调用你已经运行的系统。**这件事只决定一次。**
+> **01**　一个模型，跑在标准的 agent loop 里；skills 覆盖长尾，tools 调用你已经运行的系统。**One Agent。**
 >
 > *"One model in a standard agent loop, with skills for the long tail and tools that call the systems you already run. You decide this once."*
 
