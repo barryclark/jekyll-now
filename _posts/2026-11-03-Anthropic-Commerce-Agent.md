@@ -10,8 +10,6 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 <div id="toc-slot"></div>
 
-作者：Matthew Koen, Ali Shazal（Anthropic）· 2026.09.02 · 配套开源 `anthropics/commerce-agents`（Apache 2.0）
-
 这篇指南的核心贡献不是「怎么做一个电商 Agent」，而是把电商 Agent 从模型能力问题重新定义为工程系统问题：**模型只负责判断，企业系统负责事实，Harness 负责约束，Evals 负责放行。**
 
 ## 问题起点：电商 Agent 难在哪
