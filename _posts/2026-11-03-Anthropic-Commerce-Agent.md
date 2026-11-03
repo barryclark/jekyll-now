@@ -22,23 +22,6 @@ Anthropic: A guide to the anatomy of effective commerce agents
 
 这就是电商 Agent 的根本矛盾：**用户感知是一次连续对话，但工程实现上很容易把它切碎。**
 
-## 核心架构：四层边界
-
-<img src="/images/2026-11-03-Anthropic-Commerce-Guide/fig1-four-layers.webp" alt="四层边界" width="968" height="543" loading="eager" decoding="async">
-
-*四层各管一件事：模型判断、系统给事实、Harness 执行约束、Evals 决定放行。*
-
-这篇文章给出的不是「一个模型加一堆工具」的简单方案，而是一个四层分工明确的系统：
-
-| 层级 | 职责 | 关键原则 |
-|---|---|---|
-| **Model** | 判断与决策 | 理解目标、规划、解释取舍 |
-| **System** | 事实与执行 | 业务系统给出可信数据 |
-| **Harness** | 运行时约束 | 安全规则真正可执行 |
-| **Evals** | 放行验证 | 测最终状态，不锁死路径 |
-
-四层边界画清楚，系统才是可验证、可替换的。模型可以换，但 Tools、Skills、Harness 和 Evals 才是能持续积累的工程资产。
-
 ## 架构设计：Skills not Subagents
 
 默认方案是一个主 Agent 保持对话所有权，按需加载 Skills。
@@ -55,6 +38,23 @@ System Prompt vs Skill 的划分：按使用频率决定。预计覆盖三分之
 <img src="/images/2026-11-03-Anthropic-Commerce-Guide/fig2-skills.webp" alt="单 Agent 与子 Agent 对比" width="988" height="516" loading="lazy" decoding="async">
 
 *左边一份状态、一个循环；右边每次交接都在丢状态、多花 token、加延迟。*
+
+## 核心架构：四层边界
+
+<img src="/images/2026-11-03-Anthropic-Commerce-Guide/fig1-four-layers.webp" alt="四层边界" width="968" height="543" loading="eager" decoding="async">
+
+*四层各管一件事：模型判断、系统给事实、Harness 执行约束、Evals 决定放行。*
+
+这篇文章给出的不是「一个模型加一堆工具」的简单方案，而是一个四层分工明确的系统：
+
+| 层级 | 职责 | 关键原则 |
+|---|---|---|
+| **Model** | 判断与决策 | 理解目标、规划、解释取舍 |
+| **System** | 事实与执行 | 业务系统给出可信数据 |
+| **Harness** | 运行时约束 | 安全规则真正可执行 |
+| **Evals** | 放行验证 | 测最终状态，不锁死路径 |
+
+四层边界画清楚，系统才是可验证、可替换的。模型可以换，但 Tools、Skills、Harness 和 Evals 才是能持续积累的工程资产。
 
 ## 工具层：不重新实现业务系统
 
