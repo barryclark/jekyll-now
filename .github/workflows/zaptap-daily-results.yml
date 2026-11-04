@@ -6,8 +6,9 @@
 # holidays, and never posts twice the same day.
 #
 # Needs, in the repository settings (Settings > Secrets and variables > Actions):
-#   variable ZAPTAP_URL         the site, e.g. https://<name>.azurestaticapps.net
-#   secret   ZAPTAP_REPORT_KEY  the same value as ZAPTAP_REPORT_KEY on the Static Web App
+#   variable ZAPTAP_URL  the site, e.g. https://<name>.azurestaticapps.net
+#
+# Running it by hand follows the same rules: it can't post early or twice.
 name: ZapTap daily results
 
 on:
@@ -15,11 +16,6 @@ on:
     - cron: "0 14 * * 1-5"
     - cron: "0 15 * * 1-5"
   workflow_dispatch:
-    inputs:
-      test:
-        description: "Post a test message now (ignores the time, weekends and holidays)"
-        type: boolean
-        default: true
 
 permissions: {}
 
@@ -30,17 +26,10 @@ jobs:
       - name: Ask ZapTap to post today's results
         env:
           ZAPTAP_URL: ${{ vars.ZAPTAP_URL }}
-          ZAPTAP_REPORT_KEY: ${{ secrets.ZAPTAP_REPORT_KEY }}
-          TEST: ${{ github.event_name == 'workflow_dispatch' && inputs.test }}
         run: |
-          if [ -z "$ZAPTAP_URL" ] || [ -z "$ZAPTAP_REPORT_KEY" ]; then
-            echo "::error::Set the ZAPTAP_URL variable and the ZAPTAP_REPORT_KEY secret in the repository settings."
+          if [ -z "$ZAPTAP_URL" ]; then
+            echo "::error::Set the ZAPTAP_URL variable in the repository settings."
             exit 1
           fi
-          URL="${ZAPTAP_URL%/}"
-          curl -sS --fail-with-body --retry 3 --retry-all-errors --max-time 60 \
-            -X POST "$URL/api/report" \
-            -H "Content-Type: application/json" \
-            -H "X-ZapTap-Key: $ZAPTAP_REPORT_KEY" \
-            -d "{\"test\": $TEST, \"url\": \"$URL\"}"
+          curl -sS --fail-with-body --retry 3 --retry-all-errors --max-time 60 -X POST "${ZAPTAP_URL%/}/api/report"
           echo

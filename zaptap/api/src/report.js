@@ -23,9 +23,9 @@ const longDate = (day) =>
 
 // An Adaptive Card message, the format Teams Workflows expect. Never names
 // today's places, so it can't spoil the puzzle for anyone.
-export function reportCard(board, { test = false, url = null } = {}) {
+export function reportCard(board) {
   const body = [
-    { type: "TextBlock", text: `${test ? "Test: " : ""}⚡ ZapTap #${board.number} results`, weight: "Bolder", size: "Large", wrap: true },
+    { type: "TextBlock", text: `⚡ ZapTap #${board.number} results`, weight: "Bolder", size: "Large", wrap: true },
     { type: "TextBlock", text: `${longDate(board.day)} · standings at ${POST_HOUR}:00`, isSubtle: true, spacing: "None", wrap: true },
   ];
   if (board.entries.length) {
@@ -40,9 +40,7 @@ export function reportCard(board, { test = false, url = null } = {}) {
     const who = board.playing === 1 ? "1 person" : `${board.playing} people`;
     body.push({ type: "TextBlock", text: `${who} started but didn't finish in time.`, isSubtle: true, wrap: true });
   }
-  if (test) body.push({ type: "TextBlock", text: "This is a test post: the real one comes at 16:00 on working days.", isSubtle: true, wrap: true });
   const card = { $schema: "http://adaptivecards.io/schemas/adaptive-card.json", type: "AdaptiveCard", version: "1.4", body };
-  if (url) card.actions = [{ type: "Action.OpenUrl", title: "Play ZapTap", url }];
   return { type: "message", attachments: [{ contentType: "application/vnd.microsoft.card.adaptive", contentUrl: null, content: card }] };
 }
 

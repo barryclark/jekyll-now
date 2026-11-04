@@ -6,7 +6,6 @@
 
 import { WEIGHTS, dayNumber, puzzleFor, roundView, scoreGuess, secondsToMidnight, sha256Hex, today } from "./game.js";
 import * as store from "./store.js";
-import { timingSafeEqual } from "node:crypto";
 import { reportCard, reportDue, sendToTeams } from "./report.js";
 
 class HttpError extends Error {
@@ -160,31 +159,19 @@ async function leaderboard(day) {
 
 // ---------------------------------------------------------------- teams
 
-// Called by the scheduled GitHub Actions workflow, not by players: it proves
-// itself with the shared ZAPTAP_REPORT_KEY in the X-ZapTap-Key header.
-function checkReportKey(headers) {
-  const want = process.env.ZAPTAP_REPORT_KEY || "";
-  if (!want || !process.env.TEAMS_WEBHOOK_URL) throw new HttpError(503, "report_not_configured");
-  const got = Buffer.from(String(headers["x-zaptap-key"] || ""));
-  if (got.length !== Buffer.byteLength(want) || !timingSafeEqual(got, Buffer.from(want))) throw new HttpError(403, "bad_key");
-}
-
-// Posts today's leaderboard to Teams once it's due (a working day, 16:00 or
-// later in Oslo), at most once a day. {test: true} posts a test card right
-// away, whatever the day or time, without counting as today's post.
-async function report(headers, body) {
-  checkReportKey(headers);
-  const test = body.test === true;
+// Called by the scheduled GitHub Actions workflow. It needs no key: anyone
+// calling it can only make today's post go out, and only once it's due (a
+// working day, 16:00 or later in Oslo) and if it hasn't gone out yet. It takes
+// no input, so a caller can't change what's posted.
+async function report() {
+  if (!process.env.TEAMS_WEBHOOK_URL) throw new HttpError(503, "report_not_configured");
   const { day, due, reason } = reportDue();
-  if (!test) {
-    if (!due) return { posted: false, day, reason };
-    if (await store.reportSent(day)) return { posted: false, day, reason: "already_posted" };
-  }
+  if (!due) return { posted: false, day, reason };
+  if (await store.reportSent(day)) return { posted: false, day, reason: "already_posted" };
   const board = await leaderboard(day);
-  const url = typeof body.url === "string" && /^https:\/\/[^\s"]+$/.test(body.url) ? body.url : null;
-  await sendToTeams(reportCard(board, { test, url }));
-  if (!test) await store.markReportSent(day);
-  return { posted: true, test, day, finished: board.entries.length };
+  await sendToTeams(reportCard(board));
+  await store.markReportSent(day);
+  return { posted: true, day, finished: board.entries.length };
 }
 
 // ---------------------------------------------------------------- http
@@ -198,7 +185,7 @@ export async function handle({ method, path, headers, query, body }) {
     if (path === "config") {
       return { status: 200, headers: { "Content-Type": "text/javascript", "Cache-Control": "no-store" }, body: "window.ZAPTAP_SERVER = true;\n" };
     }
-    if (method === "POST" && path === "report") return json(await report(headers, body || {}));
+    if (method === "POST" && path === "report") return json(await report());
     const player = await playerFor(headers);
     if (method === "GET" && path === "leaderboard") {
       const day = query.get("day") || today();
