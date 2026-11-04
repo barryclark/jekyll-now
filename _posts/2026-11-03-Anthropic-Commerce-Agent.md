@@ -12,11 +12,11 @@ excerpt: "一个模型跑在标准 agent loop 里，架构只决定一次；之�
 >
 > *"One model in a standard agent loop, with skills for the long tail and tools that call the systems you already run. You decide this once."*
 
-> **02**　两条线优化延迟：端到端 + 用户感知。成本优化靠缓存。所有的提速，都不能拿问答质量去换。
+> **02**　两条线优化：端到端延迟 + 用户感知延迟。成本优化靠缓存。所有的提速，都不能拿问答质量去换。
 >
 > *"Attack latency on two fronts, end-to-end and perceived, and let caching carry the cost. None of it should spend intelligence to get there."*
 
-> **03**　四件事决定 Agent 能否真正业务落地：记忆、安全、Evals、跨组织的 Scaling。
+> **03**　四件事决定 Agent 业务落地能否成功：记忆、安全、Evals、跨组织的 Scaling。
 >
 > *"Memory, safety, evals, and scaling the work across an organization: what gets an agent through production and keeps it there."*
 
@@ -76,7 +76,7 @@ excerpt: "一个模型跑在标准 agent loop 里，架构只决定一次；之�
 
 ## 02 一定要更快，但不能变笨
 
-> **两条线优化延迟：端到端 + 用户感知。成本优化靠缓存。所有的提速，都不能拿问答质量去换。**
+> **两条线优化：端到端延迟 + 用户感知延迟。成本优化靠缓存。所有的提速，都不能拿问答质量去换。**
 
 > **延迟在电商里很重要，C 端用户最不愿等待。但在电商 Agent 上，我们反复看到推动留存、engagement 和购物车增长的是结果质量——回答是否相关、任务是否真的完成，比边际的延迟收益更关键。**
 
@@ -112,7 +112,7 @@ Prompt caching 复用稳定请求前缀，优秀部署可达 **90–99% 命中�
 
 ## 03 Agent 业务落地四道关
 
-> **四件事决定 Agent 能否真正业务落地：记忆、安全、Evals、跨组织的 Scaling。**
+> **四件事决定 Agent 业务落地能否成功：记忆、安全、Evals、跨组织的 Scaling。**
 
 ### 记忆：要跨会话活下来
 
