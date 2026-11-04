@@ -66,6 +66,8 @@ const timeFormat = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-dig
 
 export const today = (d = new Date()) => dayFormat.format(d);
 
+export const osloHour = (d = new Date()) => Number(timeFormat.format(d).split(":")[0]);
+
 export function secondsToMidnight(d = new Date()) {
   const [h, m, s] = timeFormat.format(d).split(":").map(Number);
   return 86400 - (h * 3600 + m * 60 + s);

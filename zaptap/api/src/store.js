@@ -3,6 +3,7 @@
 // players  PK "p", RK sha256(email)        name, nameKey
 // names    PK "n", RK nameKey (encoded)    player   -- makes names unique
 // guesses  PK day, RK "<player>-<round>"   lon, lat, km, score, points, bonus, inCountry, createdAt
+// reports  PK "r", RK day                  postedAt
 
 import { TableClient, odata } from "@azure/data-tables";
 
@@ -100,4 +101,20 @@ export async function insertGuess(day, id, round, g) {
     if (conflict(e)) return false;
     throw e;
   }
+}
+
+// ---------------------------------------------------------------- reports
+
+export async function reportSent(day) {
+  try {
+    await (await table("reports")).getEntity("r", day);
+    return true;
+  } catch (e) {
+    if (notFound(e)) return false;
+    throw e;
+  }
+}
+
+export async function markReportSent(day) {
+  await (await table("reports")).upsertEntity({ partitionKey: "r", rowKey: day, postedAt: Date.now() }, "Replace");
 }
