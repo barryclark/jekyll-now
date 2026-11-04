@@ -1,12 +1,10 @@
 ---
 layout: post
-title: "Anthropic 实战电商 Agent 总结"
+title: "Anthropic电商Agent实战总结"
 date: 2026-11-03
 series: agent-arch
 excerpt: "一个模型跑在标准 agent loop 里，架构只决定一次；之后拼的是延迟、成本、约束与评估，而且不拿智能去换。"
 ---
-
-Anthropic: A guide to the anatomy of effective commerce agents
 
 <div id="toc-slot"></div>
 
