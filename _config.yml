@@ -10,7 +10,7 @@ description: "AI Builder · Agents · Harnessed Agentic RL"
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 # avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/my-logo.png
-avatar: https://raw.githubusercontent.com/Claire-notes/Claire-notes.github.io/master/images/my-logo.png
+avatar: /images/my-logo.png
 
 #
 # Flags below are optional
