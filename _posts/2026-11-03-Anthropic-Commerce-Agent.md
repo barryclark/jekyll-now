@@ -8,15 +8,15 @@ excerpt: "一个模型跑在标准 agent loop 里，架构只决定一次；之�
 
 <div id="toc-slot"></div>
 
-> **01**　一个模型，跑在标准的 agent loop 里；skills 覆盖长尾，tools 调用你已经运行的系统。**One Agent。**
+> **01**　**One Agent。**一个模型 + 标准 agent loop；用 skills 覆盖长尾，tools 调用现系统接口。
 >
 > *"One model in a standard agent loop, with skills for the long tail and tools that call the systems you already run. You decide this once."*
 
-> **02**　从端到端和感知两条线去优化延迟，让缓存承担成本。**所有速度优化都不该拿问答质量去换。**
+> **02**　两条线优化延迟：端到端 + 用户感知。成本优化靠缓存。所有的提速，都不能拿问答质量去换。
 >
 > *"Attack latency on two fronts, end-to-end and perceived, and let caching carry the cost. None of it should spend intelligence to get there."*
 
-> **03**　记忆、安全、Evals，以及跨组织的 Scaling——**它们决定一个 agent 能不能进生产、能不能留在生产。**
+> **03**　四件事决定 Agent 能否真正业务落地：记忆、安全、Evals、跨组织的 Scaling。
 >
 > *"Memory, safety, evals, and scaling the work across an organization: what gets an agent through production and keeps it there."*
 
@@ -76,7 +76,7 @@ excerpt: "一个模型跑在标准 agent loop 里，架构只决定一次；之�
 
 ## 02 极致优化延迟，但不能拿智能换
 
-> **从端到端和感知两条线去优化延迟，让缓存承担成本。所有速度优化都不该拿问答质量去换。**
+> **两条线优化延迟：端到端 + 用户感知。成本优化靠缓存。所有的提速，都不能拿问答质量去换。**
 
 > **延迟在电商里很重要，C 端用户最不愿等待。但在电商 Agent 上，我们反复看到推动留存、engagement 和购物车增长的是结果质量——回答是否相关、任务是否真的完成，比边际的延迟收益更关键。**
 
@@ -112,7 +112,7 @@ Prompt caching 复用稳定请求前缀，优秀部署可达 **90–99% 命中�
 
 ## 03 能不能上线，看四件事
 
-> **记忆、安全、Evals，以及跨组织的 Scaling——它们决定一个 agent 能不能进生产、能不能留在生产。**
+> **四件事决定 Agent 能否真正业务落地：记忆、安全、Evals、跨组织的 Scaling。**
 
 ### 记忆：要跨会话活下来
 
