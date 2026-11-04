@@ -30,7 +30,7 @@ excerpt: "一个模型跑在标准 agent loop 里，架构只决定一次；之�
 
 这就是电商 Agent 的根本矛盾：**用户侧要连续的对话和共享的状态，工程侧却天然按业务域拆分——团队边界、权限、发布节奏都是按域划的。**
 
-## 01 架构只决定一次
+## 01 One Agent，不做 Sub-Agent
 
 > **One Agent。**一个模型 + 标准 agent loop；用 skills 覆盖长尾，tools 调用现系统接口。
 
@@ -74,7 +74,7 @@ excerpt: "一个模型跑在标准 agent loop 里，架构只决定一次；之�
 
 <img src="/images/2026-11-03-Anthropic-Commerce-Guide/fig1-four-layers.webp" alt="四层分工" width="968" height="543" loading="lazy" decoding="async">
 
-## 02 极致优化延迟，但不能拿智能换
+## 02 一定要更快，但不能变笨
 
 > **两条线优化延迟：端到端 + 用户感知。成本优化靠缓存。所有的提速，都不能拿问答质量去换。**
 
@@ -110,7 +110,7 @@ Prompt caching 复用稳定请求前缀，优秀部署可达 **90–99% 命中�
 
 > 模型档位应该由 eval 决定，而不是由价目表决定。省下的单价，可能被多出来的轮次和失败率吃掉。
 
-## 03 能不能上线，看四件事
+## 03 Agent 业务落地四道关
 
 > **四件事决定 Agent 能否真正业务落地：记忆、安全、Evals、跨组织的 Scaling。**
 
