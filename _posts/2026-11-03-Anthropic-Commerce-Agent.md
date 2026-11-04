@@ -32,7 +32,7 @@ excerpt: "一个模型跑在标准 agent loop 里，架构只决定一次；之�
 
 ## 01 架构只决定一次
 
-> **一个模型，跑在标准的 agent loop 里；skills 覆盖长尾，tools 调用你已经运行的系统。One Agent。**
+> **One Agent。**一个模型 + 标准 agent loop；用 skills 覆盖长尾，tools 调用现系统接口。
 
 ### 为什么是 Skills，不是 Sub-Agents
 
