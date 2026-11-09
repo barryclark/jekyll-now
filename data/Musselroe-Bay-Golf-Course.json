@@ -1,0 +1,21 @@
+{
+"storymap": {
+        "slides": [
+			{
+				"text": {
+					"headline": "Musselroe Bay Golf Course",
+					"text": "<p>Musselroe Bay is a proposed golf course in Tasmania, Australia. It is located on the north-east coast of Tasmania. From 2019 onwards, Oglyvy Cocking Mead was the golf design company involved in the development of the Musselroe Bay golf course project.  The course to be built on a stunning piece of land overlooking the Tasman Sea and the Freycinet Peninsula.</p><p>The Musselroe Bay golf course project failed due to a number of factors, including:</p><p><B>Environmental concerns</B>: The proposed site of the golf course was located in the sensitive Ramsar wetland environmental area.</p><p><B>Economic concerns</B>: Build-out costs were estimated to be very high, and there was concern that it would not be viable commercially.</p><p><B>Political opposition</B>: Local opposition from politicians.</p><p>In 2022, the developers of the Musselroe Bay golf course abandoned the project.</p>"
+			},
+			"location": {
+					"lat": -40.826529,	
+					"lon": 147.022304,
+					"zoom": 5
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=OJLl0X8-2i4",
+					"credit": "OCM Golf - Harris Kalinka"
+				}
+			}
+		]
+    }
+}

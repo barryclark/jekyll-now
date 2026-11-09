@@ -1,0 +1,20 @@
+{
+ "storymap": {
+        "slides": [
+			{
+				"text": {
+					"headline": "Golf in South Side Chicago Led by Tiger Woods",
+					"text": "<p>The most recent update on the Tiger Woods golf renovation project in Chicago is that it is still in the planning stages to merge the <a href='https://jacksonpark.cpdgolf.com/the-course' target='_blank' rel='nofollow'>Jackson Park and South Shore golf courses</a>.  Both courses were designed by <a href='https://en.wikipedia.org/wiki/Tom_Bendelow' target='_blank' rel='nofollow'>Tom Bendelow</a> who designed notable Chicago golf courses Beverly, Medinah, Olympia Fields, Van Cortlandt. The proposal would merge the Jackson Park and South Shore golf courses into a single 18-hole championship course designed by Woods.</p><p>In January 2023, the Chicago Park District announced that it had hired a consultant to help with a feasibility study.  The project was estimated to cost $30 million.</p><p>In 2025, golf architect David Esler in conjunction with Vintage Golf Construction completed driving range and practice greens renovation updates for the benefit of The First Tee.  Troon's Indigo Sports is the management company operator of CDGA's Jackson ark/South Shore Golf Courses.</p><p>In 2026, golf architect Todd Quitno led a bunker renovation update with overall budget of $2.8 million.</p>"
+			},
+				"location": {
+					"lat": 41.7792651,
+					"lon": -87.5831064,
+					"zoom": 8
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=m2trMM5ly5Q"
+				}
+			}
+		]
+    }
+}

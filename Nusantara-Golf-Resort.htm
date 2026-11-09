@@ -1,0 +1,84 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Royale Nusantara Golf Resort - Indonesia</title>
+	<meta name="description" CONTENT="Royale Nusantara Golf Resort Residence Indonesia ASEAN Island Capitol">
+	{% include hLeaflet.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="ASEAN"></div>
+		<div class="content" tabindex="0"  aria-label="Golf Course">
+
+			<H1>Royale Nusantara Golf Resort - Indonesia</H1>
+			<p>Royale Nusantara Golf Resort & Residence is a new golf course resort and community in Indonesia with a planned golf construction start in 2025.  The course is being designed by <a style='font-weight:bold' href='https://www.gngcd.com/' target='_blank' rel='nofollow'>Greg Norman Golf Course Design</a>.  Norman is prolific in Southeast Asia with a number of designs in Vietnam, Thailand, and Cambodia.</p>
+			<p>Deputy Chief Commissioner of PT Inand Development, Sofan Ajalil Jaobat is overseeing the project development. The Nusantara course will integrate the natural beauty of Indonesia’s tropical landscape, utilizing the island’s unique terrain.  Players will encounter undulating fairways, strategic water penalty areas, and a backdrop of long coastal views.  The plan for the course emphasizes sustainability with efficient irrigation systems, and the use of native plants.</p>
+			<p>The resort is expected to play a significant role in boosting <a style='font-weight:bold' href='https://kemenparekraf.go.id/berita' target='_blank' rel='nofollow'>golf tourism</a> in Indonesia.  Indonesian Minister of Tourism and Creative Economy Sandiaga Uno has made public statements to promote Indonesia as a premier golfing destination in Asia with regional collaborations with AirAsia and Singapore Airlines.</p>
+			<p>Indonesia is planning to relocate its capitol from Jakarta to Nusantara, East Kalimantan.  The new city Nusantara will be built with an estimated cost of $32 billion and expected to be twice the size of New York City/three times the size of Singapore.</p>
+			<p>Golf course renovations in the ASEAN region underway is highlighted the $22 million budgeted rebuild from golf architect Neil Haworth at <a style='font-weight:bold' href='https://fescue.github.io/Singapore-Island-Country-Club/' target='_blank' rel='nofollow'>Singapore Island Country Club</a>, Island course.  New golf course construction underway in East Java, Indonesia is <a style='font-weight:bold' href='https://fescue.github.io/Dhoho-Golf-Club/' target='_blank' rel='nofollow'>Dhoho Golf Club</a>, a Brian Curley design with an anticipated 2025 opening.  Notable 2024 openings in the Indonesia is highlighted by <a style='font-weight:bold' href='https://fescue.github.io/MNC-Lido-Trump-International/' target='_blank' rel='nofollow'>MNC Lido Trump International</a> designed and built by Ernie Els, Greg Letsche, Peter Waddell.</p>
+			<div class="substack-post-embed"><p lang="en">Holiday golf by Tim Yeo</p><a data-post-link href="https://timyeogolf.substack.com/p/the-dangers-of-holiday-golf-and-the">ONLY FRIENDS YOU HAVEN’T YET MET</a>
+			</div>
+			<script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+		</div>
+	</div>
+	
+	
+    <script>
+                const map = L.map('map').setView([-0.9720169,116.7028317], 6);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                
+	                // Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="Z0aMNCHrOEo" style="background-image: url('https://i3.ytimg.com/vi/Z0aMNCHrOEo/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=Z0aMNCHrOEo" class="lty-playbtn" title="Play Video.  Credit: Robie Mrg">
+	                            <span class="lyt-visually-hidden">Credit: Robie Mrg</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([-0.9720169,116.7028317]).addTo(map);
+	        marker.bindPopup("<b>Nusantara</b><br>East Kalimantan, Indonesia</br>").openPopup();
+  </script>
+  <p><a href="https://fescue.github.io/New-Manila-Bay/">New Manila Bay Resort Project</a></p>
+  <p><a href="https://fescue.github.io/Hann-Reserve/">Hann Reserve Resort</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

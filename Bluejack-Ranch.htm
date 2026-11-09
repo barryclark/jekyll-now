@@ -1,0 +1,79 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Bluejack Ranch in Fort Worth</title>
+	<meta name="description" CONTENT="Bluejack Ranch Golf Club new private golf club residential subdivision community real estate Fort Worth Texas Beau Welling Tiger Woods">
+	{% include h50.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Bluejack Ranch"></div>
+			<div class="content" tabindex="0"  aria-label="Tiger Woods"> 
+				<H1>Bluejack Ranch: Tiger Woods + Beau Welling</H1>
+				<p>Tiger Woods' new golf course project at <a style='font-weight:bold' href='https://www.bluejacknational.com/'>Bluejack Ranch</a> in Parker County, Texas will be led again by longtime design partner and golf architect <a style='font-weight:bold' href='https://beauwellingdesign.com/beau-welling/' target='_blank' rel='nofollow'>Beau Welling</a> with TGR Design President Byron Bell overseeing the project.  The property is 900+ acres in greater Fort Worth and will have a community built around the club.  The back tees will exceed 8,000 yards.</p>
+				<p>Bluejack National's Andy and Kristin Mitchell engaged Tiger and Beau to build golf in the greater Dallas/Ft. Worth part of Texas.  The Mitchells built Bluejack National in 2014.</p>
+				<p>Project Manager Christian Hale from Heritage Links oversaw golf construction efforts.</p>
+				<p>Longtime PGA Tour player JJ Henry is a development partner in the project and has been involved since the initial stages.  The golf course is currently in the shaping part of the buildout.  Opening date is autumn 2026.</p>		
+				<p>Tiger and Beau Welling recently built new golf courses at <a style='font-weight:bold' href='https://fescue.github.io/Trout-National/'>Trout National</a> and Marcella Club.  Welling is one of the most active architects in new golf course design.</p>
+			</div>
+	</div>
+
+    <script>		
+            const map = L.map('map').setView([32.7771101,-97.7648794], 8);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	        
+	                this._container.innerHTML = `	
+	                    <lite-youtube videoid="mQk07ezDGFA" style="background-image: url('https://i3.ytimg.com/vi/mQk07ezDGFA/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=mQk07ezDGFA" class="lty-playbtn" title="Play Video.  Credit: Bluejack National">
+	                            <span class="lyt-visually-hidden">Credit: Bluejack National</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([32.7771101,-97.7648794]).addTo(map);
+			
+	        marker.bindPopup("<b>Bluejack Ranch</b><br>Parker County, Texas</br>").openPopup();
+	</script>
+   	<p><a href="https://fescue.github.io/Red-Feather/">King Collins' Red Feather</a></p>
+   	<p><a href="https://fescue.github.io/1876-Country-Club/">1876 Country Club</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

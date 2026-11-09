@@ -1,0 +1,78 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Battle Run Golf Course - Nebraska</title>
+	<meta name="description" CONTENT="Battle Run Golf Course Lincoln Nebraska Par 5 Partners Dormie Club Tom Peed Nebraska">
+	{% include hLeaflet.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Golf"></div>
+			  <div class="content" tabindex="0"  aria-label="Lincoln">
+  				<H1>Battle Run Golf Course - Nebraska</H1>
+					<p>Sandhills Global/Par 5 Partners LLC with Planning & Design firm Olsson have submitted plans for a new golf course, Battle Run Golf Course, in Lincoln, Nebraska. Par 5 Partners' Peed family have also created the <a href="https://journalstar.com/news/local/business/lincoln-business-creates-model-for-high-end-golf-travel/article_40e7e236-bccf-11ef-ac5f-5b35704f9ec9.html">Dormie Network</a> which owns several golf courses nationwide.</p>
+	
+					<p>Plans for the property have lodging for members and the golf course in two paddocks with groundwater wells tied into the pumphouse and irrigation system.  The 290 acre site is large for an 18 hole course.  Most golf courses occupy less than 150 acres.</p>
+					<img src="https://fescue.github.io/images/Olsson-Battle-Run.png" alt="Olsson Site Plan">
+
+					<p>Special Permit zoning image of S 98th St & A St</p>
+					<img src="https://fescue.github.io/images/Battle-Run-Golf-98-A-St.png" alt="Zoning Special Permit Image">
+					
+  	  				<div id="image-container"></div>
+		    </div>
+		</div>
+	</div>
+
+	<script>
+                const map = L.map('map').setView([40.806141,-96.583630], 7);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([40.806141,-96.583630]).addTo(map);
+	        marker.bindPopup("<b>Battle Run Golf Course</b><br>Lincoln, Nebraska</br>").openPopup();
+	</script>
+
+
+
+	
+	<p><a href="https://fescue.github.io/GrayBull/">Dormie Network's GrayBull</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

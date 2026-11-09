@@ -1,0 +1,80 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Panther National - New Golf Course</title>
+	<meta name="description" CONTENT="Panther National New Golf Course Design Jack Nicklaus Justin Thomas PGA Florida">
+	{% include h40.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Justin Thomas"></div>
+		<div class="content" tabindex="0"  aria-label="Nicklaus">
+			<H1>Panther National - Jack Nicklaus & Justin Thomas</H1>
+			<p><a style='font-weight:bold' href='https://panthernational.com/golf/' target='_blank' rel='nofollow'>Panther National</a> is a private golf club in Palm Beach Gardens, Florida.  The golf course is designed by <a style='font-weight:bold' href='https://www.nicklaus.com/' target='_blank' rel='nofollow'>Jack Nicklaus</a> with <a style='font-weight:bold'  href='https://en.wikipedia.org/wiki/Justin_Thomas' target='_blank' rel='nofollow'>Justin Thomas</a> and is set on 200 acres of land.  The private membership golf club opened in autumn 2023.  The professional tees stretch past 8,000 yards.  The topography has movement and elevation changes from almost 2 million cubic yards of earth being moved by Nicklaus team shapers to create the championship design.</p>
+			<p>Justin Thomas is a professional golfer on the PGA Tour who has also become a golf course architect with this as his first design project.  Thomas collaborated with Nicklaus at Panther National by adding insight into modern driving distance carries with input on the par 5 11th hole design strecthing back to 650+ yards with its strategic penalty area location.  In 2021, <a style='font-weight:bold' href='https://www.youtube.com/watch?v=UGdEegxu8e4' target='_blank' rel='nofollow'>Golf Magazine</a> documented the details behind the final redesign of Nicklaus' best known golf course at Muirfield Village in Dublin, Ohio.  From <a style='font-weight:bold' href='https://www.tamandayu.com/' target='_blank' rel='nofollow'>Taman Dayu in East Java, Indonesia</a> to the <a style='font-weight:bold' href='https://www.michlifen.com/en/' target='_blank' rel='nofollow'>Michlifen Resort & Country Club in the Atlas Mountains in Morroco</a>, Jack Nicklaus is one of the most prolific golf course architects, designing over 425 courses in 45 countries.  His design strategy and style is known for beauty, challenge, and fairness.</p>
+			<p>An additional 9 hole short course has been constructed with a world class driving range practice facility where the best professional golfers in the world can train for upcoming events on the PGA Tour and LPGA Tour.  Notable professionals Lexi Thompson from the LPGA paired with Rickie Fowler, Xander Schauffele, Morgan Hoffmann, Erik van Rooyen from the PGA Tour for the grand opening.  Panther National's par 3 course has a hole inspired by the island green 17th hole at TPC Sawgrass created by golf architect Pete Dye.  Nicklaus' first introduction into golf architecture was fifty years ago with Pete Dye at <a style='font-weight:bold' href='https://www.nicklausdesign.com/course/harbourtown/' target='_blank' rel='nofollow'>Harbor Town</a> in South Carolina.</p>
+			<p>The golf course opening preceded the build out of the clubhouse.  Construction of the clubhouse started in 2024 with anticipated hospitality opening in 2026.  Likewise real estate housing options started to be built by <a style='font-weight:bold' href='https://ellishbuilders.com/' target='_blank' rel='nofollow'>Ellish Builders</a> and Willoughby Construction and Development.</p>
+		</div>
+	</div>
+	
+
+
+    <script>
+                const map = L.map('map').setView([26.683846,-80.179803], 8);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                
+	                // Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="q0A_-vxsefI" style="background-image: url('https://i3.ytimg.com/vi/q0A_-vxsefI/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=q0A_-vxsefI" class="lty-playbtn" title="Play Video.  Credit: Panther National">
+	                            <span class="lyt-visually-hidden">Credit: Panther National</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([26.683846,-80.179803]).addTo(map);
+	        marker.bindPopup("<b>Panther National</b><br>Palm Beach Gardens, Florida</br>").openPopup();
+  </script>
+  <p><a href="https://fescue.github.io/Collier-County-Public-Golf/">Collier County - Public Golf</a></p>
+  <p><a href="https://fescue.github.io/High-Grove/">High Grove in Florida</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

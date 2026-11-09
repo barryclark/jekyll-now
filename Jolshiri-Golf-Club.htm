@@ -1,0 +1,81 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Jolshiri Golf Club in Bangladesh - Paul Jansen</title>
+	<meta name="description" CONTENT="New Golf Course Jolshiri Golf Club Bangladesh Paul Jansen Rob Gavarkovs Greens Bunker Construction">
+	{% include h40.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Jolshiri"></div>
+		<div class="content" tabindex="0"  aria-label="Janse">
+				<H1>Jolshiri Golf Club in Bangladesh - Paul Jansen</H1> 
+				<p><a style='font-weight:bold' href='https://www.youtube.com/@JolshiriGolfClub' target='_blank' rel='nofollow'>Jolshiri Golf Club</a> in Dhaka, Bangladesh is a new golf course as part of the expansive Jolshiri Abashon project, an ambitious new residential development project for Bangladesh Army officers with ancillary areas available for civilian purchase.  The golf club is situated in Rupganj Upazila, the Narayanganj District, an area undergoing significant change to include educational institutes, hospitals, and parks.  A large allocation has been reserved for <a style='font-weight:bold' href='https://www.thegolfhousebd.com/bgfs-president-performs-ground-breaking-foundation-of-jolshiri-golf-clubs-club-house/' target='_blank' rel='nofollow'>open space</a>	within the land plan.  The expansive project is over 2,133 acres.</p>
+				<p>Golf architect <a style='font-weight:bold' href='https://golfclubatlas.com/feature-interview/feature-interview-with-paul-jansen/' target='_blank' rel='nofollow'>Paul Jansen</a> created Jolshiri Golf Club.  Jansen is an internationally recognized golf course architect who has worked on worldwide in creating new golf courses.</p>
+				<p>Jansen also does design build work for Nick Faldo Design.  Jansen's design philosophy integrates a deep appreciation for the history of the game with a creative and forward-thinking approach to course design, making him a widely respected figure in the game.  <a style='font-weight:bold' href='https://www.lagunalangco.com/' target='_blank' rel='nofollow'>Laguna Lang Co</a> in central Vietnam was created by Jansen in conjunction with Nick Faldo celebrating his attention to detail.  The edible course has planted herbs and rice fields emphasizing a harmonious blend with the natural environment. Jansen's assignment in 2024 through 2026 for Faldo Design is a scenic seaside clifftop course on Madeira Island in Portugal named <a style='font-weight:bold' href='https://fescue.github.io/Madeira-Ponta-do-Pargo/' target='_blank' rel='nofollow'>Ponta do Pargo</a>.</p>
+				<p><a style='font-weight:bold' href='https://www.linkedin.com/in/robgavarkovs/' target='_blank' rel='nofollow'>Rob Gavarkovs</a> is a golf course architect who has worked under Paul Jansen for over five years contributing to golf projects across four continents including Jolshiri Golf Club.</p>
+		</div>
+	</div>
+
+
+
+
+	    <script>
+                const map = L.map('map').setView([23.780778,90.349286], 8);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+					
+	                // Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="Rz5pWBC7HF0" style="background-image: url('https://i3.ytimg.com/vi/Rz5pWBC7HF0/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=Rz5pWBC7HF0" class="lty-playbtn" title="Play Video.  Credit: Jolshiri Golf Club">
+	                            <span class="lyt-visually-hidden">Credit: Jolshiri Golf Club</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([23.780778,90.349286]).addTo(map);
+	        marker.bindPopup("<b>Jolshiri Golf Club</b><br>Dhaka, Bangladesh</br>").openPopup();
+  </script>
+	
+  <p><a href="https://fescue.github.io/Hann-Reserve/">Faldo Design at Hann Reserve</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

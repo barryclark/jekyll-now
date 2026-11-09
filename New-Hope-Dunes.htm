@@ -1,0 +1,82 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>New Hope Dunes - New Golf Course</title>
+	<meta name="description" CONTENT="Florida Sand Dunes New Golf Course New Hope">
+	{% include hLeaflet.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Florida"></div>
+			<div class="content" tabindex="0"  aria-label="18 Holes">
+				<H1>New Hope Dunes - New Golf Course</H1>
+				<p>New Hope Dunes in Washington County, Northwest Florida is a proposed golf course development project aiming for an 18-hole golf course on approximately 1,438 acres of land.  Overhead images of the land show sandy soil ideal for golf.  As shown in the proposal below, a small portion of the 1,438 acre site will be planted in turfgrass.</p>
+				<div id="image-container"></div>
+				<div class="substack-post-embed"><p lang="en">Thrilling start to the Curtis Cup by Tim Yeo</p><p>Lessons from the AIG Women's Open</p><a data-post-link href="https://timyeogolf.substack.com/p/thrilling-start-to-the-curtis-cup">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+	        </div>
+		</div>
+	</div>
+	
+
+	
+  <script>
+  	  	window.addEventListener('load', function() {
+			var img = new Image();
+			img.src = "https://fescue.github.io/images/Hope.jpg";
+			img.alt = "New Hope Dunes";
+			img.style.width = "90%";
+			img.onload = function() {
+				document.getElementById('image-container').appendChild(img);
+			};
+		});
+	  
+        const map = L.map('map').setView([30.4486118,-85.6880586], 7);
+        const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+	    L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+					  
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	    });
+	
+	    // Add the custom overlay to the map
+	    var myCustomOverlay = new L.CustomOverlay();
+	    myCustomOverlay.addTo(map);
+	
+	    // Add a marker to the map at the same location as the map center
+	    //var marker = L.marker([30.4486118,-85.6880586]).addTo(map);
+	    //marker.bindPopup("<b>New Hope Dunes</b>").openPopup();
+  </script>
+	<p><a href="https://fescue.github.io/Dunedin-Golf-Course/">Donald Ross - Dunedin Golf Course</a></p>
+	<p><a href="https://fescue.github.io/Chicago-Jackson-Park-Golf/">Tiger Woods Proposal for Jackson Park, Chicago</a></p>
+	<p><a href="https://fescue.github.io/Sherrill-Park-Golf-Course/">Muni Sherrill Park Renovation</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

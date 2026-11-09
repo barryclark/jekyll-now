@@ -1,0 +1,113 @@
+<style>
+	.container {
+	    width: 100%;
+	    margin: 0 auto;
+	    box-sizing: border-box; /* Ensures padding and border are included in the element's width */
+	}
+	
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: start; /* Adjust vertical alignment as needed */
+	}
+	
+	.col-sm-6 {
+		flex: 0 0 50%; /* 50% width for each column */
+		max-width: 50%;
+	}
+	
+	.col-md-6, .col-md-4 {
+		box-sizing: border-box; /* Ensures padding and border are included in the element's width */
+	}
+	
+	/* General styles for desktop, applies when screen size is larger than 768px */
+	.col-md-6 {
+	    width: 50%;
+	    float: left;
+	}
+
+	/* Styles for mobile devices */
+	@media (max-width: 768px) {
+	    .col-md-6 {
+	        width: 100%;
+	        float: none;
+	    }
+	}
+	
+	.col-md-4 {
+	    flex: 0 0 calc(25% - 40px); /* Adjusted to account for margins */
+	    margin: 0 20px;
+	    padding: 0 5px;
+	}
+
+	/* CSS Media Query for Mobile Devices */
+	/* Initially hide mobile content on all devices */
+	.mobile-content {
+	    display: none;
+	}
+
+	/* CSS Media Query for Mobile Devices */
+	@media only screen and (max-width: 768px) {
+	    .desktop-content {
+		display: none;
+	    }
+	    .mobile-content {
+		display: block;
+	    }
+	}
+
+	/* CSS Media Query for Desktop Devices */
+	@media only screen and (min-width: 769px) {
+	    .mobile-content {
+		display: none;
+	    }
+	    .desktop-content {
+		display: block;
+	    }
+	}
+
+	footer {
+		height: 8vh; /* vh (viewport height) unit, 3% of the viewport height */
+	}
+
+	img {
+	  height: auto;
+	  width: 100%;
+	}
+
+	.instagram-frame {
+	  max-width: 500px;
+	  width: 100%;
+	  margin: auto;
+	}
+
+	.instagram-media {
+	  position: relative;
+	  width: 100%;
+	  height: 600px;
+	  overflow: hidden;
+	}
+	
+	/* Landscape aspect ratio (1.91:1) */
+	.instagram-landscape {
+	  padding-top: 52.36%; /* 100 / 1.91 */
+	}
+	
+	/* If you need other aspect ratios */
+	.instagram-square {
+	  padding-top: 100%; /* 100 / 1 for square */
+	}
+	
+	.instagram-portrait {
+	  padding-top: 125%; /* 100 / 0.8 for 4:5 ratio */
+	}
+	
+	.instagram-media iframe {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  border: none;
+	}
+</style>

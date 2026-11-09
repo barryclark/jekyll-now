@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /short
+Disallow: /short/
+Disallow: /about
+Disallow: /about/
+Disallow: /Cayo-Largo/

@@ -1,0 +1,84 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+	<title>Abu Dhabi Garden Course Renovation</title>
+	<meta name="description" CONTENT="Golf course Construction Abu Dhabi Resort Garden Course Renovation Peter Harradine Bunker Sand Construction Routing Irrigation">
+        {% include h40.html %}
+</head>			
+
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Abu Dhabi"></div>
+			<div class="content" tabindex="0"  aria-label="Golf Resort">
+				<H1>Abu Dhabi Resort - Garden Course Renovation</H1>
+				<p><a style='font-weight:bold' href='https://www.abudhabigolfclub.abudhabi/' target='_blank' rel='nofollow'>Abu Dhabi Resort & Spa</a> has hired golf course architect <a style='font-weight:bold' href='https://www.harradine-golf.com/' target='_blank' rel='nofollow'>Peter Harradine</a> re-design of the 9-hole Garden golf course.</p>
+				<p>Harradine designed the original course in 1998 and has updated his design view towards playability.  The resort has hosted the Abu Dhabi HSBC Championship on the DP World Tour and the 2023 Eisenhower Trophy.  Harrradine is busy, actively overseeing the design build of Capital Hills Canyon Golf Club in Islamabad, Pakistan for a 2025 opening date.</p>
+				<p>Construction is underway for a new routing with a back tee yardage of 2,755 yards Par 34.  Late night golf will be available with stadium lighting on the fairways and greens.  The new rebuilt 9 holes will have three par 3 holes and one par 5 hole.  The 4th hole on the new golf course will be the longest hole at 524 yards.</p>
+				<p>Nearby <a style='font-weight:bold' href='https://www.yasisland.com/en/things-to-do/get-active/yas-links-abu-dhabi' target='_blank' rel='nofollow'>Yas Links</a> designed by <a style='font-weight:bold' href='https://kylephillips.com/' target='_blank' rel='nofollow'>Kyle Phillips</a> has been internationally recognized in Top 100 golf course rankings for its design quality.</p>
+			
+				<div class="substack-post-embed"
+				<p lang="en">If you're going to China make time for golf by Tim Yeo</p><p>You'll find a sea of smiling faces</p><a data-post-link href="https://timyeogolf.substack.com/p/if-youre-gong-to-china-make-time">ONLY FRIENDS YOU HAVEN’T YET MET</a>
+				</div>
+			</div>
+			<script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>	
+	</div>
+
+    <script>
+            const map = L.map('map').setView([24.419342,54.526041], 6);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');			
+			
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="BCEWXgXnOjM" style="background-image: url('https://i3.ytimg.com/vi/BCEWXgXnOjM/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=BCEWXgXnOjM" class="lty-playbtn" title="Play Video. Credit: Abu Dhabi Resort & Spa">
+	                            <span class="lyt-visually-hidden">Credit: Abu Dhabi Resort & Spa</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([24.419342,54.526041]).addTo(map);
+
+	        marker.bindPopup("<b>Abu Dhabi Resort & Spa</b>").openPopup();
+	</script>
+   	<p><a href="https://fescue.github.io/Dalaman-Golf-Resort/">IDG's Dalaman Golf Resort in Turkey</a></p>
+	<p><a href="https://fescue.github.io/Black-Sand-Beach/">Black Sand Beach Golf</a></p>
+	<p><a href="https://fescue.github.io/Shura-Island-Resort/">Darius Oliver's Kangaroo Island in Australia</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

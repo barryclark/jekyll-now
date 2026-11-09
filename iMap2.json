@@ -1,0 +1,259 @@
+{"storymap": {
+        "slides": [
+			{
+				"type": "overview",
+				"text": {
+					"headline": "Candidates",
+					"text": "<p>Te Arai - South</p><p>Te Arai - North</p><p>Cabot Citrus Farms - Barrens</p><p>Cabot St. Lucia</p><p>Barbuda Ocean Club</p><p>La Réserve Golf Links</p><p>7 Mile Beach</p><p>El Desafío</p><p>PGA Frisco - Fields Ranch East</p><p>McArthur West</p><p>Lost Rail</p><p>Landmand</p><p>Sand Valley - Lido</p><p>Pinehurst #10</p><p>Old Barnwell</p><p>Tree Farm</p><p>Wicker Point</p><p>Ban Rakat Club - Ballyshear</p><p>Terras da Comporta Dunas</p>"
+				 }
+			},{
+				"text": {
+					"headline": "Te Arai - South",
+					"text": "<p>Te Arai - South built by Coore Crenshaw in New Zealand opened in March 2023.</p>"
+				},
+				"location": {
+					"lat": -36.1967176,
+					"lon": 174.616897,
+					"zoom": 9
+				},
+				"media": {
+					"url": "https://tearai.com/golf/south-course/"
+				}
+			},{
+				"text": {
+					"headline": "Te Arai - North",
+					"text": "<p>Te Arai - North built by Tom Doak with construction assistance by Angela Moser in New Zealand expected in November 2023.</p>"
+				},
+				"location": {
+					"lat": -36.1967176,
+					"lon": 174.616897,
+					"zoom": 9
+				},
+				"media": {
+					"url": "https://tearai.com/golf/north-course/"
+				}
+			},{
+				"text": {
+					"headline": "Cabot Citrus Farms - Barrens",
+					"text": "<p>Cabot Barrens built by Kyle Franz in Florida and expected late 2024.  Adjacent golf course <a href='https://fescue.github.io/Cabot-Oaks-Golf/'>Cabot Oaks</a> built by Kyle Franze, Mike Nuzzo, Ran Morrissett.  Cabot 21 short course and practice range will be designed by Mike Nuzzo.</p>"
+				},
+				"location": {
+					"lat": 28.6829807,
+					"lon": -82.4815757,
+					"zoom": 8
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=hRDq0PHq4HE"
+				}
+			},{
+				"text": {
+					"headline": "Cabot St. Lucia",
+					"text": "<p>Cabot St. Lucia built by Coore Crenshaw in St. Lucia expected in November 2023</p>"
+				},
+				"location": {
+					"lat": 14.074383,
+					"lon": -60.935679,
+					"zoom": 5
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=FT1An-ycess"
+				}
+			},{
+				"text": {
+					"headline": "Terras da Comporta Dunas",
+					"text": "<p>Terras da Comporta Dunas built by David Kidd in Portugal opens in May 2023</p>"
+				},
+				"location": {
+					"lat": 38.324931,
+					"lon": -8.785595,
+					"zoom": 7
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=yFKLopBaevc"
+				}
+			},{
+				"text": {
+					"headline": "Barbuda Ocean Club",
+					"text": "<p>Barbuda Ocean Club built by Tom Fazio under Discovery Land opened 2023</p>"
+				},
+				"location": {
+					"lat": 17.549588,
+					"lon": -61.765555,
+					"zoom": 5
+				},
+				"media": {
+					"url": "https://vimeo.com/716161120"
+				}
+			},{
+				"text": {
+					"headline": "La Réserve Golf Links",
+					"text": "<p>La Réserve Golf Links built in Bel Ombre, Mauritius by Peter Matkovich with co-design credit to Louis Oosthuizen opened September 2022.  La Reserve will be the new host venue for the DP World Tour’s AfrAsia Bank Mauritius Open.</p>"
+				},
+				"location": {
+					"lat": -20.10175,
+					"lon": 57.701072,
+					"zoom": 5
+				},
+				"media": {
+					"url": "https://heritagegolfclub.mu/golf/la-reserve-golf-links/"
+				}
+			},{
+				"text": {
+					"headline": "7 Mile Beach",
+					"text": "<p>7 Mile Beach built by Clayton DeVries Pont in Hobart, Tasmania, Australia expected in December 2023</p>"
+				},
+				"location": {
+					"lat": -42.848042,
+					"lon": 147.479254,
+					"zoom": 8
+				},
+				"media": {
+					"url": "https://7milegolf.com.au/2023/01/10/progress-report-09-01-23/"
+				}
+			},{
+				"text": {
+					"headline": "El Desafío",
+					"text": "<p>El Desafío in San Martin de los Andes, Argentina was built by Greg Norman with assistance from Matthew Dusenberry completing 9 holes in 2011.  The Patagonia course is one of the few Western properties planted in fescue grass and was featured in https://www.nytimes.com/2020/09/11/realestate/golf-argentina-patagonia.html The New York Times.  The back nine is currently under construction now with an anticipated opening in late 2024.</p>"
+				},
+				"location": {
+					"lat": -40.1258034,
+					"lon": -71.1854148,
+					"zoom": 5
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=O3IEXVlPJkQ"
+				}
+			},{
+				"text": {
+					"headline": "McArthur West",
+					"text": "<p>McArthur West built by Coore Crenshaw in Florida, USA expected in December 2023</p>"
+				},
+				"location": {
+					"lat": 27.094252,
+					"lon": -80.169722,
+					"zoom": 9
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=vkOCIOJV__s"
+				}
+			},{
+				"text": {
+					"headline": "PGA Frisco - Fields Ranch East",
+					"text": "<p>PGA Frisco - Fields Ranch East is built by Gil Hanse in Frisco, Texas and opening spring 2023.  Adjacent golf course PGA Frisco - Fields Ranch West is built by Beau Welling.</p>"
+				},
+				"location": {
+					"lat": 33.2124296,
+					"lon": -96.8572536,
+					"zoom": 8
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=FXtltDZo3kg"
+				}
+			},{
+				"text": {
+					"headline": "Lost Rail",
+					"text": "<p>Lost Rail built by Scott Hoffman and construction by Bill Kubly from Landscapes Unlimited in Nebraska, USA opened in September 2022</p>"
+				},
+				"location": {
+					"lat": 41.172158,
+					"lon": -96.282254,
+					"zoom": 6
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=dHZZXSr74Nc"
+				}
+			},{
+				"text": {
+					"headline": "Landmand",
+					"text": "<p>Landmand built by Rob Collins and Tad King in Nebraska, USA opened in August 2022.  2023 tee times are sold out.  The 17th hole green is a modern interpretation of Alister Mackenzie's lost NLE Sitwell Park green.</p>"
+				},
+				"location": {
+					"lat": 42.3675785,
+					"lon": -96.5259281,
+					"zoom": 6
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=8zEc4lsdLms"
+				}
+			},{
+				"text": {
+					"headline": "Sand Valley - Lido",
+					"text": "<p>Sand Valley Lido built by Doak Schneider Slawnik in Wisconsin, USA open summer 2023</p>"
+				},
+				"location": {
+					"lat": 44.171728,
+					"lon": -89.857699,
+					"zoom": 6
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=hq7Zl82hkFY"
+				}
+			},{
+				"text": {
+					"headline": "Pinehurst #10",
+					"text": "<p>Pinehurst Resort's 10th course routed by Tom Doak, built by Angela Moser is expected to open in spring 2024.  Rich LaBar leads site construction under firm LaBar Golf Renovations.</p>"
+				},
+				"location": {
+					"lat": 35.1467958,
+					"lon": -79.4512055,
+					"zoom": 6
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=R-P7peWhNwM"
+				}
+			},{
+				"text": {
+					"headline": "Old Barnwell",
+					"text": "<p>Old Barnwell built by Brian Schneider, Blake Conannt and MacCurrach construction in South Carolina, USA estimated opening October 2023</p>"
+				},
+				"location": {
+					"lat": 33.4569422,
+					"lon": -81.5602724,
+					"zoom": 6
+				},
+				"media": {
+					"url": "https://oldbarnwell.com/"
+				}
+			},{
+				"text": {
+					"headline": "Tree Farm",
+					"text": "<p>Tree Farm built by Goalby Blair Doak in South Carolina, USA opened in March 2023</p>"
+				},
+				"location": {
+					"lat": 33.539347,
+					"lon": -81.746414,
+					"zoom": 7
+				},
+				"media": {
+					"url": "https://thefriedegg.com/zac-blair-the-buck-club-hires-tom-doak-kye-goalby-to-design-the-tree-farm/"
+				}
+			},{
+				"text": {
+					"headline": "Wicker Point",
+					"text": "<p><a href='https://fescue.github.io/Lake-Martin-Wicker-Point-Golf/'>Wicker Point Golf Club</a> on Lake Martin in Alabama, USA designed by Coore Crenshaw with construction services provided by Landscapes Unlimited opens in September 2023</p>"
+				},
+				"location": {
+					"lat": 32.7947244,
+					"lon": -85.992651,
+					"zoom": 7
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=gqoTHpLyFcc"
+				}
+			},{
+				"text": {
+					"headline": "Ban Rakat Club - Ballyshear",
+					"text": "<p>Ban Rakat Club - Ballyshear built by Hanse in Thailand opened in January 2022</p>"
+				},
+				"location": {
+					"lat": 13.609653,
+					"lon": 100.882831,
+					"zoom": 6
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=xR9IHesKJ5I"
+				}
+			}		
+		]
+    }
+}

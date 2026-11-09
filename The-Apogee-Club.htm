@@ -1,0 +1,73 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>The Apogee Club - Golf is the Priority</title>
+	<meta name="description" CONTENT="Apogee Club Three Rivers South Florida Golf Mike Davis Gil Hanse Tommy Fazio Anthony Nysse Country Club">
+	{% include h.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="The Apogee Club - Golf is the Priority"></div>
+		<div class="content" tabindex="0"  aria-label="Apogee">
+			<H1>The Apogee Club - Golf is the Priority</H1>
+			<p><a style='font-weight:bold' href='https://www.apogeeclub.com/' target='_blank' rel='nofollow'>The Apogee Club</a> is a 1,218-acre private golf club located on the west and east side of SW Kanner Highway.  The property is north of SW Bridge Road in Stuart.  The club includes three 18-hole golf courses with extensive practice range and short game facilities, a par 3 course.  The property will have no permanent residential units.  The original application was submitted in 2021 with Martin County staff report issued on March 2022. The county report recommended that the <a style='font-weight:bold' href='https://owl.martin.fl.us/app/f?p=301:2:9510676890564::::P2_LIST_GROUP_ID,P2_LIST_ID:693,11657' target='_blank' rel='nofollow'>Martin County Commission</a> approved the application with the benefit of an open space and up to 54 golf cottages for members and guests.  Before approving the start of construction of the golf courses, the Martin County Commission held a public hearing on the application in 2022.</p>
+			<p><a style='font-weight:bold'  href='https://www.usga.org/content/usga/home-page/course-care/turfgrass-and-environmental-research/mike-davis-research-program.html' target='_blank' rel='nofollow'>Mike Davis</a> is an accomplished golf executive with over 30 years of experience in the game.  He is the founder and CEO of Apogee Club.  Davis is the former CEO of the United States Golf Association (USGA).  Davis began his career at the USGA in 1990 as the assistant manager of championship relations.  He was promoted to senior director of USGA Rules and Competitions in 2005, then became the USGA's 7th executive director in 2011.  In 2016, Davis was named the USGA's first Chief Executive Officer.  As executive director and CEO of the USGA, Davis oversaw all aspects of the organization's operations.  He also served as a member of several golf-related boards, including the International Golf Federation, World Golf Foundation, World Golf Hall of Fame, and Official World Golf Ranking(OWGR).  Mike Davis is a highly respected figure in the golf world.  He is known for his expertise in golf course setup, and he has been responsible for setting up the courses for all of the USGA's championships, including the U.S. Open.</p>
+			<p>Mike Davis is onsite managing the construction of the project on the 1,200 acre site.  Davis has recruited an elite team, namely Anthony Nysse as Director of Golf Courses & Grounds.  <a style='font-weight:bold'  href='https://www.linkedin.com/in/anthony-nysse-523a67b0/' target='_blank' rel='nofollow'>Anthony Nysse</a> has previous experience as leader in agronomy at Mountain Lake, Old Marsh, Pine Tree, and Colonial Country Club.  Davis partnered with Mike Pascucci and Steve Ross at the outset of the project.  Joe Cucci was the grow-in superintendent for the South course which opened in November 2024.</p>
+			<p>Golf architects for the 3 golf courses are Gil Hanse(West), Tommy Fazio with Mike Davis(South), and Kyle Phillips(North).  The Hanse West course opened in December 2023, and the Davis/Fazio South course opened in 2024.  The club has 2 driving ranges, including a 360 degreee range and practice facility.  Rory McIlroy, Ernie Els, and Bradley Klein have complimented the property.  TifTuf Bermuda grass, developed by the University of Georgia through a rigorous testing and development process, is used in the fairways. TifTuf is known for its superior qualities in turf quality and water requirements.  <a style='font-weight:bold' href='https://www.rainbird.com/golf/products/integrated-control-system/' target='_blank' rel='nofollow'>Rain Bird Irrigation Control(IC)</a> system is the irrigation system implemented by Irrigation Aqua Turf International.  TifEagle was developed by the University of Georgia in Tifton, Georgia in conjunction with the <a style='font-weight:bold' href='https://www.ars.usda.gov/southeast-area/tifton-ga/crop-genetics-and-breeding-research/docs/bermudagrass-for-turf/' target='_blank' rel='nofollow'>U.S. Department of Agriculture’s Agricultural Research Service (ARS)</a>.  Advantages of TifEagle are its fine texture and density - TifEagle has a finer leaf texture and higher shoot density compared to other bermuda grass varieties leading to smoother putting surfaces.  TifEagle can tolerate extremely low mowing heights at 1/8 inch or 3.2 mm helping create the smooth, fast surfaces preferred on greens.</p>
+			<p>The practice facility is 55 acres with a short game area of 5 acres alone.  The driving range is 360 degrees allowing players to choose their own wind direction.  The Wee Course is a 7 hole short course.  Additionally, there is a St. Andrews inspired Himalayas-style putting green.</p>
+			<p>Clearing for the Kyle Phillips North Course began in 2024.  The Phillips North course is in golf construction/grow in phase for 2025.</p>
+			<p>Reports from Hanse's West course have classic design elements from sandy soil with a Leven inspired short par 4 5th hole and a Hell's Half Acre for heroics at the par 5 6th hole.</p>
+		</div>
+	</div>       
+
+    <script>
+                const map = L.map('map').setView([27.1361334,-80.2556863], 10);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([27.1361334,-80.2556863]).addTo(map);
+	        marker.bindPopup("<b>Apogee Club</b><br>Hobe Sound, Florida</br>").openPopup();
+  </script>
+  <p><a href="https://fescue.github.io/High-Grove/">Hanse/Wagner at High Grove</a></p>
+  <p><a href="https://fescue.github.io/High-Grove/">Hanse/Wagner at Childress Hall</a></p>
+  <p><a href="https://fescue.github.io/Muriwai-Downs-Golf/">Kyle Phillips in New Zealand at Muriwai Downs Golf</a></p>
+  {% include bodyFooter.html %}
+ </body>
+ {% include footer.html %}
+</html>

@@ -1,0 +1,81 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+	<title>Singapore Island Country Club - Island Course Renovation</title>
+	<meta name="description" CONTENT="Golf course Construction Singapore Island Country Club Island Course Renovation Nelson Haworth Chris Gray Irrigation SubAir AquaTurf Zeon Trinity Zoysia">
+        {% include h.html %}
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Cyprus"></div>
+			<div class="content" tabindex="0"  aria-label="Limassol Golf">
+				<H1>Singapore Island Country Club - Island Course Renovation</H1> 
+				<p><a style='font-weight:bold' href='https://gis.sicc.org.sg/?page_id=57514' target='_blank' rel='nofollow'>Singapore Island Country Club</a>, Island Course is undergoing an 18 month renovation and is expected to be completed in 2025.  List of renovation items to preserve includes salvaging of bunker sand, relocation of irrigation sprinkler fittings, tree removal for transplant, cowgrass transplantation to external site, and stripping the Island greens for use at the Bukit Course's greens Serangoon grass collar areas.  Golf Course Architect Nelson & Haworth Design is leading the renovation plans.  <a style='font-weight:bold' href='https://asgca.org/neil-haworth-asgca-dies-at-age-63-2' target='_blank' rel='nofollow'>Neil Haworth</a> died in June 2024 in Ottawa, Canada.</p>
+				<p>Additional support for golf course construction includes civil engineer JYC Consultants Pte Ltd, irrigation specialist Aqua Turf International, and surveyor WT Partnership.  Golf Course Consultant Chris Gray from <a style='font-weight:bold' href='https://www.grayinternationalgolf.com/' target='_blank' rel='nofollow'>Gray International Golf</a> is providing advisory services.  Budget for the project has been set in the range of $28 to 34 million SGD.</p>
+				<p>The redesigned course construction plans include extensive subsurface drainage and <a style='font-weight:bold' href='https://subairsystems.com/' target='_blank' rel='nofollow'>SubAir</a> system to manage moisture levels in the greens.  The site will be sandcapped to cope with tropical rainfall events.  Bunker design and liner materials are being planned to reduce bunker washouts.  Recent improvements in Zeon and Trinity zoysia grasses will reduce the usage of fertilizer inputs, disease and invasive grass/weed intrusions, and improved drainage.</p>
+				<div class="substack-post-embed"><p lang="en">A new generation of superstars? by Tim Yeo</p><a data-post-link href="https://timyeogolf.substack.com/p/a-new-generation-of-superstars">ONLY FRIENDS YOU HAVEN’T YET MET</a></div>
+				<script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+			</div>
+	</div>
+	
+
+    <script>
+            const map = L.map('map').setView([1.3589516,103.8141203], 6);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');			
+			
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="LLSg3e1oIig" style="background-image: url('https://i3.ytimg.com/vi/LLSg3e1oIig/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=LLSg3e1oIig" class="lty-playbtn" title="Play Video. Credit: The Singapore Island Country Club">
+	                            <span class="lyt-visually-hidden">Credit: The Singapore Island Country Club</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([1.3589516,103.8141203]).addTo(map);
+
+	        marker.bindPopup("<b>Singapore Island Country Club</b>").openPopup();
+	</script>
+	<p><a href="https://fescue.github.io/Bohol-Golf/">Bohol Golf in Philippines</a></p>
+	<p><a href="https://fescue.github.io/Cliffs-Kangaroo-Island/">Darius Oliver's Kangaroo Island in Australia</a></p>
+	<p><a href="https://fescue.github.io/Dhoho-Golf-Club/">Dhoho Golf Club in Indonesia</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

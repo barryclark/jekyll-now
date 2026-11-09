@@ -1,0 +1,79 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>  
+    <title>Lazy J - South Dakota Sand Hills</title>
+    <meta name="description" CONTENT="New Golf Course South Dakota Sand Hills Tom Coyne Colton Craig Landscapes Unlimited">
+	{% include h50.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Colton Craig"></div>
+			<div class="content" tabindex="0"  aria-label="Landscapes Unlimited">
+				<H1>Lazy J Sporting Club: Colton Craig + Tom Coyne</H1>
+		                <p><a style='font-weight:bold' href='https://lazyjgrand.com/' target='_blank' rel='nofollow'>Lazy J</a> is a new 18 hole destination golf course being planned by <a style='font-weight:bold' href='https://craigandcoyne.com/colton-craig' target='_blank' rel='nofollow'>Colton Craig</a> and Tom Coyne for a 2026 opening.  Lazy J is in Ideal, South Dakota.  Membership information for Lazy J may be obtained from <a href="mailto:karrisa@jorgensenfarms.com">Karissa Jorgensen</a>(phone: +1 (605) 840-1256)</p>
+				<p>The 20,000 property will offer pheasant hunting and golf.  The <a style='font-weight:bold' href='https://jorgensenfarms.com/' target='_blank' rel='nofollow'>Jorgenson family</a> settled in South Dakota in 1909 setting up a family farm.  Ideal, South Dakota is a 168 mile drive north of Sand Hills Golf Club in Mullen, Nebraska.</p>
+				<p>Golf architects Colton Craig/Tom Coyne are partnering with <a style='font-weight:bold' href='https://landscapesunlimited.com/' target='_blank' rel='nofollow'>Landscapes Unlimited</a> to lead the golf construction effort.  Golf course shaping will start in October 2024.  Plans for the golf are for a 7,216 yard course from the back tees.</p>
+				<p>The preview video was created by <a style='font-weight:bold' href='https://golfclubatlas.com/feature-interview/interview-with-vaughn-halyard/' target='_blank' rel='nofollow'>Vaughn Halyard</a>, founder of StoryLounge Film Company.  Halyard is President of the Donald Ross Society in 2024.</p>
+				<div class="substack-post-embed"><p lang="en">Can you play too much golf?  by Tim Yeo</p><a data-post-link href="https://timyeogolf.substack.com/p/can-you-play-too-much-golf">ONLY FRIENDS YOU HAVEN’T YET MET</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+			</div>
+	</div>
+	
+
+    <script>		
+            const map = L.map('map').setView([43.5419046,-99.9811121], 5);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	        
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="yjnwBdfVOcY" style="background-image: url('https://i3.ytimg.com/vi/yjnwBdfVOcY/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=yjnwBdfVOcY" class="lty-playbtn" title="Play Video.  Credit: Tom Coyne">
+	                            <span class="lyt-visually-hidden">Credit: Tom Coyne</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([43.5419046,-99.9811121]).addTo(map);
+	        marker.bindPopup("<b>Lazy J Sporting Club</b><br>South Dakota's Sand Hills</br>").openPopup();
+	</script>
+	
+	<p><a href="https://fescue.github.io/Battle-Run-Golf-Course/">Battle Run Golf Course in Nebraska</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

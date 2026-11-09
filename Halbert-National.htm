@@ -1,0 +1,84 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Fazio's Halbert National - Texas</title>
+	<meta name="description" CONTENT="Tom Fazio Halbert National Hood County Granbury Texas New Golf Course">
+	{% include h50.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Texas"></div>
+		<div class="content" tabindex="0"  aria-label="Fazio">
+			<H1>Fazio's Halbert National - Texas</H1>
+			<p>Halbert National is a new golf course in Granbury in Hood County, Texas southewest of Fort Worth.  The golf course was designed by <a style='font-weight:bold' href='https://faziodesign.com/' target='_blank' rel='nofollow'>Tom Fazio</a> for the Halbert family at a $50 million budget and will be ready for play in spring 2026.  Halbert National is grassed with TifEagle greens and Zoysia fairways.</p>
+			<p>The site occupies 162 acres on Lake Granbury off Holly Hills Cemetery Road and west of <a style='font-weight:bold' href='https://tpolg.com/' target='_blank' rel='nofollow'>The Peninsula</a> and includes an 8 acre parcel formerly owned by the Brazos River Authority.</p>
+			<H2>National Audience - Television</H2>
+			<p>Starting October 2026, Halbert National will host <a style='font-weight:bold' href='https://acusports.com/news/2025/12/3/general-abilene-christian-intercollegiate-to-debut-in-october-2026-at-halbert-national.aspx' target='_blank' rel='nofollow'>The Abilene Christian Intercollegiate</a> with both men's and women's golf teams participating.  The event will be broadcast on The Golf Channel.</p>
+			<p>Nearby Peninsula development has soils characterized by Glen Rose limestone along Lake Granbury varying with shallow to moderately deep calcareous soils and variable permeability.  The <a style='font-weight:bold' href='https://www.nrcs.usda.gov/resources/data-and-reports/web-soil-survey' target='_blank' rel='nofollow'>USDA Soil Survey</a> and <a style='font-weight:bold' href='https://granbury.org/DocumentCenter/View/1009/Chapter-3' target='_blank' rel='nofollow'>Granbury Survey of Historic Resources</a> are references.</p>
+			<p>Prominent member clubs in Texas opened in 2025, namely <a style='font-weight:bold' href='https://fescue.github.io/Childress-Hall/' target='_blank' rel='nofollow'>Childress Hall</a>, <a style='font-weight:bold' href='https://fescue.github.io/Freestone-Lake-Golf-Club/' target='_blank' rel='nofollow'>Freestone Lake Golf Club</a>, and <a style='font-weight:bold' href='https://fescue.github.io/Loraloma-Thomas-Ranch-Golf/' target='_blank' rel='nofollow'>Loraloma Club</a> in Austin.  Similar to Halbert National, Beau Welling built Freestone Lake on a private lake.  Other 2026 openings in the Fort Worth area include Maverick Ranch and Bluejack National.  Closer to San Antonio,  <a style='font-weight:bold' href='https://fescue.github.io/Luling-Sport/' target='_blank' rel='nofollow'>Luling Sport Club</a> is another recent build with 36 holes designed by Kyle Franz and Oglivy Cocking Mead(OCM).</p>
+			<p>Anticipating new development near Houston, 36 holes at <a style='font-weight:bold' href='https://fescue.github.io/Texana-Golf/'>Texana Golf</a> shows great potential.</p>
+			<p>Estate course development with no plans for members is rare.  Tim Jackson and David Kahn built an estate course <a style='font-weight:bold' href='https://fescue.github.io/Jackson-Kahn-Louisiana/' target='_blank' rel='nofollow'>Louisiana</a> opening for play in 2023.  Another example of an estate course built in the modern era is Three Ponds in Water Mill, New York designed by <a style='font-weight:bold' href='https://reesjonesinc.com/latest-news/this-cleverly-designed-backyard-golf-course-will-fill-you-with-awe-and-envy/' target='_blank' rel='nofollow'>Rees Jones</a>.  Historical estate courses occasionally migrate into becoming club memberships, namely Morfontaine Golf Club founded 1913 by Armand de Gramont to commission Tom Simpson to design the 9-hole Vallière golf course at <a style='font-weight:bold' href='https://www.golfdemorfontaine.fr/en/' target='_blank' rel='nofollow'>Morfontaine</a>.</p>
+		</div>
+	</div>
+
+    <script>
+                const map = L.map('map').setView([32.4792114,-97.7739309], 11);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+
+			// Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="iWqw0WYWJL8" style="background-image: url('https://i3.ytimg.com/vi/iWqw0WYWJL8/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=iWqw0WYWJL8" class="lty-playbtn" title="David Halbert.  Credit: Forbes">
+	                            <span class="lyt-visually-hidden">Credit: Forbes</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			    
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([32.4792114,-97.7739309]).addTo(map);
+	        marker.bindPopup("<b>Halbert National</b><br>Granbury, Texas</br>").openPopup();
+  </script>
+	
+	
+   <p><a href="https://fescue.github.io/Childress-Hall/">Childress Hall in Texas</a></p>
+   <p><a href="https://fescue.github.io/1876-Country-Club/">1876 Country Club in Texas</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

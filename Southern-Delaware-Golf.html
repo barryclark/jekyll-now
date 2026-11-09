@@ -1,0 +1,70 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Southern Delaware Golf Club</title>
+  <meta name="description" CONTENT="Southern Delaware Golf Club Member Private Club Tee Time">
+  {% include h60.html %}
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Southern Delaware"></div>
+			<div class="content" tabindex="0"  aria-label="John Fought">
+				<H1>Southern Delaware Golf Club</H1>
+				<p>The Southern Delaware Golf Club is set to open in the Spring of 2024.  Previously, the property was known in its location as The Rookery North and Shawnee Country Club.  The course has been undergoing significant renovations for the past 11 months, transforming it from an overgrown field into a state-of-the-art golfing facility. The renovation included the construction of new 777 bentgrass greens, complete with over 500 upgraded irrigation heads. Additionally, all 58 bunkers have been revamped with new sub-surface underdrainage, reshaping with Zoysia sod faces. The fairways and tees have been overseeded with a hybrid Oasis bermuda grass to improve the playing surface.</p>
+				<p>The 18 holes at SDGC/Shawnee CC originated during two very different construction periods. The original nine holes on the eastern half of the property were built in the late 1950s. The second nine holes opened in the mid-1980s and sit on the western half of the acreage. The renovation work now underway is in some respects driven by the significant age differences between the nines and the level of effort required to modernize them.  Bill Kupfer and his crew rebuilt the greens’ top portions on the eastern nine with major work elements including new drainage for the greens and adjacent bunkers.</p>
+			</div>
+	</div>
+	
+    <script>
+            const map = L.map('map').setView([38.901946,-75.416078], 8);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+			
+
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([38.901946,-75.416078]).addTo(map);
+
+	        marker.bindPopup("<b>Southern Delaware GC</b><br>Milton, Delaware</br>").openPopup();
+	</script>
+	
+   	<p><a href="https://fescue.github.io/Red-Feather/">King Collins' Red Feather in Texas</a></p>
+	
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

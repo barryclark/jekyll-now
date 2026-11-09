@@ -1,0 +1,79 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>Curracloe Golf Club - Seaside Golf in Ireland</title>
+	<meta name="description" CONTENT="Curracloe Golf Club Seaside Resort Golf Ireland Neville">
+	{% include h.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Curracloe Links"></div>
+		<div class="content" tabindex="0"  aria-label="Curracloe">
+			<H1>Curracloe Golf Club - Seaside Golf in Ireland</H1>
+			<p>A new golf course near the shoreline in Kilmacoe near Curracloe, County Wexford, Ireland is being developed by <a href='https://www.nevillehotels.ie/curracloe.html'>Neville Hotels</a>.  Neville owns <a style='font-weight:bold' href='https://www.druidsglenresort.com/' target='_blank' rel='nofollow'>Druids Glen Hotel & Golf Resort</a> in County Wicklow.  Curracloe beach was named the best beach in Ireland in 2022.  Owner <a style='font-weight:bold' href='https://soundcloud.com/kclr96fm/the-way-it-is-neville-hotels-to-build-a-new-hotel-close-to-the-curracloe-beach' target='_blank' rel='nofollow'>Therese Kelly</a> is interviewed on KCLR 96 FM Radio discussing the hospitality and golf course planning permission start in 2015 to build the golf course adjacent to the beach.  The name Kilmacoe means church of Mochua in ancient Gaelic Irish.  Kilmacoe House was built in the 19th century by the Neville family.  Kilmacoe Church was built in 1825.  Kilmacoe Beach and Curracloe Beach are among the most popular beaches in County Wexford - US Golf Magazine reported in 2019 that Saving Private Ryan's D-Day <a style='font-weight:bold' href='https://golf.com/news/ireland-golf-trip-courses-intoxicating/' target='_blank' rel='nofollow'>beach landing</a> depicting World War II from Director Steven Spielberg as being filmed on the nearby beaches.</p><p>The course is being designed by Dana Fry and Jason Straka of Fry Straka golf course design firm.  The course is located on a 185 acres site.  Anticipated project costs will be over 20 million Euros.  Budget for the golf course construction is 8 million Euros.  John Clarkin's <a style='font-weight:bold' href='https://www.turfgrass.golf/' target='_blank' rel='nofollow'>Turfgrass</a> is onsite leading golf construction efforts.</p><p>The golf course is expected to be open in 2026.  The hotel will open before the golf course as part of the first phase of the Neville Hotel build out in Curracloe. Resort development construction has started on the <a style='font-weight:bold' href='https://www.nevillehotels.ie/ravenportresort.html' target='_blank' rel='nofollow'>Ravenport Resort</a>, a 50-bedroom hotel with restaurant and spa resort amenities.</p><p>The Southeast corner of Ireland may be new territory for international travelers seeking links golf.  Nearby Rosslare Golf Club is a 1905 Hawtree and Taylor designed links course.  <a href='https://curracloelinks.com/'>Curracloe Links</a> is expected to attract golfers from all over the world.</p><p>Jason Straka is a past president of the American Society of Golf Course Architects (ASGCA) and has a focus on sustainability in prioritizing environmental golf course design.  <a href='http://frystraka.com/'>Fry Straka</a> design have designed many golf courses, notably Arcadia Bluffs - South Course, a resort course in Michigan inspired by template green designs from Seth Raynor and other masterpieces.  Erin Hills in Wisconsin is a championship golf design by the Fry Straka team and hosted the 2017 US Open won by Brooks Koepka.</p>	
+		</div>
+	</div>       
+
+    <script>
+                const map = L.map('map').setView([52.3988262,-6.3791163], 10);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                
+	                // Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="P5a3oSN-pl8" style="background-image: url('https://i3.ytimg.com/vi/P5a3oSN-pl8/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=P5a3oSN-pl8" class="lty-playbtn" title="Play Video.  Credit: Curracloe Links">
+	                            <span class="lyt-visually-hidden">Credit: Curracloe Links</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([52.3988262,-6.3791163]).addTo(map);
+	        marker.bindPopup("<b>Curracloe Links</b><br>County Wexford, Ireland</br>").openPopup();
+  </script>
+    <p><a href="https://www.nevillehotels.ie/ravenport-resort.html">Ravenport Resort - Curracloe Golf Club</a></p>
+    <p><a href="https://www.wexfordcoco.ie/sites/default/files/content/Planning/ArchivePlans/CurracloeLAP2004/CurracloeLAP2004.pdf">County Wexford Planning</a></p>
+    <p><a href="https://wexfordlocal.com/2023/04/03/new-e12m-hotel-and-golf-course-for-curracloe/">Wexford Local</a></p>
+    <p><a href="https://irishgolfer.ie/latest-golf-news/2024/01/24/announcing-curracloe-links-irelands-next-great-golf-course/">Irish Golfer 2024 January</a></p>
+    <p><a href="http://frystraka.com/">Fry Straka</a></p>	  
+    <p><a href="https://fescue.github.io/The-Apogee-Club/">Mike Davis with Gil Hanse and Tommy Fazio at The Apogee Club</a></p>	
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

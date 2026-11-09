@@ -1,0 +1,45 @@
+		<table id="myTable" class="display">
+			        <thead>
+			            <tr>
+			                <th>Course</th>
+			                <th>Architect</th>
+			                <th>Location</th>
+			                <th>Country</th>
+			                <th>Construction</th>
+			                <th>Build</th>
+			                <th>Coverage</th>
+			                <th>Budget</th>
+			                <th>History</th>
+			                <th>Comments</th>
+			            </tr>
+			        </thead>
+		</table>
+		<script>
+			    $(document).ready(function() {
+			        var table = $('#myTable').DataTable({
+					"ajax": "https://fescue.github.io/data/g2017.json",
+					responsive: true,
+					order: [],
+					orderable: true,
+					sort: true,
+			        	"columns": [
+				                { "data": "G" },
+				                { "data": "A" },
+				                { "data": "L" },
+				                { "data": "U" },
+				                { "data": "C" },
+				                { "data": "J" },
+				                { "data": "M" },
+				                { "data": "B" },
+				                { "data": "H" },
+				                { "data": "Z" }
+						],
+					stateSave: true,
+					paging: false,
+					deferRender: true
+			        });
+				    
+			        // Initialize FixedHeader
+			        new $.fn.dataTable.FixedHeader(table);
+			    });
+		</script>

@@ -1,0 +1,20 @@
+{
+"storymap": {
+        "slides": [
+			{
+				"text": {
+					"headline": "Thank you",
+					"text": "We'll return your message after we get off the golf course."
+				},
+			"location": {
+					"lat": -16.3918641,
+					"lon": -151.9209412,
+					"zoom": 2
+				},
+				"media": {
+					"url": "https://fescue.github.io/images/Fairway-Hole-2.png",
+				}
+			}
+		]
+    }
+}

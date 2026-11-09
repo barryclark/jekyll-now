@@ -1,0 +1,80 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Golf Resort - Great Keppel Island - Queensland Australia</title>
+	<meta name="description" CONTENT="Australia Island Golf Course Queensland Greg Norman Great Keppel">
+	{% include h.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Port St. Lucie"></div>
+		<div class="content" tabindex="0"  aria-label="Furyk">
+			<H1>Wylder - Jim Furyk's First Golf Course in Port St. Lucie</H1>
+			<p><a style='font-weight:bold' href='http://www.gkiresort.com.au/gki-design.html' target='_blank' rel='nofollow'>Great Keppel Island</a> is a beautiful and unspoiled island located off the coast of Queensland, Australia. The island is home to pristine beaches, lush rainforests, and abundant marine life. The world will turn to Brisbane, Queensland for <a style='font-weight:bold' href='https://olympics.com/en/olympic-games/brisbane-2032' target='_blank' rel='nofollow'>The 2032 Olympics</a>.</p>
+			<p>There is a growing interest in starting over on Great Keppel Island. A number of developers are proposing a <a style='font-weight:bold' href='http://www.gkiresort.com.au/gki-design.html'>new development project</a> on the island, rebuilding a luxury resort with a golf course and marina.</p>
+			<p>The environmental and social impacts of these projects will need to be carefully considered. However, if done correctly, these projects could help to revitalize Great Keppel Island and create a sustainable tourism destination for future generations.</p>
+			<p>A golf resort is one of the proposed projects for Great Keppel Island. The resort would be designed to be sustainable and environmentally friendly. It would feature an 18-hole golf course designed by Greg Norman.  Greg Norman's golf designs are best in Australia at Ellerston and in <a style='font-weight:bold' href='https://golf.com/news/greg-norman-great-hope-golf-vietnam/' target='_blank' rel='nofollow'>Vietnam</a> where Norman serves a diplomatic post as tourism ambassador.</p>
+			<p>The golf resort is a positive development for Great Keppel Island</p>
+		</div>
+	</div>
+
+    <script>
+	    
+                const map = L.map('map').setView([-23.1786851,150.7934934], 8);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                
+	                // Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="MMmNaIEp5pE" style="background-image: url('https://i3.ytimg.com/vi/MMmNaIEp5pE/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=MMmNaIEp5pE" class="lty-playbtn" title="Play Video.  Credit: 7News Australia">
+	                            <span class="lyt-visually-hidden">Credit: 7News Australia</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([-23.1786851,150.7934934]).addTo(map);
+	        marker.bindPopup("<b>Great Keppel Island</b><br>Australia</br>").openPopup();
+  </script>
+	<p><a href="https://fescue.github.io/Le-Paradis-St-Lucia/">Greg Norman - St. Lucia</a></p>
+	<p><a href="https://fescue.github.io/Cliffs-Kangaroo-Island/">Darius Oliver - Kangaroo Island</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

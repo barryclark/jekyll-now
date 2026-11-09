@@ -1,0 +1,78 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+	<title>Golf Resort - Limassol Hills Golf Resort in Cyprus</title>
+	<meta name="description" CONTENT="Golf course Construction Jonathan Gaunt EIGCA Mediterranean island Cyprus Limassol Hills">
+  {% include h50.html %}
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Cyprus"></div>
+			<div class="content" tabindex="0"  aria-label="Limassol Golf">
+				<H1>Mediterranean Island Golf Resort - Limassol Hills Golf Resort in Cyprus</H1> 
+				<p>The new <a style='font-weight:bold' href='https://www.facebook.com/limassolhills/' target='_blank' rel='nofollow'>Limassol Hills Golf Resort</a> will be a Mediterranean golf resort in Cyprus.  The project is a joint venture between Cyprus Golf Properties and Limassol Hills Development.  Current population of Cyprus in 2023 is approximately 1.3 million people with over 100 flights arriving daily to the island. The project is expected to cost €400 million and will create over 1,000 jobs.</p>
+				<p>The resort will be located near the Limassol Forest in range of the village of Vasa. It will be an 18-hole championship course designed by <a style='font-weight:bold' href='https://www.gaunt-golf-design.com/' target='_blank' rel='nofollow'>Gaunt Golf Design - Jonathan Gaunt, EIGCA</a>, member of the European Institute of Golf Course Architects(EIGCA). Gaunt is a former professional golfer who turned to golf architecture after his playing career ended. He has a background in property development and has been involved in a number of successful projects in the UK and Europe.</p>
+				<p>Gaunt believes that the new course will be a major asset to the country and will help to boost the tourism industry. Gaunt is also committed to creating a sustainable development that will benefit the local community.</p>
+						
+				</div>
+	</div>
+
+    <script>
+            const map = L.map('map').setView([34.7522113,32.7598437], 6);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');			
+			
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="ufjzxCH_dzc" style="background-image: url('https://i3.ytimg.com/vi/ufjzxCH_dzc/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=ufjzxCH_dzc" class="lty-playbtn" title="Play Video. Credit: Jonathan Gaunt, EIGCA">
+	                            <span class="lyt-visually-hidden">Credit: Jonathan Gaunt, EIGCA</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([34.7522113,32.7598437]).addTo(map);
+
+	        marker.bindPopup("<b>Cyprus</b>").openPopup();
+	</script>
+	<p><a href="https://fescue.github.io/Travis-Club/">Travis Club on the Lake in Austin, Texas</a></p>
+	<p><a href="https://fescue.github.io/SandGlass/">Tom Doak's SandGlass</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

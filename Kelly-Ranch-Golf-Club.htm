@@ -1,0 +1,78 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Kelly Ranch Golf Club in Fort Worth</title>
+	<meta name="description" CONTENT="Kelly Ranch Golf Ranch Club new private golf club residential subdivision community real estate Fort Worth Texas country club Dallas">
+	{% include h50.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Kelly Ranch"></div>
+			<div class="content" tabindex="0"  aria-label="Tripp Davis">
+				<H1>Kelly Ranch Golf Club - Tripp Davis</H1>
+				<p>Escalante Golf's new golf course project at <a style='font-weight:bold' href='https://kellyranchgolfclub.com/' target='_blank' rel='nofollow'>Kelly Ranch</a> in Parker County, Texas is an initiative to bring 2000+ acres forward into the Fort Worth golf community.  In this video featuring Chuck Stark from Barron-Stark Engineers, insight into the construction of the Kelly Ranch project in Parker County, Texas with a particular emphasis on its centerpiece golf course.  Kelly Ranch will have a <a style='font-weight:bold' href='https://www.tdagolf.net/index.html ' target='_blank' rel='nofollow'>Tripp Davis</a> built golf course with a neighborhood of residential, medical center, grocery store, and hotel resort.  Infrastructure is being completed to build water and sewer facilities to support the development.</p>
+				<p>Kelly Ranch will have three subdivisions built by <a style='font-weight:bold' href='https://www.barronstark.com/' target='_blank' rel='nofollow'>Barron-Stark Engineers</a>: Rio Vista, Avanzada, and La Dorada.  Rio Vista offers smaller urban-style lots, Avanzada features larger lots bordering the golf course, and La Dorada offers spacious lots without golf course frontage.   All residents will enjoy access to amenities like walking trails and a workout center.</p>
+				<p>The project involves a diverse team of professionals, including the landowner and master developer, Ryan Voorhees, and his company, Gold Creek Homes.  Various architects, contractors, including past PGA Tour veteran JJ Henry have been involved in shaping the early stages of the project.  The golf course is currently under construction, with the goal of opening for general play in the spring of 2025.</p>		
+				<p>Tripp Davis is also currently building a new golf course at <a style='font-weight:bold' href='https://fescue.github.io/The-Rose/' target='_blank' rel='nofollow'>The Rose</a> in Hull, Georgia.</p>
+			</div>
+	</div>
+
+    <script>		
+            const map = L.map('map').setView([32.7771101,-97.7648794], 8);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	        
+	                this._container.innerHTML = `	
+	                    <lite-youtube videoid="qUeltXLCyXI" style="background-image: url('https://i3.ytimg.com/vi/qUeltXLCyXI/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=qUeltXLCyXI" class="lty-playbtn" title="Play Video.  Credit: Barron-Stark Engineers, LP">
+	                            <span class="lyt-visually-hidden">Credit: Barron-Stark Engineers, LP</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([32.7771101,-97.7648794]).addTo(map);
+			
+	        marker.bindPopup("<b>Kelly Ranch</b><br>Parker County, Texas</br>").openPopup();
+	</script>
+   	<p><a href="https://fescue.github.io/Red-Feather/">King Collins' Red Feather</a></p>
+   	<p><a href="https://fescue.github.io/Broomsedge-Golf-Club/">Broomsedge Golf Club in South Carolina</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

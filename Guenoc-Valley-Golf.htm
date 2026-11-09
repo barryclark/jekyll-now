@@ -1,0 +1,82 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<title>Guenoc Valley Tom Doak Napa Golf Resort</title>
+	<meta name="description" CONTENT="New Golf Course Resort Tom Doak Northern California Napa Valley Lake County Renaissance Design Architecture">
+	{% include h40.html %}
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Tom Doak"></div>		
+		<div class="content" tabindex="0"  aria-label="Guenoc Valley">
+			<H1>Guenoc Valley - Tom Doak Golf Resort</H1> 
+			<p><a style='font-weight:bold' href='https://guenocvalley.com/' target='_blank' rel='nofollow'>Guenoc Valley</a> is a proposed luxury resort led by Adrian Zecha from Aman International Resort.  The resort location is north of Napa Valley in Lake County, California.</p>
+			<p>The California Attorney General's Office has reached a settlement with the developers of the Guenoc Valley Project, a proposed luxury resort and residential development in Lake County. The settlement requires the developers to reduce the size of the project and to take steps to mitigate its environmental impact.   The settlement was completed in 2023.</p>
+			<p>The Guenoc Valley development was originally entitled as a Tom Weiskopf designed golf course by <a style='font-weight:bold' href='https://tmglimitedcorp.com/resort/' target='_blank' rel='nofollow'>The Malulani Group</a>. The project includes a golf course, a spa, a hotel, and homes.  Nearby in Lake County, <a style='font-weight:bold' href='https://fescue.github.io/Brambles-Golf/'>Brambles Golf Club</a> is a new Coore Crenshaw designed golf club which opened for play in 2023.</p>
+			<p><a style='font-weight:bold' href='https://www.lakecountyca.gov/DocumentCenter/View/11523/Appendix-G1---Tech-Memo-on-Water-Supply_508' target='_blank' rel='nofollow'>Water supply</a> and <a style='font-weight:bold' href='https://www.lakecountyca.gov/DocumentCenter/View/11522/Appendix-F---Updated-WPP_508' target='_blank' rel='nofollow'>wildfire prevention</a> are included in Lake County entitlements and planning documents.  Lake County has a history of wildfires, and the golf course will provide a firebreak.</p>
+			<p>Golf architect <a style='font-weight:bold' href='https://www.doakgolf.com/' target='_blank' rel='nofollow'>Tom Doak</a> has provided an innovative golf course <a style='font-weight:bold' href='https://www.doakgolf.com/maha-napa-resort/' target='_blank' rel='nofollow'>routing plan</a> over the land where the golfer's first tee starts in location on the 29,000 acre property and finishes at the end of another end of the property.  Has any other golf course taken this routing approach?</p>
+			<p>Tom Doak along with his co-architects from Renaissance Golf Design remain among the most active in novel design.  Upcoming 2024-2028 period, anticipated openings of new golf courses from the group will be found across the world in Mexico, Scotland, Spain, United States.  Projects include <a style='font-weight:bold' href='https://fescue.github.io/SandGlass/'>SandGlass Golf Club</a> in Florida, Cabot Highlands in Scotland, <a style='font-weight:bold' href='https://fescue.github.io/Majarambuz-La-Zagaleta/'>Valderrama's Majarambuz</a> in Spain, <a style='font-weight:bold' href='https://fescue.github.io/Punta-Brava/'>Punta Brava</a> in Mexico.</p>
+		</div>
+	</div>
+	
+
+    <script>
+            const map = L.map('map').setView([38.6933,-122.6047], 8);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            	onAdd: function(map) {
+				this._map = map;
+				this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+
+		                this._container.innerHTML = `
+		                    <lite-youtube videoid="ir3kTzZnA2E" style="background-image: url('https://i3.ytimg.com/vi/ir3kTzZnA2E/hqdefault.jpg');">
+		                        <a href="https://youtube.com/watch?v=ir3kTzZnA2E" class="lty-playbtn" title="Play Video.  Credit: Lake County Peg TV">
+		                            <span class="lyt-visually-hidden">Credit: Lake County Peg TV</span>
+		                        </a>
+		                    </lite-youtube>
+		                `;
+
+
+			    
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([38.6933,-122.6047]).addTo(map);
+	        marker.bindPopup("<b>Guenoc Valley</b><br>Lake County, California</br>").openPopup();
+	</script>
+	<p><a href="https://fescue.github.io/Heritage-Resorts-Mauritius/">Heritage Resorts - Golf Mauritius</a></p>
+	<p><a href="https://fescue.github.io/Roosevelt-Memorial-Golf-Course/">Restoring Donald Ross - Roosevelt Memorial</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

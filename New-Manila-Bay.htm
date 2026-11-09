@@ -1,0 +1,82 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Urban Golf - New Manila Bay, Philippines</title>
+  <meta name="description" CONTENT="New Urban Golf course development ASEAN Southeast Asia Manila Philippines Land Reclamation">
+  {% include h40.html %}
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Golf"></div>
+			<div class="content" tabindex="0"  aria-label="Manila">
+				<H1>New Manila Bay Golf Resort</H1>
+				<p>The New Manila Bay golf project is a land reclamation development underway with a golf course and other amenities like the <a style='font-weight:bold' href='https://lifestyle.inquirer.net/442445/banyan-tree-residences-manila-bay-is-rising-soon/' target='_blank' rel='nofollow'>Banyan Tree</a> to be added to Manila, Philippines. The project is being led by Bases Conversion and Development Authority (BCDA) and is budgeted at 10 billion PHP.</p><p>The proposed golf course will be located on a reclaimed areas in Manila Bay.  In addition to the golf course, the New Manila Bay project will also feature amenities, including a clubhouse, spa, convention center, and hotel. The project is expected to be completed by 2027, generating around 10,000 jobs during construction and 5,000 permanent jobs upon completion.</p><p>The New Manila Bay golf project is part of the BCDA's larger plan to redevelop the Manila Bay area into a world-class tourist destination. The project is expected to boost the tourism industry in the Philippines, generating billions of pesos in revenue for the government.  The BCDA has said that the project will be environmentally sustainable but paused in 2023 to assess impact.  In 2024, President allowed the project to proceed with the understanding of what steps will be taken to minimize its impact on the surrounding area.  The project is a major development that is expected to have a significant impact on the Philippines. The project is expected to boost the tourism industry, generate jobs, and improve the economy of the country.</p>"
+
+				<div class="substack-post-embed">
+				<p>Team match play</p><a data-post-link href="https://timyeogolf.substack.com/p/team-match-play-more-fun-to-watch">ONLY FRIENDS YOU HAVEN’T YET MET</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+				</div>				
+			</div>
+	</div>
+	
+	
+    <script>
+            const map = L.map('map').setView([14.5760401,120.9441615], 7);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+			
+				    this._container.innerHTML = `
+	                    <lite-youtube videoid="uJA5RGG1i4g" style="background-image: url('https://i3.ytimg.com/vi/uJA5RGG1i4g/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=uJA5RGG1i4g" class="lty-playbtn" title="Play Video.  Credit: ANC 24/7">
+	                            <span class="lyt-visually-hidden">Credit: ANC 24/7</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			
+
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([14.5760401,120.9441615]).addTo(map);
+
+	        marker.bindPopup("<b>Manila</b>").openPopup();
+	</script>
+	
+   	<p><a href="https://fescue.github.io/Bohol-Golf/">Bohol Golf Club</a></p>
+	
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

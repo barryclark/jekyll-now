@@ -1,0 +1,80 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Darmor Golf Club - Columbus, Texas</title>
+	<meta name="description" CONTENT="Darmor Golf Club Hal Sutton Columbus Texas New Golf Course Heritage Links Agronomy">
+	{% include h50.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Darmor Template"></div>
+		<div class="content" tabindex="0"  aria-label="Darmor">
+			<H1>Darmor Golf Club - Hal Sutton - Template Holes</H1>
+			<p><a style='font-weight:bold' href='https://halsuttongolf.com/' target='_blank' rel='nofollow'>Hal Sutton</a> and a business partner opened The Darmor Club in Columbus, Texas with assistance golf construction company Heritage Links.  <a style='font-weight:bold' href='https://www.linkedin.com/in/doug-wright-0aa29b63/' target='_blank' rel='nofollow'>Doug Wright</a> from Heritage Links was closely involved and led the construction.  The course is inspired by Golden Age designers C.B. Macdonald and Seth Raynor.  Sutton and Wright are both hands-on and working in the dirt with the shaping team.</p>
+			<p>Course construction at Darmor finished in August 2023.  Darmor opened June 1, 2024.  In building one of the best courses in Texas, the design team selected several of the Macdonald Raynor template holes to create memorable shots into greens - Wright posted images of greens on template holes for the <a style='font-weight:bold' href='https://twitter.com/DougWrightGolf/status/1706682106892476732' target='_blank' rel='nofollow'>Long, Cape, reverse Redan and Biarritz</a> holes.  <a style='font-weight:bold' href='https://www.linkedin.com/in/junior-schuette-b73122278/' target='_blank' rel='nofollow'>Junior Schuette</a> is the Golf Course Superintendent at Darmor Golf Club.  Construction techniques are using Bunker Solutions as a bunker liner with a blend of Arkansas Premier White and locally sourced sand.</p>
+			<p><a style='font-weight:bold' href='https://www.linkedin.com/in/john-daniels2020/' target='_blank' rel='nofollow'>John Daniels</a> was one of the project managers onsite from the Heritage Links team.  John Daniels worked previously as an Agronomist at the <a style='font-weight:bold' href='https://usga.org/' target='_blank' rel='nofollow'>United States Golf Association(USGA)</a>.</p>
+			<p>Hal Sutton is a major champion and PGA Tour player of the year in 1983 with a U.S. Amateur championship before he turned professional.  Sutton is President and General Manager of Darmor.  Nick Holligan is the Director of Golf.</p><p>Sutton provided updates and insight into the landforms during the build process.  The observation that the <a style='font-weight:bold' href='https://x.com/halsuttongolf/status/1725847754163826752?s=20' target='_blank' rel='nofollow'>'Land that was mined for sand and gravel over a 100 years ago'</a> shares in common with many other historic Top 100 golf courses.  Columbus is a short drive west of Houston.</p>
+		</div>
+	</div>       
+
+    <script>
+                const map = L.map('map').setView([29.7175636,-96.219111], 10);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 50,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                
+	                // Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="ipoJCqGoztE" style="background-image: url('https://i3.ytimg.com/vi/ipoJCqGoztE/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=ipoJCqGoztE" class="lty-playbtn" title="Play Video.  Credit: Hal Sutton Golf Academy">
+	                            <span class="lyt-visually-hidden">Credit: Hal Sutton Golf Academy</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([29.7175636,-96.219111]).addTo(map);
+	        marker.bindPopup("<b>Darmor Club</b><br>Columbus, Texas</br>").openPopup();
+  </script>
+    <p><a href="https://fescue.github.io/Firefly/">Firefly</a></p>
+    <p><a href="https://fescue.github.io/Freestone-Lake-Golf-Club/">Freestone Lake</a></p>
+    <p><a href="https://fescue.github.io/Old-Lighthouse-Golf-Club/">Old Lighthouse Golf Club in Los Cabos, Mexico</a></p>
+    <p><a href="https://fescue.github.io/Red-Feather/">Red Feather</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

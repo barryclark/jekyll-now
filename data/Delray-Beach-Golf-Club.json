@@ -1,0 +1,21 @@
+{
+"storymap": {
+        "slides": [
+			{
+				"text": {
+					"headline": "Re-Development",
+					"text": "In August 2022, the municipality hired real estate firm CBRE to review development proposals. 6 proposals for the redevelopment of Delray Beach Golf Club were declined in May 2023. The city council voted unanimously to reject all 6 proposals, citing concerns about environmental impact, loss of public greenspace, and affordable housing.  Instead, the municipality is considering renovating the golf course or selling it to a private developer.</p><p>Developer 1 proposed to build a 27-hole golf course with 18 fairways and a par 69. They would renovate the existing 15,000-square-foot clubhouse. The 15-acre development site would contain 120 multifamily units, including 20% for workforce housing, a 120-room Sports Illustrated Resort, and 63,300 square feet of retail.</p><p>Developer 2 proposed a conventional 18-hole par 72 golf course. They would renovate the existing clubhouse and add a 120-room hotel. The 10-acre development site would contain 650 residential units and 8,000 square feet of retail and restaurant space.</p><p>Developer 3 proposed to build a conventional par 72 18-hole golf course, updating the clubhouse and adding a 444-unit luxury condominium complex. The 7-acre development site would contain 24 villas.</p><p>Developer 4 proposed to build a 27-hole golf course with 18 overlapping fairways like St. Andrews. Additionally, the developer would renovate the existing clubhouse and build a 120-room hotel. The 15-acre development site would contain 120 multifamily units, including 20% for workforce housing and some mixed use compoenent for retail stores.</p><p>Developer 5 also proposed a conventional par 72 18-hole golf course with updates to the clubhouse and building a 120-room hotel. The 10-acre development site would contain 650 residential units and 8,000 square feet of retail and restaurant space.</p><p>Developer 6 proposed also proposed an 18-hole golf course with 444-unit luxury condominium complex with the 7-acre development site containing 24 additional villas.</p>"
+				},
+			"location": {
+					"lat": 26.4519612,
+					"lon": -80.099891,
+					"zoom": 8
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=iBp5IrQkFU8",
+					"credit": "WPBF 25 News in South Florida"
+				}
+			}
+		]
+    }
+}

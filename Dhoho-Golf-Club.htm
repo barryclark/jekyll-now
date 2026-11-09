@@ -1,0 +1,85 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Dhoho Golf Club - East Java Indonesia</title>
+	<meta name="description" CONTENT="Brian Curley Dhoho Golf Club East Java Indonesia Course Architecture Sports Turf Solutions STS Flagstick Construction Zeon Zoysia Primo Bahia grass Paspalum">
+	{% include h.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Java"></div>
+		<div class="content" tabindex="0"  aria-label="Dhoho Golf">
+			<H1>Dhoho Golf Club - East Java Indonesia</H1>
+			<p>Golf architect <a style='font-weight:bold' href='https://curley-wagner.com/' target='_blank' rel='nofollow'>Brian Curley</a> has designed and is boots on the ground to open 27 holes at Dhoho Surya Golf Club in Kediri, East Java, Indonesia.   Regional leader in Southeast Asia for turfgrass science and supplier <a style='font-weight:bold' href='https://sportsturfsolutions.com/' target='_blank' rel='nofollow'>Sports Turf Solutions(STS)</a> is grassing the fairways in Zeon Zoysia and greens in Primo Zoysia.  <a style='font-weight:bold' href='https://www.flagstickgccm.com/' target='_blank' rel='nofollow'>Flagstick</a> is leading golf construction.  Bahia grass(<i>Paspalum notatum</i>) will frame the fairways/bunkers as native grass rough.</p>
+			<p>Opening day course manager Cheah Koh Aik is the superintendent overseeing the golf course and grounds.</p>
+			<p>Curley recently announced a new partnership with <a style='font-weight:bold' href='https://www.linkedin.com/in/jim-wagner-asgca-0318b651/' target='_blank' rel='nofollow'>Jim Wagner</a> forming the Curley Wagner firm.  The Instagram post below highlights Wagner's onsite collaboration in this initial project together.  The 27 hole design accommodates potential future tournament venue plans for a 7,400 yard championship routing as a composite course with elevated spectator viewing.</p>
+            		<p><a style='font-weight:bold' href='https://www.golfcoursearchitecture.net/digital/magazine/issue75/74/#zoom=true' target='_blank' rel='nofollow'>Golf Course Architecture</a> Magazine profiled the project early in January 2024.  The property is anticipated to be an active topic of discussion in the best and Top 100 categories of new golf courses.  The Gunung Liman mountains loom above the site and provide tributaries down the hill throughout the golf course which Curley Wagner are using their natural topography elements as strategy from teeshot to green approaches.  The terrain is characterized as rugged tropical forest with a rich diversity of flora and wildlife.  The Kedira region is known for natural hot springs and waterfalls.</p>
+			<p>Sprint to the finish - Dhoho promises a dramatic closing stretch of holes.  Pictured below is the image of the promising site being shaped.  The photo is the 17th hole, a risk/reward drivable par 4 quarry hole where players can attempt to carry the ball over trouble into a kicker slope left to right into the green.  The alternative is to lay up to the left followed by a short uphill approach - that is the sensible play to protect par.  Notice the stream on the left part of the image.  <a style='font-weight:bold' href='https://www.linkedin.com/in/bill-rosmarino-623980185/' target='_blank' rel='nofollow'>Bill Rosmarino</a> from WR Rock Group Construction built water feature to flow down the 18th hole into the quarry.  The stream traverses much of the back nine.</p>
+			<p>The Indonesian government is encouraging development of new golf courses in: Borobudur in Central Java, Likupang in North Sulawesi, Lake Toba in North Sumatra, Mandalika in West Nusa Tenggara, Labuan Bajo in East Nusa Tenggara.</p>
+			<div id="image-container"></div>
+					
+  		</div>
+	</div>       
+
+    <script>
+		window.addEventListener('load', function() {
+		    var img = new Image();
+		    img.src = "https://fescue.github.io/images/Dhoho-Golf-Club-Indonesia-Hole-17.jpeg";
+		    img.alt = "Hole 17 - Dhoho Golf Club, Indonesia";
+		    img.style.width = "90%";
+		    img.onload = function() {
+		        document.getElementById('image-container').appendChild(img);
+		    };
+		});
+	    
+                const map = L.map('map').setView([-7.8422233,111.7778947], 6);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                
+	   
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([-7.8422233,111.7778947]).addTo(map);
+	        marker.bindPopup("<b>Dhoho Golf Club</b><br>Kediri, East Java, Indonesia</br>").openPopup();
+  </script>
+  <p><a href="https://fescue.github.io/Shura-Island-Resort/">Shura Island</a></p>
+  <p><a href="https://fescue.github.io/Nusantara-Golf-Resort/">Royale Nusantara Golf Resort</a></p>
+  <p><a href="https://fescue.github.io/Torch-Cay/">Ocean Ridge Resort on Torch Cay</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

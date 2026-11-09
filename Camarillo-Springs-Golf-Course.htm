@@ -1,0 +1,80 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Camarillo Springs Golf Course - Re-Development</title>
+	<meta name="description" CONTENT="Camarillo Springs Golf Course Ventura County Damian Pascuzzo ASGCA Renovation">
+	{% include h50.html %}
+	<script src="https://cmp.osano.com/Azqae7Tg5rIXKJsl/a6843304-e87a-485e-aabb-2b21be3ed691/osano.js"></script>
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Crownwood"></div>
+			<div class="content" tabindex="0"  aria-label="Stenson">
+				<H1>Camarillo Springs Golf to Housing</H1>
+				<p>The Camarillo City Council has been reviewing options for the Camarillo Springs Golf Course for several years.  In 2020, <a style='font-weight:bold' href='https://asgca.org/architect/dpascuzzo/' target='_blank' rel='nofollow'>Damian Pascuzzo, ASGCA</a>, proposed reducing the 18-hole golf course to be shortened to 12 holes to accommodate the proposed development converting 31 acres of the golf course into 248 single-family homes for seniors age 55 and older.  The City Council has not yet made a decision on the proposed development.  However, the council has received a number of public comments on the project, both for and against it.</p>
+				<p>If the council approves the development, approval would be required from the Planning Commission and the <a style='font-weight:bold' href='https://www.coastal.ca.gov/' target='_blank' rel='nofollow'>California Coastal Commission</a> before the course renovation could take place.</p>
+				<p>Forrest Richardson has made a <a style='font-weight:bold' href='https://www.golfcoursearchitecture.net/content/forrest-richardson-to-develop-renovation-plan-for-pajaro-valley' target='_blank' rel='nofollow'>proposal</a> for Pajaro Valley Golf Course in Salinas, California in conjunction with the Director of Design and Entitlements from the Parks Legacy Project <a style='font-weight:bold' href='https://parkslegacy.com/leadership' target='_blank' rel='nofollow'>Mark Swartz</a> to redevelop part of the property into cabins and recreational vehicle(RV) campground usage.  Anticipated water savings is 40 percent.</p>
+			</div>
+	</div>
+
+	<script>		
+		const map = L.map('map').setView([34.2019964,-118.991736], 9);
+		const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+		L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+			this._map = map;
+			this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+
+	                // Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="W-e7HbfsEBw" style="background-image: url('https://i3.ytimg.com/vi/W-e7HbfsEBw/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=W-e7HbfsEBw" class="lty-playbtn" title="Play Video.  Credit: Redevelopment Project for Camarillo Springs">
+	                            <span class="lyt-visually-hidden">Credit: Redevelopment Project for Camarillo Springs</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+	        
+			    
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([34.2019964,-118.991736]).addTo(map);
+	        marker.bindPopup("<b>Camarillo Springs</b><br>California</br>").openPopup();
+	</script>
+	<p><a href="https://fescue.github.io/Bounty-Club/">Bounty Club</a></p>
+	<p><a href="https://fescue.github.io/Black-Sand-Beach/">Black Sand Beach Golf Course in Hawaii</a></p>
+	<p><a href="https://fescue.github.io/Cliffs-Kangaroo-Island/">Kangaroo Island Golf in Australia</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

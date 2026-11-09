@@ -1,0 +1,35 @@
+ body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+    
+    .map, .content {
+        flex: 1;
+        border: 1px solid black;
+    }
+    
+    .map {
+        /* Style for your map */
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .video {
+        /* Style for your video */
+        flex: 1;
+        border-bottom: 1px solid black;
+    }
+    
+    .text {
+        /* Style for your text */
+        flex: 1;
+    }

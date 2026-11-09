@@ -1,0 +1,72 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+	<title>Desertica Golf - Agustín Pizá + Brandel Chamblee</title>
+	<meta name="description" CONTENT="New Golf course Construction Desertica Mexico Agustín Pizá Brandel Chamblee Irrigation SubAir Big Bend Texas">
+  {% include h.html %}
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Cyprus"></div>
+			<div class="content" tabindex="0"  aria-label="Limassol Golf">
+				<H1>Desertica Golf - Agustín Pizá + Brandel Chamblee</H1> 
+				<p>Desertica is a new golf course to be built by the design pair of Agustin Piza and Brandel Chamblee in Cuatro Cíenegas, Mexico.  The site location is in the sand dunes south of Big Bend National Park in Texas.  Plans from Piza/Chamblee appear to emphasize ideals from George Thomas' elasticity in design with variety on play options.</p>
+				<p>Brandel Chamblee is a television broadcaster with The Golf Channel.  Chamblee enjoyed previous success competing on the PGA Tour after graduating from The University of Texas.</p>
+				<p><a style='font-weight:bold' href='https://pizagolf.com/' target='_blank' rel='nofollow'>Agustín Pizá</a> is an active practitioner in design with new course openings, restoration and renovation work in the Mexican states of Aguascalientes, Baja, Chihuahua, Ciudad, and Sinaloa.  Piza's education and training in golf architecture came from golf's original source with a Masters degree in Golf Course Architecture from Edinburgh University.</p>	
+				<p>Piza is a member of the European Institute(EIGCA) and the American Society of Golf Course Architects(ASGCA) collaborating with Gary Player, Jack Nicklaus, and Tom Fazio in design build site work. Piza created Wellness Golf at a golf resort in Mexico and Golf Lounge in urban Mexico City.  Piza is Director of The First Tee program in Mexico.</p>		
+			</div>
+	</div>
+
+    <script>
+            const map = L.map('map').setView([26.983946,-106.543796], 6);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');			
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([26.983946,-106.543796]).addTo(map);
+
+	        marker.bindPopup("<b>Mexico</b>").openPopup();
+	</script>
+	<p><a href="https://fescue.github.io/Apache-Stronghold-Golf/">Apache Stronghold in Arizona</a></p>
+	<p><a href="https://fescue.github.io/The-Apogee-Club/">Mike Davis: Hanse + Fazio at The Apogee Club</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

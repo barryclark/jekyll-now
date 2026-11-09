@@ -1,0 +1,63 @@
+---
+
+---
+<html lang="en">
+ <head>
+	<title>The Landings Magnolia Golf Course Renovation</title>
+	<meta name="description" CONTENT="Landings Magnolia Golf Course renovation Brandon Johnson John Gardner Arnold Palmer Design">
+	{% include headerSM.html %}
+</head>
+
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<H1>The Landings Magnolia Renovation by Brandon Johnson and John Gardner</H1> 
+<link rel="shortcut icon" type="image/png" href="/images/Fairway-Hole-2.png">
+<script type="text/javascript" src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script> 
+<link rel="stylesheet" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css"> 
+	<div id="storyMap"></div>
+
+	  <script> 
+		"use strict";
+				  
+		// JSON file containing data for the Story Map
+		const storymap_data =  "https://fescue.github.io/data/Landings-Magnolia.json";
+
+		// Options for Story Map
+		const storymap_options = {
+				  language: "en",
+				  map_type: "osm:standard",
+				  calculate_zoom: false
+				};
+
+				// the Story Map object
+				const storymap = new VCO.StoryMap("storyMap", storymap_data, storymap_options);
+
+				// Leaflet Zoom control
+				const zoomControl = L.control.zoom({ position: "topleft" });
+
+				// Leaflet Full-Screen control
+				const fullscreenControl = new L.Control.Fullscreen({
+				  position: "topleft"
+				});
+
+				// grouping of controls
+				const leafletControlsToAdd = [zoomControl, fullscreenControl];
+
+				// event for when the Story Map is loaded
+				storymap.on("loaded", function() {
+				  // leaflet.js web map object
+				  const leafletMap = storymap.map;
+
+				  // add controls to Leaflet web map
+				  leafletControlsToAdd.forEach(element => leafletMap.addControl(element));
+				});			  
+				  
+	</script> 
+	<script type="text/javascript" class="init"></script> 
+	<p><a href="https://www.landingsclub.com/magnolia-course">The Landings Magnolia Course</a></p>
+	<p><a href="https://fescue.github.io/Miakka-Golf-Club/">Miakka Golf Club</a></p>	  
+	<p><a href="https://fescue.github.io/Travis-Club/">Travis Club - Austin, Texas</a></p>
+  {% include bodyFooter.html %}
+ </BODY>	
+ {% include footer.html %}
+</html>

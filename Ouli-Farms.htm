@@ -1,0 +1,72 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Ouli Farms - Kohala Coast in Kona, Hawaii</title>
+	<meta name="description" CONTENT="Ouli Farms New Golf Course Kohala Coast Kona Hawaii Tom Doak Eric Iverson Bill Coore">
+	{% include h40.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Ouli Farms"></div>
+			<div class="content" tabindex="0"  aria-label="Kona Golf">
+				<H1>Ouli Farms - Kona Golf - Hawaii</H1>
+				<p><a style='font-weight:bold' href='https://www.oulifarms.com/' target='_blank' rel='nofollow'>Ouli Farms</a> is an 840 acre development located on the Kohala coast on Kona, the Big Island of Hawaii.  The property is just to the north of the Mauna Kea Resort on the west coast of Kona. The site was part of the original parcel acquired by the Rockefeller family.  Tom Doak and Renaissance Design principal Eric Iverson will lead the design build of the new golf course on the property.</p>
+				<p>The development will include approximately 140 homes with planning for over 200 acres of active farms.  Each home includes an acre as an active farm contributing to the food production on the island.  The farms will be managed by a team of experienced farmers producing a variety of fruits, vegetables, and flowers.  In addition to the homes and farms, Ouli Farms will also include a community club. The club will offer a variety of amenities, such as a swimming pool, tennis courts, and a fitness center.</p>
+				<p>Ouli Farms is designed to prioritize sustainability and environmental stewardship.  Minimizing its impact on the environment, residents will use sustainable practices throughout.   Homes  will be built with energy-efficient materials, and the farms will be managed using organic methods.</p>
+				<p><a style='font-weight:bold' href="https://oulifarms.com/team/">Founders</a> Joe Root and <a style='font-weight:bold' href="https://www.linkedin.com/in/punoose/">George Punoose</a> have planned for the community to have a golf course integrated into the natural landscape.  Punoose was previously at Cabot St. Lucia's <a style='font-weight:bold' href="https://golf.com/travel/cabot-st-lucia-point-hardy-mythical-opening-2023/">Point Hardy</a> Golf Club, which has a Top 100 in the World golf course designed by Bill Coore and Ben Crenshaw.  Bill Coore did an initial routing for Ouli Farms.</p>
+				<p>The Kohala Coast of Kona is known for its sunny, pleasant weather with average annual rainfall of 10 inches. The climate is mild with average temperatures from 70 degrees Fahrenheit in the winter to 80 degrees Fahrenheit in the summer.  Doak has experience building in lava at <a style='font-weight:bold' href="https://fescue.github.io/Punta-Brava/">Punta Brava</a> in Mexico.</p>
+			</div>
+	</div>
+
+    <script>
+            const map = L.map('map').setView([20.041203,-155.8341555], 9);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([20.041203,-155.8341555]).addTo(map);
+			
+	        marker.bindPopup("<b>Ouli Farms</b><br>Kona, Hawaii</br>").openPopup();
+	</script>
+    	<p><a href="http://konakohalachamber.chambermaster.com/news/details/ouli-farms-inc-new-chamber-member">Welcome to new Chamber member ‘Ouli Farms Inc.</a></p>
+	<p><a href="https://fescue.github.io/Muriwai-Downs-Golf/">Muriwai Downs in New Zealand</a></p>
+	<p><a href="https://fescue.github.io/Kahili-Golf-Course/">Kahili Golf Course Renovation in Maui</a></p>
+	% include bodyFooter.html %}
+ </body>	
+ % include footer.html %}
+</html>

@@ -1,0 +1,70 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Travis Club - Golf and Marina in Texas</title>
+	<meta name="description" CONTENT="Lake Travis Club Beau Welling Heritage Links Lexicon New Golf Course Marina Texas Austin Environmental Sustainable">
+	{% include h.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Austin"></div>
+		<div class="content" tabindex="0"  aria-label="Golf">
+			<H1>Travis Club - Golf and Marina in Texas</H1>
+			<p><a style='font-weight:bold' href='https://travisclubaustin.com' target='_blank' rel='nofollow'>The Travis Club</a> is a proposed residential community with a golf course and marina near Lake Travis in Travis County just west of the state capital in Austin, Texas.  Design will be led by <a style='font-weight:bold' href='https://beauwellingdesign.com/' target='_blank' rel='nofollow'>Beau Welling</a>.  Welling was onsite in December 2023 <a style='font-weight:bold' href='https://www.instagram.com/p/C0fdxtUN1i8/?utm_source=ig_web_button_share_sheet&igshid=MzRlODBiNWFlZA==' target='_blank' rel='nofollow'>walking</a> the site.  Construction will start on the new golf course in the spring of 2024.  Hart Howerton is leading landscape design.  Welling has been involved with other prominent projects in Texas, including <a style='font-weight:bold' href='https://www.pga.com/story/the-making-of-beau-wellings-latest-masterpiece-at-pga-frisco' target='_blank' rel='nofollow'>The West Course</a> at PGA of America, Frisco and Escondido.  At Bluejack National, Welling was the lead design associate onsite building the golf course for Tiger Woods.</p>
+			<p>Heritage Links is leading golf course construction.  Heritage Links is a division of <a style='font-weight:bold' href='https://lexicon-inc.com/service/golf-course-construction/' target='_blank' rel='nofollow'>Lexicon</a> and worked on <a href="https://fescue.github.io/High-Grove/">High Grove</a> project with Hanse Golf Design.</p>
+			<p>The Travis Club <a style='font-weight:bold' href='https://traviscotx.portal.civicclerk.com/event/2822/files' target='_blank' rel='nofollow'>Phase One</a> Final Plat was approved in July 2023 for 274 single family home lots and 223 villa units.  Phase One has started and includes 106 homes with the marina with 10,000 feet of waterfront property. The development will cover 339.97 acres and will be partially located in the City of Briarcliff Extra-Territorial Jurisdiction (ETJ).  Water will be provided by the <a style='font-weight:bold' href='https://www.sklawdistrictdata.org/travis-county/vista-municipal-utility-district-of-travis-county/' target='_blank' rel='nofollow'>Vista Municipal Utility District</a> of Travis County.  Additionally, approvals were made for the Travis County Subdivision Construction Agreement with HH-CH-B Blue Lake, LLC and the Travis Club Subdivision Phasing Agreement in Precinct Three.  Developers behind the resort include Menlo Park, Haas & Haynie Corp., and Castle Hill Partners Inc..</p>
+			<p>The project masterplan was also approved by the Lower Colorado River Authority(LCRA) as well, meaning the plan was approved because it met water-quality performance standards of the <a href='https://www.lcra.org/water/permits-contracts/watershed-management-ordinance/' target='_blank' rel='nofollow'>Highland Lakes Watershed Ordinance</a>.</p>
+			<p>In addition to design work with Tiger Woods, Welling is one of the busiest in the game with progress underway at <a href='https://fescue.github.io/Freestone-Lake-Golf-Club/' style='font-weight:bold'>The Freestone Club</a> in Fairfield, Texas.  The Freestone Club has plans for a new 18 hole championship course and short course with a large lakefront marina.  South Seas Resort on Captiva Island in Florida is another Welling design that opened in 2023.</p>
+		</div>
+	</div>       
+
+    <script>
+                const map = L.map('map').setView([30.3882024,-98.0508597], 9);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([30.3882024,-98.0508597]).addTo(map);
+	        marker.bindPopup("<b>Travis Club</b><br>Austin, Texas</br>").openPopup();
+  </script>
+	<p><a href="https://fescue.github.io/Guenoc-Valley-Golf/">Guenoc Valley Golf - Doak + Napa</a></p>
+    <p><a href="https://fescue.github.io/Warmouth-Sands/">Warmouth Sands Re-Design</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

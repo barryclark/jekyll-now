@@ -1,0 +1,63 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Texana Golf</title>
+	<meta name="description" CONTENT="Texana Golf Lake Texana Palmetto Bend Dam Reservoir Jackson County Edna Texas new golf course East Course West Course Wolf Point Golf Don Mahaffey Ryan Mahaffey">
+	{% include h.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Texana Golf Map"></div>
+		<div class="content" tabindex="0" aria-label="Lake Texana Golf">
+			<H1>Texana Golf</H1>
+
+			<p><a style='font-weight:bold' href='https://www.lnra.org/' target='_blank' rel='nofollow'>Lake Texana</a> (also known as <span style='font-weight:bold'>Palmetto Bend</span>) is located seven miles east of Edna in Jackson County, on the Navidad River, a major tributary to the Lavaca River. Lake Texana is named after the ghost town of Texana which the lake submerged.  The lake and dam are managed by the <span style='font-weight:bold'>Lavaca–Navidad River Authority</span> for water supply and recreational purposes. United States Congress authorized the Palmetto Bend Reclamation Project in 1968.</p>
+			<p>Texana Golf is near Texas metropolitan areas, located approximately <span style='font-weight:bold'>70 miles southwest of Houston</span> and <span style='font-weight:bold'>95 miles southeast of San Antonio</span>, a little over an hour drive from the perimeter of each city.</p>
+			<p>The development plan envisions a destination-scale property focused on its <span style='font-weight:bold'>two golf courses</span>, clubhouse, practice grounds, and limited lodging amenities. Potential routing options look to maximize shoreline golf interaction while preserving extensive woodland, wetland, and floodplain buffers consistent with the reservoir’s environmental setting.  New golf design with expansive lakefront holes is rare.</p>
+			<hr>
+			<h2>West Course (approximately 190 acres)</h2>
+			<p>The <span style='font-weight:bold'>West Course</span> will occupy the central and eastern shoreline of Lake Texana and is routed across a series of peninsulas and lake inlets. The map appears to have potential for continuous water adjacency, long reservoir views, and strong natural integration with coves and wetland corridors.</p>
+				<hr>
+			<h2>East Course (approximately 190 acres)</h2>
+			<p>The <span style='font-weight:bold'>East Course</span> will be located on the south part of the site on two distinct parcels on the lake with the potential to balance shoreline golf with inland holes framed by native vegetation. Routing choices emerging from topographic maps to landscape clearance will expose the choices for fairway corridor width to capture substantial lake frontage and views.</p>
+				<hr>
+			<h2>Golf Course Construction</h2>
+			<p>Golf course construction will be led by <span style='font-weight:bold'>Wolf Point Golf Co.</span>, a golf construction company led by <span style='font-weight:bold'>Don Mahaffey</span> and <span style='font-weight:bold'>Ryan Mahaffey</span>. The team is noted for its experience on the <span style='font-weight:bold'>Memorial Park renovation</span> in Houston with <span style='font-weight:bold'>Tom Doak and Mike Nuzzo</span> and for Mahaffey’s construction lead role building nearby <a style='font-weight:bold' href='https://golf.com/course/wolf-point/' target='_blank'>Wolf Point</a> with golf architect Mike Nuzzo.  Mahaffey worked with Tripp Davis previously at Braeburn Country Club in Houston in 2022 and San Angelo Country Club in 2025.</p>
+
+			<h2>Siteplan</h2>
+			<img src="https://fescue.github.io/images/Texana-Golf-Site.png" alt="Property Landscape Siteplan">
+			
+			<h2>Clubhouse, Practice, and Lodging</h2>
+			<p>A centrally located <span style='font-weight:bold'>Clubhouse and Practice Area (approximately 17.1 acres)</span> serves both courses efficiently, while a small cabins and lodging area is positioned on higher ground to the northwest separated from core golf.</p>
+		    <p><a href="https://riversbarden.com" target="_blank" rel="noopener noreferrer"><strong>Rivers Barden Architects</strong></a> is a Houston-based architectural firm specializing in site-responsive design that thoughtfully integrates buildings with landscape, climate, and regional context.</p>
+      		<p>Principals Kevin Barden and Joe Rivers are both alumni of The Frank Lloyd Wright School of Architecture.  Their experience designing golf clubhouses like The Tree Farm working in warm Southern climates makes them ideally suited to create a landscape design that embraces Texana Golf lakeside setting.</p>
+
+
+			<h2>Future Hole on Shoreline</h2>
+			<img src="https://fescue.github.io/images/Texana-Golf-Lake-Shoreline.jpg" alt="Lake Shoreline">
+			<p>Lake Point</p>
+			<img src="https://fescue.github.io/images/Texana-Golf-Lake-Point.jpg" alt="Lake Point">
+			
+		</div>
+	</div>
+
+  <script>	
+                const map = L.map('map').setView([28.928330,-96.551167], 8);
+
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        var marker = L.marker([28.928330,-96.551167]).addTo(map);
+	        marker.bindPopup("<b>Texana Golf</b><br>Lake Texana, Jackson County, Texas</br>").openPopup();
+	</script>
+	<p><a style='font-weight:bold' href="https://www.lnra.org/" target="_blank" rel="nofollow">Lavaca–Navidad River Authority</a></p> 
+	<p><a style='font-weight:bold' href="https://fescue.github.io/Luling-Sport/" target="_blank" rel="nofollow">Luling Sport</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

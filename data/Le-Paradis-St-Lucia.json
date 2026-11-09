@@ -1,0 +1,21 @@
+{
+"storymap": {
+        "slides": [
+			{
+				"text": {
+					"headline": "2nd Chance Golf Resort in Caribbean",
+					"text": "<p>The Le Paradis Beach, Golf & Marina Resort was a planned 608-acre multi-phased five-star luxury destination resort on St. Lucia. The project was to be developed in four phases but stalled in 2008 due to the Global Financial Crisis, going into receivership in 2009 with Phase 1 at 52% completion.</p><p>Sotheby's has the property for sale at $29,000,000 USD. Renowned golf course architect <a style='font-weight:bold' href='https://gngcd.com/courses/' target='_blank' rel='nofollow'>Greg Norman</a> routed the golf course and started the construction process with only clearance, final shaping and grassing remaining.  Island neighbor <a style='font-weight:bold' href='https://cabotsaintlucia.com/golf' target='_blank' rel='nofollow'>Point Hardy Golf Club at Cabot St. Lucia</a> has opened as one the best 100 golf courses in the world as recognized by US Golf Magazine.</p><p>The rebirth of Le Paradis is a positive development for St. Lucia and will be a valuable asset to the community providing a place for people to relax and enjoy the beauty of St. Lucia.</p>"
+				},
+			"location": {
+					"lat": 13.8689682,
+					"lon": -60.8932793,
+					"zoom": 7
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=wsUO07jZvxA",
+					"caption": "The Making of a Championship Course"
+				}
+			}
+		]
+    }
+}

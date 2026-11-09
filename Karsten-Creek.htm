@@ -1,0 +1,81 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>  
+	<title>Karsten Creek - Andrew Green Renovation</title>
+	<meta name="description" CONTENT="Karsten Creek Andrew Green Tom Fazio Oklahoma State Stillwater Golf Course McDonald Heritage Links Renovation Design Architecture Sustainable">
+	{% include h.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Karsten Creek"></div>
+			<div class="content" tabindex="0"  aria-label="Andrew Green">
+				<H1>Karsten Creek - Andrew Green Renovation</H1>
+				<p><a style='font-weight:bold' href='https://en.wikipedia.org/wiki/Karsten_Creek' target='_blank' rel='nofollow'>Karsten Creek</a> in Stillwater, Oklahoma opened in 1994.  The <a style='font-weight:bold' href='https://www.stwnewspress.com/sports/osu_sports/how-holder-made-his-dream-a-reality/article_b758d016-ebc7-5296-b8c2-07be11e6389a.html' target='_blank' rel='nofollow'>$1 million gift</a> from John Solheim of PING golf was the source of the Karsten namesake for the golf course.  Budget to construct the 1994 course was between $3 and $4 million.  Designed by Tom Fazio, the course garnered critical acclaim and has hosted prestigious university national championships.</p>
+				<p>Oklahoma State University announced a $120 million donation from the T. Boone Pickens Foundation with approximately $31 million allocated for renovation updates to Karsten Creek golf course.  Past golf coach and athletic director <a style='font-weight:bold' href='https://en.wikipedia.org/wiki/Mike_Holder' target='_blank' rel='nofollow'>Mike Holder</a> is credited for the initiative to build the course for the Oklahoma State University golf team.</p>
+				<p>Ivan Salas from McDonald & Sons led the golf construction effort as onsite project manager with Eddie Ruvalcaba from Heritage Links leading irrigation installation.  GCBAA has an interview with Eddie Ruvalcaba from Heritage Links. Cart paths and the irrigation system have been rebuilt.  <a style='font-weight:bold' href='https://www.adspipe.com/' target='_blank' rel='nofollow'>Advanced Drainage Systems</a> supplied sub-surface infrastructure pipes and valves.</p>
+				<p>Golf architect Andrew Green started the renovation in October 2023.  Back tees were 7,400 yards prior to the Andrew Green changes.  Requirements for additional back tees championship golf length to challenge college golfers was part of the build.  Convention has changed at Karsten Creek with <a style='font-weight:bold' href='https://theclubcouncil.com/job-partner/karsten-golf-professional/ ' target='_blank' rel='nofollow'>no tee markers</a> and par removed from each hole on the scorecard.</p>
+				<p>Additionally, a state of the art heating and cooling system <a style='font-weight:bold' href='https://driptips.toro.com/subsurface-drip-irrigation-sdi/' target='_blank' rel='nofollow'>sub-surface drip irrigation SDI hydronics</a> will be installed beneath the greens, ensuring optimal temperatures year-round.  The hydronic system transforms labor requirements by reducing hand watering the greens during the summer and reduces water requirements.  Sub-surface hydronics also reduce the necessity for fans for air circulation.  By effectively managing the turfgrass, challenges from summer heat are minimized where the grass cannot photosynthesize properly becoming stressed to recover from ball marks or withstand foot traffic.</p>
+				<p><a style='font-weight:bold' href='https://www.kyleacallahan.com/' target='_blank' rel='nofollow'>Kyle Callahan</a> is the grow in superintendent for the next chapter of Karsten Creek with a grounds crew strength of 28+ people.  Oklahomas's climate support both C3 and C4 grass types.  Cool season C3 grasses like ryegrass and five acres of tall fescue combine with warm season bermuda or zoysia C4 grass types.  Karsten Creek has 96 acres of Tahoma 31 fairways.  Greens are 59 acres of 007XL/7-7-7 bentgrass USGA spec. greens with a sand-based rootzone containing 5% soil.</p>
+				<p>Andrew Green has degrees from Virginia Tech in <a style='font-weight:bold' href='https://www.vt.edu/academics/majors/landscape-design-and-turfgrass-science.html' target='_blank' rel='nofollow'>Landscape Architecture and Turfgrass Science</a>.  In recent years, Green has found championship golf re-design acclaim at Congressional Country Club's Blue Course, site of the 2022 Women's PGA Championship, and Oak Hill Country Club, site of the 2023 PGA Championship.</p>
+			</div>
+	</div>
+
+    <script>		
+            const map = L.map('map').setView([36.1026082,-97.187695], 8);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	        
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="n44DEkq8Mpc" style="background-image: url('https://i3.ytimg.com/vi/n44DEkq8Mpc/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=n44DEkq8Mpc" class="lty-playbtn" title="Play Video.  Credit: GCSAATV">
+	                            <span class="lyt-visually-hidden">Credit: GCSAATV</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([36.1026082,-97.187695]).addTo(map);
+	        marker.bindPopup("<b>Karsten Creek</b><br>Stillwater, Oklahoma</br>").openPopup();
+	</script>
+    	<p><a href="https://fescue.github.io/Kawonu-Golf-Club/">Andrew Green - New Golf Course - Kawonu Golf Club</a></p>
+    	<p><a href="https://fescue.github.io/Vaquero-Club-Golf-Texas/">Andrew Green - Re-Design Vaquero Club</a></p>
+    	<p><a href="https://fescue.github.io/Freestone-Lake-Golf-Club/">Freestone Lake in Texas</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

@@ -1,0 +1,81 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Trojena Golf Resort</title>
+	<meta name="description" CONTENT="Trojena New Golf Course Resort designed by Graham McDowell Matt Dusenberry Saudi NEOM PIF Greens Bunker Construction Irrigation Luxury Hotel Anantara Chedi Fairmont Ritz Carlton">
+	{% include h.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Sheybarah"></div>
+		<div class="content" tabindex="0"  aria-label="Resort">
+			<H1>Trojena Northern Golf Resort</H1>
+	      	<p>Trojena Mountain Golf Course is planning an 18 hole championship golf course designed by Graeme McDowell and Matt Dusenberry to be built in the Trojena mountain range in the Sarawat Mountains along Neom.  <a href='https://www.mcdowelldusenberry.com/' target='_blank' rel='nofollow'>McDowell & Dusenberry Design</a> formed a partnership to build new golf courses in 2025.</p>
+    	  	<p><a href='https://www.neom.com/en-us/regions/trojena' target='_blank' rel='nofollow'>Trojena Mountain Resort</a> is a part of the NEOM in Saudi Arabia. The area is a planned ski resort and mountain tourism destination in the Trojena mountain range about 31 miles(50 kilometers) from the Gulf of Aqaba coast.</p>
+      		<p>Trojena Mountain Resort will have a number of amenities including a man-made freshwater lake for water sports, The Vault, a folded village built using vertical village fusing technology.  Outdoor activities in addition to golf will include hiking trails, bike trails, and downhill skiing.  The resort will be built using sustainable practices and will be powered by renewable energy.</p>
+      		<p><a href='https://www.anantara.com/en/trojena-neom' target='_blank' rel='nofollow'>Anantara</a>, <a href='https://www.arabnews.com/node/2230456/business-economy' target='_blank' rel='nofollow'>GHM's The Chedi</a>, Fairmont, Ritz Carlton are among the initial brands which have started to build within the greater resort area.  There will be 15 resort hotels in the area.</p>
+      		<p>The climate at the Trojena Mountain Resort is semi-arid.  Average temperature in the summer is around 25°C (77°F).  Overall, the climate is mild and clear with warm summers.  The mountain peaks are relatively high with the highest reaching an altitude of 8,500 feet(2,600 meters).  The higher altitudes in the mountains experience snow during winter months.  Golf architect Dusenberry has experiencing designing courses at elevation using fescue grass at <a href='https://fescue.github.io/El-Desaf%C3%ADo-Golf-Patagonia/' target='_blank' rel='nofollow'>El Desafio</a> in Patagonia, Argentina for Greg Norman Golf Course Design.</p>
+	  		<p> The resort has been named host of the <a href='https://image.digitalinsightresearch.in/Uploads/ImageLibrary/Active/MEED/2022/11/PDFs/Saudi_gigaprojects-infographic-dec-2022.pdf' target='_blank' rel='nofollow'>2029 Asian Winter Games</a>.</p>
+		</div>
+	</div>
+	
+	<script>
+                const map = L.map('map').setView([29.348135,36.554696], 6);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+					
+	                // Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="JTm4VwDmI7U" style="background-image: url('https://i3.ytimg.com/vi/JTm4VwDmI7U/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=JTm4VwDmI7U" class="lty-playbtn" title="Play Video.  Credit: NEOM">
+	                            <span class="lyt-visually-hidden">Credit: NEOM</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([29.348135,36.554696]).addTo(map);
+	        marker.bindPopup("<b>Trojena Golf Resort</b><br>Jebel al Lawz, Saudi Arabia</br>").openPopup();
+	</script>
+	<p><a href="https://fescue.github.io/Shura-Island-Resort/">Shura Island</a></p>
+	<p><a href="https://fescue.github.io/Laheq-Island-Golf/">Laheq Island</a></p>
+	<p><a href="https://fescue.github.io/Sindalah-Island-Golf-Course/">Sindalah Island</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

@@ -1,0 +1,84 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Rock Creek - Public Golf - Flynn Restoration</title>
+  <meta name="description" CONTENT="Rock Creek Public Golf Course William Flynn Restoration Maryland ASGCA Sustainable Tee Time">
+  {% include h.html %}
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Rock Creek"></div>
+			<div class="content" tabindex="0"  aria-label="NLT">
+				<H1>Rock Creek - Public Golf - Flynn Restoration</H1>
+				<p><a style='font-weight:bold' href='https://www.nps.gov/rocr/planyourvisit/golf.htm' target='_blank' rel='nofollow'>Rock Creek Park Golf Course</a> is a historic William Flynn design from 1921, situated along a bustling Washinton D.C. commuter corridor.  The urban course is a popular spot for after-work and weekend golfers.  The proposed golf courses would serve as a regional hub for junior golf. The proposed <a style='font-weight:bold' href='https://www.ncpc.gov/files/projects/2022/8428_Rock_Creek_Park_Golf_Course_Rehabilitation_Submission_Materials_Jan2023.pdf' target='_blank' rel='nofollow'>rehabilitation project</a>, re-designed by renowned golf course architects Gil Hanse and Jim Wagner, includes a 9-hole regulation course and a shorter 9-hole Par-3 course. This design aims to cater to both seasoned and novice golfers. The 9-hole regulation course, measuring approximately 3,285 yards, incorporates elements from both the open front nine and the more wooded back nine of Flynn's design. The driving range is proposed to be located on what are currently the 9th and 10th holes, taking advantage of the natural bowl-like topography. A 9-hole par-3 course, measuring around 1,205 yards, is planned to start and finish just west of the current 9th green. This design aims to maximize the site's natural features with open corridors to promote healthy turf conditions, and enhance playability. Gil Hanse has utilized Flynn historian <a style='font-weight:bold' href='https://golfclubatlas.com/feature-interview/feature-interview-with-wayne-morrison-restoration-of-the-country-club/' target='_blank' rel='nofollow'>Wayne Morrison</a> as a subject matter expert on past restorations of Flynn designs.</p>
+				<p>The proposed 9-hole regulation course maintains the original character of the Rock Creek Park Golf Course, offering golfers a mix of open farmland and wooded, hilly parkland. The course starts and ends at the clubhouse, following a counterclockwise progression of play, similar to Flynn's design. The first five holes are located in the area currently occupied by the first eight holes, while the final four holes are in the area of the current 11th, 15th, 17th, and 18th holes. The course features few sand bunkers and leverages the site's natural topography for long, expansive views. The 9-hole par-3 course also starts and ends at the clubhouse, using many of the original back 9 holes' corridors, including the 14th and 16th holes. The holes range from 100 to 180 yards, serving as a transition space for beginners moving from the driving range to the golf course and a practice area for players aiming at a low handicap.</p>
+				<p>The rehabilitation project also focuses on environmental preservation. Invasive species that are currently threatening the forested areas on the golf course will be removed, with the aim of preserving specimen and mature trees that enhance the setting. A new cart path system is proposed to eliminate redundancy, address conflicts between different user groups, prioritize safety, provide maintenance vehicle access, reduce impacts on the course layout, and avoid sensitive natural areas. The new routing of the golf course will no longer use what were historically holes 12 and 13 on the northern edge of the golf course. Instead, these areas will be established as meadow and habitat areas.</p>
+				<p>The <a style='font-weight:bold' href='https://www.nationallinkstrust.org/' target='_blank' rel='nofollow'>National Links Trust(NLT)</a> is leading the planning of the rehabilitation project.  NLT is a non-profit organization dedicated to the preservation and enhancement of America's historic public golf courses. Established in 2021, the Trust works to protect these courses from development, restore their original designs, and ensure they remain accessible to the public for future generations to enjoy.</p>
+				<p>Troon Golf has agreed to be the operator leading maintenance and day to day oversight of the golf course.  Troon Golf is a leading golf course management company that provides services to over 580 courses in more than 30 countries around the world.</p>
+
+			</div>
+	</div>
+	
+
+    <script>
+            const map = L.map('map').setView([38.965666,-77.04095], 8);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+			
+			
+	    	        this._container.innerHTML = `
+	                    <lite-youtube videoid="h6sd5iDFQSw" style="background-image: url('https://i3.ytimg.com/vi/h6sd5iDFQSw/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=h6sd5iDFQSw" class="lty-playbtn" title="Play Video.  Credit: National Links Trust">
+	                            <span class="lyt-visually-hidden">Credit: National Links Trust/span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([38.965666,-77.04095]).addTo(map);
+
+	        marker.bindPopup("<b>Rock Creek Golf Course</b><br>Washington DC</br>").openPopup();
+	</script>
+	
+   	<p><a href="https://fescue.github.io/Los-Alamos-Golf/">Los Alamos County Golf Course in New Mexico</a></p>
+   	<p><a href="https://fescue.github.io/Tony-Butler-Golf/">Tony Butler - Muni Golf in Texas</a></p>
+	
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

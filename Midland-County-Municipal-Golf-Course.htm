@@ -1,0 +1,107 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+    <title>Midland County Municipal Golf Course</title>
+    <meta name="description" content="Odessa Midland County Golf Municipal Course New Architect Construction RainBird Toro Feasibility Study RFP 24MCO626">  
+	{% include hLeaflet.html %}
+</head>			
+	
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Muni Golf"></div>
+			<div class="content" tabindex="0"  aria-label="Midland">
+
+	                <h1>Midland County Municipal Golf Course</h1>				
+        	        <p>Multiple golf courses in Midland have closed down in the past decade. The Nuvo Vista golf course has been lost due to the Preserve at Midland project.  Ranchland Hills golf course is in the process of being converted into two new high schools by Midland Independent School District.</p>
+                	<p>Midland has Hogan Park golf course as it's only public course.  Midland Country Club and Green Tree Country Club are private golf clubs.</p>
+                	<p><a style='font-weight:bold' href='https://www.staplesgolfdesign.com/' target='_blank' rel='nofollow'>Andy Staples</a> was announced as golf architect in June 2025.  Midland county commissioners started to consider the need for a new municipal golf course in 2024. A request for proposal (RFP) for companies to conduct a <a style='font-weight:bold' href='https://www.co.midland.tx.us/DocumentCenter/View/7341/24MCO626-Golf-Course-Feasibility-Study' target='_blank' rel='nofollow'>feasibility study</a>. The initiative was led by county commissioners Scott Ramsey and Jeff Summers.</p>
+				        
+        	        <h2>Feasibility Study Results for New Golf Course in Midland County</h2>
+                	<p>In an August 2024 meeting, Midland County Commissioners reviewed the results of a feasibility study presented by <a style='font-weight:bold' href='https://www.linkedin.com/in/daniel-conway-80aa5a10/' target='_blank' rel='nofollow'>Daniel Conway</a> from THK Associates. The study outlined the costs and options for a new golf course in Midland County.  THK estimates demand of 600,000 rounds of golf annually in the Permian Basin with 410,000 rounds at public courses.</p>
+    	            	<p>The proposed site for the new golf facility is part of a 234-acre parcel on the northwest corner of County roads 1140 and 110.  The site may also be considered as a potential location for a new county jail and/or water treatment plant.</p>
+        	        <p>The study considered 175 acres for the proposed golf course and recommended a 27-hole golf course with a 12,000 square foot clubhouse and 3,500 square foott banquet/meeting space.</p>
+                	<p>Estimated costs for the 27-hole course were budgeted for $20 million with irrigation as the most expensive component estimated to range from six million to seven million dollars for 27 holes.  The study projected $4.1 million in annual revenue by the third year for the golf course using the population of the Permian Basin at 450,000 people by 2034.</p>
+        
+	                <h2>THK Associates - Texas</h2>
+        	        <p><a style='font-weight:bold' href='https://www.thkassoc.com/' target='_blank' rel='nofollow'>THK Associates</a> golf course project experience in market feasibility studies, appraisals, and operational reviews in Texas:</p>
+	                <ul>
+	                <li>
+	                    <a href="https://www.flyingl.com/">Flying L Ranch</a> - Bandera, Texas
+	                </li>
+	                <li>
+	                    <a href="https://www.olympiahillsgolf.com/">Olympia Hills Golf Club</a> - Universal City, Texas
+	                </li>
+	                <li>
+	                    <a href="https://www.miravistacountryclub.com/">Mira Vista Golf Club</a> - Fort Worth, Texas
+	                </li>
+	                <li>
+	                    <a href="https://www.bentsenpalm.com/">Bentsen Palm</a> - Mission, Texas
+	                </li>
+	                <li>
+	                    <a href="https://www.woodlakegolfclub.com/">Woodlake Golf Club</a> - San Antonio, Texas
+	                </li>
+	                </ul>
+		</div>
+	</div>
+		
+    <script>
+            const map = L.map('map').setView([31.9655196,-102.4275886], 7);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');			
+			
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="IRnwvM63V-8" style="background-image: url('https://i3.ytimg.com/vi/IRnwvM63V-8/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=IRnwvM63V-8" class="lty-playbtn" title="Play Video.  Credit: NewsWest 9">
+	                            <span class="lyt-visually-hidden">Credit: NewsWest 9</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([31.9655196,-102.4275886]).addTo(map);
+
+	        marker.bindPopup("<b>Midland County, Texas</b>").openPopup();
+	</script>
+	
+        <p><a href="https://fescue.github.io/Collier-County-Public-Golf/">Collier County Public Golf</a></p>
+        <p><a href="https://fescue.github.io/Sherrill-Park-Golf-Course/">Sherill Park Municipal Golf Course</a></p>
+        <p><a href="https://fescue.github.io/Los-Alamos-Golf/">Los Alamos Municipal Golf Course</a></p>
+	
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

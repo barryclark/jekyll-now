@@ -1,0 +1,83 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Sandglass - New Tom Doak Design in Florida</title>
+	<meta name="description" CONTENT="Sandglass Rolling Sands Tom Doak Chris Shumway Design South Florida New Golf Course Environmental Sustainable">
+	{% include hLeaflet.html %}
+</head>
+	
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Sandglass"></div>
+		<div class="content" tabindex="0"  aria-label="Golf">
+			<H1>Sandglass - New Tom Doak Design in Florida</H1>
+			<p><a style='font-weight:bold' href='https://sandglassgolf.com/' target='_blank' rel='nofollow'>Sandglass Golf Club</a> is a new 18 hole private golf club in <a href="https://aca-prod.accela.com/martinco/cap/CapDetail.aspx?type=1000&Module=DevReview&capID1=REC22&capID2=00000&capID3=00G84&agencyCode=MARTINCO">Martin County</a> built by golf course architect Tom Doak.  The 380 acre property is located on the Okeechobee Waterway, also known as the St. Lucie Canal and SW Kanner Highway approximately 6.5 miles west of Interstate 95.  Golf course construction has been completed and opened for play.</p>
+			<p><a style='font-weight:bold' href='https://www.doakgolf.com/' target='_blank' rel='nofollow'>Tom Doak</a> is a well traveled golf course architect and author of <a style='font-weight:bold' href='https://www.amazon.com/Confidential-Guide-Golf-Courses/dp/1886947090' target='_blank' rel='nofollow'>The Confidential Guide</a> known for naturalistic/minimalistic designs with interesting, strategic green complex designs.  Doak's first design in Florida was the Streamsong Blue course, a golf resort in Polk County, Florida.  That site is a former phosphate mining site characterized by rolling sand dunes and expansive vistas.  The resort is maintained to a firm, bouncy standard with natural features of the land, emphasizing the rugged beauty of the terrain.  Sandglass' Director of Grounds superintendent is  <a style='font-weight:bold' href='https://www.linkedin.com/in/kyle-harris-77a3922a/' target='_blank' rel='nofollow'>Kyle Harris</a>, previously the superintendent at Streamsong.</p>
+			<p>In April 2024, <a style='font-weight:bold' href='https://www.youtube.com/watch?v=5SMB9qT94b4' target='_blank' rel='nofollow'>GOLF.com</a> featured an interview with Tom Doak walking the Sandglass property with Michael Bamberger.  Doak further clarified site selection and soils quality on <a style='font-weight:bold' href='https://www.golfclubatlas.com/forum/index.php/topic,72835.0.html' target='_blank' rel='nofollow'>Golf Club Atlas</a>.</p>
+			<p>In October 2023, Doak <a style='font-weight:bold' href='https://www.instagram.com/doakgolf/' target='_blank' rel='nofollow'>posted</a> to Intagram an update on design plans.  Notably, Doak recruited Brian Zager to lead the project.  Zager had a key role at Sand Valley's Lido by working with Peter Flory to generate LIDAR data for topography map settings for automating design shaping.  <a style='font-weight:bold' href='https://buffalogolfer.com/wordpress/interview-with-brian-zager-golf-course-digital-designer/' target='_blank' rel='nofollow'>Zager</a> was interviewed by BuffaloGolfer in spring 2023.  Zager went on to build The 21 Golf Club in South Carolina with Eric Iverson.</p>
+			<p>Doak also noted that Brian Schneider, Eric Iverson, Brad Gehl, and Dylan Stevens participated as well in the design creation.  Doak is using holes from St. Andrews, Muirfield, North Berwick, and Pine Valley as inspiration.  After the Doak/Flory/Zager collaboration at Lido, anticipation is high to see another landscape with resemblances of well known bunkers like Simpson's Folly from the 9th hole at The Honourable Company of Edinburgh Golfers.</p>
+			<p><a style='font-weight:bold' href='https://owl.martin.fl.us/app/f?p=301:2:9510676890564::::P2_LIST_GROUP_ID,P2_LIST_ID:693,12240' target='_blank' rel='nofollow'>Major Final Site Plan</a> application to Martin County, Florida was requested by <a style='font-weight:bold' href='https://www.linkedin.com/in/richard-creech-pe-psm-0758b02/' target='_blank' rel='nofollow'>Creech Consulting, Inc.</a> on behalf of SS Ranch, LLC for permit approval.  The approved project proposal included a one-story clubhouse, pro shop, maintenance building, two cottages, a helicopter pad.  The filing outlined a proposal to reconfigure 20 acres of the approximate 240-acre property to retain as a residential lot.</p>
+			<div class="substack-post-embed"><p lang="en">The only place to be by Tim Yeo</p><a data-post-link href="https://timyeogolf.substack.com/p/the-only-place-to-be">ONLY FRIENDS YOU HAVEN’T YET MET</a>
+			</div>
+			<script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+		</div>
+	</div>       
+
+    <script>	
+                const map = L.map('map').setView([26.9627318,-80.3448839], 10);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="5SMB9qT94b4" style="background-image: url('https://i3.ytimg.com/vi/5SMB9qT94b4/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=5SMB9qT94b4" class="lty-playbtn" title="Play Video.  Credit: GOLF.com">
+	                            <span class="lyt-visually-hidden">Doak Interview at Sandglass Credit: GOLF.com</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+	        			    
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([26.9627318,-80.3448839]).addTo(map);
+	        marker.bindPopup("<b>Sandglass</b><br>Martin County, Florida</br>").openPopup();
+	</script>
+	<p><a href="https://fescue.github.io/Childress-Hall/">Doak's Childress Hall in Texas</a></p>
+	<p><a href="https://fescue.github.io/Punta-Brava/">Punta Brava in Mexico</a></p>
+	<p><a href="https://fescue.github.io/Majarambuz-La-Zagaleta/">Majarambuz La Zagaleta in Spain</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

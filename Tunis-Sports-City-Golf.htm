@@ -1,0 +1,87 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Tunis Sports City - New Golf Course in Tunisia</title>
+  <meta name="description" CONTENT="Tunis Sports City Peter Harradine New Golf Course Tunisia Michael Gayon Bay Resort">
+  {% include h40.html %}
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Tunis"></div>
+			<div class="content" tabindex="0"  aria-label="Harradine">
+				<H1>Tunis Sports City</H1>
+				<p>The golf course at <a style='font-weight:bold' href='https://www.tunissportscity.com/project/5-golf-zone' target='_blank' rel='nofollow'>Tunis Sport City</a> is a nine hole design from Golf Architect <a style='font-weight:bold' href='https://www.harradine-golf.com/trpharr.html' target='_blank' rel='nofollow'>Peter Harradine</a>.  Harradine is a multi-generational Swiss golf course architecture family.  Harradine initiated planning in the project in 2006 having been commissioned to plan an 18-hole course near Lake Tunis.</p><p>More recently, the masterplan was revised to nine holes.  The benefit of the new design is the location on one side of the road, avoiding the complication of crossing a major road.  It has a smaller and more sustainable footprint with a centrally located clubhouse and extensive PGA supervised practice facilities planned.  The site will preserve many existing trees and incorporate ecological evaporation ponds and two beautiful lakes.</p><p>Harradine has planned for a classic par 36 track measuring 3,502 yards from the back tees. Night golf will be an option with a floodlit illumination of the golf course.  The course will have five tees at each hole, providing diversity and challenge for different levels of players. Harradine has created over 200 golf courses around the world including many in Africa and Asia.</p>
+				<p><a style='font-weight:bold' href='https://www.harradine-golf.com/' target='_blank' rel='nofollow'>Peter Harradine, EIGCA</a> is an exapnsive golf course architect with a career spanning over four decades on multiple continents.  Harradine studied landscape architecture in England before moving to Switzerland to establish his golf course architecture firm in 1972.  Harradine has designed and built more than 200 golf courses in over 50 countries worldwide. Noteworthy designs are include:</p>
+				<li>Abu Dhabi Golf Club, United Arab Emirates</li>
+				<li>Jebel Ali Golf Resort & SPA, Dubai, United Arab Emirates</li>
+				<li>Doha Golf Club, Qatar</li>
+				<li>Pravets Golf Club, Bulgaria</li>
+				<p>Golf architect ><a style='font-weight:bold' href='http://www.gayondesign.com/article/9/tunis-bay-resort' target='_blank' rel='nofollow'>Michael Gayon</a> also proposed a design for Tunis Bay Resort in 2015.</p>
+			</div>
+	</div>
+	
+	
+    <script>
+            const map = L.map('map').setView([36.815445,9.886501], 7);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+			
+				    this._container.innerHTML = `
+	                    <lite-youtube videoid="jUQiOqwGYDA" style="background-image: url('https://i3.ytimg.com/vi/jUQiOqwGYDA/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=jUQiOqwGYDA" class="lty-playbtn" title="Play Video.  Credit: africanews">
+	                            <span class="lyt-visually-hidden">Credit: africanews</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			
+
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([36.815445,9.886501]).addTo(map);
+
+	        marker.bindPopup("<b>Tunisia</b>").openPopup();
+	</script>
+	
+   	<p><a href="https://fescue.github.io/Southern-Delaware-Golf/">Southern Delaware Golf Club</a></p>
+   	<p><a href="https://fescue.github.io/Bohol-Golf/">Bohol Golf Club</a></p>
+	<p><a href="https://fescue.github.io/Nusantara-Golf-Resort/">Royale Nusantara Golf Resort</a></p>
+	
+   	<p><a href="https://fescue.github.io/Crownwood-Club/">Crownwood Club</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

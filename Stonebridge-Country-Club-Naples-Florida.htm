@@ -1,0 +1,80 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Kipp Schulties Renovation Stonebridge Country Club in Naples</title>
+	<meta name="description" CONTENT="Kipp Schulties ASGCA Renovation Stonebridge Country Club Naples Florida Hole Golf Architect">
+	{% include h50.html %}
+</head>
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Stonebridge"></div>
+			<div class="content" tabindex="0"  aria-label="Kipp Schulties">
+				<H1>Kipp Schulties Renovation at Stonebridge in Naples Florida</H1>
+				<p><a style='font-weight:bold' href="https://www.stonebridgecountryclub.com/">Stonebridge Country Club</a> in Naples, Florida is undergoing a major renovation of its golf course, led by golf course architect <a style='font-weight:bold' href='https://ksgolfdesign.com/' target='_blank' rel='nofollow'>Kipp Schulties</a>, ASGCA. The project, which began in early 2023 and was completed in December 2023.  The design plan from Schulties increased the land(in acres) available for use by the golf course.</p>
+				<p>The renovation included a number of changes to the golf course, including reshaping the perimeter mounds, rebuilding greens to USGA spec. with a maximum slope of 2.3 degrees and generally 1 degree minimum slope to aid drainage.  The 2nd hole is an example of where the architect expanded the width of the fairway and property corridor outwards to the preserve boundary.  Fill is a term used to describe land moving activity to fit the shape of the hole which Schulties specifies.  Schulties removed the double hazard peril of trees interfering with bunker shots and their interaction with water hazards.</p>
+				<p>About 100 trees will be relocated to different parts of the property detailed in the project's <a style='font-weight:bold' href='https://www.usga.org/content/usga/home-page/course-care/green-section-record/59/18/developing-a-tree-management-plan.html' target='_blank' rel='nofollow'>Tree Impact Plan</a>.  Broadly, a tree impact plan is a document that outlines steps to be taken to protect trees during the golf course renovation. The goal is to avoid unnecessary damage to the trees and vegetation during construction activities.  A tree impact plan typically includes an inventory of all trees, an assessment of the potential impact of the construction on the trees.  The plan further protected trees during construction by scheduling the relocation and replanting of the identified trees.  The tree impact plan was developed in consultation with a qualified arborist or other tree expert. This ensured that the plan is effective in protecting the trees and that it meets golf renovation and design strategy requirements.  Stonebridge planted 85 oak trees and 400 Sabal palm trees in the renovation</p>
+				<p>Schulties previously worked for architect golf architect <a style='font-weight:bold' href='https://asgca.org/architect/gbates/' target='_blank' rel='nofollow'>Gene Bates</a> and PGA Tour player Fred Couples for seven years.  Schulties has experience in masterplanning and designing golf resorts and private clubs, including the Boca Raton Resort & Club, Quail Lodge Resort & Golf Club, and Lost Tree in conjunction with Jack Nicklaus.</p>
+			</div>
+	</div>
+
+    <script>
+            const map = L.map('map').setView([26.2672438,-81.7784285], 9);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+					
+					// Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="NWUzPSpRsPM" style="background-image: url('https://i3.ytimg.com/vi/NWUzPSpRsPM/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=NWUzPSpRsPM" class="lty-playbtn" title="Play Video.  Credit: Stonebridge Naples">
+	                            <span class="lyt-visually-hidden">Credit: Stonebridge Naples</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([26.2672438,-81.7784285]).addTo(map);
+
+	        marker.bindPopup("<b>Stonebridge Country Club</b><br>Naples, Florida</br>").openPopup();
+    </script>
+    <p><a href="https://fescue.github.io/Boca-National/">Boca National Rebuild - Nick Price</a></p>
+    <p><a href="https://fescue.github.io/GrayBull/">David Kidd's GrayBull - Nebraska</a></p>
+    <p><a href="https://fescue.github.io/Ouli-Farms/">Ouli Farms in Hawaii</a></p>
+    {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

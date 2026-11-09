@@ -1,0 +1,62 @@
+---
+
+---
+<html lang="en">
+ <head>
+	<title>Avanzada - New Private Golf Club - Fort Worth</title>
+	<meta name="description" CONTENT="Avanzada Golf Ranch Club private golf club residential community Fort Worth Texas country club Dallas">
+	{% include headerSM.html %}
+</head>
+
+<body>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<H1>Avanzada Golf Ranch Club - Jim Lipe with JJ Henry Design</H1>
+	<script type="text/javascript" src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script> 
+	<link rel="stylesheet" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css"> 
+	<div id="storyMap"></div>
+
+	  <script> 
+		"use strict";
+				  
+		// JSON file containing data for the Story Map
+		const storymap_data =  "https://fescue.github.io/data/Avanzada-Golf.json";
+
+		// Options for Story Map
+		const storymap_options = {
+				  language: "en",
+				  map_type: "osm:standard",
+				  calculate_zoom: false
+				};
+
+				// the Story Map object
+				const storymap = new VCO.StoryMap("storyMap", storymap_data, storymap_options);
+
+				// Leaflet Zoom control
+				const zoomControl = L.control.zoom({ position: "topleft" });
+
+				// Leaflet Full-Screen control
+				const fullscreenControl = new L.Control.Fullscreen({
+				  position: "topleft"
+				});
+
+				// grouping of controls
+				const leafletControlsToAdd = [zoomControl, fullscreenControl];
+
+				// event for when the Story Map is loaded
+				storymap.on("loaded", function() {
+				  // leaflet.js web map object
+				  const leafletMap = storymap.map;
+
+				  // add controls to Leaflet web map
+				  leafletControlsToAdd.forEach(element => leafletMap.addControl(element));
+				});			  
+				  
+			  </script> 
+	<script type="text/javascript" class="init"></script> 
+    	<p><a href="https://avanzadagolf.com/golf/">Avanzada Golf & Ranch Club</a></p>
+    	<p><a href="https://fescue.github.io/Red-Feather/">Red Feather</a></p>
+   	<p><a href="https://fescue.github.io/The-Apogee-Club/">Mike Davis: Gil Hanse + Tommy Fazio at The Apogee Club</a></p>
+  {% include bodyFooter.html %}
+ </BODY>	
+ {% include footer.html %}
+</html>

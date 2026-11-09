@@ -1,0 +1,82 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta name="description" CONTENT="Atkins Golf Drew Rogers University of Illinois NCAA Mike Small">
+	<title>Atkins Golf - Drew Rogers - University of Illinois</title>
+	{% include h.html %}
+</head>
+<body>
+	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Map showing the location of Atkins Golf Club"></div>
+		<div class="content" tabindex="0"  aria-label="Golf Course Rebuild">
+			<H1>Atkins Golf - Drew Rogers - University of Illinois</H1>
+			<p><a style='font-weight:bold' href="https://www.atkinsgolfclub.com/">Atkins Golf Club</a> is the home of the University of Illinois NCAA Athletics Fighting Illini Men’s/Women’s golf teams.  The original Dick Nugent design was enhanced in 2021 by <a style='font-weight:bold' href='https://www.jdrewrogers.com/' target='_blank' rel='nofollow'>Drew Rogers</a> with a $5 million renovation to create an 18-hole public championship golf course.  Decisions were made for bentgrass greens and fairways.  <a style='font-weight:bold' href='https://bvmsports.com/ncaa/illinois-fighting-illini/mens-golf/' target='_blank' rel='nofollow'>Men's Coach Mike Small</a> has had success training <a style='font-weight:bold' href='https://en.wikipedia.org/wiki/Illinois_Fighting_Illini_men%27s_golf' target='_blank' rel='nofollow'>future PGA Tour golfers</a>, and the Atkins facility will serve as an aid in recruiting.</p><p>The land the course occupies was gifted to the University by the Atkins family in 2020.  The course has hosted several national tournaments including the 1998 and 2009 NCAA Men’s Regional Championships, 2013 NCAA Women’s Regional Championship.</p>
+			<p>Atkins Golf Club is managed by Troon Golf, the world’s largest golf management company.  The course is open to the public offering various membership options with discounts for students, faculty members, alumni.</p><p>The course layout is a classic par 72 from a set of four par-3s, ten par-4s, and four par-5s with a total yardage of 7,118 from the back tees with course rating 74.6, bogey slope rating 138.  The course features rolling terrain, water hazards, strategic bunkering, and large undulating greens. Some of the special holes to observe:</p>
+				<ul>
+				<li  aria-label="1st hole">The par-4 first hole requires a carry tee shot over water to a narrow fairway that slopes left to right with an approach shot uphill to a well-bunkered green.</li><li aria-label="5th hole">The par-5 fifth hole is the longest hole on the course at 606 yards. The hole doglegs left around a large lake that comes into play on the second and third shots. The green is elevated and surrounded by bunkers.</li>
+				<li aria-label="8th hole">The par-3 eighth hole, which is the shortest hole on the course at 155 yards, playing downhill to a peninsula green that juts out into the lake.  Wind direction can make club selection tricky on this scenic hole.</li><li aria-label="13th hole">The par-4 13th hole is a difficult hole playing 455 yards from the back tees with the second shot uphill to a sloping green with bunkers in front and behind.</li>
+				<li aria-label="18th hole">The par-5 18th hole is a classic finishing hole offering a risk-reward opportunity for birdie or eagle playing 543 yards from the back tees and bends slightly right around a pond that can come into play on the second shot. The green is reachable in two for long hitters.</li>
+				</ul>
+			</p>
+		</div>
+	</div>       
+
+    <script>
+                const map = L.map('map').setView([40.088368,-88.499609], 10);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                
+	                // Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="h-BLM6eN3RM" style="background-image: url('https://i3.ytimg.com/vi/h-BLM6eN3RM/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=h-BLM6eN3RM" class="lty-playbtn" title="Play Video.  Credit: WCIA News">
+	                            <span class="lyt-visually-hidden">Credit: WCIA News</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([40.088368,-88.499609]).addTo(map);
+	        marker.bindPopup("<b>Atkins Golf Club</b><br>Home of the University of Illinois Fighting Illini</br>").openPopup();
+  </script>
+  <p><a href="https://fescue.github.io/Broomsedge-Golf-Club/">Kyle Franz' Broomsedge in South Carolina</a></p>
+  <p><a href="https://fescue.github.io/The-Apogee-Club/">Mike Davis: Hanse + Fazio at The Apogee Club</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

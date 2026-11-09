@@ -1,0 +1,197 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<base target="_top">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" CONTENT="Atkins Golf Drew Rogers University of Illinois NCAA Mike Small">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv='content-language' content='en-us'>
+        <title>Atkins Golf - Drew Rogers - University of Illinois</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/images/Fairway.jpg" />	 
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	<style>
+		.main-container {
+		    display: flex;
+		    flex-direction: row;
+		    height: 100vh; /* Adjust height as needed */
+		}
+		
+		#map {
+		    width: 35%; /* Half of the container */
+		    /* Additional map styling */
+		}
+		
+		.content {
+		    width: 65%; /* Half of the container */
+		    overflow-y: auto; /* Enables scrolling for the text content */
+		    /* Additional content styling */
+	            color: #333333; /* Darker text for better readability */
+	            background-color: #FFFFFF; /* Light background to contrast with the text */
+	            font-size: 1.1em; /* Slightly larger font size for readability */
+	            line-height: 1.6; /* Improved line spacing for readability */
+		}
+
+	        .content a {
+	            color: #0000EE; /* Ensuring links are distinguishable */
+	            text-decoration: underline; /* Underline links for better visibility */
+	        }
+	
+	        .content a:hover, .content a:focus {
+	            color: #004299; /* Different color on hover/focus for better user interaction */
+	            background-color: #eef2f7; /* Background change on hover/focus for better visibility */
+	        }
+
+	        /* High Contrast Mode for users with visual impairments */
+	        @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+	           .content {
+	               color: black;
+	               background-color: white;
+	           }
+	           .content a {
+	               color: blue;
+	           }
+	        }
+
+		footer {
+		    background-color: #f1f1f1;
+		    padding: 10px;
+		    text-align: center;
+		    width: 100%;
+		}
+
+		/* Make images responsive */
+		img {
+		        max-width: 100%;
+		        height: auto;
+		}
+		
+		/* Responsive adjustments */
+		@media (max-width: 768px) {
+		    .main-container {
+		        flex-direction: column;
+		    }
+		
+		    #map, .content {
+		        width: 100%;
+		    }
+		
+		    /* Adjust font sizes and other elements for mobile */
+		    .content {
+		        font-size: 1em; /* Adjust as needed for mobile */
+		    }
+		
+		    /* Make images responsive */
+		    img {
+		        max-width: 100%;
+		        height: auto;
+		    }
+		}
+
+	
+		/* Styling for custom overlay */
+		.leaflet-custom-overlay {
+	            position: absolute;
+	            top: 10px; /* Adjust as needed */
+	            left: 180px; /* Adjust as needed */
+	            z-index: 1000; /* Ensure it's above the map */
+	        }
+	
+	        .leaflet-custom-overlay lite-youtube {
+	            width: 300px; /* Adjust the size as needed */
+	            height: 168px; /* Adjust the size as needed */
+	        }
+	</style>
+			
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Map and Video Layout</title>
+        <link rel="stylesheet" href="/css/lite-yt-embed.css" />
+    </head>
+	
+    <body>
+
+	    
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Map showing the location of Atkins Golf Club"></div>
+		<div class="content" tabindex="0"  aria-label="Golf Course Rebuild">
+			<H1>Atkins Golf - Drew Rogers - University of Illinois</H1>
+			<p>Atkins Golf Club is the home of the University of Illinois NCAA Athletics Fighting Illini Men’s/Women’s golf teams.  The original Dick Nugent design was enhanced in 2021 by <a style='font-weight:bold' href='https://www.jdrewrogers.com/' target='_blank' rel='nofollow'>Drew Rogers</a> with a $5 million renovation to create an 18-hole public championship golf course.  Decisions were made for bentgrass greens and fairways.  <a style='font-weight:bold' href='https://bvmsports.com/ncaa/illinois-fighting-illini/mens-golf/' target='_blank' rel='nofollow'>Men's Coach Mike Small</a> has had success training <a style='font-weight:bold' href='https://en.wikipedia.org/wiki/Illinois_Fighting_Illini_men%27s_golf' target='_blank' rel='nofollow'>future PGA Tour golfers</a>, and the Atkins facility will serve as an aid in recruiting.</p><p>The land the course occupies was gifted to the University by the Atkins family in 2020.  The course has hosted several national tournaments including the 1998 and 2009 NCAA Men’s Regional Championships, 2013 NCAA Women’s Regional Championship.</p><p>Atkins Golf Club is managed by Troon Golf, the world’s largest golf management company.  The course is open to the public offering various membership options with discounts for students, faculty members, alumni.</p><p>The course layout is a classic par 72 from a set of four par-3s, ten par-4s, and four par-5s with a total yardage of 7,118 from the back tees with course rating 74.6, bogey slope rating 138.  The course features rolling terrain, water hazards, strategic bunkering, and large undulating greens. Some of the special holes to observe:</p><ul><li  aria-label="1st hole">The par-4 first hole requires a carry tee shot over water to a narrow fairway that slopes left to right with an approach shot uphill to a well-bunkered green.</li><li aria-label="5th hole">The par-5 fifth hole is the longest hole on the course at 606 yards. The hole doglegs left around a large lake that comes into play on the second and third shots. The green is elevated and surrounded by bunkers.</li><li aria-label="8th hole">The par-3 eighth hole, which is the shortest hole on the course at 155 yards, playing downhill to a peninsula green that juts out into the lake.  Wind direction can make club selection tricky on this scenic hole.</li><li aria-label="13th hole">The par-4 13th hole is a difficult hole playing 455 yards from the back tees with the second shot uphill to a sloping green with bunkers in front and behind.</li><li aria-label="18th hole">The par-5 18th hole is a classic finishing hole offering a risk-reward opportunity for birdie or eagle playing 543 yards from the back tees and bends slightly right around a pond that can come into play on the second shot. The green is reachable in two for long hitters.</li></ul></p>
+		</div>
+	</div>
+
+    <footer>
+        <footer role="contentinfo">
+            <p><a href="https://www.atkinsgolfclub.com/">Atkins Golf Club Website</a></p>
+            <p><a href="https://fescue.github.io/Broomsedge-Golf-Club/">Kyle Franz' Broomsedge in South Carolina</a></p>
+            <p><a href="https://fescue.github.io/The-Apogee-Club/">Mike Davis: Hanse + Fazio at The Apogee Club</a></p>
+        
+            <table style="width:100%">
+                <tr>
+                    <th><a href="https://fescue.github.io/">All New Golf Courses</a></th>
+                    <th><a href="https://fescue.github.io/incomplete/">Waiting Room - Permits - NLE</a></th>
+                    <th><a href="https://fescue.github.io/2021/">2021 archive</a></th>
+                    <th><a href="https://fescue.github.io/2020/">2020 archive</a></th> 
+                    <th><a href="https://fescue.github.io/2019/">2019 archive</a></th>
+                </tr>
+            </table>
+        <nav>
+            <p>Creators and managers of this list make no representations as to its accuracy, completeness, and/or its validity.  Users do so at their own risk.  <a href="https://fescue.github.io/privacy/">Privacy Policy</a>   <a href="https://fescue.github.io/Contact-Us/">Contact Us</a></p>
+        </nav>
+    </footer>
+
+    <script>
+                const map = L.map('map').setView([40.0936, -88.2272], 16);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+        L.CustomOverlay = L.Layer.extend({
+            onAdd: function(map) {
+                this._map = map;
+                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+                
+                // Your lite-youtube HTML
+                this._container.innerHTML = `
+                    <lite-youtube videoid="FT1An-ycess" style="background-image: url('https://i3.ytimg.com/vi/FT1An-ycess/hqdefault.jpg');">
+                        <a href="https://youtube.com/watch?v=FT1An-ycess" class="lty-playbtn" title="Play Video">
+                            <span class="lyt-visually-hidden">Coore/Crenshaw - Cabot St. Lucia</span>
+                        </a>
+                    </lite-youtube>
+                `;
+        
+                // Add the container to the map
+                map._panes.overlayPane.appendChild(this._container);
+                
+                // Update the position of the overlay on the map
+                this._update();
+            },
+        
+            onRemove: function(map) {
+                L.DomUtil.remove(this._container);
+            },
+        
+            _update: function() {
+                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+                
+                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+                L.DomUtil.setPosition(this._container, position);
+            }
+        });
+
+        // Add the custom overlay to the map
+        var myCustomOverlay = new L.CustomOverlay();
+        myCustomOverlay.addTo(map);
+
+        // Add a marker to the map at the same location as the map center
+        var marker = L.marker([40.0936, -88.2272]).addTo(map);
+        marker.bindPopup("<b>Atkins Golf Club</b><br>Home of the University of Illinois Fighting Illini</br>").openPopup();
+
+    </script>
+</body>	
+</html>

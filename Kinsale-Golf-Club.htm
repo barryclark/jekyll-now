@@ -1,0 +1,81 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Kinsale Golf Club - Naples, Florida - Hanse/Wagner</title>
+	<meta name="description" CONTENT="Kinsale Golf Club Gil Hanse Jim Wagner Cavemen Naples Florida Macdonald Raynor">
+	{% include h.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Kinsale"></div>
+			<div class="content" tabindex="0"  aria-label="Hanse">
+				<H1>Kinsale Golf Club in Naples, Florida - Hanse Wagner</H1>
+				<p><a style='font-weight:bold' href='https://kinsaleclub.com/' target='_blank' rel='nofollow'>Kinsale Golf Club</a> in Naples Florida, designed by Gil Hanse with Jim Wagner, is a notable addition to the world of golf course architecture.  In the October 2023 update posted to Vimeo.com, architect Jim Wagner presents the site under construction and details the requirements to raise the site off the base plain.  Director of agronomy for the grow-in and opening of the golf course in November 2024 was Rusty Mercer.  Mercer led construction of the 18 inch sandcap across the property.</p>
+				<p>Anthony Soave is the owner and CEO of Kinsale Golf Club.  Gil Hanse is known for his design philosophy that emphasizes natural and strategic golf courses.  His work often features minimalist movement of terrain, close walkable routings with a blend of challenge and playability for a wide audience of golfers.  From the <a style='font-weight:bold' href='https://kinsaleclub.com/wp-content/uploads/2023/08/Kinsale-Updated-Routing-Plan-August-2023-3-862x1024.jpg' target='_blank' rel='nofollow'>design plans</a>, it is apparent that Kinsale is inspired by Charles Blair Macdonald and Seth Raynor template holes.</p>
+				<p>Hanse has been involved in the design of many notable courses around the world, including the Olympic Golf Course in Rio de Janeiro for the 2016 Olympics, Les Bordes in France, Boston Golf Club, Rustic Canyon in California, and Ohoopee Match Club in Georgia.   Hanse Golf Course Design recently designed and built the West Course at <a style='font-weight:bold' href='https://fescue.github.io/The-Apogee-Club/' target='_blank' rel='nofollow'>The Apogee Club</a> in Stuart, Florida.</p>
+				<p>The approximately 300 yard 10th hole is named Lion’s Mouth presumably for the classic and distinctive feature in golf course architecture of a bunker engulfing a strategic point on a hole, such as in front of a green.  Over the years, the <a style='font-weight:bold' href='https://golf.com/travel/what-is-a-lions-mouth/' target='_blank' rel='nofollow'>Lion's Mouth</a> bunker has been adapted by various golf course architects.  The Coore Crenshaw version on the 8th hole at Sand Hills in Mullen, Nebraska is the most cited modern implementation.  Modern renditions of the bunker obstacle do not always strictly adhere to the traditional circular shape but do maintain the core concept of a central obstacle or raised central mound within the bunker fronting the green.</p>
+				<p><a style='font-weight:bold' href='https://www.linkedin.com/in/harrison-b-hepner-254938107/' target='_blank' rel='nofollow'>Harrison Hepner</a>, PGA was the Head Golf Professional of Kinsale Golf Club at opening in November 2024.</p>
+			</div>
+	</div>
+
+    <script>		
+            const map = L.map('map').setView([26.299627,-81.816371], 8);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	        
+
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="ZmfmAVZ6sr4" style="background-image: url('https://i3.ytimg.com/vi/ZmfmAVZ6sr4/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=ZmfmAVZ6sr4" class="lty-playbtn" title="Play Video.  Credit: Mike Young">
+	                            <span class="lyt-visually-hidden">Credit: PlantFoodCompany</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			    
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([26.299627,-81.816371]).addTo(map);
+	        marker.bindPopup("<b>Kinsale Club</b><br>Naples, Florida</br>").openPopup();
+	</script>
+	
+   	<p><a href="https://fescue.github.io/The-Apogee-Club/">The Apogee Club - South Florida</a></p>
+   	<p><a href="https://fescue.github.io/Bounty-Club/">King Collins - Nashville - The Bounty Club</a></p>
+	
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>
