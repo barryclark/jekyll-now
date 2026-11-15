@@ -2,16 +2,88 @@
 layout: default
 ---
 
-<article class="post">
+<article class="post post-single{% if page.series %} series-{{ page.series }}{% endif %}">
   <h1>{{ page.title }}</h1>
 
-  <div class="entry">
+  {% assign chars = page.content | strip_html | size %}
+  <p class="post-meta">
+    {{ page.date | date: "%Y-%m-%d" }} · {{ chars | divided_by: 400 | plus: 1 }} min read
+  </p>
+
+  <details class="toc" id="toc" hidden>
+    <summary>目录</summary>
+    <div class="inner"></div>
+  </details>
+
+  <div class="entry" id="post-content">
     {{ content }}
   </div>
+  <nav class="post-nav">
+    {% if page.previous %}
+      <a class="post-nav-prev" href="{{ site.baseurl }}{{ page.previous.url }}">← 上一篇</a>
+    {% endif %}
+    {% if page.next %}
+      <a class="post-nav-next" href="{{ site.baseurl }}{{ page.next.url }}">下一篇 →</a>
+    {% endif %}
+  </nav>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+  <p class="subscribe">
+    <a href="{{ site.baseurl }}/feed.xml">订阅更新 · RSS</a>
+  </p>
 
   {% include disqus.html %}
 </article>
+
+<button id="back-to-top" aria-label="返回顶部" hidden>↑</button>
+
+<script>
+(function () {
+  var content = document.getElementById('post-content');
+  if (!content) return;
+
+  var headings = content.querySelectorAll('h2[id], h3[id]');
+
+  // 目录（可折叠，h3 嵌套在 h2 下）
+  var toc = document.getElementById('toc');
+  if (toc && headings.length > 1) {
+    var inner = toc.querySelector('.inner');
+    var root = document.createElement('ul');
+    var currentH2 = null;
+
+    headings.forEach(function (h) {
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = '#' + h.id;
+      a.textContent = h.childNodes[0].textContent.trim();
+      li.appendChild(a);
+
+      if (h.tagName === 'H2' || !currentH2) {
+        root.appendChild(li);
+        currentH2 = li;
+      } else {
+        var sub = currentH2.querySelector('ul');
+        if (!sub) {
+          sub = document.createElement('ul');
+          currentH2.appendChild(sub);
+        }
+        sub.appendChild(li);
+      }
+    });
+
+    inner.appendChild(root);
+    toc.hidden = false;
+
+    var slot = document.getElementById('toc-slot');
+    if (slot) slot.appendChild(toc);
+  }
+
+  // 返回顶部
+  var btn = document.getElementById('back-to-top');
+  window.addEventListener('scroll', function () {
+    btn.hidden = window.scrollY < 400;
+  }, { passive: true });
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>

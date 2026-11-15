@@ -2,17 +2,26 @@
 layout: default
 ---
 
+<h1 class="sr-only">Claire (QingYe-2026) — AI Builder · Agents · Harnessed Agentic RL</h1>
+
+<div class="intro">
+  <p>Hello! 我在做 Agent 与 Harness 方向的研究与工程笔记，主要关注 <strong>Harnessed Agentic RL</strong>、<strong>Agent 自进化与 LLM 训练</strong>。另有：开源项目 <a href="https://yeqing17-2026.github.io/OmniAgent/">OmniAgent</a>，Agent 产品：<a href="{{ site.baseurl }}/Dora-Agent/">Dora Agent</a>。</p>
+</div>
+
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">
+    {% assign chars = post.content | strip_html | size %}
+    <article class="post{% if post.series %} series-{{ post.series }}{% endif %}">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h3 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+      <p class="post-meta">
+        {{ post.date | date: "%Y-%m-%d" }} · {{ chars | divided_by: 400 | plus: 1 }} min read
+        {% include series-tag.html series=post.series %}
+      </p>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <p class="post-excerpt">{{ post.excerpt | strip_html | strip }}</p>
+
     </article>
   {% endfor %}
 </div>

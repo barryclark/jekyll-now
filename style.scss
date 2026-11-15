@@ -18,14 +18,15 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+	background: #f7f7f7;
+  font: 16px/1.6 $helvetica;
+  color: #1f1f1f;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 720px;
   padding: 0 10px;
   width: 100%;
 }
@@ -151,7 +152,7 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .masthead {
@@ -195,15 +196,15 @@ img {
   color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 26px;
 }
 
 .site-description {
-  margin: -5px 0 0 0;
+  margin: 2px 0 0 0;
   color: $gray;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 600;
 
   @include mobile {
     margin: 3px 0;
@@ -214,21 +215,25 @@ nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 18px;
+  font-size: 16px;
 
   @include mobile {
     float: none;
     margin-top: 9px;
     display: block;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   a {
     margin-left: 20px;
     color: $darkGray;
     text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-weight: 400;
+
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
 
     @include mobile {
       margin: 0 10px;
@@ -241,24 +246,389 @@ nav {
 // .main
 //
 
-.posts > .post {
-  padding-bottom: 2em;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.intro {
+  margin-bottom: 2.5em;
+
+  p {
+    margin: 0;
+    color: $darkGray;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}
+
+.section-title {
+  margin: 0 0 1.2em;
+  padding-bottom: 0.4em;
   border-bottom: 1px solid $lightGray;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.posts > .post {
+  padding: 22px 24px;
+  border: 1px solid $lightGray;
+  border-left-width: 3px;
+  border-radius: 8px;
+  background: $white;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    border-color: #ddd;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.06);
+  }
+
+  @include mobile {
+    padding: 18px 16px;
+  }
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
+  padding-bottom: 22px;
+}
+
+.post-title {
+  margin: 0 0 0.35em;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+
+  a {
+    color: $darkGray;
+
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+}
+
+.post-meta {
+  margin: 0 0 0.7em;
+  color: $gray;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+.post-excerpt {
+  margin: 0;
+  color: $gray;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+// 标题统一近黑，系列色只做点缀（边框 / 日期 / 标签）
+$titleInk: #111827;
+
+.series-tag {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 0 8px;
+  border: 1px solid $lightGray;
+  border-radius: 999px;
+  background: #f5f5f5;
+  color: $gray;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  vertical-align: 1px;
+}
+
+// 系列配色：莫兰迪色系（边框 / 文字 / 标签底）
+$series-colors: (
+  "harnessed-rl": (#3b82f6, #1d4ed8, #eff6ff, #bfdbfe),
+  "harness-rsi": (#22c55e, #15803d, #f0fdf4, #bbf7d0),
+  "agent-arch": (#f97316, #b45309, #fff7ed, #fed7aa),
+  "ai-product": (#8b5cf6, #6d28d9, #f5f3ff, #ddd6fe)
+);
+
+@each $name, $palette in $series-colors {
+  $edge: nth($palette, 1);
+  $ink: nth($palette, 2);
+  $tag-bg: nth($palette, 3);
+  $tag-border: nth($palette, 4);
+
+  .posts > .post.series-#{$name} {
+    border-left-width: 3px;
+    border-left-color: $edge;
+  }
+
+  .series-#{$name} {
+
+    .post-meta {
+      color: $ink;
+    }
+
+    .post-title a {
+      color: $titleInk;
+
+      &:hover {
+        color: $ink;
+      }
+    }
+  }
+
+  .post-single.series-#{$name} {
+    border-top-width: 3px;
+    border-top-color: $edge;
+
+    h1 {
+      color: $titleInk;
+    }
+
+    .post-meta {
+      color: $ink;
+    }
+
+    .toc summary {
+      color: $ink;
+    }
+  }
+
+  .series-tag--#{$name} {
+    background: $tag-bg;
+    border-color: $tag-border;
+    color: $ink;
+  }
+}
+
+
+
+// 文内高亮框（作者旁注）
+.callout {
+  margin: 0 0 2em;
+  padding: 18px 20px;
+  border: 1px solid #e6ddd2;
+  border-left: 3px solid #b59487;
+  border-radius: 8px;
+  background: #faf6f1;
+  color: $darkGray;
+  font-size: 15px;
+  line-height: 1.75;
+
+  p {
+    margin: 0 0 0.8em;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  ol {
+    margin: 0 0 0.8em;
+    padding-left: 1.3em;
+    list-style: decimal;
+  }
+
+  li {
+    margin: 0.3em 0;
+  }
+}
+
+.archive-title {
+  margin: 2em 0 0.8em;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.archive-title:first-child {
+  margin-top: 0;
+}
+
+.archive-count {
+  margin-left: 6px;
+  color: $gray;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.archive-list {
+  margin: 0 0 1em;
+  padding: 0;
+
+  li {
+    display: flex;
+    gap: 12px;
+    padding: 6px 0;
+    border-bottom: 1px solid #f2f2f2;
+    list-style: none;
+    font-size: 15px;
+  }
+
+  a {
+    color: $darkGray;
+
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+}
+
+.archive-date {
+  flex: 0 0 88px;
+  color: $gray;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.post-single {
+  padding: 32px 36px;
+  border: 1px solid $lightGray;
+  border-radius: 10px;
+  background: $white;
+
+  @include mobile {
+    padding: 22px 18px;
+  }
+}
+
+// 代码块：深色底 + 语法高亮（对齐 Lilian 的 hljs 深色风格）
+.post .entry {
+  .highlight,
+  pre {
+    margin: 1.5em 0;
+    padding: 16px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #0d1117;
+    color: #e6edf3;
+    box-shadow: none;
+    overflow-x: auto;
+  }
+
+  .highlight pre {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+  }
+
+  code,
+  pre {
+    font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .highlight span {
+    color: inherit;
+  }
+
+  .highlight .c,
+  .highlight .c1,
+  .highlight .cm {
+    color: #8b949e;
+  }
+
+  .highlight .k,
+  .highlight .kd,
+  .highlight .kn,
+  .highlight .kr {
+    color: #ff7b72;
+  }
+
+  .highlight .s,
+  .highlight .s1,
+  .highlight .s2,
+  .highlight .sb,
+  .highlight .sd {
+    color: #a5d6ff;
+  }
+
+  .highlight .na,
+  .highlight .nl,
+  .highlight .nc,
+  .highlight .nf {
+    color: #79c0ff;
+  }
+
+  .highlight .mi,
+  .highlight .mf,
+  .highlight .m {
+    color: #79c0ff;
+  }
+
+  .highlight .p {
+    color: #c9d1d9;
+  }
 }
 
 .post {
+  h1 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .entry {
+    h2 {
+      margin: 2em 0 0.8em;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    h3 {
+      margin: 1.8em 0 0.7em;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 1.6em auto;
+      border-radius: 4px;
+    }
+
+    table {
+      width: 100%;
+      margin: 1.6em 0 2em;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border-bottom: 1px solid $lightGray;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      font-weight: 600;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+
   blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
+    margin: 1.6em 0;
+    border-left: 3px solid $darkGray;
+    padding: 0 0 0 14px;
+    color: $darkGray;
+    font-size: 16px;
+    font-style: normal;
   }
 
   .comments {
@@ -271,15 +641,143 @@ nav {
   }
 }
 
+//
+// .toc / post nav / back-to-top
+//
+
+.toc {
+  margin: 0 0 2em;
+  padding: 10px 16px;
+  border: 1px solid $lightGray;
+  border-radius: 8px;
+  background: #fafafa;
+  font-size: 14px;
+
+  summary {
+    padding: 4px 0;
+    color: $gray;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::before {
+      content: "▸";
+      display: inline-block;
+      margin-right: 6px;
+      transition: transform 0.15s ease;
+    }
+  }
+
+  &[open] summary {
+    margin-bottom: 6px;
+
+    &::before {
+      transform: rotate(90deg);
+    }
+  }
+
+  .inner {
+    padding-left: 4px;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.2em;
+  }
+
+  li {
+    margin: 0.25em 0;
+    line-height: 1.6;
+  }
+
+  a {
+    color: $gray;
+
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.subscribe {
+  margin: 2em 0 0;
+  text-align: center;
+  font-size: 14px;
+
+  a {
+    color: $gray;
+
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+}
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 3em;
+  padding-top: 1.5em;
+  border-top: 1px solid $lightGray;
+  font-size: 14px;
+
+  a {
+    color: $gray;
+
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+
+  .post-nav-next {
+    margin-left: auto;
+  }
+}
+
+#back-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid $lightGray;
+  border-radius: 50%;
+  background: $white;
+  color: $gray;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+  &:hover {
+    color: $darkGray;
+  }
+
+  &[hidden] {
+    display: none;
+  }
+}
+
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  margin-top: 60px;
+  border-top: 1px solid $lightGray;
+  background-color: transparent;
 }
 
 footer {
-  padding: 20px 0;
+  padding: 24px 0;
   text-align: center;
 }
 
