@@ -11,6 +11,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: blog
     steps:
       - name: Checkout
         uses: actions/checkout@v4
