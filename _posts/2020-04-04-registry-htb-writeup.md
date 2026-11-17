@@ -2,8 +2,8 @@
 title: Registry &#8211; HackTheBox WriteUp
 author: yakuhito
 layout: post
-permalink: registry_htb_writeup
-image: /images/registry_htb_writeup/registry_htb_writeup.jpeg
+permalink: registry-htb-writeup
+image: /images/registry-htb-writeup/registry-htb-writeup.jpeg
 category: htb
 ---
 
@@ -50,13 +50,13 @@ root@fury-battlestation:~/htb/blog/registry#
 Ports 80 and 443 served the same, default nginx page:
 
 <div>
-<center><img src="/images/registry_htb_writeup/image-29.png"></center>
+<center><img src="/images/registry-htb-writeup/image-29.png"></center>
 </div>
 
 Dirb found a directory called ‘install’, however, I discovered it was a non-ASCII file by accessing it:
 
 <div>
-<center><img src="/images/registry_htb_writeup/image-30.png"></center>
+<center><img src="/images/registry-htb-writeup/image-30.png"></center>
 </div>
 
 I then downloaded the file to my computer and used the ‘file’ program to see if the data isn’t just garbage:
@@ -149,7 +149,7 @@ root@fury-battlestation:~/htb/blog/registry#
 ‘docker.registry.htb’ returned a blank page:
 
 <div>
-<center><img src="/images/registry_htb_writeup/image-31.png"></center>
+<center><img src="/images/registry-htb-writeup/image-31.png"></center>
 </div>
 
 After reading about Docker Registries online, I tried getting a list of available dockers by accessing the following URL:
@@ -585,7 +585,7 @@ root@fury-battlestation:~/htb/blog/registry#
 The password of the admin account was… strawberry 🙂 I used those credentials to log in:
 
 <div>
-<center><img src="/images/registry_htb_writeup/image-32.png"></center>
+<center><img src="/images/registry-htb-writeup/image-32.png"></center>
 </div>
 
 ## Pivoting to www-data
@@ -606,11 +606,11 @@ https://registry.htb/bolt/bolt/files
 {% endhighlight %}
 
 <div>
-<center><img src="/images/registry_htb_writeup/image-33.png"></center>
+<center><img src="/images/registry-htb-writeup/image-33.png"></center>
 </div>
 
 <div>
-<center><img src="/images/registry_htb_writeup/image-34.png"></center>
+<center><img src="/images/registry-htb-writeup/image-34.png"></center>
 </div>
 
 You might remember the backup.php file. That file resets the ‘bolt’ folder every few minutes, so it’s perfectly normal for files to disappear. I didn’t manage to find a workaround; I just re-uploaded them 🙂
@@ -625,13 +625,13 @@ https://registry.htb/bolt/bolt/file/edit/config/config.yml
 The allowed file extensions list can be found on line #240. I added php at the beginning of that list:
 
 <div>
-<center><img src="/images/registry_htb_writeup/image-35-1024x497.png"></center>
+<center><img src="/images/registry-htb-writeup/image-35-1024x497.png"></center>
 </div>
 
 After I clicked the ‘Save’ button, I uploaded ‘yakuhito.php’, which was just ‘yakuhito.jpg’ with a different name. I then accessed the file and added a ‘cmd’ parameter to see if I had achieved command execution:
 
 <div>
-<center><img src="/images/registry_htb_writeup/image-36.png"></center>
+<center><img src="/images/registry-htb-writeup/image-36.png"></center>
 </div>
 
 It worked! This time, however, I didn’t spawn a reverse shell.

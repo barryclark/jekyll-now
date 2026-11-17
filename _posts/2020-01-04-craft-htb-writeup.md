@@ -2,8 +2,8 @@
 title: Craft &#8211; HackTheBox WriteUp
 author: yakuhito
 layout: post
-permalink: craft_htb_writeup
-image: /images/craft_htb_writeup/craft_htb_writeup.png
+permalink: craft-htb-writeup
+image: /images/craft-htb-writeup/craft-htb-writeup.png
 category: htb
 ---
 ## Summary
@@ -48,7 +48,7 @@ root@fury-battlestation:~/htb/blog/craft#
 Port 443 is open, meaning that a (most likely) HTTPS site is running on it. I opened `https://craft.htb` in a browser:
 
 <div>
-<center><img src="/images/craft_htb_writeup/image-17.png"></center>
+<center><img src="/images/craft-htb-writeup/image-17.png"></center>
 </div>
 
 In the upper right corner, I found buttons that take me to 2 different sub-domains: `api.craft.htb` and `gogs.craft.htb`. I added them to `/etc/hosts` and accessed them.
@@ -58,25 +58,25 @@ In the upper right corner, I found buttons that take me to 2 different sub-domai
 The first sub-domain, `api.craft.htb`, was not very interesting, because it hosted an API that could only be accessed with valid credentials.
 
 <div>
-<center><img src="/images/craft_htb_writeup/image-20.png"></center>
+<center><img src="/images/craft-htb-writeup/image-20.png"></center>
 </div>
 
 Before testing the API, I wanted to make sure there’s nothing easier to exploit on `gogs.craft.htb`.
 
 <div>
-<center><img src="/images/craft_htb_writeup/image-21-1024x649.png"></center>
+<center><img src="/images/craft-htb-writeup/image-21-1024x649.png"></center>
 </div>
 
 It turned out I was right. There’s a publicly-accessible repository that contains the API’s source-code:
 
 <div>
-<center><img src="/images/craft_htb_writeup/image-22-1024x659.png"></center>
+<center><img src="/images/craft-htb-writeup/image-22-1024x659.png"></center>
 </div>
 
 Moreover, there was an interesting issue opened:
 
 <div>
-<center><img src="/images/craft_htb_writeup/image-23-1024x566.png"></center>
+<center><img src="/images/craft-htb-writeup/image-23-1024x566.png"></center>
 </div>
 
 {% highlight bash %}
@@ -98,7 +98,7 @@ https://gogs.craft.htb/Craft/craft-api/commit/c414b160578943acfe2e158e89409623f4
 {% endhighlight %}
 
 <div>
-<center><img src="/images/craft_htb_writeup/image-24.png"></center>
+<center><img src="/images/craft-htb-writeup/image-24.png"></center>
 </div>
 
 The ‘patch’ uses `eval()` to check that that the ABV value (whatever that was 🙂 ) is less than 1. `eval()` should never be used on user input, because a malicious attacker could use it to gain RCE. At this moment, I knew I could get a shell if I had valid a valid username/password combo.
@@ -115,7 +115,7 @@ https://gogs.craft.htb/Craft/craft-api/commit/10e3ba4f0a09c778d7cec673f28d410b73
 {% endhighlight %}
 
 <div>
-<center><img src="/images/craft_htb_writeup/image-25-1024x531.png"></center>
+<center><img src="/images/craft-htb-writeup/image-25-1024x531.png"></center>
 </div>
 
 {% highlight python %}
@@ -294,17 +294,17 @@ gilfoyle ZEU3N8WNM2rh4T
 I tried them on SSH, but they didn’t work. However, they seemed to be working on the GOGS platform. Gilfoyle had another private repository which seemed interesting:
 
 <div>
-<center><img src="/images/craft_htb_writeup/image-26.png"></center>
+<center><img src="/images/craft-htb-writeup/image-26.png"></center>
 </div>
 
 <div>
-<center><img src="/images/craft_htb_writeup/image-27.png"></center>
+<center><img src="/images/craft-htb-writeup/image-27.png"></center>
 </div>
 
 I clicked on the `.ssh` folder to see if there are any keys:
 
 <div>
-<center><img src="/images/craft_htb_writeup/image-28.png"></center>
+<center><img src="/images/craft-htb-writeup/image-28.png"></center>
 </div>
 
 Due to my VM configuration, I couldn’t change permissions of files in the current folder, so I created the `id_rsa.gilfoyle` file in `/root/.ssh/`:
@@ -384,7 +384,7 @@ The user proof starts with `bb` 🙂
 #### (for real, this time)
 
 After getting the user flag, I remembered an interesting folder in the private repository named `vault`, so I checked it out:
-<center><img src="/images/craft_htb_writeup/image-29.png"></center>
+<center><img src="/images/craft-htb-writeup/image-29.png"></center>
 
 After some googling, I found the [application’s website](https://www.vaultproject.io/).
 

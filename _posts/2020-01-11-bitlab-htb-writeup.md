@@ -2,8 +2,8 @@
 title: Bitlab &#8211; HackTheBox WriteUp
 author: yakuhito
 layout: post
-permalink: bitlab_htb_writeup
-image: /images/bitlab_htb_writeup/bitlab_htb_writeup.png
+permalink: bitlab-htb-writeup
+image: /images/bitlab-htb-writeup/bitlab-htb-writeup.png
 category: htb
 ---
  
@@ -39,7 +39,7 @@ root@fury-battlestation:~/htb/blog/bitlab#
 After seeing the results, I opened a browser and accessed the machine on port 80:
 
 <div>
-<center><img src="/images/bitlab_htb_writeup/image-19-1024x590.png"></center>
+<center><img src="/images/bitlab-htb-writeup/image-19-1024x590.png"></center>
 </div>
 
 I also started dirb, which discovered some accesible URIs:
@@ -71,13 +71,13 @@ GENERATED WORDS: 4612
 The ‘help’ directory had directory listing enabled and only contained one file named ‘bookmarks.html’:
 
 <div>
-<center><img src="/images/bitlab_htb_writeup/image-20.png"></center>
+<center><img src="/images/bitlab-htb-writeup/image-20.png"></center>
 </div>
 
 The file contained some links:
 
 <div>
-<center><img src="/images/bitlab_htb_writeup/image-21.png"></center>
+<center><img src="/images/bitlab-htb-writeup/image-21.png"></center>
 </div>
 
 ## Deobfuscating bookmarks.html
@@ -134,7 +134,7 @@ document.getElementById("user_password").value = "11des0081x";
 I tried using clave/11des0081x to log in to Gitlab and it worked:
 
 <div>
-<center><img src="/images/bitlab_htb_writeup/image-22-1024x471.png"></center>
+<center><img src="/images/bitlab-htb-writeup/image-22-1024x471.png"></center>
 </div>
 
 ## Shell as www-data
@@ -142,23 +142,23 @@ I tried using clave/11des0081x to log in to Gitlab and it worked:
 After some playing around, I discovered that the ‘Profile’ repository had AutoDevOps enabled, meaning that the repository would be synced with bitlab.htb/profile/ (which can be accessed by clicking on your avatar and selecting ‘settings’). I tried to create a .php file that would get me a shell. The first step was to navigate to the repo and select ‘New File’:
 
 <div>
-<center><img src="/images/bitlab_htb_writeup/image-23-1024x577.png"></center>
+<center><img src="/images/bitlab-htb-writeup/image-23-1024x577.png"></center>
 </div>
 
 <div>
-<center><img src="/images/bitlab_htb_writeup/image-24.png"></center>
+<center><img src="/images/bitlab-htb-writeup/image-24.png"></center>
 </div>
 
 After clicking ‘Commit changes’ ans ‘Submit merge request’, I tried accessing yakuhito.php, but it didn’t work. The reason was simple: I also needed to merge the changes. I did that by simply clicking the green ‘Merge’ button on the page that I was redirected to:
 
 <div>
-<center><img src="/images/bitlab_htb_writeup/image-25.png"></center>
+<center><img src="/images/bitlab-htb-writeup/image-25.png"></center>
 </div>
 
 After that, I tried running a simple command to test if the server runs PHP code:
 
 <div>
-<center><img src="/images/bitlab_htb_writeup/image-27.png"></center>
+<center><img src="/images/bitlab-htb-writeup/image-27.png"></center>
 </div>
 
 I wanted to upgrade to an interactive shell, so I used [shellgenerator](https://shellgenerator.github.io/) to generate a command that used python to start a reverse shell:
@@ -181,7 +181,7 @@ www-data@bitlab:/var/www/html/profile$
 ## Getting user.txt
 
 After looking around for a bit, I found an interesting snippet on Gitlab:
-<center><img src="/images/bitlab_htb_writeup/image-28-1024x538.png"></center>
+<center><img src="/images/bitlab-htb-writeup/image-28-1024x538.png"></center>
 
 I made a simple PHP script that dumped the ‘profiles’ database using the credentials found in the above snippet:
 

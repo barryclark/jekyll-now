@@ -2,8 +2,8 @@
 title: 'FooBar CTF 2020 &#8211; WriteUp Part II'
 author: yakuhito
 layout: post
-permalink: foobarctf_2020_writeup_part_ii
-image: /images/foobarctf_2020_writeup_part_ii/foobarctf_2020_writeup_part_ii.jpg
+permalink: foobarctf-2020-writeup-part-ii
+image: /images/foobarctf-2020-writeup-part-ii/foobarctf-2020-writeup-part-ii.jpg
 category: blog
 ---
 
@@ -31,7 +31,7 @@ As I said in [part I](https://blog.kuhi.to/foobarctf_2020_writeup_part_i), I par
 ## shell1: Key? {#shell1}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-49.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-49.png"></center>
 </div>
 
 {% highlight bash %}
@@ -85,7 +85,7 @@ Note that 201527 is just the base 10 representation of 0x31337.
 ## shell2: -La -La -land {#shell2}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-50.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-50.png"></center>
 </div>
 
 {% highlight bash %}
@@ -128,7 +128,7 @@ GLUG{vbbbcdpc}GLUG{wyodfens}
 ## shell3: Bridge of Spies {#shell3}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-51.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-51.png"></center>
 </div>
 
 {% highlight bash %}
@@ -158,7 +158,7 @@ shell3@349241e9b0e8:~$
 ## shell4: Alibaba aur uske 64 chor {#shell4}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-52.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-52.png"></center>
 </div>
 
 {% highlight bash %}
@@ -185,7 +185,7 @@ shell4@349241e9b0e8:~$
 ## shell5: He X-men {#shell5}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-53.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-53.png"></center>
 </div>
 
 {% highlight bash %}
@@ -211,7 +211,7 @@ shell5@349241e9b0e8:~$
 ## shell6: time travel is dangerous {#shell6}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-54.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-54.png"></center>
 </div>
 
 {% highlight bash %}
@@ -249,7 +249,7 @@ shell6@349241e9b0e8:~$
 ## shell7: I am different {#shell7}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-55.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-55.png"></center>
 </div>
 
 {% highlight bash %}
@@ -271,7 +271,7 @@ There’s really not much I can say about this challenge. The diff command does 
 ## shell8: clock under pressure {#shell8}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-56.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-56.png"></center>
 </div>
 
 {% highlight bash %}
@@ -316,7 +316,7 @@ After transferring the file, I just decompressed it two times: once using gunzip
 ## shell9: Show me more {#shell9}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-57.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-57.png"></center>
 </div>
 
 This was one of my favorite challenges. Every time that a user connected via ssh, some ASCII art would be printed and the connection would close immediately:
@@ -387,13 +387,13 @@ yakuhito@furry-catstation:~/ctf/foobar2020/shell9$
 Looking at the challenge title, I guessed the server uses ‘more’ to print that file. I knew that ‘more’ would keep itself opened and let the user scroll through the file if it was too big to be displayed in the terminal. However, I didn’t have control over the file’s contents, so I had to shrink my terminal window:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-58.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-58.png"></center>
 </div>
 
 I then [read the manual page](http://man7.org/linux/man-pages/man1/more.1.html) for more and realized I could press ‘v’ to open vi:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-59.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-59.png"></center>
 </div>
 
 I then used [this writeup](https://blog.stalkr.net/2010/05/defcon-18-ctf-quals-writeup-trivial-200.html) to read ‘flag.txt’ by issuing the following commands to vi:
@@ -410,7 +410,7 @@ I then used [this writeup](https://blog.stalkr.net/2010/05/defcon-18-ctf-quals-w
 ## shell10: Worst time complexity {#shell10}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-60.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-60.png"></center>
 </div>
 
 {% highlight bash %}
@@ -439,7 +439,7 @@ shell10@349241e9b0e8:~$
 ## shell11: Water overflow {#shell11}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-61.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-61.png"></center>
 </div>
 
 {% highlight bash %}
@@ -501,7 +501,7 @@ shell11@349241e9b0e8:~$
 ## shell12: Stacks are cool {#shell12}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-62.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-62.png"></center>
 </div>
 
 {% highlight bash %}
@@ -582,7 +582,7 @@ shell12@349241e9b0e8:~$
 ## shell13: Auth is easy {#shell13}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-63.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-63.png"></center>
 </div>
 
 {% highlight bash %}
@@ -648,7 +648,7 @@ shell13@4db4bb6d49b4:/tmp/.yakuhito/a/b$
 ## shell14: Wrong user {#shell14}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-64.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-64.png"></center>
 </div>
 
 {% highlight bash %}
@@ -725,7 +725,7 @@ fyodor@d11f9f69163e:~$
 ## shell15: Cant touch this {#shell15}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-65.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-65.png"></center>
 </div>
 
 {% highlight bash %}
@@ -760,13 +760,13 @@ yakuhito@furry-catstation:~/ctf/foobar2020/shell15$ hexedit flag
 The first 4 bytes of the file seemed to have been replaced with ‘XXXX’, meaning that the file was corrupted. I also saw ‘IDHR’ and ‘gAMA’, which are headers specific to the PNG image type. In order to see the image, I had to replace the ‘XXXX’ characters with the magic bytes for PNG, which can be found [on this list](https://en.wikipedia.org/wiki/List_of_file_signatures).
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-66.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-66.png"></center>
 </div>
 
 After that, I just opened the image and read the flag:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-67.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-67.png"></center>
 </div>
 
 **Flag:** GLUG{corrupt\_but\_works}
@@ -774,7 +774,7 @@ After that, I just opened the image and read the flag:
 ## shell17: Stacks are cool. Again? {#shell17}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_ii/image-68.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/image-68.png"></center>
 </div>
 
 This problem was released because there was an unintended way to get the flag for ‘Stacks are cool’. However, I did not describe that method, so you can just read [the writeup for that challenge](#shell12).
@@ -782,4 +782,4 @@ This problem was released because there was an unintended way to get the flag fo
 ## Footnote
 
 I cannot post this article without including the picture below 🙂
-<center><img src="/images/foobarctf_2020_writeup_part_ii/pic-1024x496.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-ii/pic-1024x496.png"></center>

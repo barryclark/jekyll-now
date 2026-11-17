@@ -2,8 +2,8 @@
 title: Traverxec &#8211; HackTheBox WriteUp
 author: yakuhito
 layout: post
-permalink: traverxec_htb_writeup
-image: /images/traverxec_htb_writeup/traverxec_htb_writeup.jpeg
+permalink: traverxec-htb-writeup
+image: /images/traverxec-htb-writeup/traverxec-htb-writeup.jpeg
 category: htb
 ---
  
@@ -39,13 +39,13 @@ root@fury-battlestation:~/htb/blog/traverxec#
 The website on port 80 only hosted static content and didn’t seem vulnerable to any attack:
 
 <div>
-<center><img src="/images/traverxec_htb_writeup/image-43-1024x502.png"></center>
+<center><img src="/images/traverxec-htb-writeup/image-43-1024x502.png"></center>
 </div>
 
 However, I’ve never heard of nostromo, so I started googling for vulnerabilities and quickly found one:
 
 <div>
-<center><img src="/images/traverxec_htb_writeup/image-44-1024x497.png"></center>
+<center><img src="/images/traverxec-htb-writeup/image-44-1024x497.png"></center>
 </div>
 
 Basically, nostromo suffers from a simple path traversal vulnerability. I quickly tested for it by accessing the following URL:
@@ -56,7 +56,7 @@ view-source:http://traverxec.htb/.%0D./.%0D./.%0D./.%0D./etc/passwd
 {% endhighlight %}
 
 <div>
-<center><img src="/images/traverxec_htb_writeup/image-45.png"></center>
+<center><img src="/images/traverxec-htb-writeup/image-45.png"></center>
 </div>
 
 Moreover, this vulnerability can also be used to execute commands by including /bin/sh and sending commands after the HTTP request. This is not easy to do with just a browser, however, [this python script](https://github.com/sudohyak/exploit/blob/master/CVE-2019-16278/exploit.py) makes it pretty straightforward.
@@ -147,7 +147,7 @@ www-data@traverxec:/var/nostromo/conf$
 {% endhighlight %}
 
 <div>
-<center><img src="/images/traverxec_htb_writeup/image-46-1024x496.png"></center>
+<center><img src="/images/traverxec-htb-writeup/image-46-1024x496.png"></center>
 </div>
 
 I then figured out that the www-data needs to read this page from somewhere. According to the configuration file, each user’s homedir files are placed under ~/public_www/. I listed david’s and found a hidden directory that contained an interesting archive:

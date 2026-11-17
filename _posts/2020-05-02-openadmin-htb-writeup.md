@@ -2,8 +2,8 @@
 title: OpenAdmin &#8211; HackTheBox WriteUp
 author: yakuhito
 layout: post
-permalink: openadmin_htb_writeup
-image: /images/openadmin_htb_writeup/openadmin_htb_writeup.jpeg
+permalink: openadmin-htb-writeup
+image: /images/openadmin-htb-writeup/openadmin-htb-writeup.jpeg
 category: htb
 ---
 
@@ -35,7 +35,7 @@ root@fury-battlestation:~/htb/blog/openadmin#
 
 Port 80 hosted the default Apache page:
 
-<center><img src="/images/openadmin_htb_writeup/0.png"></center>
+<center><img src="/images/openadmin-htb-writeup/0.png"></center>
 
 As there were no more ports open (except 22 - which I couldn't see a way to exploit), I ran dirb on the site:
 
@@ -72,12 +72,12 @@ root@fury-battlestation:~/htb/blog/openadmin#
 
 Dirb found multiple folders, but the most intresting ones are /artwork/ and /music/:
 
-<center><img src="/images/openadmin_htb_writeup/1.png"></center>
-<center><img src="/images/openadmin_htb_writeup/2.png"></center>
+<center><img src="/images/openadmin-htb-writeup/1.png"></center>
+<center><img src="/images/openadmin-htb-writeup/2.png"></center>
 
 By clicking 'login' on the /music/ page, I got redirected to /ona:
 
-<center><img src="/images/openadmin_htb_writeup/3.png"></center>
+<center><img src="/images/openadmin-htb-writeup/3.png"></center>
 
 As even the app complained the version is outdated, I started searching for exploits online and found [this one](https://www.exploit-db.com/exploits/47691). I downloaded it, converted it to a unix file (it contained \r characters) and then ran it against the /ova/ directory:
 

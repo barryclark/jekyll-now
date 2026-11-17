@@ -2,8 +2,8 @@
 title: 'FooBar CTF 2020 &#8211; WriteUp Part I'
 author: yakuhito
 layout: post
-permalink: foobarctf_2020_writeup_part_i
-image: /images/foobarctf_2020_writeup_part_i/foobarctf_2020_writeup_part_i.jpg
+permalink: foobarctf-2020-writeup-part-i
+image: /images/foobarctf-2020-writeup-part-i/foobarctf-2020-writeup-part-i.jpg
 category: blog
 ---
  
@@ -55,19 +55,19 @@ Can be found in [part II.](https://blog.kuhi.to/foobarctf_2020_writeup_part_ii)
 ## Nothing’s in here {#stego1}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image.png"></center>
 </div>
 
 This was the only challenge in the ‘stego’ category. Attached was an image with Marvel’s Endgame movie:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/endgame-1024x576.jpg"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/endgame-1024x576.jpg"></center>
 </div>
 
 I ran the usual tools on it (exiftool, steghide, stegsolve) and I noticed an anomaly on the least significant bits. For example, red plane 2 looked like this:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-1-1024x576.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-1-1024x576.png"></center>
 </div>
 
 That meant that the flag was probably hidden using lsb steganography. I tried using stegbrute, thinking that the flag was simply protected by a password, but it turned out that wasn’t the case. After looking through [John H’s ctf-katana](https://github.com/JohnHammond/ctf-katana), I managed to extract the flag by using [jsteg](https://github.com/lukechampine/jsteg):
@@ -88,59 +88,59 @@ yakuhito@furry-catstation:~/ctf/foobar2020/nothingsinhere$
 **Flag:** GLUG{51n6h4l\_15\_51n6l3?}
 
 ## GET me if you can {#web1}
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-2.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-2.png"></center>
 
 This was more like a warm-up challenge; I was provided with an URL that hosted the following page:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-3.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-3.png"></center>
 </div>
 
 Wanting to solve the challenge faster, I clicked the button without inspecting the page’s source code:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-4.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-4.png"></center>
 </div>
 
 I noticed the URL contained a parameter named ‘auth’ that was set to ‘false’, so I changed it to ‘true’ and got the flag:
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-5.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-5.png"></center>
 
 **Flag:** GLUG{5n0wd3n\_3471n6\_53cur17y} 
 
 ## Cookie store {#web2}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-6.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-6.png"></center>
 </div>
 
 The provided URL hosted a simple site:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-7.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-7.png"></center>
 </div>
 
 The site didn’t offer me a lot of options, so I tried buying the flag and got an error:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-8.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-8.png"></center>
 </div>
 
 I remembered the name of the challenge and realized that my points were stored unencrypted inside a cookie. I used a cookie editor and changed my points to 1337:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-9.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-9.png"></center>
 </div>
 
 After that, I purchased the flag:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-10.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-10.png"></center>
 </div>
 
 As a crypto enthusiast, I instantly recognized the reference to affine cipher. Also, the key was either (5,8) or (8,5), because usual reviews include ratings from a scale of 1 to 5 or 10. I decrypted the flag using [cryptii](https://cryptii.com/):
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-15-1024x355.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-15-1024x355.png"></center>
 </div>
 
 **Flag:** GLUG{cookies\_are\_good}
@@ -148,19 +148,19 @@ As a crypto enthusiast, I instantly recognized the reference to affine cipher. A
 ## Strong vaccine {#web3}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-12.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-12.png"></center>
 </div>
 
 After reading the challenge description, I was 100% sure this was an SQL injection challenge without accessing the site. As it turned out, I was right.
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-13.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-13.png"></center>
 </div>
 
 As this technique is very common, I won’t go into detail here.
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-14.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-14.png"></center>
 </div>
 
 **Flag:** GLUG{youre\_a\_ good_doc}
@@ -168,13 +168,13 @@ As this technique is very common, I won’t go into detail here.
 ## Client side is untrustworthy {#web4}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-16.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-16.png"></center>
 </div>
 
 The given URL only hosted a simple page:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-17.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-17.png"></center>
 </div>
 
 However, upon closer inspection, the page seemed to contain an obfuscated javascript function that validates the password. After formatting it for a bit, the code looked like this:
@@ -224,7 +224,7 @@ function verify() {
 I took every if statement and decoded the string that was compared with the inputted password using my browser’s console:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-18.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-18.png"></center>
 </div>
 
 I then just spotted the flag, as the validation process was a bit faulty.
@@ -234,19 +234,19 @@ I then just spotted the flag, as the validation process was a bit faulty.
 ## Useless Website {#web5}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-19.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-19.png"></center>
 </div>
 
 The given site seemed to be a copied template:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-20-1024x424.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-20-1024x424.png"></center>
 </div>
 
 However, after inspecting the web traffic, I found some interesting requests:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-21.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-21.png"></center>
 </div>
 
 {% highlight bash %}
@@ -264,7 +264,7 @@ yakuhito@furry-catstation:~/ctf/fooyakuhito@furry-catstation:~/ctf/foobar2020/us
 {% endhighlight %}
 
 The last object mentioned something about actions.txt, so I accessed that file using my browser:
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-22.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-22.png"></center>
 
 After the CTF was over, the admin told me that the object ids were assigned by MongoDB and were predictable. However, I didn’t know that when I solved the challenge, so I made a script that searched for valid objects. It’s based on the idea that the first bytes of the object id are the UNIX timestamp in hex format and the other part is just an incrementing number. The final script looked like this:
 
@@ -365,7 +365,7 @@ yakuhito@furry-catstation:~/ctf/foobar2020/uselesswebsite$
 ## I EZ {#web6}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-23.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-23.png"></center>
 </div>
 
 This one was very similar to ‘IZ’ from ISITDTU CTF 2018. To solve it, I followed [this writeup](https://graneed.hatenablog.com/entry/2018/07/29/043000). Final URL that returns the flag:
@@ -379,19 +379,19 @@ http://138.68.252.44:7805///?_=0.0
 ## Cardgen {#web7}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-24.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-24.png"></center>
 </div>
 
 This was one of my favorite challenges, along with the one involving ‘more’ (found in part II of this writeup). I solved it after the CTF ended, thinking that the contest is still running because of the timezone difference. The site was very elegant and I didn’t manage to find its template/source code online:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-25-1024x552.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-25-1024x552.png"></center>
 </div>
 
 Basically, the site would generate FAKE credit cards with the inputted name on them. For example, this is a card I generated:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-27.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-27.png"></center>
 </div>
 
 One interesting thing to notice is the URL for generated cards:
@@ -409,13 +409,13 @@ http://138.68.252.44:8137/cardgen/?name={ {21*2}}
 This resulted the card being created for 42, which, at the time of writing, is the result of 21 * 2:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-28.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-28.png"></center>
 </div>
 
 This made me conclude that the site was vulnerable to a Flask Server-Side Template Injection (SSTI) vulnrability. After further testing, I realized there was a filter in place that would disallow characters like ‘ and ” and keywords such as ‘open’ and ‘read’:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-29.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-29.png"></center>
 </div>
 
 After a lot of trial-and-error, I came up with the following two payloads:
@@ -435,31 +435,31 @@ Basically, the first one uses os.open() to create a file descriptor for ‘flag.
 ## Stranger Things {#reverse1}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-30.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-30.png"></center>
 </div>
 
 If you’ve met me at least once, you probably already know that I suck at reversing. However, this challenge was really beginner-friendly and I was able to solve it. The first step was opening the binary in ghidra and viewing the list of functions:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-31.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-31.png"></center>
 </div>
 
 The ‘encode’ function was used to encode the flag, so I focused on it:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-32.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-32.png"></center>
 </div>
 
 A non-functioning equivalent in python would be:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-33.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-33.png"></center>
 </div>
 
 This encoding function was easily reversible, so I wrote a function that decodes the resulting data:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-34.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-34.png"></center>
 </div>
 
 Also, flagContainer contained the encoded flag; so I copied the hex values from ghidra and put them in the following script:
@@ -517,13 +517,13 @@ yakuhito@furry-catstation:~/ctf/foobar2020/stranger_things$
 ## Teacher is absent {#crypto1}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-35.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-35.png"></center>
 </div>
 
 I remember seeing a similar hint at picoCTF; when a teacher is absent you get a substitute 🙂 The flag was encrypted using a simple substitution cipher. The cipher can be cracked using [quipquip](https://quipqiup.com/):
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-36.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-36.png"></center>
 </div>
 
 **Flag:** GLUG{THETHINGSYOUUSEDTOOWNNOWTHEYOWNYOU}
@@ -531,13 +531,13 @@ I remember seeing a similar hint at picoCTF; when a teacher is absent you get a 
 ## Julius not helping {#crypto2}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-37.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-37.png"></center>
 </div>
 
 Seeing the challenge title, I thought it was a simple [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher). However, from the french reference in the description, I concluded that the ciphertext was encrypted using the [Vigenere cipher](https://www.geeksforgeeks.org/vigenere-cipher/). I used [gullaba.de](https://www.guballa.de/vigenere-solver) to get the encryption key:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-38.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-38.png"></center>
 </div>
 
 The flag is the key wrapped in GLUG{}
@@ -547,13 +547,13 @@ The flag is the key wrapped in GLUG{}
 ## Happy to see me {#crypto3}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-39.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-39.png"></center>
 </div>
 
 This was a very similar challenge to ArbCrypt from SunshineCTF 2019. I used [this writeup](https://github.com/ozancetin/CTF-Writeups/blob/master/2019/Sunshine-CTF-2019/CRYPTO/README.md) to solve the challenge.
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-40-1024x340.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-40-1024x340.png"></center>
 </div>
 
 **Flag:** GLUG{arb\_you\_sad\_to\_see_me}
@@ -561,7 +561,7 @@ This was a very similar challenge to ArbCrypt from SunshineCTF 2019. I used [thi
 ## U cant C me {#misc1}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-41.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-41.png"></center>
 </div>
 
 I honestly don’t know how to explain the solution for this challenge. The flag.txt file contains a sequence of characters. In order to get its corresponding flag character for that sequence, you need to put a paper on your keyboard and draw a line between every 2 adjacent keys that you would push to get that character. For example, ‘uytfcvb’ would become ‘c’, because uyt is a vertical line, ‘tfc’ is a horizontal line and ‘cvb’ is another vertical line.
@@ -571,7 +571,7 @@ I honestly don’t know how to explain the solution for this challenge. The flag
 ## Rock n Roll Baby {#misc2}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-42.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-42.png"></center>
 </div>
 
 The given file contained some readable words that looked like a song:
@@ -596,7 +596,7 @@ yakuhito@furry-catstation:~/ctf/foobar2020/rocknrollbaby$
 {% endhighlight %}
 
 I recognized this to be an esoteric language named [rockstar](https://github.com/RockstarLang/rockstar). I used [this online interpreter](https://codewithrockstar.com/online) to get the script’s output:
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-43.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-43.png"></center>
 
 Python can be used to convert those numbers into readable text:
 
@@ -630,7 +630,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ## Secure app {#misc3}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-44.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-44.png"></center>
 </div>
 
 A .apk file was given. I used [this online decompiler](http://www.javadecompilers.com/apk) to get the Java source code, however, that turned out to be an overkill. The flag was located in the ‘AndroidManifest.xml’ file.
@@ -647,13 +647,13 @@ yakuhito@furry-catstation:~/ctf/foobar2020/secureapp$
 ## Cant Read This {#misc4}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-45.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-45.png"></center>
 </div>
 
 The given file was too big for me to put here. Basically, it was a JSFuck code. I used [this site](https://enkhee-osiris.github.io/Decoder-JSFuck/) to get the compiled JavaScript code back:
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-46.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-46.png"></center>
 </div>
 
 **Flag:** GLUG{this\_code\_was_weird}
@@ -661,7 +661,7 @@ The given file was too big for me to put here. Basically, it was a JSFuck code. 
 ## The EXORcist {#forensics1}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-47.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-47.png"></center>
 </div>
 
 The given python file contained a QR code given in binary. I used the following script to turn it into an image:
@@ -723,7 +723,7 @@ b'GLUG{n0_fr33_r3d_bull}'
 ## Life is Hard {#forensics2}
 
 <div>
-<center><img src="/images/foobarctf_2020_writeup_part_i/image-48.png"></center>
+<center><img src="/images/foobarctf-2020-writeup-part-i/image-48.png"></center>
 </div>
 
 This was, again, very similar to Golly Gee Willikers from SunshineCTF 2019. I followed [this writeup](https://medium.com/ctf-writeups/sunshine-ctf-2019-write-up-c7174c0fb56) to solve it.

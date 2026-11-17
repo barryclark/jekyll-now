@@ -2,8 +2,8 @@
 title: 'RSA: Encryption, Signatures and Blind Signatures'
 author: yakuhito
 layout: post
-permalink: rsa_encryption_signatures_and_blind_signatures
-image: /images/rsa_encryption_signatures_and_blind_signatures/rsa_encryption_signatures_and_blind_signatures.jpg
+permalink: rsa-encryption-signatures-and-blind-signatures
+image: /images/rsa-encryption-signatures-and-blind-signatures/rsa-encryption-signatures-and-blind-signatures.jpg
 category: blog
 ---
 <blockquote>
@@ -38,7 +38,7 @@ Let&#8217;s take another example. 4 * 16 (mod 5):
 Also, a good example from Wikipedia:
 
 <div>
-<center><img src="/images/rsa_encryption_signatures_and_blind_signatures/image-2.png"></center>
+<center><img src="/images/rsa-encryption-signatures-and-blind-signatures/image-2.png"></center>
 </div>
 
 
@@ -72,7 +72,7 @@ OK. Now we have the public and the private key. Before I teach you how to encryp
 ## 2. RSA Encryption and Decryption
 
 
-<center><img src="/images/rsa_encryption_signatures_and_blind_signatures/image-3.png"></center>
+<center><img src="/images/rsa-encryption-signatures-and-blind-signatures/image-3.png"></center>
 
 In the above equation, x is any number smaller than n, and N, e, d are previously calculated (or chosen). This equation is the fundamental principle of RSA. This is a bit harder to prove, so I&#8217;ll let it up to the reader to demonstrate it. To encrypt a number m (which we will call a message), we use the following function:
 
@@ -95,7 +95,7 @@ Does the last equation ring a bell? If it doesn&#8217;t, read this part of the a
 ## 3. RSA Signatures
 
 
-<center><img src="/images/rsa_encryption_signatures_and_blind_signatures/image-3.png"></center>
+<center><img src="/images/rsa-encryption-signatures-and-blind-signatures/image-3.png"></center>
 
 It can also tell us another thing: we can change e with d (our public key with our private one) and RSA will still work. But why would anyone need this, you may ask. Well, let me introduce you to the concept of digital signatures.
 

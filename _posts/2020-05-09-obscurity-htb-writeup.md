@@ -2,8 +2,8 @@
 title: Obscurity &#8211; HackTheBox WriteUp
 author: yakuhito
 layout: post
-permalink: obscurity_htb_writeup
-image: /images/obscurity_htb_writeup/obscurity_htb_writeup.png
+permalink: obscurity-htb-writeup
+image: /images/obscurity-htb-writeup/obscurity-htb-writeup.png
 category: htb
 ---
 
@@ -43,11 +43,11 @@ root@fury-battlestation:~/htb/blog/obscurity#
 
 Port 80 was closed, but port 8080 was opened and hosted something that identified itself as BadHTTPServer. I opened it in a browser and got the following page:
 
-<center><img src="/images/obscurity_htb_writeup/0.png"></center>
+<center><img src="/images/obscurity-htb-writeup/0.png"></center>
 
 The motto ("Security Through Obscurity") only made me more curious. I began reading the content of the page and stumbled upon the following entry:
 
-<center><img src="/images/obscurity_htb_writeup/1.png"></center>
+<center><img src="/images/obscurity-htb-writeup/1.png"></center>
 
 {% highlight bash %}
 Message to server devs: the current source code for the web server is in 'SuperSecureServer.py' in the secret development directory

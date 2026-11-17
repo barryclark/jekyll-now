@@ -2,8 +2,8 @@
 title: 'picoCTF 2019 &#8211; Crypto WriteUp'
 author: yakuhito
 layout: post
-permalink: picoctf_2019_crypto_writeup
-image: /images/picoctf_2019_crypto_writeup/picoctf_2019_crypto_writeup.png
+permalink: picoctf-2019-crypto-writeup
+image: /images/picoctf-2019-crypto-writeup/picoctf-2019-crypto-writeup.png
 category: blog
 ---
 ## Contents
@@ -25,10 +25,10 @@ category: blog
   * [john_pollard (500)](#johnpollard)
 
 ## The Numbers (50) {#the-numbers}
-<center><img src="/images/picoctf_2019_crypto_writeup/image.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image.png"></center>
 
 This was basically the warm-up for the crypto category. We get an image which represents the encoded flag (as you&#8217;ll see in a moment, you can&#8217;t call it encrypted):
-<center><img src="/images/picoctf_2019_crypto_writeup/the_numbers.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/the-numbers.png"></center>
 
 The flag format is also specified within the challenge: PICOCTF{}. We see that there are exactly 7 letters before {, so each number represents one letter ( &#8216;P&#8217; -> 16, &#8216;I&#8217; -> 9, &#8216;C&#8217; -> 3, etc.). It didn&#8217;t take me long before discovering the rule: the letter &#8216;P&#8217; is on the 16th position in the alphabet, the letter &#8216;I&#8217; on the 9th, and so on. Because I am very lazy, I wrote a simple python script to get the flag:
 
@@ -52,7 +52,7 @@ PICOCTF{THENUMBERSMASON}
 **Flag:** PICOCTF{THENUMBERSMASON}
 
 ## 13 (100) {#13}
-<center><img src="/images/picoctf_2019_crypto_writeup/image-1.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-1.png"></center>
 
 I won&#8217;t explain ROT13 here, you can find more about it [online](https://ro.wikipedia.org/wiki/ROT13). One interesting to note, though, is that Linux has a program called &#8216;rot13&#8217; that can be used to easily encode/decode a string using ROT13:
 
@@ -65,34 +65,34 @@ picoCTF{not_too_bad_of_a_problem}
 **Flag:** picoCTF{not\_too\_bad\_of\_a_problem}
 
 ## Easy1 (100) {#easy1}
-<center><img src="/images/picoctf_2019_crypto_writeup/image-2.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-2.png"></center>
 
 There&#8217;s also a file attached containing the following text:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-3.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-3.png"></center>
 
 Anyone who has a decent knowledge of cryptography will recognize this as a [Vigenère cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher). We can use an [online tool](https://cryptii.com/pipes/vigenere-cipher) to get the flag:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-4-1024x333.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-4-1024x333.png"></center>
 
 **Flag:** picoCTF{CRYPTOISFUN}
 
 ## caesar (100) {#caesar}
-<center><img src="/images/picoctf_2019_crypto_writeup/image-5.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-5.png"></center>
 
 Along with the text, we ar given a file containing the following message:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-6.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-6.png"></center>
 
 The text between the curly braces (ynkooejcpdanqxeykjrnpavoth) is encrypted using a classical caesar cipher. We can use [this tool](https://cryptii.com/pipes/caesar-cipher) to bruteforce the key (which is just the shift of the letters, so we only have 26 possible keys):
-<center><img src="/images/picoctf_2019_crypto_writeup/image-7-1024x254.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-7-1024x254.png"></center>
 
 The plaintext was encrypted using the shift value 3.
 
 **Flag:** picoCTF{crossingtherubiconvrtezsxl}
 
 ## Flags (100) {#flags}
-<center><img src="/images/picoctf_2019_crypto_writeup/image-9.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-9.png"></center>
 
 We are also given the following image:
-<center><img src="/images/picoctf_2019_crypto_writeup/flag-1024x683.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/flag-1024x683.png"></center>
 
 The flag is encoded using the maritime flag system. [This article](http://www.jproc.ca/rrp/rrp2/visual_flags.html) gives a very good explanation of this system. Basically, each flag represents a letter/number:
 ![Imagini pentru maritime signal flags](http://www.jproc.ca/rrp/rrp2/visual_flags_maritime2.gif) </figure> 
@@ -102,49 +102,49 @@ The flag is all uppercase.
 **Flag:** PICOCTF{F1AG5AND5TUFF}
 
 ## Mr-Worldwide (200) {#mrworldwide}
-<center><img src="/images/picoctf_2019_crypto_writeup/image-10.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-10.png"></center>
 
 I still don&#8217;t understand the &#8216;musician&#8217; clue. In order to obtain the flag, we search each of those coordinates on google and take the first letter of the city they point to.
-<center><img src="/images/picoctf_2019_crypto_writeup/image-12.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-12.png"></center>
 
 For the first pair of coordinates, for example, the first letter of the city name is K.
 
 **Flag:** picoCTF{KODIAK_ALASKA}
 
 ## Tapping (200) {#tapping}
-<center><img src="/images/picoctf_2019_crypto_writeup/image-13.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-13.png"></center>
 
 This time, we get an address and a port to connect to. Unfortunately, the returned text is static and the challenge is simple 😛
-<center><img src="/images/picoctf_2019_crypto_writeup/image-14-1024x94.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-14-1024x94.png"></center>
 
 The &#8216;tapping coming in from the wires&#8217; is a clear reference to [Morse code](https://en.wikipedia.org/wiki/Morse_code). There are a lot of online tools that can decode the flag; I used this one.
-<center><img src="/images/picoctf_2019_crypto_writeup/image-15.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-15.png"></center>
 
 We just need to replace ? with {} and capitalize the text.
 
 **Flag:** PICOCTF{M0RS3C0D31SFUN903140448}
 
 ## la cifra de (200) {#lacifrade}
-<center><img src="/images/picoctf_2019_crypto_writeup/image-16.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-16.png"></center>
 
 Again, we are given an IP address and a port number to connect to:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-17.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-17.png"></center>
 
 After multiple attempts in decrypting the ciphertext, I found it to be encrypted with the [Vigenère cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher). In order to decrypt the ciphertext, we also need a key, which is usually a word. I used [this online tool](https://www.guballa.de/vigenere-solver) to crack the key:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-18.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-18.png"></center>
 
 In addition to the plaintext, the tool also gives us the key: flag.
 
 **Flag:** picoCTF{b311a50\_0r\_v1gn3r3_c1ph3rb6cdf651}
 
 ## rsa-pop-quiz (200) {#rsapopquiz}
-<center><img src="/images/picoctf_2019_crypto_writeup/image-19.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-19.png"></center>
 
 If you do not know anything about RSA, I recommend [one of my previous articles](https://kuhi.to/2019/08/04/rsa-encryption-signatures-and-blind-signatures/). Let&#8217;s connect to the specified IP & port and see what we have to do:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-20.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-20.png"></center>
 
 There will be several &#8216;problems&#8217; that test our understanding of RSA. I will post a screenshot with every problem, along with a python code snippet that shows the formulas I used. If you don&#8217;t understand something, feel free to ask me in the comments or just USE GOOGLE. The first problem is pretty simple:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-21.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-21.png"></center>
 
 {% highlight python %}
 >>> p = 76753
@@ -156,7 +156,7 @@ There will be several &#8216;problems&#8217; that test our understanding of RSA.
 {% endhighlight %}
 
 The second problem implies using the same formula:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-22.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-22.png"></center>
 
 {% highlight python %}
 >>> p = 54269
@@ -168,10 +168,10 @@ The second problem implies using the same formula:
 {% endhighlight %}
 
 Because of the factoring problem, the 3rd problem does not have a solution:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-23.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-23.png"></center>
 
 The fourth problem requires a new formula for phi/totient(n):
-<center><img src="/images/picoctf_2019_crypto_writeup/image-24.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-24.png"></center>
 
 {% highlight python %}
 >>> from Crypto.Util.number import inverse
@@ -184,7 +184,7 @@ The fourth problem requires a new formula for phi/totient(n):
 {% endhighlight %}
 
 The fifth problem finally requires us to encrypt a plaintext:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-25.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-25.png"></center>
 
 {% highlight python %}
 >>> pt = 6357294171489311547190987615544575133581967886499484091352661406414044440475205342882841236357665973431462491355089413710392273380203038793241564304774271529108729717
@@ -197,10 +197,10 @@ The fifth problem finally requires us to encrypt a plaintext:
 {% endhighlight %}
 
 Having only the ciphertext and the public key (WHICH WAS SECURELY GENERATED), it&#8217;s impossible to deduce the plaintext:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-26.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-26.png"></center>
 
 The 7th problem swiftly moves us in the direction of decryption, introducing the formula for d:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-27.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-27.png"></center>
 
 {% highlight python %}
 >>> q = 92092076805892533739724722602668675840671093008520241548191914215399824020372076186460768206814914423802230398410980218741906960527104568970225804374404612617736579286959865287226538692911376507934256844456333236362669879347073756238894784951597211105734179388300051579994253565459304743059533646753003894559
@@ -215,7 +215,7 @@ The 7th problem swiftly moves us in the direction of decryption, introducing the
 {% endhighlight %}
 
 The 8th problem asks us to decrypt a ciphertext:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-28.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-28.png"></center>
 
 {% highlight python %}
 >>> p = 153143042272527868798412612417204434156935146874282990942386694020462861918068684561281763577034706600608387699148071015194725533394126069826857182428660427818277378724977554365910231524827258160904493774748749088477328204812171935987088715261127321911849092207070653272176072509933245978935455542420691737433
@@ -233,7 +233,7 @@ The 8th problem asks us to decrypt a ciphertext:
 {% endhighlight %}
 
 After finishing the last problem, the service tells us that the plaintext is the numeric representation of the flag string. We an easily recover the flag using the long\_to\_bytes() function:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-29.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-29.png"></center>
 
 {% highlight python %}
 >>> from Crypto.Util.number import long_to_bytes
@@ -246,10 +246,10 @@ b'picoCTF{wA8_th4t$_ill3aGal..o1c355060}'
 **Flag:** picoCTF{wA8\_th4t$\_ill3aGal..o1c355060}
 
 ## miniRSA (300) {#minirsa}
-<center><img src="/images/picoctf_2019_crypto_writeup/image-30.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-30.png"></center>
 
 I would like to start by telling you that the &#8216;small thing&#8217; is located in the attached file, not outside your computer. Speaking of the attached file, it contains an RSA public key and a ciphertext:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-31.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-31.png"></center>
 
 When e is very small (3), N very big and the plaintext is short, the ciphertext becomes the plaintext raised to the power of e: ct = pt ^ e mod n = pt ^ e if pt ^ e < n. We can use python to extract the flag:
 
@@ -272,23 +272,23 @@ picoCTF{n33d_a_lArg3r_e_11db861f}
 **Flag:** picoCTF{n33d\_a\_lArg3r\_e\_11db861f}
 
 ## waves over lambda (300) {#wavesoverlambda}
-<center><img src="/images/picoctf_2019_crypto_writeup/image-32.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-32.png"></center>
 
 The service serves some static text:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-33.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-33.png"></center>
 
 The title is the formula for frequency, which is a hint to using [frequency analysis](https://en.wikipedia.org/wiki/Frequency_analysis). This is the part where [one of my favorite websites, quipquip](https://www.quipqiup.com/), comes in:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-34-1024x350.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-34-1024x350.png"></center>
 
 We just have to paste the ciphertext, click on &#8216;solve&#8217; and wait a few seconds. In addition, we can just fill in the missing letters, as the flag consists of an intuitive sentence.
 
 **Flag:** frequency\_is\_c\_over\_lambda_drtmtnddlw 
 
 ## b00tl3gRSA2 (400) {#b00tl3grsa2}
-<center><img src="/images/picoctf_2019_crypto_writeup/image-35.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-35.png"></center>
 
 As a general rule, we can switch e with d and RSA will still work. However, if the e value is small or a default value (like 3/65537), the cryptographic system can be easily broken, as d will be known. Also, I have to appreciate that n and e change for every connection we make to the server:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-36.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-36.png"></center>
 
 Because a default value of e was assigned to d, we don&#8217;t need to bruteforce anything (d=65537). We can use python (again) to get the flag:
 
@@ -306,7 +306,7 @@ picoCTF{bad_1d3a5_4986370}
 **Flag:** picoCTF{bad\_1d3a5\_4986370}
 
 ## AES-ABC (400) {#aesabc}
-<center><img src="/images/picoctf_2019_crypto_writeup/image-37.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-37.png"></center>
 
 Along with the challenge&#8217;s text, we get an encrypted file and the python script used to encrypt the original file:
 
@@ -431,18 +431,18 @@ otp.write(b'\n'.join(headers.split(b" ")) + b'\n' + dec)
 {% endhighlight %}
 
 After running the script, a new file is created that contains the readable flag:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-38-1024x443.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-38-1024x443.png"></center>
 
 **Flag:** picoCTF{d0Nt\_r0ll\_yoUr\_0wN\_aES}
 
 ## b00tl3gRSA3 {#b00tl3grsa3}
-<center><img src="/images/picoctf_2019_crypto_writeup/image-39.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-39.png"></center>
 
 The public key changes for every connection, so I&#8217;ll just save some parameters in a file, as the flag will (hopefully) not change in the near future:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-40.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-40.png"></center>
 
 From the challenge text, we know that n has more than 2 prime factors. This makes RSA insecure, as the prime factors have to get smaller in order to generate a 2048-bit n. [Alpetron&#8217;s Integer Factorization Calculator](https://www.alpertron.com.ar/ECM.HTM) is able factorize n in less than 2 seconds:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-42.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-42.png"></center>
 
 We can now easily calculate d and decrypt the ciphertext. The only difference between 2-prime RSA and this implementation is that we need to use a more generalized formula for totient(n) (phi is equal to the product of all the factors of n, each decreased by 1). I used the following script o get the flag:
 
@@ -470,12 +470,12 @@ print(long_to_bytes(pow(c, d, n)).decode())
 {% endhighlight %}
 
 The script outputs exactly one thing: the flag.
-<center><img src="/images/picoctf_2019_crypto_writeup/image-43.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-43.png"></center>
 
 **Flag:** picoCTF{too\_many\_fact0rs_8024768}
 
 ## john_pollard (500) {#johnpollard}
-<center><img src="/images/picoctf_2019_crypto_writeup/image-44.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-44.png"></center>
 
 We are also given a public RSA certificate:
 
@@ -510,9 +510,9 @@ print(n)
 print(e)
 
 {% endhighlight %}
-<center><img src="/images/picoctf_2019_crypto_writeup/image-45.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-45.png"></center>
 
 n is very small (4966306421059967), so we can use [Alpetron](https://www.alpertron.com.ar/ECM.HTM) again to get p and q:
-<center><img src="/images/picoctf_2019_crypto_writeup/image-46.png"></center>
+<center><img src="/images/picoctf-2019-crypto-writeup/image-46.png"></center>
 
 **Flag:** picoCTF{73176001,67867967}

@@ -3,7 +3,7 @@ title: 'UNbreakable Romania #2 &#8211; Writeup'
 author: yakuhito
 layout: post
 permalink: unbreakable-romania-2-writeup
-image: /images/unbreakable_logo.png
+image: /images/unbreakable-logo.png
 category: blog
 ---
 

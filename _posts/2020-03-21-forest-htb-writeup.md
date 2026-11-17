@@ -2,8 +2,8 @@
 title: Forest &#8211; HackTheBox WriteUp
 author: yakuhito
 layout: post
-permalink: forest_htb_writeup
-image: /images/forest_htb_writeup/forest_htb_writeup.jpeg
+permalink: forest-htb-writeup
+image: /images/forest-htb-writeup/forest-htb-writeup.jpeg
 category: htb
 ---
 
@@ -246,7 +246,7 @@ PS C:\Users\svc-alfresco\Documents>
 
 After downloading the resulting zip file and importing it in BloodHound, I chose the 'Find Shortest Path to Domain Admin' option and got the following graph:
 
-<center><img src="/images/forest_htb_writeup/0.png"></center>
+<center><img src="/images/forest-htb-writeup/0.png"></center>
 
 The user I owned, svc-alfresco, was the node with a skull next to it (I added it by right clicking the node > 'Mark User as Owned').
 

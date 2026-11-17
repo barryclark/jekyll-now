@@ -2,8 +2,8 @@
 title: Writing a Ransomware in Python
 author: yakuhito
 layout: post
-permalink: writing_a_ransomware
-image: /images/writing_a_ransomware/writing_a_ransomware.jpg
+permalink: writing-a-ransomware
+image: /images/writing-a-ransomware/writing-a-ransomware.jpg
 category: blog
 ---
 In this blog post I’ll showcase how easy it is to write a simple ransomware program.

@@ -2,8 +2,8 @@
 title: Mango &#8211; HackTheBox WriteUp
 author: yakuhito
 layout: post
-permalink: mango_htb_writeup
-image: /images/mango_htb_writeup/mango_htb_writeup.jpeg
+permalink: mango-htb-writeup
+image: /images/mango-htb-writeup/mango-htb-writeup.jpeg
 category: htb
 ---
  
@@ -49,12 +49,12 @@ root@fury-battlestation:~/htb/blog/mango#
 {% endhighlight %}
 
 When I tried accessing port 80, I got a 403 error:
-<center><img src="/images/mango_htb_writeup/image-37.png"></center>
+<center><img src="/images/mango-htb-writeup/image-37.png"></center>
 
 However, port 443 returned a funny clone of Google called ‘Mango’:
 
 <div>
-<center><img src="/images/mango_htb_writeup/image-38-1024x495.png"></center>
+<center><img src="/images/mango-htb-writeup/image-38-1024x495.png"></center>
 </div>
 
 Before testing this app for vulnerabilities, I mad sure the HTTPS certificate couldn’t be used to find other domains:
@@ -85,13 +85,13 @@ root@fury-battlestation:~/htb/blog/mango#
 The script discovered a sub-domain, so I tied accessing it. However, the page was identical to the one I got before:
 
 <div>
-<center><img src="/images/mango_htb_writeup/image-39-1024x403.png"></center>
+<center><img src="/images/mango-htb-writeup/image-39-1024x403.png"></center>
 </div>
 
 After searching round for a bit, I realized I haven’t accessed the new sub-domain via HTTP yet. I did that and discovered a new sub-domain:
 
 <div>
-<center><img src="/images/mango_htb_writeup/image-40-1024x498.png"></center>
+<center><img src="/images/mango-htb-writeup/image-40-1024x498.png"></center>
 </div>
 
 ## Exploiting MongoDB
@@ -154,7 +154,7 @@ root@fury-battlestation:~/htb/blog/mango#
 I used ‘h3mXK8RhU~f{]f5H’ to log in to the application and I got the following page:
 
 <div>
-<center><img src="/images/mango_htb_writeup/image-41-1024x497.png"></center>
+<center><img src="/images/mango-htb-writeup/image-41-1024x497.png"></center>
 </div>
 
 I tried seeing if there is any user named ‘admin’, and there was. His password might come in handy, so I used the same script to get his password (I just changed the username variable from “mango” to “admin”):
@@ -178,7 +178,7 @@ root@fury-battlestation:~/htb/blog/mango#
 However, the admin page looked exactly the same:
 
 <div>
-<center><img src="/images/mango_htb_writeup/image-42-1024x493.png"></center>
+<center><img src="/images/mango-htb-writeup/image-42-1024x493.png"></center>
 </div>
 
 ## Getting user.txt

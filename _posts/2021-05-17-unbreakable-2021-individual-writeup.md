@@ -3,7 +3,7 @@ title: 'UNbreakable Romania 2021 &#8211; Individual Phase Writeup'
 author: yakuhito
 layout: post
 permalink: unbreakable-2021-individual-writeup
-image: /images/unbreakable_logo.png
+image: /images/unbreakable-logo.png
 category: blog
 ---
 
@@ -282,13 +282,13 @@ yakuhito@furry-catstation:~/ctf/unr21-ind$
 Let's open the binary in IDA Pro. Unfortunately, not all functions have a clear name, meaning that the binary might have been stripped of symbols. However, IDA automatically identifies the main function, which looks like this:
 
 <div>
-<center><img src="/images/unbreakable-2021-individual-writeup/defuse_the_bomb-1.png"></center>
+<center><img src="/images/unbreakable-2021-individual-writeup/defuse-the-bomb-1.png"></center>
 </div>
 
 The function prints a string, reads the user's input, calls `strlen` and two other functions (`sub_1375` and `sub_1195`) to alter it and then compares the result with a hardcoded value, `9094929R948S0N940`. Let's start by analyzing `sub_1375`:
 
 <div>
-<center><img src="/images/unbreakable-2021-individual-writeup/defuse_the_bomb-1.png"></center>
+<center><img src="/images/unbreakable-2021-individual-writeup/defuse-the-bomb-1.png"></center>
 </div>
 
 You should recognize the loop from the reversing challenge explained above. It takes each character of the input string and processes it using the following code:

@@ -3,7 +3,7 @@ title: 'UNbreakable Romania 2021 &#8211; Team Phase Writeup'
 author: yakuhito
 layout: post
 permalink: unbreakable-2021-team-writeup
-image: /images/unbreakable_logo.png
+image: /images/unbreakable-logo.png
 category: blog
 ---
 

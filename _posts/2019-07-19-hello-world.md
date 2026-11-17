@@ -3,7 +3,7 @@ title: 48 65 6c 6c 6f 20 77 6f 72 6c 64 21
 author: yakuhito
 layout: post
 permalink: /hello-world/
-image: /images/hello_world/hello_world.jpg
+image: /images/hello-world/hello-world.jpg
 category: blog
 ---
  

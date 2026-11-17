@@ -2,14 +2,14 @@
 title: 'Redpwn CTF 2019 &#8211; WriteUp'
 author: yakuhito
 layout: post
-permalink: redpwn_ctf_2019_writeup
-image: /images/redpwn_ctf_2019_writeup/redpwn_ctf_2019_writeup.png
+permalink: redpwn-ctf-2019-writeup
+image: /images/redpwn-ctf-2019-writeup/redpwn-ctf-2019-writeup.png
 category: blog
 ---
 Over the past few days, my team and I participated in Redpwn CTF 2019. We came out fourth and we enjoyed the experience.
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-30-1024x225.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-30-1024x225.png"></center>
 </div>
 
 As in almost any CTF, some challenges were good, and some consisted purely on guessing. I will present only the challenges that I helped solve, however, I must say that my teammates contributed a lot, as this CTF was a team effort.
@@ -31,13 +31,13 @@ As in almost any CTF, some challenges were good, and some consisted purely on gu
 ## Dunce Crypto – Cryptography {#crypto-1}
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-4.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-4.png"></center>
 </div>
 
 This was a simple Caesar Cipher. Just use <https://cryptii.com/pipes/caesar-cipher> and try all shifts until you find the flag:
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-5-1024x323.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-5-1024x323.png"></center>
 </div>
 
 Flag: flag{I\_d0nt\_w4nt\_t0\_p4y\_my\_tax3s}
@@ -45,7 +45,7 @@ Flag: flag{I\_d0nt\_w4nt\_t0\_p4y\_my\_tax3s}
 ## Super Hash – Cryptography {#crypto-2}
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-6.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-6.png"></center>
 </div>
 
 The words ‘really short’ hint us that we can bruteforce the hashed string. We can make a simple Python script that does exactly that:
@@ -79,7 +79,7 @@ for length in range(1, 8): # the string is REALLY short
 My script was a bit too complicated, as the hashed string consisted of only one character:
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-7.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-7.png"></center>
 </div>
 
 Flag: flag{^}
@@ -87,7 +87,7 @@ Flag: flag{^}
 ## Trinity – Cryptography {#crypto-3}
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-8.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-8.png"></center>
 </div>
 
 This was one of the most frustrating challenges. My team and I tried some very complicated stuff and failed to solve the challenge. 12 hours later, less than an hour after the hint was released, I finally figured it out. The ciphertext was actually Morse Code, 0 represented a dot (.), 1 represented a dash (-) and 2 a space. 
@@ -102,7 +102,7 @@ This was one of the most frustrating challenges. My team and I tried some very c
 After getting the flag in Morse code, we can just use an online converter like [this one](https://morsecode.scphillips.com/translator.html).
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-9.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-9.png"></center>
 </div>
 
 Flag: flag{TERNARYISMOREARCANEBUTIBETYOUTHOUGHTOFITFIRST}
@@ -110,19 +110,19 @@ Flag: flag{TERNARYISMOREARCANEBUTIBETYOUTHOUGHTOFITFIRST}
 ## 010000100110100101101110011000010111001001111001 – Cryptography {#crypto-4}
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-10.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-10.png"></center>
 </div>
 
 The binary text does not fit in the challenge box, so let me turn it into text for you:
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-11.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-11.png"></center>
 </div>
 
 Let’s connect to the service and see the output:
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-12.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-12.png"></center>
 </div>
 
 That’s a lot of 1s and 0s! Let’s convert some of the lines to ASCII:
@@ -238,7 +238,7 @@ print(repr(libnum.n2s(partial((c*c_of_2)%n,n))))
 In order to get the flag, the script needs to get the output of about 1024 numbers, so it might take a while until it finishes, depending on the server’s speed.
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-13.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-13.png"></center>
 </div>
 
 Flag: flag{y0u\_s0lved\_th3\_l3ast\_s1gn1f1c1nt_RSA!-1123}
@@ -246,13 +246,13 @@ Flag: flag{y0u\_s0lved\_th3\_l3ast\_s1gn1f1c1nt_RSA!-1123}
 ## Ghast – Web {#web-1}
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-14.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-14.png"></center>
 </div>
 
 I honestly don’t know if this is the intended solution, but it worked for me. The key is to see that the makeId() function doesn’t make a random id:
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-15.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-15.png"></center>
 </div>
 
 This means that we can call /api/flag with incrementing user ids until we get the flag:
@@ -289,23 +289,23 @@ Flag: flag{th3\_AdM1n\_ne3dS\_A\_n3W_nAme}
 ## Blueprint – Web {#web-2}
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-16.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-16.png"></center>
 </div>
 
 The following piece of code is vulnerable:
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-17.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-17.png"></center>
 </div>
 
 Note that _ is actually the lodash module. The thing is that this module is outdated :
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-18.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-18.png"></center>
 </div>
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-19.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-19.png"></center>
 </div>
 
 The server is using a version of lodash that is vulnerable to prototype pollution. This means that we can manipulate the properties of all the user’s blueprints. Read more about it [here](https://snyk.io/vuln/SNYK-JS-LODASH-450202).
@@ -328,7 +328,7 @@ print(r.text)
 After you run the script, just access the site and get the flag:
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-20.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-20.png"></center>
 </div>
 
 Flag: flag{8lu3pr1nTs\_aRe\_tHe\_hiGh3s1\_quA11tY_pr0t()s}
@@ -336,7 +336,7 @@ Flag: flag{8lu3pr1nTs\_aRe\_tHe\_hiGh3s1\_quA11tY_pr0t()s}
 ## Dedication – Forensics {#foren-1}
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-21.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-21.png"></center>
 </div>
 
 The zip file contains 2 files: a .png that contains pixel values for an image with a word and a password-protected zip file that contains the next 2 files. The password for the zip file is the word in the picture. I used an OCR, but sometimes it would fail, so I had to write about 100 words to get the flag. (you needed to unzip 1000 files)
@@ -441,7 +441,7 @@ Flag: flag{th3s\_1s\_tru3_d3d1cAt10N!!!}
 ## genreicpyjail – Misc {#misc-1}
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-22.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-22.png"></center>
 </div>
 
 One of my teammates got the flag 1 minute before I solved the challenge. His payload is pretty simple to understand:
@@ -464,7 +464,7 @@ Flag: flag{bl4ckl1sts\_w0rk\_gre3344T!}
 ## genericpyjail2 – Misc {#misc-2}
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-23.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-23.png"></center>
 </div>
 
 This time, I told my team I was working on this challenge. The final payload:
@@ -479,13 +479,13 @@ Flag: flag{sub\_sub\_sub_references}
 ## He sed she sed – Misc {#misc-3}
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-24.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-24.png"></center>
 </div>
 
 This was a simple command injection challenge. 
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-25.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-25.png"></center>
 </div>
 
 Flag: flag{th4ts\_wh4t\_sh3_sed}
@@ -493,11 +493,11 @@ Flag: flag{th4ts\_wh4t\_sh3_sed}
 ## expobash – Misc {#misc-4}
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-26.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-26.png"></center>
 </div>
 
 <div>
-<center><img src="/images/redpwn_ctf_2019_writeup/image-27.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-27.png"></center>
 </div>
 
 Fishy is trying to hack into secret government website! The 10 digit passcode is very secure, but in order to generate the passcode, a secret algorithm was used. Fishy was able to figure out the algorithm, but he doesn’t know how to calculate the passcode quickly? Can you help fishy calculate all the passcodes?
@@ -539,7 +539,7 @@ for i in a:
 {% endhighlight %}
 
 We pass n as an argument when we run the script:
-<center><img src="/images/redpwn_ctf_2019_writeup/image-28.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-28.png"></center>
 
 It didn’t take me very long to find the rule. The first line always consists of 2 ^ (n – 1) and then n-1 0s. To generate line number x, we use the formula a\[x\]\[i\] = a\[x – 1\]\[i – 1\] / 2 + a\[x – 1\]\[i\] / 2. I don’t know if this is a well-known formula; I discovered it during the CTF by myself. 
 
@@ -602,7 +602,7 @@ while True:
 r.interactive()
 
 {% endhighlight %}
-<center><img src="/images/redpwn_ctf_2019_writeup/image-29.png"></center>
+<center><img src="/images/redpwn-ctf-2019-writeup/image-29.png"></center>
 
 Flag: flag{c4n\_1\_h4v3\_4\_c0mb_pl0x}
 

@@ -2,7 +2,7 @@
 title: Solving a ROP Challenge with one_gadget
 author: yakuhito
 layout: post
-image: /images/ecsc_ro.jpeg
+image: /images/ecsc-ro.jpeg
 category: blog
 ---
 
@@ -13,7 +13,7 @@ EDIT: It is worth mentioning that one_gadget is not the ideal tool in this situa
 
 ## Mission Briefing
 
-![Challenge Description](/images/baby_rop/desc.png)
+![Challenge Description](/images/baby-rop/desc.png)
 
 At the time of writing this article, the challenge files & description are available on [CyberEDU](https://cyberedu.ro/). If you want to follow this article, you can get the binary from there (it's free!). Running checksec returns the following output:
 
@@ -78,7 +78,7 @@ $ python crash.py
 $
 {% endhighlight %}
 
-![gdb-peda crash](/images/baby_rop/gdb-1.png)
+![gdb-peda crash](/images/baby-rop/gdb-1.png)
 
 
 ## Finding the Exact Offset for RIP
@@ -116,7 +116,7 @@ io.interactive()
 
 After running it, we can see the return address changed to 0x6261616161616169:
 
-![gdb-peda crash 2](/images/baby_rop/gdb-2.png)
+![gdb-peda crash 2](/images/baby-rop/gdb-2.png)
 
 The RIP offset can now be easily found using cyclic_find:
 
@@ -148,7 +148,7 @@ io.interactive()
 
 The program above sends 264 'A's (you could call that a padding) and then 8 'B's. The RIP (which is 8 bytes long) will be overwritten with the 'B's only if the offset is correct.
 
-![gdb-peda crash 3](/images/baby_rop/gdb-3.png)
+![gdb-peda crash 3](/images/baby-rop/gdb-3.png)
 
 It worked! This concludes our OSCP bof preparation :)
 
@@ -305,7 +305,7 @@ $
 
 I used [this tool](https://libc.nullbyte.cat/?q=_IO_puts%3A5a0) to find the potential versions of libc based on the last 3 nibbles of the address. The following results were shown:
 
-![LIBC Search Matches](/images/baby_rop/libc-matches.png)
+![LIBC Search Matches](/images/baby-rop/libc-matches.png)
 
 In an ideal situation, there would be only one result. However, we can still find the good library using simple logic. The first 4 libraries are 32-bit, so they're out. The last 3 have the same offsets, so any of them can be used. Just select one of them and click 'download'.
 
@@ -461,7 +461,7 @@ $
 
 Please, don't close this page just yet. This is a pretty common problem, so I decided to include it in this article. Let's uncomment the line that attaches gdb to the process and re-run the program:
 
-![GDB crashes when it shouldn't](/images/baby_rop/gdb-final-crash.png)
+![GDB crashes when it shouldn't](/images/baby-rop/gdb-final-crash.png)
 
 The instruction that crashed the program tried to access $rbp - 0x78. However, the value of the RBP register is 0x4141414141414141, which indicates that it has been overwritten by our payload. We need to set RBP to a writeable portion of the stack. gdb's 'vmmap' command returns all memory blocks used by the program and their permissions, which is very helpful in this case:
 

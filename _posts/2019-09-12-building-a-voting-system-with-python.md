@@ -2,8 +2,8 @@
 title: Building a Voting System with Python
 author: yakuhito
 layout: post
-permalink: building_a_voting_system_with_python
-image: /images/building_a_voting_system_with_python/building_a_voting_system_with_python.jpg
+permalink: building-a-voting-system-with-python
+image: /images/building-a-voting-system-with-python/building-a-voting-system-with-python.jpg
 category: blog
 ---
 What if you could vote the next president of your country using an app on your phone?
@@ -446,29 +446,29 @@ if __name__ == "__main__":
 Now that we have a working system, let’s test it. First, we need to start the validator and counter servers. By default, they will listen on localhost on ports 1111 and 2222.
 
 <div>
-<center><img src="/images/building_a_voting_system_with_python/image.png"></center>
+<center><img src="/images/building-a-voting-system-with-python/image.png"></center>
 </div>
 
 <div>
-<center><img src="/images/building_a_voting_system_with_python/image-1.png"></center>
+<center><img src="/images/building-a-voting-system-with-python/image-1.png"></center>
 </div>
 
 Now, let’s go to vote! Remember, only usernames that start with yakuhito and end with a number from 0 to 99 are allowed to vote. Let’s first try an invalid name:
 
 <div>
-<center><img src="/images/building_a_voting_system_with_python/image-2.png"></center>
+<center><img src="/images/building-a-voting-system-with-python/image-2.png"></center>
 </div>
 
 The validator server rejected our vote because our username wasn’t whitelisted. Let’s now try voting with a valid username:
 
 <div>
-<center><img src="/images/building_a_voting_system_with_python/image-4.png"></center>
+<center><img src="/images/building-a-voting-system-with-python/image-4.png"></center>
 </div>
 
 Our vote was recorded. Let’s try to use the same username again:
 
 <div>
-<center><img src="/images/building_a_voting_system_with_python/image-5.png"></center>
+<center><img src="/images/building-a-voting-system-with-python/image-5.png"></center>
 </div>
 
 The validator server rejects our vote again. This is because no voter is allowed to change his vote or vote twice.

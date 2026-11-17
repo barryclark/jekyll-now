@@ -2,8 +2,8 @@
 title: Scavenger &#8211; HackTheBox WriteUp
 author: yakuhito
 layout: post
-permalink: scavenger_htb_writeup
-image: /images/scavenger_htb_writeup/scavenger_htb_writeup.png
+permalink: scavenger-htb-writeup
+image: /images/scavenger-htb-writeup/scavenger-htb-writeup.png
 category: htb
 ---
  
@@ -50,7 +50,7 @@ root@fury-battlestation:~/htb/blog/scavenger#
 After reading the results, I tried to access port 80 to search for vulnerable applications. I was surprised when I got an error:
 
 <div>
-<center><img src="/images/scavenger_htb_writeup/image.png"></center>
+<center><img src="/images/scavenger-htb-writeup/image.png"></center>
 </div>
 
 That error seemed rather familiar to me, as I once had an issue with an app I built. Basically, `apache` (and maybe other software) has the ability to serve multiple web addresses on the same port. This application-separated hosts are called virtualhosts.
@@ -64,7 +64,7 @@ Service Info: Host: ib01.supersechosting.htb; OSs: Unix, Linux; CPE: cpe:/o:linu
 I added `supersechosting.htb` to `/etc/hosts` and tried to access it in a browser:
 
 <div>
-<center><img src="/images/scavenger_htb_writeup/image-1.png"></center>
+<center><img src="/images/scavenger-htb-writeup/image-1.png"></center>
 </div>
 
 It worked! However, I wasn’t able to find anything interesting on the site, so I moved on and started enumerating the other ports.
@@ -145,26 +145,26 @@ I added the newly-discovered domains in my `/etc/hosts` file and quickly inspect
 The first one, `justanotherblog.htb`, only hosted an ‘Under Construction’ page:
 
 <div>
-<center><img src="/images/scavenger_htb_writeup/image-2.png"></center>
+<center><img src="/images/scavenger-htb-writeup/image-2.png"></center>
 </div>
 
 The second one, `pwnhats.htb`, was pretty funny, as it hosted a hacker hat store named PWNHats:)
-<center><img src="/images/scavenger_htb_writeup/image-3.png"></center>
+<center><img src="/images/scavenger-htb-writeup/image-3.png"></center>
 
 <div>
-<center><img src="/images/scavenger_htb_writeup/image-4.png"></center>
+<center><img src="/images/scavenger-htb-writeup/image-4.png"></center>
 </div>
 
 The last site, `rentahacker.htb`, was using a default WordPress theme and offered ‘heap hacking services’:
 
 <div>
-<center><img src="/images/scavenger_htb_writeup/image-5.png"></center>
+<center><img src="/images/scavenger-htb-writeup/image-5.png"></center>
 </div>
 
 The comment section of the last site was pretty interesting to me:
 
 <div>
-<center><img src="/images/scavenger_htb_writeup/image-6.png"></center>
+<center><img src="/images/scavenger-htb-writeup/image-6.png"></center>
 </div>
 
 In the last comment, the ‘31173 HAXXOR team’ stated that they had successfully compromised the system. They also mentioned a bug tracker, so I started searching for it, hoping to find the remains of the above-mentioned hack (the box name is ‘Scavenger for a reason 🙂 )
@@ -192,7 +192,7 @@ root@fury-battlestation:~/htb/blog/scavenger#
 The `sec03.rentahacker.htb` sub-domain was the one defaced by the hackers:
 
 <div>
-<center><img src="/images/scavenger_htb_writeup/image-18-1024x554.png"></center>
+<center><img src="/images/scavenger-htb-writeup/image-18-1024x554.png"></center>
 </div>
 
 After discovering that page, I rand dirb again, this time on the newly found sub-domain:

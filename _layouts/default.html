@@ -16,6 +16,7 @@
     <!-- Start SEO -->
     {% if page.name == "index.html" %}<meta property="og:image" content="https://blog.kuhi.yo/yaku.jpg" />{% endif %}
     {% seo title=false %}
+    {% if site.noindex %}<meta name="robots" content="noindex">{% endif %}
     <!-- End SEO -->
   </head>
 

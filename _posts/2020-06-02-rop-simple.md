@@ -2,7 +2,7 @@
 title: Solving a ROP Challenge the Easy Way
 author: yakuhito
 layout: post
-image: /images/ecsc_ro.jpeg
+image: /images/ecsc-ro.jpeg
 category: blog
 ---
 
@@ -11,7 +11,7 @@ Since the [last article](/rop-with-one-gadget/) was written with the sole purpos
 
 ## Mission Briefing
 
-![Challenge Description](/images/baby_rop/desc.png)
+![Challenge Description](/images/baby-rop/desc.png)
 
 Just to recap, the challenge can be found on [CyberEDU](https://cyberedu.ro/). The executable has NX enabled, but there's no stack canary and PIE is disabled.
 
@@ -35,7 +35,7 @@ io.sendline(payload)
 io.interactive()
 {% endhighlight %}
 
-![GDB-PEDA crash 1](/images/baby_rop/simple-gdb-1.png)
+![GDB-PEDA crash 1](/images/baby-rop/simple-gdb-1.png)
 
 As expected, RIP is overwritten and the application crashes. Finding the register's offset is one function call away:
 
@@ -68,7 +68,7 @@ io.interactive()
 
 The reason I also included those 8 'B's before the 'C's is to highlight what that string overwrites:
 
-![GDB-PEDA crash 2](/images/baby_rop/simple-gdb-2.png)
+![GDB-PEDA crash 2](/images/baby-rop/simple-gdb-2.png)
 
 The 'B's can be found in the RBP register. I somehow managed to forget that when I solved the challenge yesterday and modified RBP by finding a 'pop rbp ; ret' gadget. After `someone` pointed that out, I quickly edited the post to modify RBP by using this technique.
 
@@ -157,7 +157,7 @@ The address of puts ends in 5a0 now, so we can move on to the last step.
 
 The simples method to get RCE now is to call system("/bin/sh"). The first thing we need to do is calculate LIBC's base address. The site I linked above also provides the offsets of some helpful functions. According to that list, puts is located at 0x0875a0, system at 0x055410 and a "/bin/sh" string at 0x1b75aa:
 
-![LIBC offsets for the server's version](/images/baby_rop/offsets.png)
+![LIBC offsets for the server's version](/images/baby-rop/offsets.png)
 
 Another problem I wrote about is that system() is going to try to write some data to the stack by using the RBP register. We can find a memory adrees that is both readable and writeable by using gdb's vmmap command:
 
@@ -239,7 +239,7 @@ BrokenPipeError: [Errno 32] Broken pipe
 
 After attaching gb to the process, we can see the instrucion that crashed the program:
 
-![GDB crashed because the stack is not aligned](/images/stack_not_aligned.png)
+![GDB crashed because the stack is not aligned](/images/stack-not-aligned.png)
 
 [This StackOverflow thread](https://stackoverflow.com/questions/54393105/libcs-system-when-the-stack-pointer-is-not-16-padded-causes-segmentation-faul) does a good job at explaining the cause of this problem. Basically, LIBC expects the stack to be 16-bit aligned when a function is called and uses this property to optimize some portions of its code. The solution is very simple: call a ret instruction. We can find a ret gadget in the main program using rp++:
 

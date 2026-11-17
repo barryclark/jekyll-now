@@ -2,8 +2,8 @@
 title: Control &#8211; HackTheBox WriteUp
 author: yakuhito
 layout: post
-permalink: control_htb_writeup
-image: /images/control_htb_writeup/control_htb_writeup.jpg
+permalink: control-htb-writeup
+image: /images/control-htb-writeup/control-htb-writeup.jpg
 category: htb
 ---
 
@@ -37,25 +37,25 @@ root@fury-battlestation:~/htb/blog/control#
 {% endhighlight %}
 
 There were only 3 open ports, and port 80 looked more interesting than the others. When I opened it in a browser, the following page loaded:
-<center><img src="/images/control_htb_writeup/image-0.png"></center>
+<center><img src="/images/control-htb-writeup/image-0.png"></center>
 
 Because the site looked custom-made and I accumulated some experience with HTB (see badge at the bottom of the page), I instantly clicked the 'admin' button and got the following error page:
-<center><img src="/images/control_htb_writeup/image-1.png"></center>
+<center><img src="/images/control-htb-writeup/image-1.png"></center>
 
 The page was talking about a proxy. I assumed that the PHP script checked some headers to verify whether the user is using the proxy or not. However, I did not know the proxy's IP address, so I continued enumerating. I found the following comment in the main page's source code:
 
-<center><img src="/images/control_htb_writeup/image-2.png"></center>
+<center><img src="/images/control-htb-writeup/image-2.png"></center>
 
 The proxy was probably located at 192.168.4.28. To get acces to the admin panel, I opened Burp, intercepted the request and added an 'X-Forwarded-For' header. After the insertion, the request looked like this:
-<center><img src="/images/control_htb_writeup/image-3.png"></center>
+<center><img src="/images/control-htb-writeup/image-3.png"></center>
 
 After forwarding the request, the admin panel loaded:
-<center><img src="/images/control_htb_writeup/image-4.png"></center>
+<center><img src="/images/control-htb-writeup/image-4.png"></center>
 
 ## Manually Exploiing the SQL Injection
 
 There was a list of products which could be viewed, modified and deleted. I assumed the script used an SQL database to store this information and I began testing for injection points. By searching for ', I got an error:
-<center><img src="/images/control_htb_writeup/image-5.png"></center>
+<center><img src="/images/control-htb-writeup/image-5.png"></center>
 
 Knowing that the backend DB is MariaDB, I captured the request in Burp and tried sending a valid UNION statement. After a few tries, I got the following payload:
 
@@ -70,7 +70,7 @@ productName=a' UNION ALL SELECT 1,'<?php echo shell_exec($_GET["yaku"]); ?>',3,4
 {% endhighlight %}
 
 I then tried to run 'whoami' on the target machine to confirm that the injection worked:
-<center><img src="/images/control_htb_writeup/image-6.png"></center>
+<center><img src="/images/control-htb-writeup/image-6.png"></center>
 
 Getting a shell this way is usually ok, however, due to the nature of this box, I prefered to use SQLMap to upload a better shell.
 
@@ -241,7 +241,7 @@ root@fury-battlestation:~/htb/blog/control#
 {% endhighlight %}
 
 The new shell was located at /yakuplusplus.php:
-<center><img src="/images/control_htb_writeup/image-7.png"></center>
+<center><img src="/images/control-htb-writeup/image-7.png"></center>
 
 A small problem appeared: I couldn't upload any files to the wwwroot directory because I didn't have the required permissions. Luckily for me, the wwwroot/uploads directory was writeable.
 Now that I had an easier way of uploading files and executting commands, I uploaded a netcat binary and created a reverse shell using the following command:

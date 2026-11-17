@@ -2,8 +2,8 @@
 title: Networked &#8211; HackTheBox WriteUp
 author: yakuhito
 layout: post
-permalink: networked_htb_writeup
-image: /images/networked_htb_writeup/networked_htb_writeup.png
+permalink: networked-htb-writeup
+image: /images/networked-htb-writeup/networked-htb-writeup.png
 category: htb
 ---
  
@@ -38,13 +38,13 @@ root@fury-battlestation:~/htb/blog/networked#
 The index.html of the site was pretty basic:
 
 <div>
-<center><img src="/images/networked_htb_writeup/image-10.png"></center>
+<center><img src="/images/networked-htb-writeup/image-10.png"></center>
 </div>
 
 There was also a hidden comment on the page:
 
 <div>
-<center><img src="/images/networked_htb_writeup/image-11.png"></center>
+<center><img src="/images/networked-htb-writeup/image-11.png"></center>
 </div>
 
 I ran `dirb` on the page and found a directory named `backup`:
@@ -89,7 +89,7 @@ root@fury-battlestation:~/htb/blog/networked#
 A file named `backup.tar` could be found in the directory:
 
 <div>
-<center><img src="/images/networked_htb_writeup/image-12.png"></center>
+<center><img src="/images/networked-htb-writeup/image-12.png"></center>
 </div>
 
 I downloaded it and started looking through the source code:
@@ -130,21 +130,21 @@ root@fury-battlestation:~/htb/blog/networked# cp yakuhito.jpg yakuhito.php.jpg
 I then uploaded the file by going to `/upload.php`:
 
 <div>
-<center><img src="/images/networked_htb_writeup/image-13.png"></center>
+<center><img src="/images/networked-htb-writeup/image-13.png"></center>
 </div>
 
 After that, I browsed to `/photos.php`, right-licked the image I just uploaded and click on ‘View Image’ so my browser would take me to the site’s uploads directory.
 
 <div>
-<center><img src="/images/networked_htb_writeup/image-14.png"></center>
+<center><img src="/images/networked-htb-writeup/image-14.png"></center>
 </div>
 
 <div>
-<center><img src="/images/networked_htb_writeup/image-15.png"></center>
+<center><img src="/images/networked-htb-writeup/image-15.png"></center>
 </div>
 
 The server didn’t interpret the file as an image. In other words, the server found `.php` in the filename and interpreted it as a PHP script. I tried to supply a simple command via the `cmd` parameter and see if I had command execution:
-<center><img src="/images/networked_htb_writeup/image-16.png"></center>
+<center><img src="/images/networked-htb-writeup/image-16.png"></center>
 
 The `id` command was successfully executed. Moreover, I could see the output at the end of the page. With that in mind, I used `nc` to spawn a reverse shell on port 443:
 

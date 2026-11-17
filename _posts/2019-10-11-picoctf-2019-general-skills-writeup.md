@@ -2,8 +2,8 @@
 title: 'picoCTF 2019 &#8211; General Skills WriteUp'
 author: yakuhito
 layout: post
-permalink: picoctf_2019_general_skills_writeup
-image: /images/picoctf_2019_general_skills_writeup/picoctf_2019_general_skills_writeup.png
+permalink: picoctf-2019-general-skills-writeup
+image: /images/picoctf-2019-general-skills-writeup/picoctf-2019-general-skills-writeup.png
 category: blog
 ---
 ## Contents
@@ -25,74 +25,74 @@ category: blog
   * [flag_shop (300)](#flagshop)
 
 ## The Factory’s Secret (1) {#thefactoryssecret}
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-47.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-47.png"></center>
 
 While the challenge was only worth one point, I consider it one of the most fun challenges this contest had. Let’s gt started:
 
 ### Fragment 1
 
 The first fragment is just lying on the General Skills Room floor.
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-52.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-52.png"></center>
 
 ### Fragment 2
 
 The second fragment lies within the Web Exploitation Room. I was able to see it as I walked to the computer that hosts the challenges:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-54.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-54.png"></center>
 
 However, we are not able to directly walk there and take it. I first made our way to the computer:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-55.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-55.png"></center>
 
 Once I got there, I entered the cave, which took me to another corner of the map:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-56.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-56.png"></center>
 
 There is another cave entrance at the bottom of the screen. To be able to enter it, I first needed to move the stone:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-57.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-57.png"></center>
 
 The cave took me to the small ‘island’ that held the glyph fragment:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-58.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-58.png"></center>
 
 ### Fragment 3
 
 This fragment was located in the Cryptography Room. It was buried under the 5th grave on the 7th row, right matrix.
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-70.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-70.png"></center>
 
 ### Fragment 4
 
 This fragment is located in the Binary Exploitation room. I saw that if I go through one door, say, the red one, the background music & animations would speed up. If I went again through the red door, everything would ‘reset’, but if I went through the blue one, everything would speed up even more. I kept alternating the doors I entered and a third door appeared, which led me in hidden room that contained the glyph fragment. I believe the authors wanted to showcase the idea of an overflow – if the speed gets too high, it might cause an overflow and theoretically crash the app.
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-48.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-48.png"></center>
 
 ### Fragment 5
 
 Next, I went searching in the Forensics Room. As fragment 4 hinted, there is a glyph hidden inside the lake in the upper right corner:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-67.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-67.png"></center>
 
 ### Fragment 6
 
 Unlike most players in the Discord group, I liked the background music of the game. I heard something in the General Skills Room and I found two beeping blocks in the upper right direction (I can’t call it a corner):
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-60.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-60.png"></center>
 
 I found the following sequence to be repeated:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-61.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-61.png"></center>
 
 It looked like morse code, so I used [this tool](http://www.unit-conversion.info/texttools/morse-code/) to decode it:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-62.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-62.png"></center>
 
 At first, the message made no sense. I understood it after entering the Reversing Room, which had 4 pillars, numbered from 1 to 4, each having a lever that the player had the ability to pull:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-63.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-63.png"></center>
 
 I activated the 2nd, 4th, 1st, and 3rd levers, in that order, as the message hinted. After that, a message stating that the levers reset appeared, along with a glyph fragment:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-64.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-64.png"></center>
 
 ### The flag
 
 After collecting all the fragments, the following text appears:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-72.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-72.png"></center>
 
 In addition to those prompts, a new item appears in the player’s inventory:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-74.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-74.png"></center>
 
 I used [this tool](https://zxing.org/w/decode) to convert it to text:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-75.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-75.png"></center>
 
 {% highlight bash %}
 password: xmfv53uqkf621gakvh502gxfu1g78glds
@@ -100,12 +100,12 @@ password: xmfv53uqkf621gakvh502gxfu1g78glds
 {% endhighlight %}
 
 After decoding the text, I had the password for the computer located in the spawn room. I used this password to unlock it:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-76.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-76.png"></center>
 
 **Flag**: picoCTF{zerozerozerozero}
 
 ## 2Warm (50) {#2warm}
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-79.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-79.png"></center>
 
 Just use python ^-^
 
@@ -119,7 +119,7 @@ Just use python ^-^
 **Flag:** picoCTF{101010}
 
 ## Lets Warm Up (50) {#letswarmup}
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-80.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-80.png"></center>
 
 Just use python ^-^
 
@@ -133,7 +133,7 @@ Just use python ^-^
 **Flag:** picoCTF{p}
 
 ## Warmed Up (50) {#warmedup}
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-81.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-81.png"></center>
 
 Just use python ^-^
 
@@ -147,7 +147,7 @@ Just use python ^-^
 **Flag:** picoCTF{61}
 
 ## Bases (100) {#bases}
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-82.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-82.png"></center>
 
 In order to get the flag, we need to decode the given string using base64. We can achieve this using the Linux program named ‘base64’:
 
@@ -161,7 +161,7 @@ yakuhito@furry-catstation:~/blog/picoctf2019/crypto$
 **Flag:** picoCTF{l3arn\_th3\_r0p35}
 
 ## First Grep (100) {#firstgrep}
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-83.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-83.png"></center>
 
 I don’t know what to write here 🙂
 
@@ -175,15 +175,15 @@ yakuhito@furry-catstation:~/blog/picoctf2019/general-skills$
 **Flag:** picoCTF{grep\_is\_good\_to\_find\_things\_cdb327ab}
 
 ## Resources (100) {#resources}
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-84.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-84.png"></center>
 
 The flag is listed on the webpage -_-
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-85.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-85.png"></center>
 
 **Flag:** picoCTF{r3source\_pag3\_f1ag}
 
 ## strings it(100) {#stringsit}
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-86.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-86.png"></center>
 
 Use the ‘strings’ program along with grep:
 
@@ -197,7 +197,7 @@ yakuhito@furry-catstation:~/blog/picoctf2019/general-skills$
 **Flag:** picoCTF{5tRIng5\_1T\_c611cac7}
 
 ## what’s a net cat? (100) {#whatsanetcat}
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-87.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-87.png"></center>
 
 It’s a very good thing that Linux comes with netcat pre-installed 😛
 
@@ -213,7 +213,7 @@ yakuhito@furry-catstation:~/blog/picoctf2019/general-skills$
 **Flag:** picoCTF{nEtCat\_Mast3ry\_cc4ad2c7}
 
 ## Based (200) {#based}
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-88.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-88.png"></center>
 
 I’ll first paste the solution and then try to explain it step-by-step:
 
@@ -241,18 +241,18 @@ yakuhito@furry-catstation:~/blog/picoctf2019/general-skills$
 {% endhighlight %}
 
 The first word is encoded using binary. I used [this tool](https://www.rapidtables.com/convert/number/binary-to-ascii.html) to recover the word:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-89.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-89.png"></center>
 
 The second one is the octal representation of the word. I came to this conclusion because there is no digit greater than 7. I used [this tool](http://www.unit-conversion.info/texttools/octal/) to recover the word:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-90.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-90.png"></center>
 
 The third and last encoding is hex/base16, as it has the alphabet 0-9a-f. I used [this tool](https://www.rapidtables.com/convert/number/hex-to-ascii.html) to get the final word:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-91.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-91.png"></center>
 
 **Flag:** picoCTF{learning\_about\_converting\_values\_819ada06}
 
 ## First Grep: Part II (200) {#firstgreppartii}
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-92.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-92.png"></center>
 
 We can just use grep along with its -R switch, which tells the program to search for all files in the specified directory and its sub-directories:
 
@@ -266,7 +266,7 @@ y4kuhito@pico-2019-shell1:~$
 **Flag:** picoCTF{grep\_r\_to\_find\_this_e4fa3ba7}
 
 ## plumbing (200) {#plumbing}
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-93.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-93.png"></center>
 
 Just connecting to the given address won’t work, as there is a lot of garbage output. The challenge’s name is a reference to pipes, so I just piped the output to grep and I got the flag:
 
@@ -283,10 +283,10 @@ If you have no idea how piping works, I recommend [this article](http://www.linf
 **Flag:** picoCTF{digital\_plumb3r\_4e7a5813}
 
 ## whats-the-difference (200) {#whatsthedifference}
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-94.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-94.png"></center>
 
 Two files, kitters.jpg and cattos.jpg, can be found attached. kitters.jpg looks normal, however, cattos.jpg looks corrupted:
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-95-1024x495.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-95-1024x495.png"></center>
 
 The first image seems to be a corrupt copy of the second one. It turns out the flag was written at random locations in the cattos.jpg file. I used the following script to get the flag:
 
@@ -316,7 +316,7 @@ yakuhito@furry-catstation:~/blog/picoctf2019/general-skills$
 **Flag:** picoCTF{th3yr3\_a5\_d1ff3r3nt\_4s\_bu773r\_4nd\_j311y_aslkjfdsalkfslkflkjdsfdszmz10548}
 
 ## where-is-the-file (200) {#whereisthefile}
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-97.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-97.png"></center>
 
 Just trying to list the directory’s files will return an empty result:
 
@@ -342,7 +342,7 @@ The flag was located in the hidden file.
 **Flag:** picoCTF{w3ll\_that\_d1dnt\_w0RK\_b2dab472}
 
 ## flag_shop (300) {#flagshop}
-<center><img src="/images/picoctf_2019_general_skills_writeup/image-98.png"></center>
+<center><img src="/images/picoctf-2019-general-skills-writeup/image-98.png"></center>
 
 {% highlight c %}
 #include <stdio.h>

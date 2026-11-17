@@ -2,8 +2,8 @@
 title: Book &#8211; HackTheBox WriteUp
 author: yakuhito
 layout: post
-permalink: book_htb_writeup
-image: /images/book_htb_writeup/book_htb_writeup.jpeg
+permalink: book-htb-writeup
+image: /images/book-htb-writeup/book-htb-writeup.jpeg
 category: htb
 ---
 
@@ -42,11 +42,11 @@ root@fury-battlestation:~/htb/blog/book#
 
 Port 80 was open, so I opened it in a browser and got the following page:
 
-<center><img src="/images/book_htb_writeup/0.png"></center>
+<center><img src="/images/book-htb-writeup/0.png"></center>
 
 After I registered an account, I signed in and started exploring the website:
 
-<center><img src="/images/book_htb_writeup/1.png"></center>
+<center><img src="/images/book-htb-writeup/1.png"></center>
 
 There was a lot of functionality to test, and I spent a huge amount of time trying different attacks that didn't work.
 
@@ -54,15 +54,15 @@ There was a lot of functionality to test, and I spent a huge amount of time tryi
 
 At some point I ran dirb on the site, and the only interesting URI it found was '/admin':
 
-<center><img src="/images/book_htb_writeup/2.png"></center>
+<center><img src="/images/book-htb-writeup/2.png"></center>
 
 From the 'contact' page, I knew the email of the admin:
 
-<center><img src="/images/book_htb_writeup/3.png"></center>
+<center><img src="/images/book-htb-writeup/3.png"></center>
 
 However, there was no way of bypassing the password check. After some time, I found something interesting in the normal 'sign up' form:
 
-<center><img src="/images/book_htb_writeup/4.png"></center>
+<center><img src="/images/book-htb-writeup/4.png"></center>
 
 Every time a user signed up, a javascript function called 'validateForm' was called. I searched it in the source code of the page and found the following snippet:
 
@@ -92,25 +92,25 @@ The basic idea is that MySQL doesn't make a distinction between 'admin' and 'adm
 
 I also used Inspect Element to remove the 'type="email"' part from the email field so the form would accept my example data:
 
-<center><img src="/images/book_htb_writeup/5.png"></center>
+<center><img src="/images/book-htb-writeup/5.png"></center>
 
 I then browsed to '/admin' and logged in using the previously-set password:
 
-<center><img src="/images/book_htb_writeup/6.png"></center>
+<center><img src="/images/book-htb-writeup/6.png"></center>
 
 ## XSS in .pdf ?!
 
 Fortunately, there was less functionality to test. The first thing that caught my eye was the option to export Users/Collections as pdf:
 
-<center><img src="/images/book_htb_writeup/7.png"></center>
+<center><img src="/images/book-htb-writeup/7.png"></center>
 
 Out of curiosity, I exported the Collections as pdf and got the following page:
 
-<center><img src="/images/book_htb_writeup/8.png"></center>
+<center><img src="/images/book-htb-writeup/8.png"></center>
 
 That table looked oddly familiar. I supposed it was an HTML 'table' element, so I tested my hypothesis by signing in as an user and uploading another collection. The new collection's title was the word 'text' surrounded by h1 tags. After uploading it and re-exporting the collections to pdf, I got the following output:
 
-<center><img src="/images/book_htb_writeup/9.png"></center>
+<center><img src="/images/book-htb-writeup/9.png"></center>
 
 HTML injection inside a pdf? That sounded pretty strange. I went further and tested for an XSS using the following payload:
 
@@ -120,7 +120,7 @@ HTML injection inside a pdf? That sounded pretty strange. I went further and tes
 
 That payload produced the following output:
 
-<center><img src="/images/book_htb_writeup/10.png"></center>
+<center><img src="/images/book-htb-writeup/10.png"></center>
 
 This attack was new to me, so I searched 'pdf xss' on google and found [this article](https://www.noob.ninja/2017/11/local-file-read-via-xss-in-dynamically.html) which inspired me to try and read from a local file. I used the following payload to achieve this goal:
 
@@ -137,7 +137,7 @@ x.send();
 
 The payload above produced the following document:
 
-<center><img src="/images/book_htb_writeup/11.png"></center>
+<center><img src="/images/book-htb-writeup/11.png"></center>
 
 I also saw that there was a user named 'reader' on the machine, so I tried to fetch his id_rsa file. The problem was that, while the file existed, some lines would be longer than the pdf document and all the extra characters would get cut. To solve this problem, I encoded the file in base64 and added a 'br' tag every 42 characters. This allowed me to exfiltrate the file without losing any characters on the way. The final payload looked like this (I prettified it so it would be easier to read):
 

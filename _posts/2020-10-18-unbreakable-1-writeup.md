@@ -3,7 +3,7 @@ title: 'UNbreakable Romania #1 &#8211; Writeup'
 author: yakuhito
 layout: post
 permalink: unbreakable-romania-1-writeup
-image: /images/unbreakable_logo.png
+image: /images/unbreakable-logo.png
 category: blog
 ---
 
@@ -110,7 +110,7 @@ yakuhito@furry-catstation:~/ctf/unbr1/notafuzz$
 I tried to overflow the buffer, but the binary wasn't vulnerable. I also tried a format string attack, but that didn't work either. To solve this challenge, I needed to open the program in IDA. The following image contains a part of the reassembled 'main' function:
 
 <div>
-<center><img src="/images/unbreakable_1_writeup/notafuzz-ida.png"></center>
+<center><img src="/images/unbreakable-1-writeup/notafuzz-ida.png"></center>
 </div>
 
 I only tried the format string attack the first time I was asked for input! Knowing that the third answer will use `printf` with my input as the first argument, it was trivial to leak bytes from the program's memory:
@@ -221,7 +221,7 @@ The challenge was created by Bit Sentinel.
 A web challenge! As always, it turned out I overcomplicated things. After making an account, I had the option of sending messages to admins:
 
 <div>
-<center><img src="/images/unbreakable_1_writeup/manual-review-dashboard.png"></center>
+<center><img src="/images/unbreakable-1-writeup/manual-review-dashboard.png"></center>
 </div>
 
 Everything hinted at an XSS, so I entered `<script>alert(1);</script>` and clicked the submit button. As expected, the javascript code was executed.
@@ -276,7 +276,7 @@ Serving HTTP on 0.0.0.0 port 1337 (http://0.0.0.0:1337/) ...
 {% endhighlight %}
 
 <div>
-<center><img src="/images/unbreakable_1_writeup/rundown-error.png"></center>
+<center><img src="/images/unbreakable-1-writeup/rundown-error.png"></center>
 </div>
 
 The new output offered a lot of information. First, the web app was powered by Flask. The server was using python 2.7 and a part of the app.py file was visible in the traceback:
@@ -878,7 +878,7 @@ The challenge was created by Bit Sentinel.
 After trying several steganography programs, the solution turned out to be quite simple. I opened the `rain.wav` file in Audacity and changed the view mode to 'Spectrogram'. I then opened the `Spectrogram Settings` menu and tried several numbers for `window size`, eventually setting it to `4096`. After zooming in a little bit, this is what the spectrogram looked like:
 
 <div>
-<center><img src="/images/unbreakable_1_writeup/spectrogram.png"></center>
+<center><img src="/images/unbreakable-1-writeup/spectrogram.png"></center>
 </div>
 
 In case you can't see it, the graph reads 'Secret Code: spectrogram'. The flag is `ctf{sha256('spectrogram')}`.
@@ -1338,7 +1338,7 @@ yakuhito@furry-catstation:~/ctf/unbr1/lost-message$
 I honestly have no idea what you're doing here. Really. The writeup ended few lines before. However, since you're already here, I can't end this post without ~~bragging that I've solved all the challenges~~ publishing a part of the scoreboard and congratulating everyone that participated in the contest.
 
 <div>
-<center><img src="/images/unbreakable_1_writeup/scoreboard.png"></center>
+<center><img src="/images/unbreakable-1-writeup/scoreboard.png"></center>
 </div>
 
 *now please excuse me but I have to prepare my scholastic personality for an assessment test*
