@@ -1,9 +1,9 @@
-name: Deploy blog2
+name: Deploy blog
 
 on:
   push:
     branches:
-      - blog2
+      - master
 
 permissions:
   contents: read
@@ -31,7 +31,7 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           set +e
-          output=$(npx wrangler pages project create blog --production-branch=blog2 2>&1)
+          output=$(npx wrangler pages project create blog --production-branch=master 2>&1)
           code=$?
           set -e
           printf '%s\n' "$output"
