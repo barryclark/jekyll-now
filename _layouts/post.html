@@ -2,6 +2,16 @@
 layout: default
 ---
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+  MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
 <article class="post">
   <h1>{{ page.title }}</h1>
 
@@ -9,6 +19,15 @@ layout: default
     {{ content }}
   </div>
 
+{% for tag in post.tags %}
+  {% assign tag_slug = tag | slugify: "raw" %}
+  <a class="tag-link"
+    href={{ site.baseurl | append: "/tags/" | append: tag_slug | append: "/" }}
+    rel="category tag">
+    #{{ tag }}
+  </a>
+{% endfor %}
+  
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
