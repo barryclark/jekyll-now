@@ -63,7 +63,7 @@ defaults:
       path: ""
       type: "pages"
     values:
-      layout: "about"
+      layout: "home"
 
 #tags
 collections:
