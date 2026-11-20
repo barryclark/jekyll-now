@@ -1,0 +1,86 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Madeira - Ponta do Pargo - Nick Faldo Design</title>
+  <meta name="description" CONTENT="New Golf Course Nick Faldo Design Paul Jansen Adam Calver Madeira Ponta do Pargo Sustainable">
+  {% include h.html %}	 
+  <script src="https://cmp.osano.com/Azqae7Tg5rIXKJsl/a6843304-e87a-485e-aabb-2b21be3ed691/osano.js"></script>
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Portugal"></div>
+			<div class="content" tabindex="0"  aria-label="Faldo">
+				<H1>New Faldo Design Golf Course - Madeira</H1>
+				<p>Idyllic island destination Madeira in Portugal is welcoming a new clifftop golf course designed by <a style='font-weight:bold' href='https://en.wikipedia.org/wiki/Nick_Faldo' target='_blank' rel='nofollow'>Sir Nick Faldo</a> with design associate  <a style='font-weight:bold' href='https://www.linkedin.com/in/paul-jansen-8018a319/' target='_blank' rel='nofollow'>Paul Jansen</a>.  Longtime Faldo associate and planning consultant <a style='font-weight:bold' href='https://www.linkedin.com/in/garethjrwilliams/' target='_blank' rel='nofollow'>Gareth Williams</a> is also involved in the project.  The <a style='font-weight:bold' href='https://theazaleagroup.com/blog/2023/7/26/new-faldo-course-at-ponta-do-pargo-in-madeira-to-open-in-2026' target='_blank' rel='nofollow'>new golf course</a> is located at Ponta do Pargo with an anticipated opening in 2026.  Madeira is one of the two <a style='font-weight:bold' href='https://en.wikipedia.org/wiki/Autonomous_Regions_of_Portugal' target='_blank' rel='nofollow'>autonomous regions of Portugal</a>.</p>
+				<p>Work on the first phase of the course construction began in 2009 before being halted in 2012. The site recommenced golf construction in May 2023.  Shaper Rafal Oczkowski from RafGolf Construction is onsite building golf holes.  Anticipation for the second phase of the project is to complete in 2026.  Design and early construction has hole 9 playing as a downhill 618 par 5 to the perimeter cliffside perimeter on the shoreline.  The golf course is planted in Kikuyu grass.</p>
+				<p>The property will be a leader with a sustainable, environmental purpose to preserve the natural charm of the clifftop course in its naturual environment overlooking the Atlantic westwards. Ponta do Pargo Golf Course is owned by Ponta do Oeste S.A will adopt a number of measures to reduce the environmental impact across the 120-acre site including the installation of a state-of-the-art irrigation system.</p>
+				<p>Situated on the most westerly point of Madeira Island in the Ponta do Pargo region, hilltop setting surrounded by the Atlantic Ocean, will generate superlatives in the views framed by the signature Ponta do Pargo lighthouse on the island. In addition to the 18 hole golf course, Ponta da Pargo will also feature a short course with practice facilities including a driving range and short game area for chipping and putting practiec.</p>
+				<p>As a leading golf architect Faldo's firm has been in the business of creating golf courses since 1991 and built unique courses on five continents and in 20 different countries.  This may be the most important project in <a style='font-weight:bold'  href='http://nickfaldodesign.com/' target='_blank' rel='nofollow'>Faldo Design</a> history.  In recent years,  <a style='font-weight:bold'  href='https://www.linkedin.com/in/adam-calver-18270315' target='_blank' rel='nofollow'>Adam Calver</a> has been a key representative of Faldo Design in the field working of golf architecture and construction build out details.  Calver was previously on the build, leading grow-in team of Bill Coore/Ben Crenshaw's Top 100 World golf course at <a style='font-weight:bold'  href='https://golf.com/courses/cabot-cliffs-golf-top-100-world/' target='_blank' rel='nofollow'>Cabot Cliffs</a> in Nova Scotia, Canada.  The potential and design plans from Faldo Design on the seaside put this property at the top of the game before opening day.</p>
+				<p><a href="https://fescue.github.io/Hann-Reserve/">Hann Reserve</a> is a new 54 hole golf resort in New Clark City, Philippines with Nick Faldo as one of the principal golf architects.</p>
+				<iframe width="550" height="300" src="https://www.youtube.com/embed/-A3aZEN9z_0?si=4HFG06NLhVImwEu2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+	</div>
+	
+    <script>
+            const map = L.map('map').setView([32.8140159,-17.2655995], 6);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+
+		    // Your lite-youtube HTML
+	            this._container.innerHTML = `
+	                    <lite-youtube videoid="4_HXdHcXaZc" style="background-image: url('https://i3.ytimg.com/vi/4_HXdHcXaZc/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=4_HXdHcXaZc" class="lty-playbtn" title="Play Video.  Credit: Diário de Notícias — Madeira">
+	                            <span class="lyt-visually-hidden">Credit: Diário de Notícias — Madeira</span>
+	                        </a>
+	            </lite-youtube>
+	            `;
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([32.8140159,-17.2655995]).addTo(map);
+
+	        marker.bindPopup("<b>Madeira</b><br>Portugal</br>").openPopup();
+	</script>
+	
+   	<p><a style='font-weight:bold' href="https://fescue.github.io/Great-Keppel-Island/">Australia's Great Keppel Island</a></p>
+	<p><a style='font-weight:bold' href="https://fescue.github.io/Muriwai-Downs-Golf/">Muriwai Downs in New Zealand</a></p>
+	<p><a style='font-weight:bold' href="https://fescue.github.io/Broomsedge-Golf-Club/">Broomsedge in South Carolina</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

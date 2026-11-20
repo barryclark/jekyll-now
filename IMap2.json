@@ -1,0 +1,129 @@
+{"storymap": {
+        "slides": [
+			{
+				"type": "overview",
+				"text": {
+					"headline": "Candidates",
+					"text": "<p>Te Arai - South</p><p>7 Mile Beach</p><p>La Réserve Golf Links</p><p>Ban Rakat Club - Ballyshear</p><p>Terras da Comporta Dunas</p><p>Cabot St. Lucia</p><p>Tree Farm</p><p>McArthur West</p><p>Sand Valley - Lido</p>"
+				 }
+			},{
+				"text": {
+					"headline": "Te Arai - South",
+					"text": "<p>Te Arai - South built by Coore Crenshaw in New Zealand opened in 2023.</p>"
+				},
+				"location": {
+					"lat": -36.1967176,
+					"lon": 174.616897,
+					"zoom": 10
+				},
+				"media": {
+					"url": "https://tearai.com/golf/south-course/"
+				}
+			},{
+				"text": {
+					"headline": "7 Mile Beach",
+					"text": "<p>7 Mile Beach built by Clayton DeVries Pont in Hobart, Tasmania, Australia expected in 2023</p>"
+				},
+				"location": {
+					"lat": -42.848042,
+					"lon": 147.479254,
+					"zoom": 10
+				},
+				"media": {
+					"url": "https://7milegolf.com.au/updates/"
+				}
+			},{
+				"text": {
+					"headline": "La Réserve Golf Links",
+					"text": "<p>La Réserve Golf Links built in Bel Ombre, Mauritius by Peter Matkovich with co-design credit to Louis Oosthuizen opened September 2022.  La Reserve will be the new host venue for the DP World Tour’s AfrAsia Bank Mauritius Open.</p>"
+				},
+				"location": {
+					"lat": -20.10175,
+					"lon": 57.701072,
+					"zoom": 9
+				},
+				"media": {
+					"url": "https://heritagegolfclub.mu/golf/la-reserve-golf-links/"
+				}
+			},{
+				"text": {
+					"headline": "Ban Rakat Club - Ballyshear",
+					"text": "<p>Ban Rakat Club - Ballyshear built by Hanse in Thailand opened in 2022</p>"
+				},
+				"location": {
+					"lat": 13.609653,
+					"lon": 100.882831,
+					"zoom": 10
+				},
+				"media": {
+					"url": "https://brc.co.th/"
+				}
+			},{
+				"text": {
+					"headline": "Terras da Comporta Dunas",
+					"text": "<p>Terras da Comporta Dunas built by David Kidd in Portugal opens in 2022</p>"
+				},
+				"location": {
+					"lat": 38.324931,
+					"lon": -8.785595,
+					"zoom": 10
+				},
+				"media": {
+					"url": "https://twitter.com/hashtag/ComportaDunes?src=hash&amp;ref_src=twsrc%5Etfw"
+				}
+			},{
+				"text": {
+					"headline": "Cabot St. Lucia",
+					"text": "<p>Cabot St. Lucia built by Coore Crenshaw in St. Lucia expected in 2023</p>"
+				},
+				"location": {
+					"lat": 14.074383,
+					"lon": -60.935679,
+					"zoom": 10
+				},
+				"media": {
+					"url": "https://t.co/0Kt1hpo6x8"
+				}
+			},{
+				"text": {
+					"headline": "Tree Farm",
+					"text": "<p>Tree Farm built by Goalby Blair Doak in South Carolina, USA opened in 2023</p>"
+				},
+				"location": {
+					"lat": 33.539347,
+					"lon": -81.746414,
+					"zoom": 10
+				},
+				"media": {
+					"url": "https://www.instagram.com/p/CZmVgWfOujv/?utm_source=ig_web_copy_link"
+				}
+			},{
+				"text": {
+					"headline": "McArthur West",
+					"text": "<p>McArthur West built by Coore Crenshaw in Florida, USA expected in 2023</p>"
+				},
+				"location": {
+					"lat": 27.094252,
+					"lon": -80.169722,
+					"zoom": 10
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=vkOCIOJV__s"
+				}
+			},{
+				"text": {
+					"headline": "Sand Valley Lido",
+					"text": "<p>Sand Valley Lido built by Doak Schneider Slawnik in Wisconsin, USA opneed in 2023</p>"
+				},
+				"location": {
+					"lat": 44.171728,
+					"lon": -89.857699,
+					"zoom": 10
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=hq7Zl82hkFY"
+				}
+			}
+		]
+    }
+}

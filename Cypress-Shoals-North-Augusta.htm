@@ -1,0 +1,81 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Tom Watson Design - Augusta - Cypress Shoals</title>
+	<meta name="description" CONTENT="Tom Watson Design Golf Architecture North Augusta Cypress Shoals">
+	{% include h.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+	<div id="map" aria-label="North Augusta"></div>
+		<div class="content" tabindex="0"  aria-label="South Carolina">
+	        	<H1>Tom Watson Design - Augusta - Cypress Shoals</H1>
+	        	<p>New golf course <a href='https://cypressshoals.com/' target='_blank' rel='nofollow'>Cypress Shoals</a> in located in North Augusta, South Carolina.  Satellite imagery shows the property is currently under construction. The course is being designed by Tom Watson with an anticipated opening in 2025.  The property is adjacent to the Savannah River and located in between West Martintown Road and Interstate 20.  The greens will be MiniVerde bermudagrass, a type of grass that is known for its fast and firm conditions in the South.</p>
+	        	<p>The property is over 1,700 acress and is near the Augusta National Golf Club.  Watson's interest in equestrian sports will be part of the amenities offered.  Also nearby is the Sumter National Forest and the Savannah River National Wildlife Refuge.</p>
+			<p>Tom Watson has almost a 40 year history in golf course design.  Watson started in design with a contribution to the The Links at Spanish Bay in the mid 1980's with Robert Trent Jones Jr., Sandy Tatum, and <a href='http://www.knottlinn.com/html/architects.html' target='_blank' rel='nofollow'>Donald Knott</a>, ASGCA.  Watson has designed other golf courses in South Carolina, namely The Cassique at Kiawah Island Club in Kiawah Island, South Carolina.  Cassique is a low country landscape adjacent to the sea on the south part of the island.   Strategic bunkering with rolling topography offers shot values and challenging play.</p> 
+			<p>In 2023, Ballybunion announced Watson as the lead architect to renovate The Cashen Course.  The Cashen was designed by Robert Trent Jones Senior in 1982.  The golf course construction team to assist is unannounced as of early 2024, but <a href='https://dargolf.com/' target='_blank' rel='nofollow'>DAR Golf Construction Ltd</a> led by the team of Graham D’Arcy, Colin D’Arcy, and Brian D’Arcy would be a suitable Irish contractor to consider.</p>
+			<div class="substack-post-embed"><p lang="en">Masters by Tim Yeo</p><a data-post-link href="https://timyeogolf.substack.com/p/masters">ONLY FRIENDS YOU HAVEN’T YET MET</a></div>
+			<script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+		</div>
+	</div>
+	
+	<script>
+                const map = L.map('map').setView([32.572332,-82.274074], 10);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                
+	                // Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="M9u4rAyet14" style="background-image: url('https://i3.ytimg.com/vi/M9u4rAyet14/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=M9u4rAyet14" class="lty-playbtn" title="Play Video.  Credit: WRDW News 12">
+	                            <span class="lyt-visually-hidden">Credit: WRDW News 12</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([33.5375164,-82.04204]).addTo(map);
+	        marker.bindPopup("<b>Cypress Shoals</b><br>North Augusta, South Carolina</br>").openPopup();
+	</script>
+	<p><a href="https://www.postandcourier.com/aikenstandard/sports/golf/tom-watson-putting-together-his-course-at-cypress-shoals-in-edgefield-is-kind-of-a/article_c37c998e-d4a6-11ed-bd42-63dc020d3da5.html">Post and Courier</a></p>
+	<p><a href="https://fescue.github.io/The-Rose/">The Rose near the University of Georgia</a></p>
+    <p><a href="https://fescue.github.io/Fall-Line-Golf/">Fall Line - Sand Hills of Butler County, Georgia</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

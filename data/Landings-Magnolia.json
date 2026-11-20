@@ -1,0 +1,21 @@
+{
+"storymap": {
+        "slides": [
+			{
+				"text": {
+					"headline": "The Landings Magnolia Golf Course Renovation",
+					"text": "<p>The Landings Magnolia Golf Course renovation by <a style='font-weight:bold' href='https://asgca.org/architect/bjohnson/' target='_blank' rel='nofollow'>Brandon Johnson, ASGCA</a> and John Gardner was a two-phase project that began in 2021. The first phase focused on renovating the bunkers and greens with the aim to improve their playability, aesthetics, and maintenance. The second phase rebuilt tees.  Additional updates were to the lake liner, tree removal, native vegetation restoration, and cart path conversion.</p><p>  The main goals of the renovation to the greens were to improve the drainage and increase the variety of hole locations.  The number of bunkers was reduced while still providing strategic hazards.  Fairways were widened on a few holes to allow for more shot angle benefits for approach shots.  The second phase was completed in spring of 2023.</p><p>Brandon Johnson is an indepedent golf course architect who previously worked as a vice president at Arnold Palmer Design Company. He has been involved in the design of over 30 gol courses around the world, including the Landings Magnolia Golf Course renovation.  Johnson was born in Charlotte, North Carolina, and grew up playing golf. He attended North Carolina State University, where he earned a Bachelor of Landscape Architecture with a minor in Music. After graduating, he went on to earn a Master of Landscape Architecture from Harvard Graduate School of Design.</p><p><a style='font-weight:bold' href='https://www.linkedin.com/in/john-gardner-36615a157' target='_blank' rel='nofollow'>John Gardner</a> is a senior associate at Arnold Palmer Design Company.  Gardner was with Arnold Palmer Design Company for over 20 years working on golf course projects around the world.  Gardner was responsible for the day-to-day implementation of the Landings Magnolia Golf Course renovation by working with the construction team.</p>"
+				},
+				"location": {
+					"lat": 31.945224,
+					"lon": -81.04894,
+					"zoom": 7
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=yIgjvbVW87M",
+					"credit": "The Landings Golf & Athletic Club"
+				}
+			}
+		]
+    }
+}

@@ -1,0 +1,80 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Wakonda Club - Restoration by Tyler Rae</title>
+	<meta name="description" CONTENT="Wakonda Club Golf Iowa Des Moines Langford Moreau Tyler Rae Jim Ryan PGA Tour Champions USGA Amateur">
+	{% include h40.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Wisconsin"></div>
+		<div class="content" tabindex="0"  aria-label="TPC">
+				<H1>Wakonda's Langford Moreau Restoration</H1> 
+				<p><a style='font-weight:bold' href="https://www.wakondaclub.com/">Wakonda Club</a> completed a Langford & Moreau <a style='font-weight:bold' href='https://twitter.com/dgblum/status/1677664182190190593' target='_blank' rel='nofollow'>restoration</a> with a $8 million dollar budget led by golf architect Tyler Rae with assistance from <a style='font-weight:bold' href='https://www.linkedin.com/posts/jim-ryan-jr-79680459_wakonda-club-unveils-plan-for-major-renovation-activity-7077718608528728064-hxs8/' target='_blank' rel='nofollow'>Jim Ryan Jr.</a>.  The post renovation opening date was May 2024.  Ryan started his career in design/build at Mottin Golf Construction.  The Wakonda renovation began in June 2023.  The project included a number of changes to the golf course including expansion of greens, widening driving corridors and short grass with an additional 10 acres of fairway.  Some of the infrastructure updates included a new irrigation system, state-of-the-art drainage implementation, and removal of <a style='font-weight:bold' href="https://www.axios.com/local/des-moines/2024/04/22/wakonda-relaunch-club-desmoines-golf-principal">143 trees</a>.</p>
+				<p>William Langford (1887-1977) and Theodore Moreau (1890-1942) are considered to be one of the most important golf course design partnerships of the Golden Age with a focus on golf construction in the area surrounding Chicago, Illinois.  The pair designed over 200 golf courses in their 24 years together including <a style='font-weight:bold' href='https://www.lawsonia.com/the-links' target='_blank' rel='nofollow'>Lawsonia Links</a> in Green Lake, Wisconsin, Skokie Country Club in Glencoe, Illinois, and <a style='font-weight:bold' href='https://golfclubatlas.com/countries/culver-academies/' target='_blank' rel='nofollow'>Culver Academies</a> in Indiana.  Their style is known as bold movement in the land with a large scale to how fairways transition into greens and deep bunkers. They also incorporated a variety of natural features into their designs including streams and lakes as adjacent challenges.</p>
+				<p>Wakonda Club is a private, member-owned country club located in Des Moines, Iowa. The club was founded in 1922 and hosted the 1963 United States Amateur.  In more recent times, Wakonda has hosted the PGA Tour Champions event annually.</p>
+			</div>
+	</div>
+
+    <script>
+                const map = L.map('map').setView([41.5504574,-93.6442522], 8);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+					
+	                // Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="T6deJ4WHQwc" style="background-image: url('https://i3.ytimg.com/vi/T6deJ4WHQwc/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=T6deJ4WHQwc" class="lty-playbtn" title="Play Video.  Credit: KCCI NewsChannel 8">
+	                            <span class="lyt-visually-hidden">Credit: KCCI NewsChannel 8</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([41.5504574,-93.6442522]).addTo(map);
+	        marker.bindPopup("<b>Wakonda</b><br>Des Moines, Iowa</br>").openPopup();
+  </script>
+    <p><a href="https://fescue.github.io/Karsten-Creek/">Andrew Green's Renovation of Karsten Creek</a></p>
+    <p><a href="https://fescue.github.io/Darmor-Golf-Club/">Hal Sutton's New Golf Course at Darmor Golf Club</a></p>
+
+	
+
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

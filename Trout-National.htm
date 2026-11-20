@@ -1,0 +1,78 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Trout National: Mike Trout + Tiger Woods</title>
+	<meta name="description" CONTENT="Trout National Reserve PGA Tour Tiger Woods Major League Baseball Mike Trout">
+	{% include h.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Trout National"></div>
+		<div class="content" tabindex="0"  aria-label="Trout">
+			<H1>Trout National: Mike Trout + Tiger Woods</H1> 
+			<p><a style='font-weight:bold' href='https://troutnational.com/' target='_blank' rel='nofollow'>Trout National - The Reserve</a> is a new golf course being built in Cumberland County in Vineland, New Jersey, designed by Tiger Woods and <a style='font-weight:bold' href='https://tgrdesign.tigerwoods.com' target='_blank' rel='nofollow'>TGR Design</a> lead Beau Welling.  The course is being built on a former sand mine and is opening April 2026.</p>
+			<p>Trout National - The Reserve is a private club, and membership is by invitation only. However, the course will also be open for public play on a limited basis. The course is named after <a style='font-weight:bold' href='https://en.wikipedia.org/wiki/Mike_Trout' target='_blank' rel='nofollow'>Mike Trout</a>, the three-time American League MVP and 10-time All-Star for the Los Angeles Angels. Trout is a native of Vineland, New Jersey.</p><p>The development of Trout National - The Reserve is an economic benefit for the Vineland community. The project will create hundreds of jobs during construction and is projected to generate millions of dollars in economic activity each year.  The property is expected to be a regional attraction for traveling golfers with its location within 30 miles of the #1 golf course in the world, <a style='font-weight:bold' href='https://golf.com/course/pine-valley/' target='_blank' rel='nofollow'>Pine Valley</a>, which has a similar sandy terrain.</p><p>The land was purchased by John Ruga, a local developer, in 2018. Ruga teamed up with co-founder Mike Trout and Tiger Woods to develop the golf course.  The property is a former silica sand mine, and the design is anticipated to highlight playable sandy waste areas.  Tiger Woods has been spending time on property in 2023 and 2024 with design lead Beau Welling overseeing golf construction.</p>
+			<p>The project is divided into nine distinct phases. The first phase involves the construction of an already approved maintenance facility, eleven golf holes, and two pump houses. The second phase completes the construction of the remaining seven golfing holes and one practice range and chipping area. The third phase includes the building of the gatehouse on the north side of Mays Landing Road and a 7,641 square foot performance training center.  The fourth phase will involve the construction of a 1,105 square foot comfort station.  The fifth phase will focus on the construction of a practice green for chipping and putting.  The sixth phase will include the building of a proposed short game area and a proposed putting course.  The seventh phase will involve the construction of two 10,183 square foot private lodges and four 2,890 square foot private lodges.  The eighth phase will see the construction of the 35,015 square foot clubhouse which includes a 2,765 square foot Pro Shop, a 2,622 square foot garage, and a 1,250 square foot owner’s garage.  Lastly, the ninth phase plans for a 22,046 square foot private lodge.  Additionally, phase nine allows for the construction of a privately owned heliport that will also available for emergency services.</p>
+	                <img src="https://fescue.github.io/images/TGR-Design-Trout-National.png" alt="TGR Design Routing Plan">
+		</div>
+	</div>       
+
+    <script>	
+                const map = L.map('map').setView([39.25256,-75.00418], 10);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                
+	                // Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="faAuJKg2DMk" style="background-image: url('https://i3.ytimg.com/vi/faAuJKg2DMk/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=faAuJKg2DMk" class="lty-playbtn" title="Golf Project.  Credit: 6abc Philadelphia">
+	                            <span class="lyt-visually-hidden">Credit: 6abc Philadelphia</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([39.25256,-75.00418]).addTo(map);
+	        marker.bindPopup("<b>Trout National</b><br>Vineland, New Jersey</br>").openPopup();
+	</script>
+    <p><a href="https://fescue.github.io/The-Rose/">The Rose in Georgia</a></p>
+    <p><a href="https://fescue.github.io/High-Grove/">Gil Hanse's High Grove</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

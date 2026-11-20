@@ -1,0 +1,21 @@
+{
+"storymap": {
+        "slides": [
+			{
+				"text": {
+					"headline": "Golf La Tempête - New Golf Course in Quebec, Canada",
+					"text": "<p><a href='https://www.facebook.com/golflatempete' target='_blank' rel='nofollow'>Golf La Tempête</a> added a second 18-hole championship golf course in 2023.  The site is located in Lévis, Quebec, Canada.  Design of the new course is the heroic school of design with island green and championship golf in mind for future PGA Tour events with spectator gallery viewing as part of the design.</p><p><a href='https://www.huxhamgolfdesign.com/company/' target='_blank' rel='nofollow'>Huxham Golf Design</a> is a golf course architecture company led by Darrell Huxham/Warren Huxham. The firm's home office is in Quebec, Canada having designed courses in Canada, United States, Korea, China, and Mexico. Huxham Golf Design was honored with the Canadian Golf Course of the Year Award and the American Society of Golf Course Architects (ASGCA) Award of Merit.</p>"
+			},
+			"location": {
+					"lat": 46.6755369,
+					"lon": -71.2176733,
+					"zoom": 7
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=q9EbMo7OD20",
+					"credit": "Le Soleil, le quotidien de Québec"
+				}
+			}
+		]
+    }
+}

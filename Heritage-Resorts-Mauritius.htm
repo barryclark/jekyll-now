@@ -1,0 +1,81 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<title>La Réserve Golf Links - Heritage Resorts Mauritius</title>
+	<meta name="description" CONTENT="Heritage Resorts Mauritius La Réserve Links New Golf Course Peter Matkovich Louis Oosthuizen">
+	{% include h.html %}
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Mauritius"></div>
+			<div class="content" tabindex="0"  aria-label="Heritage Resorts">
+				<H1>La Réserve - New GEO Certified Golf Course on Mauritius</H1>
+				<p>Golf architect <a style='font-weight:bold' href='https://matko.co.za/' target='_blank' rel='nofollow'>Peter Matkovich</a> and <a style='font-weight:bold' href='https://louis57.com/' target='_blank' rel='nofollow'>Louis Oosthuizen</a>, 2010 Open Champion at St. Andrews, have designed and built <a style='font-weight:bold' href='https://heritagegolfclub.mu/golf/la-reserve-golf-links/' target='_blank' rel='nofollow'>The Heritage La Réserve Golf Links</a> on the island nation of Mauritius.</p><p>The new golf course opened in December 2023 and hosted the European Tour's DP World Tour 2023 <a style='font-weight:bold' href='https://www.europeantour.com/dpworld-tour/afrasia-bank-mauritius-open-2024/' target='_blank' rel='nofollow'>AfrAsia Bank Mauritius Open</a> with Louis Oosthuizen as the unofficial host/player.  Going off the 10th tee with a 7 am tee time, Antoine Rozner(OWGR rank 128 at the time) from France went out in 29 and set the course record at 10 under with a score of 62.  Golf architect Matkovich has planned and built over 30 golf courses in Southern Africa in his long distinguished career in design.</p>
+				<p>The course location on the long ago volcanic island has a routing which traverses the slope downwards to nearby views lagoons in palm-lined beaches onshore the Indian Ocean's coral reefs.  Sustainable, environmentally sensitive practices with <a style='font-weight:bold' href='https://sustainable.golf/leaderboard/' target='_blank' rel='nofollow'>GEO Certification</a> of the resort's golf courses has been an initiative the property has long undertaken.  Distinctive features on the golf course are native grasses on the perimeter of each fairway - those wispy, native grasses are maintained at a height to remind you of faraway fescue grass on links golf courses.  La Réserve becomes the first in the greater African region to be confirmed with GEO Certified Development Status.</p>
+				<p>Green complex designs vary with several holes featuring skyline greens with long views into Indian Ocean.  Long par 5 holes are routed up and down the hill with added challenge to get home in two shots for an eagle putt.  The 18th hole is a downhill par 5 bisected with a natural ravine with a stream running down the hill to give the golfer an eagle opportunity.  The golf course is planted in Pure Dynasty paspalum, a grass type suitable to reproduce firm links conditions in the warm tropics.  Turfgrass research from Filippo Lulli, et al. compares <a style='font-weight:bold' href='https://www.researchgate.net/publication/276384084_Warm-season_Turfgrass_Species_Generate_Sports_Surfaces_with_Different_Playability' target='_blank' rel='nofollow'>paspalum firmness and speed</a> among tifway bermudagrass and zeon zoysia with the conclusion in favor of paspalum.</p>
+				<p><a style='font-weight:bold' href='https://heritagegolfclub.mu/resorts-villas-mauritius/' target='_blank' rel='nofollow'>Heritage Resorts</a> is situated in the alluring Domaine de Bel Ombre, epitomizing luxury and indulgence in a harmonious nature environment.  The lush landscape of tropical paradise is an appealing option to pause and take a break.  Overnight options onsite include The Heritage Le Telfair Golf & Wellness Resort, The Heritage Awali Golf & Spa Resort, or the privacy of <a style='font-weight:bold' href='https://www.lechateaudebelombre.com/' target='_blank' rel='nofollow'>Le Château de Bel Ombre</a>.</p>
+				<p>The island has a pleasant tropical climate.  The months from May to December are ideal for a visit with November and December being warmer.</p>
+			</div>
+	</div>
+	
+    <script>
+            const map = L.map('map').setView([-20.4862359,57.3875944], 6);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+					
+					// Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="4-WBeIfIXWg" style="background-image: url('https://i3.ytimg.com/vi/4-WBeIfIXWg/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=4-WBeIfIXWg" class="lty-playbtn" title="Play Video.  Credit: Heritage Resorts">
+	                            <span class="lyt-visually-hidden">Credit: Heritage Resorts</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([-20.4862359,57.3875944]).addTo(map);
+
+	        marker.bindPopup("<b>La Réserve Golf Links</b><br>Bel Ombre, Mauritius</br>").openPopup();
+	</script>
+   	<p><a href="https://fescue.github.io/Dalaman-Golf-Resort/">IDG's Dalaman Golf Resort in Turkey</a></p>
+   	<p><a href="https://fescue.github.io/Broomsedge-Golf-Club/">New Golf Design Broomsedge</a></p>
+	<p><a href="https://fescue.github.io/Golf-India-Aivot-PGA/">Lobb's Initiative with the PGA in India</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

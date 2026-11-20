@@ -1,0 +1,35 @@
+{
+"storymap": {
+        "slides": [
+			{
+				"text": {
+					"headline": "Avanzada Golf & Ranch Club",
+					"text": "<p> <a style='font-weight:bold' href='https://avanzadagolf.com/' target='_blank' rel='nofollow'>Avanzada Golf & Ranch Club</a> is a private golf club in Aledo, Texas just west of Fort Worth.  The golf course is designed by golf course architect <a style='font-weight:bold' href='https://asgca.org/architect/jlipe/' target='_blank' rel='nofollow'>Jim Lipe, ASGCA</a> and <a style='font-weight:bold' href='https://www.pgatour.com/player/23353/j.j-henry' target='_blank' rel='nofollow'>JJ Henry from the PGA Tour</a>.  The course is an 18 hole championship golf course with rolling topography.  <a style='font-weight:bold' href='https://www.community-news.com/stories/new-high-end-golf-community-planned-on-kelly-road,13213' target='_blank' rel='nofollow'>Henry expressed excitement</a> about designing a golf course in Bear Creek, highlighting the area's unique features like 50-foot wide spots, limestone cliffs, and hardwoods. The course will take advantage of a 200-foot elevation change and offer panoramic Texas views from the adjacent residential housing on the ridgelines above on higher ground.</p><p>The residential community at Avanzada Golf & Ranch Club are designed to blend in with the natural surroundings and offer views of the golf course and surrounding countryside.  The club has a variety of family amenities, namely a pool, tennis courts, and a playground.</p><p>Jim Lipe was a senior design associate with Nicklaus Design for many years overseeing onsite design build decisions and execution at many courses - prominent examples include Cabo del Sol, Castle Pines, Cochise Course at Desert Mountain, Mayacama, May River at Palmetto Bluff, Punta Mita, Sebonack, Southern Trace.</p>"
+				},
+				"location": {
+					"lat": 32.7771101,
+					"lon": -97.7648794,
+					"zoom": 6
+				},
+				"media": {
+					"url": "https://vimeo.com/853342973",
+					"credit": "Matrix"
+				}
+			},{
+				"text": {
+					"headline": "Construction of a New Golf Course",
+					"text": "<p>Construction of the new golf course at <a style='font-weight:bold' href='https://avanzadagolf.com/' target='_blank' rel='nofollow'>Avanzada Golf & Ranch Club</a> is being built by Texas company <a style='font-weight:bold' href='https://www.facebook.com/MatrixDemolition/' target='_blank' rel='nofollow'>Matrix</a>.  Matrix is hired to follow Jim Lipe's design plans and work with Lipe and JJ Henry onsite in the field.</p>"
+				},
+				"location": {
+					"lat": 32.7771101,
+					"lon": -97.7648794,
+					"zoom": 8
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=1AmTlrnGDQ4",
+					"credit": "Avanzada Golf"
+				}
+			}
+		]
+    }
+}

@@ -1,0 +1,74 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Coore Crenshaw - Crazy Mountain - Montana</title>
+	<meta name="description" CONTENT="Crazy Mountain Ranch Golf Course Coore Crenshaw Rocky Mountains Montana Environmental Sustainable">
+	{% include hLeaflet.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Montana Ranch"></div>
+		<div class="content" tabindex="0"  aria-label="Crazy Mountain">
+				<H1>Coore Crenshaw - Crazy Mountain Ranch in Montana</H1> 
+				<div class="video-inner-container">
+					<iframe src="https://player.vimeo.com/video/734541819?h=e2b4c17b05" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<p></p>
+				<p>The new walkable 18-Hole Golf Course at <a style='font-weight:bold' href='https://crazymountainranch.com/' target='_blank' rel='nofollow'>Crazy Mountain Ranch</a> is designed by <a style='font-weight:bold' href='https://www.cooreandcrenshaw.com/portfolio.html' target='_blank' rel='nofollow'>Bill Coore & Ben Crenshaw</a> and anticipated to open in 2025.  The landscape will feature mountain views, aspen groves & wide open spaces surrounding the Ranch overlooking Hammond Creek.</p>
+				<p>Currently under construction, this design will provide members with a walkable 18 holes of golf.  A par 3 short course is also being planned.  Greens are seeded bentgrass and Kentucky Bluegrass fairways.  Irrigation is Toro Lynx.  Fly fishing, skeet shooting and other activities are being planned as well over the 18,000 acre expanse.</p>
+				<p>The bedrock in the Crazy Mountains is formed by the Big Timber Stock, a large igneous intrusion adjacent to Custer Gallatin National Forest.  The stock is of the Tertiary age consisting of diorite and gabbro with zones of Quartz Monzodiorite which over time has been intruded by many dikes and sills.</p>
+				<p><a style='font-weight:bold' href='https://www.lonemountainland.com/' target='_blank' rel='nofollow'>Lone Mountain Land Company (LMLC)</a> has partnered with Discovery Land to operate the golf club.  Lone Mountain Land Company was created by CrossHarbor Capital Partners to manage the planning, entitlement, building, marketing, and sale of premier real estate communities in and around Big Sky, Montana and other locations worldwide.  CrossHarbor also owns the Yellowstone Club in Big Sky.<p>
+			</div>
+	</div>
+
+    <script>		
+            const map = L.map('map').setView([45.8935508,-110.4923968], 7);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([45.8935508,-110.4923968]).addTo(map);
+	        marker.bindPopup("<b>Crazy Mountain</b><br>Montana</br>").openPopup();
+	</script>
+	<p><a href="https://fescue.github.io/Torch-Cay/">Coore Crenshaw's Torch Cay in the Bahamas</a></p>
+	<p><a href="https://fescue.github.io/Lake-Martin-Wicker-Point-Golf/">Coore Crenshaw's Lake Martin in Alabama</a></p>
+	<p><a href="https://fescue.github.io/Twin-Bridges-Golf/">Twin Bridges - Montana</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

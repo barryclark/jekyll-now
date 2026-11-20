@@ -1,0 +1,96 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>Linville Golf Club - Donald Ross Restoration</title>
+    <meta name="description" CONTENT="Linville Golf Club Course Restoration Donald Ross">
+	{% include h.html %}
+</head>
+
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Linville"></div>
+			<div class="content" tabindex="0"  aria-label="Ross">
+                <H1>Linville Golf Club - Donald Ross Restoration</H1>
+                <p>Golf course architect <a style='font-weight:bold' href='https://greengolfandturf.com/andrew' target='_blank' rel='nofollow'>Andrew Green</a> is focusing on restoration of Donald Ross' <a style='font-weight:bold' href='https://www.linvillegolfclub.com/' target='_blank' rel='nofollow'>Linville Golf Club</a>.</p>
+                <p>Honoring <a style='font-weight:bold' href='https://rosssociety.org/' target='_blank' rel='nofollow'>Donald Ross'</a> Legacy: The renovation aims to restore and enhance the original design intentions of Donald Ross while adapting the course for the modern game. Green studied original drawings and historical aerial photography from the 1930's to 1950's.</p>
+                <p>Green Complex Restoration: Green believes in the "aging process" of golf greens.  Andrew Green restored Donald Ross' Inverness Club, Franklin Hills, Oak Hill.  Future work from Andrew Green will be at Donald Ross course Charlotte Country Club.  Maintenance practices of top dressing and aerification from greenskeeper's cultural practices over a long period can lead to "pillowing" with a loss of original slopes and contours.  Green views the 10th green as an example to reclaim lost features and expand the greensite. Other greens for expansion/restoration include the challenging 2nd and 7th.</p>
+                <p>Highlights:</p>
+                <ul>
+                    <li><strong>#2 Green:</strong> Expand putting surface.  Maintain challenging contours.</li>
+                    <li><strong>#7 Green:</strong> Address the "pillowing" effect to increase usable space without sacrificing natural uphill challenge.</li>
+                    <li><strong>#9 Green:</strong> Restore Ross' intended "double plateau" concept.  Create more strategic green complex.</li>
+                    <li><strong>#10 Green:</strong> Restore lost features and contours.  Expand putting surface.</li>
+                    <li><strong>#13 Hole:</strong> Find original design to reintroduce the back-center hole location. Remove cart path.</li>
+                    <li><strong>#17 Green:</strong> Lower green to reclaim lost views. Enhance shot value on picturesque par 3.</li>
+                    <li><strong>#18 Green:</strong> Retsore green's unique bumps and contours to match historical photographs.</li>
+                </ul>
+                <p><strong>Tree Management:</strong> Andrew Green plans to remove trees that negatively impact turf health from better airflow.  Specifically, Green found overgrown trees on holes 3, 4, 8, 13, 15, 16.</p>
+                <p><strong>Cart Path Considerations:</strong> Andrew Green plans to minimize cart path visuals to prioritize walking club experience.</p>
+
+                <h2>Quotes from Andrew Green</h2>
+                <p><strong>On Donald Ross' design philosophy:</strong> "Ross understood his designs should work for every class of player. The ideal course is one that presents a test for the first-class player and the everyday golfer."</p>
+                <p><strong>On the importance of green restoration:</strong> "When we go to restore things, we really are trying to find that original intent the best we can."</p>
+                <p><strong>On the approach to tree management:</strong> "We really tried to accentuate the best trees we had…[and] find the right balance between some of the amazing vistas you have [and] the history of the golf course.”</p>
+                <p><strong>Addressing concerns about green size:</strong> "The goal isn't that you have 18 tricky hole locations on a Saturday. It’s that you have one or two, but you have the opportunity to...experience some different things."</p>
+
+			</div>
+	</div>
+
+    <script>
+            const map = L.map('map').setView([36.065724,-81.871598], 8);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="ggsWBST2lmI" style="background-image: url('https://i3.ytimg.com/vi/ggsWBST2lmI/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=ggsWBST2lmI" class="lty-playbtn" title="Play Video.  Credit: Aaron Kirby - Linville Golf Club">
+	                            <span class="lyt-visually-hidden">Credit: Aaron Kirby - Linville Golf Club</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([36.065724,-81.871598]).addTo(map);
+	        marker.bindPopup("<b>Linville Golf Club</b><br>North Carolina</br>").openPopup();
+	</script>
+    	<p><a href="https://fescue.github.io/Roosevelt-Memorial-Golf-Course/">Donald Ross in Georgia: Roosevelt Memorial</a></p>
+    	<p><a href="https://fescue.github.io/Lazy-J/">Lazy-J</a></p>
+    	<p><a href="https://fescue.github.io/Old-Sawmill-Golf/">Old Sawmill in South Carolina</a></p>
+	{% include bodyFooter.html %}
+ </body>
+ {% include footer.html %}
+</html>

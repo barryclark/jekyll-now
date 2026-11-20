@@ -1,0 +1,82 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Apache Stronghold Golf Course - Arizona - Casino Golf</title>
+	<meta name="description" CONTENT="Apache Stronghold Golf Course Tom Doak Arizona Casino NLE Abandoned">
+	{% include h50.html %}
+	<script src="https://cmp.osano.com/Azqae7Tg5rIXKJsl/a6843304-e87a-485e-aabb-2b21be3ed691/osano.js"></script>
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Arizona"></div>
+			<div class="content" tabindex="0"  aria-label="Doak">
+				<H1>Apache Stronghold Golf - Doak in Arizona - Casino Golf</H1> 
+				<p>Apache Stronghold Golf Course was a golf course located in San Carlos, Arizona. It was designed by <a style='font-weight:bold' href='https://www.doakgolf.com/' target='_blank' rel='nofollow'>Tom Doak</a> as the lead of <a style='font-weight:bold' href='https://www.renaissancegolf.com/242/our-design/apache-stronghold-golf-club' target='_blank' rel='nofollow'>Renaissance Golf Design</a> opening in 1999.</p>
+				<p>The course was 7,519 yards long with par of 72. It was closed in 2021. The course was known for its challenging layout and its beautiful views of the surrounding desert landscape.</p>
+				<p>Apache Stronghold Golf Course closed in 2021 due to operating costs and maintenance issues in turfgrass management.  One year before closure, the property was recognized as the 34th best course in <a style='font-weight:bold'  href='https://golfweek.usatoday.com/lists/golfweeks-best-2020-top-50-casino-courses/' target='_blank' rel='nofollow'>Top 100 Casino Golf Courses</a>.</p>
+				<p>The future of Apache Stronghold Golf Course is uncertain. The San Carlos Apache Tribe owners have said that it is considering various options for the property, including selling it or developing it into a different type of recreation facility.</p>
+				<p>Disappointing for history and golfers following Tom Doak's career, but the rebirth of Doak's early work at <a style='font-weight:bold' href='https://www.highpointegc.com/' target='_blank' rel='nofollow'>High Pointe</a> in 2024 is a bright spot in golf course reopenings.</p>
+			</div>
+	</div>
+ 
+	<script>		
+		const map = L.map('map').setView([33.3611122,-110.673057], 7);
+		const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+		L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+			this._map = map;
+			this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+
+	                // Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="aXfzkd8gzVc" style="background-image: url('https://i3.ytimg.com/vi/aXfzkd8gzVc/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=aXfzkd8gzVc" class="lty-playbtn" title="Play Video.  Credit: Explore the Wild Discover Gila County">
+	                            <span class="lyt-visually-hidden">Credit: Explore the Wild Discover Gila County</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+	        
+			    
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([33.3611122,-110.6730157]).addTo(map);
+	        marker.bindPopup("<b>Apache Stronghold</b><br>Arizona</br>").openPopup();
+	</script>
+	<p><a href="https://fescue.github.io/Paradise-Isle/">Cape Coral Golf Course - NLE</a></p>
+	<p><a href="https://fescue.github.io/Monte-Rei-South/">Nicklaus' Planned Monte Rei South Course</a></p>
+	<p><a href="https://fescue.github.io/Domaine-Lavagnac-Golf/">Domaine Lavagnac in France</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

@@ -1,0 +1,79 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <title>Dolphin Island Conservation - Golf Cebu Philippines</title>
+  <meta name="description" CONTENT="18 hole championship golf course Dolphin Island Conservation land reclamation special economic zone Cebu Philippines">
+  
+  {% include h50.html %}
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Philippines"></div>
+			<div class="content" tabindex="0"  aria-label="Cebu">
+				<H1>Dolphin Island - Golf Cebu Philippines</H1> 
+				<p>Dolphin Island Golf and Country Club was a development project planned by the Cordova Land Development Corporation (CLDC). The proposal was a <a style='font-weight:bold' href='https://www.sunstar.com.ph/cebu/local-news/cebu-province-signs-agreement-for-cordova-reclamation-project' target='_blank' rel='nofollow'>land reclamation</a> of 1,500 hectares of land on the island with the construction of a golf course with a marina and beach for hotel resort guests.  However, the project was stalled from opposition by environmental groups and residents, arguing that the project would damage the island's ecosystem. In 2019, the Department of Environment and Natural Resources (DENR) denied the CLDC's environmental compliance certificate for the project.  The 2022 compromise agreement was for 254 hectares.</p>
+				<p>As of 2023, the golf project component on Dolphin Island has been abandoned. Instead the CLDC will pursue developing other island amenities.</p>
+				<p>Dolphin Island, also known as Olango Island, is a small island located in the Mactan Channel, just off the coast of Cebu City, Philippines.  The island is home to a number of dolphin species: the Indo-Pacific bottlenose dolphin, the spinner dolphin, and the striped dolphin.  Other wildlife includes sea turtles, birds, and fish.</p>
+			</div>
+	</div>
+		
+    <script>
+            const map = L.map('map').setView([10.156616,123.636965], 6);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');			
+			
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="WkJ1W2Ie15o" style="background-image: url('https://i3.ytimg.com/vi/WkJ1W2Ie15o/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=WkJ1W2Ie15o" class="lty-playbtn" title="Play Video.  Credit: Behind Asia">
+	                            <span class="lyt-visually-hidden">Credit: Behind Asia</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([10.156616,123.636965]).addTo(map);
+
+	        marker.bindPopup("<b>Cebu, Philippines</b>").openPopup();
+	</script>
+    <p><a href="https://fescue.github.io/Cliffs-Kangaroo-Island/">Cliffs on Kangaroo Island - South Australia</a></p>
+    <p><a href="https://fescue.github.io/Seven-Mile-Beach/">Seven Mile Beach - Clayton DeVries Pont</a></p>
+	
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

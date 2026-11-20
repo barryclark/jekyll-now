@@ -1,0 +1,82 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Hart Ranch - Public Golf - South Dakota</title>
+  <meta name="description" CONTENT="Hart Ranch Public South Dakota Golf Course Sustainable John Fought ASGCA Tee Time">
+  {% include h40.html %}
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="John Fought"></div>
+			<div class="content" tabindex="0"  aria-label="Hart Ranch">
+				<H1>Hart Ranch - Public Golf - South Dakota</H1>
+				<p><a style='font-weight:bold' href='https://www.hartranch.com/' target='_blank' rel='nofollow'>Hart Ranch Golf Club</a> is a public golf course located in the Black Hills of South Dakota.  The golf course opened in 1985 as a 9-hole course, then expanded to 18 holes in 1995.  The course's unique layout includes a winding creek that impacts play on twelve of the holes.</p>
+				<p>Continuous improvement from the John Fought's masterplan. In Fall 2023, the course initiated the first phase to enhance playability and shot-making while ensuring consistently high-quality turf conditions.  Among the completed improvements are leveling and realigning several tee boxes, the installation of new concrete cart paths, strategic tree removal to enhance playability and turf quality, and regrassing projects undertaken by <a style='font-weight:bold' href='https://www.duininckgolf.com/' target='_blank' rel='nofollow'>Duininck Golf</a>.  A significant aspect of this phase was the installation of a new irrigation system on the front nine to enable precise watering of putting greens, surrounds, fairways, and tees.</p>
+				<p> The new irrigation system includes over 600 new irrigation heads run from a central computerized control system.  New HDPE underground piping in the irrigation is a major undertaking in the project.  Hole 17 green was changed by removing contouring to better playability in different sections of the green.</p>
+				<p><a style='font-weight:bold' href='https://www.foughtdesign.net/' target='_blank' rel='nofollow'>John Fought, ASGCA</a>, is a golf architect with a large portfolio of golf courses including Sand Hollow, Indian Wells Players, Country Club of Jackson, Carmel CC North, WSF, and Washington National.  Fought's latest original design is the second course at Windsong Farm opening in the summer of 2024.</p>
+				<p>2024 continues into phase 2 with Duininck Golf.</p>
+			</div>
+	</div>
+	
+    <script>
+            const map = L.map('map').setView([43.9790217,-103.2401534], 8);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+			
+			
+	    	        this._container.innerHTML = `
+	                    <lite-youtube videoid="QFhcauRpT2A" style="background-image: url('https://i3.ytimg.com/vi/QFhcauRpT2A/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=QFhcauRpT2A" class="lty-playbtn" title="Play Video.  Credit: Hart Ranch Golf Club">
+	                            <span class="lyt-visually-hidden">Credit: Hart Ranch Golf Club/span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([43.9790217,-103.2401534]).addTo(map);
+
+	        marker.bindPopup("<b>Rapid City</b><br>South Dakota</br>").openPopup();
+	</script>
+	
+   	<p><a href="https://fescue.github.io/Los-Alamos-Golf/">Los Alamos in New Mexico</a></p>
+   	<p><a href="https://fescue.github.io/Rock-Creek-Golf/">NLT's Rock Creek in Washington DC</a></p>
+	
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

@@ -1,0 +1,71 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Brambles - Coore Crenshaw in California</title>
+	<meta name="description" CONTENT="Brambles Coore Crenshaw California New Golf Course James Duncan Irrigation Zoysia GCSAA Superintendent">
+	{% include h50.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="California"></div>
+		<div class="content" tabindex="0" aria-label="Brambles">
+			    <H1>Brambles - Coore Crenshaw</H1>
+				<p>In California's wine country off Highway 29 in Middletown lies <a style='font-weight:bold' href='https://www.instagram.com/bramblesgolf/' target='_blank' rel='nofollow'>Brambles</a>, designed by Bill Coore and Ben Crenshaw.  <a style='font-weight:bold' href='https://www.jhduncan.com/brambles' target='_blank' rel='nofollow'>James Duncan</a> was the onsite design lead.  Coore Crenshaw are renowned for his minimalist designs highlighting the natural landscape.</p>
+				<p><a style='font-weight:bold' href='https://www.linkedin.com/in/tyler-marcotte-8950a211b/' target='_blank' rel='nofollow'>Tyler Marcotte</a> was the grow-in superintendent from early grassing stages onwards to opening.  He continues on overseeing as course manager overseeing the zoysia grass onsite.</p>
+				<p>The 495+ acre property features a narrow waterway similar to the Swilcan Burn.  The first hole plays over the narrow burn to the par 5 opener.  There is a cleared, rustic airport runway onsite. <a style='font-weight:bold' href='https://ceqanet.opr.ca.gov/2019119002/2' target='_blank' rel='nofollow'>California Environmental Quality Act</a> filed with Lake County enumerates water usage with two wells onsite, annual precipitation estimates, and irrigation requirements.  The report estimated the cut-to-fill requirement at 46,500 cubic yards.</p>
+		</div>
+	</div>			
+
+	<script>
+                const map = L.map('map').setView([38.794528,-122.554361], 7);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([38.794528,-122.554361]).addTo(map);
+	        marker.bindPopup("<b>Brambles</b><br>Middletown, California</br>").openPopup();
+	</script>
+	
+
+   	<p><a href="https://fescue.github.io/McArthur-West/">Coore Crenshaw - McArthur, Florida</a></p>
+   	<p><a href="https://fescue.github.io/Tribute-Club-Thornburgh/">Tribute Club by WAC in Oregon</a></p>
+
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

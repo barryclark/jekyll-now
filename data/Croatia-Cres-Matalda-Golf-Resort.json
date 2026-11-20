@@ -1,0 +1,21 @@
+{
+"storymap": {
+        "slides": [
+			{
+				"text": {
+					"headline": "Tournament Golf",
+					"text": "<p>Croatian island Cres will have the Matalda golf resort project to be designed by Ernie Els.  Ernie Els is a PGA Tour player from South African who won four major championships. The course is set in a beautiful natural setting, with views of the Adriatic Sea and the surrounding mountains.</p><p>The project permitting project started in 2014. In December 2018, the Primorje-Gorski Kotar County Assembly accepted targeted changes to the spatial plan.  Developer Jadranka d.d. intends to invest around 100 million euro in this golf course project.  The Kvarner Gulf is home to several islands including some of the best beaches in Croatia. <a href='https://www.arta-projektiranje.hr/en/golf-matalda/' target='_blank' rel='nofollow'>Resort plans were created in 2019 from ARTA PROJEKTIRANJE</a>, a design firm founded in 1994 by renowned architect Amira Čaušević.</p><p>Delays in the project have come from community voicing concern of environmentally sensitive areas(ESA).  The start of construction for the Els golf course has been delayed due to this dispute.</p>"
+				},
+			"location": {
+					"lat": 44.888795,
+					"lon": 14.127983,
+					"zoom": 7
+				},
+				"media": {
+					"url": "https://vimeo.com/70719298",
+					"credit": "Kiki Westerweel"
+				}
+			}
+		]
+    }
+}

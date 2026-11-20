@@ -1,0 +1,70 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Montebello Golf Course - Rick Smith Re-Design</title>
+	<meta name="description" CONTENT="Montebello Golf Course Design Golf Architecture Bella Verde Topgolf Rick Smith Municipal Golf">
+	{% include h60.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Sand Hills in Georgia"></div>
+		<div class="content" tabindex="0"  aria-label="Golf Course Build">
+			<H1>Montebello - Rick Smith Re-Design</H1>
+			<p><a href='https://www.montebelloca.gov/departments/recreation_community/golf' target='_blank' rel='nofollow'>Montebello Golf Course</a> is undergoing a significant renovation led by golf course architect <a href='https://www.ricksmith.com/course-design' target='_blank' rel='nofollow'>Rick Smith</a>.  The renovation began after the course closed on September 26, 2022.  The course was previously an 18 hole course designed by Max Behr with subsequent re-design work by David Rainville, ASGCA.  The new course is a comprehensive rebuild effort and will feature 9 holes with a Topgolf driving range.</p>
+			<p>The updated course configuration reopened under a new name <a href='https://golfbellaverde.com/' target='_blank' rel='nofollow'>Bella Verde</a> with tee time availability in the summer of 2024.  Total project costs were <a href='https://www.whittierdailynews.com/2024/05/03/can-montebellos-75-million-golf-course-renovation-turnaround-city-finances-leaders-have-high-hopes/' target='_blank' rel='nofollow'>$75 million</a>.  Irrigation design was completed by  <a href='https://waterlinks.net/about-btg.html' target='_blank' rel='nofollow'>BTG Golf, Bryant Taylor Gordon</a></p>
+			<p><a href='https://www.ricksmith.com/course-design' target='_blank' rel='nofollow'>Rick Smith</a> is a globally recognized golf course designer who has created several courses including Arcadia Bluffs by Lake Michigan, Wuskowhan Player's Club in Mount Olive, Michigan, R&S Sharf course at Oakland University in Rochester, Michigan, and the Shenandoah course at Turning Stone Resort in Verona, New York.  The Shenandoah course has hosted a few PGA Tour events.  Rick Smith is a design partner for Phil Mickelson Design Group.</p>
+			<p>Montebello Golf Course was built in 1928.  The golf course is a city municipal golf course serving the community for almost 100 years.  Montebello City Council approved a <a href='https://www.whittierdailynews.com/2022/09/29/heres-how-montebello-is-going-to-pay-for-a-planned-massive-golf-entertainment-hub/' target='_blank' rel='nofollow'>$60 million municipal bond</a> in September 2022 to finance the project.  Topgolf has a 20 year lease on the property.</p>
+			<p>Butte County's <a href='https://fescue.github.io/Degarmo-Park/' target='_blank' rel='nofollow'>Degarmo Park</a> and <a href='https://fescue.github.io/Collier-County-Public-Golf/' target='_blank' rel='nofollow'>Collier County</a> are two examples of introducing junior golf to the community.</p>		
+	        </div>
+	</div> 
+  <script>
+                const map = L.map('map').setView([34.0276092,-118.1350551], 9);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([34.0276092,-118.1350551]).addTo(map);
+	        marker.bindPopup("<b>Montebello</b><br>Southern California</br>").openPopup();
+  </script>
+	<p><a href="https://fescue.github.io/Wakulla-Sands-Golf/">Wakulla Sands Re-Design</a></p>
+	<p><a href="https://fescue.github.io/Warmouth-Sands/">Warmouth Sands Re-Design</a></p>
+	<p><a href="https://fescue.github.io/Sherrill-Park-Golf-Course/">Muni Sherrill Park Renovation</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

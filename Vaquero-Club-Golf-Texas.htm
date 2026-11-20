@@ -1,0 +1,71 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Andrew Green Renovates Vaquero - Westlake, Texas</title>
+	<meta name="description" CONTENT="Golf Course Renovation Andrew Green Vaquero Club Trip Kuehne Tom Fazio Redesign Architecture Design Westlake Texas Dallas">
+	{% include h40.html %}
+	<script src="https://cmp.osano.com/Azqae7Tg5rIXKJsl/a6843304-e87a-485e-aabb-2b21be3ed691/osano.js"></script>
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Golf"></div>
+			<div class="content" tabindex="0"  aria-label="Green">
+				<H1>Andrew Green Re-Design - Vaquero Club in Westlake, Texas</H1>
+					<p><a style='font-weight:bold' href='https://www.vaqueroclub.com/' target='_blank' rel='nofollow'>The Vaquero Club</a> in Westlake, Texas, finished a major renovation by golf course architect <a style='font-weight:bold' href='https://greengolfandturf.com/andrew' target='_blank' rel='nofollow'>Andrew Green</a> in 2023.  The project started in 2022 with a number of changes to the course, namely shaping and widening fairways, re-design greens, bunker reconstruction, tree removal, and improving drainage.  Holes 1, 4, and 16 are new designs from Andrew Green.  The goal of the renovation was to create a more challenging and strategic course to be more enjoyable for all levels of golfers.</p>
+					<p>Amateur golfer <a style='font-weight:bold' href='https://www.texasgolfhof.org/exhibit/trip-kuehne' target='_blank' rel='nofollow'>Trip Kuehne</a> was involved in the Vaquero Club renovation.  <a style='font-weight:bold' href='https://www.mka-consultants.com/' target='_blank' rel='nofollow'>Michael Kuhn & Associates, Inc.</a> led the irrigation design with Leibold Irrigation leading implementation of the Toro Satellite Irrigation System.</p>
+					<p>The original Vaquero Club golf course was designed by Tom Fazio and opened in 2001. The course is located in Westlake, Texas, on the former Circle T Ranch. The course is known for its rolling hills, lush fairways, and challenging greens. The course has been ranked in the Top 100 courses in the country by Golf Digest and Golfweek's Modern Top 100.  Previous to renovation, the golf course played as a par 72 at 7,369 yards from the back tees with slope rating of 138 and USGA handicap rating of 74.4.</p>
+					<p>The course is known for its variety with each hole offering a different challenge. Some of the most notable holes on the course include the par-4 10th hole, which is a long, uphill hole with a narrow fairway testing driver, and the downhill par-3 17th hole surrounded by bunkers.   The bunker style has changed with the Andrew Green re-styling to smaller bunkers occupying less space by reducing bunkers from 6.9 acres to 2.6 acres.  The number of bunkers in the new design have increased to 92 total.</p>
+				</div>
+	</div>
+	
+	<script>		
+		const map = L.map('map').setView([32.9646319,-97.1946605], 9);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+			
+		// Add a marker to the map at the same location as the map center
+	        var marker = L.marker([32.9646319,-97.1946605]).addTo(map);
+	        marker.bindPopup("<b>Vaquero Club</b><br>Westlake, Texas</br>").openPopup();
+	</script>
+	<p><a href="https://fescue.github.io/Singapore-Island-Country-Club/">Singapore Island Country Club(SICC)</a></p>
+	<p><a href="https://fescue.github.io/Tepetonka-Golf-Club/">Tepetonka Golf Club</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

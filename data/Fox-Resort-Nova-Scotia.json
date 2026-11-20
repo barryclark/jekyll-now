@@ -1,0 +1,21 @@
+{
+"storymap": {
+        "slides": [
+			{
+				"text": {
+					"headline": "Golf in Nova Scotia",
+					"text": "<p>Fox Harb'r Resort expanded its golf course with two new courses: one links-style on the Ocean and one parkland-style in the Vineyards portion of the property. Both courses were designed by Thomas McBroom and Doug Carrick. The new course on the shoreline presents dramatic ocean views using the tumbling terrain with smaller scale pot bunkers to emphasize strategy. The Ocean course opened in spring 2026.  The Vineyard course is expected to open in 2027.</p><p>Tiger Woods visited Fox Harb'r Golf Resort in Nova Scotia on behalf of the Tiger Woods Foundation, playing 2 rounds of golf.  Tiger shot a course record of 63.  Tiger noted highlights of the layout with how quiet and peaceful the environment is.</p>"
+				},
+			"location": {
+					"lat": 45.859837,	
+					"lon": -63.4544468,
+					"zoom": 7
+				},
+				"media": {
+					"url": "https://vimeo.com/184057877",
+					"credit": "Bob Huxtable - Fox Harb'r"
+				}
+			}
+		]
+    }
+}

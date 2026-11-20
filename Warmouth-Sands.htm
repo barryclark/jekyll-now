@@ -1,0 +1,80 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>  
+	<title>Warmouth Sands - Municipal Golf - Mike Young Design</title>
+	<meta name="description" CONTENT="Warmouth Sands Municipal Golf Mike Young Vidalia Toombs County Georgia">
+	{% include h.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Warmouth Sands"></div>
+		<div class="content" tabindex="0"  aria-label="Mike Young">
+					<H1>Warmouth Sands - Municipal Golf - Mike Young</H1>
+					<p><a style='font-weight:bold' href='https://www.facebook.com/profile.php?id=100091347831558' target='_blank' rel='nofollow'>Warmouth Sands Golf Course</a> is a new rebuilt 18 hole municipal golf course in Vidalia, Georgia. The course is being designed by <a style='font-weight:bold' href='https://www.theadvancenews.com/2022/11/02/vidalia-council-names-golf-course-architect/' target='_blank' rel='nofollow'>Mike Young</a> and opened the front nine open in April 2026.  The full 18 holes with the back nine opening is autumn 2026.  The site is located at the Vidalia Regional Sports Complex on Ezra Taylor Road.  The course will have 15 bunkers and play to a par 72 at 6,700 yards from the back tees.  Young has planned for the golf course to play at a single fairway mower height up to the greens.</p>
+					<p>The project is part of the Sweet Onion Golf Authority, a non-profit organization dedicated to promoting golf in Vidalia. The course is being funded through a combination of private donations, grants, and tax revenue.  Warmouth Sands Golf is expected to be a popular destination for golfers in the Vidalia area.  The course is named after the warmouth bream, a small fish that is found in the area.</p>
+					<p>The golf course construction benefits from sandy soil.  ESG Operations, the public works department of Vidalia conducted a study on erosion in summer of 2023 which delayed the project by 3 weeks.  The new course will be affordable and open to the public.  The city of Vidalia hired the grow-in superintendent in August 2024.</p>
+					<a style='font-weight:bold' href='https://thefriedegg.com/fried-egg-podcast/how-to-build-a-profitable-mom-and-pop-golf-course-5/' target='_blank' rel='nofollow'>Fried Egg's Garrett Morrison</a> hosted a podcast with Mike Young discussing golf construction options for building affordable greens, bunkers and maintenance practices.  Young highlights the key decisions such as USGA specification greens construction versus push up greens construction, turfgrass cultivar selection for bermudagrass, among other topics in the informative podcast.
+					<p>Warmouth Sands Golf is located in Toombs County, Georgia.  Toombs County is a rural county located in the southeastern corner of Georgia with a population of approximately 25,000 people.  The county seat is Vidalia with a population of approximately 15,000 people.  Warmouth Sands Golf is the first new golf course to be built in Toombs County in over 20 years.</p>
+					<p><a style='font-weight:bold' href='https://www.raycutright.com/about' target='_blank' rel='nofollow'>Ray Cutright, PGA</a> is a leader involved in the site planning and golf course community's future.</p>
+		</div>
+	</div>
+
+    <script>		
+            const map = L.map('map').setView([32.2118175,-82.4162603], 8);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 28,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	        
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="3A_V48XmCA4" style="background-image: url('https://i3.ytimg.com/vi/3A_V48XmCA4/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=3A_V48XmCA4" class="lty-playbtn" title="Play Video.  Credit: Mike Young">
+	                            <span class="lyt-visually-hidden">Credit: Mike Young</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([32.2118175,-82.4162603]).addTo(map);
+	        marker.bindPopup("<b>Warmouth Sands</b><br>Vidalia, Georgia</br>").openPopup();
+	</script>
+   	<p><a href="https://fescue.github.io/Cypress-Shoals-North-Augusta/">Cypress Shoals - Augusta Georgia</a></p>
+   	<p><a href="https://fescue.github.io/Greenbury-Point-Golf/">Greenbury Golf Course</a></p>
+	<p><a href="https://fescue.github.io/Los-Alamos-Golf/">Los Alamos Municipal Golf Course</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

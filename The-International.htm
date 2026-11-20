@@ -1,0 +1,80 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+	<title>The International - Coore Crenshaw + Tripp Davis</title>
+	<meta name="description" CONTENT="Golf course Construction International Escalante Course Renovation Landscapes Unlimited Bunker">
+        {% include h.html %}
+</head>			
+
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Esclante"></div>
+			<div class="content" tabindex="0"  aria-label="Golf">
+				<H1>The International - Pines & Oaks Golf Course</H1>
+				<p><a href='https://www.cooreandcrenshaw.com/' target='_blank' rel='nofollow'>Bill Coore and Ben Crenshaw</a> are reopening <a href='https://www.theinternational.com/golf' target='_blank' rel='nofollow'>The International Golf Club & Resort, Pines Course</a> in Bolton, Massachusetts.  The Pines course has been re-routed to a smaller footprint 7000 yard course with 007 bentgrass greens using Landscapes Unlimited as the golf course construction contractor with Toro Irrigation.  Longtime Coore Crenshaw design associate Zach Varty was the onsite shaper.
+				<p>The club has two historic courses, The Pines Course and The Oak Course.  The Oaks Course was redesigned by <a href='http://www.tdagolf.net/' target='_blank' rel='nofollow'>Tripp Davis</a> and Kyle Downs reopening in 2023.  The International is a private golf club.</p>
+				<p>The International has a rich history dating back to 1899 when it started as the Runaway Brook Golf Club. It was acquired in 1953 by Albert Surprenant who hired Geoffrey Cornish to design the Pines course. The Pines course debuted in 1955 as the longest golf course in the world at 8,040 yards from the Tiger tees. The club was purchased by International Telephone & Telegraph (ITT) in 1961 and operated as a corporate retreat and private club for nearly 40 years. In 1967, ITT changed the name to The International Club.</p>
+				<p>In 1999, Tom Fazio designed The Oaks, his first golf course in New England.  <a href='https://escalantegolf.com/properties' target='_blank' rel='nofollow'>Escalante Golf</a> acquired The International in February 2021 and planned the renovation/rebuild project of the two courses.</p>
+				<div class="substack-post-embed"><p lang="en">Can you play too much golf?</p><a data-post-link href="https://timyeogolf.substack.com/p/can-you-play-too-much-golf">ONLY FRIENDS YOU HAVEN’T YET MET</a></div>
+				<script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+				</div>
+	</div>
+
+    <script>
+            const map = L.map('map').setView([42.431584,-71.649414], 9);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');			
+			
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="BCEWXgXnOjM" style="background-image: url('https://i3.ytimg.com/vi/cLy4IMzam8Q/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=cLy4IMzam8Q" class="lty-playbtn" title="Play Video. Credit: Abu Dhabi Resort & Spa">
+	                            <span class="lyt-visually-hidden">Credit: Abu Dhabi Resort & Spa</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([42.431584,-71.649414]).addTo(map);
+
+	        marker.bindPopup("<b>The International - Escalante Golf</b>").openPopup();
+	</script>
+	<p><a href="https://fescue.github.io/1876-Country-Club/">1876 Country Club</a></p>
+	<p><a href="https://fescue.github.io/Kahili-Golf-Course/">Kahili Golf Course in Hawaii</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>
