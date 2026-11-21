@@ -283,7 +283,7 @@ Assert.IsTrue(
 
 # Decoupled Design
 
-In his article on [Decoupled Design](https://arlobelshee.com/decoupled-design/) Arlo Belshee says:
+In his article on [Decoupled Design](https://web.archive.org/web/https://arlobelshee.com/decoupled-design/) Arlo Belshee says:
 
 > A system has its static structure and its run-time structure.
 

@@ -46,7 +46,7 @@ Every defect (and every near miss) indicates a hazard. Use the defect as a learn
 Over time the defect rate drops steadily until you go from measuring "number of defects this week" to "number of features shipped since last defect".
 
 See:
-- [Safeguarding – Culture is a Process, not a Single Change](http://arlobelshee.com/safeguarding-culture-is-a-process/)
+- [Safeguarding – Culture is a Process, not a Single Change](https://web.archive.org/web/http://arlobelshee.com/safeguarding-culture-is-a-process/)
 - [Safeguarding](http://jay.bazuzi.com/Safeguarding/)
 - [Safeguarding: A step-by-step guide](https://llewellynfalco.blogspot.com/2018/12/safeguarding-step-by-step-guide.html)
 

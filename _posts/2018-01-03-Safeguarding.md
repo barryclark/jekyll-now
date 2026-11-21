@@ -3,7 +3,7 @@ layout: post
 title: What is Safeguarding? (A definition)
 ---
 
-At Tableau we use the term "Safeguarding" to describe a particular way of reducing future defects by learning from past defects. Arlo described it in [a parable](http://arlobelshee.com/improving-testing-is-not-safe-a-parable/). Here's my current concrete understanding:
+At Tableau we use the term "Safeguarding" to describe a particular way of reducing future defects by learning from past defects. Arlo described it in [a parable](https://web.archive.org/web/http://arlobelshee.com/improving-testing-is-not-safe-a-parable/). Here's my current concrete understanding:
 
 Safeguard after you address a problem.
 ===
