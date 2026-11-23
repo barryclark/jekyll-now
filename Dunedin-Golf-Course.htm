@@ -1,0 +1,78 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Dunedin - Donald Ross Restoration - Kris Spence</title>
+	<meta name="description" CONTENT="Dunedin Golf Course Donald Ross Brad Becken Restoration Kris Spence Florida">
+	{% include hLeaflet.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Dunedin"></div>
+		<div class="content" tabindex="0"  aria-label="Kris Spence">
+			<H1>Dunedin - Donald Ross Restoration - Kris Spence</H1>
+			<p>The comprehensive restoration project at <a style='font-weight:bold' href='https://www.dunedingolfclub.com/' target='_blank' rel='nofollow'>Dunedin Golf Course</a> on the West coast of Florida is a historical restoration with modern advancements spearheaded by golf architect <a style='font-weight:bold' href='https://krisspence.com/' target='_blank' rel='nofollow'>Kris Spence</a>.  Construction operations are being handled by TDI Golf and XGD Systems, leaders in golf course construction.</p>
+			<p>A key part of the plan from Spence is peeling back the years of alterations to uncover the original greens designed by Donald Ross.  Spence relates this to an archaeological dig, aimed at restoring the authentic characteristics of the greens by revealing Donald Ross original contours and strategic designs.  Spence restored Donald Ross front 9/Porter Gibson back 9 design <a style='font-weight:bold' href='https://www.mooresvillegolfclub.com/About_Us/History' target='_blank' rel='nofollow'>Mooresville Golf Club</a> in North Carolina with a $5 million renovation budget.</p>
+			<p>Central to the project is the restoration of 87 bunkers, meticulously returning them to Ross's original vision.  Shaper Ron Hart is active bulldozer operator contributing to the project landscape. This not only involves the revival of their strategic placement and aesthetic form but also aligns with the broader goal of restoring the course's historical integrity and strategic playability.  Complementing the bunker restoration, the Dunedin project upgrades to modern turf science by introducing new grass varieties specifically chosen for their adaptability to the course's environment and play conditions. TifEagle Bermuda grass will be used for the greens.  TifTuf Bermuda will be used for tees, fairways, and roughs.  TifTuf is praised for its drought tolerance and durability.</p>
+			<p>A primary component of the restoration is the implementation of a new irrigation system provided by <a style='font-weight:bold' href='https://www.toro.com/en/golf' target='_blank' rel='nofollow'>Toro Golf</a> installed by <a style='font-weight:bold' href='https://www.wescoturf.com/' target='_blank' rel='nofollow'>Wesco Turf Incorporated</a>.  This system features a 2-wire control and uses high-density polyethylene (HDPE) piping representing the latest in irrigation technology.  This advanced system will ensure precise and efficient water management across the course by underpinning the sustainability of the newly renovated and planted areas.  This modernization is essential for maintaining the course's condition and supporting the extensive renovations made to the tees, greens, fairways, and roughs.</p>
+		</div>
+	</div>
+
+    <script>
+                const map = L.map('map').setView([28.042412,-82.779343], 8);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                
+	                // Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="tquDnJO8pzs" style="background-image: url('https://i3.ytimg.com/vi/tquDnJO8pzs/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=tquDnJO8pzs" class="lty-playbtn" title="Play Video.  Credit: AV Specialists Brad Becken">
+	                            <span class="lyt-visually-hidden">Credit: AV Specialists Brad Becken</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([28.042412,-82.779343]).addTo(map);
+	        marker.bindPopup("<b>Dunedin</b><br>Florida</br>").openPopup();
+  </script>
+  <p><a href="https://fescue.github.io/Broomsedge-Golf-Club/">Kyle Franz - Broomsedge in South Carolina</a></p>
+  <p><a href="https://fescue.github.io/Cabot-Oaks-Golf/">Kyle Franz - Cabot Oaks</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

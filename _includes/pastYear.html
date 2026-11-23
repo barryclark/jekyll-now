@@ -1,0 +1,40 @@
+		<table id="golf" class="display" width="100%">
+			 <thead>
+				 <tr> 
+					 <th data-priority="1" scope="col">Golf Course</th>
+					 <th scope="col">Architect</th>
+					 <th scope="col">Location</th>
+					 <th scope="col">Country</th> 
+					 <th scope="col">Construction</th>
+					 <th scope="col">Build</th>
+					 <th scope="col">Status</th> 
+					 <th scope="col">Coverage</th> 
+					 <th scope="col">Budget</th>
+					 <th scope="col">History</th>
+					 <th scope="col">Comments</th>
+				</tr>
+			 </thead>
+			 <tbody>
+			 	{% for item in site.data.all2022 %}<tr>
+					{% if item.Website and item.Website != "" and item.Website != nil %}<td><a href="{{ item.Website }}">{{ item.Course }}</a> </td> {% else %}<td> {{ item.Course }} </td>{% endif %}<td>{{ item.Architect }}</td>{% if item.Latitude and item.Latitude != "" and item.Latitude != nil %}<td><a href="https://google.com/maps/@{{item.Latitude}},{{item.Longitude}},14z">{{ item.Location }}</a></td>{% else %}<td></td>{% endif %}<td>{{ item.Country }}</td><td>{{ item.Construction }}</td><td>{{ item.TypeOfJob }}</td><td>{{ item.Status }}</td>{% if item.YouTube and item.YouTube != "" and item.YouTube != nil %}<td><a href="https://youtu.be/{{ item.YouTube }}">{{ item.YouTubeCaption }}</a></td>{% elsif item.Twitter and item.Twitter != "" and item.Twitter != nil %}<td><a href="https://x.com/{{ item.Twitter }}" rel="nofollow">{{ item.TwitterCaption }}</a> </td>{% elsif item.Instagram and item.Instagram != "" and item.Instagram != nil %}<td><a href="https://instagr.am/p/{{ item.Instagram }}" rel="nofollow">{{ item.InstaCaption }}</a></td>{% else %}<td></td>{% endif %}<td>{{ item.Budget }}</td><td>{{ item.History }}</td><td>{{ item.Comments }}</td>
+				</tr>{% endfor %}
+			 </tbody>
+		</table>
+		 
+		<script>
+			$(document).ready(function() {
+				var table = $('#golf').DataTable( {
+					responsive: true,
+					order: [],
+					orderable: true,
+					sort: true,
+					columnDefs: [
+						{ targets: [4], responsivePriority: 1 }
+					  ],
+					  stateSave: true,
+					paging: false
+				} );
+			 
+				new $.fn.dataTable.FixedHeader( table );
+			} );
+		</script>	

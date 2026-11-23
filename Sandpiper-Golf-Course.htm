@@ -1,0 +1,83 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <title>Doak Renovation - Sandpiper Golf - Santa Barbara, California</title>
+  <meta name="description" CONTENT="Tom Doak Renovation Sandpiper Golf Club Santa Barbara California Pacific Ocean Seaside">
+  
+  {% include h40.html %}
+</head>			
+
+	
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Tom Doak"></div>
+			<div class="content" tabindex="0"  aria-label="Goleta">
+				<H1>Renovation at Sandpiper Golf Club</H1>
+				<p>Plans for <a style='font-weight:bold' href='https://en.wikipedia.org/wiki/Tom_Doak' target='_blank' rel='nofollow'>Tom Doak</a> to re-design <a style='font-weight:bold' href="https://www.sandpipergolf.com/golf-course/course-tour">Sandpiper Golf Club</a> in Santa Barbara(Goleta), California overlooking the Pacific Ocean has been given hope.  Santa Barbara native <a style='font-weight:bold' href='https://www.linkedin.com/in/parker-anderson-golf/' target='_blank' rel='nofollow'>Parker Anderson</a> of Greener Golf is an associate on the project.</p>
+				<p>The property faces the Channel Islands and aging <a style='font-weight:bold' href='https://www.independent.com/2022/01/19/so-long-offshore-platforms/' target='_blank' rel='nofollow'>offshore oil platforms</a> scheduled to be decommissioned.  Sandpiper was designed by <a style='font-weight:bold' href='https://en.wikipedia.org/wiki/William_Francis_Bell' target='_blank' rel='nofollow'>William F. Bell</a> and opened in 1972.  The landscape has the advantage of natural terrain atop seaside cliffs.  A new routing from Tom Doak to integrate the shoreline into its design is promising.  The Bell layout is routed laterally to the clifftop for the majority of the journey with the exception of the downhill par 3 11th hole which plays downhill to a beachside green.</p>
+				<p>The proposal does not have a construction start date yet.  However, Doak posted to Instagram a photo in early 2021 of the 18th hole.  From studies conducted from 2022 through 2024, nearby Bell Canyon has been identified as a better habitat. <a style='font-weight:bold' href='http://sandpipergolfrestoration.com/' target='_blank' rel='nofollow'>Restoration</a> of the seaside landscape has been created by the Ty Warner's owner group highlighting Sperling Preserve, Bell Canyon, and the De Anza coastal trail.</p>
+				<p>Doak is a golf course architect who has designed many of the most famous courses in the world, including Irish seaside links St. Patrick's, Pacific Dunes in Oregon, and New Zealand's Tara Iti.  The renovation could potentially include a number of changes, including improvements to the routing of holes, removal of paved cart paths, tree management, improving drainage of Devereux Creek, renovating bunkers and greens.</p>
+				<p>Approvals for permitting may require California Coastal Commission involvement.  Submissions to State of <a style='font-weight:bold' href='https://ceqanet.lci.ca.gov/2024120923/2' target='_blank' rel='nofollow'>California</a> in December 2024, include landscape plan from Earthform Designs and golf course <a style='font-weight:bold' href='https://ceqanet.lci.ca.gov/2024120923/2 https://files.ceqanet.lci.ca.gov/310315-2/attachment/W-RCEnr3B2zUohKSg6ki9CV8ATb3N957EJW4GqNRIhFcq5nzhHNhB5j9qLYT6jsgzSihRxRg5yMFxwHk0' target='_blank' rel='nofollow'>re-routing</a>.  </p>
+				<p>The project calls for a complete redesign of the existing 18-hole layout, involving grading, rerouting of several holes with proposed grading/earthmoving to reshape the course of roughly 86,500 cubic yards of cut and 56,000 cubic yards of fill, with the remaining 30,500 cubic yards redistributed on site after compaction to refine contours by shaper appointed by golf course architects Tom Doak/Parker Anderson.  After grading/compaction, a new subsurface drainage system/irrigation system will be installed beneath the 62 acres followed by six inch sand cap.  60,000 tons of sand is anticipated for sand cap.  Benefits include improved shaping phase during golf course construction with later maintenance benefits of drainage, firmness, and playability across the course.</p>
+				<p>The project aims to enhance sustainability and beneficial environmental impact from water conservation, improved drainage, and reduced maintenance intensity.  Irrigated turf will be cut from half 125 acres to 62 acres with the remaining 63 acres converted to native, drought-tolerant landscaping.  The current par 3 18th hole will be transformed into an event lawn adjacent to the clubhouse.  Pavement and cart paths will be reduced to tee and green areas only shrinking pavement from 154,829 square feet to 92,346 square feet.</p>
+			</div>
+	</div>
+		
+    <script>
+            const map = L.map('map').setView([34.430583,-119.909908], 7);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');			
+			
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="UkrRhaEdubg" style="background-image: url('https://i3.ytimg.com/vi/UkrRhaEdubg/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=UkrRhaEdubg" class="lty-playbtn" title="Play Video.  Credit: SCGA">
+	                            <span class="lyt-visually-hidden">Credit: SCGA</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([34.430583,-119.909908]).addTo(map);
+
+	        marker.bindPopup("<b>Goleta, California</b>").openPopup();
+	</script>
+        <p><a href="https://fescue.github.io/Hart-Ranch-Golf/">Hart Ranch Golf</a></p>
+	
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

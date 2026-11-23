@@ -1,0 +1,80 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+	<title>Rivergrass - New Golf Development - Collier County, Florida</title>
+	<meta name="description" CONTENT="Rivergrass New Golf Course Real Estate Development Collier County Big Cypress Florida">
+  	{% include h.html %}
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Golf"></div>
+			<div class="content" tabindex="0"  aria-label="Rivergrass">
+				<H1>Rivergrass - Community Golf in Florida</H1> 
+				<p>The proposed <a style='font-weight:bold' href='https://rivergrass.com/' target='_blank' rel='nofollow'>Rivergrass</a> is a new development project east of Naples, Florida and planning includes an 18 hole golf course.  The County Commission approved the project proposed by Collier Enterprises on June 27, 2023.</p>
+				<p>The project led by Collier Enterprises consists of two new towns named Rivergrass and Bellmar in Big Cypress.  A centrally situated town will link Rivergrass and Bellmar.  This added town will span approximately 544 acres.  Residentially, the Big Cypress area is projected to add 4,432 single-family residences along with multi-family homes.  A hallmark of this <a style='font-weight:bold' href='https://cvportal.colliercountyfl.gov/CityViewWeb/Planning/GetFile/14664263' target='_blank' rel='nofollow'>development</a> is its commitment to sustainability/environmental preservation.  The plan earmarks more than 716 acres, over 46% of the town's total land, to be preserved as open space.  Exceeding county requirements/mandate an additional 12,000 acres are set aside for farming and wildlife habitat.</p>
+				<p>The golf course is in early planning stages.  Golf architect and design features are not publicly announced as of spring 2024.</p>
+				<div class="substack-post-embed"><p lang="en">The agony of defeat and ecstasy of victory by Tim Yeo</p><a data-post-link href="https://timyeogolf.substack.com/p/the-agony-of-defeat-and-ecstasy-of">ONLY FRIENDS YOU HAVEN’T YET MET</a>
+				</div>
+				<script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+			</div>
+	</div>
+
+    <script>
+            const map = L.map('map').setView([26.2567337,-81.3768206], 7);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');			
+			
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="_gVJ2w4FdxI" style="background-image: url('https://i3.ytimg.com/vi/_gVJ2w4FdxI/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=_gVJ2w4FdxI" class="lty-playbtn" title="Play Video.  Credit: Fox 4">
+	                            <span class="lyt-visually-hidden">Credit: Fox 4</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([26.2567337,-81.3768206]).addTo(map);
+
+	        marker.bindPopup("<b>Naples, Florida</b>").openPopup();
+	</script>
+    	<p><a href="https://fescue.github.io/The-International/">The International</a></p>
+	<p><a href="https://fescue.github.io/SandGlass/">Tom Doak's SandGlass</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

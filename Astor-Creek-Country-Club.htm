@@ -1,0 +1,82 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Chris Wilczynski, ASGCA - New Championship Golf Course in Florida</title>
+  <meta name="description" CONTENT="Chris Wilczynski ASGCA Housing Real Estate Development New Golf Course Florida ">
+  {% include h.html %}	 
+  <script src="https://cmp.osano.com/Azqae7Tg5rIXKJsl/a6843304-e87a-485e-aabb-2b21be3ed691/osano.js"></script>
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="ASGCA"></div>
+			<div class="content" tabindex="0"  aria-label="Astor">
+				<H1>Chris Wilczynski, ASGCA - New Championship Golf Course in Florida</H1>
+				<p>Kolter Homes has hired Chris Wilczynski to design a new golf course at <a style='font-weight:bold' href='https://www.kolterhomes.com/new-homes/port-st-lucie-florida-golf-astor-creek-country-club/' target='_blank' rel='nofollow'>Astor Creek Country Club</a>. The new community golf course is located on southeast Florida's Treasure Coast and opened in October 2023.  <a style='font-weight:bold' href='https://asgca.org/architect/cwilczynski/' target='_blank' rel='nofollow'>Chris Wilczynski, ASGCA</a> received his Bachelor of Landscape Architecture from Michigan State University in 1994 and is a member of the American Society of Landscape Architects, United States Golf Association and the Michigan Golf Course Superintendents Association in addition to the ASGCA.</p>
+				<p>Wilczynski: 'We'll be moving nearly 850,000 cubic yards of soil excavated from lakes to create the dimension and character of the course, then layer in a variety of Florida vegetation to accentuate its lines, give it texture, and color. It's like the evolution of a painting.  Our vision is for golfers to enjoy a blend of tranquility and ease of playability.  We're designing a course for today's golfer – one who loves beauty and a challenge and wants to have fun.'</p>
+				<p>The community is located just minutes from the beach and is surrounded by nature preserves.  Astor Creek Country Club is sure to be a popular destination for golfers and nature lovers alike.  Designer Wilcynski was inspired by Seth Raynor templates and has named the 2nd hole as 'Surprise Redan', the 3rd hole as the 'Astor Biarritz', the 12th hole as 'Astoria Punchbowl', and the 15th hole as the 'Short Horseshoe'.  Native areas are meant for easy recovery shots and are accessible for golf cart traffic.  With its beautiful setting, challenging golf course, and amenities, it is the perfect place to relax, play, and enjoy the Florida lifestyle. Port St. Lucie has a tropical climate with warm/humid summers and mild winters. The average annual rainfall is 52 inches (132 cm).</p>
+				<p>Designer Wilczynski is renovating Killearn Country Club in Florida for a 2025 reopening with MacCurrach Golf leading construction.</p>
+			</div>
+	</div>
+
+    <script>
+            const map = L.map('map').setView([27.3004846,-80.4543628], 6);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+			
+			// Your lite-youtube HTML
+		        this._container.innerHTML = `
+		                    <lite-youtube videoid="8ewgDiyL6_k" style="background-image: url('https://i3.ytimg.com/vi/8ewgDiyL6_k/hqdefault.jpg');">
+		                        <a href="https://youtube.com/watch?v=8ewgDiyL6_k" class="lty-playbtn" title="Play Video.  Credit: Kolter Homes">
+		                            <span class="lyt-visually-hidden">Credit: Kolter Homes</span>
+		                        </a>
+		            </lite-youtube>
+		        `;
+			    
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+					        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([27.3004846,-80.4543628]).addTo(map);
+
+	        marker.bindPopup("<b>Port St. Lucie</b><br>Florida</br>").openPopup();
+	</script>
+	
+   	<p><a href="https://fescue.github.io/Boca-National/">Boca National - Nick Price</a></p>
+	<p><a href="https://fescue.github.io/Golf-India-Aivot-PGA/">Lobb's Initiative with the PGA in India</a></p>
+	<p><a href="https://fescue.github.io/Abu-Dhabi-Resort-Garden/">Abu Dhabi Resort - Garden Course</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

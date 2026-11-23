@@ -1,0 +1,82 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Windridge - Whisper - Lennar Golf</title>
+	<meta name="description" CONTENT="New Golf Course Texas Greens Bunker Construction Dale Beddo Lennar Home Windridge Whisper">
+	{% include h.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Golf"></div>
+		<div class="content" tabindex="0"  aria-label="Texas">
+			<H1>Windridge - Whisper - Lennar Golf</H1>
+			<p>Golf architect <a style='font-weight:bold' href='http://dalebeddo.com/' target='_blank' rel='nofollow'>Dale Beddo</a> is a building a new golf course outside Kerrville, Texas in a new community named Windridge by Lennar in Athens, Texas.  Beddo has a 798 acre site to find the new 18 holes and situate the adjacent fairway homes.  Land planning for the site has come from different proposals for a golf resort, ranch, and homesite property.  The property was proposed twenty years ago as a golf course with a layout by von Hagge, Smelek and Baril design named Whiskey Springs.</p>
+			<p>Lennar is a real estate developer building homes with golf courses as a community amenity.  Whisper is a Lennar property in San Marcos between Austin and San Antonio.  <a style='font-weight:bold' href='https://www.lennar.com/new-homes/texas/texas-hill-country/kerrville/ridgeland' target='_blank' rel='nofollow'>Ridgeland</a> is in Kerrville northwest of San Antonio at the intersection of Interstate 10 and State Highway 16.  <a style='font-weight:bold' href='https://www.thenationalgcc.com/' target='_blank' rel='nofollow'>The National at Ave Maria Golf Course</a> is another Lennar golf property in Florida. <a style='font-weight:bold' href='https://dailytimes.com/news/half-of-whiskey-springs-development-will-be-open-space/article_4609dc2d-8304-48a8-b760-4e41ac2b292b.html' target='_blank' rel='nofollow'>Approval</a> from Kerrville City Council was granted in August 2025 following devastating summer floods.</p>
+			<p>The golf course will be designed to meet standards from The Audubon Cooperative Sanctuary System (ACCS).  Beddo previously designed and built Copper Rock Golf Course in Southern Utah which opened in 2019.</p>
+			<div id="image-container"></div>
+		</div>
+	</div>
+
+    <script>
+		window.addEventListener('load', function() {
+			var img = new Image();
+			img.src = "https://fescue.github.io/images/Beddo-Kerrville.png";
+			img.alt = "Dale Beddo Design";
+			img.style.width = "90%";
+			img.onload = function() {
+				document.getElementById('image-container').appendChild(img);
+			};
+		});
+
+                const map = L.map('map').setView([30.074505,-99.118986], 6);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                
+	   
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([30.074505,-99.118986]).addTo(map);
+	        marker.bindPopup("<b>Windridge</b><br>Lennar Golf</br>").openPopup();
+  </script>
+
+  <p><a href="https://fescue.github.io/Loraloma-Thomas-Ranch-Golf/">Loraloma Thomas Ranch</a></p>
+  <p><a href="https://fescue.github.io/Travis-Club/">Travis Club</a></p>
+	 
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

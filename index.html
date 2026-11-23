@@ -1,18 +1,24 @@
 ---
-layout: default
+
 ---
+<!DOCTYPE html>
+<html lang="en">
+ <head>		
+	{% include headerIndex.html %}
+	<meta name="description" content="Golf course tracker for new courses, renovations, restorations from architects, construction firms, irrigation projects underway.">
+	<title>New Golf Course - Golf Architecture - Routing Renovation Restoration</title>
+ </head>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+<BODY>
+	<div style="width: 100%;">
+		{% include Year.html %}
+	</div>
+	
+	<H1><a href="https://fescue.github.io/iMap/">Golf Course Bucket List</a> </H1>
+	
+	<p id="done"></p>
+	
+	{% include bodyFooter.html %}
+ </BODY>
+ {% include footer.html %}
+</html>

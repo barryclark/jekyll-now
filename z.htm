@@ -1,0 +1,106 @@
+---
+
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DataTables Example</title>
+    <!-- Include DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+    <!-- Include FixedHeader CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.9/css/fixedHeader.dataTables.min.css">
+
+    <!-- Include jQuery Library -->
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- Include DataTables JS -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+    <!-- Include FixedHeader JS -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/fixedheader/3.1.9/js/dataTables.fixedHeader.min.js"></script>
+</head>
+	
+<body>
+	
+	<div style="width: 100%>		
+		<!-- Content for Desktop Devices --> 
+		<div class="desktop-content">
+			<div class="row">
+			   	<div class="col-md-4">
+					<lite-youtube videoid="FT1An-ycess" style="background-image: url('https://i3.ytimg.com/vi/FT1An-ycess/hqdefault.jpg');">
+					  <a href="https://youtube.com/watch?v=FT1An-ycess" class="lty-playbtn" title="Play Video">
+					    <span class="lyt-visually-hidden">Coore/Crenshaw - Cabot St. Lucia</span></a>
+					</lite-youtube>
+					<h4>Coore/Crenshaw - Cabot St. Lucia</h4>
+			   	</div>
+			   	<div class="col-md-4">
+					<lite-youtube videoid="R-P7peWhNwM" style="background-image: url('https://i.ytimg.com/vi/R-P7peWhNwM/hqdefault.jpg');">
+					  <a href="https://youtube.com/watch?v=R-P7peWhNwM" class="lty-playbtn" title="Play Video">
+					    <span class="lyt-visually-hidden">Tom Doak - Pinehurst #10</span></a>
+					</lite-youtube>
+					<h4>Tom Doak - Pinehurst #10</h4>
+			   	</div>
+				<div class="col-md-4">
+					<lite-youtube videoid="FXtltDZo3kg" style="background-image: url('https://i3.ytimg.com/vi/FXtltDZo3kg/hqdefault.jpg');">
+					  <a href="https://youtube.com/watch?v=FXtltDZo3kg" class="lty-playbtn" title="Play Video">
+					    <span class="lyt-visually-hidden">Gil Hanse - PGA Frisco</span></a>
+					</lite-youtube>
+					<h4>Gil Hanse - PGA Frisco</h4>
+			   	</div>
+			</div>
+		</div>
+	
+    <!-- Table Structure -->
+    <table id="myTable" class="display">
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Architect</th>
+                <th>Location</th>
+                <th>Country</th>
+                <th>Date</th>
+                <th>Construction</th>
+                <th>TypeOfJob</th>
+                <th>Status</th>
+                <th>Coverage</th>
+                <th>Budget</th>
+                <th>History</th>
+                <th>Updated</th>
+                <th>Comments</th>
+            </tr>
+        </thead>
+    </table>
+
+    <!-- JavaScript to Load Data -->
+    <script>
+    $(document).ready(function() {
+        var table = $('#myTable').DataTable({
+		"ajax": "https://fescue.github.io/data/g.json",
+		responsive: true,
+		order: [],
+		orderable: true,
+		sort: true,
+        	"columns": [
+	                { "data": "Course" },
+	                { "data": "Architect" },
+	                { "data": "Location" },
+	                { "data": "Country" },
+	                { "data": "Date" },
+	                { "data": "Construction" },
+	                { "data": "TypeOfJob" },
+	                { "data": "Status" },
+	                { "data": "Coverage" }
+	                { "data": "Budget" },
+	                { "data": "History" },
+	                { "data": "Updated" },
+	                { "data": "Comments" },
+			],
+		stateSave: true,
+		paging: false,
+		deferRender: true
+        });
+	    
+        // Initialize FixedHeader
+        new $.fn.dataTable.FixedHeader(table);
+    });
+    </script>
+</body>
+</html>

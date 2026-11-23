@@ -1,0 +1,82 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Los Alamos - Municipal Golf Renovation</title>
+  <meta name="description" CONTENT="Los Alamos Municipal Golf Course Renovation New Mexico ASGCA Sustainable Tee Time Forrest Richardson Todd Schoeder ASGCA">
+  {% include h.html %}
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Los Alamos"></div>
+			<div class="content" tabindex="0"  aria-label="Golf">
+				<H1>Los Alamos Golf - Muni Renovation</H1>
+				<p>Course reopening partially in September 2024.  <a style='font-weight:bold' href='https://www.losalamosnm.us/Parks-and-Recreation/Recreation/Recreation-Facilities-Activities/Golf-Course' target='_blank' rel='nofollow'>Los Alamos County Golf Course</a> is undergoing a renovation plan in 2024 led by Forrest Richardson and Todd Schoeder to improve the entire golf course with a $6.6 million budget, including improvements to the cart paths, new greens with redesigned contours, bunkers, driving range and practice area. Richardson and Schoeder will also be looking at the reversal and redesign of holes 7 and 8, as important to the safety of traffic on adjacent Diamond Drive.  Superintendent Mike Lippiatt, GCSAA(Golf Course Superintendents Association of America), is overseeing the build out and anticipates December 2024 fully completed opening date.</p>
+				<p><a style='font-weight:bold' href='https://www.mid-americagolf.com/' target='_blank' rel='nofollow'>Mid America Golf</a> is leading golf construction efforts for the historic course nestled in the heart of the Jemez Mountains. Built in 1947, the new routing from the back tees will tip out at 6,759 yards at par 72.</p>
+				<p>Tee complex strategy and course yardage will be updated to modern standards by spacing out the yardage and provide the same playing experience for golfers of all abilities. Drainage issues on the greens will be addressed and fixing these issues. Forward tees have been neglected in the past and will be made larger with more appropriate yardages.  Harold Anthony Strain from the Municipal Public Works Department is the project manager.</p>
+				<p>Bunkers on the golf course have not drained well historically and have had maintenance upkeep issues.  They will be completely redone as part of the improvements.  Newly paved concrete cart path have been installed on holes 16-18.</p>
+				<p><a style='font-weight:bold' href='https://en.wikipedia.org/wiki/Forrest_L._Richardson' target='_blank' rel='nofollow'>Forrest Richardson, ASGCA</a>, is a golf course architect who has worked on a number of courses throughout his career. Richardson in recent times has been proposing projects at Brookside in Pasadena, California and Pajaro Valley in Northern California which rethinks the footprint of the golf course with re-routing hole possibilities.  Some of his notable projects include the Arizona Grand Resort (formerly known as Phantom Horse and Pointe at South Mountain resort) in Phoenix, Arizona, which he worked on with Arthur Jack Snyder in 1985; the Legend Trail Golf Club in Scottsdale, Arizona, which he also worked on with Rees Jones; and the Links at Las Palomas in Puerto Peñasco, Mexico, which he designed with Snyder. He has also worked on courses such as Olivas Links in Ventura, California, The Hideout Golf Club in Monticello, Utah, Coyote Lakes Golf Club in Surprise, Arizona, Lookout Mountain Golf Club in Phoenix, Arizona, and the Short Course at Mountain Shadows in Paradise Valley, Arizona. In addition to designing new courses, Richardson has also worked on restoring existing courses, such as the Berkeley Country Club in El Cerrito, California, which was originally designed by Robert Hunter, and the Wigwam Golf Club - Gold Course in Litchfield Park, Arizona, which was originally designed by Robert Trent Jones, Sr. He has also remodeled the Arizona Biltmore Golf Club in Phoenix, Arizona, which was originally designed by William P. Bell.</p>
+				<p><a style='font-weight:bold' href='https://asgca.org/architect/tschoeder/' target='_blank' rel='nofollow'>Todd Schoeder, ASGCA</a>, is an active golf course architect with a portfolio that includes a variety of new and renovated courses. Recent success in municipal golf redesign/renovation is at City Park Golf Course in Denver, Colorado. Some of his notable projects include Glacier Club in Durango, Colorado, Lodestone in McHenry, Maryland, Cimarron Golf Resort in Cathedral City, California, and Trophy Lake Golf and Casting Club in Port Orchard, Washington. He has also worked on golf course renovations such as Legion Memorial Golf Course in Everett, Washington, Jackson Park in Seattle, Washington, Rush Creek in Maple Grove, Minnesota, Fantasy Valley Golf Course at Wisp Resort in McHenry, Maryland, and the Cliff's & Hermosa Course in Durango, Colorado.  Schoeder is the founder of iCon Golf Studio, a golf course architecture firm located in Colorado.</p>				
+			</div>
+	</div>
+
+    <script>
+            const map = L.map('map').setView([35.9002917,-106.3064972], 8);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+			
+			
+	    	        this._container.innerHTML = `
+	                    <lite-youtube videoid="RNZa2vfCjew" style="background-image: url('https://i3.ytimg.com/vi/RNZa2vfCjew/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=RNZa2vfCjew" class="lty-playbtn" title="Play Video.  Credit: Los Alamos County">
+	                            <span class="lyt-visually-hidden">Credit: Los Alamos County</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([35.9002917,-106.3064972]).addTo(map);
+
+	        marker.bindPopup("<b>Los Alamos Golf Course</b><br>New Mexico</br>").openPopup();
+	</script>
+	
+   	<p><a href="https://fescue.github.io/Sherrill-Park-Golf-Course/">Sherrill Park Golf Course #2 in Texas</a></p>
+   	<p><a href="https://fescue.github.io/Tony-Butler-Golf/">Tony Butler Golf Course in Texas</a></p>
+	
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

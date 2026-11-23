@@ -1,0 +1,32 @@
+		<table id="golf" class="display" width="100%">
+			 <thead>
+				 <tr> 
+					 <th data-priority="1" scope="col">Golf Course</th>
+					 <th scope="col">Architect</th>
+					 <th scope="col">Location</th>
+				</tr>
+			 </thead>
+			 <tbody>
+			 	{% for item in site.data.all2022 %}<tr>
+					{% if item.Website and item.Website != "" and item.Website != nil %}<td><a href="{{ item.Website }}">{{ item.Course }}</a> </td> {% else %}<td> {{ item.Course }} </td>{% endif %}<td>{{ item.Architect }}</td>{% if item.Latitude and item.Latitude != "" and item.Latitude != nil %}<td><a href="https://www.google.com/maps/@{{item.Latitude}},{{item.Longitude}},14z">{{ item.Location }}</a></td>{% else %}<td></td>{% endif %}
+				</tr>{% endfor %}
+			 </tbody>
+		</table>
+		 
+		<script>
+			$(document).ready(function() {
+				var table = $('#golf').DataTable( {
+					responsive: true,
+					order: [],
+					orderable: true,
+					sort: true,
+					columnDefs: [
+						{ targets: [4], responsivePriority: 1 }
+					  ],
+					  stateSave: true,
+					paging: false
+				} );
+			 
+				new $.fn.dataTable.FixedHeader( table );
+			} );
+		</script>	

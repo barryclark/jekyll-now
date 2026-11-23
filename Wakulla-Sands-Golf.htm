@@ -1,0 +1,74 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Wakulla Sands Golf Course - County Aquifer</title>
+  <meta name="description" CONTENT="Wakulla Sands County Municipal Renovation Masterplan Green Complexes Tees Water Cart Paths Irrigation Drainage">
+  {% include h.html %}
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Golf"></div>
+			<div class="content" tabindex="0"  aria-label="Wakulla">
+				<H1>Wakulla Sands Golf Course - 6 Million Gallon Aquifer</H1> 
+				<p>Wakulla Golf Course is a public golf course owned and operated by Wakulla County in Florida. <a style='font-weight:bold' href='http://wakullaspringsalliance.org/wp-content/uploads/2022/01/20211222_Wakulla-Golf-Final-Report-and-Estimate.pdf' target='_blank' rel='nofollow'>Project Masterplan</a> was prepared by <a style='font-weight:bold' href='https://www.dewberry.com/' target='_blank' rel='nofollow'>Dewberry</a>.  The golf course was formerly known as the Wild Wood Golf and RV Resort but was renamed in 2022 after gaining planning permission from the county stakeholders.</p>
+				<p>Total cost of the renovation was $9 million.  The Florida Department of Environmental Protection (DEP) provided a $4.9 million grant as part of its <a style='font-weight:bold' href='https://floridadep.gov/wra/wra/content/water-quality-improvement-grant-program' target='_blank' rel='nofollow'>Water Quality Improvement Grant Program</a>.  fundamental component of the renovation is sustainability initiative to use reclaimed water to maintain land and add to the county aquifer.  A  <a style='font-weight:bold' href='https://twitter.com/rodneylucks/status/1675963474722148352' target='_blank' rel='nofollow'>6,000,000 gallon</a> irrigation pond lined with HDPE plastic has been created on the renovated golf course.</p>
+				<p>Design was led by Dan Schlegel with golf construction company Wadsworth building the course.  Wadsworth team member Rodney Luck from Wadsworth oversaw construction onsite.  Local supplier <a style='font-weight:bold' href='https://pikecreekturf.com/' target='_blank' rel='nofollow'>Pike Creek Turf</a> provided turfgrass sod and sprigs.</p>
+				<p>In addition to the golf course, Wakulla Sands will also feature a driving range, and the RV park on the property will remain.  The site is off of Highway 98, 10 miles south of Crawfordville.  The course reopend with greens fees under $40.</p>
+				<p><u>Design Goals:</u></p>
+				<li>Widen the fairways to enhance playability.</li>
+				<li>Strategic use of sand bunkers and re-contouring the definition of the fairway mow lines.</li>
+				<li>The course was re-routed to allow for better variety in the round.</li>
+			</div>
+	</div>
+	
+    <script>
+            const map = L.map('map').setView([30.1297314,-84.3644604], 7);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([30.1297314,-84.3644604]).addTo(map);
+
+	        marker.bindPopup("<b>Tallahassee, Florida</b>").openPopup();
+	</script>
+	<p><a href="https://fescue.github.io/Soleta-Golf/">Soleta Golf Club</a></p>
+	<p><a href="https://fescue.github.io/Paradise-Isle/">Paradise Isle Golf</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

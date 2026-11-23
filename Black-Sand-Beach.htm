@@ -1,0 +1,74 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Punalu‘u Black Sand Beach Resort - Hawaii</title>
+	<meta name="description" CONTENT="Punalu‘u Black Sand Beach Resort Hawaii Golf Renovation Reopen Course Architect Design">
+	{% include h.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Black Sand"></div>
+		<div class="content" tabindex="0"  aria-label="Hawaii">
+			<H1>Punalu‘u Black Sand Beach Resort - Hawaii</H1>
+			<p>The golf course at Punalu‘u in Ka‘ū formely known as Sea Mountain has been closed since 2018.  The site is located on the big island of Kona, Hawaii approximately 60 miles southwest of Hilo and 70 miles southeast of Kailua-Kona.  Plans to renovate and reopen the golf course are part of the <a style='font-weight:bold' href='https://punaluublacksandbeach.com/' target='_blank' rel='nofollow'>Black Sand Beach Resort</a> plans to refurbish the existing decaying infrastructure before undertaking any new construction. Norman Quon is the project director leading the planning applications with the state government.  Original <a style='font-weight:bold' href='https://files.hawaii.gov/dbedt/erp/EA_EIS_Library/2005-12-23-HA-EISPN-Sea-Mountain-Punaluu.pdf' target='_blank' rel='nofollow'>plans</a> were filed in 2005.</p>
+			<p>Property owner Eva Liu is dedicated to collaborating with the local community in planning the revitalization of the 434-acre on the island's southwestern corner downhill from the Kīlauea volcano.  The site is approximately 60 miles southwest of Hilo and 70 miles southeast of Kailua-Kona.  Golf architect Jack Snyder, ASGCA designed the course opening in 1971.  Snyder is credited with over 40 designs in Arizona, New Mexico, and Hawaii including Wailea - Orange Course, Wailea - Blue Course, and Royal Kaanapali South Golf Course.</p>
+			<p>The golf architect for the renovation plan has not been named as of 2024.  <a style='font-weight:bold' href='https://fescue.github.io/Kahili-Golf-Course/'>Kahili Golf Course</a> on the island of Maui is another renovation opportunity as the course is currently closed.</p>
+			<div class="substack-post-embed">
+			<p>Holiday golf</p><a data-post-link href="https://timyeogolf.substack.com/p/the-dangers-of-holiday-golf-and-the">ONLY FRIENDS YOU HAVEN’T YET MET</a></div>
+			<script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+		</div>
+	</div>
+	
+	    <script>
+                const map = L.map('map').setView([19.1338841,-155.5135689], 8);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([19.1338841,-155.5135689]).addTo(map);
+	        marker.bindPopup("<b>Black Sand Beach Resort</b><br>Kona, Hawaii</br>").openPopup();
+  </script>
+	
+  <p><a href="https://fescue.github.io/Ouli-Farms/">Ouli Farms on Kona</a></p>
+  <p><a href="https://fescue.github.io/Nusantara-Golf-Resort/">Nusantara Golf Resort in Indonesia</a></p>
+  <p><a href="https://fescue.github.io/Nauka-Nayarit/">Nauka Nayarit in Mexico</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

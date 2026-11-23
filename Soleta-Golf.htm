@@ -1,0 +1,71 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Soleta Golf Club - Nick Price - Florida</title>
+  <meta name="description" CONTENT="Soleta Golf Club Nick Price PGA Florida Myakka Green Complex Tees Irrigation Drainage">
+  {% include h.html %}
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Nick Price"></div>
+			<div class="content" tabindex="0"  aria-label="Soleta">
+				<H1>Soleta Golf Club - Nick Price - Florida</H1> 
+				<p><a style='font-weight:bold' href='https://soletagolf.com/' target='_blank' rel='nofollow'>Soleta Golf Club</a> is a new Nick Price designed golf course in the Sarasota/Bradenton/Lakewood Ranch area.  Site golf construction by <a style='font-weight:bold' href='https://lexicon-inc.com/heritage-links/' target='_blank' rel='nofollow'>Heritage Links</a>, GCBAA is underway and will be ready for play in November 2024.</p>
+				<p>The three development principals David Turner, John Galt and Charles Duff are eager to open the 7,400 yard, par-72 Soleta Golf Club.  The golf course is core golf and independently routed, separate from homesites and amenities.  All 18 holes wind through the natural Florida wetlands site with sand and native areas adjacent to play.  Turfgrass management will managed to a firm and fast standard.  Water conservation is a critical planning issue in conjunction with the enhancement of wildlife habitat and sound environmental stewardship.</p>
+				<p>Aaron Crooks, PGA, will be the head golf professional(<a style='font-weight:bold' href='https://golfbusinessnetwork.com/' target='_blank' rel='nofollow'>Golf Business Network</a>).  Additionally, golf instructor <a style='font-weight:bold' href='https://www.golfzonleadbetter.com/instructor/david-leadbetter/' target='_blank' rel='nofollow'>David Leadbetter</a>, PGA, announced his design of a 30 acre practice facility.  The outdoor practice areas are complemented by an indoor center including a state-of-the-art biomechanics studio, clubfitting, a putting studio, simulators and other advanced training technologies.</p>
+				<div class="substack-post-embed"><p lang="en"><p>The game needs to be quicker, not more expensive</p><a data-post-link href="https://timyeogolf.substack.com/p/the-arrival-of-the-1000-round-of">ONLY FRIENDS YOU HAVEN’T YET MET</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+			</div>
+	</div>
+	
+    <script>
+            const map = L.map('map').setView([27.3390587,-82.2013106], 7);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([27.3390587,-82.2013106]).addTo(map);
+
+	        marker.bindPopup("<b>Sarasota County, Florida</b>").openPopup();
+	</script>
+	<p><a href="https://fescue.github.io/Boca-National/">Boca National Proposal</a></p>
+	<p><a href="https://fescue.github.io/New-Hope-Dunes/">New Hope Dunes</a></p>
+	<p><a href="https://fescue.github.io/Jolshiri-Golf-Club/">Jolshiri Golf Club</a></p>	
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

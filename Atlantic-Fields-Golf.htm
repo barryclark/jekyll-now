@@ -1,0 +1,71 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Atlantic Fields - Discovery Land in Florida</title>
+	<meta name="description" CONTENT="Atlantic Fields Discovery Land Real Estate Development New Golf Course Tom Fazio Florida Hobe Sound">
+	{% include h50.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Atlantic Fields"></div>
+		<div class="content" tabindex="0"  aria-label="Atlantic Fields Club">
+			<H1>Atlantic Fields - Discovery Land</H1>
+			<p><a style='font-weight:bold' href='https://atlanticfieldsclub.com/' target='_blank' rel='nofollow'>Atlantic Fields</a> at 4384 Santa Barbara Terrace in Hobe Sound, Florida is a new Tom Fazio residential golf club opened in 2025.  The site is adjacent to Michael Jordan's Grove XXIII and offers a blend of natural beauty in the former orange grove.  South Florida's subtropical climate ensures lush, green fairways with the option play golf during any season.  <a  style='font-weight:bold' target='_blank' rel='nofollow' href='https://www.martin.fl.us/resources/h123-024-discovery-pud-ph2a-fsp'>Staff review report</a> from Martin County was completed in May 2023.</p><p>With completed properties in 9 countries and 38 out of the 50 states in the United States, <a style='font-weight:bold' href='https://faziodesign.com/courses/' target='_blank' rel='nofollow'>Tom Fazio</a> has enjoyed a prolific career atop the game of golf.:</p><p>Notable designs include:</p><p><LI>Barbuda Ocean Club in the Caribbean</LI><LI>Driftwood in Austin, Texas</LI><LI>Gozzer Ranch Golf and Lake Club in Harrison, Idaho</LI><LI>Shadow Creek in Las Vegas, Nevada</LI><LI>Wade Hampton in Cashiers, North Carolina</LI></p><p>Known for detail to aesthetics, Fazio Design presents the course with enhancements to the terrain, offering a mix of strategic holes.  The course layout highlights variety including water features and strategically placed bunkers, challenging golfers of all levels.  Fazio's design philosophy emphasizes a harmonious blend with the landscape, making each course unique.  <a style='font-weight:bold' href='https://www.linkedin.com/in/ryan-newton-484305b5/' target='_blank' rel='nofollow'>Ryan Newton</a> is the General Manager.  <a style='font-weight:bold' href='https://twitter.com/topatony13' target='_blank' rel='nofollow'>Tony Price</a> is Golf Course Superintendent.</p><p><a style='font-weight:bold' href='https://owl.martin.fl.us/app/f?p=301:2:34725349225705::::P2_LIST_GROUP_ID,P2_LIST_ID:693,8207' target='_blank' rel='nofollow'>Martin County Permits</a> allow for 317 residential units in addition to the 18 hole golf course, clubhouse and polo equestrian facilities.  <a style='font-weight:bold' href='https://discoverylandco.com/communities/atlantic-fields-2' target='_blank' rel='nofollow'>Discovery Land</a> is the developer of Atlantic Fields.<p>Golf professionals <a style='font-weight:bold' href='https://directory.pga.org/facility/detail/148820679' target='_blank' rel='nofollow'>Cody Shining, PGA and Jake Toliver, PGA</a> are leading the opening of the club.  <a style='font-weight:bold' href='https://www.youtube.com/watch?v=pm2pITFIB-I' target='_blank' rel='nofollow'>Toliver</a> has been nationally recognized as one of the Top 50 teaching professionals for multiple years.</p>
+			<div class="substack-post-embed">
+			<p lang="en">Stay the night</p><a style='font-weight:bold' target='_blank' rel='nofollow' href="https://timyeogolf.substack.com/p/stay-the-night-on-site-if-you-can">ONLY FRIENDS YOU HAVEN’T YET MET</a>
+			</div>
+			<script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+		</div>
+	</div>       
+
+    <script>	
+                const map = L.map('map').setView([27.0663791,-80.21189], 10);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([27.0663791,-80.21189]).addTo(map);
+	        marker.bindPopup("<b>Atlantic Fields</b><br>SE Santa Barbara Terrace, Hobe Sound, Florida</br>").openPopup();
+	</script>
+   	<p><a href="https://fescue.github.io/Karsten-Creek/">Fazio's Karsten Creek</a></p>
+   	<p><a href="https://fescue.github.io/Freestone-Lake-Golf-Club/">Freestone Lake</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

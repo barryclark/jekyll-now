@@ -1,0 +1,59 @@
+<style>
+	.container {
+	    width: 100%;
+	    margin: 0 auto;
+	    box-sizing: border-box; /* Ensures padding and border are included in the element's width */
+	}
+	
+	.row {
+	    display: flex;
+	    flex-wrap: wrap;
+	    box-sizing: border-box; /* Ensures padding and border are included in the element's width */
+	}
+	
+	.col-md-6, .col-md-4 {
+	    box-sizing: border-box; /* Ensures padding and border are included in the element's width */
+	}
+	
+	.col-md-6 {
+	    flex: 0 0 calc(25% - 100px); /* Adjusted to account for margins */
+	    margin: 0 50px;
+	    padding: 0 10px;
+	}
+	
+	.col-md-4 {
+	    flex: 0 0 calc(25% - 40px); /* Adjusted to account for margins */
+	    margin: 0 20px;
+	    padding: 0 5px;
+	}
+
+	/* CSS Media Query for Mobile Devices */
+	/* Initially hide mobile content on all devices */
+	.mobile-content {
+	    display: none;
+	}
+
+	/* CSS Media Query for Mobile Devices */
+	@media screen and (max-width: 768px) {
+	    .desktop-content {
+		display: none;
+	    }
+	    .mobile-content {
+		display: block;
+	    }
+	}
+	
+	@media only screen and (min-width: 769px) {
+	    .mobile-content {
+		display: none;
+	    }
+	    .desktop-content {
+		display: block;
+	    }
+	}
+
+	img {
+	  height: auto;
+	  width: 100%;
+	}
+</style> 

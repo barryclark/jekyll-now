@@ -1,0 +1,71 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>New Public Golf Course - Bella Ridge - Colorado</title>
+	<meta name="description" CONTENT="New Public Golf Course Bella Ridge Colorado Art Schaupeter">
+	{% include hLeaflet.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Art Schaupeter"></div>
+		<div class="content" tabindex="0"  aria-label="Golf Course">
+			  <H1>New Public Golf Course - Bella Ridge - Colorado</H1>
+			  <p>Golf architect Art Schaupeter started planning <a style='font-weight:bold' href='https://www.bellaridgegolf.com/' target='_blank'>Bella Ridge Golf Club</a> in 2017.  Formal plans were published using the topography maps and time walking the site by 2022.</p>
+			  <p>Golf construction for Bella Ridge started May 2024.  Grow in process was successfully completed with preview play opening October 2025.  Clubhouse and course opening is planned for 2026.</p>
+			  <p>Schaupeter's routing includes whiskey loop options designed for players who may only have time for a few holes. Art Schaupeter designed TPC Colorado and Highland Meadows Golf Course in Colorado.</p>
+			  <p>The Podtburg family has operated a dairy farm on the property in Johnstown for 45 years.</p>  
+	  	  <div class="substack-post-embed"><p lang="en">Little known gem deserves our attention by Tim Yeo</p><a data-post-link href="https://timyeogolf.substack.com/p/little-known-gem-deserves-our-attention">ONLY FRIENDS YOU HAVEN’T YET MET</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
+			</div>
+	</div>
+	
+
+
+    <script>
+                const map = L.map('map').setView([40.351589,-105.005311], 8);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([40.351589,-105.005311]).addTo(map);
+	        marker.bindPopup("<b>Bella Ridge Golf Club</b>").openPopup();
+  </script>
+  <p><a href="https://fescue.github.io/Kawonu-Golf-Club/">Kawonu Golf Club by Andrew Green</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

@@ -1,0 +1,21 @@
+{
+"storymap": {
+        "slides": [
+			{
+				"text": {
+					"headline": "18: Additional New 9 Holes",
+					"text": "<p><a style='font-weight:bold' href='https://www.lakewoodgolfresort.ca/' target='_blank' rel='nofollow'>Lakewood Golf Resort</a> is a public 9 hole golf course located in Sylvan Lake in the province of Alberta, Canada. The facility has a practice range and practice short game area with putting greens.  <a style='font-weight:bold' href='https://www.sylvanlakenews.com/sports/lakewood-golf-resort-near-sylvan-lake-expanding-to-18-hole-course/' target='_blank' rel='nofollow'>An additional 9 holes</a> is being grassed and growing in currently.  Announced opening is in spring 2024.</p><p> The resort is located in Alberta's Lake Country at the Sylvan Lake junction of Highway 11A and Highway 20.</p>"
+			},
+			"location": {
+					"lat": 52.3332137,
+					"lon": -114.0587286,
+					"zoom": 5
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=BScNfNuvMmc",
+					"credit": "Lakewood Golf Resort"
+				}
+			}
+		]
+    }
+}

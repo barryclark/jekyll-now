@@ -1,0 +1,122 @@
+	<base target="_top">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv='content-language' content='en-us'>
+	<link rel="shortcut icon" type="image/x-icon" href="/images/Fairway.jpg" />
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CE7ZF0C1GD"></script>
+	<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+			  gtag('config', 'G-CE7ZF0C1GD');
+	</script>
+	<script type="text/javascript">
+	    (function(c,l,a,r,i,t,y){
+	        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+	        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+	        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+	    })(window, document, "clarity", "script", "h4dgedaqyl");
+	</script>
+	<link rel="stylesheet" href="/css/styles.css">
+	 
+  	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="/>
+ 	<meta name="msvalidate.01" content="F27967019E01C1777A8C10B926D4619A" />
+	<link rel="shortcut icon" type="image/jpg" href="/images/Fairway.jpg">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	<style>
+		.main-container {
+		    display: flex;
+		    flex-direction: row;
+		    height: 100vh; /* Adjust height as needed */
+		}
+		
+		#map {
+		    width: 40%; /* Half of the container */
+		    /* Additional map styling */
+		}
+		
+		.content {
+		    width: 60%; /* Half of the container */
+		    overflow-y: auto; /* Enables scrolling for the text content */
+		    /* Additional content styling */
+	            color: #333333; /* Darker text for better readability */
+	            background-color: #FFFFFF; /* Light background to contrast with the text */
+	            font-size: 1.1em; /* Slightly larger font size for readability */
+	            line-height: 1.6; /* Improved line spacing for readability */
+		}
+
+	        .content a {
+	            color: #0000EE; /* Ensuring links are distinguishable */
+	            text-decoration: underline; /* Underline links for better visibility */
+	        }
+	
+	        .content a:hover, .content a:focus {
+	            color: #004299; /* Different color on hover/focus for better user interaction */
+	            background-color: #eef2f7; /* Background change on hover/focus for better visibility */
+	        }
+
+	        /* High Contrast Mode for users with visual impairments */
+	        @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+	           .content {
+	               color: black;
+	               background-color: white;
+	           }
+	           .content a {
+	               color: blue;
+	           }
+	        }
+
+		footer {
+		    background-color: #f1f1f1;
+		    padding: 10px;
+		    text-align: center;
+		    width: 100%;
+		}
+
+		/* Make images responsive */
+		img {
+		        max-width: 100%;
+		        height: auto;
+		}
+		
+		/* Responsive adjustments */
+		@media (max-width: 768px) {
+		    .main-container {
+		        flex-direction: column;
+		    }
+		
+		    #map, .content {
+		        width: 100%;
+		    }
+		
+		    /* Adjust font sizes and other elements for mobile */
+		    .content {
+		        font-size: 1em; /* Adjust as needed for mobile */
+		    }
+		
+		    /* Make images responsive */
+		    img {
+		        max-width: 100%;
+		        height: auto;
+		    }
+		}
+	
+		.leaflet-custom-overlay {
+	            position: absolute;
+	            top: 10px; /* Adjust as needed */
+	            left: 60px; /* Adjust as needed */
+	            z-index: 1000; /* Ensure it's above the map */
+	        }
+	
+	        .leaflet-custom-overlay lite-youtube {
+	            width: 320px; /* Adjust the size as needed */
+	            height: 180px; /* Adjust the size as needed */
+	        }
+	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/lite-yt-embed.css" />

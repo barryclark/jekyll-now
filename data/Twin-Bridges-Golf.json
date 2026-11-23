@@ -1,0 +1,21 @@
+{
+"storymap": {
+        "slides": [
+			{
+				"text": {
+					"headline": "Twin Bridges",
+					"text": "<p>Twin Bridges, Montana is the location for a new golf course community.  Construction was evident in 2023, but no details of owner, architect, or golf construction firm are available at the current time.</p>"
+				},
+				"location": {
+					"lat": 45.5427433,
+					"lon": -112.3388206,
+					"zoom": 7
+				},
+				"media": {
+					"url": "https://southwestmt.com/communities/TwinBridges/",
+					"credit": "Visit Southwest Montana"
+				}
+			}
+		]
+    }
+}

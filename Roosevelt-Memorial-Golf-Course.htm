@@ -1,0 +1,79 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <title>Golf Course Design by Donald Ross - Roosevelt Memorial in Georgia</title>
+  <meta name="description" CONTENT="Golf Course Design Donald Ross Roosevelt Memorial Georgia restoration renovation">
+  {% include h.html %}
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Golf"></div>
+			<div class="content" tabindex="0"  aria-label="Roosevelt Memorial">
+			
+				<H1>Donald Ross - Roosevelt Memorial - Georgia</H1>
+				<p>Warm Springs, Georgia is a small town located in Meriwether County. The town is best known as the place where President Franklin D. Roosevelt came to recover from his polio. Roosevelt first visited Warm Springs in 1924 and was so impressed by the healing properties of the warm springs that he purchased the property and built a retreat there. Roosevelt continued to visit Warm Springs throughout his presidency and even died there in 1945.</p><p>The Roosevelt Memorial Golf Course is located on the grounds of the Roosevelt Warm Springs Institute for Rehabilitation. The course was designed by Donald Ross, one of the most famous golf course architects in history.  Ross designed over hundreds of golf courses, including some of the most famous courses in the world, such as Pinehurst No. 2 and Augusta Country Club.</p><p>The Roosevelt Memorial Golf Course opened in 1926 and was a popular destination for Roosevelt and his friends. The course was also used by the rehabilitation institute for therapy and recreation. The course is a challenging 9-hole course with a par of 35. The course is set in the foothills of the Blue Ridge Mountains and features a variety of holes.</p>
+				<p>Is the best hole on the Roosevelt Memorial Golf Course is the 6th hole?  The 6th hole is a par 4 of 395 yards from the back tees. The hole is played from an elevated tee box down to a green that is protected by bunkers on the left and right. The hole is also surrounded by trees, which can make it difficult to find the ball if it is hit off line. The 6th hole is a challenging hole that requires a good drive and a precise approach shot to score well.  The 6th hole is a classic Donald Ross hole that tests all aspects of a golfer's game and is sure to be remembered by anyone who plays it.</p>
+				<p>Nearby <a style='font-weight:bold' href='https://fescue.github.io/Fall-Line-Golf/'>Fall Line</a> opened in 2025 to acclaim.</p>
+
+				</div>
+	</div>
+		
+    <script>
+            const map = L.map('map').setView([32.8882906,-84.7016253], 7);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');			
+			
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="F7mFH3gABY4" style="background-image: url('https://i3.ytimg.com/vi/F7mFH3gABY4/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=F7mFH3gABY4" class="lty-playbtn" title="Play Video. Donald Ross">
+	                            <span class="lyt-visually-hidden">Donald Ross</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([32.8882906,-84.7016253]).addTo(map);
+
+	        marker.bindPopup("<b>Warm Springs, Georgia</b>").openPopup();
+	</script>
+	<p><a href="https://fescue.github.io/Travis-Club/">Travis Club on the Lake in Austin, Texas</a></p>
+	<p><a href="https://fescue.github.io/SandGlass/">Tom Doak's SandGlass</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

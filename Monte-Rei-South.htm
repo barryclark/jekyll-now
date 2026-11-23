@@ -1,0 +1,79 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Nicklaus Golf Portugal - Monte Rei South</title>
+	<meta name="description" CONTENT="Private Golf Club Resort in Portugal Monte Rei South Nicklaus Design">
+	{% include h40.html %}
+</head>
+
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Monte Rei"></div>
+			<div class="content" tabindex="0"  aria-label="Portugal">
+				<H1>New Golf Course in Portugal - Monte Rei South</H1>
+				<p><a style='font-weight:bold' href="https://www.monte-rei.com/">Monte Rei Golf & Country Club</a> is a private club located in the Algarve region of Portugal. The resort features Monte Rei North Golf Course, a clubhouse, a spa, and a variety of accommodation options. Monte Rei is a popular winter destination for golfers and other luxury travelers.  Temperate weather - The average high temperature in March is 19°C (66°F) and the average low temperature is 13°C. The average amount of precipitation in March is 22mm.</p>
+				<p>In January 2025, <a style='font-weight:bold' href="https://www.arrowglobal.pt/en/">Arrow Global</a> announced acquisition of Monte Rei.  Previsouly, Hong Kong-based real estate development company OLH Properties had acquired the resort in 2017. OLH Properties had plans to expand by adding the second golf course, Monte Rei South Golf Course with new accommodation options and improved amenities. OLH Properties planned to build a new luxury hotel as well.</p>
+				<p>In March 2019, Monte Rei Golf & Country Club announced a second golf course designed by <a style='font-weight:bold' href="https://nicklausdesign.com/">Nicklaus Design</a>. The new course will be located adjacent to the resort's existing North Course.  Consent planning updates undertaken in 2023 resulted in new requirements for <a style='font-weight:bold' href='https://www.portugalresident.com/new-algarve-golf-course-will-only-go-ahead-if-treated-wastewater-is-used/' target='_blank' rel='nofollow'>irrigation</a> on the golf course using treated wastewater.</p>
+			</div>
+	</div>
+
+    <script>
+            const map = L.map('map').setView([37.2085503,-7.5517619], 9);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+					
+					// Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="pKPTmwWu7mM" style="background-image: url('https://i3.ytimg.com/vi/pKPTmwWu7mM/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=pKPTmwWu7mM" class="lty-playbtn" title="Play Video.  Credit: Monte Rei Golf & Country Club">
+	                            <span class="lyt-visually-hidden">Credit: Monte Rei Golf & Country Club</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([37.2085503,-7.5517619]).addTo(map);
+
+	        marker.bindPopup("<b>Monte Rei South</b>").openPopup();
+	</script>	    
+	<p><a href="https://fescue.github.io/Dhoho-Golf-Club/">Brian Curley Dhoho Golf Club in Indonesia</a></p>
+	<p><a href="https://fescue.github.io/Muriwai-Downs-Golf/">Kyle Phillips' New Clifftop Golf Course in New Zealand</a></p>
+	<p><a href="https://fescue.github.io/Ouli-Farms/">Ouli Farms in Hawaii</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

@@ -1,0 +1,21 @@
+{
+"storymap": {
+        "slides": [
+			{
+				"text": {
+					"headline": "Pines Crossing",
+					"text": "<p>Pines Crossing is a renovated 18 hole course by <a style='font-weight:bold' href='https://twitter.com/bergingolf' target='_blank' rel='nofollow'>Bill Bergin</a>.  The golf course reopened in November 2023.  Formerly known as Indian Pines Golf Course, the facility located in Auburn, Alabama. It is situated amidst the picturesque landscape near Auburn University.  Originally designed by architect Earl Stone, the newly renovated golf course has been undertaken by Bill Bergin as golf architect and <a style='font-weight:bold' href='https://www.wadsworthgolf.com/' target='_blank' rel='nofollow'>Wadsworth Golf</a> as the construction firm onsite.</p><p>  Spring and autumn are transitional seasons with pleasant temperatures in Auburn. Average highs are in the 70 degrees.  Precipitation in Auburn receives a moderate amount of rainfall throughout the year.  The wettest months are in late spring through summer with afternoon thunderstorms.</p>"
+				},
+			"location": {
+					"lat": 32.6235885,
+					"lon": -85.4407806,
+					"zoom": 7
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=HlrcG4mrVms",
+					"credit": "Opelika-Auburn News"
+				}
+			}
+		]
+    }
+}

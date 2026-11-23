@@ -1,0 +1,79 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Westport Golf Links - Seaside Golf in the State of Washington</title>
+	<meta name="description" CONTENT="Westport Golf Links Seaside Golf State of Washington Environmental Sustainable">
+	{% include h40.html %}
+</head>		
+
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Westport"></div>
+			<div class="content" tabindex="0"  aria-label="David Kidd">
+				<H1>Westport Golf Links - State of Washington</H1>
+				<p><a style='font-weight:bold' href='https://www.westportgolflinks.com/' target='_blank' rel='nofollow'>Westport Golf Links</a> project is a proposal to build a seaside golf course with hospitality resort as part of the overall development of Westport Light State Park near Westport, Washington. The proposal comes from Westport Golf Inc., a private company in Seattle ledy by Chris Day.</p>
+				<p>The property's golf course would be designed by <a style='font-weight:bold' href='http://dmkgolfdesign.com/' target='_blank' rel='nofollow'>David McLay Kidd</a>, who has designed nearby resort courses Bandon Dunes, Oregon and Gamble Sands, Washington. The property is 600 acres of state park land along the Pacific Ocean.  The climate is suitable for fescue grass which was planted in the Bandon, Oregon property.</p><p>The project is currently in environmental review. The <a style='font-weight:bold' href='https://parks.wa.gov/DocumentCenter/View/19951/Westport-Light-Master-Planning-Update---Nov-22' target='_blank' rel='nofollow'>Washington State Department of Natural Resources (DNR)</a> is expected to issue a decision on the project in early 2024.  If the project is approved, construction is expected to begin in late 2024 with a golf course opening forecast for 2026. The inn would be expected to open in 2027.</p>
+				<p>350 jobs are anticipated during construction with estimates for a $55 million one time beneficial impact on the region.  100 permanent jobs are forecast once the project is completed. The project is budgeted to generate $29 million in economic golf tourism activity annually.  The DNR has held a number of public community feedback meetings to review the project, receiving many  <a style='font-weight:bold' href='https://parks.wa.gov/sites/default/files/2023-10/14-July%206%20-%20October%2023%202023%20Comments.pdf' target='_blank' rel='nofollow'>comments</a> in the July through October 2023 period from public stakeholders.  Planning for the coastal property includes provision for an 37 extra beachside parking spaces to accommodate summer visitors.</p>
+				<p>Demand for Kidd's leadership in design keeps him at the top of the game with projects underway at Two Rivers in Florida, <a style='font-weight:bold' href='https://fescue.github.io/GrayBull/'>GrayBull</a> in Nebraska, <a style='font-weight:bold' href='https://fescue.github.io/Loraloma-Thomas-Ranch-Golf/'>Loraloma</a> in Texas, Gamble Sands II in Washington, and <a style='font-weight:bold' href='https://youtu.be/rhUntj7yIeo?t=332' target='_blank' rel='nofollow'>Shura Island</a> in Saudi Arabia.</p>
+			</div>
+	</div>
+	
+	<script>
+            const map = L.map('map').setView([46.8901706,-124.129763], 9);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+					
+					// Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="hHVD-0krFBo" style="background-image: url('https://i3.ytimg.com/vi/hHVD-0krFBo/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=hHVD-0krFBo" class="lty-playbtn" title="Play Video.  Credit: KING 5 Seattle">
+	                            <span class="lyt-visually-hidden">Credit: KING 5 Seattle</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([46.8901706,-124.129763]).addTo(map);
+
+	        marker.bindPopup("<b>Westport</b><br>Washington</br>").openPopup();
+	</script>
+	<p><a href="https://www.westportgolflinks.com/">Westport Golf Links Website</a></p>
+	<p><a href="https://fescue.github.io/Curracloe-Golf-Club/">Irish Seaside Golf - Curracloe Golf Club</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

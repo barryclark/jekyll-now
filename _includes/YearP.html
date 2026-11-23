@@ -1,0 +1,52 @@
+		<table id="myTable" class="display">
+			        <thead>
+			            <tr>
+			                <th>Course</th>
+			                <th>Architect</th>
+			                <th>Location</th>
+			                <th>Country</th>
+			                <th>Date</th>
+			                <th>Construction</th>
+			                <th>Build</th>
+			                <th>Status</th>
+			                <th>Sprigs</th>
+			                <th>Budget</th>
+			                <th>History</th>
+			                <th>Updated</th>
+			                <th>Grow In</th>
+			            </tr>
+			        </thead>
+		</table>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			    var table = $('#myTable').DataTable({
+			        "ajax": "https://fescue.github.io/data/gP.json",
+			        responsive: true,
+			        order: [],
+			        orderable: true,
+			        sort: true,
+			        "columns": [
+			            { "data": "G" },
+			            { "data": "A" },
+			            { "data": "L" },
+			            { "data": "U" },
+			            { "data": "D" },
+			            { "data": "C" },
+			            { "data": "J" },
+			            { "data": "S" },
+			            { "data": "M" },
+			            { "data": "B" },
+			            { "data": "H" },
+			            { "data": "Y" },
+			            { "data": "Z" }
+			        ],
+			        stateSave: true,
+			        paging: false,
+			        deferRender: true
+			    });
+			
+			    // Initialize FixedHeader after DataTables to reduce layout shift
+			    new $.fn.dataTable.FixedHeader(table);
+			});
+		</script>

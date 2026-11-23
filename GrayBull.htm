@@ -1,0 +1,79 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>  
+    <title>GrayBull - David McLay Kidd - Sand Hills of Nebraska</title>
+    <meta name="description" CONTENT="New Golf Course GrayBull Sand Hills Dormie Network David Kidd">
+	{% include h40.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Kidd"></div>
+			<div class="content" tabindex="0"  aria-label="GrayBull">
+				<H1>GrayBull - David McLay Kidd - Sand Hills of Nebraska</H1> 
+		                <p><a style='font-weight:bold' href='https://www.dormienetwork.com/graybull' target='_blank' rel='nofollow'>GrayBull Golf Course</a> is a new 18 hole private golf course designed by David McLay Kidd.  It is located in the Nebraska Sandhills, and a 73 mile drive from Sand Hills Golf Club in Mullen. The course is located about 30 minutes north of North Platte and 2 hours west of Omaha.  The course is situated on 600 acres of land in the Nebraska Sandhills. The Sandhills are a unique geographic region.  Justin Smith was the onsite construction lead design manager.  Elliot Tagliapietra was part of the onsite construction crew.</p>
+		                <p>Michael Sheely was the grow-in superintendent.  Clint Tolbert is Dormie's Director of Agronomy.  Dormie Network's <a style='font-weight:bold' href='https://www.linkedin.com/in/mark-ruhga-27702b7/' target='_blank' rel='nofollow'>Mark Rugha</a> is a resident of Nebraska in Omaha and a vocal supporter of the project's initiative.  Plans from <a style='font-weight:bold' href='https://www.dormienetwork.com/news/graybull-club-preview' target='_blank' rel='nofollow'>topography maps</a> (also known as topo maps) show the design in the sand dunes of four holes.  Mountain View Seeds supplied turfgrass supplies with assistance from Ren Wilkes of Heritage Professional Products Group(PPG).  Property acreage is an expansive 1,600 acres.  Championship tees play Par 72 7,170 yards.  The 17th hole is 170 yards from the back tee, and the 18th tee plays 480 yards from the back tee.</p>
+		                <p>Permits were filed with Lincoln County for the construction of GrayBull Golf Course in March 2022.  Ground was broken in summer 2022.  The new golf course opened in August 2024.  The property is designed to minimize impact on the environment.  <a style='font-weight:bold' href='https://www.koontzjones.com/' target='_blank' rel='nofollow'>Koontz Jones Design</a> provided site planning and landscape architecture for GrayBull, including the Clubhouse, Party Barn, and overnight member cottages.</p>
+		                <p>Golf Magazine's <a style='font-weight:bold' href='https://golf.com/news/wildfire-rages-across-nebraska-golf-course/' target='_blank' rel='nofollow'>Josh Sens</a> reported in February 2024 that GrayBull's irrigation system served as a firebreak from a wildfire moving eastwards.</p>
+				<p>David McLay Kidd's design portfolio includes the acclaimed Nanea Golf Club, a private golf club located on the Kohala Coast of the Big Island of Hawaii, as well as Bandon Dunes in Oregon.  Kidd has new design plans underway at Gamble Sands in Washington,  <a style='font-weight:bold' href='https://fescue.github.io/Loraloma-Thomas-Ranch-Golf/'>Loraloma Thomas Ranch</a> in Texas, <a style='font-weight:bold' href='https://fescue.github.io/Westport-Golf-Links/'>Westport Golf Links</a> in Washington, Two Rivers in Florida and Baja Bay Club in Mexico.</p>
+			</div>
+	</div>
+
+    <script>		
+            const map = L.map('map').setView([41.196591,-100.484189], 6);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	        
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="mEuV1vhqgME" style="background-image: url('https://i3.ytimg.com/vi/mEuV1vhqgME/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=mEuV1vhqgME" class="lty-playbtn" title="Play Video.  Credit: Dormie Network">
+	                            <span class="lyt-visually-hidden">Credit: Dormie Network</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([41.196591,-100.484189]).addTo(map);
+	        marker.bindPopup("<b>GrayBull</b><br>Nebraska's Sand Hills</br>").openPopup();
+	</script>
+    	<p><a href="https://fescue.github.io/Bounty-Club/">Bounty Club by King Collins Design</a></p>        
+    	<p><a href="https://fescue.github.io/Lazy-J/">Lazy J in South Dakota's Sand Hills</a></p>
+	<p><a href="https://fescue.github.io/Battle-Run-Golf-Course/">Battle Run Golf Course in Nebraska</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

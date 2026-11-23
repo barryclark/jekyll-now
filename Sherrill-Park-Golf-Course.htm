@@ -1,0 +1,75 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Sherrill Park Golf Course #2 - Muni Renovation</title>
+  <meta name="description" CONTENT="Golf Course Renovation Sherrill Park Course Weibring Wolfard Landscapes Unlimited Municipal ASGCA Sustainable">
+  {% include h.html %}
+</head>			
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Sherrill Park"></div>
+			<div class="content" tabindex="0"  aria-label="Muni">
+				<H1>Sherrill Park Course #2 - Muni Renovation</H1>
+				<p><a style='font-weight:bold' href='https://www.sherrillparkgolf.com/course-2/' target='_blank' rel='nofollow'>Sherrill Park Course #2</a> had a renovation in 2024 and reopened February 14, 2025.  The golf course was previously renovated in 2001.  This renovation started with a planning study by <a style='font-weight:bold' href='https://www.facebook.com/WeibringWolfardGolf/' target='_blank' rel='nofollow'>Weibring Wolfard Golf Design</a> and Freese & Nichols in 2021-2022.  Design features of the renovation aim to resolve major drainage issues, improve playability and reduce maintenance, enhance turf and vegetation, and make aesthetic improvements.</p>
+				<p>Drainage concerns were present on Hole 1 and 17 where water backs up, causing delays in opening the course after heavy rainfalls.  On Hole 5, the pond was filled with silt and was removed.  Previous to the renovation, the bunkers had poor drainage and deteriorated lining.  The new bunkers were replaced for improved maintenance.</p>
+				<p>Erosion control was applied to save the Hole 6 fairway.  Drainage was improved for safety along the cart path of hole 6.  On Hole #2, the lake to the right of the fairway landing area was eliminated to improve playability for all handicap levels.  Tree management program is to trim and remove in many areas. On Hole #6, willow trees along the creek were removed to open up visibility.  Additional trees were added to the right of the landing area to improve safety.</p>
+				<p>Construction schedule is progressing through with final design work underway. The renovation project was dependent on the US Army Corps of Engineers to review of drainage work.  <a style='font-weight:bold' href='https://landscapesunlimited.com/' target='_blank' rel='nofollow'>Landscapes Unlimited</a> was awarded the construction contract in December 2023.  Construction schedule was from January 2024 through September 2024.</p>
+				<p>The <a style='font-weight:bold' href='https://www.cor.net/home/showpublisheddocument/37489' target='_blank' rel='nofollow'>renovation project</a> was funded by a $9 Million in Certificate of Obligation issued in April.</p>
+			</div>
+	</div>
+
+    <script>
+            const map = L.map('map').setView([32.9854715,-96.6892427], 8);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+				
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([32.9854715,-96.6892427]).addTo(map);
+
+	        marker.bindPopup("<b>Sherrill Park Golf Course #2</b><br>Richardson, Texas</br>").openPopup();
+	</script>
+	
+   	<p><a href="https://fescue.github.io/Scott-Schreiner-Golf-Muni/">Scott Schreiner Golf Muni in Kerrville, Texas</a></p>
+   	<p><a href="https://fescue.github.io/Kelly-Ranch-Golf-Club/">Tripp Davis - Kelly Ranch Golf Club</a></p>
+   	<p><a href="https://fescue.github.io/Lake-Oswego-Municipal-Golf-Course/">Lake Oswego Muni - Oregon</a></p>
+
+	
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

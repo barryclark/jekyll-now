@@ -1,0 +1,80 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>TPC Wisconsin - Renovation Steve Stricker</title>
+	<meta name="description" CONTENT="TPC Wisconsin Golf Course Architecture Renovation PGA Tour Steve Stricker Madison">  
+	{% include h.html %}
+</head>
+	
+<body>	
+   <div class="main-container" role="main">
+		<div id="map" aria-label="Wisconsin"></div>
+		<div class="content" tabindex="0"  aria-label="TPC">
+				<H1>TPC Wisconsin - Golf Course Renovation</H1>
+				<p><a style='font-weight:bold' href="https://www.tpcwisconsin.com/">TPC Wisconsin</a> is a newly renovated golf course located in Madison, Wisconsin. The course was formerly known as <a style='font-weight:bold' href='https://tpc.com/press-releases/cherokee-country-club-to-become-tpc-wisconsin' target='_blank' rel='nofollow'>Cherokee Country Club</a>.  Renovations are completed and the course opened in August 2023. Leading renovation design was Edgerton native Steve Stricker with Steve Wenzloff, Senior VP Design of the PGA TOUR.</p>
+				<p>The course is a par 72 measuring 7,254 yards from the championship tees and features a wide variety of holes, including long par 4s, a few risk-reward short par 5s with generally large and undulating greens.  Fairways were raised two to four feet to ensure drainage.  TPC Wisconsin is scheduled to host a number of professional tournaments, including the 2025 American Family Insurance Championship. It will also be a popular destination as it is open for public play.</p>
+				<p>Steve Stricker was born in Edgerton, Wisconsin playing golf at Lake Ripley Country Club and Edgerton Towne Country Club.  Stricker is 1990 graduate of the University of Illinois which just renovated the <a style='font-weight:bold' href='https://fescue.github.io/Atkins-University-Illinois' target='_blank' rel='nofollow'>Atkins Golf Course</a>.  Stricker had succcess winning several PGA Tour events.  He has undertaken golf course design later in his career and contributed to a number of other courses in Wisconsin.  Stricker's home course is nearby <a style='font-weight:bold' href='https://www.townecountryclub.com/' target='_blank' rel='nofollow'>Towne Country Club</a> in Edgerton.</p>
+		</div>
+    </div>
+
+    <script>
+                const map = L.map('map').setView([43.150857,-89.380199], 8);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+					
+	                // Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="R16T4GKAgIE" style="background-image: url('https://i3.ytimg.com/vi/R16T4GKAgIE/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=R16T4GKAgIE" class="lty-playbtn" title="Play Video.  Credit: GCSAATV">
+	                            <span class="lyt-visually-hidden">Credit: GCSAATV</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([43.150857,-89.380199]).addTo(map);
+	        marker.bindPopup("<b>TPC Wisconsin</b><br>Madison, Wisconsin</br>").openPopup();
+  </script>
+	
+  <p><a href="https://fescue.github.io/Shura-Island-Resort/">Shura Island in Saudi Arabia</a></p>
+  <p><a style='font-weight:bold' href="https://fescue.github.io/Kawonu-Golf-Club/">Andrew Green's Kawonu Golf Club</a></p>
+  <p><a style='font-weight:bold' href="https://fescue.github.io/Atkins-University-Illinois/">Atkins University in Illinois</a></p>
+
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

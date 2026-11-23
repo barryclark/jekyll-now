@@ -1,0 +1,35 @@
+{
+"storymap": {
+        "slides": [
+			{
+				"text": {
+					"headline": "Seven Mile Beach",
+					"text": "<p>Two new golf courses are planned at <a style='font-weight:bold' href='https://7milegolf.com.au/' target='_blank' rel='nofollow'>Seven Mile Beach</a> in Tasmania.  The golf is expected to be among the most spectacular and challenging in the world.  The project is led by former Australian/US PGA Tour golfer <a style='font-weight:bold' href='https://en.wikipedia.org/wiki/Mathew_Goggin' target='_blank' rel='nofollow'>Mathew Goggin</a>.  Goggin is a Hobart native and recruited <a style='font-weight:bold' href='https://www.claytongolf.com.au/essays' target='_blank' rel='nofollow'>Mike Clayton</a> of the Clayton, DeVries & Pont golf architecture firm.  <a style='font-weight:bold' href='https://twitter.com/DeVriesDesigns' target='_blank' rel='nofollow'>Mike DeVries</a> has led onsite shaping at Seven Mile Beach.</p><p>The property is located on the eastern shore of Hobart, Australia overlooking the Tasman Sea.  The land features rolling sand dunes, native vegetation and nearby seaside views.  The first course, Seven Mile Beach, on a 450+ acre property is anticipated to open in 2024.</p><p>The course will be a public golf facility and will welcome golfers of all skill levels.  The layout will be adaptable with multiple tees and routing options.  The course will be a major attraction for golf enthusiasts and tourists from around the world.  The project aims to create a world-class golf destination that respects the natural environment by featuring the natural landscape of coastal Tasmania.  The second course onsite will be named 5 Mile Beach.</p>"
+				},
+				"location": {
+					"lat": -42.848042,
+					"lon": 147.479254,
+					"zoom": 7
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=wZT7FTtcyHg",
+					"credit": "Credit: ABC News(Australia)"
+				}
+			},{
+				"text": {
+					"headline": "Seven Mile Beach",
+					"text": "<p><a style='font-weight:bold' href='https://www.smithsonianmag.com/travel/best-places-see-southern-lights-180964246/' target='_blank' rel='nofollow'>Aurora Australis</a>, also known as the Southern Lights, is a colorful light display in the sky in the Southern hemisphere near high-latitude regions around the Antarctic.  Seven Mile Beach is a good location to observe the Aurora Australis.</p><p>Similar to the Aurora Borealis(Northern Lights), auroras display brilliant lights appearing as curtains, rays, spirals, or dynamic flickers covering the entire sky.  These lights are predominantly green, but other colors like red, blue, purple may appear.</p>"
+				},
+				"location": {
+					"lat": -42.848042,
+					"lon": 147.479254,
+					"zoom": 7
+				},
+				"media": {
+					"url": "https://www.youtube.com/watch?v=HANfSRo4srM",
+					"credit": "Credit: ABC News(Australia)"
+				}
+			}			
+		]
+    }
+}

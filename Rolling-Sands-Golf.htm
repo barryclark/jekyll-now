@@ -1,0 +1,68 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Rolling Sands - Tom Doak - Martin County Florida</title>
+	<meta name="description" CONTENT="Rolling Sands Tom Doak Design South Florida New Golf Course Environmental Sustainable">
+	{% include h40.html %}
+</head>
+	
+<body>
+	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Rolling Sands"></div>
+		<div class="content" tabindex="0"  aria-label="Rolling Sands GC">
+			<H1>Rolling Sands - Tom Doak - Martin County Florida</H1> 
+			<p>Rolling Sands Golf Club <a style='font-weight:bold' href='https://owl.martin.fl.us/app/f?p=301:2:9510676890564::::P2_LIST_GROUP_ID,P2_LIST_ID:693,12240' target='_blank' rel='nofollow'>Major Final Site Plan application to Martin County, Florida</a>-  Requested by <a style='font-weight:bold' href='https://www.linkedin.com/in/richard-creech-pe-psm-0758b02/' target='_blank' rel='nofollow'>Creech Consulting, Inc.</a> on behalf of SS Ranch, LLC for permit approval of a Major Final Site Plan to Martin County to develop an 18-hole private golf course using golf course architect Tom Doak. The approved project proposal included a one-story clubhouse, pro shop, maintenance building, two cottages, a helicopter pad.  The filing outlines a proposal to reconfigure 20 acres of the approximate 240-acre property to retain as a residential lot. The property is located between Okeechobee Waterway (aka St. Lucie Canal) and SW Kanner Highway approximately 6.5 miles west of Interstate 95.  The county has approved all proposed plans and golf course construction has successfully completed with grow-in well underway for play by end of 2024.</p><p><a style='font-weight:bold' href='https://www.doakgolf.com/' target='_blank' rel='nofollow'>Tom Doak</a> is a well traveled golf course architect and author of <a style='font-weight:bold' href='https://www.amazon.com/Confidential-Guide-Golf-Courses/dp/1886947090' target='_blank' rel='nofollow'>The Confidential Guide</a> known for naturalistic/minimalistic designs with interesting, strategic green complex designs.  His other golf design in Florida is his work at Streamsong Resort, a golf resort in Polk County, Florida.  That site is a former phosphate mining site, characterized by rolling sand dunes and expansive vistas.  It is a firm, bouncy course with natural features of the land, emphasizing the rugged beauty of the terrain.  Rolling Sands' Director of Grounds superintendent is  <a style='font-weight:bold' href='https://www.linkedin.com/in/kyle-harris-77a3922a/' target='_blank' rel='nofollow'>Kyle Harris</a>, previously the super. at Streamsong.  Streamsong Blue is characterized by wide fairways, strategic bunkers with movement in its greens.</p><p>In October 2023, <a style='font-weight:bold' href='https://www.instagram.com/doakgolf/' target='_blank' rel='nofollow'>Tom Doak posted to Intagram</a> an update on design plans.  Notably, Doak has recruited Brian Zager to lead the project.  Zager had a key role at Sand Valley's Lido by working with Peter Flory to generate LIDAR data for topography map settings for automating design shaping.  <a style='font-weight:bold' href='https://buffalogolfer.com/wordpress/interview-with-brian-zager-golf-course-digital-designer/' target='_blank' rel='nofollow'>Zager was interviewed by BuffaloGolfer</a> in spring 2023.  Doak also noted that Brian Schneider, Eric Iverson, Brad Gehl, and Dylan Stevens are participating as well in the design creation.  Doak is using holes from St. Andrews, Muirfield, North Berwick, and Pine Valley as inspiration.  After the Doak/Flory/Zager collaboration at Lido, anticipation is high to see another landscape with resemblances of well known bunkers like Simpson's Folly from the 9th hole at The Honourable Company of Edinburgh Golfers.</p>
+		</div>
+	</div>       
+
+    <script>	
+                const map = L.map('map').setView([27.0337199,-80.3946068], 10);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                
+	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([27.0337199,-80.3946068]).addTo(map);
+	        marker.bindPopup("<b>Rolling Sands</b><br>Martin County, Florida</br>").openPopup();
+	</script>
+   	<p><a href="https://aca-prod.accela.com/martinco/cap/CapDetail.aspx?type=1000&Module=DevReview&capID1=REC22&capID2=00000&capID3=00G84&agencyCode=MARTINCO">Martin County - Review</a></p>
+	<p><a href="https://fescue.github.io/Childress-Hall/">Childress Hall in Texas</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

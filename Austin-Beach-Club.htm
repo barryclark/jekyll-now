@@ -1,0 +1,71 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Austin Beach Club - Bechtol Fazio</title>
+	<meta name="description" CONTENT="Austin Beach Club Texas Bechtol Fazio Private Members Club Golf River">
+	{% include h50.html %}
+</head>
+	
+<body>	
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Austin"></div>
+		<div class="content" tabindex="0"  aria-label="Golf">
+           		<H1>Austin Beach Club - New Golf Club in Texas</H1>
+			<p><a style='font-weight:bold' href='https://www.austinbeachclub.com/' target='_blank' rel='nofollow'>Austin Beach Club</a> is a new golf club in the stage of launch and design on 63 acres at 9521 Hergotz Lane along the Colorado River. Plans include a 12-hole par-3 course with water activities like kayaking, paddle boarding and canoeing.  Wellness classes as well as dining will be offered.  Austin Beach Club is one of the new developments being planned in the area known as Dog's Head, a former sand and gravel mining hub between U.S. 183 and Texas 130 in far East Austin.  The area's proximity to both downtown and Austin-Bergstrom International Airport has made it a real estate hotspot.  Austin Beach Club founder <a style='font-weight:bold' href='https://www.linkedin.com/in/lauren-carson-kinect/' target='_blank' rel='nofollow'>Lauren Carson</a> sees huge potential in the largely undeveloped space.  The goal is to open the golf course and clubhouse in July 2024. The site also will include walking trails.</p>
+			<p>Austin Beach Club's golf course is being designed by <a style='font-weight:bold' href='https://https://jimfaziogolf.com//' target='_blank' rel='nofollow'>Jim Fazio Jr.</a> and Roy Bechtol.  Bechtol is president of Austin-based planning, landscape and golf architectural firm Planned Environments developing the courses at the Barton Creek Resort, the University of Texas Golf Club and Escondido in Horseshoe Bay.</p>
+			<p>Dog's Head refers to about 3,000 acres where the Colorado River forms the shape of a dog's head on the map, just miles from Tesla's $1.1 billion electric vehicle plant.  Traditionally, the land has been dominated by mining and family-owned ranches.  Developers, including Austin-based Endeavor Real Estate Group, are reported to be acquiring thousands of acres of Dog's Head. But considering its mining history, Endeavor Managing Principal Andy Pastor has said full-fledged development will take years.   Another example of the growth is Goodnight Ranch, a 700-acre, mixed-use community near Interstate 35 and Slaughter Lane that currently has 1,540 homes on the ground, with thousands more eventually planned.</p>
+			<p>Also driving expansion is the Circuit of the Americas(COTA) sports and entertainment venue in southeastern Travis County. Located east of Texas 130 and south of Texas 71, COTA holds year-round sports and entertainment events, ranging from Formula One and NASCAR races to concerts with big-name acts, including the Rolling Stones, Willie Nelson, Elton John, Billy Joel, Kanye West, Britney Spears and Taylor Swift.  Next up for COTA is an amusement and theme park called Cotaland, which will feature a roller coaster and dozens of other rides.</p>
+			<p>Austin Beach Club founder Lauren Carson is an entrepreneur and founder of solar industry services company Kinect Solar, which she started in 2015.  Carson said Austin Beach Club, which is in the permitting process, is designed to create a community for startup founders, tech workers, families and those interested in outdoor recreation.</p>"
+			
+		</div>
+	</div>       
+
+    <script>
+                const map = L.map('map').setView([30.2483265,-97.7162145], 9);
+                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 30,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+	        L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+	                this._map = map;
+	                this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+	                	        
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                    var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([30.2483265,-97.7162145]).addTo(map);
+	        marker.bindPopup("<b>Austin Beach Club</b><br>Austin, Texas</br>").openPopup();
+  </script>
+	<p><a href="https://fescue.github.io/Wakulla-Sands-Golf/">Wakulla Sands Golf in Florida</a></p>
+	<p><a href="https://fescue.github.io/Warmouth-Sands/">Warmouth Sands Re-Design</a></p>
+  {% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>

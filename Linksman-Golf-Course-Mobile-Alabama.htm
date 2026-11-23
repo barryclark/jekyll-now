@@ -1,0 +1,82 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Cypress Creek - Jerry Pate Re-Design Alabama</title>
+	<meta name="description" CONTENT="Cypress Creek Golf Course Riviére du Chien Park Linksman Rebuild Municipal Jerry Pate Design Steve Dana Golf Design Architecture Construction Renovation Mobile Alabama">
+	{% include h.html %}
+</head>
+		
+<body>
+	<div class="main-container" role="main">
+		<div id="map" aria-label="Cypress Creek Municipal"></div>
+			<div class="content" tabindex="0"  aria-label="Jerry Pate">
+				<H1>Cypress Creek Golf Course - Jerry Pate Design</H1> 
+				<p>Cypress Creek Golf Course at Riviére du Chien Park is a public municipal golf course located in Mobile, Alabama. The original design was previously named Old Linksman Golf Course designed by Ralph Sharp opening in 1972.  Back tees on the course measured 6,275 yards and has a revised par of 70.  Forward tees measured 5416 yards.  The course had water in play on 14 holes and was known for its location with views of the Dog River and Mobile Bay.  Linksman Golf Course was closed in 2006.  In 2021, Mobile County purchased the land for $850,000 with plans to rebuild the course.</p>
+				<p>Project <a style='font-weight:bold' href='https://www.mobilecountyal.gov/uploads/2023-05-03MCCGolfCourseReAdvertisement-GolfCoursePhaseMCPI-GC001.pdf' target='_blank' rel='nofollow'>construction bid</a> was awarded to Mid-America Golf for a budget of $13.9 million.  <a style='font-weight:bold' href='https://www.mid-americagolf.com/' target='_blank' rel='nofollow'>Mid-America Golf</a> is forecasting a reopening in summer of 2025 to rebuild the golf course.  This comprehensive golf course rebuild project encompasses a wide array of construction and landscaping tasks, aimed at enhancing both the aesthetic presentation with an additional emphasis on grassing and bunker finish.</p>
+				<p>Reconstruction of all greens to be built in accordance with United States Golf Association (USGA) specification.  All fairways and tees will be regrassed. All bunkers will be reconstructed.  A pivotal component of the renovation is the installation of a completely new irrigation system across the entire golf course ensuring maintenance capabilities.  Landscape design will need to be environmentally sustainable, minimizing water waste while maintaining lush, healthy turf.  Demolition of pavement cart paths will make way for the construction of new, durable concrete cart paths.  4 acres of wetlands preservation is part of the plan.</p>
+				<p>An extensive clearing of 35 acres and grading work to lift playing corridors by 3 to 9 feet facilitates draininage into water feature lateral hazards.  Steve Dana from Jerry Pate Design is leading the onsite changes and has chosen seven new timber golf cart path bridges to blend seamlessly the natural environment.  As part of the county agreement, a timeline of 475 calendar days was allocated for completion.</p>
+				<p><a style='font-weight:bold' href='https://www.jerrypatedesign.com/projects/' target='_blank' rel='nofollow'>Jerry Pate Design</a> is the golf architect's company selected for the renovation of Linksman Golf Course. Pate is a former professional golfer who won the 1976 U.S. Open. Pate's design firm designed or renovated more than 20 golf courses, including the Country Club of Mobile and the Pensacola Country Club.  Pate's design for Cypress Creek will retain the original character of the course.</p>
+			</div>
+	</div>
+	
+
+    <script>
+            const map = L.map('map').setView([30.6145576,-88.1300733], 8);
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 30,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.CustomOverlay = L.Layer.extend({
+	            onAdd: function(map) {
+					this._map = map;
+					this._container = L.DomUtil.create('div', 'leaflet-custom-overlay');
+					
+					// Your lite-youtube HTML
+	                this._container.innerHTML = `
+	                    <lite-youtube videoid="aJsWLfgB4hE" style="background-image: url('https://i3.ytimg.com/vi/aJsWLfgB4hE/hqdefault.jpg');">
+	                        <a href="https://youtube.com/watch?v=aJsWLfgB4hE" class="lty-playbtn" title="Play Video.  Credit: NBC 15 / WPMI-TV">
+	                            <span class="lyt-visually-hidden">Credit: NBC 15 / WPMI-TV</span>
+	                        </a>
+	                    </lite-youtube>
+	                `;
+			
+	                // Add the container to the map
+	                map._panes.overlayPane.appendChild(this._container);
+	                
+	                // Update the position of the overlay on the map
+	                this._update();
+	            },
+	        
+	            onRemove: function(map) {
+	                L.DomUtil.remove(this._container);
+	            },
+	        
+	            _update: function() {
+	                // Position the layer. This example assumes a fixed position, but you can use map latlng to position dynamically
+	                // var position = this._map.latLngToLayerPoint(this._latlng || this._map.getCenter());
+	                
+	                var position = this._map.containerPointToLayerPoint([10, 10]); // Adjust the position as needed
+	                L.DomUtil.setPosition(this._container, position);
+	            }
+	        });
+	
+	        // Add the custom overlay to the map
+	        var myCustomOverlay = new L.CustomOverlay();
+	        myCustomOverlay.addTo(map);
+	
+	        // Add a marker to the map at the same location as the map center
+	        var marker = L.marker([30.6145576,-88.1300733]).addTo(map);
+	        marker.bindPopup("<b>Linksman</b><br>Mobile, Alabama</br>").openPopup();
+	</script>
+	<p><a href="https://fescue.github.io/Desertica-Golf/">Agustin Piza + Brandle Chamblee in Mexico</a></p>
+	<p><a href="https://fescue.github.io/es/Punta-Brava/">Tom Doak - Punta Brava in Mexico</a></p>
+	<p><a href="https://fescue.github.io/MNC-Lido-Trump-International/">Ernie Els MNC Lido</a></p>
+	<p><a href="https://fescue.github.io/Glynlea-Country-Club-Wylder/">Glynlea Country Club in Florida</a></p>
+	{% include bodyFooter.html %}
+ </body>	
+ {% include footer.html %}
+</html>
